@@ -3,11 +3,11 @@ name = "moq-edge"
 main = "index.ts"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
-account_id = "d674452f756fe46885a0d6ce7bc23f0a"
+account_id = "REPLACE_WITH_YOUR_CF_ACCOUNT_ID"
 
 # WAVE MoQ Edge Relay — IETF draft-07 MoQ Transport over WebTransport (HTTP/3)
-# Customer encoders publish via PUT /publish/<namespace>/<track>
-# Viewers subscribe via WebTransport at WSS://moq-edge.wave.online/subscribe/<namespace>/<track>
+# Customer encoders publish via POST /v1/publish/<namespace>/<track>
+# Viewers subscribe via WebTransport at /v1/subscribe/<namespace>/<track>
 # State + fan-out lives in MoqSession Durable Object (one per session)
 
 [observability]
@@ -25,11 +25,11 @@ new_sqlite_classes = ["MoqSessionDO"]
 
 [[kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "71be3135439245f69aca7663d1a66b2e"  # ALERT_DEDUP — temporary; rotate to dedicated MOQ_TRACK_REGISTRY ns
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
 
 [[r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-stream-assets"
+bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
 
 # Production
 [env.production]
@@ -49,11 +49,11 @@ class_name = "MoqSessionDO"
 
 [[env.production.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "71be3135439245f69aca7663d1a66b2e"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
 
 [[env.production.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-stream-assets"
+bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
 
 # Staging
 [env.staging]
@@ -73,8 +73,8 @@ class_name = "MoqSessionDO"
 
 [[env.staging.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "71be3135439245f69aca7663d1a66b2e"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
 
 [[env.staging.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-stream-assets"
+bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
