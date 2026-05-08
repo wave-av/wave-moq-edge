@@ -1,0 +1,80 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "moq-edge"
+main = "index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "d674452f756fe46885a0d6ce7bc23f0a"
+
+# WAVE MoQ Edge Relay — IETF draft-07 MoQ Transport over WebTransport (HTTP/3)
+# Customer encoders publish via PUT /publish/<namespace>/<track>
+# Viewers subscribe via WebTransport at WSS://moq-edge.wave.online/subscribe/<namespace>/<track>
+# State + fan-out lives in MoqSession Durable Object (one per session)
+
+[observability]
+enabled = true
+head_sampling_rate = 1.0
+
+# Top-level (used by `wrangler dev`):
+[[durable_objects.bindings]]
+name = "MOQ_SESSIONS"
+class_name = "MoqSessionDO"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["MoqSessionDO"]
+
+[[kv_namespaces]]
+binding = "MOQ_TRACK_REGISTRY"
+id = "71be3135439245f69aca7663d1a66b2e"  # ALERT_DEDUP — temporary; rotate to dedicated MOQ_TRACK_REGISTRY ns
+
+[[r2_buckets]]
+binding = "MOQ_RECORDINGS"
+bucket_name = "wave-stream-assets"
+
+# Production
+[env.production]
+name = "moq-edge-production"
+route = { pattern = "moq-edge.wave.online/*", zone_name = "wave.online" }
+
+[env.production.vars]
+ENVIRONMENT = "production"
+MOQ_DRAFT_VERSION = "07"
+MAX_SUBSCRIBERS_PER_TRACK = "10000"
+MAX_OBJECT_SIZE_BYTES = "16777216"  # 16 MiB
+LOG_LEVEL = "info"
+
+[[env.production.durable_objects.bindings]]
+name = "MOQ_SESSIONS"
+class_name = "MoqSessionDO"
+
+[[env.production.kv_namespaces]]
+binding = "MOQ_TRACK_REGISTRY"
+id = "71be3135439245f69aca7663d1a66b2e"
+
+[[env.production.r2_buckets]]
+binding = "MOQ_RECORDINGS"
+bucket_name = "wave-stream-assets"
+
+# Staging
+[env.staging]
+name = "moq-edge-staging"
+route = { pattern = "moq-edge-staging.wave.online/*", zone_name = "wave.online" }
+
+[env.staging.vars]
+ENVIRONMENT = "staging"
+MOQ_DRAFT_VERSION = "07"
+MAX_SUBSCRIBERS_PER_TRACK = "1000"
+MAX_OBJECT_SIZE_BYTES = "16777216"
+LOG_LEVEL = "debug"
+
+[[env.staging.durable_objects.bindings]]
+name = "MOQ_SESSIONS"
+class_name = "MoqSessionDO"
+
+[[env.staging.kv_namespaces]]
+binding = "MOQ_TRACK_REGISTRY"
+id = "71be3135439245f69aca7663d1a66b2e"
+
+[[env.staging.r2_buckets]]
+binding = "MOQ_RECORDINGS"
+bucket_name = "wave-stream-assets"

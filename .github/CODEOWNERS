@@ -1,0 +1,16 @@
+# wave-moq-edge code owners
+# All changes require review by oss-maintainers.
+# Spec/protocol changes additionally require @jakefineman.
+
+* @wave-av/oss-maintainers
+
+# Wire protocol implementation — extra review needed
+/index.ts @wave-av/oss-maintainers @jakefineman
+/moq-session-do.ts @wave-av/oss-maintainers @jakefineman
+/__tests__/ @wave-av/oss-maintainers @jakefineman
+
+# Security policy — limited reviewers
+/SECURITY.md @jakefineman
+
+# License — extreme caution
+/LICENSE @jakefineman

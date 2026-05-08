@@ -1,0 +1,26 @@
+{
+  "name": "@wave-av/moq-edge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WAVE Media-over-QUIC edge relay — Cloudflare Worker + Durable Object implementation of IETF draft-07 MoQ Transport. Acts as a sub-second-latency CDN-on-CDN: customer encoders publish tracks via WebTransport, viewers subscribe globally with QUIC-native multiplexing.",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "deploy:staging": "wrangler deploy --env staging",
+    "deploy:production": "wrangler deploy --env production",
+    "dev": "wrangler dev",
+    "test": "vitest run __tests__/",
+    "typecheck": "tsc --noEmit",
+    "tail": "wrangler tail moq-edge-production --format pretty"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "wrangler": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
