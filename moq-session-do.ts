@@ -8,7 +8,8 @@
  *   - cache of last N groups for late-joiners
  *
  * This is the WEEK-1 scaffold (does state + WebTransport upgrade plumbing).
- * Week 2 fills in real MoQ draft-07 message handling per the IETF spec.
+ * Week 2 fills in real MoQ wire-protocol message handling per the IETF spec
+ * (currently targeting draft-17, with version negotiation accepting down to draft-07).
  *
  * The previous moq-session-do.ts (now .broken-2026-05-07) was Python-to-TS
  * conversion artifacts — discarded so we can build clean against current

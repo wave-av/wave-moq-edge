@@ -2,7 +2,8 @@
 /**
  * WAVE MoQ Edge Relay — Cloudflare Worker entry point
  *
- * Implements IETF draft-07 MoQ Transport (https://datatracker.ietf.org/doc/html/draft-ietf-moq-transport-07)
+ * Implements IETF MoQ Transport (https://datatracker.ietf.org/doc/draft-ietf-moq-transport/).
+ * Currently advertises preferred=draft-17 with negotiation matrix draft-07..draft-17.
  * Acts as a publish/subscribe relay for sub-second live media at the edge.
  *
  * Routing:

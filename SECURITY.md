@@ -12,10 +12,10 @@ Email [security@wave.online](mailto:security@wave.online).
 
 We patch security issues on the latest minor version aligned with the current MoQ draft. Older draft alignments are EOL when the next draft ships.
 
-| Version | MoQ draft | Status |
-|---|---|---|
-| 0.x | draft-07 | Supported |
-| (future) 1.x | draft-08 | Will replace 0.x |
+| Version | MoQ draft (preferred) | Negotiation range | Status |
+|---|---|---|---|
+| 0.x | draft-17 | draft-07 .. draft-17 | Supported |
+| (future) 1.x | draft-20+ | drops drafts < 12 | Will replace 0.x |
 
 ## Threat model
 
@@ -44,7 +44,7 @@ We **do not** treat as in-scope:
 
 ## Out-of-scope known issues
 
-- The wire protocol implementation is currently a **scaffold** for interop framework testing. Full draft-07 compliance is on the roadmap. Spec drift bugs in this period are tracked publicly and not treated as security issues unless they enable cross-tenant data leakage.
+- The wire protocol implementation is currently a **scaffold** for interop framework testing. Full draft-17 compliance is on the roadmap (version negotiation is in place; message framing/object headers/FETCH/GROUP semantics ship in 0.2.x). Spec drift bugs in this period are tracked publicly and not treated as security issues unless they enable cross-tenant data leakage.
 
 ## Hall of fame
 

@@ -90,9 +90,9 @@ Validate the token in your own auth layer before forwarding the request — this
 intentionally does not ship an auth service.
 
 **Where does the wire protocol implementation live?** Currently a scaffold. The full
-`draft-07` wire protocol implementation tracks against `__tests__/` once those are
-restored. Until then, treat this as a publish/subscribe HTTP API with WebTransport
-upgrade semantics.
+wire protocol implementation (targeting `draft-17`, accepting down to `draft-07` in
+version negotiation) tracks against `__tests__/` once those are restored. Until then,
+treat this as a publish/subscribe HTTP API with WebTransport upgrade semantics.
 
 **Is this production-ready?** moq-edge powers WAVE's internal traffic. The public API
 shape is stable; the wire-level implementation completes in v1.x. Production users

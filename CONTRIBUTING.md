@@ -58,7 +58,7 @@ By contributing, you agree your contribution will be released under the [MIT Lic
 
 ## Versioning
 
-moq-edge follows semantic versioning aligned with the underlying MoQ draft version. v0.x maps to draft-07; future major versions track newer drafts as they ship.
+moq-edge follows semantic versioning. v0.x advertises preferred=draft-17 with a negotiation matrix accepting draft-07..draft-17 (CF historically supported a subset of draft-07, so we hold the floor for cross-platform interop). Major version bumps track significant breaking changes in newer drafts as they ship.
 
 ## Questions
 

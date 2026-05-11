@@ -2,7 +2,7 @@
   "name": "@wave-av/moq-edge",
   "version": "0.1.0",
   "private": true,
-  "description": "WAVE Media-over-QUIC edge relay — Cloudflare Worker + Durable Object implementation of IETF draft-07 MoQ Transport. Acts as a sub-second-latency CDN-on-CDN: customer encoders publish tracks via WebTransport, viewers subscribe globally with QUIC-native multiplexing.",
+  "description": "WAVE Media-over-QUIC edge relay — Cloudflare Worker + Durable Object implementation of IETF MoQ Transport (advertises draft-17, negotiates down to draft-07). Acts as a sub-second-latency CDN-on-CDN: customer encoders publish tracks via WebTransport, viewers subscribe globally with QUIC-native multiplexing.",
   "type": "module",
   "main": "index.ts",
   "scripts": {

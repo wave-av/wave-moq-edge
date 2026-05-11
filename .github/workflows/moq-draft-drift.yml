@@ -1,0 +1,26 @@
+name: MoQ draft drift
+
+on:
+  pull_request:
+    paths:
+      - "wrangler.toml"
+      - "**/*.ts"
+      - "**/*.md"
+      - "package.json"
+      - "scripts/check-moq-draft-version.sh"
+      - ".github/workflows/moq-draft-drift.yml"
+  push:
+    branches: [main]
+  schedule:
+    # Weekly drift check — alerts if IETF advances past our pinned current
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  drift:
+    name: Check MoQ Transport draft version drift
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Run drift check
+        run: bash scripts/check-moq-draft-version.sh --ci

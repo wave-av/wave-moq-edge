@@ -14,14 +14,24 @@ semantic versioning aligned with the IETF MoQ draft revision.
   wave-av/wave-moq-edge (public mirror) on every staging/main push to
   workers/moq-edge/
 - `examples/quick-start.md` for first-time deploy walkthrough
+- **MoQ draft-version negotiation matrix**: advertised draft range now
+  draft-07..draft-17, preferred=draft-17 (latest IETF working draft as of
+  2026-05-11, expires 2026-09-03). Replaces the previous draft-07-only stance.
 
 ### Changed
 - README rewritten in WAVE writing-craft voice (specificity, parallel structure,
   concrete imagery)
+- **Preferred MoQ draft bumped 07 → 17** (2026-05-11). All references in README,
+  package.json description, wrangler.toml env vars, index.ts module docstring,
+  moq-session-do.ts scaffold comments, SECURITY.md, CONTRIBUTING.md, and
+  examples/quick-start.md updated. Wire IDs (0xff000007..0xff000011) match
+  draft-17 §6.2 version-string encoding.
 
 ### Pending
-- Real `draft-07` wire-protocol implementation (currently scaffold; tests
-  quarantined in `__tests__.broken-2026-05-07/` pending v2)
+- Real wire-protocol implementation targeting draft-17 (currently scaffold; tests
+  quarantined in `__tests__.broken-2026-05-07/` pending v2). The draft-17 message
+  framing (OBJECT_DATAGRAM, SUBSCRIBE, FETCH, GROUP_HEADER) is what 0.2.x will
+  ship; the version-negotiation layer is in place now.
 - Protocol adapters: WebRTC↔MoQ, SRT↔MoQ, HLS-LL↔MoQ
 - Live demo at moq-demo.wave.online (Phase 1 landing shipped 2026-05-08)
 
