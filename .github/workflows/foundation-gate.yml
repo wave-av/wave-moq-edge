@@ -1,0 +1,18 @@
+name: foundation-gate
+
+# Inherits wave-foundation's shared gate (secret-scan + file-size + skill-validate). Single source
+# of truth: edit the gate in wave-av/wave-foundation; this repo inherits it. Pinned to a released tag.
+# Bump the tag deliberately. See wave-foundation/CONSUME.md.
+on:
+  pull_request:
+  push:
+    branches: [master, main]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    uses: wave-av/wave-foundation/.github/workflows/checks.yml@v1.0.0
+    with:
+      max_lines: 800
