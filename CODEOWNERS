@@ -1,0 +1,10 @@
+# Code ownership — auto-requests review from owners on matching paths.
+# Complements the AI reviewers with a human routing layer. Added by Sub-Project F (F6).
+# Routed to the streaming/edge owner.
+
+# Default owner
+* @wave-av/streaming-team
+
+# Governance surfaces — never change without an owner's review.
+/.github/                @wave-av/streaming-team
+/.foundation-version     @wave-av/streaming-team
