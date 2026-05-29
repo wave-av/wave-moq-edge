@@ -46,7 +46,7 @@ bucket_name = "wave-moq-recordings"  # TODO(Phase-B): wrangler r2 bucket create 
 # Production
 [env.production]
 name = "moq-edge-production"
-route = { pattern = "moq-edge.wave.online/*", zone_name = "wave.online" }
+route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
 
 [env.production.vars]
 ENVIRONMENT = "production"
@@ -71,7 +71,7 @@ bucket_name = "wave-moq-recordings-production"  # TODO(Phase-B): wrangler r2 buc
 # Staging
 [env.staging]
 name = "moq-edge-staging"
-route = { pattern = "moq-edge-staging.wave.online/*", zone_name = "wave.online" }
+route = { pattern = "moq-staging.wave.online/*", zone_name = "wave.online" }
 
 [env.staging.vars]
 ENVIRONMENT = "staging"
