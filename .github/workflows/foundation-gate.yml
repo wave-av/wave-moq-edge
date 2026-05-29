@@ -3,8 +3,9 @@
 # inherits it via the moving major tag @v1 (non-breaking v1.x updates auto-apply). Pin to an exact
 # @vX.Y.Z (or SHA) to freeze. See wave-foundation/CONSUME.md.
 #
-# Added by Sub-Project F (F6) to govern this public mirror — was previously unprotected, the same
-# gap that caused the wave-moq-edge divergence.
+# Added by Sub-Project F (F6) to govern this public repo — which was previously an unprotected
+# auto-mirror, the same gap that caused the wave-moq-edge divergence. As of the Track C Phase-A
+# canonical-flip this repo is the source of truth (not a mirror), so the gate runs on PRs here.
 name: foundation-gate
 
 on:

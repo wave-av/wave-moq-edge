@@ -6,13 +6,22 @@ semantic versioning aligned with the IETF MoQ draft revision.
 
 ## [Unreleased]
 
+### Changed (Track C Phase-A — canonical-flip)
+- **This repo is now the canonical source of truth for MoQ edge**, no longer a
+  read-only auto-mirror of `wave-surfer-connect/workers/moq-edge`. PRs land here.
+  Removed `.SYNC_META`; the WSC→mirror sync coupling is retired (WSC `workers/moq-edge`
+  is being deleted per the Protocol Plane spec §4). Added `.foundation-version` pin.
+- **Compiles standalone now.** Vendored the previously-missing `../shared/wave-public-html`
+  dependency into `src/shared/wave-public-html.ts` (the import the auto-mirror never
+  carried), added `tsconfig.json`, and pinned real dependency versions in place of the
+  `catalog:` workspace references that only resolved inside the WSC monorepo.
+- **wrangler.toml**: real `account_id` (wave-av); KV/R2 bindings documented with clearly
+  labelled `TODO(Phase-B)` placeholders. No top-level live route (dry-run only).
+
 ### Added
 - Public OSS scaffolding: LICENSE, CONTRIBUTING.md, SECURITY.md, CODEOWNERS,
   GitHub Actions CI, Dependabot, issue + PR templates, brand-voice README
 - Branded HTML landing page at `GET /` using the WAVE public-HTML template
-- Auto-mirror workflow from wave-av/wave-surfer-connect (private source) to
-  wave-av/wave-moq-edge (public mirror) on every staging/main push to
-  workers/moq-edge/
 - `examples/quick-start.md` for first-time deploy walkthrough
 - **MoQ draft-version negotiation matrix**: advertised draft range now
   draft-07..draft-17, preferred=draft-17 (latest IETF working draft as of
