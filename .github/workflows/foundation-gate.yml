@@ -8,6 +8,9 @@
 # v1.x bump (no consume-not-copy here; this is the one repo where the consume path is
 # structurally impossible).
 #
+# Added by Sub-Project F (F6) to govern this public repo. As of the Track C Phase-A canonical-
+# flip this repo is the source of truth (not a mirror), so the gate runs on PRs here.
+#
 # Required check names ("gate / checks" + "gate / skill-validate") resolve from the outer job
 # "gate" + the inner job names "checks" + "skill-validate" in `_checks.yml` — same shape branch
 # protection has been requiring all along.

@@ -3,19 +3,30 @@ name = "moq-edge"
 main = "index.ts"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
-account_id = "REPLACE_WITH_YOUR_CF_ACCOUNT_ID"
+# wave-av Cloudflare account (canonical; set during Phase-A canonical-flip).
+account_id = "d674452f756fe46885a0d6ce7bc23f0a"
 
 # WAVE MoQ Edge Relay — IETF MoQ Transport over WebTransport (HTTP/3)
 # Advertises preferred=draft-17 with negotiation matrix accepting down to draft-07.
 # Customer encoders publish via POST /v1/publish/<namespace>/<track>
 # Viewers subscribe via WebTransport at /v1/subscribe/<namespace>/<track>
 # State + fan-out lives in MoqSession Durable Object (one per session)
+#
+# ── Binding provisioning (Phase-A canonical-flip) ────────────────────────────
+# The KV id + R2 bucket_name below are TODO_* placeholders so the config is valid
+# enough for `wrangler deploy --dry-run`. They are NOT real resource ids. Before
+# any real deploy (Phase-B), create the resources and paste the returned ids:
+#   wrangler kv namespace create MOQ_TRACK_REGISTRY        # → put id in [[kv_namespaces]]
+#   wrangler r2 bucket create wave-moq-recordings          # → put name in [[r2_buckets]]
+# Do these per-env (top-level = dev, plus [env.staging] / [env.production]).
+# No top-level `route` is set on purpose (Phase-A is dry-run only; routes live
+# under [env.staging] / [env.production] and only bind when deploying that env).
 
 [observability]
 enabled = true
 head_sampling_rate = 1.0
 
-# Top-level (used by `wrangler dev`):
+# Top-level (used by `wrangler dev` + `wrangler deploy --dry-run`):
 [[durable_objects.bindings]]
 name = "MOQ_SESSIONS"
 class_name = "MoqSessionDO"
@@ -26,16 +37,16 @@ new_sqlite_classes = ["MoqSessionDO"]
 
 [[kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "TODO_KV_NAMESPACE_ID"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY
 
 [[r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
+bucket_name = "wave-moq-recordings"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings
 
 # Production
 [env.production]
 name = "moq-edge-production"
-route = { pattern = "moq-edge.wave.online/*", zone_name = "wave.online" }
+route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
 
 [env.production.vars]
 ENVIRONMENT = "production"
@@ -51,16 +62,16 @@ class_name = "MoqSessionDO"
 
 [[env.production.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "TODO_KV_NAMESPACE_ID_PRODUCTION"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY --env production
 
 [[env.production.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
+bucket_name = "wave-moq-recordings-production"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings-production
 
 # Staging
 [env.staging]
 name = "moq-edge-staging"
-route = { pattern = "moq-edge-staging.wave.online/*", zone_name = "wave.online" }
+route = { pattern = "moq.staging.wave.online/*", zone_name = "wave.online" }
 
 [env.staging.vars]
 ENVIRONMENT = "staging"
@@ -76,8 +87,8 @@ class_name = "MoqSessionDO"
 
 [[env.staging.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "TODO_KV_NAMESPACE_ID_STAGING"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY --env staging
 
 [[env.staging.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "REPLACE_WITH_YOUR_R2_BUCKET"
+bucket_name = "wave-moq-recordings-staging"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings-staging

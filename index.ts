@@ -27,7 +27,7 @@
 import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
-import { wavePublicPage, wavePublicErrorResponse } from '../shared/wave-public-html';
+import { wavePublicPage, wavePublicErrorResponse } from './src/shared/wave-public-html';
 
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
@@ -263,9 +263,9 @@ GET    /metrics                            Prometheus exposition</pre>
       </ul>
 
       <h2 style="font-size:1.4rem;margin-top:32px;margin-bottom:12px">Open source</h2>
-      <p>moq-edge ships under MIT. Source mirrored at
-        <a href="https://github.com/wave-av/wave-moq-edge" rel="noopener">github.com/wave-av/wave-moq-edge</a>
-        (Q3 2026). Spec compliance reports + interop testing welcome.</p>
+      <p>moq-edge ships under MIT. Canonical source at
+        <a href="https://github.com/wave-av/wave-moq-edge" rel="noopener">github.com/wave-av/wave-moq-edge</a>.
+        Spec compliance reports + interop testing welcome.</p>
     `,
     ogImage: 'https://wave.online/og/moq-edge.png',
   });
