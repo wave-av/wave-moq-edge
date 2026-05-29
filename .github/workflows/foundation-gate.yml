@@ -1,10 +1,17 @@
-# foundation-gate.yml — inherits wave-foundation's shared gate (secret-scan + file-size +
-# skill-validate). Single source of truth: edit the gate in wave-av/wave-foundation; this repo
-# inherits it via the moving major tag @v1 (non-breaking v1.x updates auto-apply). Pin to an exact
-# @vX.Y.Z (or SHA) to freeze. See wave-foundation/CONSUME.md.
+# foundation-gate.yml — calls the INLINED checks at ./.github/workflows/_checks.yml.
 #
-# Added by Sub-Project F (F6) to govern this public mirror — was previously unprotected, the same
-# gap that caused the wave-moq-edge divergence.
+# WHY INLINED: wave-moq-edge is PUBLIC; wave-av/wave-foundation is PRIVATE. GitHub Actions does
+# NOT permit a public repo to consume a private repo's reusable workflow even with org-level
+# access set to "enterprise" — the call fails in 0s with 0 jobs (workflow_run never starts).
+# We tested this end-to-end; access settings change had no effect. `_checks.yml` mirrors
+# wave-foundation/.github/workflows/checks.yml@v1 (sha 8c9bfdc5f9). Keep them in sync on every
+# v1.x bump (no consume-not-copy here; this is the one repo where the consume path is
+# structurally impossible).
+#
+# Required check names ("gate / checks" + "gate / skill-validate") resolve from the outer job
+# "gate" + the inner job names "checks" + "skill-validate" in `_checks.yml` — same shape branch
+# protection has been requiring all along.
+
 name: foundation-gate
 
 on:
@@ -16,9 +23,7 @@ permissions:
   contents: read
 
 jobs:
-  # The shared gate (secret-scan + file-size + skill-validate). Produces the required checks
-  # "gate / checks" and "gate / skill-validate".
   gate:
-    uses: wave-av/wave-foundation/.github/workflows/checks.yml@v1
+    uses: ./.github/workflows/_checks.yml
     with:
       max_lines: 800
