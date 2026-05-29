@@ -1,0 +1,24 @@
+# foundation-gate.yml — inherits wave-foundation's shared gate (secret-scan + file-size +
+# skill-validate). Single source of truth: edit the gate in wave-av/wave-foundation; this repo
+# inherits it via the moving major tag @v1 (non-breaking v1.x updates auto-apply). Pin to an exact
+# @vX.Y.Z (or SHA) to freeze. See wave-foundation/CONSUME.md.
+#
+# Added by Sub-Project F (F6) to govern this public mirror — was previously unprotected, the same
+# gap that caused the wave-moq-edge divergence.
+name: foundation-gate
+
+on:
+  pull_request:
+  push:
+    branches: [main, master, staging]
+
+permissions:
+  contents: read
+
+jobs:
+  # The shared gate (secret-scan + file-size + skill-validate). Produces the required checks
+  # "gate / checks" and "gate / skill-validate".
+  gate:
+    uses: wave-av/wave-foundation/.github/workflows/checks.yml@v1
+    with:
+      max_lines: 800
