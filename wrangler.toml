@@ -12,15 +12,16 @@ account_id = "d674452f756fe46885a0d6ce7bc23f0a"
 # Viewers subscribe via WebTransport at /v1/subscribe/<namespace>/<track>
 # State + fan-out lives in MoqSession Durable Object (one per session)
 #
-# ── Binding provisioning (Phase-A canonical-flip) ────────────────────────────
-# The KV id + R2 bucket_name below are TODO_* placeholders so the config is valid
-# enough for `wrangler deploy --dry-run`. They are NOT real resource ids. Before
-# any real deploy (Phase-B), create the resources and paste the returned ids:
-#   wrangler kv namespace create MOQ_TRACK_REGISTRY        # → put id in [[kv_namespaces]]
-#   wrangler r2 bucket create wave-moq-recordings          # → put name in [[r2_buckets]]
-# Do these per-env (top-level = dev, plus [env.staging] / [env.production]).
-# No top-level `route` is set on purpose (Phase-A is dry-run only; routes live
-# under [env.staging] / [env.production] and only bind when deploying that env).
+# ── Binding provisioning (Phase-B, 2026-05-29) ──────────────────────────────
+# All CF resources provisioned + IDs pasted below. Worker is now deploy-ready
+# (was dry-run-only). KV namespaces created via CF API; R2 buckets pre-existing.
+#   MOQ_TRACK_REGISTRY_dev         = 6caca0dd121744eb829971ce6293d8b3
+#   MOQ_TRACK_REGISTRY_staging     = 9d6a9ddfcc89478991df8ea1db95b8ba
+#   MOQ_TRACK_REGISTRY_production  = 368824b7a9ba4dbf9d4ce31128c42cd6
+#   wave-moq-recordings{,-staging,-production} — R2 buckets (all exist)
+# Routes still live under [env.staging] / [env.production] (not top-level) —
+# top-level config is dev/dry-run only so `wrangler dev` works without claiming
+# a live hostname.
 
 [observability]
 enabled = true
@@ -37,11 +38,11 @@ new_sqlite_classes = ["MoqSessionDO"]
 
 [[kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "TODO_KV_NAMESPACE_ID"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY
+id = "6caca0dd121744eb829971ce6293d8b3"  # MOQ_TRACK_REGISTRY_dev (top-level = wrangler dev / dry-run)
 
 [[r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-moq-recordings"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings
+bucket_name = "wave-moq-recordings"  # ✓ provisioned (dev/dry-run)
 
 # Production
 [env.production]
@@ -62,11 +63,11 @@ class_name = "MoqSessionDO"
 
 [[env.production.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "TODO_KV_NAMESPACE_ID_PRODUCTION"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY --env production
+id = "368824b7a9ba4dbf9d4ce31128c42cd6"  # MOQ_TRACK_REGISTRY_production
 
 [[env.production.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-moq-recordings-production"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings-production
+bucket_name = "wave-moq-recordings-production"  # ✓ provisioned
 
 # Staging
 [env.staging]
@@ -87,8 +88,8 @@ class_name = "MoqSessionDO"
 
 [[env.staging.kv_namespaces]]
 binding = "MOQ_TRACK_REGISTRY"
-id = "TODO_KV_NAMESPACE_ID_STAGING"  # TODO(Phase-B): wrangler kv namespace create MOQ_TRACK_REGISTRY --env staging
+id = "9d6a9ddfcc89478991df8ea1db95b8ba"  # MOQ_TRACK_REGISTRY_staging
 
 [[env.staging.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-moq-recordings-staging"  # TODO(Phase-B): wrangler r2 bucket create wave-moq-recordings-staging
+bucket_name = "wave-moq-recordings-staging"  # ✓ provisioned
