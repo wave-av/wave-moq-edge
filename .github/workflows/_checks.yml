@@ -1,15 +1,9 @@
-name: foundation checks (inlined)
+name: foundation checks
 
-# Reusable-within-this-repo workflow that runs the same checks as wave-av/wave-foundation@v1.
-# Inlined here because GitHub Actions does NOT permit a PUBLIC repo to consume a PRIVATE reusable
-# workflow, even when org-level access is configured to "enterprise". The reusable-workflow call
-# fails in 0s with 0 jobs (workflow_run never starts).
-#
-# Mirrors wave-foundation/.github/workflows/checks.yml@v1 (commit 8c9bfdc5f9). Keep the two in sync:
-# when wave-foundation v1 bumps, update this file too. Drift is tracked by a sentinel comment so a
-# human review catches it. Same job names ("checks" + "skill-validate") so the parent workflow
-# foundation-gate.yml's "gate / checks" + "gate / skill-validate" required-check names still resolve.
-
+# Reusable cross-project gate (the executable half of wave-foundation). Any WAVE repo runs the same
+# secret-scan + file-size gate by calling this:
+#   jobs: { gate: { uses: wave-av/wave-foundation/.github/workflows/checks.yml@master } }
+# One source of truth -> update here, every repo inherits it (no copying = no drift).
 on:
   workflow_call:
     inputs:
@@ -24,12 +18,15 @@ permissions:
 jobs:
   checks:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           persist-credentials: false
       - name: Secret scan (fail-closed, allowlist-aware)
         run: |
+          # Real-secret patterns. Lines tagged "pragma: allowlist secret" (e.g. test fixtures / regex
+          # definitions) are skipped — that's how a vetting module can define key-shapes without tripping.
           HITS=$(grep -rIEn '(sk-[A-Za-z0-9]{20}|sk_(live|test)_[A-Za-z0-9]{20}|npm_[A-Za-z0-9]{30}|sbp_[a-f0-9]{40}|github_pat_[A-Za-z0-9_]{40}|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30}|AIzaSy[A-Za-z0-9_-]{20}|xai-[A-Za-z0-9]{40}|xoxb-[A-Za-z0-9-]+|-----BEGIN [A-Z ]*PRIVATE KEY)' \
               --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=dist . | grep -v 'allowlist secret' \
               | { [ -f .github/.secret-allowlist ] && grep -vFf .github/.secret-allowlist || cat; } || true)
@@ -41,20 +38,23 @@ jobs:
         run: |
           fail=0
           while IFS= read -r f; do
-            grep -qxF "$f" .github/.filesize-allowlist 2>/dev/null && continue
+            grep -qxF "$f" .github/.filesize-allowlist 2>/dev/null && continue   # justified exception
             n=$(wc -l < "$f")
             if [ "$n" -gt "$MAX" ]; then echo "::error::$f has $n lines (> $MAX)"; fail=1; fi
           done < <(git ls-files '*.ts' '*.tsx' '*.js' '*.py' | grep -vE '\.(types|d)\.ts$')
           if [ "$fail" = 0 ]; then echo "file-size gate passed (all <= $MAX lines)"; fi
           exit "$fail"
-
   skill-validate:
+    # Validates SKILL.md frontmatter in the CALLING repo. Auto-discovers any *SKILL.md; no-op if
+    # the repo has none. Inlined (not a shared script) so consumers need nothing from this repo —
+    # mirrors wave-foundation/scripts/validate-skills.py; keep the two in sync.
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           persist-credentials: false
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.12"
       - run: pip install pyyaml
@@ -64,6 +64,7 @@ jobs:
           import sys, os, re, subprocess
           import yaml
           allf = subprocess.run(["git","ls-files","*SKILL.md"], capture_output=True, text=True).stdout.splitlines()
+          # Only validate invocable skills; skip nested reference/vendored SKILL.md.
           skip = ("/references/", "/_external/", "/_consolidated", "/_archived", "/node_modules/", "/dist/")
           files = [f for f in allf if not any(s in "/" + f for s in skip)]
           if not files:
@@ -101,3 +102,55 @@ jobs:
           print(f"validated {len(files)} skills — {len(errs)} errors")
           sys.exit(1 if errs else 0)
           PY
+  verify-routes:
+    # URL convention enforcement (docs/conventions/url-naming.md).
+    # No-op for repos with no wrangler.toml. Scans `pattern = "..."` and `routes = [...]` lines for
+    # banned patterns: *-edge.wave.online, *.production.wave.online, wave-*.wave.online,
+    # *-staging.wave.online (use sub-subdomain instead). Worker-only fallbacks (*.workers.dev) are
+    # ALLOWED with a warning so dev/preview routes don't trip the gate.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - name: URL convention gate
+        # Reads only file paths from `git ls-files` (repo-controlled, trusted) and host strings
+        # extracted via a CONSTRAINED regex from wrangler.toml (PR-controlled). The regex
+        # `"[a-zA-Z0-9._-]+\.wave\.online[^"]*"` bounds matches between double-quotes; `cut -d/ -f1`
+        # then keeps only the hostname-shaped prefix. Hostnames cannot contain shell metacharacters
+        # under that character class, so the case-glob match is injection-safe. No `${{ github.* }}`
+        # interpolation is used anywhere in this step (only shell vars + `-F` literal grep). Files
+        # are iterated via `while read` to handle paths with spaces safely.
+        run: |
+          fail=0
+          any=0
+          while IFS= read -r f; do
+            any=1
+            # Extract host portion (everything before the first /) from `pattern = "host/..."` lines.
+            # Handles both inline-string `pattern = "..."` and `routes = ["a.wave.online/*", ...]`.
+            while IFS= read -r h; do
+              [ -z "$h" ] && continue
+              case "$h" in
+                *-edge.wave.online)
+                  echo "::error file=$f::URL '$h' uses banned -edge suffix (see docs/conventions/url-naming.md)"; fail=1 ;;
+                *.production.wave.online)
+                  echo "::error file=$f::URL '$h' uses banned .production. (production is the default)"; fail=1 ;;
+                wave-*.wave.online)
+                  echo "::error file=$f::URL '$h' uses banned wave- prefix (redundant on wave.online)"; fail=1 ;;
+                *-staging.wave.online)
+                  echo "::error file=$f::URL '$h' uses banned -staging suffix (use <proto>.staging.wave.online sub-subdomain)"; fail=1 ;;
+                *.staging.wave.online)
+                  echo "::notice file=$f::staging URL $h ✓" ;;
+                *.dev.wave.online)
+                  echo "::notice file=$f::dev URL $h ✓" ;;
+                *.wave.online)
+                  echo "::notice file=$f::prod URL $h ✓" ;;
+                *)
+                  echo "::warning file=$f::URL $h unrecognized — verify against docs/conventions/url-naming.md" ;;
+              esac
+            done < <(grep -oE '"[a-zA-Z0-9._-]+\.wave\.online[^"]*"' "$f" 2>/dev/null | tr -d '"' | cut -d/ -f1 | sort -u)
+          done < <(git ls-files '*wrangler.toml' 'wrangler*.toml')
+          if [ "$any" = 0 ]; then echo "no wrangler.toml — verify-routes is a no-op"; exit 0; fi
+          if [ "$fail" = 0 ]; then echo "verify-routes passed"; fi
+          exit "$fail"
