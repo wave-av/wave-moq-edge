@@ -43,6 +43,8 @@ export interface WavePublicPageOptions {
   children?: string;
   /** og:image URL for social cards. */
   ogImage?: string;
+  /** Brand accent hex — links, focus ring, wordmark dot, operational pill. Defaults to the WAVE MoQ accent #00d4d5. */
+  accent?: string;
 }
 
 const STATUS_LABEL: Record<WaveStatus, string> = {
@@ -93,10 +95,10 @@ const BASE_CSS = `
     font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-  a { color: #79c0ff; text-decoration: none; }
+  a { color: var(--acc); text-decoration: none; }
   a:hover { text-decoration: underline; }
   a:focus-visible, button:focus-visible {
-    outline: 2px solid #79c0ff; outline-offset: 2px; border-radius: 4px;
+    outline: 2px solid var(--acc); outline-offset: 2px; border-radius: 4px;
   }
   .skip-link {
     position: absolute; left: -999px; top: 0; padding: 8px 16px;
@@ -105,7 +107,7 @@ const BASE_CSS = `
   .skip-link:focus { left: 8px; top: 8px; }
   main { max-width: 880px; margin: 0 auto; padding: 48px 24px 96px; }
   .wordmark { font-weight: 800; letter-spacing: -0.02em; font-size: 1.1rem; color: #e6edf3; }
-  .wordmark .dot { color: #43d9ad; }
+  .wordmark .dot { color: var(--acc); }
   h1 { font-size: 2.2rem; line-height: 1.15; margin: 24px 0 8px; letter-spacing: -0.02em; }
   .subtitle { color: #9aa7b2; font-size: 1.05rem; margin: 0 0 24px; max-width: 64ch; }
   .pill {
@@ -133,7 +135,9 @@ const BASE_CSS = `
  */
 export function wavePublicPage(opts: WavePublicPageOptions): string {
   const status = opts.status ?? 'operational';
-  const statusColor = STATUS_COLOR[status];
+  const accent = opts.accent ?? '#00d4d5';
+  // Operational state wears the brand accent; non-nominal states keep their semantic colour.
+  const statusColor = status === 'operational' ? accent : STATUS_COLOR[status];
   const statusLabel = STATUS_LABEL[status];
   const canonicalTag = opts.canonical
     ? `<link rel="canonical" href="${esc(opts.canonical)}" /><meta property="og:url" content="${esc(opts.canonical)}" />`
@@ -154,7 +158,8 @@ export function wavePublicPage(opts: WavePublicPageOptions): string {
   <meta property="og:type" content="website" />
   ${canonicalTag}
   ${ogImageTag}
-  <style>${BASE_CSS}</style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>:root{--acc:${accent}}${BASE_CSS}</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

@@ -32,6 +32,11 @@ import { wavePublicPage, wavePublicErrorResponse } from './src/shared/wave-publi
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
 
+// The shared WAVE curled-wave mark, flat-filled to the MoQ accent (#00d4d5 — accent-wheel.md
+// streaming family, oklch(0.78 0.15 195)). Mark path is verbatim from the foundation favicon
+// template; the fill is hex (standalone favicons can't rely on oklch()).
+const MOQ_FAVICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 102"><title>WAVE</title><g transform="translate(-55.797,177.088) scale(0.024,-0.024)" fill="#00d4d5" stroke="none"><path d="M5055 7373 c-222 -26 -372 -59 -559 -123 -542 -184 -1021 -519 -1397 -980 -438 -535 -683 -1114 -761 -1795 -24 -207 -13 -775 14 -775 16 0 217 123 368 224 359 241 729 567 1156 1017 466 491 757 732 1081 897 247 126 458 178 683 169 277 -11 487 -99 680 -284 194 -184 305 -402 333 -650 38 -343 -148 -743 -438 -943 -262 -180 -592 -170 -791 25 -141 140 -188 357 -125 582 25 86 99 256 135 309 14 21 24 39 22 41 -6 7 -129 -83 -203 -149 -177 -156 -306 -352 -369 -563 -24 -79 -28 -107 -28 -230 0 -160 13 -220 74 -352 124 -265 364 -476 660 -581 155 -55 236 -67 435 -66 150 0 196 4 274 22 291 69 536 208 762 432 301 297 482 651 560 1095 19 105 23 167 23 325 1 259 -25 431 -100 680 -83 272 -251 577 -453 820 -434 523 -1196 868 -1896 858 -60 0 -123 -3 -140 -5z"/></g></svg>`;
+
 interface Env {
   MOQ_SESSIONS: DurableObjectNamespace;
   MOQ_TRACK_REGISTRY: KVNamespace;
@@ -237,6 +242,7 @@ async function handleHtmlRoot(env: Env, request: Request): Promise<Response> {
     title: 'MoQ relay',
     subtitle: 'Sub-second live media at the edge. IETF draft-ietf-moq-transport-07. Built by WAVE Online.',
     status: 'operational',
+    accent: '#00d4d5',
     canonical: `https://${request.headers.get('host') ?? 'moq.wave.online'}/`,
     stats: [
       { label: 'Active tracks', value: trackCount.toString(), mono: true },
@@ -311,6 +317,17 @@ export default {
       // Branded HTML landing (browser navigations to GET /)
       if (path === '/' && request.method === 'GET') {
         return handleHtmlRoot(env, request);
+      }
+
+      // Branded wave-mark favicon (the shared WAVE mark, flat-filled to the MoQ accent)
+      if (path === '/favicon.svg' && request.method === 'GET') {
+        return new Response(MOQ_FAVICON_SVG, {
+          headers: {
+            'content-type': 'image/svg+xml',
+            'cache-control': 'public, max-age=86400',
+            'x-wave-surface': 'moq-edge-public',
+          },
+        });
       }
 
       // Health + metrics
