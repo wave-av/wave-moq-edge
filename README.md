@@ -2,7 +2,7 @@
 
 > **Canonical repository.** This repo is the source of truth for WAVE MoQ edge — it is **no longer an auto-mirror** of `wave-surfer-connect/workers/moq-edge`. Open PRs **here**, not against WSC. (The WSC `workers/moq-edge` directory is being retired per the WAVE Protocol Plane spec.)
 
-**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) (currently advertising draft-07 through draft-17 in version negotiation; tracks the WG actively). Publish a track. Subscribe to it. Globally distributed in under 100ms.
+**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) (currently advertising draft-07 through draft-18 in version negotiation; tracks the WG actively). Publish a track. Subscribe to it. Globally distributed in under 100ms.
 
 ```
 POST   /v1/publish/:namespace/:track       Become a publisher
@@ -62,12 +62,12 @@ See [`examples/quick-start.md`](./examples/quick-start.md) for a full walkthroug
 
 ## Spec compliance
 
-moq-edge tracks the IETF draft. v0.x advertises a negotiation matrix from draft-17 (current IETF working draft, expires 2026-09-03) down to draft-07 (Cloudflare's historic subset support floor):
+moq-edge tracks the IETF draft. v0.x advertises a negotiation matrix from draft-18 (current IETF working draft) down to draft-07 (Cloudflare's historic subset support floor):
 
 | Release | Preferred draft | Negotiation range | Status |
 |---|---|---|---|
-| 0.x | draft-17 | draft-07 .. draft-17 | Current |
-| (planned) 1.x | draft-18+ | drops drafts < 12 | Future |
+| 0.x | draft-18 | draft-07 .. draft-18 | Current |
+| (planned) 1.x | draft-19+ | drops drafts < 12 | Future |
 
 Compliance tests live in `__tests__/`. Interop reports welcome — file an issue with your client implementation, transport, and findings.
 
@@ -107,8 +107,8 @@ name = "moq-edge"
 main = "index.ts"
 
 [vars]
-MOQ_DRAFT_PREFERRED = "draft-17"
-MOQ_DRAFT_SUPPORTED = "draft-17,draft-16,draft-15,draft-14,draft-13,draft-12,draft-11,draft-10,draft-09,draft-08,draft-07"
+MOQ_DRAFT_PREFERRED = "draft-18"
+MOQ_DRAFT_SUPPORTED = "draft-18,draft-17,draft-16,draft-15,draft-14,draft-13,draft-12,draft-11,draft-10,draft-09,draft-08,draft-07"
 MAX_SUBSCRIBERS_PER_TRACK = "1000"
 MAX_OBJECT_SIZE_BYTES = "1048576"  # 1MB
 
@@ -127,8 +127,8 @@ bucket_name = "<your-r2-bucket>"
 
 ## Roadmap
 
-- **0.1.x** (current): scaffold, HTTP API, DO pattern, KV/R2 bindings, catalog endpoint, draft-17 advertised in version negotiation
-- **0.2.x**: real wire protocol over WebTransport QUIC streams (draft-17 message types, object headers, GROUP/SUBGROUP framing)
+- **0.1.x** (current): scaffold, HTTP API, DO pattern, KV/R2 bindings, catalog endpoint, draft-18 advertised in version negotiation
+- **0.2.x**: real wire protocol over WebTransport QUIC streams (draft-18 message types, object headers, GROUP/SUBGROUP framing)
 - **0.3.x**: protocol adapters (WebRTC↔MoQ, SRT↔MoQ, HLS-LL↔MoQ)
 - **0.4.x**: public live demo at [moq-demo.wave.online](https://moq-demo.wave.online), reference clients
 - **1.0**: GA when draft-20+ ships, full interop testing complete, working group consensus on stable framing

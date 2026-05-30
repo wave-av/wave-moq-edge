@@ -90,7 +90,7 @@ Validate the token in your own auth layer before forwarding the request — this
 intentionally does not ship an auth service.
 
 **Where does the wire protocol implementation live?** Currently a scaffold. The full
-wire protocol implementation (targeting `draft-17`, accepting down to `draft-07` in
+wire protocol implementation (targeting `draft-18`, accepting down to `draft-07` in
 version negotiation) tracks against `__tests__/` once those are restored. Until then,
 treat this as a publish/subscribe HTTP API with WebTransport upgrade semantics.
 

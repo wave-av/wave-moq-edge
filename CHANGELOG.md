@@ -28,6 +28,12 @@ semantic versioning aligned with the IETF MoQ draft revision.
   2026-05-11, expires 2026-09-03). Replaces the previous draft-07-only stance.
 
 ### Changed
+- **Preferred MoQ draft bumped 17 → 18** (2026-05-30). IETF published
+  draft-ietf-moq-transport-18; the negotiation matrix is now draft-07..draft-18,
+  preferred=draft-18. Updated wrangler.toml (staging + production vars),
+  scripts/check-moq-draft-version.sh (`CURRENT_DRAFT_NUM=18`), index.ts module
+  docstring + landing subtitle (now reads `MOQ_DRAFT_VERSION` from env instead of
+  hardcoding draft-07), moq-session-do.ts, README.md, CONTRIBUTING.md, SECURITY.md.
 - README rewritten in WAVE writing-craft voice (specificity, parallel structure,
   concrete imagery)
 - **Preferred MoQ draft bumped 07 → 17** (2026-05-11). All references in README,

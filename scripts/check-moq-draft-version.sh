@@ -20,7 +20,7 @@ if [[ "${1:-}" == "--ci" ]]; then CI_MODE=1; fi
 REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 cd "$REPO_ROOT"
 
-CURRENT_DRAFT_NUM=17  # IETF current draft (verified 2026-05-11)
+CURRENT_DRAFT_NUM=18  # IETF current draft (verified 2026-05-30)
 
 WRANGLER="wrangler.toml"
 if [[ ! -f "$WRANGLER" ]]; then
@@ -45,7 +45,7 @@ if [[ "$DECLARED" -lt "$CURRENT_DRAFT_NUM" ]]; then
 fi
 
 # Allowlist: legitimate negotiation refs to draft-07 stay, plus this script + research notes
-ALLOWLIST_REGEX='draft-07 \.\. draft-17|draft-07,draft-08|"draft-07"|7,8,9|MOQ_DRAFT_SUPPORTED|check-moq-draft-version\.sh|CHANGELOG|negotiation range'
+ALLOWLIST_REGEX='draft-07 \.\. draft-1[78]|draft-07,draft-08|"draft-07"|7,8,9|MOQ_DRAFT_SUPPORTED|check-moq-draft-version\.sh|CHANGELOG|negotiation range'
 
 VIOLATIONS=$(grep -rEn 'draft-ietf-moq-transport-0[0-6]|draft-0[0-6][^0-9]' \
   --include='*.md' --include='*.ts' --include='*.toml' --include='*.json' \
