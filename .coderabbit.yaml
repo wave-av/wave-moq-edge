@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# CodeRabbit base configuration (generic). Harvested from wave-surfer-connect with all
+# WAVE-specific custom_checks/path_instructions/refs stripped. Consumers add their own
+# path_instructions + custom_checks on top. Docs: https://docs.coderabbit.ai
+language: en-US
+
+reviews:
+  auto_review:
+    enabled: true
+    base_branches:
+      - main
+      - master
+      - develop
+      - "release/*"
+      - "hotfix/*"
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+      - "[DRAFT]"
+      - "[SKIP CI]"
+    drafts: false
+
+  # Automated reviewer: on a clean review CodeRabbit posts an approving GitHub review, which satisfies
+  # branch protection's required-review (the one missing link — automerge.yml then merges labeled PRs
+  # once required checks are green). enforce_admins stays ON; nothing is bypassed. Safety lines below
+  # keep the high-blast-radius classes human-reviewed.
+  auto_approve:
+    enabled: true
+    conditions:
+      # Raised from 5/100 so normal code/doc/template PRs flow; the foundation file-size gate (≤800)
+      # is the real size discipline, so mirror it here.
+      max_changed_files: 25
+      max_lines_changed: 800
+      allowed_severities:
+        - low
+        - medium
+    # NEVER auto-approve these — they always get a human:
+    #   workflows  (a CI change can exfiltrate secrets / weaken gates)
+    #   env/secret files
+    #   deploy/infra config (wrangler) — production-cutover class
+    excluded_paths:
+      - ".github/workflows/**"
+      - "**/.env*"
+      - "**/wrangler.toml"
+      - "**/wrangler.jsonc"
+
+  review_status: true
+  request_changes_workflow: false
+  profile: chill
+  high_level_summary: true
+  high_level_summary_placeholder: "@coderabbitai summary"
+  poem: false
+  collapse_walkthrough: true
+  changed_files_summary: true
+  sequence_diagrams: true
+
+  path_filters:
+    - "!**/*.lock"
+    - "!**/generated/**"
+    - "!**/node_modules/**"
+    - "!**/dist/**"
+    - "!**/build/**"
+    - "!**/out/**"
+    - "!**/coverage/**"
+    - "!**/__snapshots__/**"
+    - "!**/*.min.js"
+    - "!**/*.min.css"
+    - "!**/*.png"
+    - "!**/*.jpg"
+    - "!**/*.svg"
+    - "!**/*.woff2"
+    - "!**/*.mp4"
+
+  labeling_instructions:
+    - label: "security"
+      instructions: "Apply when changes affect authentication, authorization, secrets, or security headers."
+    - label: "breaking-change"
+      instructions: "Apply when changes break backward compatibility or require client updates."
+    - label: "size/M"
+      instructions: "Apply when PR has 50-200 lines changed."
+    - label: "size/L"
+      instructions: "Apply when PR has 200-500 lines changed."
+    - label: "size/XL"
+      instructions: "Apply when PR has >500 lines changed."
+
+  # Open-source analyzers CodeRabbit runs as part of review.
+  tools:
+    gitleaks:
+      enabled: true
+    semgrep:
+      enabled: true
+    osv-scanner:
+      enabled: true
+    shellcheck:
+      enabled: true
+    yamllint:
+      enabled: true
+    markdownlint:
+      enabled: true
+    actionlint:
+      enabled: true
+    ruff:
+      enabled: true
+    ast-grep:
+      enabled: true
+      packages:
+        - "ast-grep-essentials"
+    github_checks:
+      enabled: true
+      timeout_ms: 900000
+
+knowledge_base:
+  code_guidelines:
+    enabled: true
+  learnings:
+    scope: auto
