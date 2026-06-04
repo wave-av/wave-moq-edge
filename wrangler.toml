@@ -7,7 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 account_id = "d674452f756fe46885a0d6ce7bc23f0a"
 
 # WAVE MoQ Edge Relay — IETF MoQ Transport over WebTransport (HTTP/3)
-# Advertises preferred=draft-17 with negotiation matrix accepting down to draft-07.
+# Advertises preferred=draft-18 with negotiation matrix accepting down to draft-07.
 # Customer encoders publish via POST /v1/publish/<namespace>/<track>
 # Viewers subscribe via WebTransport at /v1/subscribe/<namespace>/<track>
 # State + fan-out lives in MoqSession Durable Object (one per session)
@@ -51,8 +51,8 @@ route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
 
 [env.production.vars]
 ENVIRONMENT = "production"
-MOQ_DRAFT_VERSION = "17"
-MOQ_DRAFT_SUPPORTED = "17,16,15,14,13,12,11,10,9,8,7"
+MOQ_DRAFT_VERSION = "18"
+MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "10000"
 MAX_OBJECT_SIZE_BYTES = "16777216"  # 16 MiB
 LOG_LEVEL = "info"
@@ -76,8 +76,8 @@ route = { pattern = "moq.staging.wave.online/*", zone_name = "wave.online" }
 
 [env.staging.vars]
 ENVIRONMENT = "staging"
-MOQ_DRAFT_VERSION = "17"
-MOQ_DRAFT_SUPPORTED = "17,16,15,14,13,12,11,10,9,8,7"
+MOQ_DRAFT_VERSION = "18"
+MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "1000"
 MAX_OBJECT_SIZE_BYTES = "16777216"
 LOG_LEVEL = "debug"

@@ -3,7 +3,7 @@
  * WAVE MoQ Edge Relay — Cloudflare Worker entry point
  *
  * Implements IETF MoQ Transport (https://datatracker.ietf.org/doc/draft-ietf-moq-transport/).
- * Currently advertises preferred=draft-17 with negotiation matrix draft-07..draft-17.
+ * Currently advertises preferred=draft-18 with negotiation matrix draft-07..draft-18.
  * Acts as a publish/subscribe relay for sub-second live media at the edge.
  *
  * Routing:
@@ -240,7 +240,7 @@ async function handleHtmlRoot(env: Env, request: Request): Promise<Response> {
 
   const html = wavePublicPage({
     title: 'MoQ relay',
-    subtitle: 'Sub-second live media at the edge. IETF draft-ietf-moq-transport-07. Built by WAVE Online.',
+    subtitle: 'Sub-second live media at the edge. IETF draft-ietf-moq-transport-18. Built by WAVE Online.',
     status: 'operational',
     accent: '#00d4d5',
     canonical: `https://${request.headers.get('host') ?? 'moq.wave.online'}/`,
