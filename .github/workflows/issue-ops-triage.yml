@@ -1,0 +1,25 @@
+name: issue-ops-triage
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: issue-ops-triage-${{ github.event.issue.number }}
+  cancel-in-progress: true
+jobs:
+  triage:
+    if: vars.IO_ENABLED == 'true'
+    uses: wave-av/wave-foundation/.github/workflows/io-triage.yml@5d0b9e1a35efdb6d4e2ba55c483af670b69a8470
+    permissions:
+      contents: read
+      issues: write
+    with:
+      scripts_repo: wave-av/wave-foundation
+      scripts_ref: "5d0b9e1a35efdb6d4e2ba55c483af670b69a8470"
+      owner: ${{ vars.IO_OWNER }}
+    secrets:
+      gh_pat: ${{ secrets.ISSUE_OPS_PAT }}
+      bot_app_id: ${{ secrets.BOT_ISSUE_OPS_APP_ID }}
+      bot_private_key: ${{ secrets.BOT_ISSUE_OPS_PRIVATE_KEY }}
