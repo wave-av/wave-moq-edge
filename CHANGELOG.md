@@ -6,6 +6,13 @@ semantic versioning aligned with the IETF MoQ draft revision.
 
 ## [Unreleased]
 
+### Changed
+- Bump advertised IETF MoQ Transport draft 17 -> 18 (draft-ietf-moq-transport-18, dated
+  2026-05-12, now the current WG draft). MOQ_DRAFT_VERSION=18, negotiation matrix
+  draft-07..draft-18; floor stays draft-07. Updates the drift gate CURRENT_DRAFT_NUM=18
+  and fixes a stale `draft-ietf-moq-transport-07` string in the landing subtitle.
+
+
 ### Changed (Track C Phase-A — canonical-flip)
 - **This repo is now the canonical source of truth for MoQ edge**, no longer a
   read-only auto-mirror of `wave-surfer-connect/workers/moq-edge`. PRs land here.

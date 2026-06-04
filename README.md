@@ -62,7 +62,7 @@ See [`examples/quick-start.md`](./examples/quick-start.md) for a full walkthroug
 
 ## Spec compliance
 
-moq-edge tracks the IETF draft. v0.x advertises a negotiation matrix from draft-18 (current IETF working draft) down to draft-07 (Cloudflare's historic subset support floor):
+moq-edge tracks the IETF draft. v0.x advertises a negotiation matrix from draft-18 (current IETF working draft, dated 2026-05-12) down to draft-07 (Cloudflare's historic subset support floor):
 
 | Release | Preferred draft | Negotiation range | Status |
 |---|---|---|---|
