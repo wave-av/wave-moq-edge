@@ -8,7 +8,7 @@
   "maintainers": [{ "team": "core" }],
   "exposes": {
     "apis": [
-      { "protocol": "moq", "endpoint": "https://moq.wave.online", "status": "relay-scaffold" }
+      { "protocol": "moq", "endpoint": "https://moq.wave.online", "auth": "wave-token-v1", "metered": true, "status": "relay-scaffold" }
     ]
   },
   "consumes": {
@@ -19,9 +19,9 @@
     "engineContracts": [
       { "concern": "metering", "rock": "R4", "mirrors": "wave-media-engine engine/wave-media-adapter.h (UsageMeter/usage_json)", "as": "src/wave-usage.ts" }
     ],
-    "foundationFrameworks": ["frameworks/platform-registry"]
+    "foundationFrameworks": ["frameworks/protocol-plane", "frameworks/platform-registry"]
   },
   "ownsProtocols": ["moq"],
-  "tags": ["edge", "cloudflare-worker", "moq", "media-over-quic", "relay", "protocol-plane-layer-2", "public"],
+  "tags": ["bridges", "public", "spoke", "edge", "cloudflare-worker", "moq", "media-over-quic", "sub-second", "relay", "x402-metered", "protocol-plane-layer-2"],
   "note": "Cloudflare Worker + Durable Object MoQ relay (sub-second live media). CONSUMES the engine R4 metering contract by mirroring it in TS (src/wave-usage.ts) — the edge can't link the C++ core, so every MoQ usage event has the SAME wave.usage shape as native adapters → one billing/observability path. See GUARDRAIL.md (wave-media-engine) Rule 2."
 }
