@@ -240,7 +240,7 @@ async function handleHtmlRoot(env: Env, request: Request): Promise<Response> {
 
   const html = wavePublicPage({
     title: 'MoQ relay',
-    subtitle: 'Sub-second live media at the edge. IETF draft-ietf-moq-transport-18. Built by WAVE Online.',
+    subtitle: `Sub-second live media at the edge. IETF draft-ietf-moq-transport-${env.MOQ_DRAFT_VERSION}. Built by WAVE Online.`,
     status: 'operational',
     accent: '#00d4d5',
     canonical: `https://${request.headers.get('host') ?? 'moq.wave.online'}/`,
