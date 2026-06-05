@@ -1,16 +1,28 @@
 name: public-repo-guard
 
 # Pre-publication content gate for WAVE public repos. Two complementary checks:
-#   1. gitleaks — formatted secrets (API keys, tokens, private keys) over the tree.
+#   1. gitleaks  — formatted secrets (API keys, tokens, private keys) in the tree.
 #   2. content-policy.sh — WAVE-specific leaks gitleaks misses: live Stripe account
 #      IDs, hardcoded Cloudflare account_ids, developer absolute paths, references
 #      to private WAVE repos, and committed .env files.
-# Both the gitleaks config and the policy script are pulled from the canonical
-# source (wave-av/.github) so the rules live in exactly one place across the org.
 #
-# Allowlisting: annotate a verified-safe line with `# guard:allow <reason>`, or add
-# a path glob to a `.guardignore` at your repo root. gitleaks honors a repo-local
-# `.gitleaks.toml` if present (otherwise the canonical one is used).
+# Self-contained by design: the gitleaks config (.gitleaks.toml) and the policy
+# script (scripts/public-repo-guard/content-policy.sh) are VENDORED into the repo
+# alongside this workflow — they are NOT fetched at run time. The gate is therefore
+# fully reviewable, deterministic, and cannot be reprogrammed out-of-band (a push to
+# wave-av/.github must not be able to alter another repo's secret scanner). The
+# gitleaks binary is version-pinned AND SHA-256-verified before it runs.
+#
+# To install on a new repo, copy all three files together:
+#   .github/workflows/public-repo-guard.yml
+#   .gitleaks.toml
+#   scripts/public-repo-guard/content-policy.sh
+#
+# Scan scope: the published working TREE (gitleaks --no-git), NOT git history. The
+# goal is "what is public right now is clean", so a shallow checkout is sufficient.
+#
+# Allowlisting: annotate a verified-safe line with `# guard:allow <reason>`, add a
+# path glob to a repo-root `.guardignore`, or extend the repo-local `.gitleaks.toml`.
 
 on:
   pull_request:
@@ -30,37 +42,27 @@ jobs:
     name: Secrets + content policy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0  # full history so gitleaks can scan the diff range
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd  # v5.0.1
 
-      - name: Fetch canonical gitleaks config (if repo has none)
-        run: |
-          if [[ ! -f .gitleaks.toml ]]; then
-            curl -fsSL -o .gitleaks.toml \
-              https://raw.githubusercontent.com/wave-av/.github/main/.gitleaks.toml
-          fi
-
-      # The gitleaks GitHub Action requires a paid license for organizations; the
-      # gitleaks CLI itself is MIT-licensed and free. Run the binary directly.
-      - name: Install gitleaks
+      # gitleaks' GitHub Action requires a paid license for organizations; the CLI
+      # itself is MIT-licensed and free. Pin the version AND verify the release
+      # tarball's SHA-256 before extracting, so a tampered or MITM'd download can
+      # never execute inside the security gate.
+      - name: Install gitleaks (pinned + checksum-verified)
         env:
           GITLEAKS_VERSION: "8.30.1"
+          GITLEAKS_SHA256: "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
         run: |
-          curl -fsSL "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" \
-            | tar -xz gitleaks
-          sudo install -m 0755 gitleaks /usr/local/bin/gitleaks && rm -f gitleaks
+          curl -fsSL --proto '=https' --tlsv1.2 -o gitleaks.tar.gz \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf gitleaks.tar.gz gitleaks
+          sudo install -m 0755 gitleaks /usr/local/bin/gitleaks
+          rm -f gitleaks gitleaks.tar.gz
           gitleaks version
 
-      - name: gitleaks (secret scan)
+      - name: gitleaks (secret scan — published tree)
         run: gitleaks detect --no-git --source . --config .gitleaks.toml --redact --no-banner --exit-code 1
-
-      - name: Fetch canonical content-policy script
-        run: |
-          mkdir -p scripts/public-repo-guard
-          curl -fsSL -o scripts/public-repo-guard/content-policy.sh \
-            https://raw.githubusercontent.com/wave-av/.github/main/scripts/public-repo-guard/content-policy.sh
-          chmod +x scripts/public-repo-guard/content-policy.sh
 
       - name: Install ripgrep
         run: command -v rg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ripgrep)
