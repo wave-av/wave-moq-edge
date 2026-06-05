@@ -1,0 +1,46 @@
+# Canonical gitleaks config for WAVE public repos.
+#
+# This file is VENDORED into each repo alongside the public-repo-guard workflow,
+# which runs `gitleaks detect --no-git --source . --config .gitleaks.toml` over the
+# checked-out tree. It extends gitleaks' built-in rule set (which already covers
+# Stripe, AWS, GitHub, Slack, private keys, etc.) and adds an allowlist so obvious
+# placeholders / fixtures / examples do not produce false BLOCKs. A repo may extend
+# this with its own rules, but should not weaken the credential patterns.
+#
+# Pair this with scripts/public-repo-guard/content-policy.sh, which catches the
+# WAVE-specific things gitleaks does NOT: live Stripe account IDs, hardcoded CF
+# account_ids, developer absolute paths, and private-repo references.
+title = "WAVE public-repo gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders, templates, and test fixtures that are not real secrets"
+
+# Paths that are documentation examples or test fixtures by construction.
+paths = [
+  '''(^|/)\.git/''',                  # git metadata (packed-refs, objects) — not source, avoids --no-git FPs
+  '''(^|/)\.gitleaks\.toml$''',
+  '''(^|/)scripts/public-repo-guard/''',
+  '''(^|/)(test|tests|__tests__|fixtures|__fixtures__|examples?|samples?|spec)/''',
+  '''\.(test|spec)\.[jt]sx?$''',     # co-located unit tests (foo.test.ts / foo.spec.tsx) — fixtures, not secrets
+  '''\.(example|sample|template|dist)$''',
+  '''(^|/)(.+\.)?env\.(example|sample|template)$''',
+]
+
+# Obvious non-secret tokens: redacted blobs, doc placeholders, and template vars.
+regexes = [
+  '''(?i)\b(example|placeholder|your[-_]?|my[-_]?|dummy|fake|test|sample|redacted|changeme|xxxx+|\.\.\.|<[^>]+>)\b''',
+  '''\{\{[^}]+\}\}''',          # mustache/handlebars template vars, e.g. {{passphrase}}
+  '''\$\{?[A-Z][A-Z0-9_]+\}?''', # env-var references, e.g. $CLOUDFLARE_ACCOUNT_ID
+]
+
+# Common doc stopwords that appear inside otherwise secret-shaped strings.
+stopwords = [
+  "example",
+  "placeholder",
+  "redacted",
+  "your-",
+  "changeme",
+]
