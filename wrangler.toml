@@ -3,8 +3,8 @@ name = "moq-edge"
 main = "index.ts"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
-# wave-av Cloudflare account (canonical; set during Phase-A canonical-flip).
-account_id = "d674452f756fe46885a0d6ce7bc23f0a"
+# account_id is supplied by the CLOUDFLARE_ACCOUNT_ID environment variable at
+# deploy time (CI secret) — kept out of the public tree.
 
 # WAVE MoQ Edge Relay — IETF MoQ Transport over WebTransport (HTTP/3)
 # Advertises preferred=draft-18 with negotiation matrix accepting down to draft-07.
