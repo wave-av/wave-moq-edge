@@ -7,7 +7,7 @@ name: deploy
 #   push to branch staging   → wrangler deploy --env staging     (<proto>.staging.wave.online)
 #
 # Every spoke spawned from this chassis inherits this workflow for free. Two repo secrets are
-# required to actually deploy: CLOUDFLARE_API_TOKEN + the spoke's own product-specific secrets
+# required to actually deploy: CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID + the spoke's own product-specific secrets
 # set via `wrangler secret put` (see wrangler.toml SECRETS block). When CLOUDFLARE_API_TOKEN is
 # absent the workflow no-ops with a notice (idempotent-resilient pattern).
 
@@ -92,4 +92,7 @@ jobs:
         uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0  # v4.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          # account_id was removed from the public wrangler.toml; wrangler reads it
+          # from this secret at deploy time (CLOUDFLARE_ACCOUNT_ID) instead.
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --env ${{ steps.target.outputs.env }}
