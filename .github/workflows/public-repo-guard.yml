@@ -1,0 +1,71 @@
+name: public-repo-guard
+
+# Pre-publication content gate for WAVE public repos. Two complementary checks:
+#   1. gitleaks — formatted secrets (API keys, tokens, private keys) over the tree.
+#   2. content-policy.sh — WAVE-specific leaks gitleaks misses: live Stripe account
+#      IDs, hardcoded Cloudflare account_ids, developer absolute paths, references
+#      to private WAVE repos, and committed .env files.
+# Both the gitleaks config and the policy script are pulled from the canonical
+# source (wave-av/.github) so the rules live in exactly one place across the org.
+#
+# Allowlisting: annotate a verified-safe line with `# guard:allow <reason>`, or add
+# a path glob to a `.guardignore` at your repo root. gitleaks honors a repo-local
+# `.gitleaks.toml` if present (otherwise the canonical one is used).
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-repo-guard-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guard:
+    name: Secrets + content policy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # full history so gitleaks can scan the diff range
+
+      - name: Fetch canonical gitleaks config (if repo has none)
+        run: |
+          if [[ ! -f .gitleaks.toml ]]; then
+            curl -fsSL -o .gitleaks.toml \
+              https://raw.githubusercontent.com/wave-av/.github/main/.gitleaks.toml
+          fi
+
+      # The gitleaks GitHub Action requires a paid license for organizations; the
+      # gitleaks CLI itself is MIT-licensed and free. Run the binary directly.
+      - name: Install gitleaks
+        env:
+          GITLEAKS_VERSION: "8.30.1"
+        run: |
+          curl -fsSL "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" \
+            | tar -xz gitleaks
+          sudo install -m 0755 gitleaks /usr/local/bin/gitleaks && rm -f gitleaks
+          gitleaks version
+
+      - name: gitleaks (secret scan)
+        run: gitleaks detect --no-git --source . --config .gitleaks.toml --redact --no-banner --exit-code 1
+
+      - name: Fetch canonical content-policy script
+        run: |
+          mkdir -p scripts/public-repo-guard
+          curl -fsSL -o scripts/public-repo-guard/content-policy.sh \
+            https://raw.githubusercontent.com/wave-av/.github/main/scripts/public-repo-guard/content-policy.sh
+          chmod +x scripts/public-repo-guard/content-policy.sh
+
+      - name: Install ripgrep
+        run: command -v rg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ripgrep)
+
+      - name: content policy (WAVE trade-secret / internal-leak gate)
+        env:
+          GUARD_PRIVATE_REPOS: ${{ vars.GUARD_PRIVATE_REPOS }}
+        run: bash scripts/public-repo-guard/content-policy.sh .
