@@ -89,13 +89,17 @@ async function errorResponse(title: string, status: number, detail?: string): Pr
   );
 }
 
+function isWebSocketUpgrade(request: Request): boolean {
+  return (request.headers.get('Upgrade') ?? '').toLowerCase() === 'websocket';
+}
+
 async function handlePublish(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
     return errorResponse('Invalid namespace/track', 400, parsed.error.message);
   }
 
-  // Register track in KV (for /announce discovery)
+  // Register track in KV (for /announce + /catalog discovery)
   const key = trackKey(namespace, track);
   await env.MOQ_TRACK_REGISTRY.put(`track:${key}`, JSON.stringify({
     namespace,
@@ -104,7 +108,8 @@ async function handlePublish(env: Env, namespace: string, track: string, request
     region: request.cf?.colo ?? 'unknown',
   }), { expirationTtl: 86400 }); // 24h auto-cleanup
 
-  // Forward the WebTransport upgrade to the DO
+  // Forward to the DO: a WebSocket upgrade becomes the live MoQ relay publisher session; a plain
+  // POST is the legacy JSON registration. The DO handles both.
   const doStub = getDO(env, namespace, track);
   return doStub.fetch(request);
 }
@@ -115,13 +120,16 @@ async function handleSubscribe(env: Env, namespace: string, track: string, reque
     return errorResponse('Invalid namespace/track', 400, parsed.error.message);
   }
 
-  // Check track exists
-  const registryEntry = await env.MOQ_TRACK_REGISTRY.get(`track:${trackKey(namespace, track)}`);
-  if (!registryEntry) {
-    return errorResponse('Track not found or no active publisher', 404, `${namespace}/${track}`);
+  // A WebSocket subscribe forwards straight to the DO relay (it tolerates a not-yet-publishing
+  // track — the subscriber simply receives nothing until the publisher attaches). The legacy JSON
+  // subscribe-register path keeps the 404-if-unknown guard for HTTP discovery clients.
+  if (!isWebSocketUpgrade(request)) {
+    const registryEntry = await env.MOQ_TRACK_REGISTRY.get(`track:${trackKey(namespace, track)}`);
+    if (!registryEntry) {
+      return errorResponse('Track not found or no active publisher', 404, `${namespace}/${track}`);
+    }
   }
 
-  // Forward to DO for fan-out
   const doStub = getDO(env, namespace, track);
   return doStub.fetch(request);
 }
@@ -252,8 +260,8 @@ async function handleHtmlRoot(env: Env, request: Request): Promise<Response> {
     ],
     children: `
       <h2 style="font-size:1.4rem;margin-top:32px;margin-bottom:12px">Endpoints</h2>
-      <pre>POST   /v1/publish/:namespace/:track       Publish a track
-GET    /v1/subscribe/:namespace/:track     Subscribe to a track (WebTransport)
+      <pre>POST   /v1/publish/:namespace/:track       Publish a track (WebSocket upgrade → relay publisher)
+GET    /v1/subscribe/:namespace/:track     Subscribe to a track (WebSocket upgrade → relay subscriber)
 GET    /v1/track/:namespace/:track         Track metadata + live counts
 GET    /v1/announce                        List all announced tracks
 GET    /v1/catalog                         draft-ietf-moq-catalog-01 listing
