@@ -209,6 +209,31 @@ describe('MoqRelay FETCH from cache', () => {
   });
 });
 
+describe('MoqRelay hibernation rehydration', () => {
+  it('restores publisher + subscribers from attachments so fan-out resumes without re-handshake', () => {
+    // Simulate a DO wake: a fresh relay rebuilt purely from surviving socket attachments.
+    const woken = new MoqRelay();
+    woken.hydrate([
+      { sessionId: 'pub', role: 'publisher' },
+      { sessionId: 'a', role: 'subscriber' },
+      { sessionId: 'b', role: 'subscriber' },
+    ]);
+    expect(woken.hasPublisher).toBe(true);
+    expect(woken.subscriberCount).toBe(2);
+
+    // A post-wake publisher object still fans out to both restored subscribers.
+    const { fanout } = pushObj(woken, 7, 0);
+    expect(fanout.map((f) => f.to).sort()).toEqual(['a', 'b']);
+  });
+  it('a non-publisher restored session cannot push objects', () => {
+    const woken = new MoqRelay();
+    woken.hydrate([{ sessionId: 'a', role: 'subscriber' }]);
+    const { fanout, events } = pushObj(woken, 0, 0, 'a'); // 'a' is a subscriber, not the publisher
+    expect(fanout).toHaveLength(0);
+    expect(events).toHaveLength(0);
+  });
+});
+
 describe('relay events fold into the R4 wave.usage meter', () => {
   it('object_received increments frames + bytes in the canonical meter', async () => {
     const relay = new MoqRelay();

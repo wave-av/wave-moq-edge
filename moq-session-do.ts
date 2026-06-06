@@ -12,10 +12,13 @@
  * with a 1-byte kind tag (src/moq-wire.ts WS_KIND). When CF ships WebTransport server, control maps
  * to the control stream and objects to datagrams with NO codec/relay change.
  *
- * We use the non-hibernation `server.accept()` API deliberately: it pins the DO in memory while a
- * socket is open, so the in-memory MoqRelay (subscriber set, publisher, track alias) stays valid for
- * the life of the session — the simplest correct model for a live relay. (Hibernation-survival is a
- * follow-up; it would rebuild relay state from getWebSockets() attachments on wake.)
+ * HIBERNATION-SURVIVAL: we use the hibernation API (`state.acceptWebSocket()` + the webSocketMessage/
+ * Close/Error handler methods), so CF may evict the DO from memory while sockets stay open and
+ * reconstruct it on the next event. Each socket carries a small survival attachment ({sessionId, role})
+ * via serializeAttachment; on the first event after a wake, ensureRehydrated() walks getWebSockets(),
+ * rebuilds the sessionId↔socket maps, and replays publisher/subscriber registration into the relay
+ * (MoqRelay.hydrate) so fan-out resumes without a re-handshake. The late-joiner object cache is
+ * best-effort and intentionally not persisted (it refills as new groups arrive).
  *
  * The legacy JSON endpoints (/state, POST register, GET subscribe-register) are preserved so the
  * Worker's metadata routes and any HTTP client keep working alongside the new WS relay path.
@@ -32,6 +35,13 @@ interface Env {
   MAX_SUBSCRIBERS_PER_TRACK: string;
   MAX_OBJECT_SIZE_BYTES: string;
   LOG_LEVEL: string;
+  MOQ_CACHED_GROUPS?: string; // late-joiner cache depth (default 3)
+}
+
+/** What survives hibernation, pinned to each socket via serializeAttachment (≤2KB structured clone). */
+interface SocketAttachment {
+  sessionId: string;
+  role: 'pending' | 'publisher' | 'subscriber';
 }
 
 interface SessionState {
@@ -49,16 +59,46 @@ export class MOQSessionDurableObject {
   private env: Env;
   private session: SessionState | null = null;
 
-  // Live relay + transport state (valid while at least one socket is open; see file header).
-  private relay = new MoqRelay();
+  // Live relay + transport state. With the hibernation API the DO may be evicted from memory while
+  // sockets stay open, so these maps are rebuilt lazily from getWebSockets() attachments on wake
+  // (ensureRehydrated). The late-joiner cache is best-effort and not restored (see MoqRelay.hydrate).
+  private relay: MoqRelay;
   private sockets = new Map<string, WebSocket>(); // sessionId → socket
   private socketIds = new WeakMap<WebSocket, string>();
+  private rehydrated = false;
   private metrics: MetricsCollector;
 
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
     this.env = env;
     this.metrics = new MetricsCollector(env);
+    const cachedGroups = parseInt(env.MOQ_CACHED_GROUPS ?? '', 10);
+    this.relay = new MoqRelay({ cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined });
+  }
+
+  /**
+   * Rebuild in-memory socket maps + relay registration from the sockets that survived a hibernation
+   * wake. Idempotent (guarded by `rehydrated`); runs at the top of fetch() and every WS handler so the
+   * first event after an eviction reconstructs state before it is used.
+   */
+  private ensureRehydrated(): void {
+    if (this.rehydrated) return;
+    this.rehydrated = true;
+    const restored: Array<{ sessionId: string; role: 'publisher' | 'subscriber' }> = [];
+    for (const ws of this.state.getWebSockets()) {
+      const att = ws.deserializeAttachment() as SocketAttachment | null;
+      if (!att?.sessionId) continue;
+      this.sockets.set(att.sessionId, ws);
+      this.socketIds.set(ws, att.sessionId);
+      if (att.role === 'publisher' || att.role === 'subscriber') restored.push({ sessionId: att.sessionId, role: att.role });
+    }
+    if (restored.length) this.relay.hydrate(restored);
+  }
+
+  /** Persist a socket's learned role into its attachment so a hibernation wake can rebuild the relay. */
+  private setRole(sessionId: string, role: 'publisher' | 'subscriber'): void {
+    const ws = this.sockets.get(sessionId);
+    if (ws) ws.serializeAttachment({ sessionId, role } satisfies SocketAttachment);
   }
 
   private async load(): Promise<SessionState> {
@@ -88,6 +128,7 @@ export class MOQSessionDurableObject {
 
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url);
+    this.ensureRehydrated(); // a wake may deliver an upgrade/HTTP request before any WS event
 
     // WebSocket relay upgrade (publisher or subscriber). The path tells us the intended role, but
     // the authoritative role comes from the first control message (PUBLISH_NAMESPACE vs SUBSCRIBE).
@@ -148,20 +189,48 @@ export class MOQSessionDurableObject {
     const pair = new WebSocketPair();
     const client = pair[0];
     const server = pair[1];
-    server.accept(); // non-hibernation: pins the DO while the socket is open (keeps relay state live)
 
     const sessionId = crypto.randomUUID();
+    // Hibernation API: acceptWebSocket() lets CF evict the DO from memory while the socket stays open.
+    // We tag the socket with its sessionId (so getWebSockets(sessionId) finds it) and stash a survival
+    // attachment; the relay role is filled in once the first control message reveals it (setRole).
+    this.state.acceptWebSocket(server, [sessionId]);
+    server.serializeAttachment({ sessionId, role: 'pending' } satisfies SocketAttachment);
     this.sockets.set(sessionId, server);
     this.socketIds.set(server, sessionId);
 
-    server.addEventListener('message', (ev: MessageEvent) => {
-      void this.onMessage(sessionId, ev.data);
-    });
-    const drop = () => void this.onClose(sessionId);
-    server.addEventListener('close', drop);
-    server.addEventListener('error', drop);
-
     return new Response(null, { status: 101, webSocket: client });
+  }
+
+  // ── Hibernatable WebSocket handlers (replace addEventListener; survive eviction) ─────────────────
+
+  async webSocketMessage(ws: WebSocket, message: ArrayBuffer | string): Promise<void> {
+    this.ensureRehydrated();
+    const sessionId = this.sessionIdFor(ws);
+    if (sessionId) await this.onMessage(sessionId, message);
+  }
+
+  async webSocketClose(ws: WebSocket): Promise<void> {
+    this.ensureRehydrated();
+    const sessionId = this.sessionIdFor(ws);
+    if (sessionId) await this.onClose(sessionId);
+  }
+
+  async webSocketError(ws: WebSocket): Promise<void> {
+    await this.webSocketClose(ws);
+  }
+
+  /** Resolve a socket's session id from the live map, falling back to its survival attachment. */
+  private sessionIdFor(ws: WebSocket): string | null {
+    const known = this.socketIds.get(ws);
+    if (known) return known;
+    const att = ws.deserializeAttachment() as SocketAttachment | null;
+    if (att?.sessionId) {
+      this.sockets.set(att.sessionId, ws);
+      this.socketIds.set(ws, att.sessionId);
+      return att.sessionId;
+    }
+    return null;
   }
 
   private async onMessage(sessionId: string, data: unknown): Promise<void> {
@@ -184,6 +253,11 @@ export class MOQSessionDurableObject {
       const r = this.relay.onObject(sessionId, body);
       for (const out of r.fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
       events = r.events;
+    }
+    // Pin the learned role into the socket attachment so a hibernation wake can rebuild the relay.
+    for (const e of events) {
+      if (e.kind === 'publish_start') this.setRole(e.sessionId, 'publisher');
+      else if (e.kind === 'subscribe') this.setRole(e.sessionId, 'subscriber');
     }
     if (events.length) await this.applyEvents(events);
   }
