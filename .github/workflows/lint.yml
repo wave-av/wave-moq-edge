@@ -1,7 +1,8 @@
 name: Lint
 
-# Runs ESLint (flat config, typescript-eslint) + tsc --noEmit on the MoQ edge Worker. Pure static
-# checks: no network, no CF runtime, no untrusted input interpolated into any run: step.
+# Runs ESLint (flat config, typescript-eslint) on the MoQ edge Worker. Pure static checks: no
+# network, no CF runtime, no untrusted input interpolated into any run: step. Typecheck + unit
+# tests are owned by test.yml (which already gates every source-touching PR).
 
 on:
   push:
@@ -17,7 +18,7 @@ concurrency:
 
 jobs:
   lint:
-    name: eslint + typecheck
+    name: eslint
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -33,4 +34,3 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint
-      - run: npm run typecheck
