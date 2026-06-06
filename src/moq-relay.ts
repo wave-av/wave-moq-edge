@@ -18,12 +18,18 @@ import {
   MOQ_MSG,
   MOQ_ROLE,
   MOQ_ERROR,
+  MOQ_FETCH_TYPE,
   parseControl,
   decodeSetup,
   encodeSetup,
   decodeSubscribe,
   encodeSubscribeOk,
   decodePublishNamespace,
+  decodePublish,
+  decodeTrackStatus,
+  decodeSubscribeNamespace,
+  decodeFetch,
+  encodeFetchOk,
   encodeRequestOk,
   encodeRequestError,
   decodeObject,
@@ -49,14 +55,39 @@ interface Subscriber {
   requestId: bigint;
 }
 
+/** One cached group: the forwarded object frames of a single Group ID, in arrival order. */
+interface CachedGroup {
+  groupId: bigint;
+  objects: Array<{ objectId: bigint; frame: Uint8Array }>;
+}
+
 /** The single Track Alias this relay stamps on forwarded objects (one track per DO). */
 const TRACK_ALIAS = 1n;
+
+/** Default number of recent groups to retain for late-joiner replay + FETCH-from-cache. */
+const DEFAULT_CACHED_GROUPS = 3;
+
+/** What a control frame produces: control replies, fanned-out objects (late-joiner replay), events. */
+export interface ControlResult {
+  replies: Outbound[];
+  objects: Outbound[];
+  events: RelayEvent[];
+}
 
 export class MoqRelay {
   private publisher: string | null = null;
   private publisherNamespace: string[] | null = null;
   private subscribers = new Map<string, Subscriber>();
   private lastGroupId: bigint | null = null;
+
+  // Late-joiner cache: the last N groups of forwarded object frames, oldest-first (a small ring).
+  private cache: CachedGroup[] = [];
+  private readonly maxCachedGroups: number;
+
+  constructor(opts: { cachedGroups?: number } = {}) {
+    const n = opts.cachedGroups ?? DEFAULT_CACHED_GROUPS;
+    this.maxCachedGroups = n > 0 ? n : 0;
+  }
 
   /** Whether a publisher session is currently attached. */
   get hasPublisher(): boolean {
@@ -65,20 +96,26 @@ export class MoqRelay {
   get subscriberCount(): number {
     return this.subscribers.size;
   }
+  /** Number of cached objects across all retained groups (for tests / observability). */
+  get cachedObjectCount(): number {
+    return this.cache.reduce((n, g) => n + g.objects.length, 0);
+  }
 
   /**
-   * Handle one inbound control frame from `sessionId`. Returns the control replies to send back and
-   * any metering events. Unknown / unsupported control types yield a REQUEST_ERROR(NOT_SUPPORTED).
+   * Handle one inbound control frame from `sessionId`. Returns the control replies to send back, any
+   * objects to deliver to the caller (late-joiner / FETCH cache replay), and metering events. Unknown
+   * / unsupported control types yield a REQUEST_ERROR(NOT_SUPPORTED).
    */
-  onControl(sessionId: string, frame: Uint8Array): { replies: Outbound[]; events: RelayEvent[] } {
+  onControl(sessionId: string, frame: Uint8Array): ControlResult {
     const replies: Outbound[] = [];
+    const objects: Outbound[] = [];
     const events: RelayEvent[] = [];
     let type: number;
     let payload: Uint8Array;
     try {
       ({ type, payload } = parseControl(frame));
     } catch {
-      return { replies, events }; // malformed framing — ignore (a strict server would reset)
+      return { replies, objects, events }; // malformed framing — ignore (a strict server would reset)
     }
 
     switch (type) {
@@ -100,11 +137,50 @@ export class MoqRelay {
         events.push({ kind: 'publish_start', sessionId });
         break;
       }
+      case MOQ_MSG.PUBLISH: {
+        // Publisher-initiated push (vs the subscriber-pull SUBSCRIBE). Same effect on the relay as
+        // PUBLISH_NAMESPACE: attach the publisher and ack with the generic REQUEST_OK.
+        const m = decodePublish(payload);
+        this.publisher = sessionId;
+        this.publisherNamespace = m.trackNamespace;
+        replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
+        events.push({ kind: 'publish_start', sessionId });
+        break;
+      }
       case MOQ_MSG.SUBSCRIBE: {
         const m = decodeSubscribe(payload);
         this.subscribers.set(sessionId, { requestId: m.requestId });
         replies.push({ to: sessionId, kind: 'control', frame: encodeSubscribeOk({ requestId: m.requestId, expires: 0n }) });
+        // Late-joiner replay: hand the new subscriber the cached recent groups so it can begin
+        // decoding from a recent group boundary instead of waiting for the next one.
+        for (const g of this.cache) for (const o of g.objects) objects.push({ to: sessionId, kind: 'object', frame: o.frame });
         events.push({ kind: 'subscribe', sessionId });
+        break;
+      }
+      case MOQ_MSG.SUBSCRIBE_NAMESPACE: {
+        // Subscriber announces interest in a namespace prefix. Ack with REQUEST_OK (the relay would
+        // then stream NAMESPACE matches; with one track per DO we just acknowledge interest).
+        const m = decodeSubscribeNamespace(payload);
+        replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
+        break;
+      }
+      case MOQ_MSG.TRACK_STATUS: {
+        // Liveness query (same wire shape as SUBSCRIBE). REQUEST_OK if a publisher is live on this
+        // track, else REQUEST_ERROR(DOES_NOT_EXIST).
+        const m = decodeTrackStatus(payload);
+        const frameOut = this.hasPublisher
+          ? encodeRequestOk({ requestId: m.requestId })
+          : encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.DOES_NOT_EXIST, reason: 'no publisher' });
+        replies.push({ to: sessionId, kind: 'control', frame: frameOut });
+        break;
+      }
+      case MOQ_MSG.FETCH: {
+        this.onFetch(sessionId, payload, replies, objects);
+        break;
+      }
+      case MOQ_MSG.GOAWAY: {
+        // A peer signalling graceful drain/migration. The relay has no upstream to migrate to, so we
+        // accept it silently (no reply per spec). Disconnect handling runs on socket close.
         break;
       }
       default: {
@@ -128,13 +204,41 @@ export class MoqRelay {
         break;
       }
     }
-    return { replies, events };
+    return { replies, objects, events };
+  }
+
+  /**
+   * Serve a FETCH from the late-joiner cache. Standalone fetches replay every cached object whose
+   * (group, object) location falls within [start, end] to the requester, preceded by FETCH_OK with the
+   * largest available location. A fetch with nothing in range → REQUEST_ERROR(INVALID_RANGE). Joining
+   * fetches aren't modeled (one track per DO) → REQUEST_ERROR(NOT_SUPPORTED).
+   */
+  private onFetch(sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[]): void {
+    const m = decodeFetch(payload);
+    if (m.fetchType !== MOQ_FETCH_TYPE.STANDALONE || !m.standalone) {
+      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'only standalone fetch' }) });
+      return;
+    }
+    const { start, end } = m.standalone;
+    const inRange = (g: bigint, o: bigint) => !(g < start.group || g > end.group || (g === start.group && o < start.object) || (g === end.group && end.object !== 0n && o > end.object));
+
+    const matched: Array<{ frame: Uint8Array; group: bigint; object: bigint }> = [];
+    for (const grp of this.cache) for (const o of grp.objects) if (inRange(grp.groupId, o.objectId)) matched.push({ frame: o.frame, group: grp.groupId, object: o.objectId });
+
+    if (matched.length === 0) {
+      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.INVALID_RANGE, reason: 'range not in cache' }) });
+      return;
+    }
+    const last = matched[matched.length - 1];
+    replies.push({ to: sessionId, kind: 'control', frame: encodeFetchOk({ endOfTrack: false, end: { group: last.group, object: last.object } }) });
+    for (const x of matched) objects.push({ to: sessionId, kind: 'object', frame: x.frame });
   }
 
   /**
    * Handle one inbound OBJECT frame from `sessionId` (only the attached publisher's objects fan out).
    * Returns the per-subscriber object frames + metering events. The forwarded object is re-stamped
-   * with this relay's TRACK_ALIAS so every subscriber sees a consistent alias.
+   * with this relay's TRACK_ALIAS so every subscriber sees a consistent alias, and cached for late
+   * joiners (last-N-groups ring).
    */
   onObject(sessionId: string, frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
     const fanout: Outbound[] = [];
@@ -151,12 +255,25 @@ export class MoqRelay {
     for (const subId of this.subscribers.keys()) {
       fanout.push({ to: subId, kind: 'object', frame: forwarded });
     }
+    this.cacheObject(obj.groupId, obj.objectId, forwarded);
     events.push({ kind: 'object_received', sessionId, bytes: obj.payload.length });
     if (this.lastGroupId !== null && obj.groupId !== this.lastGroupId) {
       events.push({ kind: 'group_complete', sessionId });
     }
     this.lastGroupId = obj.groupId;
     return { events, fanout };
+  }
+
+  /** Append a forwarded object to the last-N-groups cache, starting a new group + evicting as needed. */
+  private cacheObject(groupId: bigint, objectId: bigint, frame: Uint8Array): void {
+    if (this.maxCachedGroups === 0) return;
+    let grp = this.cache.length > 0 ? this.cache[this.cache.length - 1] : undefined;
+    if (!grp || grp.groupId !== groupId) {
+      grp = { groupId, objects: [] };
+      this.cache.push(grp);
+      while (this.cache.length > this.maxCachedGroups) this.cache.shift();
+    }
+    grp.objects.push({ objectId, frame });
   }
 
   /** Drop a session (publisher or subscriber) on disconnect; returns the metering events. */

@@ -3,13 +3,21 @@ import { MoqRelay } from '../src/moq-relay';
 import {
   MOQ_MSG,
   MOQ_ROLE,
+  MOQ_ERROR,
+  MOQ_FETCH_TYPE,
   parseControl,
   encodeSetup,
   encodeSubscribe,
   encodePublishNamespace,
+  encodePublish,
+  encodeTrackStatus,
+  encodeSubscribeNamespace,
+  encodeFetch,
+  encodeGoaway,
   encodeObject,
   decodeSubscribeOk,
   decodeRequestOk,
+  decodeRequestError,
   decodeObject,
   MOQ_OBJECT_STATUS,
 } from '../src/moq-wire';
@@ -93,6 +101,111 @@ describe('MoqRelay fan-out', () => {
     expect(relay.subscriberCount).toBe(0);
     expect(relay.removeSession('pub')).toEqual([{ kind: 'publish_end', sessionId: 'pub' }]);
     expect(relay.hasPublisher).toBe(false);
+  });
+});
+
+function attachPub(relay: MoqRelay, sid = 'pub') {
+  relay.onControl(sid, encodePublishNamespace({ requestId: 1n, trackNamespace: NS }));
+}
+function pushObj(relay: MoqRelay, group: number, object: number, sid = 'pub') {
+  return relay.onObject(sid, encodeObject({ trackAlias: 1n, groupId: BigInt(group), objectId: BigInt(object), status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([group, object]) }));
+}
+
+describe('MoqRelay full draft-18 control handlers', () => {
+  it('PUBLISH attaches the publisher + replies REQUEST_OK (like PUBLISH_NAMESPACE)', () => {
+    const relay = new MoqRelay();
+    const { replies, events } = relay.onControl('pub', encodePublish({ requestId: 5n, trackNamespace: NS, trackName: 'v', trackAlias: 9n }));
+    expect(relay.hasPublisher).toBe(true);
+    expect(decodeRequestOk(parseControl(replies[0].frame).payload).requestId).toBe(5n);
+    expect(events).toEqual([{ kind: 'publish_start', sessionId: 'pub' }]);
+  });
+  it('SUBSCRIBE_NAMESPACE replies REQUEST_OK', () => {
+    const relay = new MoqRelay();
+    const { replies } = relay.onControl('s', encodeSubscribeNamespace({ requestId: 3n, trackNamespacePrefix: ['wave'] }));
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.REQUEST_OK);
+    expect(decodeRequestOk(parseControl(replies[0].frame).payload).requestId).toBe(3n);
+  });
+  it('TRACK_STATUS: REQUEST_OK when a publisher is live, DOES_NOT_EXIST otherwise', () => {
+    const relay = new MoqRelay();
+    let r = relay.onControl('q', encodeTrackStatus({ requestId: 4n, trackNamespace: NS, trackName: 'v' }));
+    expect(parseControl(r.replies[0].frame).type).toBe(MOQ_MSG.REQUEST_ERROR);
+    expect(decodeRequestError(parseControl(r.replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.DOES_NOT_EXIST);
+    attachPub(relay);
+    r = relay.onControl('q', encodeTrackStatus({ requestId: 5n, trackNamespace: NS, trackName: 'v' }));
+    expect(parseControl(r.replies[0].frame).type).toBe(MOQ_MSG.REQUEST_OK);
+  });
+  it('GOAWAY is accepted silently (no reply)', () => {
+    const relay = new MoqRelay();
+    const { replies, objects, events } = relay.onControl('x', encodeGoaway({ newSessionUri: '', timeoutMs: 0n }));
+    expect(replies).toHaveLength(0);
+    expect(objects).toHaveLength(0);
+    expect(events).toHaveLength(0);
+  });
+});
+
+describe('MoqRelay late-joiner group cache', () => {
+  it('replays cached recent objects to a subscriber that joins mid-stream', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    pushObj(relay, 0, 0);
+    pushObj(relay, 0, 1);
+    const { objects } = relay.onControl('late', encodeSubscribe({ requestId: 9n, trackNamespace: NS, trackName: 'v' }));
+    expect(objects).toHaveLength(2);
+    expect(objects.every((o) => o.to === 'late' && o.kind === 'object')).toBe(true);
+    // replayed frames are the forwarded (re-stamped alias) frames
+    expect(decodeObject(objects[0].frame).trackAlias).toBe(1n);
+    expect(Array.from(decodeObject(objects[1].frame).payload)).toEqual([0, 1]);
+  });
+  it('evicts oldest groups beyond the cap', () => {
+    const relay = new MoqRelay({ cachedGroups: 2 });
+    attachPub(relay);
+    pushObj(relay, 0, 0);
+    pushObj(relay, 1, 0);
+    pushObj(relay, 2, 0); // group 0 evicted; cache holds groups 1,2
+    expect(relay.cachedObjectCount).toBe(2);
+    const { objects } = relay.onControl('late', encodeSubscribe({ requestId: 1n, trackNamespace: NS, trackName: 'v' }));
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [2, 0]]);
+  });
+  it('a zero-size cache replays nothing', () => {
+    const relay = new MoqRelay({ cachedGroups: 0 });
+    attachPub(relay);
+    pushObj(relay, 0, 0);
+    expect(relay.cachedObjectCount).toBe(0);
+    const { objects } = relay.onControl('late', encodeSubscribe({ requestId: 1n, trackNamespace: NS, trackName: 'v' }));
+    expect(objects).toHaveLength(0);
+  });
+});
+
+describe('MoqRelay FETCH from cache', () => {
+  function seed() {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    for (const g of [0, 1, 2]) for (const o of [0, 1]) pushObj(relay, g, o);
+    return relay;
+  }
+  it('standalone fetch replays the in-range objects after FETCH_OK', () => {
+    const relay = seed();
+    const { replies, objects } = relay.onControl(
+      'f',
+      encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.STANDALONE, standalone: { trackNamespace: NS, trackName: 'v', start: { group: 1n, object: 0n }, end: { group: 2n, object: 0n } } })
+    );
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.FETCH_OK);
+    // groups 1 & 2 (end.object=0 ⇒ whole group 2): 4 objects
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [1, 1], [2, 0], [2, 1]]);
+  });
+  it('out-of-range fetch → REQUEST_ERROR INVALID_RANGE, no objects', () => {
+    const relay = seed();
+    const { replies, objects } = relay.onControl(
+      'f',
+      encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.STANDALONE, standalone: { trackNamespace: NS, trackName: 'v', start: { group: 99n, object: 0n }, end: { group: 100n, object: 0n } } })
+    );
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.INVALID_RANGE);
+    expect(objects).toHaveLength(0);
+  });
+  it('joining fetch → REQUEST_ERROR NOT_SUPPORTED', () => {
+    const relay = seed();
+    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.RELATIVE_JOINING, joining: { joiningRequestId: 1n, joiningStart: 0n } }));
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
   });
 });
 

@@ -23,6 +23,24 @@ import {
   decodeRequestError,
   encodeObject,
   decodeObject,
+  MOQ_FETCH_TYPE,
+  SUBGROUP_ID_MODE,
+  encodeSubscribeNamespace,
+  decodeSubscribeNamespace,
+  encodePublish,
+  decodePublish,
+  encodeTrackStatus,
+  decodeTrackStatus,
+  encodeFetch,
+  decodeFetch,
+  encodeFetchOk,
+  decodeFetchOk,
+  encodeGoaway,
+  decodeGoaway,
+  encodeSubgroupStream,
+  decodeSubgroupStream,
+  subgroupTypeByte,
+  isSubgroupType,
 } from '../src/moq-wire';
 
 describe('draft-18 constants', () => {
@@ -36,6 +54,13 @@ describe('draft-18 constants', () => {
     expect(MOQ_MSG.PUBLISH_NAMESPACE).toBe(0x6);
     expect(MOQ_MSG.REQUEST_OK).toBe(0x7);
     expect(MOQ_MSG.GOAWAY).toBe(0x10);
+  });
+  it('pins the full draft-18 message set codes (verified against the tagged source)', () => {
+    expect(MOQ_MSG.PUBLISH).toBe(0x1d);
+    expect(MOQ_MSG.FETCH).toBe(0x16);
+    expect(MOQ_MSG.FETCH_OK).toBe(0x18);
+    expect(MOQ_MSG.TRACK_STATUS).toBe(0xd);
+    expect(MOQ_MSG.SUBSCRIBE_NAMESPACE).toBe(0x50);
   });
 });
 
@@ -184,5 +209,92 @@ describe('object data model (§11)', () => {
     const o = decodeObject(enc);
     expect(o.groupId).toBe(big);
     expect(o.objectId).toBe(big);
+  });
+});
+
+describe('full draft-18 message set round-trip', () => {
+  it('SUBSCRIBE_NAMESPACE', () => {
+    const enc = encodeSubscribeNamespace({ requestId: 11n, trackNamespacePrefix: ['wave', 'studio'] });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.SUBSCRIBE_NAMESPACE);
+    const m = decodeSubscribeNamespace(parseControl(enc).payload);
+    expect(m).toEqual({ requestId: 11n, trackNamespacePrefix: ['wave', 'studio'] });
+  });
+  it('PUBLISH', () => {
+    const enc = encodePublish({ requestId: 3n, trackNamespace: ['wave', 'cam-1'], trackName: 'video', trackAlias: 7n });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.PUBLISH);
+    const m = decodePublish(parseControl(enc).payload);
+    expect(m).toEqual({ requestId: 3n, trackNamespace: ['wave', 'cam-1'], trackName: 'video', trackAlias: 7n });
+  });
+  it('TRACK_STATUS (SUBSCRIBE-shaped)', () => {
+    const enc = encodeTrackStatus({ requestId: 8n, trackNamespace: ['wave'], trackName: 'audio' });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.TRACK_STATUS);
+    const m = decodeTrackStatus(parseControl(enc).payload);
+    expect(m).toEqual({ requestId: 8n, trackNamespace: ['wave'], trackName: 'audio' });
+  });
+  it('FETCH standalone (group/object range)', () => {
+    const enc = encodeFetch({
+      requestId: 4n,
+      fetchType: MOQ_FETCH_TYPE.STANDALONE,
+      standalone: { trackNamespace: ['wave', 'cam-1'], trackName: 'v', start: { group: 2n, object: 0n }, end: { group: 5n, object: 0n } },
+    });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.FETCH);
+    const m = decodeFetch(parseControl(enc).payload);
+    expect(m.requestId).toBe(4n);
+    expect(m.fetchType).toBe(MOQ_FETCH_TYPE.STANDALONE);
+    expect(m.standalone).toEqual({ trackNamespace: ['wave', 'cam-1'], trackName: 'v', start: { group: 2n, object: 0n }, end: { group: 5n, object: 0n } });
+  });
+  it('FETCH joining', () => {
+    const enc = encodeFetch({ requestId: 6n, fetchType: MOQ_FETCH_TYPE.RELATIVE_JOINING, joining: { joiningRequestId: 2n, joiningStart: 1n } });
+    const m = decodeFetch(parseControl(enc).payload);
+    expect(m.joining).toEqual({ joiningRequestId: 2n, joiningStart: 1n });
+  });
+  it('FETCH_OK (no request id; end location)', () => {
+    const enc = encodeFetchOk({ endOfTrack: true, end: { group: 9n, object: 4n } });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.FETCH_OK);
+    expect(decodeFetchOk(parseControl(enc).payload)).toEqual({ endOfTrack: true, end: { group: 9n, object: 4n } });
+  });
+  it('GOAWAY with + without a control-stream request id', () => {
+    const a = decodeGoaway(parseControl(encodeGoaway({ newSessionUri: '', timeoutMs: 5000n })).payload);
+    expect(a).toEqual({ newSessionUri: '', timeoutMs: 5000n, requestId: undefined });
+    const b = decodeGoaway(parseControl(encodeGoaway({ newSessionUri: 'wss://b/relay', timeoutMs: 0n, requestId: 12n })).payload);
+    expect(b).toEqual({ newSessionUri: 'wss://b/relay', timeoutMs: 0n, requestId: 12n });
+  });
+});
+
+describe('SUBGROUP_HEADER multi-object stream (§subgroup-header)', () => {
+  it('type-byte encodes flags; rejects reserved id-mode 3', () => {
+    expect(subgroupTypeByte({ idMode: SUBGROUP_ID_MODE.ZERO, defaultPriority: false, endOfGroup: false, firstObject: false })).toBe(0x10);
+    expect(subgroupTypeByte({ idMode: SUBGROUP_ID_MODE.EXPLICIT, defaultPriority: false, endOfGroup: false, firstObject: false })).toBe(0x14);
+    expect(subgroupTypeByte({ idMode: SUBGROUP_ID_MODE.EXPLICIT, defaultPriority: true, endOfGroup: true, firstObject: true })).toBe(0x10 | 0x04 | 0x08 | 0x20 | 0x40);
+    expect(() => subgroupTypeByte({ idMode: 3, defaultPriority: false, endOfGroup: false, firstObject: false })).toThrow();
+    expect(isSubgroupType(0x14)).toBe(true);
+    expect(isSubgroupType(0x16)).toBe(false); // id-mode 3 → invalid
+    expect(isSubgroupType(0x00)).toBe(false); // bit 4 clear → not a subgroup
+  });
+  it('round-trips an explicit-subgroup-id stream with delta-coded object ids + priority', () => {
+    const header = { trackAlias: 1n, groupId: 5n, subgroupId: 2n, idMode: SUBGROUP_ID_MODE.EXPLICIT, priority: 128, defaultPriority: false, endOfGroup: true, firstObject: true };
+    const objects = [
+      { objectId: 10n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([1, 2, 3]) },
+      { objectId: 11n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([4, 5]) },
+      { objectId: 12n, status: MOQ_OBJECT_STATUS.END_OF_GROUP, payload: new Uint8Array(0) },
+    ];
+    const dec = decodeSubgroupStream(encodeSubgroupStream(header, objects));
+    expect(dec.header.trackAlias).toBe(1n);
+    expect(dec.header.groupId).toBe(5n);
+    expect(dec.header.subgroupId).toBe(2n);
+    expect(dec.header.priority).toBe(128);
+    expect(dec.header.endOfGroup).toBe(true);
+    expect(dec.objects.map((o) => o.objectId)).toEqual([10n, 11n, 12n]);
+    expect(Array.from(dec.objects[0].payload)).toEqual([1, 2, 3]);
+    expect(dec.objects[2].status).toBe(MOQ_OBJECT_STATUS.END_OF_GROUP);
+    expect(dec.objects[2].payload.length).toBe(0);
+  });
+  it('FIRST_OBJECT_ID mode derives subgroup id from the first object; default priority omits the field', () => {
+    const header = { trackAlias: 1n, groupId: 0n, subgroupId: 0n, idMode: SUBGROUP_ID_MODE.FIRST_OBJECT_ID, priority: 0, defaultPriority: true, endOfGroup: false, firstObject: false };
+    const objects = [{ objectId: 42n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([9]) }];
+    const dec = decodeSubgroupStream(encodeSubgroupStream(header, objects));
+    expect(dec.header.subgroupId).toBe(42n); // resolved from first object id
+    expect(dec.header.defaultPriority).toBe(true);
+    expect(dec.objects[0].objectId).toBe(42n);
   });
 });
