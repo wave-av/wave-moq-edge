@@ -111,7 +111,7 @@ export class Writer {
   }
   /** draft-18 §1.4.1 leading-1-bits varint. Accepts number or bigint; range [0, 2^64). */
   varint(value: number | bigint): this {
-    let v = typeof value === 'bigint' ? value : BigInt(Math.trunc(value));
+    const v = typeof value === 'bigint' ? value : BigInt(Math.trunc(value));
     if (v < 0n) throw new RangeError('varint must be non-negative');
     // Smallest size N whose capacity (7N bits for N≤8, 64 for N=9) holds v.
     let n = 9;
