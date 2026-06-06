@@ -28,6 +28,7 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { wavePublicPage, wavePublicErrorResponse } from './src/shared/wave-public-html';
+import { authGate } from './src/wave-auth';
 
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
@@ -46,6 +47,7 @@ interface Env {
   MAX_SUBSCRIBERS_PER_TRACK: string;
   MAX_OBJECT_SIZE_BYTES: string;
   LOG_LEVEL: string;
+  MOQ_REQUIRE_AUTH?: string; // when truthy, enforce wave-token-v1 on publish/subscribe (default: off)
 }
 
 const PublishRequestSchema = z.object({
@@ -94,6 +96,10 @@ function isWebSocketUpgrade(request: Request): boolean {
 }
 
 async function handlePublish(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
+  // wave-token-v1 gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+  const denied = authGate(request, env);
+  if (denied) return denied;
+
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
     return errorResponse('Invalid namespace/track', 400, parsed.error.message);
@@ -115,6 +121,10 @@ async function handlePublish(env: Env, namespace: string, track: string, request
 }
 
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
+  // wave-token-v1 gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+  const denied = authGate(request, env);
+  if (denied) return denied;
+
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
     return errorResponse('Invalid namespace/track', 400, parsed.error.message);

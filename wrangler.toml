@@ -56,6 +56,10 @@ MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "10000"
 MAX_OBJECT_SIZE_BYTES = "16777216"  # 16 MiB
 LOG_LEVEL = "info"
+# wave-token-v1 enforcement on publish/subscribe. OFF by default — flipping it on is a behavioral
+# change to the live relay (rejects unauthenticated clients), so it's an explicit operator opt-in.
+MOQ_REQUIRE_AUTH = "false"
+MOQ_CACHED_GROUPS = "3"  # late-joiner cache depth (recent groups replayed to new subscribers)
 
 [[env.production.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
@@ -81,6 +85,8 @@ MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "1000"
 MAX_OBJECT_SIZE_BYTES = "16777216"
 LOG_LEVEL = "debug"
+MOQ_REQUIRE_AUTH = "false"  # explicit operator opt-in; see production note above
+MOQ_CACHED_GROUPS = "3"
 
 [[env.staging.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
