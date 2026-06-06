@@ -10,6 +10,7 @@
     "deploy:staging": "wrangler deploy --env staging",
     "deploy:production": "wrangler deploy --env production",
     "dev": "wrangler dev",
+    "lint": "eslint . --max-warnings 0",
     "test": "vitest run __tests__/",
     "typecheck": "tsc --noEmit",
     "tail": "wrangler tail moq-edge-production --format pretty"
@@ -19,8 +20,11 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260101.0",
-    "wrangler": "^4.0.0",
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
     "typescript": "^5.7.0",
-    "vitest": "^4.1.7"
+    "typescript-eslint": "^8.60.1",
+    "vitest": "^4.1.7",
+    "wrangler": "^4.0.0"
   }
 }
