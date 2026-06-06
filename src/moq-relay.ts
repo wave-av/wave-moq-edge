@@ -276,6 +276,22 @@ export class MoqRelay {
     grp.objects.push({ objectId, frame });
   }
 
+  /**
+   * Rebuild publisher + subscriber registration after a Durable Object hibernation wake. The DO
+   * reconstructs in-memory state from each surviving socket's serialized attachment ({sessionId, role})
+   * and replays it here so fan-out resumes without re-handshaking. Emits NO replies/events (the
+   * SUBSCRIBE_OK / REQUEST_OK already went out before hibernation). The late-joiner object cache is
+   * intentionally not restored — it is best-effort and refills as new groups arrive. The restored
+   * subscriber requestId is unknown (only echoed in the original SUBSCRIBE_OK) so a placeholder is
+   * used; it does not affect fan-out, which keys purely on session id.
+   */
+  hydrate(sessions: Array<{ sessionId: string; role: 'publisher' | 'subscriber' }>): void {
+    for (const s of sessions) {
+      if (s.role === 'publisher') this.publisher = s.sessionId;
+      else this.subscribers.set(s.sessionId, { requestId: 0n });
+    }
+  }
+
   /** Drop a session (publisher or subscriber) on disconnect; returns the metering events. */
   removeSession(sessionId: string): RelayEvent[] {
     const events: RelayEvent[] = [];
