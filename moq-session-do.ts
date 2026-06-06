@@ -178,6 +178,7 @@ export class MOQSessionDurableObject {
     if (kind === WS_KIND.CONTROL) {
       const r = this.relay.onControl(sessionId, body);
       for (const out of r.replies) this.send(out.to, WS_KIND.CONTROL, out.frame);
+      for (const out of r.objects) this.send(out.to, WS_KIND.OBJECT, out.frame); // late-joiner / FETCH replay
       events = r.events;
     } else if (kind === WS_KIND.OBJECT) {
       const r = this.relay.onObject(sessionId, body);

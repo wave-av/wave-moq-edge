@@ -23,7 +23,7 @@
 export const MOQ_DRAFT_VERSION = 18;
 export const MOQ_ALPN = 'moqt-18'; // §3.1 — ALPN-only version negotiation (no integer version in SETUP)
 
-/** Control message type codes — draft-18 §10. */
+/** Control message type codes — draft-18 §10 (verbatim from the tagged moq-wg/moq-transport source). */
 export const MOQ_MSG = {
   SETUP: 0x2f00, // also the unidirectional control stream type
   GOAWAY: 0x10,
@@ -36,8 +36,33 @@ export const MOQ_MSG = {
   PUBLISH: 0x1d,
   PUBLISH_DONE: 0xb,
   FETCH: 0x16,
+  FETCH_OK: 0x18,
   TRACK_STATUS: 0xd,
+  SUBSCRIBE_NAMESPACE: 0x50, // subscriber announces interest in a namespace prefix
+  NAMESPACE: 0x8, // sent on the SUBSCRIBE_NAMESPACE response stream
+  NAMESPACE_DONE: 0xe,
 } as const;
+
+/** Data-stream header type codes (§11) — distinct number space from control types. */
+export const MOQ_STREAM = {
+  FETCH_HEADER: 0x5, // unidirectional stream carrying fetched objects
+  SUBGROUP_BASE: 0x10, // SUBGROUP_HEADER type byte = SUBGROUP_BASE | flags (see SUBGROUP_FLAG)
+} as const;
+
+/** SUBGROUP_HEADER type-byte flag bits — draft-18 §subgroup-header. */
+export const SUBGROUP_FLAG = {
+  PROPERTIES: 0x01, // per-object Object Properties present
+  SUBGROUP_ID_SHIFT: 1, // bits 1-2 = Subgroup ID mode (0=absent/0, 1=absent/first-obj-id, 2=explicit)
+  END_OF_GROUP: 0x08, // stream FIN implies largest Object in Group
+  DEFAULT_PRIORITY: 0x20, // when set, Publisher Priority field omitted
+  FIRST_OBJECT: 0x40, // first object in stream is the publisher's first in the subgroup
+} as const;
+
+/** Subgroup ID encoding mode (SUBGROUP_FLAG bits 1-2). 3 is reserved/invalid (PROTOCOL_VIOLATION). */
+export const SUBGROUP_ID_MODE = { ZERO: 0, FIRST_OBJECT_ID: 1, EXPLICIT: 2 } as const;
+
+/** FETCH Fetch Type — draft-18 §message-fetch. */
+export const MOQ_FETCH_TYPE = { STANDALONE: 0x1, RELATIVE_JOINING: 0x2, ABSOLUTE_JOINING: 0x3 } as const;
 
 /** Object Status codes — draft-18 §10 ("Object Status"). */
 export const MOQ_OBJECT_STATUS = {
@@ -46,14 +71,19 @@ export const MOQ_OBJECT_STATUS = {
   END_OF_TRACK: 0x4,
 } as const;
 
-/** REQUEST_ERROR codes — draft-18 §15.10 (subset the relay emits). */
+/** REQUEST_ERROR codes — draft-18 IANA table (subset the relay emits). */
 export const MOQ_ERROR = {
   INTERNAL_ERROR: 0x0,
   UNAUTHORIZED: 0x1,
   TIMEOUT: 0x2,
   NOT_SUPPORTED: 0x3,
+  MALFORMED_AUTH_TOKEN: 0x4,
+  EXPIRED_AUTH_TOKEN: 0x5,
+  GOING_AWAY: 0x6,
+  EXCESSIVE_LOAD: 0x9,
   DOES_NOT_EXIST: 0x10,
   INVALID_RANGE: 0x11,
+  UNINTERESTED: 0x20,
 } as const;
 
 /** Role values for the SETUP ROLE option — Publisher / Subscriber / PubSub. */
@@ -297,6 +327,137 @@ export function decodeRequestError(payload: Uint8Array): RequestErrorMsg {
   return { requestId: r.varint(), errorCode: r.varintNum(), reason: r.strLP() };
 }
 
+// ── full draft-18 request message set (relay-relevant) ──────────────────────────────────────────────
+
+export interface SubscribeNamespaceMsg {
+  requestId: bigint;
+  trackNamespacePrefix: string[]; // tuple — the namespace prefix the subscriber is interested in
+}
+// SUBSCRIBE_NAMESPACE (§message-subscribe-ns, 0x50) — RequestId(i) + Prefix(tuple) + Params(0).
+// Ack is the generic REQUEST_OK (0x7); the relay then streams NAMESPACE/NAMESPACE_DONE matches.
+export function encodeSubscribeNamespace(m: SubscribeNamespaceMsg): Uint8Array {
+  const w = new Writer().varint(m.requestId).tuple(m.trackNamespacePrefix).varint(0);
+  return frameControl(MOQ_MSG.SUBSCRIBE_NAMESPACE, w.bytes());
+}
+export function decodeSubscribeNamespace(payload: Uint8Array): SubscribeNamespaceMsg {
+  const r = new Reader(payload);
+  return { requestId: r.varint(), trackNamespacePrefix: r.tuple() };
+}
+
+export interface PublishMsg {
+  requestId: bigint;
+  trackNamespace: string[]; // tuple
+  trackName: string;
+  trackAlias: bigint;
+}
+// PUBLISH (§message-publish, 0x1D) — publisher-initiated push (vs subscriber-pull SUBSCRIBE).
+// RequestId(i) + TrackNamespace(tuple) + TrackName(strLP) + TrackAlias(i) + Params(0) + TrackProps(empty).
+// Ack is REQUEST_OK (0x7). We model the relay-relevant head; trailing Track Properties are tolerated.
+export function encodePublish(m: PublishMsg): Uint8Array {
+  const w = new Writer()
+    .varint(m.requestId)
+    .tuple(m.trackNamespace)
+    .strLP(m.trackName)
+    .varint(m.trackAlias)
+    .varint(0); // 0 parameters; no Track Properties trailer
+  return frameControl(MOQ_MSG.PUBLISH, w.bytes());
+}
+export function decodePublish(payload: Uint8Array): PublishMsg {
+  const r = new Reader(payload);
+  return { requestId: r.varint(), trackNamespace: r.tuple(), trackName: r.strLP(), trackAlias: r.varint() };
+}
+
+export interface TrackStatusMsg {
+  requestId: bigint;
+  trackNamespace: string[]; // tuple
+  trackName: string;
+}
+// TRACK_STATUS (§message-track-status, 0xD) — "format identical to SUBSCRIBE". Liveness query.
+// Reply is REQUEST_OK (0x7, aliased TRACK_STATUS_OK) on success, REQUEST_ERROR otherwise.
+export function encodeTrackStatus(m: TrackStatusMsg): Uint8Array {
+  const w = new Writer().varint(m.requestId).tuple(m.trackNamespace).strLP(m.trackName).varint(0);
+  return frameControl(MOQ_MSG.TRACK_STATUS, w.bytes());
+}
+export function decodeTrackStatus(payload: Uint8Array): TrackStatusMsg {
+  const r = new Reader(payload);
+  return { requestId: r.varint(), trackNamespace: r.tuple(), trackName: r.strLP() };
+}
+
+/** A Group/Object location pair (§location). */
+export interface MoqLocation {
+  group: bigint;
+  object: bigint;
+}
+export interface FetchMsg {
+  requestId: bigint;
+  fetchType: number; // MOQ_FETCH_TYPE.*
+  // Present iff fetchType === STANDALONE:
+  standalone?: { trackNamespace: string[]; trackName: string; start: MoqLocation; end: MoqLocation };
+  // Present iff fetchType is a joining type:
+  joining?: { joiningRequestId: bigint; joiningStart: bigint };
+}
+// FETCH (§message-fetch, 0x16) — pull past objects. RequestId(i) + FetchType(i) + variant + Params(0).
+export function encodeFetch(m: FetchMsg): Uint8Array {
+  const w = new Writer().varint(m.requestId).varint(m.fetchType);
+  if (m.fetchType === MOQ_FETCH_TYPE.STANDALONE) {
+    if (!m.standalone) throw new RangeError('standalone fetch requires standalone fields');
+    const s = m.standalone;
+    w.tuple(s.trackNamespace).strLP(s.trackName).varint(s.start.group).varint(s.start.object).varint(s.end.group).varint(s.end.object);
+  } else {
+    if (!m.joining) throw new RangeError('joining fetch requires joining fields');
+    w.varint(m.joining.joiningRequestId).varint(m.joining.joiningStart);
+  }
+  w.varint(0); // 0 parameters
+  return frameControl(MOQ_MSG.FETCH, w.bytes());
+}
+export function decodeFetch(payload: Uint8Array): FetchMsg {
+  const r = new Reader(payload);
+  const requestId = r.varint();
+  const fetchType = r.varintNum();
+  if (fetchType === MOQ_FETCH_TYPE.STANDALONE) {
+    const trackNamespace = r.tuple();
+    const trackName = r.strLP();
+    const start: MoqLocation = { group: r.varint(), object: r.varint() };
+    const end: MoqLocation = { group: r.varint(), object: r.varint() };
+    return { requestId, fetchType, standalone: { trackNamespace, trackName, start, end } };
+  }
+  return { requestId, fetchType, joining: { joiningRequestId: r.varint(), joiningStart: r.varint() } };
+}
+
+export interface FetchOkMsg {
+  endOfTrack: boolean;
+  end: MoqLocation; // largest available group/object
+}
+// FETCH_OK (§message-fetch-ok, 0x18) — first response on the FETCH bidi stream. No Request ID (it is
+// implied by the stream). EndOfTrack(8) + EndLocation(i,i) + Params(0) + TrackProps(empty).
+export function encodeFetchOk(m: FetchOkMsg): Uint8Array {
+  const w = new Writer().u8(m.endOfTrack ? 1 : 0).varint(m.end.group).varint(m.end.object).varint(0);
+  return frameControl(MOQ_MSG.FETCH_OK, w.bytes());
+}
+export function decodeFetchOk(payload: Uint8Array): FetchOkMsg {
+  const r = new Reader(payload);
+  return { endOfTrack: r.u8() === 1, end: { group: r.varint(), object: r.varint() } };
+}
+
+export interface GoawayMsg {
+  newSessionUri: string; // "" = reuse current URI (the only client-legal value)
+  timeoutMs: bigint; // 0 = no specific timeout
+  requestId?: bigint; // present only when carried on the control stream (our WS control envelope)
+}
+// GOAWAY (§message-goaway, 0x10) — graceful drain / migration signal. No reply expected.
+export function encodeGoaway(m: GoawayMsg): Uint8Array {
+  const w = new Writer().strLP(m.newSessionUri).varint(m.timeoutMs);
+  if (m.requestId !== undefined) w.varint(m.requestId);
+  return frameControl(MOQ_MSG.GOAWAY, w.bytes());
+}
+export function decodeGoaway(payload: Uint8Array): GoawayMsg {
+  const r = new Reader(payload);
+  const newSessionUri = r.strLP();
+  const timeoutMs = r.varint();
+  const requestId = r.remaining > 0 ? r.varint() : undefined;
+  return { newSessionUri, timeoutMs, requestId };
+}
+
 // ── WebSocket transport envelope ──────────────────────────────────────────────────────────────────
 //
 // MoQ separates control (a bidi stream) from data (unidi streams / datagrams) by QUIC STREAM. CF
@@ -349,4 +510,109 @@ export function decodeObject(bytes: Uint8Array): MoqObject {
   const status = r.varintNum();
   const payload = r.bytesLP();
   return { trackAlias, groupId, objectId, status, payload };
+}
+
+// ── SUBGROUP_HEADER multi-object stream (§subgroup-header) ──────────────────────────────────────────
+//
+// A subgroup carries MANY objects of one group on a single QUIC unidirectional stream (vs one object
+// per OBJECT_DATAGRAM). On the WS binding we carry the whole subgroup as one tagged frame. The stream
+// TYPE BYTE is a bitfield (SUBGROUP_BASE | flags); the header fields and per-object layout depend on
+// those flags. Object IDs are DELTA-coded (first absolute, rest are deltas) per §subgroup-header.
+
+export interface SubgroupObject {
+  objectId: bigint;
+  status: number; // MOQ_OBJECT_STATUS.* (only serialized when payload is empty)
+  payload: Uint8Array;
+}
+export interface SubgroupHeader {
+  trackAlias: bigint;
+  groupId: bigint;
+  subgroupId: bigint; // resolved value (see idMode for how it was encoded)
+  idMode: number; // SUBGROUP_ID_MODE.* — how subgroupId is carried on the wire
+  priority: number; // 0-255; ignored when defaultPriority is set
+  defaultPriority: boolean; // omit the Priority field, inherit subscription priority
+  endOfGroup: boolean;
+  firstObject: boolean;
+}
+
+/** Compose the SUBGROUP_HEADER type byte from header flags. */
+export function subgroupTypeByte(h: Pick<SubgroupHeader, 'idMode' | 'defaultPriority' | 'endOfGroup' | 'firstObject'>): number {
+  if (h.idMode === 3) throw new RangeError('subgroup id mode 3 is reserved/invalid');
+  let t = MOQ_STREAM.SUBGROUP_BASE;
+  t |= (h.idMode & 0x3) << SUBGROUP_FLAG.SUBGROUP_ID_SHIFT;
+  if (h.endOfGroup) t |= SUBGROUP_FLAG.END_OF_GROUP;
+  if (h.defaultPriority) t |= SUBGROUP_FLAG.DEFAULT_PRIORITY;
+  if (h.firstObject) t |= SUBGROUP_FLAG.FIRST_OBJECT;
+  // NOTE: PROPERTIES (0x01) is not emitted — we never attach per-object extension headers.
+  return t;
+}
+
+/** Is `typeByte` a valid SUBGROUP_HEADER stream type (bit 4 set, id-mode != 3)? */
+export function isSubgroupType(typeByte: number): boolean {
+  if ((typeByte & 0x10) === 0) return false; // bit 4 must be set
+  if ((typeByte & 0xffffff80) !== 0) return false; // only the low 7 bits are defined here
+  const idMode = (typeByte >> SUBGROUP_FLAG.SUBGROUP_ID_SHIFT) & 0x3;
+  return idMode !== 3; // mode 3 is a PROTOCOL_VIOLATION
+}
+
+/** Encode a full subgroup (header + objects) as one frame. Object IDs are delta-coded from the first. */
+export function encodeSubgroupStream(h: SubgroupHeader, objects: SubgroupObject[]): Uint8Array {
+  const w = new Writer().varint(subgroupTypeByte(h)).varint(h.trackAlias).varint(h.groupId);
+  if (h.idMode === SUBGROUP_ID_MODE.EXPLICIT) w.varint(h.subgroupId);
+  if (!h.defaultPriority) w.u8(h.priority & 0xff);
+  let prev: bigint | null = null;
+  for (const o of objects) {
+    const delta = prev === null ? o.objectId : o.objectId - prev;
+    if (delta < 0n) throw new RangeError('subgroup object ids must be non-decreasing');
+    prev = o.objectId;
+    w.varint(delta);
+    const isNormal = o.status === MOQ_OBJECT_STATUS.NORMAL && o.payload.length > 0;
+    if (isNormal) {
+      w.varint(o.payload.length).raw(o.payload);
+    } else {
+      w.varint(0).varint(o.status); // Object Status carried only when payload length is 0
+    }
+  }
+  return w.bytes();
+}
+
+/** Decode a subgroup frame → header + objects. Resolves delta-coded object IDs to absolute. */
+export function decodeSubgroupStream(bytes: Uint8Array): { header: SubgroupHeader; objects: SubgroupObject[] } {
+  const r = new Reader(bytes);
+  const typeByte = r.varintNum();
+  if (!isSubgroupType(typeByte)) throw new RangeError(`not a subgroup stream type: 0x${typeByte.toString(16)}`);
+  const properties = (typeByte & SUBGROUP_FLAG.PROPERTIES) !== 0;
+  const idMode = (typeByte >> SUBGROUP_FLAG.SUBGROUP_ID_SHIFT) & 0x3;
+  const endOfGroup = (typeByte & SUBGROUP_FLAG.END_OF_GROUP) !== 0;
+  const defaultPriority = (typeByte & SUBGROUP_FLAG.DEFAULT_PRIORITY) !== 0;
+  const firstObject = (typeByte & SUBGROUP_FLAG.FIRST_OBJECT) !== 0;
+
+  const trackAlias = r.varint();
+  const groupId = r.varint();
+  let subgroupId = 0n;
+  if (idMode === SUBGROUP_ID_MODE.EXPLICIT) subgroupId = r.varint();
+  const priority = defaultPriority ? 0 : r.u8();
+
+  const objects: SubgroupObject[] = [];
+  let cur: bigint | null = null;
+  while (r.remaining > 0) {
+    const delta = r.varint();
+    cur = cur === null ? delta : cur + delta;
+    if (idMode === SUBGROUP_ID_MODE.FIRST_OBJECT_ID && objects.length === 0) subgroupId = cur;
+    if (properties) skipObjectProperties(r); // we don't model extension headers; skip them faithfully
+    const len = r.varintNum();
+    if (len > 0) {
+      objects.push({ objectId: cur, status: MOQ_OBJECT_STATUS.NORMAL, payload: r.raw(len) });
+    } else {
+      const status = r.varintNum();
+      objects.push({ objectId: cur, status, payload: new Uint8Array(0) });
+    }
+  }
+  return { header: { trackAlias, groupId, subgroupId, idMode, priority, defaultPriority, endOfGroup, firstObject }, objects };
+}
+
+/** Skip a per-object Object Properties block (a length-prefixed extension-header bag). */
+function skipObjectProperties(r: Reader): void {
+  const len = r.varintNum();
+  r.raw(len);
 }
