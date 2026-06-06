@@ -6,6 +6,21 @@ semantic versioning aligned with the IETF MoQ draft revision.
 
 ## [Unreleased]
 
+### Added
+- **Real MoQ wire codec + pub/sub fan-out relay** (was a routing scaffold). `src/moq-wire.ts` is a
+  PURE, hermetically-tested draft-ietf-moq-transport-18 codec — leading-1-bits varint (§1.4.1),
+  Track Namespace tuple (§1.4.2), control framing `Type(i)+Length(16)+payload` (§10), the
+  relay-relevant control messages (SETUP/SUBSCRIBE/SUBSCRIBE_OK/PUBLISH_NAMESPACE/REQUEST_OK/
+  REQUEST_ERROR), and the object model (§11). Constants read verbatim from the moq-wg GitHub source
+  at the `draft-ietf-moq-transport-18` tag. `src/moq-relay.ts` is the transport-independent
+  publisher→subscribers fan-out state machine, folding traffic into the R4 `wave.usage` meter.
+  52 hermetic unit tests (`__tests__/moq-wire.test.ts`, `__tests__/moq-relay.test.ts`).
+- **WebSocket transport binding** in the session Durable Object (`moq-session-do.ts`): publisher +
+  subscribers connect over a WebSocket; each MoQ frame carries a 1-byte kind tag (control vs object)
+  so the control/data split survives on one socket. CF Workers has no WebTransport *server* API yet;
+  the codec/relay are unchanged when that lands (control→stream, object→datagram). capabilities.json
+  status `relay-scaffold` → `relay-websocket-beta`, lifecycle `alpha` → `beta`.
+
 ### Changed
 - Bump advertised IETF MoQ Transport draft 17 -> 18 (draft-ietf-moq-transport-18, dated
   2026-05-12, now the current WG draft). MOQ_DRAFT_VERSION=18, negotiation matrix

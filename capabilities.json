@@ -2,18 +2,18 @@
   "schemaVersion": "1",
   "repo": "wave-av/wave-moq-edge",
   "version": "0.1.0",
-  "lifecycle": "alpha",
+  "lifecycle": "beta",
   "planeLayer": 2,
   "foundationPin": "v1",
   "maintainers": [{ "team": "core" }],
   "exposes": {
     "apis": [
-      { "protocol": "moq", "endpoint": "https://moq.wave.online", "auth": "wave-token-v1", "metered": true, "status": "relay-scaffold" }
+      { "protocol": "moq", "endpoint": "https://moq.wave.online", "auth": "wave-token-v1", "metered": true, "status": "relay-websocket-beta", "note": "real draft-18 wire codec (src/moq-wire.ts) + pub/sub fan-out relay (src/moq-relay.ts) over a WebSocket transport binding in the session DO; WebTransport binding drops in when CF ships the server API" }
     ]
   },
   "consumes": {
     "thirdParty": [
-      { "service": "ietf-moq-transport", "licenseGated": false, "note": "advertises draft-17, negotiates draft-07..draft-17; canonical spec per UPSTREAMS.md moq entry" }
+      { "service": "ietf-moq-transport", "licenseGated": false, "note": "draft-ietf-moq-transport-18 wire codec (varint §1.4.1, namespace tuple §1.4.2, control framing §10, object model §11) — constants read verbatim from the moq-wg GitHub source at the draft-18 tag" }
     ],
     "waveLibs": ["lib://wave-media-engine/core"],
     "engineContracts": [
