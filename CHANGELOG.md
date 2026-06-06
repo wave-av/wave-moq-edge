@@ -21,6 +21,18 @@ semantic versioning aligned with the IETF MoQ draft revision.
   the codec/relay are unchanged when that lands (control→stream, object→datagram). capabilities.json
   status `relay-scaffold` → `relay-websocket-beta`, lifecycle `alpha` → `beta`.
 
+### Fixed
+- **Metering keyed by canonical `namespace/track`** instead of the Durable Object id hash, so MoQ
+  usage lines up with the KV registry and billing keys used everywhere else.
+- **Serialized relay event folding** in the session DO so overlapping WebSocket frames no longer
+  interleave and under-count objects/groups/subscribers via last-write-wins persistence.
+- **One publisher per track enforced**: a second `PUBLISH_NAMESPACE` is rejected with a
+  `REQUEST_ERROR` rather than silently displacing the active publisher and dropping its objects.
+- **Per-object size cap (`MAX_OBJECT_SIZE_BYTES`) enforced** on the WebSocket relay path; oversized
+  object frames are dropped before decode/fan-out.
+- **Malformed control payloads no longer escape as unhandled rejections**: truncated/invalid
+  SETUP/SUBSCRIBE/PUBLISH_NAMESPACE bodies are caught and ignored.
+
 ### Changed
 - Bump advertised IETF MoQ Transport draft 17 -> 18 (draft-ietf-moq-transport-18, dated
   2026-05-12, now the current WG draft). MOQ_DRAFT_VERSION=18, negotiation matrix

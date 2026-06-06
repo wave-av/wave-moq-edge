@@ -81,40 +81,52 @@ export class MoqRelay {
       return { replies, events }; // malformed framing — ignore (a strict server would reset)
     }
 
-    switch (type) {
-      case MOQ_MSG.SETUP: {
-        // Echo a SETUP advertising the relay as PUBSUB. (Each peer sends its own SETUP.)
-        decodeSetup(payload); // validate it parses
-        replies.push({
-          to: sessionId,
-          kind: 'control',
-          frame: encodeSetup({ role: MOQ_ROLE.PUBSUB, maxSubscriptions: 0xffffn }),
-        });
-        break;
-      }
-      case MOQ_MSG.PUBLISH_NAMESPACE: {
-        const m = decodePublishNamespace(payload);
-        this.publisher = sessionId;
-        this.publisherNamespace = m.trackNamespace;
-        replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
-        events.push({ kind: 'publish_start', sessionId });
-        break;
-      }
-      case MOQ_MSG.SUBSCRIBE: {
-        const m = decodeSubscribe(payload);
-        this.subscribers.set(sessionId, { requestId: m.requestId });
-        replies.push({ to: sessionId, kind: 'control', frame: encodeSubscribeOk({ requestId: m.requestId, expires: 0n }) });
-        events.push({ kind: 'subscribe', sessionId });
-        break;
-      }
-      default: {
-        // Reply with a REQUEST_ERROR for request-shaped messages we don't implement (requestId is the
-        // first field of every request message). Best-effort: if it doesn't parse, stay silent.
-        try {
-          const { type: _t, payload: p } = parseControl(frame);
-          void _t;
+    // Semantic decode of the payload can throw on truncated/invalid input (RangeError from Reader).
+    // Catch it here so a malformed-but-well-framed message is ignored rather than surfacing as an
+    // unhandled rejection in the transport's onMessage path (a strict server would reset the session).
+    try {
+      switch (type) {
+        case MOQ_MSG.SETUP: {
+          // Echo a SETUP advertising the relay as PUBSUB. (Each peer sends its own SETUP.)
+          decodeSetup(payload); // validate it parses
+          replies.push({
+            to: sessionId,
+            kind: 'control',
+            frame: encodeSetup({ role: MOQ_ROLE.PUBSUB, maxSubscriptions: 0xffffn }),
+          });
+          break;
+        }
+        case MOQ_MSG.PUBLISH_NAMESPACE: {
+          const m = decodePublishNamespace(payload);
+          // One publisher per track: reject a second session instead of silently displacing the
+          // active publisher (which would split-brain state and drop the original's objects).
+          if (this.publisher !== null && this.publisher !== sessionId) {
+            replies.push({
+              to: sessionId,
+              kind: 'control',
+              frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.INTERNAL_ERROR, reason: 'track already has a publisher' }),
+            });
+            break;
+          }
+          const isNewPublisher = this.publisher !== sessionId;
+          this.publisher = sessionId;
+          this.publisherNamespace = m.trackNamespace;
+          replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
+          if (isNewPublisher) events.push({ kind: 'publish_start', sessionId });
+          break;
+        }
+        case MOQ_MSG.SUBSCRIBE: {
+          const m = decodeSubscribe(payload);
+          this.subscribers.set(sessionId, { requestId: m.requestId });
+          replies.push({ to: sessionId, kind: 'control', frame: encodeSubscribeOk({ requestId: m.requestId, expires: 0n }) });
+          events.push({ kind: 'subscribe', sessionId });
+          break;
+        }
+        default: {
+          // Reply with a REQUEST_ERROR for request-shaped messages we don't implement (requestId is the
+          // first field of every request message). Best-effort: if it doesn't parse, stay silent.
           // first varint of the payload is the request id for request-type messages
-          const reqId = readFirstVarint(p);
+          const reqId = readFirstVarint(payload);
           if (reqId !== null) {
             replies.push({
               to: sessionId,
@@ -122,11 +134,11 @@ export class MoqRelay {
               frame: encodeRequestError({ requestId: reqId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'unsupported' }),
             });
           }
-        } catch {
-          /* ignore */
+          break;
         }
-        break;
       }
+    } catch {
+      return { replies, events }; // truncated / invalid payload — ignore
     }
     return { replies, events };
   }
@@ -136,10 +148,13 @@ export class MoqRelay {
    * Returns the per-subscriber object frames + metering events. The forwarded object is re-stamped
    * with this relay's TRACK_ALIAS so every subscriber sees a consistent alias.
    */
-  onObject(sessionId: string, frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
+  onObject(sessionId: string, frame: Uint8Array, maxBytes = 0): { fanout: Outbound[]; events: RelayEvent[] } {
     const fanout: Outbound[] = [];
     const events: RelayEvent[] = [];
     if (sessionId !== this.publisher) return { fanout, events }; // only the publisher may push objects
+    // Enforce the configured per-object size cap before decode/fan-out so a peer can't force large
+    // allocations with an oversized length-prefixed payload (MAX_OBJECT_SIZE_BYTES; 0 = unlimited).
+    if (maxBytes > 0 && frame.length > maxBytes) return { fanout, events };
 
     let obj: MoqObject;
     try {

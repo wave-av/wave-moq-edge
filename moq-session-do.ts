@@ -54,6 +54,10 @@ export class MOQSessionDurableObject {
   private sockets = new Map<string, WebSocket>(); // sessionId → socket
   private socketIds = new WeakMap<WebSocket, string>();
   private metrics: MetricsCollector;
+  // Canonical `namespace/track` key parsed from the request path. The DO id (idFromName(trackKey))
+  // is a one-way hash, so we recover the logical key from the URL to keep metering aligned with the
+  // registry/billing keys used everywhere else (trackKey() in index.ts).
+  private trackKeyHint: string | null = null;
 
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
@@ -62,14 +66,21 @@ export class MOQSessionDurableObject {
   }
 
   private async load(): Promise<SessionState> {
-    if (this.session) return this.session;
+    if (this.session) {
+      // Repair a stale key persisted before the canonical path was known (e.g. an early /state probe).
+      if (this.trackKeyHint && this.session.trackKey !== this.trackKeyHint) {
+        this.session.trackKey = this.trackKeyHint;
+      }
+      return this.session;
+    }
     const stored = await this.state.storage.get<SessionState>('session');
     if (stored) {
+      if (this.trackKeyHint && stored.trackKey !== this.trackKeyHint) stored.trackKey = this.trackKeyHint;
       this.session = stored;
       return stored;
     }
     const fresh: SessionState = {
-      trackKey: this.state.id.toString(),
+      trackKey: this.trackKeyHint ?? this.state.id.toString(),
       publisherSessionId: null,
       subscriberCount: 0,
       publisherStartedAt: null,
@@ -88,6 +99,11 @@ export class MOQSessionDurableObject {
 
   async fetch(request: Request): Promise<Response> {
     const url = new URL(request.url);
+
+    // Recover the canonical `namespace/track` key from the routed path (the DO id is a one-way hash
+    // of it). The internal /state probe carries no path, so only update when we can parse one.
+    const parsedKey = trackKeyFromPath(url.pathname);
+    if (parsedKey) this.trackKeyHint = parsedKey;
 
     // WebSocket relay upgrade (publisher or subscriber). The path tells us the intended role, but
     // the authoritative role comes from the first control message (PUBLISH_NAMESPACE vs SUBSCRIBE).
@@ -180,7 +196,8 @@ export class MOQSessionDurableObject {
       for (const out of r.replies) this.send(out.to, WS_KIND.CONTROL, out.frame);
       events = r.events;
     } else if (kind === WS_KIND.OBJECT) {
-      const r = this.relay.onObject(sessionId, body);
+      const maxObjectBytes = parseInt(this.env.MAX_OBJECT_SIZE_BYTES, 10) || 0;
+      const r = this.relay.onObject(sessionId, body, maxObjectBytes);
       for (const out of r.fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
       events = r.events;
     }
@@ -207,8 +224,22 @@ export class MOQSessionDurableObject {
     }
   }
 
+  /**
+   * Serialize event folding. WebSocket `message` handlers fire `onMessage` without awaiting, so two
+   * frames can reach `applyEvents` concurrently and interleave at the load/record/save await points,
+   * producing last-write-wins persistence (under-counted objects/groups/subscribers). Chaining each
+   * call onto the previous makes the load→mutate→save sequence atomic across overlapping messages.
+   */
+  private applyChain: Promise<void> = Promise.resolve();
+
+  private applyEvents(events: RelayEvent[]): Promise<void> {
+    const run = this.applyChain.then(() => this.applyEventsLocked(events));
+    this.applyChain = run.catch(() => {}); // keep the queue alive even if one fold rejects
+    return run;
+  }
+
   /** Fold relay events into the persisted snapshot + the R4 meter. */
-  private async applyEvents(events: RelayEvent[]): Promise<void> {
+  private async applyEventsLocked(events: RelayEvent[]): Promise<void> {
     const session = await this.load();
     const trackKey = session.trackKey;
     for (const e of events) {
@@ -242,6 +273,12 @@ export class MOQSessionDurableObject {
 
 function json(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
+}
+
+/** Extract the canonical `namespace/track` metering key from a routed publish/subscribe path. */
+function trackKeyFromPath(pathname: string): string | null {
+  const m = pathname.match(/\/v1\/(?:publish|subscribe)\/([^/]+)\/([^/]+)/);
+  return m ? `${m[1]}/${m[2]}` : null;
 }
 
 /** Coerce a WebSocket message payload to bytes; returns null for text frames. */
