@@ -56,8 +56,10 @@ MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "10000"
 MAX_OBJECT_SIZE_BYTES = "16777216"  # 16 MiB
 LOG_LEVEL = "info"
-# wave-token-v1 enforcement on publish/subscribe. OFF by default — flipping it on is a behavioral
-# change to the live relay (rejects unauthenticated clients), so it's an explicit operator opt-in.
+# wave-token-v1 + moq:read/moq:write SCOPE enforcement on publish/subscribe. OFF by default — flipping
+# it on is a behavioral change to the live relay (rejects unauthenticated/unscoped clients), so it's an
+# explicit operator opt-in (task #288). ON: publish requires moq:write, subscribe requires moq:read on
+# the gateway-injected x-wave-scopes principal; anonymous publish/subscribe is denied. DO NOT flip here.
 MOQ_REQUIRE_AUTH = "false"
 MOQ_CACHED_GROUPS = "3"  # late-joiner cache depth (recent groups replayed to new subscribers)
 

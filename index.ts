@@ -28,7 +28,7 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { wavePublicPage, wavePublicErrorResponse } from './src/shared/wave-public-html';
-import { authGate } from './src/wave-auth';
+import { scopeGate, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
 
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
@@ -96,8 +96,9 @@ function isWebSocketUpgrade(request: Request): boolean {
 }
 
 async function handlePublish(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
-  // wave-token-v1 gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
-  const denied = authGate(request, env);
+  // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+  // When enforced, publishing requires the canonical moq:write scope on the gateway-injected principal.
+  const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
   if (denied) return denied;
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
@@ -121,8 +122,9 @@ async function handlePublish(env: Env, namespace: string, track: string, request
 }
 
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
-  // wave-token-v1 gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
-  const denied = authGate(request, env);
+  // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+  // When enforced, subscribing requires the canonical moq:read scope on the gateway-injected principal.
+  const denied = scopeGate(request, env, MOQ_SCOPE_READ);
   if (denied) return denied;
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
