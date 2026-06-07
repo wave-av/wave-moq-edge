@@ -1,10 +1,27 @@
 import { describe, it, expect } from 'vitest';
-import { authRequired, extractWaveToken, isWaveTokenWellFormed, authGate, WAVE_TOKEN_PREFIX } from '../src/wave-auth';
+import {
+  authRequired,
+  extractWaveToken,
+  isWaveTokenWellFormed,
+  authGate,
+  WAVE_TOKEN_PREFIX,
+  extractInjectedScopes,
+  hasScope,
+  scopeGate,
+  MOQ_SCOPE_READ,
+  MOQ_SCOPE_WRITE,
+  WAVE_SCOPES_HEADER,
+} from '../src/wave-auth';
 
 const GOOD = `${WAVE_TOKEN_PREFIX}abcdef0123456789`;
 
 function req(headers: Record<string, string> = {}, url = 'https://moq.wave.online/v1/subscribe/wave/cam-1') {
   return new Request(url, { headers });
+}
+
+/** A request bearing a valid token AND a gateway-injected scopes header. */
+function authedReq(scopes: string, url = 'https://moq.wave.online/v1/subscribe/wave/cam-1') {
+  return req({ Authorization: `Bearer ${GOOD}`, [WAVE_SCOPES_HEADER]: scopes }, url);
 }
 
 describe('wave-token-v1 enforcement flag', () => {
@@ -61,5 +78,108 @@ describe('authGate front-door behaviour', () => {
   });
   it('401s a malformed token when enforced', () => {
     expect(authGate(req({ Authorization: 'Bearer jwt.nope' }), { MOQ_REQUIRE_AUTH: 'true' })?.status).toBe(401);
+  });
+});
+
+describe('canonical MoQ scopes (from #281 — read/write, never invented names)', () => {
+  it('uses the gateway scope literals moq:read / moq:write', () => {
+    expect(MOQ_SCOPE_READ).toBe('moq:read');
+    expect(MOQ_SCOPE_WRITE).toBe('moq:write');
+  });
+});
+
+describe('extractInjectedScopes (gateway-injected principal)', () => {
+  it('returns an empty set when the header is absent', () => {
+    expect(extractInjectedScopes(req()).size).toBe(0);
+  });
+  it('splits a space-delimited scope header (the gateway scopes.join(" ") format)', () => {
+    const s = extractInjectedScopes(req({ [WAVE_SCOPES_HEADER]: 'moq:read moq:write me:read' }));
+    expect([...s].sort()).toEqual(['me:read', 'moq:read', 'moq:write']);
+  });
+  it('tolerates repeated / leading / trailing whitespace', () => {
+    const s = extractInjectedScopes(req({ [WAVE_SCOPES_HEADER]: '   moq:read    moq:write  ' }));
+    expect([...s].sort()).toEqual(['moq:read', 'moq:write']);
+  });
+});
+
+describe('hasScope (matches gateway wildcard semantics)', () => {
+  it('grants an exact scope', () => {
+    expect(hasScope(new Set(['moq:read']), 'moq:read')).toBe(true);
+  });
+  it('denies an absent scope', () => {
+    expect(hasScope(new Set(['moq:read']), 'moq:write')).toBe(false);
+    expect(hasScope(new Set(), 'moq:read')).toBe(false);
+  });
+  it('grants via a moq:* protocol wildcard', () => {
+    expect(hasScope(new Set(['moq:*']), 'moq:read')).toBe(true);
+    expect(hasScope(new Set(['moq:*']), 'moq:write')).toBe(true);
+  });
+  it('grants via a global * wildcard', () => {
+    expect(hasScope(new Set(['*']), 'moq:write')).toBe(true);
+  });
+  it('does NOT let a different protocol wildcard grant moq', () => {
+    expect(hasScope(new Set(['ndi:*']), 'moq:read')).toBe(false);
+  });
+});
+
+describe('scopeGate — flag OFF (DEFAULT): live relay behaviour is UNCHANGED', () => {
+  // The whole point of the default-off flag: anonymous publish AND subscribe keep working today.
+  it('allows anonymous publish (no token, no scopes) when MOQ_REQUIRE_AUTH is unset', () => {
+    expect(scopeGate(req(), {}, MOQ_SCOPE_WRITE)).toBeNull();
+  });
+  it('allows anonymous subscribe (no token, no scopes) when MOQ_REQUIRE_AUTH is unset', () => {
+    expect(scopeGate(req(), {}, MOQ_SCOPE_READ)).toBeNull();
+  });
+  it('allows anonymous when the flag is an explicit falsey value', () => {
+    expect(scopeGate(req(), { MOQ_REQUIRE_AUTH: 'false' }, MOQ_SCOPE_WRITE)).toBeNull();
+    expect(scopeGate(req(), { MOQ_REQUIRE_AUTH: '0' }, MOQ_SCOPE_READ)).toBeNull();
+  });
+  it('ignores even a present-but-wrong scope when off (no behavioral change)', () => {
+    expect(scopeGate(authedReq('ndi:read'), {}, MOQ_SCOPE_WRITE)).toBeNull();
+  });
+});
+
+describe('scopeGate — flag ON: closes the anonymous-access hole', () => {
+  const ON = { MOQ_REQUIRE_AUTH: 'true' };
+
+  it('401s anonymous publish (no token) — anon can no longer publish', () => {
+    const r = scopeGate(req(), ON, MOQ_SCOPE_WRITE);
+    expect(r?.status).toBe(401);
+    expect(r?.headers.get('www-authenticate')).toContain('wave-token-v1');
+  });
+  it('401s anonymous subscribe (no token) — anon can no longer subscribe', () => {
+    expect(scopeGate(req(), ON, MOQ_SCOPE_READ)?.status).toBe(401);
+  });
+  it('403s a valid token that LACKS the required scope (publish needs moq:write)', () => {
+    const r = scopeGate(authedReq('moq:read'), ON, MOQ_SCOPE_WRITE);
+    expect(r?.status).toBe(403);
+    expect(r?.headers.get('www-authenticate')).toContain('insufficient_scope');
+    expect(r?.headers.get('www-authenticate')).toContain('moq:write');
+  });
+  it('403s a valid token that LACKS the required scope (subscribe needs moq:read)', () => {
+    expect(scopeGate(authedReq('moq:write'), ON, MOQ_SCOPE_READ)?.status).toBe(403);
+  });
+  it('403s a valid token with NO scopes header at all', () => {
+    expect(scopeGate(req({ Authorization: `Bearer ${GOOD}` }), ON, MOQ_SCOPE_WRITE)?.status).toBe(403);
+  });
+  it('allows a scoped principal: moq:write → publish', () => {
+    expect(scopeGate(authedReq('moq:write'), ON, MOQ_SCOPE_WRITE)).toBeNull();
+  });
+  it('allows a scoped principal: moq:read → subscribe', () => {
+    expect(scopeGate(authedReq('moq:read'), ON, MOQ_SCOPE_READ)).toBeNull();
+  });
+  it('allows a principal holding both scopes for either action', () => {
+    expect(scopeGate(authedReq('moq:read moq:write'), ON, MOQ_SCOPE_WRITE)).toBeNull();
+    expect(scopeGate(authedReq('moq:read moq:write'), ON, MOQ_SCOPE_READ)).toBeNull();
+  });
+  it('allows a moq:* wildcard principal for either action', () => {
+    expect(scopeGate(authedReq('moq:*'), ON, MOQ_SCOPE_WRITE)).toBeNull();
+    expect(scopeGate(authedReq('moq:*'), ON, MOQ_SCOPE_READ)).toBeNull();
+  });
+  it('reads the token from ?access_token for header-less WS clients (scope still enforced)', () => {
+    const url = `https://moq.wave.online/v1/subscribe/wave/cam-1?access_token=${GOOD}`;
+    // scopes header still required (gateway injects it); token via query is accepted by authGate
+    expect(scopeGate(req({ [WAVE_SCOPES_HEADER]: 'moq:read' }, url), ON, MOQ_SCOPE_READ)).toBeNull();
+    expect(scopeGate(req({}, url), ON, MOQ_SCOPE_READ)?.status).toBe(403); // token ok, no scope → 403
   });
 });

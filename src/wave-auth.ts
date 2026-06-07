@@ -7,18 +7,38 @@
  * token's FORMAT at the relay front door so unauthenticated traffic is rejected before a Durable
  * Object / WebSocket is ever opened.
  *
- * It does NOT (yet) verify the token against an identity store or check entitlement/quota — that is
- * gateway-side, federated exactly like realtime-edge (#108 gateway entitlement federation). Wiring the
- * verified token through to a gateway entitlement check is the follow-on; this PR only adds the
- * format gate so the advertised `auth: wave-token-v1` is real at the edge instead of unenforced.
+ * It does NOT cryptographically verify the token against an identity store — that is gateway-side,
+ * federated exactly like realtime-edge (#108 gateway entitlement federation). What it DOES add (task
+ * #285) on top of the format gate is canonical SCOPE enforcement: when enforcement is on, publishing a
+ * track requires `moq:write` and subscribing requires `moq:read` (the gateway maps moq:write→publish,
+ * moq:read→subscribe), read from the gateway-injected principal (x-wave-scopes header). This closes the
+ * anonymous-access hole at the relay front door instead of leaving the advertised
+ * `auth: wave-token-v1, metered: true` (capabilities.json) unenforced.
  *
- * PURE + flag-gated: the gate is OFF unless MOQ_REQUIRE_AUTH is set truthy, so enabling it is an
- * explicit operator action — existing unauthenticated clients on the live relay keep working until
- * an operator opts in (a behavioral change to a live path must never flip on by default).
+ * PURE + flag-gated: every gate is OFF unless MOQ_REQUIRE_AUTH is set truthy, so enabling it is an
+ * explicit operator action (task #288) — existing unauthenticated clients on the live relay keep
+ * working until an operator opts in (a behavioral change to a live path must never flip on by default).
  */
 
 /** The wave-token-v1 bearer prefix. A well-formed token is `wave-token-v1.<opaque-body>`. */
 export const WAVE_TOKEN_PREFIX = 'wave-token-v1.';
+
+/**
+ * Canonical MoQ protocol scopes (the SINGLE vocabulary from task #281 / wave-gateway PR #71, mirrored
+ * here so the edge enforces the SAME literals the gateway authorizes against — never invent new names).
+ * The gateway maps moq:write→publish and moq:read→subscribe (wave-gateway src/scopes.ts §PROTOCOL_GROUPS).
+ */
+export const MOQ_SCOPE_WRITE = 'moq:write'; // required to PUBLISH a track
+export const MOQ_SCOPE_READ = 'moq:read'; //  required to SUBSCRIBE to a track
+
+/**
+ * Header carrying the gateway-injected principal's granted scopes, SPACE-delimited — the exact
+ * serialization the gateway already uses on its token-exchange response (`scope: scopes.join(" ")`,
+ * wave-gateway src/worker.ts handleTokenExchange) and the OAuth2 `scope` convention (RFC 6749 §3.3).
+ * The gateway is the system of record for the principal; the edge consumes the forwarded scopes here
+ * (same trust model as the clip-engine spoke, task #63: spokes consume the gateway-injected principal).
+ */
+export const WAVE_SCOPES_HEADER = 'x-wave-scopes';
 
 /** Env knobs this gate reads (subset of the worker Env). */
 export interface AuthEnv {
@@ -79,6 +99,72 @@ export function authGate(request: Request, env: AuthEnv): Response | null {
       headers: {
         'content-type': 'application/json',
         'www-authenticate': 'Bearer realm="moq.wave.online", error="invalid_token", scheme="wave-token-v1"',
+      },
+    }
+  );
+}
+
+/**
+ * Parse the gateway-injected scopes header into a scope set. SPACE-delimited (RFC 6749 §3.3 + the
+ * gateway's own `scopes.join(" ")` serialization). Tolerant of repeated whitespace and a missing
+ * header (→ empty set). Header name lookup is case-insensitive (Headers normalizes it).
+ */
+export function extractInjectedScopes(request: Request): Set<string> {
+  const raw = request.headers.get(WAVE_SCOPES_HEADER);
+  if (!raw) return new Set();
+  return new Set(raw.trim().split(/\s+/).filter((s) => s.length > 0));
+}
+
+/**
+ * Does the gateway-injected principal hold `required`? A wildcard `moq:*` (or global `*`) also grants
+ * it — matching the gateway's hasScope semantics (wave-gateway src/auth.ts) so the edge never rejects
+ * a principal the gateway would have admitted. Pure; no I/O.
+ */
+export function hasScope(scopes: Set<string>, required: string): boolean {
+  if (scopes.has(required)) return true;
+  if (scopes.has('*')) return true;
+  const colon = required.indexOf(':');
+  if (colon > 0 && scopes.has(`${required.slice(0, colon)}:*`)) return true; // e.g. "moq:*" grants "moq:read"
+  return false;
+}
+
+/**
+ * The MoQ scope gate. Composes the format gate (authGate) with a scope check on the gateway-injected
+ * principal. Behaviour by flag state (the WHOLE point of this PR — additive, default-OFF):
+ *
+ *   MOQ_REQUIRE_AUTH off (DEFAULT)  → always null. The live relay is UNCHANGED: anonymous publish AND
+ *                                     subscribe keep working exactly as today. Flipping the flag on is
+ *                                     an explicit operator action (task #288), never a default.
+ *   MOQ_REQUIRE_AUTH on             → (1) authGate: reject missing/malformed wave-token-v1 with 401;
+ *                                     (2) require `required` (moq:write for publish, moq:read for
+ *                                         subscribe) in the x-wave-scopes principal, else 403. This is
+ *                                     what closes the anonymous-access hole: with the flag on, an
+ *                                     unauthenticated/unscoped caller can no longer publish or subscribe.
+ *
+ * Returns null to proceed, or a 401/403 Response to reject. RFC 6750 §3 WWW-Authenticate on rejection.
+ */
+export function scopeGate(request: Request, env: AuthEnv, required: string): Response | null {
+  // Off → no behavioral change to the live relay (also covers the format gate).
+  const denied = authGate(request, env);
+  if (denied) return denied; // off → null; on+bad-token → 401
+  if (!authRequired(env)) return null; // off → proceed (token already validated as null-op above)
+
+  // On + well-formed token: require the canonical scope from the gateway-injected principal.
+  const scopes = extractInjectedScopes(request);
+  if (hasScope(scopes, required)) return null;
+  return new Response(
+    JSON.stringify({
+      type: 'https://httpstatuses.io/403',
+      title: 'Forbidden',
+      status: 403,
+      detail: `principal lacks required scope: ${required}`,
+      required_scope: required,
+    }),
+    {
+      status: 403,
+      headers: {
+        'content-type': 'application/json',
+        'www-authenticate': `Bearer realm="moq.wave.online", error="insufficient_scope", scope="${required}"`,
       },
     }
   );
