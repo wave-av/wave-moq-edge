@@ -61,14 +61,18 @@ semantic versioning aligned with the IETF MoQ draft revision.
 - **Preferred MoQ draft bumped 07 → 17** (2026-05-11). All references in README,
   package.json description, wrangler.toml env vars, index.ts module docstring,
   moq-session-do.ts scaffold comments, SECURITY.md, CONTRIBUTING.md, and
-  examples/quick-start.md updated. Wire IDs (0xff000007..0xff000011) match
-  draft-17 §6.2 version-string encoding.
+  examples/quick-start.md updated. (Integer version IDs were later removed at
+  draft-18, which switched to ALPN-only version negotiation — see above.)
 
 ### Pending
-- Real wire-protocol implementation targeting draft-17 (currently scaffold; tests
-  quarantined in `__tests__.broken-2026-05-07/` pending v2). The draft-17 message
-  framing (OBJECT_DATAGRAM, SUBSCRIBE, FETCH, GROUP_HEADER) is what 0.2.x will
-  ship; the version-negotiation layer is in place now.
+- **Native WebTransport/QUIC server binding.** The draft-18 codec + relay are
+  transport-independent; the current binding is WebSocket (CF Workers exposes no
+  WebTransport *server* API yet). When it lands: control→stream, object→datagram —
+  no codec change.
+- **Cross-relay interop with the public Cloudflare relays** (`draft-07`/`draft-14`
+  at `*.cloudflare.mediaoverquic.com`; CF currently deploys draft-07). Needs the
+  WebTransport binding above, a draft-18↔≤17 varint bridge (draft-18's leading-1-bits
+  varint is not RFC-9000-compatible), and `UNSUBSCRIBE` handling.
 - Protocol adapters: WebRTC↔MoQ, SRT↔MoQ, HLS-LL↔MoQ
 - Live demo at moq-demo.wave.online (Phase 1 landing shipped 2026-05-08)
 

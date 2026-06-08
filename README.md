@@ -2,7 +2,7 @@
 
 > **Canonical repository.** This repo is the source of truth for WAVE MoQ edge — it is **no longer an auto-mirror** of `wave-surfer-connect/workers/moq-edge`. Open PRs **here**, not against WSC. (The WSC `workers/moq-edge` directory is being retired per the WAVE Protocol Plane spec.)
 
-**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) (currently advertising draft-07 through draft-18 in version negotiation; tracks the WG actively). Publish a track. Subscribe to it. Globally distributed in under 100ms.
+**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) at **draft-18** — the current IETF working draft (2026-05-12), the frontier of the spec. Publish a track. Subscribe to it. Globally distributed in under 100ms.
 
 ```
 POST   /v1/publish/:namespace/:track       Become a publisher
@@ -62,12 +62,16 @@ See [`examples/quick-start.md`](./examples/quick-start.md) for a full walkthroug
 
 ## Spec compliance
 
-moq-edge tracks the IETF draft. v0.x advertises a negotiation matrix from draft-18 (current IETF working draft, dated 2026-05-12) down to draft-07 (Cloudflare's historic subset support floor):
+moq-edge tracks the IETF draft at the frontier. The wire codec (`src/moq-wire.ts`) implements **draft-18** — the current IETF working draft (2026-05-12) — including its spec-distinctive changes: ALPN-only version negotiation (`moqt-18`), leading-1-bits varints (§1.4.1, *not* RFC 9000's 2-bit prefix), and the `ANNOUNCE`→`PUBLISH_NAMESPACE` rename.
 
-| Release | Preferred draft | Negotiation range | Status |
+| Release | Preferred draft | Advertised range | Status |
 |---|---|---|---|
 | 0.x | draft-18 | draft-07 .. draft-18 | Current |
 | (planned) 1.x | draft-19+ | drops drafts < 12 | Future |
+
+**What the advertised range is — and isn't.** The codec is draft-18-native. The draft-07 floor is the *advertised* negotiation minimum, not a guarantee of cross-version wire interop: draft-18's leading-1-bits varint is not byte-compatible with the RFC-9000 varints used by draft ≤17, so a real connection below draft-18 also needs a varint bridge (plus `UNSUBSCRIBE`, currently unimplemented). Treat anything below draft-18 as a roadmap target, not proven interop.
+
+**Interop target.** Cloudflare runs public MoQ relays at `draft-07.cloudflare.mediaoverquic.com` and `draft-14.cloudflare.mediaoverquic.com` — their deployment currently tracks **draft-07**, eleven revisions behind the spec. Those endpoints are the named targets for cross-relay interop testing once the native WebTransport/QUIC binding lands (today's transport is WebSocket — see [CHANGELOG](./CHANGELOG.md)).
 
 Compliance tests live in `__tests__/`. Interop reports welcome — file an issue with your client implementation, transport, and findings.
 
@@ -91,7 +95,7 @@ This is the **transport relay**. It moves bytes. It does not:
 
 The full WAVE platform stacks all those layers on top. moq-edge is the bottom one.
 
-## Constraints (current scaffold)
+## Constraints
 
 - Per-track DO instance — sticky routing means publisher + subscribers always meet at the same DO
 - Namespace + track names: lowercase alphanumeric + dash, 1-64 chars (Zod-validated)
