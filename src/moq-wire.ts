@@ -30,7 +30,7 @@ export const MOQ_MSG = {
   SUBSCRIBE: 0x3,
   SUBSCRIBE_OK: 0x4,
   REQUEST_ERROR: 0x5,
-  PUBLISH_NAMESPACE: 0x6, // was ANNOUNCE in ≤ draft-17
+  PUBLISH_NAMESPACE: 0x6, // formerly ANNOUNCE (renamed in an earlier draft)
   REQUEST_OK: 0x7,
   REQUEST_UPDATE: 0x2,
   PUBLISH: 0x1d,
