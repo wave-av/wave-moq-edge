@@ -26,6 +26,7 @@
 import { MoqRelay, type RelayEvent } from './src/moq-relay';
 import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
+import { emitMoqUsage } from './usage-emit';
 
 interface Env {
   MOQ_TRACK_REGISTRY: KVNamespace;
@@ -36,17 +37,22 @@ interface Env {
   MAX_OBJECT_SIZE_BYTES: string;
   LOG_LEVEL: string;
   MOQ_CACHED_GROUPS?: string; // late-joiner cache depth (default 3)
+  // #284 usage emit (both optional → emit is INERT until an operator provisions them; see usage-emit.ts):
+  GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage (var, e.g. https://api.wave.online)
+  WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest endpoint (secret)
 }
 
 /** What survives hibernation, pinned to each socket via serializeAttachment (≤2KB structured clone). */
 interface SocketAttachment {
   sessionId: string;
   role: 'pending' | 'publisher' | 'subscriber';
+  org?: string; // #284: gateway-injected x-wave-org captured at upgrade, so a hibernation wake keeps it
 }
 
 interface SessionState {
   trackKey: string;
   publisherSessionId: string | null;
+  publisherOrg: string | null; // #284: the publisher's billing org (from x-wave-org); null = unattributed
   subscriberCount: number;
   publisherStartedAt: string | null;
   lastActivityAt: string | null;
@@ -65,6 +71,7 @@ export class MOQSessionDurableObject {
   private relay: MoqRelay;
   private sockets = new Map<string, WebSocket>(); // sessionId → socket
   private socketIds = new WeakMap<WebSocket, string>();
+  private sessionOrgs = new Map<string, string>(); // #284: sessionId → x-wave-org (rebuilt from attachments on wake)
   private rehydrated = false;
   private metrics: MetricsCollector;
 
@@ -90,6 +97,7 @@ export class MOQSessionDurableObject {
       if (!att?.sessionId) continue;
       this.sockets.set(att.sessionId, ws);
       this.socketIds.set(ws, att.sessionId);
+      if (att.org) this.sessionOrgs.set(att.sessionId, att.org); // #284: keep the billing org across hibernation
       if (att.role === 'publisher' || att.role === 'subscriber') restored.push({ sessionId: att.sessionId, role: att.role });
     }
     if (restored.length) this.relay.hydrate(restored);
@@ -98,7 +106,8 @@ export class MOQSessionDurableObject {
   /** Persist a socket's learned role into its attachment so a hibernation wake can rebuild the relay. */
   private setRole(sessionId: string, role: 'publisher' | 'subscriber'): void {
     const ws = this.sockets.get(sessionId);
-    if (ws) ws.serializeAttachment({ sessionId, role } satisfies SocketAttachment);
+    // Preserve the captured org (#284) — re-serializing without it would drop the publisher's billing org.
+    if (ws) ws.serializeAttachment({ sessionId, role, org: this.sessionOrgs.get(sessionId) } satisfies SocketAttachment);
   }
 
   private async load(): Promise<SessionState> {
@@ -111,6 +120,7 @@ export class MOQSessionDurableObject {
     const fresh: SessionState = {
       trackKey: this.state.id.toString(),
       publisherSessionId: null,
+      publisherOrg: null,
       subscriberCount: 0,
       publisherStartedAt: null,
       lastActivityAt: null,
@@ -133,7 +143,10 @@ export class MOQSessionDurableObject {
     // WebSocket relay upgrade (publisher or subscriber). The path tells us the intended role, but
     // the authoritative role comes from the first control message (PUBLISH_NAMESPACE vs SUBSCRIBE).
     if (request.headers.get('Upgrade')?.toLowerCase() === 'websocket') {
-      return this.handleWebSocket(url);
+      // #284: capture the gateway-injected principal org so a publisher session can be billed at close.
+      // Absent (anonymous / direct traffic) → null → usage emit is skipped (we never fabricate an org).
+      const org = request.headers.get('x-wave-org')?.trim() || null;
+      return this.handleWebSocket(url, org);
     }
 
     const session = await this.load();
@@ -179,7 +192,7 @@ export class MOQSessionDurableObject {
 
   // ── WebSocket relay ───────────────────────────────────────────────────────────────────────────
 
-  private handleWebSocket(url: URL): Response {
+  private handleWebSocket(url: URL, org: string | null): Response {
     const max = parseInt(this.env.MAX_SUBSCRIBERS_PER_TRACK, 10) || 1000;
     const isSubscribe = url.pathname.includes('/subscribe/');
     if (isSubscribe && this.relay.subscriberCount >= max) {
@@ -195,7 +208,8 @@ export class MOQSessionDurableObject {
     // We tag the socket with its sessionId (so getWebSockets(sessionId) finds it) and stash a survival
     // attachment; the relay role is filled in once the first control message reveals it (setRole).
     this.state.acceptWebSocket(server, [sessionId]);
-    server.serializeAttachment({ sessionId, role: 'pending' } satisfies SocketAttachment);
+    if (org) this.sessionOrgs.set(sessionId, org); // #284: remember the billing org for this connection
+    server.serializeAttachment({ sessionId, role: 'pending', org: org ?? undefined } satisfies SocketAttachment);
     this.sockets.set(sessionId, server);
     this.socketIds.set(server, sessionId);
 
@@ -268,8 +282,11 @@ export class MOQSessionDurableObject {
       this.sockets.delete(sessionId);
       this.socketIds.delete(ws);
     }
+    // removeSession emits publish_end for a closing publisher → applyEvents flushes its usage (#284)
+    // using session.publisherOrg, so drop this socket's org AFTER applyEvents has run.
     const events = this.relay.removeSession(sessionId);
     if (events.length) await this.applyEvents(events);
+    this.sessionOrgs.delete(sessionId);
   }
 
   private send(sessionId: string, kind: number, frame: Uint8Array): void {
@@ -291,10 +308,35 @@ export class MOQSessionDurableObject {
         case 'publish_start':
           session.publisherSessionId = e.sessionId;
           session.publisherStartedAt = session.publisherStartedAt ?? new Date().toISOString();
+          // #284: attribute the publisher's billing org from the principal captured at WS upgrade.
+          // null (anonymous / no gateway principal) → the close-time emit skips (never fabricate an org).
+          session.publisherOrg = this.sessionOrgs.get(e.sessionId) ?? null;
           break;
-        case 'publish_end':
+        case 'publish_end': {
+          // #284: the publisher session ended → flush its accumulated REAL usage (bytes/frames/reconnects
+          // + wall-time as session_ms) to the gateway ingest, fire-and-forget + fail-open. Then reset the
+          // track meter + clear publisher fields so the next publisher on this (warm) DO starts at zero —
+          // no cross-session over-count. emitMoqUsage no-ops when org is null or the emit is unprovisioned.
+          const meter = this.metrics.usage(trackKey);
+          const startedMs = session.publisherStartedAt ? Date.parse(session.publisherStartedAt) : 0;
+          const sessionMs = startedMs > 0 ? Math.max(0, Date.now() - startedMs) : 0;
+          this.state.waitUntil(
+            emitMoqUsage(this.env, {
+              org: session.publisherOrg,
+              trackKey,
+              sessionId: e.sessionId,
+              bytes: meter.bytes,
+              frames: meter.frames,
+              reconnects: meter.reconnects,
+              sessionMs,
+            }),
+          );
+          this.metrics.reset(trackKey);
           session.publisherSessionId = null;
+          session.publisherStartedAt = null;
+          session.publisherOrg = null;
           break;
+        }
         case 'subscribe':
           session.subscriberCount = this.relay.subscriberCount;
           break;
