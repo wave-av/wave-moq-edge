@@ -102,9 +102,14 @@ jobs:
   # CF/Sentry creds here — obs-wire pulls them from Doppler wave/prd; we pass only org DOPPLER_TOKEN +
   # the issue-ops bot App creds (obs-wire mints a short-lived foundation-read token to fetch the SSoT
   # wire script from the PRIVATE foundation repo; the caller's GITHUB_TOKEN can't).
+  # GATE: the BOT_ISSUE_OPS_* org secrets have visibility=selected; if this repo isn't on that list,
+  # referencing them makes the whole workflow fail to start (0 jobs) — which reds the deploy job above,
+  # defeating the "needs: deploy + always()" isolation. So gate on the WIRE_OBS repo/org var: set
+  # WIRE_OBS=true ONLY on repos that ARE granted the BOT_ISSUE_OPS secrets. Unset ⇒ skip obs-wiring,
+  # deploy still ships. (Re-enable: add this repo to BOT_ISSUE_OPS_* selected-repos + set WIRE_OBS=true.)
   wire-obs:
     needs: deploy
-    if: always()
+    if: ${{ always() && vars.WIRE_OBS == 'true' }}
     uses: wave-av/wave-foundation/.github/workflows/obs-wire.yml@e75987e59d7894ae9e5336ab54439ac12fc35ee7
     with:
       project_slug: wave-moq-edge
