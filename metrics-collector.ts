@@ -74,6 +74,15 @@ export class MetricsCollector {
     return this.meters.get(trackKey) ?? newUsage('moq', 'out');
   }
 
+  /**
+   * Drop a track's accumulated meter. Called after a publisher session's usage is flushed to the
+   * gateway (#284) so the next publisher on the SAME (warm) DO starts at zero and can't inherit the
+   * prior session's bytes/frames — i.e. no cross-session over-count.
+   */
+  reset(trackKey: string): void {
+    this.meters.delete(trackKey);
+  }
+
   /** Canonical `wave.usage` JSON line for a track. */
   usageLine(trackKey: string): string {
     return usageJson(this.usage(trackKey));
