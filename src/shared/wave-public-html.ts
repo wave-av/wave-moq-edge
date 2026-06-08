@@ -126,6 +126,8 @@ const BASE_CSS = `
     font-size: 0.85rem; line-height: 1.5;
   }
   footer { color: #6e7b86; font-size: 0.85rem; margin-top: 64px; border-top: 1px solid #21262d; padding-top: 24px; }
+  .ftag { color: #4e5c66; font-size: 0.8rem; margin-bottom: 10px; letter-spacing: 0.01em; }
+  .fnav { display: flex; flex-wrap: wrap; gap: 4px 0; }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 `;
 
@@ -171,7 +173,14 @@ export function wavePublicPage(opts: WavePublicPageOptions): string {
     ${stats}
     ${opts.children ?? ''}
     <footer>
-      <a href="https://wave.online">WAVE Online</a> · Built at the edge on Cloudflare Workers.
+      <p class="ftag">Video infrastructure for the agentic internet.</p>
+      <p class="fnav">
+        <a href="https://wave.online">WAVE</a>
+        &nbsp;·&nbsp;<a href="https://wave.online/protocol">Protocol</a>
+        &nbsp;·&nbsp;<a href="https://docs.wave.online">Docs</a>
+        &nbsp;·&nbsp;<a href="https://status.wave.online">Status</a>
+      </p>
+      <p>Built at the edge on Cloudflare Workers.</p>
     </footer>
   </main>
 </body>
