@@ -350,6 +350,28 @@ export default {
         });
       }
 
+      // Machine identity (WAVE Discoverability standard): platform-controlled did:web,
+      // consistent with the rest of the fleet. Sits before the MoQ/WS routes — a plain GET.
+      if (path === '/.well-known/did.json' && request.method === 'GET') {
+        return jsonResponse({
+          '@context': ['https://www.w3.org/ns/did/v1', 'https://w3id.org/security/suites/jws-2020/v1'],
+          id: 'did:web:moq.wave.online',
+          controller: 'did:web:wave.online',
+          alsoKnownAs: ['https://moq.wave.online'],
+          verificationMethod: [{
+            id: 'did:web:moq.wave.online#gateway-key',
+            type: 'JsonWebKey2020',
+            controller: 'did:web:wave.online',
+            publicKeyJwk: { kty: 'OKP', crv: 'Ed25519', use: 'sig', kid: 'https://api.wave.online/.well-known/jwks.json' },
+          }],
+          assertionMethod: ['did:web:moq.wave.online#gateway-key'],
+          service: [
+            { id: 'did:web:moq.wave.online#moq', type: 'MoqRelay', serviceEndpoint: 'https://moq.wave.online' },
+            { id: 'did:web:moq.wave.online#gateway', type: 'WaveGateway', serviceEndpoint: 'https://api.wave.online' },
+          ],
+        }, 200, { 'cache-control': 'public, max-age=3600' });
+      }
+
       // Health + metrics
       if (path === '/health') return handleHealth(env);
       if (path === '/metrics') return handleMetrics(env);
