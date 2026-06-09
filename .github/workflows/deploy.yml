@@ -1,6 +1,6 @@
 name: deploy
 
-# Env-aware auto-deploy for the spoke chassis. Inherits the proven wave-dispatch / wave-gateway
+# Env-aware auto-deploy for the spoke chassis. Inherits the proven wave-dispatch / API gateway
 # pattern with one addition: staging vs production split by branch.
 #
 #   push to main             → wrangler deploy --env production  (<proto>.wave.online)

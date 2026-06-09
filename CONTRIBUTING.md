@@ -6,7 +6,7 @@ Thanks for your interest. moq-edge is a Cloudflare Worker that implements an IET
 
 A reference implementation of the MoQ Transport relay pattern (publish/subscribe at the edge, Durable Object as rendezvous, R2 for replay). The goal is interop testing against `draft-ietf-moq-transport-07` and giving the broader streaming community a runnable starting point.
 
-**This repo is the canonical source of truth for WAVE MoQ edge.** It is no longer a mirror of the `wave-surfer-connect` monorepo — all moq-edge changes land here directly via PR. This repo serves:
+**This repo is the canonical source of truth for WAVE MoQ edge.** It is no longer a mirror of an internal WAVE monorepo — all moq-edge changes land here directly via PR. This repo serves:
 
 - Issues and PRs from WAVE engineers and outside contributors (land them here)
 - Interop testing with other MoQ implementations

@@ -1,6 +1,6 @@
 /// <reference types="@cloudflare/workers-types" />
 /**
- * MoQ → wave-gateway usage emit (#284 / #265 MoQ slice).
+ * MoQ → API gateway usage emit (#284 / #265 MoQ slice).
  *
  * The relay accumulates a real per-track meter (metrics-collector.ts: live QUIC bytes/frames/reconnects).
  * This module flushes that meter to the gateway's #236 per-dimension ingest (POST /v1/internal/usage,
@@ -19,7 +19,7 @@
  *
  * The meter has no fps (a relay doesn't decode), so duration can't be derived frame/fps; we send the real
  * publisher-session wall-time as `session_ms`. With `protocol: "moq"` the gateway bills it as the
- * per-protocol stream-minute dimension `duration_ms:moq` (wave-gateway #262).
+ * per-protocol stream-minute dimension `duration_ms:moq` (api-gateway #262).
  */
 
 /** The subset of the worker/DO env this emit reads. Both are optional → emit is inert until provisioned. */
@@ -41,7 +41,7 @@ export interface MoqUsageArgs {
   sessionMs: number;
 }
 
-/** The gateway `/v1/internal/usage` request envelope (matches wave-gateway src/usage.ts handleUsageIngest). */
+/** The gateway `/v1/internal/usage` request envelope (matches api-gateway src/usage.ts handleUsageIngest). */
 interface UsageEnvelope {
   org: string;
   usage: {

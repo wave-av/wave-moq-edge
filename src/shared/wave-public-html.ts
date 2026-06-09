@@ -2,7 +2,7 @@
  * wave-public-html — branded public landing/error page helper.
  *
  * Vendored into wave-moq-edge by the canonical-flip (Track C Phase-A). The original
- * import was `../shared/wave-public-html` from the wave-surfer-connect monorepo
+ * import was `../shared/wave-public-html` from an internal WAVE monorepo
  * (`workers/shared/`), which was never vendored into the auto-mirror — so the repo
  * could not compile standalone. Now that wave-moq-edge is the source of truth (not a
  * mirror), this helper lives here.
