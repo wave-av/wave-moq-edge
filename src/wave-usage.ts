@@ -2,7 +2,7 @@
  * WAVE R4 metering schema — the TypeScript mirror of the Media Engine's `wave.usage` event.
  *
  * The canonical contract lives in the engine core as C++:
- *   wave-av/wave-media-engine → engine/wave-media-adapter.h  (struct UsageMeter + usage_json())
+ *   the media engine → engine/media-adapter.h  (struct UsageMeter + usage_json())
  * Per GUARDRAIL.md (Rule 2), edge relays live in wave-*-edge and CONSUME the engine. A Cloudflare
  * Worker can't link the C++ core, so this file MIRRORS the contract field-for-field — every native
  * adapter (NDI/SRT/OMT/Dante/ST2110) and every cloud relay (MoQ here) emits the SAME shape, so one
@@ -70,7 +70,7 @@ export function newUsage(protocol: string, direction: 'in' | 'out'): WaveUsage {
 /**
  * The edge clock. Cloudflare's runtime wallclock is NTP-disciplined infrastructure time, so we report
  * source "edge" with a zero local offset and locked=true (no /dev/ptp0 at the edge — PTP discipline is
- * an on-prem/relay concern, see wave-media-engine R1.P2). Mirrors the engine clock sub-object shape.
+ * an on-prem/relay concern, see the media engine R1.P2). Mirrors the engine clock sub-object shape.
  */
 export function edgeClock(): WaveClockStatus {
   return { source: 'edge', offset_ns: 0, locked: true, gm: '' };

@@ -1,6 +1,6 @@
 # wave-moq-edge
 
-> **Canonical repository.** This repo is the source of truth for WAVE MoQ edge — it is **no longer an auto-mirror** of `wave-surfer-connect/workers/moq-edge`. Open PRs **here**, not against WSC. (The WSC `workers/moq-edge` directory is being retired per the WAVE Protocol Plane spec.)
+> **Canonical repository.** This repo is the source of truth for WAVE MoQ edge — it is **no longer an auto-mirror** of an internal WAVE monorepo's `workers/moq-edge`. Open PRs **here**. (The upstream `workers/moq-edge` directory is being retired per the WAVE Protocol Plane spec.)
 
 **Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) at **draft-18** — the current IETF working draft (2026-05-12), the frontier of the spec. Publish a track. Subscribe to it. Globally distributed in under 100ms.
 

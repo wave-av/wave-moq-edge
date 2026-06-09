@@ -1,7 +1,7 @@
 /// <reference types="@cloudflare/workers-types" />
 /**
  * MoQ Metrics Collector — aggregates MoQ relay events into the canonical WAVE R4 `wave.usage`
- * metering schema (src/wave-usage.ts, mirrored from wave-media-engine engine/wave-media-adapter.h).
+ * metering schema (src/wave-usage.ts, mirrored from the media engine's engine/media-adapter.h).
  *
  * This is how MoQ "consumes the engine" at the edge (GUARDRAIL Rule 2): the relay can't link the C++
  * core, so it emits the SAME metering shape every native adapter does → one billing/observability path.

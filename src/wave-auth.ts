@@ -24,9 +24,9 @@
 export const WAVE_TOKEN_PREFIX = 'wave-token-v1.';
 
 /**
- * Canonical MoQ protocol scopes (the SINGLE vocabulary from task #281 / wave-gateway PR #71, mirrored
+ * Canonical MoQ protocol scopes (the SINGLE vocabulary from task #281 / the API gateway PR #71, mirrored
  * here so the edge enforces the SAME literals the gateway authorizes against — never invent new names).
- * The gateway maps moq:write→publish and moq:read→subscribe (wave-gateway src/scopes.ts §PROTOCOL_GROUPS).
+ * The gateway maps moq:write→publish and moq:read→subscribe (api-gateway src/scopes.ts §PROTOCOL_GROUPS).
  */
 export const MOQ_SCOPE_WRITE = 'moq:write'; // required to PUBLISH a track
 export const MOQ_SCOPE_READ = 'moq:read'; //  required to SUBSCRIBE to a track
@@ -34,7 +34,7 @@ export const MOQ_SCOPE_READ = 'moq:read'; //  required to SUBSCRIBE to a track
 /**
  * Header carrying the gateway-injected principal's granted scopes, SPACE-delimited — the exact
  * serialization the gateway already uses on its token-exchange response (`scope: scopes.join(" ")`,
- * wave-gateway src/worker.ts handleTokenExchange) and the OAuth2 `scope` convention (RFC 6749 §3.3).
+ * api-gateway src/worker.ts handleTokenExchange) and the OAuth2 `scope` convention (RFC 6749 §3.3).
  * The gateway is the system of record for the principal; the edge consumes the forwarded scopes here
  * (same trust model as the clip-engine spoke, task #63: spokes consume the gateway-injected principal).
  */
@@ -117,7 +117,7 @@ export function extractInjectedScopes(request: Request): Set<string> {
 
 /**
  * Does the gateway-injected principal hold `required`? A wildcard `moq:*` (or global `*`) also grants
- * it — matching the gateway's hasScope semantics (wave-gateway src/auth.ts) so the edge never rejects
+ * it — matching the gateway's hasScope semantics (api-gateway src/auth.ts) so the edge never rejects
  * a principal the gateway would have admitted. Pure; no I/O.
  */
 export function hasScope(scopes: Set<string>, required: string): boolean {

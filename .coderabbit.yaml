@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-# CodeRabbit base configuration (generic). Harvested from wave-surfer-connect with all
+# CodeRabbit base configuration (generic). Harvested from an internal WAVE monorepo with all
 # WAVE-specific custom_checks/path_instructions/refs stripped. Consumers add their own
 # path_instructions + custom_checks on top. Docs: https://docs.coderabbit.ai
 language: en-US
