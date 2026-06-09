@@ -96,26 +96,3 @@ jobs:
           # from this secret at deploy time (CLOUDFLARE_ACCOUNT_ID) instead.
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --env ${{ steps.target.outputs.env }}
-  # PREVENT-AT-DEPLOY (#85/OBS-F10): wire this spoke's SENTRY_DSN via foundation's reusable obs-wire
-  # workflow so notify.ts is never dark. Own job (needs: deploy + if: always()) so a wiring miss can
-  # NEVER red the deploy job above; the daily sentry-coverage drift check (#78) is the backstop. No
-  # CF/Sentry creds here — obs-wire pulls them from Doppler wave/prd; we pass only org DOPPLER_TOKEN +
-  # the issue-ops bot App creds (obs-wire mints a short-lived foundation-read token to fetch the SSoT
-  # wire script from the PRIVATE foundation repo; the caller's GITHUB_TOKEN can't).
-  # GATE: the BOT_ISSUE_OPS_* org secrets have visibility=selected; if this repo isn't on that list,
-  # referencing them makes the whole workflow fail to start (0 jobs) — which reds the deploy job above,
-  # defeating the "needs: deploy + always()" isolation. So gate on the WIRE_OBS repo/org var: set
-  # WIRE_OBS=true ONLY on repos that ARE granted the BOT_ISSUE_OPS secrets. Unset ⇒ skip obs-wiring,
-  # deploy still ships. (Re-enable: add this repo to BOT_ISSUE_OPS_* selected-repos + set WIRE_OBS=true.)
-  wire-obs:
-    needs: deploy
-    if: ${{ always() && vars.WIRE_OBS == 'true' }}
-    uses: wave-av/wave-foundation/.github/workflows/obs-wire.yml@e75987e59d7894ae9e5336ab54439ac12fc35ee7
-    with:
-      project_slug: wave-moq-edge
-      workers: moq-edge-production moq-edge-staging moq-demo-staging wave-moq-spoke
-      foundation_ref: e75987e59d7894ae9e5336ab54439ac12fc35ee7
-    secrets:
-      doppler_token: ${{ secrets.DOPPLER_TOKEN }}
-      bot_app_id: ${{ secrets.BOT_ISSUE_OPS_APP_ID }}
-      bot_private_key: ${{ secrets.BOT_ISSUE_OPS_PRIVATE_KEY }}
