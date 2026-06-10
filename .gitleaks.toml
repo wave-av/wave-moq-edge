@@ -23,7 +23,7 @@ paths = [
   '''(^|/)\.git/''',                  # git metadata (packed-refs, objects) — not source, avoids --no-git FPs
   '''(^|/)\.gitleaks\.toml$''',
   '''(^|/)scripts/public-repo-guard/''',
-  '''(^|/)(test|tests|__tests__|fixtures|__fixtures__|examples?|samples?|spec)/''',
+  '''(^|/)(test|tests|__tests__|fixtures|__fixtures__|testdata|examples?|samples?|spec)/''',  # testdata/ = Go-conventional fixtures dir (holds published test vectors, e.g. Hardhat keys)
   '''\.(test|spec)\.[jt]sx?$''',     # co-located unit tests (foo.test.ts / foo.spec.tsx) — fixtures, not secrets
   '''\.(example|sample|template|dist)$''',
   '''(^|/)(.+\.)?env\.(example|sample|template)$''',
