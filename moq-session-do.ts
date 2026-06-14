@@ -27,8 +27,9 @@ import { MoqRelay, type RelayEvent } from './src/moq-relay';
 import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
 import { emitMoqUsage } from './usage-emit';
+import { emitMoqSessionSpan, type MoqObsEnv } from './telemetry';
 
-interface Env {
+interface Env extends MoqObsEnv {
   MOQ_TRACK_REGISTRY: KVNamespace;
   MOQ_RECORDINGS: R2Bucket;
   ENVIRONMENT: string;
@@ -40,6 +41,7 @@ interface Env {
   // #284 usage emit (both optional → emit is INERT until an operator provisions them; see usage-emit.ts):
   GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage (var, e.g. https://api.wave.online)
   WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest endpoint (secret)
+  // Telemetry (B.4): optional OTLP/Sentry bindings via MoqObsEnv — DEFAULT-OFF, operator-supplied.
 }
 
 /** What survives hibernation, pinned to each socket via serializeAttachment (≤2KB structured clone). */
@@ -329,6 +331,18 @@ export class MOQSessionDurableObject {
               frames: meter.frames,
               reconnects: meter.reconnects,
               sessionMs,
+            }),
+          );
+          // Telemetry (B.4): one customer-exportable OTLP SESSION span with the SAME aggregates —
+          // but NO org / track key / sessionId (it ships to a third-party collector → CWE-200).
+          // DEFAULT-OFF + fail-soft; independent of the billing emit above.
+          this.state.waitUntil(
+            emitMoqSessionSpan(this.env, {
+              sessionMs,
+              bytes: meter.bytes,
+              frames: meter.frames,
+              reconnects: meter.reconnects,
+              status: 'ok',
             }),
           );
           this.metrics.reset(trackKey);
