@@ -1,0 +1,26 @@
+otlp-trace.ts
+  s_eb2f7e65359b4f::t_ad81e10bedb877 1-194
+__tests__/telemetry.test.ts
+  s_eb2f7e65359b4f::t_51b089465875cc 1-47
+telemetry.ts
+  s_eb2f7e65359b4f::t_447d8bea3558f4 1-82
+moq-session-do.ts
+  s_eb2f7e65359b4f::t_3c40c19c7ee76a 336-347
+  s_eb2f7e65359b4f::t_a4ee648ec778b8 30,32,44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "302027b39a7f6b2ad6d65eb808fce0b6ca9d85a9",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
