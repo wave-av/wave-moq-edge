@@ -162,7 +162,10 @@ export async function emitSpan(env: NotifyEnv, s: SpanInput): Promise<void> {
         },
       ],
     });
-    void fetchImpl(url, {
+    // await (not void): callers use ctx.waitUntil(emitSpan(...)) — the returned promise must settle
+    // only AFTER the POST, else waitUntil extends nothing and the runtime cancels the in-flight export.
+    // .catch keeps it fail-soft (never rejects into waitUntil); still DEFAULT-OFF + https-only above.
+    await fetchImpl(url, {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...parseHeaders(env.OTEL_EXPORTER_OTLP_HEADERS) },
       body,
@@ -187,7 +190,8 @@ export async function notifyOps(
     if (!url) return; // DEFAULT-OFF
     if (!url.startsWith('https://')) return; // SSRF
     const body = JSON.stringify({ service: env.WAVE_SERVICE || DEFAULT_SERVICE, level, message, extra });
-    void fetchImpl(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body }).catch(() => {});
+    // await (not void) so a waitUntil(notifyOps(...)) caller actually waits for the POST. Fail-soft via .catch.
+    await fetchImpl(url, { method: 'POST', headers: { 'content-type': 'application/json' }, body }).catch(() => {});
   } catch {
     /* best-effort */
   }
