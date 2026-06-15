@@ -28,6 +28,8 @@ import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
 import { emitMoqUsage } from './usage-emit';
 import { emitMoqSessionSpan, type MoqObsEnv } from './telemetry';
+import { SessionRecorder, type RecorderMeta } from './recording-writer';
+import { registerRecording } from './register-recording';
 
 interface Env extends MoqObsEnv {
   MOQ_TRACK_REGISTRY: KVNamespace;
@@ -39,8 +41,11 @@ interface Env extends MoqObsEnv {
   LOG_LEVEL: string;
   MOQ_CACHED_GROUPS?: string; // late-joiner cache depth (default 3)
   // #284 usage emit (both optional → emit is INERT until an operator provisions them; see usage-emit.ts):
-  GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage (var, e.g. https://api.wave.online)
-  WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest endpoint (secret)
+  GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage + /recordings/register (var)
+  WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest + register endpoints (secret)
+  // Recording write path (recording-writer.ts / register-recording.ts). The bucket NAME (the R2 binding
+  // doesn't expose it) sent to the gateway register. Unset → recording is INERT (no behavior change).
+  MOQ_RECORDINGS_BUCKET?: string;
   // Telemetry (B.4): optional OTLP/Sentry bindings via MoqObsEnv — DEFAULT-OFF, operator-supplied.
 }
 
@@ -76,6 +81,13 @@ export class MOQSessionDurableObject {
   private sessionOrgs = new Map<string, string>(); // #284: sessionId → x-wave-org (rebuilt from attachments on wake)
   private rehydrated = false;
   private metrics: MetricsCollector;
+
+  // Recording write path: one R2 multipart upload per publisher session (recording-writer.ts). Lazily
+  // created on the first publisher object (so the container can be sniffed), and ONLY when recording is
+  // provisioned (org + gateway + service token + bucket name) — otherwise fully inert. The multipart meta
+  // is persisted to DO storage ('recorder' key) so a hibernation wake can resume + complete it.
+  private recorder: SessionRecorder | null = null;
+  private recorderLoaded = false; // whether we've checked storage for a resumable recorder this lifetime
 
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
@@ -301,6 +313,90 @@ export class MOQSessionDurableObject {
     }
   }
 
+  /** Recording is provisioned only with a billing org + the gateway register wiring + the bucket name. */
+  private recordingEnabled(session: SessionState): boolean {
+    return Boolean(
+      session.publisherOrg && this.env.GATEWAY_BASE_URL && this.env.WAVE_SERVICE_TOKEN && this.env.MOQ_RECORDINGS_BUCKET,
+    );
+  }
+
+  /** Persist (or clear) the recorder's multipart metadata so a hibernation wake can resume + complete. */
+  private async persistRecorderMeta(): Promise<void> {
+    const meta = this.recorder?.toMeta() ?? null;
+    if (meta) await this.state.storage.put('recorder', meta);
+    else await this.state.storage.delete('recorder');
+  }
+
+  /**
+   * Append one publisher object payload to the session recording. Fail-soft: any R2 error drops the
+   * recorder for this session and is swallowed — a recording must NEVER affect the live relay/fan-out.
+   * Lazily creates the recorder on the first object (sniffing the container) and resumes a recorder left
+   * by a hibernation wake (matched by session id; a stale prior-session upload is aborted, not adopted).
+   */
+  private async recordPayload(session: SessionState, payload: Uint8Array): Promise<void> {
+    if (!this.recordingEnabled(session)) return;
+    const org = session.publisherOrg;
+    const sid = session.publisherSessionId;
+    if (!org || !sid) return;
+    try {
+      if (!this.recorder && !this.recorderLoaded) {
+        this.recorderLoaded = true;
+        const meta = await this.state.storage.get<RecorderMeta>('recorder');
+        if (meta && meta.sessionId === sid) {
+          this.recorder = SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta);
+        } else if (meta) {
+          await SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta).safeAbort(); // stale → don't adopt
+          await this.state.storage.delete('recorder');
+        }
+      }
+      if (!this.recorder) {
+        this.recorder = await SessionRecorder.begin(this.env.MOQ_RECORDINGS, org, sid, payload);
+        await this.persistRecorderMeta();
+      } else {
+        const before = this.recorder.partCount;
+        await this.recorder.append(payload);
+        if (this.recorder.partCount !== before) await this.persistRecorderMeta(); // only on a part flush
+      }
+    } catch {
+      await this.recorder?.safeAbort();
+      this.recorder = null;
+      try {
+        await this.state.storage.delete('recorder');
+      } catch {
+        /* ignore */
+      }
+    }
+  }
+
+  /**
+   * Finalize the publisher session recording (if any) and register it with the gateway so the clip/replay
+   * chain can resolve it. Fail-soft throughout. Called at publish_end with the org still attributed.
+   */
+  private async finalizeAndRegister(org: string | null, sessionId: string): Promise<void> {
+    // A wake may deliver publish_end before any object event loaded the recorder — restore it first.
+    if (!this.recorder && !this.recorderLoaded) {
+      this.recorderLoaded = true;
+      const meta = await this.state.storage.get<RecorderMeta>('recorder');
+      if (meta && meta.sessionId === sessionId) this.recorder = SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta);
+    }
+    if (!this.recorder) return;
+    let done: { key: string; bytes: number } | null = null;
+    try {
+      done = await this.recorder.finalize();
+    } catch {
+      await this.recorder.safeAbort();
+    }
+    this.recorder = null;
+    try {
+      await this.state.storage.delete('recorder');
+    } catch {
+      /* ignore */
+    }
+    if (done && org) {
+      this.state.waitUntil(registerRecording(this.env, { org, r2Key: done.key, sessionId }));
+    }
+  }
+
   /** Fold relay events into the persisted snapshot + the R4 meter. */
   private async applyEvents(events: RelayEvent[]): Promise<void> {
     const session = await this.load();
@@ -345,6 +441,9 @@ export class MOQSessionDurableObject {
               status: 'ok',
             }),
           );
+          // Finalize the session recording + register it (lights the clip/replay chain). Done before the
+          // publisher fields are cleared so the org is still attributed; fail-soft, inert when unprovisioned.
+          await this.finalizeAndRegister(session.publisherOrg, e.sessionId);
           this.metrics.reset(trackKey);
           session.publisherSessionId = null;
           session.publisherStartedAt = null;
@@ -359,6 +458,9 @@ export class MOQSessionDurableObject {
           break;
         case 'object_received':
           session.objectsSeen += 1;
+          // Persist the publisher's media to R2 (inert unless recording is provisioned — recordPayload
+          // gates internally + fail-soft, so it never blocks fan-out, which already happened upstream).
+          if (e.payload && e.payload.length) await this.recordPayload(session, e.payload);
           break;
         case 'group_complete':
           session.groupsSeen += 1;
