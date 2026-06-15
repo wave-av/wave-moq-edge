@@ -49,6 +49,9 @@ export interface RelayEvent {
   kind: 'publish_start' | 'publish_end' | 'subscribe' | 'unsubscribe' | 'object_received' | 'group_complete';
   sessionId: string;
   bytes?: number;
+  /** The decoded object payload, present on `object_received` only — so the DO can persist it (the
+   * recording write path) without re-decoding the frame on the hot path. Publisher objects only. */
+  payload?: Uint8Array;
 }
 
 interface Subscriber {
@@ -256,7 +259,7 @@ export class MoqRelay {
       fanout.push({ to: subId, kind: 'object', frame: forwarded });
     }
     this.cacheObject(obj.groupId, obj.objectId, forwarded);
-    events.push({ kind: 'object_received', sessionId, bytes: obj.payload.length });
+    events.push({ kind: 'object_received', sessionId, bytes: obj.payload.length, payload: obj.payload });
     if (this.lastGroupId !== null && obj.groupId !== this.lastGroupId) {
       events.push({ kind: 'group_complete', sessionId });
     }

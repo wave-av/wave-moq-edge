@@ -72,7 +72,10 @@ describe('MoqRelay fan-out', () => {
       expect(o.trackAlias).toBe(1n); // re-stamped to the relay's single track alias
       expect(Array.from(o.payload)).toEqual([1, 2, 3, 4]);
     }
-    expect(events).toEqual([{ kind: 'object_received', sessionId: 'pub', bytes: 4 }]);
+    expect(events).toHaveLength(1);
+    expect(events[0]).toMatchObject({ kind: 'object_received', sessionId: 'pub', bytes: 4 });
+    // the decoded payload rides along on object_received so the DO can persist it (recording write path)
+    expect(Array.from(events[0].payload!)).toEqual([1, 2, 3, 4]);
   });
 
   it('ignores objects from a non-publisher session', () => {

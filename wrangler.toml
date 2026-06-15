@@ -18,7 +18,9 @@ compatibility_flags = ["nodejs_compat"]
 #   MOQ_TRACK_REGISTRY_dev         = 6caca0dd121744eb829971ce6293d8b3
 #   MOQ_TRACK_REGISTRY_staging     = 9d6a9ddfcc89478991df8ea1db95b8ba
 #   MOQ_TRACK_REGISTRY_production  = 368824b7a9ba4dbf9d4ce31128c42cd6
-#   wave-moq-recordings{,-staging,-production} — R2 buckets (all exist)
+#   wave-moq-recordings — the single R2 recordings bucket (acct d674452f; the -staging/-production
+#     variants were never created, so all envs bind this one. Tenants are kept apart by the org-prefixed
+#     key `${org}/recordings/…`, not by bucket. See recording-writer.ts / register-recording.ts.)
 # Routes still live under [env.staging] / [env.production] (not top-level) —
 # top-level config is dev/dry-run only so `wrangler dev` works without claiming
 # a live hostname.
@@ -67,6 +69,10 @@ MOQ_CACHED_GROUPS = "3"  # late-joiner cache depth (recent groups replayed to ne
 # BOTH are present AND a publisher carries a gateway-injected x-wave-org — so this changes nothing on the
 # live relay until the operator provisions the secret (pairs with the gateway USAGE_INGEST flip, #263).
 GATEWAY_BASE_URL = "https://api.wave.online"
+# Recording write path: the bucket NAME register sends to the gateway (the R2 binding doesn't expose it).
+# MUST match the env.production MOQ_RECORDINGS binding below. Recording stays INERT until WAVE_SERVICE_TOKEN
+# is provisioned (wrangler secret put) AND a publisher carries a gateway-injected x-wave-org.
+MOQ_RECORDINGS_BUCKET = "wave-moq-recordings"
 
 [[env.production.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
@@ -78,7 +84,7 @@ id = "368824b7a9ba4dbf9d4ce31128c42cd6"  # MOQ_TRACK_REGISTRY_production
 
 [[env.production.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-moq-recordings-production"  # ✓ provisioned
+bucket_name = "wave-moq-recordings"  # ✓ the only moq bucket that exists (acct d674452f); -production never created
 
 # Staging
 [env.staging]
@@ -96,6 +102,8 @@ MOQ_REQUIRE_AUTH = "false"  # explicit operator opt-in; see production note abov
 MOQ_CACHED_GROUPS = "3"
 # #284 usage emit (see production note). WAVE_SERVICE_TOKEN secret: `wrangler secret put WAVE_SERVICE_TOKEN --env staging`.
 GATEWAY_BASE_URL = "https://api.staging.wave.online"
+# Shares the single existing moq bucket (no -staging bucket exists; staging recording is inert pre-GA).
+MOQ_RECORDINGS_BUCKET = "wave-moq-recordings"
 
 [[env.staging.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
@@ -107,4 +115,4 @@ id = "9d6a9ddfcc89478991df8ea1db95b8ba"  # MOQ_TRACK_REGISTRY_staging
 
 [[env.staging.r2_buckets]]
 binding = "MOQ_RECORDINGS"
-bucket_name = "wave-moq-recordings-staging"  # ✓ provisioned
+bucket_name = "wave-moq-recordings"  # the only moq bucket that exists (acct d674452f); -staging never created
