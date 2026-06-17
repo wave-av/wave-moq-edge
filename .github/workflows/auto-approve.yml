@@ -3,7 +3,7 @@
 # Calls the org SSOT reusable workflow in wave-foundation. Dormant unless the
 # repo/org variable AUTO_APPROVE_ENABLED == '1'.
 #
-# Installs the proven wave-gateway/wave-foundation ceremony so author-only PRs
+# Installs the proven org-standard auto-approve ceremony so author-only PRs
 # get a real approving review (from wave-av-reviewbot) after a Slack-notified
 # kill-window — killing the self-approval deadlock on this enforce_admins repo
 # without ever toggling the branch-protection control.
