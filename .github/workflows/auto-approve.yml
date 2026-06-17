@@ -1,0 +1,54 @@
+# ============================================================================
+# Auto-approve caller — single-maintainer review circuit-breaker.
+# Calls the org SSOT reusable workflow in wave-foundation. Dormant unless the
+# repo/org variable AUTO_APPROVE_ENABLED == '1'.
+#
+# Installs the proven org-standard auto-approve ceremony so author-only PRs
+# get a real approving review (from wave-av-reviewbot) after a Slack-notified
+# kill-window — killing the self-approval deadlock on this enforce_admins repo
+# without ever toggling the branch-protection control.
+#
+# This workflow does NOT merge. It only submits an APPROVE review + enables
+# native auto-merge; branch protection enforces every required check server-side.
+# SSOT + threat model: wave-foundation/governance/auto-approve/README.md
+# ============================================================================
+
+name: Auto-approve
+
+on:
+  pull_request:
+    types: [labeled, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr-number:
+        description: 'PR number to evaluate'
+        required: true
+        type: number
+
+# A called workflow cannot exceed the caller's token scope, so grant the union
+# the reusable workflow needs (approve + enable native auto-merge).
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+
+jobs:
+  evaluate:
+    # Defense in depth: never even start for drafts or fork PRs.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.pull_request.draft == false &&
+       github.event.pull_request.head.repo.fork == false)
+    uses: wave-av/wave-foundation/.github/workflows/reusable-auto-approve.yml@main
+    with:
+      pr-number: ${{ github.event.pull_request.number || inputs.pr-number }}
+      kill-window-seconds: 60
+      author-allowlist: 'yakimoto'
+      approve-label: 'auto-approve'
+      hold-label: 'hold'
+    secrets:
+      BOT_REVIEW_APP_ID: ${{ secrets.BOT_REVIEW_APP_ID }}
+      BOT_REVIEW_PRIVATE_KEY: ${{ secrets.BOT_REVIEW_PRIVATE_KEY }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      SLACK_REVIEWBOT_CHANNEL_ID: ${{ secrets.SLACK_REVIEWBOT_CHANNEL_ID }}
