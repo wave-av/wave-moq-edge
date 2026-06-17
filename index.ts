@@ -1,18 +1,19 @@
 /// <reference types="@cloudflare/workers-types" />
 /**
- * WAVE MoQ Edge Relay — Cloudflare Worker entry point
+ * WAVE MoQ Edge Relay — Worker entrypoint.
  *
- * Implements IETF MoQ Transport (https://datatracker.ietf.org/doc/draft-ietf-moq-transport/).
- * Currently advertises preferred=draft-18 with negotiation matrix draft-07..draft-18.
- * Acts as a publish/subscribe relay for sub-second live media at the edge.
+ * Two halves, loop-free:
+ *   /v1/* → MoQ API (metered relay routes) — handled BEFORE the chassis.
+ *   else  → chassis branded public landing (consistent WAVE face).
  *
  * Routing:
- *   POST   /v1/publish/:namespace/:track          → Become publisher (returns WebTransport URL)
- *   GET    /v1/subscribe/:namespace/:track        → WebTransport subscribe endpoint
- *   GET    /v1/track/:namespace/:track            → Track metadata (subscriber count, last activity)
- *   GET    /v1/announce                           → List announced tracks (for discovery)
- *   GET    /health                                → Liveness probe
- *   GET    /metrics                               → Prometheus-format metrics
+ *   POST   /v1/publish/:namespace/:track   → Become publisher (returns WebTransport URL)
+ *   GET    /v1/subscribe/:namespace/:track → WebTransport subscribe endpoint
+ *   GET    /v1/track/:namespace/:track     → Track metadata (subscriber count, last activity)
+ *   GET    /v1/announce                   → List announced tracks (for discovery)
+ *   GET    /v1/catalog                    → IETF draft-ietf-moq-catalog-01 listing
+ *   GET    /health                        → Liveness probe
+ *   GET    /metrics                       → Prometheus-format metrics
  *
  * Each track gets a Durable Object instance for fan-out + state. The DO holds:
  *   - Publisher session (1 per track)
@@ -24,31 +25,32 @@
  * and the DO does the multiplex.
  */
 
+import { makeFetch, type Env as ChassisEnv } from '@wave-av/spoke-chassis';
 import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
-import { wavePublicPage, wavePublicErrorResponse } from './src/shared/wave-public-html';
 import { scopeGate, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { landingPage } from './src/landing';
+import { FAVICON_SVG } from './src/favicon';
+import type { Env } from './src/types';
 
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
 
-// The shared WAVE curled-wave mark, flat-filled to the MoQ accent (#00d4d5 — accent-wheel.md
-// streaming family, oklch(0.78 0.15 195)). Mark path is verbatim from the foundation favicon
-// template; the fill is hex (standalone favicons can't rely on oklch()).
-const MOQ_FAVICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 102"><title>WAVE</title><g transform="translate(-55.797,177.088) scale(0.024,-0.024)" fill="#00d4d5" stroke="none"><path d="M5055 7373 c-222 -26 -372 -59 -559 -123 -542 -184 -1021 -519 -1397 -980 -438 -535 -683 -1114 -761 -1795 -24 -207 -13 -775 14 -775 16 0 217 123 368 224 359 241 729 567 1156 1017 466 491 757 732 1081 897 247 126 458 178 683 169 277 -11 487 -99 680 -284 194 -184 305 -402 333 -650 38 -343 -148 -743 -438 -943 -262 -180 -592 -170 -791 25 -141 140 -188 357 -125 582 25 86 99 256 135 309 14 21 24 39 22 41 -6 7 -129 -83 -203 -149 -177 -156 -306 -352 -369 -563 -24 -79 -28 -107 -28 -230 0 -160 13 -220 74 -352 124 -265 364 -476 660 -581 155 -55 236 -67 435 -66 150 0 196 4 274 22 291 69 536 208 762 432 301 297 482 651 560 1095 19 105 23 167 23 325 1 259 -25 431 -100 680 -83 272 -251 577 -453 820 -434 523 -1196 868 -1896 858 -60 0 -123 -3 -140 -5z"/></g></svg>`;
+// MetricsCollector remains used by the DO for per-session metrics; this is just the edge snapshot.
+const _keepImport: unknown = MetricsCollector;
+void _keepImport;
 
-interface Env {
-  MOQ_SESSIONS: DurableObjectNamespace;
-  MOQ_TRACK_REGISTRY: KVNamespace;
-  MOQ_RECORDINGS: R2Bucket;
-  ENVIRONMENT: string;
-  MOQ_DRAFT_VERSION: string;
-  MAX_SUBSCRIBERS_PER_TRACK: string;
-  MAX_OBJECT_SIZE_BYTES: string;
-  LOG_LEVEL: string;
-  MOQ_REQUIRE_AUTH?: string; // when truthy, enforce wave-token-v1 on publish/subscribe (default: off)
-}
+// Chassis owns root / human landing, /_wave/* assets, manifest, favicon, and JSON-LD.
+// /v1/* is intercepted BEFORE this (loop-free).
+const chassis = makeFetch(landingPage, FAVICON_SVG, {
+  meta: {
+    product: 'Media over QUIC',
+    host: 'moq.wave.online',
+    tagline: 'Sub-second live media at the edge via IETF MoQ Transport',
+    accentHex: '#00d4d5',
+  },
+});
 
 const PublishRequestSchema = z.object({
   namespace: z
@@ -233,78 +235,6 @@ async function handleHealth(env: Env): Promise<Response> {
   });
 }
 
-/**
- * Branded HTML landing page at GET /. First adopter of
- * workers/shared/wave-public-html.ts per ADR-0149 §B (P1 migration target).
- *
- * Public-facing surface — every visitor sees:
- *  - WAVE wordmark + brand-aligned dark surface
- *  - Live track count (read from KV registry)
- *  - MoQ draft version + environment badge
- *  - Quick-link section to /v1/announce, /v1/catalog, /health, /metrics
- *  - WCAG 2.2 AA compliance (4.5:1 contrast, focus rings, skip-link)
- *
- * Aggressively cached at the edge for 30s — track count is approximate by
- * design so repeat visitors don't pay KV-list every hit.
- */
-async function handleHtmlRoot(env: Env, request: Request): Promise<Response> {
-  // Best-effort live track count. KV LIST is paginated; cap at 100 for response time.
-  let trackCount = 0;
-  try {
-    const list = await env.MOQ_TRACK_REGISTRY.list({ prefix: 'track:', limit: 100 });
-    trackCount = list.keys.length;
-  } catch {
-    // Fallback to 0 if KV throttled — not worth failing the landing page
-  }
-  const region = (request.cf as { colo?: string } | undefined)?.colo ?? 'edge';
-
-  const html = wavePublicPage({
-    title: 'MoQ relay',
-    subtitle: `Sub-second live media at the edge. IETF draft-ietf-moq-transport-${env.MOQ_DRAFT_VERSION}. Built by WAVE Online.`,
-    status: 'operational',
-    accent: '#00d4d5',
-    canonical: `https://${request.headers.get('host') ?? 'moq.wave.online'}/`,
-    stats: [
-      { label: 'Active tracks', value: trackCount.toString(), mono: true },
-      { label: 'MoQ draft', value: env.MOQ_DRAFT_VERSION, mono: true },
-      { label: 'Environment', value: env.ENVIRONMENT },
-      { label: 'Region', value: region, mono: true },
-    ],
-    children: `
-      <h2 style="font-size:1.4rem;margin-top:32px;margin-bottom:12px">Endpoints</h2>
-      <pre>POST   /v1/publish/:namespace/:track       Publish a track (WebSocket upgrade → relay publisher)
-GET    /v1/subscribe/:namespace/:track     Subscribe to a track (WebSocket upgrade → relay subscriber)
-GET    /v1/track/:namespace/:track         Track metadata + live counts
-GET    /v1/announce                        List all announced tracks
-GET    /v1/catalog                         draft-ietf-moq-catalog-01 listing
-GET    /health                             Liveness probe (JSON)
-GET    /metrics                            Prometheus exposition</pre>
-
-      <h2 style="font-size:1.4rem;margin-top:32px;margin-bottom:12px">Quick links</h2>
-      <ul style="list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:12px">
-        <li><a href="/v1/announce">Active tracks (JSON)</a></li>
-        <li><a href="/v1/catalog">MoQ catalog</a></li>
-        <li><a href="/health">Health</a></li>
-        <li><a href="/metrics">Metrics</a></li>
-      </ul>
-
-      <h2 style="font-size:1.4rem;margin-top:32px;margin-bottom:12px">Open source</h2>
-      <p>moq-edge ships under MIT. Canonical source at
-        <a href="https://github.com/wave-av/wave-moq-edge" rel="noopener">github.com/wave-av/wave-moq-edge</a>.
-        Spec compliance reports + interop testing welcome.</p>
-    `,
-    ogImage: 'https://wave.online/og/moq-edge.png',
-  });
-
-  return new Response(html, {
-    headers: {
-      'content-type': 'text/html; charset=utf-8',
-      'cache-control': 'public, max-age=30, s-maxage=30',
-      'x-wave-surface': 'moq-edge-public',
-    },
-  });
-}
-
 async function handleMetrics(env: Env): Promise<Response> {
   // Lightweight Prometheus exposition. The full MetricsCollector accumulates
   // per-session metrics via recordMetrics(); for /metrics endpoint we surface
@@ -324,9 +254,6 @@ async function handleMetrics(env: Env): Promise<Response> {
     headers: { 'content-type': 'text/plain; version=0.0.4' },
   });
 }
-// MetricsCollector remains used by the DO for per-session metrics; this is just the edge snapshot.
-const _keepImport: unknown = MetricsCollector;
-void _keepImport;
 
 export default {
   async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
@@ -334,54 +261,14 @@ export default {
     const path = url.pathname;
 
     try {
-      // Branded HTML landing (browser navigations to GET /)
-      if (path === '/' && request.method === 'GET') {
-        return handleHtmlRoot(env, request);
-      }
-
-      // Branded wave-mark favicon (the shared WAVE mark, flat-filled to the MoQ accent)
-      if (path === '/favicon.svg' && request.method === 'GET') {
-        return new Response(MOQ_FAVICON_SVG, {
-          headers: {
-            'content-type': 'image/svg+xml',
-            'cache-control': 'public, max-age=86400',
-            'x-wave-surface': 'moq-edge-public',
-          },
-        });
-      }
-
-      // Machine identity (WAVE Discoverability standard): platform-controlled did:web,
-      // consistent with the rest of the fleet. Sits before the MoQ/WS routes — a plain GET.
-      if (path === '/.well-known/did.json' && request.method === 'GET') {
-        return jsonResponse({
-          '@context': ['https://www.w3.org/ns/did/v1', 'https://w3id.org/security/suites/jws-2020/v1'],
-          id: 'did:web:moq.wave.online',
-          controller: 'did:web:wave.online',
-          alsoKnownAs: ['https://moq.wave.online'],
-          verificationMethod: [{
-            id: 'did:web:moq.wave.online#gateway-key',
-            type: 'JsonWebKey2020',
-            controller: 'did:web:wave.online',
-            publicKeyJwk: { kty: 'OKP', crv: 'Ed25519', use: 'sig', kid: 'https://api.wave.online/.well-known/jwks.json' },
-          }],
-          assertionMethod: ['did:web:moq.wave.online#gateway-key'],
-          service: [
-            { id: 'did:web:moq.wave.online#moq', type: 'MoqRelay', serviceEndpoint: 'https://moq.wave.online' },
-            { id: 'did:web:moq.wave.online#gateway', type: 'WaveGateway', serviceEndpoint: 'https://api.wave.online' },
-          ],
-        }, 200, { 'cache-control': 'public, max-age=3600' });
-      }
-
-      // Health + metrics
-      if (path === '/health') return handleHealth(env);
-      if (path === '/metrics') return handleMetrics(env);
+      // --- /v1/* — MoQ API routes (intercepted BEFORE the chassis) ---
 
       // /v1/announce — discovery
       if (path === '/v1/announce' && request.method === 'GET') {
         return handleAnnounce(env);
       }
 
-      // /v1/catalog — IETF draft-ietf-moq-catalog (NEW — first public CF MoQ catalog)
+      // /v1/catalog — IETF draft-ietf-moq-catalog (first public CF MoQ catalog)
       if (path === '/v1/catalog' && request.method === 'GET') {
         return handleCatalog(env, request);
       }
@@ -404,27 +291,46 @@ export default {
         return handleTrackMetadata(env, trackMatch[1], trackMatch[2]);
       }
 
-      // Browser navigation to unknown path → branded 404 HTML; API client → JSON 404
-      const accept = request.headers.get('accept') ?? '';
-      if (accept.includes('text/html')) {
-        return wavePublicErrorResponse(
-          404,
-          'Not found',
-          `${request.method} ${path} is not a moq-edge endpoint. Try / for the landing page.`,
-          { headers: { 'x-wave-surface': 'moq-edge-public' } }
-        );
+      // Unknown /v1/* paths → JSON 404 (don't fall through to chassis for API paths)
+      if (path.startsWith('/v1/')) {
+        return errorResponse('Not Found', 404, `${request.method} ${path}`);
       }
-      return errorResponse('Not Found', 404, `${request.method} ${path}`);
+
+      // Health + metrics (non-/v1/ operational paths served before chassis)
+      if (path === '/health') return handleHealth(env);
+      if (path === '/metrics') return handleMetrics(env);
+
+      // Machine identity (WAVE Discoverability standard): did:web, consistent with fleet.
+      if (path === '/.well-known/did.json' && request.method === 'GET') {
+        return jsonResponse({
+          '@context': ['https://www.w3.org/ns/did/v1', 'https://w3id.org/security/suites/jws-2020/v1'],
+          id: 'did:web:moq.wave.online',
+          controller: 'did:web:wave.online',
+          alsoKnownAs: ['https://moq.wave.online'],
+          verificationMethod: [{
+            id: 'did:web:moq.wave.online#gateway-key',
+            type: 'JsonWebKey2020',
+            controller: 'did:web:wave.online',
+            publicKeyJwk: { kty: 'OKP', crv: 'Ed25519', use: 'sig', kid: 'https://api.wave.online/.well-known/jwks.json' },
+          }],
+          assertionMethod: ['did:web:moq.wave.online#gateway-key'],
+          service: [
+            { id: 'did:web:moq.wave.online#moq', type: 'MoqRelay', serviceEndpoint: 'https://moq.wave.online' },
+            { id: 'did:web:moq.wave.online#gateway', type: 'WaveGateway', serviceEndpoint: 'https://api.wave.online' },
+          ],
+        }, 200, { 'cache-control': 'public, max-age=3600' });
+      }
+
+      // Non-/v1/ paths fall through to the chassis branded landing.
+      // The chassis owns /: the human landing, /_wave/* assets, manifest, favicon, and JSON-LD.
+      // Cast: our Env has CF binding types that conflict with NotifyEnv's index signature in
+      // spoke-chassis ^0.10.0 — the cast is safe because chassis only reads the optional string
+      // vars (GATEWAY_ORIGIN, POSTHOG_KEY, etc.) from env, never the binding fields.
+      return chassis(request, env as unknown as ChassisEnv);
     } catch (error) {
       console.error('moq-edge fetch error', error);
-      const accept = request.headers.get('accept') ?? '';
       const detail = error instanceof Error ? error.message : String(error);
-      if (accept.includes('text/html')) {
-        return wavePublicErrorResponse(500, 'Something went wrong', detail, {
-          headers: { 'x-wave-surface': 'moq-edge-public' },
-        });
-      }
       return errorResponse('Internal Server Error', 500, detail);
     }
   },
-};
+} satisfies ExportedHandler<Env>;
