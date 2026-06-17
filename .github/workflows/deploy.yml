@@ -32,6 +32,7 @@ on:
 
 permissions:
   contents: read
+  packages: read  # required to pull @wave-av/spoke-chassis from GitHub Packages
 
 jobs:
   deploy:
@@ -42,8 +43,12 @@ jobs:
         with:
           node-version: "22"
           cache: "npm"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@wave-av"
       - name: install
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Derive deploy target from the trigger. `github.ref_name` is the branch (push) or input env
       # (workflow_dispatch). For push triggers we map branch → env; for workflow_dispatch the input

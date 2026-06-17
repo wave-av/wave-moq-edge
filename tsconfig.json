@@ -14,6 +14,6 @@
     "verbatimModuleSyntax": false,
     "resolveJsonModule": true
   },
-  "include": ["index.ts", "moq-session-do.ts", "metrics-collector.ts", "src/**/*.ts"],
+  "include": ["index.ts", "moq-session-do.ts", "metrics-collector.ts", "src/**/*.ts", "__tests__/**/*.ts"],
   "exclude": ["node_modules", "examples"]
 }
