@@ -1,0 +1,21 @@
+name: chassis-gate
+
+# Consumes wave-foundation's reusable chassis gate (every-product-host-on-chassis law).
+# Verifies this repo declares @wave-av/spoke-chassis AND that the deployed host renders the
+# branded chassis landing (id="main", rel="manifest", application/ld+json, _wave/nav.js, theme-color).
+# Single source of truth lives in wave-av/wave-foundation; edit there, not here.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  chassis:
+    uses: wave-av/wave-foundation/.github/workflows/reusable-chassis-gate.yml@main
+    with:
+      repo_path: "."
+      landing_host: "moq.wave.online"
