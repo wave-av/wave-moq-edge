@@ -27,10 +27,11 @@ import { MoqRelay, type RelayEvent } from './src/moq-relay';
 import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
 import { emitMoqUsage } from './usage-emit';
+import { emitMoqSessionSpan, type MoqObsEnv } from './telemetry';
 import { SessionRecorder, type RecorderMeta } from './recording-writer';
 import { registerRecording } from './register-recording';
 
-interface Env {
+interface Env extends MoqObsEnv {
   MOQ_TRACK_REGISTRY: KVNamespace;
   MOQ_RECORDINGS: R2Bucket;
   ENVIRONMENT: string;
@@ -45,6 +46,7 @@ interface Env {
   // Recording write path (recording-writer.ts / register-recording.ts). The bucket NAME (the R2 binding
   // doesn't expose it) sent to the gateway register. Unset → recording is INERT (no behavior change).
   MOQ_RECORDINGS_BUCKET?: string;
+  // Telemetry (B.4): optional OTLP/Sentry bindings via MoqObsEnv — DEFAULT-OFF, operator-supplied.
 }
 
 /** What survives hibernation, pinned to each socket via serializeAttachment (≤2KB structured clone). */
@@ -425,6 +427,18 @@ export class MOQSessionDurableObject {
               frames: meter.frames,
               reconnects: meter.reconnects,
               sessionMs,
+            }),
+          );
+          // Telemetry (B.4): one customer-exportable OTLP SESSION span with the SAME aggregates —
+          // but NO org / track key / sessionId (it ships to a third-party collector → CWE-200).
+          // DEFAULT-OFF + fail-soft; independent of the billing emit above.
+          this.state.waitUntil(
+            emitMoqSessionSpan(this.env, {
+              sessionMs,
+              bytes: meter.bytes,
+              frames: meter.frames,
+              reconnects: meter.reconnects,
+              status: 'ok',
             }),
           );
           // Finalize the session recording + register it (lights the clip/replay chain). Done before the
