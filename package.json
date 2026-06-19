@@ -16,6 +16,7 @@
     "tail": "wrangler tail moq-edge-production --format pretty"
   },
   "dependencies": {
+    "@noble/hashes": "^1.8.0",
     "@wave-av/spoke-chassis": "^0.10.3",
     "zod": "^3.24.1"
   },
