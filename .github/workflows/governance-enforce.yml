@@ -1,0 +1,45 @@
+name: governance-enforce
+
+# A_BLOCK gate: no-secrets-in-git / secrets-from-doppler / no-hardcoded-paths, enforced on the
+# PR diff via the @wave-av/governance package (the org fan-out channel). Diff-scoped: blocks NEW
+# violations without failing on legacy debt. Isolated install bypasses any min-release-age policy.
+# The org ruleset `governance-a-block-enforce` requires this job's `enforce` check.
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  enforce:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: fetch governance enforcer (isolated install)
+        run: |
+          mkdir -p "$RUNNER_TEMP/gov" && cd "$RUNNER_TEMP/gov"
+          printf '@wave-av:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}\n' > .npmrc
+          npm install @wave-av/governance@^0.2.0 --no-save --no-audit --no-fund
+      - name: A_BLOCK enforce (secrets + hardcoded paths on the diff)
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          BASE="${PR_BASE_SHA:-$PUSH_BEFORE_SHA}"
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            BASE=$(git rev-parse HEAD~1 2>/dev/null || git rev-parse HEAD)
+          fi
+          echo "diffing against $BASE"
+          node "$RUNNER_TEMP/gov/node_modules/@wave-av/governance/bin/enforce.mjs" --changed "$BASE"
