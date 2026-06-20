@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { SingleInstanceWriter, DUP_PREFIX } from '../single-instance-writer';
 import { InMemoryDedupIndex, type DedupIndex } from '../dedup-index';
+import type { RecorderMeta } from '../recording-writer';
 
 // ── Minimal R2 multipart + copy fakes (reuse the recording-writer.test.ts shape) ───────────────────
 class FakeUpload {
@@ -164,5 +165,60 @@ describe('SingleInstanceWriter', () => {
     expect(c!.created).toBe(true); // NOT deduped across orgs
     expect(c!.canonicalKey).toBe(`${ORG_B}/recordings/sess-1/recording.mp4`);
     expect(b.copies).toHaveLength(0); // neither was a within-org dup
+  });
+
+  it('broadcastId keying: distinct sessions, identical bytes → one canonical, refcount 2, pointer keyed by broadcastId', async () => {
+    // The cross-broadcast "edge canonical + pointer" path (B4): two broadcastIds, ONE retained object.
+    const b = bucket();
+    const idx = new InMemoryDedupIndex();
+    const first = await record(b, idx, ORG_A, 'broadcast-1', fmp4(2048, 42));
+    const dup = await record(b, idx, ORG_A, 'broadcast-2', fmp4(2048, 42)); // different broadcastId, same bytes
+
+    expect(first!.created).toBe(true);
+    expect(dup!.created).toBe(false);
+    expect(dup!.canonicalKey).toBe(first!.canonicalKey); // broadcast-2 resolves to broadcast-1's object
+    expect(await idx.lookupRef(ORG_A, 'broadcast-2')).toBe(first!.contentHash); // pointer keyed by broadcastId
+    expect((await idx.lookup(ORG_A, first!.contentHash))?.refcount).toBe(2);
+  });
+
+  it('hibernation-resume → keeps the object, NO dedup claim (a partial hash must not pollute the index)', async () => {
+    const b = bucket();
+    const idx = new InMemoryDedupIndex();
+    const claimSpy = vi.spyOn(idx, 'claim');
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    // A recorder that flushed one durable part before a mid-session eviction; its hash state is unrecoverable.
+    const meta: RecorderMeta = {
+      sessionId: 'sess-resumed',
+      key: `${ORG_A}/recordings/sess-resumed/recording.mp4`,
+      uploadId: 'upload-resumed',
+      parts: [{ partNumber: 1, etag: 'etag-1' } as R2UploadedPart],
+      nextPartNumber: 2,
+      totalBytes: 5 * 1024 * 1024,
+      container: 'fmp4',
+    };
+    const w = SingleInstanceWriter.resume(b, idx, BUCKET_NAME, ORG_A, meta);
+    const res = await w.finalize();
+
+    expect(res).not.toBeNull();
+    expect(res!.created).toBe(false); // could not claim on a partial hash
+    expect(res!.contentHash).toBe(''); // no content hash available post-wake
+    expect(res!.canonicalKey).toBe(meta.key); // object kept at its own key — never dropped
+    expect(claimSpy).not.toHaveBeenCalled(); // dedup SKIPPED — index untouched
+    expect(b.copies).toHaveLength(0);
+    expect(warn).toHaveBeenCalled(); // logged loudly (config-no-silent-noop)
+    warn.mockRestore();
+  });
+
+  it('DO drop-in surface: sessionId / partCount / bytes / toMeta delegate to the recorder', async () => {
+    const b = bucket();
+    const idx = new InMemoryDedupIndex();
+    const w = await SingleInstanceWriter.begin(b, idx, BUCKET_NAME, ORG_A, 'sess-meta', fmp4(1024, 13));
+    expect(w.sessionId).toBe('sess-meta');
+    expect(w.partCount).toBe(0); // <5MiB buffered, no part flushed yet
+    expect(w.bytes).toBe(1024);
+    const meta = w.toMeta();
+    expect(meta).not.toBeNull();
+    expect(meta!.sessionId).toBe('sess-meta');
+    expect(meta!.key).toBe(`${ORG_A}/recordings/sess-meta/recording.mp4`);
   });
 });

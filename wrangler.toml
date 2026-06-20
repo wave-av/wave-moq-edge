@@ -86,6 +86,15 @@ id = "368824b7a9ba4dbf9d4ce31128c42cd6"  # MOQ_TRACK_REGISTRY_production
 binding = "MOQ_RECORDINGS"
 bucket_name = "wave-moq-recordings"  # ✓ the only moq bucket that exists (acct d674452f); -production never created
 
+# Slice B B3/B4 single-instance dedup (SB-P2): cross-worker RPC to wave-storage-meter's canonical D1
+# dedup index (entrypoint DedupRpc). Binding present ≠ active — dedup stays INERT until MOQ_DEDUP="1" is
+# set (the SB-P2.6 crossing). Deploy ORDER at P2.6: deploy wave-storage-meter (DedupRpc) FIRST, then this
+# worker, THEN flip MOQ_DEDUP. The binding is never invoked while the flag is unset.
+[[env.production.services]]
+binding = "WAVE_STORAGE_METER"
+service = "wave-storage-meter"
+entrypoint = "DedupRpc"
+
 # Staging
 [env.staging]
 name = "moq-edge-staging"
@@ -116,3 +125,9 @@ id = "9d6a9ddfcc89478991df8ea1db95b8ba"  # MOQ_TRACK_REGISTRY_staging
 [[env.staging.r2_buckets]]
 binding = "MOQ_RECORDINGS"
 bucket_name = "wave-moq-recordings"  # the only moq bucket that exists (acct d674452f); -staging never created
+
+# Slice B dedup binding (see production note). INERT until MOQ_DEDUP="1"; staging recording is inert pre-GA.
+[[env.staging.services]]
+binding = "WAVE_STORAGE_METER"
+service = "wave-storage-meter"
+entrypoint = "DedupRpc"

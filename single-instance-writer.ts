@@ -20,7 +20,7 @@
  * The only object ever physically moved is the rare byte-identical duplicate THIS call just wrote, and
  * even that is a copy to a short-TTL prefix, never a delete. Customer-retained data is untouched.
  */
-import { SessionRecorder, type Container } from './recording-writer';
+import { SessionRecorder, type Container, type RecorderMeta } from './recording-writer';
 import { StreamingHasher } from './streaming-hasher';
 import type { DedupIndex } from './dedup-index';
 
@@ -37,7 +37,7 @@ export interface SingleInstanceResult {
   bytes: number;
   /** Sniffed container of the streamed object. */
   container: Container;
-  /** Lowercase hex SHA-256 of the streamed bytes. */
+  /** Lowercase hex SHA-256 of the streamed bytes; '' when dedup was skipped (a hibernation-resumed write). */
   contentHash: string;
   /** Whether this call created the canonical object (false for a duplicate or a fail-safe keep). */
   created: boolean;
@@ -50,6 +50,12 @@ export class SingleInstanceWriter {
   private readonly bucketName: string;
   private readonly bucket: R2Bucket;
   private readonly org: string;
+  /**
+   * True only when this instance hashed EVERY byte from the first object (a fresh begin()). A resume()
+   * after a DO hibernation wake cannot recover the pre-wake hash, so it is false → finalize() KEEPS the
+   * object but skips dedup rather than claim on a partial digest.
+   */
+  private readonly hashComplete: boolean;
   private finalized: SingleInstanceResult | null = null;
 
   private constructor(
@@ -58,15 +64,14 @@ export class SingleInstanceWriter {
     index: DedupIndex,
     bucketName: string,
     org: string,
-    first: Uint8Array,
+    hashComplete: boolean,
   ) {
     this.bucket = bucket;
     this.recorder = recorder;
     this.index = index;
     this.bucketName = bucketName;
     this.org = org;
-    // The first object was already streamed into the recorder by begin(); hash it here too.
-    this.hasher.update(first);
+    this.hashComplete = hashComplete;
   }
 
   /**
@@ -83,7 +88,53 @@ export class SingleInstanceWriter {
     first: Uint8Array,
   ): Promise<SingleInstanceWriter> {
     const recorder = await SessionRecorder.begin(bucket, org, sessionId, first);
-    return new SingleInstanceWriter(bucket, recorder, index, bucketName, org, first);
+    const writer = new SingleInstanceWriter(bucket, recorder, index, bucketName, org, true);
+    // The first object was streamed into the recorder by begin(); fold it into the running hash too.
+    writer.hasher.update(first);
+    return writer;
+  }
+
+  /**
+   * Resume a recording after a DO hibernation wake (mirrors SessionRecorder.resume). The multipart upload
+   * is durable + resumable, but the incremental hash state is NOT persisted, so this instance sees only
+   * post-wake bytes → it is marked hash-INCOMPLETE and finalize() KEEPS the object without deduping (a
+   * partial digest must never claim canonical-ness or pollute the index). Rare: resuming mid-recording
+   * needs a mid-session eviction, which a live stream's continuous flow avoids (recording-writer §HIBERNATION).
+   */
+  static resume(
+    bucket: R2Bucket,
+    index: DedupIndex,
+    bucketName: string,
+    org: string,
+    meta: RecorderMeta,
+  ): SingleInstanceWriter {
+    const recorder = SessionRecorder.resume(bucket, meta);
+    return new SingleInstanceWriter(bucket, recorder, index, bucketName, org, false);
+  }
+
+  /** The publisher session id this recording belongs to (the broadcastId) — drop-in for SessionRecorder. */
+  get sessionId(): string {
+    return this.recorder.sessionId;
+  }
+
+  /** Parts already uploaded — the DO persists meta only when this changes (drop-in for SessionRecorder). */
+  get partCount(): number {
+    return this.recorder.partCount;
+  }
+
+  /** Total bytes streamed so far. */
+  get bytes(): number {
+    return this.recorder.bytes;
+  }
+
+  /** Snapshot the underlying multipart upload for DO storage so a hibernation wake can resume(). */
+  toMeta(): RecorderMeta | null {
+    return this.recorder.toMeta();
+  }
+
+  /** Abort the underlying multipart upload (best-effort) — used when a session recorded nothing. */
+  safeAbort(): Promise<void> {
+    return this.recorder.safeAbort();
   }
 
   /** Append one object payload — streamed to R2 (multipart) and fed to the running hash, no buffering. */
@@ -101,6 +152,16 @@ export class SingleInstanceWriter {
 
     const done = await this.recorder.finalize();
     if (!done) return null; // nothing recorded — never a 0-byte object, nothing to index
+
+    if (!this.hashComplete) {
+      // Hibernation-resumed write: the hash missed pre-wake bytes. KEEP the object as the canonical write
+      // for its key, but DO NOT claim/dedup on a partial digest (it would mis-key the index). The object is
+      // never dropped — dedup is an optimization, not a data-integrity guarantee (design §4).
+      console.warn('SingleInstanceWriter: finalize after hibernation-resume — keeping object un-deduped (partial hash)', { key: done.key, org: this.org });
+      const kept: SingleInstanceResult = { canonicalKey: done.key, key: done.key, bytes: done.bytes, container: done.container, contentHash: '', created: false };
+      this.finalized = kept;
+      return kept;
+    }
 
     const contentHash = this.hasher.digest();
 
