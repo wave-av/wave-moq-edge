@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: read
+  packages: read # pull @wave-av/content-hash (+ spoke-chassis) from GitHub Packages
 
 concurrency:
   group: lint-${{ github.head_ref || github.ref }}
@@ -33,4 +34,6 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # auth GitHub Packages (@wave-av/*) via the committed .npmrc
       - run: npm run lint

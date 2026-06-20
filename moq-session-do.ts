@@ -28,6 +28,9 @@ import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
 import { emitMoqUsage } from './usage-emit';
 import { SessionRecorder, type RecorderMeta } from './recording-writer';
+import { SingleInstanceWriter } from './single-instance-writer';
+import { makeRemoteDedupIndex, type DedupService } from './remote-dedup-index';
+import type { DedupIndex } from './dedup-index';
 import { registerRecording } from './register-recording';
 
 interface Env {
@@ -45,6 +48,12 @@ interface Env {
   // Recording write path (recording-writer.ts / register-recording.ts). The bucket NAME (the R2 binding
   // doesn't expose it) sent to the gateway register. Unset → recording is INERT (no behavior change).
   MOQ_RECORDINGS_BUCKET?: string;
+  // Slice B B3/B4 single-instance dedup (SB-P2). Cross-worker RPC binding to wave-storage-meter's
+  // canonical D1 dedup index (entrypoint DedupRpc). Dedup stays INERT until MOQ_DEDUP === '1' AND this
+  // binding is present — so deploying the binding alone changes nothing on the live write path; the
+  // operator flips MOQ_DEDUP at the SB-P2.6 crossing (config-no-silent-noop: explicit + reversible).
+  WAVE_STORAGE_METER?: DedupService;
+  MOQ_DEDUP?: string;
 }
 
 /** What survives hibernation, pinned to each socket via serializeAttachment (≤2KB structured clone). */
@@ -84,8 +93,9 @@ export class MOQSessionDurableObject {
   // created on the first publisher object (so the container can be sniffed), and ONLY when recording is
   // provisioned (org + gateway + service token + bucket name) — otherwise fully inert. The multipart meta
   // is persisted to DO storage ('recorder' key) so a hibernation wake can resume + complete it.
-  private recorder: SessionRecorder | null = null;
+  private recorder: SessionRecorder | SingleInstanceWriter | null = null;
   private recorderLoaded = false; // whether we've checked storage for a resumable recorder this lifetime
+  private dedupIndex: DedupIndex | null = null; // memoized cross-worker dedup index (SB-P2; built from WAVE_STORAGE_METER)
 
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
@@ -318,6 +328,25 @@ export class MOQSessionDurableObject {
     );
   }
 
+  /**
+   * Slice B dedup (B3/B4) runs only when recording is provisioned AND the cross-worker dedup binding is
+   * present AND the operator has explicitly flipped MOQ_DEDUP=1. Until then the write path uses the plain
+   * SessionRecorder exactly as before — deploying the binding alone changes nothing (the SB-P2.6 crossing
+   * flips the flag). Gated on the same provisioning as recordingEnabled, so dedup never runs without a
+   * billing org / bucket name.
+   */
+  private dedupEnabled(session: SessionState): boolean {
+    return this.recordingEnabled(session) && this.env.MOQ_DEDUP === '1' && Boolean(this.env.WAVE_STORAGE_METER);
+  }
+
+  /** The cross-worker dedup index (memoized), or null when the binding is absent. */
+  private index(): DedupIndex | null {
+    if (this.dedupIndex) return this.dedupIndex;
+    if (!this.env.WAVE_STORAGE_METER) return null;
+    this.dedupIndex = makeRemoteDedupIndex(this.env.WAVE_STORAGE_METER);
+    return this.dedupIndex;
+  }
+
   /** Persist (or clear) the recorder's multipart metadata so a hibernation wake can resume + complete. */
   private async persistRecorderMeta(): Promise<void> {
     const meta = this.recorder?.toMeta() ?? null;
@@ -336,19 +365,30 @@ export class MOQSessionDurableObject {
     const org = session.publisherOrg;
     const sid = session.publisherSessionId;
     if (!org || !sid) return;
+    const dedup = this.dedupEnabled(session);
+    const bucketName = this.env.MOQ_RECORDINGS_BUCKET as string; // guaranteed by recordingEnabled
     try {
       if (!this.recorder && !this.recorderLoaded) {
         this.recorderLoaded = true;
         const meta = await this.state.storage.get<RecorderMeta>('recorder');
         if (meta && meta.sessionId === sid) {
-          this.recorder = SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta);
+          // Resume the durable multipart upload. With dedup on, wrap it in a SingleInstanceWriter whose
+          // hash is marked incomplete (pre-wake bytes are unrecoverable) → it KEEPS the object without
+          // deduping. With dedup off, the plain recorder resumes exactly as before.
+          this.recorder = dedup
+            ? SingleInstanceWriter.resume(this.env.MOQ_RECORDINGS, this.index()!, bucketName, org, meta)
+            : SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta);
         } else if (meta) {
           await SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta).safeAbort(); // stale → don't adopt
           await this.state.storage.delete('recorder');
         }
       }
       if (!this.recorder) {
-        this.recorder = await SessionRecorder.begin(this.env.MOQ_RECORDINGS, org, sid, payload);
+        // First object: begin a fresh recording. Dedup on → SingleInstanceWriter hashes inline and claims
+        // canonical-ness at finalize; off → plain SessionRecorder (today's behavior).
+        this.recorder = dedup
+          ? await SingleInstanceWriter.begin(this.env.MOQ_RECORDINGS, this.index()!, bucketName, org, sid, payload)
+          : await SessionRecorder.begin(this.env.MOQ_RECORDINGS, org, sid, payload);
         await this.persistRecorderMeta();
       } else {
         const before = this.recorder.partCount;
@@ -378,7 +418,9 @@ export class MOQSessionDurableObject {
       if (meta && meta.sessionId === sessionId) this.recorder = SessionRecorder.resume(this.env.MOQ_RECORDINGS, meta);
     }
     if (!this.recorder) return;
-    let done: { key: string; bytes: number } | null = null;
+    // SessionRecorder.finalize() → { key, bytes, container }; SingleInstanceWriter.finalize() →
+    // SingleInstanceResult which also carries canonicalKey (the deduped object downstream must use).
+    let done: { key: string; bytes: number; canonicalKey?: string } | null = null;
     try {
       done = await this.recorder.finalize();
     } catch {
@@ -391,7 +433,10 @@ export class MOQSessionDurableObject {
       /* ignore */
     }
     if (done && org) {
-      this.state.waitUntil(registerRecording(this.env, { org, r2Key: done.key, sessionId }));
+      // Register the CANONICAL object: for a deduped write that is the pre-existing instance's key (this
+      // session's own object was re-pointed to _dup/); otherwise it is the just-written object's key.
+      const r2Key = done.canonicalKey ?? done.key;
+      this.state.waitUntil(registerRecording(this.env, { org, r2Key, sessionId }));
     }
   }
 

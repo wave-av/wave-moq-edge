@@ -83,7 +83,7 @@ describe('chassis landing — GET /', () => {
 
   it('does NOT contain the old wavePublicPage bespoke markup (regression guard)', async () => {
     const r = await worker.fetch(new Request(`${HOST}/`), buildEnv(), {} as ExecutionContext);
-    const body = await r.text();
+    await r.text(); // drain the body; this regression guard only asserts on the header
     // The old handleHtmlRoot injected x-wave-surface header and used wavePublicPage — chassis does not
     expect(r.headers.get('x-wave-surface')).toBeNull();
   });
