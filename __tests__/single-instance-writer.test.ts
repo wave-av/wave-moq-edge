@@ -33,6 +33,8 @@ class FakeBucket {
   created: FakeUpload[] = [];
   /** records routed objects: { from, to } pairs from the dup re-point. */
   copies: Array<{ from: string; to: string }> = [];
+  /** records keys removed (the duplicate original after its _dup/ safety copy). */
+  deletes: string[] = [];
   store = new Map<string, Uint8Array>();
   private seq = 0;
   async createMultipartUpload(key: string) {
@@ -60,6 +62,10 @@ class FakeBucket {
     this.store.set(key, u8);
     if (key.startsWith(DUP_PREFIX)) this.copies.push({ from: key.slice(DUP_PREFIX.length), to: key });
     return {} as R2Object;
+  }
+  async delete(key: string) {
+    this.store.delete(key);
+    this.deletes.push(key);
   }
 }
 const bucket = () => new FakeBucket() as unknown as R2Bucket & FakeBucket;
@@ -103,18 +109,23 @@ describe('SingleInstanceWriter', () => {
     expect(entry?.refcount).toBe(1);
   });
 
-  it('byte-identical duplicate → routes the just-written object to _dup/, addRef, returns canonical key', async () => {
+  it('byte-identical duplicate → MOVES the just-written object to _dup/ (copy+delete), addRef, returns canonical key', async () => {
     const b = bucket();
     const idx = new InMemoryDedupIndex();
     const first = await record(b, idx, ORG_A, 'sess-1', fmp4(1024, 7));
     const dup = await record(b, idx, ORG_A, 'sess-2', fmp4(1024, 7)); // same bytes
+    const dupKey = `${ORG_A}/recordings/sess-2/recording.mp4`;
 
     expect(dup!.created).toBe(false);
-    expect(dup!.canonicalKey).toBe(first!.canonicalKey); // downstream uses the first object
-    // the duplicate's own streamed object was re-pointed under _dup/ (no imperative delete)
+    expect(dup!.canonicalKey).toBe(first!.canonicalKey); // downstream uses the first (canonical) object
+    // the duplicate's own object is MOVED into _dup/: a safety copy lands, then the retained original is removed
     expect(b.copies).toHaveLength(1);
-    expect(b.copies[0].from).toBe(`${ORG_A}/recordings/sess-2/recording.mp4`);
+    expect(b.copies[0].from).toBe(dupKey);
     expect(b.copies[0].to.startsWith(DUP_PREFIX)).toBe(true);
+    expect(b.deletes).toContain(dupKey); // original reclaimed from the retained namespace
+    expect(b.store.has(dupKey)).toBe(false); // gone from retained — exactly one canonical object remains
+    expect(b.store.has(`${DUP_PREFIX}${dupKey}`)).toBe(true); // safety copy lives under _dup/ until TTL
+    expect(b.store.has(first!.canonicalKey)).toBe(true); // canonical object untouched
     const entry = await idx.lookup(ORG_A, first!.contentHash);
     expect(entry?.refcount).toBe(2); // first + the dup ref
   });

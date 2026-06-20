@@ -78,19 +78,22 @@ named-floor crossing. Order:
 3. Deploy `wave-moq-edge` (the `WAVE_STORAGE_METER` binding now resolves).
 4. Flip `MOQ_DEDUP="1"` (`wrangler` var) to activate.
 5. **Prove live:** a real `finalize()` ⇒ a `dedup_index` D1 row; a byte-identical re-record ⇒ `refcount=2`,
-   a `_dup/` object, and a pointer keyed by the second broadcastId (D1 row + R2 listing receipt). This live
-   receipt is the ONLY coverage of the `moq-session-do.ts` dedup seam (the DO is not unit-tested) — treat it
-   as a HARD gate, not "should work".
+   a `_dup/` object, a pointer keyed by the second broadcastId, and **exactly ONE retained canonical object**
+   (the dup's original moved out of the retained namespace into `_dup/`) — D1 row + R2 listing receipt. This
+   live receipt is the ONLY coverage of the `moq-session-do.ts` dedup seam (the DO is not unit-tested) —
+   treat it as a HARD gate, not "should work".
 
 Until step 4, everything is inert and bills $0.
 
-### ⚠ Open decision before activation — SB-P2.7 (duplicate-original reclaim)
+### Duplicate-original reclaim — RESOLVED (SB-P2.7): route = MOVE
 
-`SingleInstanceWriter.routeToDup` copies the duplicate's just-written object to `_dup/` but does **not**
-reclaim the original at its retained key, and the `_dup/`-scoped TTL cannot reach a non-`_dup/` key. So a
-re-record leaves two retained objects until the reconcile-ENFORCE sweep (P5.2) collapses the dup — the
-"exactly one canonical object" steady state is **not** met by the writer alone. This is a Jake decision
-(touches the North Star "zero destructive deletes"): **A** drop the redundant `_dup/` copy and let
-reconcile-enforce reclaim the original, or **B** copy-to-`_dup/` then delete the original (a write-path
-"move" of a just-written redundant dup). Resolve + fold in the `addRef`-before-`routeToDup` ordering fix
-before step 4.
+`SingleInstanceWriter.routeToDup` **moves** the duplicate's just-written object into `_dup/`
+(copy-then-delete, since R2 has no rename): a safety copy lands under `_dup/` (a 3-day window against
+index/canonical drift), then the redundant original is removed from the retained namespace — so exactly ONE
+canonical object is retained. This is the North Star's own mechanism ("dup routed to transient prefixes
+reclaimed by TTL"); "zero destructive deletes" protects canonical / customer-unique data, and the only
+object ever removed is a just-written redundant duplicate whose bytes are safe at the canonical key + under
+`_dup/`. Guarded + best-effort: a copy/delete failure leaves the original in place (the reconcile-enforce
+sweep backstops it) and never throws into finalize. `addRef` is made durable BEFORE the move so a failure
+never leaves a dangling reference. Proven by `__tests__/single-instance-writer.test.ts` (the dup test
+asserts the original is gone from retained, the safety copy is under `_dup/`, and the canonical is untouched).

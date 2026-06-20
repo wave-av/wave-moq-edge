@@ -7,8 +7,8 @@
  * `claim()` canonical-ness for that content (design §3.3):
  *   • created → the just-streamed object IS the canonical object; refcount 1, nothing else to do.
  *   • not created (byte-identical content already retained for this org) → record an addRef pointer and
- *     re-point THIS operation's just-written object to a transient `_dup/` prefix (R2 copy, NO imperative
- *     delete — Slice A lifecycle TTL reclaims it); downstream uses the existing canonicalKey.
+ *     MOVE THIS operation's just-written object into the transient `_dup/` prefix (copy-then-delete, since
+ *     R2 has no rename) so only ONE canonical object is retained; downstream uses the existing canonicalKey.
  *
  * INVARIANTS (design §4):
  *   • Fail-safe: if claim() throws (D1 down), KEEP the streamed object as-is — log loudly, no pointer, no
@@ -17,8 +17,9 @@
  *     result, never a second commit/double-count.
  *   • Per-org isolation: the index is keyed (org, hash), so identical bytes in two orgs stay two objects.
  *
- * The only object ever physically moved is the rare byte-identical duplicate THIS call just wrote, and
- * even that is a copy to a short-TTL prefix, never a delete. Customer-retained data is untouched.
+ * The only object ever removed is the rare byte-identical duplicate THIS call just wrote — and only after a
+ * safety copy of it lands under the short-TTL `_dup/` prefix. The canonical object and every customer-unique
+ * byte are never touched. (North Star: "dup routed to transient prefixes reclaimed by TTL".)
  */
 import { SessionRecorder, type Container, type RecorderMeta } from './recording-writer';
 import { StreamingHasher } from './streaming-hasher';
@@ -172,7 +173,8 @@ export class SingleInstanceWriter {
         // First instance for this org — the streamed object IS canonical. Nothing else to do.
         result = { canonicalKey: done.key, key: done.key, bytes: done.bytes, container: done.container, contentHash, created: true };
       } else {
-        // Byte-identical duplicate already retained → record a pointer and re-point THIS object to _dup/.
+        // Byte-identical duplicate already retained → record a pointer (refcount bump is addRef's, durable
+        // FIRST so a later failure never leaves a dangling reference) then MOVE this object into _dup/.
         await this.index.addRef(this.org, this.recorder.sessionId, contentHash);
         await this.routeToDup(done.key);
         result = { canonicalKey: claim.canonicalKey, key: done.key, bytes: done.bytes, container: done.container, contentHash, created: false };
@@ -189,22 +191,33 @@ export class SingleInstanceWriter {
   }
 
   /**
-   * Re-point a duplicate's just-written object to the transient `_dup/` prefix. R2 has no rename, so this
-   * is a copy (get→put); the original key is left for Slice A lifecycle TTL to reclaim — NO imperative
-   * delete (design §3.3). Best-effort: a copy failure must not endanger the canonical object or the byte.
+   * Move a duplicate's just-written object into the transient `_dup/` prefix (design §3.3; North Star:
+   * "dup routed to transient prefixes reclaimed by TTL"). R2 has no rename, so this is copy-then-delete:
+   * get → put(`_dup/${key}`) → delete the original retained key. The bytes are NEVER lost — they remain at
+   * the canonical object (claim returned the existing canonicalKey) AND, for the `_dup/` TTL window, under
+   * `_dup/` as a safety copy against index/canonical drift. The ONLY object removed is THIS redundant
+   * duplicate WAVE just wrote; no canonical / customer-unique byte is ever deleted. Best-effort: a copy or
+   * delete failure leaves the original in place (the reconcile-enforce sweep reclaims it later) and must
+   * never throw into the finalize path.
    */
   private async routeToDup(key: string): Promise<void> {
     const dupKey = `${DUP_PREFIX}${key}`;
     try {
       const obj = await this.bucket.get(key);
       if (!obj) {
-        console.error('SingleInstanceWriter: routeToDup could not read object to re-point; left in place for TTL', { key });
+        // Already gone (e.g. a retried finalize) — the canonical object is the source of truth. Nothing to move.
+        console.warn('SingleInstanceWriter: routeToDup found no object to move; already reclaimed', { key });
         return;
       }
       await this.bucket.put(dupKey, await obj.arrayBuffer());
+      // The safety copy is durable under `_dup/` → reclaim the redundant original from the retained namespace
+      // so exactly ONE canonical object is retained. Guarded: a delete failure is a storage leak the
+      // reconcile-enforce sweep collapses, never a data loss (the bytes are at canonical + `_dup/`).
+      await this.bucket.delete(key);
     } catch (err) {
-      // The duplicate object stays at its original key; lifecycle TTL still reclaims it. Log, don't throw.
-      console.error('SingleInstanceWriter: routeToDup failed; left in place for TTL', { key }, err);
+      // The duplicate object stays at its original key; reconcile-enforce reclaims it later. The canonical
+      // object + bytes are untouched. Log, don't throw.
+      console.error('SingleInstanceWriter: routeToDup failed; original left in place for reconcile-enforce', { key }, err);
     }
   }
 }
