@@ -63,6 +63,11 @@ LOG_LEVEL = "info"
 # explicit operator opt-in (task #288). ON: publish requires moq:write, subscribe requires moq:read on
 # the gateway-injected x-wave-scopes principal; anonymous publish/subscribe is denied. DO NOT flip here.
 MOQ_REQUIRE_AUTH = "false"
+# Slice B single-instance dedup activation (SB-P2.6). With the WAVE_STORAGE_METER service binding present
+# (below) AND a provisioned recording (org + gateway + token + bucket), a recording finalize hashes on
+# write and dedups per-org via the one canonical D1 index in wave-storage-meter. Off → plain SessionRecorder
+# (byte-identical prior behavior). The fail-safe writer keeps the object on any dedup error — never drops it.
+MOQ_DEDUP = "1"
 MOQ_CACHED_GROUPS = "3"  # late-joiner cache depth (recent groups replayed to new subscribers)
 # #284 usage emit → gateway #236 ingest. GATEWAY_BASE_URL is a public var; WAVE_SERVICE_TOKEN is a SECRET
 # set out-of-band: `wrangler secret put WAVE_SERVICE_TOKEN --env production`. The emit stays INERT until
