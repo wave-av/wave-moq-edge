@@ -125,6 +125,8 @@ describe('SingleInstanceWriter', () => {
       addRef: vi.fn(),
       lookup: vi.fn(),
       release: vi.fn(),
+      lookupRef: vi.fn(),
+      refCountForHash: vi.fn(),
     };
     const err = vi.spyOn(console, 'error').mockImplementation(() => {});
     const res = await record(b, downIdx, ORG_A, 'sess-1', fmp4(1024, 3));
