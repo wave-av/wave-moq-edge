@@ -274,8 +274,13 @@ export default {
       }
 
       // /v1/publish/:namespace/:track
+      // POST = one-shot / legacy register (and POST-with-Upgrade). GET + Upgrade = the standard
+      // RFC 6455 WebSocket relay publisher: Cloudflare's edge only honours a WebSocket upgrade on a
+      // GET, so the live WS relay publisher (the documented transport) must be reachable via GET —
+      // otherwise the record path is unreachable from any standard WebSocket client. The DO does the
+      // upgrade on the Upgrade header regardless of method; a GET without Upgrade still 404s below.
       const publishMatch = path.match(/^\/v1\/publish\/([^/]+)\/([^/]+)$/);
-      if (publishMatch && request.method === 'POST') {
+      if (publishMatch && (request.method === 'POST' || (request.method === 'GET' && isWebSocketUpgrade(request)))) {
         return handlePublish(env, publishMatch[1], publishMatch[2], request);
       }
 
