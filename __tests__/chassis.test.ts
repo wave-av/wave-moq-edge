@@ -117,6 +117,31 @@ describe('/v1 API routes — no regression (must not return chassis 200)', () =>
     expect(r.headers.get('content-type') ?? '').toContain('application/json');
   });
 
+  it('GET /v1/publish/:ns/:track WITH a WebSocket upgrade routes to handlePublish (the WS relay publisher)', async () => {
+    // CF only honours a WS upgrade on GET, so the live relay publisher must be reachable via GET+Upgrade.
+    // Invalid namespace → handlePublish validation → 400 (proves it ROUTED to handlePublish, not a 404 miss).
+    const r = await worker.fetch(
+      new Request(`${HOST}/v1/publish/INVALID_CAPS/track`, {
+        method: 'GET',
+        headers: { Upgrade: 'websocket', Connection: 'Upgrade' },
+      }),
+      buildEnv(),
+      {} as ExecutionContext,
+    );
+    expect(r.status).toBe(400);
+    expect(r.headers.get('content-type') ?? '').toContain('application/json');
+  });
+
+  it('GET /v1/publish/:ns/:track WITHOUT an upgrade still 404s (no behavior change for non-WS GET)', async () => {
+    const r = await worker.fetch(
+      new Request(`${HOST}/v1/publish/wave/cam-1`, { method: 'GET' }),
+      buildEnv(),
+      {} as ExecutionContext,
+    );
+    expect(r.status).toBe(404);
+    expect(r.headers.get('content-type') ?? '').toContain('application/json');
+  });
+
   it('GET /v1/subscribe/:ns/:track without WebSocket upgrade returns 404 (track not found, not chassis)', async () => {
     const r = await worker.fetch(
       new Request(`${HOST}/v1/subscribe/wave/cam-1`),
