@@ -15,6 +15,11 @@ on:
   push:
     branches: [main, master, staging]
     paths:
+      # This worker's entry + modules live at the repo ROOT (wrangler.toml `main = "index.ts"`),
+      # not under src/. `*.ts` catches index.ts and every root module (dedup-index, recording-writer,
+      # single-instance-writer, streaming-hasher, …) so a router/module change actually auto-deploys.
+      # Without this, edits to the router silently no-op the deploy (P2.6 had to `gh workflow run` by hand).
+      - "*.ts"
       - "src/**"
       - "wrangler.toml"
       - "package.json"
