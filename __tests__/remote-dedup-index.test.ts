@@ -26,26 +26,26 @@ describe('makeRemoteDedupIndex — faithful pass-through to the DedupRpc service
     const again = await idx.claim(ORG, HASH, `${ORG}/recordings/s2/recording.mp4`, BUCKET, 1024);
     expect(again.created).toBe(false);
     expect(again.canonicalKey).toBe(KEY);
-    expect(await idx.refCountForHash(ORG, HASH)).toBe(1);
+    expect(await idx.refCountForHash(ORG, HASH, BUCKET)).toBe(1);
 
     // addRef owns the increment + writes the pointer.
-    const ref = await idx.addRef(ORG, 's2', HASH);
+    const ref = await idx.addRef(ORG, 's2', HASH, BUCKET);
     expect(ref.added).toBe(true);
     expect(ref.refcount).toBe(2);
-    expect(await idx.lookupRef(ORG, 's2')).toBe(HASH);
-    expect((await idx.lookup(ORG, HASH))?.refcount).toBe(2);
+    expect(await idx.lookupRef(ORG, 's2')).toEqual({ contentHash: HASH, bucket: BUCKET });
+    expect((await idx.lookup(ORG, HASH, BUCKET))?.refcount).toBe(2);
   });
 
   it('forwards release (decrement + physical-removal signal at refcount 0)', async () => {
     const idx = makeRemoteDedupIndex(fakeService());
     await idx.claim(ORG, HASH, KEY, BUCKET, 10);
-    await idx.addRef(ORG, 's2', HASH); // refcount 2
-    const r1 = await idx.release(ORG, HASH);
+    await idx.addRef(ORG, 's2', HASH, BUCKET); // refcount 2
+    const r1 = await idx.release(ORG, HASH, BUCKET);
     expect(r1.removed).toBe(false);
     expect(r1.refcount).toBe(1);
-    const r2 = await idx.release(ORG, HASH);
+    const r2 = await idx.release(ORG, HASH, BUCKET);
     expect(r2.removed).toBe(true); // reached 0 → canonical row removed (lib performs NO R2 delete)
-    expect(await idx.lookup(ORG, HASH)).toBeNull();
+    expect(await idx.lookup(ORG, HASH, BUCKET)).toBeNull();
   });
 
   it('every adapter method delegates to the underlying service (call-through proof)', async () => {
@@ -60,11 +60,11 @@ describe('makeRemoteDedupIndex — faithful pass-through to the DedupRpc service
     };
     const idx = makeRemoteDedupIndex(svc);
     await idx.claim(ORG, HASH, KEY, BUCKET, 1);
-    await idx.addRef(ORG, 's2', HASH);
-    await idx.lookup(ORG, HASH);
+    await idx.addRef(ORG, 's2', HASH, BUCKET);
+    await idx.lookup(ORG, HASH, BUCKET);
     await idx.lookupRef(ORG, 's2');
-    await idx.refCountForHash(ORG, HASH);
-    await idx.release(ORG, HASH);
+    await idx.refCountForHash(ORG, HASH, BUCKET);
+    await idx.release(ORG, HASH, BUCKET);
     for (const [name, spy] of Object.entries(spies)) {
       expect(spy, name).toHaveBeenCalledTimes(1);
     }
@@ -80,10 +80,10 @@ describe('makeRemoteDedupIndex — faithful pass-through to the DedupRpc service
     expect(claim.created).toBe(true);
 
     const poolPath = `pool/${ORG}/b1.mp4`;
-    const ref = await idx.addRef(ORG, poolPath, HASH);
+    const ref = await idx.addRef(ORG, poolPath, HASH, BUCKET);
     expect(ref.added).toBe(true);
     expect(ref.refcount).toBe(2);
-    expect(await idx.lookupRef(ORG, poolPath)).toBe(HASH); // pool path resolves to the same content hash
-    expect((await idx.lookup(ORG, HASH))?.canonicalKey).toBe(edgeKey); // canonical stays the EDGE object
+    expect(await idx.lookupRef(ORG, poolPath)).toEqual({ contentHash: HASH, bucket: BUCKET }); // pool path resolves to the same (hash, home bucket)
+    expect((await idx.lookup(ORG, HASH, BUCKET))?.canonicalKey).toBe(edgeKey); // canonical stays the EDGE object
   });
 });

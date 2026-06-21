@@ -8,4 +8,4 @@
  * Source: @wave-av/content-hash@0.1.0 (wave-foundation). Repin task: SB-P0.8.
  */
 export { makeDedupIndex, InMemoryDedupIndex, DEDUP_MIGRATION_SQL } from '@wave-av/content-hash';
-export type { DedupIndex, ClaimResult, AddRefResult, ReleaseResult, IndexRow } from '@wave-av/content-hash';
+export type { DedupIndex, ClaimResult, AddRefResult, ReleaseResult, IndexRow, RefTarget } from '@wave-av/content-hash';
