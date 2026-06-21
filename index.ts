@@ -11,7 +11,7 @@
  *   GET    /v1/subscribe/:namespace/:track → WebTransport subscribe endpoint
  *   GET    /v1/track/:namespace/:track     → Track metadata (subscriber count, last activity)
  *   GET    /v1/announce                   → List announced tracks (for discovery)
- *   GET    /v1/catalog                    → IETF draft-ietf-moq-catalog-01 listing
+ *   GET    /v1/catalog                    → MSF Catalog Format (draft-ietf-moq-catalogformat-01)
  *   GET    /health                        → Liveness probe
  *   GET    /metrics                       → Prometheus-format metrics
  *
@@ -30,6 +30,7 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { scopeGate, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
 import { FAVICON_SVG } from './src/favicon';
 import type { Env } from './src/types';
@@ -176,53 +177,29 @@ async function handleAnnounce(env: Env): Promise<Response> {
 }
 
 /**
- * /v1/catalog — IETF draft-ietf-moq-catalog implementation.
- * Returns a JSON catalog listing all tracks at this relay with their MoQ
- * track aliases, group orders, and capability profiles. Subscribers use
- * this for track discovery.
+ * /v1/catalog — MSF Catalog Format (IETF draft-ietf-moq-catalogformat-01 + draft-ietf-moq-msf-00).
  *
- * Format follows draft-ietf-moq-catalog-01 (subset). Cloudflare's reference
- * implementation does NOT yet expose a catalog endpoint as of 2026-05-07,
- * making WAVE the first public-facing MoQ catalog at the relay edge.
+ * Returns the "Common Catalog Format for moq-transport" JSON document for the tracks published at
+ * this relay, shaped for the MSF (MOQT Streaming Format, streamingFormat=0x001) streaming format so
+ * OpenMOQ-speaking relays (Akamai/Cisco/YouTube) can discover and select tracks. The catalog SHAPE
+ * (root version/streamingFormat/streamingFormatVersion + per-track name/packaging/selectionParams)
+ * lives in src/catalog.ts with per-field draft-section citations.
+ *
+ * Cloudflare's reference relay does NOT expose a catalog endpoint, making WAVE the first
+ * public-facing MoQ catalog at the relay edge.
  */
-async function handleCatalog(env: Env, request: Request): Promise<Response> {
+async function handleCatalog(env: Env): Promise<Response> {
   const list = await env.MOQ_TRACK_REGISTRY.list({ prefix: 'track:', limit: 1000 });
-  const entries = await Promise.all(
+  const raw = await Promise.all(
     list.keys.map(async (k) => {
       const v = await env.MOQ_TRACK_REGISTRY.get(k.name);
-      if (!v) return null;
-      const parsed = JSON.parse(v);
-      return parsed;
+      return v ? (JSON.parse(v) as TrackRegistryEntry) : null;
     })
   );
+  const entries = raw.filter((e): e is TrackRegistryEntry => e !== null);
 
-  const catalog = {
-    version: '01',
-    catalog_format: 'draft-ietf-moq-catalog',
-    relay_id: 'wave-moq-edge',
-    relay_environment: env.ENVIRONMENT,
-    moq_draft_version: env.MOQ_DRAFT_VERSION,
-    generated_at: new Date().toISOString(),
-    cf_colo: request.cf?.colo ?? 'unknown',
-    tracks: entries
-      .filter(Boolean)
-      .map((e: { namespace: string; track: string; publisher_started_at?: string; region?: string }) => ({
-        namespace: e.namespace,
-        name: e.track,
-        track_namespace: [e.namespace, e.track],
-        // Default capability profile (real impl reads from DO state):
-        capabilities: {
-          group_order: 'ascending',
-          forwarding: 'object',
-          delivery_timeout_ms: 5000,
-        },
-        publisher_started_at: e.publisher_started_at ?? null,
-        publisher_region: e.region ?? null,
-      })),
-    track_count: entries.filter(Boolean).length,
-  };
-
-  return jsonResponse(catalog);
+  // Spec-shaped catalogformat-01 document (no WAVE-specific fields inside the document itself).
+  return jsonResponse(buildMsfCatalog(entries));
 }
 
 async function handleHealth(env: Env): Promise<Response> {
@@ -268,9 +245,9 @@ export default {
         return handleAnnounce(env);
       }
 
-      // /v1/catalog — IETF draft-ietf-moq-catalog (first public CF MoQ catalog)
+      // /v1/catalog — MSF Catalog Format (draft-ietf-moq-catalogformat-01, first public CF MoQ catalog)
       if (path === '/v1/catalog' && request.method === 'GET') {
-        return handleCatalog(env, request);
+        return handleCatalog(env);
       }
 
       // /v1/publish/:namespace/:track
