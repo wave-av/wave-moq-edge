@@ -99,12 +99,16 @@ describe('/v1 API routes — no regression (must not return chassis 200)', () =>
     expect(body).toHaveProperty('count');
   });
 
-  it('GET /v1/catalog returns JSON catalog (not a chassis page)', async () => {
+  it('GET /v1/catalog returns a spec-shaped MSF catalog (not a chassis page)', async () => {
     const r = await worker.fetch(new Request(`${HOST}/v1/catalog`), buildEnv(), {} as ExecutionContext);
     expect(r.status).toBe(200);
     expect(r.headers.get('content-type') ?? '').toContain('application/json');
-    const body = (await r.json()) as { catalog_format: string };
-    expect(body.catalog_format).toBe('draft-ietf-moq-catalog');
+    // draft-ietf-moq-catalogformat-01 §3.2 required root fields + MSF (msf §IANA) format id.
+    const body = (await r.json()) as { version: number; streamingFormat: number; streamingFormatVersion: string; tracks: unknown[] };
+    expect(body.version).toBe(1);
+    expect(body.streamingFormat).toBe(1);
+    expect(body.streamingFormatVersion).toBe('1');
+    expect(Array.isArray(body.tracks)).toBe(true);
   });
 
   it('POST /v1/publish/:ns/:track with invalid namespace returns 400 JSON (not chassis 200)', async () => {
