@@ -105,7 +105,7 @@ describe('SingleInstanceWriter', () => {
     expect(res!.key).toBe(res!.canonicalKey); // the streamed object IS canonical
     expect(b.created[0].completed).toHaveLength(1); // streamed normally
     expect(b.copies).toHaveLength(0); // no dup re-point
-    const entry = await idx.lookup(ORG_A, res!.contentHash);
+    const entry = await idx.lookup(ORG_A, res!.contentHash, BUCKET_NAME);
     expect(entry?.refcount).toBe(1);
   });
 
@@ -126,7 +126,7 @@ describe('SingleInstanceWriter', () => {
     expect(b.store.has(dupKey)).toBe(false); // gone from retained — exactly one canonical object remains
     expect(b.store.has(`${DUP_PREFIX}${dupKey}`)).toBe(true); // safety copy lives under _dup/ until TTL
     expect(b.store.has(first!.canonicalKey)).toBe(true); // canonical object untouched
-    const entry = await idx.lookup(ORG_A, first!.contentHash);
+    const entry = await idx.lookup(ORG_A, first!.contentHash, BUCKET_NAME);
     expect(entry?.refcount).toBe(2); // first + the dup ref
   });
 
@@ -163,7 +163,7 @@ describe('SingleInstanceWriter', () => {
     expect(a!.created).toBe(true);
     expect(again).toEqual(a); // identical result, no second commit
     expect(b.created[0].completed).toHaveLength(1); // completed exactly once
-    expect((await idx.lookup(ORG_A, a!.contentHash))?.refcount).toBe(1); // not bumped
+    expect((await idx.lookup(ORG_A, a!.contentHash, BUCKET_NAME))?.refcount).toBe(1); // not bumped
   });
 
   it('per-org isolation: two orgs with identical bytes → two canonical objects', async () => {
@@ -188,8 +188,8 @@ describe('SingleInstanceWriter', () => {
     expect(first!.created).toBe(true);
     expect(dup!.created).toBe(false);
     expect(dup!.canonicalKey).toBe(first!.canonicalKey); // broadcast-2 resolves to broadcast-1's object
-    expect(await idx.lookupRef(ORG_A, 'broadcast-2')).toBe(first!.contentHash); // pointer keyed by broadcastId
-    expect((await idx.lookup(ORG_A, first!.contentHash))?.refcount).toBe(2);
+    expect(await idx.lookupRef(ORG_A, 'broadcast-2')).toEqual({ contentHash: first!.contentHash, bucket: BUCKET_NAME }); // pointer keyed by broadcastId
+    expect((await idx.lookup(ORG_A, first!.contentHash, BUCKET_NAME))?.refcount).toBe(2);
   });
 
   it('hibernation-resume → keeps the object, NO dedup claim (a partial hash must not pollute the index)', async () => {
