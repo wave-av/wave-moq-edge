@@ -2,36 +2,41 @@
 /**
  * SingleInstanceWriter — the Slice B write-path wrapper around SessionRecorder.
  *
- * Streams a publisher session to one R2 object EXACTLY as SessionRecorder does, while hashing the bytes
- * inline (StreamingHasher). At finalize() it computes the digest and asks the per-org DedupIndex to
- * `claim()` canonical-ness for that content (design §3.3):
- *   • created → the just-streamed object IS the canonical object; refcount 1, nothing else to do.
- *   • not created (byte-identical content already retained for this org) → record an addRef pointer and
- *     MOVE THIS operation's just-written object into the transient `_dup/` prefix (copy-then-delete, since
- *     R2 has no rename) so only ONE canonical object is retained; downstream uses the existing canonicalKey.
+ * This is now a THIN FACADE over @wave-av/content-hash's `StreamingClaimWriter` (SB repin / task #56).
+ * The claim-on-write decision (hash inline → claim canonical-ness → addRef + route the redundant dup into
+ * `_dup/`, fail-safe on a D1/R2 error, skip-on-partial after a hibernation resume) lives in ONE tested
+ * package implementation shared by every streaming FULL producer (MoQ here, realtime next). This file
+ * keeps moq-session-do.ts's drop-in surface (static begin()/resume(), partCount/toMeta/safeAbort, a
+ * `SingleInstanceResult` carrying `canonicalKey`) so the DO is unchanged — it just no longer vendors a
+ * second copy of the must-never-false-collapse logic.
  *
- * INVARIANTS (design §4):
+ * The SessionRecorder is a structural `StreamingSink` (sessionId/bytes/append/finalize), so the claim
+ * writer drives it directly. The facade additionally exposes the recorder's multipart-specific surface
+ * (partCount/toMeta) that the DO persists for hibernation resume — those are recorder concerns the generic
+ * StreamingSink does not model, so the facade delegates to the recorder for them.
+ *
+ * INVARIANTS (unchanged — now enforced by @wave-av/content-hash, design §4):
  *   • Fail-safe: if claim() throws (D1 down), KEEP the streamed object as-is — log loudly, no pointer, no
  *     dedup. Dedup is an optimization that must never endanger a customer byte.
  *   • Idempotent finalize: the underlying upload completes once; a retried finalize returns the cached
  *     result, never a second commit/double-count.
  *   • Per-org isolation: the index is keyed (org, hash), so identical bytes in two orgs stay two objects.
- *
- * The only object ever removed is the rare byte-identical duplicate THIS call just wrote — and only after a
- * safety copy of it lands under the short-TTL `_dup/` prefix. The canonical object and every customer-unique
- * byte are never touched. (North Star: "dup routed to transient prefixes reclaimed by TTL".)
+ *   • Skip-on-partial: a hibernation-resumed write hashes only post-wake bytes → it is marked
+ *     hash-INCOMPLETE and finalize() KEEPS the object without claiming on a partial digest.
  */
 import { SessionRecorder, type Container, type RecorderMeta } from './recording-writer';
-import { StreamingHasher } from './streaming-hasher';
+import { StreamingClaimWriter, DUP_PREFIX, type ClaimDecision } from '@wave-av/content-hash';
 import type { DedupIndex } from './dedup-index';
 
 /** Transient prefix a duplicate's just-written object is re-pointed to; Slice A lifecycle TTL reclaims it. */
-export const DUP_PREFIX = '_dup/';
+export { DUP_PREFIX };
 
 /** Result of a finalized single-instance write. */
 export interface SingleInstanceResult {
   /** The key a downstream consumer (register-recording) should use — the canonical object. */
   canonicalKey: string;
+  /** The bucket the canonical object lives in (== this object's own bucket unless a cross-bucket dup). */
+  canonicalBucket: string;
   /** The key of the object THIS operation streamed (== canonicalKey unless it was a routed duplicate). */
   key: string;
   /** Total bytes streamed. */
@@ -45,39 +50,30 @@ export interface SingleInstanceResult {
 }
 
 export class SingleInstanceWriter {
+  /** The underlying multipart recorder — owns the streamed object + the partCount/toMeta surface the DO persists. */
   private readonly recorder: SessionRecorder;
-  private readonly hasher = new StreamingHasher();
-  private readonly index: DedupIndex;
-  private readonly bucketName: string;
-  private readonly bucket: R2Bucket;
-  private readonly org: string;
+  /** The shared claim writer (hash inline + claimOrRoute at finalize) driving the recorder as its sink. */
+  private readonly writer: StreamingClaimWriter;
   /**
    * True only when this instance hashed EVERY byte from the first object (a fresh begin()). A resume()
-   * after a DO hibernation wake cannot recover the pre-wake hash, so it is false → finalize() KEEPS the
-   * object but skips dedup rather than claim on a partial digest.
+   * after a DO hibernation wake cannot recover the pre-wake hash → false, so finalize() KEEPS the object
+   * but skips dedup, logging loudly (config-no-silent-noop) rather than silently dropping the optimization.
    */
   private readonly hashComplete: boolean;
+  private readonly org: string;
   private finalized: SingleInstanceResult | null = null;
 
-  private constructor(
-    bucket: R2Bucket,
-    recorder: SessionRecorder,
-    index: DedupIndex,
-    bucketName: string,
-    org: string,
-    hashComplete: boolean,
-  ) {
-    this.bucket = bucket;
+  private constructor(recorder: SessionRecorder, writer: StreamingClaimWriter, hashComplete: boolean, org: string) {
     this.recorder = recorder;
-    this.index = index;
-    this.bucketName = bucketName;
-    this.org = org;
+    this.writer = writer;
     this.hashComplete = hashComplete;
+    this.org = org;
   }
 
   /**
    * Begin a single-instance recording. Mirrors SessionRecorder.begin(): the container is sniffed from
-   * `first`, the multipart upload is created, and `first` is appended — we additionally hash it.
+   * `first`, the multipart upload is created, and `first` is appended — the claim writer additionally folds
+   * `first` into the running hash WITHOUT re-appending it (begin() already streamed it into the recorder).
    * `bucketName` is the canonical bucket the object lives in (for the DedupIndex row).
    */
   static async begin(
@@ -89,18 +85,19 @@ export class SingleInstanceWriter {
     first: Uint8Array,
   ): Promise<SingleInstanceWriter> {
     const recorder = await SessionRecorder.begin(bucket, org, sessionId, first);
-    const writer = new SingleInstanceWriter(bucket, recorder, index, bucketName, org, true);
-    // The first object was streamed into the recorder by begin(); fold it into the running hash too.
-    writer.hasher.update(first);
-    return writer;
+    const writer = new StreamingClaimWriter(recorder, index, bucket, bucketName, org, /* hashComplete */ true);
+    // The first object was streamed into the recorder by begin(); fold it into the running hash too
+    // (without re-appending — fold MUST precede any append() per the claim writer's order guard).
+    writer.foldInitialChunk(first);
+    return new SingleInstanceWriter(recorder, writer, /* hashComplete */ true, org);
   }
 
   /**
    * Resume a recording after a DO hibernation wake (mirrors SessionRecorder.resume). The multipart upload
-   * is durable + resumable, but the incremental hash state is NOT persisted, so this instance sees only
-   * post-wake bytes → it is marked hash-INCOMPLETE and finalize() KEEPS the object without deduping (a
-   * partial digest must never claim canonical-ness or pollute the index). Rare: resuming mid-recording
-   * needs a mid-session eviction, which a live stream's continuous flow avoids (recording-writer §HIBERNATION).
+   * is durable + resumable, but the incremental hash state is NOT persisted, so the claim writer is marked
+   * hash-INCOMPLETE (hashComplete=false) → finalize() KEEPS the object without deduping (a partial digest
+   * must never claim canonical-ness or pollute the index). Rare: resuming mid-recording needs a mid-session
+   * eviction, which a live stream's continuous flow avoids (recording-writer §HIBERNATION).
    */
   static resume(
     bucket: R2Bucket,
@@ -110,7 +107,8 @@ export class SingleInstanceWriter {
     meta: RecorderMeta,
   ): SingleInstanceWriter {
     const recorder = SessionRecorder.resume(bucket, meta);
-    return new SingleInstanceWriter(bucket, recorder, index, bucketName, org, false);
+    const writer = new StreamingClaimWriter(recorder, index, bucket, bucketName, org, /* hashComplete */ false);
+    return new SingleInstanceWriter(recorder, writer, /* hashComplete */ false, org);
   }
 
   /** The publisher session id this recording belongs to (the broadcastId) — drop-in for SessionRecorder. */
@@ -140,84 +138,45 @@ export class SingleInstanceWriter {
 
   /** Append one object payload — streamed to R2 (multipart) and fed to the running hash, no buffering. */
   async append(payload: Uint8Array): Promise<void> {
-    await this.recorder.append(payload);
-    this.hasher.update(payload);
+    await this.writer.append(payload);
   }
 
   /**
-   * Finalize: complete the streamed object, compute the digest, then claim canonical-ness. Returns null
-   * iff the recorder recorded nothing (no object, no claim). Idempotent — a retried call is a no-op.
+   * Finalize: complete the streamed object, compute the digest, then claim canonical-ness via the shared
+   * claim writer. Returns null iff the recorder recorded nothing (no object, no claim). Idempotent — a
+   * retried call returns the cached result, never a second commit/double-count. The published
+   * `ClaimDecision` (which now also carries `canonicalBucket`) is mapped to `SingleInstanceResult` so the
+   * DO's `done.canonicalKey ?? done.key` register path is unchanged.
    */
   async finalize(): Promise<SingleInstanceResult | null> {
     if (this.finalized) return this.finalized; // idempotent: no second commit, no double-count
-
-    const done = await this.recorder.finalize();
-    if (!done) return null; // nothing recorded — never a 0-byte object, nothing to index
-
+    const decision = await this.writer.finalize();
+    if (!decision) return null; // nothing recorded — never a 0-byte object, nothing to index
     if (!this.hashComplete) {
-      // Hibernation-resumed write: the hash missed pre-wake bytes. KEEP the object as the canonical write
-      // for its key, but DO NOT claim/dedup on a partial digest (it would mis-key the index). The object is
-      // never dropped — dedup is an optimization, not a data-integrity guarantee (design §4).
-      console.warn('SingleInstanceWriter: finalize after hibernation-resume — keeping object un-deduped (partial hash)', { key: done.key, org: this.org });
-      const kept: SingleInstanceResult = { canonicalKey: done.key, key: done.key, bytes: done.bytes, container: done.container, contentHash: '', created: false };
-      this.finalized = kept;
-      return kept;
+      // Hibernation-resumed write: the hash missed pre-wake bytes, so the shared claim writer skipped dedup
+      // and kept the object (decision.contentHash === ''). Log loudly (config-no-silent-noop) — the object is
+      // never dropped; dedup is an optimization, not a data-integrity guarantee (design §4).
+      console.warn('SingleInstanceWriter: finalize after hibernation-resume — keeping object un-deduped (partial hash)', { key: decision.key, org: this.org });
     }
-
-    const contentHash = this.hasher.digest();
-
-    let result: SingleInstanceResult;
-    try {
-      const claim = await this.index.claim(this.org, contentHash, done.key, this.bucketName, done.bytes);
-      if (claim.created) {
-        // First instance for this org — the streamed object IS canonical. Nothing else to do.
-        result = { canonicalKey: done.key, key: done.key, bytes: done.bytes, container: done.container, contentHash, created: true };
-      } else {
-        // Byte-identical duplicate already retained → record a pointer (refcount bump is addRef's, durable
-        // FIRST so a later failure never leaves a dangling reference) then MOVE this object into _dup/.
-        await this.index.addRef(this.org, this.recorder.sessionId, contentHash);
-        await this.routeToDup(done.key);
-        result = { canonicalKey: claim.canonicalKey, key: done.key, bytes: done.bytes, container: done.container, contentHash, created: false };
-      }
-    } catch (err) {
-      // Fail-safe (design §4): D1 unavailable → KEEP the streamed object as-is, log loudly, no pointer,
-      // no dedup. Never drop/corrupt customer media to satisfy dedup.
-      console.error('SingleInstanceWriter: dedup claim failed; keeping object un-deduped', { key: done.key, org: this.org }, err);
-      result = { canonicalKey: done.key, key: done.key, bytes: done.bytes, container: done.container, contentHash, created: false };
-    }
-
+    const result = toResult(decision, this.recorder.container);
     this.finalized = result;
     return result;
   }
+}
 
-  /**
-   * Move a duplicate's just-written object into the transient `_dup/` prefix (design §3.3; North Star:
-   * "dup routed to transient prefixes reclaimed by TTL"). R2 has no rename, so this is copy-then-delete:
-   * get → put(`_dup/${key}`) → delete the original retained key. The bytes are NEVER lost — they remain at
-   * the canonical object (claim returned the existing canonicalKey) AND, for the `_dup/` TTL window, under
-   * `_dup/` as a safety copy against index/canonical drift. The ONLY object removed is THIS redundant
-   * duplicate WAVE just wrote; no canonical / customer-unique byte is ever deleted. Best-effort: a copy or
-   * delete failure leaves the original in place (the reconcile-enforce sweep reclaims it later) and must
-   * never throw into the finalize path.
-   */
-  private async routeToDup(key: string): Promise<void> {
-    const dupKey = `${DUP_PREFIX}${key}`;
-    try {
-      const obj = await this.bucket.get(key);
-      if (!obj) {
-        // Already gone (e.g. a retried finalize) — the canonical object is the source of truth. Nothing to move.
-        console.warn('SingleInstanceWriter: routeToDup found no object to move; already reclaimed', { key });
-        return;
-      }
-      await this.bucket.put(dupKey, await obj.arrayBuffer());
-      // The safety copy is durable under `_dup/` → reclaim the redundant original from the retained namespace
-      // so exactly ONE canonical object is retained. Guarded: a delete failure is a storage leak the
-      // reconcile-enforce sweep collapses, never a data loss (the bytes are at canonical + `_dup/`).
-      await this.bucket.delete(key);
-    } catch (err) {
-      // The duplicate object stays at its original key; reconcile-enforce reclaims it later. The canonical
-      // object + bytes are untouched. Log, don't throw.
-      console.error('SingleInstanceWriter: routeToDup failed; original left in place for reconcile-enforce', { key }, err);
-    }
-  }
+/**
+ * Map the package's `ClaimDecision` onto the local `SingleInstanceResult`. The decision's `container` is a
+ * generic string carried through from the sink; the recorder's sniffed `Container` is the authoritative,
+ * typed value (and always matches), so use it for the strongly-typed result field.
+ */
+function toResult(decision: ClaimDecision, container: Container): SingleInstanceResult {
+  return {
+    canonicalKey: decision.canonicalKey,
+    canonicalBucket: decision.canonicalBucket,
+    key: decision.key,
+    bytes: decision.bytes,
+    container,
+    contentHash: decision.contentHash,
+    created: decision.created,
+  };
 }
