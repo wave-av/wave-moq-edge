@@ -7,6 +7,18 @@ semantic versioning aligned with the IETF MoQ draft revision.
 ## [Unreleased]
 
 ### Added
+- **MPEG-TS → MoQ ingest + per-track caption subscription.** `src/moq-ingest.ts` is a PURE,
+  hermetically-tested MPEG-2 Transport Stream (ISO/IEC 13818-1) depacketizer: strict `0x47`-sync +
+  188-byte alignment validation, a bounds-clamped adaptation field (an attacker-controlled length
+  byte can never drive a read past the 188-byte packet), and a configurable input-size cap — then
+  demuxes a TS multiplex by PID into a video MoQ track and a SEPARATE caption MoQ track (a new Group
+  at each payload-unit-start, one Object per ES-bearing TS packet). `src/moq-trackset.ts` routes
+  draft-18 control/object frames to a per-track `MoqRelay`, so a viewer can SUBSCRIBE to ONLY the
+  `captions` track (unknown track → `REQUEST_ERROR(DOES_NOT_EXIST)`, never a silent accept). 11
+  hermetic unit tests (`__tests__/moq-ingest.test.ts`) including an end-to-end proving a captions-only
+  subscriber receives exactly the caption payloads and zero video. Scope: a SEPARATE caption PID
+  (DVB subtitle / teletext / SCTE); inline CEA-608/708-in-video-ES and PAT/PMT PID discovery are
+  documented follow-ups.
 - **Real MoQ wire codec + pub/sub fan-out relay** (was a routing scaffold). `src/moq-wire.ts` is a
   PURE, hermetically-tested draft-ietf-moq-transport-18 codec — leading-1-bits varint (§1.4.1),
   Track Namespace tuple (§1.4.2), control framing `Type(i)+Length(16)+payload` (§10), the
