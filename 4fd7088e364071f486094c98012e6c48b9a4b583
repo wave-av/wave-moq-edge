@@ -1,0 +1,35 @@
+docs/2026-06-15-moq-recording-write-path.md
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 1-61
+__tests__/moq-relay.test.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 75-78
+moq-session-do.ts
+  s_eb2f7e65359b4f::t_3146204e2ebf6a 31-32,44-48,85-91,316-399,444-446,461-463
+__tests__/recording-writer.test.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 1-132
+__tests__/register-recording.test.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 1-91
+register-recording.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 1-98
+src/moq-relay.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 52-54,262
+wrangler.toml
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 21-23,72-75,87,105-106,118
+recording-writer.ts
+  s_eb2f7e65359b4f::t_8d1ec1d7e96e2c 1-197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "4fd7088e364071f486094c98012e6c48b9a4b583",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
