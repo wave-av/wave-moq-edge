@@ -1,0 +1,27 @@
+CHANGELOG.md
+  s_19c8e603d8990b::t_1ed7f527262498 10-21
+src/moq-trackset.ts
+  s_19c8e603d8990b::t_3538c2d8da24bd 1-92
+src/moq-ingest.ts
+  s_19c8e603d8990b::t_c9584910c1591f 1-143
+__tests__/moq-ingest.test.ts
+  s_19c8e603d8990b::t_84232c938d212e 1-201
+capabilities.json
+  s_19c8e603d8990b::t_bdfd322434ac70 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "e3aa547a7a9c75f506891c78050ffce35552041e",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
