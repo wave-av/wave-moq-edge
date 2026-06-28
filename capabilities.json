@@ -8,7 +8,7 @@
   "maintainers": [{ "team": "core" }],
   "exposes": {
     "apis": [
-      { "protocol": "moq", "endpoint": "https://moq.wave.online", "auth": "wave-token-v1", "metered": true, "status": "relay-websocket-beta", "note": "real draft-18 wire codec (src/moq-wire.ts) + pub/sub fan-out relay (src/moq-relay.ts) over a WebSocket transport binding in the session DO; WebTransport binding drops in when CF ships the server API" }
+      { "protocol": "moq", "endpoint": "https://moq.wave.online", "auth": "wave-token-v1", "metered": true, "status": "relay-websocket-beta", "note": "real draft-18 wire codec (src/moq-wire.ts) + pub/sub fan-out relay (src/moq-relay.ts) over a WebSocket transport binding in the session DO; WebTransport binding drops in when CF ships the server API. MPEG-TS ingest (src/moq-ingest.ts) demuxes a TS multiplex into per-track MoQ tracks; per-track subscription via src/moq-trackset.ts lets a viewer subscribe to captions independently of video" }
     ]
   },
   "consumes": {
