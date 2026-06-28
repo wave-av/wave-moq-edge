@@ -78,6 +78,24 @@ GATEWAY_BASE_URL = "https://api.wave.online"
 # MUST match the env.production MOQ_RECORDINGS binding below. Recording stays INERT until WAVE_SERVICE_TOKEN
 # is provisioned (wrangler secret put) AND a publisher carries a gateway-injected x-wave-org.
 MOQ_RECORDINGS_BUCKET = "wave-moq-recordings"
+# #55 MoQ→SFU fan-out (Builder A) default-OFF flag. "true" only activates when the MOQ_SFU_FANOUT
+# container binding (commented below) is ALSO present — else /v1/fanout/sfu returns a typed 501. DO NOT
+# flip here: a real activation requires building+pushing the container image AND CF Containers enabled.
+MOQ_SFU_FANOUT_ENABLED = "false"
+
+# #55 MoQ→SFU fan-out container binding — OPERATOR-GATED, absent today. The image (MoQ-subscribe →
+# demux/decode → re-encode VP8/Opus → @wave-av/whip-publish to the gateway /v1/whip/publish SFU) is NOT
+# built or pushed yet, and CF Containers must be enabled on the deploying account (d674452f). Media +
+# transcode run HERE, never on the Worker (frozen contract §9 invariant #2). Binding name MUST be
+# MOQ_SFU_FANOUT (src/moq-sfu-fanout.ts reads env.MOQ_SFU_FANOUT). Uncomment + push image at the ◆
+# go-live crossing (frozen contract §7 step 3-4); until then src/moq-sfu-fanout.ts fail-closes to 501.
+# [[env.production.containers]]
+# class_name = "MoqSfuFanoutContainer"
+# image = "./containers/moq-sfu-fanout/Dockerfile"
+# max_instances = 3
+# [[env.production.durable_objects.bindings]]
+# name = "MOQ_SFU_FANOUT"
+# class_name = "MoqSfuFanoutContainer"
 
 [[env.production.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
