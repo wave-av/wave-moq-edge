@@ -9,6 +9,7 @@
  */
 
 export type { Env as ChassisEnv } from '@wave-av/spoke-chassis';
+import type { ContainerBinding } from './moq-sfu-fanout';
 
 /**
  * Worker Env — bindings + vars + secrets. NOTHING here is inlined;
@@ -39,6 +40,15 @@ export interface Env {
   GATEWAY_BASE_URL?: string;
   /** R2 bucket name for recording registration (must match wrangler binding). */
   MOQ_RECORDINGS_BUCKET?: string;
+  /** #55 MoQ→SFU fan-out (Builder A). Default-OFF flag; "true" only activates when MOQ_SFU_FANOUT
+   *  (below) is ALSO bound — else the /v1/fanout/sfu route returns a typed 501. NEVER fakes transport. */
+  MOQ_SFU_FANOUT_ENABLED?: string;
+
+  // --- container binding (wrangler.toml [[containers]], operator-gated) ---
+  /** #55 CF Container running the MoQ-subscribe → decode → VP8/Opus → WHIP-publish engine. Absent today
+   *  (image unbuilt + CF Containers gated to the d674452f account). Media/transcode lives HERE, never on
+   *  the Worker (frozen contract §9 invariant #2). Absent → honest typed 501; no fabricated transport. */
+  MOQ_SFU_FANOUT?: ContainerBinding;
 
   // --- secrets (wrangler secret put) ---
   /** Machine credential for server-to-server usage emit → gateway. Inert until set. */
