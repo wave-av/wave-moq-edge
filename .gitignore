@@ -7,3 +7,13 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
+# >>> wave claude-project-chassis (managed) — do not edit between these markers >>>
+.claude/settings.local.json
+.claude/*.local.json
+.claude/env
+.claude/state/
+.claude/workflows/executions/
+.claude/agent-memory/
+.claude/.DS_Store
+# <<< wave claude-project-chassis (managed) <<<
