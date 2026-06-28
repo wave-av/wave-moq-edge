@@ -30,6 +30,7 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { scopeGate, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
 import { FAVICON_SVG } from './src/favicon';
@@ -202,6 +203,28 @@ async function handleCatalog(env: Env): Promise<Response> {
   return jsonResponse(buildMsfCatalog(entries));
 }
 
+/**
+ * /v1/fanout/sfu/:namespace/:track — MoQ→WAVE-SFU fan-out leg (#55 / #91 Builder A).
+ *
+ * Opens a fan-out session: a sidecar CONTAINER subscribes to the live MoQ track, decodes, re-encodes to
+ * VP8/Opus, and WHIP-publishes to the gateway SFU. INERT today — returns a typed 501 unless
+ * MOQ_SFU_FANOUT_ENABLED=true AND the MOQ_SFU_FANOUT container binding is present (frozen contract §6.A
+ * / §9 invariant #2: media/transcode in a container, NEVER on this Worker — here it's control only).
+ */
+async function handleSfuFanout(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
+  // Opening a fan-out is a mutating control action → require moq:write (no-op unless MOQ_REQUIRE_AUTH on).
+  const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
+  if (denied) return denied;
+
+  const parsed = PublishRequestSchema.safeParse({ namespace, track });
+  if (!parsed.success) {
+    return errorResponse('Invalid namespace/track', 400, parsed.error.message);
+  }
+  // Control-plane only: the leg either forwards to the fan-out container (when activated) or returns the
+  // honest typed 501. The Worker never touches media.
+  return handleMoqSfuFanout(request, env, { namespace, name: track });
+}
+
 async function handleHealth(env: Env): Promise<Response> {
   return jsonResponse({
     ok: true,
@@ -271,6 +294,12 @@ export default {
       const trackMatch = path.match(/^\/v1\/track\/([^/]+)\/([^/]+)$/);
       if (trackMatch && request.method === 'GET') {
         return handleTrackMetadata(env, trackMatch[1], trackMatch[2]);
+      }
+
+      // /v1/fanout/sfu/:namespace/:track — MoQ→SFU fan-out (#55, INERT: typed 501 until activated)
+      const fanoutMatch = path.match(/^\/v1\/fanout\/sfu\/([^/]+)\/([^/]+)$/);
+      if (fanoutMatch && (request.method === 'POST' || request.method === 'GET')) {
+        return handleSfuFanout(env, fanoutMatch[1], fanoutMatch[2], request);
       }
 
       // Unknown /v1/* paths → JSON 404 (don't fall through to chassis for API paths)
