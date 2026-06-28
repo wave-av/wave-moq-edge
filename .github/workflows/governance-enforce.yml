@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p "$RUNNER_TEMP/gov" && cd "$RUNNER_TEMP/gov"
           printf '@wave-av:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}\n' > .npmrc
-          npm install @wave-av/governance@^0.4.0 --no-save --no-audit --no-fund
+          npm install @wave-av/governance@^0.4.4 --no-save --no-audit --no-fund
       - name: A_BLOCK enforce (secrets + hardcoded paths on the diff)
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
