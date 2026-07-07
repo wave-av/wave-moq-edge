@@ -1,0 +1,19 @@
+src/wave-auth.ts
+  s_157583aa3b6686::t_97001c2bc9ddda 187-189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "e6d9f47d487441608ca12aacf5796d3e2b7fee27",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
