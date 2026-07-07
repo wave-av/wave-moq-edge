@@ -43,6 +43,13 @@ export interface Env {
   /** #55 MoQ→SFU fan-out (Builder A). Default-OFF flag; "true" only activates when MOQ_SFU_FANOUT
    *  (below) is ALSO bound — else the /v1/fanout/sfu route returns a typed 501. NEVER fakes transport. */
   MOQ_SFU_FANOUT_ENABLED?: string;
+  /** #144 Per-publisher microVM isolation (DARK/default-OFF). "true" only takes effect when a real
+   *  MOQ_MICROVM binding is ALSO present — else the hook fail-closes to a typed 501. LAW #130: client
+   *  media = cloud microVM ONLY, enforced by src/publisher-isolation.ts rejectsLocalForClient(). */
+  MOQ_MICROVM_ISOLATION?: string;
+  /** #144 Substrate cells run on. Default 'cloud-microvm' (LAW-#130-safe). 'local-dev' is internal-dev
+   *  ONLY and is NEVER honoured for client media (guarded, fail-closed). */
+  MOQ_MICROVM_SUBSTRATE?: string;
 
   // --- container binding (wrangler.toml [[containers]], operator-gated) ---
   /** #55 CF Container running the MoQ-subscribe → decode → VP8/Opus → WHIP-publish engine. Absent today
