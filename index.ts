@@ -35,6 +35,8 @@ import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
 import { FAVICON_SVG } from './src/favicon';
 import type { Env } from './src/types';
+import { evaluatePublishProvenance, extractProvenanceToken } from './src/publish-provenance-hook';
+import { extractInjectedOrg } from './src/wave-auth';
 
 // Re-export DO under the binding name wrangler.toml expects
 export { MOQSessionDurableObject as MoqSessionDO };
@@ -123,10 +125,43 @@ async function handlePublish(env: Env, namespace: string, track: string, request
     region: request.cf?.colo ?? 'unknown',
   }), { expirationTtl: 86400 }); // 24h auto-cleanup
 
+  // #144 DARK per-publisher microVM isolation + MOQT↔C2PA provenance hook. Pure no-op unless
+  // MOQ_MICROVM_ISOLATION is flipped on (default OFF → live path unchanged). When on it either
+  // returns the honest not-activated 501 (no real microVM binding yet), fail-closes a bad provenance
+  // token / a LAW-#130 violation (403), or stamps a C2PA-shaped attestation echoed on the response.
+  let provenanceHeaders: Record<string, string> = {};
+  {
+    const org = extractInjectedOrg(request);
+    // Content-binding sample: the provenance token itself is a stable, non-media stand-in for the
+    // hash binding in this control-plane spike (a real deploy hashes the first track object/keyframe).
+    const sample = new TextEncoder().encode(extractProvenanceToken(request) ?? `${key}`);
+    const hook = await evaluatePublishProvenance(request, env, namespace, track, org, sample);
+    if (hook.action === 'not_activated') {
+      return jsonResponse(hook.body, 501, { 'retry-after': '86400' });
+    }
+    if (hook.action === 'reject') {
+      return errorResponse('Provenance/isolation check failed', hook.status, hook.reason);
+    }
+    if (hook.action === 'stamp') {
+      provenanceHeaders = {
+        'x-wave-provenance': hook.attestation['@type'],
+        'x-wave-provenance-cell': hook.cell.cellId,
+        'x-wave-provenance-substrate': hook.cell.substrate,
+      };
+    }
+  }
+
   // Forward to the DO: a WebSocket upgrade becomes the live MoQ relay publisher session; a plain
   // POST is the legacy JSON registration. The DO handles both.
   const doStub = getDO(env, namespace, track);
-  return doStub.fetch(request);
+  const doResp = await doStub.fetch(request);
+  if (Object.keys(provenanceHeaders).length === 0) return doResp;
+  // Echo the attestation markers on the response (WebSocket 101 responses can't take extra headers,
+  // so only augment non-101 responses — the DO's live relay upgrade is left untouched).
+  if (doResp.status === 101) return doResp;
+  const merged = new Headers(doResp.headers);
+  for (const [k, v] of Object.entries(provenanceHeaders)) merged.set(k, v);
+  return new Response(doResp.body, { status: doResp.status, statusText: doResp.statusText, headers: merged });
 }
 
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
