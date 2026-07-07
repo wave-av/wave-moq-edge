@@ -184,10 +184,9 @@ export function scopeGate(request: Request, env: AuthEnv, required: string): Res
 
 /**
  * The canonical gateway-injected organization header. The gateway stamps the
- * authenticated principal's org here (wave-gateway/src/worker.ts:
- * `"x-wave-org": who.organizationId`). The edge CONSUMES it — it is the source
- * of truth for tenant identity (same trust model as x-wave-scopes above). Never
- * invent a different literal.
+ * authenticated principal's org id here (`x-wave-org: <organizationId>`), the
+ * same convention as the x-wave-scopes principal above. The edge CONSUMES it —
+ * it is the source of truth for tenant identity. Never invent a different literal.
  */
 export const WAVE_ORG_HEADER = 'x-wave-org';
 
