@@ -30,6 +30,7 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { sanitizeInjectedHeaders } from './src/gateway-trust';
 import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
@@ -270,7 +271,14 @@ async function handleMetrics(env: Env): Promise<Response> {
 }
 
 export default {
-  async fetch(request: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
+  async fetch(rawRequest: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
+    // Gateway-trust boundary (#42): before anything reads the gateway-injected principal headers
+    // (x-wave-org / x-wave-scopes / x-wave-tier), strip them unless the request proves it came through
+    // the WAVE gateway (a valid x-wave-gateway-secret). This closes the direct-client spoof hole that
+    // would otherwise defeat tenant isolation the instant MOQ_REQUIRE_AUTH is enabled. INERT — a pure
+    // pass-through — until WAVE_GATEWAY_SECRET is provisioned on both the gateway and the relay, so it
+    // changes nothing on the live relay until the secret is minted (never a default-on behavioral flip).
+    const request = sanitizeInjectedHeaders(rawRequest, env);
     const url = new URL(request.url);
     const path = url.pathname;
 
