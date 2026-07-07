@@ -169,3 +169,95 @@ export function scopeGate(request: Request, env: AuthEnv, required: string): Res
     }
   );
 }
+
+/* ============================================================================
+ * TENANT ISOLATION (task #45) — namespace→org binding.
+ *
+ * scopeGate above proves a caller holds moq:read/moq:write, but NOT *which*
+ * namespaces they may touch — so with the flag on, any moq:read principal could
+ * still subscribe to ANY org's track. This closes that: a namespace is OWNED by
+ * exactly one org, and a principal may only publish/subscribe/enumerate the
+ * namespaces its gateway-injected org owns. Pure + flag-gated + default-OFF,
+ * exactly like scopeGate: when MOQ_REQUIRE_AUTH is off every function below is a
+ * no-op and the live relay is unchanged.
+ * ========================================================================== */
+
+/**
+ * The canonical gateway-injected organization header. The gateway stamps the
+ * authenticated principal's org id here (`x-wave-org: <organizationId>`), the
+ * same convention as the x-wave-scopes principal above. The edge CONSUMES it —
+ * it is the source of truth for tenant identity. Never invent a different literal.
+ */
+export const WAVE_ORG_HEADER = 'x-wave-org';
+
+/** The gateway-injected org id, trimmed; null when absent/empty. */
+export function extractInjectedOrg(request: Request): string | null {
+  const raw = request.headers.get(WAVE_ORG_HEADER);
+  if (!raw) return null;
+  const t = raw.trim();
+  return t.length > 0 ? t : null;
+}
+
+/**
+ * PURE prefix-ownership: is `namespace` owned by org `org`? A namespace belongs
+ * to org X iff it is exactly `X` or begins with `X-` (the org id as the root
+ * segment, dash-delimited). The dash separator is load-bearing: it prevents
+ * prefix-confusion — org `A` must own `A` and `A-live` but NOT `AB` or `AB-x`.
+ * An empty/absent org owns nothing (fail-closed).
+ */
+export function orgOwnsNamespace(org: string | null, namespace: string): boolean {
+  if (!org) return false;
+  return namespace === org || namespace.startsWith(`${org}-`);
+}
+
+/**
+ * The namespace→org gate. Returns null to proceed, or 403 to reject.
+ *   MOQ_REQUIRE_AUTH off (DEFAULT) → always null (live relay unchanged).
+ *   on → require a gateway-injected x-wave-org that OWNS `namespace`, else 403.
+ *        A missing org (enforced) is a 403 too — the gateway must inject it.
+ * Compose this AFTER scopeGate in the publish/subscribe handlers.
+ */
+export function orgGate(request: Request, env: AuthEnv, namespace: string): Response | null {
+  if (!authRequired(env)) return null; // off → no behavioral change
+  const org = extractInjectedOrg(request);
+  if (orgOwnsNamespace(org, namespace)) return null;
+  const detail = org
+    ? `org '${org}' does not own namespace '${namespace}'`
+    : `missing ${WAVE_ORG_HEADER} — the gateway must inject the principal's org`;
+  return new Response(
+    JSON.stringify({
+      type: 'https://httpstatuses.io/403',
+      title: 'Forbidden',
+      status: 403,
+      detail,
+      namespace,
+    }),
+    {
+      status: 403,
+      headers: {
+        'content-type': 'application/json',
+        'www-authenticate': `Bearer realm="moq.wave.online", error="insufficient_scope", scope="tenant:${namespace}"`,
+      },
+    }
+  );
+}
+
+/**
+ * Scope a track-discovery list (/announce, /catalog) to the caller's org so the
+ * relay is not a cross-org directory. `namespaceOf` extracts the namespace from
+ * one entry (entries differ between callers, so the accessor is injected).
+ *   off → return `entries` unchanged (live relay unchanged).
+ *   on  → keep only entries whose namespace the caller's injected org owns; a
+ *         missing org (enforced) yields an empty list (fail-closed).
+ */
+export function filterTracksForOrg<T>(
+  entries: T[],
+  request: Request,
+  env: AuthEnv,
+  namespaceOf: (e: T) => string
+): T[] {
+  if (!authRequired(env)) return entries;
+  const org = extractInjectedOrg(request);
+  if (!org) return [];
+  return entries.filter((e) => orgOwnsNamespace(org, namespaceOf(e)));
+}
