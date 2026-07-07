@@ -29,7 +29,7 @@ import { makeFetch, type Env as ChassisEnv } from '@wave-av/spoke-chassis';
 import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
-import { scopeGate, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
 import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
@@ -104,6 +104,10 @@ async function handlePublish(env: Env, namespace: string, track: string, request
   // When enforced, publishing requires the canonical moq:write scope on the gateway-injected principal.
   const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
   if (denied) return denied;
+  // Tenant isolation (task #45): the principal's org must OWN this namespace.
+  // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org publish.
+  const tenantDenied = orgGate(request, env, namespace);
+  if (tenantDenied) return tenantDenied;
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
@@ -130,6 +134,10 @@ async function handleSubscribe(env: Env, namespace: string, track: string, reque
   // When enforced, subscribing requires the canonical moq:read scope on the gateway-injected principal.
   const denied = scopeGate(request, env, MOQ_SCOPE_READ);
   if (denied) return denied;
+  // Tenant isolation (task #45): the principal's org must OWN this namespace.
+  // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org subscribe.
+  const tenantDenied = orgGate(request, env, namespace);
+  if (tenantDenied) return tenantDenied;
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
@@ -165,16 +173,19 @@ async function handleTrackMetadata(env: Env, namespace: string, track: string): 
   return jsonResponse({ ...JSON.parse(entry), ...state });
 }
 
-async function handleAnnounce(env: Env): Promise<Response> {
+async function handleAnnounce(env: Env, request: Request): Promise<Response> {
   // List up to 100 announced tracks. KV LIST is paginated; cap for response size.
   const list = await env.MOQ_TRACK_REGISTRY.list({ prefix: 'track:', limit: 100 });
-  const tracks = await Promise.all(
+  const tracks = (await Promise.all(
     list.keys.map(async (k) => {
       const v = await env.MOQ_TRACK_REGISTRY.get(k.name);
       return v ? JSON.parse(v) : null;
     })
-  );
-  return jsonResponse({ tracks: tracks.filter(Boolean), count: tracks.filter(Boolean).length });
+  )).filter(Boolean);
+  // Tenant isolation (task #45): scope discovery to the caller's org so the relay
+  // is not a cross-org directory. No-op unless MOQ_REQUIRE_AUTH is enabled.
+  const scoped = filterTracksForOrg(tracks, request, env, (t) => String(t?.namespace ?? ''));
+  return jsonResponse({ tracks: scoped, count: scoped.length });
 }
 
 /**
@@ -189,7 +200,7 @@ async function handleAnnounce(env: Env): Promise<Response> {
  * Cloudflare's reference relay does NOT expose a catalog endpoint, making WAVE the first
  * public-facing MoQ catalog at the relay edge.
  */
-async function handleCatalog(env: Env): Promise<Response> {
+async function handleCatalog(env: Env, request: Request): Promise<Response> {
   const list = await env.MOQ_TRACK_REGISTRY.list({ prefix: 'track:', limit: 1000 });
   const raw = await Promise.all(
     list.keys.map(async (k) => {
@@ -197,7 +208,10 @@ async function handleCatalog(env: Env): Promise<Response> {
       return v ? (JSON.parse(v) as TrackRegistryEntry) : null;
     })
   );
-  const entries = raw.filter((e): e is TrackRegistryEntry => e !== null);
+  const all = raw.filter((e): e is TrackRegistryEntry => e !== null);
+  // Tenant isolation (task #45): a subscriber's catalog lists only its org's
+  // tracks. No-op unless MOQ_REQUIRE_AUTH is enabled.
+  const entries = filterTracksForOrg(all, request, env, (e) => e.namespace);
 
   // Spec-shaped catalogformat-01 document (no WAVE-specific fields inside the document itself).
   return jsonResponse(buildMsfCatalog(entries));
@@ -265,12 +279,12 @@ export default {
 
       // /v1/announce — discovery
       if (path === '/v1/announce' && request.method === 'GET') {
-        return handleAnnounce(env);
+        return handleAnnounce(env, request);
       }
 
       // /v1/catalog — MSF Catalog Format (draft-ietf-moq-catalogformat-01, first public CF MoQ catalog)
       if (path === '/v1/catalog' && request.method === 'GET') {
-        return handleCatalog(env);
+        return handleCatalog(env, request);
       }
 
       // /v1/publish/:namespace/:track
