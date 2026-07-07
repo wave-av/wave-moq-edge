@@ -1,0 +1,29 @@
+src/wave-auth.ts
+  s_157583aa3b6686::t_656317fd5d722d 172-264
+index.ts
+  s_157583aa3b6686::t_98e93a9f379f96 32
+  s_157583aa3b6686::t_9de7b0afefb577 137-140
+  s_157583aa3b6686::t_8cfa66bb7e654c 203,211-214
+  s_157583aa3b6686::t_93951daa0dad5b 107-110
+  s_157583aa3b6686::t_24735ddff00bb5 282
+  s_157583aa3b6686::t_aabbae6087ca76 176,179,184-188
+  s_157583aa3b6686::t_7b15beca008b1a 287
+__tests__/tenant-isolation.test.ts
+  s_157583aa3b6686::t_99e4c7d52e5663 1-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b60a5897b3561c436ec352d7fa4e78ab3cfb162f",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
