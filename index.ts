@@ -280,7 +280,12 @@ export default {
     // changes nothing on the live relay until the secret is minted (never a default-on behavioral flip).
     const request = sanitizeInjectedHeaders(rawRequest, env);
     const url = new URL(request.url);
-    const path = url.pathname;
+    // Gateway-fronted requests arrive under the /v1/moq/* product prefix (the WAVE gateway routes
+    // api.wave.online/v1/moq/* → this relay, stamping x-wave-org/x-wave-scopes/x-wave-gateway-secret).
+    // Normalize that leading segment to the relay's native /v1/* routes so ONE handler set serves both the
+    // gateway-fronted path and a legacy direct /v1/* client. Only the leading `/v1/moq` segment is rewritten
+    // (the lookahead requires a following `/` or end-of-path, so `/v1/moquerade` is untouched).
+    const path = url.pathname.replace(/^\/v1\/moq(?=\/|$)/, '/v1');
 
     try {
       // --- /v1/* — MoQ API routes (intercepted BEFORE the chassis) ---
