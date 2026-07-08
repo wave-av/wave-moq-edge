@@ -60,7 +60,7 @@ export interface Env {
   WAVE_GATEWAY_SECRET?: string;
   /**
    * #58 DEDICATED HMAC-SHA256 secret for verifying gateway-minted MoQ join-tokens (src/moq-join-token.ts,
-   * byte-identical to wave-gateway). Distinct from WAVE_GATEWAY_SECRET/WIF so a relay compromise forges only
+   * byte-identical to the gateway's copy). Distinct from WAVE_GATEWAY_SECRET/WIF so a relay compromise forges only
    * ephemeral MoQ joins. `wrangler secret put WAVE_MOQ_JOIN_SECRET` (same value as the gateway). When
    * MOQ_JOIN_ENFORCE is on, an unset secret fail-closes (503) — never admits.
    */

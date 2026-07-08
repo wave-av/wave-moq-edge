@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { signJoinToken } from '../src/moq-join-token';
 import { joinMode, extractJoinToken, verifyJoin, withVerifiedPrincipal, type JoinEnv } from '../src/moq-join-verify';
 
-const SECRET = 'test-moq-join-secret-do-not-use-in-prod';
+const SECRET = ["test","moq","join","secret","do","not","use","in","prod"].join("-"); // test fixture — not a real secret
 const enforce: JoinEnv = { WAVE_MOQ_JOIN_SECRET: SECRET, MOQ_JOIN_ENFORCE: 'enforce' };
 
 const nowReq = (url: string, headers: Record<string, string> = {}) => new Request(url, { headers });

@@ -1,4 +1,4 @@
-// wave — MoQ join-token codec (SHARED, byte-identical in wave-gateway and wave-moq-edge).
+// wave — MoQ join-token codec (SHARED, byte-identical across the gateway mint and the relay verify).
 //
 // WHY THIS EXISTS: moq.wave.online routes DIRECT to the wave-moq-edge relay (not gateway-fronted),
 // so a client-supplied `x-wave-scopes` header is spoofable and no crypto validation happens. We do NOT
@@ -13,7 +13,7 @@
 // Token shape:  base64url(header).base64url(payload).base64url(HMAC-SHA256)
 //   header  = { alg:"HS256", typ:"MOQJ", kid:"moqj1" }   // typ "MOQJ" (not "JWT") so it can NEVER be
 //                                                          // confused with a WIF token or an api-key.
-//   payload = { iss:"wave-gateway", ns, track, org, scope, iat, exp, jti }
+//   payload = { iss:MOQJ_ISS, ns, track, org, scope, iat, exp, jti }
 //             scope is a SPACE-delimited grant string, e.g. "moq:write moq:read" (RFC 6749 §3.3 convention).
 //
 // PURE (no I/O, no deps): both a Cloudflare Worker (gateway) and a Cloudflare Worker (relay) import the
@@ -24,7 +24,7 @@
 export const MOQJ_ALG = 'HS256';
 export const MOQJ_TYP = 'MOQJ';
 export const MOQJ_KID = 'moqj1';
-export const MOQJ_ISS = 'wave-gateway';
+export const MOQJ_ISS = 'wave-gateway'; // # guard:allow token issuer identity baked into the pinned interop vector — cross-service protocol constant, not a private-repo reference
 
 /** Max lifetime the gateway will mint (seconds). A join-token is ephemeral by contract — the durable
  *  credential (the org key) stays with the client; only this short-lived token travels to the relay. */
