@@ -1,0 +1,26 @@
+__tests__/gateway-trust.test.ts
+  s_157583aa3b6686::t_71ac0082d915bc 11-12,21,25-27,34,37,39-40,42-44,53,60-61,65,70-71,77-78,88,91
+index.ts
+  s_157583aa3b6686::t_dbb377501bc417 284
+  s_157583aa3b6686::t_d0d27bce31b92c 277
+src/gateway-trust.ts
+  s_157583aa3b6686::t_7a704471d6123c 27
+  s_157583aa3b6686::t_0fc04c33a6c620 60
+  s_157583aa3b6686::t_fb92a263f72331 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1b850fb068130ea5ea1e985e461fd94bd94beda9",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
