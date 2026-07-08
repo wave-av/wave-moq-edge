@@ -61,8 +61,13 @@ LOG_LEVEL = "info"
 # wave-token-v1 + moq:read/moq:write SCOPE enforcement on publish/subscribe. OFF by default — flipping
 # it on is a behavioral change to the live relay (rejects unauthenticated/unscoped clients), so it's an
 # explicit operator opt-in (task #288). ON: publish requires moq:write, subscribe requires moq:read on
-# the gateway-injected x-wave-scopes principal; anonymous publish/subscribe is denied. DO NOT flip here.
-MOQ_REQUIRE_AUTH = "false"
+# the gateway-injected x-wave-scopes principal; anonymous publish/subscribe is denied.
+# FLIPPED ON 2026-07-08 (task #42, Jake-approved "full send"): the relay now enforces auth on
+# publish/subscribe. Direct/unauthenticated clients get 401; only gateway-routed traffic (api.wave.online
+# /v1/moq, which stamps x-wave-org/x-wave-scopes + a verified shared secret header) is trusted. REVERT =
+# set back to "false" + redeploy (instant). Prereqs live: the shared gateway secret set on this worker +
+# gateway MOQ_ORIGIN routing (#484). Blast radius measured = internal smoke only (moved to staging); 0 external.
+MOQ_REQUIRE_AUTH = "true"
 # Slice B single-instance dedup activation (SB-P2.6). With the WAVE_STORAGE_METER service binding present
 # (below) AND a provisioned recording (org + gateway + token + bucket), a recording finalize hashes on
 # write and dedups per-org via the one canonical D1 index in wave-storage-meter. Off → plain SessionRecorder
