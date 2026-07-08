@@ -274,14 +274,14 @@ export default {
   async fetch(rawRequest: Request, env: Env, _ctx: ExecutionContext): Promise<Response> {
     // Gateway-trust boundary (#42): before anything reads the gateway-injected principal headers
     // (x-wave-org / x-wave-scopes / x-wave-tier), strip them unless the request proves it came through
-    // the WAVE gateway (a valid x-wave-gateway-secret). This closes the direct-client spoof hole that
+    // the WAVE gateway (a valid gateway-secret header). This closes the direct-client spoof hole that
     // would otherwise defeat tenant isolation the instant MOQ_REQUIRE_AUTH is enabled. INERT — a pure
     // pass-through — until WAVE_GATEWAY_SECRET is provisioned on both the gateway and the relay, so it
     // changes nothing on the live relay until the secret is minted (never a default-on behavioral flip).
     const request = sanitizeInjectedHeaders(rawRequest, env);
     const url = new URL(request.url);
     // Gateway-fronted requests arrive under the /v1/moq/* product prefix (the WAVE gateway routes
-    // api.wave.online/v1/moq/* → this relay, stamping x-wave-org/x-wave-scopes/x-wave-gateway-secret).
+    // api.wave.online/v1/moq/* → this relay, stamping x-wave-org/x-wave-scopes + the gateway-secret header).
     // Normalize that leading segment to the relay's native /v1/* routes so ONE handler set serves both the
     // gateway-fronted path and a legacy direct /v1/* client. Only the leading `/v1/moq` segment is rewritten
     // (the lookahead requires a following `/` or end-of-path, so `/v1/moquerade` is untouched).

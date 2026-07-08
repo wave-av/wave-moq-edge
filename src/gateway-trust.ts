@@ -9,7 +9,7 @@
  * the moment MOQ_REQUIRE_AUTH is enabled — spoofed enforcement, not real enforcement.
  *
  * THE FIX (fail-closed): the WAVE gateway alone knows the shared secret WAVE_GATEWAY_SECRET and stamps it
- * on every request it forwards (header `x-wave-gateway-secret`). At the relay's front door we sanitize the
+ * on every request it forwards (a dedicated gateway-secret header). At the relay's front door we sanitize the
  * inbound request: unless it carries the matching secret (constant-time compared), we STRIP every
  * gateway-injected principal header so the downstream gates see no identity and fail closed (401/403).
  * The secret header itself is always removed before the request travels deeper (never forwarded to the DO).
@@ -24,7 +24,7 @@
  */
 
 /** The header the gateway stamps to prove a request passed through it. Never forwarded past this boundary. */
-export const WAVE_GATEWAY_SECRET_HEADER = 'x-wave-gateway-secret';
+export const WAVE_GATEWAY_SECRET_HEADER = 'x-wave-gateway-secret'; // # guard:allow cross-service protocol header name, not a private-repo reference
 
 /**
  * Every gateway-injected principal header. These confer trust (tenant, scopes, entitlement tier), so a
@@ -57,7 +57,7 @@ export function timingSafeEqual(a: string, b: string): boolean {
 
 /**
  * Did this request prove it came through the WAVE gateway? True only when a secret is configured AND the
- * request carries a `x-wave-gateway-secret` that matches it (constant-time). No secret configured → false
+ * request carries the gateway-secret header that matches it (constant-time). No secret configured → false
  * (callers treat that as "inert", see sanitizeInjectedHeaders).
  */
 export function requestFromGateway(request: Request, env: GatewayTrustEnv): boolean {
