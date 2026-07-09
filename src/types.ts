@@ -58,4 +58,22 @@ export interface Env {
    * INERT when unset (presence-based gateway trust only). `wrangler secret put WAVE_GATEWAY_SECRET`.
    */
   WAVE_GATEWAY_SECRET?: string;
+  /**
+   * #58 DEDICATED HMAC-SHA256 secret for verifying gateway-minted MoQ join-tokens (src/moq-join-token.ts,
+   * byte-identical to the gateway's copy). Distinct from WAVE_GATEWAY_SECRET/WIF so a relay compromise forges only
+   * ephemeral MoQ joins. `wrangler secret put WAVE_MOQ_JOIN_SECRET` (same value as the gateway). When
+   * MOQ_JOIN_ENFORCE is on, an unset secret fail-closes (503) — never admits.
+   */
+  WAVE_MOQ_JOIN_SECRET?: string;
+  /**
+   * #58 Join-token verification mode — the shadow→enforce migration knob (default OFF = unchanged live relay):
+   *   off (default) → legacy path: scopeGate/orgGate on the (spoofable) gateway-injected headers, exactly as
+   *                   today (still gated by MOQ_REQUIRE_AUTH).
+   *   shadow        → verify the ?join= token if present and LOG the verdict, but DO NOT reject; still serve
+   *                   via the legacy path. Observe real traffic before enforcing.
+   *   enforce (or "1"/"true"/"on") → require a cryptographically-valid join-token bound to this ns/track +
+   *                   scope; derive org/scope from the SIGNED claims; STRIP client x-wave-org/x-wave-scopes;
+   *                   fail-closed. This closes the spoofable-header hole on the direct moq.wave.online path.
+   */
+  MOQ_JOIN_ENFORCE?: string;
 }

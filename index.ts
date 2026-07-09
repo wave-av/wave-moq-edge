@@ -30,6 +30,8 @@ import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
 import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+// #58 join-token verify (gateway-authorized, edge-verified, direct-media). Default-OFF via MOQ_JOIN_ENFORCE.
+import { joinMode, verifyJoin, joinDenied, withVerifiedPrincipal } from './src/moq-join-verify';
 import { sanitizeInjectedHeaders } from './src/gateway-trust';
 import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
@@ -101,14 +103,31 @@ function isWebSocketUpgrade(request: Request): boolean {
 }
 
 async function handlePublish(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
-  // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
-  // When enforced, publishing requires the canonical moq:write scope on the gateway-injected principal.
-  const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
-  if (denied) return denied;
-  // Tenant isolation (task #45): the principal's org must OWN this namespace.
-  // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org publish.
-  const tenantDenied = orgGate(request, env, namespace);
-  if (tenantDenied) return tenantDenied;
+  // #58 auth: join-token verify (enforce) supersedes the legacy spoofable-header gates; else legacy path.
+  let outbound = request;
+  const mode = joinMode(env);
+  if (mode === 'enforce') {
+    // Cryptographic proof the gateway authorized THIS org for THIS ns/track + moq:write. org/scope from the
+    // SIGNED claims; then STRIP client principal headers so the DO trusts only the verified values.
+    const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_WRITE);
+    if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
+    outbound = withVerifiedPrincipal(request, v.org, v.scope);
+  } else {
+    if (mode === 'shadow') {
+      // Observe-only: verify the token if present and log the verdict, but do NOT reject — the legacy path
+      // still decides admission. Lets us watch real traffic before flipping enforce.
+      const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_WRITE);
+      console.log(JSON.stringify({ evt: 'moq_join_shadow', role: 'publish', ns: namespace, track, ok: v.ok, code: v.ok ? null : v.code }));
+    }
+    // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+    // When enforced, publishing requires the canonical moq:write scope on the gateway-injected principal.
+    const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
+    if (denied) return denied;
+    // Tenant isolation (task #45): the principal's org must OWN this namespace.
+    // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org publish.
+    const tenantDenied = orgGate(request, env, namespace);
+    if (tenantDenied) return tenantDenied;
+  }
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
@@ -125,20 +144,34 @@ async function handlePublish(env: Env, namespace: string, track: string, request
   }), { expirationTtl: 86400 }); // 24h auto-cleanup
 
   // Forward to the DO: a WebSocket upgrade becomes the live MoQ relay publisher session; a plain
-  // POST is the legacy JSON registration. The DO handles both.
+  // POST is the legacy JSON registration. The DO handles both. `outbound` carries the verified principal
+  // headers on the enforce path (identical to `request` otherwise).
   const doStub = getDO(env, namespace, track);
-  return doStub.fetch(request);
+  return doStub.fetch(outbound);
 }
 
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
-  // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
-  // When enforced, subscribing requires the canonical moq:read scope on the gateway-injected principal.
-  const denied = scopeGate(request, env, MOQ_SCOPE_READ);
-  if (denied) return denied;
-  // Tenant isolation (task #45): the principal's org must OWN this namespace.
-  // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org subscribe.
-  const tenantDenied = orgGate(request, env, namespace);
-  if (tenantDenied) return tenantDenied;
+  // #58 auth: join-token verify (enforce) supersedes the legacy spoofable-header gates; else legacy path.
+  let outbound = request;
+  const mode = joinMode(env);
+  if (mode === 'enforce') {
+    const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_READ);
+    if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
+    outbound = withVerifiedPrincipal(request, v.org, v.scope);
+  } else {
+    if (mode === 'shadow') {
+      const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_READ);
+      console.log(JSON.stringify({ evt: 'moq_join_shadow', role: 'subscribe', ns: namespace, track, ok: v.ok, code: v.ok ? null : v.code }));
+    }
+    // MoQ scope gate (no-op unless MOQ_REQUIRE_AUTH is enabled) — reject before touching KV/the DO.
+    // When enforced, subscribing requires the canonical moq:read scope on the gateway-injected principal.
+    const denied = scopeGate(request, env, MOQ_SCOPE_READ);
+    if (denied) return denied;
+    // Tenant isolation (task #45): the principal's org must OWN this namespace.
+    // No-op unless MOQ_REQUIRE_AUTH is enabled. Prevents cross-org subscribe.
+    const tenantDenied = orgGate(request, env, namespace);
+    if (tenantDenied) return tenantDenied;
+  }
 
   const parsed = PublishRequestSchema.safeParse({ namespace, track });
   if (!parsed.success) {
@@ -156,7 +189,7 @@ async function handleSubscribe(env: Env, namespace: string, track: string, reque
   }
 
   const doStub = getDO(env, namespace, track);
-  return doStub.fetch(request);
+  return doStub.fetch(outbound);
 }
 
 async function handleTrackMetadata(env: Env, namespace: string, track: string): Promise<Response> {
