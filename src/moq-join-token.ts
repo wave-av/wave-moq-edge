@@ -192,6 +192,11 @@ export async function verifyJoinToken(secret: string, token: string, opts: Verif
 
   if (claims.iss !== MOQJ_ISS) return { ok: false, code: 'MOQJ_BAD_ISSUER' };
   if (typeof claims.exp !== 'number' || typeof claims.iat !== 'number') return { ok: false, code: 'MOQJ_MALFORMED' };
+  // jti is a REQUIRED contract claim (replay/audit correlation) — a token missing it is malformed, not trusted.
+  if (typeof claims.jti !== 'string' || claims.jti.length === 0) return { ok: false, code: 'MOQJ_MALFORMED' };
+  // Defense-in-depth: a non-positive TTL (exp<=iat) is structurally invalid even if both stamps sit inside the
+  // skew window — reject outright so a mint bug (swapped/corrupted iat/exp) can never yield an accepted token.
+  if (claims.exp <= claims.iat) return { ok: false, code: 'MOQJ_MALFORMED' };
 
   const now = typeof opts.nowSec === 'number' ? opts.nowSec : Math.floor(Date.now() / 1000);
   if (claims.exp + MOQJ_SKEW_SEC < now) return { ok: false, code: 'MOQJ_EXPIRED' };

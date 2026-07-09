@@ -118,6 +118,18 @@ describe('moq-join-token: fail-closed verification', () => {
     expect(r).toEqual({ ok: false, code: 'MOQJ_TTL_TOO_LONG' });
   });
 
+  it('rejects a token missing the required jti claim (even if signed)', async () => {
+    const t = await mint({ jti: '' });
+    const r = await verifyJoinToken(SECRET, t, { ns: 'wave-crest', track: 'live', requiredScope: 'moq:write', nowSec: 1001 });
+    expect(r).toEqual({ ok: false, code: 'MOQJ_MALFORMED' });
+  });
+
+  it('rejects a non-positive TTL (exp<=iat) inside the skew window (mint-bug guard)', async () => {
+    const t = await mint({ iat: 1000, exp: 999 }); // negative TTL, both stamps near "now"
+    const r = await verifyJoinToken(SECRET, t, { ns: 'wave-crest', track: 'live', requiredScope: 'moq:write', nowSec: 1000 });
+    expect(r).toEqual({ ok: false, code: 'MOQJ_MALFORMED' });
+  });
+
   it('rejects structurally malformed tokens', async () => {
     for (const bad of ['', 'a.b', 'a.b.c.d', 'not-base64url!.x.y']) {
       const r = await verifyJoinToken(SECRET, bad, { ns: 'wave-crest', track: 'live', requiredScope: 'moq:write', nowSec: 1001 });
