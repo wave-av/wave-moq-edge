@@ -19,6 +19,16 @@ reviews:
       - "[DRAFT]"
       - "[SKIP CI]"
     drafts: false
+    # #55 credit-burn fix: stop re-review-on-every-push (the confirmed fleet-wide
+    # burn driver, amplified by many ephemeral agent-worktree PRs). One full review
+    # per PR is kept; pushing more commits does not re-trigger it automatically.
+    # `@coderabbitai review` still works on demand for real PRs that need a re-look.
+    auto_incremental_review: false
+    auto_pause_after_reviewed_commits: 1
+    # Opt-out for throwaway/ephemeral PRs only: apply the `skip-review` label to skip
+    # (negative match; PRs without it are unaffected — real PRs keep full coverage).
+    labels:
+      - "!skip-review"
 
   # Automated reviewer: on a clean review CodeRabbit posts an approving GitHub review, which satisfies
   # branch protection's required-review (the one missing link — automerge.yml then merges labeled PRs
