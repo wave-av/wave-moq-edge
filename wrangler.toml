@@ -68,6 +68,16 @@ LOG_LEVEL = "info"
 # set back to "false" + redeploy (instant). Prereqs live: the shared gateway secret set on this worker +
 # gateway MOQ_ORIGIN routing (#484). Blast radius measured = internal smoke only (moved to staging); 0 external.
 MOQ_REQUIRE_AUTH = "true"
+# #58 MoQ join-token ENFORCE — "gateway-authorized, edge-verified, direct-media". off → shadow (verify+log,
+# no reject) → enforce. ENFORCE: publish/subscribe accept ONLY a valid short-lived HMAC join-token (?join= or
+# x-wave-moq-join, bound to ns/track+scope, minted by the gateway POST/GET /v1/moq/{publish,subscribe} against
+# WAVE_MOQ_JOIN_SECRET). org+scopes come from the SIGNED claims; client x-wave-org/x-wave-scopes are stripped —
+# so the #42 header-spoof hole is closed. Under enforce the handler runs ONLY verifyJoin (the MOQ_REQUIRE_AUTH
+# wave-token-v1 path + #45 orgGate are the else branch, skipped). Reconciles the shadow-era deploy-time drift
+# into committed config. FLIPPED ON 2026-07-09 (task #58): the gateway mint was proven live (200 + joinToken)
+# after the upstream entitlement fix, so valid clients can now obtain a join-token before dialing. REVERT =
+# "shadow" (or "off") + redeploy (instant, known-good). Fail-closed 503 if WAVE_MOQ_JOIN_SECRET unset (it is set).
+MOQ_JOIN_ENFORCE = "enforce"
 # Slice B single-instance dedup activation (SB-P2.6). With the WAVE_STORAGE_METER service binding present
 # (below) AND a provisioned recording (org + gateway + token + bucket), a recording finalize hashes on
 # write and dedups per-org via the one canonical D1 index in wave-storage-meter. Off → plain SessionRecorder
