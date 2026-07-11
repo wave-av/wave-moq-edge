@@ -19,6 +19,7 @@ import {
   MOQ_ROLE,
   MOQ_ERROR,
   MOQ_FETCH_TYPE,
+  MOQ_OBJECT_STATUS,
   parseControl,
   decodeSetup,
   encodeSetup,
@@ -82,6 +83,9 @@ export class MoqRelay {
   private publisherNamespace: string[] | null = null;
   private subscribers = new Map<string, Subscriber>();
   private lastGroupId: bigint | null = null;
+
+  // Monotonic object id for one-shot server-side injects ({@link injectObject}); single synthetic group.
+  private injectedSeq = 0n;
 
   // Late-joiner cache: the last N groups of forwarded object frames, oldest-first (a small ring).
   private cache: CachedGroup[] = [];
@@ -265,6 +269,32 @@ export class MoqRelay {
     }
     this.lastGroupId = obj.groupId;
     return { events, fanout };
+  }
+
+  /**
+   * One-shot server-side object inject (E-CONTROL control track). Unlike {@link onObject}, this does
+   * NOT require an attached WS publisher session — the cloud (crest-edge) delivers a single control
+   * Envelope as one MoQ OBJECT to every CURRENT subscriber (the device). It is intentionally NOT cached
+   * for late joiners: a control command is point-in-time, and replaying a stale command to a device that
+   * reconnects later would risk re-execution (delivery is best-effort to who's connected now; the caller
+   * learns the delivered count and can surface "device offline" honestly rather than silently succeed).
+   *
+   * Objects carry a monotonically increasing objectId (single synthetic group 0) so a subscriber never
+   * sees a duplicate (group, object) location. The payload is the raw Envelope JSON bytes.
+   */
+  injectObject(payload: Uint8Array): { fanout: Outbound[]; delivered: number } {
+    const fanout: Outbound[] = [];
+    const frame = encodeObject({
+      trackAlias: TRACK_ALIAS,
+      groupId: 0n,
+      objectId: this.injectedSeq++,
+      status: MOQ_OBJECT_STATUS.NORMAL,
+      payload,
+    });
+    for (const subId of this.subscribers.keys()) {
+      fanout.push({ to: subId, kind: 'object', frame });
+    }
+    return { fanout, delivered: fanout.length };
   }
 
   /** Append a forwarded object to the last-N-groups cache, starting a new group + evicting as needed. */
