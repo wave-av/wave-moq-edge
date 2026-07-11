@@ -150,6 +150,43 @@ async function handlePublish(env: Env, namespace: string, track: string, request
   return doStub.fetch(outbound);
 }
 
+/**
+ * E-CONTROL one-shot inject: POST /v1/inject/:namespace/:track. Delivers a SINGLE control Envelope (the
+ * request body) to every current subscriber of the track as one MoQ OBJECT, WITHOUT the caller holding a
+ * WS publisher session — the cloud (crest-edge) forwards a signed device-control command here and the
+ * device (a WS subscriber on the same track) receives it. Authorized exactly like publish (moq:write:
+ * injecting an object is a write), so the #58 join-token / scope / tenant gates apply unchanged. Does NOT
+ * register a publisher in the discovery KV (an inject is transient, not a live track). The DO fans out
+ * and returns the delivered count so the caller can surface "device offline" honestly.
+ */
+async function handleInject(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
+  let outbound = request;
+  const mode = joinMode(env);
+  if (mode === 'enforce') {
+    const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_WRITE);
+    if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
+    outbound = withVerifiedPrincipal(request, v.org, v.scope);
+  } else {
+    if (mode === 'shadow') {
+      const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_WRITE);
+      console.log(JSON.stringify({ evt: 'moq_join_shadow', role: 'inject', ns: namespace, track, ok: v.ok, code: v.ok ? null : v.code }));
+    }
+    const denied = scopeGate(request, env, MOQ_SCOPE_WRITE);
+    if (denied) return denied;
+    const tenantDenied = orgGate(request, env, namespace);
+    if (tenantDenied) return tenantDenied;
+  }
+
+  const parsed = PublishRequestSchema.safeParse({ namespace, track });
+  if (!parsed.success) {
+    return errorResponse('Invalid namespace/track', 400, parsed.error.message);
+  }
+
+  // The DO branches on the '/inject/' path segment (moq-session-do.ts) → relay.injectObject → fan-out.
+  const doStub = getDO(env, namespace, track);
+  return doStub.fetch(outbound);
+}
+
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
   // #58 auth: join-token verify (enforce) supersedes the legacy spoofable-header gates; else legacy path.
   let outbound = request;
@@ -342,6 +379,14 @@ export default {
       const publishMatch = path.match(/^\/v1\/publish\/([^/]+)\/([^/]+)$/);
       if (publishMatch && (request.method === 'POST' || (request.method === 'GET' && isWebSocketUpgrade(request)))) {
         return handlePublish(env, publishMatch[1], publishMatch[2], request);
+      }
+
+      // /v1/inject/:namespace/:track — E-CONTROL one-shot object inject (cloud → device control track).
+      // POST the control Envelope; the DO fans it out to current subscribers as one MoQ OBJECT. Authed
+      // as a write (moq:write), same #58 join-token gate as publish.
+      const injectMatch = path.match(/^\/v1\/inject\/([^/]+)\/([^/]+)$/);
+      if (injectMatch && request.method === 'POST') {
+        return handleInject(env, injectMatch[1], injectMatch[2], request);
       }
 
       // /v1/subscribe/:namespace/:track (WebTransport upgrade)

@@ -188,6 +188,22 @@ export class MOQSessionDurableObject {
       });
     }
 
+    // E-CONTROL one-shot object inject: the cloud (crest-edge) delivers a single control Envelope to the
+    // device WITHOUT holding a WS publisher session. The body is fanned out as one MoQ OBJECT to every
+    // current subscriber (the device). Not cached (point-in-time control — see MoqRelay.injectObject).
+    // The delivered count is returned honestly so the caller can surface "device offline" when it's 0.
+    if (request.method === 'POST' && url.pathname.includes('/inject/')) {
+      const buf = new Uint8Array(await request.arrayBuffer());
+      const maxObj = parseInt(this.env.MAX_OBJECT_SIZE_BYTES, 10) || 1_048_576;
+      if (buf.length === 0) return json({ type: 'https://httpstatuses.io/400', title: 'empty inject body', status: 400 }, 400);
+      if (buf.length > maxObj) return json({ type: 'https://httpstatuses.io/413', title: 'inject body exceeds MAX_OBJECT_SIZE_BYTES', status: 413, limit: maxObj }, 413);
+      const { fanout, delivered } = this.relay.injectObject(buf);
+      for (const out of fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
+      session.lastActivityAt = new Date().toISOString();
+      await this.save();
+      return json({ ok: true, delivered, subscribers: this.relay.subscriberCount });
+    }
+
     // Legacy JSON register endpoints (kept for the Worker's metadata flow + HTTP clients).
     if (request.method === 'POST') {
       const sessionId = crypto.randomUUID();
