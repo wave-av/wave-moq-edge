@@ -265,15 +265,16 @@ describe('relay events fold into the R4 wave.usage meter', () => {
 });
 
 describe('MoqRelay injectObject (E-CONTROL one-shot control inject)', () => {
-  const enc = new TextEncoder();
-  const dec = new TextDecoder();
+  // Self-contained ASCII codecs (payloads here are ASCII JSON) — no ambient TextEncoder/TextDecoder dependency.
+  const enc = (s: string): Uint8Array => Uint8Array.from(s, (c) => c.charCodeAt(0));
+  const dec = (u: Uint8Array): string => String.fromCharCode(...u);
 
   it('fans one object out to every current subscriber, no publisher session needed', () => {
     const relay = new MoqRelay();
     relay.onControl('a', encodeSubscribe({ requestId: 1n, trackNamespace: NS, trackName: 'control' }));
     relay.onControl('b', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'control' }));
 
-    const envelope = enc.encode(JSON.stringify({ v: 1, cmd: 'stream.start' }));
+    const envelope = enc(JSON.stringify({ v: 1, cmd: 'stream.start' }));
     const { fanout, delivered } = relay.injectObject(envelope);
 
     expect(relay.hasPublisher).toBe(false); // inject requires NO publisher
@@ -283,13 +284,13 @@ describe('MoqRelay injectObject (E-CONTROL one-shot control inject)', () => {
     for (const o of fanout) {
       const obj = decodeObject(o.frame);
       expect(obj.status).toBe(MOQ_OBJECT_STATUS.NORMAL);
-      expect(dec.decode(obj.payload)).toBe('{"v":1,"cmd":"stream.start"}');
+      expect(dec(obj.payload)).toBe('{"v":1,"cmd":"stream.start"}');
     }
   });
 
   it('delivers 0 when no subscriber is connected (honest device-offline signal)', () => {
     const relay = new MoqRelay();
-    const { fanout, delivered } = relay.injectObject(enc.encode('{}'));
+    const { fanout, delivered } = relay.injectObject(enc('{}'));
     expect(delivered).toBe(0);
     expect(fanout).toHaveLength(0);
   });
@@ -297,15 +298,15 @@ describe('MoqRelay injectObject (E-CONTROL one-shot control inject)', () => {
   it('assigns a monotonic objectId per inject (no duplicate location)', () => {
     const relay = new MoqRelay();
     relay.onControl('a', encodeSubscribe({ requestId: 1n, trackNamespace: NS, trackName: 'control' }));
-    const first = decodeObject(relay.injectObject(enc.encode('a')).fanout[0].frame);
-    const second = decodeObject(relay.injectObject(enc.encode('b')).fanout[0].frame);
+    const first = decodeObject(relay.injectObject(enc('a')).fanout[0].frame);
+    const second = decodeObject(relay.injectObject(enc('b')).fanout[0].frame);
     expect(first.objectId).toBe(0n);
     expect(second.objectId).toBe(1n);
   });
 
   it('is NOT cached for late joiners (control is point-in-time — no stale replay)', () => {
     const relay = new MoqRelay();
-    relay.injectObject(enc.encode('{"cmd":"stream.stop"}')); // injected before anyone subscribes
+    relay.injectObject(enc('{"cmd":"stream.stop"}')); // injected before anyone subscribes
     // A subscriber joining AFTER the inject gets ONLY SUBSCRIBE_OK + zero replayed objects.
     const { objects } = relay.onControl('late', encodeSubscribe({ requestId: 9n, trackNamespace: NS, trackName: 'control' }));
     expect(objects).toHaveLength(0);
