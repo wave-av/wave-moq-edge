@@ -265,9 +265,18 @@ describe('relay events fold into the R4 wave.usage meter', () => {
 });
 
 describe('MoqRelay injectObject (E-CONTROL one-shot control inject)', () => {
-  // Self-contained ASCII codecs (payloads here are ASCII JSON) — no ambient TextEncoder/TextDecoder dependency.
-  const enc = (s: string): Uint8Array => Uint8Array.from(s, (c) => c.charCodeAt(0));
-  const dec = (u: Uint8Array): string => String.fromCharCode(...u);
+  // Self-contained ASCII codecs (payloads here are ASCII JSON) — plain index loops, no ambient globals,
+  // no iterator spread, so tsc and the editor both resolve them identically.
+  const enc = (s: string): Uint8Array => {
+    const a = new Uint8Array(s.length);
+    for (let i = 0; i < s.length; i++) a[i] = s.charCodeAt(i);
+    return a;
+  };
+  const dec = (u: Uint8Array): string => {
+    let r = '';
+    for (let i = 0; i < u.length; i++) r += String.fromCharCode(u[i]);
+    return r;
+  };
 
   it('fans one object out to every current subscriber, no publisher session needed', () => {
     const relay = new MoqRelay();
