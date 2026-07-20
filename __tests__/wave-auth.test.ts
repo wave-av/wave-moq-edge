@@ -11,6 +11,9 @@ import {
   MOQ_SCOPE_READ,
   MOQ_SCOPE_WRITE,
   WAVE_SCOPES_HEADER,
+  WAVE_DECLARED_PROTOCOL_HEADER,
+  KNOWN_DECLARABLE_PROTOCOLS,
+  stripDeclaredProtocol,
 } from '../src/wave-auth';
 
 const GOOD = `${WAVE_TOKEN_PREFIX}abcdef0123456789`;
@@ -181,5 +184,35 @@ describe('scopeGate — flag ON: closes the anonymous-access hole', () => {
     // scopes header still required (gateway injects it); token via query is accepted by authGate
     expect(scopeGate(req({ [WAVE_SCOPES_HEADER]: 'moq:read' }, url), ON, MOQ_SCOPE_READ)).toBeNull();
     expect(scopeGate(req({}, url), ON, MOQ_SCOPE_READ)?.status).toBe(403); // token ok, no scope → 403
+  });
+});
+
+describe('task#14 CONFIRMED under-bill fix — stripDeclaredProtocol', () => {
+  it('removes a client-supplied declared-protocol header unconditionally', () => {
+    const r = req({ [WAVE_DECLARED_PROTOCOL_HEADER]: 'dante' });
+    const out = stripDeclaredProtocol(r);
+    expect(out.headers.get(WAVE_DECLARED_PROTOCOL_HEADER)).toBeNull();
+  });
+
+  it('is a no-op (still absent) when no declared-protocol header was ever present', () => {
+    const r = req({});
+    const out = stripDeclaredProtocol(r);
+    expect(out.headers.get(WAVE_DECLARED_PROTOCOL_HEADER)).toBeNull();
+  });
+
+  it('does not disturb other headers', () => {
+    const r = req({ [WAVE_SCOPES_HEADER]: 'moq:write', [WAVE_DECLARED_PROTOCOL_HEADER]: 'dante' });
+    const out = stripDeclaredProtocol(r);
+    expect(out.headers.get(WAVE_SCOPES_HEADER)).toBe('moq:write');
+    expect(out.headers.get(WAVE_DECLARED_PROTOCOL_HEADER)).toBeNull();
+  });
+});
+
+describe('task#14 — KNOWN_DECLARABLE_PROTOCOLS (relay-side defense-in-depth allow-list)', () => {
+  it('recognizes exactly the gateway PROTOCOL_RESOURCES set', () => {
+    expect([...KNOWN_DECLARABLE_PROTOCOLS].sort()).toEqual(['dante', 'moq', 'ndi', 'omt', 'srt']);
+  });
+  it('rejects an arbitrary/unknown string', () => {
+    expect(KNOWN_DECLARABLE_PROTOCOLS.has('not-a-real-protocol')).toBe(false);
   });
 });

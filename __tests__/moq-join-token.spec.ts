@@ -52,7 +52,34 @@ describe('moq-join-token: interop vector', () => {
     if (r.ok) {
       expect(r.org).toBe('org_abc123');
       expect(r.scope).toBe('moq:write moq:read');
+      expect(r.protocol).toBeUndefined(); // vector claims never declared a protocol
     }
+  });
+});
+
+describe('task#14 — protocol claim round-trips through mint→verify', () => {
+  it('a dante-declared publish token verifies with protocol:"dante"', async () => {
+    const token = await signJoinToken(SECRET, { ...VECTOR_CLAIMS, protocol: 'dante' });
+    const r = await verifyJoinToken(SECRET, token, {
+      ns: 'wave-crest',
+      track: 'live',
+      requiredScope: 'moq:write',
+      nowSec: VECTOR_CLAIMS.iat + 1,
+    });
+    expect(r.ok).toBe(true);
+    if (r.ok) expect(r.protocol).toBe('dante');
+  });
+
+  it('a token minted without a protocol claim verifies with protocol undefined (moq default applies upstream)', async () => {
+    const token = await signJoinToken(SECRET, VECTOR_CLAIMS);
+    const r = await verifyJoinToken(SECRET, token, {
+      ns: 'wave-crest',
+      track: 'live',
+      requiredScope: 'moq:write',
+      nowSec: VECTOR_CLAIMS.iat + 1,
+    });
+    expect(r.ok).toBe(true);
+    if (r.ok) expect(r.protocol).toBeUndefined();
   });
 });
 

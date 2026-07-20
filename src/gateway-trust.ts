@@ -31,7 +31,12 @@ export const WAVE_GATEWAY_SECRET_HEADER = 'x-wave-gateway-secret'; // # guard:al
  * request that cannot prove gateway origin must have ALL of them removed — a partial strip would leave a
  * spoofable field. Header lookup/deletion is case-insensitive per the Fetch spec (Headers normalizes).
  */
-export const GATEWAY_INJECTED_HEADERS = ['x-wave-org', 'x-wave-scopes', 'x-wave-tier'] as const;
+// task#14: 'x-wave-declared-protocol' is ALSO gateway-injected-trust-only (it drives billing, not just
+// tenant identity) — it belongs on this list for the same reason x-wave-org does. NOTE: this boundary is
+// itself inert until WAVE_GATEWAY_SECRET is provisioned (see sanitizeInjectedHeaders below), so the
+// UNCONDITIONAL strip in index.ts (stripDeclaredProtocol, every mode, every request) is the actual fix for
+// the confirmed under-bill vector — this entry is defense-in-depth for when the secret IS provisioned.
+export const GATEWAY_INJECTED_HEADERS = ['x-wave-org', 'x-wave-scopes', 'x-wave-tier', 'x-wave-declared-protocol'] as const;
 
 /** Env subset this boundary reads (the shared secret; a subset of the worker Env). */
 export interface GatewayTrustEnv {

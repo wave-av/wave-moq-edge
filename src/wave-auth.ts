@@ -190,6 +190,39 @@ export function scopeGate(request: Request, env: AuthEnv, required: string): Res
  */
 export const WAVE_ORG_HEADER = 'x-wave-org';
 
+/**
+ * task#14: the RELAY-TRUSTED declared-origin-protocol header (e.g. 'dante'), set ONLY by
+ * withVerifiedPrincipal from a verified join-token's signed `protocol` claim — the DO reads this to bill
+ * a Dante-origin session as `duration_ms:dante` instead of the 'moq' default. Distinct from the unrelated
+ * `x-wave-protocol` spoke-attribution header (wave-dante-edge proxy.ts), which the gateway forward() path
+ * uses for a different purpose and which this relay never trusts for billing.
+ */
+export const WAVE_DECLARED_PROTOCOL_HEADER = 'x-wave-declared-protocol';
+
+/**
+ * task#14 CONFIRMED under-bill fix: the SET of protocols the relay will ever trust in
+ * {@link WAVE_DECLARED_PROTOCOL_HEADER} (mirrors the gateway's scopes.ts PROTOCOL_RESOURCES — the same
+ * set usage.ts sources its `duration_ms:<protocol>` billing dimensions from). Defense-in-depth: even if a
+ * future regression let an unverified value reach the DO, an unrecognized string can never bill a
+ * dimension that doesn't exist. Duplicated here (not imported cross-repo) because the relay and
+ * the gateway are separate deployables; keep in sync with the gateway's PROTOCOL_RESOURCES.
+ */
+export const KNOWN_DECLARABLE_PROTOCOLS = new Set(['srt', 'ndi', 'dante', 'omt', 'moq']);
+
+/**
+ * task#14 CONFIRMED under-bill fix: unconditionally strip any CLIENT-supplied declared-protocol header
+ * before the request reaches the mode branch / the DO. Only {@link withVerifiedPrincipal} (moq-join-verify)
+ * is allowed to SET this header, and only from a cryptographically verified join-token claim — so this
+ * must run in EVERY mode (off/shadow/enforce), not just when enforce is active, otherwise a client dialing
+ * the public publish socket directly (join enforcement off or shadow) could self-declare a cheaper protocol
+ * and under-bill. Returns a NEW Request; the original is untouched.
+ */
+export function stripDeclaredProtocol(request: Request): Request {
+  const headers = new Headers(request.headers);
+  headers.delete(WAVE_DECLARED_PROTOCOL_HEADER);
+  return new Request(request, { headers });
+}
+
 /** The gateway-injected org id, trimmed; null when absent/empty. */
 export function extractInjectedOrg(request: Request): string | null {
   const raw = request.headers.get(WAVE_ORG_HEADER);

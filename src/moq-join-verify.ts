@@ -18,7 +18,7 @@
  */
 
 import { verifyJoinToken } from './moq-join-token';
-import { WAVE_ORG_HEADER, WAVE_SCOPES_HEADER } from './wave-auth';
+import { WAVE_ORG_HEADER, WAVE_SCOPES_HEADER, WAVE_DECLARED_PROTOCOL_HEADER } from './wave-auth';
 
 export type JoinMode = 'off' | 'shadow' | 'enforce';
 
@@ -54,7 +54,7 @@ export function extractJoinToken(request: Request): string | null {
 }
 
 export type JoinVerdict =
-  | { ok: true; org: string; scope: string }
+  | { ok: true; org: string; scope: string; protocol?: string }
   | { ok: false; code: string; status: number };
 
 /**
@@ -75,7 +75,7 @@ export async function verifyJoin(
   const token = extractJoinToken(request);
   if (!token) return { ok: false, code: 'MOQJ_MISSING', status: 401 };
   const r = await verifyJoinToken(secret, token, { ns, track, requiredScope });
-  if (r.ok) return { ok: true, org: r.org, scope: r.scope };
+  if (r.ok) return { ok: true, org: r.org, scope: r.scope, protocol: r.protocol };
   const status = r.code === 'MOQJ_SCOPE_INSUFFICIENT' ? 403 : r.code === 'MOQJ_SECRET_UNCONFIGURED' ? 503 : 401;
   return { ok: false, code: r.code, status };
 }
@@ -111,11 +111,16 @@ export function joinDenied(code: string, status: number, ns: string, track: stri
  * WebSocket-upgrade semantics are preserved, matching how the gateway forward() rewrites headers on WS
  * upgrades).
  */
-export function withVerifiedPrincipal(request: Request, org: string, scope: string): Request {
+export function withVerifiedPrincipal(request: Request, org: string, scope: string, protocol?: string): Request {
   const headers = new Headers(request.headers);
   headers.delete(WAVE_ORG_HEADER);
   headers.delete(WAVE_SCOPES_HEADER);
   headers.set(WAVE_ORG_HEADER, org);
   headers.set(WAVE_SCOPES_HEADER, scope);
+  // task#14: only the VERIFIED join-token claim ever sets this — always delete any client-supplied value
+  // first (never trust a spoofed header), then set it ONLY when the publisher explicitly declared a
+  // protocol at mint time. Absent → the DO's usage-emit defaults the session to 'moq' (unchanged).
+  headers.delete(WAVE_DECLARED_PROTOCOL_HEADER);
+  if (protocol) headers.set(WAVE_DECLARED_PROTOCOL_HEADER, protocol);
   return new Request(request, { headers });
 }
