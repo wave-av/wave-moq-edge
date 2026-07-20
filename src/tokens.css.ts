@@ -6,10 +6,18 @@
 export const TOKENS_CSS = `:root{--bg:#0b0f14;--fg:#cfe3f7;--fg-strong:#fff;--dim:#5b7287;--acc:oklch(0.78 0.15 220);--warn:#e6b450;--card:#0e141b;--line:#1c2733}
 ::selection{background:var(--acc);color:var(--bg)}
 .gfx{display:flex;justify-content:center;margin:1.5rem 0 .6rem}
-.gfx svg{width:min(360px,90%);height:auto}
-.gfx-track{stroke:var(--dim);stroke-width:2;stroke-linecap:round;opacity:.6}
-.gfx-now rect{fill:var(--acc);transform-box:fill-box;transform-origin:center;animation:gfxnow 200ms linear infinite;animation-delay:80ms}
-.gfx-pkt rect{fill:var(--acc);transform-box:fill-box;transform-origin:center;animation:gfxpkt 800ms cubic-bezier(.2,.7,.3,1) infinite}
-@keyframes gfxpkt{0%{transform:translateX(0);opacity:0}5%{opacity:1}85%{transform:translateX(322px);opacity:1}90%{transform:translateX(322px);opacity:1}94%{opacity:0}100%{opacity:0;transform:translateX(322px)}}
-@keyframes gfxnow{0%{opacity:1;transform:scaleY(1.15)}15%{opacity:.4;transform:scaleY(1)}100%{opacity:.4;transform:scaleY(1)}}
-@media(prefers-reduced-motion:reduce){.gfx-pkt rect,.gfx-now rect{animation:none}.gfx-now rect{opacity:1;transform:scaleY(1)}.gfx-pkt:nth-of-type(1) rect{transform:translateX(0);opacity:1}.gfx-pkt:nth-of-type(2) rect{transform:translateX(110px);opacity:1}.gfx-pkt:nth-of-type(3) rect{transform:translateX(220px);opacity:1}.gfx-pkt:nth-of-type(4) rect{transform:translateX(322px);opacity:1}}`;
+.gfx svg{width:min(360px,92%);height:auto}
+.gfx-plane{stroke:#fff;stroke-opacity:.12;stroke-width:1}
+.gfx-crest{fill:var(--acc);filter:drop-shadow(0 0 4px var(--acc));animation:gfxcrest 6s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes gfxcrest{0%{transform:translateX(0);opacity:0}6%{opacity:1}90%{opacity:1}100%{transform:translateX(348px);opacity:0}}
+.gfx-grid{stroke:var(--dim);stroke-width:1;opacity:.35}
+.gfx-pkt rect{fill:var(--acc);transform-box:fill-box;transform-origin:center}
+.gfx-pkt.p1 rect{animation:gfxpkt1 6s cubic-bezier(.4,0,.2,1) infinite}
+.gfx-pkt.p2 rect{animation:gfxpkt2 6s cubic-bezier(.4,0,.2,1) infinite}
+.gfx-pkt.p3 rect{animation:gfxpkt3 6s cubic-bezier(.4,0,.2,1) infinite}
+.gfx-pkt.p4 rect{animation:gfxpkt4 6s cubic-bezier(.4,0,.2,1) infinite}
+@keyframes gfxpkt1{0%{transform:translate(-150px,-16px);opacity:0}5%{opacity:1}14%{transform:translate(-118px,10px)}26%{transform:translate(-82px,-12px)}38%{transform:translate(-40px,8px)}48%{transform:translate(-8px,-4px)}50%{transform:translate(0,0)}65%{transform:translate(52px,0)}80%{transform:translate(104px,0)}92%{transform:translate(148px,0);opacity:1}100%{transform:translate(160px,0);opacity:0}}
+@keyframes gfxpkt2{0%{transform:translate(-150px,12px);opacity:0}9%{opacity:1}20%{transform:translate(-112px,-14px)}32%{transform:translate(-70px,9px)}42%{transform:translate(-30px,-7px)}49%{transform:translate(-6px,3px)}50%{transform:translate(0,0)}65%{transform:translate(52px,0)}80%{transform:translate(104px,0)}92%{transform:translate(148px,0);opacity:1}100%{transform:translate(160px,0);opacity:0}}
+@keyframes gfxpkt3{0%{transform:translate(-150px,-10px);opacity:0}3%{opacity:1}16%{transform:translate(-100px,14px)}30%{transform:translate(-64px,-9px)}40%{transform:translate(-22px,11px)}48%{transform:translate(-5px,-3px)}50%{transform:translate(0,0)}65%{transform:translate(52px,0)}80%{transform:translate(104px,0)}92%{transform:translate(148px,0);opacity:1}100%{transform:translate(160px,0);opacity:0}}
+@keyframes gfxpkt4{0%{transform:translate(-150px,15px);opacity:0}13%{opacity:1}24%{transform:translate(-96px,-13px)}36%{transform:translate(-58px,10px)}44%{transform:translate(-18px,-8px)}49%{transform:translate(-4px,4px)}50%{transform:translate(0,0)}65%{transform:translate(52px,0)}80%{transform:translate(104px,0)}92%{transform:translate(148px,0);opacity:1}100%{transform:translate(160px,0);opacity:0}}
+@media(prefers-reduced-motion:reduce){.gfx-pkt rect{animation:none;transform:translate(0,0);opacity:1}.gfx-crest{animation:none;transform:translateX(174px)}}`;
