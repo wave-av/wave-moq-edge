@@ -29,7 +29,7 @@ import { makeFetch, type Env as ChassisEnv } from '@wave-av/spoke-chassis';
 import { z } from 'zod';
 import { MOQSessionDurableObject } from './moq-session-do';
 import { MetricsCollector } from './metrics-collector';
-import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ } from './src/wave-auth';
+import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ, stripDeclaredProtocol } from './src/wave-auth';
 // #58 join-token verify (gateway-authorized, edge-verified, direct-media). Default-OFF via MOQ_JOIN_ENFORCE.
 import { joinMode, verifyJoin, joinDenied, withVerifiedPrincipal } from './src/moq-join-verify';
 import { sanitizeInjectedHeaders } from './src/gateway-trust';
@@ -104,7 +104,11 @@ function isWebSocketUpgrade(request: Request): boolean {
 
 async function handlePublish(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
   // #58 auth: join-token verify (enforce) supersedes the legacy spoofable-header gates; else legacy path.
-  let outbound = request;
+  // task#14 CONFIRMED under-bill fix: strip any CLIENT-supplied declared-protocol header UNCONDITIONALLY,
+  // in EVERY mode, before the mode branch runs — otherwise a client dialing this socket directly while
+  // join enforcement is off/shadow could self-declare a cheaper protocol and under-bill. Only the enforce
+  // branch below may re-add it, and only from the verified join-token claim.
+  let outbound = stripDeclaredProtocol(request);
   const mode = joinMode(env);
   if (mode === 'enforce') {
     // Cryptographic proof the gateway authorized THIS org for THIS ns/track + moq:write. org/scope from the
@@ -113,7 +117,7 @@ async function handlePublish(env: Env, namespace: string, track: string, request
     if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
     // task#14: thread the publisher-DECLARED protocol (signed claim only) so a Dante-origin session bills
     // as duration_ms:dante instead of the plain-moq default; absent → v.protocol is undefined → unchanged.
-    outbound = withVerifiedPrincipal(request, v.org, v.scope, v.protocol);
+    outbound = withVerifiedPrincipal(outbound, v.org, v.scope, v.protocol);
   } else {
     if (mode === 'shadow') {
       // Observe-only: verify the token if present and log the verdict, but do NOT reject — the legacy path
@@ -154,12 +158,14 @@ async function handlePublish(env: Env, namespace: string, track: string, request
 
 async function handleSubscribe(env: Env, namespace: string, track: string, request: Request): Promise<Response> {
   // #58 auth: join-token verify (enforce) supersedes the legacy spoofable-header gates; else legacy path.
-  let outbound = request;
+  // task#14: strip any client-supplied declared-protocol header unconditionally (defense-in-depth — a
+  // subscriber session is never billed for protocol, but it must never carry a spoofable value either).
+  let outbound = stripDeclaredProtocol(request);
   const mode = joinMode(env);
   if (mode === 'enforce') {
     const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_READ);
     if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
-    outbound = withVerifiedPrincipal(request, v.org, v.scope);
+    outbound = withVerifiedPrincipal(outbound, v.org, v.scope);
   } else {
     if (mode === 'shadow') {
       const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_READ);

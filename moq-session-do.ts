@@ -32,6 +32,7 @@ import { SingleInstanceWriter } from './single-instance-writer';
 import { makeRemoteDedupIndex, type DedupService } from './remote-dedup-index';
 import type { DedupIndex } from './dedup-index';
 import { registerRecording } from './register-recording';
+import { KNOWN_DECLARABLE_PROTOCOLS } from './src/wave-auth';
 
 interface Env {
   MOQ_TRACK_REGISTRY: KVNamespace;
@@ -185,8 +186,13 @@ export class MOQSessionDurableObject {
       const org = request.headers.get('x-wave-org')?.trim() || null;
       // task#14: capture the EXPLICITLY DECLARED origin protocol (e.g. 'dante'), set ONLY by
       // withVerifiedPrincipal from the signed join-token claim — never inferred from the namespace, and
-      // never trusted from an unverified client header. Absent → usage-emit defaults to 'moq'.
-      const protocol = request.headers.get('x-wave-declared-protocol')?.trim() || null;
+      // never trusted from an unverified client header (index.ts strips any client-supplied value
+      // UNCONDITIONALLY in every join mode before the request reaches this DO). Defense-in-depth: also
+      // reject anything not in the known billing-dimension set here, so a future header-stripping
+      // regression is bounded to real dims, never an arbitrary client string. Absent/unrecognized →
+      // usage-emit defaults to 'moq'.
+      const rawProtocol = request.headers.get('x-wave-declared-protocol')?.trim().toLowerCase() || null;
+      const protocol = rawProtocol && KNOWN_DECLARABLE_PROTOCOLS.has(rawProtocol) ? rawProtocol : null;
       return this.handleWebSocket(url, org, protocol);
     }
 
