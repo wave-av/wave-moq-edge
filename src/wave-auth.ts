@@ -190,6 +190,15 @@ export function scopeGate(request: Request, env: AuthEnv, required: string): Res
  */
 export const WAVE_ORG_HEADER = 'x-wave-org';
 
+/**
+ * task#14: the RELAY-TRUSTED declared-origin-protocol header (e.g. 'dante'), set ONLY by
+ * withVerifiedPrincipal from a verified join-token's signed `protocol` claim — the DO reads this to bill
+ * a Dante-origin session as `duration_ms:dante` instead of the 'moq' default. Distinct from the unrelated
+ * `x-wave-protocol` spoke-attribution header (wave-dante-edge proxy.ts), which the gateway forward() path
+ * uses for a different purpose and which this relay never trusts for billing.
+ */
+export const WAVE_DECLARED_PROTOCOL_HEADER = 'x-wave-declared-protocol';
+
 /** The gateway-injected org id, trimmed; null when absent/empty. */
 export function extractInjectedOrg(request: Request): string | null {
   const raw = request.headers.get(WAVE_ORG_HEADER);

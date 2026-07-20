@@ -18,8 +18,10 @@
  *   • Any fetch error → swallowed. A usage emit must NEVER affect the live relay (fail-open).
  *
  * The meter has no fps (a relay doesn't decode), so duration can't be derived frame/fps; we send the real
- * publisher-session wall-time as `session_ms`. With `protocol: "moq"` the gateway bills it as the
- * per-protocol stream-minute dimension `duration_ms:moq` (api-gateway #262).
+ * publisher-session wall-time as `session_ms`. `protocol` defaults to `"moq"` UNLESS the publisher
+ * EXPLICITLY declared a different origin protocol (task#14, e.g. 'dante') at mint/publish time — see
+ * MoqUsageArgs.protocol — so the gateway bills it as the matching per-protocol stream-minute dimension
+ * (`duration_ms:moq` or `duration_ms:dante`, api-gateway #262).
  */
 
 /** The subset of the worker/DO env this emit reads. Both are optional → emit is inert until provisioned. */
@@ -39,13 +41,20 @@ export interface MoqUsageArgs {
   frames: number;
   reconnects: number;
   sessionMs: number;
+  /**
+   * task#14: the origin protocol the PUBLISHER explicitly declared at mint/publish time (e.g. 'dante'),
+   * threaded from the relay's verified join-token claim (moq-session-do.ts publisherProtocol) — NEVER
+   * inferred from the namespace/trackKey (that would risk mis-billing other moq traffic sharing a strand
+   * path). Undefined/absent → this is real MoQ-native traffic → bills as 'moq' (unchanged default).
+   */
+  protocol?: string;
 }
 
 /** The gateway `/v1/internal/usage` request envelope (matches api-gateway src/usage.ts handleUsageIngest). */
 interface UsageEnvelope {
   org: string;
   usage: {
-    protocol: 'moq';
+    protocol: string; // 'moq' (default) | 'dante' (task#14, when the publisher declared it) | future protocols
     bytes: number;
     frames: number;
     reconnects: number;
@@ -69,16 +78,17 @@ export function shouldEmit(env: MoqUsageEmitEnv, a: MoqUsageArgs): boolean {
  */
 export function buildMoqUsageBody(env: MoqUsageEmitEnv, a: MoqUsageArgs): UsageEnvelope | null {
   if (!shouldEmit(env, a)) return null;
+  const protocol = a.protocol || 'moq'; // task#14: declared protocol wins; undeclared → real MoQ traffic
   return {
     org: a.org as string,
     usage: {
-      protocol: 'moq',
+      protocol,
       bytes: a.bytes,
       frames: a.frames,
       reconnects: a.reconnects,
       ...(a.sessionMs > 0 ? { session_ms: a.sessionMs } : {}),
       session_id: a.sessionId,
-      event_id: `moq:${a.trackKey}:${a.sessionId}`,
+      event_id: `${protocol}:${a.trackKey}:${a.sessionId}`,
     },
   };
 }

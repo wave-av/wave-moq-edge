@@ -48,6 +48,13 @@ export interface MoqJoinClaims {
   /** unique token id (replay/audit correlation). */
   jti: string;
   iss?: string;
+  /**
+   * task#14: EXPLICITLY declared origin protocol (e.g. 'dante'), set by the gateway mint ONLY when the
+   * publisher itself declared it at mint request time — NEVER inferred from ns/track. Absent → the relay's
+   * usage-emit bills the session as plain 'moq' (unchanged default). Optional for backward-compat with
+   * already-issued tokens (a token minted before this field existed simply lacks it).
+   */
+  protocol?: string;
 }
 
 // ---- base64url (no padding) --------------------------------------------------------------------
@@ -135,7 +142,7 @@ export async function signJoinToken(
 
 // ---- VERIFY (relay side) -----------------------------------------------------------------------
 
-export type VerifyOk = { ok: true; org: string; scope: string; claims: MoqJoinClaims };
+export type VerifyOk = { ok: true; org: string; scope: string; protocol?: string; claims: MoqJoinClaims };
 export type VerifyErr = { ok: false; code: string };
 export type VerifyResult = VerifyOk | VerifyErr;
 
@@ -212,5 +219,5 @@ export async function verifyJoinToken(secret: string, token: string, opts: Verif
     return { ok: false, code: 'MOQJ_SCOPE_INSUFFICIENT' };
   }
 
-  return { ok: true, org: claims.org, scope: claims.scope, claims };
+  return { ok: true, org: claims.org, scope: claims.scope, protocol: claims.protocol, claims };
 }

@@ -54,6 +54,30 @@ describe('#284 buildMoqUsageBody — the gateway ingest envelope', () => {
   });
 });
 
+describe('task#14 — publisher-declared protocol bills the matching dimension', () => {
+  it('a dante-declared session emits protocol:"dante" (and a dante-prefixed event_id, no collision with moq)', () => {
+    const body = buildMoqUsageBody(ENV, { ...REAL, protocol: 'dante' })!;
+    expect(body.usage.protocol).toBe('dante');
+    expect(body.usage.event_id).toBe('dante:wave/cam-1:sess-1');
+  });
+
+  it('an undeclared session still emits "moq" (unchanged default — never fabricate a protocol)', () => {
+    const body = buildMoqUsageBody(ENV, REAL)!; // no `protocol` field at all
+    expect(body.usage.protocol).toBe('moq');
+    expect(body.usage.event_id).toBe('moq:wave/cam-1:sess-1');
+  });
+
+  it('no double-bill: exactly ONE protocol dimension is emitted per session (XOR, never both)', () => {
+    const danteBody = buildMoqUsageBody(ENV, { ...REAL, protocol: 'dante' })!;
+    const moqBody = buildMoqUsageBody(ENV, REAL)!;
+    // Each envelope carries a single scalar `usage.protocol` — structurally impossible to double-bill
+    // moq+dante from one emit call.
+    expect(typeof danteBody.usage.protocol).toBe('string');
+    expect(danteBody.usage.protocol).not.toBe(moqBody.usage.protocol);
+    expect([danteBody.usage.protocol, moqBody.usage.protocol].sort()).toEqual(['dante', 'moq']);
+  });
+});
+
 describe('#284 emitMoqUsage — fire-and-forget POST, fail-open', () => {
   it('POSTs to /v1/internal/usage with the service bearer when provisioned + attributed', async () => {
     const fetchSpy = vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(null, { status: 200 }));

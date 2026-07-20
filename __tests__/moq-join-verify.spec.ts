@@ -85,4 +85,20 @@ describe('withVerifiedPrincipal — strips spoofable client headers, injects ver
     expect(out.headers.get('x-wave-org')).toBe('org_REAL');
     expect(out.headers.get('x-wave-scopes')).toBe('moq:write');
   });
+
+  it('task#14: sets x-wave-declared-protocol from the signed claim, overwriting any client-supplied value', () => {
+    const req = nowReq('https://moq.wave.online/v1/publish/dante-dep/audio', {
+      'x-wave-declared-protocol': 'video-spoof-attempt',
+    });
+    const out = withVerifiedPrincipal(req, 'org_REAL', 'moq:write', 'dante');
+    expect(out.headers.get('x-wave-declared-protocol')).toBe('dante');
+  });
+
+  it('task#14: no protocol declared (undefined) → header absent, so the DO defaults billing to moq', () => {
+    const req = nowReq('https://moq.wave.online/v1/publish/wave-crest/live', {
+      'x-wave-declared-protocol': 'spoof',
+    });
+    const out = withVerifiedPrincipal(req, 'org_REAL', 'moq:write'); // no protocol arg
+    expect(out.headers.get('x-wave-declared-protocol')).toBeNull();
+  });
 });

@@ -61,12 +61,16 @@ interface SocketAttachment {
   sessionId: string;
   role: 'pending' | 'publisher' | 'subscriber';
   org?: string; // #284: gateway-injected x-wave-org captured at upgrade, so a hibernation wake keeps it
+  protocol?: string; // task#14: EXPLICITLY declared origin protocol (x-wave-declared-protocol), e.g. 'dante'
 }
 
 interface SessionState {
   trackKey: string;
   publisherSessionId: string | null;
   publisherOrg: string | null; // #284: the publisher's billing org (from x-wave-org); null = unattributed
+  // task#14: the publisher-DECLARED protocol (never inferred from the namespace) captured at upgrade;
+  // null → usage-emit defaults to 'moq'. Set ONLY from the verified x-wave-declared-protocol header.
+  publisherProtocol: string | null;
   subscriberCount: number;
   publisherStartedAt: string | null;
   lastActivityAt: string | null;
@@ -86,6 +90,7 @@ export class MOQSessionDurableObject {
   private sockets = new Map<string, WebSocket>(); // sessionId → socket
   private socketIds = new WeakMap<WebSocket, string>();
   private sessionOrgs = new Map<string, string>(); // #284: sessionId → x-wave-org (rebuilt from attachments on wake)
+  private sessionProtocols = new Map<string, string>(); // task#14: sessionId → declared protocol (rebuilt on wake)
   private rehydrated = false;
   private metrics: MetricsCollector;
 
@@ -120,6 +125,7 @@ export class MOQSessionDurableObject {
       this.sockets.set(att.sessionId, ws);
       this.socketIds.set(ws, att.sessionId);
       if (att.org) this.sessionOrgs.set(att.sessionId, att.org); // #284: keep the billing org across hibernation
+      if (att.protocol) this.sessionProtocols.set(att.sessionId, att.protocol); // task#14: keep declared protocol
       if (att.role === 'publisher' || att.role === 'subscriber') restored.push({ sessionId: att.sessionId, role: att.role });
     }
     if (restored.length) this.relay.hydrate(restored);
@@ -128,8 +134,16 @@ export class MOQSessionDurableObject {
   /** Persist a socket's learned role into its attachment so a hibernation wake can rebuild the relay. */
   private setRole(sessionId: string, role: 'publisher' | 'subscriber'): void {
     const ws = this.sockets.get(sessionId);
-    // Preserve the captured org (#284) — re-serializing without it would drop the publisher's billing org.
-    if (ws) ws.serializeAttachment({ sessionId, role, org: this.sessionOrgs.get(sessionId) } satisfies SocketAttachment);
+    // Preserve the captured org (#284) + declared protocol (task#14) — re-serializing without them would
+    // drop the publisher's billing attribution.
+    if (ws) {
+      ws.serializeAttachment({
+        sessionId,
+        role,
+        org: this.sessionOrgs.get(sessionId),
+        protocol: this.sessionProtocols.get(sessionId),
+      } satisfies SocketAttachment);
+    }
   }
 
   private async load(): Promise<SessionState> {
@@ -143,6 +157,7 @@ export class MOQSessionDurableObject {
       trackKey: this.state.id.toString(),
       publisherSessionId: null,
       publisherOrg: null,
+      publisherProtocol: null,
       subscriberCount: 0,
       publisherStartedAt: null,
       lastActivityAt: null,
@@ -168,7 +183,11 @@ export class MOQSessionDurableObject {
       // #284: capture the gateway-injected principal org so a publisher session can be billed at close.
       // Absent (anonymous / direct traffic) → null → usage emit is skipped (we never fabricate an org).
       const org = request.headers.get('x-wave-org')?.trim() || null;
-      return this.handleWebSocket(url, org);
+      // task#14: capture the EXPLICITLY DECLARED origin protocol (e.g. 'dante'), set ONLY by
+      // withVerifiedPrincipal from the signed join-token claim — never inferred from the namespace, and
+      // never trusted from an unverified client header. Absent → usage-emit defaults to 'moq'.
+      const protocol = request.headers.get('x-wave-declared-protocol')?.trim() || null;
+      return this.handleWebSocket(url, org, protocol);
     }
 
     const session = await this.load();
@@ -214,7 +233,7 @@ export class MOQSessionDurableObject {
 
   // ── WebSocket relay ───────────────────────────────────────────────────────────────────────────
 
-  private handleWebSocket(url: URL, org: string | null): Response {
+  private handleWebSocket(url: URL, org: string | null, protocol: string | null): Response {
     const max = parseInt(this.env.MAX_SUBSCRIBERS_PER_TRACK, 10) || 1000;
     const isSubscribe = url.pathname.includes('/subscribe/');
     if (isSubscribe && this.relay.subscriberCount >= max) {
@@ -231,7 +250,13 @@ export class MOQSessionDurableObject {
     // attachment; the relay role is filled in once the first control message reveals it (setRole).
     this.state.acceptWebSocket(server, [sessionId]);
     if (org) this.sessionOrgs.set(sessionId, org); // #284: remember the billing org for this connection
-    server.serializeAttachment({ sessionId, role: 'pending', org: org ?? undefined } satisfies SocketAttachment);
+    if (protocol) this.sessionProtocols.set(sessionId, protocol); // task#14: remember the declared protocol
+    server.serializeAttachment({
+      sessionId,
+      role: 'pending',
+      org: org ?? undefined,
+      protocol: protocol ?? undefined,
+    } satisfies SocketAttachment);
     this.sockets.set(sessionId, server);
     this.socketIds.set(server, sessionId);
 
@@ -304,11 +329,12 @@ export class MOQSessionDurableObject {
       this.sockets.delete(sessionId);
       this.socketIds.delete(ws);
     }
-    // removeSession emits publish_end for a closing publisher → applyEvents flushes its usage (#284)
-    // using session.publisherOrg, so drop this socket's org AFTER applyEvents has run.
+    // removeSession emits publish_end for a closing publisher → applyEvents flushes its usage (#284/task#14)
+    // using session.publisherOrg/publisherProtocol, so drop this socket's org+protocol AFTER applyEvents runs.
     const events = this.relay.removeSession(sessionId);
     if (events.length) await this.applyEvents(events);
     this.sessionOrgs.delete(sessionId);
+    this.sessionProtocols.delete(sessionId);
   }
 
   private send(sessionId: string, kind: number, frame: Uint8Array): void {
@@ -452,6 +478,9 @@ export class MOQSessionDurableObject {
           // #284: attribute the publisher's billing org from the principal captured at WS upgrade.
           // null (anonymous / no gateway principal) → the close-time emit skips (never fabricate an org).
           session.publisherOrg = this.sessionOrgs.get(e.sessionId) ?? null;
+          // task#14: attribute the publisher-DECLARED protocol (e.g. 'dante') captured at WS upgrade from
+          // the verified join-token claim. null → usage-emit defaults to 'moq' (unchanged behavior).
+          session.publisherProtocol = this.sessionProtocols.get(e.sessionId) ?? null;
           break;
         case 'publish_end': {
           // #284: the publisher session ended → flush its accumulated REAL usage (bytes/frames/reconnects
@@ -470,6 +499,7 @@ export class MOQSessionDurableObject {
               frames: meter.frames,
               reconnects: meter.reconnects,
               sessionMs,
+              protocol: session.publisherProtocol ?? undefined, // task#14: default 'moq' inside usage-emit
             }),
           );
           // Finalize the session recording + register it (lights the clip/replay chain). Done before the
@@ -479,6 +509,7 @@ export class MOQSessionDurableObject {
           session.publisherSessionId = null;
           session.publisherStartedAt = null;
           session.publisherOrg = null;
+          session.publisherProtocol = null;
           break;
         }
         case 'subscribe':

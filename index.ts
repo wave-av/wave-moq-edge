@@ -111,7 +111,9 @@ async function handlePublish(env: Env, namespace: string, track: string, request
     // SIGNED claims; then STRIP client principal headers so the DO trusts only the verified values.
     const v = await verifyJoin(env, request, namespace, track, MOQ_SCOPE_WRITE);
     if (!v.ok) return joinDenied(v.code, v.status, namespace, track);
-    outbound = withVerifiedPrincipal(request, v.org, v.scope);
+    // task#14: thread the publisher-DECLARED protocol (signed claim only) so a Dante-origin session bills
+    // as duration_ms:dante instead of the plain-moq default; absent → v.protocol is undefined → unchanged.
+    outbound = withVerifiedPrincipal(request, v.org, v.scope, v.protocol);
   } else {
     if (mode === 'shadow') {
       // Observe-only: verify the token if present and log the verdict, but do NOT reject — the legacy path
