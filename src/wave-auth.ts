@@ -204,8 +204,8 @@ export const WAVE_DECLARED_PROTOCOL_HEADER = 'x-wave-declared-protocol';
  * {@link WAVE_DECLARED_PROTOCOL_HEADER} (mirrors the gateway's scopes.ts PROTOCOL_RESOURCES — the same
  * set usage.ts sources its `duration_ms:<protocol>` billing dimensions from). Defense-in-depth: even if a
  * future regression let an unverified value reach the DO, an unrecognized string can never bill a
- * dimension that doesn't exist. Duplicated here (not imported cross-repo) because wave-moq-edge and
- * wave-gateway are separate deployables; keep in sync with wave-gateway's PROTOCOL_RESOURCES.
+ * dimension that doesn't exist. Duplicated here (not imported cross-repo) because the relay and
+ * the gateway are separate deployables; keep in sync with the gateway's PROTOCOL_RESOURCES.
  */
 export const KNOWN_DECLARABLE_PROTOCOLS = new Set(['srt', 'ndi', 'dante', 'omt', 'moq']);
 
