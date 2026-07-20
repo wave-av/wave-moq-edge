@@ -4,29 +4,27 @@
 // bare HTML the chassis shell (nav, manifest, JSON-LD, theme-color) never renders.
 import { shell } from '@wave-av/spoke-chassis';
 
-export const LANDING_INNER = `<h1>wave <span class="acc">Media over QUIC</span></h1>
-<p class="sub">Sub-second live media at the edge — IETF MoQ Transport (preferred draft-18, negotiation draft-07..draft-18) relay on Cloudflare Workers. Built by WAVE Online.</p>
-<div><span class="tag">MoQ</span><span class="tag">WebTransport</span><span class="tag">QUIC</span><span class="tag">edge</span><span class="tag">sub-second</span></div>
-<pre>  encoder / publisher
-    │
-    ▼   MoQ relay on the WAVE protocol plane
-  POST <span class="acc">/v1/publish/:namespace/:track</span>
-    │
-    ├── WebTransport upgrade → live relay publisher session
-    └── <span class="dim">fan-out to all subscribers via Durable Object</span>
+export const LANDING_INNER = `<div class="hero">
+<div class="kicker">WAVE · MoQ Edge</div>
+<h1>Your live stream stops arriving late.</h1>
+<p class="lead">moq-edge moves live media sub-second across Cloudflare's global edge — publish a track, subscribe to it, and every viewer sees the moment while it's still the moment. Live now on IETF MoQ draft-18. MIT open source.</p>
+<div class="btns">
+  <a class="btn primary" href="https://github.com/wave-av/wave-moq-edge#quick-start">Publish your first track →</a>
+  <a class="btn ghost" href="https://wave.online/enterprise">Talk to sales</a>
+</div>
+</div>
 
-  viewer / subscriber
-    │
-    ▼
-  GET  <span class="acc">/v1/subscribe/:namespace/:track</span>
-    │
-    └── <span class="dim">WebTransport upgrade → relay subscriber session</span>
-</pre>
+<h2>No CDN to build. No HLS to stitch.</h2>
+<p class="sub">It's live right now at moq.wave.online on IETF MoQ <span class="acc">draft-18</span> — the current working draft, not a someday. One Durable Object per track is the rendezvous: publishers write to it, and the edge fans each object out to every subscriber across Cloudflare's global network. You bring the encoder; WAVE moves the frames sub-second. <span class="good">MIT open source — read every byte.</span></p>
 <div class="row"><span class="k">publish track</span><span class="dim">POST <span class="acc">/v1/publish/:namespace/:track</span></span></div>
 <div class="row"><span class="k">subscribe to track</span><span class="dim">GET <span class="acc">/v1/subscribe/:namespace/:track</span></span></div>
 <div class="row"><span class="k">track metadata</span><span class="dim">GET <span class="acc">/v1/track/:namespace/:track</span></span></div>
 <div class="row"><span class="k">active tracks</span><span class="dim">GET <span class="acc">/v1/announce</span></span></div>
 <div class="row"><span class="k">MoQ catalog</span><span class="dim">GET <span class="acc">/v1/catalog</span></span></div>
+<div class="row"><span class="k">liveness</span><span class="dim">GET <span class="acc">/health</span></span></div>
+
+<h2>The fast floor under the WAVE stack</h2>
+<p class="sub">moq-edge is the bottom layer of the WAVE stack — pure transport that moves bytes and nothing else. Everything else composes on top: capability-token auth (<span class="acc">moq:read</span> / <span class="acc">moq:write</span> scopes), recording-to-R2 for replay, per-client bitrate, analytics, and protocol adapters that bridge WebRTC, SRT, and HLS-LL into the same MoQ plane. One live-media substrate for the agentic internet.</p>
 <p class="sub" style="margin-top:1.4rem">Open source under MIT. Canonical source at
   <a href="https://github.com/wave-av/wave-moq-edge" rel="noopener">github.com/wave-av/wave-moq-edge</a>.
   Spec compliance reports and interop testing welcome.</p>`;
@@ -34,17 +32,17 @@ export const LANDING_INNER = `<h1>wave <span class="acc">Media over QUIC</span><
 export function landingPage(): string {
   return shell({
     product: 'Media over QUIC',
-    title: 'wave Media over QUIC — Sub-second live media at the edge',
-    description: 'The WAVE MoQ relay — IETF draft-ietf-moq-transport-18 over WebTransport on Cloudflare Workers. Publish a track, fan out to thousands of subscribers in sub-second latency.',
+    title: 'Your live stream stops arriving late — WAVE MoQ Edge',
+    description: 'moq-edge moves live media sub-second across Cloudflare\'s global edge — publish a track, subscribe to it, and every viewer sees the moment while it\'s still the moment. Live now on IETF MoQ draft-18. MIT open source.',
     url: 'https://moq.wave.online',
-    keywords: 'MoQ, media over QUIC, WebTransport, low latency, live streaming, IETF, WAVE',
+    keywords: 'MoQ, live streaming, low latency, sub-second, IETF draft-18, edge relay, WAVE',
     inner: LANDING_INNER,
     accentHex: '#00d4d5',
     ldHost: 'moq.wave.online',
-    ldTagline: 'Sub-second live media at the edge via IETF MoQ Transport',
+    ldTagline: 'Your live stream stops arriving late.',
     cta: {
-      primaryLabel: 'Open source on GitHub →',
-      primaryHref: 'https://github.com/wave-av/wave-moq-edge',
+      primaryLabel: 'Publish your first track →',
+      primaryHref: 'https://github.com/wave-av/wave-moq-edge#quick-start',
       salesLabel: 'Talk to sales',
       salesHref: 'https://wave.online/enterprise',
       phrases: ['Publish a track', 'Subscribe globally', 'Sub-second latency', 'IETF draft-18', 'Durable Object fan-out'],
