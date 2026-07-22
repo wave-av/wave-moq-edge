@@ -33,6 +33,10 @@ permissions:
   checks: read
   statuses: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   evaluate:
     # Defense in depth: never even start for drafts or fork PRs.
