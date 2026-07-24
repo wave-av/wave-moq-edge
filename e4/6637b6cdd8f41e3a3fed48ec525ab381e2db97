@@ -1,0 +1,27 @@
+moq-session-do.ts
+  s_db94f917bdf4ff::t_b6cc4c9e68531c 481-502
+  s_db94f917bdf4ff::t_b73e735bc97246 37-43
+  s_db94f917bdf4ff::t_612068df1ae533 113-122
+  s_db94f917bdf4ff::t_5e9284613cf0a3 363-367,371-380,384-390,480
+  s_db94f917bdf4ff::t_4ff55cab624830 573-575
+  s_db94f917bdf4ff::t_e0ac3a2668034d 594-597
+__tests__/relay-soak-survival.test.ts
+  s_db94f917bdf4ff::t_620faaa76e61f2 1-178,180-244
+  s_db94f917bdf4ff::t_502f142f697e30 179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e46637b6cdd8f41e3a3fed48ec525ab381e2db97",
+  "prompts": {},
+  "sessions": {
+    "s_db94f917bdf4ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "79dc6e12-ee6f-4616-bc24-bbd40d39f3a8",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
