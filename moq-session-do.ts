@@ -34,6 +34,13 @@ import type { DedupIndex } from './dedup-index';
 import { registerRecording } from './register-recording';
 import { KNOWN_DECLARABLE_PROTOCOLS } from './src/wave-auth';
 
+// Soak-survival (60-min prod soak lost 36% audio / 71% video): media (OBJECT) frames are loss-tolerant,
+// so a backpressured subscriber socket must DROP frames rather than self-close the whole session.
+const MAX_SEND_BUFFER_BYTES = 8 * 1024 * 1024; // above this, drop OBJECT frames instead of queuing them
+// Recording (R2 multipart append) must run in a single ORDER-PRESERVING chain, off the awaited hot
+// path — bounded so a slow/backpressured R2 write can never stall the publisher receive path.
+const MAX_RECORD_QUEUE = 64; // in-flight+queued record appends beyond this are dropped, not queued
+
 interface Env {
   MOQ_TRACK_REGISTRY: KVNamespace;
   MOQ_RECORDINGS: R2Bucket;
@@ -102,6 +109,16 @@ export class MOQSessionDurableObject {
   private recorder: SessionRecorder | SingleInstanceWriter | null = null;
   private recorderLoaded = false; // whether we've checked storage for a resumable recorder this lifetime
   private dedupIndex: DedupIndex | null = null; // memoized cross-worker dedup index (SB-P2; built from WAVE_STORAGE_METER)
+
+  // Soak-survival recording queue: a single serialized chain (order matters for R2 multipart append),
+  // bounded so R2 latency can never backpressure the relay's awaited object-received path.
+  private recordTail: Promise<void> = Promise.resolve();
+  private recordDepth = 0; // records currently queued/in-flight on recordTail
+  private recordDropped = 0; // observability: records dropped because the queue was at MAX_RECORD_QUEUE
+
+  // Soak-survival send: observability counter for OBJECT frames dropped on backpressure (never closes
+  // the session for a loss-tolerant media frame — see send()).
+  private sendDrops = 0;
 
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
@@ -343,12 +360,34 @@ export class MOQSessionDurableObject {
     this.sessionProtocols.delete(sessionId);
   }
 
+  /**
+   * Soak-survival: OBJECT frames (media) are loss-tolerant fan-out — a slow subscriber must have frames
+   * DROPPED, never self-close the whole session (a 60-min prod soak lost 36% audio / 71% video to this).
+   * CONTROL frames are NOT loss-tolerant and still self-close on a genuine send failure.
+   */
   private send(sessionId: string, kind: number, frame: Uint8Array): void {
     const ws = this.sockets.get(sessionId);
     if (!ws) return;
+    if (kind === WS_KIND.OBJECT) {
+      // Defensive read: bufferedAmount is part of the standard WebSocket API but not in every CF type decl.
+      const buffered = (ws as unknown as { bufferedAmount?: number }).bufferedAmount ?? 0;
+      if (buffered > MAX_SEND_BUFFER_BYTES) {
+        // Backpressured subscriber: drop this frame rather than queue (queuing would itself grow memory
+        // unbounded) or close (media loss is recoverable; a session drop is not).
+        this.sendDrops++;
+        return;
+      }
+    }
     try {
       ws.send(tagFrame(kind, frame));
     } catch {
+      const readyState = (ws as unknown as { readyState?: number }).readyState;
+      if (readyState === 1 && kind === WS_KIND.OBJECT) {
+        // Socket is still open; the throw was transient backpressure on a loss-tolerant media frame —
+        // drop it and keep the session alive.
+        this.sendDrops++;
+        return;
+      }
       void this.onClose(sessionId);
     }
   }
@@ -439,6 +478,29 @@ export class MOQSessionDurableObject {
   }
 
   /**
+   * Soak-survival: enqueue a record append onto the SERIAL recordTail chain instead of awaiting it inline
+   * on the object-received hot path (R2 multipart append latency must never stall the publisher receive
+   * path / fan-out). Order-preserving (chained, never concurrent) and BOUNDED — beyond MAX_RECORD_QUEUE
+   * we drop rather than let a slow R2 write grow an unbounded backlog. No-op (identical to today) when
+   * recording isn't provisioned for this session.
+   */
+  private enqueueRecord(session: SessionState, payload: Uint8Array): void {
+    if (!this.recordingEnabled(session)) return;
+    if (this.recordDepth >= MAX_RECORD_QUEUE) {
+      this.recordDropped++;
+      return;
+    }
+    this.recordDepth++;
+    this.recordTail = this.recordTail
+      .then(() => this.recordPayload(session, payload))
+      .catch(() => {})
+      .finally(() => {
+        this.recordDepth--;
+      });
+    this.state.waitUntil(this.recordTail);
+  }
+
+  /**
    * Finalize the publisher session recording (if any) and register it with the gateway so the clip/replay
    * chain can resolve it. Fail-soft throughout. Called at publish_end with the org still attributed.
    */
@@ -508,6 +570,9 @@ export class MOQSessionDurableObject {
               protocol: session.publisherProtocol ?? undefined, // task#14: default 'moq' inside usage-emit
             }),
           );
+          // Drain the serialized record queue BEFORE finalize so the multipart upload isn't completed
+          // with an in-flight/lost tail append (records are enqueued off the hot path — see enqueueRecord).
+          await this.recordTail;
           // Finalize the session recording + register it (lights the clip/replay chain). Done before the
           // publisher fields are cleared so the org is still attributed; fail-soft, inert when unprovisioned.
           await this.finalizeAndRegister(session.publisherOrg, e.sessionId);
@@ -526,9 +591,10 @@ export class MOQSessionDurableObject {
           break;
         case 'object_received':
           session.objectsSeen += 1;
-          // Persist the publisher's media to R2 (inert unless recording is provisioned — recordPayload
-          // gates internally + fail-soft, so it never blocks fan-out, which already happened upstream).
-          if (e.payload && e.payload.length) await this.recordPayload(session, e.payload);
+          // Persist the publisher's media to R2 (inert unless recording is provisioned). Enqueued onto the
+          // serial recordTail chain rather than awaited inline — R2 latency must never stall the publisher
+          // receive path; enqueueRecord gates internally + fail-soft, so it never blocks fan-out.
+          if (e.payload && e.payload.length) this.enqueueRecord(session, e.payload);
           break;
         case 'group_complete':
           session.groupsSeen += 1;
