@@ -1,0 +1,19 @@
+{
+  "//": "The MoQ interop client is NODE code, not Worker code. It deliberately does not inherit the root tsconfig, whose `types: [@cloudflare/workers-types]` describes a runtime this tool never runs in. Keeping the two type universes apart is the point: the client exists precisely because the Worker runtime has no QUIC client API.",
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM"],
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true
+  },
+  "include": ["cli.ts", "src/**/*.ts", "__tests__/**/*.ts", "../../src/moq-wire.ts"]
+}
