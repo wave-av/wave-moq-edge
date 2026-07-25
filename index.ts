@@ -32,6 +32,9 @@ import { MetricsCollector } from './metrics-collector';
 import { scopeGate, orgGate, filterTracksForOrg, MOQ_SCOPE_WRITE, MOQ_SCOPE_READ, stripDeclaredProtocol } from './src/wave-auth';
 // #58 join-token verify (gateway-authorized, edge-verified, direct-media). Default-OFF via MOQ_JOIN_ENFORCE.
 import { joinMode, verifyJoin, joinDenied, withVerifiedPrincipal } from './src/moq-join-verify';
+// #112 join-token-authed discovery. Default-INERT via MOQ_DISCOVERY_JOIN; only engages when the flag
+// is on AND the request actually carries a join-token. Fail-closed on any verification failure.
+import { usesDiscoveryJoin, verifyDiscoveryJoin, filterTracksForJoin } from './src/moq-discovery-auth';
 import { sanitizeInjectedHeaders } from './src/gateway-trust';
 import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
@@ -215,6 +218,33 @@ async function handleTrackMetadata(env: Env, namespace: string, track: string): 
   return jsonResponse({ ...JSON.parse(entry), ...state });
 }
 
+/**
+ * The ONE discovery scoping decision, shared by /v1/announce and /v1/catalog.
+ *
+ * Two auth carriers, composed without either weakening the other (#112):
+ *   • join-token path — taken ONLY when MOQ_DISCOVERY_JOIN is on AND the request carries a
+ *     `?join=`/`x-wave-moq-join` token. The token is cryptographically verified (signature, issuer,
+ *     TTL/skew, moq:read scope) and the listing is scoped to its SIGNED `ns` claim — the namespace
+ *     the gateway actually authorized, never widened to the whole org. Any failure → EMPTY list;
+ *     there is no fall-through to the unfiltered list on a verification error.
+ *   • legacy path — everything else, byte-identical to today: the gateway-injected x-wave-org
+ *     org-scoping (no-op unless MOQ_REQUIRE_AUTH is on).
+ */
+async function scopeDiscovery<T>(
+  env: Env,
+  request: Request,
+  entries: T[],
+  namespaceOf: (e: T) => string
+): Promise<T[]> {
+  if (usesDiscoveryJoin(env, request)) {
+    const verdict = await verifyDiscoveryJoin(env, request);
+    return filterTracksForJoin(entries, verdict, namespaceOf);
+  }
+  // Tenant isolation (task #45): scope discovery to the caller's org so the relay
+  // is not a cross-org directory. No-op unless MOQ_REQUIRE_AUTH is enabled.
+  return filterTracksForOrg(entries, request, env, namespaceOf);
+}
+
 async function handleAnnounce(env: Env, request: Request): Promise<Response> {
   // List up to 100 announced tracks. KV LIST is paginated; cap for response size.
   const list = await env.MOQ_TRACK_REGISTRY.list({ prefix: 'track:', limit: 100 });
@@ -224,9 +254,7 @@ async function handleAnnounce(env: Env, request: Request): Promise<Response> {
       return v ? JSON.parse(v) : null;
     })
   )).filter(Boolean);
-  // Tenant isolation (task #45): scope discovery to the caller's org so the relay
-  // is not a cross-org directory. No-op unless MOQ_REQUIRE_AUTH is enabled.
-  const scoped = filterTracksForOrg(tracks, request, env, (t) => String(t?.namespace ?? ''));
+  const scoped = await scopeDiscovery(env, request, tracks, (t) => String(t?.namespace ?? ''));
   return jsonResponse({ tracks: scoped, count: scoped.length });
 }
 
@@ -251,9 +279,7 @@ async function handleCatalog(env: Env, request: Request): Promise<Response> {
     })
   );
   const all = raw.filter((e): e is TrackRegistryEntry => e !== null);
-  // Tenant isolation (task #45): a subscriber's catalog lists only its org's
-  // tracks. No-op unless MOQ_REQUIRE_AUTH is enabled.
-  const entries = filterTracksForOrg(all, request, env, (e) => e.namespace);
+  const entries = await scopeDiscovery(env, request, all, (e) => e.namespace);
 
   // Spec-shaped catalogformat-01 document (no WAVE-specific fields inside the document itself).
   return jsonResponse(buildMsfCatalog(entries));
