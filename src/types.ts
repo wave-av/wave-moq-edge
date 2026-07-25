@@ -76,4 +76,15 @@ export interface Env {
    *                   fail-closed. This closes the spoofable-header hole on the direct moq.wave.online path.
    */
   MOQ_JOIN_ENFORCE?: string;
+  /**
+   * #112 Join-token-authed DISCOVERY (/v1/announce + /v1/catalog) — default-INERT.
+   *   off (default)            → discovery is byte-identical to today (legacy x-wave-org scoping only);
+   *                              a `?join=` token on a discovery request is ignored, exactly as now.
+   *   on ("1"/"true"/"on"/"enforce") → a discovery request CARRYING a join-token is scoped to that
+   *                              token's cryptographically-verified `ns` claim (moq:read required);
+   *                              any verification failure lists NOTHING (fail-closed). A request
+   *                              WITHOUT a token still takes the unchanged legacy path.
+   * Uses the same WAVE_MOQ_JOIN_SECRET as MOQ_JOIN_ENFORCE; unset secret → lists nothing, never all.
+   */
+  MOQ_DISCOVERY_JOIN?: string;
 }
