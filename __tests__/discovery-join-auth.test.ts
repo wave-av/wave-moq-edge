@@ -20,7 +20,7 @@ import {
   peekClaimedResource,
 } from '../src/moq-discovery-auth';
 
-const SECRET = 'test-moq-join-secret-#112';
+const SECRET = 'test-moq-join-secret-#112'; // enforce-ignore — test-only HMAC key, not a real credential
 const NOW = 1_800_000_000;
 
 const ON = { MOQ_DISCOVERY_JOIN: 'true', WAVE_MOQ_JOIN_SECRET: SECRET };

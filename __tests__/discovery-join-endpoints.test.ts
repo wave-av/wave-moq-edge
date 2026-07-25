@@ -9,7 +9,7 @@ import { signJoinToken } from '../src/moq-join-token';
 import type { Env } from '../src/types';
 
 const HOST = 'https://moq.wave.online';
-const SECRET = 'e2e-moq-join-secret-#112';
+const SECRET = 'e2e-moq-join-secret-#112'; // enforce-ignore — test-only HMAC key, not a real credential
 
 const REGISTRY: Record<string, { namespace: string; track: string }> = {
   'track:acme-live/lens-wide': { namespace: 'acme-live', track: 'lens-wide' },
