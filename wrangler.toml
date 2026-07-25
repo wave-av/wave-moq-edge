@@ -78,6 +78,14 @@ MOQ_REQUIRE_AUTH = "true"
 # after the upstream entitlement fix, so valid clients can now obtain a join-token before dialing. REVERT =
 # "shadow" (or "off") + redeploy (instant, known-good). Fail-closed 503 if WAVE_MOQ_JOIN_SECRET unset (it is set).
 MOQ_JOIN_ENFORCE = "enforce"
+# #112 join-token-authed DISCOVERY (/v1/announce + /v1/catalog). Today discovery is scoped ONLY by the
+# gateway-injected x-wave-org header (#45), a DIFFERENT carrier than the join-token publish/subscribe use
+# — so a caller holding a valid join-token lists NOTHING on the direct moq.wave.online path. "true" lets a
+# discovery request that CARRIES a join-token be scoped to that token's cryptographically-verified `ns`
+# claim (moq:read required, same TTL/skew rules, org claim deliberately NOT used — no widening). Any
+# verification failure lists nothing; a request WITHOUT a token keeps the unchanged x-wave-org path.
+# COMMITTED INERT — flipping it on is an operator crossing (it makes a previously-empty listing non-empty).
+MOQ_DISCOVERY_JOIN = "false"
 # Slice B single-instance dedup activation (SB-P2.6). With the WAVE_STORAGE_METER service binding present
 # (below) AND a provisioned recording (org + gateway + token + bucket), a recording finalize hashes on
 # write and dedups per-org via the one canonical D1 index in wave-storage-meter. Off → plain SessionRecorder
