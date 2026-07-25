@@ -486,21 +486,37 @@ export interface MoqObject {
   objectId: bigint;
   status: number; // MOQ_OBJECT_STATUS.*
   payload: Uint8Array; // empty when status != NORMAL
+  /**
+   * Opaque Object Properties block (the §2.5 extension-header bag), carried VERBATIM. The relay MUST
+   * NOT modify it, MUST forward it and MUST cache it with the object — draft-19 §2.5 states this
+   * explicitly and draft-18's SUBGROUP_HEADER already reserves the PROPERTIES flag (0x01) plus the
+   * length-prefixed block that `skipObjectProperties` walks. This field is the datagram-form
+   * equivalent; `viewport-properties.ts` owns the codec for the block's contents.
+   *
+   * WIRE NOTE — the block is appended AFTER the payload, not before it. In native draft-18/-19 the
+   * extension headers precede the payload and are signalled by the datagram type byte. On the WS
+   * envelope (already a documented deviation: explicit Object Status + length-prefixed payload) a
+   * TRAILING optional block is what makes the change strictly additive: a frame with no properties is
+   * byte-identical to the pre-existing encoding, and an older decoder simply stops reading. When the
+   * WebTransport binding lands the block moves ahead of the payload with no change to its contents.
+   */
+  properties?: Uint8Array;
 }
 
 /**
  * Encode one object as an OBJECT_DATAGRAM (§11.3.1). We always include an explicit Object Status and
  * a length-prefixed payload so the framing is self-describing on a message-oriented transport (WS).
- * Layout: TrackAlias(i) GroupId(i) ObjectId(i) Status(i) PayloadLen(i) Payload.
+ * Layout: TrackAlias(i) GroupId(i) ObjectId(i) Status(i) PayloadLen(i) Payload [PropsLen(i) Props].
  */
 export function encodeObject(o: MoqObject): Uint8Array {
-  return new Writer()
+  const w = new Writer()
     .varint(o.trackAlias)
     .varint(o.groupId)
     .varint(o.objectId)
     .varint(o.status)
-    .bytesLP(o.status === MOQ_OBJECT_STATUS.NORMAL ? o.payload : new Uint8Array(0))
-    .bytes();
+    .bytesLP(o.status === MOQ_OBJECT_STATUS.NORMAL ? o.payload : new Uint8Array(0));
+  if (o.properties !== undefined && o.properties.length > 0) w.bytesLP(o.properties);
+  return w.bytes();
 }
 export function decodeObject(bytes: Uint8Array): MoqObject {
   const r = new Reader(bytes);
@@ -509,7 +525,8 @@ export function decodeObject(bytes: Uint8Array): MoqObject {
   const objectId = r.varint();
   const status = r.varintNum();
   const payload = r.bytesLP();
-  return { trackAlias, groupId, objectId, status, payload };
+  const properties = r.remaining > 0 ? r.bytesLP() : undefined;
+  return { trackAlias, groupId, objectId, status, payload, ...(properties ? { properties } : {}) };
 }
 
 // ── SUBGROUP_HEADER multi-object stream (§subgroup-header) ──────────────────────────────────────────

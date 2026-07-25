@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WAVE MoQ — browser subscriber</title>
+<!--
+  Zero-build, single-file MoQ subscriber for the WAVE MoQ edge relay.
+  Open it straight off disk (file://) or serve it: `python3 -m http.server -d examples 8080`.
+
+  TRANSPORT — this file used to be called webtransport.html. It is not WebTransport, and pretending
+  otherwise would be a lie in the one artifact a reader actually opens. IETF MoQ Transport runs over
+  WebTransport/QUIC, but Cloudflare Workers exposes no WebTransport *server* API, so this relay binds
+  MoQ to a WebSocket (see src/moq-wire.ts). Control and data share one message-oriented socket, so
+  every frame carries a 1-byte kind tag: 0x00 = control, 0x01 = object. Strip that byte and the body
+  is exact draft-ietf-moq-transport-18. The tag drops away unchanged the day a WebTransport server
+  binding lands, and this page becomes a WebTransport client with the same codec.
+
+  AUTH — the production relay runs MOQ_JOIN_ENFORCE=enforce and accepts only a short-lived join token
+  minted by the WAVE gateway, bound to this namespace/track. Paste one below or pass ?join=<token>.
+  Nothing is hardcoded and nothing is stored: the token lives in this tab and is never persisted.
+
+  MEDIA — the payloads carry the `wave-demo/1` envelope (examples/moq-demo-frame.md), which is an
+  EXAMPLES-ONLY convention so this page can tell an RGBA test frame from an H.264 access unit. RGBA
+  renders with no decoder at all; H.264 needs WebCodecs, and if WebCodecs is missing this page says so
+  on screen rather than showing a black canvas.
+-->
+<style>
+  :root { --bg:#0b0e10; --panel:#14181b; --line:#232a2f; --fg:#e8eef1; --muted:#8b9aa3; --accent:#00d4d5; --bad:#ff6b5e; --ok:#5ee07a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding:16px 20px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  h1 { font-size:16px; margin:0; letter-spacing:.02em; }
+  .sub { color:var(--muted); font-size:12px; }
+  main { display:grid; grid-template-columns:minmax(320px,1fr) 340px; gap:20px; padding:20px; align-items:start; }
+  @media (max-width:860px){ main { grid-template-columns:1fr; } }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:14px; }
+  label { display:block; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:10px 0 4px; }
+  input { width:100%; padding:8px 10px; background:#0d1113; color:var(--fg); border:1px solid var(--line); border-radius:6px; font:13px ui-monospace,SFMono-Regular,Menlo,monospace; }
+  button { margin-top:14px; width:100%; padding:10px; background:var(--accent); color:#06282a; border:0; border-radius:6px; font-weight:600; cursor:pointer; }
+  button.secondary { background:transparent; color:var(--muted); border:1px solid var(--line); margin-top:8px; }
+  canvas { width:100%; aspect-ratio:16/9; background:#000; border:1px solid var(--line); border-radius:10px; display:block; image-rendering:pixelated; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:12px; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:10px 12px; }
+  .stat .k { font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  .stat .v { font-size:22px; font-variant-numeric:tabular-nums; margin-top:2px; }
+  .note { font-size:12px; color:var(--muted); margin-top:12px; }
+  .banner { display:none; margin-top:12px; padding:10px 12px; border-radius:8px; font-size:13px; }
+  .banner.warn { display:block; background:#2a1f14; border:1px solid #5a3f21; color:#ffcf9a; }
+  .banner.err { display:block; background:#2a1416; border:1px solid #5a2126; color:#ffb1ab; }
+  #log { margin-top:12px; height:150px; overflow:auto; background:#0d1113; border:1px solid var(--line); border-radius:8px; padding:8px 10px; font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--muted); white-space:pre-wrap; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#555; margin-right:6px; vertical-align:middle; }
+  .dot.on { background:var(--ok); } .dot.bad { background:var(--bad); }
+</style>
+</head>
+<body>
+<header>
+  <h1>WAVE MoQ — browser subscriber</h1>
+  <span class="sub">draft-ietf-moq-transport-18 over <strong>WebSocket</strong> (Workers has no WebTransport server API)</span>
+</header>
+
+<main>
+  <section>
+    <canvas id="video" width="640" height="360"></canvas>
+    <div class="stats">
+      <div class="stat"><div class="k">latency p50</div><div class="v" id="p50">—</div></div>
+      <div class="stat"><div class="k">latency p95</div><div class="v" id="p95">—</div></div>
+      <div class="stat"><div class="k">objects/sec</div><div class="v" id="ops">—</div></div>
+      <div class="stat"><div class="k">bitrate</div><div class="v" id="rate">—</div></div>
+    </div>
+    <div id="codecBanner" class="banner"></div>
+    <div id="errBanner" class="banner"></div>
+    <p class="note">
+      Latency is <em>publisher capture clock → this tab's clock</em>, so it includes the publish path,
+      the relay hop and the browser receive path — and it is only as trustworthy as the two clocks.
+      On one machine (as <code>examples/interop-test.sh</code> runs it) that is exact; across
+      NTP-synced hosts it is approximate; across skewed hosts it is meaningless.
+    </p>
+    <div id="log"></div>
+  </section>
+
+  <aside class="panel">
+    <div><span class="dot" id="dot"></span><span id="state">idle</span></div>
+    <label for="relay">Relay</label>
+    <input id="relay" value="wss://moq.wave.online" spellcheck="false" />
+    <label for="ns">Namespace</label>
+    <input id="ns" value="demo" spellcheck="false" />
+    <label for="track">Track</label>
+    <input id="track" value="hello" spellcheck="false" />
+    <label for="join">Join token <span style="text-transform:none;letter-spacing:0">(or use <code>?join=…</code>)</span></label>
+    <input id="join" type="password" placeholder="paste the token minted by the WAVE gateway" spellcheck="false" autocomplete="off" />
+    <button id="go">Connect &amp; subscribe</button>
+    <button id="stop" class="secondary">Disconnect</button>
+    <p class="note">
+      Mint a token with your WAVE API key — the key never comes near this page:<br />
+      <code>curl -H "authorization: Bearer $WAVE_API_KEY" \<br />&nbsp;&nbsp;https://api.wave.online/v1/moq/subscribe/demo/hello</code>
+    </p>
+  </aside>
+</main>
+
+<script type="module">
+'use strict';
+
+// ── draft-18 wire subset (§1.4.1 varint, §10 control framing, §11 object model) ───────────────────
+// src/moq-wire.ts is the canonical, unit-tested codec. This is the ~80-line subscriber-side subset,
+// inlined so the page stays a single zero-build file. examples/interop-test.sh pins the two together
+// by running a real publish→subscribe round trip.
+
+const MOQ_MSG = { SETUP: 0x2f00, SUBSCRIBE: 0x3, SUBSCRIBE_OK: 0x4, REQUEST_ERROR: 0x5, REQUEST_OK: 0x7 };
+const MOQ_ROLE_SUBSCRIBER = 1;
+const WS_KIND = { CONTROL: 0x00, OBJECT: 0x01 };
+
+class Writer {
+  constructor() { this.buf = []; }
+  bytes() { return new Uint8Array(this.buf); }
+  u8(v) { this.buf.push(v & 0xff); return this; }
+  u16(v) { this.buf.push((v >> 8) & 0xff, v & 0xff); return this; }
+  raw(b) { for (const x of b) this.buf.push(x); return this; }
+  /** draft-18 §1.4.1 leading-1-bits varint (NOT RFC 9000's 2-bit prefix). */
+  varint(value) {
+    let v = typeof value === 'bigint' ? value : BigInt(Math.trunc(value));
+    if (v < 0n) throw new RangeError('varint must be non-negative');
+    let n = 9;
+    for (let k = 1; k <= 8; k++) if (v < 1n << BigInt(7 * k)) { n = k; break; }
+    const out = new Uint8Array(n);
+    let tmp = v;
+    for (let i = n - 1; i >= 0; i--) { out[i] = Number(tmp & 0xffn); tmp >>= 8n; }
+    if (n <= 8) out[0] |= (0xff << (9 - n)) & 0xff; else out[0] = 0xff;
+    return this.raw(out);
+  }
+  bytesLP(b) { return this.varint(b.length).raw(b); }
+  strLP(s) { return this.bytesLP(new TextEncoder().encode(s)); }
+  tuple(fields) { this.varint(fields.length); for (const f of fields) this.strLP(f); return this; }
+}
+
+class Reader {
+  constructor(b) { this.b = b; this.pos = 0; }
+  get remaining() { return this.b.length - this.pos; }
+  u8() { if (this.pos >= this.b.length) throw new RangeError('read past end'); return this.b[this.pos++]; }
+  u16() { return (this.u8() << 8) | this.u8(); }
+  raw(len) { if (this.pos + len > this.b.length) throw new RangeError('read past end'); const o = this.b.subarray(this.pos, this.pos + len); this.pos += len; return o; }
+  varint() {
+    const b0 = this.u8();
+    let lead = 0, probe = b0;
+    while (lead < 8 && probe & 0x80) { lead++; probe = (probe << 1) & 0xff; }
+    if (lead === 8) { let v = 0n; for (let i = 0; i < 8; i++) v = (v << 8n) | BigInt(this.u8()); return v; }
+    const n = lead + 1;
+    let v = BigInt(b0 & (0xff >> n));
+    for (let i = 1; i < n; i++) v = (v << 8n) | BigInt(this.u8());
+    return v;
+  }
+  varintNum() { return Number(this.varint()); }
+  bytesLP() { return this.raw(this.varintNum()); }
+}
+
+const frameControl = (type, payload) => new Writer().varint(type).u16(payload.length).raw(payload).bytes();
+const parseControl = (bytes) => { const r = new Reader(bytes); const type = r.varintNum(); const len = r.u16(); return { type, payload: r.raw(len) }; };
+const encodeSetup = (role) => frameControl(MOQ_MSG.SETUP, new Writer().varint(role).varint(0xffffn).varint(0).bytes());
+const encodeSubscribe = (requestId, ns, trackName) => frameControl(MOQ_MSG.SUBSCRIBE, new Writer().varint(requestId).tuple(ns).strLP(trackName).bytes());
+const decodeObject = (bytes) => { const r = new Reader(bytes); return { trackAlias: r.varint(), groupId: r.varint(), objectId: r.varint(), status: r.varintNum(), payload: r.bytesLP() }; };
+const tagFrame = (kind, body) => { const o = new Uint8Array(body.length + 1); o[0] = kind; o.set(body, 1); return o; };
+const untagFrame = (bytes) => ({ kind: bytes[0], body: bytes.subarray(1) });
+
+// ── wave-demo/1 envelope (examples only — see examples/moq-demo-frame.md) ─────────────────────────
+
+const DEMO = { MAGIC: 0x57, VERSION: 1, RGBA: 1, H264: 2, HEADER: 16 };
+function decodeDemoFrame(bytes) {
+  if (bytes.length < DEMO.HEADER || bytes[0] !== DEMO.MAGIC || bytes[1] !== DEMO.VERSION) return null;
+  const dv = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  return {
+    kind: bytes[2],
+    keyframe: (bytes[3] & 1) === 1,
+    captureMs: dv.getFloat64(4, true),
+    width: dv.getUint16(12, true),
+    height: dv.getUint16(14, true),
+    media: bytes.subarray(DEMO.HEADER),
+  };
+}
+
+// ── UI plumbing ───────────────────────────────────────────────────────────────────────────────────
+
+const $ = (id) => document.getElementById(id);
+const canvas = $('video');
+const ctx = canvas.getContext('2d');
+const off = document.createElement('canvas');
+const offCtx = off.getContext('2d');
+const logEl = $('log');
+
+function log(msg) {
+  const line = `${new Date().toISOString().slice(11, 23)}  ${msg}\n`;
+  logEl.textContent += line;
+  logEl.scrollTop = logEl.scrollHeight;
+}
+function setState(text, cls) { $('state').textContent = text; $('dot').className = `dot ${cls || ''}`; }
+function showError(msg) { const b = $('errBanner'); b.className = 'banner err'; b.textContent = msg; }
+function clearError() { $('errBanner').className = 'banner'; }
+
+// Honest degradation: say it on screen, do not fail silently to a black canvas.
+const hasWebCodecs = typeof window.VideoDecoder === 'function';
+{
+  const b = $('codecBanner');
+  if (!hasWebCodecs) {
+    b.className = 'banner warn';
+    b.textContent = 'WebCodecs is not available in this browser. Raw RGBA test tracks will still render; H.264 tracks cannot be decoded here. Try a current Chrome/Edge, or serve this page over https:// (WebCodecs needs a secure context).';
+  }
+}
+
+// Prefill from the query string so a link can carry ns/track and a token.
+{
+  const q = new URLSearchParams(location.search);
+  if (q.get('relay')) $('relay').value = q.get('relay');
+  if (q.get('ns')) $('ns').value = q.get('ns');
+  if (q.get('track')) $('track').value = q.get('track');
+  if (q.get('join')) { $('join').value = q.get('join'); log('join token taken from ?join= (it is not stored anywhere)'); }
+}
+
+// ── stats ─────────────────────────────────────────────────────────────────────────────────────────
+
+const WINDOW_MS = 5000;              // rolling window for p50/p95 and rates
+const samples = [];                  // { t, latency, bytes }
+function record(latency, bytes) {
+  const t = performance.now();
+  samples.push({ t, latency, bytes });
+  while (samples.length && t - samples[0].t > WINDOW_MS) samples.shift();
+}
+function pct(sorted, p) { return sorted.length ? sorted[Math.min(sorted.length - 1, Math.floor((p / 100) * sorted.length))] : null; }
+setInterval(() => {
+  if (!samples.length) return;
+  const lat = samples.map((s) => s.latency).filter((v) => Number.isFinite(v)).sort((a, b) => a - b);
+  const span = Math.max(1, (samples[samples.length - 1].t - samples[0].t)) / 1000;
+  const bytes = samples.reduce((n, s) => n + s.bytes, 0);
+  const p50 = pct(lat, 50), p95 = pct(lat, 95);
+  $('p50').textContent = p50 === null ? '—' : `${Math.round(p50)} ms`;
+  $('p95').textContent = p95 === null ? '—' : `${Math.round(p95)} ms`;
+  $('ops').textContent = (samples.length / span).toFixed(1);
+  $('rate').textContent = `${((bytes * 8) / span / 1e6).toFixed(2)} Mb/s`;
+}, 500);
+
+// ── rendering ─────────────────────────────────────────────────────────────────────────────────────
+
+function drawRGBA(width, height, media) {
+  if (media.length < width * height * 4) { log(`short RGBA frame: ${media.length} < ${width * height * 4}`); return; }
+  if (off.width !== width || off.height !== height) { off.width = width; off.height = height; }
+  offCtx.putImageData(new ImageData(new Uint8ClampedArray(media.slice(0, width * height * 4)), width, height), 0, 0);
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(off, 0, 0, canvas.width, canvas.height);
+}
+
+let decoder = null;
+function ensureDecoder() {
+  if (decoder || !hasWebCodecs) return decoder;
+  decoder = new VideoDecoder({
+    output: (frame) => { ctx.drawImage(frame, 0, 0, canvas.width, canvas.height); frame.close(); },
+    error: (e) => { log(`decoder error: ${e.message}`); showError(`WebCodecs decoder error: ${e.message}`); },
+  });
+  // Annex-B H.264: the description is carried in-band (SPS/PPS ride with each IDR), so no
+  // `description` is supplied and the codec string stays generic.
+  decoder.configure({ codec: 'avc1.42E01E', optimizeForLatency: true });
+  log('WebCodecs H.264 decoder configured (avc1.42E01E, Annex-B in-band parameter sets)');
+  return decoder;
+}
+
+let sawKeyframe = false;
+function decodeH264(demo) {
+  if (!hasWebCodecs) return;                       // banner already explains why nothing renders
+  if (!sawKeyframe && !demo.keyframe) return;      // must start at an IDR
+  sawKeyframe = true;
+  const dec = ensureDecoder();
+  if (!dec || dec.state === 'closed') return;
+  dec.decode(new EncodedVideoChunk({
+    type: demo.keyframe ? 'key' : 'delta',
+    timestamp: Math.round(demo.captureMs * 1000),
+    data: demo.media,
+  }));
+}
+
+// ── the subscribe session ─────────────────────────────────────────────────────────────────────────
+
+let ws = null;
+let subscribedAt = 0;
+
+function connect() {
+  disconnect();
+  clearError();
+  samples.length = 0;
+  sawKeyframe = false;
+
+  const relay = $('relay').value.trim().replace(/\/$/, '').replace(/^http:/, 'ws:').replace(/^https:/, 'wss:');
+  const ns = $('ns').value.trim();
+  const track = $('track').value.trim();
+  const join = $('join').value.trim();
+  if (!relay || !ns || !track) { showError('Relay, namespace and track are all required.'); return; }
+
+  const url = new URL(`${relay}/v1/subscribe/${encodeURIComponent(ns)}/${encodeURIComponent(track)}`);
+  if (join) url.searchParams.set('join', join);
+  // The token is never logged — only the shape of the URL is.
+  log(`connecting → ${url.origin}${url.pathname}${join ? '?join=<redacted>' : ' (no join token)'}`);
+  setState('connecting…', '');
+
+  ws = new WebSocket(url.toString());
+  ws.binaryType = 'arraybuffer';
+
+  ws.onopen = () => {
+    setState('connected', 'on');
+    log('WebSocket open — sending SETUP + SUBSCRIBE');
+    subscribedAt = Date.now();
+    ws.send(tagFrame(WS_KIND.CONTROL, encodeSetup(MOQ_ROLE_SUBSCRIBER)));
+    ws.send(tagFrame(WS_KIND.CONTROL, encodeSubscribe(1n, [ns], track)));
+  };
+
+  ws.onmessage = (ev) => {
+    let kind, body;
+    try { ({ kind, body } = untagFrame(new Uint8Array(ev.data))); } catch { return; }
+    if (kind === WS_KIND.CONTROL) {
+      let type;
+      try { ({ type } = parseControl(body)); } catch { return; }
+      if (type === MOQ_MSG.SETUP) log('← SETUP (relay advertises PUBSUB)');
+      else if (type === MOQ_MSG.SUBSCRIBE_OK) { log('← SUBSCRIBE_OK — subscribed'); setState('subscribed', 'on'); }
+      else if (type === MOQ_MSG.REQUEST_ERROR) { log('← REQUEST_ERROR'); showError('The relay rejected the subscription (REQUEST_ERROR).'); }
+      return;
+    }
+    if (kind !== WS_KIND.OBJECT) return;
+
+    let obj;
+    try { obj = decodeObject(body); } catch (e) { log(`undecodable object frame: ${e.message}`); return; }
+    const demo = decodeDemoFrame(obj.payload);
+    if (!demo) {
+      // A real track's payload is a codec bitstream with no demo envelope. Say so once, honestly,
+      // instead of drawing nothing and looking broken.
+      record(NaN, obj.payload.length);
+      if (!connect._warnedEnvelope) {
+        connect._warnedEnvelope = true;
+        showError(`This track's objects do not carry the wave-demo/1 envelope, so this page cannot tell what codec they are. Latency and rendering need examples/server-publisher.ts (or a catalog-aware client). Rates below are still real.`);
+      }
+      return;
+    }
+    // The relay replays its cached recent groups to a late joiner so decoding can start at a group
+    // boundary. Those frames were captured before we subscribed, so their age is cache depth, not
+    // transport latency — render them, but keep them out of the latency numbers.
+    const replay = demo.captureMs < subscribedAt;
+    record(replay ? NaN : Date.now() - demo.captureMs, obj.payload.length);
+    if (demo.kind === DEMO.RGBA) drawRGBA(demo.width, demo.height, demo.media);
+    else if (demo.kind === DEMO.H264) decodeH264(demo);
+  };
+
+  ws.onerror = () => {
+    setState('error', 'bad');
+    showError('WebSocket error. If the relay enforces join tokens, a missing or expired token closes the socket immediately — mint a fresh one and paste it above.');
+  };
+  ws.onclose = (ev) => { setState(`closed (${ev.code})`, 'bad'); log(`socket closed: code ${ev.code}${ev.reason ? ` — ${ev.reason}` : ''}`); };
+}
+
+function disconnect() {
+  if (ws) { try { ws.close(); } catch { /* already closed */ } ws = null; }
+  if (decoder && decoder.state !== 'closed') { try { decoder.close(); } catch { /* already closed */ } }
+  decoder = null;
+}
+
+$('go').addEventListener('click', connect);
+$('stop').addEventListener('click', () => { disconnect(); setState('idle', ''); log('disconnected'); });
+log('ready — MoQ draft-18 over WebSocket. Fill in the relay, namespace, track and join token, then Connect.');
+</script>
+</body>
+</html>
