@@ -15,5 +15,6 @@
     "resolveJsonModule": true
   },
   "include": ["index.ts", "moq-session-do.ts", "metrics-collector.ts", "src/**/*.ts", "__tests__/**/*.ts"],
-  "exclude": ["node_modules", "examples"]
+  "//": "`tools` is excluded because tools/moq-client is a NODE sidecar, not Worker code — it has its own tsconfig (tools/moq-client/tsconfig.json) with node types. Type-check it with `npm run typecheck:client`.",
+  "exclude": ["node_modules", "examples", "tools"]
 }
