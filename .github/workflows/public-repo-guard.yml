@@ -43,19 +43,24 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  # Keyed on the specific PR / comment / issue, not on github.ref. Issue events all
-  # report the default branch, so a ref-keyed group would let two comments cancel
-  # each other and leave one of them unscanned.
-  group: public-repo-guard-${{ github.event_name }}-${{ github.event.pull_request.number || github.event.comment.id || github.event.issue.number || github.ref }}
-  cancel-in-progress: true
+# Concurrency is per JOB, not per workflow: the two jobs want opposite behaviour.
+# A workflow-level group would force one policy on both, and it showed: rapid body
+# edits cancelled the tree job over and over, and every cancelled check-run stays
+# attached to the commit, so the PR reported UNSTABLE while the live runs were green.
 
 jobs:
   guard:
     name: Secrets + content policy
-    # The tree scan has nothing to say about an issue comment. Without this the org
-    # would pay for a full gitleaks run every time anyone commented anywhere.
-    if: github.event_name == 'pull_request' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    # Skips issue/comment events (the tree scan has nothing to say about a comment,
+    # and the org should not pay for a gitleaks run every time anyone posts one) and
+    # skips `edited` (a title or body edit does not change the tree).
+    if: >-
+      (github.event_name == 'pull_request' && github.event.action != 'edited')
+      || github.event_name == 'push'
+      || github.event_name == 'workflow_dispatch'
+    concurrency:
+      group: public-repo-guard-tree-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd  # v5.0.1
@@ -108,6 +113,16 @@ jobs:
   body-guard:
     name: Body content policy
     if: github.event_name == 'pull_request' || github.event_name == 'issues' || github.event_name == 'issue_comment'
+    concurrency:
+      # Keyed on the specific PR / comment / issue rather than github.ref, because
+      # issue events all report the default branch and a ref-keyed group would let
+      # two comments cancel each other, leaving one unscanned.
+      #
+      # cancel-in-progress is deliberately FALSE. Every version of a body deserves a
+      # verdict, the job is seconds long, and a cancelled check-run lingers on the
+      # commit and makes an otherwise-green PR look broken.
+      group: public-repo-guard-body-${{ github.event.pull_request.number || github.event.comment.id || github.event.issue.number || github.ref }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd  # v5.0.1
