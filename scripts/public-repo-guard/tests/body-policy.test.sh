@@ -75,6 +75,16 @@ expect 0 'explicit guard:allow with a reason' \
   'Example for the docs: wave-gateway holds EXAMPLE_SECRET — guard:allow documented-example'
 expect 0 'ordinary clean body' \
   'Bumps the draft revision and regenerates the fixtures. No behaviour change.'
+# Regression: the first CI run of this job failed on its own PR, because a review
+# bot edited the body to summarize the change and quoted the marker verbatim.
+expect 0 'marker MENTIONED in straight quotes is a description' \
+  'Blocks infra identifiers and markers (account_id, home paths, "internal-only" text).'
+expect 0 'marker MENTIONED in a code span' \
+  'The rule matches `internal-only` and `for internal use` in body text.'
+expect 0 'marker MENTIONED in smart quotes' \
+  'Blocks operator home paths and “internal-only” text.'
+expect 1 'marker USED unquoted still blocks' \
+  'Attaching the internal-only rollout plan; do not share outside the team.'
 
 # --- fail closed --------------------------------------------------------------
 # Invoked directly, not through expect(): expect() always materializes a file, so

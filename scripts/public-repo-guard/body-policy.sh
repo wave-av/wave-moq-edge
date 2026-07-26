@@ -85,7 +85,19 @@ check BLOCK internal-ip      '100\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\.[0-9]
 check BLOCK abs-user-path    '/(Users|home)/(?!runner/)[a-z][a-z0-9._-]+/'    'Operator absolute home path — leaks identity and local layout'
 
 # --- Self-identified internal material ---------------------------------------
-check BLOCK internal-marker  '\b(internal[- ]only|do\s+not\s+(share|publish|distribute)|for\s+internal\s+use)\b' 'Text self-identifies as not-for-public'
+# USE vs MENTION. A body that SAYS "internal-only" is leaking; a body that QUOTES
+# the phrase is describing a policy — including this one. The lookarounds exempt a
+# marker wrapped in straight, smart, or backtick quotes.
+#
+# Not hypothetical: the first run of this job failed on its own pull request,
+# because a review bot had edited the PR body to summarize the change and its
+# summary quoted the phrase verbatim. The line-level allowlist could not help —
+# that line named no gate. Only use-vs-mention separates the two.
+#
+# A quoted marker is also a trivial bypass, and that is an accepted trade. The
+# threat here is the ACCIDENTAL paste; a deliberate evader has easier routes, and
+# `guard:allow <reason>` already exists as the honest, visible one.
+check BLOCK internal-marker  '(?<![“"'"'"'`])\b(internal[- ]only|do\s+not\s+(share|publish|distribute)|for\s+internal\s+use)\b(?![”"'"'"'`])' 'Text self-identifies as not-for-public'
 
 # --- Private repo + operational detail (PROXIMITY, not bare name) ------------
 # The BODY profile deliberately DIVERGES from the FILE profile here, and the
