@@ -84,13 +84,14 @@ MOQ_JOIN_ENFORCE = "enforce"
 # discovery request that CARRIES a join-token be scoped to that token's cryptographically-verified `ns`
 # claim (moq:read required, same TTL/skew rules, org claim deliberately NOT used — no widening). Any
 # verification failure lists nothing; a request WITHOUT a token keeps the unchanged x-wave-org path.
-# FLIPPED ON 2026-07-26 (#112) — the operator named this crossing. Preflight before flipping, both
-# sides of the join path verified live: WAVE_MOQ_JOIN_SECRET is bound on wave-gateway (which MINTS
-# the token) AND on moq-edge-production (which VERIFIES it), so this cannot enable a capability whose
-# credential is absent. REVERT = "false" + redeploy (instant, known-good; the flag is read per-request
-# and nothing persists). A request WITHOUT a join-token keeps the unchanged x-wave-org path, so this
-# is strictly additive — it can only make a previously-empty listing non-empty for a caller who
-# already holds a cryptographically-valid token scoped to that ns.
+# FLIPPED ON 2026-07-26 (#112) — the operator named this crossing. Preflight before flipping: both
+# sides of the join path were verified live to carry WAVE_MOQ_JOIN_SECRET — the upstream minting
+# service and this relay (moq-edge-production) — so this cannot enable a capability whose credential
+# is absent, which is what the fail-closed 503 above exists to catch. REVERT = "false" + redeploy
+# (instant, known-good; the flag is read per-request and nothing persists). A request WITHOUT a
+# join-token keeps the unchanged x-wave-org path, so this is strictly additive — it can only make a
+# previously-empty listing non-empty for a caller already holding a cryptographically-valid token
+# scoped to that ns.
 MOQ_DISCOVERY_JOIN = "true"
 # Slice B single-instance dedup activation (SB-P2.6). With the WAVE_STORAGE_METER service binding present
 # (below) AND a provisioned recording (org + gateway + token + bucket), a recording finalize hashes on
