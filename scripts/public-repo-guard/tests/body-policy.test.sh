@@ -47,7 +47,7 @@ expect 1 'private repo + secret count' \
 expect 1 'private repo + service binding' \
   'This adds a service binding from the worker to agent-money for settlement.'
 expect 1 'operator home path' \
-  'Repro: run it from /Users/someoperator/Documents/notes and it fails.'
+  'Repro: run it from /Users/someoperator/Documents/notes and it fails.'  # enforce-ignore (fixture)
 expect 1 'internal-only marker' \
   'Attaching the internal-only rollout plan for context.'
 # Assembled at run time rather than written as a literal: a fixture that LOOKS like
@@ -68,7 +68,7 @@ expect 0 'two private repos, no operational detail' \
 expect 0 'credential NAME with no private repo nearby' \
   'The handler now reads SOME_API_TOKEN from the environment instead of a literal.'
 expect 0 'public runner path is not an operator path' \
-  'CI checks out to /home/runner/work/repo/repo before the scan runs.'
+  'CI checks out to /home/runner/work/repo/repo before the scan runs.'  # enforce-ignore (fixture)
 expect 0 'talking about the control' \
   'body-policy blocks a private repo named next to a SECRET_TOKEN; that is intended.'
 expect 0 'explicit guard:allow with a reason' \
