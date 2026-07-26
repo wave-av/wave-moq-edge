@@ -13,10 +13,11 @@ name: public-repo-guard
 # wave-av/.github must not be able to alter another repo's secret scanner). The
 # gitleaks binary is version-pinned AND SHA-256-verified before it runs.
 #
-# To install on a new repo, copy all three files together:
+# To install on a new repo, copy all four files together:
 #   .github/workflows/public-repo-guard.yml
 #   .gitleaks.toml
 #   scripts/public-repo-guard/content-policy.sh
+#   scripts/public-repo-guard/body-policy.sh
 #
 # Scan scope: the published working TREE (gitleaks --no-git), NOT git history. The
 # goal is "what is public right now is clean", so a shallow checkout is sufficient.
@@ -25,21 +26,41 @@ name: public-repo-guard
 # path glob to a repo-root `.guardignore`, or extend the repo-local `.gitleaks.toml`.
 
 on:
+  # `edited` matters as much as `opened`: a body can be made to leak long after the
+  # PR is first raised, and until this workflow covered it, nothing ever re-scanned.
   pull_request:
+    types: [opened, edited, reopened, synchronize]
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [created, edited]
   push:
     branches: [main, master]
   workflow_dispatch:
 
+# `pull_request`, deliberately NOT `pull_request_target`: a fork PR must never get
+# a write token or repo secrets just because a gate wanted to read its body.
 permissions:
   contents: read
 
-concurrency:
-  group: public-repo-guard-${{ github.ref }}
-  cancel-in-progress: true
+# Concurrency is per JOB, not per workflow: the two jobs want opposite behaviour.
+# A workflow-level group would force one policy on both, and it showed: rapid body
+# edits cancelled the tree job over and over, and every cancelled check-run stays
+# attached to the commit, so the PR reported UNSTABLE while the live runs were green.
 
 jobs:
   guard:
     name: Secrets + content policy
+    # Skips issue/comment events (the tree scan has nothing to say about a comment,
+    # and the org should not pay for a gitleaks run every time anyone posts one) and
+    # skips `edited` (a title or body edit does not change the tree).
+    if: >-
+      (github.event_name == 'pull_request' && github.event.action != 'edited')
+      || github.event_name == 'push'
+      || github.event_name == 'workflow_dispatch'
+    concurrency:
+      group: public-repo-guard-tree-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd  # v5.0.1
@@ -71,3 +92,72 @@ jobs:
         env:
           GUARD_PRIVATE_REPOS: ${{ vars.GUARD_PRIVATE_REPOS }}
         run: bash scripts/public-repo-guard/content-policy.sh .
+
+      # The body gate's own fixtures. Its negatives are the load-bearing half — a
+      # leak gate that blocks legitimate cross-repo references gets switched off,
+      # and then it protects nothing. Runs here so a regression is caught by CI
+      # rather than by a leak.
+      - name: body policy self-test (fixtures)
+        run: bash scripts/public-repo-guard/tests/body-policy.test.sh
+
+  # The other half of a public repo's surface. `guard` above scans the published
+  # TREE; a PR/issue/comment BODY is just as world-readable and, until this job,
+  # was scanned by nothing server-side. That gap was real, not theoretical: a PR
+  # was blocked for naming a private repo in wrangler.toml while the very same
+  # name, with more operational detail attached, sat unchallenged in its body.
+  #
+  # Honest about what it can and cannot do. On a PR this PREVENTS the merge. On an
+  # issue or comment the text is already public the moment it posts, so this is
+  # detection — it tells us to go redact, fast. Only the client-side pre-write hook
+  # can stop that class before publication.
+  body-guard:
+    name: Body content policy
+    if: github.event_name == 'pull_request' || github.event_name == 'issues' || github.event_name == 'issue_comment'
+    concurrency:
+      # Keyed on the specific PR / comment / issue rather than github.ref, because
+      # issue events all report the default branch and a ref-keyed group would let
+      # two comments cancel each other, leaving one unscanned.
+      #
+      # cancel-in-progress is deliberately FALSE. Every version of a body deserves a
+      # verdict, the job is seconds long, and a cancelled check-run lingers on the
+      # commit and makes an otherwise-green PR look broken.
+      group: public-repo-guard-body-${{ github.event.pull_request.number || github.event.comment.id || github.event.issue.number || github.ref }}
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd  # v5.0.1
+        with:
+          # Only the gate's own scripts are needed — no reason to pay for the whole
+          # tree on every comment.
+          sparse-checkout: scripts/public-repo-guard
+          sparse-checkout-cone-mode: false
+
+      - name: Install ripgrep
+        run: command -v rg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ripgrep)
+
+      # The body is read straight out of the event payload FILE and written to
+      # another file. It is never interpolated into a run: block and never placed
+      # in an environment variable, so shell metacharacters in a hostile PR body
+      # have nothing to act on. jq is preinstalled on the GitHub-hosted images.
+      - name: Materialize the untrusted title/body to a file
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/bodyscan"
+          # An UNRECOGNIZED payload shape must fail, never quietly scan nothing and
+          # report a pass. If the event schema ever moves, this job must go red
+          # rather than become a green rubber stamp over an unscanned body.
+          if [ "$(jq -r 'has("pull_request") or has("issue") or has("comment")' "$GITHUB_EVENT_PATH")" != "true" ]; then
+            echo "::error title=public-repo-guard (body-guard)::Event payload contains no pull_request/issue/comment object — refusing to report a pass on an unscanned body."
+            exit 1
+          fi
+          jq -r '[.pull_request.title, .pull_request.body,
+                  .issue.title, .issue.body,
+                  .comment.body]
+                 | map(select(. != null)) | join("\n")' \
+            "$GITHUB_EVENT_PATH" > "$RUNNER_TEMP/bodyscan/body.txt"
+          echo "scanning $(wc -l < "$RUNNER_TEMP/bodyscan/body.txt") line(s) of body text"
+
+      - name: body policy (PR / issue / comment text)
+        env:
+          GUARD_PRIVATE_REPOS: ${{ vars.GUARD_PRIVATE_REPOS }}
+        run: bash scripts/public-repo-guard/body-policy.sh "$RUNNER_TEMP/bodyscan/body.txt"
