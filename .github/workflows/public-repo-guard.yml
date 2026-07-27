@@ -100,6 +100,9 @@ jobs:
       - name: body policy self-test (fixtures)
         run: bash scripts/public-repo-guard/tests/body-policy.test.sh
 
+      - name: content policy self-test (fixtures)
+        run: bash scripts/public-repo-guard/tests/content-policy.test.sh
+
   # The other half of a public repo's surface. `guard` above scans the published
   # TREE; a PR/issue/comment BODY is just as world-readable and, until this job,
   # was scanned by nothing server-side. That gap was real, not theoretical: a PR
