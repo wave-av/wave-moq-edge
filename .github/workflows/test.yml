@@ -61,4 +61,35 @@ jobs:
         run: npm run typecheck
 
       - name: Unit tests (hermetic — wire codec + relay)
-        run: npm test
+        # --coverage writes ./coverage/lcov.info via the v8 provider (see vitest.config.ts).
+        run: npm run test:coverage
+
+      - name: Upload coverage to Codecov
+        # CODECOV_TOKEN is a REPO-level Actions secret holding this repo's Codecov *upload* token.
+        # Codecov has two distinct credentials and they are not interchangeable: the org API/read
+        # token authenticates api.codecov.io, while only the per-repo upload token is accepted here.
+        # Least privilege: a leak of this value lets someone post coverage to this one repo.
+        # Private-repo uploads REQUIRE a token.
+        #
+        # Referenced at STEP level, never in a workflow-level `env:` — that would hand the value to
+        # every step in the job, including third-party actions.
+        #
+        # fail_ci_if_error: true is deliberate. The previous fleet-wide attempt at Codecov used
+        # `false` everywhere, which turned every rejected upload into a silent no-op — the direct
+        # cause of nothing ever being ingested across 135 repos. Loud beats invisible.
+        #
+        # if: always() so coverage still uploads when a test fails — a failing PR is exactly when
+        # the coverage delta is most worth seeing.
+        #
+        # NOTE: harden-runner above runs `egress-policy: audit`, which permits (and logs) the
+        # egress to codecov.io. If that is ever tightened to `block`, codecov.io and its storage
+        # endpoint must be added to the allowed-endpoints list or this step will fail.
+        if: always()
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          flags: worker
+          name: wave-moq-edge-worker
+          disable_search: true
+          fail_ci_if_error: true
