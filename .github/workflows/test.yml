@@ -61,4 +61,45 @@ jobs:
         run: npm run typecheck
 
       - name: Unit tests (hermetic — wire codec + relay)
-        run: npm test
+        # --coverage writes ./coverage/lcov.info via the v8 provider (see vitest.config.ts).
+        run: npm run test:coverage
+
+      - name: Upload coverage to Codecov
+        # CODECOV_TOKEN is a REPO-level Actions secret holding this repo's Codecov *upload* token.
+        # Codecov has two distinct credentials and they are not interchangeable: the org API/read
+        # token authenticates api.codecov.io, while only the per-repo upload token is accepted here.
+        # Least privilege: a leak of this value lets someone post coverage to this one repo.
+        #
+        # Referenced at STEP level, never in a workflow-level `env:` — that would hand the value to
+        # every step in the job, including third-party actions.
+        #
+        # fail_ci_if_error: true is deliberate. The previous fleet-wide attempt at Codecov used
+        # `false` everywhere, which turned every rejected upload into a silent no-op — the direct
+        # cause of nothing ever being ingested across 135 repos. Loud beats invisible.
+        #
+        # if: always() so coverage still uploads when a test fails — a failing PR is exactly when
+        # the coverage delta is most worth seeing.
+        #
+        # NOTE: harden-runner above runs `egress-policy: audit`, which permits (and logs) the
+        # egress to codecov.io. If that is ever tightened to `block`, codecov.io and its storage
+        # endpoint must be added to the allowed-endpoints list or this step will fail.
+        #
+        # This repo is PUBLIC, so the `if` also skips fork PRs. GitHub withholds secrets from a
+        # fork's workflow run, which would leave `token` empty and — because fail_ci_if_error is
+        # true — fail every external contributor's PR on a step they cannot possibly satisfy.
+        # Skipping is correct rather than merely quieter: the fork has nothing to upload with.
+        # Coverage for the merge commit is still recorded by the push-to-main run.
+        # (These are `if:` expressions, evaluated by the Actions expression engine and never
+        # interpolated into a shell — so this is not the `run:`-injection footgun.)
+        if: >-
+          always() &&
+          (github.event_name != 'pull_request' ||
+           github.event.pull_request.head.repo.full_name == github.repository)
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage/lcov.info
+          flags: worker
+          name: wave-moq-edge-worker
+          disable_search: true
+          fail_ci_if_error: true
