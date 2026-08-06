@@ -4,9 +4,19 @@ name: governance-enforce
 # PR diff via the @wave-av/governance package (the org fan-out channel). Diff-scoped: blocks NEW
 # violations without failing on legacy debt. Isolated install bypasses any min-release-age policy.
 # The org ruleset `governance-a-block-enforce` requires this job's `enforce` check.
+#
+# HARDENED 2026-08-05 (claude-workstation#1747). This file is the SOURCE the T4.9a fan-out
+# copied into 16 public repos, so its defects shipped 17 times. It could report PASS having
+# examined nothing. Five fixes, each marked at its site below. A gate may not return a passing
+# value for input it did not examine.
+#
 
 on:
   pull_request:
+  # A required check that never reports on an event the repo actually uses is a permanent
+  # deadlock, not a stricter gate. None of these repos runs a merge queue today; declaring
+  # `merge_group` costs nothing until one does, and closes that hole in advance.
+  merge_group:
   push:
     branches: [main, master]
 
@@ -14,15 +24,17 @@ permissions:
   contents: read
   packages: read
 
+# FIX 4 — a cancelled push run's commits were scanned by NOBODY. Every push run diffs only its
+# own before..HEAD range, so cancelling run N when run N+1 starts leaves N's commits permanently
+# unexamined. PR runs are safe to supersede: each one re-diffs the whole branch against its base.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   enforce:
     runs-on: ubuntu-latest
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
@@ -32,18 +44,57 @@ jobs:
         with:
           node-version: "22"
       - name: fetch governance enforcer (isolated install)
+        # FIX 1 — token scoped to THIS STEP. At job level it was also in scope for the step that
+        # executes the downloaded package, and for anything else the job ever grows.
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           mkdir -p "$RUNNER_TEMP/gov" && cd "$RUNNER_TEMP/gov"
+          trap 'rm -f "$RUNNER_TEMP/gov/.npmrc"' EXIT
           printf '@wave-av:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}\n' > .npmrc
-          npm install @wave-av/governance@^0.4.4 --no-save --no-audit --no-fund
+          # FIX 2 — --ignore-scripts. npm runs preinstall/install/postinstall by default, so this
+          # step would execute dependency-authored code with the registry token in its environment.
+          # FIX 3 — exact pin, and 0.4.6 specifically. `^0.4.4` resolved to 0.4.4, whose file lister
+          # is `catch { return []; }` — ANY git error became zero files and rendered as
+          # `OK[enforce]: 0 changed file(s) scanned`. 0.4.6 fails closed on a git error instead.
+          # A caret is also a standing authorization for whatever is published next; a bump is now
+          # a visible commit in this file.
+          npm install @wave-av/governance@0.4.6 --no-save --no-audit --no-fund --ignore-scripts
       - name: A_BLOCK enforce (secrets + hardcoded paths on the diff)
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          MERGE_BASE_SHA: ${{ github.event.merge_group.base_sha }}
           PUSH_BEFORE_SHA: ${{ github.event.before }}
         run: |
-          BASE="${PR_BASE_SHA:-$PUSH_BEFORE_SHA}"
-          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
-            BASE=$(git rev-parse HEAD~1 2>/dev/null || git rev-parse HEAD)
+          set -euo pipefail
+          ENFORCE="$RUNNER_TEMP/gov/node_modules/@wave-av/governance/bin/enforce.mjs"
+          BASE="${PR_BASE_SHA:-}"
+          [ -n "$BASE" ] || BASE="${MERGE_BASE_SHA:-}"
+          [ -n "$BASE" ] || BASE="${PUSH_BEFORE_SHA:-}"
+          # FIX 5 — fail CLOSED, and do not settle for a PARTIAL range either.
+          #
+          # This previously fell back to `BASE=HEAD`, and `--changed HEAD` diffs HEAD against
+          # itself: an empty diff, zero files scanned, job green.
+          #
+          # `HEAD~1` is the obvious replacement and is ALSO wrong — it scans exactly one commit,
+          # so a five-commit push whose base is indeterminate would examine the last one and
+          # report a confident pass on the other four. A narrowed scan reported as a full pass is
+          # the same defect in a quieter costume. (This is wave-av/wave-rig's reasoning, already
+          # correct on its main; the fan-out copied the broken shape from elsewhere.)
+          #
+          # A base can also be PRESENT and still unusable: a force-push leaves
+          # `github.event.before` pointing at a commit this checkout no longer contains.
+          #
+          # So: no resolvable base of any kind → diff against the EMPTY TREE, which makes every
+          # tracked file read as added and scans the whole repo. Loud, never partial, never empty.
+          # (`--all` also exists in 0.4.6 and would do most of this, but it is documented as NOT
+          # covering the diff-scoped over-grant detectors. Routing through the diff path with an
+          # empty base keeps every detector in play.)
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            BASE="$(git hash-object -t tree /dev/null)"
+            echo "::warning::indeterminate diff base (root commit, branch creation, or unreachable before-sha) — scanning the full tree against the empty-tree object so no commit is skipped"
           fi
           echo "diffing against $BASE"
-          node "$RUNNER_TEMP/gov/node_modules/@wave-av/governance/bin/enforce.mjs" --changed "$BASE"
+          exec node "$ENFORCE" --changed "$BASE"
