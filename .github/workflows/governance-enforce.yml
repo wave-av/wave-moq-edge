@@ -7,6 +7,7 @@ name: governance-enforce
 
 on:
   pull_request:
+  merge_group:
   push:
     branches: [main, master]
 
@@ -39,11 +40,17 @@ jobs:
       - name: A_BLOCK enforce (secrets + hardcoded paths on the diff)
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          MERGE_BASE_SHA: ${{ github.event.merge_group.base_sha }}
           PUSH_BEFORE_SHA: ${{ github.event.before }}
         run: |
-          BASE="${PR_BASE_SHA:-$PUSH_BEFORE_SHA}"
+          BASE="${PR_BASE_SHA:-${MERGE_BASE_SHA:-$PUSH_BEFORE_SHA}}"
           if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
-            BASE=$(git rev-parse HEAD~1 2>/dev/null || git rev-parse HEAD)
+            # Indeterminate base (first push / force-push). Do NOT silently scan a partial range —
+            # HEAD~1 would skip earlier commits in a multi-commit push and let a violation through
+            # (a config-no-silent-noop hole). Diff the full tree against git's empty-tree object so
+            # every introduced file is scanned; loud, never a silent empty/partial pass.
+            BASE=$(git hash-object -t tree /dev/null)
+            echo "::warning::indeterminate diff base; scanning full tree (empty-tree base) so no commit is skipped"
           fi
           echo "diffing against $BASE"
           node "$RUNNER_TEMP/gov/node_modules/@wave-av/governance/bin/enforce.mjs" --changed "$BASE"
