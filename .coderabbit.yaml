@@ -99,7 +99,12 @@ reviews:
       enabled: true
     semgrep:
       enabled: true
-    osv-scanner:
+    # The schema key is `osvScanner`, camelCase. This read `osv-scanner` since the file was
+    # written; `tools` allows additional properties, so CodeRabbit accepted the misspelling
+    # silently and ran no OSV scanning at all. Verified against the live v2 schema
+    # (storage.googleapis.com/coderabbit_public_assets/schema.v2.json, 2026-08-06): the 57 tool
+    # keys include `osvScanner` and do not include `osv-scanner`. (#1083)
+    osvScanner:
       enabled: true
     shellcheck:
       enabled: true
