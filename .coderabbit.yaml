@@ -30,29 +30,14 @@ reviews:
     labels:
       - "!skip-review"
 
-  # Automated reviewer: on a clean review CodeRabbit posts an approving GitHub review, which satisfies
-  # branch protection's required-review (the one missing link — automerge.yml then merges labeled PRs
-  # once required checks are green). enforce_admins stays ON; nothing is bypassed. Safety lines below
-  # keep the high-blast-radius classes human-reviewed.
-  auto_approve:
-    enabled: true
-    conditions:
-      # Raised from 5/100 so normal code/doc/template PRs flow; the foundation file-size gate (≤800)
-      # is the real size discipline, so mirror it here.
-      max_changed_files: 25
-      max_lines_changed: 800
-      allowed_severities:
-        - low
-        - medium
-    # NEVER auto-approve these — they always get a human:
-    #   workflows  (a CI change can exfiltrate secrets / weaken gates)
-    #   env/secret files
-    #   deploy/infra config (wrangler) — production-cutover class
-    excluded_paths:
-      - ".github/workflows/**"
-      - "**/.env*"
-      - "**/wrangler.toml"
-      - "**/wrangler.jsonc"
+  # ── auto_approve was REMOVED (inert) ──────────────────────────────────────
+  # `auto_approve` is not a key in CodeRabbit's live v2 schema
+  # (storage.googleapis.com/coderabbit_public_assets/schema.v2.json, re-verified 2026-08-06),
+  # so the block that used to sit here never did anything. The comment it carried was worse
+  # than the block: it claimed the auto-approval "satisfies branch protection's required
+  # review", which was never true — nothing in this file has ever posted a review. Removing
+  # it changes no behaviour. CodeRabbit's unearned approvals are vendor-side and no key here
+  # disables them; use branch protection requiring a human/CODEOWNERS review instead. (#1083)
 
   review_status: true
   request_changes_workflow: false
