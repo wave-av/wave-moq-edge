@@ -95,7 +95,7 @@ describe('E0 baseline: FIFO forward path', () => {
     );
   });
 
-  it('priority byte lives on the subgroup wire but is dead on the object forward path', () => {
+  it('priority byte is visible on subgroup wire but absent from object forwarding', () => {
     // (1) priority is a real wire field: it round-trips through subgroup-stream encode/decode
     const hdr: SubgroupHeader = {
       trackAlias: 1n,
@@ -110,7 +110,8 @@ describe('E0 baseline: FIFO forward path', () => {
     const subObjs = [{ objectId: 0n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([1, 2, 3]) }];
     expect(decodeSubgroupStream(encodeSubgroupStream(hdr, subObjs)).header.priority).toBe(200);
 
-    // (2) but the relay forward path never sees it: decodeObject yields a MoqObject with NO priority key
+    // (2) The relay currently accepts OBJECT frames, not subgroup-stream frames. Verify only the
+    // supported object forwarding representation: decodeObject yields NO priority key.
     const relay = new MoqRelay();
     attach(relay, 1);
     const frame = encodeObject({
@@ -127,7 +128,7 @@ describe('E0 baseline: FIFO forward path', () => {
     expect(Object.keys(decoded)).toEqual(['trackAlias', 'groupId', 'objectId', 'status', 'payload']);
 
     console.log(
-      'E0-BASELINE PRIORITY: encodeSubgroupStream/decodeSubgroupStream round-trip priority=200 (wire-visible); relay forward path decodeObject -> MoqObject has NO priority key (dead byte)'
+      'E0-BASELINE PRIORITY: encodeSubgroupStream/decodeSubgroupStream round-trip priority=200 (wire-visible); supported object forwarding decodeObject -> MoqObject has NO priority key (subgroup forwarding is not exercised)'
     );
   });
 });
@@ -183,6 +184,9 @@ describe('E0 baseline: per-object forward latency', () => {
       const max = sorted[sorted.length - 1];
       expect(sorted).toHaveLength(MEASURE);
       expect(p95).toBeGreaterThanOrEqual(p50);
+      // Deliberately generous CI budget: this is a regression guard, not a microbenchmark.
+      // The measured operation is decode + encode + fan-out + cache append.
+      expect(p95).toBeLessThanOrEqual(100_000);
 
       rows.push(
         `E0-BASELINE LATENCY subscribers=${subs} payload=${PAYLOAD_BYTES}B objects=${MEASURE} p50=${us(p50)}us p95=${us(p95)}us mean=${us(mean)}us max=${us(max)}us`
