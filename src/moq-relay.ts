@@ -36,6 +36,7 @@ import {
   encodeObject,
   type MoqObject,
 } from './moq-wire';
+import { orderByDeadline } from './moq-scheduler';
 
 /** A frame to deliver to a specific session (control reply or fanned-out object). */
 export interface Outbound {
@@ -64,6 +65,15 @@ interface CachedGroup {
   objects: Array<{ objectId: bigint; frame: Uint8Array }>;
 }
 
+/** One object buffered by the E1 scheduler awaiting its group's flush (scheduler ON only). */
+interface PendingObject {
+  groupId: bigint;
+  objectId: bigint;
+  frame: Uint8Array;
+  priority?: number; // non-wire hint (see MoqObject.priority)
+  deadlineMs?: number; // non-wire hint (see MoqObject.deadlineMs)
+}
+
 /** The single Track Alias this relay stamps on forwarded objects (one track per DO). */
 const TRACK_ALIAS = 1n;
 
@@ -87,9 +97,16 @@ export class MoqRelay {
   private cache: CachedGroup[] = [];
   private readonly maxCachedGroups: number;
 
-  constructor(opts: { cachedGroups?: number } = {}) {
+  // E1 deadline scheduler. When OFF (default) the forward path is byte-identical FIFO. When ON, the
+  // objects of the CURRENT group are buffered and flushed in (priority, deadline) order at the next
+  // group boundary (or on flush()); unknown priority/deadline falls back to arrival order (fail-open).
+  private readonly schedulerEnabled: boolean;
+  private pendingGroup: PendingObject[] | null = null;
+
+  constructor(opts: { cachedGroups?: number; scheduler?: boolean } = {}) {
     const n = opts.cachedGroups ?? DEFAULT_CACHED_GROUPS;
     this.maxCachedGroups = n > 0 ? n : 0;
+    this.schedulerEnabled = opts.scheduler === true;
   }
 
   /** Whether a publisher session is currently attached. */
@@ -244,21 +261,39 @@ export class MoqRelay {
    * joiners (last-N-groups ring).
    */
   onObject(sessionId: string, frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
-    const fanout: Outbound[] = [];
-    const events: RelayEvent[] = [];
-    if (sessionId !== this.publisher) return { fanout, events }; // only the publisher may push objects
+    if (sessionId !== this.publisher) return { fanout: [], events: [] }; // only the publisher may push objects
 
     let obj: MoqObject;
     try {
       obj = decodeObject(frame);
     } catch {
-      return { fanout, events };
+      return { fanout: [], events: [] };
     }
+    return this.onDecodedObject(obj);
+  }
+
+  /**
+   * Forward a DECODED object through the fan-out/cache path — the E1 scheduler's entry point. `onObject`
+   * decodes a wire frame then delegates here; a future subgroup-decode path (or a test) may populate
+   * `obj.priority`/`obj.deadlineMs`, since the OBJECT_DATAGRAM wire form carries neither (live traffic
+   * is therefore always fail-open arrival order). Scheduler OFF (default): fan out + cache immediately,
+   * byte-identical FIFO. Scheduler ON: buffer per group and flush the PREVIOUS group in (priority,
+   * deadline) order at each group boundary; call flush() to emit the final group (publish_end / tests).
+   */
+  onDecodedObject(obj: MoqObject): { fanout: Outbound[]; events: RelayEvent[] } {
+    const fanout: Outbound[] = [];
+    const events: RelayEvent[] = [];
+    const sessionId = this.publisher;
+    if (sessionId === null) return { fanout, events }; // no publisher attached — nothing to forward
+
     const forwarded = encodeObject({ ...obj, trackAlias: TRACK_ALIAS });
-    for (const subId of this.subscribers.keys()) {
-      fanout.push({ to: subId, kind: 'object', frame: forwarded });
+    if (this.schedulerEnabled) {
+      this.schedule(obj.groupId, obj.objectId, forwarded, obj.priority, obj.deadlineMs, fanout);
+    } else {
+      this.fanOut(forwarded, fanout);
+      this.cacheObject(obj.groupId, obj.objectId, forwarded);
     }
-    this.cacheObject(obj.groupId, obj.objectId, forwarded);
+
     events.push({ kind: 'object_received', sessionId, bytes: obj.payload.length, payload: obj.payload });
     if (this.lastGroupId !== null && obj.groupId !== this.lastGroupId) {
       events.push({ kind: 'group_complete', sessionId });
@@ -277,6 +312,46 @@ export class MoqRelay {
       while (this.cache.length > this.maxCachedGroups) this.cache.shift();
     }
     grp.objects.push({ objectId, frame });
+  }
+
+  /** Fan one forwarded frame out to every subscriber, in subscriber arrival (Map insertion) order. */
+  private fanOut(frame: Uint8Array, out: Outbound[]): void {
+    for (const subId of this.subscribers.keys()) out.push({ to: subId, kind: 'object', frame });
+  }
+
+  /**
+   * E1 scheduler (ON only): buffer the object in its group. When the incoming object starts a NEW
+   * group, first flush the previous group in (priority, deadline) order. Frames are pre-encoded
+   * (re-stamped with TRACK_ALIAS) so ordering never changes a single byte on the wire.
+   */
+  private schedule(groupId: bigint, objectId: bigint, frame: Uint8Array, priority: number | undefined, deadlineMs: number | undefined, out: Outbound[]): void {
+    if (this.pendingGroup !== null && this.pendingGroup.length > 0 && this.pendingGroup[0].groupId !== groupId) {
+      this.flushPending(out);
+    }
+    if (this.pendingGroup === null) this.pendingGroup = [];
+    this.pendingGroup.push({ groupId, objectId, frame, priority, deadlineMs });
+  }
+
+  /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */
+  private flushPending(out: Outbound[]): void {
+    if (this.pendingGroup === null) return;
+    const ordered = orderByDeadline(this.pendingGroup);
+    this.pendingGroup = null;
+    for (const p of ordered) {
+      this.fanOut(p.frame, out);
+      this.cacheObject(p.groupId, p.objectId, p.frame);
+    }
+  }
+
+  /**
+   * Emit the scheduler's buffered final group, in (priority, deadline) order. No-op when the
+   * scheduler is OFF or nothing is pending. The DO calls this on publish_end so a closing publisher
+   * never strands its final buffered group (fail-open: no drop). Tests call it to observe a group.
+   */
+  flush(): Outbound[] {
+    const out: Outbound[] = [];
+    if (this.schedulerEnabled) this.flushPending(out);
+    return out;
   }
 
   /**

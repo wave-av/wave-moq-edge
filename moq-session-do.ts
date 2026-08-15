@@ -50,6 +50,7 @@ interface Env {
   MAX_OBJECT_SIZE_BYTES: string;
   LOG_LEVEL: string;
   MOQ_CACHED_GROUPS?: string; // late-joiner cache depth (default 3)
+  MOQ_DEADLINE_SCHEDULER_ENABLED?: string; // E1: '1' enables the deadline scheduler (default OFF)
   // #284 usage emit (both optional → emit is INERT until an operator provisions them; see usage-emit.ts):
   GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage + /recordings/register (var)
   WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest + register endpoints (secret)
@@ -125,7 +126,9 @@ export class MOQSessionDurableObject {
     this.env = env;
     this.metrics = new MetricsCollector(env);
     const cachedGroups = parseInt(env.MOQ_CACHED_GROUPS ?? '', 10);
-    this.relay = new MoqRelay({ cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined });
+    // E1 deadline scheduler: INERT unless MOQ_DEADLINE_SCHEDULER_ENABLED === '1' (E3 rollout flips it).
+    const scheduler = env.MOQ_DEADLINE_SCHEDULER_ENABLED === '1';
+    this.relay = new MoqRelay({ cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined, scheduler });
   }
 
   /**
@@ -355,6 +358,11 @@ export class MOQSessionDurableObject {
     // removeSession emits publish_end for a closing publisher → applyEvents flushes its usage (#284/task#14)
     // using session.publisherOrg/publisherProtocol, so drop this socket's org+protocol AFTER applyEvents runs.
     const events = this.relay.removeSession(sessionId);
+    // E1: a closing publisher must not strand its scheduler-buffered final group — flush it to the still
+    // connected subscribers. No-op when the scheduler flag is off (default), so this is inert byte-for-byte.
+    if (events.some((e) => e.kind === 'publish_end')) {
+      for (const out of this.relay.flush()) this.send(out.to, WS_KIND.OBJECT, out.frame);
+    }
     if (events.length) await this.applyEvents(events);
     this.sessionOrgs.delete(sessionId);
     this.sessionProtocols.delete(sessionId);
