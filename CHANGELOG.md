@@ -7,6 +7,18 @@ semantic versioning aligned with the IETF MoQ draft revision.
 ## [Unreleased]
 
 ### Added
+- **Deadline-aware priority scheduler (E1), flag-gated and INERT by default.** `src/moq-scheduler.ts`
+  is a pure ordering kernel (`orderByDeadline`) that sorts a group's objects by (priority, playout
+  deadline), where priority is 0-255 with LOWER = higher priority (draft-18 `SubgroupHeader.priority`
+  semantics). `MoqRelay` gains a `scheduler` option (default OFF → byte-identical FIFO); when ON it
+  buffers each group and flushes the previous group in (priority, deadline) order at each group
+  boundary, with an explicit `flush()` for the final group. Fail-open throughout: an unknown/missing
+  priority or deadline falls back to arrival order and NEVER drops a group. The OBJECT_DATAGRAM wire
+  form is unchanged — `MoqObject.priority`/`deadlineMs` are optional non-wire hints that `encodeObject`
+  does not serialize and `decodeObject` does not populate (live traffic always takes the fail-open
+  path). The Durable Object reads `MOQ_DEADLINE_SCHEDULER_ENABLED === '1'` (default off) and flushes the
+  buffered group on `publish_end`. Tests: `__tests__/moq-deadline-scheduler.test.ts` + the E0 baseline
+  regression `__tests__/moq-deadline-scheduler-baseline.test.ts`.
 - **MPEG-TS → MoQ ingest + per-track caption subscription.** `src/moq-ingest.ts` is a PURE,
   hermetically-tested MPEG-2 Transport Stream (ISO/IEC 13818-1) depacketizer: strict `0x47`-sync +
   188-byte alignment validation, a bounds-clamped adaptation field (an attacker-controlled length

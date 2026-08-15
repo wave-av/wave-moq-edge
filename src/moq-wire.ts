@@ -501,6 +501,21 @@ export interface MoqObject {
    * WebTransport binding lands the block moves ahead of the payload with no change to its contents.
    */
   properties?: Uint8Array;
+  /**
+   * Non-wire scheduling hint (E1 deadline scheduler) — NOT serialized by encodeObject and NOT
+   * populated by decodeObject. The OBJECT_DATAGRAM wire form carries no priority field: priority
+   * lives only on the SUBGROUP_HEADER stream form (`SubgroupHeader.priority`, 0-255 where LOWER =
+   * HIGHER priority per draft-18 §subgroup-header), which the relay's forward path never decodes.
+   * Populated only by a future subgroup-decode path or by tests. Absent → the scheduler falls back
+   * to arrival order (fail-open, never drops a group).
+   */
+  priority?: number;
+  /**
+   * Non-wire scheduling hint (E1 deadline scheduler): the playout deadline (epoch ms) by which the
+   * object must reach the player's jitter buffer. NOT serialized / decoded — same provenance as
+   * `priority`. Absent → the scheduler falls back to arrival order (fail-open).
+   */
+  deadlineMs?: number;
 }
 
 /**
