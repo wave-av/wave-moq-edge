@@ -101,12 +101,17 @@ export class MoqRelay {
   // objects of the CURRENT group are buffered and flushed in (priority, deadline) order at the next
   // group boundary (or on flush()); unknown priority/deadline falls back to arrival order (fail-open).
   private readonly schedulerEnabled: boolean;
+  private readonly onScheduledFlush?: (out: Outbound[]) => void;
   private pendingGroup: PendingObject[] | null = null;
+  private pendingFlushTimer: ReturnType<typeof setTimeout> | null = null;
+  // Keep a group from remaining in memory while the DO is idle (and about to hibernate).
+  private static readonly MAX_PENDING_AGE_MS = 1000;
 
-  constructor(opts: { cachedGroups?: number; scheduler?: boolean } = {}) {
+  constructor(opts: { cachedGroups?: number; scheduler?: boolean; onScheduledFlush?: (out: Outbound[]) => void } = {}) {
     const n = opts.cachedGroups ?? DEFAULT_CACHED_GROUPS;
     this.maxCachedGroups = n > 0 ? n : 0;
     this.schedulerEnabled = opts.scheduler === true;
+    this.onScheduledFlush = opts.onScheduledFlush;
   }
 
   /** Whether a publisher session is currently attached. */
@@ -328,13 +333,27 @@ export class MoqRelay {
     if (this.pendingGroup !== null && this.pendingGroup.length > 0 && this.pendingGroup[0].groupId !== groupId) {
       this.flushPending(out);
     }
-    if (this.pendingGroup === null) this.pendingGroup = [];
+    if (this.pendingGroup === null) {
+      this.pendingGroup = [];
+      // The timer is deliberately bounded: a quiet publisher cannot strand a group
+      // in the DO heap until hibernation. The DO supplies the transport callback.
+      this.pendingFlushTimer = setTimeout(() => {
+        this.pendingFlushTimer = null;
+        const flushed: Outbound[] = [];
+        this.flushPending(flushed);
+        if (flushed.length) this.onScheduledFlush?.(flushed);
+      }, MoqRelay.MAX_PENDING_AGE_MS);
+    }
     this.pendingGroup.push({ groupId, objectId, frame, priority, deadlineMs });
   }
 
   /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */
   private flushPending(out: Outbound[]): void {
     if (this.pendingGroup === null) return;
+    if (this.pendingFlushTimer !== null) {
+      clearTimeout(this.pendingFlushTimer);
+      this.pendingFlushTimer = null;
+    }
     const ordered = orderByDeadline(this.pendingGroup);
     this.pendingGroup = null;
     for (const p of ordered) {

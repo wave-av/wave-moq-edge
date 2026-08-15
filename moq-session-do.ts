@@ -128,7 +128,13 @@ export class MOQSessionDurableObject {
     const cachedGroups = parseInt(env.MOQ_CACHED_GROUPS ?? '', 10);
     // E1 deadline scheduler: INERT unless MOQ_DEADLINE_SCHEDULER_ENABLED === '1' (E3 rollout flips it).
     const scheduler = env.MOQ_DEADLINE_SCHEDULER_ENABLED === '1';
-    this.relay = new MoqRelay({ cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined, scheduler });
+    this.relay = new MoqRelay({
+      cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined,
+      scheduler,
+      onScheduledFlush: (out) => {
+        for (const item of out) this.send(item.to, WS_KIND.OBJECT, item.frame);
+      },
+    });
   }
 
   /**
