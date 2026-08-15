@@ -109,6 +109,8 @@ interface Metrics {
   delP95: number;
   delMean: number;
   delMax: number;
+  fanoutFrames: number;
+  subscriberDeliveries: number[];
 }
 
 /** Inversion count of `delivered` vs the canonical (priority, deadline) order within one group. */
@@ -154,12 +156,18 @@ function runMode(
   const submitTime: number[] = new Array(objs.length);
   const delivery: number[] = new Array(objs.length);
   const deliveredByGroup = new Map<number, Item[]>();
+  const receivedBySub = new Map<string, Set<string>>();
+  let fanoutFrames = 0;
 
-  const recordEmit = (fanout: { frame: Uint8Array }[], emitTime: number): void => {
+  const recordEmit = (fanout: { to: string; frame: Uint8Array }[], emitTime: number): void => {
     const seen = new Set<string>();
     for (const f of fanout) {
+      fanoutFrames++;
       const d = decodeObject(f.frame);
       const key = `${d.groupId}:${d.objectId}`;
+      const received = receivedBySub.get(f.to) ?? new Set<string>();
+      received.add(key);
+      receivedBySub.set(f.to, received);
       if (seen.has(key)) continue;
       seen.add(key);
       const item = itemByKey.get(key);
@@ -213,6 +221,8 @@ function runMode(
     delP95: pct(delSorted, 0.95),
     delMean: mean(delSorted),
     delMax: delSorted[delSorted.length - 1],
+    fanoutFrames,
+    subscriberDeliveries: Array.from({ length: subs }, (_, i) => receivedBySub.get(`s${i}`)?.size ?? 0),
   };
 }
 
@@ -236,6 +246,12 @@ describe('E2 arena: scheduler vs FIFO under load', () => {
       expect(sched.drop).toBe(0);
       expect(fifo.delivered).toBe(GROUPS * M);
       expect(sched.delivered).toBe(GROUPS * M);
+      const expectedObjects = GROUPS * M;
+      const expectedFanoutFrames = expectedObjects * SUBS;
+      expect(fifo.fanoutFrames).toBe(expectedFanoutFrames);
+      expect(sched.fanoutFrames).toBe(expectedFanoutFrames);
+      expect(fifo.subscriberDeliveries).toEqual(Array(SUBS).fill(expectedObjects));
+      expect(sched.subscriberDeliveries).toEqual(Array(SUBS).fill(expectedObjects));
       expect(sched.reorder).toBe(0);
       if (scenario === 'priority-scrambled') {
         expect(sched.reorder).toBeLessThan(fifo.reorder); // the point of the scheduler
