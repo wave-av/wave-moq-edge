@@ -105,6 +105,9 @@ interface Metrics {
   cpuP95: number;
   cpuMean: number;
   cpuMax: number;
+  gcP50: number;
+  gcP95: number;
+  gcMean: number;
   delP50: number;
   delP95: number;
   delMean: number;

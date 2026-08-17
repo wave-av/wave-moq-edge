@@ -19,6 +19,8 @@ import {
   MOQ_ROLE,
   MOQ_ERROR,
   MOQ_FETCH_TYPE,
+  Reader,
+  isSubgroupType,
   parseControl,
   decodeSetup,
   encodeSetup,
@@ -266,6 +268,23 @@ export class MoqRelay {
    */
   onObject(sessionId: string, frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
     if (sessionId !== this.publisher) return { fanout: [], events: [] }; // only the publisher may push objects
+
+    // SUBGROUP_HEADER detection: on the WS binding, subgroup frames arrive tagged as
+    // WS_KIND=OBJECT (they're data-stream frames, same envelope as single objects). When the
+    // scheduler is ON, detect the subgroup type byte and route through onSubgroupFrame which
+    // decodes, stamps priority, and feeds the scheduler. When OFF, fall through to decodeObject
+    // — it fails to parse the subgroup format (different structure), producing the same
+    // silent-drop as today (byte-identical FIFO preserved).
+    if (this.schedulerEnabled) {
+      try {
+        const typeByte = new Reader(frame).varintNum();
+        if (isSubgroupType(typeByte)) {
+          return this.onSubgroupFrame(frame);
+        }
+      } catch {
+        // malformed frame — fall through to decodeObject which will also fail
+      }
+    }
 
     let obj: MoqObject;
     try {
