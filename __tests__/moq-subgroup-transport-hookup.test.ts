@@ -84,6 +84,27 @@ describe('transport hookup: scheduler ON routes subgroup via onObject', () => {
     expect(order).toEqual([1, 2, 0]); // priority ascending: 100, 150, 200
   });
 
+  it('endOfGroup on the last subgroup frame flushes without an explicit relay.flush()', () => {
+    const relay = new MoqRelay({ scheduler: true });
+    attach(relay, 1);
+
+    // Same group (0n), distinct priorities, END_OF_GROUP on the last frame —
+    // the exact live-publisher pattern: multiple subgroups, one group.
+    const frame0 = makeSubgroupFrame(0n, 200, [{ objectId: 0n, payload: new Uint8Array([0]) }]);
+    const frame1 = makeSubgroupFrame(0n, 100, [{ objectId: 1n, payload: new Uint8Array([1]) }]);
+    const frame2 = makeSubgroupFrame(0n, 150, [{ objectId: 2n, payload: new Uint8Array([2]) }], { endOfGroup: true });
+
+    const r0 = relay.onObject('pub', frame0);
+    expect(r0.fanout).toHaveLength(0); // buffered
+
+    const r1 = relay.onObject('pub', frame1);
+    expect(r1.fanout).toHaveLength(0); // buffered
+
+    const r2 = relay.onObject('pub', frame2);
+    const order = r2.fanout.map((f) => Number(decodeObject(f.frame).objectId));
+    expect(order).toEqual([1, 2, 0]); // flushed at endOfGroup, priority ascending
+  });
+
   it('subgroup frame routed via onObject preserves publisher gate', () => {
     const relay = new MoqRelay({ scheduler: true });
     attach(relay, 1);
