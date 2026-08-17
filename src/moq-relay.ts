@@ -38,6 +38,9 @@ import {
 } from './moq-wire';
 import { orderByDeadline } from './moq-scheduler';
 
+/** Reordering window: max objects buffered before a forced flush (E2-fix). */
+export const SCHEDULER_WINDOW_OBJECTS = 64;
+
 /** A frame to deliver to a specific session (control reply or fanned-out object). */
 export interface Outbound {
   to: string;
@@ -325,11 +328,20 @@ export class MoqRelay {
    * (re-stamped with TRACK_ALIAS) so ordering never changes a single byte on the wire.
    */
   private schedule(groupId: bigint, objectId: bigint, frame: Uint8Array, priority: number | undefined, deadlineMs: number | undefined, out: Outbound[]): void {
+    // Flush the previous group at a group boundary — the ONLY hint-triggered flush.
+    // Mid-group deadline-pressure flushing was tried and REJECTED (E2-fix): it emits
+    // partial sorted subsets and breaks the whole-group ordering guarantee (unit test
+    // `emits a group in (priority, deadline) order on flush()` fails; across-window
+    // inversions appear). Ordering correctness wins over mid-group latency.
     if (this.pendingGroup !== null && this.pendingGroup.length > 0 && this.pendingGroup[0].groupId !== groupId) {
       this.flushPending(out);
     }
     if (this.pendingGroup === null) this.pendingGroup = [];
     this.pendingGroup.push({ groupId, objectId, frame, priority, deadlineMs });
+    // Bounded-window reordering: flush when the window fills, so delivery never
+    // depends on a run-end flush. Group boundaries remain the primary trigger;
+    // absent hints retain arrival order (stable sorter).
+    if (this.pendingGroup.length >= SCHEDULER_WINDOW_OBJECTS) this.flushPending(out);
   }
 
   /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */

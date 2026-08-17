@@ -8,6 +8,9 @@
  * subgroup-decode path or by tests. This module is the ordering rule: given a group's objects
  * (each with OPTIONAL hints), return the SAME objects in (priority, playout-deadline) order —
  * fail-open, never dropping or duplicating an object.
+ *
+ * E2-fix: the scheduler now exposes `earliestDeadline` so the relay can make deadline-driven
+ * flush decisions without holding objects until the next group boundary.
  */
 
 /** The subset of scheduling fields an orderable item must expose (see MoqObject). */
@@ -42,4 +45,18 @@ function cmpOptional(a: number | undefined, b: number | undefined): number {
   if (a === undefined) return 1; // undefined = unknown → sort last (fail-open)
   if (b === undefined) return -1;
   return a - b;
+}
+
+/**
+ * Compute the earliest deadline among a group of scheduled items.
+ * Returns `undefined` if all items have undefined deadlines.
+ */
+export function earliestDeadline<T extends ScheduledItem>(items: readonly T[]): number | undefined {
+  let min: number | undefined;
+  for (const it of items) {
+    if (it.deadlineMs !== undefined && (min === undefined || it.deadlineMs < min)) {
+      min = it.deadlineMs;
+    }
+  }
+  return min;
 }

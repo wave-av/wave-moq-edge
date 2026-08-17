@@ -154,6 +154,8 @@ function runMode(
   const submitTime: number[] = new Array(objs.length);
   const delivery: number[] = new Array(objs.length);
   const deliveredByGroup = new Map<number, Item[]>();
+  const firstSubmit = new Array<number>(groups).fill(-1);
+  const lastEmit = new Array<number>(groups).fill(-1);
 
   const recordEmit = (fanout: { frame: Uint8Array }[], emitTime: number): void => {
     const seen = new Set<string>();
@@ -169,6 +171,7 @@ function runMode(
       list.push(item);
       deliveredByGroup.set(item.group, list);
       delivery[idx] = (emitTime - submitTime[idx]) * 1000; // µs
+      lastEmit[item.group] = Math.max(lastEmit[item.group], emitTime);
     }
   };
 
@@ -178,6 +181,7 @@ function runMode(
     const t1 = performance.now();
     submitTime[i] = t0;
     cpu[i] = (t1 - t0) * 1000;
+    if (firstSubmit[Number(objs[i].groupId)] < 0) firstSubmit[Number(objs[i].groupId)] = t0;
     recordEmit(r.fanout, t1);
   }
   const flush = relay.flush();
@@ -196,6 +200,11 @@ function runMode(
 
   const cpuSorted = [...cpu].sort((a, b) => a - b);
   const delSorted = [...delivery].sort((a, b) => a - b);
+  const gc = new Array<number>();
+  for (let g = 0; g < groups; g++) {
+    if (firstSubmit[g] >= 0 && lastEmit[g] >= 0) gc.push((lastEmit[g] - firstSubmit[g]) * 1000);
+  }
+  const gcSorted = [...gc].sort((a, b) => a - b);
   const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 
   return {
@@ -213,6 +222,9 @@ function runMode(
     delP95: pct(delSorted, 0.95),
     delMean: mean(delSorted),
     delMax: delSorted[delSorted.length - 1],
+    gcP50: pct(gcSorted, 0.5),
+    gcP95: pct(gcSorted, 0.95),
+    gcMean: mean(gcSorted),
   };
 }
 
@@ -246,7 +258,7 @@ describe('E2 arena: scheduler vs FIFO under load', () => {
       const line = (m: Metrics) =>
         `E2-ARENA scenario=${m.scenario} mode=${m.mode.toUpperCase()} groups=${GROUPS} objects/group=${M} subscribers=${SUBS} total=${m.total} delivered=${m.delivered} drop=${m.drop} reorder=${m.reorder}`;
       const lat = (m: Metrics) =>
-        `E2-ARENA scenario=${m.scenario} mode=${m.mode.toUpperCase()} cpu p50=${us(m.cpuP50)}us p95=${us(m.cpuP95)}us mean=${us(m.cpuMean)}us max=${us(m.cpuMax)}us | delivery p50=${us(m.delP50)}us p95=${us(m.delP95)}us mean=${us(m.delMean)}us max=${us(m.delMax)}us`;
+        `E2-ARENA scenario=${m.scenario} mode=${m.mode.toUpperCase()} cpu p50=${us(m.cpuP50)}us p95=${us(m.cpuP95)}us mean=${us(m.cpuMean)}us max=${us(m.cpuMax)}us | delivery p50=${us(m.delP50)}us p95=${us(m.delP95)}us mean=${us(m.delMean)}us max=${us(m.delMax)}us | group-completion p50=${us(m.gcP50)}us p95=${us(m.gcP95)}us mean=${us(m.gcMean)}us`;
 
       rows.push(line(fifo), line(sched), lat(fifo), lat(sched));
     }
