@@ -162,7 +162,7 @@ MAX_OBJECT_SIZE_BYTES = "16777216"
 LOG_LEVEL = "debug"
 MOQ_REQUIRE_AUTH = "false"  # explicit operator opt-in; see production note above
 MOQ_CACHED_GROUPS = "3"
-MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3 staging canary: deadline scheduler ON for staging only (production stays OFF until decision)
+# MOQ_DEADLINE_SCHEDULER_ENABLED remains unset until subgroup/object detection is unambiguous.
 # #284 usage emit (see production note). WAVE_SERVICE_TOKEN secret: `wrangler secret put WAVE_SERVICE_TOKEN --env staging`.
 GATEWAY_BASE_URL = "https://api.staging.wave.online"
 # Shares the single existing moq bucket (no -staging bucket exists; staging recording is inert pre-GA).
