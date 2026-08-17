@@ -2,10 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { MoqRelay } from '../src/moq-relay';
 import {
   MOQ_OBJECT_STATUS,
-  MOQ_STREAM,
-  SUBGROUP_FLAG,
   SUBGROUP_ID_MODE,
-  subgroupTypeByte,
   decodeObject,
   encodeObject,
   encodeSubgroupStream,

@@ -129,16 +129,6 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
     const relay = new MoqRelay({ scheduler: true });
     attach(relay, 1);
 
-    // Build a subgroup with 3 objects carrying out-of-order priorities:
-    //   objectId=0 priority=200 (lowest priority → delivered last)
-    //   objectId=1 priority=100 (highest priority → delivered first)
-    //   objectId=2 priority=150 (middle)
-    const frame = makeSubgroupFrame(0n, 0, [
-      { objectId: 0n, payload: new Uint8Array([0]) },
-      { objectId: 1n, payload: new Uint8Array([1]) },
-      { objectId: 2n, payload: new Uint8Array([2]) },
-    ]);
-
     // We need to build a frame with explicit per-object priorities.
     // The standard makeSubgroupFrame stamps the SAME priority on all objects.
     // Instead, build the subgroup manually with header priority=0 and override per-object:
