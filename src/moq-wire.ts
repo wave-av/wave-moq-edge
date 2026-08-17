@@ -555,6 +555,12 @@ export interface SubgroupObject {
   objectId: bigint;
   status: number; // MOQ_OBJECT_STATUS.* (only serialized when payload is empty)
   payload: Uint8Array;
+  /**
+   * Priority stamped from the enclosing SubgroupHeader — 0-255 where LOWER = HIGHER priority
+   * per draft-18 §subgroup-header. Undefined when `defaultPriority` is set on the header (the
+   * wire form omits the field and the scheduler falls back to arrival order).
+   */
+  priority?: number;
 }
 export interface SubgroupHeader {
   trackAlias: bigint;
@@ -633,11 +639,12 @@ export function decodeSubgroupStream(bytes: Uint8Array): { header: SubgroupHeade
     if (idMode === SUBGROUP_ID_MODE.FIRST_OBJECT_ID && objects.length === 0) subgroupId = cur;
     if (properties) skipObjectProperties(r); // we don't model extension headers; skip them faithfully
     const len = r.varintNum();
+    const objPriority = defaultPriority ? undefined : priority;
     if (len > 0) {
-      objects.push({ objectId: cur, status: MOQ_OBJECT_STATUS.NORMAL, payload: r.raw(len) });
+      objects.push({ objectId: cur, status: MOQ_OBJECT_STATUS.NORMAL, payload: r.raw(len), ...(objPriority !== undefined ? { priority: objPriority } : {}) });
     } else {
       const status = r.varintNum();
-      objects.push({ objectId: cur, status, payload: new Uint8Array(0) });
+      objects.push({ objectId: cur, status, payload: new Uint8Array(0), ...(objPriority !== undefined ? { priority: objPriority } : {}) });
     }
   }
   return { header: { trackAlias, groupId, subgroupId, idMode, priority, defaultPriority, endOfGroup, firstObject }, objects };

@@ -33,6 +33,7 @@ import {
   encodeRequestOk,
   encodeRequestError,
   decodeObject,
+  decodeSubgroupStream,
   encodeObject,
   type MoqObject,
 } from './moq-wire';
@@ -273,6 +274,47 @@ export class MoqRelay {
       return { fanout: [], events: [] };
     }
     return this.onDecodedObject(obj);
+  }
+
+  /**
+   * Handle one inbound SUBGROUP_HEADER frame — decode the subgroup, convert each object to a
+   * MoqObject (stamping the header's priority), and route through `onDecodedObject`. This is the
+   * production-consumer path that feeds the scheduler hint data (priority from the wire) into the
+   * E1 deadline scheduler.
+   *
+   * When the scheduler is OFF (default), the method is a no-op: the caller should use `onObject`
+   * for the byte-identical OBJECT_DATAGRAM path instead. This ensures the flag-OFF path remains
+   * byte-identical FIFO (E3 hard-gate).
+   */
+  onSubgroupFrame(frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
+    if (!this.schedulerEnabled) return { fanout: [], events: [] };
+
+    let decoded: ReturnType<typeof decodeSubgroupStream>;
+    try {
+      decoded = decodeSubgroupStream(frame);
+    } catch {
+      return { fanout: [], events: [] };
+    }
+
+    const { header, objects } = decoded;
+    const fanout: Outbound[] = [];
+    const events: RelayEvent[] = [];
+
+    for (const o of objects) {
+      const moqObj: MoqObject = {
+        trackAlias: 0n, // will be re-stamped by onDecodedObject
+        groupId: header.groupId,
+        objectId: o.objectId,
+        status: o.status,
+        payload: o.payload,
+        priority: header.defaultPriority ? undefined : header.priority,
+      };
+      const r = this.onDecodedObject(moqObj);
+      fanout.push(...r.fanout);
+      events.push(...r.events);
+    }
+
+    return { fanout, events };
   }
 
   /**
