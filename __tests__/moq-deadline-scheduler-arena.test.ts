@@ -109,6 +109,9 @@ interface Metrics {
   delP95: number;
   delMean: number;
   delMax: number;
+  gcP50: number;
+  gcP95: number;
+  gcMean: number;
 }
 
 /** Inversion count of `delivered` vs the canonical (priority, deadline) order within one group. */
