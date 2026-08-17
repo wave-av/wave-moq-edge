@@ -38,9 +38,6 @@ import {
 } from './moq-wire';
 import { orderByDeadline } from './moq-scheduler';
 
-/** Reordering window: max objects buffered before a forced flush (E2-fix). */
-export const SCHEDULER_WINDOW_OBJECTS = 64;
-
 /** A frame to deliver to a specific session (control reply or fanned-out object). */
 export interface Outbound {
   to: string;
@@ -338,10 +335,8 @@ export class MoqRelay {
     }
     if (this.pendingGroup === null) this.pendingGroup = [];
     this.pendingGroup.push({ groupId, objectId, frame, priority, deadlineMs });
-    // Bounded-window reordering: flush when the window fills, so delivery never
-    // depends on a run-end flush. Group boundaries remain the primary trigger;
-    // absent hints retain arrival order (stable sorter).
-    if (this.pendingGroup.length >= SCHEDULER_WINDOW_OBJECTS) this.flushPending(out);
+    // Groups are flushed only at boundaries (or explicitly), preserving whole-group ordering.
+
   }
 
   /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */
