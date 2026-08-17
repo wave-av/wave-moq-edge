@@ -221,6 +221,10 @@ async function cmdSession(args: Args, role: 'subscribe' | 'publish'): Promise<nu
 const SUBGROUP_PRIORITIES = [200, 100, 150];
 
 async function cmdPublishSubgroup(args: Args): Promise<number> {
+  if ((args.flags.get('transport') ?? 'websocket') === 'webtransport') {
+    process.stderr.write('error: publish-subgroup does not support --transport=webtransport; use --transport=websocket\n');
+    return 2;
+  }
   const url = args.positional[0];
   if (!url) {
     process.stderr.write('error: a relay URL is required\n');
@@ -303,7 +307,7 @@ async function cmdPublishSubgroup(args: Args): Promise<number> {
         priority,
         defaultPriority: false,
         endOfGroup: i === count - 1,
-        firstObject: i === 0,
+        firstObject: true,
       };
       const objects: SubgroupObject[] = [
         { objectId, status: MOQ_OBJECT_STATUS.NORMAL, payload },
