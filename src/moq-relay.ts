@@ -333,6 +333,8 @@ export class MoqRelay {
       events.push(...r.events);
     }
 
+    if (header.endOfGroup) this.flushPending(fanout);
+
     return { fanout, events };
   }
 
