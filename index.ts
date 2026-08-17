@@ -434,8 +434,7 @@ export default {
       return chassis(request, env as unknown as ChassisEnv);
     } catch (error) {
       console.error('moq-edge fetch error', error);
-      const detail = error instanceof Error ? error.message : String(error);
-      return errorResponse('Internal Server Error', 500, detail);
+      return errorResponse('Internal Server Error', 500);
     }
   },
 } satisfies ExportedHandler<Env>;
