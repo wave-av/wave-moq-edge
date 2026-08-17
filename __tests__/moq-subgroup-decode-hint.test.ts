@@ -133,7 +133,7 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
     //   objectId=0 priority=200 (lowest priority → delivered last)
     //   objectId=1 priority=100 (highest priority → delivered first)
     //   objectId=2 priority=150 (middle)
-    const frame = makeSubgroupFrame(0n, 0, [
+    const _frame = makeSubgroupFrame(0n, 0, [
       { objectId: 0n, payload: new Uint8Array([0]) },
       { objectId: 1n, payload: new Uint8Array([1]) },
       { objectId: 2n, payload: new Uint8Array([2]) },
@@ -154,13 +154,13 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
 
     // All three arrive in arrival order: obj0(p200), obj1(p100), obj2(p150)
     // Scheduler sorts by priority ascending: obj1(p100) → obj2(p150) → obj0(p200)
-    const r0 = relay.onSubgroupFrame(frame0);
+    const r0 = relay.onSubgroupFrame('pub', frame0);
     expect(r0.fanout).toHaveLength(0); // buffered
 
-    const r1 = relay.onSubgroupFrame(frame1);
+    const r1 = relay.onSubgroupFrame('pub', frame1);
     expect(r1.fanout).toHaveLength(0); // buffered
 
-    const r2 = relay.onSubgroupFrame(frame2);
+    const r2 = relay.onSubgroupFrame('pub', frame2);
     expect(r2.fanout).toHaveLength(0); // buffered (same group)
 
     // Flush the final group
@@ -179,7 +179,7 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
       { objectId: 1n, payload: new Uint8Array([2]) },
     ]);
 
-    const { fanout } = relay.onSubgroupFrame(frame);
+    const { fanout } = relay.onSubgroupFrame('pub', frame);
     expect(fanout).toHaveLength(0); // no-op when scheduler is OFF
   });
 
@@ -191,8 +191,8 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
     const frame0 = makeSubgroupFrame(0n, 0, [{ objectId: 0n, payload: new Uint8Array([0]) }], { defaultPriority: true });
     const frame1 = makeSubgroupFrame(0n, 0, [{ objectId: 1n, payload: new Uint8Array([1]) }], { defaultPriority: true });
 
-    relay.onSubgroupFrame(frame0);
-    relay.onSubgroupFrame(frame1);
+    relay.onSubgroupFrame('pub', frame0);
+    relay.onSubgroupFrame('pub', frame1);
 
     const flushed = relay.flush();
     const order = flushed.map((f) => Number(decodeObject(f.frame).objectId));
@@ -205,11 +205,11 @@ describe('onSubgroupFrame: scheduler-enabled relay reorders by priority', () => 
     attach(relay, 1);
 
     // Group 0: objects with priorities 200, 100
-    relay.onSubgroupFrame(makeSubgroupFrame(0n, 200, [{ objectId: 0n, payload: new Uint8Array([0]) }]));
-    relay.onSubgroupFrame(makeSubgroupFrame(0n, 100, [{ objectId: 1n, payload: new Uint8Array([1]) }]));
+    relay.onSubgroupFrame('pub', makeSubgroupFrame(0n, 200, [{ objectId: 0n, payload: new Uint8Array([0]) }]));
+    relay.onSubgroupFrame('pub', makeSubgroupFrame(0n, 100, [{ objectId: 1n, payload: new Uint8Array([1]) }]));
 
     // Group 1: first object → triggers flush of group 0 in priority order
-    const r = relay.onSubgroupFrame(makeSubgroupFrame(1n, 50, [{ objectId: 0n, payload: new Uint8Array([2]) }]));
+    const r = relay.onSubgroupFrame('pub', makeSubgroupFrame(1n, 50, [{ objectId: 0n, payload: new Uint8Array([2]) }]));
 
     // Group 0 flushed sorted: obj1(p100) before obj0(p200)
     const flushedIds = r.fanout.map((f) => Number(decodeObject(f.frame).objectId));
@@ -255,5 +255,8 @@ describe('baseline: decodeObject keys remain unchanged', () => {
     // properties is present in the decoded output
     expect(Object.keys(decoded)).toEqual(['trackAlias', 'groupId', 'objectId', 'status', 'payload', 'properties']);
     expect(decoded.properties).toBeInstanceOf(Uint8Array);
+  });
+});
+ect(decoded.properties).toBeInstanceOf(Uint8Array);
   });
 });

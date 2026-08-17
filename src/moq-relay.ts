@@ -286,7 +286,8 @@ export class MoqRelay {
    * for the byte-identical OBJECT_DATAGRAM path instead. This ensures the flag-OFF path remains
    * byte-identical FIFO (E3 hard-gate).
    */
-  onSubgroupFrame(frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
+  onSubgroupFrame(sessionId: string, frame: Uint8Array): { fanout: Outbound[]; events: RelayEvent[] } {
+    if (sessionId !== this.publisher) return { fanout: [], events: [] }; // only the publisher may push objects
     if (!this.schedulerEnabled) return { fanout: [], events: [] };
 
     let decoded: ReturnType<typeof decodeSubgroupStream>;
