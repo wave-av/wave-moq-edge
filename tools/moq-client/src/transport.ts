@@ -94,7 +94,7 @@ export class WebSocketTransport implements Transport {
   }
 
   /** `url` carries `?join=<token>` when the relay enforces join-tokens — never a header, never a log. */
-  static connect(url: string, timeoutMs = 10000): Promise<WebSocketTransport> {
+  static connect(url: string, timeoutMs = 30000): Promise<WebSocketTransport> {
     return new Promise((resolve, reject) => {
       const ws = new WebSocket(url);
       const timer = setTimeout(() => {

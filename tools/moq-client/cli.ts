@@ -139,7 +139,23 @@ function withToken(url: string): string {
   return u.toString();
 }
 
-async function openTransport(url: string, kind: string): Promise<Transport> {
+async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish'): Promise<Transport> {
+  // Session-first flow: the relay creates the publisher session on a plain REST request and returns
+  // `websocket_url`; dialing the WS directly on a session-less track 404s (and the DOM-style WS error
+  // event hides the status — "connection refused" is a lie). REST handshake first, then WS to the
+  // returned URL; a 4xx surfaces as a legible error instead.
+  try {
+    const res = await fetch(withToken(url), { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    if (res.status >= 400) {
+      const body = (await res.text()).slice(0, 120);
+      throw new Error(`relay http ${res.status}: ${body}`);
+    }
+    const data = (await res.json()) as { websocket_url?: string };
+    if (data.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url));
+  } catch (e) {
+    if (e instanceof TypeError) throw new Error(`websocket connection failed before open (${(e as TypeError & { cause?: { code?: string } }).cause?.code ?? 'network'})`);
+    throw e;
+  }
   if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
   return WebSocketTransport.connect(withToken(url));
 }
@@ -174,7 +190,7 @@ async function cmdSession(args: Args, role: 'subscribe' | 'publish'): Promise<nu
 
   let transport: Transport;
   try {
-    transport = await openTransport(url, args.flags.get('transport') ?? 'websocket');
+    transport = await openTransport(url, args.flags.get('transport') ?? 'websocket', role === 'publish' ? 'publish' : 'subscribe');
   } catch (e) {
     // A failed dial IS a receipt — emit it in the same shape as a success.
     const report = {
@@ -234,7 +250,7 @@ async function cmdPublishSubgroup(args: Args): Promise<number> {
 
   let transport: Transport;
   try {
-    transport = await openTransport(url, args.flags.get('transport') ?? 'websocket');
+    transport = await openTransport(url, args.flags.get('transport') ?? 'websocket', 'publish');
   } catch (e) {
     const report = {
       peer: redact(url),
