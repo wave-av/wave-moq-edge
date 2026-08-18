@@ -53,6 +53,7 @@ route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
 
 [env.production.vars]
 ENVIRONMENT = "production"
+MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3: scheduler ON in prod — subgroup-priority reorder live (staging canary proven 2026-08-17; regular OBJECT_DATAGRAM traffic stays arrival-order, fail-open)
 MOQ_DRAFT_VERSION = "18"
 MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "10000"
@@ -162,7 +163,7 @@ MAX_OBJECT_SIZE_BYTES = "16777216"
 LOG_LEVEL = "debug"
 MOQ_REQUIRE_AUTH = "false"  # explicit operator opt-in; see production note above
 MOQ_CACHED_GROUPS = "3"
-MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3 staging canary: deadline scheduler ON for staging only (production stays OFF until decision)
+MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3: staging canary (was staging-only; production armed 2026-08-18 after the live canary receipt)
 # #284 usage emit (see production note). WAVE_SERVICE_TOKEN secret: `wrangler secret put WAVE_SERVICE_TOKEN --env staging`.
 GATEWAY_BASE_URL = "https://api.staging.wave.online"
 # Shares the single existing moq bucket (no -staging bucket exists; staging recording is inert pre-GA).
