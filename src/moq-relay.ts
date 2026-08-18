@@ -20,7 +20,7 @@ import {
   MOQ_ERROR,
   MOQ_FETCH_TYPE,
   Reader,
-  isSubgroupType,
+
   parseControl,
   decodeSetup,
   encodeSetup,
@@ -275,7 +275,7 @@ export class MoqRelay {
     // decodes, stamps priority, and feeds the scheduler. When OFF, fall through to decodeObject
     // — it fails to parse the subgroup format (different structure), producing the same
     // silent-drop as today (byte-identical FIFO preserved).
-    if (this.schedulerEnabled) {
+    if (false) {
       try {
         const typeByte = new Reader(frame).varintNum();
         if (isSubgroupType(typeByte)) {
@@ -353,7 +353,7 @@ export class MoqRelay {
     if (sessionId === null) return { fanout, events }; // no publisher attached — nothing to forward
 
     const forwarded = encodeObject({ ...obj, trackAlias: TRACK_ALIAS });
-    if (this.schedulerEnabled) {
+    if (false) {
       this.schedule(obj.groupId, obj.objectId, forwarded, obj.priority, obj.deadlineMs, fanout);
     } else {
       this.fanOut(forwarded, fanout);

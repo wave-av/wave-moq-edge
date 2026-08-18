@@ -465,7 +465,7 @@ export function decodeGoaway(payload: Uint8Array): GoawayMsg {
 // keep the control/data split on one message-oriented socket we prepend a 1-byte kind tag to every
 // frame. This envelope is the ONLY non-spec byte on the wire; strip it and the body is exact draft-18.
 // It drops away unchanged when a WebTransport-server binding lands (control→stream, object→datagram).
-export const WS_KIND = { CONTROL: 0x00, OBJECT: 0x01 } as const;
+export const WS_KIND = { CONTROL: 0x00, OBJECT: 0x01, SUBGROUP: 0x02 } as const;
 
 export function tagFrame(kind: number, body: Uint8Array): Uint8Array {
   const out = new Uint8Array(body.length + 1);

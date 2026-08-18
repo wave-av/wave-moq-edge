@@ -336,7 +336,11 @@ export class MOQSessionDurableObject {
       for (const out of r.replies) this.send(out.to, WS_KIND.CONTROL, out.frame);
       for (const out of r.objects) this.send(out.to, WS_KIND.OBJECT, out.frame); // late-joiner / FETCH replay
       events = r.events;
-    } else if (kind === WS_KIND.OBJECT) {
+    } else if (kind === WS_KIND.SUBGROUP) {
+        const r = this.relay.onSubgroupFrame(body);
+        for (const out of r.fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
+        events = r.events;
+      } else if (kind === WS_KIND.OBJECT) {
       const r = this.relay.onObject(sessionId, body);
       for (const out of r.fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
       events = r.events;
