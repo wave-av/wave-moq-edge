@@ -145,7 +145,7 @@ async function openTransport(url: string, kind: string, role: 'subscribe' | 'pub
   // event hides the status — "connection refused" is a lie). REST handshake first, then WS to the
   // returned URL; a 4xx surfaces as a legible error instead.
   try {
-    const res = await fetch(withToken(url), { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual' });
+    const res = await fetch(withToken(url), { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
     if (res.status >= 400) {
       const body = (await res.text()).slice(0, 120);
       throw new Error(`relay http ${res.status}: ${body}`);
@@ -153,7 +153,7 @@ async function openTransport(url: string, kind: string, role: 'subscribe' | 'pub
     const data = (await res.json()) as { websocket_url?: string };
     if (data.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url));
   } catch (e) {
-    if (e instanceof TypeError) throw new Error('websocket connection failed before open');
+    if (e instanceof TypeError) throw new Error(`websocket connection failed before open (${(e as TypeError & { cause?: { code?: string } }).cause?.code ?? 'network'})`);
     throw e;
   }
   if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
