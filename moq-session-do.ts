@@ -236,22 +236,22 @@ export class MOQSessionDurableObject {
     // Legacy JSON register endpoints (kept for the Worker's metadata flow + HTTP clients).
     if (request.method === 'POST') {
       const sessionId = crypto.randomUUID();
-      session.publisherSessionId = sessionId;
-      session.publisherStartedAt = new Date().toISOString();
-      session.lastActivityAt = session.publisherStartedAt;
+      
+      
+      
       await this.save();
-      return json({ ok: true, publish_session: sessionId, websocket_url: `wss://${url.host}${url.pathname}` });
+      return json({ ok: true, websocket_url: `wss://${url.host}${url.pathname}` });
     }
 
     if (request.method === 'GET' && url.pathname.includes('/subscribe/')) {
       const max = parseInt(this.env.MAX_SUBSCRIBERS_PER_TRACK, 10) || 1000;
-      if (session.subscriberCount >= max) {
+      if (this.relay.subscriberCount >= max) {
         return json({ type: 'https://httpstatuses.io/429', title: 'Track at subscriber capacity', status: 429, limit: max }, 429);
       }
-      session.subscriberCount += 1;
+      
       session.lastActivityAt = new Date().toISOString();
       await this.save();
-      return json({ ok: true, subscriber_count: session.subscriberCount, publisher_active: session.publisherSessionId !== null, websocket_url: `wss://${url.host}${url.pathname}` });
+      return json({ ok: true, subscriber_count: this.relay.subscriberCount, publisher_active: this.relay.hasPublisher, websocket_url: `wss://${url.host}${url.pathname}` });
     }
 
     return json({ error: 'method-not-supported' }, 405);
@@ -623,5 +623,12 @@ function json(body: unknown, status = 200): Response {
 function toBytes(data: unknown): Uint8Array | null {
   if (data instanceof ArrayBuffer) return new Uint8Array(data);
   if (data instanceof Uint8Array) return data;
+  return null;
+}
+turn null;
+}
+n null;
+}
+a;
   return null;
 }
