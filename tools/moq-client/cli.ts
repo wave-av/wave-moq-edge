@@ -140,12 +140,22 @@ function withToken(url: string): string {
 }
 
 async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish'): Promise<Transport> {
-  // Session-first flow: the relay creates the publisher session on a plain REST request and returns
+  // WebTransport has no session-first WebSocket handshake; connect directly using the requested
+    // transport. The relay's websocket_url receipt is only meaningful for WebSocket clients.
+    if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
+
+    // Session-first flow: the relay creates the publisher session on a plain REST request and returns
   // `websocket_url`; dialing the WS directly on a session-less track 404s (and the DOM-style WS error
   // event hides the status — "connection refused" is a lie). REST handshake first, then WS to the
   // returned URL; a 4xx surfaces as a legible error instead.
   try {
-    const res = await fetch(withToken(url), { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    const handshakeUrl = new URL(url);
+      handshakeUrl.protocol = handshakeUrl.protocol === 'wss:' ? 'https:' : 'http:';
+      const res = await fetch(withToken(handshakeUrl.toString()), {
+        method: role === 'publish' ? 'POST' : 'GET',
+        redirect: 'manual',
+        signal: AbortSignal.timeout(30000),
+      });
     if (res.status >= 400) {
       const body = (await res.text()).slice(0, 120);
       throw new Error(`relay http ${res.status}: ${body}`);
@@ -156,7 +166,8 @@ async function openTransport(url: string, kind: string, role: 'subscribe' | 'pub
     if (e instanceof TypeError) throw new Error(`websocket connection failed before open (${(e as TypeError & { cause?: { code?: string } }).cause?.code ?? 'network'})`);
     throw e;
   }
-  if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
+  // transport. The relay's websocket_url receipt is only meaningful for WebSocket clients.
+    if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
   return WebSocketTransport.connect(withToken(url));
 }
 
