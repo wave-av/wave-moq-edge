@@ -15,5 +15,5 @@
     "noUncheckedIndexedAccess": false,
     "resolveJsonModule": true
   },
-  "include": ["cli.ts", "src/**/*.ts", "__tests__/**/*.ts", "../../src/moq-wire.ts"]
+  "include": ["cli.ts", "mcp.ts", "src/**/*.ts", "__tests__/**/*.ts", "../../src/moq-wire.ts"]
 }

@@ -17,7 +17,8 @@
  *   node --experimental-transform-types tools/moq-client/mcp.ts --self-test  # smoke test
  */
 
-import { runPublish, runSubscribe, type SessionReport } from './src/session.ts';
+import { createInterface } from 'node:readline';
+import { runPublish, runSubscribe } from './src/session.ts';
 import { WebSocketTransport, type Transport } from './src/transport.ts';
 import {
   MOQ_ROLE,
@@ -73,28 +74,17 @@ function redact(url: string): string {
 // ── Transport helper ──────────────────────────────────────────────────────────
 
 async function openTransport(url: string, role: 'subscribe' | 'publish'): Promise<Transport> {
-  let data: { websocket_url?: string } | null = null;
-  try {
-    const { execFileSync } = await import('node:child_process');
-    const raw = execFileSync(
-      'curl',
-      ['-sS', '--max-time', '45', '-X', role === 'publish' ? 'POST' : 'GET', withToken(url)],
-      { encoding: 'utf8', timeout: 50_000, maxBuffer: 1 << 20 },
-    );
-    data = JSON.parse(raw) as { websocket_url?: string };
-  } catch {
-    const res = await fetch(withToken(url), {
-      method: role === 'publish' ? 'POST' : 'GET',
-      redirect: 'manual',
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (res.status >= 400) {
-      const body = (await res.text()).slice(0, 120);
-      throw new Error(`relay http ${res.status}: ${body}`);
-    }
-    data = (await res.json()) as { websocket_url?: string };
+  const res = await fetch(withToken(url), {
+    method: role === 'publish' ? 'POST' : 'GET',
+    redirect: 'manual',
+    signal: AbortSignal.timeout(30_000),
+  });
+  if (res.status >= 400) {
+    const body = (await res.text()).slice(0, 120);
+    throw new Error(`relay http ${res.status}: ${body}`);
   }
-  if (data?.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url));
+  const data = (await res.json()) as { websocket_url?: string };
+  if (data.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url));
   return WebSocketTransport.connect(withToken(url));
 }
 
@@ -302,13 +292,16 @@ async function handleStatus(args: Record<string, unknown>): Promise<unknown> {
   const role = (args.role as string) ?? 'subscribe';
 
   try {
-    const { execFileSync } = await import('node:child_process');
-    const raw = execFileSync(
-      'curl',
-      ['-sS', '--max-time', '10', '-X', role === 'publish' ? 'POST' : 'GET', withToken(url)],
-      { encoding: 'utf8', timeout: 15_000, maxBuffer: 1 << 20 },
-    );
-    const data = JSON.parse(raw);
+    const res = await fetch(withToken(url), {
+      method: role === 'publish' ? 'POST' : 'GET',
+      redirect: 'manual',
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (res.status >= 400) {
+      const body = (await res.text()).slice(0, 120);
+      throw new Error(`relay http ${res.status}: ${body}`);
+    }
+    const data = await res.json() as { websocket_url?: string };
     return {
       status: 'ok',
       relayUrl: redact(url),
@@ -381,7 +374,7 @@ function respondError(id: number | string | null, code: number, message: string,
   return { jsonrpc: '2.0', id, error: { code, message, data } };
 }
 
-async function handleRequest(req: JsonRpcRequest): Promise<JsonRpcResponse> {
+async function handleRequest(req: JsonRpcRequest): Promise<JsonRpcResponse | null> {
   if (req.method === 'initialize') {
     return respond(req.id, {
       protocolVersion: '2024-11-05',
@@ -390,7 +383,7 @@ async function handleRequest(req: JsonRpcRequest): Promise<JsonRpcResponse> {
     });
   }
   if (req.method === 'notifications/initialized') {
-    return respond(req.id, undefined);
+    return null;
   }
   if (req.method === 'tools/list') {
     return respond(req.id, { tools: TOOLS });
@@ -414,7 +407,8 @@ async function handleRequest(req: JsonRpcRequest): Promise<JsonRpcResponse> {
 
 // ── stdin/stdout reader ───────────────────────────────────────────────────────
 
-function runServer(): void {
+function runServer(): Promise<void> {
+  return new Promise((resolve) => {
   const rl = createInterface({ input: process.stdin });
   rl.on('line', async (line) => {
     const trimmed = line.trim();
@@ -422,14 +416,15 @@ function runServer(): void {
     try {
       const req = JSON.parse(trimmed) as JsonRpcRequest;
       const res = await handleRequest(req);
-      process.stdout.write(JSON.stringify(res) + '\n');
+      if (res) process.stdout.write(JSON.stringify(res) + '\n');
     } catch {
       process.stdout.write(
         JSON.stringify(respondError(null, -32700, 'Parse error')) + '\n',
       );
     }
   });
-  rl.on('close', () => process.exit(0));
+  rl.on('close', resolve);
+  });
 }
 
 // ── Self-test ─────────────────────────────────────────────────────────────────
@@ -440,14 +435,14 @@ async function selfTest(): Promise<number> {
   // Test 1: initialize
   const initReq: JsonRpcRequest = { jsonrpc: '2.0', id: 1, method: 'initialize', params: {} };
   const initRes = await handleRequest(initReq);
-  const initOk = initRes.result && typeof initRes.result === 'object' &&
+  const initOk = initRes && initRes.result && typeof initRes.result === 'object' &&
     (initRes.result as Record<string, unknown>).protocolVersion === '2024-11-05';
   results.push(`initialize: ${initOk ? 'PASS' : 'FAIL'}`);
 
   // Test 2: tools/list
   const listReq: JsonRpcRequest = { jsonrpc: '2.0', id: 2, method: 'tools/list' };
   const listRes = await handleRequest(listReq);
-  const listResult = listRes.result as { tools: Array<{ name: string }> } | undefined;
+  const listResult = listRes?.result as { tools: Array<{ name: string }> } | undefined;
   const toolNames = listResult?.tools?.map((t) => t.name) ?? [];
   const expected = ['publish_subgroup', 'subscribe', 'status', 'publish_health'];
   const listOk = expected.every((n) => toolNames.includes(n));
@@ -456,12 +451,12 @@ async function selfTest(): Promise<number> {
   // Test 3: tools/call unknown
   const unknownReq: JsonRpcRequest = { jsonrpc: '2.0', id: 3, method: 'tools/call', params: { name: 'nonexistent' } };
   const unknownRes = await handleRequest(unknownReq);
-  const unknownOk = unknownRes.error?.code === -32601;
+  const unknownOk = unknownRes?.error?.code === -32601;
   results.push(`tools/call unknown: ${unknownOk ? 'PASS' : 'FAIL'}`);
 
   // Test 4: parse error
   const parseRes = await handleRequest(JSON.parse('{"jsonrpc":"2.0","id":null,"method":"nope"}'));
-  const parseOk = parseRes.error?.code === -32601;
+  const parseOk = parseRes?.error?.code === -32601;
   results.push(`method not found: ${parseOk ? 'PASS' : 'FAIL'}`);
 
   const allPassed = results.every((r) => r.includes('PASS'));
@@ -498,7 +493,7 @@ async function main(): Promise<number> {
   if (args.includes('--self-test')) {
     return selfTest();
   }
-  runServer();
+  await runServer();
   return 0;
 }
 
