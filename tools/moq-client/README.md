@@ -101,6 +101,11 @@ npm run moq-client -- subscribe wss://host/v1/subscribe/ns/track --ns=ns --track
 npm run moq-client -- publish  wss://host/v1/publish/ns/track --ns=ns --track=track --count=30
 ```
 
+### MCP (agent surface)
+
+The MCP server exposes `publish_subgroup`, `subscribe`, `status`, and `publish_health` as stdio
+JSON-RPC tools for agent consumption — see `mcp.ts`. Run with `--self-test` for a smoke check.
+
 Auth: set `MOQ_JOIN_TOKEN` in the environment. It is appended as `?join=…` because the relay reads
 that query parameter (browser WebSocket clients cannot set headers), and **every URL this tool
 prints is redacted first**. No credential is ever written to stdout, and none is stored in the repo.
@@ -157,6 +162,7 @@ one pretends to answer the other's question.
 ```
 tools/moq-client/
   cli.ts                 probe-alpn / subscribe / publish; token redaction
+  mcp.ts                 MCP surface: stdio JSON-RPC 2.0 (publish_subgroup, subscribe, status, publish_health)
   src/quic-crypto.ts     RFC 9001 §5 packet protection, HKDF, QUIC varints
   src/tls-hello.ts       TLS 1.3 ClientHello + ALPN extension; server-flight classification
   src/quic-alpn.ts       the prober: frame parsing, accept/refuse verdicts
