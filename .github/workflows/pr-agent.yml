@@ -1,6 +1,21 @@
-# pr-agent (OSS) caller — adopts the wave-foundation reusable lane.
-# Engine: OSS Qodo Merge on our OPENAI_KEY (trial-independent). SSOT:
-# wave-foundation/.github/workflows/reusable-pr-agent.yml
+# pr-agent (OSS) — INLINE form for public repos (no references to private wave-foundation).
+# Mirrors wave-foundation/.github/workflows/reusable-pr-agent.yml. Engine: OSS Qodo Merge on OPENAI_KEY.
+#
+# WHY AN INLINE COPY EXISTS AT ALL, restated because 28 repos got this wrong.
+# GitHub does not let a PUBLIC repository call a reusable workflow from a
+# PRIVATE one. wave-foundation is private, so a public repo pointing at
+# `wave-av/wave-foundation/.github/workflows/reusable-pr-agent.yml@…` never
+# resolves: the run dies before any job is created — `conclusion: failure`,
+# zero jobs, no log, and no check run on the head sha to read. Measured
+# 2026-08-22 across 16 repos, a clean 16/16 split on visibility alone:
+# 7 public repos, 176 runs, 100% failure; 9 private repos, zero failures.
+# THIS FILE is what a public repo adopts instead. See wave-pen#388.
+#
+# IT IS A MIRROR, AND MIRRORS DRIFT. As of 2026-08-22 this copy had fallen a
+# long way behind the reusable lane it claims to mirror — no retry, no verdict
+# step, no continue-on-error, so an upstream 429 turned the check RED on an
+# ADVISORY reviewer. Everything below re-syncs it and carries today's two fixes.
+# When the reusable lane changes, this changes with it or it lies.
 name: pr-agent (OSS)
 on:
   pull_request:
@@ -13,12 +28,156 @@ permissions:
   pull-requests: write
   contents: read
 
+# The group key carries the EVENT NAME (wave-pen#386).
+#
+# Without it, `pull_request` and `issue_comment` share one group per PR number,
+# so any comment on the PR cancels a review already in flight. Measured on
+# wave-pen over 30 runs: 15 skipped, 15 cancelled, ZERO reviews ever completed.
+# 14 of the 15 cancelled died at ~12 SECONDS, inside GitHub's docker build,
+# each followed 10-12s later by an `issue_comment` run that entered this group,
+# cancelled it, then skipped ITSELF on the job `if:` below because the comment
+# did not start with `/`. A run that will not review took the lane from the run
+# that would have:
+#
+#   17:43:14  cancelled  pull_request     <- review starts
+#   17:43:26  skipped    issue_comment    <- +12s, kills it, then skips itself
+#
+# Keying on event name preserves what this block is FOR — two pushes still share
+# `pr-agent-pull_request-<n>` and still supersede each other — while giving a
+# slash-command comment its own lane, which is correct: an explicit `/review` is
+# a new request, not a supersession of a push review. Proven live on wave-pen:
+# the first successful run in that repo's history, with the comment run skipping
+# harmlessly beside it.
 concurrency:
-  group: pr-agent-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
+  group: pr-agent-${{ github.event_name }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   pr_agent:
-    uses: wave-av/wave-foundation/.github/workflows/reusable-pr-agent.yml@main
-    secrets:
-      OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+    timeout-minutes: 15
+    # Slash commands: PR-only + trusted members (cost-abuse guard). Forks skipped (no secrets there).
+    if: >-
+      ${{
+        (github.event_name == 'issue_comment'
+            && github.event.issue.pull_request
+            && startsWith(github.event.comment.body, '/')
+            && contains(fromJSON('["MEMBER","OWNER","COLLABORATOR"]'), github.event.comment.author_association))
+        || (github.event_name == 'pull_request'
+            && !contains(github.event.pull_request.user.login, '[bot]')
+            && github.event.pull_request.draft == false
+            && github.event.pull_request.head.repo.fork == false)
+      }}
+    runs-on: ubuntu-latest
+    steps:
+      # Stamped so the verdict step can tell a TIMED-OUT attempt from a fast
+      # upstream error. Both arrive as outcome == 'failure' and GitHub exposes no
+      # step-level "timed_out", so elapsed time is the only discriminator there is.
+      - name: stamp attempt start
+        run: echo "AGENT_START=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: PR-Agent (OSS qodo-merge)
+        id: agent
+        # STEP-level budget, under the job's 15 (wave-pen#386).
+        #
+        # Without it one hung attempt consumes the WHOLE job budget: the job hits
+        # `timeout-minutes: 15`, which GitHub renders as `cancelled` — the same
+        # word a concurrency supersede produces, so a 12-second supersede and a
+        # 15-minute hang are indistinguishable in a run list. And the retry below
+        # becomes unreachable on exactly the path it would help.
+        #
+        # 6 is measured, not picked. Two observed successful reviews: 64s
+        # (wave-foundation run 32539972644) and 180s on a 314-file PR (wave-pen
+        # run 32589642731). 360s is 2x the larger. 6 + 0.75 + 6 = 12.75 keeps both
+        # attempts inside the job's 15.
+        timeout-minutes: 6
+        uses: The-PR-Agent/pr-agent@f6af7d77554ff8d26adffded077e6461329e92fa # v0.42.0
+        continue-on-error: true   # outcome is classified by the verdict step below (#3128)
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          CONFIG__MODEL: "openai/claude-opus-5"
+          CONFIG__MODEL_WEAK: "openai/qwen3.7-flash"
+          CONFIG__MODEL_REASONING: "openai/claude-sonnet-5"
+          OPENAI_API_BASE: "https://api.wave.online/v1/dispatch"
+          CONFIG__CUSTOM_MODEL_MAX_TOKENS: "32000"
+          CONFIG__AI_TIMEOUT: "600"
+          CONFIG__FALLBACK_MODELS: "openai/qwen3-coder:30b"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_action_config.auto_review: "true"
+          github_action_config.auto_describe: "false"
+          github_action_config.auto_improve: "true"
+          github_action_config.handle_push_trigger: "true"
+          pr_code_suggestions.commitable_code_suggestions: "true"
+          pr_code_suggestions.suggestions_score_threshold: "7"
+          pr_code_suggestions.num_code_suggestions: "6"
+
+      # Red-while-silent (#3128), which this mirror was missing entirely: upstream
+      # 429s from the LLM router rendered this check RED with no retry, and
+      # pr-agent is an ADVISORY reviewer — it annotates, it never gates
+      # correctness — so a flaked reviewer must never block a PR.
+      - name: backoff before retry
+        if: steps.agent.outcome == 'failure'
+        run: sleep 45
+
+      - name: PR-Agent retry (attempt 2)
+        id: agent_retry
+        if: steps.agent.outcome == 'failure'
+        timeout-minutes: 6   # same budget as attempt 1 — see its comment
+        uses: The-PR-Agent/pr-agent@f6af7d77554ff8d26adffded077e6461329e92fa # v0.42.0
+        continue-on-error: true
+        # Duplicated, not aliased: GitHub Actions does not support YAML anchors.
+        # Keep both blocks identical — a drift here silently reviews attempt 2
+        # against a different model than attempt 1.
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          CONFIG__MODEL: "openai/claude-opus-5"
+          CONFIG__MODEL_WEAK: "openai/qwen3.7-flash"
+          CONFIG__MODEL_REASONING: "openai/claude-sonnet-5"
+          OPENAI_API_BASE: "https://api.wave.online/v1/dispatch"
+          CONFIG__CUSTOM_MODEL_MAX_TOKENS: "32000"
+          CONFIG__AI_TIMEOUT: "600"
+          CONFIG__FALLBACK_MODELS: "openai/qwen3-coder:30b"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_action_config.auto_review: "true"
+          github_action_config.auto_describe: "false"
+          github_action_config.auto_improve: "true"
+          github_action_config.handle_push_trigger: "true"
+          pr_code_suggestions.commitable_code_suggestions: "true"
+          pr_code_suggestions.suggestions_score_threshold: "7"
+          pr_code_suggestions.num_code_suggestions: "6"
+
+      # FOUR outcomes, not three (wave-pen#386). Branching on {success, failure,
+      # empty} alone sweeps everything else into "most commonly an upstream 429",
+      # so a job timeout and a concurrency supersede both report a rate limit that
+      # never happened. A confidently wrong cause is worse than no cause: it sends
+      # the next reader to the LLM router to debug a workflow defect.
+      - name: verdict (classify, never block)
+        if: always()
+        env:
+          AGENT_OUTCOME: ${{ steps.agent.outcome }}
+          AGENT_RETRY_OUTCOME: ${{ steps.agent_retry.outcome }}
+          STEP_BUDGET_S: "360"   # the 6-minute step timeout above, in seconds
+        run: |
+          if [ "$AGENT_OUTCOME" = "success" ] || [ "$AGENT_RETRY_OUTCOME" = "success" ]; then
+            exit 0
+          fi
+          if [ -z "$AGENT_OUTCOME" ]; then
+            # The reviewer never ran: an earlier step failed or the job was cancelled.
+            # A WORKFLOW fault, not a reviewer flake — stays loud.
+            echo "::error::pr-agent never ran — an earlier step failed or the job was cancelled."
+            exit 1
+          fi
+          if [ "$AGENT_OUTCOME" = "cancelled" ] || [ "$AGENT_RETRY_OUTCOME" = "cancelled" ]; then
+            # `continue-on-error` does NOT catch a cancellation, so the retry never
+            # fired either. Two causes, both workflow-level, neither the reviewer's:
+            # a newer run superseded this one via the concurrency group above, or
+            # the job hit timeout-minutes. Named rather than guessed between.
+            echo "::warning::pr-agent was CANCELLED, not failed — a newer run superseded this one via the concurrency group, or the job hit timeout-minutes. Not a reviewer or rate-limit fault (wave-pen#386)."
+            exit 0
+          fi
+          ELAPSED=$(( $(date +%s) - ${AGENT_START:-$(date +%s)} ))
+          if [ "$ELAPSED" -ge "$STEP_BUDGET_S" ]; then
+            echo "::warning::pr-agent TIMED OUT — ${ELAPSED}s against a ${STEP_BUDGET_S}s per-attempt budget, so an attempt was killed by its step timeout rather than returning an error. A hang, NOT a rate limit. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
+            exit 0
+          fi
+          echo "::warning::pr-agent failed after 2 attempts (45s backoff, ${ELAPSED}s total — well inside the ${STEP_BUDGET_S}s budget, so it returned an error rather than hanging) — most commonly an upstream 429/rate-limit from the LLM router. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
+          exit 0
