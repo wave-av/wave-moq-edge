@@ -17,7 +17,7 @@
  *   node --experimental-transform-types tools/moq-client/mcp.ts --self-test  # smoke test
  */
 
-import { runPublish, runSubscribe, type SessionReport } from './src/session.ts';
+import { runPublish, runSubscribe } from './src/session.ts';
 import { WebSocketTransport, type Transport } from './src/transport.ts';
 import {
   MOQ_ROLE,
