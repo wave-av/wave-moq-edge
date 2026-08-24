@@ -117,25 +117,31 @@ jobs:
           REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.issue.number }}
         run: |
+          # ONE write, at the end, from a variable that STARTS at the refusing
+          # value. An earlier revision wrote `fork=` separately on each branch,
+          # which meant a future edit adding an early `exit 0` would emit no
+          # output at all — and the consumer's `!= 'true'` then read that silence
+          # as permission. Two reviewers flagged it independently. Structured so
+          # the refusal is the default rather than one branch among several.
+          fork=true
           if [ "$EVENT_NAME" != "issue_comment" ]; then
             # The job-level `if:` already proved `head.repo.fork == false`.
-            echo "fork=false" >> "$GITHUB_OUTPUT"
-            exit 0
+            fork=false
+          else
+            answer=$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.head.repo.fork' 2>/dev/null || echo "")
+            case "$answer" in
+              false)
+                fork=false
+                ;;
+              true)
+                echo "::warning::Slash command ignored: this PR is from a fork, and this lane carries OPENAI_KEY. Forks are reviewed by a maintainer, not by the agent lane (wave-pen#418)."
+                ;;
+              *)
+                echo "::warning::Could not determine whether PR #${PR_NUMBER} is from a fork (the pulls endpoint returned nothing usable). Treating it AS a fork and skipping — an unreadable answer is not a negative one (wave-pen#418)."
+                ;;
+            esac
           fi
-          fork=$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.head.repo.fork' 2>/dev/null || echo "")
-          case "$fork" in
-            false)
-              echo "fork=false" >> "$GITHUB_OUTPUT"
-              ;;
-            true)
-              echo "fork=true" >> "$GITHUB_OUTPUT"
-              echo "::warning::Slash command ignored: this PR is from a fork, and this lane carries OPENAI_KEY. Forks are reviewed by a maintainer, not by the agent lane (wave-pen#418)."
-              ;;
-            *)
-              echo "fork=true" >> "$GITHUB_OUTPUT"
-              echo "::warning::Could not determine whether PR #${PR_NUMBER} is from a fork (the pulls endpoint returned nothing usable). Treating it AS a fork and skipping — an unreadable answer is not a negative one (wave-pen#418)."
-              ;;
-          esac
+          echo "fork=$fork" >> "$GITHUB_OUTPUT"
 
       # Stamped so the verdict step can tell a TIMED-OUT attempt from a fast
       # upstream error. Both arrive as outcome == 'failure' and GitHub exposes no
@@ -154,7 +160,11 @@ jobs:
 
       - name: PR-Agent (OSS qodo-merge)
         id: agent
-        if: steps.gate.outputs.fork != 'true'
+        # POSITIVELY gated: runs only on an explicit `false`, never on the mere
+        # absence of a `true`. `!= 'true'` would grant on an empty output, i.e.
+        # treat "the gate said nothing" as "the gate said yes" — the exact shape
+        # this whole change exists to remove, reproduced one layer down.
+        if: steps.gate.outputs.fork == 'false'
         # STEP-level budget, under the job's 15 (wave-pen#386).
         #
         # Without it one hung attempt consumes the WHOLE job budget: the job hits
@@ -299,7 +309,12 @@ jobs:
           # the first path that reaches it. Fixed at the arithmetic, not by
           # special-casing the caller (wave-pen#418).
           if [ -n "${ATTEMPT2_START:-}" ] && [ "${ATTEMPT2_START:-0}" -gt 0 ]; then
-            A2=$(( ${ATTEMPT2_END:-0} - ATTEMPT2_START ))
+            # Braced on BOTH sides. The bare `ATTEMPT2_START` this replaces was
+            # correct — POSIX arithmetic expansion evaluates a bare name as a
+            # variable, verified identical (180 == 180) — but a reviewer read it
+            # as a literal token and filed it High, and an expression that reads
+            # wrong on 27 repos will be re-filed on 27 repos.
+            A2=$(( ${ATTEMPT2_END:-0} - ${ATTEMPT2_START:-0} ))
           else
             A2=0
           fi
