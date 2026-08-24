@@ -55,7 +55,24 @@ concurrency:
 jobs:
   pr_agent:
     timeout-minutes: 15
-    # Slash commands: PR-only + trusted members (cost-abuse guard). Forks skipped (no secrets there).
+    # Slash commands: PR-only + trusted members (cost-abuse guard).
+    #
+    # FORKS ARE REFUSED ON ONE ARM HERE, NOT BOTH — say it accurately, because the
+    # comment this replaces said "Forks skipped (no secrets there)" and that was
+    # true of `pull_request` and false of `issue_comment` (wave-pen#418). The
+    # `issue_comment` arm cannot test fork status: its payload does not carry it.
+    # Measured, with a positive control:
+    #
+    #   GET /repos/{o}/{r}/issues/47  -> .pull_request keys are exactly
+    #                                    [diff_url, html_url, merged_at, patch_url, url]
+    #   GET /repos/{o}/{r}/pulls/47   -> .head.repo.fork = false
+    #
+    # No `head`, no `repo` — so there is nothing to write in this expression. The
+    # check moves to the `fork gate` STEP below, which asks the pulls endpoint.
+    # A false comment is worse than a missing check: it tells the next editor the
+    # guard is already here, and the day someone adds `actions/checkout` to this
+    # lane that belief is what makes it a real exfiltration path rather than a
+    # theoretical one.
     if: >-
       ${{
         (github.event_name == 'issue_comment'
@@ -69,14 +86,75 @@ jobs:
       }}
     runs-on: ubuntu-latest
     steps:
+      # The fork check the job-level `if:` structurally cannot make (wave-pen#418).
+      #
+      # This job holds `OPENAI_KEY` and `pull-requests: write`. On the
+      # `pull_request` arm the gate above already refused forks. On the
+      # `issue_comment` arm it could not, because fork status is absent from that
+      # payload — so it is resolved here, from the pulls endpoint, which does
+      # carry it.
+      #
+      # FAILS CLOSED, and that is the point of the `*` case rather than an
+      # `if [ "$fork" = true ]`. A 404, a revoked token, a rate limit and a
+      # renamed field all produce an empty `fork`, and "I could not tell" must not
+      # arrive at the same answer as "not a fork" on the arm that carries the key.
+      # The cost of being wrong in that direction is a skipped advisory review.
+      #
+      # SCOPE, stated so nobody reads more into it than is there: this lane runs
+      # NO `actions/checkout`, so fork code is never fetched or executed and there
+      # is no exfiltration path to close today. What a `/review` on a fork PR
+      # actually reaches is the fork's diff, sent to the LLM router on our key —
+      # cost surface, already narrowed by the author_association allowlist above.
+      # This is defence in depth, and it is what makes the corrected comment true.
+      - name: fork gate (issue_comment only)
+        id: gate
+        env:
+          # Every event-derived value crosses into the shell through env, never
+          # through `${{ }}` in the script body — a `run:` block is a template,
+          # and a PR title is attacker-controlled text.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ "$EVENT_NAME" != "issue_comment" ]; then
+            # The job-level `if:` already proved `head.repo.fork == false`.
+            echo "fork=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          fork=$(gh api "repos/$REPO/pulls/$PR_NUMBER" --jq '.head.repo.fork' 2>/dev/null || echo "")
+          case "$fork" in
+            false)
+              echo "fork=false" >> "$GITHUB_OUTPUT"
+              ;;
+            true)
+              echo "fork=true" >> "$GITHUB_OUTPUT"
+              echo "::warning::Slash command ignored: this PR is from a fork, and this lane carries OPENAI_KEY. Forks are reviewed by a maintainer, not by the agent lane (wave-pen#418)."
+              ;;
+            *)
+              echo "fork=true" >> "$GITHUB_OUTPUT"
+              echo "::warning::Could not determine whether PR #${PR_NUMBER} is from a fork (the pulls endpoint returned nothing usable). Treating it AS a fork and skipping — an unreadable answer is not a negative one (wave-pen#418)."
+              ;;
+          esac
+
       # Stamped so the verdict step can tell a TIMED-OUT attempt from a fast
       # upstream error. Both arrive as outcome == 'failure' and GitHub exposes no
       # step-level "timed_out", so elapsed time is the only discriminator there is.
-      - name: stamp attempt start
-        run: echo "AGENT_START=$(date +%s)" >> "$GITHUB_ENV"
+      #
+      # PER-ATTEMPT, and that is the whole fix. This used to be one AGENT_START
+      # stamped before attempt 1, with the verdict comparing TOTAL job time
+      # against STEP_BUDGET_S — a budget its own comment calls per-attempt. Two
+      # slow-but-healthy attempts (~180s each) plus the 45s backoff total ~405s
+      # and were reported as "TIMED OUT … a hang, NOT a rate limit", sending the
+      # next reader to debug a hang that never happened. The else-branch was
+      # equally wrong the other way, asserting the run was "well inside the
+      # budget" from a total that spans both attempts.
+      - name: stamp attempt 1 start
+        run: echo "ATTEMPT1_START=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: PR-Agent (OSS qodo-merge)
         id: agent
+        if: steps.gate.outputs.fork != 'true'
         # STEP-level budget, under the job's 15 (wave-pen#386).
         #
         # Without it one hung attempt consumes the WHOLE job budget: the job hits
@@ -99,7 +177,12 @@ jobs:
           CONFIG__MODEL_REASONING: "openai/claude-sonnet-5"
           OPENAI_API_BASE: "https://api.wave.online/v1/dispatch"
           CONFIG__CUSTOM_MODEL_MAX_TOKENS: "32000"
-          CONFIG__AI_TIMEOUT: "600"
+          # MUST stay under the step's 360s, or it is not a budget (wave-pen#418).
+          # At 600 the runner killed the step first, so pr-agent never reached its
+          # own timeout, never fell back to CONFIG__FALLBACK_MODELS, and returned
+          # no error the retry could classify. 300 leaves 60s of headroom and sits
+          # above both observed successful reviews (64s, 180s).
+          CONFIG__AI_TIMEOUT: "300"
           CONFIG__FALLBACK_MODELS: "openai/qwen3-coder:30b"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_action_config.auto_review: "true"
@@ -114,9 +197,19 @@ jobs:
       # 429s from the LLM router rendered this check RED with no retry, and
       # pr-agent is an ADVISORY reviewer — it annotates, it never gates
       # correctness — so a flaked reviewer must never block a PR.
+      # `if: always()` so an attempt KILLED by its step timeout still records an
+      # end stamp — that is precisely the case the classifier needs to see.
+      - name: stamp attempt 1 end
+        if: always()
+        run: echo "ATTEMPT1_END=$(date +%s)" >> "$GITHUB_ENV"
+
       - name: backoff before retry
         if: steps.agent.outcome == 'failure'
         run: sleep 45
+
+      - name: stamp attempt 2 start
+        if: steps.agent.outcome == 'failure'
+        run: echo "ATTEMPT2_START=$(date +%s)" >> "$GITHUB_ENV"
 
       - name: PR-Agent retry (attempt 2)
         id: agent_retry
@@ -134,7 +227,12 @@ jobs:
           CONFIG__MODEL_REASONING: "openai/claude-sonnet-5"
           OPENAI_API_BASE: "https://api.wave.online/v1/dispatch"
           CONFIG__CUSTOM_MODEL_MAX_TOKENS: "32000"
-          CONFIG__AI_TIMEOUT: "600"
+          # MUST stay under the step's 360s, or it is not a budget (wave-pen#418).
+          # At 600 the runner killed the step first, so pr-agent never reached its
+          # own timeout, never fell back to CONFIG__FALLBACK_MODELS, and returned
+          # no error the retry could classify. 300 leaves 60s of headroom and sits
+          # above both observed successful reviews (64s, 180s).
+          CONFIG__AI_TIMEOUT: "300"
           CONFIG__FALLBACK_MODELS: "openai/qwen3-coder:30b"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_action_config.auto_review: "true"
@@ -144,6 +242,10 @@ jobs:
           pr_code_suggestions.commitable_code_suggestions: "true"
           pr_code_suggestions.suggestions_score_threshold: "7"
           pr_code_suggestions.num_code_suggestions: "6"
+
+      - name: stamp attempt 2 end
+        if: always()
+        run: echo "ATTEMPT2_END=$(date +%s)" >> "$GITHUB_ENV"
 
       # FOUR outcomes, not three (wave-pen#386). Branching on {success, failure,
       # empty} alone sweeps everything else into "most commonly an upstream 429",
@@ -160,6 +262,13 @@ jobs:
           if [ "$AGENT_OUTCOME" = "success" ] || [ "$AGENT_RETRY_OUTCOME" = "success" ]; then
             exit 0
           fi
+          if [ "$AGENT_OUTCOME" = "skipped" ]; then
+            # The fork gate refused this run and already said why. Distinct from
+            # the empty case below: `skipped` means a guard declined deliberately,
+            # `""` means the step never existed to have an outcome.
+            echo "::notice::pr-agent did not run — declined by the fork gate above (wave-pen#418)."
+            exit 0
+          fi
           if [ -z "$AGENT_OUTCOME" ]; then
             # The reviewer never ran: an earlier step failed or the job was cancelled.
             # A WORKFLOW fault, not a reviewer flake — stays loud.
@@ -174,10 +283,36 @@ jobs:
             echo "::warning::pr-agent was CANCELLED, not failed — a newer run superseded this one via the concurrency group, or the job hit timeout-minutes. Not a reviewer or rate-limit fault (wave-pen#386)."
             exit 0
           fi
-          ELAPSED=$(( $(date +%s) - ${AGENT_START:-$(date +%s)} ))
-          if [ "$ELAPSED" -ge "$STEP_BUDGET_S" ]; then
-            echo "::warning::pr-agent TIMED OUT — ${ELAPSED}s against a ${STEP_BUDGET_S}s per-attempt budget, so an attempt was killed by its step timeout rather than returning an error. A hang, NOT a rate limit. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
+          # PER-ATTEMPT durations, not total job time. STEP_BUDGET_S is the
+          # per-attempt step timeout; comparing it against a total spanning
+          # attempt 1 + 45s backoff + attempt 2 misclassified two healthy-but-slow
+          # attempts (~180s each, ~405s together) as a hang. Every value is
+          # defaulted so the arithmetic can never fail this step and turn the
+          # classifier into an error of its own.
+          NOW=$(date +%s)
+          A1=$(( ${ATTEMPT1_END:-0} - ${ATTEMPT1_START:-0} ))
+          # A2 is computed ONLY from a real start stamp. `stamp attempt 2 end`
+          # carries `if: always()`, so it fires even when attempt 2 never ran —
+          # and `END - ${START:-0}` then subtracts from ZERO, yielding a ~1.7e9
+          # "duration" that clears any budget and reports a TIMED OUT that never
+          # happened. Latent since the stamps landed (#72); the fork gate is just
+          # the first path that reaches it. Fixed at the arithmetic, not by
+          # special-casing the caller (wave-pen#418).
+          if [ -n "${ATTEMPT2_START:-}" ] && [ "${ATTEMPT2_START:-0}" -gt 0 ]; then
+            A2=$(( ${ATTEMPT2_END:-0} - ATTEMPT2_START ))
+          else
+            A2=0
+          fi
+          [ "$A1" -lt 0 ] && A1=0
+          [ "$A2" -lt 0 ] && A2=0
+          LONGEST=$A1; [ "$A2" -gt "$LONGEST" ] && LONGEST=$A2
+          ELAPSED=$(( NOW - ${ATTEMPT1_START:-$NOW} ))
+          # SLACK because a step killed AT its timeout records a hair under the
+          # budget — the runner's kill is not instantaneous.
+          SLACK=15
+          if [ "$LONGEST" -ge $(( STEP_BUDGET_S - SLACK )) ]; then
+            echo "::warning::pr-agent TIMED OUT — the longest attempt ran ${LONGEST}s against a ${STEP_BUDGET_S}s per-attempt budget (attempt 1 ${A1}s, attempt 2 ${A2}s), so it was killed by its step timeout rather than returning an error. A hang, NOT a rate limit. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
             exit 0
           fi
-          echo "::warning::pr-agent failed after 2 attempts (45s backoff, ${ELAPSED}s total — well inside the ${STEP_BUDGET_S}s budget, so it returned an error rather than hanging) — most commonly an upstream 429/rate-limit from the LLM router. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
+          echo "::warning::pr-agent failed after 2 attempts (attempt 1 ${A1}s, attempt 2 ${A2}s, ${ELAPSED}s wall including the 45s backoff — NEITHER attempt reached the ${STEP_BUDGET_S}s per-attempt budget, so it returned an error rather than hanging) — most commonly an upstream 429/rate-limit from the LLM router. Rendering NEUTRAL: an advisory reviewer must not block the PR (#3128)."
           exit 0
