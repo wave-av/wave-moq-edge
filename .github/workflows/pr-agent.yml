@@ -48,8 +48,17 @@ permissions:
 # a new request, not a supersession of a push review. Proven live on wave-pen:
 # the first successful run in that repo's history, with the comment run skipping
 # harmlessly beside it.
+#
+# THE KEY ALSO CARRIES pr-VS-issue, and that is a second, separate collision
+# (wave-pen#418). `issue_comment` fires for ISSUES as well as PRs, and GitHub
+# draws both from ONE number sequence — so a comment on Issue #30 and a
+# `/review` on PR #30 landed in the same group. Concurrency is evaluated at
+# WORKFLOW level, before the job-level `if:` runs, so the Issue comment cancels
+# the PR's in-flight review and is then skipped itself, doing nothing. That is
+# the identical shape as the #386 defect above, one axis over: a run that will
+# not review taking the lane from the run that would have.
 concurrency:
-  group: pr-agent-${{ github.event_name }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
+  group: pr-agent-${{ github.event_name }}-${{ (github.event.pull_request.number || github.event.issue.pull_request) && 'pr' || 'issue' }}-${{ github.event.pull_request.number || github.event.issue.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
