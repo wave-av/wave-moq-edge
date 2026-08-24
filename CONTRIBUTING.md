@@ -23,7 +23,7 @@ A reference implementation of the MoQ Transport relay pattern (publish/subscribe
 
 ## What we do not accept (or accept reluctantly)
 
-- **Commercial licensing changes** — this is MIT, period
+- **Commercial licensing changes** — this repository is Apache-2.0 and stays Apache-2.0
 - **Drop-in replacements for the Cloudflare Workers runtime** — moq-edge is platform-specific; use it as a reference if porting to another runtime, but don't PR a node/deno/bun rewrite
 - **Adding new features without spec backing** — WAVE-specific extensions belong in our private fork; this repo is for public spec interop
 - **Adding non-MoQ protocols** — protocol adapters (WebRTC↔MoQ, SRT↔MoQ, etc.) are tracked in the WAVE Protocol Plane program, not this repo
@@ -54,7 +54,9 @@ Do **not** open public issues for security findings. Email [security@wave.online
 
 ## License
 
-By contributing, you agree your contribution will be released under the [MIT License](./LICENSE).
+By contributing, you agree your contribution will be released under the [Apache License 2.0](./LICENSE) — the same licence this repository ships under. See also [NOTICE](./NOTICE) for the attribution and trademark terms that Apache-2.0 §4(d) and §6 carry.
+
+Apache-2.0 includes an express patent grant (§3): contributors licence the patent claims necessarily infringed by their own contributions, and that licence terminates for anyone who initiates patent litigation over this work. That grant is a large part of why WAVE standardises on Apache-2.0 for public code — we ship video technology in a patent-dense field, and an implementer deserves to know where they stand.
 
 ## Versioning
 

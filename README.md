@@ -147,6 +147,6 @@ Vulnerabilities: [security@wave.online](mailto:security@wave.online). 90-day coo
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+Apache-2.0. See [LICENSE](./LICENSE) and [NOTICE](./NOTICE).
 
 Built by [WAVE Online](https://wave.online).
