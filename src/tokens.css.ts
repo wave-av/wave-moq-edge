@@ -3,7 +3,7 @@
 // default `:root{...}` block verbatim inside <style> — so this file starts from the identical
 // chassis default (no visual change to existing tokens) and appends the `.gfx` motif CSS after it,
 // exactly like the pattern used in sibling spokes (e.g. wave-voice-edge/src/tokens.css.ts).
-export const TOKENS_CSS = `:root{--bg:#0b0f14;--fg:#cfe3f7;--fg-strong:#fff;--dim:#5b7287;--acc:oklch(0.78 0.15 220);--warn:#e6b450;--card:#0e141b;--line:#1c2733}
+export const TOKENS_CSS = `:root{--bg:#0b0f14;--fg:#cfe3f7;--fg-strong:#fff;--dim:#7b93aa;--acc:oklch(0.78 0.15 220);--warn:#e6b450;--card:#0e141b;--line:#1c2733}
 ::selection{background:var(--acc);color:var(--bg)}
 .gfx{display:flex;justify-content:center;margin:1.5rem 0 .6rem}
 .gfx svg{width:min(360px,92%);height:auto}
