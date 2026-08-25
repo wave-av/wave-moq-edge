@@ -3,9 +3,8 @@
 // default `:root{...}` block verbatim inside <style> — so this file starts from the identical
 // chassis default (no visual change to existing tokens) and appends the `.gfx` motif CSS after it,
 // exactly like the pattern used in sibling spokes (e.g. wave-voice-edge/src/tokens.css.ts).
-export const TOKENS_CSS = `:root{--bg:#0b0f14;--fg:#cfe3f7;--fg-strong:#fff;--dim:#7b93aa;--acc:oklch(0.78 0.15 220);--warn:#e6b450;--card:#0e141b;--line:#1c2733}
-::selection{background:var(--acc);color:var(--bg)}
-.gfx{display:flex;justify-content:center;margin:1.5rem 0 .6rem}
+const TOKENS = buildTokensCss("dark", { accent: "oklch(0.78 0.15 220)" });
+export const TOKENS_CSS = `${TOKENS}.gfx{display:flex;justify-content:center;margin:1.5rem 0 .6rem}
 .gfx svg{width:min(360px,92%);height:auto}
 .gfx-plane{stroke:#fff;stroke-opacity:.12;stroke-width:1}
 .gfx-crest{fill:var(--acc);filter:drop-shadow(0 0 4px var(--acc));animation:gfxcrest 6s cubic-bezier(.4,0,.2,1) infinite}
