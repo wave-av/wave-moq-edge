@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_26c058f277cd33 78
+governance/plans/ffmpeg9-lei/action/E11-P2B-DETECT.md
+  s_124891ed63801b::t_92c067c24e8dd3 1-88
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_124891ed63801b::t_539527d5eb8144 20-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "31c7427bbaad0bd7527c108654cd1c144dab9944",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

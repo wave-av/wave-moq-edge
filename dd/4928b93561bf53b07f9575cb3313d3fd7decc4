@@ -1,0 +1,27 @@
+.github/workflows/claude-chassis.yml
+  s_d9915bbafa9657::t_57400351b07b0d 216-220,227-238,260
+  s_d9915bbafa9657::t_c421afad25626e 476-482
+  s_d9915bbafa9657::t_e99b3d8db49a96 225-226
+  s_d9915bbafa9657::t_211cbe598c0c3c 180
+  s_d9915bbafa9657::t_c0860c11537566 221-224
+  s_d9915bbafa9657::t_20891dad0e1832 467-472
+  s_d9915bbafa9657::t_22b8a683cd8386 119-125
+  s_d9915bbafa9657::t_73d6017a43750d 423-427,430
+  s_d9915bbafa9657::t_b6bc1165a0c19d 239-258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dd4928b93561bf53b07f9575cb3313d3fd7decc4",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

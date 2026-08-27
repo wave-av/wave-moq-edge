@@ -1,0 +1,37 @@
+governance/test/platform-status-state-root-agreement.test.mjs
+  s_15127d80763110::t_e98e252a3e0f12 51-53
+  s_15127d80763110::t_c7197aef023146 20
+  s_15127d80763110::t_0206b8163078a1 115-117
+  s_15127d80763110::t_0da4c7fa9de8c7 1-19,21-50,54-114,118-138
+governance/bin/platform-status.mjs
+  s_15127d80763110::t_2bd107826f7600 175-234,239
+  s_15127d80763110::t_773a218f61e0c5 245-248
+  s_15127d80763110::t_70fa62996b981a 32-39,41-44,48
+  s_15127d80763110::t_7884b7818e1e08 256
+  s_15127d80763110::t_e1d581e694332f 25-30
+governance/lib/hook-state-root.mjs
+  s_15127d80763110::t_dfa04a37794489 1-95
+governance/ops/com.wave.platform-status.plist
+  s_15127d80763110::t_d63c37cdbc041e 12-37,39-40
+  s_15127d80763110::t_e31d637fff572d 49
+governance/lib/platform-status-probes.mjs
+  s_15127d80763110::t_57f62d2840e340 1-281
+governance/lib/state-root.mjs
+  s_15127d80763110::t_677629304388c1 78-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fe6573071506d510652cf5e762a209762dd810ce",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

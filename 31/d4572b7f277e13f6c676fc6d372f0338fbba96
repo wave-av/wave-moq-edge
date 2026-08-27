@@ -1,0 +1,19 @@
+governance/DASHBOARD.md
+  s_63c6ee080d73c3::t_be2568fbea57eb 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "31d4572b7f277e13f6c676fc6d372f0338fbba96",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

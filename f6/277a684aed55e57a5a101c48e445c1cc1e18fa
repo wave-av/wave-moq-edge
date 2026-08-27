@@ -1,0 +1,56 @@
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/bin/hook-release.mjs
+  h_67a1b847dc59d6 53,57-59,69-75,106,118,216,271-272,323-324
+governance/bin/required-check-liveness.mjs
+  h_67a1b847dc59d6 1-267
+governance/graph.json
+  h_67a1b847dc59d6 3366-3456,20906-21025
+governance/lib/audit-args.mjs
+  h_67a1b847dc59d6 60-61
+governance/lib/hook-release-args.mjs
+  h_67a1b847dc59d6 1-117
+governance/lib/required-check-liveness.mjs
+  h_67a1b847dc59d6 1-255
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  h_67a1b847dc59d6 3-5
+governance/plans/console-perfection/E1-HUMAN-CANON.md
+  h_67a1b847dc59d6 1-119
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  h_67a1b847dc59d6 1-92
+governance/plans/console-perfection/E3-AGENT-ACCESS.md
+  h_67a1b847dc59d6 1-81
+governance/plans/console-perfection/E4-AGENT-PAYMENT.md
+  h_67a1b847dc59d6 1-96
+governance/plans/console-perfection/E5-MCP-PARITY.md
+  h_67a1b847dc59d6 1-90
+governance/plans/console-perfection/E6-NAME-TRUTH.md
+  h_67a1b847dc59d6 1-114
+governance/plans/console-perfection/NORTH-STAR.md
+  h_67a1b847dc59d6 1-139
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 301-305
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 74-150,219,229,273,512-529
+governance/test/gate-audit-args.test.mjs
+  h_67a1b847dc59d6 53-55,60
+governance/test/hook-release-args.test.mjs
+  h_67a1b847dc59d6 1-173
+governance/test/required-check-liveness.test.mjs
+  h_67a1b847dc59d6 1-308
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  h_67a1b847dc59d6 37
+runbooks/library/ffmpeg-major-bump.md
+  h_67a1b847dc59d6 16,74-82,150-160,176-182,230-259,273-276,280,282-292
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f6277a684aed55e57a5a101c48e445c1cc1e18fa",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

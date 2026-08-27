@@ -1,0 +1,37 @@
+governance/plans/cost-to-serve/RECEIPTS.md
+  s_c24357e71ae5bc::t_16089fc88cee75 1-97
+governance/plans/cost-to-serve/NORTH-STAR.md
+  s_c24357e71ae5bc::t_5e6f09249324bb 1-32,37-124
+  s_c24357e71ae5bc::t_44d62406ed2d76 33-36
+governance/plans/cost-to-serve/E0-JOIN-POLICY.md
+  s_c24357e71ae5bc::t_2d01d2ed8316da 1-54
+governance/plans/cost-to-serve/E3-REVENUE-JOIN.md
+  s_c24357e71ae5bc::t_0cd9925e8b4772 1-33
+governance/plans/cost-to-serve/E1-ALLOCATION-ENGINE.md
+  s_c24357e71ae5bc::t_6182f652d0dff1 1-37
+governance/plans/cost-to-serve/E2-RECONCILIATION.md
+  s_c24357e71ae5bc::t_a60d5a319be7a8 1-37
+governance/plans/cost-to-serve/E4-CONSUMER-SURFACE.md
+  s_c24357e71ae5bc::t_a0b59b7daaf5ab 28-29
+  s_c24357e71ae5bc::t_b3a5a2c5b24645 1-27,30-37
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_7f21fd8e917d3c 25
+governance/graph.json
+  s_c24357e71ae5bc::t_0d6b5f927b1da4 2975-3052,19799-19888
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "22017a1d1f9c6a4b40bb6959d988a6b42f945091",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+governance/plans/wave-cockpit/E0-DELTA-LEDGER.md
+  s_7c7e203d305c60::t_dc205e55f3dc65 1-31,34-107
+  s_7c7e203d305c60::t_c424d304b320bd 32-33
+governance/plans/wave-cockpit/E4-CAPABILITY-CUSTODY.md
+  s_7c7e203d305c60::t_c4859ea801aa59 1-150
+governance/plans/wave-cockpit/DECISION-URL.md
+  s_7c7e203d305c60::t_b8933afc3183bf 1-89
+governance/plans/wave-cockpit/E6-SEATS-AND-CROSSING.md
+  s_7c7e203d305c60::t_9ce7343e34b85d 1-137
+governance/plans/wave-cockpit/E5-ALWAYS-ON-FLEET.md
+  s_7c7e203d305c60::t_fc6faf65da131d 1-35,38-127
+  s_7c7e203d305c60::t_ce8ebee9c920b6 36-37
+governance/plans/wave-cockpit/E3-COCKPIT-SPINE.md
+  s_7c7e203d305c60::t_3596b1280b8fa7 1-118
+governance/plans/wave-cockpit/E1-SOURCING.md
+  s_7c7e203d305c60::t_2b9026f70bc39a 1-169
+governance/plans/wave-cockpit/E2-SCOPED-TOPOLOGY.md
+  s_7c7e203d305c60::t_ddc339339d70ae 1-126
+governance/plans/wave-cockpit/NORTH-STAR.md
+  s_7c7e203d305c60::t_ffc19cd28e4455 60
+  s_7c7e203d305c60::t_612a15b767759c 1-59,61-240
+governance/plans/wave-cockpit/DECISION-E8-RELATIONSHIP.md
+  s_7c7e203d305c60::t_bb5f6eddc0eba0 30-32
+  s_7c7e203d305c60::t_510a7296beea93 1-29,33-121
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_eca1dd65357b22 25
+governance/graph.json
+  s_7c7e203d305c60::t_b78fb740006767 6298-6427,27445-27948
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c20b92d7d900bd1700ba66b1f7d75ac2b9724d50",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

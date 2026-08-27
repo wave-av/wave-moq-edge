@@ -1,0 +1,25 @@
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_b32a95fe3527c1 347-376
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_78c03ad879d002 136-177
+  s_60a20469ef4369::t_29b9b4471052fb 68-73
+  s_60a20469ef4369::t_0df2d6b6310700 119-124
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_9b820539566baf 86-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "65bf6f74b27fad37b58f70a11217431af6826e97",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

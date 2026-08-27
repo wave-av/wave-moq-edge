@@ -1,0 +1,26 @@
+hooks/tests/fixtures/curl-stub.sh
+  s_96280c922a9418::t_6ba0859ef2c644 1-36
+hooks/tests/ollama-hooks-live.test.sh
+  s_96280c922a9418::t_2859710d48fa91 140-152,155-178,180-212,224,226,228,266-273,275
+  s_96280c922a9418::t_f6e087df1b777b 213-223,225,227,229-231,247
+  s_96280c922a9418::t_dd8d66408ac491 232-246,248,250-265
+  s_96280c922a9418::t_78ede4e957cfdf 2-4
+  s_96280c922a9418::t_d57dc0162baf40 179
+  s_96280c922a9418::t_fd4c484cf03564 249
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "1e7f1039ade45544598aa587e2664739be807cab",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

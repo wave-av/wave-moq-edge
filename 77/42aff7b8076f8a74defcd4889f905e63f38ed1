@@ -1,0 +1,19 @@
+governance/specs/2026-07-03-wave-golive-northstar-fractal-design.md
+  s_cf363a68d60e93::t_f7b67f7ccffbac 1-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7742aff7b8076f8a74defcd4889f905e63f38ed1",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

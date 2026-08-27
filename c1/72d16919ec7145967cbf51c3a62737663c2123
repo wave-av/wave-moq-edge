@@ -1,0 +1,98 @@
+governance/tools/pr-sockpuppet-guard/bin/sockpuppet-guard.mjs
+  s_b16e39a0caab95::t_9de5668bd1605d 1-72
+governance/tools/coherence-budget/README.md
+  s_71301212d98c66::t_31899ccacb6d0c 1-94
+governance/tools/rca-triage/tests/rca-triage.test.mjs
+  s_03786ef2f63330::t_8925782cb50807 1-155
+governance/tools/pr-sockpuppet-guard/signals.md
+  s_b16e39a0caab95::t_efc260176a758a 1-59
+governance/tools/coherence-budget/bin/coherence-budget.mjs
+  s_71301212d98c66::t_b584c5c4c24e6d 1-76
+governance/tools/coherence-budget/examples/mesh-leases.json
+  s_62f76804e6c4b1::t_06b5a3a5799684 1-42
+governance/tools/rca-triage/lib/index.mjs
+  s_03786ef2f63330::t_ac37f0a9a2834b 1-118
+governance/tools/coherence-budget/budget.schema.json
+  s_62f76804e6c4b1::t_022ec0baa887f2 1-62
+governance/tools/coherence-budget/tests/coherence-budget.test.mjs
+  s_71301212d98c66::t_2ec3d1254ee0b6 1-302
+governance/tools/rca-triage/finding.schema.json
+  s_95a36c66f8b01a::t_37fd556e471549 1-46
+governance/tools/pr-sockpuppet-guard/README.md
+  s_b16e39a0caab95::t_7ed741ba2e8db5 1-89
+governance/tools/rca-triage/README.md
+  s_03786ef2f63330::t_d6450e8f37cdf9 1-73
+governance/tools/rca-triage/examples/usage-drift.json
+  s_95a36c66f8b01a::t_59c832e83eb66b 1,6,11-12,15
+  s_03786ef2f63330::t_307173889448c3 2-5,7-10,13-14
+governance/tools/rca-triage/rules.md
+  s_95a36c66f8b01a::t_152b2151e16dc9 1-63
+governance/tools/pr-sockpuppet-guard/lib/index.mjs
+  s_d9ae1d33796db6::t_e1c22cad2d76b3 1-142
+governance/tools/pr-sockpuppet-guard/evidence.schema.json
+  s_b16e39a0caab95::t_6c38a8160ee10f 1-65
+governance/tools/pr-sockpuppet-guard/examples/redwood-like.json
+  s_b16e39a0caab95::t_e406094d5981d8 1-16
+governance/tools/coherence-budget/lib/index.mjs
+  s_71301212d98c66::t_d7e1e6598dbf12 1-117
+governance/tools/rca-triage/bin/rca-triage.mjs
+  s_03786ef2f63330::t_166f58f92baa76 1-103
+governance/tools/pr-sockpuppet-guard/tests/sockpuppet-guard.test.mjs
+  s_b16e39a0caab95::t_215fa15012d371 1-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c172d16919ec7145967cbf51c3a62737663c2123",
+  "prompts": {},
+  "sessions": {
+    "s_03786ef2f63330": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fa79b5ffe0cr5KBUvWjfRYL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_62f76804e6c4b1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fcbc21ffeoiOh5WTp8m0r6K",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_71301212d98c66": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fa6ec7ffeNtA3ZNFk98yQbN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_95a36c66f8b01a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fccdc3ffe3MPNmrV0sBaTQc",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b16e39a0caab95": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fa611bffeqbxgiPN1RAl0PE",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9ae1d33796db6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006fca597ffevR7Ryw0iZi4xC2",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

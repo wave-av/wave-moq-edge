@@ -1,0 +1,32 @@
+governance/plans/agent-computer-substrate/NORTH-STAR.md
+  s_5f3e3144cb7529::t_397e35be7893c8 1,3,5,11,13,16-17,19
+  s_5f3e3144cb7529::t_c31580151ab588 2,4,6-10,12,14-15,18,20-34
+governance/plans/agent-computer-substrate/E4-ARTIFACTS.md
+  s_5f3e3144cb7529::t_72155937b8e924 1-52
+governance/plans/agent-computer-substrate/E0-PROVISION.md
+  s_5f3e3144cb7529::t_086dffc5625123 1-52
+governance/plans/agent-computer-substrate/E1-COMPUTER-USE.md
+  s_5f3e3144cb7529::t_b7bc15f16e5099 1-52
+governance/plans/agent-computer-substrate/E2-FILESYSTEM-TERMINAL.md
+  s_5f3e3144cb7529::t_458ac23ae4670c 1-52
+governance/plans/agent-computer-substrate/E3-REMOTE-DESKTOP-TAKEOVER.md
+  s_5f3e3144cb7529::t_e603a612045f91 1-52
+governance/plans/agent-computer-substrate/E5-ISOLATION-COUNTERPOSITION.md
+  s_5f3e3144cb7529::t_806bf21fa3f0b5 1-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7efa7307e2d4a8e40f07e6d3c5f2d7d7d780efd1",
+  "prompts": {},
+  "sessions": {
+    "s_5f3e3144cb7529": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef2c1cf5ffePgKaeiW3tckVEU",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

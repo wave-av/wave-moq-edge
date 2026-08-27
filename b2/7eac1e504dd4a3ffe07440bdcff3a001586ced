@@ -1,0 +1,25 @@
+governance/sources/lifecycles.json
+  s_e2e3e43d0638c5::t_c4e77066fa5531 15-18
+rules/proven-live-or-not-done.md
+  s_e2e3e43d0638c5::t_3f3f8c79e05204 3
+rules/everything-we-write-grounded-before-it-ships.md
+  s_e2e3e43d0638c5::t_11bdc24f633b01 3
+rules/wow-canon.md
+  s_e2e3e43d0638c5::t_bb4633270fc04d 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b27eac1e504dd4a3ffe07440bdcff3a001586ced",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

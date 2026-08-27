@@ -1,0 +1,19 @@
+governance/state/reviewer-liveness.json
+  s_672079ccfe8ce6::t_242dca2fc74bf1 2-3,8,10,16,18,24,26,32,34,39-40,42,47-48,50-51,55-56,58,63-64,66,72,74,80,82,88,90,96,98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "57ad6d502e985d7851954238cda11bb4e16ccac6",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

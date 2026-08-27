@@ -1,0 +1,31 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_96280c922a9418::t_2f2c226dab026e 6
+governance/bin/build.mjs
+  s_96280c922a9418::t_8a88898824f3ca 24,26,134-153,156
+governance/lib/memory-index.mjs
+  s_96280c922a9418::t_7afeace407e624 1-37
+governance/plans/nested-dispatch-economy/NORTH-STAR.md
+  s_96280c922a9418::t_83267a22179068 35
+governance/test/memory-index.test.mjs
+  s_96280c922a9418::t_8b37dfa4ffeb3a 1-85
+memory/MEMORY.md
+  s_96280c922a9418::t_02aac3ae7444cf 7-16
+memory/cost-structure-cache-dominance.md
+  s_96280c922a9418::t_d92d1ed0c46e3a 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "a4da39b7acc0865afe4d017f18e946bcde551a04",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+tests/cloudflare/provision-kv-namespace.bats
+  s_3d664c2337cd47::t_0f59c369934b7b 1-61,67,69-74,76-81,83-90,92-97,99,101-104,106-107,109
+  s_3d664c2337cd47::t_5a4f5d79109713 62-66,68,75,82,91,98,100,105,108
+scripts/cloudflare/provision-kv-namespace.sh
+  s_3d664c2337cd47::t_e3a4e8566dedce 42,55-59
+  s_3d664c2337cd47::t_f95feacde2cb18 71-76,78,81,83-85,90-99
+  s_3d664c2337cd47::t_5a112a586fd0d0 19-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1b349d85eb0408c0023ea37a893053df6675198d",
+  "prompts": {},
+  "sessions": {
+    "s_3d664c2337cd47": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4890b888-4e1a-4c86-a19e-3aacb9cbd044",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_1ea63e594669ff::t_959cc1c8c5f481 22
+  s_1ea63e594669ff::t_3882f1016b02e6 9,20
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_1ea63e594669ff::t_64fbf8fc3a7fec 46
+  s_dedb333dd5195e::t_59e03c2dd57fb7 9,20
+governance/plans/physics-of-compute/RECEIPTS-E1-finemanpc-cleanup.md
+  s_1ea63e594669ff::t_b35cccb9e2b5cf 89
+  s_37d3f61160b2dd::t_afdd79690f5a1a 1-88,90-122
+governance/plans/physics-of-compute/e7-qwen38-raw.json
+  s_53b49eff5b8c5d::t_ef314b40b2085c 1-374
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_1ea63e594669ff::t_68bfe6be133940 57
+  s_dedb333dd5195e::t_fea87554401e4b 9,53
+governance/plans/physics-of-compute/RECEIPTS-E2-memory-wall.md
+  s_1ea63e594669ff::t_18f9df4a8a285f 12,22,43,61,77,91,100-102
+  s_1ea63e594669ff::t_3bcf6a2455a562 103
+  s_dedb333dd5195e::t_cbc3aabb1187f5 1-11,13-21,23-42,44-60,62-76,78-90,92-99
+governance/plans/physics-of-compute/e6-qwen38-variance-raw.json
+  s_53b49eff5b8c5d::t_7db46e6645030c 1-488
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  s_1ea63e594669ff::t_ec1c862f3f34b8 57
+  s_dedb333dd5195e::t_c0f85e2a86001a 9,23,55
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_1ea63e594669ff::t_1090ab6a6ae8ba 20
+  s_dedb333dd5195e::t_9dc657cc3792a7 9,16-17
+governance/plans/physics-of-compute/e6-variance-test.sh
+  s_37d3f61160b2dd::t_eb9bb9279b1e81 1-189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "08df9e25d9e569f72d46d767357eafc7c9ebaf28",
+  "prompts": {},
+  "sessions": {
+    "s_1ea63e594669ff": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcf47da56ffe9WlwrT1TxoHvU9",
+        "model": "mimo-v2.5"
+      },
+      "human_author": null
+    },
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/test/wave-cost-ledger-supabase-stale.test.mjs
+  s_2e30bff6169f7a::t_3fcba720588cd6 1-104,106-120
+  s_2e30bff6169f7a::t_2b789880b208e3 105
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_51164681a55607 37,41-52
+  s_2e30bff6169f7a::t_f94991ff23af1c 4-6
+  s_2e30bff6169f7a::t_3146c618a5fda6 108-152,161-165
+  s_2e30bff6169f7a::t_ec8d27def2b350 359-364
+  s_2e30bff6169f7a::t_7fbfeea6f4d83e 53
+governance/bin/wave-cost-ledger-supabase-unit-pull.mjs
+  s_2e30bff6169f7a::t_8f1fcdbe24a2e8 1-70
+governance/lib/wave-cost-ledger-supabase-stale.mjs
+  s_2e30bff6169f7a::t_ba78f0f71f360a 1-128
+governance/test/wave-cost-ledger-supabase-write-path.test.mjs
+  s_2e30bff6169f7a::t_76488cb9ebd50d 18,21
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  s_2e30bff6169f7a::t_acc578cab492cf 14,17
+  s_2e30bff6169f7a::t_88394629a88f12 222-225,227-231
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b3c983c2d40f44349019d74481a623de281a42be",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_d9915bbafa9657::t_e0be694d50ca77 169
+governance/plans/reviewer-fleet/E0-SCOREBOARD.md
+  s_d9915bbafa9657::t_e9428e41115431 1-70
+cubic.yaml
+  s_d9915bbafa9657::t_21db9fe7779aba 17
+governance/bin/epic-status.mjs
+  s_d9915bbafa9657::t_abebafc0799e04 227
+  s_d9915bbafa9657::t_a098ee59dadde7 142-143
+governance/plans/launch-week-set-01/NORTH-STAR.md
+  s_d9915bbafa9657::t_bbc3e9be60350d 1-47
+.coderabbit.yaml
+  s_d9915bbafa9657::t_2f825e95ce28e1 12
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  s_d9915bbafa9657::t_2c32b7c73bdc81 5
+governance/plans/brand-recycle/DR-PRESTIGE.md
+  s_d9915bbafa9657::t_b658bef09bc39c 12
+governance/plans/launch-week-set-01/E2-CHASSIS.md
+  s_d9915bbafa9657::t_55b38f71d910e5 1-26
+governance/plans/reviewer-fleet/E1-ROUTING.md
+  s_d9915bbafa9657::t_6565c9095571de 1-91
+governance/plans/reviewer-fleet/E5-MONITORING.md
+  s_d9915bbafa9657::t_b5bf426842485a 1-28
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  s_d9915bbafa9657::t_fec7b8c3557b42 1-35
+governance/plans/launch-week-set-01/E1-INVENTORY.md
+  s_d9915bbafa9657::t_53ccc59b6fc343 1-22
+governance/plans/reviewer-fleet/E4-CONFIG-AS-CODE.md
+  s_d9915bbafa9657::t_0d9426fd6ecd23 1-403
+governance/plans/launch-week-set-01/E4-RITUAL-DECISION.md
+  s_d9915bbafa9657::t_fe6503dc653c58 1-17
+governance/plans/reviewer-fleet/NORTH-STAR.md
+  s_d9915bbafa9657::t_a776179c9630ef 1-167
+.github/workflows/unearned-approval-guard.yml
+  s_d9915bbafa9657::t_1eda7457b92e39 25
+governance/plans/launch-week-set-01/E3-LIVE-WEEK.md
+  s_d9915bbafa9657::t_9eef4e97ada6d5 1-24
+governance/plans/brand-recycle/E-PRESTIGE.md
+  s_d9915bbafa9657::t_5ef1dd426cff07 5
+governance/plans/reviewer-fleet/E2-OVERLAP-SAMPLE.md
+  s_d9915bbafa9657::t_4eaf5dd8460e87 1-34
+governance/plans/waveform-hero/epic.md
+  s_d9915bbafa9657::t_d046bb67a17848 70
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_d9915bbafa9657::t_ba6c8594e0a172 167
+governance/plans/reviewer-fleet/E3-VERDICT-LOOP.md
+  s_d9915bbafa9657::t_ac18b0bb9e8c6a 1-30
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_b73886c599ca9a 25
+governance/graph.json
+  s_d9915bbafa9657::t_36a18ab49d5d77 4687-4739,4742,4746,5895-5998,18174,18176,19512,19514,23783-23867,23870,23873-23879,23882,23885,23888,23891,23894,23897,23900,23903-23904,23906,23909-23922,23924,23927,23930,26476-26649,29724,29726
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_fa18111096ee93 27,73,144,302
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6d6a094b0207ba1f516d3656776d6bf996e19256",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+rules/peer-message-claims-unverified.md
+  s_23d71389a1fb70::t_4bd9ef8415268d 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1223cbc3f93f681796c6cceca09e6b0cde5f9be7",
+  "prompts": {},
+  "sessions": {
+    "s_23d71389a1fb70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7ec6e1a3-fbb9-40dd-9429-2acf5ed0dcb9",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/receipts/e2-render-roundtrip-2026-08-14.md
+  s_9041cf1cf1ccad::t_2f00c4f08dc795 1-80
+governance/plans/wave-golive/E2-PRODUCT.md
+  s_9041cf1cf1ccad::t_3b88699cd1e9b1 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "898aba4b18fc389d4310bf60b2fa70faf7a8037a",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

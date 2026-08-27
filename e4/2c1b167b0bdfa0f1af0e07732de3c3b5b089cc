@@ -1,0 +1,33 @@
+governance/plans/wave-credential-custody/NORTH-STAR.md
+  s_7c7e203d305c60::t_e38eaac9d287d7 9
+governance/plans/wave-credential-custody/E5-CONTINUOUS-PROOF.md
+  s_7c7e203d305c60::t_139193038419d4 139
+governance/DASHBOARD.md
+  s_b74c2f1736fd36::t_4832907ea6b37f 25
+governance/graph.json
+  s_b74c2f1736fd36::t_0a12ab7060ec28 6545-6635,28084-28611
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e42c1b167b0bdfa0f1af0e07732de3c3b5b089cc",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

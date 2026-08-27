@@ -1,0 +1,31 @@
+governance/test/atomic-write.test.mjs
+  s_375efeac18ed55::t_e70612b52470cf 1-67,83-130
+  s_375efeac18ed55::t_655041a0c56f26 68-82
+governance/lib/atomic-write.mjs
+  s_375efeac18ed55::t_305374e30f1084 1-72
+governance/bin/work-graph.mjs
+  s_375efeac18ed55::t_e182d5c26c3ec9 5,7-8
+  s_375efeac18ed55::t_da04ba5c3e30fa 48-51
+  s_375efeac18ed55::t_b8d74b385bf733 202
+governance/bin/intent-ledger.mjs
+  s_375efeac18ed55::t_1b21ee1fb8d905 174-177
+  s_375efeac18ed55::t_0eb13631d35e55 315
+  s_375efeac18ed55::t_cd0f1260ddf88d 41-43
+  s_375efeac18ed55::t_adc9451ffc6bc3 26-27,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "219d3bd69e558497c7a55b13f580ad5c7c8fab63",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

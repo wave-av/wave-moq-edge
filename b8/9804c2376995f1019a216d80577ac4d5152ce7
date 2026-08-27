@@ -1,0 +1,242 @@
+.claude/skills/wave-email-craft/SKILL.md
+  h_67a1b847dc59d6 253-259
+.github/workflows/namespace-egress-advisory-soak.yml
+  h_67a1b847dc59d6 1-147
+.github/workflows/network-edge-audit.yml
+  h_67a1b847dc59d6 71-130
+.gitignore
+  h_67a1b847dc59d6 45-52
+governance/bin/anchor-drift-notify.mjs
+  h_67a1b847dc59d6 1-50
+governance/bin/anchor-smoke.mjs
+  h_67a1b847dc59d6 1-48
+governance/bin/email-archive.mjs
+  h_67a1b847dc59d6 1-83
+governance/bin/gate-reality.mjs
+  h_67a1b847dc59d6 1-268
+governance/bin/lane-state.mjs
+  h_67a1b847dc59d6 1-71
+governance/bin/mint-token.mjs
+  h_67a1b847dc59d6 1-226
+governance/bin/network-edge-audit.mjs
+  h_67a1b847dc59d6 46-50,110-143
+governance/bin/transcript-secret-scan.mjs
+  h_67a1b847dc59d6 1-127
+governance/bin/vendor-cidr-sync.mjs
+  h_67a1b847dc59d6 1-126
+governance/data/vendor-cidr/datadog-webhooks.json
+  h_67a1b847dc59d6 1-40
+governance/data/vendor-cidr/github-hooks.json
+  h_67a1b847dc59d6 1-11
+governance/data/vendor-cidr/stripe-webhooks.json
+  h_67a1b847dc59d6 1-20
+governance/lib/drill-fixtures-anchor-drift-notify.mjs
+  h_67a1b847dc59d6 1-48
+governance/lib/drill-fixtures-vendor-cidr.mjs
+  h_67a1b847dc59d6 1-68
+governance/lib/drill-registry.mjs
+  h_67a1b847dc59d6 25,62,144-146,179,216
+governance/lib/gate-reality.mjs
+  h_67a1b847dc59d6 1-188
+governance/lib/ledger-surface.mjs
+  h_67a1b847dc59d6 20-29,51-113,139-146
+governance/plans/agent-native-cli/E6-EMBEDDABILITY.md
+  h_67a1b847dc59d6 18-22,24-31
+governance/plans/epic-system/NORTH-STAR.md
+  h_67a1b847dc59d6 64-67
+governance/plans/harness-wars-intel/CORPUS.md
+  h_67a1b847dc59d6 40-57
+governance/plans/harness-wars-intel/issue-body.tmp.md
+  h_67a1b847dc59d6 1,3-4
+governance/plans/harness-wars-intel/state/last-seen.json
+  h_67a1b847dc59d6 4-5
+governance/plans/income-rails/E0-E1-BILLING-SURFACE.md
+  h_67a1b847dc59d6 1-9
+governance/plans/income-rails/E1-E2-METERED-ARM.md
+  h_67a1b847dc59d6 1-10
+governance/plans/income-rails/E2-E3-METER-COVERAGE.md
+  h_67a1b847dc59d6 1-10
+governance/plans/income-rails/E3-E4-INVOICE-SYNC.md
+  h_67a1b847dc59d6 1-10
+governance/plans/income-rails/NORTH-STAR.md
+  h_67a1b847dc59d6 1-40
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  h_67a1b847dc59d6 24-26
+governance/plans/namespace-substrate/E3-CACHES.md
+  h_67a1b847dc59d6 72
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-advisory-soak-setup.md
+  h_67a1b847dc59d6 1-54
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-build-measure.md
+  h_67a1b847dc59d6 1-59
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-x86-falsifier.md
+  h_67a1b847dc59d6 1-68
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-metrics-e2e-live.md
+  h_67a1b847dc59d6 1-267
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-npm-mirror-rescope.md
+  h_67a1b847dc59d6 1-176
+governance/plans/namespace-substrate/STORY-PACKAGE-2026-08-21.md
+  h_67a1b847dc59d6 1-78
+governance/plans/network-edge-plane/ACTION-ITEMS.md
+  h_67a1b847dc59d6 1-37
+governance/plans/network-edge-plane/E4-LAW.md
+  h_67a1b847dc59d6 1-24
+governance/plans/network-edge-plane/E4-MANAGED-ORIGIN.md
+  h_67a1b847dc59d6 4
+governance/plans/network-edge-plane/E6-PRODUCTIZATION.md
+  h_67a1b847dc59d6 1-25
+governance/plans/network-edge-plane/EXPANSION.md
+  h_67a1b847dc59d6 34-59
+governance/plans/network-edge-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 103
+governance/plans/network-edge-plane/RECEIPTS.md
+  h_67a1b847dc59d6 90-112
+governance/plans/network-edge-plane/RENDERINGS-MATRIX.md
+  h_67a1b847dc59d6 1-20
+governance/plans/network-edge-plane/TASK-LOG.md
+  h_67a1b847dc59d6 1-14
+governance/plans/network-edge-plane/WAVE-ANCHOR.md
+  h_67a1b847dc59d6 1-44
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  h_67a1b847dc59d6 1-20
+governance/plans/physics-of-compute/E1-SSD-STREAMING-MEASURE.md
+  h_67a1b847dc59d6 1-24
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  h_67a1b847dc59d6 1-22
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  h_67a1b847dc59d6 1-46
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  h_67a1b847dc59d6 1-57
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  h_67a1b847dc59d6 1-57
+governance/plans/physics-of-compute/NORTH-STAR.md
+  h_67a1b847dc59d6 1-108
+governance/plans/physics-of-compute/RECEIPTS-E1-preflight.md
+  h_67a1b847dc59d6 1-78
+governance/plans/polyrepo-velocity/E7-AGENT-CACHE.md
+  h_67a1b847dc59d6 84-87
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 110-117
+governance/plans/runtime-economy/dogfood/rc2-t1.log
+  h_67a1b847dc59d6 1-17
+governance/plans/runtime-economy/leaderboard-tui/.cursor/rules/use-bun-instead-of-node-vite-npm-pnpm.mdc
+  h_67a1b847dc59d6 1-111
+governance/plans/runtime-economy/leaderboard-tui/.gitignore
+  h_67a1b847dc59d6 1-34
+governance/plans/runtime-economy/leaderboard-tui/README.md
+  h_67a1b847dc59d6 1-42
+governance/plans/runtime-economy/leaderboard-tui/bun.lock
+  h_67a1b847dc59d6 1-65
+governance/plans/runtime-economy/leaderboard-tui/index.ts
+  h_67a1b847dc59d6 1-168
+governance/plans/runtime-economy/leaderboard-tui/package.json
+  h_67a1b847dc59d6 1-15
+governance/plans/runtime-economy/leaderboard-tui/tsconfig.json
+  h_67a1b847dc59d6 1-30
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 45-46
+governance/plans/runtime-learning-loop/research/pending-rows/wave-qwen38-27b.json
+  h_67a1b847dc59d6 4,12-13,16,18-19
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  h_67a1b847dc59d6 1-79
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  h_67a1b847dc59d6 1-240
+governance/plans/vendor-control-plane/E1-schema.draft.ts
+  h_67a1b847dc59d6 1-303
+governance/plans/vendor-control-plane/E2-NAMESPACE-ADAPTER.md
+  h_67a1b847dc59d6 1-42
+governance/plans/vendor-control-plane/E3-RUNPOD-ADAPTER.md
+  h_67a1b847dc59d6 1-39
+governance/plans/vendor-control-plane/E4-CF-ADAPTER.md
+  h_67a1b847dc59d6 1-33
+governance/plans/vendor-control-plane/E5-META.md
+  h_67a1b847dc59d6 1-36
+governance/plans/vendor-control-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 1-85
+governance/plans/vendor-control-plane/RECEIPTS.md
+  h_67a1b847dc59d6 1-16
+governance/plans/vendor-relationship-ops/NORTH-STAR.md
+  h_67a1b847dc59d6 82-102
+governance/plans/vendor-relationship-ops/SCOREBOARD-2026-08-21.md
+  h_67a1b847dc59d6 1-63
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  h_67a1b847dc59d6 1-40
+governance/plans/volumetric-delivery-proof/E0-SIXTEEN-TRACKS.md
+  h_67a1b847dc59d6 1-77
+governance/plans/volumetric-delivery-proof/E1-TAI-BRIDGE.md
+  h_67a1b847dc59d6 1-80
+governance/plans/volumetric-delivery-proof/E2-VIEWER-PLAYER.md
+  h_67a1b847dc59d6 1-70
+governance/plans/volumetric-delivery-proof/E3-ONPREM-SHAPE.md
+  h_67a1b847dc59d6 1-86
+governance/plans/volumetric-delivery-proof/E4-STANDARDS-CLOCK.md
+  h_67a1b847dc59d6 1-126
+governance/plans/volumetric-delivery-proof/NORTH-STAR.md
+  h_67a1b847dc59d6 1-125
+governance/plans/volumetric-delivery-proof/RECEIPTS.md
+  h_67a1b847dc59d6 1-156
+governance/plans/wave-registry/RECEIPTS.md
+  h_67a1b847dc59d6 120-139
+governance/plans/wave-registry/artifacts/schema.sql
+  h_67a1b847dc59d6 242-271
+governance/research/brainstorm-steal-synthesis-2026-08-22.md
+  h_67a1b847dc59d6 1-45
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-19.md
+  h_67a1b847dc59d6 1-52
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-21-namespace-arc.md
+  h_67a1b847dc59d6 1-48
+governance/research/creator-intelligence/PHYSICS-OF-COMPUTE-CAMPAIGN.md
+  h_67a1b847dc59d6 1-93
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  h_67a1b847dc59d6 29-37
+governance/state/email-archive/aikido/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-14
+governance/state/email-archive/chris/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-8
+governance/state/email-archive/cloudflare/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-7
+governance/state/email-archive/coderabbit/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-14
+governance/state/email-archive/cubic/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-2
+governance/state/email-archive/devin/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-33
+governance/state/email-archive/exa/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-5
+governance/state/email-archive/fireworks/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-10
+governance/state/email-archive/greptile/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-2
+governance/state/email-archive/macroscope/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-2
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1-17
+governance/state/email-archive/terry/thread-2026-08.jsonl
+  h_67a1b847dc59d6 1
+governance/test/gate-reality.test.mjs
+  h_67a1b847dc59d6 1-135
+governance/test/ledger-surface-actionability.test.mjs
+  h_67a1b847dc59d6 1-180
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 6-8,440-649
+memory/namespace-arc-session-bank-2026-08-21.md
+  h_67a1b847dc59d6 1-37
+plugins/wave-canon/skills/vendor-reply-loop/SKILL.md
+  h_67a1b847dc59d6 60-76
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  h_67a1b847dc59d6 253-259
+tools/otp-login.mjs
+  h_67a1b847dc59d6 1-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b89804c2376995f1019a216d80577ac4d5152ce7",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

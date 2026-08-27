@@ -1,0 +1,30 @@
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_124891ed63801b::t_4d92a5771c1812 4
+governance/plans/ffmpeg9-lei/action/E0-P2-BUILD-TRIAGE.md
+  s_124891ed63801b::t_18ba031eda6d82 1-23
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_124891ed63801b::t_a9b6714364fba7 4
+governance/plans/ffmpeg9-lei/action/E2-P1-pin-table.md
+  s_124891ed63801b::t_0f76d221f97398 28-43
+  s_124891ed63801b::t_ccfef63f7371b8 1-27,44-65
+governance/plans/ffmpeg9-lei/action/E8-P1-watcher-recon.md
+  s_124891ed63801b::t_504e7a34105e15 1-24
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_3d305d3029b780 25,27-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "aa8aee230dff60ffb116e9744866b5c1ea673760",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

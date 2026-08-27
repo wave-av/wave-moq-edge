@@ -1,0 +1,25 @@
+.github/workflows/binding-drift.yml
+  s_ccbb3091d0f293::t_8d04c122cb4450 67,70-71,73-77
+  s_ccbb3091d0f293::t_a3f4d5e5f1b844 1-66,68-69,72
+scripts/check-binding-drift.py
+  s_ccbb3091d0f293::t_5f0fb68356bb6b 1-151,168-174,178-279,281-325
+  s_ccbb3091d0f293::t_caba4054091086 157-159
+  s_ccbb3091d0f293::t_0cad845786bdf5 152-156,160-167,175-177
+  s_ccbb3091d0f293::t_bd83dd48eba514 280
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "d875a77451f24950846218c72e56bb733e95a145",
+  "prompts": {},
+  "sessions": {
+    "s_ccbb3091d0f293": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ad29f8c-8cc4-4950-bdb4-6b0ec735d5f2",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/bin/struggle-miner/collect-automation-drift.mjs
+  s_941b8f0612ec3e::t_4ff9a09aea635c 47
+  s_941b8f0612ec3e::t_6206d558b8d6a4 21-38
+  s_941b8f0612ec3e::t_72d16770136ead 142-144
+  s_941b8f0612ec3e::t_7143ca0b32fce3 60
+  s_941b8f0612ec3e::t_240daacd091168 71
+governance/test/struggle-miner/collect-automation-drift.test.mjs
+  s_941b8f0612ec3e::t_980c8eaff8209a 21-44
+  s_941b8f0612ec3e::t_37abd50d3f4c64 8
+governance/automation-registry/generate.mjs
+  s_941b8f0612ec3e::t_4f711afad9fd20 104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "98ba1250a89a51bf0fc8d4dc4d474370e7bea934",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

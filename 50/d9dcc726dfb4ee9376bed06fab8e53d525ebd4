@@ -1,0 +1,67 @@
+governance/tools/mathematics-as-art/manifests/wave-usage-lakehouse.json
+  s_ea7fda6a228496::t_cf8454c22b3b78 1-24
+governance/tools/falsifiability/examples/falsifiability-example.json
+  s_ea7fda6a228496::t_7b2aea94a158b0 1-19
+governance/tools/uncertain-objective/bin/uncertain-objective-check.mjs
+  s_ea7fda6a228496::t_76dff5c19da293 1-31
+governance/tools/uncertain-objective/examples/uncertain-objective-example.json
+  s_ea7fda6a228496::t_7751e124986266 1-18
+governance/tools/uncertain-objective/package.json
+  s_ea7fda6a228496::t_f9bafd5c5abc74 1-8
+governance/tools/falsifiability/bin/falsifiability-check.mjs
+  s_ea7fda6a228496::t_7171cab636b6a0 1-31
+governance/research/engineering-canon/origin-method.md
+  s_ea7fda6a228496::t_0c8043f455f511 533-628
+governance/tools/mathematics-as-art/lib/index.mjs
+  s_ea7fda6a228496::t_6fbf06c382bdea 1-53
+governance/tools/mathematics-as-art/bin/mathematics-as-art-check.mjs
+  s_ea7fda6a228496::t_e9fe26d5d0288d 1-31
+governance/tools/uncertain-objective/tests/uncertain-objective.test.mjs
+  s_ea7fda6a228496::t_7c05e12830c15c 1-44
+governance/tools/falsifiability/package.json
+  s_ea7fda6a228496::t_3dfce4fa83aef4 1-8
+governance/tools/falsifiability/manifests/wave-reinforcement-learning.json
+  s_ea7fda6a228496::t_0aed62b56dea41 1-19
+governance/tools/falsifiability/lib/index.mjs
+  s_ea7fda6a228496::t_3bb1e482337f58 1-58
+governance/tools/falsifiability/tests/falsifiability.test.mjs
+  s_ea7fda6a228496::t_5c63654472021e 1-41
+governance/tools/uncertain-objective/uncertain-objective.schema.json
+  s_ea7fda6a228496::t_e0ca3ee5ffec92 1-25
+governance/tools/uncertain-objective/manifests/wave-reinforcement-learning.json
+  s_ea7fda6a228496::t_e0ad681307a99e 1-22
+governance/tools/mathematics-as-art/mathematics-as-art.schema.json
+  s_ea7fda6a228496::t_69ee479b99e478 1-26
+governance/tools/falsifiability/falsifiability.schema.json
+  s_ea7fda6a228496::t_0141ef0ba24ab1 1-36
+governance/tools/mathematics-as-art/examples/mathematics-as-art-example.json
+  s_ea7fda6a228496::t_eebc6f49c45c33 1-20
+governance/tools/mathematics-as-art/README.md
+  s_ea7fda6a228496::t_e82ea7c7898667 1-18
+governance/tools/mathematics-as-art/tests/mathematics-as-art.test.mjs
+  s_ea7fda6a228496::t_236edf6963744b 1-47
+governance/tools/mathematics-as-art/package.json
+  s_ea7fda6a228496::t_1ca663d44d484c 1-8
+governance/tools/falsifiability/README.md
+  s_ea7fda6a228496::t_9c4920175c073d 1-16
+governance/tools/uncertain-objective/README.md
+  s_ea7fda6a228496::t_fd92b103b9caa8 1-17
+governance/tools/uncertain-objective/lib/index.mjs
+  s_ea7fda6a228496::t_6913952c9199e2 1-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "50d9dcc726dfb4ee9376bed06fab8e53d525ebd4",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

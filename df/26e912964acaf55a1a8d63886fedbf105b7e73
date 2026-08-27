@@ -1,0 +1,29 @@
+governance/plans/receipts/E3-FUNNEL-route-probe-2026-08-25.md
+  s_2b4acc7ceba309::t_2a52149290fd51 1-14
+governance/plans/wave-golive/E3-FUNNEL.md
+  s_9bb1b1d1d998d4::t_c6b395d90b6a14 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "df26e912964acaf55a1a8d63886fedbf105b7e73",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/lib/lens-sweep/commands.mjs
+  s_0227926428e4b1::t_17e0bcef7489f6 143-152
+governance/lib/lens-sweep/reconcile.mjs
+  s_0227926428e4b1::t_456cbfc4173088 165-177
+governance/test/lens-sweep-reconcile.test.mjs
+  s_0227926428e4b1::t_ba79b33839c1af 101-103,105,109-121
+governance/test/lens-sweep-cli.test.mjs
+  s_0227926428e4b1::t_17dfa748ad1d93 126-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "daf37f0d46f48304c15d5d62eaa77f703ad35f55",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

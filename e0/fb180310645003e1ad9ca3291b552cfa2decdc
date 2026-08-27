@@ -1,0 +1,24 @@
+scripts/bugbot/disposition.py
+  s_07acdfa7e3709a::t_2e6acc77dfad0d 53-64,66-73,78
+scripts/bugbot/daemon.sh
+  s_07acdfa7e3709a::t_9b4faf521a03dc 204-216
+  s_07acdfa7e3709a::t_2ddf9ebf538936 230
+tests/test_bugbot_learning.py
+  s_07acdfa7e3709a::t_d9986d39f1a478 166-201
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e0fb180310645003e1ad9ca3291b552cfa2decdc",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

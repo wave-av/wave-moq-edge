@@ -1,0 +1,37 @@
+hooks/intent-ledger-capture.sh
+  s_1c0352e957b5f6::t_074f511a115816 146-151
+  s_1c0352e957b5f6::t_8521943036973f 160-161
+  s_1c0352e957b5f6::t_fb31808cee9c08 89-95
+  s_1c0352e957b5f6::t_afd91da2f4864f 104-126
+  s_3e4240b52b9632::t_7fd2878c9303ed 134,165
+hooks/tests/intent-ledger-backup.test.sh
+  s_1c0352e957b5f6::t_c9c45bfe17e0d2 259-269,271
+  s_1c0352e957b5f6::t_f01e8a8a27ea9b 38-39
+  s_1c0352e957b5f6::t_c4f790f3df520c 223-247
+hooks/manifest.json
+  s_1c0352e957b5f6::t_3350af2d04e648 777
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9583a0a503acf5ec15e11e66f070e91044afe7ef",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_3e4240b52b9632": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd8f8295ffefAbTN5w2iOqHKL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

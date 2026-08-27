@@ -1,0 +1,65 @@
+governance/plans/monolith-decomposition/API-EDGE-MIGRATION-PLAN.md
+  s_80ec7a407a00ce::t_4568e3d5c21e02 206
+  s_80ec7a407a00ce::t_e3af585451a591 98-101
+  s_80ec7a407a00ce::t_5b3a082c2c8cd4 126-132
+  s_9e0577c6de5313::t_b4670755dbf42f 169
+  s_80ec7a407a00ce::t_c60b197cde5979 171-184
+  s_80ec7a407a00ce::t_261fd2534983a8 186
+  s_80ec7a407a00ce::t_87e96d70e63217 198,201-202
+  s_d821c4af0f0a99::t_b734c1f6196167 3
+  s_cab66c5252a039::t_2b34f65b644636 207
+  s_cab66c5252a039::t_3b4f6da740a1a0 211-213
+  s_80ec7a407a00ce::t_92bfb09050c0f9 72-79
+  s_cab66c5252a039::t_1a73d7085e6470 199
+  s_80ec7a407a00ce::t_7b16f1a5d54bd4 118-122
+  s_80ec7a407a00ce::t_228f700d7c8276 123-124
+  s_d821c4af0f0a99::t_3cb61646e68893 200
+  s_d821c4af0f0a99::t_71ec5ff6d8e610 1-2
+  s_80ec7a407a00ce::t_4a34f7985a6982 80-82,95-97
+  s_80ec7a407a00ce::t_739e09432754dd 102-104,115-117
+  s_80ec7a407a00ce::t_63cff2cfafcb2e 125
+  s_80ec7a407a00ce::t_9953fe75dfb647 185
+  s_80ec7a407a00ce::t_48285d58ad5fce 187-189,195-197
+  s_80ec7a407a00ce::t_d50ead844308ef 203-205
+  s_cab66c5252a039::t_bcbf86a953a313 208-210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "84e885e6528ce0e39aa9ffc9b00a3381eb5a6d1e",
+  "prompts": {},
+  "sessions": {
+    "s_80ec7a407a00ce": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc98684d0ffe5EZUeF3GBEz4bZ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e0577c6de5313": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc9121459ffejSGi716SQyNYcL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_cab66c5252a039": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc8fa7770ffemu1jf8fAbzopkc",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_d821c4af0f0a99": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc8d36a02ffetxLQ4Q5vdvbgeN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

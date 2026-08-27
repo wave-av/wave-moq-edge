@@ -1,0 +1,33 @@
+tests/test_agent_status.py
+  s_3a52a0989b58af::t_5d20e59f2cd2eb 253-255
+  s_3a52a0989b58af::t_3c883ea718a30a 179-225
+fleet/agents/README.md
+  s_3a52a0989b58af::t_35df84cd9a375f 21,23-27
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_7262c08f7a7462 162
+  s_3a52a0989b58af::t_e1da16338fd430 67-70
+  s_3a52a0989b58af::t_81302a0bf634d4 154-155
+scripts/agent_status.py
+  s_3a52a0989b58af::t_73c6358a87dbf8 377-378,384-385
+  s_3a52a0989b58af::t_b11e09e8da81a0 252-254,256-257,259-263,268-273,277-278
+  s_3a52a0989b58af::t_3010bc6c600a5e 345-347
+  s_3a52a0989b58af::t_13992b68853603 217-241
+fleet/agents/bugbot.json
+  s_3a52a0989b58af::t_f65d95dea3a620 4,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e4bfe71d916087c02da9be2a7b67d9cc8fdc4d38",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

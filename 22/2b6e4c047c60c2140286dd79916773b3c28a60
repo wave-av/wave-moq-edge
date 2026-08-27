@@ -1,0 +1,36 @@
+governance/bin/readme-regen-pr.mjs
+  s_e2e3e43d0638c5::t_61b961774ffba1 279-303
+  s_e2e3e43d0638c5::t_a09f039f2dfa06 115,174-177
+  s_e2e3e43d0638c5::t_cae08e6388404c 78-95,108-114
+.github/workflows/content-regen.yml
+  s_e2e3e43d0638c5::t_5c16733bfdcd16 54-65
+  s_e2e3e43d0638c5::t_352d45e001baa4 1-53,66-149
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_9d29baa41d69b1 5,1694,1697-1698,1701-1702,1704-1708,1710-1712
+governance/code-index/index.json
+  s_60a20469ef4369::t_4765be4f66a9cd 7,9-10,16250-16260,16289-16290,16300-16301,16333-16334,16344-16345,16360-16370,16377-16378,16382-16392,16399-16400,16410-16413,16432-16435,16443-16444,16454-16457
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "222b6e4c047c60c2140286dd79916773b3c28a60",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

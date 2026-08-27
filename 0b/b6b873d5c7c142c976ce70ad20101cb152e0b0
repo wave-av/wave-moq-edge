@@ -1,0 +1,21 @@
+governance/plans/model-selection-completion/NORTH-STAR.md
+  s_ebb03699588f1f::t_82f0600acdcaed 75
+governance/plans/model-selection-completion/E5-ROUTER-MODES.md
+  s_ebb03699588f1f::t_c27df70426a953 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0bb6b873d5c7c142c976ce70ad20101cb152e0b0",
+  "prompts": {},
+  "sessions": {
+    "s_ebb03699588f1f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef0961c9ffePmSdySf28FmUvD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

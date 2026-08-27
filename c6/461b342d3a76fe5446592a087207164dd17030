@@ -1,0 +1,71 @@
+governance/plans/universal-data-representation/E1-UNIFY-PILOT.md
+  s_bd5d08635569ef::t_13c36c59faf152 2-18
+  s_bd5d08635569ef::t_bfc61b49132f5c 1
+  s_bd5d08635569ef::t_7da9b256d37158 19
+governance/plans/universal-data-representation/E2-LOSSLESS-GATE.md
+  s_bd5d08635569ef::t_f8db5be4981805 2-18
+  s_bd5d08635569ef::t_fb5703ffb56bb9 1
+  s_bd5d08635569ef::t_320de83f608318 19
+governance/plans/self-play-refactoring/NORTH-STAR.md
+  s_bd5d08635569ef::t_1a2ff6f001beb5 9-62
+  s_bd5d08635569ef::t_589dd3b5625b80 6-8
+governance/plans/universal-data-representation/E0-REDUCTION-CATALOG.md
+  s_bd5d08635569ef::t_3daf40e667ff77 2-16
+  s_bd5d08635569ef::t_07785ef6f49d7f 1
+governance/plans/inference-by-effects/E2-ORACLE-CERT.md
+  s_bd5d08635569ef::t_e9dc47c079366e 2-18
+  s_bd5d08635569ef::t_17e463cb59c4ce 1
+  s_bd5d08635569ef::t_1cbc018aba4be0 19
+governance/plans/inference-by-effects/E3-LAKEHOUSE-INTEGRATION.md
+  s_bd5d08635569ef::t_343472abf7dd78 2-18
+  s_bd5d08635569ef::t_7ccf4ffd5056d6 1
+  s_bd5d08635569ef::t_be1793b01a33d1 19
+governance/plans/universal-data-representation/NORTH-STAR.md
+  s_bd5d08635569ef::t_d463fae24e8838 9-64
+  s_bd5d08635569ef::t_fd57a68903c464 6-8
+governance/plans/universal-data-representation/E3-CANON-DOGMA.md
+  s_bd5d08635569ef::t_08b8ef30a84323 2-17
+  s_bd5d08635569ef::t_5aef6e5df5d64b 1
+  s_bd5d08635569ef::t_58f2a9cdfaeb0a 18
+governance/plans/inference-by-effects/E1-DRIFT-PROBE.md
+  s_bd5d08635569ef::t_76331b0cea1ac2 2-16
+  s_bd5d08635569ef::t_ee63a902f6dc19 1
+  s_bd5d08635569ef::t_0c42d5b1f1e4ce 17
+governance/plans/self-play-refactoring/E0-GAME-DEF.md
+  s_bd5d08635569ef::t_5de34ade56191d 2-18
+  s_bd5d08635569ef::t_1600eb682d1787 1
+governance/plans/self-play-refactoring/E2-AIRGAP-GATE.md
+  s_bd5d08635569ef::t_ddb77831a72069 2-18
+  s_bd5d08635569ef::t_efd9e165d17754 1
+  s_bd5d08635569ef::t_8d8bf9e925ad13 19
+governance/plans/self-play-refactoring/E3-RL-INTEGRATION.md
+  s_bd5d08635569ef::t_e4803f46ccc7b1 2-17
+  s_bd5d08635569ef::t_7acc115f397904 1
+  s_bd5d08635569ef::t_d700d46ca189ad 18
+governance/plans/inference-by-effects/NORTH-STAR.md
+  s_bd5d08635569ef::t_bacbc05fa9de50 9-62
+  s_bd5d08635569ef::t_373bf9e1005f51 6-8
+governance/plans/self-play-refactoring/E1-SELFPLAY-PILOT.md
+  s_bd5d08635569ef::t_f96db8cdda6a5c 2-16
+  s_bd5d08635569ef::t_4f9571f5cb0e5f 1
+  s_bd5d08635569ef::t_887210f9597f19 17
+governance/plans/inference-by-effects/E0-EFFECT-MODEL.md
+  s_bd5d08635569ef::t_2a82a056369ab1 2-17
+  s_bd5d08635569ef::t_35040c70a007c2 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c6461b342d3a76fe5446592a087207164dd17030",
+  "prompts": {},
+  "sessions": {
+    "s_bd5d08635569ef": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007dd98fdffebymju8lB4U07UE",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

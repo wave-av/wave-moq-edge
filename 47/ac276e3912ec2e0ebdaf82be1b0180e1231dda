@@ -1,0 +1,21 @@
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_d9915bbafa9657::t_74d5869075dab9 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_d9915bbafa9657::t_ca0eec0fcd6aad 203-233
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "47ac276e3912ec2e0ebdaf82be1b0180e1231dda",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

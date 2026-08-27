@@ -1,0 +1,28 @@
+governance/bin/nsdevbox-lease.mjs
+  s_ec6c413cf38c6f::t_7f7aed7b1fde3e 18
+  s_ec6c413cf38c6f::t_cbfcbdcd3b5021 27
+governance/bin/nsc-version-probe.mjs
+  s_ec6c413cf38c6f::t_0733b62edf7daf 74-78
+  s_ec6c413cf38c6f::t_d12ddea0b9f7f9 85-88
+  s_ec6c413cf38c6f::t_39d3f47e403c3e 63-67
+  s_ec6c413cf38c6f::t_0ed9e25473546a 53-56
+  s_ec6c413cf38c6f::t_67871041e13b1f 10
+  s_ec6c413cf38c6f::t_bd14aadd3ca639 95
+  s_ec6c413cf38c6f::t_8d8d6156ec2393 101-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "731be3a84fa62d11a6b1df94a806ec696df9d6c7",
+  "prompts": {},
+  "sessions": {
+    "s_ec6c413cf38c6f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda9364bcffeLzrkCMTBY1mzka",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

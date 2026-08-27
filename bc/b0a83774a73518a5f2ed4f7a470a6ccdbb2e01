@@ -1,0 +1,22 @@
+hooks/tests/latency-harness.sh
+  s_9041cf1cf1ccad::t_1ef50ebb4ceb44 47,53-65,79-81
+  s_9041cf1cf1ccad::t_f9387ba2562d22 66-78
+  s_9041cf1cf1ccad::t_bd70ead75829e1 100
+  s_9041cf1cf1ccad::t_7c08ad75e8742a 82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bcb0a83774a73518a5f2ed4f7a470a6ccdbb2e01",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

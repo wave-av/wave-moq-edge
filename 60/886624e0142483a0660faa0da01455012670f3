@@ -1,0 +1,33 @@
+governance/runbooks/vendor-cli-login-via-kernel.md
+  s_c24357e71ae5bc::t_3f3afaacf9555d 1-60
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_ff54caeb3a4a3b 19-27
+governance/plans/namespace-substrate/E0-GOVERN.md
+  s_c24357e71ae5bc::t_583d7966f98b08 21
+  s_c24357e71ae5bc::t_7c3efe242aee9b 19
+  s_15127d80763110::t_3d89cdf8d8ec1d 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "60886624e0142483a0660faa0da01455012670f3",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

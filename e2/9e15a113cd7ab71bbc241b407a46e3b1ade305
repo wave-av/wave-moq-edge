@@ -1,0 +1,19 @@
+governance/lib/release-identity.mjs
+  s_53b49eff5b8c5d::t_243462d3a2bfdc 81-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e29e15a113cd7ab71bbc241b407a46e3b1ade305",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

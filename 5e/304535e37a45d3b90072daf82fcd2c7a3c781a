@@ -1,0 +1,21 @@
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_81749701cdf849 5,123-126,128,130-131,134-135,139
+governance/code-index/index.json
+  s_60a20469ef4369::t_f4e47ebe18c3e8 7,9,1087-1088,1098-1099,1109-1110,1120-1121,1142-1143,1158-1168,1175-1176,1208-1209,1219-1220,1263-1264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "5e304535e37a45d3b90072daf82fcd2c7a3c781a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

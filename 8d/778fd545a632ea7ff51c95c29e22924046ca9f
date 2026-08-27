@@ -1,0 +1,23 @@
+governance/bin/plan-lint.mjs
+  s_124891ed63801b::t_36648f0ad7eecf 26,127-140
+governance/lib/epic-status-parse.mjs
+  s_124891ed63801b::t_972a1ff11a1205 61-85
+governance/test/plan-lint.test.mjs
+  s_124891ed63801b::t_29795970874328 4,56-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8d778fd545a632ea7ff51c95c29e22924046ca9f",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

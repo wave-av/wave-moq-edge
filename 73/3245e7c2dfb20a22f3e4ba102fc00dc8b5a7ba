@@ -1,0 +1,20 @@
+governance/bin/call-contract-lint.mjs
+  s_8d34dc2035def4::t_73072a55cffd00 1-74
+  s_8d34dc2035def4::t_0ac1e66f2b284e 75-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "733245e7c2dfb20a22f3e4ba102fc00dc8b5a7ba",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+governance/lib/drill-fixtures-outtree.mjs
+  s_60a20469ef4369::t_61afb333d5d13e 1-19,21-36,44-67,98-113,124-136,140-147,150-154
+  s_60a20469ef4369::t_43a4a15588b2af 20
+  s_60a20469ef4369::t_93b0d99bf43221 68-97
+  s_60a20469ef4369::t_79347f0561d4e1 137-139
+  s_60a20469ef4369::t_d8bd6ac65ebf87 148-149
+  s_60a20469ef4369::t_64fb8f6f89ff9e 114-123
+governance/lib/drill-decide.mjs
+  s_60a20469ef4369::t_bb6bdf170fef2c 1-56,60-80,81-184
+  s_60a20469ef4369::t_aa1159dd6e280c 57-59
+governance/bin/gate-liveness-drill.mjs
+  s_60a20469ef4369::t_a965d36735616d 11-15,30,32-33,41-43,53,98-99,167-186
+governance/bin/derived-artifact-drift-audit.mjs
+  s_60a20469ef4369::t_bc36ded2ec6c7c 223-225
+  s_60a20469ef4369::t_3439c47857c20c 41-42
+  s_60a20469ef4369::t_06101981027954 294-295
+  s_60a20469ef4369::t_f50c14202f7629 237-240
+  s_60a20469ef4369::t_5d04dc899d9832 20-27
+  s_60a20469ef4369::t_3775ccf618ab6c 72-74,76-90
+  s_60a20469ef4369::t_5c106969bd915a 126-127,129-132,135-139,145-147,149
+governance/lib/ci-gate-scan.mjs
+  s_60a20469ef4369::t_4c414a3ab27d43 1-80
+governance/test/gate-strength.test.mjs
+  s_60a20469ef4369::t_bb51ecb896082f 1-50,70-105
+governance/lib/gate-strength.mjs
+  s_60a20469ef4369::t_d7e890c4241637 1-80
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_0b0f9d90e95427 647-674
+governance/code-index/index.json
+  s_60a20469ef4369::t_a0570fa39a6db3 5883-5884,5894-5897,5905-5906,5916-5917,5927-5928,5938-5939,5949-5952,5960-5963,5971-5972,5982-5983,5993-5994,6004-6005,6015-6016,6026-6029,6037-6038,6048-6049,6059-6060,6070-6071,6081-6082,6086-6096,6103-6104,6114-6115,6125-6126,6136-6137,6147-6148,6158-6159,6169-6170,6180-6181
+capabilities/tests/run.mjs
+  s_60a20469ef4369::t_7c8ee96a1751fc 109-119,122
+  s_60a20469ef4369::t_0c334ca29c812f 10
+  s_60a20469ef4369::t_30f82bcc480771 100-108,120-121,123-149
+capabilities/bin/check.mjs
+  s_60a20469ef4369::t_16e710bd5984ca 23
+  s_60a20469ef4369::t_1923313d99e3a6 180-188,191-197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f7473fa4f2262d9e3332e404324715dabe631846",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/aikido-trial/E1-P3-CRITICALS-DEDUPE.md
+  s_15127d80763110::t_ebdf62d14b42f6 206-222
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7b6708a6a71ea73ab5d77716cdfaa2a484874997",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

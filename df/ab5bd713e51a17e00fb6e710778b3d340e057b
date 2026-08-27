@@ -1,0 +1,25 @@
+governance/devbox-status/devbox-status-server.mjs
+  s_2606de950a60c6::t_9640246ec369e1 12
+  s_2606de950a60c6::t_62fac72317c85b 1-11,13-48
+governance/test/devbox-status/devbox-read.test.mjs
+  s_2606de950a60c6::t_d373783b8e3196 1-81
+governance/devbox-status/lib/devbox-read.mjs
+  s_2606de950a60c6::t_ae526904a2c9e4 1-8,10-20,22,24-25,27,33-36
+  s_2606de950a60c6::t_b256b2adbefa05 9,21,23,26,28-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dfab5bd713e51a17e00fb6e710778b3d340e057b",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

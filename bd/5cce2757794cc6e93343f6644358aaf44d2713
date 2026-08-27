@@ -1,0 +1,20 @@
+.github/workflows/workflow-lint.yml
+  s_02abc74f4971c7::t_a52c11452a3064 176-194
+  s_02abc74f4971c7::t_f51ccb034140af 265-270
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "bd5cce2757794cc6e93343f6644358aaf44d2713",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+governance/plans/hybrid-orchestration-plane/E3-ROUTING-POLICY.md
+  s_9e432dc94c73ad::t_751a4b53a3517c 1-13,17-23,27-31
+  s_9e432dc94c73ad::t_42c66d3894cd68 14-16
+  s_9e432dc94c73ad::t_07f5f0325719c5 24-26
+governance/plans/hybrid-orchestration-plane/E4-ORIGIN-FEED.md
+  s_9e432dc94c73ad::t_de4d86feb803dd 1-13,17-23,27-30
+  s_9e432dc94c73ad::t_e873f68bd570ee 14-16
+  s_9e432dc94c73ad::t_eaf43a3798ce04 24-26
+governance/plans/hybrid-orchestration-plane/E5-TELEMETRY-PER-RAIL.md
+  s_9e432dc94c73ad::t_a24eeac0d1a945 14-16
+  s_9e432dc94c73ad::t_4446eb81298f16 1-13,17-23,27-30
+  s_9e432dc94c73ad::t_e6cf80cbe2f069 24-26
+governance/plans/hybrid-orchestration-plane/NORTH-STAR.md
+  s_9e432dc94c73ad::t_d7a1dd3c1a881f 1-2,4,6-8,11,22,53-55,57
+  s_9e432dc94c73ad::t_2d70de0aea5120 3,5,9-10,12-21,23-52,56,58-78
+governance/plans/hybrid-orchestration-plane/E1-CLAUDE-WORKER-POOL.md
+  s_9e432dc94c73ad::t_13909a211a1553 1-13,17-25,29-33
+  s_9e432dc94c73ad::t_927d6e320ecb00 26-28
+  s_9e432dc94c73ad::t_e14fa9c547e032 14-16
+governance/plans/hybrid-orchestration-plane/E2-CORPUS-MEMORY.md
+  s_9e432dc94c73ad::t_dab2d5172459e1 1-13,17-23,27-31
+  s_9e432dc94c73ad::t_3c7e8f1ddc2e8e 24-26
+  s_9e432dc94c73ad::t_ab1546cadb4dc0 14-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "05dc1a75004e631f1b9075e74bc97c4ed5a61f77",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

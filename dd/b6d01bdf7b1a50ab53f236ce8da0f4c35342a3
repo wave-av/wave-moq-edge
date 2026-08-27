@@ -1,0 +1,31 @@
+governance/plans/client-toolset-adoption/E6-DESKTOP-CONFORMANCE.md
+  s_9bb1b1d1d998d4::t_208db70de4fc46 4
+governance/conformance/desktop-app-ga/run-app-conformance.mjs
+  s_9bb1b1d1d998d4::t_f487e5e300a9f1 1-185
+governance/conformance/desktop-app-ga/Dockerfile
+  s_9bb1b1d1d998d4::t_ef4a9f3fe6dcb0 1-54
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_ef27c29827e87d 198-252
+governance/conformance/desktop-app-ga/session.sh
+  s_9bb1b1d1d998d4::t_18bf8ac416fd1c 1-66
+governance/plans/client-toolset-adoption/E7-DESKTOP-APPLICATION.md
+  s_9bb1b1d1d998d4::t_632af56fee4c30 1-56
+governance/conformance/desktop-app-ga/.gitignore
+  s_9bb1b1d1d998d4::t_093c6aa74546df 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ddb6d01bdf7b1a50ab53f236ce8da0f4c35342a3",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

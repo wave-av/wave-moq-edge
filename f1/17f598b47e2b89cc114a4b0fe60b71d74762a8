@@ -1,0 +1,45 @@
+governance/plans/credential-provisioning-integrity/RECEIPTS.md
+  s_be40541f6fd98b::t_5e6ffb5a09cad3 52-54
+  s_be40541f6fd98b::t_fc55300bbf293f 102-103,110-126
+  s_be40541f6fd98b::t_225430090f2069 151-177,179-184
+  s_be40541f6fd98b::t_dabfaa338d5dcb 18,20,22-23,26-42,45-47
+  s_be40541f6fd98b::t_d1df2e2b27c2e7 58-59,61-62,72-74
+  s_be40541f6fd98b::t_933e553571932d 12-13
+  s_be40541f6fd98b::t_79c490c29d1cf1 55
+  s_be40541f6fd98b::t_ba6d1616749a6a 75
+  s_be40541f6fd98b::t_a45263438563c6 190,204
+governance/plans/credential-provisioning-integrity/NORTH-STAR.md
+  s_be40541f6fd98b::t_fcca2e2a74433a 94-115
+  s_be40541f6fd98b::t_039df451e7a9f3 85-87
+  s_be40541f6fd98b::t_39f8063727981e 27-28,32-34,39-46
+  s_be40541f6fd98b::t_160f1b2961d4f5 116
+  s_be40541f6fd98b::t_fcc74db08b3029 7,75,122,127,163,198
+governance/plans/credential-provisioning-integrity/E2-TRAPS.md
+  s_be40541f6fd98b::t_f72013c51caa9a 2,5,7,16,86
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  s_be40541f6fd98b::t_2ce855d2936779 2,7,12,36,55,81-82
+governance/plans/credential-provisioning-integrity/E4-GRANTS.md
+  s_be40541f6fd98b::t_3713b13e7f47dd 13,16-18
+governance/plans/credential-provisioning-integrity/E7-RATCHET.md
+  s_be40541f6fd98b::t_6a45a85c2b2ea9 25-30
+governance/plans/credential-provisioning-integrity/E8-ROTATE.md
+  s_be40541f6fd98b::t_780743cba92c0e 27
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_be40541f6fd98b::t_ba160461e27639 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f117f598b47e2b89cc114a4b0fe60b71d74762a8",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

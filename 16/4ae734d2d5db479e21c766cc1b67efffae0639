@@ -1,0 +1,107 @@
+governance/plans/wave-rl-reward-plane/E2-CALIBRATE.md
+  s_0950865aa49634::t_eb11fdf89bf371 2-36,41-47,52-60,65-97
+  s_0950865aa49634::t_a6b23c2b775494 61-64
+  s_0950865aa49634::t_38b3573dd506f5 37-40
+  s_0950865aa49634::t_12f70f35bc7812 48-51
+  s_0950865aa49634::t_16c4a0bc6995d7 1
+governance/plans/wave-rl-reward-plane/E1-BASELINE.md
+  s_0950865aa49634::t_ca4ced99e0d7de 31-34
+  s_0950865aa49634::t_a757b03ee3b9c8 2-30,35-43,48-54,59-87
+  s_0950865aa49634::t_ef2d094ed14e7d 55-58
+  s_0950865aa49634::t_3414dfea7f43e7 44-47
+  s_0950865aa49634::t_4dc3a817ee8001 1
+governance/plans/wave-rl-reward-plane/E4-ANTIGAME.md
+  s_0950865aa49634::t_eb6eaeb7fbdbc3 33-36
+  s_0950865aa49634::t_9fa053eda7fdf3 45-48
+  s_0950865aa49634::t_05af37830e03a8 2-32,37-44,49-56,61-91
+  s_0950865aa49634::t_e1d92910824f05 57-60
+  s_0950865aa49634::t_3201a169cdf058 1
+governance/plans/wave-rl-reward-plane/E0-RULES.md
+  s_0950865aa49634::t_b42cf0191adf33 39-42
+  s_0950865aa49634::t_8e57364087a1d9 2-25,30-38,43-53,58-86
+  s_0950865aa49634::t_5456b42b396654 54-57
+  s_0950865aa49634::t_429f001fae6c9a 26-29
+  s_0950865aa49634::t_7998a6d6b03536 1
+governance/plans/wave-rl-reward-plane/E3-LEARNED.md
+  s_0950865aa49634::t_296fc6fc5cd57c 2-26,31-38,43-50,55-83
+  s_0950865aa49634::t_3c680ac587d998 39-42
+  s_0950865aa49634::t_b1ebb93e826a07 27-30
+  s_0950865aa49634::t_518a7e5111ca9b 51-54
+  s_0950865aa49634::t_a9ec337f6745bb 1
+governance/plans/wave-reinforcement-learning/PROMOTION.md
+  s_0950865aa49634::t_08bb1186821042 1-105
+governance/plans/wave-rl-reward-plane/NORTH-STAR.md
+  s_0950865aa49634::t_8af98df2889277 5-78
+  s_0950865aa49634::t_834e70a6d7a598 2-4
+  s_0950865aa49634::t_4606fd18209cad 1
+governance/plans/wave-rl-control-track/E0-TRACES.md
+  s_0950865aa49634::t_433f7d15c6f914 1-9
+governance/plans/wave-rl-control-track/E1-SIMULATOR.md
+  s_0950865aa49634::t_72d7fd854d9bfe 1-10
+governance/plans/wave-rl-control-track/E2-REWARD.md
+  s_0950865aa49634::t_afca834f373259 1-10
+governance/plans/wave-rl-control-track/E3-POLICY.md
+  s_0950865aa49634::t_fb73ee169f1c92 1-10
+governance/plans/wave-rl-control-track/E4-FALLBACK.md
+  s_0950865aa49634::t_b5ac29038c2a98 1-10
+governance/plans/wave-rl-control-track/NORTH-STAR.md
+  s_0950865aa49634::t_58423216555da9 1-26
+governance/plans/wave-rl-corpus/E0-SCHEMA.md
+  s_0950865aa49634::t_b209401ed1cdf2 1-9
+governance/plans/wave-rl-corpus/E1-STORE.md
+  s_0950865aa49634::t_2ec74357e49fca 1-10
+governance/plans/wave-rl-corpus/E2-SPLIT.md
+  s_0950865aa49634::t_d71e7bcf347c19 1-10
+governance/plans/wave-rl-corpus/E3-DEDUPE.md
+  s_0950865aa49634::t_58b26be7877dd9 1-10
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_0950865aa49634::t_6b28adf97a19cf 1-25
+governance/plans/wave-rl-redteam/E0-CANARY.md
+  s_0950865aa49634::t_7670a5f7832018 1-9
+governance/plans/wave-rl-redteam/E1-INJECTION.md
+  s_0950865aa49634::t_3457968982c08f 1-10
+governance/plans/wave-rl-redteam/E2-CONTAINMENT.md
+  s_0950865aa49634::t_ff04dacadaa131 1-10
+governance/plans/wave-rl-redteam/E3-WALLET.md
+  s_0950865aa49634::t_01336c53b33015 1-10
+governance/plans/wave-rl-redteam/NORTH-STAR.md
+  s_0950865aa49634::t_c61289ed043b03 1-25
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_0950865aa49634::t_f42cc17d9e8cc2 1-9
+governance/plans/wave-rl-signal-intake/E1-REDACT.md
+  s_0950865aa49634::t_0375a67be3acb5 1-10
+governance/plans/wave-rl-signal-intake/E2-VOLUME.md
+  s_0950865aa49634::t_6264ba9ce40510 1-10
+governance/plans/wave-rl-signal-intake/E3-TAPS.md
+  s_0950865aa49634::t_69da28872c0fcf 1-10
+governance/plans/wave-rl-signal-intake/NORTH-STAR.md
+  s_0950865aa49634::t_5da6693543642f 1-25
+governance/plans/wave-rl-trainer-lanes/E0-INTERFACE.md
+  s_0950865aa49634::t_4cd1444317b57a 1-9
+governance/plans/wave-rl-trainer-lanes/E1-TRL.md
+  s_0950865aa49634::t_656563eb0927c8 1-10
+governance/plans/wave-rl-trainer-lanes/E2-SECOND-LANE.md
+  s_0950865aa49634::t_9a186c326db33d 1-10
+governance/plans/wave-rl-trainer-lanes/E3-MATRIX.md
+  s_0950865aa49634::t_a1ac34af2b66f6 1-10
+governance/plans/wave-rl-trainer-lanes/E4-REPRO.md
+  s_0950865aa49634::t_0636b3825d9dc2 1-10
+governance/plans/wave-rl-trainer-lanes/NORTH-STAR.md
+  s_0950865aa49634::t_f6312601ca245a 1-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "164ae734d2d5db479e21c766cc1b67efffae0639",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+scripts/merge-queue-health.mjs
+  s_0a76e16ab503c3::t_aa41f83b71c8c4 75-80
+  s_0a76e16ab503c3::t_eff96fb0aa3ca5 228-231,233
+  s_0a76e16ab503c3::t_bfff343be487bd 173
+.github/workflows/merge-queue-health.yml
+  s_0a76e16ab503c3::t_b6227fc6850df9 191-195
+  s_0a76e16ab503c3::t_70624635e9e9e7 116-124
+  s_0a76e16ab503c3::t_f8339e7605430b 174
+  s_0a76e16ab503c3::t_f137ab2f564a70 153-173
+  s_0a76e16ab503c3::t_7d4dcc17214bc1 140-145
+  s_0a76e16ab503c3::t_d5aec044aefbe1 100-103,105-108
+  s_0a76e16ab503c3::t_09c15ca31f3a74 53-58
+.github/workflows/automerge.yml
+  s_0a76e16ab503c3::t_be967ee0529f11 215-220,224-231
+  s_0a76e16ab503c3::t_0b64d0038b2f85 221-223
+  s_0a76e16ab503c3::t_fe62e33c1d18b5 173-175,177-186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9e5b13c2c5ec32cd5ab9ca8a562414c0a958c37e",
+  "prompts": {},
+  "sessions": {
+    "s_0a76e16ab503c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4f6176cc-2c66-4091-b533-06fe978917b1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

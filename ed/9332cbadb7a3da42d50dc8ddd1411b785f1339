@@ -1,0 +1,40 @@
+governance/lib/drill-registry.mjs
+  s_85113a1cef9a84::t_92080ee7c55d3b 223,227
+  s_85113a1cef9a84::t_750bec682a1356 224-226
+  s_85113a1cef9a84::t_a41cbd7520c0be 53-54,71,114-124,204-215,268-269,286
+governance/lib/drill-fixtures-sandbox-bypass-gate.mjs
+  s_85113a1cef9a84::t_3eded5d48fd67e 6-11
+  s_85113a1cef9a84::t_d408491d35fb88 17-19,21-23
+governance/lib/drill-fixtures-public-github-write-gate-mcp.mjs
+  s_85113a1cef9a84::t_4f07e4771a49f5 1-156
+governance/lib/drill-fixtures-public-github-write-gate.mjs
+  s_9e49fb2dab61f0::t_cd9f7e88cb00e3 1-285
+governance/lib/drill-fixtures-wrangler-deploy-gate.mjs
+  s_85113a1cef9a84::t_93b6ebd08269d2 1-245
+governance/lib/drill-hook-required.mjs
+  s_9e49fb2dab61f0::t_3fe71cebcebf3b 52-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ed9332cbadb7a3da42d50dc8ddd1411b785f1339",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

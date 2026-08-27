@@ -1,0 +1,20 @@
+bin/evict-idle.mjs
+  s_7ddeb5d251570f::t_ca3f84294a5a9d 78-89
+  s_7ddeb5d251570f::t_07c767c0c70d77 17-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fdfc14cec60791f2bb8f7faadc1e55825a7556c4",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/research/creator-intelligence/PILOT-OFFER.md
+  s_ea7fda6a228496::t_eb99cf2cea3983 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "db5d26d1c690135d23922aafecfcabee40260c98",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/recall/BAKE-OFF.md
+  s_85d9e5f433b9aa::t_162328eef6f304 234
+  s_85d9e5f433b9aa::t_7f8d1eec05701b 55
+  s_85d9e5f433b9aa::t_d3d4cd6d442866 244
+  s_85d9e5f433b9aa::t_bf05a0c512e981 256
+  s_85d9e5f433b9aa::t_a0c0d835e3ea78 74-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "cbba0b9b0f11b28b42f4f30c91c7acf6a9a6b9e7",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

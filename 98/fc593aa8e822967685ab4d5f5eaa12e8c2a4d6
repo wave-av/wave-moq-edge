@@ -1,0 +1,30 @@
+scripts/bugbot/factory.py
+  s_0b987fef4e1240::t_3948df92b1ea47 48
+  s_0b987fef4e1240::t_83cfd6f40d8935 52-54
+  s_0b987fef4e1240::t_4c3b184f8ee5df 13
+  s_0b987fef4e1240::t_1de9608f964687 35-37,39
+scripts/bugbot/test_factory.py
+  s_0b987fef4e1240::t_fec8d1594f6e57 45-64,69-70
+scripts/bugbot/test_allocator.py
+  s_0b987fef4e1240::t_101f6a68b4d8bf 37-39,41-48,50-53,58-59
+  s_0b987fef4e1240::t_0ad1681d47b858 40,49
+scripts/bugbot/allocator.py
+  s_0b987fef4e1240::t_33da7fccb99be1 32-33,37,41-48
+  s_0b987fef4e1240::t_cf7d5d1ba35f1f 54-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "98fc593aa8e822967685ab4d5f5eaa12e8c2a4d6",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

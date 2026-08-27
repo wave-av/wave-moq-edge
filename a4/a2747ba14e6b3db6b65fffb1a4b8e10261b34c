@@ -1,0 +1,32 @@
+governance/lib/closed-loop-audit.mjs
+  s_28efdc23129d94::t_c13b05d964bb3b 51-56
+  s_28efdc23129d94::t_7517df9918eb10 40-42
+governance/lib/closed-loop-classify.mjs
+  s_28efdc23129d94::t_d4263672dc388c 1-146
+governance/test/closed-loop-drift.test.mjs
+  s_28efdc23129d94::t_981bdde3472ec3 1-162
+governance/bin/closed-loop-audit.mjs
+  s_28efdc23129d94::t_6d3cf75b49eb8d 36,41
+  s_28efdc23129d94::t_9b96d2ad5bb38b 87-94,96-128,132-134
+  s_28efdc23129d94::t_2cd9874c65c791 28-30
+  s_28efdc23129d94::t_9b863eeea77563 6,12,16-20
+  s_28efdc23129d94::t_ee945c67df6613 95
+  s_28efdc23129d94::t_10dcc0f7a1658b 170
+  s_28efdc23129d94::t_d9b767539f3b9d 169
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a4a2747ba14e6b3db6b65fffb1a4b8e10261b34c",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/bin/gate-liveness-drill.mjs
+  s_2e30bff6169f7a::t_be4cfa6fd56532 35
+  s_2e30bff6169f7a::t_d45dd2ecea8af9 64,68
+governance/bin/derived-artifact-drift-audit.mjs
+  s_2e30bff6169f7a::t_6307b3753e1edb 241-243,249
+  s_2e30bff6169f7a::t_d3a4d2028eb1df 283
+governance/lib/drill-fixtures-status.mjs
+  s_2e30bff6169f7a::t_449bd47978aaaf 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0ee885eaa19f0664fbdd9e62a10d0798cc7c626a",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+governance/plans/wave-mesh-fabric/action/mesh-kv-tally.sh
+  s_15127d80763110::t_9b6882019678d0 15
+  s_15127d80763110::t_67edfa9162648d 12-14
+  s_15127d80763110::t_18d243e14861c5 16-18
+  s_15127d80763110::t_fffd7491bd98aa 1-11,19-44
+governance/plans/wave-mesh-fabric/E1-P1-ESTATE-LATENCY.md
+  s_15127d80763110::t_816992140427dd 348-478
+  s_15127d80763110::t_5765c9574f2ea6 500-511
+  s_15127d80763110::t_a0613ee4091bf7 332-337,343-346
+  s_15127d80763110::t_bd1d01b11d72f1 269-278
+  s_15127d80763110::t_b8d45c5354e19f 347
+governance/plans/wave-mesh-fabric/action/mesh-kv-write-days.sh
+  s_15127d80763110::t_8d8b50f60648a6 15
+  s_15127d80763110::t_7cc379176f65fc 12-14
+  s_15127d80763110::t_20f3366607bbed 16-18
+  s_264ae386838c57::t_e357ad8b090ed7 1-11,19-53
+governance/plans/wave-mesh-fabric/action/mesh-kv-resolve-ns.sh
+  s_15127d80763110::t_8dab988d434752 1-39
+governance/plans/wave-mesh-fabric/action/mesh-kv-prefix-count.sh
+  s_15127d80763110::t_acef16211eafaf 22-24
+  s_15127d80763110::t_90125410814e53 19-21
+  s_15127d80763110::t_6208f403da6e14 25-27
+  s_264ae386838c57::t_77955e810e7788 1-18,28-54
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_15127d80763110::t_e02f49abd36a02 33-43
+  s_15127d80763110::t_adbca7f8df4fb9 229-237
+  s_15127d80763110::t_a52909889f2e89 290-297
+  s_15127d80763110::t_84f50940d076d1 220-228
+governance/plans/wave-mesh-fabric/action/mesh-kv-shape.sh
+  s_15127d80763110::t_1d1eb403c4a3af 17
+  s_15127d80763110::t_7b8b6baa8c1ed7 41-46
+  s_15127d80763110::t_d294d0be0daf4d 14-16
+  s_15127d80763110::t_29a1669673787d 18-20,38-40
+  s_15127d80763110::t_c1b1d3b268b551 47
+  s_f0a78cbb7828a7::t_c781e84af231c9 1-13,21-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "665070499b5148db4f806fcc37d26906effbc51e",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f0a78cbb7828a7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8d172c2e-2921-4e37-9edb-5e07a8be0e20",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

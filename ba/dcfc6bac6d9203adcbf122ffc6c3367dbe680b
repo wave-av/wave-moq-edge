@@ -1,0 +1,20 @@
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_4388d8becd7d94::t_1f455498e90605 183-197
+  s_4388d8becd7d94::t_d17eabc4859c35 198-200
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "badcfc6bac6d9203adcbf122ffc6c3367dbe680b",
+  "prompts": {},
+  "sessions": {
+    "s_4388d8becd7d94": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffa3a5a50ffeXbTV920EYS1ede",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

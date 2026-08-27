@@ -1,0 +1,19 @@
+governance/bin/check.mjs
+  s_7d1f14917e01c9::t_a3c1938ae6fdf8 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9500a075e5a48ed96f978869a7b41bb0c5669ecc",
+  "prompts": {},
+  "sessions": {
+    "s_7d1f14917e01c9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0038373c9ffeACI5Qg5cSHONmt",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

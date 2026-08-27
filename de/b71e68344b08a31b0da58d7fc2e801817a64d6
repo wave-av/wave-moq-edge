@@ -1,0 +1,33 @@
+governance/ENFORCEMENT-COVERAGE.md
+  s_9bb1b1d1d998d4::t_a1140db4a14904 5,12,14,20,27,30,78,115,119,185,196,204,272,327,331
+governance/contract.md
+  s_9bb1b1d1d998d4::t_b2e3992eb98988 57,59
+rules/absence-never-reads-as-pass.md
+  s_9bb1b1d1d998d4::t_18342adf29dfb2 1-11
+rules/api-first.md
+  s_9bb1b1d1d998d4::t_ef87a3afa62711 1-11
+rules/boundary-red-team.md
+  s_9bb1b1d1d998d4::t_474328e5654e82 1-11
+rules/four-renderings.md
+  s_9bb1b1d1d998d4::t_a0de0a3f5a531d 1-13
+rules/origin-to-invariant.md
+  s_9bb1b1d1d998d4::t_1a3cd48dbbf747 1-13
+rules/paid-rail-law.md
+  s_9bb1b1d1d998d4::t_c7da7dbf523000 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "deb71e68344b08a31b0da58d7fc2e801817a64d6",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

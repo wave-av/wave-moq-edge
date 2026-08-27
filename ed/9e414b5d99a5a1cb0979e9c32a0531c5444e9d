@@ -1,0 +1,19 @@
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  s_ea7fda6a228496::t_82c9a98902e4f2 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ed9e414b5d99a5a1cb0979e9c32a0531c5444e9d",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

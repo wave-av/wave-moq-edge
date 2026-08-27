@@ -1,0 +1,48 @@
+governance/plans/upstash-org-integration/E1-ACTIVATE-REDIS-VECTOR.md
+  s_dd42a206f882e3::t_ba7b911194ec6e 4
+governance/plans/upstash-org-integration/E2-QSTASH-GOLIVE.md
+  s_dd42a206f882e3::t_fbe2e5584eaddc 4
+governance/plans/upstash-org-integration/NORTH-STAR.md
+  s_dd42a206f882e3::t_614eb4a49324dd 69
+  s_dd42a206f882e3::t_5463aa6fad4968 32-34,36-37
+  s_dd42a206f882e3::t_55601d7cacbf44 40-66
+governance/plans/upstash-org-integration/E0-RECONCILE.md
+  s_dd42a206f882e3::t_509b3f1b35ae82 4
+governance/plans/upstash-org-integration/BUILD-VS-BUY.md
+  s_dd42a206f882e3::t_16eda7edd96aea 4
+  s_dd42a206f882e3::t_ca93e7f4504c24 5-20
+governance/plans/upstash-org-integration/E5-UNEXPLORED-DECIDE.md
+  s_dd42a206f882e3::t_965bee96ec59d1 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9a645670fd415421d44b303205f8af37d71730a4",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_932812b98c11d1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fffb26dd3ffearw8DwPof3Z4PR",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

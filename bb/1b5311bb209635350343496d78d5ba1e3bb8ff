@@ -1,0 +1,22 @@
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_f0a78cbb7828a7::t_e9f7f562678a1c 8-12
+  s_f0a78cbb7828a7::t_092b4a8b97f381 109-195
+governance/graph.json
+  s_f0a78cbb7828a7::t_6955da4dd96d13 32446-32451
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bb1b5311bb209635350343496d78d5ba1e3bb8ff",
+  "prompts": {},
+  "sessions": {
+    "s_f0a78cbb7828a7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8d172c2e-2921-4e37-9edb-5e07a8be0e20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

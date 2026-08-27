@@ -1,0 +1,21 @@
+governance/ci-stack/dashboard-driver/gitar-switches.mjs
+  s_7326a769c7efe8::t_5e934720ea1f3e 1-31
+governance/ci-stack/dashboard-driver/gitar-retry-flip.mjs
+  s_7326a769c7efe8::t_e37d7de0ea8486 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "515b163197df786d7f3fa65d8e0525200cd72bd7",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

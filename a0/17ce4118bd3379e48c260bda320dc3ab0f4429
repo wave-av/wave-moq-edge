@@ -1,0 +1,72 @@
+governance/bin/code-index-audit.mjs
+  h_67a1b847dc59d6 1-100
+governance/bin/wave-search-mcp.mjs
+  h_67a1b847dc59d6 1-111
+governance/plans/agent-tool-access/E6-MODEL-TIERING.md
+  h_67a1b847dc59d6 1-45
+governance/plans/agent-tool-access/NORTH-STAR.md
+  h_67a1b847dc59d6 101
+governance/plans/durable-state-off-ephemeral/E10-CHECKPOINTS.md
+  h_67a1b847dc59d6 1-41
+governance/plans/durable-state-off-ephemeral/NORTH-STAR.md
+  h_67a1b847dc59d6 56
+governance/plans/fleet-epic-queue/FLEET-EPIC-QUEUE.md
+  h_67a1b847dc59d6 1-48
+governance/plans/fleet-epic-queue/NORTH-STAR.md
+  h_67a1b847dc59d6 1-48
+governance/plans/model-selection-completion/E5-ROUTER-MODES.md
+  h_67a1b847dc59d6 1-41
+governance/plans/model-selection-completion/NORTH-STAR.md
+  h_67a1b847dc59d6 75
+governance/plans/search-analytics/E0-CAPTURE.md
+  h_67a1b847dc59d6 1-16
+governance/plans/search-analytics/E1-INSIGHTS.md
+  h_67a1b847dc59d6 1-10
+governance/plans/search-analytics/E2-DASHBOARD.md
+  h_67a1b847dc59d6 1-10
+governance/plans/search-analytics/NORTH-STAR.md
+  h_67a1b847dc59d6 1-23
+governance/plans/search-discovery/E0-SIGNALS.md
+  h_67a1b847dc59d6 1-9
+governance/plans/search-discovery/E1-RANK.md
+  h_67a1b847dc59d6 1-10
+governance/plans/search-discovery/E2-FEED.md
+  h_67a1b847dc59d6 1-10
+governance/plans/search-discovery/NORTH-STAR.md
+  h_67a1b847dc59d6 1-23
+governance/plans/wave-internal-search/E0-SURFACE.md
+  h_67a1b847dc59d6 1-31
+governance/plans/wave-internal-search/E1-INDEX.md
+  h_67a1b847dc59d6 1-32
+governance/plans/wave-internal-search/E2-MEMORY.md
+  h_67a1b847dc59d6 1-31
+governance/plans/wave-internal-search/E3-PRODUCT.md
+  h_67a1b847dc59d6 1-32
+governance/plans/wave-internal-search/NORTH-STAR.md
+  h_67a1b847dc59d6 1-36
+governance/plans/wave-search/E0-FOUNDATION.md
+  h_67a1b847dc59d6 1-41
+governance/plans/wave-search/E1-WEB.md
+  h_67a1b847dc59d6 1-33
+governance/plans/wave-search/E2-RERANK.md
+  h_67a1b847dc59d6 1-32
+governance/plans/wave-search/E3-GA.md
+  h_67a1b847dc59d6 1-32
+governance/plans/wave-search/NORTH-STAR.md
+  h_67a1b847dc59d6 1-37
+governance/plans/wave-voice-program/E0-INVENTORY.md
+  h_67a1b847dc59d6 180,190-218
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a017ce4118bd3379e48c260bda320dc3ab0f4429",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

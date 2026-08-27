@@ -1,0 +1,41 @@
+governance/plans/signal-flow/E0-FOUNDATION.md
+  s_37d3f61160b2dd::t_a1f73222595f74 34
+governance/plans/signal-flow/E2-REGISTRY-FOUR-RENDERINGS.md
+  s_37d3f61160b2dd::t_29e7436217b77b 36
+governance/plans/signal-flow/E3-PRODUCTIZE.md
+  s_37d3f61160b2dd::t_dcd19dd0d203ed 36
+governance/plans/signal-flow/NORTH-STAR.md
+  s_37d3f61160b2dd::t_3c35c265fe3f11 7,24,42
+governance/plans/voice-control-deck/E0-DYNAMIC-CATALOG.md
+  s_37d3f61160b2dd::t_f00ff493df3cc8 32
+governance/plans/voice-control-deck/E1-SESSION-CONTROLS.md
+  s_37d3f61160b2dd::t_b6f26f497050f2 34
+governance/plans/voice-control-deck/E2-FOUR-RENDERINGS.md
+  s_37d3f61160b2dd::t_9da4d2cbb33162 34
+governance/plans/voice-control-deck/E3-PRODUCTIZE.md
+  s_37d3f61160b2dd::t_e313d6d937a324 34
+governance/plans/voice-control-deck/NORTH-STAR.md
+  s_37d3f61160b2dd::t_077303545964de 7,40
+governance/plans/wave-audio-signal-plane/E2-FOUR-RENDERINGS.md
+  s_37d3f61160b2dd::t_5ccab562a7e707 34
+governance/plans/wave-audio-signal-plane/E3-PRODUCTIZE.md
+  s_37d3f61160b2dd::t_f43230d1d38bcb 34
+governance/plans/wave-audio-signal-plane/NORTH-STAR.md
+  s_37d3f61160b2dd::t_fec86cc8fcdf77 7,43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7e5af416c6ad511f926f9f163e261eacbd9892bc",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

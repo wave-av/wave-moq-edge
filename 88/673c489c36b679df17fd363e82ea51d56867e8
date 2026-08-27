@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_1f47a1ff9c83d4::t_90d5527d2cc869 121-130,144-152,165-173,185-193
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_1f47a1ff9c83d4::t_888ec66afff8ae 98-107,119-127,139-148,161-170
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_1f47a1ff9c83d4::t_f98896b5c61e16 106-115,128-137,149-158,171-181,193-202
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_1f47a1ff9c83d4::t_9cafaf3728a781 106-114,128-137,148-157,167-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "88673c489c36b679df17fd363e82ea51d56867e8",
+  "prompts": {},
+  "sessions": {
+    "s_1f47a1ff9c83d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aeae18b7a9ca4132f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

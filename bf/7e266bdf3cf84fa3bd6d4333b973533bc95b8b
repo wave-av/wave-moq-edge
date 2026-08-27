@@ -1,0 +1,35 @@
+governance/plans/closed-loop-mechanisms/E0-INVENTORY.md
+  s_be40541f6fd98b::t_76a42d91302c23 4-8
+  s_be40541f6fd98b::t_0f5c5b2e5238cf 34-72
+governance/test/closed-loop-audit.test.mjs
+  s_be40541f6fd98b::t_390d19991038da 122-178
+  s_be40541f6fd98b::t_24bce4b25e6116 53-58,60-62,64,67-69
+governance/bin/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_5cc2259087242e 129-130
+  s_be40541f6fd98b::t_97abe8bfecfcf9 122
+governance/lib/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_666da5e1b9f272 250-254,256-268,273,276
+  s_be40541f6fd98b::t_76b8f87ca1aadb 48-61
+  s_be40541f6fd98b::t_8bd81d85f8220d 11-12,16-25
+  s_be40541f6fd98b::t_26d7f93dccce0f 210
+  s_be40541f6fd98b::t_27e5a9547a6a59 286,292-294
+  s_be40541f6fd98b::t_dd80639f524225 141-153,159-163,165,168-170,172,174,176-191,194-195
+  s_be40541f6fd98b::t_af60fe6b1f90fc 212-214,225,228
+  s_be40541f6fd98b::t_de7363be5af53b 154-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "bf7e266bdf3cf84fa3bd6d4333b973533bc95b8b",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

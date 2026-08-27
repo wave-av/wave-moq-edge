@@ -1,0 +1,35 @@
+governance/plans/wave-linear/RECEIPTS.md
+  s_63c6ee080d73c3::t_39a7da77914d8a 196
+  s_63c6ee080d73c3::t_75274621989bb8 105-122
+  s_2e30bff6169f7a::t_fcae946a6b7fa8 179,192
+governance/plans/wave-linear/E0-GROUND.md
+  s_2e30bff6169f7a::t_609813f1c93e87 79,157
+governance/plans/wave-linear/E10-HERITAGE.md
+  s_2e30bff6169f7a::t_a91d321be52a22 10,50,112
+governance/plans/wave-linear/E3-SESSIONS.md
+  s_2e30bff6169f7a::t_7d3d074f8f3c6e 123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "21a298a943187d85b8af525724a6dbe430393441",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

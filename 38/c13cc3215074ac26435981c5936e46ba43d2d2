@@ -1,0 +1,27 @@
+governance/bin/fleet/actions-census.mjs
+  s_96280c922a9418::t_7994f911b0bee3 28,170
+governance/bin/fleet/ingress-probe.mjs
+  s_96280c922a9418::t_69809ce5462815 32,228
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_15d0e02e91ba64 1120-1126,1237-1247
+governance/code-index/index.json
+  s_96280c922a9418::t_85546655764477 10167-10168,10178-10179,10189-10190,10200-10201,10211-10212,10222-10223,10233-10236,11223-11224,11234-11235,11245-11246,11256-11257,11267-11268,11278-11279,11289-11290,11300-11301,11311-11312,11322-11323,11333-11336
+governance/test/ingress-probe.test.mjs
+  s_96280c922a9418::t_983d1751ec9b93 12,16-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "38c13cc3215074ac26435981c5936e46ba43d2d2",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

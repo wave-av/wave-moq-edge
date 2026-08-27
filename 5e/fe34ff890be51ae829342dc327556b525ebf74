@@ -1,0 +1,19 @@
+governance/plans/neural-moq-lane/E1-DECODER-SPIKE.md
+  s_98ea055a1dd13c::t_35009fe3dc101d 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5efe34ff890be51ae829342dc327556b525ebf74",
+  "prompts": {},
+  "sessions": {
+    "s_98ea055a1dd13c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2791a0effevG4cZQoXrplo7V",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

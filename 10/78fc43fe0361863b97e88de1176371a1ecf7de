@@ -1,0 +1,21 @@
+governance/lib/reviewer-alarm-tally.mjs
+  s_70c7ac7de143f9::t_05a96c655a6c41 1-162
+governance/lib/reviewer-alarm.mjs
+  s_70c7ac7de143f9::t_54639ad4fe0278 31-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1078fc43fe0361863b97e88de1176371a1ecf7de",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

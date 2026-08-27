@@ -1,0 +1,28 @@
+hookcli/tests/protected-push-advisory.sh
+  s_db1b2a792e5f25::t_526abba8e997c6 53-61,67
+  s_db1b2a792e5f25::t_8680611ff8be96 1-52,62-66,68-104
+hookcli/rules/rules.json
+  s_db1b2a792e5f25::t_253120ea739766 444
+  s_db1b2a792e5f25::t_1aa02ccf997074 435
+  s_db1b2a792e5f25::t_a65c72f9d4df16 124
+  s_db1b2a792e5f25::t_a2d62da42e800d 431
+  s_db1b2a792e5f25::t_0b2b5a9d062cdd 128
+hookcli/tests/lib/modules.sh
+  s_db1b2a792e5f25::t_569a7a3f562453 218-226
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "94295b957b011df4d02a0907e0be53cbae2fdd89",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

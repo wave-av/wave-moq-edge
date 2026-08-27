@@ -1,0 +1,23 @@
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_3d6b42001e2811 63-74,78-84
+frameworks/gates/test-check-file-size.sh
+  s_364605915bb7ec::t_27e4423d394b9f 47,53-58,262-284,286-287,295-301,303,306,312-314,333-339
+frameworks/gates/test-secret-scan.sh
+  s_364605915bb7ec::t_a756af37eaa339 174-181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "16fb1a30bbfbfa9ade32a7afe35d9b03c9b7b4fc",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

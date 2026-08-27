@@ -1,0 +1,19 @@
+.github/workflows/wave-bugbot.yml
+  s_07acdfa7e3709a::t_2f5f69a5d62c19 1-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "b22dd6d0e2b1b6e21751125e7b450e772fe52280",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

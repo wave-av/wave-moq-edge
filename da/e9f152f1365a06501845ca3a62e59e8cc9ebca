@@ -1,0 +1,23 @@
+sync.sh
+  s_1c0352e957b5f6::t_7cf2868d0bab39 243-252
+  s_1c0352e957b5f6::t_519a4d9e96848e 214-228
+hooks/tests/sync-settings-perms.test.sh
+  s_1c0352e957b5f6::t_3c92aad721d98b 121-123,130-150
+  s_1c0352e957b5f6::t_e754bf057e1265 25-29,81-87,164-167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dae9f152f1365a06501845ca3a62e59e8cc9ebca",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,227 @@
+.gitignore
+  s_7c7e203d305c60::t_73a47f5044a8ac 101-106
+docs/WAVE-SEC-GATE.md
+  s_7c7e203d305c60::t_3df6c6328e068c 312-323
+governance/bin/cfos-trial-killswitch.mjs
+  s_7c7e203d305c60::t_29045d6f1fbf49 1-363
+governance/bin/cockpit.mjs
+  s_7c7e203d305c60::t_574bad2fa38e65 13-14,25,48-49,54-62,120-126,132,144
+governance/bin/enforce.mjs
+  s_7c7e203d305c60::t_7d0cc66607e459 79,81-90
+governance/bin/ffmpeg-pin-lint.mjs
+  s_7c7e203d305c60::t_4a1a9cb9be25a1 1-151
+governance/bin/gate-liveness-drill.mjs
+  s_7c7e203d305c60::t_e3b0ab53c409d0 27,48,51,108-113,125,141
+governance/bin/pr-check-health.mjs
+  s_7c7e203d305c60::t_fa57a42e420e5f 1-277
+governance/bin/reversible-store.mjs
+  s_7c7e203d305c60::t_e129c118376893 38,48-51,63-68
+governance/bin/wave-sec.mjs
+  s_7c7e203d305c60::t_4d20844a1019c8 29,31,59-60,62,117-120,245-247
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_7c7e203d305c60::t_07ec16b2ed8b49 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_7c7e203d305c60::t_b04a500dbed24b 1-95
+governance/lib/check-classify.mjs
+  s_7c7e203d305c60::t_79ac3dac0ed384 1-185
+governance/lib/drill-fixtures-wave-sec-l2.mjs
+  s_7c7e203d305c60::t_c95708ec809e28 1-181
+governance/lib/drill-inline-required.mjs
+  s_7c7e203d305c60::t_3212f2164d4776 19-28
+governance/lib/drill-io.mjs
+  s_7c7e203d305c60::t_7744cdaa0af055 1-60
+governance/lib/enforce-patterns.mjs
+  s_7c7e203d305c60::t_fc53a45f4e0cf6 41-46,63-66,102-104,107-113
+governance/lib/ffmpeg-pin-gh.mjs
+  s_7c7e203d305c60::t_13fb4d51984e53 1-47
+governance/lib/ffmpeg-pin-registry.mjs
+  s_7c7e203d305c60::t_999206b9833ef6 1-97
+governance/lib/interactive-sessions.mjs
+  s_7c7e203d305c60::t_e611b43384b1a2 1-80
+governance/lib/pr-check-health-classify.mjs
+  s_7c7e203d305c60::t_81c0bfe60ffef4 1-122
+governance/lib/pr-check-health-fetch.mjs
+  s_7c7e203d305c60::t_fb7f4b114b543a 1-300
+governance/lib/pr-check-health-platform.mjs
+  s_7c7e203d305c60::t_a8e423473661aa 1-221
+governance/lib/pr-check-health-required-set.mjs
+  s_7c7e203d305c60::t_3d073b57daf84c 1-56
+governance/lib/pr-check-health-statuses.mjs
+  s_7c7e203d305c60::t_f4ab6c43f76e19 1-86
+governance/lib/pr-check-health.mjs
+  s_7c7e203d305c60::t_cdfb0df11f795e 1-271
+governance/lib/r2-live-buckets.mjs
+  s_7c7e203d305c60::t_1eafad9a06f9c9 20-31,71,74-81,93,131-132
+governance/lib/review-liveness.mjs
+  s_7c7e203d305c60::t_23874b1293be2b 37,80-126
+governance/lib/wave-sec-closure.mjs
+  s_7c7e203d305c60::t_d1a43bc83fbc9b 50-53
+governance/lib/wave-sec-corridor.mjs
+  s_7c7e203d305c60::t_af8a7d5c9caf6e 1-267
+governance/lib/wave-sec-lanes.mjs
+  s_7c7e203d305c60::t_813afdf4eca1f6 39-48,54-68,71-82
+governance/lib/wave-sec-scanners.mjs
+  s_7c7e203d305c60::t_45edf5e35a115c 2-5,13-14,16
+governance/lib/wave-sec-sentry.mjs
+  s_7c7e203d305c60::t_47f4239c8b92d0 90-92,94-95,97,133-149
+governance/lib/wave-sec-spawn.mjs
+  s_7c7e203d305c60::t_f9e7f560a0a75f 1-16
+governance/lib/wave-sec-trufflehog.mjs
+  s_7c7e203d305c60::t_4fa2329e8b3e37 1-114
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  s_7c7e203d305c60::t_be4aa245eada79 1-125
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_7c7e203d305c60::t_98713b18c087a1 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_7c7e203d305c60::t_316c16bd7e282a 1-61
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_7c7e203d305c60::t_6a2d9c83db705b 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_7c7e203d305c60::t_509aee18e7f9b0 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_7c7e203d305c60::t_b474aeee42df2f 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_7c7e203d305c60::t_b09f9ad7ea1c44 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_7c7e203d305c60::t_ae92c82a4b959d 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_7c7e203d305c60::t_ae196fe5802033 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_7c7e203d305c60::t_b07cb06b15ffd9 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_7c7e203d305c60::t_65586baa6075ae 1-34
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_7c7e203d305c60::t_b89d5c13140fd3 10-14
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_7c7e203d305c60::t_8baa0c052bc576 38-45
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_7c7e203d305c60::t_fd2eeda1986e1b 4,7-9,12,14,58-73
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_7c7e203d305c60::t_cc273da4e0f796 18-34
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_7c7e203d305c60::t_9ef40fd401f21a 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_7c7e203d305c60::t_466a0fe08bc609 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_7c7e203d305c60::t_f260a510a676c8 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_7c7e203d305c60::t_85b7c65ae8de12 17-24
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_7c7e203d305c60::t_b97057910e2cb1 8-10
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_7c7e203d305c60::t_d1799c09d11e9a 97-158
+governance/plans/ffmpeg9-lei/action/E11-P3-UPSTREAM-PATCH.md
+  s_7c7e203d305c60::t_3a7767ad71a8d3 1-98
+governance/plans/ffmpeg9-lei/action/E13-P1-DABPLUS-POC.md
+  s_7c7e203d305c60::t_cf9992e0d60f2b 1-174
+governance/plans/ffmpeg9-lei/action/E5-E7-JOINT-BRAINSTORM.md
+  s_7c7e203d305c60::t_081413364254ec 1-255
+governance/plans/ffmpeg9-lei/action/E6-P3-GPU-RESIDENT-BRAINSTORM.md
+  s_7c7e203d305c60::t_a5c2be3d9a1f01 1-202
+governance/plans/ffmpeg9-lei/action/E8-P4-TRUST-SURFACE-DESIGN.md
+  s_7c7e203d305c60::t_6a22e094d88ae6 1-235
+governance/plans/ffmpeg9-lei/action/E9-P3-COGS-BENCH.md
+  s_7c7e203d305c60::t_3a5ac53757a1a3 1-222
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_7c7e203d305c60::t_900c25ed9259ac 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_7c7e203d305c60::t_54d06f97b3d74b 1-264
+governance/plans/ffmpeg9-lei/action/upstream/onnx-classify/0001-avfilter-dnn_backend_onnx-implement-DFT_ANALYTICS_CL.patch
+  s_7c7e203d305c60::t_1c6c57af6053d1 1-61
+governance/plans/ffmpeg9-lei/action/upstream/onnx-classify/0002-avfilter-vf_dnn_classify-vf_dnn_detect-register-name.patch
+  s_7c7e203d305c60::t_a48c7cddf075ad 1-91
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_7c7e203d305c60::t_c6853c66bfc426 5-17,26-29,35-43,51,54-58,81-96
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_7c7e203d305c60::t_6b24c49dc8fde6 296-478
+governance/state/ffmpeg-pin-registry.json
+  s_7c7e203d305c60::t_b0e9ce7db46080 1-213
+governance/test/cfos-trial-killswitch.test.mjs
+  s_7c7e203d305c60::t_f47ed8e9506fa0 1-314
+governance/test/check-classify.test.mjs
+  s_7c7e203d305c60::t_3528b7032aa487 1-184
+governance/test/cockpit-render.test.mjs
+  s_7c7e203d305c60::t_c984709d2c2339 139-163
+governance/test/enforce-secrets.test.mjs
+  s_7c7e203d305c60::t_dfedf9ca2eb52c 1-250
+governance/test/enforce.test.mjs
+  s_7c7e203d305c60::t_ff4e9aeb7d965c 4-8,11,14-15
+governance/test/ffmpeg-pin-lint.test.mjs
+  s_7c7e203d305c60::t_fd7f9026b0f9cf 1-223
+governance/test/interactive-sessions.test.mjs
+  s_7c7e203d305c60::t_1f5528b3f6f421 1-78
+governance/test/lib/enforce-harness.mjs
+  s_7c7e203d305c60::t_fccda4127b137c 1-44
+governance/test/pr-check-health-platform.test.mjs
+  s_7c7e203d305c60::t_0945ed5c3d1e3c 1-311
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_7c7e203d305c60::t_1871511a1db8b2 1-336
+governance/test/pr-check-health.test.mjs
+  s_7c7e203d305c60::t_eba4381bd7e6ba 1-241
+governance/test/reversible-store.test.mjs
+  s_7c7e203d305c60::t_b029ac1583aa81 26-30
+governance/test/review-liveness-pending.test.mjs
+  s_7c7e203d305c60::t_0e81d29099243c 40-76
+governance/test/wave-sec-corridor-repo-filter.test.mjs
+  s_7c7e203d305c60::t_5ac66c594dd023 1-201
+governance/test/wave-sec-corridor.test.mjs
+  s_7c7e203d305c60::t_ffb68c6deeaee3 1-367
+governance/test/wave-sec-scanners.test.mjs
+  s_7c7e203d305c60::t_210fbea6fbf572 294-322,324-336
+governance/test/wave-sec-sentry.test.mjs
+  s_7c7e203d305c60::t_35dcb29e153fd9 143-220
+governance/work-state.json
+  s_7c7e203d305c60::t_d3cf0a67e4d141 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,76-78,80-83,86-89,92-95,98-101,104-107,110-113,117-119,123,136-141,144-145,147-149,152-153,155-157,160-161,163-165,168-173,176-177,179-181,184-185,187-189,192-193,195-197,201-204,208-209,218
+hookcli/bin/lefthook-gen.mjs
+  s_7c7e203d305c60::t_90dd422d0d1c70 29-48
+hookcli/lib/eval-t1.sh
+  s_7c7e203d305c60::t_426f5122332316 30-37
+hookcli/rules/rules.json
+  s_7c7e203d305c60::t_4000a415ea61e0 530-547
+hookcli/schema/rule.schema.json
+  s_7c7e203d305c60::t_77d6ddb45c14f0 39-43
+hookcli/tests/lefthook-gen-yaml.sh
+  s_7c7e203d305c60::t_f6eba504afabfd 1-61
+hookcli/tests/lib/modules.sh
+  s_7c7e203d305c60::t_8715030b4f5d25 18-22
+hookcli/tests/plan-receipt.sh
+  s_7c7e203d305c60::t_1d7d39b7ec9df0 86-88,92-93
+hookcli/tests/require.sh
+  s_7c7e203d305c60::t_f889e805823df2 68,71-73,75-76
+hooks/research-bank.sh
+  s_7c7e203d305c60::t_b7186dc12042ae 19-30,49-66
+hooks/tests/push-target-not-protected-default.test.sh
+  s_7c7e203d305c60::t_231910b433490a 1-42
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_7c7e203d305c60::t_6c90b6102044d4 34
+rules/enforcement-defense-in-depth-lattice.md
+  s_7c7e203d305c60::t_88d24743aca77e 53
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_7c7e203d305c60::t_b9809bcd4469f1 27-28
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_7c7e203d305c60::t_714f1070784a32 1-174
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_19e5d5e7e89bb0 25
+governance/ENFORCEMENT-COVERAGE.md
+  s_7c7e203d305c60::t_51be422b5e586b 9-10,460
+governance/graph.json
+  s_7c7e203d305c60::t_b28d38658e48a2 2377-2389,2975-3091,7539,7572-7586,19995-20138,30483-30512,31899-31904
+hooks/manifest.json
+  s_7c7e203d305c60::t_b8a04a8f93613e 1318
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0f9e5da35dbc3f12219e38e32604b2d68e84b593",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

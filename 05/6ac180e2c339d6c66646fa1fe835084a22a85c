@@ -1,0 +1,19 @@
+governance/runbooks/trajectory-harvest.md
+  s_0950db28a6ae27::t_86a9d75b6fa1c5 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "056ac180e2c339d6c66646fa1fe835084a22a85c",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

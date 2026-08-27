@@ -1,0 +1,23 @@
+.github/workflows/org-access-level-drift.yml
+  s_a9317a2723d1eb::t_1716a0a43571a8 1-156
+governance/bin/org-access-level-drift.mjs
+  s_a9317a2723d1eb::t_e056d2356b8c05 1-96
+governance/test/org-access-level-drift.test.mjs
+  s_a9317a2723d1eb::t_e301c4eafa6d01 1-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e8f8b68a5caec7755445a5d8ef1961c4287e25d4",
+  "prompts": {},
+  "sessions": {
+    "s_a9317a2723d1eb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "50b260fb-a68d-4b18-98c7-06b66aeed187",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

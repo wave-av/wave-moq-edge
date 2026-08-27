@@ -1,0 +1,57 @@
+governance/vendor/headroom/scrape-2026-08-13/INDEX.md
+  s_e243a2a1b60a5d::t_3e1ddc5730da59 1-52
+governance/vendor/headroom/scrape-2026-08-13/section-api-reference.md
+  s_e243a2a1b60a5d::t_d57d823c68de35 1-148
+governance/vendor/headroom/scrape-2026-08-13/section-architecture-help-Architecture-Help-.md
+  s_e243a2a1b60a5d::t_3ea74c1fda869a 1-257
+governance/vendor/headroom/scrape-2026-08-13/section-cli.md
+  s_e243a2a1b60a5d::t_14800621718080 1-148
+governance/vendor/headroom/scrape-2026-08-13/section-compression-Compression-Reversible-Compression-.md
+  s_e243a2a1b60a5d::t_4ae1db13be2086 1-437
+governance/vendor/headroom/scrape-2026-08-13/section-configuration-observability-Configuration-Observability-.md
+  s_e243a2a1b60a5d::t_6907cdfc704086 1-371
+governance/vendor/headroom/scrape-2026-08-13/section-context-memory-proxy-Cache-Context-Memory-Proxy-Server-.md
+  s_e243a2a1b60a5d::t_6ee99e44c29263 1-456
+governance/vendor/headroom/scrape-2026-08-13/section-getting-started.md
+  s_e243a2a1b60a5d::t_fdd7afa5385fa5 1-416
+governance/vendor/headroom/scrape-2026-08-13/section-integrations.md
+  s_e243a2a1b60a5d::t_6d447619572b4f 1-229
+governance/vendor/headroom/scrape-2026-08-13/section-releases.md
+  s_e243a2a1b60a5d::t_118ffecbb5a03f 1-170
+governance/vendor/headroom/scrape-2026-08-13/section-sdks-sdk-python-sdk-typescript-.md
+  s_e243a2a1b60a5d::t_4df93ab81976ec 1-256
+governance/vendor/headroom/scrape-2026-08-13/vendor-doppler-service-tokens.md
+  s_e243a2a1b60a5d::t_3ac8e5929adbc9 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4332aee35cdbe001f471d008e1fa531576d19e25",
+  "prompts": {},
+  "sessions": {
+    "s_6bca9a31ea0a27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff9ccb2cbffetKfMnT1SwYHlqg",
+        "model": "qwen3.8-max"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d194bca44f85df": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffa328722ffevLPalWixQb4hUs",
+        "model": "qwen3.8-max"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e243a2a1b60a5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5404107acf6404a2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

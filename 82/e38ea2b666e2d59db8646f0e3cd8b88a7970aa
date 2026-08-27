@@ -1,0 +1,21 @@
+governance/plans/wave-desktop-local/NORTH-STAR.md
+  s_83b73641415a39::t_9fc01935b37d29 35
+governance/plans/wave-desktop-local/E0-FOUNDATION.md
+  s_83b73641415a39::t_fab4a33b820077 4,13-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "82e38ea2b666e2d59db8646f0e3cd8b88a7970aa",
+  "prompts": {},
+  "sessions": {
+    "s_83b73641415a39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd196880ffeXRUvrkjXudtttM",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

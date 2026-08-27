@@ -1,0 +1,28 @@
+governance/automation-registry/jobs/triage.yaml
+  h_67a1b847dc59d6 1-31
+governance/automation-registry/lib/automations-read.mjs
+  h_67a1b847dc59d6 1-29
+governance/automation-registry/lib/normalize-github-event.mjs
+  h_67a1b847dc59d6 1-40
+governance/automation-registry/lib/schema.mjs
+  h_67a1b847dc59d6 9
+governance/automation-registry/lib/webhook-receiver.mjs
+  h_67a1b847dc59d6 11,19-21,23,27,30
+governance/automation-registry/lib/webhook-server.mjs
+  h_67a1b847dc59d6 14,16-19,21-31,33-44,67
+governance/test/automation-registry/automations-read.test.mjs
+  h_67a1b847dc59d6 1-76
+governance/test/automation-registry/normalize-github-event.test.mjs
+  h_67a1b847dc59d6 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1f005162c1275bd33441bd65b25c3d490816cac7",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

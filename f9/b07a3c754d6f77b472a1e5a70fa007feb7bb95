@@ -1,0 +1,19 @@
+governance/plans/runtime-economy/dogfood/dsh-home-pool/settings.yaml
+  s_2b4acc7ceba309::t_d047d47877796f 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f9b07a3c754d6f77b472a1e5a70fa007feb7bb95",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

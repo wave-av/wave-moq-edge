@@ -1,0 +1,39 @@
+memory/agent-mail-plane-playbook.md
+  s_6046880c148371::t_6b0351b7d6a5d6 113
+memory/fleet-todo-ledger.md
+  s_7b4cd0319b95a1::t_3a8fe137e5bf02 15-16
+  s_6046880c148371::t_b006de612feb39 13
+  s_37d3f61160b2dd::t_e5004bdd2cada5 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b225ba35d4db1d7ebb8fa997eba6aaa9d7ac85bc",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7b4cd0319b95a1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd904f183ffeG1l5TW5AFUhdYt",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

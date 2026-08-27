@@ -1,0 +1,35 @@
+governance/DASHBOARD.md
+  s_db1b2a792e5f25::t_eba0e57ece060e 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_db1b2a792e5f25::t_b0933b6d0b67de 425
+governance/bin/cost-ledger.mjs
+  s_db1b2a792e5f25::t_8b2e0ab9154ecf 150-159,163,178-184,187,255-258,271-274,280,287-290,292-293,332-337
+governance/code-index/CATALOG.md
+  s_db1b2a792e5f25::t_64e3fc60fc9767 5,563-570,576,579,582-585,587,589-590,592,594-597
+governance/code-index/index.json
+  s_db1b2a792e5f25::t_53067003e1b332 6-7,9,5140-5194,5228-5238,5267-5268,5295,5298-5303,5306,5309,5311-5314,5322-5323,5333-5334,5355-5356,5377-5380,5388-5391,5410-5411,5432-5433,5443-5444,5454-5455,5465-5466
+governance/graph.json
+  s_db1b2a792e5f25::t_3df15bbee5a3a8 4871-4878,19629-19640
+governance/plans/nested-dispatch-economy/E5-PAYBACK.md
+  s_db1b2a792e5f25::t_09b359d4becec8 30-36,77-78,83-116
+hooks/manifest.json
+  s_db1b2a792e5f25::t_9d0eb944c1ee96 238-258
+settings/settings.base.json
+  s_db1b2a792e5f25::t_08dfe9ae3cffb3 591-596
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "1b1352a20f9e187ea3a3819b528008fd4bd2a3f7",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

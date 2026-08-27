@@ -1,0 +1,50 @@
+governance/lib/levels.mjs
+  s_c24357e71ae5bc::t_6794e9a848dd3f 244-246,250
+  s_c24357e71ae5bc::t_f08f0c319d2aab 241-243
+  s_3302bedfad33ac::t_9b1637c5af0029 142-148,150,165,235-240
+governance/test/levels.test.mjs
+  s_c24357e71ae5bc::t_76a080cb45a2af 91-95
+  s_c24357e71ae5bc::t_fed757ec8b895c 88-90
+  s_c24357e71ae5bc::t_cd0cc4ca20a8e3 96
+  s_c24357e71ae5bc::t_6d6e4c573a10a5 13,87,98,100,103,105-106,109,111,113-122
+governance/bin/plan-lint.mjs
+  s_6cfdca4eb75bba::t_b6873bfe554f44 26-27,212-217
+governance/lib/plan-mutates-advisory.mjs
+  s_6cfdca4eb75bba::t_b7a006a9c7dbbf 1-65
+governance/test/plan-lint.deps-scope.test.mjs
+  s_6cfdca4eb75bba::t_8c8bc8653f0e92 71-85
+governance/test/work-nodes.deps.unbulleted.test.mjs
+  s_6cfdca4eb75bba::t_2b5e11f9d090bf 1-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "90bb29a4fae5873107e408d4bd4f110602d3d4f8",
+  "prompts": {},
+  "sessions": {
+    "s_3302bedfad33ac": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac0f414dcfda983f5",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6cfdca4eb75bba": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a4a118d42c3ffc00e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

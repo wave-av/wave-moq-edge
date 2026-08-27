@@ -1,0 +1,25 @@
+governance/plans/agent-mail-plane/scripts/tenant-onboard.mjs
+  s_9958e21e994c1a::t_2f354d0853c638 1-105
+governance/plans/agent-mail-plane/scripts/provision-fleet-inboxes.mjs
+  s_9958e21e994c1a::t_29606e388eb89a 1-96
+governance/plans/agent-mail-plane/scripts/agent-signup.mjs
+  s_9958e21e994c1a::t_731f79ce52df94 1-108
+governance/plans/agent-mail-plane/scripts/domain-dns-plan.mjs
+  s_9958e21e994c1a::t_dd704fafe0e20e 1-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bbab1be434a81c26c3e6a45afc90ef562a99b119",
+  "prompts": {},
+  "sessions": {
+    "s_9958e21e994c1a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff49ab4ffffeSJXtt7gnqQ2oQl",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_8f3bc95b655ea3 216-227
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_8276857b0e2e10 33-39
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_9b1f062b3b29b9 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "891422b6af52cb2d3e693db2a7930fff9872f367",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

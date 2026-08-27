@@ -1,0 +1,26 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_aba41fa87db7e0 107-132
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_7268ea56827993 25
+  s_60a20469ef4369::t_53cc12f67fde7e 18-24,26-47
+docs/HOOKCLI-HARVEST.md
+  s_60a20469ef4369::t_e1fb04fb38d269 76-104,106-110
+hookcli/package.json
+  s_60a20469ef4369::t_cde39ecc951c9f 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "f792823763e52ad5f779c30a054bd251d5441a48",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

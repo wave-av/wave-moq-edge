@@ -1,0 +1,19 @@
+governance/gam-port-kit/manifest.json
+  s_a9317a2723d1eb::t_109589af5df024 43-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7275874aacf76b9fcfe27ec31697a3fb1495112c",
+  "prompts": {},
+  "sessions": {
+    "s_a9317a2723d1eb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "50b260fb-a68d-4b18-98c7-06b66aeed187",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/network-edge-plane/MULTI-PIN-TOPOLOGY.md
+  s_3877d796eb5a27::t_261db883e307b7 1-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2a8e35fced8f7e2d94e33afe45520f0c9bd20875",
+  "prompts": {},
+  "sessions": {
+    "s_3877d796eb5a27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc46d76cfffeDvkhmSzI2Ugxxi",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

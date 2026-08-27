@@ -1,0 +1,37 @@
+governance/lib/rl-harvest.mjs
+  s_0950865aa49634::t_365b7cfb906aa4 1-122
+governance/test/rl-harvest.test.mjs
+  s_0950865aa49634::t_9a88ea34f2201f 1-232
+governance/lib/rl-source-hooks.mjs
+  s_0950865aa49634::t_af3144474ad560 1-100
+governance/bin/rl-harvest.mjs
+  s_0950865aa49634::t_31bbcf925832be 130-133
+  s_0950865aa49634::t_690d25d86c4ced 144-149,155
+  s_0950865aa49634::t_a3c45cd90750e4 183
+  s_0950865aa49634::t_fb62e31514bca5 184-185
+  s_0950865aa49634::t_0b65862d3e2aca 150-154
+  s_0950865aa49634::t_bbc430489ebeab 1-21,29-34,36-99,137,142-143,156-182,186-192
+  s_0950865aa49634::t_f0d659fd1d1290 22-28
+  s_0950865aa49634::t_a44b0ed0c4ee95 35
+  s_0950865aa49634::t_01588d5cc8cc67 100-129,138-141
+  s_0950865aa49634::t_aaf7582b2d9c53 134-136
+governance/plans/wave-rl-signal-intake/E3-TAPS.md
+  s_0950865aa49634::t_fa153d6abec394 4
+  s_0950865aa49634::t_3a9cb4798debdc 53-129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7c133627687bbfafbebd1ec7c8408f44bdd79fe5",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

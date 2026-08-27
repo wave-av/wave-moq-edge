@@ -1,0 +1,52 @@
+governance/plans/agent-native-cli/E6-EMBEDDABILITY.md
+  s_0213641ac58af6::t_812ffe9b074ae7 1-20
+governance/plans/twitter-signal-plane/E2-RENDERINGS.md
+  s_0213641ac58af6::t_912829e5ccc280 2-17
+  s_0213641ac58af6::t_afc4d512caccf8 1
+  s_0213641ac58af6::t_bcedd2ecc8ec8b 18
+governance/plans/twitter-signal-plane/E3-STEALTH-DETECT.md
+  s_0213641ac58af6::t_9891e3f264a596 2-18
+  s_0213641ac58af6::t_b11fd96b210f31 1
+governance/plans/twitter-signal-plane/E4-FEED.md
+  s_0213641ac58af6::t_2225bb97665a19 2-19
+  s_0213641ac58af6::t_520e23d9c7ffb1 1
+governance/plans/twitter-signal-plane/NORTH-STAR.md
+  s_0213641ac58af6::t_d4c513b1917c1e 5-56
+  s_0213641ac58af6::t_0b5aeeb93b857a 2-4
+  s_d4605df988e259::t_a60df44c7db81b 1
+governance/plans/twitter-signal-plane/E0-SOURCE-REGISTRY.md
+  s_0213641ac58af6::t_5b50ea93a380da 2-14
+  s_0213641ac58af6::t_82cabb20a0376c 1
+governance/plans/twitter-signal-plane/E1-PULL.md
+  s_0213641ac58af6::t_a8f864ae3f2a06 2-15
+  s_0213641ac58af6::t_055b6c9502ddd6 1
+  s_0213641ac58af6::t_bb97a9a83fab3c 16
+governance/plans/agent-native-cli/NORTH-STAR.md
+  s_0213641ac58af6::t_bf7a7e9a195eb7 25
+governance/plans/model-economy/artifacts/SIGNAL-OX-ALPHA-OPENROUTER-2026-08-21.md
+  s_0213641ac58af6::t_206b6ce126d963 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ea987299eacebf3f29953a4594fd7357220169f5",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d4605df988e259": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdab4bef8ffezfHWlvTwGp6PVu",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

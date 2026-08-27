@@ -1,0 +1,37 @@
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_55fcadb524d4c6 37-48
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_5ee2351782b22a 92,94-107
+  s_60a20469ef4369::t_1c3985a548474c 28-29
+  s_60a20469ef4369::t_e06352c7baba91 57-63
+hookcli/lib/anti-loop.sh
+  s_60a20469ef4369::t_7f1bf134d0a76e 1-45
+hookcli/tests/fixtures/loop-prone-rules.json
+  s_60a20469ef4369::t_35facf9d98165f 1-21
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_8e721599077714 81-106
+docs/HOOKCLI-HARVEST.md
+  s_60a20469ef4369::t_de952c0c1f995f 1-80
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_5dfba4574eee0c 7-12,28-29
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_66b5b0ba5203d0 13
+hookcli/package.json
+  s_60a20469ef4369::t_a7602499fe9d99 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d0fe1e8da5f0060e5dccc0b8cd7e716e90e67ac0",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

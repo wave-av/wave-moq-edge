@@ -1,0 +1,29 @@
+governance/plans/entire-integration/E5-rollup-snapshot.json
+  s_70c01a7f5f298a::t_0f2b3b84db155d 1-183
+tools/entire-portal.mjs
+  s_9041cf1cf1ccad::t_c06606bc37e0d3 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7a1eb03e3b91ff3965ea589ef61056707ef1cdce",
+  "prompts": {},
+  "sessions": {
+    "s_70c01a7f5f298a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffdc616c8ffej7Dv8a9ZOc7vDU",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/lib/wave-sec-corridor.mjs
+  s_85d9e5f433b9aa::t_32b090826c105e 96-114,117-119,124,131-140,153,179-187,192
+governance/test/wave-sec-corridor.test.mjs
+  s_85d9e5f433b9aa::t_b8d49ac9ed14f7 285-322
+  s_85d9e5f433b9aa::t_dc42d76154d44d 242-244
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4e6c09e0022b10a5204a847bd86bf8e467fb8699",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+hookcli/tests/t4-llm-escalation.sh
+  s_02abc74f4971c7::t_c8622bf1efcf24 1-17
+  s_02abc74f4971c7::t_aabbf6f0577b90 18-20
+  s_02abc74f4971c7::t_2269798bcf3fc8 21-190
+hookcli/tests/lib/t4-fixtures.sh
+  s_02abc74f4971c7::t_a2194236243686 1-33
+hookcli/tests/t4-llm-observability.sh
+  s_02abc74f4971c7::t_a65fd6324c2d9f 84-87
+  s_02abc74f4971c7::t_fd0d171c29fe28 16
+  s_02abc74f4971c7::t_811efb2ad4f46f 53-54
+  s_02abc74f4971c7::t_99897bc93df086 1-9
+  s_02abc74f4971c7::t_23f16671298f31 10-15
+  s_02abc74f4971c7::t_254d43060c6cf4 17-19,50-52
+  s_02abc74f4971c7::t_d60bdeb1b9c3ee 55-57,81-83
+  s_02abc74f4971c7::t_851d1089d99bca 88-90
+  s_7f9c502bf513a1::t_0769dec2a2a7d3 20-49,58-80,91-159
+.github/.token-budget-baseline
+  s_02abc74f4971c7::t_7b34124e6c51b9 42-47
+  s_02abc74f4971c7::t_267cc572eebfbc 28-41
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_23d2d5e3a1f1aa 25-27,30-33
+hookcli/tests/t4-llm.sh
+  s_02abc74f4971c7::t_c22144f141dc5b 130
+  s_02abc74f4971c7::t_6be6d5db5aa6b4 64
+  s_02abc74f4971c7::t_d5afe2d80241df 1,3-11
+  s_02abc74f4971c7::t_d210380172bf8d 105-106
+hookcli/tests/lib/harness.sh
+  s_02abc74f4971c7::t_f8f4360785a80b 38-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "3f3034bd35cd4bcfd2002fa11dd1366e7e7934d6",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_7f9c502bf513a1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a984e7f5002ac7028",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

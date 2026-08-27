@@ -1,0 +1,27 @@
+governance/plans/ci-stack-integration/NUMBERS.md
+  s_063b4333fed96c::t_ad07ac05fc44c3 1-22
+governance/ci-stack/bin/devbox-sandbox.mjs
+  s_063b4333fed96c::t_fc4200084b0e93 205-210
+  s_063b4333fed96c::t_b7c38cb2dba8e9 58-63,66,71-77
+  s_063b4333fed96c::t_701af14e749f2b 86-121
+  s_063b4333fed96c::t_4cdbd83d36c290 78
+governance/ci-stack/bin/ci-metrics.mjs
+  s_063b4333fed96c::t_3cd163081dea64 262-266
+  s_063b4333fed96c::t_73b4113f9fb918 179-236,241-244,247
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "978045401b42c0e37d4663025c172a49e18be620",
+  "prompts": {},
+  "sessions": {
+    "s_063b4333fed96c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff2e68564ffe31iOc0z0edZrGV",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

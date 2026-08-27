@@ -1,0 +1,35 @@
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  s_e077f59d8037ec::t_b4eed49b453c1f 75-81
+governance/plans/console-perfection/E5-MCP-PARITY.md
+  s_e077f59d8037ec::t_3a28331182b2fb 43-52
+governance/plans/console-perfection/NORTH-STAR.md
+  s_e077f59d8037ec::t_cc99817f2e731a 150-157
+governance/plans/console-perfection/E9-DEVELOPER-NARRATIVE.md
+  s_e077f59d8037ec::t_85e5022cb2a1f2 1-173
+governance/graph.json
+  s_941b8f0612ec3e::t_f79f41885c7157 3548-3560,21352-21357,21442-21447,21514-21519
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9cdb0cac495e4ef129a4d8e6873e061b20e18c6c",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

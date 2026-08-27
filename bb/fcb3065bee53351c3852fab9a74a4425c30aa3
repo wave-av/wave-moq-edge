@@ -1,0 +1,30 @@
+governance/bin/capability-dispatch.mjs
+  h_67a1b847dc59d6 20,28
+governance/bin/capability-eval.mjs
+  h_67a1b847dc59d6 18,29
+governance/bin/capability-leverage.mjs
+  h_67a1b847dc59d6 18,28
+governance/bin/capability-search.mjs
+  h_67a1b847dc59d6 20
+governance/bin/capability-surface.mjs
+  h_67a1b847dc59d6 16,21-23
+governance/capability/eval/intents.jsonl
+  h_67a1b847dc59d6 41-50
+governance/lib/detect-node.mjs
+  h_67a1b847dc59d6 1-54
+governance/test/detect-node.test.mjs
+  h_67a1b847dc59d6 1-102
+scripts/node.sh
+  h_67a1b847dc59d6 4-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bbfcb3065bee53351c3852fab9a74a4425c30aa3",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

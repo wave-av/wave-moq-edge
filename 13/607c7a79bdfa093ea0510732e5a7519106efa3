@@ -1,0 +1,29 @@
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_264ae386838c57::t_345a42944f1345 24-26
+governance/plans/local-inference-integrity/DEPENDENCIES.md
+  s_264ae386838c57::t_41ec91cb28f5c5 93
+governance/plans/local-inference-integrity/NORTH-STAR.md
+  s_264ae386838c57::t_c977a97e3399e2 131
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_264ae386838c57::t_86239823352e27 36-37
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_eb0f3995f10697 33
+  s_264ae386838c57::t_368436a013d222 131-164
+  s_264ae386838c57::t_8b29343c95b570 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "13607c7a79bdfa093ea0510732e5a7519106efa3",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

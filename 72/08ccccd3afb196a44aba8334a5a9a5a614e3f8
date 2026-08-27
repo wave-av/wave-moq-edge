@@ -1,0 +1,26 @@
+hooks/bin/receipt-capture.mjs
+  s_9bb1b1d1d998d4::t_6588837a7d82b7 173-186
+  s_9bb1b1d1d998d4::t_b955e5cfe885f6 62-150
+governance/test/receipt-capture-browser.test.mjs
+  s_9bb1b1d1d998d4::t_7e7f0f063ca65d 1-108
+governance/plans/client-toolset-adoption/E4-RECEIPTS.md
+  s_9bb1b1d1d998d4::t_8e1b7837fdfa65 4-8
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_7796be5b56e6e2 333-375
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7208ccccd3afb196a44aba8334a5a9a5a614e3f8",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

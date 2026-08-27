@@ -1,0 +1,33 @@
+governance/bin/public-copy-check.mjs
+  s_9bb1b1d1d998d4::t_2ebf17ef54b621 1-312
+governance/bin/workflow-lint-concurrency-scope.mjs
+  s_9bb1b1d1d998d4::t_afa458559b43c3 1-87
+governance/bin/workflow-lint.mjs
+  s_9bb1b1d1d998d4::t_f30beac91b27cd 30-32,328
+governance/lib/public-copy-patterns.mjs
+  s_9bb1b1d1d998d4::t_bb763878afc9ea 1-118
+governance/plans/integrations/METER-PRICING.md
+  s_9bb1b1d1d998d4::t_4ed4960d182081 41,60,62-65,67-114
+governance/plans/webhook-plane/E5-OUTBOUND.md
+  s_9bb1b1d1d998d4::t_cb7e21bb6bb704 4,11-15
+governance/test/public-copy-check.test.mjs
+  s_9bb1b1d1d998d4::t_e61aadafe22515 1-389
+governance/test/workflow-lint-concurrency-scope.test.mjs
+  s_9bb1b1d1d998d4::t_1f83cc4d1ee9f8 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5553d4f9d9eb1a0defe0de55bc169f5210f9f9f5",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_0237b42ec20bf4 111-127
+  s_dccee6b7677203::t_416b9d1fe020b9 61-63
+governance/bin/fleet/tests/cases/65-contract-validate-self.sh
+  s_dccee6b7677203::t_d1064f89eea15e 1-83,87-111
+  s_dccee6b7677203::t_0cdb2222ffbd6b 84-86
+governance/bin/fleet/contract-validate.mjs
+  s_dccee6b7677203::t_6f4fcaea656ede 74-85
+  s_dccee6b7677203::t_7dbb12dcd3d086 163,166
+  s_dccee6b7677203::t_a33f4c95037220 25-49,53-55
+  s_dccee6b7677203::t_7093e88f61af16 59
+  s_dccee6b7677203::t_7f5d4998bbba03 113-121,123,128-132
+  s_dccee6b7677203::t_8a3b954ee91fe3 135
+  s_dccee6b7677203::t_bec8e28f2235be 133,193-265
+governance/bin/fleet/tests/lib/fixtures.sh
+  s_dccee6b7677203::t_bb499cbc9bc6da 42-53
+governance/plans/polyrepo-velocity/E5-PAVED-ROAD.md
+  s_dccee6b7677203::t_51eda8be51395a 91-137
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_10620f897074e8 5,1101-1117
+governance/code-index/index.json
+  s_dccee6b7677203::t_faab2c1589db21 7,9-10,10013-10023,10030-10031,10041-10042,10052-10053,10063-10064,10068-10089,10096-10097,10107-10108,10112-10122,10129-10130,10140-10143,10146,10149,10151-10154,10162-10163,10167-10199
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "5ceea6c77523d249e0befe7e07fd12ed33e80593",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+scripts/verify_hook_matchers.py
+  s_db1b2a792e5f25::t_6ec5a8880e5e8a 145
+  s_db1b2a792e5f25::t_ce5069e6b0ea2d 214-216,218,221-228
+  s_db1b2a792e5f25::t_833831d0d2c2fb 261-276
+  s_db1b2a792e5f25::t_44ecfc2a3f8f7f 164-174
+  s_db1b2a792e5f25::t_fa6a1167b8fc0d 91-122
+  s_db1b2a792e5f25::t_f2a971b4e6a633 15,21-25
+  s_db1b2a792e5f25::t_4bd9658878766c 49-62
+hooks/tests/matcher-capability.test.sh
+  s_db1b2a792e5f25::t_a06c482d4896fc 111-180
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3204a5435b8c22b8cf47c0c6f752541451c7a534",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

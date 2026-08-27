@@ -1,0 +1,39 @@
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  s_c24357e71ae5bc::t_fbd88eb6fd5f46 1-26
+governance/plans/namespace-substrate/E0-GOVERN.md
+  s_c24357e71ae5bc::t_774bf246e90eaa 1-26
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_c24357e71ae5bc::t_7dc608d2eee1f6 1-26
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_c24357e71ae5bc::t_7524e884fdd745 1-26
+governance/plans/namespace-substrate/NORTH-STAR.md
+  s_c24357e71ae5bc::t_3adc9958417a53 1-40
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_c24357e71ae5bc::t_09a997e0d99818 1-26
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_c24357e71ae5bc::t_63ff44e9461155 1-26
+governance/plans/namespace-substrate/E6-DECIDE.md
+  s_c24357e71ae5bc::t_6025f2a8cf0396 1-26
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  s_c24357e71ae5bc::t_350b5e62cab1bf 1-26
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_01c4a511af7c08 25
+governance/graph.json
+  s_c24357e71ae5bc::t_178f228878fa01 4868-4971,23294-23467
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "591b0bf36ff00518e3be7c205a0397907714c101",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

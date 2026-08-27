@@ -1,0 +1,51 @@
+governance/lib/drill-fixtures-drift.mjs
+  s_60a20469ef4369::t_03723edcacad63 113-135
+  s_375efeac18ed55::t_a4db49cf3d836b 31-36,38,41
+governance/test/drift-check.test.mjs
+  s_60a20469ef4369::t_650ea5a161a531 16-18
+  s_60a20469ef4369::t_1f3096d42b704c 130-136,138-187
+  s_375efeac18ed55::t_6c5bbaefca8bee 137
+governance/bin/enforcement-coverage.mjs
+  s_60a20469ef4369::t_d088d056b5e201 25-35,40
+  s_db1b2a792e5f25::t_b4880742abef1d 58-62,245-258
+.github/workflows/governance.yml
+  s_db1b2a792e5f25::t_574a670583d627 200-207
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_04c35242b68570 414,422,445
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_d24dc30eac3fb3 844-853
+governance/code-index/index.json
+  s_60a20469ef4369::t_23eb8af2fb3d10 8160-8163,8171-8172,8182-8183,8193-8194,8204-8205,8215-8216,8226-8227,8237-8238,8248-8249,8259-8260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4a933636569997191dfb904b8db1ef90ada7ec00",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

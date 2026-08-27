@@ -1,0 +1,31 @@
+hooks/context-budget-warn.sh
+  s_672079ccfe8ce6::t_d8c6e65161bebf 3
+rules/end-of-session-handoff-names-the-next-step-or-declares-done.md
+  s_672079ccfe8ce6::t_e0e7eabf1d4906 1-69
+governance/DASHBOARD.md
+  s_672079ccfe8ce6::t_d6a25b1c474d2c 7,16,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_672079ccfe8ce6::t_6168e9704a43c7 5,10,12,14,416-417,469
+governance/contract.md
+  s_672079ccfe8ce6::t_18ada3c2d79fa0 47,53
+governance/graph.json
+  s_672079ccfe8ce6::t_396dd50f48f4d0 648-654,7484-7525,19862-19867
+hooks/manifest.json
+  s_672079ccfe8ce6::t_6975cc9256943e 218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "1078d49f38dad28fbef9e39e679433982eb19099",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/wave-inference-fabric/E3-SERVING-TIERS.md
+  s_4e6335d3abdc7f::t_74dd5e199981d9 32-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4dc23b1ea78d06c300753c4323c640609dfe794a",
+  "prompts": {},
+  "sessions": {
+    "s_4e6335d3abdc7f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a07027ad6f03457ee",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

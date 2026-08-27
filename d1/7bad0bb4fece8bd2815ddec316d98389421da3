@@ -1,0 +1,46 @@
+governance/test/fixtures/catena/control.ts.txt
+  s_53b49eff5b8c5d::t_2bf51f41d4fac7 1-73
+governance/test/fixtures/catena/device-control.ts.txt
+  s_53b49eff5b8c5d::t_806578934938f8 1-13
+governance/test/fixtures/catena/wave-client.ts.txt
+  s_53b49eff5b8c5d::t_0237cfecf39a40 1-12
+governance/test/catena-device-model.test.mjs
+  s_53b49eff5b8c5d::t_dbbfe83458bf3d 1-170
+governance/plans/catena-control-plane/E1-SELF-DESCRIBE.md
+  s_53b49eff5b8c5d::t_091175f136e69b 4
+  s_53b49eff5b8c5d::t_31b4bf6acebda6 5-13
+governance/plans/catena-control-plane/RECEIPTS.md
+  s_53b49eff5b8c5d::t_79bb67fd6a64b4 329-519
+governance/lib/catena-extract.mjs
+  s_53b49eff5b8c5d::t_9db0e3d2423255 136
+  s_53b49eff5b8c5d::t_a82515c89b4d0a 1-56,61-76,83-108,116-135,137-143
+  s_53b49eff5b8c5d::t_26a03d9b801ad9 57-60
+  s_53b49eff5b8c5d::t_427e10f145b396 77-82
+  s_53b49eff5b8c5d::t_36c805d08b37e9 109-115
+governance/package.json
+  s_53b49eff5b8c5d::t_ee02a9bf4c0111 57-59
+governance/bin/catena-device-model.mjs
+  s_53b49eff5b8c5d::t_c9c6b52a655233 59-64,75-76
+  s_53b49eff5b8c5d::t_7804f837d0ceb7 1-58,65-74,77-131,134-161
+  s_53b49eff5b8c5d::t_4544902d5d3bf2 132-133
+governance/lib/catena-model.mjs
+  s_53b49eff5b8c5d::t_e6e3c9088e0584 1-176
+governance/plans/catena-control-plane/device.wave-crest.yaml
+  s_53b49eff5b8c5d::t_beb0c727f864e3 1-326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d17bad0bb4fece8bd2815ddec316d98389421da3",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

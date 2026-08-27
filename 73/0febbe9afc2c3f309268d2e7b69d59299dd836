@@ -1,0 +1,104 @@
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  s_7c7e203d305c60::t_bd907e5876bd10 1-160
+governance/plans/wave-control/DECISION-URL.md
+  s_7c7e203d305c60::t_1cce57fcb6395d 1-120
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  s_7c7e203d305c60::t_ea827db644bbf6 61-83
+  s_7c7e203d305c60::t_36186b654a08e5 2-47
+  s_7c7e203d305c60::t_73cb22b4e14606 1
+  s_7c7e203d305c60::t_18b8a414403112 48-50,58-60
+  s_7c7e203d305c60::t_a7b78c36b85295 84-86
+  s_33054d42bd4ace::t_41f980f13e0bd0 51-57,87-139
+governance/plans/wave-control/NORTH-STAR.md
+  s_7c7e203d305c60::t_67a532e3b7a952 1-298
+governance/plans/wave-control/E2-SCOPED-TOPOLOGY.md
+  s_7c7e203d305c60::t_0aecc8981bb6e7 10-19
+  s_7c7e203d305c60::t_8861976c352b0a 31-37
+  s_7c7e203d305c60::t_998460e471bf61 110-124
+  s_7c7e203d305c60::t_6b25fba48b6257 7-9
+  s_7c7e203d305c60::t_0277c1b5892920 20-22,28-30
+  s_7c7e203d305c60::t_87fd348294dc74 38-40,107-109
+  s_7c7e203d305c60::t_5b719fdf639ac5 125-127
+  s_0d879e8b8357da::t_01e972a19de542 1-6,23-27,41-106,128-165
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  s_7c7e203d305c60::t_540d95fb6de0cf 2-52
+  s_7c7e203d305c60::t_3aad18499a0191 1
+  s_7c7e203d305c60::t_5b0922d2d20895 53-55
+  s_0d879e8b8357da::t_94b2c91df45b21 56-173
+governance/plans/wave-control/DECISION-E8-RELATIONSHIP.md
+  s_a74eeead08f62f::t_1d880ccd485859 1-125
+governance/plans/wave-control/E1-SOURCING.md
+  s_aa1d2e29cde89c::t_f088f448796c3d 1-172
+governance/plans/wave-control/E4-CAPABILITY-CUSTODY.md
+  s_b74c2f1736fd36::t_ee3f5686c93acf 1-150
+governance/plans/wave-control/E5-ALWAYS-ON-FLEET.md
+  s_a4271c28846c9e::t_cff826c14fd40f 1-127
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_5068dcda875e0f 25
+governance/graph.json
+  s_7c7e203d305c60::t_4e5031661430ac 6415-6544,27721-28320
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "730febbe9afc2c3f309268d2e7b69d59299dd836",
+  "prompts": {},
+  "sessions": {
+    "s_0d879e8b8357da": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac862dfdf44e00b17",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_33054d42bd4ace": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac3af53d6cdaea959",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a4271c28846c9e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af918451a86cbebd9",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a74eeead08f62f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae9f4b93585237cb4",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_aa1d2e29cde89c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a84a01bc408017411",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

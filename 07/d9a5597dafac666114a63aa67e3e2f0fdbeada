@@ -1,0 +1,20 @@
+.github/zizmor.yml
+  s_6e7ad4df769349::t_69015f5a5c97ad 80,89
+  s_6e7ad4df769349::t_f76d4a2f8633d9 103,111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "07d9a5597dafac666114a63aa67e3e2f0fdbeada",
+  "prompts": {},
+  "sessions": {
+    "s_6e7ad4df769349": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "91274c95-abfb-4ffd-b243-f2916d2e4e07",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

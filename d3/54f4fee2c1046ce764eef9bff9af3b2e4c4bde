@@ -1,0 +1,22 @@
+governance/plans/reviewer-fleet/NORTH-STAR.md
+  s_c24357e71ae5bc::t_c14e7cb30df94c 145-161
+  s_c24357e71ae5bc::t_4b68e459f48665 194-199
+governance/graph.json
+  s_c24357e71ae5bc::t_a744fd5e2bd134 29421-29426
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d354f4fee2c1046ce764eef9bff9af3b2e4c4bde",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

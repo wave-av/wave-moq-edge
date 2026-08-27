@@ -1,0 +1,170 @@
+.github/actions/blast-radius-classify/classify.mjs
+  h_67a1b847dc59d6 68-76,151
+.github/actions/blast-radius-classify/test/classify.test.mjs
+  h_67a1b847dc59d6 91-116
+.github/workflows/auto-merge.yml
+  h_67a1b847dc59d6 55-56,59,62-64,108-126,162-168,231-238,269,361-365,381-400,459-473,564-570,573-576,615-618,620-626,690-691,693-696,700-713,721-733,740-745,782-790,792-805,818-822,825
+.github/workflows/thread-resolved.yml
+  h_67a1b847dc59d6 1-209
+AGENTS.md
+  h_67a1b847dc59d6 1-83
+governance/DANGLING-REFS-BASELINE.json
+  h_67a1b847dc59d6 151-431
+governance/bin/code-mode.mjs
+  h_67a1b847dc59d6 111-115,117
+governance/bin/fleet/ingress-probe.mjs
+  h_67a1b847dc59d6 58-63
+governance/bin/fleet/lib/workflow-parse.mjs
+  h_67a1b847dc59d6 24-25
+governance/bin/gam-metrics.mjs
+  h_67a1b847dc59d6 51-56,111-114,119-126,136,140
+governance/bin/lawbook-search.mjs
+  h_67a1b847dc59d6 87-91,93
+governance/bin/ledger-dedupe.mjs
+  h_67a1b847dc59d6 1-234
+governance/bin/ollama-ask.mjs
+  h_67a1b847dc59d6 107-114,116
+governance/bin/ollama-route.mjs
+  h_67a1b847dc59d6 125-129,131
+governance/bin/platform-status.mjs
+  h_67a1b847dc59d6 44,364-383
+governance/bin/prefrontier-measure.py
+  h_67a1b847dc59d6 27-32
+governance/bin/prefrontier-measure.sh
+  h_67a1b847dc59d6 54-58
+governance/bin/prose-compress.mjs
+  h_67a1b847dc59d6 101-105
+governance/bin/rig-analyze.sh
+  h_67a1b847dc59d6 51-53,55
+governance/bin/rl-volume.mjs
+  h_67a1b847dc59d6 18,71-74
+governance/bin/thread-parked.mjs
+  h_67a1b847dc59d6 1-135
+governance/gam-port-kit/README.md
+  h_67a1b847dc59d6 41
+governance/gam-port-kit/manifest.json
+  h_67a1b847dc59d6 12,42-43
+governance/lib/app-scope-gh.mjs
+  h_67a1b847dc59d6 80-85
+governance/lib/gam-workflow-checks.mjs
+  h_67a1b847dc59d6 223-228,230
+governance/lib/git-run.mjs
+  h_67a1b847dc59d6 34,44-52,75,83-88
+governance/lib/hook-state-root.mjs
+  h_67a1b847dc59d6 7,10-13,36,54-57,77-104,106-123,127-128,130-172
+governance/lib/platform-status-gh.mjs
+  h_67a1b847dc59d6 29-33,38-43,52-67
+governance/lib/review-liveness.mjs
+  h_67a1b847dc59d6 126-146,154-163
+governance/lib/reviewer-liveness-read-io.mjs
+  h_67a1b847dc59d6 1-126
+governance/lib/reviewer-liveness-read.mjs
+  h_67a1b847dc59d6 1,11-28,37-78,80-108,110-150,152-157,159-200,202-239
+governance/lib/rl-hook-ledger-root.mjs
+  h_67a1b847dc59d6 11,57-64,77-102,105
+governance/lib/rl-volume-count.mjs
+  h_67a1b847dc59d6 1-135
+governance/lib/state-root.mjs
+  h_67a1b847dc59d6 29-38
+governance/merge-path-parity.json
+  h_67a1b847dc59d6 44-50
+governance/plans/EFFICIENT-FRONTIER-ORCHESTRATION.md
+  h_67a1b847dc59d6 117
+governance/plans/agent-recovery-codification/E0-E1-VISION-READ.md
+  h_67a1b847dc59d6 1-13
+governance/plans/agent-recovery-codification/E1-E2-EXTENSION-DIAGNOSIS.md
+  h_67a1b847dc59d6 1-13
+governance/plans/agent-recovery-codification/E10-E11-BENCHMARK.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E11-E12-LIFECYCLE-HEAL.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E12-E13-INTEGRATION.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E2-E3-GO-ROUTING-PUBLISH.md
+  h_67a1b847dc59d6 1-13
+governance/plans/agent-recovery-codification/E3-E4-MODEL-CATALOG.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E4-E5-MODEL-ARENA.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E5-E6-CROSS-PROVIDER-OPTIMIZE.md
+  h_67a1b847dc59d6 1-30
+governance/plans/agent-recovery-codification/E6-E7-EXTERNAL-CATALOG.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E7-E8-CAPABILITY-SCRIPTS.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E8-E9-MULTI-PROVIDER-PIPELINE.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/E9-E10-UPSTASH-RAG.md
+  h_67a1b847dc59d6 1-18
+governance/plans/agent-recovery-codification/NORTH-STAR.md
+  h_67a1b847dc59d6 1-51
+governance/plans/brand-recycle/DR-TELEPHONY.md
+  h_67a1b847dc59d6 1-137
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  h_67a1b847dc59d6 72-82
+governance/test/app-scope-broadening.test.mjs
+  h_67a1b847dc59d6 214-221,223-225,228-233
+governance/test/evidence-git-run.test.mjs
+  h_67a1b847dc59d6 61-103
+governance/test/gam-workflow-checks.test.mjs
+  h_67a1b847dc59d6 81-87
+governance/test/ledger-dedupe.test.mjs
+  h_67a1b847dc59d6 1-233
+governance/test/model-retirement.test.mjs
+  h_67a1b847dc59d6 1-311
+governance/test/platform-status-gh-missing.test.mjs
+  h_67a1b847dc59d6 1-81
+governance/test/platform-status-hook-state-root.test.mjs
+  h_67a1b847dc59d6 1-115
+governance/test/platform-status-state-root-agreement.test.mjs
+  h_67a1b847dc59d6 39-43,86-93,96-105
+governance/test/pr-create.test.mjs
+  h_67a1b847dc59d6 288-297,299-300
+governance/test/review-liveness-floor-coupling.test.mjs
+  h_67a1b847dc59d6 1-66
+governance/test/review-liveness-surface-verdict.test.mjs
+  h_67a1b847dc59d6 1-77
+governance/test/reviewer-liveness-read.test.mjs
+  h_67a1b847dc59d6 1-347
+governance/test/rl-hook-ledger-root.test.mjs
+  h_67a1b847dc59d6 20-21,60-72,80-81,87-90,93-94,97-158,174-188,205,218
+governance/test/rl-volume.test.mjs
+  h_67a1b847dc59d6 1-191
+governance/test/taxonomy.test.mjs
+  h_67a1b847dc59d6 232-236
+governance/test/thread-parked.test.mjs
+  h_67a1b847dc59d6 1-129
+governance/test/thread-resolved-coupling.test.mjs
+  h_67a1b847dc59d6 1-347
+hookcli/lib/t4-llm.sh
+  h_67a1b847dc59d6 49-60,200-206,208-209
+hooks/local-llm/context-compressor.sh
+  h_67a1b847dc59d6 171,173-175
+hooks/local-llm/enhance-compare.py
+  h_67a1b847dc59d6 56-59,61-63
+hooks/local-llm/ollama-agent-validator.sh
+  h_67a1b847dc59d6 51-73,84,88-89
+hooks/local-llm/ollama-helper.sh
+  h_67a1b847dc59d6 102-122,125-126,130-132,161-168
+hooks/local-llm/ollama-protocol-checker.sh
+  h_67a1b847dc59d6 144-145
+hooks/local-llm/prompt-enhancer.sh
+  h_67a1b847dc59d6 91
+hooks/manifest.json
+  h_67a1b847dc59d6 914,947
+hooks/tests/ollama-keep-alive.test.sh
+  h_67a1b847dc59d6 1-177
+hooks/tests/ollama-num-ctx.test.sh
+  h_67a1b847dc59d6 1-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e767b1c6631a6962a993370f816a55dbddd86a4a",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

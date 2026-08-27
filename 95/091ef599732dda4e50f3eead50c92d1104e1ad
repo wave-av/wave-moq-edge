@@ -1,0 +1,39 @@
+governance/lib/stat-portability.mjs
+  s_02abc74f4971c7::t_605b9cffbee421 75-79
+  s_02abc74f4971c7::t_b351f13184b72a 54,56,64,100-118
+  s_02abc74f4971c7::t_90906c2d206d71 55
+  s_02abc74f4971c7::t_62a1c6a8fe4e2b 57-59,61-63
+  s_02abc74f4971c7::t_a097f6eae50588 65-66
+  s_02abc74f4971c7::t_82d3973d0ff7f3 74
+  s_02abc74f4971c7::t_e144c8db85addf 60
+hooks/tests/stat-portability.test.sh
+  s_02abc74f4971c7::t_7feb108194ccd4 98-101
+  s_02abc74f4971c7::t_6269e339b9e01e 102
+governance/test/stat-portability-lint.test.mjs
+  s_02abc74f4971c7::t_436962b9af06fd 82,86-87,126-146
+  s_02abc74f4971c7::t_da8bc12b03862f 22
+  s_02abc74f4971c7::t_bec94fb38899a1 79-81
+  s_02abc74f4971c7::t_1689abcc7240be 83-85
+  s_02abc74f4971c7::t_ecbcab42e104ef 88
+  s_02abc74f4971c7::t_c2b64cb30071c4 75-78
+governance/bin/stat-portability-lint.mjs
+  s_02abc74f4971c7::t_549d1b0dc59fbb 19
+  s_02abc74f4971c7::t_cd1e875d5af6c3 47-51,54-57
+  s_02abc74f4971c7::t_24cf3e1fae4eef 60,62-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "95091ef599732dda4e50f3eead50c92d1104e1ad",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

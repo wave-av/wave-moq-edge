@@ -1,0 +1,22 @@
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_c24357e71ae5bc::t_b5032a29ea4ced 1-65
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_9ff55bdd894a74 410-418,420-452
+  s_c24357e71ae5bc::t_41c224a4990af5 419
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d134e69a5dec4806841d63936a5ce5b16bfb9dd5",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

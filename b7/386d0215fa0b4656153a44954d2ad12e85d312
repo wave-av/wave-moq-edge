@@ -1,0 +1,44 @@
+router/src/index.ts
+  s_9673f7dc0983fb::t_c7e0ea74278f4c 1097-1112
+scripts/judge.ts
+  s_9673f7dc0983fb::t_2f885060d36e15 1-27,29-127
+  s_9673f7dc0983fb::t_e6f2a024cad495 28
+catalog/cost-ledger-receipt.json
+  s_1334cb80b601af::t_29fed0500c3469 1-6
+catalog/watchdog-receipt.json
+  s_1334cb80b601af::t_f7e2c6f5b269f7 1-7
+package.json
+  s_a74557eaaac240::t_56fee28b8ed9eb 7,23-24,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b7386d0215fa0b4656153a44954d2ad12e85d312",
+  "prompts": {},
+  "sessions": {
+    "s_1334cb80b601af": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0076657c0ffe3TT7WZLIuzcgvo",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a74557eaaac240": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00733b35effe2KhjKZFEvGIXEp",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

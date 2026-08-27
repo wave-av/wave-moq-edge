@@ -1,0 +1,27 @@
+governance/ci-stack/dashboard-driver/package.json
+  s_26ed95158c6631::t_d03e24cde901a9 12
+  s_26ed95158c6631::t_47a6b1b3ec369f 1-11,13-14
+governance/ci-stack/dashboard-driver/drive.mjs
+  s_26ed95158c6631::t_d9c082bec4b6e3 1-195
+governance/ci-stack/dashboard-driver/.gitignore
+  s_26ed95158c6631::t_de61c4e38224d2 1-2
+governance/ci-stack/dashboard-driver/README.md
+  s_26ed95158c6631::t_1bf57cf9ef5c0a 1-125,127
+  s_26ed95158c6631::t_0570212e24b011 126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bb6fda71d5e67be11b475fb7c7fa41208532ade7",
+  "prompts": {},
+  "sessions": {
+    "s_26ed95158c6631": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff784a64dffeZ0cJZ2DaaUjVvm",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

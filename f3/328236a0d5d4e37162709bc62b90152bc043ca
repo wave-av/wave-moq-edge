@@ -1,0 +1,35 @@
+governance/plans/console-runs-history/E-SURFACES.md
+  s_15127d80763110::t_b67bdb0c51f63c 1-54
+governance/plans/console-runs-history/E-STORE.md
+  s_15127d80763110::t_0bdaaf7825bde8 1-50
+governance/plans/console-runs-history/E-PRIVACY.md
+  s_15127d80763110::t_5bc4d126f5f32b 1-50
+governance/plans/console-runs-history/E-CAPTURE.md
+  s_15127d80763110::t_0558f0a3661f02 1-51
+governance/plans/console-runs-history/E-CONTRACT.md
+  s_15127d80763110::t_79662e8a9f7a30 1-54
+governance/plans/console-runs-history/E-ARTIFACTS.md
+  s_15127d80763110::t_8a65f4aaf8fc08 1-48
+governance/plans/console-runs-history/NORTH-STAR.md
+  s_15127d80763110::t_88f762deeaf23b 1-210
+governance/DASHBOARD.md
+  s_15127d80763110::t_f6b65286650c1f 25
+governance/graph.json
+  s_15127d80763110::t_bd8554ce41ca21 2871-2961,19206-19649
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f3328236a0d5d4e37162709bc62b90152bc043ca",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

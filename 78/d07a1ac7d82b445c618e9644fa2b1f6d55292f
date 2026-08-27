@@ -1,0 +1,19 @@
+governance/lib/rl-corpus-write.mjs
+  s_6cd8089e0cff67::t_b4d0f7eb47d1ca 40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "78d07a1ac7d82b445c618e9644fa2b1f6d55292f",
+  "prompts": {},
+  "sessions": {
+    "s_6cd8089e0cff67": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed738a1ffe5XnQz6BH8vKbUl",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

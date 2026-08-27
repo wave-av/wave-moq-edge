@@ -1,0 +1,39 @@
+governance/lib/distribute-claude-config-selftest.mjs
+  s_60a20469ef4369::t_a8fde7dda44500 1-103
+governance/lib/distribute-claude-config-core.mjs
+  s_60a20469ef4369::t_3967d626f0517c 1-130
+governance/bin/distribute-claude-config.mjs
+  s_60a20469ef4369::t_2be88c3902682e 24-27,37,39-63,67-69,71,73-79,81,86,88-90,97,102,117-121,277-279,287-291,293-301,305-306
+governance/lib/selftest-runner.mjs
+  s_60a20469ef4369::t_cb735bcb1e8113 1-23
+governance/lib/distribute-bump-core.mjs
+  s_60a20469ef4369::t_20b79ec0694247 1-99
+governance/lib/distribute-bump-selftest.mjs
+  s_60a20469ef4369::t_4923ead1a6efd7 1-106
+governance/lib/fleet-gh.mjs
+  s_60a20469ef4369::t_4ef2a132db8c5f 1-139
+governance/bin/distribute-bump.mjs
+  s_60a20469ef4369::t_6c83d2339113c6 30-33,43,45-80,84,86-88,94-95,117-119,131-135,305-322,351-355,357-365,369-370
+governance/test/fleet-gh.test.mjs
+  s_60a20469ef4369::t_b632a267dbddf7 1-127
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_53edc85614e78d 5,637-654,657-674
+governance/code-index/index.json
+  s_60a20469ef4369::t_fb0755c51d1e70 7,9-10,6169-6172,6180-6181,6191-6192,6202-6203,6213-6214,6224-6225,6235-6236,6246-6247,6257-6260,6268-6269,6279-6282,6290-6291,6301-6302,6312-6313,6323-6326,6334-6335,6345-6348,6356-6357,6367-6368,6378-6381,6389-6390,6400-6401,6411-6412,6422-6423,6433-6434,6444-6445,6455-6458,6466-6469,6477-6480,6488-6489,6499-6500,6510-6513,6521-6522,6532-6533,6543-6546,6554-6557
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f5f594aa769a939c4c968f861aa4d5efd779f691",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

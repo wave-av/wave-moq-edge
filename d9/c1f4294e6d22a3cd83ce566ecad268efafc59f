@@ -1,0 +1,27 @@
+governance/bin/install-completeness.mjs
+  s_4b86428543fda7::t_bb28a4fdb2eb35 1-98
+governance/lib/install-completeness.mjs
+  s_4b86428543fda7::t_fd7258aeff6464 1-115
+governance/plans/law-proposals/2026-08-07-a-correction-is-a-new-claim.md
+  s_4b86428543fda7::t_bc1f7791588895 1-95
+governance/test/install-completeness.test.mjs
+  s_4b86428543fda7::t_27b1d2f0ef4dc8 1-101
+hooks/stop-gate.sh
+  s_4b86428543fda7::t_f0863a51461c57 29,32-42,44-48,50-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d9c1f4294e6d22a3cd83ce566ecad268efafc59f",
+  "prompts": {},
+  "sessions": {
+    "s_4b86428543fda7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5e78f3cd6dad9885",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/automation-registry/park-dead-jobs.sh
+  s_37e24b4d920e09::t_6535935b41aa4f 1-20
+governance/automation-registry/list-dead-ids.mjs
+  s_37e24b4d920e09::t_01c86a037d3d05 1-22
+governance/test/automation-registry/park-dead-jobs.test.mjs
+  s_37e24b4d920e09::t_dc52599825a028 1-107
+governance/plans/wave-automation-registry/RECEIPTS.md
+  s_37e24b4d920e09::t_cc1ffa8fcc62fd 289-464
+governance/automation-registry/jobs.yaml
+  s_37e24b4d920e09::t_be96ef80c383e2 23-26,28-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "7d5df4e14162db0df925f7a2c97e3015632b62da",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

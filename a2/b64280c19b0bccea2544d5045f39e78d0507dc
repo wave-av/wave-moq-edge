@@ -1,0 +1,19 @@
+governance/plans/effective-authority/RECEIPTS.md
+  s_be40541f6fd98b::t_7f0641f9967233 156-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "a2b64280c19b0bccea2544d5045f39e78d0507dc",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

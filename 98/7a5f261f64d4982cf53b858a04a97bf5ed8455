@@ -1,0 +1,19 @@
+.github/workflows/license-policy-audit.yml
+  s_19c8e603d8990b::t_17f498f40255ac 5-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "987a5f261f64d4982cf53b858a04a97bf5ed8455",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

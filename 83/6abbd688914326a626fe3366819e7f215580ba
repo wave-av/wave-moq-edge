@@ -1,0 +1,28 @@
+governance/test/automation-registry/park-dead-jobs.test.mjs
+  s_02abc74f4971c7::t_4995a98afa01b1 97
+  s_02abc74f4971c7::t_8b51174c65f239 91-96,98-108
+governance/test/no-dark-test-dir.test.mjs
+  s_02abc74f4971c7::t_b5d1ace26649d2 2-144
+  s_02abc74f4971c7::t_6b544fa458a9a1 1
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_b1d240755ff319 137-155
+  s_02abc74f4971c7::t_b5341c1107b753 136
+  s_02abc74f4971c7::t_cff58e1dcc6be1 64
+  s_02abc74f4971c7::t_42a3e5fd721818 59-63,68-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "836abbd688914326a626fe3366819e7f215580ba",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

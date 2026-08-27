@@ -1,0 +1,38 @@
+governance/plans/fleet-epic-queue/FLEET-EPIC-QUEUE.md
+  s_7326a769c7efe8::t_bcb65394be898e 26-31
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_0950db28a6ae27::t_01d4596d4506aa 29-30
+  s_c76395c601225d::t_52ec561cda8d85 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "97e0429a36dcb680ca320f637f011ca02ca62985",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c76395c601225d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff922bb06ffe7v1e5yd0VRr9h2",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

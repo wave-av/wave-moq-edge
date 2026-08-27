@@ -1,0 +1,32 @@
+hooks/local-llm/ollama-helper.sh
+  s_96280c922a9418::t_24fdbca4510508 173-182
+  s_60a20469ef4369::t_378368b1e68591 168-172
+hooks/local-llm/ollama-records.sh
+  s_96280c922a9418::t_5a55121702127b 1-87
+hooks/manifest.json
+  s_96280c922a9418::t_33853994139907 644,716,758
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "526c9a7e7652bbaf9a74e073ae6543a2eede9c8c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

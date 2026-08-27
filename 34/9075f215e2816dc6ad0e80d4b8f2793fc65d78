@@ -1,0 +1,32 @@
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  h_67a1b847dc59d6 13-16,18-25,31-38,48-55,65-72,82-88
+governance/plans/credential-provisioning-integrity/E2-TRAPS.md
+  h_67a1b847dc59d6 37-44,54-62,73-80,90-98,108-113
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  h_67a1b847dc59d6 31-39,49-57,68-76,87-95,106-112,124-132
+governance/plans/credential-provisioning-integrity/E4-GRANTS.md
+  h_67a1b847dc59d6 35-43,54-63,74-81,90-97
+governance/plans/credential-provisioning-integrity/E5-MALFORMED.md
+  h_67a1b847dc59d6 44-52,62-70,80-86
+governance/plans/credential-provisioning-integrity/E6-SCOPE.md
+  h_67a1b847dc59d6 28-35,46-54,65-72,83-89
+governance/plans/credential-provisioning-integrity/E7-RATCHET.md
+  h_67a1b847dc59d6 43-51,63-70,80-89,99-106,116-121
+governance/plans/credential-provisioning-integrity/E8-ROTATE.md
+  h_67a1b847dc59d6 38-46,56-63,73-80,89-97
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  h_67a1b847dc59d6 4,7-15
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 341-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "349075f215e2816dc6ad0e80d4b8f2793fc65d78",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

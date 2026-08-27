@@ -1,0 +1,21 @@
+governance/lib/work-nodes.mjs
+  s_796ab9d4dd0757::t_ee302527554add 112-124,126-128,130-132,252-255,260-266,276-278,280
+governance/test/plan-lint.test.mjs
+  s_796ab9d4dd0757::t_66d4f53b2567f7 48-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "03f32940dac49fb255021bf0b62764c84cc6bbb2",
+  "prompts": {},
+  "sessions": {
+    "s_796ab9d4dd0757": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_796ab9d4dd0757",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+hooks/lib/escalation_ladder_eval.py
+  s_dccee6b7677203::t_0dc60c4a108a47 160-172,184,192
+  s_dccee6b7677203::t_5c4db263f9dc13 173-180
+hooks/tests/escalation_ladder_eval_unset_validator.sh
+  s_dccee6b7677203::t_98cce49f783432 1-92,101,114-117,119,121-151
+  s_dccee6b7677203::t_ec97207857edb1 93-100,102-113,118,120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "c1e38336e88e25a1429935ee450c7bea1e88234c",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

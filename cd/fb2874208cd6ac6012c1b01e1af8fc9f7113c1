@@ -1,0 +1,30 @@
+governance/plans/software-factory/E3-ANALYZE.md
+  s_7ddeb5d251570f::t_1f6db132f6429c 9
+  s_7ddeb5d251570f::t_b7c39e876f9306 4
+bin/factory-analyze.mjs
+  s_7ddeb5d251570f::t_fe7177fbdb3c0e 1-92
+governance/test/factory-analyze.test.mjs
+  s_7ddeb5d251570f::t_d83213e0160728 1-71
+governance/plans/software-factory/NORTH-STAR.md
+  s_7ddeb5d251570f::t_fbe5a9a1328d92 25
+governance/plans/software-factory/E4-IMPLEMENT.md
+  s_7ddeb5d251570f::t_ed434b5cf6d55a 4,6-15,19,21-23,27-28,33-34
+governance/research/creator-intelligence/vercel-software-factory/SYNTHESIS.md
+  s_7ddeb5d251570f::t_04c5d963224d1f 123-160
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cdfb2874208cd6ac6012c1b01e1af8fc9f7113c1",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

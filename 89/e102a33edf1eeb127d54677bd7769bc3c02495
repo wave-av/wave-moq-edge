@@ -1,0 +1,19 @@
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_d9915bbafa9657::t_6ea9029a2a9db7 4-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "89e102a33edf1eeb127d54677bd7769bc3c02495",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

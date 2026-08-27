@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_d9ee211a32ada4 97-107
+governance/plans/ffmpeg9-lei/action/E10-P2-TIME-MACHINE-POC.md
+  s_124891ed63801b::t_541d0f1964fc9b 171
+  s_124891ed63801b::t_bc9824d6e0455a 1-170,172-251
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_0ba7c3752eeac1 132-141
+  s_124891ed63801b::t_4a1cb703fa6f48 10-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c75d2a92b64950e2c64e539613b16072d917c287",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

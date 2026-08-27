@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_15127d80763110::t_b4be8bd13ad811 9-13,56,85,120,161
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_15127d80763110::t_8c401e1bcb65df 5,65,79,85-87
+governance/graph.json
+  s_15127d80763110::t_411cd94a5e8ad8 3437-3440
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fb074aa615fbce5ba79a4193eefda253e7952aea",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

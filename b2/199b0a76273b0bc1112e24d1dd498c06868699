@@ -1,0 +1,35 @@
+governance/bin/review-liveness-scope-io.mjs
+  s_2e30bff6169f7a::t_d80e71e26b53f7 1-55
+governance/test/review-liveness-scope.test.mjs
+  s_2e30bff6169f7a::t_0ca5952d0bbea6 1-113
+governance/lib/review-liveness-scope.mjs
+  s_2e30bff6169f7a::t_aa20f4fb9b6a9c 1-38,46-97
+  s_2e30bff6169f7a::t_1b57f7d701b45f 39-45
+governance/bin/review-liveness.mjs
+  s_2e30bff6169f7a::t_b421a434686a75 191-198,201-210,213-215
+  s_2e30bff6169f7a::t_8768d0c31f650a 199-200
+  s_2e30bff6169f7a::t_6f3aa7dfac16c9 48,51
+  s_2e30bff6169f7a::t_9492572ccb01ae 52
+  s_2e30bff6169f7a::t_7d5a64f7758751 217,222-227
+  s_2e30bff6169f7a::t_92f5ddf43c51f9 49-50,53
+governance/lib/review-liveness-report.mjs
+  s_2e30bff6169f7a::t_b42909bc1000a7 1-50
+governance/gam-port-kit/manifest.json
+  s_2e30bff6169f7a::t_8a32a9890e7c03 23-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b2199b0a76273b0bc1112e24d1dd498c06868699",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

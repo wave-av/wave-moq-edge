@@ -1,0 +1,28 @@
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_8d26503dfc73f4::t_94893fcb5f9347 266-352
+  s_8d26503dfc73f4::t_d6d686274214dd 113-130,133-138
+  s_8d26503dfc73f4::t_caa4ae114221be 157,159-162,164,166-207
+  s_8d26503dfc73f4::t_69b3d232e4066d 248-252,254-256
+  s_8d26503dfc73f4::t_147e52dd5a231e 149-153
+  s_8d26503dfc73f4::t_8f84d0cc8a77eb 1-112,131-132,139-148,154-156,158,163,165,208-247,253,257-265
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_8d26503dfc73f4::t_fa251fedc32d9c 121
+  s_8d26503dfc73f4::t_a10683f26685b2 42-44
+  s_8d26503dfc73f4::t_70c1e1e1b7275c 116,118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "841039d8355ed9356a00bfccd13b6083cb0b586e",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

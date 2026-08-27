@@ -1,0 +1,19 @@
+hooks/lib/rules_version.py
+  s_96280c922a9418::t_5b4bc647ef971f 17-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "860cca982875a1dea0734a2e41a5dbbeb89b0029",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/lib/plan-text.mjs
+  s_6b80bacef5d5db::t_006516ed417368 7
+governance/lib/work-node-deps.mjs
+  s_6b80bacef5d5db::t_da9a002fbdee5a 4,22,36
+governance/lib/work-nodes.mjs
+  s_6b80bacef5d5db::t_bd4c9afcf237ec 20
+governance/test/plan-lint.inverted-deps.test.mjs
+  s_6b80bacef5d5db::t_e956af000cac94 70
+governance/test/work-nodes.deps.test.mjs
+  s_6b80bacef5d5db::t_83197c13e5a39b 79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7b25111ec0e6dfa94c3fd88f841785742105111c",
+  "prompts": {},
+  "sessions": {
+    "s_6b80bacef5d5db": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a309b4efbc6e4779f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/client-toolset-adoption/E6-DESKTOP-CONFORMANCE.md
+  s_9bb1b1d1d998d4::t_99fd320a3a07e9 87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4753c424add78d85c8fddae2e51c33f659e96782",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

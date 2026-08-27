@@ -1,0 +1,21 @@
+governance/plans/runtime-economy/research/BILLING-COMPLETION.md
+  s_2b4acc7ceba309::t_b47104002c8a0c 1-38
+governance/plans/runtime-economy/research/UPSTREAM-CONTRIBUTIONS.md
+  s_2b4acc7ceba309::t_94211e247a41f9 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0eb98779f311bfc6046d5aa3a3782deb7ab3560b",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

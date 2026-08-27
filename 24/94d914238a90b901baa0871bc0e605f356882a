@@ -1,0 +1,31 @@
+governance/plans/archive-found-live-defects/NORTH-STAR.md
+  s_bb427c936df473::t_9a9b95c2c74708 1-84
+governance/plans/archive-found-live-defects/E1-ADJUDICATE-THE-ACCESS-SWEEP.md
+  s_bb427c936df473::t_c6ff7f556bef61 1-116
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_bb427c936df473::t_adf6217337a4ad 27-34
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_bb427c936df473::t_3d779b47cba34d 12-18
+governance/plans/archive-found-live-defects/E0-PROVE-WHICH-PATH-IS-LIVE.md
+  s_bb427c936df473::t_431c93f18d6beb 1-84
+governance/plans/archive-found-live-defects/E2-DRAIN-THE-CORRIDOR-GATE.md
+  s_bb427c936df473::t_0ead17cf346699 1-97
+governance/graph.json
+  s_bb427c936df473::t_5a9751daed45bb 3044-3095,24206-24331,32720-32725
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2494d914238a90b901baa0871bc0e605f356882a",
+  "prompts": {},
+  "sessions": {
+    "s_bb427c936df473": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7b43792-3f0b-445c-9602-06c4ace7ee1e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

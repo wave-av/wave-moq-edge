@@ -1,0 +1,289 @@
+.coderabbit.yaml
+  s_6f6453b23e3805::t_cd5f632db2f97f 146-150,152,156-157,162,167-170
+.cursor/BUGBOT.md
+  s_6f6453b23e3805::t_16a77fa96538d3 49-52,59-87
+.gitattributes
+  s_6f6453b23e3805::t_a2722d66e4db35 20-24
+.github/workflows/auto-merge.yml
+  s_6f6453b23e3805::t_dd708e085a4218 117-137
+.github/workflows/governance-enforce.yml
+  s_6f6453b23e3805::t_ce500d1bab7216 13-15,21-25,29-30,35,41-42,44,47,49-58
+.github/workflows/wave-sec-dependency-review.yml
+  s_6f6453b23e3805::t_53ad6f749075b8 1-60
+.github/workflows/wave-sec-gate.yml
+  s_6f6453b23e3805::t_d29fa0159318e1 39-41,134-149
+.gitignore
+  s_6f6453b23e3805::t_baf1deb6f5175c 101-106
+.greptile/config.json
+  s_6f6453b23e3805::t_5f90dc986d51d7 3-9,13,19-24,30-34,40-42,48-55,61-64,70-72,78-84
+REVIEW.md
+  s_6f6453b23e3805::t_4d00acd9afa8f9 45-51,53-77
+cubic.yaml
+  s_6f6453b23e3805::t_eb8427357b9311 70-76,78,82-83,88,93-96
+docs/WAVE-SEC-GATE.md
+  s_6f6453b23e3805::t_b2d174ffd1581d 42-47,60-63,69-221,274-278,299-312,314-316,318-323
+governance/bin/check.mjs
+  s_6f6453b23e3805::t_42ef50d9615b33 62-76
+governance/bin/cockpit.mjs
+  s_6f6453b23e3805::t_d67917d7c00d88 13-14,25,48-49,54-62,120-126,132,144
+governance/bin/enforce.mjs
+  s_6f6453b23e3805::t_9910f5dc305577 20,24-31,54,113,122,137-141,143-144,146,172-174,179,181,184-195,197
+governance/bin/ffmpeg-pin-lint.mjs
+  s_6f6453b23e3805::t_2718ad9c9f2e96 1-151
+governance/bin/fleet/reviewer-config-census.mjs
+  s_6f6453b23e3805::t_464d7735de61e2 1-257
+governance/bin/gate-coverage-audit.mjs
+  s_6f6453b23e3805::t_c8165abadb642f 1-184
+governance/bin/gate-liveness-drill.mjs
+  s_6f6453b23e3805::t_1aeed58d77e132 27,29,48,51,108-116,118,125,141
+governance/bin/hook-contract-lint.mjs
+  s_6f6453b23e3805::t_e05bf8b6203e38 41,98-127
+governance/bin/reviewer-policy-gen.mjs
+  s_6f6453b23e3805::t_ca879d5dad5781 1-166
+governance/bin/vendored-gate-audit.mjs
+  s_6f6453b23e3805::t_9abb9267ca33a7 31,57-60,63,67,72-75,93-96
+governance/bin/wave-sec-gate-pin-audit-scan.sh
+  s_6f6453b23e3805::t_a725dbc9f40bb2 1-110
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_6f6453b23e3805::t_719e90da4c43c4 1-318
+governance/bin/wave-sec.mjs
+  s_6f6453b23e3805::t_15314cc101ea66 24,27,29,31,59-60,62,80-129,245-247,287-312,314
+governance/lib/audit-args.mjs
+  s_6f6453b23e3805::t_e00f17fc644fd8 1-79
+governance/lib/drill-fixtures-drift.mjs
+  s_6f6453b23e3805::t_f801045afcb3a8 53-56
+governance/lib/drill-fixtures-reviewer.mjs
+  s_6f6453b23e3805::t_881f40d87470b8 1-82
+governance/lib/drill-fixtures-wave-sec-l2.mjs
+  s_6f6453b23e3805::t_59a18d2ebac860 1-181
+governance/lib/drill-inline-required.mjs
+  s_6f6453b23e3805::t_04f37f9e616d7a 19-28
+governance/lib/drill-io.mjs
+  s_6f6453b23e3805::t_7cd3ca772cfca3 1-60
+governance/lib/enforce-patterns.mjs
+  s_6f6453b23e3805::t_a7107d08e54b4c 1-126
+governance/lib/ffmpeg-pin-gh.mjs
+  s_6f6453b23e3805::t_631f5793c557cb 1-47
+governance/lib/ffmpeg-pin-registry.mjs
+  s_6f6453b23e3805::t_77ecd28208ed6d 1-97
+governance/lib/gate-audit-args.mjs
+  s_6f6453b23e3805::t_693cbd3cfa3b11 1-2,33-70,73-89,91,94,98-101,106-107,109-110,112-121,125-137
+governance/lib/gate-audit-io.mjs
+  s_6f6453b23e3805::t_c207030eb29dfe 1-87
+governance/lib/gate-coverage.mjs
+  s_6f6453b23e3805::t_7434fbd609fe0c 1-266
+governance/lib/git-ref-read.mjs
+  s_6f6453b23e3805::t_d5100bcc62c3b4 1-53
+governance/lib/interactive-sessions.mjs
+  s_6f6453b23e3805::t_daa0770cbedce1 1-80
+governance/lib/pin-collect.mjs
+  s_6f6453b23e3805::t_032fc53a7e9b5b 84-94
+governance/lib/reviewer-ignore-contract.mjs
+  s_6f6453b23e3805::t_29cc9175076ae9 1-146
+governance/lib/reviewer-policy.mjs
+  s_6f6453b23e3805::t_2e2eea1bc86d28 1-227
+governance/lib/vendored-gate-classify.mjs
+  s_6f6453b23e3805::t_d68275f0a4d58f 24-76,81-83,87,89-91,93,97-101
+governance/lib/wave-sec-closure.mjs
+  s_6f6453b23e3805::t_b2daa172189825 50-53
+governance/lib/wave-sec-corridor.mjs
+  s_6f6453b23e3805::t_b2170cadaca4fb 1-267
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_6f6453b23e3805::t_434ba599217088 1-27
+governance/lib/wave-sec-gate-pin-classify.mjs
+  s_6f6453b23e3805::t_92cc137bc21042 1-236
+governance/lib/wave-sec-gate-pin-gh.mjs
+  s_6f6453b23e3805::t_2a6300437e62ff 1-74
+governance/lib/wave-sec-gate-pin-render.mjs
+  s_6f6453b23e3805::t_1e0875daf5a738 1-54
+governance/lib/wave-sec-lanes-github.mjs
+  s_6f6453b23e3805::t_2c635eb10bac5e 21-78,148
+governance/lib/wave-sec-lanes.mjs
+  s_6f6453b23e3805::t_f83fcf2b65b401 15,19,39-48,54-68,71-82
+governance/lib/wave-sec-scanners.mjs
+  s_6f6453b23e3805::t_dffd41bb9bff13 2-5,13-14,16
+governance/lib/wave-sec-spawn.mjs
+  s_6f6453b23e3805::t_11d32caf1510a2 1-16
+governance/lib/wave-sec-trufflehog.mjs
+  s_6f6453b23e3805::t_86fba0ff1fbaeb 1-114
+governance/ops/com.wave.wave-sec-gate-pin-audit.plist
+  s_6f6453b23e3805::t_e5d8b080688e35 1-39
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_6f6453b23e3805::t_1851224f2e38e6 160-166,176-178
+governance/plans/actions-execution-integrity/DECISIONS.md
+  s_6f6453b23e3805::t_d690a0a962f452 4-10
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_6f6453b23e3805::t_853b2a0ea18f06 4-12
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_6f6453b23e3805::t_5b29dbf694ac55 4-9
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_6f6453b23e3805::t_05c0e8cae77fe6 4-13
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_6f6453b23e3805::t_dcbced94821d3a 4-13
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_6f6453b23e3805::t_0267df576d34d8 4-9
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_6f6453b23e3805::t_fb3429fb38caa9 4-9
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_6f6453b23e3805::t_231968468bd02a 4-10
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_6f6453b23e3805::t_82959d84f69fe8 4-9
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_6f6453b23e3805::t_04dad7969fcf99 4-13
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_6f6453b23e3805::t_8842de758a2e17 4-10
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_85d9e5f433b9aa::t_64d9318feadc65 44
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_6f6453b23e3805::t_e8cfe131e62938 4,7-9,12,14,58-73
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_6f6453b23e3805::t_236c28e979dddb 18-34
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_6f6453b23e3805::t_f37316b1b20be8 8-10
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_85d9e5f433b9aa::t_8340f6a97d71cc 98-110,115-116
+governance/plans/ffmpeg9-lei/action/E11-P3-UPSTREAM-PATCH.md
+  s_85d9e5f433b9aa::t_02ab9a2027b087 98
+governance/plans/ffmpeg9-lei/action/E13-P1-DABPLUS-POC.md
+  s_6f6453b23e3805::t_223ec48c8c6176 1-174
+governance/plans/frontier-program/E-ENFORCE.md
+  s_6f6453b23e3805::t_8dd2676a78fdd6 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_6f6453b23e3805::t_26e3d491ca0b4e 519-562
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_6f6453b23e3805::t_200371bc16c49d 1-213
+governance/plans/wave-principals/E1-MODEL.md
+  s_6f6453b23e3805::t_8134ae8ff2dd02 1-99
+governance/plans/wave-principals/E2-ROLES.md
+  s_6f6453b23e3805::t_f2820be530f6b2 1-94
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_6f6453b23e3805::t_b2d25a1de129a4 1-122
+governance/plans/wave-principals/E4-GRANTS.md
+  s_6f6453b23e3805::t_06f99ec4cb8dc2 1-123
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_6f6453b23e3805::t_e398045c0e8033 1-112
+governance/plans/wave-principals/E6-AUDIT.md
+  s_6f6453b23e3805::t_8fb159242eba16 1-94
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_6f6453b23e3805::t_891d1292511784 1-97
+governance/plans/wave-principals/NORTH-STAR.md
+  s_6f6453b23e3805::t_c921905c3c68f6 1-210
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_6f6453b23e3805::t_1d59cfa171de65 5-17,26-29,35-43,51,54-58,81-96
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_6f6453b23e3805::t_3d47063ad6cee0 296-384
+governance/reviewer-policy.json
+  s_6f6453b23e3805::t_a1b33be6fa8b5e 1-180
+governance/runbooks/wave-sec-gate-pin-audit.md
+  s_6f6453b23e3805::t_d0a987c3b6ab4e 1-137
+governance/state/ffmpeg-pin-registry.json
+  s_6f6453b23e3805::t_185fdfc9384fd6 1-213
+governance/test/artifact-count-regression.test.mjs
+  s_6f6453b23e3805::t_6825f6dfe7a0ff 15,86-87,91
+governance/test/artifact-source-audit.test.mjs
+  s_6f6453b23e3805::t_cb39a7aebcfe9e 11,17,140,270
+governance/test/cockpit-render.test.mjs
+  s_6f6453b23e3805::t_f728b0c28ad5c8 139-163
+governance/test/command-cwd-heredoc-budget.test.mjs
+  s_6f6453b23e3805::t_ece22f7e37306a 1-117
+governance/test/ffmpeg-pin-lint.test.mjs
+  s_6f6453b23e3805::t_7584e78fa7c074 1-223
+governance/test/gate-audit-args.test.mjs
+  s_6f6453b23e3805::t_19355cade53685 11-14,17,33-41,53-62,92-130,152-160
+governance/test/gate-coverage.test.mjs
+  s_6f6453b23e3805::t_9a45a72895fb63 1-448
+governance/test/git-files-scanset.test.mjs
+  s_6f6453b23e3805::t_e04b0cd39b6b23 12,16,59,87,106
+governance/test/hook-contract-lint.test.mjs
+  s_6f6453b23e3805::t_e4deef8f320d42 151-190
+governance/test/interactive-sessions.test.mjs
+  s_6f6453b23e3805::t_63ccedfec78a52 1-78
+governance/test/lib/rm-fixture.mjs
+  s_6f6453b23e3805::t_2b09a07851d3d4 1-34
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_6f6453b23e3805::t_a6c118f5c6f260 190-202,204-214,223-264
+governance/test/monolith-manifest.test.mjs
+  s_6f6453b23e3805::t_0e43443573ff1f 18,24,70,108,132,158,196,231,253-254,283-285,302
+governance/test/monolith-triage-refusals.test.mjs
+  s_6f6453b23e3805::t_cdc72d337883a3 24,27,66,88,105,136-138,161,197
+governance/test/monolith-triage.test.mjs
+  s_6f6453b23e3805::t_fc36c713c563a9 25,28,151,168,203
+governance/test/reviewer-census.test.mjs
+  s_6f6453b23e3805::t_4083500b21b945 1-147
+governance/test/reviewer-demand-shaping.test.mjs
+  s_6f6453b23e3805::t_5c29ef12c98757 1-97
+governance/test/reviewer-ignore-sync.test.mjs
+  s_6f6453b23e3805::t_55e1185dbfe098 1,4-6,8-15,17-19,24-27,29-39,45-52,54,56-66,68,72-75,82-83,87,94-95,99,103-104,108-143,150-151
+governance/test/reviewer-policy.test.mjs
+  s_6f6453b23e3805::t_5e750172752c07 1-266
+governance/test/secret-provisioning-audit.test.mjs
+  s_6f6453b23e3805::t_2e0b01103d6141 13,18,320,336,345
+governance/test/status-trigger-coupling.test.mjs
+  s_6f6453b23e3805::t_378430b54a8c0f 134-196
+governance/test/wave-sec-corridor-repo-filter.test.mjs
+  s_6f6453b23e3805::t_7266dec050c20e 1-201
+governance/test/wave-sec-corridor.test.mjs
+  s_6f6453b23e3805::t_45d5b524356e64 1-367
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_6f6453b23e3805::t_42874f4967fcdd 1-103
+governance/test/wave-sec-gate-pin-classify.test.mjs
+  s_6f6453b23e3805::t_3ff475b70719d6 1-317
+governance/test/wave-sec-lane-isolation.test.mjs
+  s_6f6453b23e3805::t_d8567ef33548f7 1-141
+governance/test/wave-sec-scanners.test.mjs
+  s_6f6453b23e3805::t_704ee06247377c 294-322,324-336
+hookcli/bin/hookcli-settings-gen.mjs
+  s_6f6453b23e3805::t_8cf201c7e061a7 88-93
+hookcli/bin/lefthook-gen.mjs
+  s_6f6453b23e3805::t_35153d73a3e434 29-48
+hookcli/lib/eval-t1.sh
+  s_6f6453b23e3805::t_f013db0e3fcbb4 30-37
+hookcli/rules/rules.json
+  s_6f6453b23e3805::t_315440dd57e5ca 530-547
+hookcli/schema/rule.schema.json
+  s_6f6453b23e3805::t_0431661db7bfae 39-43
+hookcli/tests/lefthook-gen-yaml.sh
+  s_6f6453b23e3805::t_88d76835326696 1-61
+hookcli/tests/lib/modules.sh
+  s_6f6453b23e3805::t_491ebdb7d66c61 18-22
+hookcli/tests/plan-receipt.sh
+  s_6f6453b23e3805::t_e28811aad81ed0 86-88,92-93
+hookcli/tests/require.sh
+  s_6f6453b23e3805::t_9e76197518e3d5 68,71-73,75-76
+hooks/lib/mcp-merge-authority-decide.mjs
+  s_6f6453b23e3805::t_28027f617b004d 1-162
+hooks/mcp-merge-authority-gate.mjs
+  s_6f6453b23e3805::t_8022de16371728 24-30,56-83,189-263,267-268
+hooks/research-bank.sh
+  s_6f6453b23e3805::t_998c8409a69ec1 1-69
+hooks/tests/push-target-not-protected-default.test.sh
+  s_6f6453b23e3805::t_71635cdf7b3748 1-42
+rules/enforcement-defense-in-depth-lattice.md
+  s_6f6453b23e3805::t_41e130f14689fa 53
+settings/hooks.d/research-bank.json
+  s_6f6453b23e3805::t_dc872e6747f35a 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "775b87ab0cc0dfa5eb7668c179f9490e66347676",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

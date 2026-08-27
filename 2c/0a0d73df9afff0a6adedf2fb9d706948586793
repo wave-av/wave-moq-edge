@@ -1,0 +1,27 @@
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_a9317a2723d1eb::t_65c58f4f254ce4 1-121
+governance/lib/review-surfaces-identity.mjs
+  s_a9317a2723d1eb::t_d28b26ae21c781 1-171
+governance/test/review-liveness-pending.test.mjs
+  s_a9317a2723d1eb::t_a9e5c164663d57 16-21,26
+governance/lib/review-surfaces-merge.mjs
+  s_a9317a2723d1eb::t_a0d66ed0c74418 1-110
+governance/lib/review-surfaces.mjs
+  s_a9317a2723d1eb::t_34a29c779c396b 1,6-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2c0a0d73df9afff0a6adedf2fb9d706948586793",
+  "prompts": {},
+  "sessions": {
+    "s_a9317a2723d1eb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "50b260fb-a68d-4b18-98c7-06b66aeed187",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

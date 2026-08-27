@@ -1,0 +1,19 @@
+governance/plans/webhook-plane/E5-OUTBOUND.md
+  s_8152bca18f72ee::t_4370a6d55ceefa 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bc55786d573ab67951dfdfa10693467f26cd656e",
+  "prompts": {},
+  "sessions": {
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

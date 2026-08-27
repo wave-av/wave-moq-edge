@@ -1,0 +1,26 @@
+governance/lib/toolset-executor-core.mjs
+  s_9bb1b1d1d998d4::t_7a1859e7e5e362 140-154
+  s_9bb1b1d1d998d4::t_e2c0ce70313fb0 29
+governance/test/toolset-url-guard.test.mjs
+  s_9bb1b1d1d998d4::t_789e37e64a66b9 1-155
+governance/lib/toolset-url-guard.mjs
+  s_9bb1b1d1d998d4::t_65a9a18a56917f 1-130
+governance/test/toolset-executor-core.test.mjs
+  s_9bb1b1d1d998d4::t_bbe1615ff76a19 196-236
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6ab5ab6dc7ea73e1bba023dd66e537ba73512571",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/bin/hook-release.mjs
+  s_15127d80763110::t_10fc620d0bf023 53
+  s_15127d80763110::t_9a9ee1f1329a8e 317-320,323,327,329-333,336,338-359
+governance/lib/release-status.mjs
+  s_15127d80763110::t_484582a2072da6 1-79,85
+  s_15127d80763110::t_f9233f8fa24ebb 80-84
+governance/test/release-status.test.mjs
+  s_15127d80763110::t_c5d89ed099bd0e 1-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bce082d4c1a9b184920525eb7a42b7a3789c5a6a",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

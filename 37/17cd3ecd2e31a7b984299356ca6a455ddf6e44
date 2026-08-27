@@ -1,0 +1,22 @@
+governance/lib/platform-status-classify.mjs
+  s_941b8f0612ec3e::t_c49a6f2b7d4965 129-140
+governance/bin/platform-status.mjs
+  s_941b8f0612ec3e::t_0871450ea82fa6 85-91,100-101,105-106,124-132
+  s_941b8f0612ec3e::t_623ed3b22cb34a 133-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3717cd3ecd2e31a7b984299356ca6a455ddf6e44",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

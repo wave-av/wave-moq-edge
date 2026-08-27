@@ -1,0 +1,25 @@
+hookcli/track4b.json
+  s_60a20469ef4369::t_cb617fd90e164c 6-8
+hookcli/tests/parity-main-divergence.sh
+  s_60a20469ef4369::t_05f0e4dfdd3d9a 1-34
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_3ab983f555d703 669-675
+hookcli/tests/parity-econ-advisor.sh
+  s_60a20469ef4369::t_638fa2f5c28aa2 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "0180f880427f077ba41778df076fefe446be8e50",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

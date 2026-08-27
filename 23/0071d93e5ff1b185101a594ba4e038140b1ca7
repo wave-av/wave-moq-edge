@@ -1,0 +1,19 @@
+governance/plans/model-selection-completion/LENS-FINDINGS.md
+  s_7ddeb5d251570f::t_32ef75a6291294 1-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "230071d93e5ff1b185101a594ba4e038140b1ca7",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/external-actor-conformance/E1-CLOSE-THE-SEVEN.md
+  s_23d71389a1fb70::t_f23bdc76281580 4,95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "616dc9ef654d0f972f3a12c6c7639563bdbbc92c",
+  "prompts": {},
+  "sessions": {
+    "s_23d71389a1fb70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7ec6e1a3-fbb9-40dd-9429-2acf5ed0dcb9",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

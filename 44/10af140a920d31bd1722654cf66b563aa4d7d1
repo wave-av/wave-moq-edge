@@ -1,0 +1,23 @@
+governance/bin/fleet/lib/merge-policy-classify.mjs
+  s_9041cf1cf1ccad::t_5208e5eb803a36 1-170
+governance/bin/fleet/merge-policy-conformance.mjs
+  s_9041cf1cf1ccad::t_96ef37c6988450 1-184
+governance/test/merge-policy-classify.test.mjs
+  s_9041cf1cf1ccad::t_5c0b53f03b0a24 1-119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4410af140a920d31bd1722654cf66b563aa4d7d1",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

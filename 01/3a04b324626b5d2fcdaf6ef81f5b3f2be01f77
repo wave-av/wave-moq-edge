@@ -1,0 +1,42 @@
+governance/lib/rl-source-hooks.mjs
+  s_0950865aa49634::t_0680149a06f67c 25-29,31
+  s_1334cb80b601af::t_cd67d09d5bdbc0 67-74,80,91-93,95-97,104,106,110-131,233-243,254-256,261-262,269
+governance/bin/rl-harvest.mjs
+  s_1334cb80b601af::t_4465bd45991235 38,41,43-47,83-96,141-145,179-191,218
+governance/bin/rl-volume.mjs
+  s_1334cb80b601af::t_6411281ccef755 20,24-25,27-30,61-71,79,91,118-123,136
+governance/lib/rl-args.mjs
+  s_1334cb80b601af::t_35be4351de67fd 1-32
+governance/lib/rl-hook-ledger-root.mjs
+  s_1334cb80b601af::t_301ab3e4d9c82a 1-74
+governance/lib/rl-shard.mjs
+  s_1334cb80b601af::t_b66d62e1955d15 7,66-76
+governance/test/rl-harvest.test.mjs
+  s_1334cb80b601af::t_2ae8cf16c9e304 1-2,14,23-49
+governance/test/rl-source-hooks.test.mjs
+  s_1334cb80b601af::t_5e31fb7a61af18 1-285
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "013a04b324626b5d2fcdaf6ef81f5b3f2be01f77",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_1334cb80b601af": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0076657c0ffe3TT7WZLIuzcgvo",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+docs/EXECUTION-PLAN.md
+  s_ba07216ce52585::t_14dd7429e42c9d 1,3-61,65,67-68,70-72,74,76-188,190-208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "710d4f3441c7bd0c15c2f92075dd4967911c4663",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9e49fb2dab61f0::t_b6738338e266d8 2
+governance/plans/wave-models/NORTH-STAR.md
+  s_85113a1cef9a84::t_1ee91d607a8d8f 22-28
+memory/fleet-todo-ledger.md
+  s_85113a1cef9a84::t_5140e610a3f3de 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b2ae97d1d5fc9c53a7b39be6e1d7b2d3c5b7bb0f",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

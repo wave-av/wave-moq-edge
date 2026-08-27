@@ -1,0 +1,58 @@
+governance/tools/smart-recycling/lib/index.mjs
+  s_6a908cb0f02788::t_a4fb4ae2f0770f 106
+governance/tools/smart-recycling/tests/smart-recycling.test.mjs
+  s_6a908cb0f02788::t_ad8283591dd4b4 117-137
+governance/tools/units-as-types/tests/units-as-types.test.mjs
+  s_6a908cb0f02788::t_7d0b2681adc41c 101-139
+governance/tools/smart-error/tests/smart-error.test.mjs
+  s_6a908cb0f02788::t_a257c11c4bde4c 21-31
+governance/tools/trust-runtime/lib/index.mjs
+  s_6a908cb0f02788::t_ca921f92fba551 103-107,112,116
+  s_6a908cb0f02788::t_0059367d849379 27-32,37,39-40,43
+governance/tools/smart-error/lib/index.mjs
+  s_6a908cb0f02788::t_5a82797ca9b2b1 5
+governance/tools/cpa-scaffolding/lib/index.mjs
+  s_6a908cb0f02788::t_15f74dbe34975a 8
+governance/tools/load-shedder/README.md
+  s_6a908cb0f02788::t_b82b50dfa83024 78-80
+governance/tools/time-lapse-store/tests/timelapse.test.mjs
+  s_6a908cb0f02788::t_a32fb4cf0a8aa8 3
+  s_6a908cb0f02788::t_15888fdb6f2d5f 96-149
+  s_6a908cb0f02788::t_e12b5554c466ac 10-12,21
+governance/tools/cpa-scaffolding/tests/cpa.test.mjs
+  s_6a908cb0f02788::t_8ede452e52d287 24-33
+governance/tools/units-as-types/lib/index.mjs
+  s_6a908cb0f02788::t_7b4917232eb71d 164-181
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_6a908cb0f02788::t_ebc87cd0b68fbd 2
+  s_6a908cb0f02788::t_f7a55e2893db66 82-86
+governance/tools/trust-runtime/tests/trust-runtime.test.mjs
+  s_6a908cb0f02788::t_834de4b5d91174 135-179
+governance/tools/load-shedder/lib/index.mjs
+  s_6a908cb0f02788::t_57174008f9b32e 286
+  s_6a908cb0f02788::t_de79b79fa9fc8e 164-166
+  s_6a908cb0f02788::t_fc7bff43826364 227-230,235-243
+  s_6a908cb0f02788::t_880b25aff3f79f 194-195
+  s_6a908cb0f02788::t_226799c01c35ea 244
+governance/tools/time-lapse-store/lib/index.mjs
+  s_6a908cb0f02788::t_a93dfb355260a5 12-13,23-42
+  s_6a908cb0f02788::t_ac5078a99a0f6e 81-87
+  s_6a908cb0f02788::t_c6d62a08e894a1 43,223-224,227-259,267-276,278,280,282-283
+  s_6a908cb0f02788::t_d935c69d256897 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3ab31c9b1503fb539bf4b9e4a2177620d369c147",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

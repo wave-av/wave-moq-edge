@@ -1,0 +1,23 @@
+hookcli/bin/hookcli
+  s_be40541f6fd98b::t_a9f06b52e377b9 64-86
+hookcli/tests/killswitch-instruction.sh
+  s_be40541f6fd98b::t_d99551399f37d2 1-50
+hookcli/tests/lib/modules.sh
+  s_be40541f6fd98b::t_5383043f8b62b5 269-277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1e6fda494963445cb4ea7795439bd4c0e0b76180",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

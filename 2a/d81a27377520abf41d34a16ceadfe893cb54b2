@@ -1,0 +1,22 @@
+governance/lib/wave-reviewer.mjs
+  s_9bb1b1d1d998d4::t_e77f467dc33261 186-193
+  s_9bb1b1d1d998d4::t_2f18cbf443d05d 180-185,195
+governance/test/wave-reviewer.test.mjs
+  s_9bb1b1d1d998d4::t_417ceac83420b0 196-200
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2ad81a27377520abf41d34a16ceadfe893cb54b2",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

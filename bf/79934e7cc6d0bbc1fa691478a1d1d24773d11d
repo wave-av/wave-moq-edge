@@ -1,0 +1,19 @@
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/settings.yaml
+  s_2b4acc7ceba309::t_f5ae292fe78087 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bf79934e7cc6d0bbc1fa691478a1d1d24773d11d",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

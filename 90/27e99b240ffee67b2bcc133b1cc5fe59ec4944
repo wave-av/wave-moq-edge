@@ -1,0 +1,27 @@
+governance/plans/mlvc-api-plane/SYSTEMS-MAP.md
+  s_336edffe9f50cd::t_fef4fade3d36e2 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9027e99b240ffee67b2bcc133b1cc5fe59ec4944",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_336edffe9f50cd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe371ff22ffe38Hp4p5WVlqhHS",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

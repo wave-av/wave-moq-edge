@@ -1,0 +1,41 @@
+hookcli/bin/shadow-report.mjs
+  s_85d9e5f433b9aa::t_b59872b8e7e48a 117
+  s_85d9e5f433b9aa::t_00bc81b803c34f 48
+  s_85d9e5f433b9aa::t_0c9482a679920b 16
+hookcli/bin/promote-candidate-report.mjs
+  s_85d9e5f433b9aa::t_dbbdaec9b264f7 48
+  s_85d9e5f433b9aa::t_72a3015ae51c98 132,137
+governance/bin/stdout-flush-lint.mjs
+  s_85d9e5f433b9aa::t_457df0bf30d5b3 39-48
+governance/test/stdout-flush-lint.test.mjs
+  s_85d9e5f433b9aa::t_7a8392cb119f59 144-150,152-153,157-164,171-183
+  s_85d9e5f433b9aa::t_835dd06d85ea9d 11
+  s_85d9e5f433b9aa::t_51acb53bf31823 151,154-156
+  s_85d9e5f433b9aa::t_af4ef556dcefd7 165-170
+  s_85d9e5f433b9aa::t_47c6ac5cfde2f1 10
+hookcli/bin/distill-report.mjs
+  s_85d9e5f433b9aa::t_292a0221de014f 25
+  s_85d9e5f433b9aa::t_05d3808939658b 248,251
+hookcli/bin/enforce-review.mjs
+  s_85d9e5f433b9aa::t_6ed192dbb59df8 131
+  s_85d9e5f433b9aa::t_a0e3a09da0e598 47
+hookcli/bin/require-graduation-report.mjs
+  s_85d9e5f433b9aa::t_29999922bd0233 22
+  s_85d9e5f433b9aa::t_2438ce078eae7c 195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0de4b1382020d915c62dd03c21a0306771a79203",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

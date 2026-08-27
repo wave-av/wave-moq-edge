@@ -1,0 +1,23 @@
+governance/plans/dsh-fleet-skills/RCA-01.md
+  s_2b4acc7ceba309::t_fc7aa8c3a8d5a0 1-32
+governance/plans/dsh-fleet-skills/AUDIT-01.md
+  s_2b4acc7ceba309::t_0a5627e2a80e2e 1-21
+governance/plans/dsh-fleet-skills/RULING-01.md
+  s_2b4acc7ceba309::t_4f9937acd03ce7 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c7cd727a13d9a6056d5d028027aa69379ab8e541",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

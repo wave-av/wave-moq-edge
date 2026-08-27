@@ -1,0 +1,21 @@
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_ddcd58c8419ae0::t_6df10972c66408 4-15
+governance/graph.json
+  s_ddcd58c8419ae0::t_8f5e5fe85194c5 32654,32656,32660,32662
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "80a950a2f6fd44d6fd9e0a68c576672874ccb5a0",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

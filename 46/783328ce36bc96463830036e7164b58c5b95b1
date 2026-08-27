@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E19-IMAGE-VARIANT.md
+  s_61d5290a7db59e::t_c74893e502ced6 1-36
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_61d5290a7db59e::t_08d6fed3ecf204 97
+tools/mlvc-bench.mjs
+  s_61d5290a7db59e::t_cc7707a3994b9e 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "46783328ce36bc96463830036e7164b58c5b95b1",
+  "prompts": {},
+  "sessions": {
+    "s_61d5290a7db59e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fead86c5dffe4ZqXDgu5kX8cPJ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

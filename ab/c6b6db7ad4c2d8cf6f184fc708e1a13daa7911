@@ -1,0 +1,26 @@
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_264ae386838c57::t_990028c04154af 4
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_264ae386838c57::t_3d367e6dd25142 8-15
+  s_264ae386838c57::t_dc31f49e081777 19-21
+  s_264ae386838c57::t_3f641ec6eef688 16
+governance/test/epic-status-markers.test.mjs
+  s_264ae386838c57::t_da6f0ada901ccf 49,54-92,95-99,105-106
+  s_264ae386838c57::t_ccc0150d80177c 1-48,50-53,93-94,100-104,107-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "abc6b6db7ad4c2d8cf6f184fc708e1a13daa7911",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

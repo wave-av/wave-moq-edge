@@ -1,0 +1,19 @@
+hookcli/tests/compose-bypass.sh
+  s_9041cf1cf1ccad::t_4d7736b437c19f 69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "749b6ba2375e8068e3466326a76f987a16e35c4f",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

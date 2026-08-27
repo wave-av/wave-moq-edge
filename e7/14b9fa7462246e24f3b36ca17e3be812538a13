@@ -1,0 +1,20 @@
+scripts/ctx-gauge.ts
+  s_2c9d26e5e80a98::t_c3b96b65206e39 106-139
+  s_2c9d26e5e80a98::t_c76fd0f7617d09 216,221,229-234
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e714b9fa7462246e24f3b36ca17e3be812538a13",
+  "prompts": {},
+  "sessions": {
+    "s_2c9d26e5e80a98": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffeacd3c6ffenppDih8i1CEPoQ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

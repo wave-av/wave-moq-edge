@@ -1,0 +1,16 @@
+governance/plans/harness-wars-intel/bin/release-sweep.mjs
+  h_91e57a3221f2ff 39,67-74,99-100
+governance/plans/harness-wars-intel/research/release-state.json
+  h_91e57a3221f2ff 2,266-293,296,300,304,308,363-390
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4c231d3fe262d0377ad6cb8245b42ed673449db8",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+hooks/lib/email_gate_verdict.py
+  s_53b49eff5b8c5d::t_1861a2ceeceb14 1-148
+hooks/tests/outbound-email-gate.test.sh
+  s_53b49eff5b8c5d::t_003e13f0eb6e75 41-46
+  s_53b49eff5b8c5d::t_67b93086edc64f 1-40,47-61,67-71,73-75,80-314
+  s_53b49eff5b8c5d::t_39120748b0794f 62-66,72,76-79
+hooks/outbound-email-gate.py
+  s_53b49eff5b8c5d::t_b86c39a0abda12 1-14,16,18-42,62-64,67-78,83-93,96-97,99-100,102-140,142,144-192,195,200,209-214,219-242,245,247-287
+  s_53b49eff5b8c5d::t_429333f5c343cd 15,17,43-61,65-66,79-82,94-95,98,101,141,143,193-194,196-199,201-208,215-218,243-244,246
+hooks/REGISTER-outbound-email-gate.md
+  s_53b49eff5b8c5d::t_64cde42030702d 96-99
+  s_53b49eff5b8c5d::t_46db6e3b21f84d 1-95,100-132
+hooks/lib/email_rules_invoke.py
+  s_53b49eff5b8c5d::t_373603f5a4b4fb 39-40
+  s_53b49eff5b8c5d::t_538287d15e1081 117,119,124,131,134-135,137-138
+  s_53b49eff5b8c5d::t_1a4f83ece0c1c6 1-33,42-45,51-95,103-105,107-116,118,120-123,125-130,132-133,136
+  s_53b49eff5b8c5d::t_ad1f2a332ab63c 46-50
+  s_53b49eff5b8c5d::t_601f1c7b852dc8 96-99,106
+  s_37d3f61160b2dd::t_cc38f767ec71af 34-38,41,100-102
+hooks/lib/email_payload_normalize.py
+  s_53b49eff5b8c5d::t_20056ba6df30a6 1-167
+  s_37d3f61160b2dd::t_970d5b3accc2eb 168-172
+hooks/lib/email_send_detect.py
+  s_53b49eff5b8c5d::t_6ea1e3f2e24190 2,7-8,10-12,26-37,46-47,54,99-101,110,128,162,172,182-189,192-193,213-214,219-220,223,231,237,241-243,257-258,260,265-268,270,273
+  s_53b49eff5b8c5d::t_23bd58f5829b74 1,3-6,9,13-25,38-45,48-53,55-77,83-98,102-109,111-127,129-161,163-171,173-181,190-191,194-212,215-218,221-222,224-230,232-236,238-240,244-256,259,261-264,269,271-272,274-290
+  s_53b49eff5b8c5d::t_98e489ca0c6dfe 78-82
+  s_37d3f61160b2dd::t_6e738bd1669817 291-293
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ea77e66a80479972b65ef1acede3ceb7faed4ae2",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

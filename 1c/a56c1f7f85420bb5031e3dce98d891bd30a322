@@ -1,0 +1,24 @@
+governance/plans/schema-truth/E5-PLATFORM-CURRENCY.md
+  s_2e30bff6169f7a::t_cacb9e2ae899cb 115-118
+  s_2e30bff6169f7a::t_80884462d2ae4b 4-8
+  s_2e30bff6169f7a::t_d7bf0e704112b2 22,25-29,31-32,34-68
+  s_2e30bff6169f7a::t_55705f137be37b 70-95
+  s_2e30bff6169f7a::t_be01ad54abcb27 120-141
+  s_2e30bff6169f7a::t_585eca3739acbe 69,119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1ca56c1f7f85420bb5031e3dce98d891bd30a322",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

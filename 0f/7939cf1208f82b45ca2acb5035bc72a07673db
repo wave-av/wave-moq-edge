@@ -1,0 +1,21 @@
+.pre-commit-config.yaml
+  s_5f27fa5b8237cd::t_1f1b227aa22ca4 153-164
+frameworks/gates/registry.yaml
+  s_5f27fa5b8237cd::t_72e63ab985baa9 80-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "0f7939cf1208f82b45ca2acb5035bc72a07673db",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

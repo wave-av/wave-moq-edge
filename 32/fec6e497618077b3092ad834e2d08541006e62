@@ -1,0 +1,23 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_37d3f61160b2dd::t_4f8f2a63aab9a6 2,6,38,42,66,71,76,81,87,93,118,133,138,143,163,168,173,178,188-193
+governance/plans/stripe-settlement-truth/E5-TRIANGLE.md
+  s_37d3f61160b2dd::t_75b5461ea4e98e 25,250
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_37d3f61160b2dd::t_949cc18df0baaa 67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "32fec6e497618077b3092ad834e2d08541006e62",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

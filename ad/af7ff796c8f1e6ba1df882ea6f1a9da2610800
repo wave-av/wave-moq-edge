@@ -1,0 +1,21 @@
+.claude/skills/computer-and-browser-use/references/ssrf-vectors.mjs
+  s_9bb1b1d1d998d4::t_4f70df22708bd7 1-107
+.claude/skills/computer-and-browser-use/references/executor-contract.md
+  s_9bb1b1d1d998d4::t_570c22518ae313 166-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "adaf7ff796c8f1e6ba1df882ea6f1a9da2610800",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/lib/memory-corpus.mjs
+  s_e017bc8859c6b9::t_0f9621169a4db4 58-75
+governance/bin/memory-family-lint.mjs
+  s_e017bc8859c6b9::t_d1188d2f2b9cd7 70-84
+  s_e017bc8859c6b9::t_101949d62d911d 29
+governance/test/memory-family.test.mjs
+  s_e017bc8859c6b9::t_59bf719f2f3c2c 142-161
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "872a7ac595f8af7188d224a605cc16feca7a9b75",
+  "prompts": {},
+  "sessions": {
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

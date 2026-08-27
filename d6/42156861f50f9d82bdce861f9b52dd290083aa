@@ -1,0 +1,79 @@
+.github/workflows/governance.yml
+  s_2e30bff6169f7a::t_55afe4648988a0 129-134
+governance/DASHBOARD.md
+  s_8d26503dfc73f4::t_04f632bef17a5a 8,25
+governance/bin/build.mjs
+  s_2e30bff6169f7a::t_2c99a3f6e514e4 26,88-111,289-298
+governance/bin/inject.mjs
+  s_2e30bff6169f7a::t_947431fd4ecb93 109-159,162-170
+governance/bin/validate.mjs
+  s_2e30bff6169f7a::t_2d9de0e2fb0fe6 30-38
+governance/code-index/CATALOG.md
+  s_8d26503dfc73f4::t_7690f6454a0827 5,268-297,1754-1755,1758,1767-1768,1770,3254,3259-3262,3266,3268,3271-3272,4460-4464
+governance/code-index/index.json
+  s_8d26503dfc73f4::t_54c62f69744a8d 9-10,12-13,15,2379-2380,2390-2391,2401-2402,2412-2413,2423-2424,2434-2435,2445-2446,2456-2457,2467-2468,2478-2479,2489-2490,2500-2501,2511-2512,2522-2523,2533-2534,2544-2545,2555-2556,2566-2567,2577-2578,2588-2589,2599-2600,2610-2611,2621-2622,2632-2633,2643-2644,2654-2655,2665-2666,2676-2677,2687-2688,2698-2699,15749-15770,15799-15800,15898-15912,15925-15935,29121-29123,29175-29176,29186-29187,29197-29198,29208-29209,29252-29253,29274-29275,29307-29308,29318-29319,38310-38331
+governance/graph.json
+  s_8d26503dfc73f4::t_d842e162c15afa 5310-5336,5896-5904,23930-24013
+governance/lib/runbook-nodes.mjs
+  s_2e30bff6169f7a::t_e946442500aa7c 1-71
+governance/schema/graph.schema.json
+  s_2e30bff6169f7a::t_3557cef9f179cd 18
+governance/test/runbook-nodes.test.mjs
+  s_2e30bff6169f7a::t_cdf4db8572c921 1-130
+hooks/bin/gen-manifest.mjs
+  s_2e30bff6169f7a::t_2a49144084d8b2 150-154
+hooks/commit-identity-guard.py
+  s_2e30bff6169f7a::t_293995c96071bb 1-260
+hooks/lib/commit_identity_patterns.py
+  s_2e30bff6169f7a::t_9380ca30b10650 1-177
+hooks/lib/commit_identity_scan.py
+  s_2e30bff6169f7a::t_a87cc2778681ee 1-468
+hooks/manifest.json
+  s_8d26503dfc73f4::t_4d5e807aba2a01 238-258,570
+hooks/tests/hook-fail-closed.test.sh
+  s_2e30bff6169f7a::t_6cf171bf1a375a 13,68-71,81-82,85,123,165-177
+runbooks/bin/runbook.mjs
+  s_2e30bff6169f7a::t_f79fdb5716363f 7,12-16,18-25,27-52,54-55,57-63,65-67,71,84-87,89,98-99,106-204,206-207
+runbooks/lib/authoring.mjs
+  s_2e30bff6169f7a::t_4a8d8b731c0571 1-101
+runbooks/lib/grade.mjs
+  s_2e30bff6169f7a::t_070c62a8f1d8bb 1-81
+runbooks/lib/store.mjs
+  s_2e30bff6169f7a::t_e368323117952a 1-107
+runbooks/test/authoring.test.mjs
+  s_2e30bff6169f7a::t_375d851d3f4d2b 1-166
+runbooks/test/cli.test.mjs
+  s_2e30bff6169f7a::t_5f4b35b8a197b1 1-166
+runbooks/test/frontmatter.test.mjs
+  s_2e30bff6169f7a::t_56811723f63c71 1-160
+runbooks/test/grade.test.mjs
+  s_2e30bff6169f7a::t_af4144cb7017fc 1-108
+runbooks/test/store.test.mjs
+  s_2e30bff6169f7a::t_6bbf7869f4aab7 1-103
+settings/settings.base.json
+  s_2e30bff6169f7a::t_2a55c0bd0a3f6d 354-358
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d642156861f50f9d82bdce861f9b52dd290083aa",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

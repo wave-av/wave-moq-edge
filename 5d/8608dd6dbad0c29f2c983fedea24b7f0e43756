@@ -1,0 +1,19 @@
+governance/voice/VOICE.md
+  s_33808c00e16d52::t_93fe4a6ccae3ef 60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5d8608dd6dbad0c29f2c983fedea24b7f0e43756",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+governance/automation-registry/jobs/governance.yaml
+  s_941b8f0612ec3e::t_3c34f0e9a511ac 8,18-19,23,34-35,42,50,53,61,64,74,77,87,90,100,103,113,116,126,129,139,142,152,155,165,168,178,181,193,196,209,211,223-298
+  s_941b8f0612ec3e::t_df9d77642d23bd 15-17
+  s_941b8f0612ec3e::t_708abef13321ed 31-33
+  s_941b8f0612ec3e::t_1e96156f888b4f 182-184
+  s_941b8f0612ec3e::t_a291383828f30a 1-5,10-14,25-30,45-47,56-58,66-71,79-84,92-97,105-110,118-123,131-136,144-149,157-162,170-175,185-190,198-204,213-218
+governance/bin/committed-not-scheduled.mjs
+  s_941b8f0612ec3e::t_a791958e0d3ee3 49-56
+governance/test/committed-not-scheduled.test.mjs
+  s_941b8f0612ec3e::t_0676baebcaae39 145-164
+governance/bin/check.mjs
+  s_941b8f0612ec3e::t_f15855ed14e85a 31-36
+  s_941b8f0612ec3e::t_3fc8a5054d15d2 57,113,131,152-153
+  s_941b8f0612ec3e::t_4334f67b8738f2 165
+  s_941b8f0612ec3e::t_403dc0eaf3a958 161
+  s_941b8f0612ec3e::t_49248f21cf75c0 28-30
+  s_941b8f0612ec3e::t_8671468fdfad1e 37-39
+  s_941b8f0612ec3e::t_41a22dc3788270 56
+  s_941b8f0612ec3e::t_bdb51ddc30d001 58-59
+  s_941b8f0612ec3e::t_eaab0ac6efaec9 114-116
+  s_941b8f0612ec3e::t_fcec90d1345989 132-134
+  s_941b8f0612ec3e::t_6ac01da0738922 154-156,158-160
+  s_941b8f0612ec3e::t_0c3f03223e5c41 162-164
+  s_124891ed63801b::t_1dcd1043aee48c 21-27,40-49,52-54,62-104,117,135,157,168-170
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b8f8590dadd7d619fef104b38ae3c09a2cd3e305",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

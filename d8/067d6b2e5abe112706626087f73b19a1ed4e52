@@ -1,0 +1,759 @@
+.claude/skills/work-graph/SKILL.md
+  s_cf0babc1e05d4a::t_e73af3a0be06bb 46,74,82-83
+.coderabbit.yaml
+  s_cf0babc1e05d4a::t_a5eb8080473fb4 146-150,152,156-159,164,169-172
+.cursor/BUGBOT.md
+  s_cf0babc1e05d4a::t_c17d10ad6b2e46 49-52,59-89
+.gitattributes
+  s_cf0babc1e05d4a::t_10f953225965d3 20-26
+.github/workflows/auto-merge.yml
+  s_cf0babc1e05d4a::t_a044fc16f89009 117-154,312-344
+.github/workflows/foundation-gate.yml
+  s_cf0babc1e05d4a::t_201efe80580058 42
+.github/workflows/governance-enforce.yml
+  s_cf0babc1e05d4a::t_bf423af9c522c4 13-15,17-31,34-39,44-45,50,56-57,59,62,64-73
+.github/workflows/governance.yml
+  s_cf0babc1e05d4a::t_33e8540dbb5f60 385-393
+.github/workflows/trust-surface-regen.yml
+  s_cf0babc1e05d4a::t_3a05b8fe31be13 1-215
+.github/workflows/trust-surface-staleness.yml
+  s_cf0babc1e05d4a::t_23e4f6661dadc3 1-119
+.github/workflows/wave-sec-dependency-review.yml
+  s_cf0babc1e05d4a::t_a567a5b4ffc793 1-60
+.github/workflows/wave-sec-gate.yml
+  s_cf0babc1e05d4a::t_db51dee7035da7 39-41,134-149
+.gitignore
+  s_cf0babc1e05d4a::t_5868a1c52d9f04 101-106,112-127
+.greptile/config.json
+  s_cf0babc1e05d4a::t_9168a8d52e3127 3-9,13,19-24,30-34,40-42,48-55,61-64,70-72,78-84
+REVIEW.md
+  s_cf0babc1e05d4a::t_83e66af964b62c 45-51,53-79
+cubic.yaml
+  s_cf0babc1e05d4a::t_ecf55086139c8b 70-76,78,82-85,90,95-98
+docs/WAVE-SEC-GATE.md
+  s_cf0babc1e05d4a::t_81b2eb5e134502 42-47,60-63,69-221,274-278,299-312,314-316,318-323
+governance/bin/cfos-trial-killswitch.mjs
+  s_cf0babc1e05d4a::t_0272ceca39aaf1 1-363
+governance/bin/check.mjs
+  s_cf0babc1e05d4a::t_4bd0de6ead997e 62-76
+governance/bin/cockpit.mjs
+  s_cf0babc1e05d4a::t_5e2d980f963936 13-14,25,48-49,54-69,127-133,139,151
+governance/bin/committed-not-scheduled.mjs
+  s_cf0babc1e05d4a::t_936a31ccd9d9b3 1-105
+governance/bin/derived-artifact-drift-audit.mjs
+  s_cf0babc1e05d4a::t_2745adf926f763 96-101
+governance/bin/distribute-bump.mjs
+  s_cf0babc1e05d4a::t_9380c84d5905de 30,32,45,55-62,65,87-89,97-102,114-115,117-123,144-153,157-167,234,237
+governance/bin/enforce.mjs
+  s_cf0babc1e05d4a::t_bd4a77b7411387 20,24-31,54,79,81-90,122,131,146-150,152-153,155,181-183,188,190,193-204,206
+governance/bin/epic-status.mjs
+  s_cf0babc1e05d4a::t_ba6730cceb3501 21-33,39,41-48,53-61,66-71,73-83,85-90,92-95,97-99,101-110,124-127
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_cf0babc1e05d4a::t_58bd47ad0fad53 36,43-46
+governance/bin/ffmpeg-pin-lint.mjs
+  s_cf0babc1e05d4a::t_0bc8f0eb92e738 1-151
+governance/bin/fleet.mjs
+  s_cf0babc1e05d4a::t_3f0d08c52512c1 18-78,80-81,83-146,148-149,151-157,206-207,209-217,265
+governance/bin/fleet/installation-authority-audit.mjs
+  s_cf0babc1e05d4a::t_61e6f5040b0ca6 16-20,31,38,156-170,175-176,226
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_cf0babc1e05d4a::t_0a048b1e6a76ea 1-55
+governance/bin/fleet/reviewer-config-census.mjs
+  s_cf0babc1e05d4a::t_56f62677094448 1-218
+governance/bin/gate-liveness-drill.mjs
+  s_cf0babc1e05d4a::t_c1aaba51963c11 27,29-30,49,52,109-118,120,127,143
+governance/bin/hook-contract-lint.mjs
+  s_cf0babc1e05d4a::t_914d815ace8af3 41,98-127
+governance/bin/merge-time-artifact-lint.mjs
+  s_cf0babc1e05d4a::t_88ffdab675134f 1-169
+governance/bin/pr-check-health.mjs
+  s_cf0babc1e05d4a::t_e1e436a58ea738 1-222
+governance/bin/resolve-generated-conflicts.mjs
+  s_cf0babc1e05d4a::t_03d59389dd8244 40-44,51-55,86-93,217-235,262-272
+governance/bin/reversible-store.mjs
+  s_cf0babc1e05d4a::t_c6e009cf30db95 38,48-51,63-68
+governance/bin/review-liveness.mjs
+  s_cf0babc1e05d4a::t_2edfd63eb9ab95 58-60,159-185,187,189,245
+governance/bin/reviewer-policy-gen.mjs
+  s_cf0babc1e05d4a::t_b20eb6332f1f76 1-166
+governance/bin/thread-resolution.mjs
+  s_cf0babc1e05d4a::t_1f27cf90cc91ce 26-28,111-133,135,146
+governance/bin/trust-surface-gen.mjs
+  s_cf0babc1e05d4a::t_73ddaf05aca0b4 1-210
+governance/bin/wave-sec-gate-pin-audit-scan.sh
+  s_cf0babc1e05d4a::t_7bafcf3336846b 1-110
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_cf0babc1e05d4a::t_37a2c48a4ef81b 1-318
+governance/bin/wave-sec.mjs
+  s_cf0babc1e05d4a::t_a04bbe5b7a8d6c 24,27,29,31,59-60,62,80-129,245-247,287-312,314
+governance/gam-port-kit/manifest.json
+  s_cf0babc1e05d4a::t_fe16d4ec501d9d 21,24-25,31,36-37
+governance/lib/audit-args.mjs
+  s_cf0babc1e05d4a::t_b4f93c107cf636 1-65
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_cf0babc1e05d4a::t_7647f09a28fc7f 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_cf0babc1e05d4a::t_33a43f615e3df9 1-95
+governance/lib/check-classify.mjs
+  s_cf0babc1e05d4a::t_9d2e9eca6d39b6 1-185
+governance/lib/committed-not-scheduled.mjs
+  s_cf0babc1e05d4a::t_d8e95f5b33dd55 1-85
+governance/lib/distribute-bump-core.mjs
+  s_cf0babc1e05d4a::t_761670058b0a07 7-15,30,78-83,87-99
+governance/lib/distribute-bump-ensure.mjs
+  s_cf0babc1e05d4a::t_09631977e6a00f 1-174
+governance/lib/distribute-bump-report.mjs
+  s_cf0babc1e05d4a::t_894f7031987362 1-72
+governance/lib/distribute-bump-shape.mjs
+  s_cf0babc1e05d4a::t_9d7b812bed7c0f 1-282
+governance/lib/drill-fixtures-drift.mjs
+  s_cf0babc1e05d4a::t_1f1992ccdf85d9 26-27,55-94,204-224
+governance/lib/drill-fixtures-pin-currency.mjs
+  s_cf0babc1e05d4a::t_3ca07f72782f8e 1-115
+governance/lib/drill-fixtures-reviewer.mjs
+  s_cf0babc1e05d4a::t_61f6fa8c5b255b 1-82
+governance/lib/drill-fixtures-wave-sec-l2.mjs
+  s_cf0babc1e05d4a::t_65ddbbde00d875 1-181
+governance/lib/drill-inline-required.mjs
+  s_cf0babc1e05d4a::t_f384ea199f7523 19-28
+governance/lib/drill-io.mjs
+  s_cf0babc1e05d4a::t_0b33df0610b235 1-60
+governance/lib/enforce-patterns.mjs
+  s_cf0babc1e05d4a::t_b4f4b285609caa 1-141
+governance/lib/epic-status-check.mjs
+  s_cf0babc1e05d4a::t_6a8d9cb26f812f 1-76
+governance/lib/epic-status-parse.mjs
+  s_cf0babc1e05d4a::t_a1c3538d87cce6 43-48,51-58,70,72-78
+governance/lib/epic-status-scan.mjs
+  s_cf0babc1e05d4a::t_79143d1658c4a3 1-202
+governance/lib/ffmpeg-capability-categories.mjs
+  s_cf0babc1e05d4a::t_a297e9ae149997 1-25
+governance/lib/ffmpeg-pin-gh.mjs
+  s_cf0babc1e05d4a::t_48ce22e6a6cd1d 1-47
+governance/lib/ffmpeg-pin-registry.mjs
+  s_cf0babc1e05d4a::t_275815895002de 1-97
+governance/lib/gate-audit-args.mjs
+  s_cf0babc1e05d4a::t_fe79f351fdc981 1,22-36,40,47-52,54-66,69-112,131-136
+governance/lib/git-ref-read.mjs
+  s_cf0babc1e05d4a::t_e0f02c361acd1c 1-53
+governance/lib/interactive-sessions.mjs
+  s_cf0babc1e05d4a::t_8885458a4f077b 1-96
+governance/lib/merge-time-artifact.mjs
+  s_cf0babc1e05d4a::t_55dc962cd32fcc 1-88
+governance/lib/pin-collect.mjs
+  s_cf0babc1e05d4a::t_16e215d79f4f69 84-94
+governance/lib/pr-check-health-absence.mjs
+  s_cf0babc1e05d4a::t_b90ec0dced4658 1-185
+governance/lib/pr-check-health-evaluate.mjs
+  s_cf0babc1e05d4a::t_e0900a0e3ee10b 1-120
+governance/lib/pr-check-health-fetch.mjs
+  s_cf0babc1e05d4a::t_a9139201cfe039 1-320
+governance/lib/pr-check-health-platform.mjs
+  s_cf0babc1e05d4a::t_b74daccbe91e0b 1-278
+governance/lib/pr-check-health-required-set.mjs
+  s_cf0babc1e05d4a::t_8dedea3d30507d 1-58
+governance/lib/pr-check-health-run.mjs
+  s_cf0babc1e05d4a::t_b59ce4175f202b 1-110
+governance/lib/pr-check-health-surfaces.mjs
+  s_cf0babc1e05d4a::t_415b81b51faf8f 1-171
+governance/lib/pr-check-health-verdict.mjs
+  s_cf0babc1e05d4a::t_10184c1a554f95 1-133
+governance/lib/pr-check-health.mjs
+  s_cf0babc1e05d4a::t_948b5d910277e5 1-261
+governance/lib/r2-live-buckets.mjs
+  s_cf0babc1e05d4a::t_c9b80be93775fc 20-31,71,74-81,93,131-132
+governance/lib/ramp-tables.mjs
+  s_cf0babc1e05d4a::t_053c43d8784cc8 73-75
+governance/lib/review-liveness-args.mjs
+  s_cf0babc1e05d4a::t_ab26ea13412e6b 1-63
+governance/lib/review-liveness.mjs
+  s_cf0babc1e05d4a::t_639a929ae2d058 37,80-126
+governance/lib/reviewer-census-classify.mjs
+  s_cf0babc1e05d4a::t_2795fe0bcb811d 1-240
+governance/lib/reviewer-ignore-contract.mjs
+  s_cf0babc1e05d4a::t_5d7b8e0099de66 1-167
+governance/lib/reviewer-policy.mjs
+  s_cf0babc1e05d4a::t_14b307f3f2b6f4 1-266
+governance/lib/strict-flags.mjs
+  s_cf0babc1e05d4a::t_a9a1b49a253cd8 1-72
+governance/lib/thread-resolution-args.mjs
+  s_cf0babc1e05d4a::t_4a84b5e145cdac 1-52
+governance/lib/trust-surface.mjs
+  s_cf0babc1e05d4a::t_b0de6749bb4dae 1-331
+governance/lib/vendor-schema-fetch.mjs
+  s_cf0babc1e05d4a::t_bc1e95d850b1c8 1-136
+governance/lib/vendor-schema-properties.mjs
+  s_cf0babc1e05d4a::t_8c24fab0ecc5be 1-215
+governance/lib/vendor-schema.mjs
+  s_cf0babc1e05d4a::t_2eda3764cf33c2 1-146
+governance/lib/wave-sec-closure.mjs
+  s_cf0babc1e05d4a::t_379b17e7289a35 50-53
+governance/lib/wave-sec-corridor.mjs
+  s_cf0babc1e05d4a::t_82769b364d707f 1-267
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_cf0babc1e05d4a::t_7ba737b6de046a 1-27
+governance/lib/wave-sec-gate-pin-classify.mjs
+  s_cf0babc1e05d4a::t_eb6c9f92dc4ef4 1-236
+governance/lib/wave-sec-gate-pin-gh.mjs
+  s_cf0babc1e05d4a::t_02008b5671d4c6 1-74
+governance/lib/wave-sec-gate-pin-render.mjs
+  s_cf0babc1e05d4a::t_8f9690c5464473 1-54
+governance/lib/wave-sec-lanes-github.mjs
+  s_cf0babc1e05d4a::t_a2a7fa136b1e01 21-78,148
+governance/lib/wave-sec-lanes.mjs
+  s_cf0babc1e05d4a::t_8d8e9cad32d065 15,19,39-48,54-68,71-82
+governance/lib/wave-sec-scanners.mjs
+  s_cf0babc1e05d4a::t_48e6e581ccfcf5 2-5,13-14,16
+governance/lib/wave-sec-sentry.mjs
+  s_cf0babc1e05d4a::t_9953cc64677eb8 90-92,94-95,97,133-149
+governance/lib/wave-sec-spawn.mjs
+  s_cf0babc1e05d4a::t_3bd7c25e19a8f3 1-16
+governance/lib/wave-sec-trufflehog.mjs
+  s_cf0babc1e05d4a::t_7fb567dd5f6770 1-114
+governance/ops/com.wave.wave-sec-gate-pin-audit.plist
+  s_cf0babc1e05d4a::t_1fc0cc3b4926eb 1-39
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_cf0babc1e05d4a::t_8e5bf38495730c 160-166,176-178
+governance/plans/actions-execution-integrity/DECISIONS.md
+  s_cf0babc1e05d4a::t_feefe34279f02f 4-10
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_cf0babc1e05d4a::t_0ff6bc212d0e15 4-12
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_cf0babc1e05d4a::t_f0448905466f8e 4-9
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_cf0babc1e05d4a::t_96ddaf4077f820 4-13
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_cf0babc1e05d4a::t_03e245a4e6b53e 4-13
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_cf0babc1e05d4a::t_c1495511239cb4 4-9
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_cf0babc1e05d4a::t_09d68acf454d9e 4-9
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_cf0babc1e05d4a::t_3b95934e0fd1e5 4-10
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_cf0babc1e05d4a::t_abd69f3264f342 4-9
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_a81015cd58845d 4-13
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_cf0babc1e05d4a::t_c2f08ec47cc38e 4-10
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  s_cf0babc1e05d4a::t_018395eb2cef95 1-176
+governance/plans/auto-learning-runbooks/E1-CLI-EXISTS.md
+  s_cf0babc1e05d4a::t_ac16a75d6b6366 1-21
+governance/plans/auto-learning-runbooks/E2-RUNBOOKS-SURFACE.md
+  s_cf0babc1e05d4a::t_cd501819fc3513 1-24
+governance/plans/auto-learning-runbooks/E3-CAPTURE-IS-REAL.md
+  s_cf0babc1e05d4a::t_94e5d53ef02657 1-23
+governance/plans/auto-learning-runbooks/E4-DRAFTS-ASSEMBLE.md
+  s_cf0babc1e05d4a::t_8cdce3281a8014 1-29
+governance/plans/auto-learning-runbooks/E5-REINFORCEMENT.md
+  s_cf0babc1e05d4a::t_d01a452638a56d 1-21
+governance/plans/auto-learning-runbooks/E6-PUBLICATION.md
+  s_cf0babc1e05d4a::t_142f7e55437ff9 1-23
+governance/plans/auto-learning-runbooks/E7-BACKFILL.md
+  s_cf0babc1e05d4a::t_2759854a42c774 1-26
+governance/plans/auto-learning-runbooks/E8-RUNS-NIGHTLY.md
+  s_cf0babc1e05d4a::t_989ed8670bb951 1-26
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_5f851484519eb4 3-24
+governance/plans/ci-governance-sequence/E1-CLASS3-PR-HEAD-STABLE.md
+  s_cf0babc1e05d4a::t_7f7fb2c3cb095e 1-21
+governance/plans/ci-governance-sequence/E2-CLASS1-CLIENT-SAFE-ERROR.md
+  s_cf0babc1e05d4a::t_a3d7b7ebe855d7 1-23
+governance/plans/ci-governance-sequence/E3-CLASS2-SCHEMA-SATISFIABILITY.md
+  s_cf0babc1e05d4a::t_143305e85e8a68 1-19
+governance/plans/ci-governance-sequence/E4-GAM-RECONCILIATION-GATE.md
+  s_cf0babc1e05d4a::t_ae1ebbf88eb416 1-22
+governance/plans/ci-governance-sequence/E5-CROSS-REPO-ADOPT.md
+  s_cf0babc1e05d4a::t_bcf779882a3d00 1-25
+governance/plans/ci-governance-sequence/E6-CREDIT-TABLE-DROP.md
+  s_cf0babc1e05d4a::t_11fb276a2131d2 1-31
+governance/plans/ci-governance-sequence/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_9abf70e7766f55 4-10,38-48
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_cf0babc1e05d4a::t_36a831fded95c6 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_cf0babc1e05d4a::t_74193010778d72 1-183
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_cf0babc1e05d4a::t_b93920133c2acb 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_cf0babc1e05d4a::t_721133a2f9cf1d 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_cf0babc1e05d4a::t_882c79ed5c5e7a 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_cf0babc1e05d4a::t_f276cbd29c3f84 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_cf0babc1e05d4a::t_3c78c2629ddaa7 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_cf0babc1e05d4a::t_bb43e8ca880c4f 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_d5f45a56b7d3b7 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_cf0babc1e05d4a::t_5e3f5794d740a8 1-34
+governance/plans/console-completeness/E1-LEGACY-SIX.md
+  s_cf0babc1e05d4a::t_f0713939fec99b 1-57
+governance/plans/console-completeness/E1-SPEC.md
+  s_cf0babc1e05d4a::t_7c069ae8e7f7a0 1-404
+governance/plans/console-completeness/E2-BILLING-USAGE.md
+  s_cf0babc1e05d4a::t_ba8ca0695a8b7e 1-84
+governance/plans/console-completeness/E3-COVERAGE.md
+  s_cf0babc1e05d4a::t_d085d6f1027506 1-91
+governance/plans/console-completeness/E3-SPEC.md
+  s_cf0babc1e05d4a::t_0223b4f8cd8a2c 1-455
+governance/plans/console-completeness/E4-SEMANTICS.md
+  s_cf0babc1e05d4a::t_87251cb727eaa9 1-63
+governance/plans/console-completeness/E5-PERFECTION-PASS.md
+  s_cf0babc1e05d4a::t_1cc5d97f1aaa6e 1-53
+governance/plans/console-completeness/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_8f2cb8c9b63c35 1-151
+governance/plans/console-completeness/comps/billing-usage-v1.html
+  s_cf0babc1e05d4a::t_1f15ec70efc931 1-686
+governance/plans/cursor-cloud-agent-adoption/E1-SCOPE-PROTECTION.md
+  s_cf0babc1e05d4a::t_bf30f0dbc5d433 1-2,4-10,24-26,42-45,47,57,80,106-109,122,139,160,202,204,216,236-277,283-287,295,302-305,307-310,317-319,333-337
+governance/plans/cursor-cloud-agent-adoption/E2-FIRST-SESSION.md
+  s_cf0babc1e05d4a::t_c5e294573a4ac7 1-268
+governance/plans/cursor-cloud-agent-adoption/E3-COST-LEDGER.md
+  s_cf0babc1e05d4a::t_7d1470b5e6d6f5 1-74
+governance/plans/cursor-cloud-agent-adoption/E4-REVIEW-PROCESS.md
+  s_cf0babc1e05d4a::t_c159c2f1dc986f 1-85
+governance/plans/cursor-cloud-agent-adoption/E5-EXPANSION-GATE.md
+  s_cf0babc1e05d4a::t_c8a851117c29c5 1-75
+governance/plans/cursor-cloud-agent-adoption/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_ecceabe2721dc8 1-98
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  s_cf0babc1e05d4a::t_270c66980c9908 55-56
+governance/plans/effective-authority/E2-DEFAULTS.md
+  s_cf0babc1e05d4a::t_10fe92f9f3258f 61-62
+governance/plans/effective-authority/E3-OIDC.md
+  s_cf0babc1e05d4a::t_974ff9fcf8d9be 101-102
+governance/plans/effective-authority/E4-DISPATCH.md
+  s_cf0babc1e05d4a::t_218e0d1a640e54 61-62
+governance/plans/effective-authority/E5-CEILING.md
+  s_cf0babc1e05d4a::t_549c513447f9a2 73-74
+governance/plans/effective-authority/E6-BLAST.md
+  s_cf0babc1e05d4a::t_9bd8a82ff289b9 65-66
+governance/plans/effective-authority/E7-RATCHET.md
+  s_cf0babc1e05d4a::t_489c613a5741a4 68-69
+governance/plans/effective-authority/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_a07c4c7ef986f1 164-165
+governance/plans/eval-coverage/E1-INVENTORY.md
+  s_cf0babc1e05d4a::t_be0ae165b4cca4 32-33
+governance/plans/eval-coverage/E2-CONTRACT.md
+  s_cf0babc1e05d4a::t_66c91398b4dca4 37-38
+governance/plans/eval-coverage/E3-KNOWLEDGE.md
+  s_cf0babc1e05d4a::t_d423963a7d8b03 37-38
+governance/plans/eval-coverage/E4-FUNNEL.md
+  s_cf0babc1e05d4a::t_40b4c73d46d02d 43-44
+governance/plans/eval-coverage/E5-GATE.md
+  s_cf0babc1e05d4a::t_e4f7c0d0a0086f 41-42
+governance/plans/eval-coverage/E6-AUTONOMY.md
+  s_cf0babc1e05d4a::t_d310dab97e03fc 38-39
+governance/plans/eval-coverage/E7-LIFECYCLE.md
+  s_cf0babc1e05d4a::t_1fe5ecf687374d 45-46
+governance/plans/eval-coverage/E8-BACKFILL.md
+  s_cf0babc1e05d4a::t_2a45e7acdaf6fa 36-37
+governance/plans/eval-coverage/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_90a7a5636d8b09 96-97
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_cf0babc1e05d4a::t_e3c826ee787506 10-47,160-175
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_cf0babc1e05d4a::t_03ec2c52fef470 38-53
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_cf0babc1e05d4a::t_6e85a916af21cc 4-14
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_cf0babc1e05d4a::t_fb3f6c93b7ff9e 4,7-9,12,14,58-73
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  s_cf0babc1e05d4a::t_c65d0444458533 1-161
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_cf0babc1e05d4a::t_b185d63f637c2f 1-161
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_cf0babc1e05d4a::t_82e295ce94779d 1-174
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_cf0babc1e05d4a::t_bfe206615e2460 18-34
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_cf0babc1e05d4a::t_d9af3bad8785d3 4
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_cf0babc1e05d4a::t_b88a993e75d5e5 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_cf0babc1e05d4a::t_79ed5574c74851 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_cf0babc1e05d4a::t_dc50c51441002a 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_cf0babc1e05d4a::t_014248d3e372bf 17-24
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_fd518f9bbe868b 8-10,74,92-94,102-109,116-133
+governance/plans/ffmpeg9-lei/action/E10-P2-TIME-MACHINE-POC.md
+  s_cf0babc1e05d4a::t_b92fbe81509e0b 1-269
+governance/plans/ffmpeg9-lei/action/E11-P3-UPSTREAM-PATCH.md
+  s_cf0babc1e05d4a::t_fc467663d5c120 70-81,94-95,99-104,108
+governance/plans/ffmpeg9-lei/action/E12-P1-APPLE-PROBE.md
+  s_cf0babc1e05d4a::t_53d77d93ddaeef 1-204
+governance/plans/ffmpeg9-lei/action/E13-P1-DABPLUS-POC.md
+  s_cf0babc1e05d4a::t_1feb978aac8440 1-174
+governance/plans/ffmpeg9-lei/action/E15-P1-VALIDATION.md
+  s_cf0babc1e05d4a::t_24e7c876730131 8-13,32-35,77-86,142-147,216-232,257,263,268,270-293,300-316
+governance/plans/ffmpeg9-lei/action/E4-P2B-MODNET-SPIKE.md
+  s_cf0babc1e05d4a::t_287097bd8a5b9a 1-209
+governance/plans/ffmpeg9-lei/action/E5-E7-JOINT-BRAINSTORM.md
+  s_cf0babc1e05d4a::t_0e00dfaadeba3a 1-255
+governance/plans/ffmpeg9-lei/action/E6-P3-GPU-RESIDENT-BRAINSTORM.md
+  s_cf0babc1e05d4a::t_2f515525e3419e 1-202
+governance/plans/ffmpeg9-lei/action/E8-P4-TRUST-SURFACE-DESIGN.md
+  s_cf0babc1e05d4a::t_0575be06238a2f 1-235
+governance/plans/ffmpeg9-lei/action/E9-P3-COGS-BENCH.md
+  s_cf0babc1e05d4a::t_d8babfac73bd62 1-222
+governance/plans/ffmpeg9-lei/action/EPIC-AUDIT-VERIFICATION.md
+  s_cf0babc1e05d4a::t_6504cacce760f0 1-75
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_cf0babc1e05d4a::t_b20ea0641bac1a 1-72
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  s_cf0babc1e05d4a::t_298892cfebce12 1-212
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-MOAT.md
+  s_cf0babc1e05d4a::t_04e18ff84d63bf 1-297
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_cf0babc1e05d4a::t_2b35dab28aee27 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_cf0babc1e05d4a::t_47a8114bfbe022 1-264
+governance/plans/ffmpeg9-lei/action/upstream/validate/Dockerfile
+  s_cf0babc1e05d4a::t_2e24a44ed9a4a4 12-16,27-32,34-53,63-65,67,69-72,74-85,91-98,114-119
+governance/plans/metronome-m-phases/E1-CUSTOMER-SYNC.md
+  s_cf0babc1e05d4a::t_f2c4b9fc65f0d3 1-63
+governance/plans/metronome-m-phases/E2-DRAFT-INVOICE-PARITY.md
+  s_cf0babc1e05d4a::t_cee841c397e967 1-48
+governance/plans/metronome-m-phases/E3-BILLING-AUTHORITY-FLIP.md
+  s_cf0babc1e05d4a::t_e45dd84661432a 1-56
+governance/plans/metronome-m-phases/E4-WEBHOOK-GOLIVE.md
+  s_cf0babc1e05d4a::t_9eea8c0c36c589 1-44
+governance/plans/metronome-m-phases/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_baead4236dd05f 1,3-23,43-44,53,57-58,61,68-69,71,73-78,80-84,86-87
+governance/plans/monetization-gateway/E1-SELF-402.md
+  s_cf0babc1e05d4a::t_ba0708e1666f76 34-35
+governance/plans/monetization-gateway/E2-RULES-ENGINE.md
+  s_cf0babc1e05d4a::t_ebea11a15ab9fa 33-34
+governance/plans/monetization-gateway/E3-SELLER-PLATFORM.md
+  s_cf0babc1e05d4a::t_222a63244167af 38-39
+governance/plans/monetization-gateway/E4-PAY-PER-CRAWL.md
+  s_cf0babc1e05d4a::t_367e9b66aeac8b 32-33
+governance/plans/monetization-gateway/E5-DOGFOOD-EVAL.md
+  s_cf0babc1e05d4a::t_ded4f50a736269 32-33
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_cf0babc1e05d4a::t_04b6298edfd9f5 3-10
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_cf0babc1e05d4a::t_3fd4c6c082836f 3-8
+governance/plans/namespace-substrate/MISSION-WEAVE.md
+  s_cf0babc1e05d4a::t_fc20f1cc05d08c 3-10
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_cf0babc1e05d4a::t_4076ba54c53e92 3-10
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_cf0babc1e05d4a::t_b811ca252baba7 3-11
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_cf0babc1e05d4a::t_adef37d2968e2d 3-11
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_cf0babc1e05d4a::t_1ea56bf93e17d6 3-25,27-30,51-54,65,78-169
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  s_cf0babc1e05d4a::t_62026fed308adc 11
+governance/plans/nested-dispatch-economy/E2-CACHE-REUSE.md
+  s_cf0babc1e05d4a::t_61f072aa6ed2de 12
+governance/plans/nested-dispatch-economy/E3-ESCALATION.md
+  s_cf0babc1e05d4a::t_7877f27e91e90c 11
+governance/plans/nested-dispatch-economy/E4-PANEL.md
+  s_cf0babc1e05d4a::t_ddc6104977be7e 12
+governance/plans/nested-dispatch-economy/E5-PAYBACK.md
+  s_cf0babc1e05d4a::t_e310ae926e1753 11
+governance/plans/nested-dispatch-economy/E6-VERIFIABILITY.md
+  s_cf0babc1e05d4a::t_6d52e262dd08b2 11
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_cf0babc1e05d4a::t_1287a74ba89f67 762-764,767,779-815,830-831,847-949
+governance/plans/receipts/E1-P1-cf-sandbox-substrate-2026-07-05.md
+  s_cf0babc1e05d4a::t_e6e02e568527fe 3-10
+governance/plans/receipts/E13-phase-c-blast-radius-2026-06-23.md
+  s_cf0babc1e05d4a::t_6082348eca3260 3-13
+governance/plans/receipts/E13-phase-c-pilot-2026-06-23.md
+  s_cf0babc1e05d4a::t_803ca3f924813d 3-12
+governance/plans/receipts/P-agent-orchestration-verified.md
+  s_cf0babc1e05d4a::t_11077f64537a58 3-8
+governance/plans/receipts/P1-baseline-efficient-frontier.md
+  s_cf0babc1e05d4a::t_894ebc535e7862 3-9
+governance/plans/receipts/P9-efficiency-research-2026-06-28.md
+  s_cf0babc1e05d4a::t_7582b0ef6bbda5 3-10
+governance/plans/receipts/T5.3-rollout-receipt-TEMPLATE.md
+  s_cf0babc1e05d4a::t_437ecfee14cdf2 3-8
+governance/plans/receipts/capability-audit-2026-07-03.md
+  s_cf0babc1e05d4a::t_bffcbcb6e26228 3-9
+governance/plans/receipts/code-mode-proof.md
+  s_cf0babc1e05d4a::t_1550b547ff0dd2 3-8
+governance/plans/receipts/efficient-frontier-quality-ab-2026-06-29.md
+  s_cf0babc1e05d4a::t_f4b4c825ff45a6 3-8
+governance/plans/receipts/enforcement-coverage-audit-2026-06-29.md
+  s_cf0babc1e05d4a::t_f227827b27cf4a 3-9
+governance/plans/receipts/lawbook-search-proof.md
+  s_cf0babc1e05d4a::t_95215ed617df12 3-8
+governance/plans/receipts/ollama-ask-proof.md
+  s_cf0babc1e05d4a::t_8e97ab15d9629c 3-8
+governance/plans/receipts/ollama-route-proof.md
+  s_cf0babc1e05d4a::t_4a804f28b7c748 2-7
+governance/plans/receipts/orchestration-levers-verified-2026-06-29.md
+  s_cf0babc1e05d4a::t_085603e578f446 3-9
+governance/plans/receipts/seed-regression-skill-load-blowout.md
+  s_cf0babc1e05d4a::t_22e9a7d96735aa 3-9
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_cf0babc1e05d4a::t_1d70bf62f3c55a 101-107,171
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_cf0babc1e05d4a::t_90afb1fc0b42c8 1-213
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_cf0babc1e05d4a::t_4b2055012cb116 4-22,26
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_cf0babc1e05d4a::t_2dac3364b5503c 4-17
+governance/plans/sandbox-tier-ladder/E2-TIER2-MICROVM.md
+  s_cf0babc1e05d4a::t_52a60db2d9e67e 4-15
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_cf0babc1e05d4a::t_55625bbe638979 4-17
+governance/plans/sandbox-tier-ladder/E4-EVAL-CONSUMER.md
+  s_cf0babc1e05d4a::t_9602c816e9d126 4-13
+governance/plans/sandbox-tier-ladder/E5-DEVERCEL.md
+  s_cf0babc1e05d4a::t_059dddf41e20bd 4-12
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_67eb2bf9dd16a1 5-16
+governance/plans/socratic-loop/ACTORS.md
+  s_cf0babc1e05d4a::t_444320c1dca34a 3-11
+governance/plans/socratic-loop/ARTIFACTS.md
+  s_cf0babc1e05d4a::t_aa7c4535f51c07 3-11
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_cf0babc1e05d4a::t_9bd5646c13a808 3-8
+governance/plans/socratic-loop/METHOD-CANON.md
+  s_cf0babc1e05d4a::t_4d94386afdb104 3-11
+governance/plans/socratic-loop/METHODOLOGIES.md
+  s_cf0babc1e05d4a::t_0265089c23364c 3-13
+governance/plans/socratic-loop/RECEIPTS.md
+  s_cf0babc1e05d4a::t_7290dcf8566421 4-12
+governance/plans/socratic-loop/TAXONOMY.md
+  s_cf0babc1e05d4a::t_5483211705be4c 3-9
+governance/plans/wave-automation-registry/E1-REGISTRY-CORE.md
+  s_cf0babc1e05d4a::t_fae020be9dae9e 4-10
+governance/plans/wave-automation-registry/E2-IMPORT-CATEGORIZE.md
+  s_cf0babc1e05d4a::t_f4b11ef277ff7b 4-10
+governance/plans/wave-automation-registry/E3-CLEANUP-PARKING.md
+  s_cf0babc1e05d4a::t_f7d6a7d7a9bcbc 4-11
+governance/plans/wave-automation-registry/E4-STRUGGLE-MINER-TIEIN.md
+  s_cf0babc1e05d4a::t_a311a3f3c116be 4-10
+governance/plans/wave-automation-registry/E5-CUTOVER-VALIDATION.md
+  s_cf0babc1e05d4a::t_af904c656a4442 4-14
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_b4d5c1b2536fce 3-7
+governance/plans/wave-principals/E1-MODEL.md
+  s_cf0babc1e05d4a::t_764f09f4e00e1e 1-99
+governance/plans/wave-principals/E2-ROLES.md
+  s_cf0babc1e05d4a::t_f9e4b6cbadede2 1-94
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_cf0babc1e05d4a::t_20caa1515c1640 1-122
+governance/plans/wave-principals/E4-GRANTS.md
+  s_cf0babc1e05d4a::t_775a839861fda5 1-123
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_cf0babc1e05d4a::t_5d4eaa40fa8624 1-112
+governance/plans/wave-principals/E6-AUDIT.md
+  s_cf0babc1e05d4a::t_9474ae54b9d32b 1-94
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_cf0babc1e05d4a::t_7584c74cc51859 1-97
+governance/plans/wave-principals/NORTH-STAR.md
+  s_cf0babc1e05d4a::t_4ac2a5146613e0 1-210
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_cf0babc1e05d4a::t_6a22861f81eea9 5-17,26-29,35-43,51,54-58,81-96
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_cf0babc1e05d4a::t_e2a20a60a57fdd 296-478
+governance/recall/BAKE-OFF.md
+  s_cf0babc1e05d4a::t_b4aec9efa2803c 55,57,59-60,74-305,373,381,395-503
+governance/recall/eval/repo-corpus.manifest.json
+  s_cf0babc1e05d4a::t_928fadc6d055a8 16-18,21-36,56-57,78-81,98-123,132-168,170-175,177-197,200-215,218-226,246-307,322-340,373-387,392,396-421,428-454,486-495,519-520,528-554,556-574,596-611,613,621-644,650,652-653
+governance/recall/eval/repo-eval-set.json
+  s_cf0babc1e05d4a::t_46002779899b1b 36
+governance/reviewer-policy.json
+  s_cf0babc1e05d4a::t_7ffc2215988399 1-202
+governance/runbooks/wave-sec-gate-pin-audit.md
+  s_cf0babc1e05d4a::t_687b8d83267161 1-137
+governance/state/ffmpeg-pin-registry.json
+  s_cf0babc1e05d4a::t_c64be702b03b56 1-213
+governance/state/trust-surface-launch-claims.json
+  s_cf0babc1e05d4a::t_a846e372646e77 1-20
+governance/state/trust-surface/index.html
+  s_cf0babc1e05d4a::t_acabb9b0e7f278 1-303
+governance/state/trust-surface/trust-surface.json
+  s_cf0babc1e05d4a::t_bcc99cf83816ce 1-7788
+governance/test/artifact-count-regression.test.mjs
+  s_cf0babc1e05d4a::t_aa8a6107b6695d 15,86-87,91
+governance/test/artifact-source-audit.test.mjs
+  s_cf0babc1e05d4a::t_51b81466bff43e 11,17,140,270
+governance/test/cfos-trial-killswitch.test.mjs
+  s_cf0babc1e05d4a::t_e2b289f5ded6d1 1-314
+governance/test/check-classify.test.mjs
+  s_cf0babc1e05d4a::t_4d73c04da137ff 1-184
+governance/test/cockpit-render.test.mjs
+  s_cf0babc1e05d4a::t_67d9635dd5cc7c 139-176
+governance/test/command-cwd-heredoc-budget.test.mjs
+  s_cf0babc1e05d4a::t_09968c575a6352 1-117
+governance/test/committed-not-scheduled.test.mjs
+  s_cf0babc1e05d4a::t_e1752964a99647 1-167
+governance/test/distribute-bump-shape.test.mjs
+  s_cf0babc1e05d4a::t_d311c35c7051ba 1-272
+governance/test/enforce-secrets.test.mjs
+  s_cf0babc1e05d4a::t_cca5b0a7210c53 1-250
+governance/test/enforce.test.mjs
+  s_cf0babc1e05d4a::t_1ec458032f1774 4-8,11,14-15
+governance/test/epic-status-missing-root.test.mjs
+  s_cf0babc1e05d4a::t_3081513ed7701f 1-99
+governance/test/epic-status-unterminated-receipt.test.mjs
+  s_cf0babc1e05d4a::t_1961fe8ff15ee3 1-69
+governance/test/ffmpeg-pin-lint.test.mjs
+  s_cf0babc1e05d4a::t_12b07fcc7d36d1 1-223
+governance/test/fleet-cli.test.mjs
+  s_cf0babc1e05d4a::t_02db7a7953bb99 3-26,76-228
+governance/test/gate-audit-args.test.mjs
+  s_cf0babc1e05d4a::t_c03389e58c4e3a 33-41,53-62,120-136
+governance/test/git-files-scanset.test.mjs
+  s_cf0babc1e05d4a::t_a760ae999f82ea 12,16,59,87,106
+governance/test/hook-contract-lint.test.mjs
+  s_cf0babc1e05d4a::t_a645cf23e09e7f 151-190
+governance/test/installation-authority-audit-args.test.mjs
+  s_cf0babc1e05d4a::t_98f8a6637d3ab9 1-122
+governance/test/interactive-sessions.test.mjs
+  s_cf0babc1e05d4a::t_4df0071b689bad 1-106
+governance/test/lib/enforce-harness.mjs
+  s_cf0babc1e05d4a::t_15cde4669a6588 1-44
+governance/test/lib/rm-fixture.mjs
+  s_cf0babc1e05d4a::t_dd694f2fd4b382 1-34
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_cf0babc1e05d4a::t_940f63a5113915 190-202,204-214,223-264
+governance/test/merge-time-artifact.test.mjs
+  s_cf0babc1e05d4a::t_c81d9bb49e7f05 1-60
+governance/test/monolith-manifest.test.mjs
+  s_cf0babc1e05d4a::t_ebf729bdd2bd4d 18,24,70,108,132,158,196,231,253-254,283-285,302
+governance/test/monolith-triage-refusals.test.mjs
+  s_cf0babc1e05d4a::t_dfcd2c3654ecd6 24,27,66,88,105,136-138,161,197
+governance/test/monolith-triage.test.mjs
+  s_cf0babc1e05d4a::t_c8957639b1e301 25,28,151,168,203
+governance/test/port-kit-manifest-closure.test.mjs
+  s_cf0babc1e05d4a::t_b7501362defa47 1-76
+governance/test/pr-check-health-fetch.test.mjs
+  s_cf0babc1e05d4a::t_1c34596b8697e1 1-365
+governance/test/pr-check-health-platform.test.mjs
+  s_cf0babc1e05d4a::t_5728643a2bfc47 1-358
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_cf0babc1e05d4a::t_370bf7e5d38dc0 1-398
+governance/test/pr-check-health-stall.test.mjs
+  s_cf0babc1e05d4a::t_a4a0d66aa48637 1-199
+governance/test/pr-check-health-surfaces.test.mjs
+  s_cf0babc1e05d4a::t_0842bfe9056ce6 1-277
+governance/test/pr-check-health.test.mjs
+  s_cf0babc1e05d4a::t_96b20bc27f2d45 1-391
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  s_cf0babc1e05d4a::t_b1d861d6c280b0 1-102
+governance/test/resolve-generated-conflicts-fixture.mjs
+  s_cf0babc1e05d4a::t_3a31d84a65ece8 1-73
+governance/test/resolve-generated-conflicts-order.test.mjs
+  s_cf0babc1e05d4a::t_c68f1d583030f4 1-41
+governance/test/resolve-generated-conflicts.test.mjs
+  s_cf0babc1e05d4a::t_5c37038d730dc6 3,6-9,13-16,116-170
+governance/test/reversible-store.test.mjs
+  s_cf0babc1e05d4a::t_2d137161b9831a 26-30
+governance/test/review-liveness-args.test.mjs
+  s_cf0babc1e05d4a::t_dbdc8b9f54e305 1-111
+governance/test/review-liveness-pending.test.mjs
+  s_cf0babc1e05d4a::t_8b22e9ab1a4b63 40-76
+governance/test/reviewer-census-fixture.mjs
+  s_cf0babc1e05d4a::t_1bba4fdfe28457 1-70
+governance/test/reviewer-census-schema.test.mjs
+  s_cf0babc1e05d4a::t_446ffafd510ce0 1-182
+governance/test/reviewer-census.test.mjs
+  s_cf0babc1e05d4a::t_99c2d76d5ee144 1-191
+governance/test/reviewer-demand-shaping.test.mjs
+  s_cf0babc1e05d4a::t_ad3435aa5c9dac 1-151
+governance/test/reviewer-ignore-sync.test.mjs
+  s_cf0babc1e05d4a::t_6ed39d5c038570 1,4-6,8-15,17-19,24-27,29-39,45-52,54,56-66,68,72-75,82-83,87,94-95,99,103-104,108-155,162-163
+governance/test/reviewer-policy.test.mjs
+  s_cf0babc1e05d4a::t_38d94d3d1c8749 1-327
+governance/test/secret-provisioning-audit.test.mjs
+  s_cf0babc1e05d4a::t_175492f140b737 13,18,320,336,345
+governance/test/status-trigger-coupling.test.mjs
+  s_cf0babc1e05d4a::t_4df3499ed99ca7 134-343
+governance/test/thread-resolution-args.test.mjs
+  s_cf0babc1e05d4a::t_957f3e8ddabefc 1-99
+governance/test/trust-surface-gen.test.mjs
+  s_cf0babc1e05d4a::t_7445d6c9750de0 1-396
+governance/test/vendor-schema-combinator.test.mjs
+  s_cf0babc1e05d4a::t_0480702c0cbac9 1-228
+governance/test/vendor-schema-fetch.test.mjs
+  s_cf0babc1e05d4a::t_3fb3ea97b19bd1 1-203
+governance/test/vendor-schema-fixture.mjs
+  s_cf0babc1e05d4a::t_d833340dd489ad 1-26
+governance/test/vendor-schema.test.mjs
+  s_cf0babc1e05d4a::t_835a364c37cb30 1-196
+governance/test/wave-sec-corridor-repo-filter.test.mjs
+  s_cf0babc1e05d4a::t_e4f8e694c55421 1-201
+governance/test/wave-sec-corridor.test.mjs
+  s_cf0babc1e05d4a::t_d878b7b4a78c33 1-367
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_cf0babc1e05d4a::t_cb9f7487642695 1-119
+governance/test/wave-sec-gate-pin-classify.test.mjs
+  s_cf0babc1e05d4a::t_29cc9f3d0bf71b 1-317
+governance/test/wave-sec-lane-isolation.test.mjs
+  s_cf0babc1e05d4a::t_cf573689cbb376 1-141
+governance/test/wave-sec-scanners.test.mjs
+  s_cf0babc1e05d4a::t_88dc5f6d562318 294-322,324-336
+governance/test/wave-sec-sentry.test.mjs
+  s_cf0babc1e05d4a::t_555c7d12e5579b 143-220
+governance/work-state.json
+  s_cf0babc1e05d4a::t_a430676a4a293a 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,76-78,80-83,86-89,92-95,98-101,104-107,110-113,117-119,123,136-141,144-145,147-149,152-153,155-157,160-161,163-165,168-173,176-177,179-181,184-185,187-189,192-193,195-197,201-204,208-209,218
+hookcli/bin/hookcli-settings-gen.mjs
+  s_cf0babc1e05d4a::t_e3548f6f834157 88-93
+hookcli/bin/lefthook-gen.mjs
+  s_cf0babc1e05d4a::t_e5180cf0a2caa2 29-48
+hookcli/lib/eval-t1.sh
+  s_cf0babc1e05d4a::t_6c99217dfa940d 30-37
+hookcli/rules/rules.json
+  s_cf0babc1e05d4a::t_4fb36f55f8d80c 530-547
+hookcli/schema/rule.schema.json
+  s_cf0babc1e05d4a::t_fee7ab4b7e1739 39-43
+hookcli/tests/lefthook-gen-yaml.sh
+  s_cf0babc1e05d4a::t_1752c50b8d1fca 1-61
+hookcli/tests/lib/modules.sh
+  s_cf0babc1e05d4a::t_95bb3f34a46e59 18-22
+hookcli/tests/plan-receipt.sh
+  s_cf0babc1e05d4a::t_3cd3183101def2 86-88,92-93
+hookcli/tests/require.sh
+  s_cf0babc1e05d4a::t_b97319f8212b00 68,71-73,75-76
+hooks/lib/mcp-merge-authority-decide.mjs
+  s_cf0babc1e05d4a::t_f8ffd40d179867 1-162
+hooks/mcp-merge-authority-gate.mjs
+  s_cf0babc1e05d4a::t_f70fa2b406166a 24-30,56-83,189-263,267-268
+hooks/research-bank.sh
+  s_cf0babc1e05d4a::t_dcfdebcbf7df2e 1-175
+hooks/tests/push-target-not-protected-default.test.sh
+  s_cf0babc1e05d4a::t_0d05d7000736ac 1-42
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_cf0babc1e05d4a::t_3da78bab6e4a27 34,53
+rules/enforcement-defense-in-depth-lattice.md
+  s_cf0babc1e05d4a::t_ff9d096527ab49 53
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_cf0babc1e05d4a::t_9a1a40428c843b 27-28
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_cf0babc1e05d4a::t_4e8b3bce60a85d 1-174
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  s_cf0babc1e05d4a::t_6620ef2589a181 1-138
+settings/hooks.d/research-bank.json
+  s_cf0babc1e05d4a::t_31a70271bd9cf8 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d8067d6b2e5abe112706626087f73b19a1ed4e52",
+  "prompts": {},
+  "sessions": {
+    "s_cf0babc1e05d4a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a434d8a909811a77b",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

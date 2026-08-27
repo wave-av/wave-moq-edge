@@ -1,0 +1,23 @@
+runbooks/library/partner-npu-roadmap-questions.md
+  s_ee374fdf782767::t_48ca9d9e563888 1-50
+runbooks/library/edge-audio-watch-tripwire-query.md
+  s_ee374fdf782767::t_a20303ef8c813c 1-82
+governance/graph.json
+  s_ee374fdf782767::t_dd89f22206c7d9 10005-10017,10070-10083,36711-36728,36813-36824
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0c015e709daa2d7b36c53c45b4e533e32a347f47",
+  "prompts": {},
+  "sessions": {
+    "s_ee374fdf782767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e20f63ea-8846-4609-bc0b-ebc7bdd03bfc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

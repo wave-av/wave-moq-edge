@@ -1,0 +1,28 @@
+scripts/fleet/redeploy.sh
+  s_6c1c1be138dfd4::t_4168a28e5ea892 4-6,8-33,35-49,51-54,56-58,60
+scripts/fleet/README.md
+  s_6c1c1be138dfd4::t_d45a543b02f9e0 7-23,27,29,33-35,39-55,60-64
+scripts/fleet/conformance.sh
+  s_6c1c1be138dfd4::t_8b0e1fd657fb80 4,15,18,34,36-37,40-42,65-66,75,79-81,84-90,102-103,114-115,120-123,128
+  s_6c1c1be138dfd4::t_164c3bfee9002d 19-30
+  s_6c1c1be138dfd4::t_9fe198fdabe006 3,5-13,17,32,35,38-39,43-58,60-64,67-74,76-78,82-83,91-101,104-113,116-119,124
+  s_6c1c1be138dfd4::t_a2f226ce0a6430 59
+.github/workflows/renovate-reaper.yml
+  s_6c1c1be138dfd4::t_2bc2806991aa2a 32-36,39-40,45-60,62-78,80,85-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7a7dadf79fab97f77abfa10319de5c4a73b7b12b",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

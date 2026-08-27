@@ -1,0 +1,47 @@
+governance/DASHBOARD.md
+  s_15127d80763110::t_5f0215e2ed51a0 25
+governance/bin/public-release-gate-audit.mjs
+  s_c24357e71ae5bc::t_080adf1f5dbe07 49-51,166-183,273-282,354-357
+governance/graph.json
+  s_15127d80763110::t_b346ef6e080524 6857-6869
+governance/lib/public-release-gate.mjs
+  s_c24357e71ae5bc::t_dbea3a94c00ecc 140-181
+governance/lib/vendored-gate-probe.mjs
+  s_c24357e71ae5bc::t_68f774d299873e 1-116
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_c24357e71ae5bc::t_95fee6834204f3 8-13,59-60,63-111
+governance/plans/waveform-hero/DR-AUDIO-SOURCE.md
+  s_c24357e71ae5bc::t_5c30faba2e8560 1-63
+governance/plans/waveform-hero/epic.md
+  s_c24357e71ae5bc::t_0057558048c923 6-8,23-26
+governance/schema/graph.schema.json
+  s_c24357e71ae5bc::t_a5a03aacf05058 61
+governance/test/public-release-gate-audit.test.mjs
+  s_c24357e71ae5bc::t_da23c0c2d39ff7 17,401-451
+governance/test/vendored-gate-probe.test.mjs
+  s_c24357e71ae5bc::t_7efb0953bd5d67 1-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0254b757e62182f794d47f3f680b744eb899b0c3",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

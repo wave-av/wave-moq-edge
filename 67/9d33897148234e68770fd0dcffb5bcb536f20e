@@ -1,0 +1,38 @@
+governance/plans/render-qa/NORTH-STAR.md
+  s_02abc74f4971c7::t_4450f366fdde59 50
+  s_02abc74f4971c7::t_9e230ccee8516e 52
+  s_02abc74f4971c7::t_c5a146a5c282e3 94
+  s_02abc74f4971c7::t_77538434a71baf 69
+  s_02abc74f4971c7::t_304b1bc1d38bcf 79
+governance/plans/render-qa/E-ENFORCE.md
+  s_02abc74f4971c7::t_2c0e4eab8112b6 46
+  s_02abc74f4971c7::t_3283acfb92e251 34
+  s_02abc74f4971c7::t_1f8cbfb066a0b7 59
+  s_02abc74f4971c7::t_75c3d6106f927c 28
+  s_02abc74f4971c7::t_52d47f6ac9945f 44
+governance/plans/render-qa/E-VISION.md
+  s_02abc74f4971c7::t_9ff6744ba4e247 38
+  s_02abc74f4971c7::t_6615db801aa5c8 26
+governance/plans/render-qa/E-PRODUCT.md
+  s_02abc74f4971c7::t_b70a33791e13cb 59
+  s_02abc74f4971c7::t_4ab078e9cff3ef 35
+  s_02abc74f4971c7::t_29feb592fed2d3 42
+governance/graph.json
+  s_02abc74f4971c7::t_39f5628caefe40 5071
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "679d33897148234e68770fd0dcffb5bcb536f20e",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

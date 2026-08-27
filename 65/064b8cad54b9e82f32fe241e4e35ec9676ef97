@@ -1,0 +1,25 @@
+governance/lib/drill-fixtures-outtree.mjs
+  s_60a20469ef4369::t_61afb333d5d13e 1-109
+governance/lib/drill-decide.mjs
+  s_60a20469ef4369::t_bb6bdf170fef2c 1-191
+governance/bin/gate-liveness-drill.mjs
+  s_60a20469ef4369::t_a965d36735616d 11-15,30-32,40-42,52-54,95-96,164-183
+governance/code-index/index.json
+  s_60a20469ef4369::t_daee4a2d80cc4b 12892-12893,12901,12914-12915,12958-12959
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "65064b8cad54b9e82f32fe241e4e35ec9676ef97",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

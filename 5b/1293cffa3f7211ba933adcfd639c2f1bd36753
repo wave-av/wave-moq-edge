@@ -1,0 +1,51 @@
+governance/plans/merge-readiness-required/NORTH-STAR.md
+  s_d9915bbafa9657::t_26c8021418939b 1-88
+governance/plans/merge-readiness-required/E3-REQUIRE.md
+  s_d9915bbafa9657::t_a58e87d5fd944b 1-21
+governance/plans/merge-readiness-required/E0-MEASURE.md
+  s_d9915bbafa9657::t_db17bfb4534d2d 1-19
+governance/plans/one-system-of-record/NORTH-STAR.md
+  s_d9915bbafa9657::t_0578611865b5e9 1-95
+governance/plans/absence-never-reads-as-pass/E1-DETECT.md
+  s_d9915bbafa9657::t_71459ee25921b9 1-21
+governance/plans/absence-never-reads-as-pass/E2-SWEEP.md
+  s_d9915bbafa9657::t_fe3254f45d72e8 1-17
+governance/plans/absence-never-reads-as-pass/NORTH-STAR.md
+  s_d9915bbafa9657::t_f48b90b0e9c17b 1-75
+governance/plans/lawbook-fleet-distribution/NORTH-STAR.md
+  s_d9915bbafa9657::t_7feb2a995ed647 1-84
+governance/plans/receipt-bus/NORTH-STAR.md
+  s_d9915bbafa9657::t_05f6250bd1d25a 1-97
+governance/plans/merge-readiness-required/E2-SHADOW.md
+  s_d9915bbafa9657::t_d068d56b9a9c4a 1-17
+governance/plans/reviewer-liveness-billing/NORTH-STAR.md
+  s_d9915bbafa9657::t_83427157ece9fb 1-88
+governance/plans/platform-status-consumers/NORTH-STAR.md
+  s_d9915bbafa9657::t_f8dd82d89df04c 1-94
+governance/plans/absence-never-reads-as-pass/E0-CLASS.md
+  s_d9915bbafa9657::t_ad4479c2df993f 1-17
+governance/plans/agent-lease-protocol/NORTH-STAR.md
+  s_d9915bbafa9657::t_7b75d371952351 1-75,77-90
+  s_d9915bbafa9657::t_129caf776d9f68 76
+governance/plans/merge-readiness-required/E1-COMPOSE.md
+  s_d9915bbafa9657::t_82ccb31aedc0c8 1-8,10-19
+  s_d9915bbafa9657::t_8498790c6758d1 9
+governance/graph.json
+  s_d9915bbafa9657::t_e50dafac0c480b 2301-2352,2470-2482,6777-6789,6972-7036,7778-7790,7973-7985,8337-8349,8675-8687,21012-21047,30762-30803
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5b1293cffa3f7211ba933adcfd639c2f1bd36753",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

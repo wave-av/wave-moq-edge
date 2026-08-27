@@ -1,0 +1,42 @@
+hooks/tests/wrangler-deploy-wrapper.test.sh
+  s_d9915bbafa9657::t_51e3b275959ccd 1-93
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_6f5132ece19f5c 147,153-159
+  s_d9915bbafa9657::t_baae61b5f88090 1-139
+  s_d9915bbafa9657::t_7263a81e89b132 140-146,148-152,160-161
+hooks/hooklib/shell-wrapper-payload.sh
+  s_d9915bbafa9657::t_d9c77f5ddc10ee 1-87
+hooks/tests/wrangler-deploy-gate.test.sh
+  s_d9915bbafa9657::t_d8970e4a4f49d4 253-256
+  s_d9915bbafa9657::t_e5b0b598b0106e 257
+hooks/tests/hook-fail-closed.test.sh
+  s_d9915bbafa9657::t_aa7c2a92c340d9 127-133
+hooks/wrangler-deploy-gate.sh
+  s_d9915bbafa9657::t_3fcae76f4b379b 12-21,26,33,35-49,51-56,61-63,65-71,74-75,84-92,94
+hooks/manifest.json
+  s_3f8c7150c113b9::t_657724e04e1edd 2026
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e7ee303eb066dacfb93d0bbe9dd0a0d7f31099ea",
+  "prompts": {},
+  "sessions": {
+    "s_3f8c7150c113b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a63e13d7daff5c449",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

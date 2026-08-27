@@ -1,0 +1,38 @@
+governance/lib/zizmor-ratchet.mjs
+  s_f126fb3b7cae07::t_2b3d54eaa93399 1-96
+.github/actionlint.yaml
+  s_f126fb3b7cae07::t_ab0fcc1f4d4d4a 1-14
+governance/test/zizmor-ratchet.test.mjs
+  s_f126fb3b7cae07::t_de1544997a5933 1-154
+.github/workflows/static-analysis.yml
+  s_f126fb3b7cae07::t_8bc764bfb0f870 1-93
+.github/workflows/auto-merge.yml
+  s_f126fb3b7cae07::t_44d50367735317 332-333
+  s_f126fb3b7cae07::t_6062224265a8f5 166
+governance/bin/zizmor-ratchet.mjs
+  s_f126fb3b7cae07::t_23b4336b7cbacc 27-47
+  s_f126fb3b7cae07::t_b35b0ed087cf27 1-26,48-62,66,69,71-99
+  s_f126fb3b7cae07::t_ff06d0e6fb2748 63-65,67-68,70
+.github/zizmor-baseline.json
+  s_f126fb3b7cae07::t_9167cc8e9a5981 1-27
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_8c6da1ddae8e51 5,3373-3388,4478-4484
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_e1bb018f4cbc43 9-10,12-13,30148-30290,38551-38594
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0edc1873ba56a7bccf98cba136f91b96507c44a1",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

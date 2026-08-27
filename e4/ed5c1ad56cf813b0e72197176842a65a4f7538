@@ -1,0 +1,27 @@
+hookcli/bin/distill-report.mjs
+  s_60a20469ef4369::t_2b33950971af0b 28-37
+  s_60a20469ef4369::t_6988d68a8f925a 93-94
+  s_60a20469ef4369::t_80c712e8f91fb4 105
+  s_60a20469ef4369::t_ef0ecee3dec3cc 156-178
+  s_60a20469ef4369::t_098f4070742830 201-209,216
+  s_60a20469ef4369::t_21e33818569372 253-254
+hookcli/tests/distill-report.sh
+  s_60a20469ef4369::t_120b7a2216c668 175-177
+  s_60a20469ef4369::t_57f7224bd4e8df 146-174,178-211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e4ed5c1ad56cf813b0e72197176842a65a4f7538",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

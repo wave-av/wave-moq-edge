@@ -1,0 +1,28 @@
+governance/test/review-liveness-path-filtered.test.mjs
+  s_c24357e71ae5bc::t_cea46bac6e790a 1-94
+governance/lib/review-markers.mjs
+  s_c24357e71ae5bc::t_9f6d0675dcbf7b 46-61
+  s_c24357e71ae5bc::t_b0572bf76ee135 89-120
+.github/workflows/unearned-approval-guard.yml
+  s_c24357e71ae5bc::t_d823f8521334e2 223
+governance/lib/review-liveness-rules.mjs
+  s_c24357e71ae5bc::t_e19b0980e5dcd5 234,239,246-255
+  s_c24357e71ae5bc::t_55a87a4fb015f2 15
+  s_c24357e71ae5bc::t_bfb075196a7f1b 256
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c6197d47399137af659c7c208d68f46fb6d7e718",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

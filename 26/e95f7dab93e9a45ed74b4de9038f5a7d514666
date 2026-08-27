@@ -1,0 +1,19 @@
+hooks/hooklib/attester-scope-writetest.sh
+  s_9041cf1cf1ccad::t_8292cef4d7a7b5 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "26e95f7dab93e9a45ed74b4de9038f5a7d514666",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

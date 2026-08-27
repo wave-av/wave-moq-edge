@@ -1,0 +1,27 @@
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_63c6ee080d73c3::t_9229c0edeea1d3 2,4-5,9-20,22,24-25,27,29-32,34-47,49,51,53-59,61-63,65-72,74-100,103-130
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_63c6ee080d73c3::t_8d650708a572e7 4-6
+  s_63c6ee080d73c3::t_fd182a5ebb74d9 23-79
+  s_63c6ee080d73c3::t_5b1c570d97e2dd 133-139
+governance/graph.json
+  s_63c6ee080d73c3::t_dcea58d4bd33c7 5300,5304-5307
+governance/plans/public-supply-chain/NORTH-STAR.md
+  s_63c6ee080d73c3::t_e0fab2fc8cf426 148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "52a3ae25e713b24e579665f6fe60f5d1c87f3afd",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

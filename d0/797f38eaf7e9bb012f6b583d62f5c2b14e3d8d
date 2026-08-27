@@ -1,0 +1,133 @@
+.github/workflows/main-break-detector.yml
+  s_9e49fb2dab61f0::t_fd8786a90c3fc1 20-25
+governance/ENFORCEMENT-BASELINE.json
+  s_9e49fb2dab61f0::t_97ef756fb8ab54 12-13,169,209,214,224-225
+governance/ENFORCEMENT-COVERAGE.md
+  s_9e49fb2dab61f0::t_7f201125048472 5,9-10,12,14,28,35,46,55,60-61,81,83,104-105,113,116-117,141,148,183-184,186,210,227,239,255,261,263,287,290,322-323,334,338-339,368,376,430-431,435
+governance/LATTICE-BASELINE.json
+  s_9e49fb2dab61f0::t_2d0b14e3cfde2d 1-172
+governance/bin/hook-release.mjs
+  s_9e49fb2dab61f0::t_37a42b9056145c 54,346,359-360,366
+governance/bin/lattice-check.mjs
+  s_9e49fb2dab61f0::t_eccb45f29dcdbe 1-86
+governance/bin/main-break-detector.mjs
+  s_9e49fb2dab61f0::t_3013554fdb887a 20-28,37-44,53,58
+governance/contract.md
+  s_9e49fb2dab61f0::t_509b502df76ec2 57,59
+governance/lib/release-identity.mjs
+  s_9e49fb2dab61f0::t_29bc2d14bd930d 1-215
+governance/lib/release-status.mjs
+  s_9e49fb2dab61f0::t_13a79fccf784b1 44,55-59,61-62,89,100-101
+governance/plans/dispatch-moat/E0-MOAT-STATEMENT.md
+  s_9e49fb2dab61f0::t_071f74435e44d9 1-14
+governance/plans/dispatch-moat/E1-TRUTH-LOOP.md
+  s_9e49fb2dab61f0::t_1f91bc3eb66a39 1-14
+governance/plans/dispatch-moat/E2-TRANSITION-PRODUCT.md
+  s_9e49fb2dab61f0::t_cf9c35da1cf0a2 1-14
+governance/plans/dispatch-moat/E3-VARIANCE-GATE.md
+  s_9e49fb2dab61f0::t_c35a4d560b67ce 1-14
+governance/plans/dispatch-moat/E4-AGENT-ACTIONABLE.md
+  s_9e49fb2dab61f0::t_708e0187bc8eb3 1-14
+governance/plans/dispatch-moat/E5-FUNNEL-SURFACE.md
+  s_9e49fb2dab61f0::t_d6a2a68f47dd8a 1-14
+governance/plans/dispatch-moat/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_a666da431bf4a9 1-42
+governance/plans/llm-funnel-gateway/E0-FUNNEL-DEPLOY.md
+  s_9e49fb2dab61f0::t_943acf29407090 1-22
+governance/plans/llm-funnel-gateway/E1-ROUTER-POLICY.md
+  s_9e49fb2dab61f0::t_e3fb23e148cffd 1-22
+governance/plans/llm-funnel-gateway/E2-EXECUTION-FAILOVER.md
+  s_9e49fb2dab61f0::t_2b4caf288f0e46 1-14
+governance/plans/llm-funnel-gateway/E3-COST-BUDGETING.md
+  s_9e49fb2dab61f0::t_144cd28bcbccd5 1-14
+governance/plans/llm-funnel-gateway/E4-VIRTUAL-KEYS.md
+  s_9e49fb2dab61f0::t_775e04cfe0b484 1-14
+governance/plans/llm-funnel-gateway/E5-GUARDRAILS.md
+  s_9e49fb2dab61f0::t_8e0177aacd0be3 1-14
+governance/plans/llm-funnel-gateway/E6-CACHING.md
+  s_9e49fb2dab61f0::t_2fbd4e3b1f31c8 1-14
+governance/plans/llm-funnel-gateway/E7-OBSERVABILITY.md
+  s_9e49fb2dab61f0::t_9b8e0ea94aabe8 1-14
+governance/plans/llm-funnel-gateway/E8-SPEND-ANALYTICS.md
+  s_9e49fb2dab61f0::t_7eb874f1a5c061 1-14
+governance/plans/llm-funnel-gateway/E9-ENTERPRISE.md
+  s_9e49fb2dab61f0::t_2ef3ac1c9b74ba 1-14
+governance/plans/llm-funnel-gateway/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_e6b8da26ccb1aa 1-44
+governance/plans/session-deliverable-registry/PLATFORM-ARCHITECTURE.md
+  s_9e49fb2dab61f0::t_72fac2cfac1f93 1-66
+governance/plans/session-deliverable-registry/PLATFORM-MAP.md
+  s_9e49fb2dab61f0::t_81b99011a926e8 1-179
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-26-INFERENCE-PLANE.md
+  s_9e49fb2dab61f0::t_338c26b5ef35b9 1-25
+governance/test/lattice-check.test.mjs
+  s_9e49fb2dab61f0::t_b97638bff8cfef 1-70
+governance/test/main-break-detector.test.mjs
+  s_9e49fb2dab61f0::t_239d771b92c1f5 1-129
+governance/test/release-identity-io.test.mjs
+  s_9e49fb2dab61f0::t_ddb466c41db0fc 1-130
+governance/test/release-identity.test.mjs
+  s_9e49fb2dab61f0::t_5c8990209e9106 1-72
+governance/test/release-status.test.mjs
+  s_9e49fb2dab61f0::t_c825200833489e 19,33,39,46-57,64-65,72-73
+hooks/tests/hook-release-status-exit.test.sh
+  s_9e49fb2dab61f0::t_a100c9dab95496 53-61
+memory/MEMORY.md
+  s_9e49fb2dab61f0::t_7ec58b88b0df89 24
+memory/fleet-todo-ledger.md
+  s_9e49fb2dab61f0::t_13ed1e67422c9a 459,514
+memory/model-ops-map.md
+  s_9e49fb2dab61f0::t_d20e8e5902a6cd 1-1001
+rules/api-first-four-renderings.md
+  s_9e49fb2dab61f0::t_6257e1de9d8741 1-6
+rules/claim-to-receipt.md
+  s_9e49fb2dab61f0::t_2e728667f8f7cc 1-6
+rules/containers.md
+  s_9e49fb2dab61f0::t_7ab19df4ab0744 1-6
+rules/designs-grounded-in-the-real-system.md
+  s_9e49fb2dab61f0::t_92e2890977a989 1-6
+rules/dispatch-moat.md
+  s_9e49fb2dab61f0::t_56ff8127643420 1-6
+rules/dogfood.md
+  s_9e49fb2dab61f0::t_e5605507a7f1aa 1-6
+rules/fleet-rig-probe.md
+  s_9e49fb2dab61f0::t_583095fd7b666f 1-6
+rules/four-renderings-or-half-shipped.md
+  s_9e49fb2dab61f0::t_71fcdce3f77f95 1-6
+rules/leverage-or-build.md
+  s_9e49fb2dab61f0::t_81ad3bcfb358e9 1-6
+rules/llm-funnel-gateway.md
+  s_9e49fb2dab61f0::t_d50d8ab3b172d9 1-6
+rules/meter-the-value-not-the-connector.md
+  s_9e49fb2dab61f0::t_7c592957bba8ad 1-6
+rules/model-registry-is-the-source-of-truth.md
+  s_9e49fb2dab61f0::t_57fd04e85a3e9c 1-6
+rules/model-routing-is-data-not-opinion.md
+  s_9e49fb2dab61f0::t_e5a021a73218cf 1-6
+rules/rebuild-not-pull.md
+  s_9e49fb2dab61f0::t_c919c4fdee8ed1 1-6
+rules/routing-plane-unification.md
+  s_9e49fb2dab61f0::t_9e866959346b24 1-6
+rules/variance-before-routing.md
+  s_9e49fb2dab61f0::t_8bef9d70b241c7 1-6
+rules/vendor-agnostic-by-default.md
+  s_9e49fb2dab61f0::t_f0b2d69cf2f792 1-6
+rules/voice-law.md
+  s_9e49fb2dab61f0::t_2a84848c9b59e1 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d0797f38eaf7e9bb012f6b583d62f5c2b14e3d8d",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

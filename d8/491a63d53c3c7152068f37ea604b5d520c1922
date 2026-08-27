@@ -1,0 +1,52 @@
+.github/workflows/governance-enforce.yml
+  s_b456a35ca35727::t_e353d491d53e2a 1-52
+schema/tiers.schema.ts
+  s_b456a35ca35727::t_764315c9b95f2a 1-81
+tsconfig.json
+  s_b456a35ca35727::t_ab03a806777f6d 1-7,9-20
+  s_b456a35ca35727::t_99c0a0c7dac5ee 8
+.github/workflows/ci.yml
+  s_b456a35ca35727::t_5c8fbfb1c966aa 1-46
+CODEOWNERS
+  s_b456a35ca35727::t_6480b1e0eceb7a 1-2
+SECURITY.md
+  s_b456a35ca35727::t_8567746e248267 1-25
+LICENSE
+  s_b456a35ca35727::t_8b1ebb0c461ecf 1-6
+.wave/repo.json
+  s_b456a35ca35727::t_5c738d51013b81 1-64
+docs/ADR-0001-live-config-is-the-repo.md
+  s_b456a35ca35727::t_b1bd545d95d1c7 1-81
+package.json
+  s_b456a35ca35727::t_bf495e694d195d 2-12,15-20
+scripts/lib.ts
+  s_b456a35ca35727::t_0bafa673de74a7 1-63
+scripts/validate.ts
+  s_b456a35ca35727::t_fb33e1ba437c8c 1-27
+package-lock.json
+  s_587096120f3e43::t_1e0a1578315df1 2-3,8-9,12-17,32-69,73-107,112-115,117-120,124,129-132,134-171,175,180-183,185-188,192,197-200,202-307,311,316-319,321-341,345-447,452-484,515-523,539-548,591-632,661-675,810-849,894-897
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d8491a63d53c3c7152068f37ea604b5d520c1922",
+  "prompts": {},
+  "sessions": {
+    "s_587096120f3e43": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00e7fa8f1ffe3My52EdHjIQr8W",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_b456a35ca35727": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00e7ff0a3ffeSYZAPwOA2HUdzc",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

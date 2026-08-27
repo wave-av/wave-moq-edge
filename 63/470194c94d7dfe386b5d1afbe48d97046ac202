@@ -1,0 +1,33 @@
+governance/plans/ci-stack-integration/E2-NAMESPACE-DEEPEN.md
+  s_7326a769c7efe8::t_5a7fc187ecc497 2,6-13,15-24,28-36,38,40,43-45,47,50-51
+  s_7326a769c7efe8::t_2b9ac73f6ff0ae 4
+governance/plans/ci-stack-integration/E3-SONARQUBE-SELFHOST.md
+  s_7326a769c7efe8::t_22567e6c06d032 4
+governance/plans/ci-stack-integration/E4-GITAR-EVAL.md
+  s_7326a769c7efe8::t_cf50f88f272c31 4
+governance/plans/ci-stack-integration/E1-TRUNK-FLAKE-GATE.md
+  s_7326a769c7efe8::t_4ccd4fb694b0a4 4
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_7326a769c7efe8::t_5ac7b378672d99 20-21
+governance/plans/ci-stack-integration/NORTH-STAR.md
+  s_7326a769c7efe8::t_302353fcbbcdad 71-75
+  s_7326a769c7efe8::t_60c4a9ae714b63 5
+governance/plans/ci-stack-integration/E0-FOUNDATION.md
+  s_7326a769c7efe8::t_f1f11b9dae2a68 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "63470194c94d7dfe386b5d1afbe48d97046ac202",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

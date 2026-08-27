@@ -1,0 +1,35 @@
+governance/test/gateway-secret-parity.test.mjs
+  s_15127d80763110::t_bdb8d6b034605a 18,20
+governance/bin/fleet/lib/gateway-parity-workflow-scan.mjs
+  s_15127d80763110::t_3da3011a36e7eb 1-112
+governance/test/gateway-parity-workflow-scan.test.mjs
+  s_15127d80763110::t_aa97168a1d0ccc 1-138
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_15127d80763110::t_d8d48fd3f00fe4 65-84
+  s_15127d80763110::t_7352aaa721adba 124
+  s_15127d80763110::t_f36d98cdc55555 297
+  s_15127d80763110::t_bb3c5fc9dfa556 133
+  s_15127d80763110::t_3e8f28d6fe6d2d 244
+  s_15127d80763110::t_77e3c14869f1cf 146-149
+  s_15127d80763110::t_d5a2edaff7e106 44-45
+  s_15127d80763110::t_2482320ff37aa8 161-173
+governance/bin/fleet/lib/gateway-parity-classify.mjs
+  s_15127d80763110::t_c8d739745ae23a 41-47
+  s_15127d80763110::t_f5812dbabc4656 178-195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2af9a2ce68a0df367a859a7139bd79413aafddd2",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

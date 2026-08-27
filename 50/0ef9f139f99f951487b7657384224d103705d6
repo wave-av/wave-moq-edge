@@ -1,0 +1,25 @@
+governance/bin/wave-cost-ledger-registry-sync.mjs
+  s_2e30bff6169f7a::t_3a6574435d8f7f 1-112
+governance/lib/wave-cost-ledger-write.mjs
+  s_2e30bff6169f7a::t_7f4b36d629c7cb 1-93
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_960f2cee216efa 5,3257-3266,4469-4476
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_9d6dbd03a6cc19 9-10,12-13,29136-29212,38409-38463
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "500ef9f139f99f951487b7657384224d103705d6",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

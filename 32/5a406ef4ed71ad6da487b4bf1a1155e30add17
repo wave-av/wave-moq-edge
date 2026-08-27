@@ -1,0 +1,19 @@
+governance/plans/wave-writer/NORTH-STAR.md
+  s_1971c67a3e762c::t_d69653f5065047 42-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "325a406ef4ed71ad6da487b4bf1a1155e30add17",
+  "prompts": {},
+  "sessions": {
+    "s_1971c67a3e762c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdea4a7f2ffe62ZlQUFoD60qK5",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/plans/network-edge-plane/ADR/lens-review-multi-pin-2026-08-25.md
+  h_91e57a3221f2ff 1-56
+governance/plans/network-edge-plane/RCA/0001-dim-override-negated-chassis-fix.md
+  h_91e57a3221f2ff 1-31
+governance/plans/network-edge-plane/RCA/0002-label-is-not-auto-merge.md
+  h_91e57a3221f2ff 1-29
+governance/plans/network-edge-plane/RCA/0003-migrate-tokens-off-by-one.md
+  h_91e57a3221f2ff 1-32
+governance/plans/network-edge-plane/RUNBOOK.md
+  h_91e57a3221f2ff 56-65
+governance/plans/network-edge-plane/doc-types.md
+  h_91e57a3221f2ff 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e6b7014950d4a811988608a9f362279285f8f005",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

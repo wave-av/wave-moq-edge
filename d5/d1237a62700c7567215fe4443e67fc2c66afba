@@ -1,0 +1,28 @@
+governance/lib/execsync-match.mjs
+  s_dccee6b7677203::t_0764b454e01650 1-58
+governance/test/no-execsync-lint.test.mjs
+  s_dccee6b7677203::t_96b49d97c9bca8 1-78
+governance/bin/no-execsync-lint.mjs
+  s_dccee6b7677203::t_5548f22abfbb5b 18
+  s_dccee6b7677203::t_1413bbda3a2e9b 47-49
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_4ebe988b7f99c9 5,1852-1858
+governance/code-index/index.json
+  s_dccee6b7677203::t_821ec99ba73be2 7,10,16696-16697,16707-16708,16718-16719,16729-16730,16740-16741,16751-16752,16762-16763
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "d5d1237a62700c7567215fe4443e67fc2c66afba",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

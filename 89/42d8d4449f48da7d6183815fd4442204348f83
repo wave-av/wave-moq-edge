@@ -1,0 +1,33 @@
+third_party/agent-plugins-spec/README.md
+  s_e077f59d8037ec::t_4e8369902d3e0c 1-29
+third_party/agent-plugins-spec/LICENSE
+  s_0f19133d33385f::t_049ac300aaac23 1-202
+third_party/agent-plugins-spec/schemas/1.0.0/mcp.schema.json
+  s_0f19133d33385f::t_62a7d5c4e46c53 1-120
+third_party/agent-plugins-spec/schemas/1.0.0/plugin.schema.json
+  s_0f19133d33385f::t_abf17db4f7ae01 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8942d8d4449f48da7d6183815fd4442204348f83",
+  "prompts": {},
+  "sessions": {
+    "s_0f19133d33385f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a0cd0a49b3623ff53",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

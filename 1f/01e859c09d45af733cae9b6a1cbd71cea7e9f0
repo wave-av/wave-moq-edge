@@ -1,0 +1,38 @@
+governance/bin/struggle-miner/collect-review-bots.mjs
+  s_37e24b4d920e09::t_25ec2c4b45e938 1-33,40-78
+  s_37e24b4d920e09::t_87f611b91fae6c 34-39
+governance/test/struggle-miner/collect-review-bots.test.mjs
+  s_37e24b4d920e09::t_3b05ee3958b375 1-23
+governance/test/struggle-miner/fixtures/gh-pr-review-comments.json
+  s_37e24b4d920e09::t_c1de145ae5b94a 1-5
+governance/bin/struggle-miner-scan.sh
+  s_37e24b4d920e09::t_e4fdcd4f855b5b 31
+governance/code-index/CATALOG.md
+  s_db1b2a792e5f25::t_9cf96030b0c8e0 5,2751-2760
+governance/code-index/index.json
+  s_db1b2a792e5f25::t_3a5a28c51b9f4d 6-7,9-10,24753-24829
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "1f01e859c09d45af733cae9b6a1cbd71cea7e9f0",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

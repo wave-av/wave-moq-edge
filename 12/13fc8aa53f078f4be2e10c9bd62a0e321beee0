@@ -1,0 +1,21 @@
+runbooks/bin/backfill.mjs
+  s_a293da4db5caf2::t_898459b6a9d415 11,14-17
+  s_a293da4db5caf2::t_9d0408defd7c5f 35,38-40,43
+  s_a293da4db5caf2::t_727c1b7121218f 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1213fc8aa53f078f4be2e10c9bd62a0e321beee0",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

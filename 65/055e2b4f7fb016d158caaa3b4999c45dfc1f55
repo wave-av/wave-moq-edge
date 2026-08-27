@@ -1,0 +1,19 @@
+governance/bin/model-registry.mjs
+  s_0213641ac58af6::t_cf61bd8fdb4513 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "65055e2b4f7fb016d158caaa3b4999c45dfc1f55",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

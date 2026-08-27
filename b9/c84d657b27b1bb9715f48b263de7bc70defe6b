@@ -1,0 +1,37 @@
+governance/tools/meta-sieve/manifests/governance.json
+  s_ea7fda6a228496::t_d023d4f637e160 1-14
+governance/tools/meta-sieve/lib/index.mjs
+  s_ea7fda6a228496::t_5a7d734bdf95a9 77
+  s_ea7fda6a228496::t_270f0189477b61 114-116
+  s_ea7fda6a228496::t_e6fadc3f28b15f 103-108,118-120,128
+  s_ea7fda6a228496::t_a08e9943f8ef41 1-76,78-101,110-113,117,130-134,137-139,142,145,148-215
+  s_ea7fda6a228496::t_25b80f0a7cced4 102,109,121-127,129
+  s_ea7fda6a228496::t_dc27a203b723dd 135-136,140-141,143-144,146-147
+governance/tools/meta-sieve/bin/meta-sieve.mjs
+  s_ea7fda6a228496::t_c85e95c1e02451 10-16
+  s_ea7fda6a228496::t_e9b2d45215a654 18
+  s_ea7fda6a228496::t_d74743af662c01 1-9,17,19-90
+governance/tools/meta-sieve/tests/meta-sieve.test.mjs
+  s_ea7fda6a228496::t_b4ca22c4311f26 27
+  s_ea7fda6a228496::t_f7520be8c5a8da 1-26,28-35
+governance/tools/meta-sieve/README.md
+  s_ea7fda6a228496::t_614e5e45f63c4b 1-20
+governance/tools/meta-sieve/package.json
+  s_ea7fda6a228496::t_dba9c440ab3e88 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b9c84d657b27b1bb9715f48b263de7bc70defe6b",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

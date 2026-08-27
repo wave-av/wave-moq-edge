@@ -1,0 +1,68 @@
+scripts/travel/__tests__/claude-wrapper.test.sh
+  s_be28a864be8c45::t_1b605764b44d8c 125-153
+  s_be28a864be8c45::t_c9664af707121b 40-46,51-54,57-61
+scripts/travel/air-latency-logger.sh
+  s_be28a864be8c45::t_4016261f31cbfe 49-50
+scripts/travel/statusline-segments.sh
+  s_be28a864be8c45::t_423c3d09bff9fa 194
+scripts/local-llm/redact-learnings.py
+  s_be28a864be8c45::t_f8a0c73413f1fa 186-193
+scripts/travel/claude-wrapper.sh
+  s_be28a864be8c45::t_aa67bd6e5e8fa2 35-54
+  s_be28a864be8c45::t_26e6c37c57f8e3 113-122
+  s_be28a864be8c45::t_86809efaea6c2a 92-95
+  s_be28a864be8c45::t_d30317138734d5 87-91,96-99,101-103
+scripts/travel/pre-flight-travel.sh
+  s_be28a864be8c45::t_33b3ae9ef032eb 21-35
+  s_be28a864be8c45::t_def288dd2a0bdb 155-168,170-175
+scripts/local-llm/rotate-learnings.sh
+  s_be28a864be8c45::t_727a21555272f6 11-18
+  s_be28a864be8c45::t_0127771620e823 66
+  s_be28a864be8c45::t_8105406e438938 29-30,32
+  s_be28a864be8c45::t_d554360351e8d1 73
+  s_be28a864be8c45::t_f9648aee7b6787 65
+scripts/travel/air-zerostate-check.sh
+  s_be28a864be8c45::t_6a95e9f0ebb116 49
+.claude/skills/travel/SKILL.md
+  s_be28a864be8c45::t_845280a36499fb 25,28-33
+  s_be28a864be8c45::t_44c7003e285512 72-77
+  s_672079ccfe8ce6::t_ed432d7ca2d0c9 34
+scripts/travel/finalize-air.sh
+  s_be28a864be8c45::t_bf6bff050913dc 119
+docs/runbooks/travel/pre-trip-operator-checklist.md
+  s_be28a864be8c45::t_4441c98c094ab5 96-98,101-124,130-131
+docs/runbooks/travel/OPERATOR-ACTIONS.md
+  s_be28a864be8c45::t_af9a54d0d1e1e0 108-150
+scripts/travel/pre-flight-check.sh
+  s_be28a864be8c45::t_c189114ed99e76 161,164-169
+  s_be28a864be8c45::t_ffec0e83a07bfb 22-26
+  s_be28a864be8c45::t_abd5e925e5d6cc 54
+  s_be28a864be8c45::t_d41e8581d1e7ff 57-62,64-68,70-97,105,107-108
+  s_be28a864be8c45::t_df0bd8bfccaa09 2-11
+  s_be28a864be8c45::t_bd4931aa0f3d31 98-104,106
+  s_be28a864be8c45::t_1c7b8437d68fe4 142,146,149-151,153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "dcb3bbf971fd54f8e916a7a1c53f621213920bee",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be28a864be8c45": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e3c5cdf8-b158-494c-92bb-b93dd5f09c28",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

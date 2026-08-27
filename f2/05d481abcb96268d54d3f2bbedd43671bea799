@@ -1,0 +1,29 @@
+governance/bin/gate-liveness-drill.mjs
+  s_375efeac18ed55::t_b77178fa438b44 27-29,193-196
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_ee7de8ed79ea8c 5,1148-1149,1153-1158
+governance/code-index/index.json
+  s_375efeac18ed55::t_47abe3087b582b 7,9,11064-11065,11076-11078,11119-11120,11130-11131,11141-11142,11152-11153,11163-11164,11174-11175
+governance/lib/drill-fixtures-core.mjs
+  s_375efeac18ed55::t_c80fa727bb4154 1-285
+governance/lib/drill-fixtures-drift.mjs
+  s_375efeac18ed55::t_43518b58fa482d 1-108
+governance/test/drift-check.test.mjs
+  s_375efeac18ed55::t_45dafa305fea1e 16,47-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f205d481abcb96268d54d3f2bbedd43671bea799",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

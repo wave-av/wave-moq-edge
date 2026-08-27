@@ -1,0 +1,24 @@
+rules/every-web-surface-tells-a-grounded-wow-story.md
+  s_6e7ad4df769349::t_3634b080b4127d 1-41
+governance/graph.json
+  s_6e7ad4df769349::t_faafd9712d081c 215-220
+  s_6e7ad4df769349::t_7f33254e351716 214,5052-5075
+governance/contract.md
+  s_6e7ad4df769349::t_19e834fb4d7adb 44,48,50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "e2c33e190eeadea340c9f3dc32241c0b4262c7f6",
+  "prompts": {},
+  "sessions": {
+    "s_6e7ad4df769349": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "91274c95-abfb-4ffd-b243-f2916d2e4e07",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

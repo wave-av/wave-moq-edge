@@ -1,0 +1,34 @@
+governance/plans/mlvc-api-plane/E2-SDK.md
+  s_aa7175dac0d161::t_ec1dac59d6d8c8 1-16
+tools/wave-codec.mjs
+  s_aa7175dac0d161::t_38793d1f6c54ed 1-75
+governance/plans/mlvc-api-plane/E0-CLI.md
+  s_aa7175dac0d161::t_03a7bac26fd3fb 1-16
+governance/plans/mlvc-api-plane/E1-SERVICE.md
+  s_aa7175dac0d161::t_616f6da143e741 1-16
+governance/plans/mlvc-api-plane/NORTH-STAR.md
+  s_aa7175dac0d161::t_fcc6358bc0b7e8 1-35
+governance/plans/mlvc-api-plane/E3-MCP.md
+  s_aa7175dac0d161::t_942b77dda2b211 1-16
+governance/plans/mlvc-api-plane/E4-EDGE-SPOKE.md
+  s_aa7175dac0d161::t_c040751e274021 1-16
+governance/DANGLING-REFS-BASELINE.json
+  s_aa7175dac0d161::t_6bd381b3e69aa3 8
+  s_aa7175dac0d161::t_576b2048df6b52 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e4b4ebb66f6f8c9fc7cc78e33b5acbdfb082ebb7",
+  "prompts": {},
+  "sessions": {
+    "s_aa7175dac0d161": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8d1f582ffeidnAvbIYoRIAAD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+hookcli/tests/plan-receipt.sh
+  s_1c0352e957b5f6::t_7727e36034abd3 92-94
+hookcli/tests/require.sh
+  s_1c0352e957b5f6::t_c6a516c3b0f0c8 75-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c37b8d16c09d4957c4925074d411dd4d2e28105b",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

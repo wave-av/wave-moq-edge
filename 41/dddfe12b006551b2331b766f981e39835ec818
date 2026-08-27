@@ -1,0 +1,43 @@
+governance/plans/runtime-economy/research/SOURCE-REFERENCE.md
+  s_2b4acc7ceba309::t_a7616c920d081f 1-57
+governance/plans/cordis-dogfood/PAPER-GROUND.md
+  s_2b4acc7ceba309::t_a6007bcda41925 1-28
+governance/plans/own-model-program/E5-E5-PRODUCTIZE.md
+  s_0f536580ccd1cb::t_bce7d9a32509e4 19-20
+governance/plans/own-model-program/E3-E3-EVAL-GATE.md
+  s_0f536580ccd1cb::t_aa8c07f230d73b 21-23
+governance/plans/own-model-program/creative/SYNTHESIS.md
+  s_0f536580ccd1cb::t_25318b0472f616 1-170
+governance/plans/own-model-program/E1-E1-TRAIN.md
+  s_0f536580ccd1cb::t_43d8f11a212dbe 21-22
+governance/plans/own-model-program/E4-E4-ECONOMY.md
+  s_0f536580ccd1cb::t_f9b0f28981f4d9 20-21
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_0f536580ccd1cb::t_ff78bfa5f704c4 21-22
+governance/plans/own-model-program/NORTH-STAR.md
+  s_0f536580ccd1cb::t_a73091c1f9db70 9-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "41dddfe12b006551b2331b766f981e39835ec818",
+  "prompts": {},
+  "sessions": {
+    "s_0f536580ccd1cb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffeca13eaffe8xOrhGqgskNMZI",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

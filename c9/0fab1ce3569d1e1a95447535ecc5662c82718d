@@ -1,0 +1,21 @@
+governance/plans/namespace-substrate/profiles-as-code/cache-experiment.sh
+  s_52031f4510959b::t_85ce1b057c2548 19-26,55-63,65-66,80-86,115-118,241-243
+governance/plans/namespace-substrate/profiles-as-code/lib/ci-runner-var.sh
+  s_52031f4510959b::t_64b4dace4878be 1-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c90fab1ce3569d1e1a95447535ecc5662c82718d",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

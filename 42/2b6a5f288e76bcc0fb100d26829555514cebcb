@@ -1,0 +1,20 @@
+governance/lib/wave-sec-trufflehog.mjs
+  h_67a1b847dc59d6 13,23-26,75-81,83,88-89,92-95,101-104,109,112-113,116,121-127,131-134,136-163
+governance/test/wave-sec-fakebin.mjs
+  h_67a1b847dc59d6 10-17,20-24
+governance/test/wave-sec-scanners.test.mjs
+  h_67a1b847dc59d6 202-207,210,217,250
+governance/test/wave-sec-trufflehog-git.test.mjs
+  h_67a1b847dc59d6 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "422b6a5f288e76bcc0fb100d26829555514cebcb",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

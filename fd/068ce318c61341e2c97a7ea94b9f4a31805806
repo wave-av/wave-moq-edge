@@ -1,0 +1,21 @@
+governance/test/dep-graph.test.mjs
+  s_cf363a68d60e93::t_bb8241db11268e 1-17
+governance/lib/dep-graph.mjs
+  s_cf363a68d60e93::t_2545f825219c93 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "fd068ce318c61341e2c97a7ea94b9f4a31805806",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

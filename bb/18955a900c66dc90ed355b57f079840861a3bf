@@ -1,0 +1,43 @@
+governance/plans/runtime-learning-loop/bin/measure-tier.mjs
+  s_2b4acc7ceba309::t_9d417c73bcd9f7 1-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bb18955a900c66dc90ed355b57f079840861a3bf",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8767ce81cadb71": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff40227feffextbUZsMCw2pbyv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a358eb4226cf44": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff461d970ffeG18f0vFRyuPt3M",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_bb7c7611500027": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4069a7fffeIvXBa9cmeB39G6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

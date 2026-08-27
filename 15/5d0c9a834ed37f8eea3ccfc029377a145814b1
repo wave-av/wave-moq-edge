@@ -1,0 +1,29 @@
+governance/bin/fleet/reviewer-config-census.mjs
+  s_2fd4e0c1ae6a7a::t_b0284fbc826646 46,50-58
+  s_2fd4e0c1ae6a7a::t_a13b0500cd174a 59
+  s_1911ebcba68c5b::t_8c912a7a48309c 60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "155d0c9a834ed37f8eea3ccfc029377a145814b1",
+  "prompts": {},
+  "sessions": {
+    "s_1911ebcba68c5b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6241c250-fea2-40f2-adae-61d7344441fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

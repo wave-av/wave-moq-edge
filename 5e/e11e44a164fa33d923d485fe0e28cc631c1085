@@ -1,0 +1,33 @@
+governance/plans/wave-rl-signal-intake/E1-REDACT.md
+  s_0950865aa49634::t_7c7ab6e4b47920 4
+  s_0950865aa49634::t_29c14e73d37cb0 55-131
+governance/lib/rl-corpus-write.mjs
+  s_0950865aa49634::t_756c6f06302984 55-64
+  s_0950865aa49634::t_0114e3d16dc50a 1-29,54,65-94,98,110,112-122,132-133,135-176
+  s_0950865aa49634::t_4feecb09a238c5 30-53
+  s_0950865aa49634::t_26a7f9aaec7ca7 123-131,134
+  s_0950865aa49634::t_c4590f307d7583 95-97,99-109,111
+governance/test/rl-corpus-write.test.mjs
+  s_0950865aa49634::t_167f0d53579549 149-176
+  s_0950865aa49634::t_16b6a61bd5b4d0 1-87,90-111,114-122,125-148,177-188
+  s_0950865aa49634::t_ea5c5369566cb4 189-225
+  s_0950865aa49634::t_63bade0ba22b2d 88-89
+  s_0950865aa49634::t_d1982a8e4d35ce 112-113
+  s_0950865aa49634::t_2f7054647283f4 123-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5ee11e44a164fa33d923d485fe0e28cc631c1085",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

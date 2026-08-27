@@ -1,0 +1,64 @@
+governance/plans/vendor-sweep/RECEIPTS-livekit-removal-2026-08-23.md
+  s_2c3553393d207a::t_f8815fe43976a3 226-266
+  s_fcbb5c63beb287::t_9254f37fdc4a49 197-224
+  s_44a57120739c8c::t_a99f71c2081982 282-389
+  s_bd995ffad8e910::t_d0df7c6d16b160 390-414
+  s_ff092089ee9f28::t_9ecc09df1fc0fc 225,267-281
+  s_9bb1b1d1d998d4::t_36972e5e072efb 1-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "31566523b19d6dfba8b2aa3ba990140d8016b28e",
+  "prompts": {},
+  "sessions": {
+    "s_2c3553393d207a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcb689903ffeHR8vuXUWkuwJqD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_44a57120739c8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcb6889daffeoDwpjdPZ1oMAg8",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_bd995ffad8e910": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcb580483ffepaWuk7c0yZuXrj",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_fcbb5c63beb287": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcbb09bc5ffe6iIqycSODupmXz",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_ff092089ee9f28": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcb68b037ffeWsLoa4XhG06UNF",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

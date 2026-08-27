@@ -1,0 +1,61 @@
+governance/plans/wave-linear/E2-IDENTITY.md
+  s_63c6ee080d73c3::t_894e90f499bcb0 87-89
+  s_63c6ee080d73c3::t_ae70eeca428703 84-86
+  s_63c6ee080d73c3::t_4ae27513870ed9 90-92
+  s_63c6ee080d73c3::t_a08edbe3ea5c43 1-83,93-134
+governance/plans/wave-linear/NORTH-STAR.md
+  s_63c6ee080d73c3::t_77e3894b716215 1-20,22-171
+  s_63c6ee080d73c3::t_806bbd0ee0a0ad 21
+governance/plans/wave-linear/RECEIPTS.md
+  s_63c6ee080d73c3::t_f656b282196a28 1-179
+governance/plans/wave-linear/E0-GROUND.md
+  s_28b98d1e38fc94::t_f6d70ac40737c6 1-157
+governance/plans/wave-linear/E1-SCHEMA.md
+  s_28b98d1e38fc94::t_70f3f7054649d7 1-200
+governance/plans/wave-linear/E10-HERITAGE.md
+  s_28b98d1e38fc94::t_e0daaff5a80739 1-137
+governance/plans/wave-linear/E11-INSIGHTS.md
+  s_28b98d1e38fc94::t_c8bfe412f087c0 1-115
+governance/plans/wave-linear/E12-COST.md
+  s_28b98d1e38fc94::t_23c98f0cd805b4 1-130
+governance/plans/wave-linear/E13-UTILIZATION.md
+  s_28b98d1e38fc94::t_0672afd08aa00b 1-167
+governance/plans/wave-linear/E3-SESSIONS.md
+  s_28b98d1e38fc94::t_8f13b2976cb84a 1-176
+governance/plans/wave-linear/E4-CONTRACT.md
+  s_28b98d1e38fc94::t_d83d0d9e94d667 1-153
+governance/plans/wave-linear/E5-COMMITMENTS.md
+  s_28b98d1e38fc94::t_3437c40736da04 1-155
+governance/plans/wave-linear/E6-HANDOFF.md
+  s_28b98d1e38fc94::t_ba0e0502f551ba 1-149
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_28b98d1e38fc94::t_7748b7d83fa6b0 1-216
+governance/plans/wave-linear/E8-LIVENESS.md
+  s_28b98d1e38fc94::t_01feab8768f6fb 1-150
+governance/plans/wave-linear/E9-CUSTOMER.md
+  s_28b98d1e38fc94::t_a76f77d47ebdec 1-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3569b3a86dd4e70e1f789e49c58f67383c07af73",
+  "prompts": {},
+  "sessions": {
+    "s_28b98d1e38fc94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a300ae2d145ffd7a8",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

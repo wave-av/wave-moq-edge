@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/CORPUS.md
+  s_b44cc66a95c90c::t_cccec9ebaa2514 40-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f391cfb2098c1569e90af10271b33c5779ce6ae9",
+  "prompts": {},
+  "sessions": {
+    "s_b44cc66a95c90c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda5499cfffeSE96xc0msSskrr",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

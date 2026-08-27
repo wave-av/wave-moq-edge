@@ -1,0 +1,24 @@
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_124891ed63801b::t_c4ac39ebbf4cd8 1-3,5-6,8-183
+  s_124891ed63801b::t_34a511465f09cc 4,7
+governance/DASHBOARD.md
+  s_124891ed63801b::t_a7086ba7fa49c1 25
+governance/graph.json
+  s_124891ed63801b::t_58ced3f153a49a 3404-3416,20842-20853
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6d450baccb8e8a48a5cedea5296e1e4a06311b00",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

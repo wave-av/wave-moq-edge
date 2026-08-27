@@ -1,0 +1,22 @@
+bin/record-score.mjs
+  s_7ddeb5d251570f::t_545fe731c400fe 68-87
+bin/model-lifecycle.mjs
+  s_7ddeb5d251570f::t_8e26321ac1376d 20-26
+  s_7ddeb5d251570f::t_262b660fe8d1ef 57-73,85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d56a44fe1be8b29e48e74793d86760fddd2933c5",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

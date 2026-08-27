@@ -1,0 +1,20 @@
+.github/workflows/foundation-gate.yml
+  h_af5ac1a9798224 42
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/graph.json
+  h_af5ac1a9798224 19832-19837
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  h_af5ac1a9798224 277,280,282-283,286-290,293-307,313-348
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a982d66e369ed6514df0ca927c6093a75df35f15",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

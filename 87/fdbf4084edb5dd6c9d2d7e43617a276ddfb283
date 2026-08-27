@@ -1,0 +1,19 @@
+governance/plans/network-edge-plane/RUNBOOK.md
+  s_ea8755337f3c0d::t_325ebb3dc77820 1-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "87fdbf4084edb5dd6c9d2d7e43617a276ddfb283",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

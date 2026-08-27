@@ -1,0 +1,61 @@
+.github/workflows/wave-sec-gate.yml
+  s_d9915bbafa9657::t_b104e937ff791b 24-27,29-39,41,103-114,132-137
+docs/WAVE-SEC-GATE.md
+  s_d9915bbafa9657::t_eea08d21401f4c 1-112
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_97f4ab0222b209 25
+governance/graph.json
+  s_6f6453b23e3805::t_800b52263709db 2450-2452,2637-2727,18023-18028,18803-19162
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_d9915bbafa9657::t_5243d1c8ee8584 220-223,227-231,233-234
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_c9de85c1b7d903 27-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_909601369e4ce8 4-85,91-141,143-149,151,154-155,157-159,161-162,164-165,167,170-177,179-279,282-297,299,302-307,310-311,316-322,326-328,331-345,347-351
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_d9915bbafa9657::t_d5d8d603626ace 83-84,105,107-110,114-121
+governance/plans/ambient-console-auth/E1-DECISION.md
+  s_d9915bbafa9657::t_d9aa04a3de2ad5 1-76
+governance/plans/ambient-console-auth/E2-GATEWAY-MINT.md
+  s_d9915bbafa9657::t_e34c98bc244e7a 1-102
+governance/plans/ambient-console-auth/E3-CONSOLE-BROKER.md
+  s_d9915bbafa9657::t_8463cb141bff68 1-93
+governance/plans/ambient-console-auth/E4-PAGE-CUTOVER.md
+  s_d9915bbafa9657::t_87639055a31434 1-89
+governance/plans/ambient-console-auth/E4B-KEYS-REFRAME.md
+  s_d9915bbafa9657::t_17893ad9c9fa04 1-82
+governance/plans/ambient-console-auth/E5-PROOF.md
+  s_d9915bbafa9657::t_fccc5bba5ebbbe 1-73
+governance/plans/ambient-console-auth/NORTH-STAR.md
+  s_d9915bbafa9657::t_657268e04adb42 1-321
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_d9915bbafa9657::t_0eac49580ba29e 23-80,98,101-105,111,119,128,159-177,186-192
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_d9915bbafa9657::t_b4a7d3911f0a54 956-974
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_d9915bbafa9657::t_52ead570929c6c 8-13,15-21,27,34,36-40,69-95,104-113,120-139,150-167,171-172,177-193,208-218,247-261,269,276,280,287-288,298-325,331-351
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "95462d4c8589f22617b77c190d48fcca6fe2d013",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

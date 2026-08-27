@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/SCALE-LADDER.md
+  s_dedb333dd5195e::t_cfcbeff71933f5 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c04dce25fd9d581327fb55c56a55ba582571cef7",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

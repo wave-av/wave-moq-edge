@@ -1,0 +1,30 @@
+governance/bin/scrape-dwarkesh.mjs
+  s_09daead2fbc2a8::t_b4d403a3e29a49 1-78,80-275
+  s_09daead2fbc2a8::t_67a81b944eb4da 79
+governance/research/engineering-canon/origin-method.md
+  s_ea7fda6a228496::t_5e33085f049b13 1-172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7ef5a24fd7070f82f362a17eb051f61c30ffc455",
+  "prompts": {},
+  "sessions": {
+    "s_09daead2fbc2a8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007669763ffeTcSSdyN62SUlah",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

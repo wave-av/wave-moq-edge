@@ -1,0 +1,35 @@
+scaffolder/public-repo-guard/README.md
+  s_5f27fa5b8237cd::t_941901c83cc533 1-53
+scaffolder/public-repo-guard/content-policy.sh
+  s_5f27fa5b8237cd::t_9f313157f92e1f 1-81,83-84,93,95-143
+  s_5f27fa5b8237cd::t_5c2e8a9bec4181 82,85-92,94
+scaffolder/public-repo-guard/manifest.json
+  s_5f27fa5b8237cd::t_72bcb14a4d8364 1-11
+scripts/check-public-guard-drift.py
+  s_5f27fa5b8237cd::t_0b1ff9f8dbbfa6 1-47,56-180,182-233
+  s_5f27fa5b8237cd::t_105e2b7e41165e 48-55
+  s_5f27fa5b8237cd::t_e82c9fe09a262f 181
+scaffolder/public-repo-guard/public-repo-guard.yml
+  s_5f27fa5b8237cd::t_9f313157f92e1f 1-73
+.github/workflows/public-guard-drift.yml
+  s_5f27fa5b8237cd::t_b097cc7076f73a 1-65
+scaffolder/public-repo-guard/gitleaks.toml
+  s_5f27fa5b8237cd::t_9f313157f92e1f 1-25,27-46
+  s_5f27fa5b8237cd::t_389ff1953e0ba8 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "d628592e690979e724f2651cb259ebcec0b66cb1",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

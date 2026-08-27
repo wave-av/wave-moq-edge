@@ -1,0 +1,33 @@
+hooks/tests/ollama-num-ctx.test.sh
+  s_aa5feb34e0e033::t_4051dcaff0e858 1-49,56-101,122-140
+  s_aa5feb34e0e033::t_0b3bdc451a7cae 102-121
+  s_aa5feb34e0e033::t_604e4171e8031d 50-55
+hooks/local-llm/ollama-agent-validator.sh
+  s_d46122ac53ac6f::t_a59b011e8f5df0 51-73,84,89
+hooks/local-llm/ollama-helper.sh
+  s_d46122ac53ac6f::t_4fbc541bd01905 161-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7675c26b08199f5ff34661e07203177f7779adaf",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d46122ac53ac6f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5b1e6300-3f2d-46a2-9206-17f5f04551a8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/inference-isolation/E0-POOL-AUTHZ-FAILCLOSED.md
+  s_700cd0ad928eea::t_1d00f5a2630019 1-14
+governance/plans/inference-isolation/E1-TENANT-ISOLATION.md
+  s_700cd0ad928eea::t_60798f1d75ccde 1-14
+governance/plans/inference-isolation/E2-AGENT-ISOLATION.md
+  s_700cd0ad928eea::t_dae7a23dcab408 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7d05fbabfe25abf0e1947b8c7e3d51d8b7029168",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+wave-mcp/.claude-plugin/plugin.json
+  s_ccbb3091d0f293::t_f751a4a1f59fa8 3-4
+.claude-plugin/marketplace.json
+  s_ccbb3091d0f293::t_50a2f572d0fa6f 21-22
+scripts/claude/bootstrap-mcp.sh
+  s_ccbb3091d0f293::t_5ff4db16d99fa2 15-20,22
+wave-mcp/.mcp.json
+  s_ccbb3091d0f293::t_92dc739d9e6f34 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "30c792c5dd50c7e006a2d1302f056ace1dc76615",
+  "prompts": {},
+  "sessions": {
+    "s_ccbb3091d0f293": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ad29f8c-8cc4-4950-bdb4-6b0ec735d5f2",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

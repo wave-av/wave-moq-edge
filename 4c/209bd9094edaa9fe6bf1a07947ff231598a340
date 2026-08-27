@@ -1,0 +1,19 @@
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_04e8ed291ec717::t_e1a52e8b4b41fa 33-56,207-208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4c209bd9094edaa9fe6bf1a07947ff231598a340",
+  "prompts": {},
+  "sessions": {
+    "s_04e8ed291ec717": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aa13de69cf4126143",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

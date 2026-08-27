@@ -1,0 +1,21 @@
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_d9915bbafa9657::t_77cf04cf21d4dd 27-35
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  s_d9915bbafa9657::t_6ba9b3d5a354b6 41-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "43b60c17d316d6fa01778f12bf2fe4ea9a657ae2",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

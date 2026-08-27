@@ -1,0 +1,33 @@
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_bee5d8b62bb8e6 109-121
+hookcli/lib/t4-llm.sh
+  s_60a20469ef4369::t_7af00455326ac3 114,116-123
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_4dece307f199bf 115-123,125-145
+  s_60a20469ef4369::t_3baa9e612913c0 124
+hookcli/tests/fixtures/t4-rules.json
+  s_60a20469ef4369::t_cfa3b35397ff17 1-20
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_7f871f10af61a7 408-455
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_ed1c2ed2da744b 66-75
+  s_60a20469ef4369::t_ff45f32d4a7658 89-92
+hookcli/package.json
+  s_60a20469ef4369::t_b15e1e00a478e0 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "bc3a448105c5a8bd757f323f0c197e6dc1432d5c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

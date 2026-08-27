@@ -1,0 +1,27 @@
+scripts/bugbot/test_seats.py
+  s_e79878572ebace::t_af50cad837a6c7 46-47,49,51-52,60,64-83,89
+scripts/bugbot/seats.py
+  s_e79878572ebace::t_0c365286fbe469 71-75,77,79
+scripts/bugbot/audit_fable.py
+  s_e79878572ebace::t_f43ee0d7531273 5-9
+  s_e79878572ebace::t_0534a2083e7411 37-40
+  s_e79878572ebace::t_68e60e2b9aae4b 70-76,81-107,112-114,117,121-127,129-130,132-152,158-160
+scripts/bugbot/test_audit_fable.py
+  s_e79878572ebace::t_87da6e913a5df4 2-3,6-7,43-98,102-103,107-108,110-111,114,132-135,137-138,141-143,148,151-163,177,192,208,226-272,278-283,286,291-293
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "8494026012c60ed5dedaa9321e84fa05111da662",
+  "prompts": {},
+  "sessions": {
+    "s_e79878572ebace": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bf72283f-011a-4a7d-ac04-df70944c2b64",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

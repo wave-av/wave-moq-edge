@@ -1,0 +1,19 @@
+governance/test/taxonomy.test.mjs
+  s_dd42a206f882e3::t_9575eacbdaebbc 232-258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a196bd17fd500c76b4cd77668cd78a93aadb35c5",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

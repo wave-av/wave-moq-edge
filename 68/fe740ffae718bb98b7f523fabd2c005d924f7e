@@ -1,0 +1,20 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_31059bbfb27db3::t_036bbb58354ab7 9
+  s_31059bbfb27db3::t_10f6fae23d5163 167-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "68fe740ffae718bb98b7f523fabd2c005d924f7e",
+  "prompts": {},
+  "sessions": {
+    "s_31059bbfb27db3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feaf709f4ffevs77rSklawkjZD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

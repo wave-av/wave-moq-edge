@@ -1,0 +1,26 @@
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_124891ed63801b::t_0a49ae9d8093c8 40-64
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_124891ed63801b::t_16a7bf7c78ac6d 144-174
+  s_124891ed63801b::t_f24ce6f8163c50 48-59
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_ea9c746dce452f 18-24
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_c74e0f9313ff6e 104-110,114-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a5a8252e03af96c153502e2f30c16d68d7502c40",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

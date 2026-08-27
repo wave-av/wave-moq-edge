@@ -1,0 +1,21 @@
+hooks/public-content-leak-scan.sh
+  s_6f6453b23e3805::t_2889fde3ce56f4 50-56
+hooks/manifest.json
+  s_6f6453b23e3805::t_2d5a6db3e5375d 1227
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1479c399b7bccd5fad84f4278be09a36cd5394f8",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

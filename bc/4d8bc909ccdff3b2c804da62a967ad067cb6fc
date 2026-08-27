@@ -1,0 +1,35 @@
+governance/LAB-PARITY-BASELINE.json
+  s_9041cf1cf1ccad::t_e81987ae3b0620 1-51
+governance/bin/lab-parity.mjs
+  s_9041cf1cf1ccad::t_7d8f43e4f26409 1-167
+governance/plans/sovereign-lab-parity/E0-MEASURE.md
+  s_9041cf1cf1ccad::t_2ae3f5d45715e2 1-38
+governance/plans/sovereign-lab-parity/E1-TRAJECTORY-EMIT.md
+  s_9041cf1cf1ccad::t_ca99dd3c7ca0c0 1-65
+governance/plans/sovereign-lab-parity/E2-VERIFIED-ENVIRONMENTS.md
+  s_9041cf1cf1ccad::t_435ebeeb8b607c 1-46
+governance/plans/sovereign-lab-parity/E3-SERVING-TOPOLOGY.md
+  s_9041cf1cf1ccad::t_de78a12cd73c9e 1-45
+governance/plans/sovereign-lab-parity/E4-PROGRAM-SYNTHESIS.md
+  s_9041cf1cf1ccad::t_4552783be4fed3 1-34
+governance/plans/sovereign-lab-parity/E5-SILICON-DECISION.md
+  s_9041cf1cf1ccad::t_14314e7cefd435 1-42
+governance/plans/sovereign-lab-parity/NORTH-STAR.md
+  s_9041cf1cf1ccad::t_232adc229acad7 1-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bc4d8bc909ccdff3b2c804da62a967ad067cb6fc",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

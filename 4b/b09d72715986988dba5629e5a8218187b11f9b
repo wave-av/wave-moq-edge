@@ -1,0 +1,26 @@
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_7326a769c7efe8::t_21cd879e52525c 393-397
+  s_7326a769c7efe8::t_198217c3f3ddd8 22-24
+governance/plans/ci-stack-integration/E4-GITAR-EVAL.md
+  s_7326a769c7efe8::t_d048e2b8de3c8b 4
+governance/plans/ci-stack-integration/E1-TRUNK-FLAKE-GATE.md
+  s_7326a769c7efe8::t_4f61402ea4835b 4
+governance/plans/ci-stack-integration/E3-SONARQUBE-SELFHOST.md
+  s_7326a769c7efe8::t_2da0609f115d7e 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4bb09d72715986988dba5629e5a8218187b11f9b",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/test/xrepo-provisioning.test.mjs
+  s_02abc74f4971c7::t_66de42e90dbce7 8-16
+  s_02abc74f4971c7::t_e52ed20da08c66 133-135
+  s_02abc74f4971c7::t_2b46ab3c872bee 30-31,34,42,44,48,50-51,53
+  s_02abc74f4971c7::t_efdef7e006792e 154-172
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_1a7da66b2c0872 107-111,120
+.github/workflows/workflow-lint.yml
+  s_02abc74f4971c7::t_51afa918e90c96 219-241
+.github/scripts/provision-fleet-clones.sh
+  s_02abc74f4971c7::t_2b180616796658 1-188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "bf5447584081c21d60b936eca1b2d5822ffd7116",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

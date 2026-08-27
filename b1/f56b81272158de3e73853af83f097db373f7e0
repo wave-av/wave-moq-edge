@@ -1,0 +1,73 @@
+governance/bin/build.mjs
+  s_375efeac18ed55::t_a24daacd2cb0c4 106
+governance/bin/inject.mjs
+  s_375efeac18ed55::t_d1559e4a8053f9 25,33,148,154-156,159-160,187,189,228-237,239-245,249-250
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_b45754bd6aabb9 5,1773-1777,1779-1787,1790-1792,3771-3772,3774-3776,4764-4774,5033,5036
+governance/code-index/index.json
+  s_375efeac18ed55::t_637f56692d024d 9-10,12-13,15898-15899,15909-15910,15920-15921,15931-15932,15942-15943,15964-15965,15975-15976,15986-15987,15997-15998,16008-16009,16019-16020,16030-16031,16041-16042,16052-16053,16065-16066,16076-16077,16085-16086,16096,16098-16099,16107-16108,33289-33290,33300-33301,33323-33325,33333-33334,33344-33345,40649-40714,40716-40728,42683-42686,42716-42717,42729-42730
+governance/graph.json
+  s_375efeac18ed55::t_692bd523f8e849 5421-5426,5435-5439,5448-5451,5460-5464,5473-5477,5486-5491,5500-5504,5513-5516,5525-5528,5537-5542,5551-5556,5565-5569,5578-5581,5590-5594,5603-5607,5616-5620,5629-5633,5642-5647,5656-5660,5669-5674,5683-5686,5695-5699,5708-5712,5721-5724,5733-5737,5746-5749,5758-5761
+governance/lib/code-index-store.mjs
+  s_375efeac18ed55::t_bad6007efcd230 17-32
+governance/lib/runbook-nodes.mjs
+  s_375efeac18ed55::t_c2a789b2122e71 62-67
+governance/lib/runbook-relevance.mjs
+  s_375efeac18ed55::t_6cab22a38b0bb2 1-114
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_375efeac18ed55::t_7ebe1ddc6e1b0f 217,237-251,253-256
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_375efeac18ed55::t_46f39b91350912 4-9
+governance/plans/local-inference-integrity/E1-ENCODE.md
+  s_375efeac18ed55::t_9a3a4aade8fa69 4-9
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_375efeac18ed55::t_5519fb4032de1c 4-9
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_375efeac18ed55::t_ae20a014c4c123 4-9
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_375efeac18ed55::t_d107a4f0452d5a 4-11
+governance/plans/local-inference-integrity/E5-SIGNAL.md
+  s_375efeac18ed55::t_0624d87de6ebe3 4-7
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_375efeac18ed55::t_8518910d3ed315 4-9
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_375efeac18ed55::t_b8ad7305d98666 14-20,277-304
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_375efeac18ed55::t_5926171e975f2c 4-6,21-39
+governance/test/code-index.test.mjs
+  s_375efeac18ed55::t_5adf3381f853ca 86-122
+governance/test/runbook-relevance.test.mjs
+  s_375efeac18ed55::t_86835533a7a59a 1-137
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_375efeac18ed55::t_376073b54b9645 30,82,91,97,110,125,134,236-237,239,241
+governance/test/wave-cost-ledger-moq-backtest.test.mjs
+  s_375efeac18ed55::t_99f2b677791c88 1-146
+hooks/bin/runbook-use-runner.mjs
+  s_375efeac18ed55::t_c7f008be9f6811 47,58-62,95
+runbooks/bin/runbook.mjs
+  s_375efeac18ed55::t_ae5d6df4b587be 36,40-43,50,53-60,187-196,227-241,252
+runbooks/lib/calibrate.mjs
+  s_375efeac18ed55::t_37bf824f93b9c7 1-200
+runbooks/lib/fingerprint.mjs
+  s_375efeac18ed55::t_bf831484f3d961 1-121
+runbooks/lib/observe.mjs
+  s_375efeac18ed55::t_cd5c6a89632186 20-22,25,27-29,31-44,48-49,53,55-57,59-70,72,136-139,141,161,165-190
+runbooks/test/fingerprint.test.mjs
+  s_375efeac18ed55::t_9d9864311d4d63 1-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b1f56b81272158de3e73853af83f097db373f7e0",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

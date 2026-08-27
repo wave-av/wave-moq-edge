@@ -1,0 +1,26 @@
+scripts/merge-queue-health.test.mjs
+  s_0a76e16ab503c3::t_bdcae4442e9d94 117-136
+  s_0a76e16ab503c3::t_7bfb449ea8bde7 17-21,24-26
+  s_0a76e16ab503c3::t_ca743d8edcc161 38
+scripts/merge-queue-health.mjs
+  s_0a76e16ab503c3::t_e278567e95b541 173,175
+  s_0a76e16ab503c3::t_07a27d305e57d4 44-49
+  s_0a76e16ab503c3::t_5afe633420b607 106-107
+  s_0a76e16ab503c3::t_20a7fe0a556ccf 132-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c567ca6f754030f015c3301e66b83be69d37f387",
+  "prompts": {},
+  "sessions": {
+    "s_0a76e16ab503c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4f6176cc-2c66-4091-b533-06fe978917b1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

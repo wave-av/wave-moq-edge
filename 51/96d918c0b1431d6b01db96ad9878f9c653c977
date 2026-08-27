@@ -1,0 +1,25 @@
+governance/lib/epic-status-scan.mjs
+  s_264ae386838c57::t_450c62263873bf 21,27-82,86-89
+  s_264ae386838c57::t_b41002ec47ac93 112
+  s_264ae386838c57::t_3b75da32f64732 124-126
+governance/test/epic-status-partition.test.mjs
+  s_264ae386838c57::t_138db54d050436 113-168
+  s_264ae386838c57::t_27fb17cfd165f9 24
+  s_264ae386838c57::t_adca5a2196be7b 37-43,49-68,70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5196d918c0b1431d6b01db96ad9878f9c653c977",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

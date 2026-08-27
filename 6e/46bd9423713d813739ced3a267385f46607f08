@@ -1,0 +1,26 @@
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_75686a3a90e060 153-159
+  s_2fd4e0c1ae6a7a::t_197f93797c2189 169-171
+governance/plans/reviewer-fleet/RF-P6-POLICY-SSOT.md
+  s_2fd4e0c1ae6a7a::t_03c597b8db268b 1-213
+governance/DASHBOARD.md
+  s_2fd4e0c1ae6a7a::t_15b4b14fe8400a 25
+governance/graph.json
+  s_2fd4e0c1ae6a7a::t_83c4fa5dee06ca 4686-4698
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e46bd9423713d813739ced3a267385f46607f08",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

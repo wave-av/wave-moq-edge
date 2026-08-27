@@ -1,0 +1,54 @@
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run1.log
+  h_67a1b847dc59d6 1-74
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run2.log
+  h_67a1b847dc59d6 1-63
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run3.log
+  h_67a1b847dc59d6 1-32
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run4.log
+  h_67a1b847dc59d6 1-65
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run5.log
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run1.log
+  h_67a1b847dc59d6 1-46
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run2.log
+  h_67a1b847dc59d6 1-45
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run3.log
+  h_67a1b847dc59d6 1-44
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run4.log
+  h_67a1b847dc59d6 1-49
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run5.log
+  h_67a1b847dc59d6 1
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 24-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7940e285807c6c321606c43061348afa4e23f9cf",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/bin/enforcement-tables.mjs
+  s_e2e3e43d0638c5::t_212d2e230a8b4a 1-178
+.gitignore
+  s_e2e3e43d0638c5::t_3ee509b8ea9aa6 35-37
+governance/bin/enforcement-coverage.mjs
+  s_e2e3e43d0638c5::t_ddcdc32e9000d3 29-31,33,35
+  s_e2e3e43d0638c5::t_e0cc10d0dfac84 32,34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "1b6a2078b9f5ad0b38a943bf59fc731915091d31",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

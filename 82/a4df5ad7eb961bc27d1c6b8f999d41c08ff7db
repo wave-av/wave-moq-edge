@@ -1,0 +1,51 @@
+governance/test/law-ref-guard.test.mjs
+  s_37d3f61160b2dd::t_6841c1f69e1084 13-19,33-48,50,54-65,67,74-78,80-82,84,88,92,99,105-116,120-128,132-137,151,153-156,167-178,180-182
+  s_37d3f61160b2dd::t_f815a9d4e2af5a 1-12,20-22,24-32,66,68-73,86-87,89-91,93-98,100-104,117-119,129-131,138-149,152,157-160
+  s_37d3f61160b2dd::t_e30b0e5a1e2925 49,51-53
+  s_37d3f61160b2dd::t_f00328327ed49f 161-166,179,183-186
+  s_37d3f61160b2dd::t_54d7879450e6b5 79,83,85
+  s_37d3f61160b2dd::t_e1ea660c5aeff6 150
+  s_37d3f61160b2dd::t_2e727d00c175cb 23
+governance/test/stuck-queue-detect.test.mjs
+  s_37d3f61160b2dd::t_f2f2aff17586cc 1-51,57,60-85
+  s_37d3f61160b2dd::t_b0496f25ff2438 52-56,58-59
+governance/test/platform-status-probe-coupling.test.mjs
+  s_37d3f61160b2dd::t_89d8f7570bee0c 3-28,31,35,37-38,40-42,46-70,72-73,78-79,82,85-86
+governance/lib/platform-status-probes.mjs
+  s_37d3f61160b2dd::t_2dd046432d11ba 108
+  s_37d3f61160b2dd::t_ced5eaf0779d48 121-138
+.github/workflows/law-ref-guard.yml
+  s_37d3f61160b2dd::t_6fafb69e3e1537 11-18
+  s_700cd0ad928eea::t_e393ca1a036fc6 5-10,23,26-29,31,33-39,42
+governance/bin/law-ref-guard.mjs
+  s_37d3f61160b2dd::t_3ae4b530e6f167 6-26,36-44,47-62,65-66,68-81,84-95,97,100-124,126-127
+  s_37d3f61160b2dd::t_a2afd5483152af 30-34
+governance/bin/stuck-queue-detect.mjs
+  s_37d3f61160b2dd::t_d457e651793e1d 29-33
+  s_37d3f61160b2dd::t_18dc8ebc81a995 26-28
+  s_37d3f61160b2dd::t_973fe4d8812dea 3-25,36-82,84-130,132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "82a4df5ad7eb961bc27d1c6b8f999d41c08ff7db",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

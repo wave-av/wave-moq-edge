@@ -1,0 +1,34 @@
+hookcli/tests/emit-warn-ask.sh
+  s_60a20469ef4369::t_c5afa1409c0f9c 1-102
+hookcli/tests/gate-dispatch.sh
+  s_60a20469ef4369::t_1742e81d207129 1-112
+hookcli/tests/t4-llm.sh
+  s_60a20469ef4369::t_cca947ee7123c3 1-94
+hookcli/tests/source-write.sh
+  s_60a20469ef4369::t_068ee981a79a72 1-18
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_a5564f8cf1bb29 29,32-33,39-41,47-60
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_7a725f4b670c66 1-50
+hookcli/tests/t3-classifier.sh
+  s_60a20469ef4369::t_2a8f2d41689266 48
+  s_60a20469ef4369::t_440c4186f04baf 1-47,49-207
+hookcli/tests/settings-shard.sh
+  s_60a20469ef4369::t_edf86cec97cd6d 1-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0272e781153aeb46bca0823bf2d37903b897b88a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

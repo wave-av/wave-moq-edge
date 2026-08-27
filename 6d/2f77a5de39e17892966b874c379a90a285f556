@@ -1,0 +1,22 @@
+governance/plans/fleet-autonomy/NORTH-STAR.md
+  s_d2ff8f6ac6a5d5::t_bd6cdee0a13dc5 35
+governance/DANGLING-REFS-BASELINE.json
+  s_d2ff8f6ac6a5d5::t_e98e8ec401794b 155-159
+  s_d2ff8f6ac6a5d5::t_b33d9b604ede90 36-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6d2f77a5de39e17892966b874c379a90a285f556",
+  "prompts": {},
+  "sessions": {
+    "s_d2ff8f6ac6a5d5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0023a3c22ffeBG8wWwShU2zIvM",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_70c7ac7de143f9::t_9ec35abe3d6107 24,26-34
+  s_70c7ac7de143f9::t_52dc1f742c0aac 144-148
+  s_70c7ac7de143f9::t_796b0feab63d4f 25
+governance/sources/lawbook.json
+  s_70c7ac7de143f9::t_f647b84e876260 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "697f18ef4ffec0a5da5605dcb15a4df58b87c5a7",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

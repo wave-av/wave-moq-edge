@@ -1,0 +1,26 @@
+governance/lib/lens-sweep/bank-lint-core.mjs
+  s_0227926428e4b1::t_3ad0f7048f8869 70-79
+  s_0227926428e4b1::t_aa9584318370fd 10
+governance/lib/lens-sweep/bank-claims.mjs
+  s_0227926428e4b1::t_b82deeb1f3590d 68-88
+governance/test/bank-lint.test.mjs
+  s_0227926428e4b1::t_f2d6ec27d41e12 164-183
+governance/lib/lens-sweep/reconcile.mjs
+  s_0227926428e4b1::t_a9ed2f45ed4079 148-153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b33068f1b6b8226241ed43105bc5a5cc2e533156",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

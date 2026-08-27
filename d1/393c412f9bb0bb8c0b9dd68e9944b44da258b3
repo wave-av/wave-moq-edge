@@ -1,0 +1,27 @@
+governance/plans/agent-mail-plane/inbox-map.md
+  s_a499b83ed9db02::t_ac11055ab0d715 17-25
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_a499b83ed9db02::t_dedb16b6586056 234-289
+governance/plans/agent-mail-plane/scripts/agentmail-event-listener.mjs
+  s_a499b83ed9db02::t_13ccdd1901241b 1-38
+governance/plans/agent-mail-plane/NORTH-STAR.md
+  s_a499b83ed9db02::t_374d30527684f5 33
+governance/plans/agent-mail-plane/E3-E3-POD-MULTITENANCY.md
+  s_a499b83ed9db02::t_0380a7181f6927 4-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d1393c412f9bb0bb8c0b9dd68e9944b44da258b3",
+  "prompts": {},
+  "sessions": {
+    "s_a499b83ed9db02": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3b8badcffeMW83mqwdFbhiWm",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

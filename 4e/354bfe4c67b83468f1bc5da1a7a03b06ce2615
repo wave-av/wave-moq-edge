@@ -1,0 +1,19 @@
+rules/workflow-authoring.md
+  s_cf3356a24071e8::t_dfe65d2a20f28b 43-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4e354bfe4c67b83468f1bc5da1a7a03b06ce2615",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

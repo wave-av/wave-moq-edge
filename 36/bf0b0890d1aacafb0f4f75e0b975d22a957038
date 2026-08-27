@@ -1,0 +1,19 @@
+governance/test/go-live-e2e.test.mjs
+  s_2c3399f8077a74::t_fff5eda4ba62a7 19,21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "36bf0b0890d1aacafb0f4f75e0b975d22a957038",
+  "prompts": {},
+  "sessions": {
+    "s_2c3399f8077a74": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a128f9535204c74bd",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

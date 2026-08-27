@@ -1,0 +1,72 @@
+governance/lib/review-liveness.mjs
+  s_53b49eff5b8c5d::t_20b4cf098a35f3 37
+  s_53b49eff5b8c5d::t_bea6ed3032821b 86-92
+  s_53b49eff5b8c5d::t_5229e05da6934d 149-157
+governance/lib/review-sufficiency.mjs
+  s_53b49eff5b8c5d::t_3dc237d3f5c6b3 201,212
+  s_53b49eff5b8c5d::t_78ee4e0cd2e927 23-29
+  s_53b49eff5b8c5d::t_f44ce0a3438de9 41-46,49
+  s_53b49eff5b8c5d::t_5d6ed92abb1a26 4
+  s_53b49eff5b8c5d::t_972210e969a318 124-135,138-139
+  s_53b49eff5b8c5d::t_aabfd5a15cee52 172
+  s_53b49eff5b8c5d::t_24524781e1c75e 148,150-152
+governance/test/review-rules-family.test.mjs
+  s_53b49eff5b8c5d::t_ed76816686d842 31-37
+  s_53b49eff5b8c5d::t_b0b0f0abb51db1 59
+governance/test/review-bench-honest.test.mjs
+  s_53b49eff5b8c5d::t_cb5dff0e32b772 1-287
+governance/bin/review-liveness.mjs
+  s_53b49eff5b8c5d::t_94608d06b461a7 51
+  s_53b49eff5b8c5d::t_e8fc9c6a2af11d 11-18
+  s_53b49eff5b8c5d::t_26aa89eaf5e167 255-263
+governance/lib/review-bench.mjs
+  s_53b49eff5b8c5d::t_027505a1d25181 96-97
+  s_53b49eff5b8c5d::t_6bdb3a79853d9e 26-71
+  s_53b49eff5b8c5d::t_968c1353d9e8ec 89
+  s_37d3f61160b2dd::t_1399dca4f4147b 1-25,72-88,90-95,98-110
+governance/lib/reviewer-roster.mjs
+  s_53b49eff5b8c5d::t_0fb94e035f9661 148-156,160-161,164-167,174-175,177-180,192,198
+  s_53b49eff5b8c5d::t_3bc1b354419ca9 182-188,195-196
+  s_53b49eff5b8c5d::t_09bf7720b5021b 157-159,162-163,168-173,176,181,189-191,193-194,197,199-200
+governance/lib/reviewer-retirement.mjs
+  s_53b49eff5b8c5d::t_1c9591b42e9ad1 1-96
+governance/test/review-liveness-class.test.mjs
+  s_53b49eff5b8c5d::t_ba847f86848b2c 47
+  s_53b49eff5b8c5d::t_dc58c927631d20 114-119
+  s_53b49eff5b8c5d::t_4aeea38fae308b 58-62,64,66-70
+governance/lib/review-liveness-rules.mjs
+  s_53b49eff5b8c5d::t_582affb1de6a95 19-24
+  s_53b49eff5b8c5d::t_74500331c2bfb0 40
+  s_37d3f61160b2dd::t_832f597189fdde 113,116
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_53b49eff5b8c5d::t_8d90bff2417a03 99-106
+governance/gam-port-kit/manifest.json
+  s_53b49eff5b8c5d::t_f15cd76ac7124c 32
+  s_53b49eff5b8c5d::t_9651f8bc9b7f86 50
+governance/lib/review-rule-facts.mjs
+  s_37d3f61160b2dd::t_2ff71025275092 13-56,58-65,75-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8bf5facfa7b855b0f7b999dcabd6fc0d227be4b3",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

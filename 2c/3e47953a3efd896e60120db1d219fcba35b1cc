@@ -1,0 +1,18 @@
+hooks/manifest.json
+  h_67a1b847dc59d6 1367
+hooks/pr-inflight-capture.sh
+  h_67a1b847dc59d6 60-77,79-80,82-83,85-86,89,91-103,232-240
+hooks/tests/pr-inflight-capture.test.sh
+  h_67a1b847dc59d6 161-170,217-242
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2c3e47953a3efd896e60120db1d219fcba35b1cc",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

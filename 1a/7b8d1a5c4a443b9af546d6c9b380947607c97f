@@ -1,0 +1,37 @@
+governance/plans/public-gate-integrity/E6-FANOUT-DISCIPLINE.md
+  s_6f6453b23e3805::t_400497c0320b0f 1-38
+governance/plans/public-gate-integrity/E3-VENDOR-16.md
+  s_6f6453b23e3805::t_485bde5bc8806b 1-40
+governance/plans/public-gate-integrity/E4-RESCOPE-RULESET.md
+  s_6f6453b23e3805::t_d0d7b0ba75498a 1-36
+governance/plans/public-gate-integrity/E0-MEASURE.md
+  s_6f6453b23e3805::t_430ce2710551ef 1-52
+governance/plans/public-gate-integrity/E5-REVISIT-REVIEW.md
+  s_6f6453b23e3805::t_1571b1810ee7f8 1-34
+governance/plans/public-gate-integrity/E1-FAIL-OPEN-BASE.md
+  s_6f6453b23e3805::t_ecb97883462299 1-36
+governance/plans/public-gate-integrity/NORTH-STAR.md
+  s_6f6453b23e3805::t_d229d4c12542f7 1-103
+governance/plans/public-gate-integrity/E2-1747-DEFECTS.md
+  s_6f6453b23e3805::t_f587bc3e0ef1cb 1-47
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_fd5efeb30bb59e 25
+governance/graph.json
+  s_6f6453b23e3805::t_b96be5b52d0ca0 5661-5764,25693-25758
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1a7b8d1a5c4a443b9af546d6c9b380947607c97f",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

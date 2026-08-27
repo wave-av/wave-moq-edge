@@ -1,0 +1,21 @@
+governance/plans/aikido-trial/E1-P1-PATH-RULING.md
+  s_52031f4510959b::t_3b622918425038 1-115
+governance/plans/aikido-trial/E1-UNIQUENESS.md
+  s_52031f4510959b::t_e002a676769277 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7e9da821da2f8e0ba9f4bc1a77c6d973213c1219",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/sovereign-capacity/E3-REFRESH.md
+  s_aa5feb34e0e033::t_e28079a8ec0642 39-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9d4395f02d77df5b537e2e88cf6be1d46f38fc70",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

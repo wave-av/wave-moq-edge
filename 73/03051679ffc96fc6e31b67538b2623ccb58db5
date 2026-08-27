@@ -1,0 +1,19 @@
+scripts/apply-identity-migrations.test.mjs
+  s_cf3356a24071e8::t_2307b296783b4c 1-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "7303051679ffc96fc6e31b67538b2623ccb58db5",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

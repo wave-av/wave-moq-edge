@@ -1,0 +1,21 @@
+.github/workflows/self-check.yml
+  s_e2e3e43d0638c5::t_d9b812c419d3a8 27-30,32
+frameworks/gates/secret-scan.sh
+  s_e2e3e43d0638c5::t_6f09e3bdb3517a 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e53a29fd337c63cb5a991db62b2fff3b98e60259",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

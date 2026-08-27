@@ -1,0 +1,73 @@
+.coderabbit.yaml
+  s_2fd4e0c1ae6a7a::t_7ea041f4434e11 146-150,152,156-157,162,167-170
+.cursor/BUGBOT.md
+  s_2fd4e0c1ae6a7a::t_a873b9808118b3 49-52,59-87
+.gitattributes
+  s_2fd4e0c1ae6a7a::t_51d915749e446e 20-24
+.github/workflows/wave-sec-dependency-review.yml
+  s_2fd4e0c1ae6a7a::t_aaffe796225b9f 1-60
+.github/workflows/wave-sec-gate.yml
+  s_2fd4e0c1ae6a7a::t_a798e72b08cffe 132-147
+.greptile/config.json
+  s_2fd4e0c1ae6a7a::t_a7d22bf9667fad 3-9,13,19-24,30-34,40-42,48-55,61-64,70-72,78-84
+REVIEW.md
+  s_2fd4e0c1ae6a7a::t_634b0723b8c4c5 45-51,53-77
+cubic.yaml
+  s_2fd4e0c1ae6a7a::t_84403ffd9aa4fb 70-76,78,82-83,88,93-96
+docs/WAVE-SEC-GATE.md
+  s_2fd4e0c1ae6a7a::t_54e97368729ec8 54,60-172
+governance/DASHBOARD.md
+  s_2fd4e0c1ae6a7a::t_4fa4af0d76260a 25
+governance/bin/check.mjs
+  s_2fd4e0c1ae6a7a::t_6a3afae259c9e5 62-76
+governance/bin/fleet/reviewer-config-census.mjs
+  s_2fd4e0c1ae6a7a::t_bf5a8c144a3335 1-257
+governance/bin/gate-liveness-drill.mjs
+  s_2fd4e0c1ae6a7a::t_2f03f0df09de3d 29,107-109,111
+governance/bin/reviewer-policy-gen.mjs
+  s_2fd4e0c1ae6a7a::t_e247ec0738135b 1-166
+governance/graph.json
+  s_2fd4e0c1ae6a7a::t_8a8351ceedd3fe 5947-5959
+governance/lib/drill-fixtures-drift.mjs
+  s_2fd4e0c1ae6a7a::t_c82325d3824045 53-56
+governance/lib/drill-fixtures-reviewer.mjs
+  s_2fd4e0c1ae6a7a::t_7d3b935f506895 1-82
+governance/lib/git-ref-read.mjs
+  s_2fd4e0c1ae6a7a::t_bd80993bf6dcb4 1-53
+governance/lib/reviewer-ignore-contract.mjs
+  s_2fd4e0c1ae6a7a::t_f9222f49f7c614 1-146
+governance/lib/reviewer-policy.mjs
+  s_2fd4e0c1ae6a7a::t_b65d59ee87700d 1-227
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_15213d04cd560d 160-166,176-178
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_2fd4e0c1ae6a7a::t_e041fee54b615f 1-213
+governance/reviewer-policy.json
+  s_2fd4e0c1ae6a7a::t_6144028536451d 1-180
+governance/test/reviewer-census.test.mjs
+  s_2fd4e0c1ae6a7a::t_1f8222110a0299 1-147
+governance/test/reviewer-demand-shaping.test.mjs
+  s_2fd4e0c1ae6a7a::t_ad2381a1c318f2 1-97
+governance/test/reviewer-ignore-sync.test.mjs
+  s_2fd4e0c1ae6a7a::t_70a4ae47d173d2 1,4-6,8-15,17-19,24-27,29-39,45-52,54,56-66,68,72-75,82-83,87,94-95,99,103-104,108-143,150-151
+governance/test/reviewer-policy.test.mjs
+  s_2fd4e0c1ae6a7a::t_2677d81baa6a8d 1-266
+governance/work-state.json
+  s_2fd4e0c1ae6a7a::t_b4f8e3b2c924bb 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,78-80,82-84,86-89,92-95,98-101,104-107,110-113,116-119,123-125,129,142-147,150-151,153-155,158-159,161-163,166-167,169-171,174-179,182-183,185-187,190-191,193-195,198-199,201-203,207-210,214-215,224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "17dcd46b18307d04258dee9715b29c13565999e4",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

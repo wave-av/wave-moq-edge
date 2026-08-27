@@ -1,0 +1,19 @@
+.github/workflows/governance.yml
+  s_7326a769c7efe8::t_7c50540884e811 154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0442833e38adccf7dcc200305e1e2c1bcf545b47",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

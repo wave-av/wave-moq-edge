@@ -1,0 +1,19 @@
+memory/mail-thread-history/opencode/2a1ca061-55a5-4f32-bf5d-2c09a2a992fa.md
+  s_9bb1b1d1d998d4::t_756ca7387d78f2 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cb2b9cdb3f81f6d932aa26e158c173069ba3776f",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

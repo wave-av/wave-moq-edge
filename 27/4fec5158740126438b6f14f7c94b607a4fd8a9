@@ -1,0 +1,33 @@
+governance/data/vendor-cidr/github-hooks.json
+  s_ea8755337f3c0d::t_a60bb88fea5201 1-11
+governance/bin/vendor-cidr-sync.mjs
+  s_ea8755337f3c0d::t_140726b177aa78 1-21,23-70,77,79-126
+  s_ea8755337f3c0d::t_1b80eb4020d9df 22
+  s_ea8755337f3c0d::t_cd02e07bc3a770 71-76,78
+governance/data/vendor-cidr/stripe-webhooks.json
+  s_ea8755337f3c0d::t_a60bb88fea5201 1-20
+governance/lib/drill-fixtures-vendor-cidr.mjs
+  s_ea8755337f3c0d::t_dfc98d60263788 1-68
+governance/data/vendor-cidr/datadog-webhooks.json
+  s_ea8755337f3c0d::t_cd6e5e613b2174 1-40
+governance/lib/drill-registry.mjs
+  s_ea8755337f3c0d::t_22dc6b26f7dc91 143-145
+  s_ea8755337f3c0d::t_2ee657ddaf43f0 61
+  s_ea8755337f3c0d::t_e4397e1f5427d1 214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "274fec5158740126438b6f14f7c94b607a4fd8a9",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

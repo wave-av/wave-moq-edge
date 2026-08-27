@@ -1,0 +1,21 @@
+scripts/advance-major-tag.sh
+  s_364605915bb7ec::t_b57211d57b6983 40-70
+frameworks/gates/test-advance-major-tag.sh
+  s_364605915bb7ec::t_c388a890171c98 1-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "a8334fac82a176323a7d11d88bf37558896803b6",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+hookcli/tests/compose-bypass.sh
+  s_db128da65a46d5::t_65a0f6692ba596 1-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8d27cadc5cdc6f4148e02c6efc7a2c029702ef76",
+  "prompts": {},
+  "sessions": {
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.github/workflows/wave-sec-aikido.yml
+  s_d2933742b87c61::t_0826d315550ac5 104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2f82cbbf4e8c05664d70cd0599ba2deed90c508d",
+  "prompts": {},
+  "sessions": {
+    "s_d2933742b87c61": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe09cb696ffeH6ttqgsRt8zV30",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

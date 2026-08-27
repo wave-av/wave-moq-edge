@@ -1,0 +1,19 @@
+runbooks/library/wave-database-prod-schema-change.md
+  s_2e30bff6169f7a::t_ee3e3fab4f9842 19-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3a970bfaebd4d8ee203fe791fa17bb62c4b45da8",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

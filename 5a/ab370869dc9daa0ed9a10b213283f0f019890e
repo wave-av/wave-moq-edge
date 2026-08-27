@@ -1,0 +1,16 @@
+governance/plans/runtime-learning-loop/research/pending-rows/gemma4-31b.json
+  h_67a1b847dc59d6 11-14
+governance/plans/runtime-learning-loop/research/pending-rows/wave-qwen38-ad-iq3s.json
+  h_67a1b847dc59d6 11-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5aab370869dc9daa0ed9a10b213283f0f019890e",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

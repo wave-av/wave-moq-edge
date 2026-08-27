@@ -1,0 +1,72 @@
+.claude/skills/work-graph/SKILL.md
+  h_67a1b847dc59d6 46,74,82-83
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/bin/epic-status.mjs
+  h_67a1b847dc59d6 112,115-118,171-175,271-276
+governance/bin/fleet.mjs
+  h_67a1b847dc59d6 18-78,80-81,83-146,148-149,151-157,206-207,209-217,265
+governance/bin/fleet/reviewer-config-census.mjs
+  h_67a1b847dc59d6 7-10,26-30,32,37,39-41,64,70-83,86-87,102,109-111,113-118,122-123,126-130,132-156,159,185-186,188-193,195,204,206,208-213,216-218
+governance/gam-port-kit/manifest.json
+  h_67a1b847dc59d6 24
+governance/graph.json
+  h_67a1b847dc59d6 3937-3975,22423-22428,22447-22452,22501-22542
+governance/lib/epic-status-parse.mjs
+  h_67a1b847dc59d6 43-48,51-58,70,72-78
+governance/lib/reviewer-census-classify.mjs
+  h_67a1b847dc59d6 1-217
+governance/lib/vendor-schema-fetch.mjs
+  h_67a1b847dc59d6 1-136
+governance/lib/vendor-schema-properties.mjs
+  h_67a1b847dc59d6 1-215
+governance/lib/vendor-schema.mjs
+  h_67a1b847dc59d6 1-146
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  h_67a1b847dc59d6 14-28
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  h_67a1b847dc59d6 45-53
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  h_67a1b847dc59d6 1-161
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  h_67a1b847dc59d6 1-152
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  h_67a1b847dc59d6 1-174
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  h_67a1b847dc59d6 74,92-94,102-109,116-133
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 191-208
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  h_67a1b847dc59d6 1-72
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  h_67a1b847dc59d6 101-107,171
+governance/test/epic-status-unterminated-receipt.test.mjs
+  h_67a1b847dc59d6 1-69
+governance/test/fleet-cli.test.mjs
+  h_67a1b847dc59d6 3-26,76-228
+governance/test/reviewer-census-fixture.mjs
+  h_67a1b847dc59d6 1-70
+governance/test/reviewer-census-schema.test.mjs
+  h_67a1b847dc59d6 1-182
+governance/test/reviewer-census.test.mjs
+  h_67a1b847dc59d6 4-7,11,13,16,18,22-23,34,37,41,46,52,54,108,113,127-163
+governance/test/vendor-schema-combinator.test.mjs
+  h_67a1b847dc59d6 1-228
+governance/test/vendor-schema-fetch.test.mjs
+  h_67a1b847dc59d6 1-203
+governance/test/vendor-schema-fixture.mjs
+  h_67a1b847dc59d6 1-26
+governance/test/vendor-schema.test.mjs
+  h_67a1b847dc59d6 1-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "daf1924584fb5dcaf6b1a594ff1dda98f3cedf10",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

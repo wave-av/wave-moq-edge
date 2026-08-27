@@ -1,0 +1,18 @@
+governance/plans/agent-identity-fabric/E2-E2-THREAD-FABRIC.md
+  h_67a1b847dc59d6 20-24
+governance/plans/agent-identity-fabric/tools/hops.json
+  h_67a1b847dc59d6 1-13
+governance/plans/agent-identity-fabric/tools/resolve.mjs
+  h_67a1b847dc59d6 8-9,12-20,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0c4c0830d4506a14ebcba27320f1323ae93740d7",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

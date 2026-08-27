@@ -1,0 +1,24 @@
+governance/bin/validate.mjs
+  s_db1b2a792e5f25::t_0e88724bb0a642 40
+  s_db1b2a792e5f25::t_8af34b653cdc81 35-39
+governance/test/graph-edge-type-contract.test.mjs
+  s_db1b2a792e5f25::t_afc5b490b8b3ee 1-100
+governance/schema/graph.schema.json
+  s_db1b2a792e5f25::t_753883be140ccd 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "587ee65994a066065885ec04641474b937bc73a6",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

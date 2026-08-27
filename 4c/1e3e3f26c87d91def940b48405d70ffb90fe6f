@@ -1,0 +1,70 @@
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_e03b1135cf7963 46-51
+governance/bin/wave-cost-ledger-gha-budget-alert.mjs
+  s_2e30bff6169f7a::t_b26f162936b5ed 82-90
+  s_2e30bff6169f7a::t_4817c3ba036fb4 167
+  s_2e30bff6169f7a::t_c1dfb680f460b1 160,174-175,182-205,214
+  s_2e30bff6169f7a::t_b54c0afeef3c17 19-26
+  s_2e30bff6169f7a::t_af28a8ce974f56 31
+  s_2e30bff6169f7a::t_c35b54d08da5c8 34-35
+  s_2e30bff6169f7a::t_c5c1ffbffd8240 36
+  s_2e30bff6169f7a::t_9260b417841046 157-159
+  s_2e30bff6169f7a::t_20ec5db07b3fda 161-166
+  s_2e30bff6169f7a::t_8cc71aef00ad06 168-173
+  s_2e30bff6169f7a::t_7c4e2a409d3bb2 176
+  s_2e30bff6169f7a::t_852bbb1a770927 114-118,156
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_2e30bff6169f7a::t_fbaf1b0d18ed41 91-97
+  s_2e30bff6169f7a::t_ab0fc9a65bf18f 107-112
+  s_2e30bff6169f7a::t_f91adac827c62d 125-137
+  s_2e30bff6169f7a::t_2734a3d4da133a 65-74
+  s_2e30bff6169f7a::t_3bd80cb5b38d61 63
+  s_2e30bff6169f7a::t_1985aca9a75c87 173-179,184-194,196-199
+  s_2e30bff6169f7a::t_d4b3ed7954e427 40-51
+  s_2e30bff6169f7a::t_be19356bfb7542 75,77
+  s_2e30bff6169f7a::t_4a179c3aca46f1 78
+governance/lib/wave-cost-ledger-alert-routing.mjs
+  s_2e30bff6169f7a::t_0bf06475b5cb58 77-114
+  s_2e30bff6169f7a::t_89c141637072c9 38-39
+.github/workflows/wave-cost-ledger-pullers.yml
+  s_2e30bff6169f7a::t_e876d56e81f8a0 64-77,79-88
+  s_2e30bff6169f7a::t_faafe7686a12dc 92,95-97
+  s_2e30bff6169f7a::t_1ae1c416337159 102
+  s_2e30bff6169f7a::t_cad18b067c2d0d 279-317
+governance/lib/wave-cost-ledger-alert-senders.mjs
+  s_2e30bff6169f7a::t_ffe0bd74acd56c 1-74
+governance/test/wave-cost-ledger-alert-terminal.test.mjs
+  s_2e30bff6169f7a::t_8404cd96d50a3f 1-135
+governance/lib/wave-cost-ledger-alert-terminal.mjs
+  s_2e30bff6169f7a::t_fa5d5474f98e98 1-119
+governance/lib/wave-cost-ledger-alert-compile.mjs
+  s_2e30bff6169f7a::t_ce4af94fd3e0e6 1-127
+governance/lib/wave-cost-ledger-gha-budget-feed-guards.mjs
+  s_63c6ee080d73c3::t_dc5b4f929f22eb 1-105
+governance/test/wave-cost-ledger-gha-budget-alert.test.mjs
+  s_63c6ee080d73c3::t_a8a79e90932431 40-45,66-69,71-79,159-160
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4c1e3e3f26c87d91def940b48405d70ffb90fe6f",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

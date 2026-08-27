@@ -1,0 +1,32 @@
+memory/thinker-canon-v2.md
+  s_48c2c1fa6168e5::t_1329012f9acd4c 1-24
+memory/MEMORY.md
+  s_48c2c1fa6168e5::t_3288a5a7cf70ff 22
+governance/research/thinker-canon/CANON-V2-EXPANSION.md
+  s_48c2c1fa6168e5::t_c51533df546b99 116
+  s_48c2c1fa6168e5::t_b76d15e3f15d66 1-115,117-261
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1d89ec8ec4fdf4a78ad6b868083f5d6470978431",
+  "prompts": {},
+  "sessions": {
+    "s_48c2c1fa6168e5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024c296dfferfPmSj02J2Gwny",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8ec7d8b4c3385d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffeb86ecfffecuzKLTQe3nhMd2",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

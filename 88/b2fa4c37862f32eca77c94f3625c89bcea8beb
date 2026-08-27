@@ -1,0 +1,23 @@
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  s_d9915bbafa9657::t_39a53da4a5ec1a 1-59
+plugins/wave-governance/README.md
+  s_d9915bbafa9657::t_5a7b4a66666e81 1-12
+plugins/wave-governance/.claude-plugin/plugin.json
+  s_d9915bbafa9657::t_86a24c87c9ca07 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "88b2fa4c37862f32eca77c94f3625c89bcea8beb",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

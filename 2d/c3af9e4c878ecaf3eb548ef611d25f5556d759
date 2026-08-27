@@ -1,0 +1,29 @@
+governance/plans/search-router/RECEIPTS.md
+  s_6046880c148371::t_3dfdd762551d39 1,3-11
+governance/plans/search-router/E1-ROUTER.md
+  s_6046880c148371::t_438b36fe299c7e 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2dc3af9e4c878ecaf3eb548ef611d25f5556d759",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+settings/settings.base.json
+  s_db1b2a792e5f25::t_e0323880a3f0da 305-307
+  s_db1b2a792e5f25::t_62a9b551b877ff 303-304
+governance/DASHBOARD.md
+  s_db1b2a792e5f25::t_a64764bf52ed70 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_db1b2a792e5f25::t_d7ec31de6ab1cf 466
+governance/graph.json
+  s_db1b2a792e5f25::t_0331bba753f716 4519-4527,17270-17275
+hooks/manifest.json
+  s_db1b2a792e5f25::t_380eb4c0362a72 687-707
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "24492d19f90ebd7178fdede5c07d71ef7e36c349",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

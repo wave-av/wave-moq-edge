@@ -1,0 +1,20 @@
+sync.sh
+  s_60a20469ef4369::t_2781301d03ee84 19-35
+  s_60a20469ef4369::t_93ce2735fb3e90 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "cc2866957d3dd3493903c07d075890401c74944e",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

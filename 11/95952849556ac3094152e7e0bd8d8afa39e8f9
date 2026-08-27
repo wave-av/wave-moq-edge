@@ -1,0 +1,36 @@
+governance/tools/self-diagnose/manifests/scenario.json
+  s_e8b16ff444c167::t_a70772324958a3 3-36,38-46,48-53
+  s_e8b16ff444c167::t_04eb167958bfc9 1-2,37,47,54-72
+governance/tools/layered-error-budget/manifests/agentic-wave.json
+  s_02f546138e34bf::t_f9bb3b5df2e2c2 1-49
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_02f546138e34bf::t_9bba3823c39d5d 197-207
+governance/tools/self-diagnose/manifests/governance.json
+  s_e8b16ff444c167::t_6ccdda2176ce57 52,86
+governance/research/engineering-canon/origin-method.md
+  s_e8b16ff444c167::t_58bb76a6ea676c 375-384
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1195952849556ac3094152e7e0bd8d8afa39e8f9",
+  "prompts": {},
+  "sessions": {
+    "s_02f546138e34bf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0022d556effeVhHjQfZfJVjHDs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e8b16ff444c167": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0022f2f0dffe6YbJ3735IkLhH4",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

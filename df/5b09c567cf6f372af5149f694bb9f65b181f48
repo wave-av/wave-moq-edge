@@ -1,0 +1,38 @@
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_4750c770479ec2 131-143
+governance/bin/wave-sec-gate-pin-audit-scan.sh
+  s_85d9e5f433b9aa::t_ab138fbb173133 1-91
+governance/lib/wave-sec-gate-pin-classify.mjs
+  s_85d9e5f433b9aa::t_a921bb5315da15 1-94,96-97,100-101,104-146
+  s_85d9e5f433b9aa::t_ed2b6180267463 95,98-99,102-103
+governance/runbooks/wave-sec-gate-pin-audit.md
+  s_85d9e5f433b9aa::t_9929643eb4f925 1-117
+governance/test/wave-sec-gate-pin-classify.test.mjs
+  s_85d9e5f433b9aa::t_35c908e8ecbfc6 8
+  s_85d9e5f433b9aa::t_b35f556fa9dc49 1-7,9-144
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_85d9e5f433b9aa::t_f4dda5a3eaf319 11-12
+  s_85d9e5f433b9aa::t_8ba6584aed32a8 1-10,13-221
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_85d9e5f433b9aa::t_16ec456f4575cd 1-45
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_85d9e5f433b9aa::t_8651401b40a620 1-74
+governance/ops/com.wave.wave-sec-gate-pin-audit.plist
+  s_85d9e5f433b9aa::t_6ed3c4fc016034 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "df5b09c567cf6f372af5149f694bb9f65b181f48",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

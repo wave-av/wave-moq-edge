@@ -1,0 +1,19 @@
+governance/plans/mlvc-api-plane/PRODUCT-MAP.md
+  s_4dd556ecb5f494::t_aecc1dc26020a1 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "47d7c9cacbb7528bbfe4c1a031c2bb0425149dc7",
+  "prompts": {},
+  "sessions": {
+    "s_4dd556ecb5f494": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe58f4e65ffeWqADRSUYWS0wMC",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

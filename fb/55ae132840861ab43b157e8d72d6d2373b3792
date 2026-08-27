@@ -1,0 +1,22 @@
+bin/route-by-capability.mjs
+  s_7ddeb5d251570f::t_c8140ff378c95f 21,23,29-53
+  s_7ddeb5d251570f::t_c3ac8c8be90f8f 125
+  s_7ddeb5d251570f::t_39f057963feaee 280
+  s_7ddeb5d251570f::t_158050555bc1b6 54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fb55ae132840861ab43b157e8d72d6d2373b3792",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

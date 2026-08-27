@@ -1,0 +1,33 @@
+governance/voice/voice-law.mjs
+  s_2606de950a60c6::t_2a1f1515bba23f 1-43
+governance/test/voice-law.test.mjs
+  s_2606de950a60c6::t_48276218ee0cb0 1-40
+governance/story/artifacts/landing.md
+  s_2606de950a60c6::t_d302da7b3f7965 1-26
+governance/voice/voice-gate.mjs
+  s_2606de950a60c6::t_d6ad072ae9bf88 1-51
+governance/story/wave-story.mjs
+  s_2606de950a60c6::t_4abd64a1110c84 1-47,65-73,77-90,92-95,97-106,109-111,113-125,127-150
+  s_2606de950a60c6::t_96119d31e872e5 48-64
+  s_2606de950a60c6::t_9262fd44b44cf9 74-76,91,96,107-108,112,126
+governance/story/artifacts/onepager.md
+  s_2606de950a60c6::t_04d3ff1c924f28 1-19
+governance/voice/VOICE.md
+  s_2606de950a60c6::t_5327a700891bb2 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7bdb27b6a76e07e37cf503ea27870732d9b7a8d4",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

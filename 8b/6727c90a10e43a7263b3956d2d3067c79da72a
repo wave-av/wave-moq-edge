@@ -1,0 +1,35 @@
+governance/graph.json
+  s_10314ee3bc679c::t_d4fd09890114b9 20818-20819,20821,20824-20825,20827,20830-20831,20833,20836-20837,20839,20842-20843,20845,20848-20849,20851,20854-20855,20857,20860-20861,20863,20866-20867,20869,20872-20873,20875,20878-20879,20881,20884-20885,20887,20890-20891,20893,20896-20897,20899,20902-20903,20905,20908-20909,20911,30532-30533,30535,30538-30539,30541,30544-30545,30547,30550-30551,30553,30556-30557,30559,30562-30563,30565,30568-30569,30571,30574-30575,30577,30580-30581,30583
+governance/plans/absence-never-reads-as-pass/BRAINSTORM.md
+  s_10314ee3bc679c::t_cc16b1ceb54eec 5-11
+governance/plans/agent-lease-protocol/BRAINSTORM.md
+  s_10314ee3bc679c::t_3226fe9b21bbf8 5-11
+governance/plans/lawbook-fleet-distribution/BRAINSTORM.md
+  s_10314ee3bc679c::t_e6100761bf3a4b 5-11
+governance/plans/merge-readiness-required/BRAINSTORM.md
+  s_10314ee3bc679c::t_1594be170e4697 6-12,97
+governance/plans/one-system-of-record/BRAINSTORM.md
+  s_10314ee3bc679c::t_2f0ad5e91fc92e 5-11,99
+governance/plans/platform-status-consumers/BRAINSTORM.md
+  s_10314ee3bc679c::t_92b17bc3650c18 5-11
+governance/plans/receipt-bus/BRAINSTORM.md
+  s_10314ee3bc679c::t_d7111f92873f20 5-11
+governance/plans/reviewer-liveness-billing/BRAINSTORM.md
+  s_10314ee3bc679c::t_c8f73ded8949cf 5-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8b6727c90a10e43a7263b3956d2d3067c79da72a",
+  "prompts": {},
+  "sessions": {
+    "s_10314ee3bc679c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a1134f03a333fdb65",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

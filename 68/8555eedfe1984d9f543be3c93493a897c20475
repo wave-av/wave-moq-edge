@@ -1,0 +1,20 @@
+governance/plans/public-supply-chain/E2-CI-ONLY-PUBLISH.md
+  s_63c6ee080d73c3::t_9eaf89ecb96e0a 36-37
+  s_63c6ee080d73c3::t_49ec1acdb817a2 75-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "688555eedfe1984d9f543be3c93493a897c20475",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

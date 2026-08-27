@@ -1,0 +1,76 @@
+.coderabbit.yaml
+  h_67a1b847dc59d6 156-157
+.cursor/BUGBOT.md
+  h_67a1b847dc59d6 68-69
+.gitattributes
+  h_67a1b847dc59d6 24-25
+.github/workflows/governance.yml
+  h_67a1b847dc59d6 385-393
+.github/workflows/trust-surface-regen.yml
+  h_67a1b847dc59d6 1-215
+.github/workflows/trust-surface-staleness.yml
+  h_67a1b847dc59d6 1-119
+.gitignore
+  h_67a1b847dc59d6 112-127
+.greptile/config.json
+  h_67a1b847dc59d6 13
+REVIEW.md
+  h_67a1b847dc59d6 63-64
+cubic.yaml
+  h_67a1b847dc59d6 82-83
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/bin/derived-artifact-drift-audit.mjs
+  h_67a1b847dc59d6 96-101
+governance/bin/ffmpeg-capability-matrix.mjs
+  h_67a1b847dc59d6 36,43-46
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 30,118,120
+governance/bin/resolve-generated-conflicts.mjs
+  h_67a1b847dc59d6 86-93,262-272
+governance/bin/trust-surface-gen.mjs
+  h_67a1b847dc59d6 1-210
+governance/graph.json
+  h_67a1b847dc59d6 4171-4183,22892-22897
+governance/lib/drill-fixtures-drift.mjs
+  h_67a1b847dc59d6 26-27,59-94,204-224
+governance/lib/drill-fixtures-pin-currency.mjs
+  h_67a1b847dc59d6 1-115
+governance/lib/ffmpeg-capability-categories.mjs
+  h_67a1b847dc59d6 1-25
+governance/lib/trust-surface.mjs
+  h_67a1b847dc59d6 1-331
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  h_67a1b847dc59d6 13-19
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 209-263
+governance/plans/ffmpeg9-lei/action/E4-P2B-MODNET-SPIKE.md
+  h_67a1b847dc59d6 1-209
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 55,59,74-128,264,274,286,311-338
+governance/reviewer-policy.json
+  h_67a1b847dc59d6 76-82,87-89
+governance/state/trust-surface-launch-claims.json
+  h_67a1b847dc59d6 1-20
+governance/state/trust-surface/index.html
+  h_67a1b847dc59d6 1-303
+governance/state/trust-surface/trust-surface.json
+  h_67a1b847dc59d6 1-7788
+governance/test/resolve-generated-conflicts.test.mjs
+  h_67a1b847dc59d6 116-170
+governance/test/trust-surface-gen.test.mjs
+  h_67a1b847dc59d6 1-396
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "99a291f2a4560342b29094fb2e2c7cbb2e43e9e4",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

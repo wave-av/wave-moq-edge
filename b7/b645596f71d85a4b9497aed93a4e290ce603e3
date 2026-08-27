@@ -1,0 +1,20 @@
+scripts/fleet/conformance.sh
+  s_6c1c1be138dfd4::t_0bde6251c3207d 124-132
+  s_6c1c1be138dfd4::t_04dc87b04261fc 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "b7b645596f71d85a4b9497aed93a4e290ce603e3",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

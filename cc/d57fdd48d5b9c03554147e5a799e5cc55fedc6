@@ -1,0 +1,40 @@
+hooks/l2-hookspath-guard.sh
+  s_375efeac18ed55::t_8c442bda42d37e 1-41
+settings/settings.base.json
+  s_375efeac18ed55::t_7fa65a2503c568 452-456
+.githooks/pre-commit
+  s_375efeac18ed55::t_6ea9f9e8a2f0f5 7-14,30-38,41,43-68
+sync.sh
+  s_375efeac18ed55::t_3d554eb18c1c05 72-84
+governance/test/l2-install.test.mjs
+  s_375efeac18ed55::t_4df36242bb4404 22-25
+  s_375efeac18ed55::t_fdb0a71879774d 1-21,26-76,79-90,92-93
+  s_375efeac18ed55::t_0d377ce866f9cf 77-78
+  s_375efeac18ed55::t_201d5f9df0a7dd 91
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_5d57da32a63b6e 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_375efeac18ed55::t_c780537fca0c4e 10,12,14,415
+governance/contract.md
+  s_375efeac18ed55::t_1aab92d9ac0097 47,51,53
+governance/graph.json
+  s_375efeac18ed55::t_a9715aeb0c8e5e 4501-4508,17149-17160
+hooks/manifest.json
+  s_375efeac18ed55::t_e02602a324437a 420-440
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ccd57fdd48d5b9c03554147e5a799e5cc55fedc6",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

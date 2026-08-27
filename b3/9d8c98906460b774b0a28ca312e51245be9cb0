@@ -1,0 +1,43 @@
+governance/lib/rl-signal-source.mjs
+  s_0950865aa49634::t_99d0e2f9841f08 1-134
+governance/lib/rl-source-pr.mjs
+  s_0950865aa49634::t_e1d92e82cf280c 1-28,42,48-81,93,95,98-103,109-117,120,137-138,140-142,148-176,181-198
+  s_0950865aa49634::t_bd6818e5cc5755 82-92,94,96-97
+  s_0950865aa49634::t_9083dfcc59c492 124-125,130
+  s_0950865aa49634::t_c2a20fd51a130b 118-119,121-123,126-129,131-136,139
+  s_0950865aa49634::t_7fc94eb65a6dd6 29-41,43-47
+  s_0950865aa49634::t_379a15282adbba 143-147
+  s_0950865aa49634::t_fbfcdd936832b3 177
+  s_0950865aa49634::t_dbf358ade50f73 104-108
+  s_0950865aa49634::t_d53c899b9ad338 178-180
+governance/test/rl-signal-source.test.mjs
+  s_0950865aa49634::t_3441e245f7487c 1-134,136-148,150-167,171-172,174,176,178,213
+  s_0950865aa49634::t_0c9f7a064a970b 168-170,175,177,179-212
+  s_0950865aa49634::t_7e2765590dec5f 135
+  s_0950865aa49634::t_76cb7e5f4684fc 149
+  s_0950865aa49634::t_44c628b675aed8 173
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_0950865aa49634::t_94f4cd55f44211 4
+  s_0950865aa49634::t_0930ecc0bc79a3 293
+  s_0950865aa49634::t_a6e7d54c673cca 290-292
+  s_0950865aa49634::t_c2dc5150e538ae 294-296
+  s_0950865aa49634::t_dad0a15580534e 262-289,297-364
+governance/bin/rl-sources.mjs
+  s_0950865aa49634::t_84ad4551e0ba7d 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b39d8c98906460b774b0a28ca312e51245be9cb0",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/wave-registry/E5-USAGE-LOGS.md
+  s_0213641ac58af6::t_29fa9851fff338 4
+governance/plans/wave-registry/E6-QUERY.md
+  s_0213641ac58af6::t_32bf6fe58fd3dc 4
+governance/plans/wave-registry/E0-SCHEMA.md
+  s_0213641ac58af6::t_3437ba7bf44be6 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4ced4adba0133ac8b45ce02bd7ac6ee744d84b5a",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

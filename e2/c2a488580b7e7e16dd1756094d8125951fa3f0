@@ -1,0 +1,37 @@
+governance/bin/lab-parity.mjs
+  s_c927cca3dccbaa::t_584fdf2a750d0f 46-48
+  s_c927cca3dccbaa::t_24d8d7c9f36bb8 51-60
+  s_c927cca3dccbaa::t_2f1ba33c63b5f9 31-32
+  s_c927cca3dccbaa::t_9fa98946f2ec2c 91-100
+governance/plans/sovereign-lab-parity/E0-MEASURE.md
+  s_c927cca3dccbaa::t_c82b382a12edd4 41-56,60-69,90-108
+  s_c927cca3dccbaa::t_05b29c00592388 57-59
+  s_c927cca3dccbaa::t_7326f2e62884db 70-89
+  s_c927cca3dccbaa::t_65cdd2ebc52dc4 4-6
+governance/lib/drill-registry.mjs
+  s_c927cca3dccbaa::t_b9ae67243b7cc3 39
+  s_c927cca3dccbaa::t_9782bcdf8f4eee 183
+governance/lib/drill-fixtures-lab-parity.mjs
+  s_c927cca3dccbaa::t_7aae49f58df792 1-31,54-65,67-111
+  s_c927cca3dccbaa::t_a6cc8f1b22b9c4 66
+  s_c927cca3dccbaa::t_52a3ee58165fc7 34-47
+  s_c927cca3dccbaa::t_d839593e24a5f8 32-33,48-53
+governance/test/lab-parity.test.mjs
+  s_c927cca3dccbaa::t_d985f29857fbc7 1-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e2c2a488580b7e7e16dd1756094d8125951fa3f0",
+  "prompts": {},
+  "sessions": {
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

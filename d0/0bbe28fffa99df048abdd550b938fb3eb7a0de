@@ -1,0 +1,220 @@
+agents/act-worker.md
+  h_67a1b847dc59d6 3,6,22-30
+docs/AGENT-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 12,29,80-88
+docs/posthog/INSTRUMENTATION-AUDIT.md
+  h_67a1b847dc59d6 1-491
+docs/posthog/LLM-OBSERVABILITY-VERDICT.md
+  h_67a1b847dc59d6 1-388
+docs/posthog/MCP-REGISTRATION.md
+  h_67a1b847dc59d6 1-454
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 5,9,11,14,392,467
+governance/agents/TAXONOMY.yaml
+  h_67a1b847dc59d6 62-63,67-68
+governance/bin/enforcement-tables.mjs
+  h_67a1b847dc59d6 65-68
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  h_67a1b847dc59d6 16-21,23-25
+governance/bin/gate-coverage-audit.mjs
+  h_67a1b847dc59d6 26-28,62
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 49,119-120,130
+governance/bin/hook-release.mjs
+  h_67a1b847dc59d6 53,57-59,69-75,106,118,216,271-272,323-324
+governance/bin/platform-status.mjs
+  h_67a1b847dc59d6 1-359
+governance/bin/protection-profile-check.mjs
+  h_67a1b847dc59d6 37-45
+governance/bin/required-check-liveness.mjs
+  h_67a1b847dc59d6 1-267
+governance/capability/tier-manifest.json
+  h_67a1b847dc59d6 124
+governance/contract.md
+  h_67a1b847dc59d6 47,51,53
+governance/graph.json
+  h_67a1b847dc59d6 963-969,1446-1452,2502,2504-2505,3054-3131,3444-3534,4757-4769,6286-6350,8276-8289,8369-8382,9290-9298,9489-9496,13559-13576,15389-15412,20729-20842,21215-21334,24221-24250,27383-27424,32345-32386,32519-32542,33305-33310,33581-33592
+governance/lib/app-token-mint.mjs
+  h_67a1b847dc59d6 1-175
+governance/lib/audit-args.mjs
+  h_67a1b847dc59d6 23-25,60-61
+governance/lib/drill-fixtures-platform-status.mjs
+  h_67a1b847dc59d6 1-196
+governance/lib/gate-audit-args.mjs
+  h_67a1b847dc59d6 31-33,36-37,123
+governance/lib/hook-release-args.mjs
+  h_67a1b847dc59d6 1-117
+governance/lib/platform-status-classify.mjs
+  h_67a1b847dc59d6 1-182
+governance/lib/required-check-liveness.mjs
+  h_67a1b847dc59d6 1-255
+governance/lib/strict-flags.mjs
+  h_67a1b847dc59d6 60,63-66
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  h_67a1b847dc59d6 3-5
+governance/ops/com.wave.platform-status.plist
+  h_67a1b847dc59d6 1-33
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  h_67a1b847dc59d6 4-125,128-134,136-160,163-190,193-204,206-217,222-224,226-289
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  h_67a1b847dc59d6 1-94
+governance/plans/claude-code-upstream-absorption/E2-DECIDE.md
+  h_67a1b847dc59d6 1-22
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  h_67a1b847dc59d6 1-28
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  h_67a1b847dc59d6 1-22
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  h_67a1b847dc59d6 1-25
+governance/plans/claude-code-upstream-absorption/NORTH-STAR.md
+  h_67a1b847dc59d6 1-66
+governance/plans/console-perfection/E1-HUMAN-CANON.md
+  h_67a1b847dc59d6 1-119
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  h_67a1b847dc59d6 1-92
+governance/plans/console-perfection/E3-AGENT-ACCESS.md
+  h_67a1b847dc59d6 1-81
+governance/plans/console-perfection/E4-AGENT-PAYMENT.md
+  h_67a1b847dc59d6 1-96
+governance/plans/console-perfection/E5-MCP-PARITY.md
+  h_67a1b847dc59d6 1-90
+governance/plans/console-perfection/E6-NAME-TRUTH.md
+  h_67a1b847dc59d6 1-114
+governance/plans/console-perfection/NORTH-STAR.md
+  h_67a1b847dc59d6 1-139
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  h_67a1b847dc59d6 12
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 296-332
+governance/plans/ffmpeg9-lei/action/E12-P1B-PRORES-RAW-DECODE.md
+  h_67a1b847dc59d6 1-335
+governance/plans/ffmpeg9-lei/action/E14-P1-PROSPECTS.md
+  h_67a1b847dc59d6 1-283
+governance/plans/ffmpeg9-lei/action/E15-P2-SUBMISSION-RECEIPTS.md
+  h_67a1b847dc59d6 1-220
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  h_67a1b847dc59d6 4
+governance/plans/generated-artifact-contention/epic.md
+  h_67a1b847dc59d6 1-85
+governance/plans/hookcli/E1-CORE.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E2-HARVEST.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/E3-RULES.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E4-TIERS.md
+  h_67a1b847dc59d6 4-12
+governance/plans/hookcli/E5-BOARD.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E7-DISTILL.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/NORTH-STAR.md
+  h_67a1b847dc59d6 8-18
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  h_67a1b847dc59d6 50
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  h_67a1b847dc59d6 1-89
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  h_67a1b847dc59d6 1-36
+governance/plans/platform-resilience/E2-OUTAGE-ATTESTER.md
+  h_67a1b847dc59d6 1-42
+governance/plans/platform-resilience/E3-FORGEJO-STANDBY.md
+  h_67a1b847dc59d6 1-28
+governance/plans/platform-resilience/NORTH-STAR.md
+  h_67a1b847dc59d6 1-59
+governance/plans/receipts/E1-tier1-arming-crossing-2026-07-06.md
+  h_67a1b847dc59d6 1-59
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  h_67a1b847dc59d6 30-40
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  h_67a1b847dc59d6 53
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  h_67a1b847dc59d6 29-32
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  h_67a1b847dc59d6 30-52,56-80
+governance/plans/wave-credential-custody/RESEARCH-NANGO-CUSTODY.md
+  h_67a1b847dc59d6 1-350
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  h_67a1b847dc59d6 6-16
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/NORTH-STAR.md
+  h_67a1b847dc59d6 11-19
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 74-150,168,219,229,273,341-347,512-513,520-549,587-598
+governance/recall/eval/repo-corpus.manifest.json
+  h_67a1b847dc59d6 197-204,276,284,288,304-307,590
+governance/runbooks/vendored-gate-audit.md
+  h_67a1b847dc59d6 59-73
+governance/test/app-token-mint.test.mjs
+  h_67a1b847dc59d6 1-150
+governance/test/gate-audit-args.test.mjs
+  h_67a1b847dc59d6 53-55,60,110-114
+governance/test/hook-release-args.test.mjs
+  h_67a1b847dc59d6 1-173
+governance/test/platform-status-cli.test.mjs
+  h_67a1b847dc59d6 1-203
+governance/test/platform-status.test.mjs
+  h_67a1b847dc59d6 1-74
+governance/test/required-check-liveness.test.mjs
+  h_67a1b847dc59d6 1-308
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  h_67a1b847dc59d6 37
+hooks/degraded-hold-gate.sh
+  h_67a1b847dc59d6 1-255
+hooks/hooklib/gated-command-match.sh
+  h_67a1b847dc59d6 1-251
+hooks/manifest.json
+  h_67a1b847dc59d6 371-391,1121-1141
+hooks/platform-status-inject.sh
+  h_67a1b847dc59d6 1-64
+hooks/tests/degraded-hold-gate.test.sh
+  h_67a1b847dc59d6 1-304
+mcp/zoom-s2s-mcp.mjs
+  h_67a1b847dc59d6 4,24-26,28-31,50-81,89-93,107-112,120,125,128-134,201-203,205
+plugins/wave-agents/agents/act-worker.md
+  h_67a1b847dc59d6 3,6,22-30
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  h_67a1b847dc59d6 32,39
+rules/hold-under-platform-degradation.md
+  h_67a1b847dc59d6 1-62
+rules/platform-degradation-declared-not-assumed.md
+  h_67a1b847dc59d6 1-61
+runbooks/library/actions-outage-hold-and-drain.md
+  h_67a1b847dc59d6 1-162
+runbooks/library/ffmpeg-major-bump.md
+  h_67a1b847dc59d6 16,74-82,150-160,176-182,230-259,273-276,280,282-292
+runbooks/library/pr-dispatch-death-repair.md
+  h_67a1b847dc59d6 1-101
+settings/settings.base.json
+  h_67a1b847dc59d6 389-393,610-614
+settings/settings.studio.json
+  h_67a1b847dc59d6 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d00bbe28fffa99df048abdd550b938fb3eb7a0de",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+governance/lib/pr-check-health.mjs
+  s_c24357e71ae5bc::t_6666e5b851be2f 45-53,55-58,64-65
+  s_c24357e71ae5bc::t_1763be0b35a9a3 87-90,97-121,123
+  s_c24357e71ae5bc::t_d95ffecf904433 245-247,249-280
+  s_c24357e71ae5bc::t_ce5c59acf284cd 66-69
+  s_c24357e71ae5bc::t_037b292fbed271 22-27
+  s_c24357e71ae5bc::t_cda70c552cdab6 293-294,296,298-301
+  s_c24357e71ae5bc::t_da9393e744e489 59-63
+governance/lib/pr-check-health-absence.mjs
+  s_c24357e71ae5bc::t_7b54dac96c9ce3 1-64
+governance/bin/pr-check-health.mjs
+  s_c24357e71ae5bc::t_d2c6ed655b1f02 79-83,86-92,95-96
+  s_c24357e71ae5bc::t_5dd27b8261383d 139-142
+  s_15127d80763110::t_06d67394f78c8b 42-46
+governance/lib/pr-check-health-fetch.mjs
+  s_c24357e71ae5bc::t_836bb7a42598d3 268-301
+  s_85d9e5f433b9aa::t_21fedd79cf8dec 1-267,302-319
+governance/test/pr-check-health.test.mjs
+  s_c24357e71ae5bc::t_e9e32b04fe04ea 231,234-272
+  s_c24357e71ae5bc::t_e9110724056352 16-18
+  s_c24357e71ae5bc::t_86f9b8dd039ef2 273-369
+governance/lib/pr-check-health-surfaces.mjs
+  s_c24357e71ae5bc::t_01dcff82307628 1-70
+governance/lib/pr-check-health-required-set.mjs
+  s_c24357e71ae5bc::t_f7ae4c8116a98f 1-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c517fa1edf8baa117089b7ada8565ea3b4b1c910",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

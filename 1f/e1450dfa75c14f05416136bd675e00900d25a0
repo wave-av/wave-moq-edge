@@ -1,0 +1,27 @@
+governance/package.json
+  s_9e49fb2dab61f0::t_de6bf8477cf421 61-63
+governance/test/email-archive-freshness.test.mjs
+  s_9e49fb2dab61f0::t_df616c3cbf33a7 1-274
+governance/bin/email-archive-freshness.mjs
+  s_9e49fb2dab61f0::t_baa680c287f523 1-304
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  s_9e49fb2dab61f0::t_e540181c0e1b75 3-7,9-19,22-32,38,43-44
+governance/lib/email-archive-freshness.mjs
+  s_9e49fb2dab61f0::t_28cac1094a428a 1-257
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1fe1450dfa75c14f05416136bd675e00900d25a0",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

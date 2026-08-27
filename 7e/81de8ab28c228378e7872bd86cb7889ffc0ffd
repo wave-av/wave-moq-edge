@@ -1,0 +1,35 @@
+governance/bin/derived-artifact-drift-audit.mjs
+  s_60a20469ef4369::t_bc36ded2ec6c7c 223-225
+  s_60a20469ef4369::t_3439c47857c20c 41-42
+  s_60a20469ef4369::t_06101981027954 294-295
+  s_60a20469ef4369::t_f50c14202f7629 237-240
+  s_60a20469ef4369::t_5d04dc899d9832 20-27
+  s_60a20469ef4369::t_3775ccf618ab6c 72-74,76-90
+  s_60a20469ef4369::t_5c106969bd915a 126-127,129-132,135-139,145-147,149
+governance/lib/ci-gate-scan.mjs
+  s_60a20469ef4369::t_4c414a3ab27d43 1-80
+governance/test/gate-strength.test.mjs
+  s_60a20469ef4369::t_bb51ecb896082f 1-93
+governance/lib/gate-strength.mjs
+  s_60a20469ef4369::t_d7e890c4241637 1-80
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_0b0f9d90e95427 5,603-630
+governance/code-index/index.json
+  s_60a20469ef4369::t_a0570fa39a6db3 7,10,5817-5818,5828-5831,5839-5840,5850-5851,5861-5862,5872-5873,5883-5886,5894-5897,5905-5906,5916-5917,5927-5928,5938-5939,5949-5950,5960-5963,5971-5972,5982-5983,5993-5994,6004-6005,6015-6016,6020-6030,6037-6038,6048-6049,6059-6060,6070-6071,6081-6082,6092-6093,6103-6104,6114-6115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "7e81de8ab28c228378e7872bd86cb7889ffc0ffd",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

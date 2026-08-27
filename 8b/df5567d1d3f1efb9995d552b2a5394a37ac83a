@@ -1,0 +1,31 @@
+memory/priorities.md
+  s_c5cb621066c5c1::t_c6354fa70292de 1-16
+memory/autonomy-substrate.md
+  s_c5cb621066c5c1::t_1620951aa909ed 1-49
+bin/fleet-log.mjs
+  s_c5cb621066c5c1::t_80d42b6a63603b 1-106
+docs/AUTONOMY-SUBSTRATE.md
+  s_c5cb621066c5c1::t_490d62e6edb791 1-109
+memory/MEMORY.md
+  s_c5cb621066c5c1::t_6a28619615ec6e 21
+docs/AGENT-CAPABILITY-MAP.md
+  s_c5cb621066c5c1::t_e2b3bc635c9c54 92-145
+bin/start-here.mjs
+  s_c5cb621066c5c1::t_3aac00cadf210d 1-232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8bdf5567d1d3f1efb9995d552b2a5394a37ac83a",
+  "prompts": {},
+  "sessions": {
+    "s_c5cb621066c5c1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002ef5151ffe8VWJKt4bpUWrmt",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

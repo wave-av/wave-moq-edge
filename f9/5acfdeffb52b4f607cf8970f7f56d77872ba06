@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/MEDIA-STACK-CODEMODE.md
+  s_d77777f89719d2::t_519afe7b77bd58 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f95acfdeffb52b4f607cf8970f7f56d77872ba06",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

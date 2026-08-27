@@ -1,0 +1,23 @@
+hooks/checkout-freshness-guard.sh
+  s_60a20469ef4369::t_4a6453801116e0 254-261
+hooks/mcp-selfheal.sh
+  s_60a20469ef4369::t_8a39462042df4f 31-38
+hooks/manifest.json
+  s_60a20469ef4369::t_7236a08bc9fac2 63,506
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "98f4f948c22c72390930cf86cba2faeb911ab50c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/model-selection-completion/RECEIPTS.md
+  s_7ddeb5d251570f::t_29711a4e3c7a1e 135-139,141-142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "03385ad569af59df1506aeeaf54ecfb5b01eebcb",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

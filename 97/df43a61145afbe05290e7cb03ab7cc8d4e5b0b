@@ -1,0 +1,19 @@
+governance/plans/agent-mail-plane/E0-E0-FOUNDATION.md
+  s_e90ffd8ef3c480::t_22f25a35153744 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "97df43a61145afbe05290e7cb03ab7cc8d4e5b0b",
+  "prompts": {},
+  "sessions": {
+    "s_e90ffd8ef3c480": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff422ee60ffeKrzceHPk2mGO4l",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

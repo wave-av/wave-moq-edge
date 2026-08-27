@@ -1,0 +1,19 @@
+docs/PLATFORM-SURFACE.md
+  s_2f1bfe8237f0ee::t_ac8cd530739eda 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "959aa488efd5f5c1315cfaf1ccd895ed8a144068",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/generated-artifact-contention/PHASE-C-SWEEP.md
+  s_d9915bbafa9657::t_99aaee956ea7f7 238-247
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "102c98fc50e3cc4f76ee6c2d176078a065c6ddba",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

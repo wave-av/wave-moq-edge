@@ -1,0 +1,27 @@
+governance/plans/merge-readiness-required/NORTH-STAR.md
+  s_d9915bbafa9657::t_1cf5cc13412c2b 62
+  s_d9915bbafa9657::t_164c436bb8eb60 35
+governance/plans/platform-status-consumers/NORTH-STAR.md
+  s_d9915bbafa9657::t_2ad40c73dd05b8 70
+  s_d9915bbafa9657::t_894ca910177e4f 57
+governance/plans/one-system-of-record/NORTH-STAR.md
+  s_d9915bbafa9657::t_7b0c186a47fe88 19
+governance/graph.json
+  s_d9915bbafa9657::t_45c54f7d1a91c9 7031
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7d957d4d2b63096bf368be7a655c6374593261d2",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

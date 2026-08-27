@@ -1,0 +1,23 @@
+governance/voice/voice-gate.mjs
+  s_e803b7a126b073::t_3939856376a75e 80-87
+  s_e803b7a126b073::t_76a62c630a1fe0 18-27
+governance/test/voice-law.test.mjs
+  s_e803b7a126b073::t_193ba178b2d00f 6
+  s_e803b7a126b073::t_d85bcaf27feb0d 64-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "66c430cf9926cc25c07c8bf00bc3ca0202a75ae3",
+  "prompts": {},
+  "sessions": {
+    "s_e803b7a126b073": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fde3833ccffeRQ9WOVPkYwkKgM",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+governance/plans/engineering-canon/NORTH-STAR.md
+  s_0227926428e4b1::t_3c7261a30d29e2 81-87
+governance/plans/engineering-canon/E13-sweep-operation/creative/pragmatist.md
+  s_0227926428e4b1::t_22d1683003f5a2 1-298
+governance/plans/engineering-canon/E13-sweep-operation/creative/redteam.md
+  s_0227926428e4b1::t_340d3b95d8966f 209
+  s_0227926428e4b1::t_1b8c5cf1ea6ef3 204
+governance/plans/engineering-canon/E13-sweep-operation/MEASURED-DEFECTS.md
+  s_0227926428e4b1::t_829dea41fac7a5 17-46
+  s_0227926428e4b1::t_9473826c481a8b 12
+governance/plans/engineering-canon/E9-defeater-gates/E9-DEFEATER-GATES.md
+  s_0227926428e4b1::t_90e20c2489813e 57-58,60-63,66-69,71
+  s_0227926428e4b1::t_4d6d6f8dd0840d 114-116
+  s_0227926428e4b1::t_dc1ce61d9ed5e3 73-79,81-85,90-96
+  s_0227926428e4b1::t_9bf38baf20f604 122-127,130-137
+  s_0227926428e4b1::t_53c969094a7c26 20-21,23-24,36-38,40-45
+  s_0227926428e4b1::t_5ec30243903386 50-54
+governance/plans/engineering-canon/E11-enforcement-supply-chain/E11-ENFORCEMENT-SUPPLY-CHAIN.md
+  s_0227926428e4b1::t_1dd78088d1f168 97,99-104
+  s_0227926428e4b1::t_9e02ce3be936f6 1-5,8,15-16,20-38,42-96,98,105-135
+  s_0227926428e4b1::t_d0eee364977cac 6-7,9-14,17-19
+  s_0227926428e4b1::t_7af9c70691734d 39-41
+governance/plans/engineering-canon/E6-control-structure/E6-CONTROL-STRUCTURE.md
+  s_0227926428e4b1::t_a3a100b770391c 1-53
+governance/graph.json
+  s_0227926428e4b1::t_2aa9881e384925 4166-4178,4239-4251,4286-4288,24307-24360,24571-24642,24717,24719,24723,24725
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6fe2726ca83ae2dd43a563a41384d2b6d6d20ceb",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+governance/plans/model-artifact-ingress/E0-E0-FOUNDATION.md
+  h_67a1b847dc59d6 1-40
+governance/plans/model-artifact-ingress/E1-E1-OBJECT-STORE.md
+  h_67a1b847dc59d6 1-10
+governance/plans/model-artifact-ingress/E2-E2-HP-VOLUME-CACHE.md
+  h_67a1b847dc59d6 1-10
+governance/plans/model-artifact-ingress/E3-E3-SERVE-HOOK.md
+  h_67a1b847dc59d6 1-10
+  s_8af4028370359f::t_7c566b7ea587ea 3,5
+  s_8af4028370359f::t_61718b9f701cd7 1
+governance/plans/model-artifact-ingress/NORTH-STAR.md
+  h_67a1b847dc59d6 1-60
+  s_8af4028370359f::t_2fdabd4e1c7ec1 5-16,18-58
+  s_8af4028370359f::t_14b8e731026568 2-4
+governance/DANGLING-REFS-BASELINE.json
+  s_ce4d7b01042bcb::t_06623b2b3f0e2a 161
+  s_ce4d7b01042bcb::t_bda42ececedc15 158-160
+  s_ce4d7b01042bcb::t_755171a979ad61 162-164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5d4b85d441d81a325c1ee0d7a511091cbbb4049a",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_048ad7f61626d4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feee8970affenVKsU9Nt681bXx",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6eee0b1ab56b3a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe86b74fbffewLl2H6sMrZgN62",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ce4d7b01042bcb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fead6346bffey35abXa0ydtxMp",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+rules/test-boundary-on-own-schedule.md
+  s_756b33c630d33b::t_897ddbd74ba494 1-11
+rules/egress-authority-outside-compute.md
+  s_756b33c630d33b::t_6ed90288340173 1-11
+rules/chokepoint-not-denylist.md
+  s_756b33c630d33b::t_5d29d93600b78c 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3c545b4b45faaf2ad02824cb990bdd2c96f54df3",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

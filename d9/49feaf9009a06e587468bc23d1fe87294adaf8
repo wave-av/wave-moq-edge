@@ -1,0 +1,25 @@
+governance/plans/twitter-signal-plane/RECEIPTS.md
+  s_0213641ac58af6::t_f301d18cd3ffbf 1-30
+governance/tools/wave-twitter/.gitignore
+  s_0213641ac58af6::t_f96890d7790baa 1
+governance/tools/wave-twitter/README.md
+  s_0213641ac58af6::t_d708786e0010f5 1-33
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_0213641ac58af6::t_907083fe845ae8 1-320
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d949feaf9009a06e587468bc23d1fe87294adaf8",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

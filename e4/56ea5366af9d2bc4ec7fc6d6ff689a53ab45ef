@@ -1,0 +1,19 @@
+governance/bin/deep-e2e.mjs
+  s_33808c00e16d52::t_c4ba412bb2c31d 1-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e456ea5366af9d2bc4ec7fc6d6ff689a53ab45ef",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

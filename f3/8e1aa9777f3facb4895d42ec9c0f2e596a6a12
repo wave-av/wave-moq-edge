@@ -1,0 +1,33 @@
+governance/tools/teacher-engine/lib/index.mjs
+  s_ea7fda6a228496::t_7d5c975f9d792e 22
+  s_ea7fda6a228496::t_9998fd4cc4a880 48
+  s_ea7fda6a228496::t_e47d804af031bd 1-21,23-47,49-58
+governance/tools/teacher-engine/bin/teacher-engine.mjs
+  s_ea7fda6a228496::t_3e08b4a24b62ac 1-23
+governance/research/creator-intelligence/COMPOSITIONS.md
+  s_ea7fda6a228496::t_05cdf6df04bb15 1-43
+governance/tools/teacher-engine/README.md
+  s_ea7fda6a228496::t_c1e98760ca3c9f 1-19
+governance/tools/teacher-engine/package.json
+  s_ea7fda6a228496::t_daa0ebe56c7c15 1-8
+governance/tools/teacher-engine/tests/teacher-engine.test.mjs
+  s_ea7fda6a228496::t_8de52b46fbe194 1-44
+governance/tools/teacher-engine/examples/metering-scenario.json
+  s_ea7fda6a228496::t_af1851945fe7c0 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f38e1aa9777f3facb4895d42ec9c0f2e596a6a12",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

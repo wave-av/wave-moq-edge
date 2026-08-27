@@ -1,0 +1,31 @@
+governance/tools/state-layer/examples/tenant-state.json
+  s_6d37275d796c0e::t_5d4bbe3a6aeda7 1-2,4-64
+  s_6d37275d796c0e::t_4229234e6e8509 3
+governance/tools/state-layer/README.md
+  s_6d37275d796c0e::t_3c4f09dbf20dd2 1-71
+governance/tools/state-layer/tests/state-layer.test.mjs
+  s_6d37275d796c0e::t_bdc3be37f82d60 49,55-59
+  s_6d37275d796c0e::t_14af612f1daed0 1-48,50-54,60-76
+governance/tools/state-layer/lib/index.mjs
+  s_6d37275d796c0e::t_6a5325286e51b5 1-145
+governance/tools/state-layer/package.json
+  s_6d37275d796c0e::t_053511739f0ee7 1-8
+governance/tools/state-layer/bin/state-layer.mjs
+  s_6d37275d796c0e::t_0757f7fbf192a7 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "28c0c1fecdcee1cdb5e63f7b8191f8a122bfd945",
+  "prompts": {},
+  "sessions": {
+    "s_6d37275d796c0e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_003b3152cffeVJi1YBNHjGp2nQ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

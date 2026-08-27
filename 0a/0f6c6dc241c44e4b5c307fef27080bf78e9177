@@ -1,0 +1,66 @@
+governance/plans/finding-closure/E0-BLEEDING.md
+  s_264ae386838c57::t_a71a493a5ba113 5
+  s_2e30bff6169f7a::t_0821fb59278043 4
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_264ae386838c57::t_6d4abe0931a8e6 4-5
+governance/plans/finding-closure/E2-SLA.md
+  s_264ae386838c57::t_2f07e8550abb8e 4-5
+governance/plans/finding-closure/E3-GATES.md
+  s_264ae386838c57::t_1c360989051975 4-5
+governance/plans/finding-closure/E4-BURNDOWN.md
+  s_264ae386838c57::t_7b6ea77cadf036 4-5
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_264ae386838c57::t_8ede99e1f99aa4 4-5
+governance/plans/finding-closure/E6-RUNTIME.md
+  s_264ae386838c57::t_520c1a97dab8cf 4-5
+governance/plans/finding-closure/action/E0-BLEEDING-PLAN.md
+  s_a3de1ea96d5b6a::t_5aefbb9c5d85fe 1-2,10-14,31,33-34,41-104,107-108,110-116,119-126,133-134,136-149
+governance/plans/finding-closure/action/E2-SLA-PLAN.md
+  s_a3de1ea96d5b6a::t_0a593024c3c41c 1-8,10-63
+governance/plans/finding-closure/action/E3-GATES-PLAN.md
+  s_a3de1ea96d5b6a::t_e413667fd0271b 1-10,13-47,51-75,77-115,117-118
+governance/plans/finding-closure/action/E4-BURNDOWN-PLAN.md
+  s_a3de1ea96d5b6a::t_5cd8702b0b5b7a 1-23,25-75
+governance/plans/finding-closure/action/E1-OWNERSHIP-PLAN.md
+  s_63c6ee080d73c3::t_de88e23d62f562 1-17,25-28,36-37,39-71,73-133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0a0f6c6dc241c44e4b5c307fef27080bf78e9177",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a3de1ea96d5b6a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a355787e7adac2147",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

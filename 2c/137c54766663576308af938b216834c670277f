@@ -1,0 +1,26 @@
+.coderabbit.yaml
+  s_8d26503dfc73f4::t_8a2cf9cfe5d616 78-81
+REVIEW.md
+  s_8d26503dfc73f4::t_56c43541198f09 1-80
+cubic.yaml
+  s_8d26503dfc73f4::t_73d48d9fba5b01 1-74,81,84-86,89-104
+  s_8d26503dfc73f4::t_c59090b800c6ca 75-80,82-83,87-88
+.cursor/BUGBOT.md
+  s_8d26503dfc73f4::t_f39b7edcffdcdb 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "2c137c54766663576308af938b216834c670277f",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

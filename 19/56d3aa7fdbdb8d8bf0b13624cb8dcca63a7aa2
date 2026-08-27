@@ -1,0 +1,22 @@
+governance/plans/stacked-prs/E2-INTRAREPO-STACK.md
+  s_63a2f8012db469::t_763a94b18226fe 4-7
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_63a2f8012db469::t_5633296c2781dd 3-5,16-119
+  s_63a2f8012db469::t_71e4ec8b286890 7-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1956d3aa7fdbdb8d8bf0b13624cb8dcca63a7aa2",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+hookcli/tests/fixtures/dir-marker.sh
+  s_60a20469ef4369::t_f879543b391581 1-7,19-20
+  s_60a20469ef4369::t_12351a546da551 8-14
+  s_60a20469ef4369::t_9371a9dd952b86 15-18
+hookcli/tests/scratch-token.sh
+  s_60a20469ef4369::t_ec89103dbec9a8 1-111
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_c42765fbf193fc 331-345
+  s_60a20469ef4369::t_3655826a4fe221 321-327,329-330,346-349
+  s_60a20469ef4369::t_23a9e327066faf 367-374
+hookcli/tests/run.sh
+  s_a83f0761203bda::t_13ada4b4c4a202 100-105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9ba4cd798db9187a69b6cb2cdf84ae97aab66d66",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a83f0761203bda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a1807637fc57868b9",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

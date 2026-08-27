@@ -1,0 +1,25 @@
+governance/test/wave-cost-ledger-anomaly-read.test.mjs
+  s_2e30bff6169f7a::t_3d497e8727e8fa 30-35
+  s_2e30bff6169f7a::t_966d3dd93f66ad 133-134,137,140-146,148,150-169
+  s_2e30bff6169f7a::t_60315c6b55ad06 6,59,76,91,102,113,124
+  s_2e30bff6169f7a::t_07fe2ee196c336 4,7-8
+governance/lib/wave-cost-ledger-anomaly-read.mjs
+  s_2e30bff6169f7a::t_784b1a70348a54 12-44
+  s_2e30bff6169f7a::t_745c4feeb81446 81-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c07ba2640da454b396a8ffad459421ebd63ca165",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

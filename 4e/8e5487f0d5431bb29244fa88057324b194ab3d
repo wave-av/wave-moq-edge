@@ -1,0 +1,25 @@
+governance/bin/catena-pin-check.mjs
+  s_53b49eff5b8c5d::t_8ea266fa0c2c1e 61-66
+governance/plans/catena-control-plane/spec/st2138-19-open-questions.md
+  s_53b49eff5b8c5d::t_973f53e2993542 1-120
+governance/plans/catena-control-plane/spec/st2138-19.md
+  s_53b49eff5b8c5d::t_50715e36c06505 1-174
+governance/plans/catena-control-plane/st2138-pin.json
+  s_53b49eff5b8c5d::t_b8d4ebeee201f8 23-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4e8e5487f0d5431bb29244fa88057324b194ab3d",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

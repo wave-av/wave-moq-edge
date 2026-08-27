@@ -1,0 +1,20 @@
+governance/test/recall-regression.test.mjs
+  s_60a20469ef4369::t_ec38ed2ca2aa0c 20,23-28
+  s_60a20469ef4369::t_4437718aaedfb4 49-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4ea6dfca7b696e7b7c045aa62ce79874021cc249",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

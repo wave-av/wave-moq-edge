@@ -1,0 +1,25 @@
+hooks/lib/merge-premise-ack.mjs
+  s_375efeac18ed55::t_3eb284d28997e5 12-17,29-34,48-51,54-56,89-90
+hooks/merge-premise-guard.sh
+  s_375efeac18ed55::t_c022b7774b51cb 228-233,238
+hooks/tests/fixtures/merge-premise-harness.sh
+  s_375efeac18ed55::t_81b3266bfcd0e0 68-74
+hooks/tests/merge-premise-guard.test.sh
+  s_375efeac18ed55::t_f58c7ca6f9928e 186-214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "882c8a9ab4f9692bd24cedfaaccf53905a98ca0e",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

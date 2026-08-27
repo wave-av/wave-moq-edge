@@ -1,0 +1,30 @@
+hooks/supabase-prod-guard.py
+  s_60a20469ef4369::t_99439d23af9dcb 137-148,156-157,159-166,168,170-184
+  s_60a20469ef4369::t_e902b071ac84ad 5-6
+  s_60a20469ef4369::t_25478d71f38e93 149-154
+  s_60a20469ef4369::t_f2e7a5297b4eeb 155
+  s_60a20469ef4369::t_30aa14e2781caa 11-19
+hooks/public-github-write-gate.py
+  s_60a20469ef4369::t_8036ee7e794609 6-8
+hooks/tests/phaseC/supabase-prod-guard.sh
+  s_60a20469ef4369::t_aa146c97223af3 40-41
+  s_60a20469ef4369::t_58b16732f1abdf 28-39,42-53
+hooks/ticket-hygiene-guard.py
+  s_60a20469ef4369::t_6b4995aa675d54 3-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "79ee6b5fa284ee8b58899e42eaefd9f9850ca835",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_934545c7a7d6f8 81-86
+  s_2e30bff6169f7a::t_5d292c045ba94a 87
+  s_2e30bff6169f7a::t_991ff871694451 92-93
+governance/bin/cost-ledger-store.mjs
+  s_2e30bff6169f7a::t_d8a5edaeaa555e 25-48,50
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  s_2e30bff6169f7a::t_087577b2e739b1 1-259
+governance/bin/wave-cost-ledger-rfp4-feeder.mjs
+  s_2e30bff6169f7a::t_8f7d5d5c5321ce 1-40
+governance/bin/wave-cost-ledger-vendor-config-liveness.mjs
+  s_2e30bff6169f7a::t_bb742a1c97247e 1-78
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  s_2e30bff6169f7a::t_9da760e4e70087 1-240
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  s_2e30bff6169f7a::t_10b39abe97be23 1-96
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  s_2e30bff6169f7a::t_efd1010601bdc3 1-165
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_053c3b4745e5eb 10-89
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_f19b595df13de5 257-263
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  s_2e30bff6169f7a::t_9c2cc86fc3c91f 1-322
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  s_2e30bff6169f7a::t_e10462f30922e4 1-234
+governance/test/wave-cost-ledger-rfp4-adapter.test.mjs
+  s_2e30bff6169f7a::t_a563fcebf596da 1-83
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  s_2e30bff6169f7a::t_2fecc851e36eea 1-269
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4dc5bdb4b7c58a44ae8da33c42a0e1e60800767c",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+governance/plans/model-identity-overlay/NORTH-STAR.md
+  s_7ddeb5d251570f::t_e7cf8571c590fc 12
+  s_7ddeb5d251570f::t_d96c6bc2475b7d 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5487fb60cf75ceea687efe47a85e4daccb637673",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

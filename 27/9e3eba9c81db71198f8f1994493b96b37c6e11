@@ -1,0 +1,21 @@
+.github/workflows/checks.yml
+  s_a9317a2723d1eb::t_99c6865223e141 351-354
+  s_a9317a2723d1eb::t_4d76a8640235d1 391
+  s_a9317a2723d1eb::t_84ca39de97ef3f 303
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "279e3eba9c81db71198f8f1994493b96b37c6e11",
+  "prompts": {},
+  "sessions": {
+    "s_a9317a2723d1eb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "50b260fb-a68d-4b18-98c7-06b66aeed187",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

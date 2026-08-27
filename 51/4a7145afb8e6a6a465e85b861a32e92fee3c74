@@ -1,0 +1,27 @@
+governance/plans/catena-control-plane/CONFORMANCE-SCOPE.md
+  s_53b49eff5b8c5d::t_98603e594d873b 1-200
+governance/plans/catena-control-plane/RECEIPTS.md
+  s_53b49eff5b8c5d::t_2986ff95be4d71 327-357
+governance/plans/catena-control-plane/E0-PIN-AND-DECIDE.md
+  s_53b49eff5b8c5d::t_b121f639926f02 69
+  s_53b49eff5b8c5d::t_f428af2c45a110 4-7
+  s_53b49eff5b8c5d::t_bd5f5ab1d56dcd 68
+governance/plans/catena-control-plane/receipts/E0-P3.md
+  s_53b49eff5b8c5d::t_19146524628f8c 1-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "514a7145afb8e6a6a465e85b861a32e92fee3c74",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

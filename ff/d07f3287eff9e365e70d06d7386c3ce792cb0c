@@ -1,0 +1,107 @@
+governance/tools/storage-router/bin/storage-router.mjs
+  s_8f508d23f22370::t_e2aa6a15eb2bfe 1-85
+governance/tools/internal-affairs/lib/index.mjs
+  s_e7f2a9ef5a316e::t_f9fb990c4dc839 1-47,53-109
+  s_e7f2a9ef5a316e::t_aab80a09441941 48-52
+governance/tools/presence-audit/examples/governance-values.json
+  s_a5a83fb5a154cc::t_88087fd1975eaf 1-35
+governance/tools/internal-affairs/package.json
+  s_e7f2a9ef5a316e::t_dde3a868c2b97c 1-8
+governance/tools/storage-router/routing.schema.json
+  s_8f508d23f22370::t_4d22841d1c7e6f 1-43
+governance/tools/presence-audit/bin/presence-audit.mjs
+  s_a5a83fb5a154cc::t_88e1ac2b90a9b2 1-50,53-84
+  s_a5a83fb5a154cc::t_68a25f49a4e339 51-52
+governance/tools/storage-router/examples/wave-knowledge.json
+  s_8f508d23f22370::t_c80a420735b5f2 1-71
+governance/tools/internal-affairs/bin/internal-affairs.mjs
+  s_e7f2a9ef5a316e::t_a120e80009a9e7 1-55
+governance/tools/storage-router/README.md
+  s_8f508d23f22370::t_c75d7b43946466 1-92
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  s_a5a83fb5a154cc::t_2f819db41f1dae 91
+  s_a5a83fb5a154cc::t_8ead983c1b165d 1-90,92-305
+governance/tools/internal-affairs/audit.schema.json
+  s_e7f2a9ef5a316e::t_752402b25e94c8 46
+  s_e7f2a9ef5a316e::t_88cf8c0e4f6ced 1-45,47-56
+governance/tools/storage-router/tests/storage-router.test.mjs
+  s_8f508d23f22370::t_bf314e8d891a0f 1-262
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_7f8f0991c69dad::t_fcb5ed51cc0b24 361-362,366,369-370,374-377,381-385,387,391,394-395,399-400,404-408
+  s_7f8f0991c69dad::t_4f47697e415ae3 415,426-428
+  s_7f8f0991c69dad::t_cb335ae3f330ec 343
+  s_7f8f0991c69dad::t_49c2581b870a61 2
+  s_7f8f0991c69dad::t_490ffbe1dcaad7 36
+  s_7f8f0991c69dad::t_89e582380eba16 319
+  s_7f8f0991c69dad::t_1a961ceead2492 335-342,344-360,363-365,367-368,371-373,378-380,386,388-390,392-393,396-398,401-403,409-414,416-425,429-532
+governance/tools/load-shedder/shedder.schema.json
+  s_7f8f0991c69dad::t_c42ddf08c3b94f 4,17-29
+governance/tools/internal-affairs/README.md
+  s_e7f2a9ef5a316e::t_21f709a8ce6a6b 1-14
+governance/tools/presence-audit/lib/index.mjs
+  s_a5a83fb5a154cc::t_d659525159a001 1-183
+governance/tools/load-shedder/README.md
+  s_7f8f0991c69dad::t_bf166300e2cefd 72-76
+  s_7f8f0991c69dad::t_801460aefdd2f4 9-17,20-22
+  s_7f8f0991c69dad::t_eb0992896843f6 40-41,53-66
+  s_7f8f0991c69dad::t_33f183099ba1bc 23
+governance/tools/storage-router/lib/index.mjs
+  s_8f508d23f22370::t_4a463488741733 1-170
+governance/tools/load-shedder/lib/index.mjs
+  s_7f8f0991c69dad::t_23b323f94412e2 130-138,148-150,155-159,185-186,188,190,193-199,201,203-232,237-240,247-264,266-267,270-272,292-293
+  s_7f8f0991c69dad::t_d8217804c8a0c0 10-17,25-26
+  s_7f8f0991c69dad::t_2c558a970c86dd 200,202
+  s_7f8f0991c69dad::t_5a4b2afba0f9bb 234-236,241,246
+  s_7f8f0991c69dad::t_11ce8c258f9478 336-345
+  s_7f8f0991c69dad::t_fd73429b978d8e 233
+governance/tools/internal-affairs/examples/wave-self-attacks.json
+  s_e7f2a9ef5a316e::t_723107a6790da9 1-34
+governance/tools/internal-affairs/tests/internal-affairs.test.mjs
+  s_e7f2a9ef5a316e::t_c4430785591340 1-36,39-57,60-78,81-87,97-99,102-104
+  s_e7f2a9ef5a316e::t_12026d2784bc5e 37-38,58-59,79-80,88,90-96,100
+  s_e7f2a9ef5a316e::t_54d50354d03765 89,101
+governance/tools/presence-audit/audit.schema.json
+  s_a5a83fb5a154cc::t_dd9792c81bc853 1-45
+governance/tools/presence-audit/README.md
+  s_a5a83fb5a154cc::t_bafbfe8c0455ed 1-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ffd07f3287eff9e365e70d06d7386c3ce792cb0c",
+  "prompts": {},
+  "sessions": {
+    "s_7f8f0991c69dad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004bd4ee5ffeWTDa41mYSwMag0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8f508d23f22370": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004bd3766ffeUjoA7V9Z0kRRkB",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a5a83fb5a154cc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004bd245fffeJxKKMBtWUpIwqr",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e7f2a9ef5a316e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004bd0ed5ffeHu1QIILSPmRX6q",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

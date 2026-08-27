@@ -1,0 +1,19 @@
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_6ad0da08bf48e2 81-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "064f1cbe9aab5a91573975967c14e62e4a73f043",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

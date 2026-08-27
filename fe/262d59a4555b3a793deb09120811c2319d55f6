@@ -1,0 +1,19 @@
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_28efdc23129d94::t_0b21d0a0ba4f49 4,160-198
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fe262d59a4555b3a793deb09120811c2319d55f6",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

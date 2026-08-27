@@ -1,0 +1,57 @@
+rules/generated-artifact-committed-and-staleness-gated.md
+  s_264ae386838c57::t_5151d5cbbac39d 1
+  s_264ae386838c57::t_7ab03c88a341df 5-16
+.gitattributes
+  s_264ae386838c57::t_4ac6a7e4540b5b 16-19
+governance/test/code-index.test.mjs
+  s_264ae386838c57::t_291c6508394cdb 18-22
+.github/workflows/governance.yml
+  s_264ae386838c57::t_d50ced066d63c8 251-256
+  s_264ae386838c57::t_a01a3bb5665ed3 248-250,257,259
+governance/bin/code-index.mjs
+  s_264ae386838c57::t_722ec388621718 235-254,256-257
+  s_264ae386838c57::t_334d5c4fcade67 35
+  s_264ae386838c57::t_203076b98e9a34 2-11,14-15
+governance/test/l2-install.test.mjs
+  s_264ae386838c57::t_40429e31876410 97-100,102-103
+  s_264ae386838c57::t_3e415e2085104d 101
+governance/test/derived-artifact-drift-audit.test.mjs
+  s_264ae386838c57::t_a1b9b2a7d9b63b 107-111
+governance/lib/l2-pipeline.mjs
+  s_264ae386838c57::t_dc95c4c3465aef 58-63
+governance/bin/resolve-generated-conflicts.mjs
+  s_264ae386838c57::t_e3906934d6d3e9 35-38
+governance/bin/wave-code-mcp.mjs
+  s_264ae386838c57::t_3eddcde1f88dd2 42
+  s_264ae386838c57::t_248de50806519c 11-14,17-35
+  s_264ae386838c57::t_eaa9dec6b4830e 2,4-8
+  s_264ae386838c57::t_4aea2ab19138cd 90-98
+  s_264ae386838c57::t_b082f699c52bb8 36
+governance/test/resolve-generated-conflicts.test.mjs
+  s_264ae386838c57::t_0cf748df296ee9 198-205
+  s_264ae386838c57::t_62f29abc4d40fc 134-140,142,145,147,156-168,171
+governance/bin/derived-artifact-drift-audit.mjs
+  s_264ae386838c57::t_6250ef22f9b6b6 87-89
+governance/test/reviewer-ignore-sync.test.mjs
+  s_264ae386838c57::t_02d6f84b4ec286 29-37,46,48-49
+.githooks/pre-commit
+  s_264ae386838c57::t_b6ad13ca4f09d2 55-62
+.gitignore
+  s_264ae386838c57::t_a4672489f7131d 71-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ae0f4fccf1b975a35129b3492dcf344e3a0878c6",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

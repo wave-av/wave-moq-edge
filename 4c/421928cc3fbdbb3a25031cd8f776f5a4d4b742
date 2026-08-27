@@ -1,0 +1,19 @@
+opencode.json
+  s_ed50a5a6d9ea73::t_ea7d8e49c3f813 577-627
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4c421928cc3fbdbb3a25031cd8f776f5a4d4b742",
+  "prompts": {},
+  "sessions": {
+    "s_ed50a5a6d9ea73": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00e7f8dcfffe38XKGt3RMQIZRw",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

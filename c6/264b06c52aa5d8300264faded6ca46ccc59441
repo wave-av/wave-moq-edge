@@ -1,0 +1,20 @@
+frameworks/copywriting/copy-checker.sh
+  s_07acdfa7e3709a::t_17fd8d25672b63 57
+  s_07acdfa7e3709a::t_3a6a89532e4a0b 49-50,54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c6264b06c52aa5d8300264faded6ca46ccc59441",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

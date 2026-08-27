@@ -1,0 +1,33 @@
+.github/workflows/northstar-lint.yml
+  s_19c8e603d8990b::t_c28033a9e107f6 1-42
+northstars/README.md
+  s_19c8e603d8990b::t_ec112ea2f52be7 32-39
+scripts/northstar-lint.mjs
+  s_19c8e603d8990b::t_65befaab403cae 34-36
+  s_19c8e603d8990b::t_8187cd36a7f57d 70
+  s_19c8e603d8990b::t_b8ebdefb7658ef 50-52
+  s_19c8e603d8990b::t_662e74e5bb2f6f 42
+  s_19c8e603d8990b::t_03bcd1501f8bd4 1-33,37-41,43-49,53-69,71-82
+northstars/riginferopt.md
+  s_19c8e603d8990b::t_1182a4f2572b96 1-68
+northstars/realtime-ai-fabric.md
+  s_19c8e603d8990b::t_f51bcf93f8e0f3 1-70
+northstars/discovery.md
+  s_19c8e603d8990b::t_ecec588915c97f 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "662bf8022ccfdf40dd53c4af12ce5b5b380b196c",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

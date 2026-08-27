@@ -1,0 +1,21 @@
+governance/plans/brand-recycle/CONSOLE-FAILURES.md
+  s_15127d80763110::t_726d5c53e0a79b 1-65
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_15127d80763110::t_f121d017c5acf9 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "cc73e56702c04ff84a7612fb877779b94be3660e",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

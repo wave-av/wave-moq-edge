@@ -1,0 +1,22 @@
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_8d26503dfc73f4::t_95f04684f78a68 110
+  s_8d26503dfc73f4::t_aba1481753bfc4 153
+  s_8d26503dfc73f4::t_58dc486ae089e4 6-10
+  s_8d26503dfc73f4::t_3b1dc41273e8a9 97,101-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "8e5ee764bf10e7c547a75d1e2dd7db16ed2c8ed7",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

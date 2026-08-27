@@ -1,0 +1,31 @@
+governance/plans/finding-closure/E0-BLEEDING.md
+  s_264ae386838c57::t_a71a493a5ba113 4-5
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_264ae386838c57::t_6d4abe0931a8e6 4-5
+governance/plans/finding-closure/E2-SLA.md
+  s_264ae386838c57::t_2f07e8550abb8e 4-5
+governance/plans/finding-closure/E3-GATES.md
+  s_264ae386838c57::t_1c360989051975 4-5
+governance/plans/finding-closure/E4-BURNDOWN.md
+  s_264ae386838c57::t_7b6ea77cadf036 4-5
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_264ae386838c57::t_8ede99e1f99aa4 4-5
+governance/plans/finding-closure/E6-RUNTIME.md
+  s_264ae386838c57::t_520c1a97dab8cf 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "13e2ba1a8cc544821c4258002270e82416417d5e",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

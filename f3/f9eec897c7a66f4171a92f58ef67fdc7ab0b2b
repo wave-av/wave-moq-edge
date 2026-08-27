@@ -1,0 +1,21 @@
+governance/plans/vision-model-ladder/E0-PROBE.md
+  s_33808c00e16d52::t_d187b8e5faabb8 9
+governance/plans/vision-model-ladder/E3-PROMOTE.md
+  s_33808c00e16d52::t_e9a951a9ff02f6 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f3f9eec897c7a66f4171a92f58ef67fdc7ab0b2b",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/voice/voice-gate.mjs
+  s_ea8755337f3c0d::t_c648b00cb94bfd 16,28,30-31,89
+governance/voice/voice-law.mjs
+  s_700cd0ad928eea::t_1faca4a27305d1 28-52,70-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5db7448c5f8df0219abccdc697e3ef14d47ae055",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

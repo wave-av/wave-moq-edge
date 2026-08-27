@@ -1,0 +1,21 @@
+governance/bin/model-router.mjs
+  s_700cd0ad928eea::t_2d06a843657063 189-197,199-200,217-221,232,245-246,250-281
+governance/test/model-router.test.mjs
+  s_700cd0ad928eea::t_4f1c87bb872157 6,42-122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "19da53eff070e37b3f7b7b7b74a107614eb39d82",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

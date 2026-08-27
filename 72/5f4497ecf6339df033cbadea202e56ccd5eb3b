@@ -1,0 +1,22 @@
+governance/test/platform-status-cli.test.mjs
+  s_941b8f0612ec3e::t_2ed21d9cd0c478 1-189
+governance/bin/platform-status.mjs
+  s_941b8f0612ec3e::t_9577af4c47dd13 1-33,35-328
+  s_941b8f0612ec3e::t_92ed8c3a8d1e1c 34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "725f4497ecf6339df033cbadea202e56ccd5eb3b",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

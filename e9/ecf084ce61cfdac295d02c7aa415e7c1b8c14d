@@ -1,0 +1,27 @@
+governance/plans/egress-authority/DELIVERY-RECEIPT.md
+  s_756b33c630d33b::t_ee716f53f344ed 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e9ecf084ce61cfdac295d02c7aa415e7c1b8c14d",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

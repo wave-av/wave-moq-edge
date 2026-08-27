@@ -1,0 +1,29 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_2f7caf76a0143d 79-84
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_11502600d05e3d 4,6-8
+governance/plans/ffmpeg9-lei/action/E10-P1-RECEIPT-SCHEMA.md
+  s_124891ed63801b::t_f445cd4a403358 1-262,264-287
+  s_124891ed63801b::t_8904ef032080db 263
+  s_124891ed63801b::t_4c7280f2813347 288-289
+governance/DASHBOARD.md
+  s_124891ed63801b::t_14a252ff9f4ac7 25
+governance/graph.json
+  s_124891ed63801b::t_469ccb227b4961 3573-3585
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d8a6be71c163fc043895635e953cb32876200a07",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

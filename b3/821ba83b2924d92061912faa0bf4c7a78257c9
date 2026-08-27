@@ -1,0 +1,63 @@
+governance/plans/fireworks-integration/E2-ROUTING.md
+  s_607ff1745644cc::t_c8141c3038d8e6 1-37
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_607ff1745644cc::t_4572e4ce0d4c41 1-7,18
+  s_9d6b1b801cddff::t_374608501d2494 8-9
+  s_ff623ca1d697f8::t_072a6a78d7cc5c 10-11
+  s_0950db28a6ae27::t_b7b6e825e1cecd 12-17
+governance/plans/fireworks-integration/E1-PROVIDER.md
+  s_607ff1745644cc::t_20b89769d99fab 1-26
+governance/plans/fireworks-integration/E5-PRODUCT-GATE.md
+  s_607ff1745644cc::t_d18d8646babc61 1-26
+governance/plans/fireworks-integration/E3-BATCH.md
+  s_607ff1745644cc::t_ed18cb9965d8b5 1-26
+governance/plans/fireworks-integration/E4-OWN-MODEL.md
+  s_9d6b1b801cddff::t_20c4fd85ba5ec5 2,6-9,14,16,18-23,25,27-29,31,33,35,37,39,41
+  s_607ff1745644cc::t_662df55ecde2cd 1,3-5,10-13,15,17,24,26,30,32,34,36,38,40,42-46
+governance/plans/fireworks-integration/README.md
+  s_607ff1745644cc::t_e5bb209fa38e1c 3-5
+  s_607ff1745644cc::t_f182fbe4f24605 1-2,6-45
+governance/plans/fireworks-integration/E0-SMOKE.md
+  s_9d6b1b801cddff::t_2f0a8759b647f5 23-36
+  s_607ff1745644cc::t_8c484156c0dc9e 1-22,37-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b3821ba83b2924d92061912faa0bf4c7a78257c9",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_607ff1745644cc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ce8982ffeMHOZss3M73Ycj6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9d6b1b801cddff": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001c2831effeKOR7oU0FM1nB16",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ff623ca1d697f8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001b977b0ffe1KGns09ZxyI40r",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

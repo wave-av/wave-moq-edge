@@ -1,0 +1,36 @@
+governance/plans/sfu-media-plane/E1-PEER-SPINE.md
+  s_15127d80763110::t_22c5f96404edfe 1-109
+governance/plans/sfu-media-plane/E6-LIVE-PROOF.md
+  s_15127d80763110::t_7aeeb08c517744 1-103
+governance/plans/sfu-media-plane/E3-REMOTE-RENDER.md
+  s_15127d80763110::t_9b924edffd57b8 1-119
+governance/plans/sfu-media-plane/E5-METER-TRUTH.md
+  s_15127d80763110::t_7679f047cbe9b0 1-102
+governance/plans/sfu-media-plane/E4-ROOM-LIFECYCLE.md
+  s_15127d80763110::t_c99a8d3ffaddf2 1-107
+governance/plans/sfu-media-plane/NORTH-STAR.md
+  s_15127d80763110::t_79bb4c12fbabbc 1-213,215,217-247
+  s_15127d80763110::t_9c9d9a2790ece0 214,216
+governance/plans/sfu-media-plane/E2-PUBLISH.md
+  s_15127d80763110::t_f3addd71bcc48b 1-121
+governance/DASHBOARD.md
+  s_15127d80763110::t_3884dce9086e9e 25
+governance/graph.json
+  s_15127d80763110::t_ba646d215dbaee 5895-5985,26022-26207
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "656a4866102a42cae29feedf3f1f7a20c54d05be",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

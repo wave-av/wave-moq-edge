@@ -1,0 +1,26 @@
+governance/test/automation-registry/lint.test.mjs
+  s_37e24b4d920e09::t_a79348617fa9f9 6
+  s_37e24b4d920e09::t_f92b2d790efec0 70
+  s_37e24b4d920e09::t_df4decb2536dee 59-61,63-69,71-75
+  s_37e24b4d920e09::t_20378b9005813a 62
+governance/automation-registry/lint.mjs
+  s_37e24b4d920e09::t_fbfddb99b6afed 52-57
+  s_37e24b4d920e09::t_c6979933836eab 24-31
+  s_37e24b4d920e09::t_40e78113279d60 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f81c8b8849e7d6f5dc7f71d79021714859818c9d",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

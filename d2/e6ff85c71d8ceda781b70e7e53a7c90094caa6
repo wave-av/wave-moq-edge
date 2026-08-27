@@ -1,0 +1,19 @@
+hooks/manifest.json
+  s_9bb1b1d1d998d4::t_a77ef424692ee4 97-98,104,1597,1603
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d2e6ff85c71d8ceda781b70e7e53a7c90094caa6",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

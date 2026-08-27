@@ -1,0 +1,55 @@
+governance/plans/twitter-signal-plane/artifacts/ox-harness-VERDICT.md
+  s_0213641ac58af6::t_b52593e2f1fea9 1-30
+governance/plans/twitter-signal-plane/artifacts/ox-harness.mjs
+  s_51ed4db00ba895::t_7199b3c11d3f08 1-11,13-104,108-177
+  s_51ed4db00ba895::t_8b084e3fcfc56a 105-107
+  s_0213641ac58af6::t_1704485a8c5ee6 12
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_0213641ac58af6::t_2b4562a4d0ab7f 252
+  s_4b1f28b32a14cc::t_ae0df2a8a079a3 3,10-11,15,64-71,80-83,144,160,211,312-318,323-329,333-335,339-348,350,361-380
+  s_0213641ac58af6::t_20f3f4c7cd227d 242
+  s_0213641ac58af6::t_074e931866eff7 239
+  s_0213641ac58af6::t_09ba9983781372 106-111,381
+governance/plans/twitter-signal-plane/artifacts/ox-harness.jsonl
+  s_dedb333dd5195e::t_7f4a22f43a8482 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2ad7f4a76f475d44605b999b533b36f4efc40eec",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4b1f28b32a14cc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda8dd60affeFmN2DWInSvJ8CO",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_51ed4db00ba895": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda8db75effeixEpVsakgW7Qbv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

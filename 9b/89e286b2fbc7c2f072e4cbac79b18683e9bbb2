@@ -1,0 +1,21 @@
+.github/workflows/checks.yml
+  s_cf3356a24071e8::t_c1e4ce0937d923 143-148
+scripts/token-budget-check-changed.sh
+  s_cf3356a24071e8::t_926bcf23a7e30f 78-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "9b89e286b2fbc7c2f072e4cbac79b18683e9bbb2",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

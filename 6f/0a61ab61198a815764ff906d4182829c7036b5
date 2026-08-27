@@ -1,0 +1,140 @@
+.claude/skills/state-of-play/SKILL.md
+  h_af5ac1a9798224 63,134
+.claude/skills/wow-canon/SKILL.md
+  h_af5ac1a9798224 3,48
+.github/workflows/auto-merge.yml
+  h_af5ac1a9798224 441,443-452,454,514-519,522,525,527-535,539-580
+.github/workflows/foundation-gate.yml
+  h_af5ac1a9798224 42
+.gitignore
+  h_af5ac1a9798224 80-86
+governance/DASHBOARD.md
+  h_af5ac1a9798224 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  h_af5ac1a9798224 468,482
+governance/agents/TAXONOMY.yaml
+  h_af5ac1a9798224 111,122,249-281
+governance/bin/closed-loop-audit.mjs
+  h_af5ac1a9798224 1-141
+governance/bin/external-tickets.mjs
+  h_af5ac1a9798224 35,37,42-57,264-279,286-301,355-364
+governance/bin/post-merge-replay.mjs
+  h_af5ac1a9798224 15,143-146,163-197,250-253,255,316
+governance/bin/review-liveness.mjs
+  h_af5ac1a9798224 15-27,50-71,78-83,87-102,106-111,162-165,167-168,203-226
+governance/bin/taxonomy.mjs
+  h_af5ac1a9798224 113-125,149-152,162-165
+governance/gam-port-kit/manifest.json
+  h_af5ac1a9798224 21-27
+governance/graph.json
+  h_af5ac1a9798224 7104-7112,7678-7685,16694-16699,17084-17089,17126-17131,17204-17209,18566-18571,19832-19837,19934-19939,24836-24841,27290-27301
+governance/lib/closed-loop-audit.mjs
+  h_af5ac1a9798224 1-242
+governance/lib/drill-fixtures-external-tickets.mjs
+  h_af5ac1a9798224 21,36-42
+governance/lib/gam-workflow-checks.mjs
+  h_af5ac1a9798224 198-228
+governance/plans/2026-07-08-L1-presend-memo-plan.md
+  h_af5ac1a9798224 76
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  h_af5ac1a9798224 153-159
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  h_af5ac1a9798224 6
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  h_af5ac1a9798224 37-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  h_af5ac1a9798224 40,43-47,51-53,56-58,60-71,76-79,85-88,91-93
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  h_af5ac1a9798224 71-75,83-86
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  h_af5ac1a9798224 46-48
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  h_af5ac1a9798224 79-81,85-87,127-153,300-321,369-374,390-393,404-405,448,454-463,479-482,505,507-513,600-605
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  h_af5ac1a9798224 277,280-349
+governance/plans/finding-closure/E7-MEASURE.md
+  h_af5ac1a9798224 14-17
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 6-14,27-56,70-73,76-81,124-136,180,182-187
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  h_af5ac1a9798224 30-73,114-118,122-125
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  h_af5ac1a9798224 284-288
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  h_af5ac1a9798224 96-148
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  h_af5ac1a9798224 28-32
+governance/recall/BAKE-OFF.md
+  h_af5ac1a9798224 12-20
+governance/recall/bakeoff.mjs
+  h_af5ac1a9798224 20-22,28,36-37
+governance/state/mechanism-intent.json
+  h_af5ac1a9798224 1-14
+governance/test/closed-loop-audit.test.mjs
+  h_af5ac1a9798224 1-180
+governance/test/external-tickets.test.mjs
+  h_af5ac1a9798224 11-14,198-332
+governance/test/gam-workflow-checks.test.mjs
+  h_af5ac1a9798224 64-77,113-115
+governance/test/memo.test.mjs
+  h_af5ac1a9798224 39
+governance/test/plugin-canon-drift.test.mjs
+  h_af5ac1a9798224 1-29
+governance/test/post-merge-replay.test.mjs
+  h_af5ac1a9798224 21,97-165
+governance/test/recall-regression.test.mjs
+  h_af5ac1a9798224 72-80,97,100-109,124-152
+governance/test/recall-repo-gate.test.mjs
+  h_af5ac1a9798224 64-69,71-92
+governance/test/review-liveness-cause-token.test.mjs
+  h_af5ac1a9798224 1-96
+governance/test/taxonomy.test.mjs
+  h_af5ac1a9798224 126-174
+hookcli/lib/board-redact.mjs
+  h_af5ac1a9798224 22-40,51-53,55-60
+hooks/bash-output-secret-scan.sh
+  h_af5ac1a9798224 1-189
+hooks/doppler-env-guard.sh
+  h_af5ac1a9798224 48-53,61-108,110-120
+hooks/hooklib/secret-patterns.sh
+  h_af5ac1a9798224 1-102
+hooks/manifest.json
+  h_af5ac1a9798224 82-109,351,1360
+hooks/secret-leak-scan.sh
+  h_af5ac1a9798224 21-23,25-34,36,40-41,43-44
+hooks/tests/bash_output_secret_scan_smoke.sh
+  h_af5ac1a9798224 1-244
+hooks/tests/doppler_guard_smoke.sh
+  h_af5ac1a9798224 67-213,215-216,220-224,238-252
+hooks/tests/merge-premise-split.test.sh
+  h_af5ac1a9798224 65-74,79-88,103-105,107
+hooks/tests/portable-shell.test.sh
+  h_af5ac1a9798224 1-249
+memory/MEMORY.md
+  h_af5ac1a9798224 20
+memory/check-memory-and-public-registry-before-claiming-a-credential-blocker.md
+  h_af5ac1a9798224 1-40
+plugins/wave-canon/.claude-plugin/plugin.json
+  h_af5ac1a9798224 1-20
+plugins/wave-canon/README.md
+  h_af5ac1a9798224 1-18
+plugins/wave-canon/skills/state-of-play/SKILL.md
+  h_af5ac1a9798224 1-134
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  h_af5ac1a9798224 1-226
+plugins/wave-canon/skills/wow-canon/SKILL.md
+  h_af5ac1a9798224 1-168
+settings/settings.base.json
+  h_af5ac1a9798224 176-185,256-260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6f0a61ab61198a815764ff906d4182829c7036b5",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

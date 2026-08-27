@@ -1,0 +1,19 @@
+governance/plans/universal-data-representation/FACT-LOG-SERVICE.md
+  s_355f68cfc34bb3::t_ee16f974dfe09b 1-151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7aa06386271eca68d2026f4b306d9426c8f21c05",
+  "prompts": {},
+  "sessions": {
+    "s_355f68cfc34bb3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00363a669ffe9UfAaN6KXc2nwN",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/lib/pr-check-health-fetch.mjs
+  s_6f6453b23e3805::t_3cf8fda044b634 1-261
+governance/bin/pr-check-health.mjs
+  s_6f6453b23e3805::t_b3211132aa8c13 87
+  s_6f6453b23e3805::t_da199e015f81b9 76-79
+  s_6f6453b23e3805::t_b17d4d3613d88c 52-54,56-58,60-63
+  s_6f6453b23e3805::t_a03a32bb921d96 49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "073859c6610cf53096d6006abf5fdf4cb218e9e4",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

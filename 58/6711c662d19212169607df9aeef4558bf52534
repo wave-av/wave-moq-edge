@@ -1,0 +1,63 @@
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_85d9e5f433b9aa::t_315198976ac25d 1-94
+governance/plans/claude-code-upstream-absorption/E2-DECIDE.md
+  s_85d9e5f433b9aa::t_ed978e42856660 1-22
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  s_85d9e5f433b9aa::t_a4b1565c6621b5 1-28
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_85d9e5f433b9aa::t_89b3ba037f5c05 1-22
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  s_85d9e5f433b9aa::t_3d5efc47df161d 1-25
+governance/plans/claude-code-upstream-absorption/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_37e804a59891ca 1-66
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_85d9e5f433b9aa::t_5e2ac37e4a5dd2 295-296
+governance/plans/ffmpeg9-lei/action/E15-P1-VALIDATION.md
+  s_85d9e5f433b9aa::t_dc56e4446f88eb 335-346,373-392
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  s_85d9e5f433b9aa::t_64827b9fcf146a 4
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch1-cover.md
+  s_85d9e5f433b9aa::t_5f40b99ea2beba 1-16,39-46
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_85d9e5f433b9aa::t_a5d07dd17f074e 1-14,70-84
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-11698-comment.md
+  s_85d9e5f433b9aa::t_3d4d0ca5bc4b09 1-10
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  s_85d9e5f433b9aa::t_65a62ba67e25de 4-33
+governance/plans/wave-control/DECISION-E8-RELATIONSHIP.md
+  s_85d9e5f433b9aa::t_31ebc78da88a0c 1-125
+governance/plans/wave-control/DECISION-URL.md
+  s_85d9e5f433b9aa::t_10238ff2dde81f 1-120
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  s_85d9e5f433b9aa::t_6b5b13d2caf3af 1-160
+governance/plans/wave-control/E1-SOURCING.md
+  s_85d9e5f433b9aa::t_d2b50f680067b4 1-172
+governance/plans/wave-control/E2-SCOPED-TOPOLOGY.md
+  s_85d9e5f433b9aa::t_395edf5b0ab580 1-165
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  s_85d9e5f433b9aa::t_b208636eacb27a 1-139
+governance/plans/wave-control/E4-CAPABILITY-CUSTODY.md
+  s_85d9e5f433b9aa::t_71cdf577486ba9 1-150
+governance/plans/wave-control/E5-ALWAYS-ON-FLEET.md
+  s_85d9e5f433b9aa::t_95fdc596a09b71 1-127
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  s_85d9e5f433b9aa::t_a6d7ee1bd2eb53 1-173
+governance/plans/wave-control/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_de9615ca8fccc0 1-298
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "586711c662d19212169607df9aeef4558bf52534",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

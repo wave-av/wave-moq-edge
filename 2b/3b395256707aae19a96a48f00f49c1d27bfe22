@@ -1,0 +1,19 @@
+docs/superpowers/plans/2026-07-31-struggle-inference-pipeline-wave2.md
+  s_37e24b4d920e09::t_66473195a49a2c 1-838
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "2b3b395256707aae19a96a48f00f49c1d27bfe22",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+hooks/supabase-prod-guard.py
+  s_e2e3e43d0638c5::t_d928f441a8bcf0 6-7
+  s_e2e3e43d0638c5::t_a87b661c2d5882 2
+governance/bin/build.mjs
+  s_e2e3e43d0638c5::t_3cff0271a3ffb9 79-80,82
+  s_e2e3e43d0638c5::t_cf9a637cfd3eca 86
+  s_e2e3e43d0638c5::t_3cd6f31f49d257 95-96
+governance/bin/enforcement-coverage.mjs
+  s_e2e3e43d0638c5::t_27cbff5b435b8b 50-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "951a25bc2bd4b58a92a1d100675a14b6ab5b393b",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

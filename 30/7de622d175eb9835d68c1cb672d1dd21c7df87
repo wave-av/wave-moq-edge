@@ -1,0 +1,62 @@
+governance/plans/genome-epigenome-releases/E1-METHYLATION.md
+  s_f980cb0beb8c7d::t_c28da933d3c28f 17-225
+  s_f980cb0beb8c7d::t_a5e6c9aecf9950 4
+governance/plans/self-play-refactoring/E0-GAME-DEF.md
+  s_53cacc1d7ce9fa::t_dbb1d2ead6d56e 4
+  s_53cacc1d7ce9fa::t_20c79c28419686 19-109
+governance/plans/inference-by-effects/E0-EFFECT-MODEL.md
+  s_1e80d46a117410::t_83288faa7e5ea5 4,18-137
+governance/plans/conservation-law-design/E1-POC-GATEWAY.md
+  s_9767d90c6e501b::t_8ce82f1d17968d 4,17-66
+governance/plans/universal-data-representation/E0-REDUCTION-CATALOG.md
+  s_343ddb478fcd21::t_41c197a5af5dfc 17-73
+  s_343ddb478fcd21::t_83ca4613221308 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "307de622d175eb9835d68c1cb672d1dd21c7df87",
+  "prompts": {},
+  "sessions": {
+    "s_1e80d46a117410": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00794b4eeffeU53AGgf8OjXUL4",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_343ddb478fcd21": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00794a2e3ffea08ZD64UFzXgao",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53cacc1d7ce9fa": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00794c50dffeU8uUUO1wIHMqfy",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9767d90c6e501b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00794ec85ffegLbIl60sXidpPn",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f980cb0beb8c7d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00794d7e1ffe1fwgKo64JZZGK4",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/ENFORCEMENT-BASELINE.json
+  s_60a20469ef4369::t_b979d281022716 11-12,145-149
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_1b96a6d441be71 5,10,12,14,396,418,441-442
+rules/lockfile-atomic-with-manifest.md
+  s_60a20469ef4369::t_033ec194b38d9d 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d0caca5d06fa34e82cd7091f071bdc6c26293573",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

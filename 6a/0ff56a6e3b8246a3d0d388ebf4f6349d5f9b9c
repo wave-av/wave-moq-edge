@@ -1,0 +1,22 @@
+governance/graph.json
+  s_db1b2a792e5f25::t_9cda79d3b20ca2 5-10,4475,4481,4487,4493,4499
+  s_db1b2a792e5f25::t_0a0af34e8d81a8 4,4470-4474,4476-4480,4482-4486,4488-4492,4494-4498
+rules/a-log-is-not-a-report.md
+  s_db1b2a792e5f25::t_a2b645685ade8e 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6a0ff56a6e3b8246a3d0d388ebf4f6349d5f9b9c",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+governance/tools/storage-decision/tests/storage-decision.test.mjs
+  s_ef135953f8a619::t_b01b2c225470e4 1-105
+governance/tools/embedding-compression/tests/embedding-compression.test.mjs
+  s_13d6f0c15fceaa::t_0806495a4bbfeb 1-152
+governance/tools/embedding-compression/examples/catalog-embeddings.json
+  s_13d6f0c15fceaa::t_7d483318f54f68 1-42
+governance/tools/storage-decision/bin/storage-decision.mjs
+  s_ef135953f8a619::t_f3ff2cdae4b0b4 1-40,43,53,56,62,69-70,75-76,78-82
+  s_ef135953f8a619::t_643011f2a3557d 41-42,44-52,54-55,57-61,63-68,71-74,77
+governance/tools/embedding-compression/lib/index.mjs
+  s_13d6f0c15fceaa::t_2428887ffcca6d 1-211
+governance/tools/storage-decision/workload.schema.json
+  s_ef135953f8a619::t_3ac5bf49af9ad8 1-69
+governance/tools/learnable-systems/lib/index.mjs
+  s_7b365d25f9f84b::t_4b9d1ebba1c464 1-202
+governance/tools/storage-decision/examples/wave-workloads.json
+  s_ef135953f8a619::t_526b446fd6937a 1-50
+governance/tools/learnable-systems/bin/learnable.mjs
+  s_7b365d25f9f84b::t_d0f68bffc93b8b 1-94
+governance/tools/embedding-compression/audit.schema.json
+  s_13d6f0c15fceaa::t_5884fa5c7a67a2 1-68
+governance/tools/learnable-systems/README.md
+  s_7b365d25f9f84b::t_ca1831cdff19ff 1-116
+governance/tools/learnable-systems/tests/learnable.test.mjs
+  s_7b365d25f9f84b::t_216c59892206d7 1-249
+governance/tools/learnable-systems/examples/metering-basics.json
+  s_7b365d25f9f84b::t_3d4c6f29da0f27 1-72
+governance/tools/learnable-systems/format.schema.json
+  s_7b365d25f9f84b::t_fac8503159108d 1-77
+governance/tools/embedding-compression/bin/embed-audit.mjs
+  s_13d6f0c15fceaa::t_973be5141d9462 1-98
+governance/tools/embedding-compression/README.md
+  s_13d6f0c15fceaa::t_bdfe06f3a75611 1-94
+governance/tools/storage-decision/README.md
+  s_ef135953f8a619::t_8f775ce25562d1 1-67
+governance/tools/storage-decision/lib/index.mjs
+  s_ef135953f8a619::t_62d5631e53640d 1-224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1a4e98d61948365a7d95203d7f671ff0d00d7465",
+  "prompts": {},
+  "sessions": {
+    "s_13d6f0c15fceaa": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0067d5baaffe6nY1yVN4T2XB5R",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7b365d25f9f84b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0067d456dffeBG6HpI3yX0LWjo",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ef135953f8a619": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0067d2f4bffeR4TsGj4rP0Itsh",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+governance/bin/struggle-miner-scan.sh
+  h_af5ac1a9798224 36-41
+governance/bin/struggle-miner/collect-corrections.py
+  h_af5ac1a9798224 1-145
+governance/bin/struggle-miner/lib/transcript_filter.py
+  h_af5ac1a9798224 25-26,28-31,37-59
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 4638,4640,4669,4671-4672
+governance/code-index/index.json
+  h_af5ac1a9798224 39658-39661,39680-39681,39900-39901,39922-39925,39933-39934
+governance/lib/wave-cost-ledger-cloudflare-do-mapping.mjs
+  h_af5ac1a9798224 181-184,230-240,276-279,283-285
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 73-77,148-168
+governance/test/wave-cost-ledger-cloudflare-do-mapping-cache.test.mjs
+  h_af5ac1a9798224 295-339
+governance/test/wave-cost-ledger-cloudflare-do-mapping.test.mjs
+  h_af5ac1a9798224 67-92
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 80-106
+tests/struggle_miner/test_collect_corrections.py
+  h_af5ac1a9798224 1-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9773fbea47c33177108e1aee80884a9a1d9ea846",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

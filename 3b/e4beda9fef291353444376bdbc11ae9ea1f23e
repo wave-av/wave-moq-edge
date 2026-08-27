@@ -1,0 +1,31 @@
+governance/lib/reviewer-scoreboard.mjs
+  s_96280c922a9418::t_f4b7e1e94f6592 1-46,53,57-59,71-73,75-82,84-115,120-157,159-256
+  s_96280c922a9418::t_f4de0677ccca34 47-52,54-56,60-70,74
+  s_96280c922a9418::t_41f6de3facb7d7 83
+  s_96280c922a9418::t_2cd3e7c0c87b22 116-119
+  s_96280c922a9418::t_9667f2da71d223 158
+governance/test/reviewer-scoreboard.test.mjs
+  s_96280c922a9418::t_7fe4db7a473301 1-227
+governance/bin/struggle-miner/collect-review-bots.mjs
+  s_96280c922a9418::t_6d64ca8ae6ff07 2-15,22,26-32,34-35
+governance/bin/reviewer-scoreboard.mjs
+  s_96280c922a9418::t_e303606e05e097 1-135
+governance/test/struggle-miner/collect-review-bots.test.mjs
+  s_96280c922a9418::t_07246520954af9 17-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "3be4beda9fef291353444376bdbc11ae9ea1f23e",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

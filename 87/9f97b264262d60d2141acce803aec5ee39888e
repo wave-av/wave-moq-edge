@@ -1,0 +1,28 @@
+governance/plans/client-toolset-adoption/OUTBOUND-DRAFTS.md
+  s_9bb1b1d1d998d4::t_0814a85b2e5582 176,178-195
+  s_9bb1b1d1d998d4::t_e17951334b89d1 20
+  s_9bb1b1d1d998d4::t_234df85d829fe0 208,210,212,216,218,223
+  s_9bb1b1d1d998d4::t_b03320da29ed94 204
+  s_9bb1b1d1d998d4::t_a1a0e4e70d44db 231-232,234
+  s_9bb1b1d1d998d4::t_068ae5d9852355 201
+  s_9bb1b1d1d998d4::t_0b02276f00968d 90,92,94,96-99,101,103-111
+  s_9bb1b1d1d998d4::t_2b097cef3c69b6 119-120,122,124,126,130,135
+  s_9bb1b1d1d998d4::t_f280e444c9b6ae 113-115
+  s_9bb1b1d1d998d4::t_1aa2689078456c 112,136,224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "879f97b264262d60d2141acce803aec5ee39888e",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

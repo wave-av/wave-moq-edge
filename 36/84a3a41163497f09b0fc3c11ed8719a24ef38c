@@ -1,0 +1,26 @@
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  s_264ae386838c57::t_3dcfa2f0dcf004 94
+governance/plans/console-perfection/E9-DEVELOPER-NARRATIVE.md
+  s_264ae386838c57::t_d68ba7138dd7bb 2
+  s_264ae386838c57::t_b7978381ac268a 23
+  s_264ae386838c57::t_8171c5397813fc 86
+  s_264ae386838c57::t_6c3f80591bbf20 19
+  s_264ae386838c57::t_8c27db38606a8a 27
+  s_264ae386838c57::t_b228974c9e6292 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3684a3a41163497f09b0fc3c11ed8719a24ef38c",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

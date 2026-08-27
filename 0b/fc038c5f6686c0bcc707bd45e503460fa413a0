@@ -1,0 +1,32 @@
+hookcli/bin/lefthook-gen.mjs
+  s_85d9e5f433b9aa::t_e6daf15c808a92 35-43
+governance/lib/drill-inline-required.mjs
+  s_85d9e5f433b9aa::t_663ccd3f298c2a 19-28
+hookcli/tests/lib/modules.sh
+  s_85d9e5f433b9aa::t_79fb0a14b48316 18-22
+governance/bin/gate-liveness-drill.mjs
+  s_85d9e5f433b9aa::t_061342d4c25e78 47
+  s_85d9e5f433b9aa::t_48157c68aff4d5 107-112,121
+hookcli/tests/lefthook-gen-yaml.sh
+  s_85d9e5f433b9aa::t_79720a3038426e 1-61
+governance/lib/drill-fixtures-wave-sec-l2.mjs
+  s_85d9e5f433b9aa::t_36d7ad88b22c1a 1-181
+hookcli/lib/eval-t1.sh
+  s_85d9e5f433b9aa::t_daa8255e91868c 33-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0bfc038c5f6686c0bcc707bd45e503460fa413a0",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

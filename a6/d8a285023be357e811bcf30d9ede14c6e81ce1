@@ -1,0 +1,28 @@
+governance/bin/workflow-lint.mjs
+  s_02abc74f4971c7::t_5b453b5da0fb6b 216-234,241,243-245,248-253,259,266-301
+  s_02abc74f4971c7::t_d827b7a4efaf49 67-75
+  s_02abc74f4971c7::t_8ea36bd996caed 302
+governance/test/workflow-lint.test.mjs
+  s_02abc74f4971c7::t_6214c225ae5406 206-208,210,214-218
+  s_02abc74f4971c7::t_acf0f7a1a5965b 171-205,209,211-213,219-229
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_7646b948f5d88b 5,3375,3378,3380-3385,3388-3391
+governance/code-index/index.json
+  s_02abc74f4971c7::t_240387eb734ba5 10,13,30154-30155,30187-30188,30209-30210,30220-30221,30231-30232,30242-30243,30253-30254,30264-30265,30297-30300,30308-30309,30313-30334
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a6d8a285023be357e811bcf30d9ede14c6e81ce1",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

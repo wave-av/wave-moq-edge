@@ -1,0 +1,26 @@
+governance/lib/drill-registry.mjs
+  s_ea8755337f3c0d::t_b4e6be33da1946 138-141
+  s_ea8755337f3c0d::t_f75456efe4c2e2 192
+  s_ea8755337f3c0d::t_cc04f04652e9d5 43
+governance/lib/drill-fixtures-network-edge-audit.mjs
+  s_ea8755337f3c0d::t_a463c8d2c1445f 1-82
+.github/workflows/network-edge-audit.yml
+  s_ea8755337f3c0d::t_971a9b8f04c57b 52,55
+  s_ea8755337f3c0d::t_9259a9989860da 1-51,53-54,56-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a604c5407f29b5fd919740f95c7965fcf474dda6",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

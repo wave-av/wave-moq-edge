@@ -1,0 +1,144 @@
+scripts/verify-public-mirror.sh
+  s_364605915bb7ec::t_8a7e012606c2c1 84
+  s_364605915bb7ec::t_d810268da80688 81-83
+  s_364605915bb7ec::t_c0e0ed9d19453e 85-87
+  s_364605915bb7ec::t_99ce39f4256c07 37-38,40-53,56-61,73-80,88-110,123,136,142-146,152,155
+scripts/token-budget-check-changed.sh
+  s_364605915bb7ec::t_757f6ab04500f8 88-90
+  s_364605915bb7ec::t_ea5e0340c949f5 67-74
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_60174d356f0cfa 156
+  s_364605915bb7ec::t_a50563ac9ab9df 104-106,135-140
+.github/.secret-allowlist
+  s_364605915bb7ec::t_80f11f53d67b52 56-58
+.github/workflows/release-container-pool.yml
+  s_364605915bb7ec::t_d138fd7e2fe9fe 49-73
+.github/workflows/release-content-hash.yml
+  s_364605915bb7ec::t_18ade51951a8cc 47-70
+.github/workflows/release-egress-baseband.yml
+  s_364605915bb7ec::t_56c3209aee4a03 47-70
+.github/workflows/release-messaging.yml
+  s_364605915bb7ec::t_0c6ead2bbdbfad 46-69
+.github/workflows/release-observability.yml
+  s_364605915bb7ec::t_17bb748b37f4b1 46-69
+.github/workflows/release-spoke-chassis.yml
+  s_364605915bb7ec::t_aa6e777740f6f7 54-77
+.github/workflows/release-whip-publish.yml
+  s_364605915bb7ec::t_d666136714c180 47-70
+.github/workflows/reusable-ssot-gate.yml
+  s_364605915bb7ec::t_0969158a6b0078 31-56,84-113
+.github/workflows/self-check.yml
+  s_364605915bb7ec::t_95ce3043a3fdb9 27-30,32,172-278
+.github/workflows/wave-av-drift-weekly.yml
+  s_364605915bb7ec::t_ff61db6ba82119 61-81,95
+.gitignore
+  s_364605915bb7ec::t_aaa5a46ffd37dc 47-49
+.pre-commit-config.yaml
+  s_364605915bb7ec::t_98244fe4ae4884 141-146
+codecov.yml
+  s_364605915bb7ec::t_1e8b720b1524c5 1-93
+frameworks/claude-api/lint-cache-control.sh
+  s_364605915bb7ec::t_458b770ba79a21 39-46,50-66
+frameworks/claude-api/lint-request-shape.sh
+  s_364605915bb7ec::t_f81ba67a476b0a 37-43,47-63
+frameworks/frameworks-gates.test.mjs
+  s_364605915bb7ec::t_63226abcd0fd3f 1-191
+frameworks/gates/registry.yaml
+  s_364605915bb7ec::t_6d478ff0d14013 22-24,59-74
+frameworks/gates/scripts/check-model-strings.sh
+  s_364605915bb7ec::t_1d1bc6773a2302 26-33,38-49
+frameworks/gates/scripts/run-local.sh
+  s_364605915bb7ec::t_7f756864af7b09 1-149
+frameworks/gates/scripts/secret-scan.sh
+  s_364605915bb7ec::t_be0490f03d2e42 1-63
+frameworks/repo-governance/governance-audit.sh
+  s_364605915bb7ec::t_362ecec88aa63e 30-50,77
+packages/container-pool/package-lock.json
+  s_364605915bb7ec::t_9cf277923558dd 13,20-29,37-621,635-762
+packages/container-pool/package.json
+  s_364605915bb7ec::t_0c4c4a1e603b4f 4,26,46
+packages/content-hash/package-lock.json
+  s_364605915bb7ec::t_1d1b8210eaa1f4 17,24-33,41-78,91-133,192-204,230-263,271-325,362-368,379-388,406-439,447-469,477-511,547-634,648-663,674-683,721-789,894-929,987-1019,1030-1042,1073-1087,1122-1188,1195-1255
+packages/content-hash/package.json
+  s_364605915bb7ec::t_ec2ffae42e44f1 27,56
+packages/egress-baseband/package-lock.json
+  s_364605915bb7ec::t_11d2a039d96f9a 13,20-29,37-621,635-762
+packages/egress-baseband/package.json
+  s_364605915bb7ec::t_a961bc62e121c8 4,26,52
+packages/messaging/package-lock.json
+  s_364605915bb7ec::t_fcb15aa5ea6326 12,19-613,627-754
+packages/messaging/package.json
+  s_364605915bb7ec::t_1da092f0c7b374 4,26,46
+packages/observability/package-lock.json
+  s_364605915bb7ec::t_a2f8a086b36b76 13,20-29,37-621,635-762
+packages/observability/package.json
+  s_364605915bb7ec::t_234cd4f4b8e644 4,36,59
+packages/spoke-chassis/package-lock.json
+  s_364605915bb7ec::t_6fbe6098f0ae07 17,24-33,41-85,104-643,657-784
+packages/spoke-chassis/package.json
+  s_364605915bb7ec::t_c86c3167dc1b2a 4,26,51
+packages/whip-publish/package-lock.json
+  s_364605915bb7ec::t_5693a30dec0db7 13,20-29,37-621,635-762
+packages/whip-publish/package.json
+  s_364605915bb7ec::t_58716b0ba14e01 26,52
+scripts/apply-identity-migrations.sh
+  s_364605915bb7ec::t_1791ba5451656e 46-53,55-56,60-70
+scripts/apply-identity-migrations.test.mjs
+  s_364605915bb7ec::t_d24599217f696d 1-144
+scripts/bugbot/daemon.sh
+  s_364605915bb7ec::t_77ce919510e522 60-63,162-170,476-479,481-483,491-518,529
+scripts/check-claude-config.sh
+  s_364605915bb7ec::t_3dacadf9a851b7 39-59,85
+scripts/check-context-integrity.sh
+  s_364605915bb7ec::t_00ac4377e5496b 42-61,63,73
+scripts/check-dependency-confusion.sh
+  s_364605915bb7ec::t_3a05f0786aefee 45-81,83,107,110,119-120,123,125-130,132,148
+scripts/check-spend-authority.sh
+  s_364605915bb7ec::t_632f07c2c7b563 39-73,75-85,88-89,91-103,106-108
+scripts/check-spend-authority.test.mjs
+  s_364605915bb7ec::t_067d2a96ebd7a8 1-159
+scripts/config-scanners.test.mjs
+  s_364605915bb7ec::t_3e953d3a8cbeb8 1-202
+scripts/cpp-check-changed.sh
+  s_364605915bb7ec::t_fc587721a27359 83-90,92-99
+scripts/gen-token-budget-baseline.sh
+  s_364605915bb7ec::t_e4a1609f486c6c 53
+scripts/go-check-changed.sh
+  s_364605915bb7ec::t_a15f6d49c6f4d8 111-118,120-127
+scripts/license-policy-check.sh
+  s_364605915bb7ec::t_610b1e6c61808e 32-51,115
+scripts/license-policy-check.test.mjs
+  s_364605915bb7ec::t_f3820c08653a58 1-157
+scripts/network-listers.test.mjs
+  s_364605915bb7ec::t_325f727b051e58 1-436
+scripts/python-check-changed.sh
+  s_364605915bb7ec::t_7ceee6ba657b50 61-64,66-73,94-101,103-110
+scripts/ratchet-siblings.test.mjs
+  s_364605915bb7ec::t_b4dfd20addae14 1-209
+scripts/ruby-check-changed.sh
+  s_364605915bb7ec::t_cbb3087e89dc71 113-120,122-129
+scripts/rust-check-changed.sh
+  s_364605915bb7ec::t_529bcd701786ba 124-131,133-140
+scripts/shell-check-changed.sh
+  s_364605915bb7ec::t_c69891ac657d5b 71-78,80-87
+scripts/token-budget-check-changed.test.mjs
+  s_364605915bb7ec::t_02003f8b20ace2 3-5,10,27-32,37-53,59-76,84-85,97,111-229
+scripts/verify-public-mirror.test.mjs
+  s_364605915bb7ec::t_c69eeaaa2670d5 1-187
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "8c6903946b33348ec08afc8e55f613548b1e452c",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

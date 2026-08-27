@@ -1,0 +1,28 @@
+hookcli/bin/hookcli-settings-gen.mjs
+  s_60a20469ef4369::t_4388de39326e63 127-133,138,142-144,147
+hooks/bin/gen-manifest.mjs
+  s_60a20469ef4369::t_463a1c810c290e 209-212,214-219
+  s_60a20469ef4369::t_2db5373e746e36 29
+capabilities/bin/render.mjs
+  s_60a20469ef4369::t_495a4865e546f1 15,18
+  s_60a20469ef4369::t_5c29724e7990bd 88-90,92-97
+  s_60a20469ef4369::t_eac10221f3b5df 11
+governance/test/drift-contract-adoption.test.mjs
+  s_60a20469ef4369::t_ef175afc063dbe 1-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "916b1800089eadd611d3621bdb8b83f6847f1904",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

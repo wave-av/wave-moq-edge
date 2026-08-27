@@ -1,0 +1,20 @@
+packages/spoke-chassis/package.json
+  h_af5ac1a9798224 3
+packages/spoke-chassis/src/canon.ts
+  h_af5ac1a9798224 1-49
+packages/spoke-chassis/src/tokens.css.ts
+  h_af5ac1a9798224 23
+packages/spoke-chassis/src/version.ts
+  h_af5ac1a9798224 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c675b925bf8a03781f643735769ab9459a28dd4f",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

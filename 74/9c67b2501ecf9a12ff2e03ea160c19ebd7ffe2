@@ -1,0 +1,23 @@
+governance/plans/search-router/E2-CLASSIFIER.md
+  s_6046880c148371::t_d81a72d327e06e 10
+governance/plans/search-router/NORTH-STAR.md
+  s_6046880c148371::t_71a7c9b86776f9 25
+governance/plans/search-router/E1-ROUTER.md
+  s_6046880c148371::t_f63a5934c0fb1a 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "749c67b2501ecf9a12ff2e03ea160c19ebd7ffe2",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+governance/lib/drill-inline-required.mjs
+  s_d9915bbafa9657::t_b30b73b8927c3b 49-58
+governance/test/enforce-ignore-lawref.test.mjs
+  s_d9915bbafa9657::t_446d1a9987c407 135-154
+  s_d9915bbafa9657::t_3dd542ba092d2b 1-27,29-121,129-134,155-172
+  s_d9915bbafa9657::t_942a67f829285b 28
+  s_d9915bbafa9657::t_17b48b1aec2357 122-128
+governance/bin/enforce-ignore-lawref.mjs
+  s_d9915bbafa9657::t_3d9c4db1e6f0fa 1-33,43-84,92-151
+  s_d9915bbafa9657::t_c07faed82170e0 34-42
+  s_d9915bbafa9657::t_831781918a1672 85-91
+governance/lib/enforce-ignore-marker.mjs
+  s_d9915bbafa9657::t_9c2a18a65a714b 23-36
+governance/lib/enforce-ignore-lawref.mjs
+  s_d9915bbafa9657::t_af1dbee02a7635 1-86
+  s_d9915bbafa9657::t_767e2b77f9575e 87-92
+governance/lib/drill-fixtures-enforce-ignore-lawref.mjs
+  s_d9915bbafa9657::t_6061e2373e5c32 63-68,71,80-81,85-92,95-96,101
+  s_d9915bbafa9657::t_0a5d75f8cce084 1-62,69-70,72-79,82-84,93-94,97-100
+governance/lib/drill-registry.mjs
+  s_d9915bbafa9657::t_78fe3347eebf52 42
+  s_d9915bbafa9657::t_0cf9e7330f282f 127
+governance/bin/check.mjs
+  s_d9915bbafa9657::t_4df9d6372ea7e4 44
+  s_d9915bbafa9657::t_56703353dfc228 181-204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "370a65d198580f842ea0ed9063eab9c7329f9154",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

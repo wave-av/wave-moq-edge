@@ -1,0 +1,33 @@
+governance/plans/console-completeness/E2-BILLING-USAGE.md
+  s_15127d80763110::t_71af565cbb053a 1-84
+governance/plans/console-completeness/NORTH-STAR.md
+  s_15127d80763110::t_9c822747715607 1-151
+governance/plans/console-completeness/E5-PERFECTION-PASS.md
+  s_15127d80763110::t_68ea3204b42b27 1-53
+governance/plans/console-completeness/E3-COVERAGE.md
+  s_15127d80763110::t_27e71055993080 1-79
+governance/plans/console-completeness/E4-SEMANTICS.md
+  s_15127d80763110::t_3c8dbfdc8f4ff7 1-63
+governance/plans/console-completeness/E1-LEGACY-SIX.md
+  s_15127d80763110::t_50fb026ada1202 1-57
+governance/DASHBOARD.md
+  s_15127d80763110::t_688dc8d8aabb16 25
+governance/graph.json
+  s_15127d80763110::t_77b6389b69f5b9 2962-3039,19739-19828
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fe36243bc794c152ff68f7e2116d0f77e3de4c9c",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

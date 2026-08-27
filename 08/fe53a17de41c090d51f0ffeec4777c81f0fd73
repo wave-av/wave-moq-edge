@@ -1,0 +1,21 @@
+packages/spoke-chassis/package.json
+  s_6c1c1be138dfd4::t_83540883f8b807 3
+packages/spoke-chassis/src/chassis.css.ts
+  s_6c1c1be138dfd4::t_0d6672af85cdac 60-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "08fe53a17de41c090d51f0ffeec4777c81f0fd73",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}

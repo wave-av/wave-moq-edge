@@ -1,0 +1,33 @@
+governance/lib/wave-cost-ledger-rpc.mjs
+  s_2e30bff6169f7a::t_88903081e86a4a 64-76,78-115,178
+  s_2e30bff6169f7a::t_ab1ead3bf09c0b 116-125,129,156-159,164-177
+  s_2e30bff6169f7a::t_3be99bcee00a2b 77
+  s_2e30bff6169f7a::t_b76c0e232e67a8 130-153,155
+governance/lib/wave-cost-ledger-pull-read.mjs
+  s_2e30bff6169f7a::t_e02f49a65cc516 107-110
+  s_2e30bff6169f7a::t_e0f008f3cad04b 34-39
+  s_2e30bff6169f7a::t_8d85e5968367af 111-113
+  s_2e30bff6169f7a::t_798f3a36f6d05a 18-33,40-55
+  s_2e30bff6169f7a::t_25bf8cba11c8b2 16-17
+governance/test/wave-cost-ledger-pull-read.test.mjs
+  s_2e30bff6169f7a::t_409f1321da8003 194
+  s_2e30bff6169f7a::t_cb8d2888079406 4-31,34-44,49,57-58,60-63,72-124,126,128-132,140-141,143-145,149,153,155,159,163,165-167,171,175,184-187,189-191
+  s_2e30bff6169f7a::t_6849376b5d6cf0 59
+  s_2e30bff6169f7a::t_636e39ee148e0d 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e8f8aebdf876ae0b0b7b71e9080ff27b15bb4f56",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

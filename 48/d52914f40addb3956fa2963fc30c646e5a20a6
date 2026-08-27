@@ -1,0 +1,23 @@
+governance/plans/brand-recycle/E-CANON.md
+  s_15127d80763110::t_5854a905dff52a 16
+rules/generated-brand-assets-use-real-design-system.md
+  s_15127d80763110::t_881efb4520a000 15
+governance/plans/brand-recycle/CANON.md
+  s_15127d80763110::t_ace7429adc9b40 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "48d52914f40addb3956fa2963fc30c646e5a20a6",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

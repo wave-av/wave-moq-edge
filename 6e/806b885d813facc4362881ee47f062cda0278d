@@ -1,0 +1,32 @@
+hookcli/lib/session-exec.sh
+  s_60a20469ef4369::t_04866badeca552 9-15
+  s_60a20469ef4369::t_1b7ee2d349a7b0 67-73
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_76fe494e12bde3 307-316
+hookcli/tests/fixtures/env-marker.sh
+  s_60a20469ef4369::t_e724582286d9da 1-10
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_34a09eeb244472 692-696
+hookcli/tests/shadow-env.sh
+  s_60a20469ef4369::t_57286b68daef1a 1-49
+hookcli/track4b.json
+  s_60a20469ef4369::t_b480ad0955b585 15-22
+settings/hooks.d/hookcli.json
+  s_60a20469ef4369::t_0b07a1c6e98b5a 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "6e806b885d813facc4362881ee47f062cda0278d",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

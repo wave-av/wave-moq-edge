@@ -1,0 +1,43 @@
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_e6659de45849c8::t_b456a770914bf1 57-68
+  s_760bd06192e00a::t_99aa23b473d603 69-79
+  s_a5eed05a9b4581::t_1fa601b9331ee9 101-112
+governance/tools/fitness-landscape/manifests/rl-corpus.json
+  s_760bd06192e00a::t_428234d6ecf03a 1-63
+governance/tools/embedding-compression/manifests/rl-corpus.json
+  s_a5eed05a9b4581::t_089c33775a3ce2 1-27
+governance/tools/storage-decision/manifests/rl-corpus.json
+  s_e6659de45849c8::t_cdfe40aad5f4b2 1-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ce980a6f4f877dfa7cc13405efaf680db7f75e3f",
+  "prompts": {},
+  "sessions": {
+    "s_760bd06192e00a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024dbfbeffeidrM7E3wKFOEih",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a5eed05a9b4581": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024db6dcffedwRf39k4UadjWd",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e6659de45849c8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024da768ffeaPr663yLkBbea0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

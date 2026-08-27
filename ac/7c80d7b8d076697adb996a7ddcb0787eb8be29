@@ -1,0 +1,35 @@
+governance/test/review-liveness-duration.test.mjs
+  s_264ae386838c57::t_57ba25acb7f282 12-13,16
+  s_264ae386838c57::t_c0181645239060 110-113,115-119
+  s_264ae386838c57::t_c6574487203638 93-109,114,120-140
+governance/lib/review-liveness.mjs
+  s_264ae386838c57::t_5cdc2f2e109696 305
+  s_264ae386838c57::t_b6fdea241ec06e 31
+  s_264ae386838c57::t_527e3343f6515c 98-100
+governance/lib/reviewer-scoreboard.mjs
+  s_264ae386838c57::t_b4c1f7ea1996d3 126-130
+  s_264ae386838c57::t_2cb736ec2cd780 81-83
+governance/lib/review-surfaces.mjs
+  s_264ae386838c57::t_6617541e69e0d7 102-134,136-141
+  s_264ae386838c57::t_77d41e5c026071 135
+governance/code-index/CATALOG.md
+  s_264ae386838c57::t_3befa217ed56c0 5,4294,4296,4299-4300,4302,4304-4305,4311,4313,4318-4319,4333-4336,4338
+governance/code-index/index.json
+  s_264ae386838c57::t_cab78547e43094 10,12-13,37029-37030,37051-37052,37084-37087,37095-37096,37117-37118,37139-37140,37150-37151,37177-37187,37199-37209,37254-37264,37271-37272,37359-37360,37371-37373,37381-37382,37392-37395,37414-37415
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ac7c80d7b8d076697adb996a7ddcb0787eb8be29",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

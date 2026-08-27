@@ -1,0 +1,29 @@
+governance/specs/2026-07-21-content-engine-automation-design.md
+  s_e2e3e43d0638c5::t_73e8130246fa9b 46
+  s_e2e3e43d0638c5::t_b0442cd253d84c 24
+  s_e2e3e43d0638c5::t_65f8bb0ae335a5 81
+  s_e2e3e43d0638c5::t_f93a7edf4b8238 71
+  s_e2e3e43d0638c5::t_c7bab51cd43096 5-9,15,21,26,36-38,40-44,50-65,67-70,73,75,77-79,86,90-93,99,101
+  s_e2e3e43d0638c5::t_e489dfab25e3f3 76
+  s_e2e3e43d0638c5::t_f31df092898e1b 3
+  s_e2e3e43d0638c5::t_78661e263ca85d 66
+  s_e2e3e43d0638c5::t_657dc560313a1b 4
+  s_e2e3e43d0638c5::t_099424c341f549 25
+  s_e2e3e43d0638c5::t_6e33067c1d1033 45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "4f6cebd1cd4e46745373a805ced214fbb75d8165",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

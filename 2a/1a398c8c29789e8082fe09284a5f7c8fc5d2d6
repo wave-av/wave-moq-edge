@@ -1,0 +1,25 @@
+governance/plans/origin-method-flow/E3-PRODUCTIZE.md
+  s_83b73641415a39::t_cefb2088209ff3 34
+governance/plans/origin-method-flow/NORTH-STAR.md
+  s_83b73641415a39::t_2b57cb85373fdc 12,41
+governance/plans/signal-flow/E2-REGISTRY-FOUR-RENDERINGS.md
+  s_83b73641415a39::t_73d91664f3cf58 36
+governance/plans/signal-flow/E3-PRODUCTIZE.md
+  s_83b73641415a39::t_acee00e6147731 36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2a1a398c8c29789e8082fe09284a5f7c8fc5d2d6",
+  "prompts": {},
+  "sessions": {
+    "s_83b73641415a39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd196880ffeXRUvrkjXudtttM",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

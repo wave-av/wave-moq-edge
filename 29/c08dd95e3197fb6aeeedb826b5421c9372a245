@@ -1,0 +1,30 @@
+hookcli/tests/lib/harness.sh
+  s_02abc74f4971c7::t_c8f4f55af7cf67 66-96
+hookcli/tests/t4-llm-escalation.sh
+  s_02abc74f4971c7::t_1a79f5f2ce82a7 53-55
+  s_02abc74f4971c7::t_95b27e083ef4d3 44,46,78,80,119,121
+  s_02abc74f4971c7::t_49b42a04864dbe 45,79,120
+  s_02abc74f4971c7::t_7e918b0b93c819 36-39
+hookcli/tests/t4-sentinel-integrity.sh
+  s_02abc74f4971c7::t_167fdffb79e4b7 91-101
+hookcli/tests/t4-llm.sh
+  s_02abc74f4971c7::t_d7ebd8d1428577 128-135
+  s_02abc74f4971c7::t_95b27e083ef4d3 79,81,123,125
+  s_02abc74f4971c7::t_49b42a04864dbe 80,124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "29c08dd95e3197fb6aeeedb826b5421c9372a245",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

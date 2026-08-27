@@ -1,0 +1,21 @@
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  s_2e30bff6169f7a::t_2d132b5f950f83 35-36
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_ad24c9a9085944 8-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3606f017773ab04fb285cca9f95959ef022def18",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

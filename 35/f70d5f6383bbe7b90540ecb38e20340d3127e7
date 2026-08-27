@@ -1,0 +1,33 @@
+scripts/lib/license-policy-enumerate.sh
+  s_364605915bb7ec::t_ef90921b5d357e 1-51
+scripts/lib/license-policy-transport.sh
+  s_364605915bb7ec::t_1a18835fa0edc7 116-120
+  s_364605915bb7ec::t_efdef9b95e91ec 1-115,122,124-162
+  s_364605915bb7ec::t_f59731ac26430d 121,123
+scripts/lib/license-policy-drill-harness.mjs
+  s_364605915bb7ec::t_01859964c5c36f 1-170,178,181-194,196-206
+  s_364605915bb7ec::t_49e1e3748d890f 195
+  s_364605915bb7ec::t_a9c3687b20edb8 171-177,179-180
+scripts/license-policy-check.sh
+  s_364605915bb7ec::t_3c8847e035faae 134-138
+  s_364605915bb7ec::t_f13aa412045b72 22-30,42-45,49-63,65
+  s_364605915bb7ec::t_64c33c2b72d519 150
+scripts/license-policy-check.test.mjs
+  s_364605915bb7ec::t_d806747d09afd1 12-15,20-21,26,268-293
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "35f70d5f6383bbe7b90540ecb38e20340d3127e7",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}

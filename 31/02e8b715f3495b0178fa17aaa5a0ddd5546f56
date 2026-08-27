@@ -1,0 +1,19 @@
+memory/mail-thread-history/opencode/1267312c-bb2c-454e-8010-edb56be43918.md
+  s_dedb333dd5195e::t_f6dc279f89a3dd 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3102e8b715f3495b0178fa17aaa5a0ddd5546f56",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

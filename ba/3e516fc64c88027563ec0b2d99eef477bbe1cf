@@ -1,0 +1,21 @@
+governance/plans/network-edge-plane/E0-CENSUS.md
+  s_ea8755337f3c0d::t_51caca45199afc 4
+governance/plans/network-edge-plane/RECEIPTS.md
+  s_ea8755337f3c0d::t_ff957cbb4aaeee 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ba3e516fc64c88027563ec0b2d99eef477bbe1cf",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

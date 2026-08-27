@@ -1,0 +1,37 @@
+.github/workflows/fleet-drift.yml
+  s_02abc74f4971c7::t_b97d428369667e 194-197,203-204
+governance/bin/registry-sync-fleet.mjs
+  s_02abc74f4971c7::t_2eb28a0f244cf0 15-22,25-26,32,54-57,75-80,82,84-91,93-104,106-131,133-145,172-219,222,235-242,244,246-252,255,319-321
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_63daf5434c7238 5,2605-2622
+governance/code-index/index.json
+  s_02abc74f4971c7::t_26166ec27fbf56 10,13,23400-23401,23411-23412,23422-23423,23433-23434,23444-23445,23455-23456,23460-23470,23477-23491,23499-23500,23510-23511,23521-23522,23532-23535,23543-23544,23548-23569,23576-23577,23587-23590
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_02abc74f4971c7::t_5fe1493d20d117 50-71
+governance/test/merge-authority.test.mjs
+  s_02abc74f4971c7::t_a8958ddd67992b 84,89-115
+governance/test/registry-sync-fleet.test.mjs
+  s_02abc74f4971c7::t_a9c60177b505f0 6,74-229
+hookcli/lib/t3-merge-authority.mjs
+  s_02abc74f4971c7::t_08e7d6d51395af 213-224
+hooks/manifest.json
+  s_02abc74f4971c7::t_60b1056f4ee423 800
+hooks/mcp-merge-authority-gate.mjs
+  s_02abc74f4971c7::t_bf01d54bbcdbd1 43-46,48-49,149-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "21804548baef34794863e366464af7e362ed26c1",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

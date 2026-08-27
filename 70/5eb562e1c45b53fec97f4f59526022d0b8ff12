@@ -1,0 +1,23 @@
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_08f093405955e1::t_3b077080ca7b3b 290-313
+governance/plans/agent-mail-plane/E5-E5-SIGNUP-BILLING-LOOP.md
+  s_08f093405955e1::t_5664a7485b351e 4
+governance/plans/agent-mail-plane/NORTH-STAR.md
+  s_08f093405955e1::t_479b53cce20a11 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "705eb562e1c45b53fec97f4f59526022d0b8ff12",
+  "prompts": {},
+  "sessions": {
+    "s_08f093405955e1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff35aaf4fffeh6CFMriiPckDO9",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

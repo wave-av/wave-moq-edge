@@ -1,0 +1,24 @@
+governance/plans/console-completeness/E3-SPEC.md
+  s_15127d80763110::t_317555d89bf0b1 1-455
+governance/plans/console-completeness/E3-COVERAGE.md
+  s_15127d80763110::t_38dad0f95a96c7 31,33-41
+  s_15127d80763110::t_b8af94b6ae5f04 80-87
+  s_15127d80763110::t_95fe340612b52a 42-43
+  s_15127d80763110::t_33bdc09ca3b918 59-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b4469a624f9fcd4b698e10fb20f495609d4f01e4",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

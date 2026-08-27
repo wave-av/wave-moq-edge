@@ -1,0 +1,23 @@
+governance/test/platform-status.test.mjs
+  s_941b8f0612ec3e::t_b3bc26ec803997 1-74
+governance/lib/drill-fixtures-platform-status.mjs
+  s_941b8f0612ec3e::t_da732d4822b4f7 1-127
+governance/lib/platform-status-classify.mjs
+  s_941b8f0612ec3e::t_28b7cad9ed03cd 1-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9427608d1095cc98145c5311474d25860ed3c174",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

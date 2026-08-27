@@ -1,0 +1,21 @@
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_8d26503dfc73f4::t_75bb3f219c437c 153,155-165,170-180
+  s_8d26503dfc73f4::t_c04e1df8243ec9 150
+  s_8d26503dfc73f4::t_3899c42fb5979b 181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "316c66c90a9e854819d1ec347835898ee1d9c637",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/namespace-substrate/profiles-as-code/lib/ci-runner-var.sh
+  s_c24357e71ae5bc::t_d5f678308648c1 168-179
+  s_c24357e71ae5bc::t_851fe1d129abe1 186-193
+  s_c24357e71ae5bc::t_a581a9e8097441 116-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "04b6168d308f0eb4a38c388e877bc8d8b425c318",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

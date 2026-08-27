@@ -1,0 +1,53 @@
+governance/bin/gate-liveness-drill.mjs
+  s_02abc74f4971c7::t_2d3a7c682f0bae 173-177
+  s_02abc74f4971c7::t_1920d664bdd8d2 41
+  s_02abc74f4971c7::t_19bd8a023b1df3 117-120,122-129
+  s_02abc74f4971c7::t_5d1b32e4a79d29 101-116
+governance/bin/local-gates.mjs
+  s_02abc74f4971c7::t_a8f5b06678353c 33
+  s_02abc74f4971c7::t_d429836bb87f95 43-47,55-62
+  s_02abc74f4971c7::t_7cadedc5bc76c9 89,91-94
+governance/lib/local-gate-plan.mjs
+  s_02abc74f4971c7::t_96e6d6265f11a0 49-54,57,71-78
+  s_02abc74f4971c7::t_390f1e8ac88b67 242-248
+.github/actions/content-lints/action.yml
+  s_02abc74f4971c7::t_c9bfcb7f6e121e 1-280
+governance/lib/ci-surface.mjs
+  s_02abc74f4971c7::t_e9d3a4e1eea8fe 1-42,55-57,67-74,76-121,127,134-141
+  s_02abc74f4971c7::t_8f9477f6d8de11 43-54,58-66,75
+  s_02abc74f4971c7::t_9b300d2b112e89 126
+  s_02abc74f4971c7::t_065799cdbcad68 122-125,128-133
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_10ed23fbdaf9b9 443
+  s_02abc74f4971c7::t_ac0a3bde4dc4c2 426-432,434-435,437-442
+governance/test/ci-surface.test.mjs
+  s_02abc74f4971c7::t_c950e2c69b6356 79-107
+  s_02abc74f4971c7::t_f2eec3356f8e37 1-13,15-19,21-57,65-78,108-212
+  s_02abc74f4971c7::t_86079be7408b9d 20
+  s_02abc74f4971c7::t_8d0fc8a4d971d5 58-64
+  s_02abc74f4971c7::t_1a21afa4e126a7 14
+governance/lib/ramp-tables.mjs
+  s_02abc74f4971c7::t_c78e86dcde9d5a 49-64
+governance/lib/ramp-detectors.mjs
+  s_02abc74f4971c7::t_341345220588da 214
+  s_02abc74f4971c7::t_e5064366688b2f 12
+governance/test/ramp-file-size.test.mjs
+  s_02abc74f4971c7::t_5b7034f83088f9 1-68,72-97
+  s_02abc74f4971c7::t_8bf11069a1e2ad 69-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a7185365477636982f033a63b0dd33c9f93a5109",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

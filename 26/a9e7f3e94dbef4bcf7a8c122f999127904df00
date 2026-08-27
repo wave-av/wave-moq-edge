@@ -1,0 +1,23 @@
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_36d1250a1fd08b::t_0500f79a78f31d 497-521
+governance/plans/agent-mail-plane/E2-E2-PAID-EMAIL-RAIL.md
+  s_36d1250a1fd08b::t_8a7063e82e97a6 4,6
+governance/plans/agent-mail-plane/NORTH-STAR.md
+  s_36d1250a1fd08b::t_afc7b082707ec0 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "26a9e7f3e94dbef4bcf7a8c122f999127904df00",
+  "prompts": {},
+  "sessions": {
+    "s_36d1250a1fd08b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff24f15b1ffeW0UkftJn8yO36k",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

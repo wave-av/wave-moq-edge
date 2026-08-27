@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/E18-LEARNED-CODEC-RUNTIME.md
+  s_9e43291f07944f::t_55d34468bd1510 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "06ef543eb5ecb5e16ee1302ee550a0600a01fd66",
+  "prompts": {},
+  "sessions": {
+    "s_9e43291f07944f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe806439dffe5g3L45Pm2aGffJ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

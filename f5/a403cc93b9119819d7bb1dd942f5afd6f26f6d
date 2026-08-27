@@ -1,0 +1,19 @@
+governance/bin/wave-ops-api.mjs
+  s_3c7a371f5618a4::t_b08e54297680e2 2-4,6-10,12,14-19,21,25-31,34,38,40-43,46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f5a403cc93b9119819d7bb1dd942f5afd6f26f6d",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

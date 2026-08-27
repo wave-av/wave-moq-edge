@@ -1,0 +1,39 @@
+.github/osv-baseline.tsv
+  s_264ae386838c57::t_019eac5be76118 18-25
+.github/workflows/reviewer-liveness-age.yml
+  s_264ae386838c57::t_237e25fef8334a 1-79
+governance/bin/reviewer-liveness-age.mjs
+  s_264ae386838c57::t_30dfe672cf1257 1-171
+governance/lib/reviewer-liveness-age.mjs
+  s_264ae386838c57::t_41b406eea6c848 1-168
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  s_264ae386838c57::t_e58cc618a619e2 1-140
+governance/plans/sovereign-capacity/E9-ADJACENCY.md
+  s_264ae386838c57::t_a4d6d527991a87 1-120
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  s_264ae386838c57::t_e4512daea744cc 24,62-63
+governance/test/reviewer-liveness-age.test.mjs
+  s_264ae386838c57::t_4e6d9227da9dcc 1-120
+hooks/manifest.json
+  s_264ae386838c57::t_cb546b76f1358b 1388
+hooks/pr-inflight-capture.sh
+  s_264ae386838c57::t_46e93e3c9dcf50 33-42,44,47-147,151-171,187-200,204-207,209-217,243-246,248,250-252,255,260-268,284-293
+hooks/tests/pr-inflight-capture.test.sh
+  s_264ae386838c57::t_39172c8e619583 32-40,62,104-303
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "381e698f124a6fd2caa38496c2712e02663a3854",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.coderabbit.yaml
+  s_f126fb3b7cae07::t_807d2df684dd79 1-133
+.cursor/BUGBOT.md
+  s_f126fb3b7cae07::t_425485aae333d0 1-60
+.github/workflows/governance.yml
+  s_f126fb3b7cae07::t_366ec2f915e95e 300-313
+.github/workflows/unearned-approval-guard.yml
+  s_f126fb3b7cae07::t_e6af3ea6ca8c40 1-310
+REVIEW.md
+  s_f126fb3b7cae07::t_6d097a41b3d903 1-80
+cubic.yaml
+  s_f126fb3b7cae07::t_7f4c02afe5af59 1-112
+docs/superpowers/specs/2026-08-01-local-inference-integrity-design.md
+  s_f126fb3b7cae07::t_e9bde510b4fd6c 1-278
+governance/DASHBOARD.md
+  s_f126fb3b7cae07::t_659622dbc31ee4 25
+governance/bin/prove-rules-version-singleton-gate.mjs
+  s_f126fb3b7cae07::t_d44739eddfbac7 1-121
+governance/bin/rules-version-singleton-lint.mjs
+  s_f126fb3b7cae07::t_3dec81e130f4f9 1-165
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_46cd3731d72cca 5,2435-2445,2698-2715,4204-4208,4210-4224
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_62b82d1f1b5bba 9-10,12-13,21876-21963,24274-24438,36270-36271,36281-36282,36292-36295,36304-36306,36314-36315,36336-36337,36347-36348,36358-36359,36369-36370,36380-36381,36391-36392,36402-36403,36413-36414,36424-36425,36435-36436,36446-36447,36457-36458,36468-36469,36479-36480,36490-36491
+governance/graph.json
+  s_f126fb3b7cae07::t_d7e5f0e77c39c7 2659,2663-2666,3483-3599,4341-4496,16461,16463,16467,16469,18793-19008,20983-21528
+governance/lib/review-liveness.mjs
+  s_f126fb3b7cae07::t_6dff7e3ed630f0 40-45,170-179
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_f126fb3b7cae07::t_9234bb37a97682 42-44,116,118,121
+governance/plans/effective-authority/E3-OIDC.md
+  s_f126fb3b7cae07::t_d6e091c39d9ba9 2,4-7,10,12-13,15-19,21-42,47-48,52,54-58,60-61,63,65-86,90-100
+governance/plans/effective-authority/NORTH-STAR.md
+  s_f126fb3b7cae07::t_6c0b288ec073cf 162
+governance/plans/effective-authority/RECEIPTS.md
+  s_f126fb3b7cae07::t_fdc94c96c22214 204-267,276-277
+governance/plans/local-inference-integrity/DEPENDENCIES.md
+  s_f126fb3b7cae07::t_d8de5200a81945 1-144
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_f126fb3b7cae07::t_a5d7235470b259 1-130
+governance/plans/local-inference-integrity/E1-ENCODE.md
+  s_f126fb3b7cae07::t_c96d1ed2579deb 1-112
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_f126fb3b7cae07::t_2afeea0444ff22 1-129
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_f126fb3b7cae07::t_b0deb3b8543d06 1-140
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_f126fb3b7cae07::t_9e6754fe746b49 1-169
+governance/plans/local-inference-integrity/E5-SIGNAL.md
+  s_f126fb3b7cae07::t_93942724a9b523 1-146
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_f126fb3b7cae07::t_80b2b870e70f51 1-126
+governance/plans/local-inference-integrity/NORTH-STAR.md
+  s_f126fb3b7cae07::t_66a227d1784e53 1-264
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_f126fb3b7cae07::t_89019525b4106d 1-121
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_f126fb3b7cae07::t_023377943480fb 1-369
+governance/plans/socratic-loop/ACTORS.md
+  s_f126fb3b7cae07::t_7dce48fcf38ad5 1-188
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_f126fb3b7cae07::t_f73df1c5a01afe 1-77
+governance/plans/socratic-loop/E1-SPINE.md
+  s_f126fb3b7cae07::t_006323413bf26e 1-513
+governance/plans/socratic-loop/E10-PROVENANCE.md
+  s_f126fb3b7cae07::t_443a4bd45b6c3f 1-723
+governance/plans/socratic-loop/E11-GOVERNANCE-BINDING.md
+  s_f126fb3b7cae07::t_26ec0cc79b9c16 1-440
+governance/plans/socratic-loop/E2-ASKING.md
+  s_f126fb3b7cae07::t_41141ad4b0cc31 1-612
+governance/plans/socratic-loop/E3-ANSWERING.md
+  s_f126fb3b7cae07::t_51847a74bbf8f4 1-565
+governance/plans/socratic-loop/E4-ELENCHUS.md
+  s_f126fb3b7cae07::t_5a91aee2ac862c 1-506
+governance/plans/socratic-loop/E5-LEDGER.md
+  s_f126fb3b7cae07::t_26f57681852798 1-491
+governance/plans/socratic-loop/E6-CALIBRATION.md
+  s_f126fb3b7cae07::t_1db91782f9bdf3 1-666
+governance/plans/socratic-loop/E7-GENERATIVE.md
+  s_f126fb3b7cae07::t_deae495f740d9a 1-548
+governance/plans/socratic-loop/E8-OPERATOR-MODEL.md
+  s_f126fb3b7cae07::t_eb0d41e24775b2 1-537
+governance/plans/socratic-loop/E9-ANTI-GAMING.md
+  s_f126fb3b7cae07::t_43bae4d6cec41c 1-614
+governance/plans/socratic-loop/METHOD-CANON.md
+  s_f126fb3b7cae07::t_738360e5a92f01 1-263
+governance/plans/socratic-loop/METHODOLOGIES.md
+  s_f126fb3b7cae07::t_56c88e4bc7a35e 1-214
+governance/plans/socratic-loop/NORTH-STAR.md
+  s_f126fb3b7cae07::t_aa7ff48e21c2dc 1-158
+governance/plans/socratic-loop/RECEIPTS.md
+  s_f126fb3b7cae07::t_9309a8e7db004e 1-140
+governance/plans/socratic-loop/TAXONOMY.md
+  s_f126fb3b7cae07::t_54931acec2e165 1-265
+governance/test/unearned-approval-guard-markers.test.mjs
+  s_f126fb3b7cae07::t_1bcd62e93048be 1-163
+hookcli/bin/hookcli
+  s_f126fb3b7cae07::t_47de0151f1208b 21-28
+hookcli/tests/rules-version.sh
+  s_f126fb3b7cae07::t_a91f1cb283ad4f 1-19,23,33-34,40-46,48,50-55,57-77,79-83,85,88-108,118
+hooks/hooklib/hook.sh
+  s_f126fb3b7cae07::t_e1de6ed1faf6a6 25,79-114
+hooks/local-llm/code-reviewer.sh
+  s_f126fb3b7cae07::t_98d4b3fa8420e1 57-63,65-66
+hooks/local-llm/enhance-compare-report.sh
+  s_f126fb3b7cae07::t_1529b529c534da 5-18,41-54,58-59
+hooks/local-llm/ollama-helper.sh
+  s_f126fb3b7cae07::t_f16fe12ed61ae3 107-156
+hooks/local-llm/prompt-enhancer.sh
+  s_f126fb3b7cae07::t_0301e970ac8ab0 74-76,104-114,117,122-127,139-151,153-155,159-160,165-168,171-186
+hooks/local-llm/task-router.sh
+  s_f126fb3b7cae07::t_ddc45b5dd717f3 35-54,60,65-70,72-73
+hooks/manifest.json
+  s_f126fb3b7cae07::t_16f00f405fdda8 644,695,758,863
+hooks/merge-premise-guard.sh
+  s_f126fb3b7cae07::t_500aaf8b62032f 63-64
+hooks/tests/enhancer_smoke.sh
+  s_f126fb3b7cae07::t_a1a3356ae765ea 6-9,30-47
+hooks/tests/framing-invariant.test.sh
+  s_f126fb3b7cae07::t_c827cdd322c479 1-224
+hooks/tests/json-emit-invariant.test.sh
+  s_f126fb3b7cae07::t_37fb5745d74ab8 1-199
+hooks/tests/local-llm-containment.test.sh
+  s_f126fb3b7cae07::t_787e1cb1cc4fc0 1-142
+hooks/tests/rules-version.test.sh
+  s_f126fb3b7cae07::t_688883a29013e4 81-90,93-103,264,266-278,281-295
+settings/settings.base.json
+  s_f126fb3b7cae07::t_ccc14ecb43fbdd 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "78ada6c172422fc5b94e14650151de1f04d38dbf",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

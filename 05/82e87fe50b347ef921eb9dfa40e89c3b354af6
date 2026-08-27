@@ -1,0 +1,21 @@
+governance/bin/cap-audit.mjs
+  s_6046880c148371::t_5fa2c254e6e2ef 2,38
+governance/bin/dispute-pack.mjs
+  s_6046880c148371::t_4cb27d966f318b 1-2,26,71-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0582e87fe50b347ef921eb9dfa40e89c3b354af6",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

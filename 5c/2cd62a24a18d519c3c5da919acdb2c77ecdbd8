@@ -1,0 +1,27 @@
+governance/test/hook-contract-lint.test.mjs
+  s_db1b2a792e5f25::t_b7dbe88f639597 26-31,34,39,41-44
+  s_db1b2a792e5f25::t_b23c9907e0bbd5 1-25,32-33,35-38,40,45-128
+governance/bin/hook-contract-lint.mjs
+  s_db1b2a792e5f25::t_5313beb45befeb 96-122,125-126
+  s_db1b2a792e5f25::t_c514061aa55145 131
+governance/code-index/CATALOG.md
+  s_db1b2a792e5f25::t_627abcf4e7f6b9 5,1507,1509-1510
+governance/code-index/index.json
+  s_db1b2a792e5f25::t_3af02be02853b2 7,10,13522-13532,13550-13553,13561-13562
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5c2cd62a24a18d519c3c5da919acdb2c77ecdbd8",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

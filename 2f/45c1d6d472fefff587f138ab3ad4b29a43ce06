@@ -1,0 +1,261 @@
+.github/workflows/wave-reviewer.yml
+  s_9bb1b1d1d998d4::t_134b79563d6117 1-109
+.gitignore
+  s_9bb1b1d1d998d4::t_7a02eb06bafcc4 244-245
+bin/fireworks-cost-ledger.mjs
+  s_9bb1b1d1d998d4::t_18f6b11d68dc86 1-142
+bin/fireworks-cost-ledger.test.mjs
+  s_9bb1b1d1d998d4::t_af4bf701b028f2 1-94
+bin/fireworks-ledger-parse.mjs
+  s_9bb1b1d1d998d4::t_be1cc4cce2b859 1-165
+bin/fireworks-ledger-parse.test.mjs
+  s_9bb1b1d1d998d4::t_7b68d985647ae3 1-235
+governance/ENFORCEMENT-BASELINE.json
+  s_9bb1b1d1d998d4::t_e79b64416a35f8 12-13,211-220
+governance/bin/artifact-count-regression.mjs
+  s_9bb1b1d1d998d4::t_292237bb01bae8 40,192
+governance/bin/bank-lint.mjs
+  s_9bb1b1d1d998d4::t_fde10f9531e08c 13,17
+governance/bin/branch-truth-lint.mjs
+  s_9bb1b1d1d998d4::t_fef3f5428e7e3c 2,349
+governance/bin/brand-asset-hardcoded-color-lint.mjs
+  s_9bb1b1d1d998d4::t_4d2418f5ddd3fa 37,138
+governance/bin/cockpit.mjs
+  s_9bb1b1d1d998d4::t_12d8c7982c1363 16,136,142
+governance/bin/cogs-emit.mjs
+  s_9bb1b1d1d998d4::t_f66639e106b442 193,203,209
+governance/bin/cost-ledger.mjs
+  s_9bb1b1d1d998d4::t_d1586bfb66efc3 321,340,348
+governance/bin/credential-probe.mjs
+  s_9bb1b1d1d998d4::t_29406cd86836bb 75,249
+governance/bin/decide.mjs
+  s_9bb1b1d1d998d4::t_ca92772281295f 131
+governance/bin/deep-e2e.mjs
+  s_9bb1b1d1d998d4::t_63f93e0a968263 1-70
+governance/bin/deploy-audit.mjs
+  s_9bb1b1d1d998d4::t_24e307b0b45c3f 1
+governance/bin/dispute-pack.mjs
+  s_9bb1b1d1d998d4::t_e49610730b51ea 10-12,20-26
+governance/bin/distribute-claude-config.mjs
+  s_9bb1b1d1d998d4::t_15d66aa0de423b 177,192,222
+governance/bin/distribute-sha-pin.mjs
+  s_9bb1b1d1d998d4::t_5a9c5b86120ff1 154
+governance/bin/enforce-ignore-lawref.mjs
+  s_9bb1b1d1d998d4::t_321ce04ec4fb34 37,219
+governance/bin/enforcement-coverage-audit.mjs
+  s_9bb1b1d1d998d4::t_f2e0d11d1b7191 2,179,183,186
+governance/bin/ess-nas-sync.mjs
+  s_9bb1b1d1d998d4::t_d5b53de7f2063c 31,118
+governance/bin/federate.mjs
+  s_9bb1b1d1d998d4::t_ddd9c69f7d9a13 336
+governance/bin/fleet/actions-census.mjs
+  s_9bb1b1d1d998d4::t_245d016e36636b 31,157
+governance/bin/fleet/contract-triage.mjs
+  s_9bb1b1d1d998d4::t_b4125ade85e0c8 30,254
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_9bb1b1d1d998d4::t_6574654a641211 47,292
+governance/bin/fleet/ingress-probe.mjs
+  s_9bb1b1d1d998d4::t_f86ff5e4d5ed7f 38,253
+governance/bin/fleet/installation-authority-audit.mjs
+  s_9bb1b1d1d998d4::t_618f1916670341 40,207
+governance/bin/fleet/merge-policy-conformance.mjs
+  s_9bb1b1d1d998d4::t_2704d80c109fcc 59,172-179,243,258-264,291-292,294-299
+governance/bin/fleet/reviewer-config-census.mjs
+  s_9bb1b1d1d998d4::t_a750baa0c9446a 39,285
+governance/bin/fleet/secret-provisioning-audit.mjs
+  s_9bb1b1d1d998d4::t_cafb5a53989bc3 43,320
+governance/bin/forecast.mjs
+  s_9bb1b1d1d998d4::t_758ae73a34d1d6 22,108
+governance/bin/gam-conformance.mjs
+  s_9bb1b1d1d998d4::t_0c2c8af37e43de 32,136
+governance/bin/gam-reconcile.mjs
+  s_9bb1b1d1d998d4::t_b4f88b9f33b1e2 29,115
+governance/bin/gate-coverage-audit.mjs
+  s_9bb1b1d1d998d4::t_d6c28d36818062 30,96,110
+governance/bin/gate-reality.mjs
+  s_9bb1b1d1d998d4::t_47d1decbd19323 27,224
+governance/bin/go-live-e2e.mjs
+  s_9bb1b1d1d998d4::t_ee3067225c9375 16
+governance/bin/hook-registration-wrapper-lint.mjs
+  s_9bb1b1d1d998d4::t_f5021319e3c27d 49,157
+governance/bin/intent-ledger.mjs
+  s_9bb1b1d1d998d4::t_9a774409bdd36d 54,57,192,223-225,229-235,237-240,242-243,279
+governance/bin/known-red-baseline.mjs
+  s_9bb1b1d1d998d4::t_104ce7626b559b 24,173,177,217
+governance/bin/launchd-cron-parity-lint.mjs
+  s_9bb1b1d1d998d4::t_86ce22e0090e8c 44,296
+governance/bin/launchd-twin-liveness.mjs
+  s_9bb1b1d1d998d4::t_6b587a89a5f7f6 60,181,185
+governance/bin/local-gates.mjs
+  s_9bb1b1d1d998d4::t_b22f17b9da0816 35,158
+governance/bin/main-guard-ratchet.mjs
+  s_9bb1b1d1d998d4::t_20f8ac5ecd588c 30,201
+governance/bin/main-protection-audit.mjs
+  s_9bb1b1d1d998d4::t_e2839aee61d08b 1-109
+governance/bin/memory-lint.mjs
+  s_9bb1b1d1d998d4::t_26f7afccc9750c 27,96
+governance/bin/merge.mjs
+  s_9bb1b1d1d998d4::t_650bae50f32be1 39,127
+governance/bin/merged-not-released.mjs
+  s_9bb1b1d1d998d4::t_c92cf607f6b3f5 10,105
+governance/bin/mesh-estate-health.mjs
+  s_9bb1b1d1d998d4::t_1f03f8c70c4ba9 44,288
+governance/bin/observe.mjs
+  s_9bb1b1d1d998d4::t_9d2909c35ab598 41-44,181
+governance/bin/owner-assign.mjs
+  s_9bb1b1d1d998d4::t_2be6b0c96607f7 37,324,330
+governance/bin/pkg-adoption-census.mjs
+  s_9bb1b1d1d998d4::t_7c71f42e6efe76 1-86
+governance/bin/pr-base-conformance.mjs
+  s_9bb1b1d1d998d4::t_bd3bf2e5ec6529 24,136,139
+governance/bin/pr-check-health.mjs
+  s_9bb1b1d1d998d4::t_237511d8503ee0 53,208
+governance/bin/protection-profile-check.mjs
+  s_9bb1b1d1d998d4::t_1bbef2442b188b 2,236
+governance/bin/reconcile.mjs
+  s_9bb1b1d1d998d4::t_5d6204725145b9 30,251
+governance/bin/required-check-liveness.mjs
+  s_9bb1b1d1d998d4::t_67b1ae3d343409 31,251
+governance/bin/reviewer-liveness-age.mjs
+  s_9bb1b1d1d998d4::t_b6991df650993f 31,173
+governance/bin/reviewer-route.mjs
+  s_9bb1b1d1d998d4::t_e4eb97ddf8b6cd 30,242
+governance/bin/rl-harvest.mjs
+  s_9bb1b1d1d998d4::t_d1b60329d030f0 43,281
+governance/bin/roi.mjs
+  s_9bb1b1d1d998d4::t_ac3d2caa645116 214,228,234,241
+governance/bin/scope-content-rate.mjs
+  s_9bb1b1d1d998d4::t_8d8f2a72f13a06 1-152
+governance/bin/settle-guard.mjs
+  s_9bb1b1d1d998d4::t_d3b6dc566ab5b2 22,71
+governance/bin/skill-freshness-check.mjs
+  s_9bb1b1d1d998d4::t_e3eb68dddbf127 52,192
+governance/bin/state-verifier.mjs
+  s_9bb1b1d1d998d4::t_9c68efec532fac 48,236,286
+governance/bin/vendor-scoreboard-sync.mjs
+  s_9bb1b1d1d998d4::t_7efe119302937b 35-39,54-97,212-238,240-256,312,320-321,325,353-380
+governance/bin/vendored-gate-audit.mjs
+  s_9bb1b1d1d998d4::t_f282e6aaaa340d 34,85,91
+governance/bin/visibility-rate.mjs
+  s_9bb1b1d1d998d4::t_719cad8f7218e4 35,78
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_9bb1b1d1d998d4::t_c5b9807854ddfe 31,208
+governance/bin/wave-reviewer.mjs
+  s_9bb1b1d1d998d4::t_3fd192dc267022 1-302
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_9bb1b1d1d998d4::t_747626eafdfb78 51,278
+governance/bin/wave-sec.mjs
+  s_9bb1b1d1d998d4::t_be49f6ff1c3bcd 31,166,238
+governance/bin/workflow-lint.mjs
+  s_9bb1b1d1d998d4::t_2a2d1a6ada6b44 34,340
+governance/bin/workflow-pin-currency.mjs
+  s_9bb1b1d1d998d4::t_cd38e0c3624272 44,234
+governance/gam-port-kit/manifest.json
+  s_9bb1b1d1d998d4::t_3a73dd4b535a84 22
+governance/lib/drill-fixtures-pkg-adoption.mjs
+  s_9bb1b1d1d998d4::t_db99219acc3856 1-50
+governance/lib/drill-registry.mjs
+  s_9bb1b1d1d998d4::t_f0cf1d2cf0c995 51,215
+governance/lib/ledger-sweep.mjs
+  s_9bb1b1d1d998d4::t_ddd1aba95924d2 1-69
+governance/lib/wave-reviewer.mjs
+  s_9bb1b1d1d998d4::t_e614d0c2f17fbc 25-39
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9bb1b1d1d998d4::t_fc94e6d77b2967 2
+governance/plans/internal-package-spread/PLAN.md
+  s_9bb1b1d1d998d4::t_2349cc18e2bf75 1-35
+governance/plans/network-edge-plane/LEARNINGS.md
+  s_9bb1b1d1d998d4::t_526aafbfbf7c7a 25-27
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_9bb1b1d1d998d4::t_7dc670e31704e4 24-25
+governance/plans/receipts/E3-FUNNEL-route-probe-2026-08-25.md
+  s_9bb1b1d1d998d4::t_b56c21cdafa278 1-14
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  s_9bb1b1d1d998d4::t_e7ec3f2ce4c249 1
+governance/plans/runtime-learning-loop/TIER-GAP-ANALYSIS.md
+  s_9bb1b1d1d998d4::t_ee09c44c370483 75-80
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_9bb1b1d1d998d4::t_06eb1f81e89a29 53-54
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  s_9bb1b1d1d998d4::t_5586c0c30cd50e 3-4,9-10,12
+governance/plans/wave-golive/E3-FUNNEL.md
+  s_9bb1b1d1d998d4::t_58e26cbb0c9b32 4
+governance/plans/wave-models/E1-HOSTED-LADDER.md
+  s_9bb1b1d1d998d4::t_0e9b3c2280ece3 19
+governance/plans/wave-models/MODEL-OPPORTUNITY-LIST.md
+  s_9bb1b1d1d998d4::t_75149c9ce1facc 9
+governance/plans/wave-platform-completeness/FLEET-OPEN-WORK.md
+  s_9bb1b1d1d998d4::t_5da35ef7921428 1-92
+governance/research/COMPANY-PRESENCE-2026-08-24.md
+  s_9bb1b1d1d998d4::t_6c199ca2b9cf51 1-64
+governance/research/COPY-INVENTORY-2026-08-24.md
+  s_9bb1b1d1d998d4::t_8a18284a8ba63d 1-38
+governance/research/VOICE-EXAMPLES-2026-08-24.md
+  s_9bb1b1d1d998d4::t_c09a5f8545f9f0 1-62
+governance/research/great-writers-voice-2026-08-24.md
+  s_9bb1b1d1d998d4::t_1220312d4f5ea0 1-36
+governance/research/launch-registry-governed-mind.json
+  s_9bb1b1d1d998d4::t_79b42a2b6a2bab 1-27
+governance/research/llms.txt
+  s_9bb1b1d1d998d4::t_0ff527607178b8 1-29
+governance/research/voice-greats-2026-08-24.md
+  s_9bb1b1d1d998d4::t_a4885c2891a37c 1-32
+governance/state/canon-gap-map/GAP-MAP.md
+  s_9bb1b1d1d998d4::t_29f5c382651e44 23,28,31,44,46,54,61-62,64,66,72,74-75,78,81,84,88,91,102,105
+governance/state/canon-gap-map/gap-map.json
+  s_9bb1b1d1d998d4::t_5dc500305edc55 236,243,245,381,388,390,450,457,459,752,759,761,797,804,806,959,966,968,1162,1169,1171,1191,1198,1200,1253,1257,1306,1313,1315,1480,1487,1489,1540,1547,1549,1569,1576,1578,1656,1663,1665,1743,1750,1752,1830-1831,1833,1925,1932,1934,2012,2019,2021,2324,2331,2333,2411,2418,2420
+governance/state/e2e-probes.json
+  s_9bb1b1d1d998d4::t_8a40fcf6772a58 66,70-73,80,82-85,93
+governance/state/pkg-adoption-floor.json
+  s_9bb1b1d1d998d4::t_6f44fdc38224fc 1-5
+governance/state/pkg-adoption-latest.json
+  s_9bb1b1d1d998d4::t_7811c389e27ba6 1-2642
+governance/state/reviewer-liveness.json
+  s_9bb1b1d1d998d4::t_fcef358703a175 2,31,39,47,55-56,71-72,79,104,112,128
+governance/state/surface-registry.json
+  s_9bb1b1d1d998d4::t_8364dbda4cbdcf 136-570,572
+governance/test/dispute-pack.test.mjs
+  s_9bb1b1d1d998d4::t_28c16944eae6d0 4-6,27-28,30,32
+governance/test/doppler-secrets-cache-name-filter.test.mjs
+  s_9bb1b1d1d998d4::t_ab4ad7d652353d 1-342
+governance/test/enforce-ignore-lawref.test.mjs
+  s_9bb1b1d1d998d4::t_9bfabfa916fb98 230
+governance/test/go-live-e2e.test.mjs
+  s_9bb1b1d1d998d4::t_9bc5b4e8788bd3 19,21
+governance/test/intent-ledger-sweep-voice.test.mjs
+  s_9bb1b1d1d998d4::t_6faa43e13048e4 1-133
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_9bb1b1d1d998d4::t_d27b7d4ef9f3a4 39-42
+governance/test/memory-write-guard.test.mjs
+  s_9bb1b1d1d998d4::t_aa4c305ded72d1 1-246
+governance/test/pkg-adoption-census.test.mjs
+  s_9bb1b1d1d998d4::t_179b314e69e536 1-48
+governance/test/vendor-scoreboard-sync-cli.test.mjs
+  s_9bb1b1d1d998d4::t_694eb5ff0e3413 1-266
+governance/test/wave-reviewer-runner.test.mjs
+  s_9bb1b1d1d998d4::t_484945d15a6ec8 1-102
+hooks/tests/gam-kill-switch-guard-gaps.test.sh
+  s_9bb1b1d1d998d4::t_232bb205e143d2 1-123
+hooks/tests/gam-kill-switch-guard.test.sh
+  s_9bb1b1d1d998d4::t_e8d8536e27c589 1-212
+memory/runpod-platform-reference.md
+  s_9bb1b1d1d998d4::t_dfa24993e54674 10,21-24,60,74,87,264-268
+rules/a-clean-result-needs-a-positive-control.md
+  s_9bb1b1d1d998d4::t_d5fc2a1b2873e5 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2f45c1d6d472fefff587f138ab3ad4b29a43ce06",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

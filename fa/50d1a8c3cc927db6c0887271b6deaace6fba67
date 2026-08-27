@@ -1,0 +1,21 @@
+governance/graph.json
+  s_375efeac18ed55::t_7126969bbb0629 4140-4148,4257-4265,16362-16373,16530-16541
+hooks/manifest.json
+  s_375efeac18ed55::t_47614198188840 68-96,660-680
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fa50d1a8c3cc927db6c0887271b6deaace6fba67",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

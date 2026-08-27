@@ -1,0 +1,38 @@
+hooks/tests/guard-bidirectional.test.sh
+  s_264ae386838c57::t_6d368c0a4980af 73-124
+  s_264ae386838c57::t_905260ef48a319 44,46-48,50,52,54,58-59
+  s_264ae386838c57::t_323128d10049dc 17-29
+  s_264ae386838c57::t_5c394f1d4dfa99 139-153
+  s_264ae386838c57::t_d001fdb358af72 60,154-159
+hooks/local-llm/prompt-enhancer.sh
+  s_264ae386838c57::t_5166f34805d11d 167
+  s_264ae386838c57::t_adb48cc802aa63 88-92,122-130,151,153,164-166,168
+hooks/local-llm/guard.sh
+  s_264ae386838c57::t_8bbe75a763267f 1-32,38-45,48-53,54-124
+hooks/manifest.json
+  s_8d26503dfc73f4::t_b90c91ee064684 695
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2a1b4dd30263ecc4905014a1234eff0bf78cb5e3",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

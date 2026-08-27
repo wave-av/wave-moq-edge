@@ -1,0 +1,19 @@
+governance/plans/review-actioning/NORTH-STAR.md
+  s_e803088c0d663d::t_e3d959cb765e0a 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a33e7858e92b586008505ff274392fc627fdcd33",
+  "prompts": {},
+  "sessions": {
+    "s_e803088c0d663d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a14e0507114359ebc",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/test/gate-audit-args.test.mjs
+  s_63c6ee080d73c3::t_210fe18121b9db 55,60
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_63c6ee080d73c3::t_af4381dcea217f 33-36,40,42-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2d6c2f343bbd261b00aa370520838cb75554b64f",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

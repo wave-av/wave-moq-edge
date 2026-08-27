@@ -1,0 +1,27 @@
+frameworks/verify-loop/verify-loop.mjs
+  s_6c1c1be138dfd4::t_7279f8db979fc5 264-266,272-273
+  s_6c1c1be138dfd4::t_502bbe02263a2a 1-263,267-271,274-312
+frameworks/verify-loop/README.md
+  s_6c1c1be138dfd4::t_ac7cfa2ee30943 1-69
+.github/workflows/verify-loop.yml
+  s_6c1c1be138dfd4::t_5d47e02cb736b0 31
+  s_6c1c1be138dfd4::t_c64c17c1cdbf1b 1-30
+frameworks/verify-loop/tests/verify-loop.test.mjs
+  s_6c1c1be138dfd4::t_2a9a57b08cbd08 1-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "fa6b13175b5146d7695ae7fe73c73cd4369a7c16",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

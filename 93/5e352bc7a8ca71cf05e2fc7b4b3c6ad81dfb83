@@ -1,0 +1,21 @@
+governance/test/enforce-secrets.test.mjs
+  s_6f6453b23e3805::t_af4e205ba54e3e 100-114
+governance/bin/enforce.mjs
+  s_6f6453b23e3805::t_97c07c02cfdd7f 106-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "935e352bc7a8ca71cf05e2fc7b4b3c6ad81dfb83",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

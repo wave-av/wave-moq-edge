@@ -1,0 +1,20 @@
+rules/dogfood-to-product.md
+  s_eb2f7e65359b4f::t_1b2890d75ba065 1-21,23-46
+  s_eb2f7e65359b4f::t_a556a0e059970f 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "8512c24fde7f514353c562688f4d1b8ce2f67e09",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

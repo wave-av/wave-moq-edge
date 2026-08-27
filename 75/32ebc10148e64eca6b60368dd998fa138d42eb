@@ -1,0 +1,25 @@
+governance/bin/graph-delta.mjs
+  s_be94c45efdaafe::t_29f831e6148989 1-208
+governance/lib/graph-delta.mjs
+  s_be94c45efdaafe::t_fa170d23b83d95 1-291
+.github/workflows/graph-delta.yml
+  s_be94c45efdaafe::t_d2a5dead5830ab 73-79
+  s_be94c45efdaafe::t_4c7a411db8ddb6 1-71
+  s_be94c45efdaafe::t_a47e16ef2dd954 72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7532ebc10148e64eca6b60368dd998fa138d42eb",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

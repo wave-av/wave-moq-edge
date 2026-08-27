@@ -1,0 +1,29 @@
+governance/bin/blocked-agent-board.mjs
+  s_53b49eff5b8c5d::t_b6235f4a5e011f 10,43
+governance/bin/model-registry.mjs
+  s_53b49eff5b8c5d::t_04f6135d06f1a2 10,60
+governance/bin/runpod-meter.mjs
+  s_53b49eff5b8c5d::t_43820a98140d14 8,34
+governance/bin/runpod-sdk.mjs
+  s_53b49eff5b8c5d::t_690558993253f1 31,34
+governance/bin/wave-ops-api.mjs
+  s_53b49eff5b8c5d::t_0fb4630915a2c4 12,45
+governance/bin/wave-route.mjs
+  s_53b49eff5b8c5d::t_51b02c60442c85 45,47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "82351a29724cd4c8fda548a13e67e2c07c76ca6d",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

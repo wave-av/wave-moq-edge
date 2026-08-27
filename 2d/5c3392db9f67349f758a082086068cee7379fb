@@ -1,0 +1,19 @@
+memory/fleet-todo-ledger.md
+  s_dedb333dd5195e::t_7326e5b52cc80a 699-734
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2d5c3392db9f67349f758a082086068cee7379fb",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

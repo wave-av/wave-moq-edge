@@ -1,0 +1,27 @@
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_7c7e203d305c60::t_9d1c05f4317fd1 237-241
+  s_7c7e203d305c60::t_b0b831b874b2d1 114-176
+  s_7c7e203d305c60::t_5cf2c8b595e289 249-254
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_7c7e203d305c60::t_04cbc11f10e127 1-168
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_3e8f38823aa0ef 25
+governance/graph.json
+  s_7c7e203d305c60::t_28af9fd2f7d32d 7481-7495,30296-30319
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b092098474dbe70252aea2d76599a0d98d22b4ff",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+governance/test/fleet-reliability.test.mjs
+  s_7ddeb5d251570f::t_a9c637f7bb8905 10
+  s_c927cca3dccbaa::t_6a371ac3806043 161-176
+bin/fleet-reliability.mjs
+  s_7ddeb5d251570f::t_ddc260dae97c99 116-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "83101791f4466ec0886f0dc4a5e6c3bf546fffaa",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

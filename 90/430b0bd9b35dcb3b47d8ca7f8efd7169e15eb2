@@ -1,0 +1,37 @@
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_2e30bff6169f7a::t_8b5027dd070bc5 237-244,246-251,253-256
+  s_2e30bff6169f7a::t_32b6beee7795a8 245
+  s_2e30bff6169f7a::t_59e36224e1ac3e 217
+governance/test/wave-cost-ledger-moq-backtest.test.mjs
+  s_2e30bff6169f7a::t_8e484dbc11b261 1-146
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_2e30bff6169f7a::t_f18ba6ccfe09b9 236-237,239,241
+  s_02abc74f4971c7::t_5a01ab747afb5d 30,82,91,97,110,125,134
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_9b87fcd9755b87 277-304
+  s_2e30bff6169f7a::t_2197c642482e66 14-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "90430b0bd9b35dcb3b47d8ca7f8efd7169e15eb2",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

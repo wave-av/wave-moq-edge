@@ -1,0 +1,35 @@
+.github/workflows/governance.yml
+  s_375efeac18ed55::t_a44ff3f21fbcbf 91-98
+governance/bin/build.mjs
+  s_375efeac18ed55::t_4ffe7e6bd8bfcb 202-208,210-211,222-225,231,233-235,238-239,241-243
+  s_375efeac18ed55::t_31f2d29c9d27c4 269-280
+  s_375efeac18ed55::t_018e0fff646ad7 212-221,226-229
+  s_375efeac18ed55::t_8623fe5b3e64d5 182-201,209,230,232,236-237,240,244-246
+  s_375efeac18ed55::t_0db05e8346c1e0 14-16,18-19
+  s_375efeac18ed55::t_2747c4443bb507 27
+governance/test/dangling-refs.test.mjs
+  s_375efeac18ed55::t_acdebed3ebde67 1-13,15-163
+  s_375efeac18ed55::t_00a076614faed1 14
+governance/DANGLING-REFS-BASELINE.json
+  s_375efeac18ed55::t_3d6493f7b658b0 1-60
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_97e4955d81618f 5,233-260
+governance/code-index/index.json
+  s_375efeac18ed55::t_787d99ab8e1063 7,9,2055-2056,2066-2067,2077-2078,2088-2089,2099-2100,2104-2114,2121-2122,2132-2133,2143-2144,2154-2155,2165-2166,2176-2177,2187-2188,2198-2199,2209-2210,2220-2221,2231-2232,2242-2243,2253-2254,2258-2268,2275-2276,2286-2287,2297-2298,2308-2309,2319-2320,2330-2331,2341-2342,2352-2353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "abe0791964830a7d91a31721c294492499327b2a",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

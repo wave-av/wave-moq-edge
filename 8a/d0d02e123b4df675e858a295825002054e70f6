@@ -1,0 +1,29 @@
+scripts/bugbot/validators.py
+  s_3a52a0989b58af::t_260c217ab88406 59-64,66-71,75-79,85,87-94
+  s_3a52a0989b58af::t_93a2e8b908a13a 80-84,86
+  s_3a52a0989b58af::t_716fb9e41d16ee 20
+  s_3a52a0989b58af::t_1ea4afd9545eaf 21
+scripts/bugbot/firecracker/setup-nas.sh
+  s_3a52a0989b58af::t_919174a238659f 1-56
+scripts/bugbot/firecracker/README.md
+  s_3a52a0989b58af::t_0b5af10669e3f7 1-55
+scripts/bugbot/firecracker/wave-fc-validate.sh
+  s_3a52a0989b58af::t_324c1f1fa05ec8 1-25,29,31-52
+  s_3a52a0989b58af::t_b407e21f0f4572 26-28,30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "8ad0d02e123b4df675e858a295825002054e70f6",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

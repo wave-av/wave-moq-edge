@@ -1,0 +1,104 @@
+hooks/self-review-gate.sh
+  s_0227926428e4b1::t_56291f0d43fe12 128
+  s_0227926428e4b1::t_d1b702ae3a273b 1-102,104-127,129-137,139-147
+  s_0227926428e4b1::t_27b0d0c034e4f3 103
+  s_0227926428e4b1::t_acc168a445cf73 138
+governance/plans/self-review-gate/creative/E2-redteam.md
+  s_0227926428e4b1::t_4142fc76f48605 1-154
+governance/plans/self-review-gate/E2-LOCAL-HOOK.md
+  s_0227926428e4b1::t_56e89ea8b0857b 1-54
+governance/plans/self-review-gate/creative/ops-sre.md
+  s_0227926428e4b1::t_4610b57d55f74d 1-214
+governance/plans/self-review-gate/creative/premortem.md
+  s_0227926428e4b1::t_c01733beba4a3d 1-123
+governance/plans/self-review-gate/creative/E3-ops-sre.md
+  s_0227926428e4b1::t_e68ef4c2ae9702 1-109
+governance/plans/self-review-gate/creative/E1-redteam.md
+  s_0227926428e4b1::t_54baa407bf4c00 1-119
+governance/bin/self-review-receipt.mjs
+  s_0227926428e4b1::t_14d23bbc937ffc 1-23,25-32,38-141,145-155,157-166
+  s_0227926428e4b1::t_c5c014ad63752c 24
+  s_0227926428e4b1::t_17922fd03b519a 33-37
+  s_0227926428e4b1::t_e041d8f27c47b1 142-144
+  s_0227926428e4b1::t_ef4a2726bb4572 156
+governance/plans/self-review-gate/creative/E4-economist.md
+  s_0227926428e4b1::t_ab9059a11c1301 1-186
+governance/plans/self-review-gate/creative/E2-pragmatist.md
+  s_0227926428e4b1::t_b5530b2e85172d 1-90
+governance/plans/self-review-gate/creative/E1-pragmatist.md
+  s_0227926428e4b1::t_8b22dacdfd4953 1-122
+governance/plans/self-review-gate/creative/E3-economist.md
+  s_0227926428e4b1::t_245656ade5dd72 1-139
+governance/plans/self-review-gate/E1-RECEIPT-AND-LAW.md
+  s_0227926428e4b1::t_0618e19eb32253 1-54
+governance/test/self-review-law.test.mjs
+  s_0227926428e4b1::t_69f0d9ec55b831 1-92
+governance/plans/self-review-gate/creative/E2-ops-sre.md
+  s_0227926428e4b1::t_7f7a72adc59381 1-182
+governance/plans/self-review-gate/NORTH-STAR.md
+  s_0227926428e4b1::t_43b3597d5635fc 1-104,113-122
+  s_0227926428e4b1::t_4a9da986ec49fe 105-112
+rules/review-your-own-pr-before-requesting-review.md
+  s_0227926428e4b1::t_d153e4f0590d34 1-39
+settings/settings.base.json
+  s_0227926428e4b1::t_a13d8665983ea5 666
+  s_0227926428e4b1::t_b28f06192b1203 663-665
+  s_f2b177d6cb0d6d::t_c455565bdd50d2 662
+governance/bin/enforcement-tables.mjs
+  s_0227926428e4b1::t_9365ef24201502 41-43
+  s_0227926428e4b1::t_58208b4794a18b 44
+governance/plans/self-review-gate/creative/E4-first-principles.md
+  s_0227926428e4b1::t_08f107964cbdaf 1-153
+hooks/tests/self-review-gate.test.sh
+  s_0227926428e4b1::t_362ef05ceb194f 87
+  s_0227926428e4b1::t_76554db9d90213 1-59,63-86,88-131
+  s_0227926428e4b1::t_87a3ccdcf40db4 60-62
+governance/plans/self-review-gate/E4-MEASUREMENT.md
+  s_0227926428e4b1::t_357e6ae1134166 1-60
+governance/plans/self-review-gate/creative/pragmatist.md
+  s_0227926428e4b1::t_fa5a6d20d3df3d 1-225
+governance/plans/self-review-gate/creative/economist.md
+  s_0227926428e4b1::t_6a778b7e7dca6d 1-90
+governance/plans/self-review-gate/E3-FLEET-GATE.md
+  s_0227926428e4b1::t_da3e38ef44c985 1-54
+governance/plans/self-review-gate/creative/E1-historian.md
+  s_0227926428e4b1::t_09c6b317582ff6 1-166
+governance/plans/self-review-gate/creative/E4-premortem.md
+  s_0227926428e4b1::t_795cfad01aa146 1-147
+governance/plans/self-review-gate/creative/redteam.md
+  s_0227926428e4b1::t_d08c0f2ed3c9ae 1-236
+governance/plans/self-review-gate/creative/E3-redteam.md
+  s_0227926428e4b1::t_01a54f24c3eec0 1-200
+governance/ENFORCEMENT-COVERAGE.md
+  s_0227926428e4b1::t_a17a26ca735ec0 5,9,12,14,483
+governance/contract.md
+  s_0227926428e4b1::t_2ac124443ea3eb 47,53
+governance/graph.json
+  s_0227926428e4b1::t_bbc068c7d0a7e9 1621-1627,7749-7813,10682-10689,17348-17395,31130-31225,36800-36811
+hooks/manifest.json
+  s_0227926428e4b1::t_de2932f57a9166 1527-1547
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3e08f0cb2c9d303e0a575e41e34e5e44109e903e",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f2b177d6cb0d6d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab908260d54a433e8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/monolith-decomposition/E1-TRIAGE-THE-DEAD.md
+  s_8d26503dfc73f4::t_d3780cd77b2489 111-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b9b17b13960807b7366d8aa7fb25f9bc97030b59",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

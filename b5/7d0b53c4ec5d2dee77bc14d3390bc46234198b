@@ -1,0 +1,41 @@
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_7c7e203d305c60::t_332925d5b86076 1-68
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_7c7e203d305c60::t_980af64a361271 1-83
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_7c7e203d305c60::t_55f001c137e2ec 1-89
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_7c7e203d305c60::t_5fbff4d8bffc52 1-73
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_7c7e203d305c60::t_d0c3567b26bbb7 1-77
+governance/plans/cloudflare-os-bridge/README.md
+  s_7c7e203d305c60::t_d3303225054fcb 1-49
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_7c7e203d305c60::t_27c175bc0f3779 1-78
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_7c7e203d305c60::t_aab0a131e4d79d 1-89
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_7c7e203d305c60::t_e1cd9a978ce363 1-126
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_7c7e203d305c60::t_91d270435335fe 1-83
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_98b80df1e2e7d4 25
+governance/graph.json
+  s_7c7e203d305c60::t_1833ab68dd853f 2962-3077,19771-19908
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b57d0b53c4ec5d2dee77bc14d3390bc46234198b",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

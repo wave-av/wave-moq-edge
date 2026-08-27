@@ -1,0 +1,21 @@
+governance/bin/code-index.mjs
+  s_6046880c148371::t_b453798a3d6dc7 39
+  s_6046880c148371::t_f09b2983ab212d 57-59
+  s_6046880c148371::t_4a4316a821370b 195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "faac951479a3e698a18ba228b63b5406f34f6ff5",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

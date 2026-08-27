@@ -1,0 +1,24 @@
+hooks/tests/intent-ledger-backup.test.sh
+  s_1c0352e957b5f6::t_45f586b7133977 212-240
+hooks/intent-ledger-capture.sh
+  s_1c0352e957b5f6::t_4a565dd5aff566 102-106
+  s_1c0352e957b5f6::t_4fef19682190b0 168-176
+hooks/manifest.json
+  s_1c0352e957b5f6::t_6135709c33c72b 777
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "82fdb74e17fa495b4deb7473abf0b698dc45d405",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

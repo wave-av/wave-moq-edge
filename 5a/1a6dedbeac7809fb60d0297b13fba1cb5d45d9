@@ -1,0 +1,32 @@
+scripts/bugbot/ROADMAP.md
+  s_0b987fef4e1240::t_33c7fffcffe88b 51-56
+  s_0b987fef4e1240::t_2fd2465cb2cf1a 97-98,101-103
+  s_0b987fef4e1240::t_4124774e6d7482 64
+  s_0b987fef4e1240::t_dccdfaacc0d698 90
+scripts/bugbot/test_self_audit.py
+  s_0b987fef4e1240::t_670ba18cb84db3 33,35-36,43-46
+  s_0b987fef4e1240::t_db99476909bc62 1-5,10-11,13-15,17-19,21,28-31,48,55-58,61-62,69-73,84-96,99-100,109-110,112-114,116,120-121,123-128,140-149,151,166-170,180
+  s_0b987fef4e1240::t_1d4886eb88544c 6-9,12,16,20,22-27,32,34,37-42,47,49-54,59-60,63-68,74-83,97-98,101-108,111,115,117-119,122,129-139,150,152-165,171-179
+scripts/bugbot/self_audit.py
+  s_0b987fef4e1240::t_9683918b5b1a50 42-44,51-52,58-62,67,70
+  s_0b987fef4e1240::t_eeb4930699a619 1-41,45-50,53-57,63-66,68-69,71-126
+scripts/bugbot/daemon.sh
+  s_0b987fef4e1240::t_e9ddb80957e9b9 470
+  s_0b987fef4e1240::t_9fb62049babd8c 403-426
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "5a1a6dedbeac7809fb60d0297b13fba1cb5d45d9",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

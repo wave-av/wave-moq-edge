@@ -1,0 +1,31 @@
+rules/agent-authored-public-prs-need-a-non-founder-author.md
+  s_9e49fb2dab61f0::t_2300fcea4d6a92 3
+  s_9e49fb2dab61f0::t_62a6caeb7c7e8c 28
+  s_9e49fb2dab61f0::t_c8b9464df23c8a 35
+  s_9e49fb2dab61f0::t_4ee5a47d577465 22
+  s_9e49fb2dab61f0::t_129cf7a14de748 39
+  s_9e49fb2dab61f0::t_49f85e26096494 20
+  s_9e49fb2dab61f0::t_f5bd1044b29d17 40
+governance/ENFORCEMENT-COVERAGE.md
+  s_9e49fb2dab61f0::t_d13e37f47790bf 14
+governance/state/canon-gap-map/GAP-MAP.md
+  s_9e49fb2dab61f0::t_a18dcf25d807d1 102,105
+governance/state/canon-gap-map/gap-map.json
+  s_9e49fb2dab61f0::t_d640a0625bbca1 2330-2331,2333,2417-2418,2420
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a6e7084847da30d65ede99860b344ccb1954e736",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

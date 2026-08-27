@@ -1,0 +1,46 @@
+memory/fleet-todo-ledger.md
+  s_2606de950a60c6::t_63ba00a6ffaaea 9
+  s_9e432dc94c73ad::t_75db13591385bd 477
+  s_2606de950a60c6::t_8962f03443baaf 12
+  s_9e432dc94c73ad::t_be8e0bf919f632 479
+  s_2606de950a60c6::t_86319a4a5bc5c5 24
+  s_9e432dc94c73ad::t_997c491745df5d 478
+  s_ea8755337f3c0d::t_b1c38f0f82a419 493-505
+  s_9e432dc94c73ad::t_89db2b4501b357 440
+  s_9e432dc94c73ad::t_777aeaf02dce74 480
+  s_9e432dc94c73ad::t_f1e9534443e801 437-439
+  s_9e432dc94c73ad::t_62dceb670837d0 441-443,474-476
+  s_ea8755337f3c0d::t_c2f647199ce9c4 506
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a7b171e5f7afda4036ae588b38074a42266ffa0f",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

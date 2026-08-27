@@ -1,0 +1,22 @@
+governance/test/wave-sec.test.mjs
+  s_85d9e5f433b9aa::t_23c3672e6346c0 1-54
+.github/workflows/wave-sec-scan.yml
+  s_85d9e5f433b9aa::t_f9e53c1730549b 1-27,32-35,37,39-54
+  s_85d9e5f433b9aa::t_5abc763853d896 28-31,36,38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "660d7d32d46b439afcff1fa5dce35f1ad2ec4577",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

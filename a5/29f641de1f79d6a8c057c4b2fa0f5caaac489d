@@ -1,0 +1,19 @@
+governance/plans/brand-recycle/CANON.md
+  s_15127d80763110::t_cdcd4b6f3b6c95 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a529f641de1f79d6a8c057c4b2fa0f5caaac489d",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

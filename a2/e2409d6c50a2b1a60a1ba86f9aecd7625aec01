@@ -1,0 +1,31 @@
+governance/plans/vendor-control-plane/E2-NAMESPACE-ADAPTER.md
+  s_1ad2f47f1d4417::t_47f3568e6acf85 1
+governance/plans/vendor-control-plane/E3-RUNPOD-ADAPTER.md
+  s_1ad2f47f1d4417::t_5af4dbc886f5cf 1
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  s_1ad2f47f1d4417::t_a790b03bd59748 1
+governance/plans/vendor-control-plane/E4-CF-ADAPTER.md
+  s_1ad2f47f1d4417::t_a3fab31a755199 1
+governance/plans/vendor-control-plane/E5-META.md
+  s_1ad2f47f1d4417::t_0f94140f6645f0 1
+memory/fleet-todo-ledger.md
+  s_1ad2f47f1d4417::t_e53eff91f02ee9 494
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  s_1ad2f47f1d4417::t_854813af002867 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a2e2409d6c50a2b1a60a1ba86f9aecd7625aec01",
+  "prompts": {},
+  "sessions": {
+    "s_1ad2f47f1d4417": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd5fe11d0ffeBz7FlWXXvYY949",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

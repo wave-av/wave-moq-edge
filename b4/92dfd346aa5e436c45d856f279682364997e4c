@@ -1,0 +1,92 @@
+governance/runbooks/pen-design-finals-recipe.md
+  s_11ead9adf1b66e::t_3d71642ce45931 111
+  s_11ead9adf1b66e::t_e2325adfa1efb7 1-110,112-198
+rules/bind-or-omit.md
+  s_11ead9adf1b66e::t_2e24d00c8d4eff 1-82,90-103
+  s_11ead9adf1b66e::t_013d3fa42cb8d5 83-89
+governance/plans/pen-design-lane/E7-SCALE.md
+  s_11ead9adf1b66e::t_0bcb3f50647799 9-12
+  s_11ead9adf1b66e::t_1f3579fd4e2bf1 19-20
+  s_11ead9adf1b66e::t_29ab844444398b 36-101
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_11ead9adf1b66e::t_c799708f08aa44 60-112
+governance/plans/pen-design-lane/GOVERNANCE-INTEGRATION-2026-08-14.md
+  s_11ead9adf1b66e::t_e2eff167ae0c9a 157-159
+  s_11ead9adf1b66e::t_d1f023230757e2 119
+  s_11ead9adf1b66e::t_e8ab3375f2be84 102
+  s_11ead9adf1b66e::t_c3e289b18cb0d3 148-150,152
+  s_11ead9adf1b66e::t_69dfff3bc2731e 13-14,16-17
+  s_11ead9adf1b66e::t_fbc0bff5a38905 93-94
+  s_11ead9adf1b66e::t_f2106d70a7a69e 60-65
+  s_11ead9adf1b66e::t_bb828fd6375e48 90-92
+  s_11ead9adf1b66e::t_7422e3465b0257 66,69
+  s_11ead9adf1b66e::t_d1654205393e47 76-83
+  s_11ead9adf1b66e::t_cf64d5cabc2fb0 96-101
+  s_11ead9adf1b66e::t_6669e66d58e01e 120
+  s_11ead9adf1b66e::t_e3e9d2ba0deeb6 151
+  s_11ead9adf1b66e::t_98ff7d981fc507 153-156
+  s_11ead9adf1b66e::t_51370f371881d9 160-162
+  s_db128da65a46d5::t_a1df9cc4d16ec4 163-166
+governance/ENFORCEMENT-BASELINE.json
+  s_11ead9adf1b66e::t_715ab67265be58 4-5,9
+  s_11ead9adf1b66e::t_290bcbcab52a98 208
+governance/runbooks/pen-2-lane-concurrency-recipe.md
+  s_11ead9adf1b66e::t_568d0efdfad463 1-87,99,102-103,106-108,112-143,147-196
+  s_11ead9adf1b66e::t_5d7ff08ff69665 88-98,100-101,104-105,109-111
+  s_11ead9adf1b66e::t_83298a51321af6 144-146
+governance/plans/pen-design-lane/CORRECTIONS-2026-08-15.md
+  s_11ead9adf1b66e::t_6e318c43b74a05 17,29,40,42-46,115-163
+  s_11ead9adf1b66e::t_5547402532e749 14-16
+  s_11ead9adf1b66e::t_90de8f11ac48bf 18-20,26-28
+  s_11ead9adf1b66e::t_353a0015f276cb 30-32,37-39
+  s_11ead9adf1b66e::t_8765b582a47c09 41
+  s_11ead9adf1b66e::t_0460109cbda73f 47-49,112-114
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_11ead9adf1b66e::t_719f2f1c7ad885 49-99
+rules/brand-truth.md
+  s_11ead9adf1b66e::t_39a378fc6a10dc 1-67,75-100
+  s_11ead9adf1b66e::t_254d8489a39016 68-74
+governance/plans/auto-learning-runbooks/E4-DRAFTS-ASSEMBLE.md
+  s_11ead9adf1b66e::t_0a9e1122cc628e 125-130
+  s_11ead9adf1b66e::t_2a3239e89cb6bd 30-124,131-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b492dfd346aa5e436c45d856f279682364997e4c",
+  "prompts": {},
+  "sessions": {
+    "s_11ead9adf1b66e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1559c7fb-bda7-4077-9ad6-4f47bce048f6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_264dc2b63e55a9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff7472962ffegdj9YmSr6s5Ze3",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

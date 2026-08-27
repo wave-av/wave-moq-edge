@@ -1,0 +1,22 @@
+governance/ci-stack/dashboard-driver/slack-webhook-create.mjs
+  s_7326a769c7efe8::t_add0109fcc87d7 1-55
+governance/ci-stack/dashboard-driver/slack-webhook-new.mjs
+  s_7326a769c7efe8::t_d08f0a7280ea7d 1-18,28-29
+  s_7326a769c7efe8::t_04c286e2af89ba 19-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "917677c704ecc55f6fdfb546c142c95c43f90f4a",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

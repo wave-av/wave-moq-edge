@@ -1,0 +1,44 @@
+hooks/lib/mcp-merge-authority-decide.mjs
+  s_d9915bbafa9657::t_865ffa721e3d9a 12
+  s_d9915bbafa9657::t_2a84309c911862 141-150
+hookcli/lib/visibility-telemetry.mjs
+  s_d9915bbafa9657::t_8dd1be9ea987ca 163,173-224
+  s_d9915bbafa9657::t_dc15c298fbcb9d 225-227
+  s_55a6968af1f1d8::t_7b420221990bdb 228-229
+governance/lib/visibility-rate.mjs
+  s_d9915bbafa9657::t_efbc6204f6d017 1-107
+governance/bin/visibility-rate-report.mjs
+  s_d9915bbafa9657::t_67bcd32917e15f 1-75
+governance/test/visibility-rate.test.mjs
+  s_d9915bbafa9657::t_c9d705f7a64fe7 107
+  s_d9915bbafa9657::t_8c5ee4c4b832e7 13-14
+  s_d9915bbafa9657::t_93b9131573a7ce 78-84
+  s_d9915bbafa9657::t_bc37ee24f5a4ee 1-12,15-77,85-106,108-111
+hookcli/lib/t3-merge-authority.mjs
+  s_d9915bbafa9657::t_253b244ae41f53 187-192
+  s_d9915bbafa9657::t_1ea406c8c2bfc6 57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5a78ead8c316ffbe7f5ab048fd89a0bfef37e6f5",
+  "prompts": {},
+  "sessions": {
+    "s_55a6968af1f1d8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a953fc9c124383630",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.github/actions/blast-radius-classify/autonomy-eligible.mjs
+  s_e2e3e43d0638c5::t_925a658e5a171f 29-31,190-204
+.github/workflows/governance.yml
+  s_e2e3e43d0638c5::t_3f8b56328e5761 152-163
+.github/workflows/hook-tests.yml
+  s_e2e3e43d0638c5::t_795a1403506762 1-122
+capabilities/bin/build.mjs
+  s_e2e3e43d0638c5::t_76f476b9d438bf 28,185
+capabilities/bin/check.mjs
+  s_e2e3e43d0638c5::t_dc4587981e41d0 21,203
+capabilities/bin/render.mjs
+  s_e2e3e43d0638c5::t_738832b7b7eba5 19,81
+capabilities/bin/select.mjs
+  s_e2e3e43d0638c5::t_cbf0857a90e608 19,94
+governance/MAIN-GUARD-BASELINE.json
+  s_e2e3e43d0638c5::t_4ea4c2e8746ae9 2-4,15-29
+governance/bin/aging.mjs
+  s_e2e3e43d0638c5::t_0b5ff41ee07a75 32,274
+governance/bin/assert-client-safe-error.mjs
+  s_e2e3e43d0638c5::t_3de1d690b9f6e8 31,122
+governance/bin/assert-deliverable-not-meta.mjs
+  s_e2e3e43d0638c5::t_2e9ca700759699 26,128
+governance/bin/assert-no-internal-identifiers.mjs
+  s_e2e3e43d0638c5::t_7e28645d645440 22,104
+governance/bin/auto-approver.mjs
+  s_e2e3e43d0638c5::t_dc30efae87c53b 13,88
+governance/bin/base-freshness.mjs
+  s_e2e3e43d0638c5::t_81518b0db50b79 18,93
+governance/bin/board-sweep.mjs
+  s_e2e3e43d0638c5::t_1e6e4dcf26c6f7 27,328
+governance/bin/branch-truth-lint.mjs
+  s_e2e3e43d0638c5::t_f52d245776effe 41,415
+governance/bin/cache-aligner.mjs
+  s_e2e3e43d0638c5::t_ddc6310195ef0c 19,52
+governance/bin/cache-metrics.mjs
+  s_e2e3e43d0638c5::t_d548308387db50 27,162
+governance/bin/caveman.mjs
+  s_e2e3e43d0638c5::t_1c62d516df64e7 38,165
+governance/bin/cockpit.mjs
+  s_e2e3e43d0638c5::t_47ad4657cb087c 8,128
+governance/bin/cogs-emit.mjs
+  s_e2e3e43d0638c5::t_c771fa1f16028b 40,42,222
+governance/bin/content-policy-scan.mjs
+  s_e2e3e43d0638c5::t_651dd5c71dceb5 23,148
+governance/bin/context-write.mjs
+  s_e2e3e43d0638c5::t_e39eecb135fb76 23,173
+governance/bin/cost-ledger.mjs
+  s_e2e3e43d0638c5::t_26c6bfd47e3e6b 175,388
+governance/bin/decide.mjs
+  s_e2e3e43d0638c5::t_15798b9e04bc5c 28-29,142
+governance/bin/distribute-bump.mjs
+  s_e2e3e43d0638c5::t_6fedf6c227ffc9 42,579
+governance/bin/distribute-claude-config.mjs
+  s_e2e3e43d0638c5::t_ccb20eefae0b9d 40,529
+governance/bin/distribute-sha-pin.mjs
+  s_e2e3e43d0638c5::t_5fe5ac173c900f 26,250
+governance/bin/distribute.mjs
+  s_e2e3e43d0638c5::t_ee0e78428bf3f9 38,494
+governance/bin/enforcement-ratchet.mjs
+  s_e2e3e43d0638c5::t_b7a1dca8efe38b 23,321
+governance/bin/ess-nas-sync.mjs
+  s_e2e3e43d0638c5::t_b2baafae781a1c 27-28,134
+governance/bin/fleet.mjs
+  s_e2e3e43d0638c5::t_0866d367ae5437 6,131
+governance/bin/fleet/fleet-scan.mjs
+  s_e2e3e43d0638c5::t_e8bf6990b59f27 23,384
+governance/bin/fleet/tests/cases/80-publish-graph.sh
+  s_e2e3e43d0638c5::t_16e7a09e6591d7 12-16,18
+governance/bin/forecast.mjs
+  s_e2e3e43d0638c5::t_6e5ab461607451 17-18,122
+governance/bin/gam-reconcile.mjs
+  s_e2e3e43d0638c5::t_d2f5830ed656d9 27,145
+governance/bin/gap-scan.mjs
+  s_e2e3e43d0638c5::t_4170c63d8efa61 29,134
+governance/bin/gate-scope-conformance.mjs
+  s_e2e3e43d0638c5::t_ae8ce2a2a89a4c 1-213
+governance/bin/job-watchdog.mjs
+  s_e2e3e43d0638c5::t_75fa88f5e87430 32,149
+governance/bin/learning-admit.mjs
+  s_e2e3e43d0638c5::t_cfc367755a8192 23,105
+governance/bin/learning-health.mjs
+  s_e2e3e43d0638c5::t_0241d5efa56ac0 31,265
+governance/bin/learning-queue.mjs
+  s_e2e3e43d0638c5::t_4cb32202897705 38,424
+governance/bin/learning-triage.mjs
+  s_e2e3e43d0638c5::t_2059fd8bf8d887 48,251
+governance/bin/lesson.mjs
+  s_e2e3e43d0638c5::t_e010f3fe5c97fc 32,309
+governance/bin/main-guard-ratchet.mjs
+  s_e2e3e43d0638c5::t_bf9c7b5afebfa6 18,21-25,117-135,138-164,168-173,192-196
+governance/bin/memory-lint.mjs
+  s_e2e3e43d0638c5::t_ecf6fb276221e4 25,183
+governance/bin/model-router.mjs
+  s_e2e3e43d0638c5::t_483812ca9f4145 27,160
+governance/bin/node-action.mjs
+  s_e2e3e43d0638c5::t_eea06a4d2cfd52 36,193
+governance/bin/propagation-closeout.mjs
+  s_e2e3e43d0638c5::t_7673eecfb93edc 40,384
+governance/bin/prose-compress.mjs
+  s_e2e3e43d0638c5::t_befce676291525 37,215
+governance/bin/protection-profile-check.mjs
+  s_e2e3e43d0638c5::t_6c6e6da9c0caab 36,317
+governance/bin/prove-gate-scope-conformance.mjs
+  s_e2e3e43d0638c5::t_b348ee1c7633c2 1-158
+governance/bin/readme-automerge.mjs
+  s_e2e3e43d0638c5::t_79c6fe48155846 35,216
+governance/bin/readme-drift-fleet.mjs
+  s_e2e3e43d0638c5::t_b0bd9c5702a836 47,331
+governance/bin/readme-regen-pr.mjs
+  s_e2e3e43d0638c5::t_86e66d019e50a4 34,322
+governance/bin/recall.mjs
+  s_e2e3e43d0638c5::t_54cf327b12f997 5,73
+governance/bin/recurrence-detector.mjs
+  s_e2e3e43d0638c5::t_6d78f9cbffdd99 30,175
+governance/bin/registry-sync-fleet.mjs
+  s_e2e3e43d0638c5::t_b488d48e20f481 26,189
+governance/bin/reversible-store.mjs
+  s_e2e3e43d0638c5::t_f9035e870aeb29 38,236
+governance/bin/roi.mjs
+  s_e2e3e43d0638c5::t_6b9f840abaf4b3 34-35,250
+governance/bin/route-matrix.mjs
+  s_e2e3e43d0638c5::t_8e6357dbeee26b 48,51,354-358
+governance/bin/schema-satisfiability.mjs
+  s_e2e3e43d0638c5::t_ebfb593c8171d9 30,196
+governance/bin/settle-guard.mjs
+  s_e2e3e43d0638c5::t_113ce0b2bb74c5 19,75
+governance/bin/smart-crusher.mjs
+  s_e2e3e43d0638c5::t_9e09715a8fe3fa 36,214
+governance/bin/spec-freshness.mjs
+  s_e2e3e43d0638c5::t_98bc2ee5fc8cd5 24,162
+governance/bin/state-verifier.mjs
+  s_e2e3e43d0638c5::t_201ae1518e28fd 27,33,314-317
+governance/bin/timeline.mjs
+  s_e2e3e43d0638c5::t_9b98d8bd96faf1 14,292
+governance/bin/verify-attribution.mjs
+  s_e2e3e43d0638c5::t_873da6f8b3a21c 13,48
+governance/bin/verify-floor.mjs
+  s_e2e3e43d0638c5::t_0b7fd234608d0b 10,47
+governance/bin/where-are-we.mjs
+  s_e2e3e43d0638c5::t_0fea97493a8b91 28,153
+governance/bin/work-graph.mjs
+  s_e2e3e43d0638c5::t_0413c83bcd3361 24,212
+governance/bin/work-history.mjs
+  s_e2e3e43d0638c5::t_39f5f924b24aa3 17,148
+governance/bin/work-statusline.mjs
+  s_e2e3e43d0638c5::t_a6eba268cbb8ff 10,72
+governance/ci-scan-set.pin.json
+  s_e2e3e43d0638c5::t_b259302d8e224e 1-32
+governance/lib/drill-fixtures-core.mjs
+  s_e2e3e43d0638c5::t_eaec162ec9648c 1-10,294-328
+governance/package.json
+  s_e2e3e43d0638c5::t_f8e28eec67d61c 63-65
+governance/plans/nodal1-partnership/epic.md
+  s_e2e3e43d0638c5::t_736960a6f8fb76 18-21
+governance/test/main-guard-ratchet.test.mjs
+  s_e2e3e43d0638c5::t_df82e31e44a165 1-135
+helm/scripts/build-app.mjs
+  s_e2e3e43d0638c5::t_6d7be5fef5f550 11,74-77,84
+hookcli/lib/board.mjs
+  s_e2e3e43d0638c5::t_bb9d72c2d39fc7 72-73,277-292
+hooks/tests/KNOWN-RED.txt
+  s_e2e3e43d0638c5::t_54c416e52809fe 1-39
+hooks/tests/phaseD/broken-ts-block.sh
+  s_e2e3e43d0638c5::t_66bef92bfcee49 6-12,17-18,22-23,31,44,47-60,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d29908d9813dbdf3f1901f572aeccca04574f32c",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

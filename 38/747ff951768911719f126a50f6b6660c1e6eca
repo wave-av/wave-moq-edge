@@ -1,0 +1,19 @@
+scripts/grok-img.ts
+  s_9673f7dc0983fb::t_e8dc120d4105e9 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "38747ff951768911719f126a50f6b6660c1e6eca",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/runbooks/boundary-red-team.md
+  s_756b33c630d33b::t_4f5a20e7e7491c 1-48
+memory/MEMORY.md
+  s_756b33c630d33b::t_be071967084baa 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "44ceaf7fcae58b2b50c4265d73f9158b0801a6ff",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

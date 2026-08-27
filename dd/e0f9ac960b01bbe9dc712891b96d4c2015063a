@@ -1,0 +1,23 @@
+scripts/bugbot/review.py
+  s_0b987fef4e1240::t_e8c31df713b6d2 742
+scripts/bugbot/test_docfilter.py
+  s_0b987fef4e1240::t_3d7406d2054acf 139-141,147-158
+scripts/bugbot/docfilter.py
+  s_0b987fef4e1240::t_3e5c8301dba7c9 160,165-176,179-182
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "dde0f9ac960b01bbe9dc712891b96d4c2015063a",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

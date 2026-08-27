@@ -1,0 +1,32 @@
+governance/test/mesh-estate-health.test.mjs
+  s_15127d80763110::t_c94d3b4a71df31 236-254,256-271
+  s_15127d80763110::t_e93209b2aecd0e 22-26
+governance/bin/mesh-estate-health.mjs
+  s_15127d80763110::t_c79d72880ee4f1 224-235
+  s_15127d80763110::t_9b06d4f103c4b7 157-177,179,181-182
+  s_15127d80763110::t_289cedffe5e0e4 10,14-16
+  s_15127d80763110::t_345869dd1ca0fd 236
+  s_15127d80763110::t_d62afdd61eb709 36,40-41,135-148,196,254
+governance/lib/mesh-estate-guards.mjs
+  s_15127d80763110::t_8d52edb0c7326b 56,58-60,62-103
+governance/lib/mesh-estate-health.mjs
+  s_15127d80763110::t_745b9dc314ce58 31-44,47
+governance/lib/mesh-estate-contract.mjs
+  s_15127d80763110::t_7b7dcccf21ec5d 1-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c9737090632731d7a77c28bf0bbb282213a7201b",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

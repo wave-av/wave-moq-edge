@@ -1,0 +1,33 @@
+governance/plans/wave-mcp-external-publishing/epic.md
+  s_f24caa326b86f6::t_2e3f37aa4c918e 6-142
+  s_f24caa326b86f6::t_f042ca858cb33b 3-5
+  s_5c41fd4a89391e::t_f05209e058726d 1-2
+governance/DASHBOARD.md
+  s_f24caa326b86f6::t_b7e316db446db4 25
+governance/graph.json
+  s_f24caa326b86f6::t_29fa94574f7259 5401-5413,24365-24442
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9d4c3c729fcbdfcab4f2e8606c7b388290f3719c",
+  "prompts": {},
+  "sessions": {
+    "s_5c41fd4a89391e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5f18e97507df6683",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_f24caa326b86f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "adc1828d-f1dc-483b-b7cd-a61bedf1dbc1",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+governance/test/public-release-gate-audit.test.mjs
+  s_63c6ee080d73c3::t_80b1956261b2bc 311,314-364
+  s_63c6ee080d73c3::t_e2d9dc65807082 17
+governance/lib/public-release-gate.mjs
+  s_63c6ee080d73c3::t_f9ef3e378b08d1 126-170
+governance/public-release-gate-known-weak.json
+  s_63c6ee080d73c3::t_a1fcb204936ca4 1-49
+.github/workflows/public-release-gate-audit.yml
+  s_63c6ee080d73c3::t_2f4a7ed4529c75 85,88
+governance/bin/public-release-gate-audit.mjs
+  s_63c6ee080d73c3::t_0ed9df37ce59d2 43-46,49,55,60-84
+  s_63c6ee080d73c3::t_8fa55f9ddc0b93 168-179
+  s_63c6ee080d73c3::t_070e1863012efe 224-231
+  s_63c6ee080d73c3::t_17d5885895e7d3 294-307
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "95ba8d1e65bacc2e7a7d8c5f2a601691c0f4796b",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

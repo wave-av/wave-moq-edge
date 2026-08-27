@@ -1,0 +1,28 @@
+tests/test_bugbot.py
+  s_3a52a0989b58af::t_0f609e1955ddb8 939
+  s_3a52a0989b58af::t_e57024f779863e 934
+tests/test_bugbot_watchdog.py
+  s_3a52a0989b58af::t_24e7c65b4a7d6d 1-74
+scripts/bugbot/com.wave.bugbot.watchdog.plist.sample
+  s_3a52a0989b58af::t_bf8331a677ceb4 1-44
+scripts/bugbot/watchdog.py
+  s_3a52a0989b58af::t_b8c3baca6976b9 1-72,75,79-82,84-105,110-143
+  s_3a52a0989b58af::t_61cee5c56598c8 73-74,76-78,83
+  s_3a52a0989b58af::t_61fbf5a8caa44e 106-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "027c232ef89673b557cb6b1d6cdae66ef1ed33e4",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

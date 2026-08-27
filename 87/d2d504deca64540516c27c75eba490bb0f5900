@@ -1,0 +1,24 @@
+scripts/watchdog.ts
+  s_3e4240b52b9632::t_251bf5e3af004f 102
+router/tiers.json
+  s_3e4240b52b9632::t_79934b8951df38 215,217
+  s_3e4240b52b9632::t_46257ffe33de2c 254,256
+router/src/router/role-models.test.ts
+  s_3e4240b52b9632::t_539d9219a443b3 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "87d2d504deca64540516c27c75eba490bb0f5900",
+  "prompts": {},
+  "sessions": {
+    "s_3e4240b52b9632": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd8f8295ffefAbTN5w2iOqHKL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

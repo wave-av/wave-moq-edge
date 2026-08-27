@@ -1,0 +1,129 @@
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_0631d705a81a26 181-182
+  s_2e30bff6169f7a::t_b4d8489d5d3ad7 179-180
+  s_2e30bff6169f7a::t_e10780b389b219 183
+.github/workflows/governance.yml
+  s_2e30bff6169f7a::t_e17dd9e7cc630b 306-316
+governance/bin/tmp-literal-lint.mjs
+  s_2e30bff6169f7a::t_9cea4c9912ba13 1-129
+governance/lib/drill-fixtures-shell.mjs
+  s_2e30bff6169f7a::t_a58a7b9b4a6c84 35,120-156
+governance/lib/tmp-literal.mjs
+  s_2e30bff6169f7a::t_eae9512c8e402b 1-185
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_2e30bff6169f7a::t_94565f203c41a6 1-180
+governance/lib/wave-cost-ledger-alert-write.mjs
+  s_2e30bff6169f7a::t_9adf2e74c94d86 1-134
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_2e30bff6169f7a::t_94217c9ff1fa39 1-253
+governance/lib/wave-cost-ledger-remediation-gate.mjs
+  s_2e30bff6169f7a::t_cdd8bd40922083 1-90
+governance/lib/wave-cost-ledger-rpc.mjs
+  s_2e30bff6169f7a::t_7c7f47fb1c8021 1-67
+governance/lib/wave-cost-ledger-write.mjs
+  s_2e30bff6169f7a::t_1318271a33c0af 15,17-20
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_9e1a1eb0cae738 4-24
+governance/test/fixtures/bad-tmp-literal/clean.sh
+  s_2e30bff6169f7a::t_ef27771e6123a3 1-35
+governance/test/fixtures/bad-tmp-literal/writes.sh
+  s_2e30bff6169f7a::t_ec5a8fcf4d8c21 1-24
+governance/test/tmp-literal-lint.test.mjs
+  s_2e30bff6169f7a::t_425969b282cf9d 1-181
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  s_2e30bff6169f7a::t_dfd1847cab09e8 1-173
+governance/test/wave-cost-ledger-alert-policy-dedup.test.mjs
+  s_2e30bff6169f7a::t_23ac75428314b9 1-107
+governance/test/wave-cost-ledger-alert-write.test.mjs
+  s_2e30bff6169f7a::t_6aed4bf3fcb224 1-139
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_2e30bff6169f7a::t_90e61d2863a75e 1-320
+governance/test/wave-cost-ledger-remediation-gate.test.mjs
+  s_2e30bff6169f7a::t_bf8a9cc5f2e7c5 1-83
+hookcli/tests/fixtures/t3-node-stub.sh
+  s_2e30bff6169f7a::t_60c18fb8ef3637 6-16
+hookcli/tests/t3-classifier.sh
+  s_2e30bff6169f7a::t_cc0c514c33c2f6 60
+hookcli/tests/t4-llm-escalation.sh
+  s_2e30bff6169f7a::t_05870d79e72335 161
+hookcli/tests/t4-llm.sh
+  s_2e30bff6169f7a::t_c92c8da5687201 89,101
+hooks/context-budget-warn.sh
+  s_2e30bff6169f7a::t_7d773ab37e398c 30-34,87,89,91
+hooks/doppler-env-guard.sh
+  s_2e30bff6169f7a::t_e3eb1b440c5c74 38-42
+hooks/doppler-secrets-cache.sh
+  s_2e30bff6169f7a::t_f4a592cc5fc102 13-19
+hooks/file-size-warning.sh
+  s_2e30bff6169f7a::t_d8d49121b077be 63
+hooks/local-llm/api-failure-counter.sh
+  s_2e30bff6169f7a::t_a75f9cea80531d 35
+hooks/local-llm/ollama-agent-debrief.sh
+  s_2e30bff6169f7a::t_2344d7c02f77e8 18
+hooks/local-llm/ollama-billing-guard.sh
+  s_2e30bff6169f7a::t_a758f822640d16 21
+hooks/local-llm/ollama-helper.sh
+  s_2e30bff6169f7a::t_118dcea392bf31 18-22
+hooks/post-compact-restore.sh
+  s_2e30bff6169f7a::t_2f3527e5080be5 8
+hooks/return-absorb-guard.sh
+  s_2e30bff6169f7a::t_f0d0f173f68025 95
+hooks/reviewer-route-gate.py
+  s_2e30bff6169f7a::t_a2dfcb19ea5086 52-60
+hooks/session-econ-meter.sh
+  s_2e30bff6169f7a::t_bc0d8d6acec662 135
+hooks/skill-load-defense.sh
+  s_2e30bff6169f7a::t_e435f6f10d5965 38-39,58
+hooks/stop-nudge.sh
+  s_2e30bff6169f7a::t_eb1f686a2cf73d 119-120,193
+hooks/subagent-budget-signal.sh
+  s_2e30bff6169f7a::t_efe9209890d739 21-25,46
+hooks/subagent-dispatch-gate.sh
+  s_2e30bff6169f7a::t_d856b48d2fa004 79,103
+hooks/subagent-read-budget.sh
+  s_2e30bff6169f7a::t_a086eee7443892 78
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_2e30bff6169f7a::t_9f1c0d4e52dc16 6-11,13-21,42-43
+hooks/tests/cccr_smoke_floor_capture.sh
+  s_2e30bff6169f7a::t_e9bcaa593ae356 7-9,14-16
+hooks/tests/doppler_guard_smoke.sh
+  s_2e30bff6169f7a::t_fff2971347d91d 6-26,32,35,44
+hooks/tests/enhancer_smoke.sh
+  s_2e30bff6169f7a::t_2f8e43d0c63de1 22-30,32,35-56
+hooks/tests/phaseC/doppler-single-quote.sh
+  s_2e30bff6169f7a::t_e006188414b2ea 9-19
+hooks/tests/phaseC/subagent-budget-templeak.sh
+  s_2e30bff6169f7a::t_7f0680c5fa94d1 8-21,23-39
+hooks/tests/phaseD/cross-project-nag.sh
+  s_2e30bff6169f7a::t_41d6fa44705c29 10-17,28,31
+hooks/tests/phaseD/hysteresis-two-turn.sh
+  s_2e30bff6169f7a::t_bfc05f1de0ca78 4,8-15,26,31
+hooks/tests/phaseD/strategic-compact-band-nudge.sh
+  s_2e30bff6169f7a::t_28c1ae9674030e 13-20,29
+hooks/tests/public-github-write-gate-cwd.test.sh
+  s_2e30bff6169f7a::t_6678292ce662fa 65-66,82,217
+hooks/tests/return_absorb_smoke.sh
+  s_2e30bff6169f7a::t_dce2916efce152 15-34,68-71
+hooks/tests/session_econ_meter_smoke.sh
+  s_2e30bff6169f7a::t_23e7a1a625dbbd 14-16
+hooks/tests/subagent_read_budget_smoke.sh
+  s_2e30bff6169f7a::t_151dd35b30397e 12-22
+settings/settings.base.json
+  s_2e30bff6169f7a::t_ff228a6798f3a8 369-373
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5d321372e45c11cc176a738a719cf127d7a5b094",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

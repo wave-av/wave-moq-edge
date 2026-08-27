@@ -1,0 +1,19 @@
+tools/dispatch-probe.py
+  s_2f1bfe8237f0ee::t_ebffab3c2d26f4 51,66-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d0414d7fa5582320287e21ecf4748bba0d6e9418",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

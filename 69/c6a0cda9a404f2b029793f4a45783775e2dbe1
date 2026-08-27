@@ -1,0 +1,40 @@
+governance/plans/search-router/E3-PRODUCT.md
+  s_6046880c148371::t_ee82a5000db6da 2-43
+  s_6046880c148371::t_c228cb6daf4fd9 1
+governance/plans/search-router/NORTH-STAR.md
+  s_6046880c148371::t_ce7e624b6d7b17 3-36
+  s_6046880c148371::t_94c7fc762ccbe1 1-2
+governance/plans/search-router/E2-CLASSIFIER.md
+  s_6046880c148371::t_bf87eae11cb927 2-42
+  s_6046880c148371::t_b3d0b98f9c8f6c 1
+governance/plans/search-router/E1-ROUTER-SKILL.md
+  s_6046880c148371::t_5a4a28b900a081 2-32
+  s_6046880c148371::t_6b32daa8e6d1f2 1
+governance/plans/search-router/E0-FOUNDATION.md
+  s_6046880c148371::t_4241b1436db5bd 2-54
+  s_6046880c148371::t_76bf083cde4e2b 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "69c6a0cda9a404f2b029793f4a45783775e2dbe1",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/state/baseline-2026-08-01.json
+  s_f126fb3b7cae07::t_ae70703ef3222e 1-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3a8a3f5ce75f16957a661958a3a38a835cba1e66",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

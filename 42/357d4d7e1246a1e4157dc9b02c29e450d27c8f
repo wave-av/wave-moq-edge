@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/DIGEST-LABS-SWEEP.md
+  s_d77777f89719d2::t_a1a59e0b9ae40f 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "42357d4d7e1246a1e4157dc9b02c29e450d27c8f",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

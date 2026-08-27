@@ -1,0 +1,24 @@
+governance/bin/plan-lint.mjs
+  h_67a1b847dc59d6 179-184
+governance/lib/plan-bare-ref-reads.mjs
+  h_67a1b847dc59d6 29-47,59-64,67-72,74-81,86,89-93,95-102,104,106-137,141-148,151-152,156-163,165-199,207-208,211-254,256-257
+governance/plans/wave-linear/E10-HERITAGE.md
+  h_67a1b847dc59d6 67-72
+governance/plans/wave-linear/E2-IDENTITY.md
+  h_67a1b847dc59d6 78-80,89
+governance/plans/wave-linear/RECEIPTS.md
+  h_67a1b847dc59d6 306
+governance/test/plan-bare-ref-reads.test.mjs
+  h_67a1b847dc59d6 46-249,280-312
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3ba99b2707dffcd2d7b198c2178954186225f1c2",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

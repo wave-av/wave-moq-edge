@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_2e30bff6169f7a::t_2d7e536d464eac 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_2e30bff6169f7a::t_0d49ff9b006e4c 37-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c54eab80c44217e942370e164d74a0c318a2d568",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

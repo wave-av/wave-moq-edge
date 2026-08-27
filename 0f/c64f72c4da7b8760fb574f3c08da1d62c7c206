@@ -1,0 +1,20 @@
+governance/bin/check-gates.mjs
+  s_7d687e1c066488::t_28ec23ca863064 22,26
+  s_7d687e1c066488::t_95837bebfa52b5 23,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0fc64f72c4da7b8760fb574f3c08da1d62c7c206",
+  "prompts": {},
+  "sessions": {
+    "s_7d687e1c066488": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002470bccffeD5LCtD1lOPNegK",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

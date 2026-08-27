@@ -1,0 +1,23 @@
+governance/lib/drill-registry.mjs
+  s_28efdc23129d94::t_4aaf77e17fbb29 120-124
+  s_28efdc23129d94::t_9d7b70299b22b2 171-172
+  s_28efdc23129d94::t_bcfeea0565a5a7 168-170
+  s_28efdc23129d94::t_b39ca90ced7047 173-175
+  s_28efdc23129d94::t_bce67c97634865 13-22,24,30-35,37-40,42-43,45-48,50-60,161-164,166-167,176-177,179-180,182-203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9fda02ff9dc50ee4d62193b6faf4870754b4203a",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

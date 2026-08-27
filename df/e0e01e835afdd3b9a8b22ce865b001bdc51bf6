@@ -1,0 +1,50 @@
+governance/bin/fleet/lib/workflow-parse.mjs
+  s_be40541f6fd98b::t_610490fba10792 64-73
+  s_be40541f6fd98b::t_a6067d404ae460 1-63,74-144
+governance/test/ingress-probe.test.mjs
+  s_be40541f6fd98b::t_d71613f92c83fa 48-62
+  s_be40541f6fd98b::t_b3a2eefb6aef54 12-13
+governance/bin/fleet/actions-census.mjs
+  s_be40541f6fd98b::t_9516a03763aa18 1-164
+  s_be40541f6fd98b::t_72f1677d9b6dc1 165-167
+  s_be40541f6fd98b::t_de7875c36a875b 168-169
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_be40541f6fd98b::t_040fb6097b7a41 117-180
+  s_be40541f6fd98b::t_b3f8da70893297 234
+governance/bin/fleet/ingress-probe.mjs
+  s_be40541f6fd98b::t_336637e0fd4fe4 32
+governance/code-index/CATALOG.md
+  s_be40541f6fd98b::t_7aa33eac7424e8 5,1118-1127,1237-1247,1328-1338
+governance/code-index/index.json
+  s_be40541f6fd98b::t_8a73a505e1533c 9-10,12-13,10161-10237,11223-11224,11234-11235,11245-11246,11256-11257,11267-11268,11278-11279,11289-11290,11300-11301,11311-11312,11322-11323,11333-11334,11943-12030
+governance/graph.json
+  s_be40541f6fd98b::t_aad0f9cd1b758b 2269,2352
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_be40541f6fd98b::t_716cffa45e83e1 13,37,39
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_be40541f6fd98b::t_d1bb076c2ba53b 2,6,12-14,30-31,64,80-81,95,102
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_be40541f6fd98b::t_d0c2163bb13fc8 6,23,94
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_be40541f6fd98b::t_9c66ef2029ef92 21
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_be40541f6fd98b::t_c0efe975ed4746 56
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_be40541f6fd98b::t_c45ad7ce33289f 11,13,53,55-59,63-78,105-107,111,217-218,246
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "dfe0e01e835afdd3b9a8b22ce865b001bdc51bf6",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

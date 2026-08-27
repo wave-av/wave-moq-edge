@@ -1,0 +1,19 @@
+governance/research/creator-intelligence/GOVERNANCE-AUDIT-3.md
+  s_7283acee2b9b22::t_733e24a5243e41 1-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "36bf379a666d3711d843c4725b269b49c6c00bc8",
+  "prompts": {},
+  "sessions": {
+    "s_7283acee2b9b22": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00300947bffew0zaDBZnoYNXjN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

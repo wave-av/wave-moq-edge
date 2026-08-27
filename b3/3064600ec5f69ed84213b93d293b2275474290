@@ -1,0 +1,25 @@
+bin/done-audit.mjs
+  s_7ddeb5d251570f::t_3bbd8739facc46 10-12,16-17,19-23,25,38-43,45,56-57,59,61,63,68-75,78-80,83-86,90-93,99-102,106
+governance/test/done-audit.test.mjs
+  s_7ddeb5d251570f::t_227a2060695c86 1-54
+governance/bin/check.mjs
+  s_7ddeb5d251570f::t_5db085a133cf85 300
+  s_7ddeb5d251570f::t_bcae7b0c68e953 295-299,301-307
+  s_7ddeb5d251570f::t_925312d8dc61a3 49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b33064600ec5f69ed84213b93d293b2275474290",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+scripts/telemetry/conformance.py
+  s_eb2f7e65359b4f::t_9b3ba90c7f2252 1-148
+tests/test_telemetry_conformance.py
+  s_eb2f7e65359b4f::t_3db48dabb8f368 1-88
+.github/workflows/telemetry-conformance.yml
+  s_eb2f7e65359b4f::t_a2c7ff704ac710 73-74,77
+  s_eb2f7e65359b4f::t_3655187f7a6261 1-72,75-76,78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "62d90eabdaaa2d3c1b1afbd818d6f166026385b7",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

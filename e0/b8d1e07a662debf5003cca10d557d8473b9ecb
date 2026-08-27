@@ -1,0 +1,33 @@
+rules/peer-message-claims-unverified.md
+  s_23d71389a1fb70::t_51c2bbed1f5b8a 1-50
+docs/cross-session-messaging.md
+  s_23d71389a1fb70::t_753b835e7be00d 1-111
+settings/settings.studio.json
+  s_23d71389a1fb70::t_efbb752dd640d3 74
+settings/settings.base.json
+  s_23d71389a1fb70::t_19af652e38030d 848,850-852
+  s_23d71389a1fb70::t_a79c1595725daf 849
+  s_23d71389a1fb70::t_473ed97d7dc1c3 837-839
+governance/ENFORCEMENT-COVERAGE.md
+  s_23d71389a1fb70::t_5fac851baf93af 5,12,14,111,314
+governance/contract.md
+  s_23d71389a1fb70::t_16fa9d22220ed5 51,53
+governance/graph.json
+  s_23d71389a1fb70::t_f4d1bda33cf58a 1418-1424,18132-18161
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e0b8d1e07a662debf5003cca10d557d8473b9ecb",
+  "prompts": {},
+  "sessions": {
+    "s_23d71389a1fb70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7ec6e1a3-fbb9-40dd-9429-2acf5ed0dcb9",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

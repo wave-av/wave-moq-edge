@@ -1,0 +1,40 @@
+helm/scripts/build-app.mjs
+  s_60a20469ef4369::t_39eebd674e983e 10
+  s_60a20469ef4369::t_c62dc59edf4c6b 47
+capabilities/bin/select.mjs
+  s_60a20469ef4369::t_314b9e557331dd 94
+  s_60a20469ef4369::t_c731575ed1eea4 19
+capabilities/bin/render.mjs
+  s_60a20469ef4369::t_73e8b55c1863a3 79
+  s_60a20469ef4369::t_f8f660a233ac78 17
+hookcli/lib/board.mjs
+  s_60a20469ef4369::t_bbae0dd9c7828a 69-70
+  s_60a20469ef4369::t_21d5d698e1e341 321-336
+capabilities/bin/check.mjs
+  s_60a20469ef4369::t_70dacf9d2b1a19 203
+  s_60a20469ef4369::t_4f346fbfabbefd 21
+capabilities/bin/build.mjs
+  s_60a20469ef4369::t_bee15cee68f1e9 185
+  s_60a20469ef4369::t_4600a9987969a9 28
+.github/actions/blast-radius-classify/autonomy-eligible.mjs
+  s_60a20469ef4369::t_14f4b569f9c7a9 29-31
+  s_60a20469ef4369::t_688817fc7b99da 190-204
+governance/MAIN-GUARD-BASELINE.json
+  s_60a20469ef4369::t_481df0f5e074fa 2-4,15-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "eb01b73f9a2f7105a7c81ff414d99806f318f37e",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+memory/fleet-todo-ledger.md
+  s_6fd8eaa1b8e3a2::t_ea0c763ea6e6e6 14
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_6fd8eaa1b8e3a2::t_e9ab2b3b930d60 390-394
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9441a7a81feb918bca55dc95c4be82695fa9a0ae",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_6fd8eaa1b8e3a2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8c16aedffeLTR2q5aBCRh7f8",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

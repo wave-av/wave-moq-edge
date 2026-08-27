@@ -1,0 +1,19 @@
+.github/actions/derived-artifact-gates/action.yml
+  s_850fe6ee58c7ed::t_f2bcd1984dbaa6 185-192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "32a6b1d33d7a1d34393524260a75a28c534ed3f7",
+  "prompts": {},
+  "sessions": {
+    "s_850fe6ee58c7ed": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a82aca5accc7a8899",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

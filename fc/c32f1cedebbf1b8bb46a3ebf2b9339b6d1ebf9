@@ -1,0 +1,20 @@
+governance/bin/inject.mjs
+  h_af5ac1a9798224 131-133
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 1778,1782,1788-1789,1791
+governance/code-index/index.json
+  h_af5ac1a9798224 15953-15954,15997-15998,16063-16064,16074-16075,16096-16097
+governance/test/inject-runbooks.test.mjs
+  h_af5ac1a9798224 38-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fcc32f1cedebbf1b8bb46a3ebf2b9339b6d1ebf9",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

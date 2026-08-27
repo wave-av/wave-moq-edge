@@ -1,0 +1,20 @@
+bin/wave-inference-server.mjs
+  s_7ddeb5d251570f::t_01bf4f235d57d9 16
+  s_7ddeb5d251570f::t_a1a0f199105816 43-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f027d41f281f39e830761ca5c93a50051bbf49ef",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

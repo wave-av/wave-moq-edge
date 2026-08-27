@@ -1,0 +1,81 @@
+agents/act-worker.md
+  s_941b8f0612ec3e::t_4df7f96adf90c7 3,6,22-30
+docs/AGENT-CAPABILITY-MAP.md
+  s_941b8f0612ec3e::t_ead60cc29adbd6 12,29,80-88
+docs/posthog/INSTRUMENTATION-AUDIT.md
+  s_941b8f0612ec3e::t_6f92f1ed12e15b 1-491
+docs/posthog/LLM-OBSERVABILITY-VERDICT.md
+  s_941b8f0612ec3e::t_62303142a03d3b 1-388
+docs/posthog/MCP-REGISTRATION.md
+  s_941b8f0612ec3e::t_3585033d035c41 1-454
+governance/agents/TAXONOMY.yaml
+  s_941b8f0612ec3e::t_f9a8561188c745 62-63,67-68
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_941b8f0612ec3e::t_0a4884b32971cc 4-125,128-134,136-160,163-190,193-204,206-217,222-224,226-289
+governance/plans/generated-artifact-contention/epic.md
+  s_941b8f0612ec3e::t_a214722a3cedb5 1-85
+governance/plans/hookcli/E1-CORE.md
+  s_941b8f0612ec3e::t_ffaa634814d855 4-13
+governance/plans/hookcli/E2-HARVEST.md
+  s_941b8f0612ec3e::t_5fa02dc68b83c2 4-14
+governance/plans/hookcli/E3-RULES.md
+  s_941b8f0612ec3e::t_83621f249d58e0 4-13
+governance/plans/hookcli/E4-TIERS.md
+  s_941b8f0612ec3e::t_790004712bb22c 4-12
+governance/plans/hookcli/E5-BOARD.md
+  s_941b8f0612ec3e::t_1bb52805811374 4-13
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  s_941b8f0612ec3e::t_dc4f4f10efc44e 4-13
+governance/plans/hookcli/E7-DISTILL.md
+  s_941b8f0612ec3e::t_0fed6188ab74f0 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  s_941b8f0612ec3e::t_9b77eb947569d7 4-14
+governance/plans/hookcli/NORTH-STAR.md
+  s_941b8f0612ec3e::t_1e2fbbf0fbba2e 8-18
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  s_941b8f0612ec3e::t_2afd5b976325c5 50
+governance/plans/receipts/E1-tier1-arming-crossing-2026-07-06.md
+  s_941b8f0612ec3e::t_0a1edf367bf28c 1-59
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_941b8f0612ec3e::t_ee032282f1778b 30-40
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_941b8f0612ec3e::t_31c4a2cab3c51f 53
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_941b8f0612ec3e::t_406951d1175e3a 29-32
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_941b8f0612ec3e::t_d4484eff44d80b 30-52,56-80
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  s_941b8f0612ec3e::t_6e3fadf0f931ac 6-18
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_941b8f0612ec3e::t_cfafa5292cfb47 6-16
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  s_941b8f0612ec3e::t_2d72e04e30c2e8 6-18
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  s_941b8f0612ec3e::t_04b047127bf2e9 6-13
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  s_941b8f0612ec3e::t_595ec539081431 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  s_941b8f0612ec3e::t_2af9ce215e8c77 6-12
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  s_941b8f0612ec3e::t_b31b462fd503ba 6-12
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_941b8f0612ec3e::t_1a1618e03171d6 11-19
+plugins/wave-agents/agents/act-worker.md
+  s_941b8f0612ec3e::t_ff724096afc6c8 3,6,22-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ffd72b8a6cea977fc1cdc17d336beae889369d5f",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

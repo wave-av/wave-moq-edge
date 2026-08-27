@@ -1,0 +1,32 @@
+governance/test/latency-harness-runonce.test.mjs
+  s_4aa36284d4ce33::t_c149ec5195bfc0 1-54
+governance/test/rl-source-hooks-features.test.mjs
+  s_4aa36284d4ce33::t_ebe89d8eb38858 49-59
+governance/lib/latency-stats.mjs
+  s_4aa36284d4ce33::t_04ce0e48e94349 100-102
+governance/lib/rl-source-hooks.mjs
+  s_4aa36284d4ce33::t_90b6e0b77ae0d6 77
+governance/test/latency-stats.test.mjs
+  s_4aa36284d4ce33::t_cf1f28915893a9 70-74
+hookcli/tools/latency-harness.mjs
+  s_4aa36284d4ce33::t_5535e171a68bda 311-323
+  s_4aa36284d4ce33::t_e9031ea6408163 124-141,144
+  s_4aa36284d4ce33::t_8112c43c5fcd16 36
+  s_4aa36284d4ce33::t_783ce477ed71b5 146-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "18b69c80700ff6932cdace4c076da338bb057c73",
+  "prompts": {},
+  "sessions": {
+    "s_4aa36284d4ce33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0daaba5-d592-4b63-9e95-e8967f0b7542",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

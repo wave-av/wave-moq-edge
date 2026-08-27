@@ -1,0 +1,21 @@
+governance/automation-registry/rollback-one.sh
+  s_37e24b4d920e09::t_cf7ce79e466137 1-14
+governance/automation-registry/cutover-one.sh
+  s_37e24b4d920e09::t_bae76e065bdac8 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "4c7fc45da40b8e0b0f99659f6a32c895b9af17a3",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

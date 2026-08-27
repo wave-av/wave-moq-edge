@@ -1,0 +1,53 @@
+governance/drafts/review-fleet-1-of-5-DRAFT-NOT-FILED.md
+  s_85d9e5f433b9aa::t_0d43e2c165c871 1-60
+governance/proposals/vendor-trial-is-reconnaissance.md
+  s_6f6453b23e3805::t_1f64bffa8f7a95 1-82
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_f284ef56bc31f4 25
+governance/graph.json
+  s_85d9e5f433b9aa::t_55527e46ad06c5 2247-2259,15926-15931
+governance/drafts/cubic-outreach-DRAFT-DO-NOT-SEND.md
+  s_63c6ee080d73c3::t_85a2abb8037284 1-90
+governance/plans/NESTED-DISPATCH-ECONOMY.md
+  s_4ca69cdd10e311::t_ede31becf1077b 1-198
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2fad06413f27f72f584c090f04b1f94917b2e8e1",
+  "prompts": {},
+  "sessions": {
+    "s_4ca69cdd10e311": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a9f96e1f9886ee35f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

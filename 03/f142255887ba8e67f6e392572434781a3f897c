@@ -1,0 +1,19 @@
+.github/workflows/_throwaway-secrets-if-caller.yml
+  s_85d9e5f433b9aa::t_fc0e80eeb178fe 4-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "03f142255887ba8e67f6e392572434781a3f897c",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

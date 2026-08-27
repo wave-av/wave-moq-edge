@@ -1,0 +1,39 @@
+governance/plans/model-selection-completion/E2-WARM-COUPLING.md
+  s_7ddeb5d251570f::t_6a9bcd6d9ed7f1 2-44
+  s_7ddeb5d251570f::t_e6163f5501566b 1
+governance/plans/model-selection-completion/E1-EVAL-GATE.md
+  s_7ddeb5d251570f::t_7a9cf5939bbff7 2-44
+  s_7ddeb5d251570f::t_c36f0e653832ab 1
+bin/factory-llm.mjs
+  s_7ddeb5d251570f::t_657f43f3b92d12 1-77
+governance/test/factory-llm.test.mjs
+  s_7ddeb5d251570f::t_9369cd4fa3a337 1-43
+governance/plans/model-selection-completion/E0-FOUNDATION.md
+  s_7ddeb5d251570f::t_a8c39885547bed 2-44
+  s_7ddeb5d251570f::t_3d71f2edb51973 1
+governance/plans/model-selection-completion/NORTH-STAR.md
+  s_7ddeb5d251570f::t_b7572d5eb4044a 5-76
+  s_7ddeb5d251570f::t_0c520129363a8d 2-4
+governance/plans/model-selection-completion/E3-TUNING-RESTORE.md
+  s_7ddeb5d251570f::t_f17c78ba1bcf0c 2-44
+  s_7ddeb5d251570f::t_122bf09f7f3730 1
+governance/plans/model-selection-completion/E4-INFRA-PLACEMENT.md
+  s_7ddeb5d251570f::t_cb90119a3e7c8a 2-44
+  s_7ddeb5d251570f::t_c3a37a19c44383 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "40ca148609e9a27e89bac866bab8b077c52acf27",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

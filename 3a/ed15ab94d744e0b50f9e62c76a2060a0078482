@@ -1,0 +1,22 @@
+governance/bin/origin.mjs
+  s_ed4981aa486cbe::t_e93119ead23f52 32-61
+  s_ed4981aa486cbe::t_703dc881c9b2b2 1-31,62-284
+governance/test/origin-cli.test.mjs
+  s_ed4981aa486cbe::t_05e0f082a22354 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3aed15ab94d744e0b50f9e62c76a2060a0078482",
+  "prompts": {},
+  "sessions": {
+    "s_ed4981aa486cbe": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_003a81668ffeBNG6gNgtvTI653",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

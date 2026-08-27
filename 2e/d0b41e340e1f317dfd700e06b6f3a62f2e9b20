@@ -1,0 +1,42 @@
+governance/bin/taxonomy.mjs
+  s_d9915bbafa9657::t_89521a25e5792a 136-139,149-152
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_d9915bbafa9657::t_16af1de74f6125 6
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_ac81a5dbea48ba 37-39
+governance/plans/finding-closure/E7-MEASURE.md
+  s_d9915bbafa9657::t_1703ce33277bb3 14-17
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_d9915bbafa9657::t_d5766e3fa56f07 71-75
+  s_d9915bbafa9657::t_de86f66c8d9b39 83-86
+governance/agents/TAXONOMY.yaml
+  s_d9915bbafa9657::t_3952328d5399ee 249-281
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_d9915bbafa9657::t_47e35862c16077 46-48
+governance/test/taxonomy.test.mjs
+  s_d9915bbafa9657::t_49af10b38c87ee 126-149
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_d9915bbafa9657::t_ff1d3ec9239342 153-159
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_872d0c9fab2348 40,43-47,51-53,56-58,60-71,76-79,85-88,91-93
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_d9915bbafa9657::t_af9840ac5ed81d 284-288
+governance/graph.json
+  s_d9915bbafa9657::t_d8b886c96ae72e 16556-16561,16946-16951,17060-17065,19778-19783,24566-24571
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2ed0b41e340e1f317dfd700e06b6f3a62f2e9b20",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

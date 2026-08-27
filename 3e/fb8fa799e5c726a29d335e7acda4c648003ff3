@@ -1,0 +1,23 @@
+governance/state/email-archive/chris/thread-2026-08.jsonl
+  s_ea8755337f3c0d::t_7ee55da37b7acb 1-8
+governance/state/email-archive/devin/thread-2026-08.jsonl
+  s_ea8755337f3c0d::t_4dbef62d625085 1-33
+governance/state/email-archive/fireworks/thread-2026-08.jsonl
+  s_ea8755337f3c0d::t_09ef104de21ae1 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3efb8fa799e5c726a29d335e7acda4c648003ff3",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

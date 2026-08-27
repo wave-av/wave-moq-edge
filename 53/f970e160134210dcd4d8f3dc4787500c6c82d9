@@ -1,0 +1,21 @@
+governance/lib/ledger-classify.mjs
+  s_ae57f6e8d1ee19::t_d13fc51ea3278e 176-185
+governance/test/ledger-classify.test.mjs
+  s_ae57f6e8d1ee19::t_9dd5b651973b5f 176-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "53f970e160134210dcd4d8f3dc4787500c6c82d9",
+  "prompts": {},
+  "sessions": {
+    "s_ae57f6e8d1ee19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48c70c59-62a1-4b54-b782-303e5787322d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

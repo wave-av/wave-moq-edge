@@ -1,0 +1,19 @@
+governance/plans/network-edge-plane/LEARNINGS.md
+  s_ea8755337f3c0d::t_6046e06f80d511 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "27b969e0a7b66e01df330e6ae60ca6d06cd71e26",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

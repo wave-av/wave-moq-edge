@@ -1,0 +1,20 @@
+docs/SECURITY-VENDOR-TAXONOMY.md
+  s_63c6ee080d73c3::t_68646e11b46dd9 144
+  s_63c6ee080d73c3::t_400bf746d02218 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "cbe922472ccf6810f90b7385ef1bc3c4f232822d",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

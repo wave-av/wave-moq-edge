@@ -1,0 +1,31 @@
+governance/test/ingress-probe.test.mjs
+  s_96280c922a9418::t_a81e55b623480b 11-12
+  s_96280c922a9418::t_5e3ac8b1648fdc 13
+  s_96280c922a9418::t_97d6b6fa84ecae 94-99
+  s_96280c922a9418::t_4aff51bcb9894e 103-128
+  s_96280c922a9418::t_17492cea9eb043 17-21
+governance/bin/fleet/ingress-probe.mjs
+  s_96280c922a9418::t_34cb72a3ea9f33 300-316,318-329
+  s_96280c922a9418::t_3b5d665bd17f27 201
+  s_96280c922a9418::t_3818e8721817dd 317
+  s_96280c922a9418::t_604444e14214e1 243
+  s_96280c922a9418::t_c4011d9e368535 217-224
+  s_96280c922a9418::t_b22ab1a6913de3 32
+  s_96280c922a9418::t_3d4737b9716c25 235
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "758ab34aba27446a25db6ba568277e0c9291ac99",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

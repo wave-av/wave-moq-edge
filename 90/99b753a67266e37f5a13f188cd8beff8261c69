@@ -1,0 +1,19 @@
+governance/plans/stacked-prs/E2-INTRAREPO-STACK.md
+  s_63a2f8012db469::t_fdd015560a62d8 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9099b753a67266e37f5a13f188cd8beff8261c69",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

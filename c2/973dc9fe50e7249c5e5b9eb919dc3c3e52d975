@@ -1,0 +1,26 @@
+hooks/tests/escalation_ladder_gate_smoke.sh
+  s_375efeac18ed55::t_cc18f0fcefd6a7 18-26
+  s_375efeac18ed55::t_70db0e69b485b9 112-121
+governance/test/escalation-ladder-gate.test.mjs
+  s_375efeac18ed55::t_5e5a01a3dc49b4 28-34,36-57,110
+  s_375efeac18ed55::t_f02c605b3a3b66 97
+  s_375efeac18ed55::t_18e35d6326f803 71,74-78,86-96,98-109
+  s_375efeac18ed55::t_0e9362cd345c53 60
+  s_375efeac18ed55::t_bdc037ac1c5171 111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "c2973dc9fe50e7249c5e5b9eb919dc3c3e52d975",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

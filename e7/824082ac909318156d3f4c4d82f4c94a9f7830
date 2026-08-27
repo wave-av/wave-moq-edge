@@ -1,0 +1,38 @@
+.claude/skills/strategic-compact/SKILL.md
+  s_70c7ac7de143f9::t_cee1e5c8652035 80-93
+  s_70c7ac7de143f9::t_88fecf6d552a03 183-188
+hooks/tests/intent-ledger-surface-only.test.sh
+  s_70c7ac7de143f9::t_9a4b53d2c333d8 1-111
+settings/settings.base.json
+  s_70c7ac7de143f9::t_712594443bcdbc 666-670
+hooks/intent-ledger-capture.sh
+  s_70c7ac7de143f9::t_9bde1d24b66c87 68-83
+rules/every-commitment-captured-to-the-intent-ledger.md
+  s_70c7ac7de143f9::t_e02649f346cb06 17-21
+hooks/context-budget-warn.sh
+  s_70c7ac7de143f9::t_99279ce174f887 130
+governance/bin/intent-ledger.mjs
+  s_70c7ac7de143f9::t_92efb3208aee11 10-16,18-20
+  s_70c7ac7de143f9::t_5ad0f04b20fd3d 17
+hooks/pre-compact-capture.sh
+  s_70c7ac7de143f9::t_9e06c55d6a8558 7-9
+  s_70c7ac7de143f9::t_7f7c45dc497306 14-15
+hooks/manifest.json
+  s_70c7ac7de143f9::t_4af0cb7fee2c8a 372,756,758-759,762-763,772-777,782-784,1343
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e7824082ac909318156d3f4c4d82f4c94a9f7830",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

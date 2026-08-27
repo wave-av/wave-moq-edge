@@ -1,0 +1,22 @@
+governance/plans/lawbook-fleet-distribution/NORTH-STAR.md
+  s_0227926428e4b1::t_99c12ac4f0d203 70
+  s_0227926428e4b1::t_a67085ef8a689d 40-43
+  s_0227926428e4b1::t_4798999c78c8be 18,27-29,32
+  s_0227926428e4b1::t_60a057b0f295f8 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2502cd4399386726b25a9d586e3fbb1b58a9e7fd",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

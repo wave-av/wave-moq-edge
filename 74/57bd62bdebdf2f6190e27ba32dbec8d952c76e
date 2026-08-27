@@ -1,0 +1,23 @@
+governance/bin/review-provenance-io.mjs
+  s_9bb1b1d1d998d4::t_aa364042fed961 15
+  s_9bb1b1d1d998d4::t_abd541e9ddee3a 42,44-49,52
+governance/test/review-provenance-cli.test.mjs
+  s_9bb1b1d1d998d4::t_d638fa2af8fcd7 29-31
+  s_9bb1b1d1d998d4::t_682411f18ddf45 1-28,32-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7457bd62bdebdf2f6190e27ba32dbec8d952c76e",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

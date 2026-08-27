@@ -1,0 +1,33 @@
+governance/plans/agent-mail-plane/NORTH-STAR.md
+  s_34f3f75c6b6e15::t_be0132b874fbfa 31
+governance/plans/agent-mail-plane/inbox-map.md
+  s_34f3f75c6b6e15::t_da2e35ff4c0820 1-16
+governance/plans/agent-mail-plane/E1-E1-AGENT-IDENTITY.md
+  s_34f3f75c6b6e15::t_282d518c849f36 4
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_34f3f75c6b6e15::t_9bcafd5df28774 199-233
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "79443efe05f8d2051b24516b4957758b992f034a",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_34f3f75c6b6e15": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4126adcffe6aIknY1JmzvJ6E",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

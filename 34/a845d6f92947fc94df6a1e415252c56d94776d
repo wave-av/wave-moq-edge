@@ -1,0 +1,23 @@
+.github/workflows/wave-bugbot.yml
+  s_19c8e603d8990b::t_dc9a11d7c37fc1 81
+scripts/bugbot/triage.py
+  s_19c8e603d8990b::t_349427015ca710 67-73
+tests/test_bugbot.py
+  s_19c8e603d8990b::t_79887bd5fca7b4 436
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.9",
+  "base_commit_sha": "34a845d6f92947fc94df6a1e415252c56d94776d",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

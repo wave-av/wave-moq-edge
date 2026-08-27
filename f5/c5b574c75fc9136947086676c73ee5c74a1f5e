@@ -1,0 +1,22 @@
+scripts/bugbot/test_reviewer_refute.py
+  s_9041cf1cf1ccad::t_6e1a1b95fb6af1 17-20,24-26,30-40,44-46,50-52,56-59,63-65,69-71
+  s_9041cf1cf1ccad::t_4f072414a9a158 16
+scripts/bugbot/reviewer.py
+  s_9041cf1cf1ccad::t_305dad339c90e1 228,230-236,239-243,245-246
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f5c5b574c75fc9136947086676c73ee5c74a1f5e",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

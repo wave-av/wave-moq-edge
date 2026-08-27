@@ -1,0 +1,23 @@
+governance/bin/fleet/ingress-probe.mjs
+  s_be40541f6fd98b::t_79d957c5788bf6 81-86
+governance/code-index/CATALOG.md
+  s_be40541f6fd98b::t_e7b03d9a3a23ce 1233-1235,1237,1239-1243
+governance/code-index/index.json
+  s_be40541f6fd98b::t_a231810a0790d7 11179-11180,11191-11193,11201-11202,11223-11224,11245-11246,11256-11257,11267-11268,11278-11279,11289-11290
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "833e1d2b1f30a5b97589a8c5ed3cce5efa752c0b",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

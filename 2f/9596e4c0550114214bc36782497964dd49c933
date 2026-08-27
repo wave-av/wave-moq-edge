@@ -1,0 +1,37 @@
+hooks/manifest.json
+  s_375efeac18ed55::t_6c45e0a470c079 302
+governance/bin/anti-loop-lint.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 53-61,76-83
+governance/test/no-execsync-lint.test.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 1,3-4,8-10,12-23,26-55,57-63,65-69,72-77,80-84,87-91,94,96-101,104-106,109-111,114-117,119-121,124-126,129-134
+hooks/escalation-ladder-gate.sh
+  s_375efeac18ed55::t_6c45e0a470c079 3-8
+governance/lib/code-mask.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 1-86
+governance/bin/subprocess-stdio-lint.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 43,79-84
+governance/test/anti-loop-lint.test.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 1-134
+governance/bin/no-execsync-lint.mjs
+  s_375efeac18ed55::t_6c45e0a470c079 18,47-62,68-72,74
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_e95c34ed084422 5,32-35,39,1869-1870,1872,2638-2663
+governance/code-index/index.json
+  s_375efeac18ed55::t_3152c22bf0723b 7,9,240-241,251-252,262-263,273-274,311-321,16850-16851,16861-16862,16877-16887,23758-23759,23769-23770,23780-23781,23791-23792,23802-23803,23813-23814,23824-23825,23835-23836,23846-23847,23857-23858,23868-23869,23879-23880,23890-23891,23901-23902,23912-23913,23923-23924,23934-23935,23945-23946,23956-23957,23967-23968,23978-23979,23989-23990,24000-24001,24011-24012,24022-24023,24033-24034
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "2f9596e4c0550114214bc36782497964dd49c933",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

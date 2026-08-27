@@ -1,0 +1,25 @@
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  s_2e30bff6169f7a::t_c168edc9f96a62 1-166
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  s_2e30bff6169f7a::t_b3e2951d30a875 1-122
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_a329a50184a333 5,4511-4519
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_f17fe88df4694d 9-10,12-13,38673-38738
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "16496ab985f7a1e3956e9e23b9567adbb5e0dc2c",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

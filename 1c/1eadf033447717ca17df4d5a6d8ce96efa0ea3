@@ -1,0 +1,57 @@
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_b7082f882aeb26::t_fd962bc3b159f4 177-185
+governance/tools/time-lapse-store/stores/curriculum-training-state.json
+  s_83cf1b1661fa37::t_0726c95547aa28 1-127
+governance/tools/derivable-correctness/manifests/canon.json
+  s_86a3f9853b0d91::t_2d8905e173a2c0 1-23,25-31,35-41,44-57,59-63,66-100,102-108,112-118,121-134,136-140,143-177,179-185,189-195,198-211,213-217,220-233
+  s_86a3f9853b0d91::t_3a7da73109dbbe 142
+  s_86a3f9853b0d91::t_e544a7b501de7b 65
+  s_86a3f9853b0d91::t_31a6959d81b431 219
+  s_86a3f9853b0d91::t_7feace00c8e25d 24,32-34,42-43,58,64,101,109-111,119-120,135,141,178,186-188,196-197,212,218
+governance/tools/time-lapse-store/manifests/rl-corpus.json
+  s_83cf1b1661fa37::t_5da49f94c07244 1-33
+governance/tools/time-lapse-store/stores/lawbook.json
+  s_83cf1b1661fa37::t_dd845cad3d1471 1-96
+governance/research/engineering-canon/origin-method.md
+  s_86a3f9853b0d91::t_a7ed1982c01849 339-359
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_83cf1b1661fa37::t_12fe88043b6a23 80-91
+governance/tools/time-lapse-store/bin/timelapse.mjs
+  s_83cf1b1661fa37::t_38e369891c8abf 61
+governance/tools/trust-runtime/manifests/agentic-wave.json
+  s_b7082f882aeb26::t_fa383de171a512 17
+  s_b7082f882aeb26::t_845dd2593cb5f4 1-10,12-16,18-114
+  s_b7082f882aeb26::t_8dfae39784e14f 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1c1eadf033447717ca17df4d5a6d8ce96efa0ea3",
+  "prompts": {},
+  "sessions": {
+    "s_83cf1b1661fa37": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024b9d2affeSDO3jBI3az8wAB",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_86a3f9853b0d91": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024b6861ffe5692HPsKUlJuvy",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b7082f882aeb26": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024b943cffeLVLl4KAqFXaftX",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

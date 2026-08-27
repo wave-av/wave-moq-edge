@@ -1,0 +1,19 @@
+governance/plans/egress-authority/E5-EGRESS-COVERAGE.md
+  s_756b33c630d33b::t_8eb8387eac1092 40-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5259132b1a85d1f9259b03a4f7e1baf4fc7a7ad9",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

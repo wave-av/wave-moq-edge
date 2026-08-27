@@ -1,0 +1,22 @@
+staging/golden-paths-scaffolds/new-subdomain-app/validators/check-registry.mjs
+  s_3a52a0989b58af::t_03374e10b189e4 42-46
+staging/golden-paths-scaffolds/new-subdomain-app/products.manifest.json
+  s_3a52a0989b58af::t_408d225539cd30 107
+  s_3a52a0989b58af::t_17a261c3c3d923 120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4058b07dba4db16ec49d9ad292767fa801b8a39b",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

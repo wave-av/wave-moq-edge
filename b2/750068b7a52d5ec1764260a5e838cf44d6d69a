@@ -1,0 +1,23 @@
+hooks/tests/wrangler-deploy-gate-ansic.test.sh
+  s_941b8f0612ec3e::t_ce1e3c3e547f3c 129-141
+  s_941b8f0612ec3e::t_906791cd32ed7d 2-6
+hooks/hooklib/wrangler-deploy-rewrite.sh
+  s_941b8f0612ec3e::t_f207f580e7fcdc 248-255,257-258
+  s_941b8f0612ec3e::t_465b3ee0fb1d35 256,259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b2750068b7a52d5ec1764260a5e838cf44d6d69a",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

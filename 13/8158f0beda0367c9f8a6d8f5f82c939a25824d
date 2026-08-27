@@ -1,0 +1,32 @@
+governance/lib/wave-cost-ledger-alert-routing.mjs
+  s_2e30bff6169f7a::t_22a72c373abcc1 1-69
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  s_2e30bff6169f7a::t_b17a1b2567f0f0 178
+  s_2e30bff6169f7a::t_7266cb7d0d00af 175-177
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_1d8b8c8813d4cd 484-511
+  s_2e30bff6169f7a::t_a9a49776b112e4 33-64
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_2e30bff6169f7a::t_2c477de9711fa5 267-269
+  s_2e30bff6169f7a::t_a94ed6929092e2 45-50
+  s_2e30bff6169f7a::t_7bf34492bc96bb 215-218,227,236
+  s_2e30bff6169f7a::t_d51a676aaca9a6 287-289,292
+governance/test/wave-cost-ledger-alert-routing.test.mjs
+  s_2e30bff6169f7a::t_f78d0cfcf90aa0 1-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "138158f0beda0367c9f8a6d8f5f82c939a25824d",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

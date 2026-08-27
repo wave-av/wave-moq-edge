@@ -1,0 +1,19 @@
+.github/workflows/doppler-token-canary.yml
+  s_0a76e16ab503c3::t_008be781328d0b 183-208,210-211
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "87ac9e3793ad8c3da6b438de37e20fccf784ba50",
+  "prompts": {},
+  "sessions": {
+    "s_0a76e16ab503c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4f6176cc-2c66-4091-b533-06fe978917b1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

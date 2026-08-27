@@ -1,0 +1,42 @@
+scripts/firecrawl.ts
+  s_9673f7dc0983fb::t_ee01b1aed635bb 1-10,13-19,21-23,25-66
+  s_9673f7dc0983fb::t_2e82a183094b51 20,24
+  s_9673f7dc0983fb::t_ca9bd5006c8020 67-69
+scripts/img.ts
+  s_9673f7dc0983fb::t_4b7388d9887d42 13-19,21-23
+  s_9673f7dc0983fb::t_a0dca2545feb1c 20
+scripts/test-spec.ts
+  s_9673f7dc0983fb::t_c8daedd259d49b 69-72
+scripts/platform.ts
+  s_9673f7dc0983fb::t_c0806da1b11c4c 51-69,71,76,78,80-88
+  s_9673f7dc0983fb::t_6d0de5086bfc08 1-50,70,72-75,77,79,89-127
+scripts/battle.ts
+  s_9673f7dc0983fb::t_d6c8a47e871841 21-22
+  s_9673f7dc0983fb::t_6a351998ab6f4f 18-20
+  s_9673f7dc0983fb::t_b370756f9838bb 23-25
+  s_9673f7dc0983fb::t_1ea9e997bd9c0a 1-17,26-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5a0be27773abfc719e4d6b8f2b1c63b54de11c3a",
+  "prompts": {},
+  "sessions": {
+    "s_11f01c22e59a16": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_010f611f8ffeu0PBw8nXYqfkaV",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

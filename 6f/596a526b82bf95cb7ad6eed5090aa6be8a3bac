@@ -1,0 +1,26 @@
+rules/peer-message-claims-unverified.md
+  s_23d71389a1fb70::t_314f3be6f72e87 43-51
+  s_23d71389a1fb70::t_9eadc74bec5ac9 54
+governance/test/cross-session-posture.test.mjs
+  s_23d71389a1fb70::t_c58602ff2064bb 1-88
+governance/ENFORCEMENT-COVERAGE.md
+  s_23d71389a1fb70::t_c08314222e41c6 11-12,14,394
+governance/graph.json
+  s_23d71389a1fb70::t_1227c7cb8dca67 18162-18167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6f596a526b82bf95cb7ad6eed5090aa6be8a3bac",
+  "prompts": {},
+  "sessions": {
+    "s_23d71389a1fb70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7ec6e1a3-fbb9-40dd-9429-2acf5ed0dcb9",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

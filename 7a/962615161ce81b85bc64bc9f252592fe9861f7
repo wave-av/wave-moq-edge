@@ -1,0 +1,19 @@
+docs/cubic-deleted-agents-backup-2026-08-04.md
+  s_85d9e5f433b9aa::t_a403a426207e04 1-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7a962615161ce81b85bc64bc9f252592fe9861f7",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

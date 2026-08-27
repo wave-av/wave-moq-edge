@@ -1,0 +1,22 @@
+governance/test/model-drift-canary.test.mjs
+  s_7ddeb5d251570f::t_9534d43c009489 1-2,4-75
+  s_7ddeb5d251570f::t_05f4626eb3afcb 3
+bin/model-drift-canary.mjs
+  s_7ddeb5d251570f::t_062df238dd7919 1-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5b2239242e5fc22cad34afa3247e3eab84dbe656",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

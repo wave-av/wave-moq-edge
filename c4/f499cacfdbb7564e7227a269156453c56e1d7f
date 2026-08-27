@@ -1,0 +1,21 @@
+governance/lib/ontology.mjs
+  s_e3b9edff440e0f::t_d080e314fbd1fa 13-18
+governance/lib/ingest/plans.mjs
+  s_e3b9edff440e0f::t_e78b9ec31523f5 5-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c4f499cacfdbb7564e7227a269156453c56e1d7f",
+  "prompts": {},
+  "sessions": {
+    "s_e3b9edff440e0f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8fceae74-d5e4-4a40-9875-fe64ba62b777",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

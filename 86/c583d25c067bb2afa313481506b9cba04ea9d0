@@ -1,0 +1,23 @@
+governance/test/router-sft.test.mjs
+  s_7ddeb5d251570f::t_ebe57f2179b82f 1-33
+bin/router-sft.mjs
+  s_7ddeb5d251570f::t_dd324e423ce38a 70
+  s_7ddeb5d251570f::t_b561244e890e71 1-12,14-69,71-78
+  s_7ddeb5d251570f::t_6c6d1a500320f1 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "86c583d25c067bb2afa313481506b9cba04ea9d0",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

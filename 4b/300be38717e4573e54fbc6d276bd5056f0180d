@@ -1,0 +1,28 @@
+governance/test/hookcli-package-boundary.test.mjs
+  s_d9915bbafa9657::t_c58cd4004cc83b 124-130
+hookcli/lib/t3-merge-authority-repo.mjs
+  s_d9915bbafa9657::t_5eb21aa8826b8a 1-149
+hookcli/lib/t3-merge-authority.mjs
+  s_d9915bbafa9657::t_2f963b36374d83 42-48,50-51,54-55,57
+  s_d9915bbafa9657::t_b14ab81ed289ae 96
+  s_d9915bbafa9657::t_36a1c0f0ed4f7a 82-87
+  s_d9915bbafa9657::t_db833db4fee2f9 35-37
+governance/test/merge-authority-failure-attribution.test.mjs
+  s_d9915bbafa9657::t_6cd4d1e543af13 1-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4b300be38717e4573e54fbc6d276bd5056f0180d",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

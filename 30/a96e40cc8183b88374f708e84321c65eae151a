@@ -1,0 +1,23 @@
+hookcli/track4b.json
+  s_60a20469ef4369::t_e8de4328bbffb7 49-54
+hookcli/tests/parity-public-content-leak-scan.sh
+  s_60a20469ef4369::t_4a70a31ee19338 1-71
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_2824d23064b8b9 193-201
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "30a96e40cc8183b88374f708e84321c65eae151a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

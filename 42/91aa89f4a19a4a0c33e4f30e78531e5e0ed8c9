@@ -1,0 +1,27 @@
+hooks/tests/e2-shadow-table.test.sh
+  s_264ae386838c57::t_2a85f47a0520a0 111
+  s_264ae386838c57::t_1791da54d171d1 45
+  s_264ae386838c57::t_c33507cf13dc6e 1-44,46-110,112-117
+hooks/local-llm/e2-shadow-table.sh
+  s_264ae386838c57::t_2c9446514599a5 1-77,80-86
+  s_264ae386838c57::t_0fefc8a6373973 78-79
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_1ed314eac9fe5c 254
+  s_264ae386838c57::t_cd22296f65550d 198-247
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4291aa89f4a19a4a0c33e4f30e78531e5e0ed8c9",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

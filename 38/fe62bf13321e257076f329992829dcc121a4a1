@@ -1,0 +1,20 @@
+packages/spoke-chassis/package.json
+  h_af5ac1a9798224 3,58
+packages/spoke-chassis/src/index.ts
+  h_af5ac1a9798224 22
+packages/spoke-chassis/src/pricing-route.ts
+  h_af5ac1a9798224 10
+packages/spoke-chassis/src/version.ts
+  h_af5ac1a9798224 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "38fe62bf13321e257076f329992829dcc121a4a1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

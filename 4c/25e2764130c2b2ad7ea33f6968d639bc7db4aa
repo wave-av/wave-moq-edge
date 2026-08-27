@@ -1,0 +1,26 @@
+.github/.filesize-allowlist
+  s_0227926428e4b1::t_25a9fd513afc06 20
+  s_0227926428e4b1::t_2174bd705a33a7 5-19,21
+governance/test/ramp-file-size.test.mjs
+  s_0227926428e4b1::t_3b449c4e8d809f 189-191,193-209,213-222
+  s_0227926428e4b1::t_d4d26216128dbd 223-224
+.github/.token-budget-baseline
+  s_0227926428e4b1::t_6e25ac652a842b 85
+  s_0227926428e4b1::t_790970e91b764b 59-84,86-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4c25e2764130c2b2ad7ea33f6968d639bc7db4aa",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

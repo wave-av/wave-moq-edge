@@ -1,0 +1,36 @@
+rules/no-unreviewed-remote-execution.md
+  s_375efeac18ed55::t_3e63cf8a5d898f 1-81
+hookcli/rules/rules.json
+  s_375efeac18ed55::t_8c964a2191d32e 43
+  s_375efeac18ed55::t_8f6982c723fc2c 105
+  s_375efeac18ed55::t_76871e05dd423f 473
+  s_375efeac18ed55::t_81aad9a699220c 327
+rules/least-filesystem-privilege.md
+  s_375efeac18ed55::t_2487a8582ab92e 1-66
+governance/test/bindings.test.mjs
+  s_375efeac18ed55::t_f889cbcd39adcc 8,11
+  s_375efeac18ed55::t_60f1e3ceac6f9f 29-64
+governance/bin/enforcement-coverage.mjs
+  s_375efeac18ed55::t_8e4da27f310616 210-224
+  s_375efeac18ed55::t_012a5f3e088190 41
+governance/lib/hookcli-bindings.mjs
+  s_375efeac18ed55::t_fe4bbf6299b74c 51-77
+rules/plan-before-code.md
+  s_375efeac18ed55::t_8334f29ced0369 1-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "dd45152846f8dc3c09f56699eaa29f5c9919e68c",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

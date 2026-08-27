@@ -1,0 +1,193 @@
+.claude/skills/strategic-compact/SKILL.md
+  s_2e30bff6169f7a::t_5254a7f81f39e2 89-95,118
+governance/bin/cost-ledger-store.mjs
+  s_2e30bff6169f7a::t_baf3816c9c5a31 25-48,50
+governance/bin/epic-status.mjs
+  s_2e30bff6169f7a::t_27b58be550d067 1-143
+governance/bin/pr-create.mjs
+  s_2e30bff6169f7a::t_82a046d46d8e64 1-195
+governance/bin/reviewer-route.mjs
+  s_2e30bff6169f7a::t_59e8c1bc3e2859 48-54,56-57
+governance/bin/struggle-miner-scan.sh
+  s_2e30bff6169f7a::t_31e039e530c334 36-48
+governance/bin/struggle-miner/collect-corrections.py
+  s_2e30bff6169f7a::t_6796aed148f8ff 1-145
+governance/bin/struggle-miner/collect-successes.py
+  s_2e30bff6169f7a::t_837064420bd0e3 1-282
+governance/bin/struggle-miner/lib/command_family.py
+  s_2e30bff6169f7a::t_15884c92068838 1-197
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_2e30bff6169f7a::t_9e9c4d3ddae0b3 25-26,28-31,37-59,150-155,163,165-166
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  s_2e30bff6169f7a::t_102f3bd452ae83 1-259
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  s_2e30bff6169f7a::t_84ced7e8abc987 1-331
+governance/bin/wave-cost-ledger-rfp4-feeder.mjs
+  s_2e30bff6169f7a::t_48f510adc45dbf 1-40
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_2e30bff6169f7a::t_6e1d173ef2d11e 1-251
+governance/bin/wave-cost-ledger-vendor-config-liveness.mjs
+  s_2e30bff6169f7a::t_c09a42c4ca31a5 1-78
+governance/lib/pr-create-guards.mjs
+  s_2e30bff6169f7a::t_58f078e439ebcd 1-264
+governance/lib/pr-create-push-dest.mjs
+  s_2e30bff6169f7a::t_662f36341c744a 1-172
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  s_2e30bff6169f7a::t_3ede62ee1170e1 1-240
+governance/lib/wave-cost-ledger-cloudflare-account.mjs
+  s_2e30bff6169f7a::t_fa565483818b59 1-82
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  s_2e30bff6169f7a::t_9975412ba07923 1-356
+governance/lib/wave-cost-ledger-cloudflare-do-mapping.mjs
+  s_2e30bff6169f7a::t_9b06609c4af08d 1-335
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  s_2e30bff6169f7a::t_f8fe76283a34ae 1-184
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  s_2e30bff6169f7a::t_538d8bd749ebd2 1-261
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  s_2e30bff6169f7a::t_1eb35deb6968cc 1-199
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  s_2e30bff6169f7a::t_5435ef244d4f52 1-75
+governance/lib/wave-cost-ledger-cloudflare-subscription-period.mjs
+  s_2e30bff6169f7a::t_7dcaa0db91b2f6 1-54
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  s_2e30bff6169f7a::t_980d8355612862 1-96
+governance/lib/wave-cost-ledger-root-cause-lookup.mjs
+  s_2e30bff6169f7a::t_c938e9c6c74a4d 1-80
+governance/lib/wave-cost-ledger-root-cause-outlier.mjs
+  s_2e30bff6169f7a::t_802747f74e16fb 1-153
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  s_2e30bff6169f7a::t_cfb093282906f8 1-97
+governance/lib/wave-cost-ledger-root-cause-resolve.mjs
+  s_2e30bff6169f7a::t_e50d6b5536e3bd 1-76
+governance/lib/wave-cost-ledger-root-cause-sweep-dimensions.mjs
+  s_2e30bff6169f7a::t_01714e4de199a3 1-269
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  s_2e30bff6169f7a::t_3b85ac472d8a1d 1-165
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  s_2e30bff6169f7a::t_d31c6f71a2dc44 4-8
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_c97bf61438db2d 4-6,166-167,171-182
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_8911eadad05988 4-5
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_23cd2428dfcf9b 4-5,10-89
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_0df15553ab2189 4-5,257-263
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_ece6ca0166a9b6 4-5
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_bcb7664de9124d 4-5
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_1bc3e6d79f6e62 4-31,86
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_2e30bff6169f7a::t_b92db2eaab0cb9 4
+governance/runbooks/restore-branch-protection.sh
+  s_2e30bff6169f7a::t_c7f05c01c8f9d7 186,190-193
+governance/test/epic-status.test.mjs
+  s_2e30bff6169f7a::t_954891fd8aeaab 1-155
+governance/test/pr-create-flag-drift.test.mjs
+  s_2e30bff6169f7a::t_d542d67ecdea51 1-152
+governance/test/pr-create-push-dest.test.mjs
+  s_2e30bff6169f7a::t_1e4149d0d0eeaa 1-245
+governance/test/pr-create.test.mjs
+  s_2e30bff6169f7a::t_f0bdb9609c491d 1-331
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  s_2e30bff6169f7a::t_7f0429840a490c 1-322
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  s_2e30bff6169f7a::t_9506a3d9718341 1-234
+governance/test/wave-cost-ledger-cloudflare-alert-fixture.mjs
+  s_2e30bff6169f7a::t_3d0c385e683bf8 1-48
+governance/test/wave-cost-ledger-cloudflare-alert-history-fetch.test.mjs
+  s_2e30bff6169f7a::t_14079eb2ee7614 1-177
+governance/test/wave-cost-ledger-cloudflare-alert-malformed.test.mjs
+  s_2e30bff6169f7a::t_3ab144ccfe538c 1-312
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  s_2e30bff6169f7a::t_6c114600d3ffe8 1-168
+governance/test/wave-cost-ledger-cloudflare-do-mapping-cache.test.mjs
+  s_2e30bff6169f7a::t_b887e3fa9573b0 1-383
+governance/test/wave-cost-ledger-cloudflare-do-mapping-fixture.mjs
+  s_2e30bff6169f7a::t_1abad3c0e01448 1-25
+governance/test/wave-cost-ledger-cloudflare-do-mapping.test.mjs
+  s_2e30bff6169f7a::t_08c020d9586341 1-386
+governance/test/wave-cost-ledger-cloudflare-estimate.test.mjs
+  s_2e30bff6169f7a::t_467b824d0dac41 1-123
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  s_2e30bff6169f7a::t_4562b93fa948ca 1-173
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  s_2e30bff6169f7a::t_72266e75dc10e3 1-358
+governance/test/wave-cost-ledger-cloudflare-subscription-period.test.mjs
+  s_2e30bff6169f7a::t_50c557e0f5d377 1-109
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_617a9d35589389 1-121
+governance/test/wave-cost-ledger-rfp4-adapter.test.mjs
+  s_2e30bff6169f7a::t_978fc8a14de5f0 1-83
+governance/test/wave-cost-ledger-root-cause-incident-fixture.mjs
+  s_2e30bff6169f7a::t_77744abfe0c3f7 1-62
+governance/test/wave-cost-ledger-root-cause-outlier.test.mjs
+  s_2e30bff6169f7a::t_ece10dbcdac3d1 1-121
+governance/test/wave-cost-ledger-root-cause-prompt-template.test.mjs
+  s_2e30bff6169f7a::t_f67e4bf5b76507 1-74
+governance/test/wave-cost-ledger-root-cause-resolve.test.mjs
+  s_2e30bff6169f7a::t_31aa0dcd69f743 1-54
+governance/test/wave-cost-ledger-root-cause-sweep-dimensions.test.mjs
+  s_2e30bff6169f7a::t_5f7fd827a60e8f 1-196
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  s_2e30bff6169f7a::t_9df2ef0e48c70e 1-219
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  s_2e30bff6169f7a::t_25a12cb02f061a 1-269
+hooks/gap-scan-guard.sh
+  s_2e30bff6169f7a::t_8b1c4c1aecb77c 2,4,10-15,29-54
+hooks/lib/bash_prepasses.py
+  s_2e30bff6169f7a::t_1ccba3c29dc7ee 1-345
+hooks/lib/bash_segments.py
+  s_2e30bff6169f7a::t_eac648c903185e 1-270
+hooks/lib/command_words.py
+  s_2e30bff6169f7a::t_5b82fbfbfb4b2b 1-134
+hooks/lib/gh_command_shape.py
+  s_2e30bff6169f7a::t_48c999cbd5dfd1 33-43,48-53,59-75,181-210,270-272,284,308-351
+hooks/lib/gh_pr_target.py
+  s_2e30bff6169f7a::t_e8b0b38419e0e5 1-335
+hooks/lib/gh_write_scan.py
+  s_2e30bff6169f7a::t_622f5da462b063 31
+hooks/public-github-write-gate.py
+  s_2e30bff6169f7a::t_ee00f214363aeb 184-190,230-240
+hooks/reviewer-route-gate.py
+  s_2e30bff6169f7a::t_d67739a39da0c4 1-323
+hooks/tests/public-github-write-gate-wrapper.test.sh
+  s_2e30bff6169f7a::t_2b0dfbf680b29f 1-159
+hooks/tests/public-github-write-gate.test.sh
+  s_2e30bff6169f7a::t_423d66a883ece7 259-269
+hooks/tests/reviewer-route-gate-heredoc.test.sh
+  s_2e30bff6169f7a::t_0a05f37b4528d7 1-82
+hooks/tests/reviewer-route-gate-lexer.test.sh
+  s_2e30bff6169f7a::t_eb4908c45f7892 1-233
+hooks/tests/reviewer-route-gate-scope.test.sh
+  s_2e30bff6169f7a::t_9ab209ac19278a 1-228
+hooks/tests/reviewer-route-gate.test.sh
+  s_2e30bff6169f7a::t_626d59b8422b7d 1-163
+tests/struggle_miner/test_collect_corrections.py
+  s_2e30bff6169f7a::t_f3ff744384f8b7 1-143
+tests/struggle_miner/test_collect_denials.py
+  s_2e30bff6169f7a::t_c72631f15a8f19 127-132
+tests/struggle_miner/test_collect_successes.py
+  s_2e30bff6169f7a::t_3db3551c64b3c5 1-254
+tests/struggle_miner/test_command_family.py
+  s_2e30bff6169f7a::t_38d2f655f61791 1-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e440ab875faaa12870af0fd5ee22c78b64cc27ed",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

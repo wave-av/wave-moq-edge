@@ -1,0 +1,28 @@
+governance/plans/ambient-console-auth/NORTH-STAR.md
+  s_15127d80763110::t_44a8dfcd57b93d 290-292
+  s_15127d80763110::t_ca11f29b2632a6 13-32
+  s_15127d80763110::t_a6368b641fc2fa 194-240
+  s_15127d80763110::t_ba7300e6e131d8 280
+governance/plans/ambient-console-auth/E4B-KEYS-REFRAME.md
+  s_15127d80763110::t_650c3f47de9a9d 1-82
+governance/DASHBOARD.md
+  s_15127d80763110::t_187e85d6d57e72 25
+governance/graph.json
+  s_15127d80763110::t_a5097951a5ff5a 2689-2701,18870-18893,18942-18947,18966-18983
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9e4dc752d6371f0b8e2c0d99c979322c26778a98",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

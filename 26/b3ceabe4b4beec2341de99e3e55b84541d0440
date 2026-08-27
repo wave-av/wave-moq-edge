@@ -1,0 +1,19 @@
+governance/README.md
+  s_63a2f8012db469::t_6d9f917a23d920 66-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "26b3ceabe4b4beec2341de99e3e55b84541d0440",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

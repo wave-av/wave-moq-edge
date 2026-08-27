@@ -1,0 +1,28 @@
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  h_67a1b847dc59d6 16-21,23-25
+governance/bin/gate-coverage-audit.mjs
+  h_67a1b847dc59d6 26-28,62
+governance/lib/audit-args.mjs
+  h_67a1b847dc59d6 23-25
+governance/lib/gate-audit-args.mjs
+  h_67a1b847dc59d6 31-33,36-37,123
+governance/lib/strict-flags.mjs
+  h_67a1b847dc59d6 60,63-66
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 296-300
+governance/plans/ffmpeg9-lei/action/E15-P2-SUBMISSION-RECEIPTS.md
+  h_67a1b847dc59d6 1-220
+governance/test/gate-audit-args.test.mjs
+  h_67a1b847dc59d6 109-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5cf9d4b96775bb7107eda7ba46461a02f07ac325",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

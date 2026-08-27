@@ -1,0 +1,19 @@
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_6b65c698efa48a 4-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a08b8410cf7db1984fa48a097eb6b4a7980026f9",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

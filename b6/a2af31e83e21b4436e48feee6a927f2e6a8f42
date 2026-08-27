@@ -1,0 +1,21 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_bedf01eee4bcff::t_a653b620166635 2,6,13-14,17,38,45-48,64,69,74,79,85,91,116,131,136,141,161,166,171,176,182-186,189
+governance/bin/vendor-mail-triage.mjs
+  s_bedf01eee4bcff::t_879425a2363cde 121,123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b6a2af31e83e21b4436e48feee6a927f2e6a8f42",
+  "prompts": {},
+  "sessions": {
+    "s_bedf01eee4bcff": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdb3e65d1ffeBnsE3eYSfCvRuy",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

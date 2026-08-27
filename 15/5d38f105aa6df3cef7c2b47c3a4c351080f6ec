@@ -1,0 +1,20 @@
+governance/bin/check.mjs
+  s_cf363a68d60e93::t_28f4301d6adf78 2,5-6
+  s_cf363a68d60e93::t_d67437320efb2f 42-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "155d38f105aa6df3cef7c2b47c3a4c351080f6ec",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

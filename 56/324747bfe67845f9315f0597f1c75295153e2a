@@ -1,0 +1,36 @@
+hooks/stop-gate.sh
+  s_124891ed63801b::t_8f5fb1c30bd18e 67-73,75
+  s_124891ed63801b::t_489b3ffd6a2f00 19
+  s_124891ed63801b::t_f9b6f8696e8bbe 101-103,106-108
+  s_124891ed63801b::t_207cc764c6e92d 86-90,92
+hooks/tests/stop-gate-helper-resolution.test.sh
+  s_124891ed63801b::t_34abff37e042ef 41-44
+  s_124891ed63801b::t_a24972a858c20c 158-164,166
+  s_124891ed63801b::t_05ea4fdd0f1ab6 133-157,165,167-169
+hooks/manifest.json
+  s_936ef80a990edf::t_16d16a2b8e2534 1675
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "56324747bfe67845f9315f0597f1c75295153e2a",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_936ef80a990edf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-adb5f7829eaeb330d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

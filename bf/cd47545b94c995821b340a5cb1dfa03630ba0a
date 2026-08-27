@@ -1,0 +1,30 @@
+governance/plans/runtime-economy/dogfood/e2e-usage-test.log
+  h_67a1b847dc59d6 1
+governance/plans/runtime-learning-loop/E3-COST-ATTRIBUTION.md
+  h_67a1b847dc59d6 4
+governance/plans/runtime-learning-loop/bin/intake.mjs
+  h_67a1b847dc59d6 33,58-60
+governance/plans/runtime-learning-loop/intake-usage/cost.json
+  h_67a1b847dc59d6 1-6
+governance/plans/runtime-learning-loop/intake-usage/rca.json
+  h_67a1b847dc59d6 1-34
+governance/plans/runtime-learning-loop/intake-usage/scorecard.json
+  h_67a1b847dc59d6 1-12
+governance/plans/runtime-learning-loop/intake-usage2/cost.json
+  h_67a1b847dc59d6 1-6
+governance/plans/runtime-learning-loop/intake-usage2/rca.json
+  h_67a1b847dc59d6 1-34
+governance/plans/runtime-learning-loop/intake-usage2/scorecard.json
+  h_67a1b847dc59d6 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bfcd47545b94c995821b340a5cb1dfa03630ba0a",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

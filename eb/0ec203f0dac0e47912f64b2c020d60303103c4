@@ -1,0 +1,46 @@
+governance/lib/canon-gap-map.mjs
+  s_0227926428e4b1::t_b8bb50c42d7d0b 207-218,224,239-243,246-247
+  s_0227926428e4b1::t_5f2218c02d3575 371-372
+  s_0227926428e4b1::t_5454e5a47cf975 264-273
+  s_0227926428e4b1::t_8f1f771b3bfcd2 219-223,225-238,244-245
+governance/lib/canon-gap-map-render.mjs
+  s_0227926428e4b1::t_885156a243b958 1-54
+governance/bin/canon-gap-map.mjs
+  s_0227926428e4b1::t_3cea17078e163c 43,45
+governance/test/canon-gap-map-verdict.test.mjs
+  s_0227926428e4b1::t_21d0a15beb896a 1-215
+governance/test/canon-gap-map.test.mjs
+  s_0227926428e4b1::t_58153d72aa04c1 221
+  s_0227926428e4b1::t_87b9636455838e 175
+  s_0227926428e4b1::t_bc01675a083306 3-5,7,9,11,22
+  s_0227926428e4b1::t_61eb9fa8ba3a1b 24
+  s_0227926428e4b1::t_612534f6d705f0 130
+governance/state/canon-gap-map/GAP-MAP.md
+  s_22c99c27ef1832::t_6a1f8319d5c764 12,33-34,36-38,44,46-49,51,85
+governance/state/canon-gap-map/gap-map.json
+  s_22c99c27ef1832::t_c7e52af680f2d8 19,22,505,513,521,527,564,570,578,584,592,598,749,757,794,801,809,816,824,830,838,844,883,890,1843,1849
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "eb0ec203f0dac0e47912f64b2c020d60303103c4",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_22c99c27ef1832": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a702ad6243e703ad8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

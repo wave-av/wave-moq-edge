@@ -1,0 +1,24 @@
+governance/bin/plugin-home-repo-drift.mjs
+  s_d9915bbafa9657::t_71e9c6029f9652 138-142
+  s_d9915bbafa9657::t_12321d953de028 154-160
+  s_d9915bbafa9657::t_043850bcb1bfe0 67,69-89
+  s_d9915bbafa9657::t_f29d8b9f2be14a 100-109
+governance/test/plugin-home-repo-drift.test.mjs
+  s_d9915bbafa9657::t_fc3fd2b639fcb6 17,213-259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b4c069445603fa1f7ba6b9d1e9b588253f0efe37",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

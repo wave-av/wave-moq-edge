@@ -1,0 +1,19 @@
+governance/plans/generated-artifact-contention/PHASE-C-CUTOVER.md
+  s_be94c45efdaafe::t_83de9111ba1f1f 164-195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b6448c3a71759b0386ede127cf05c0d204cfc197",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

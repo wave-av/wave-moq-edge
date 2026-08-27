@@ -1,0 +1,23 @@
+hooks/tests/cost-ledger-rollup.test.sh
+  s_96280c922a9418::t_37612d25023a70 1-98
+hooks/cost-ledger-rollup.sh
+  s_96280c922a9418::t_407e60e82f3de8 49-66
+hooks/manifest.json
+  s_96280c922a9418::t_ac38698f67477b 239
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "0dff0afc84e6f51becc8e6d9d0a7b2ff4f608f34",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

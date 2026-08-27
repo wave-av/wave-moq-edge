@@ -1,0 +1,27 @@
+tests/test_bugbot_canary.py
+  s_3a52a0989b58af::t_a65dac28e5a2d2 113-114
+  s_3a52a0989b58af::t_68df0b1fa14940 177-179
+  s_3a52a0989b58af::t_a5a81f7b89acec 99-102,105-112,115-122,125-145
+  s_3a52a0989b58af::t_073141e5c9059e 25-39
+  s_3a52a0989b58af::t_1ad8401f1e7195 103-104
+  s_3a52a0989b58af::t_e3d4acd1104b94 123-124
+scripts/bugbot/regress.py
+  s_3a52a0989b58af::t_3ad49fc9201fb9 97-98,100-128
+  s_3a52a0989b58af::t_f4091f9e04bc0c 70-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "706d9217b0ed236e7b6d21472327ca498d11128b",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

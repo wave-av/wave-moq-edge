@@ -1,0 +1,23 @@
+scripts/bugbot/test_parity.py
+  s_0b987fef4e1240::t_7abed04bc11c74 90-127,133-136
+scripts/bugbot/parity.py
+  s_0b987fef4e1240::t_d5b18a89fba93e 141-187
+  s_0b987fef4e1240::t_fd6cec46a22f2e 50-57
+  s_0b987fef4e1240::t_421708e75564e3 201-205,209-213
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e74d2a57bebc549fe70aec81e8c1ace2ba8af3fa",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/test/storage-state-policy.test.mjs
+  s_9bb1b1d1d998d4::t_1a7bd69129c549 1-150
+governance/lib/storage-state-policy.mjs
+  s_9bb1b1d1d998d4::t_afd63f9e0bc4e8 1-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0612bcc08a11d33089a21b0088e5d20cb0a53aeb",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

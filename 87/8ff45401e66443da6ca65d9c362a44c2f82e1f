@@ -1,0 +1,45 @@
+.github/workflows/namespace-release-watch.yml
+  s_d9915bbafa9657::t_e4fe5056fc5949 1-117
+.github/workflows/wave-sec-gate.yml
+  s_d9915bbafa9657::t_b301b2549545de 24-27,29-39,41,103-114,132-137
+.gitignore
+  s_d9915bbafa9657::t_71205fd62df7ca 100-105
+docs/WAVE-SEC-GATE.md
+  s_d9915bbafa9657::t_30fa777d4f4ac5 1-112
+governance/bin/namespace-release-watch.mjs
+  s_d9915bbafa9657::t_4816d27509b6d4 1-217
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_d9915bbafa9657::t_fb71355187f68f 219-229
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_ad0bca91d4002a 27-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_202ab6072f3189 4-85,91-141,143-149,151,154-155,157-159,161-162,164-165,167,170-177,179-279,282-297,299,302-307,310-311,316-322,326-328,331-345,347-351
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_d9915bbafa9657::t_9eeb6c64ff5dd9 4-62,65-74,77-79,82-93,95-98,100-122,124,128-138,141-143,145,147-183,185-204,206-219,221-239,241-245
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_d9915bbafa9657::t_6d87b1d5275a9c 1-124
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_d9915bbafa9657::t_bc81c76818e60b 956-974
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_d9915bbafa9657::t_1904eb53c4d393 8-13,15-21,27,34,36-40,69-95,104-113,120-139,150-167,171-172,177-193,208-218,247-261,269,276,280,287-288,298-325,331-351
+governance/state/namespace-release-watch.json
+  s_d9915bbafa9657::t_c02c7a3a008581 1-13
+governance/test/namespace-release-watch.test.mjs
+  s_d9915bbafa9657::t_e3067e504821a0 1-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "878ff45401e66443da6ca65d9c362a44c2f82e1f",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

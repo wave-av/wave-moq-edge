@@ -1,0 +1,20 @@
+governance/bin/conservation-lint.mjs
+  s_9041cf1cf1ccad::t_17e583a1134335 111-114,116
+  s_9041cf1cf1ccad::t_e843e47c11c826 115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "98590996e5df50f9a397a1374947dbd412f10c6f",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

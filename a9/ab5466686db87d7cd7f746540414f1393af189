@@ -1,0 +1,19 @@
+hooks/manifest.json
+  s_375efeac18ed55::t_fb9c150fb3b59c 871,1109,1130,1264,1313
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a9ab5466686db87d7cd7f746540414f1393af189",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

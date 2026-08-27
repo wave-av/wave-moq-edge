@@ -1,0 +1,19 @@
+governance/plans/capability-registry/NORTH-STAR.md
+  s_7f225c7baebf46::t_ea637cfd079f94 1-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b2ccbdad46bab152e79650a82c68f4c806bb321b",
+  "prompts": {},
+  "sessions": {
+    "s_7f225c7baebf46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a619ac9dbd1d546ba",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

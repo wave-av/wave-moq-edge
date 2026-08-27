@@ -1,0 +1,43 @@
+governance/lib/enforcement-table-refs.mjs
+  s_375efeac18ed55::t_8b9b5d6e15d0a5 84
+  s_375efeac18ed55::t_90a0140643dd8c 79-82
+  s_375efeac18ed55::t_73f096d32b96d2 28
+  s_375efeac18ed55::t_183681e4338c57 25-27
+  s_375efeac18ed55::t_d9ae206a6455d0 29-31,76-78
+  s_375efeac18ed55::t_293000065515c5 83
+  s_375efeac18ed55::t_f413fc41e3f5c1 85-87
+  s_375efeac18ed55::t_1700d90945e954 1-24,32-75,88-92
+governance/lib/drill-fixtures-drift.mjs
+  s_375efeac18ed55::t_299fd87a1839b7 122-123,130,138
+governance/test/drift-check.test.mjs
+  s_375efeac18ed55::t_26aae8dbadf24a 139-141
+governance/bin/enforcement-coverage.mjs
+  s_375efeac18ed55::t_472ae995570603 230-233,237-241
+  s_375efeac18ed55::t_f3eaddc9545096 234-236
+  s_375efeac18ed55::t_659e7935a5476f 42,50-53
+governance/bin/enforcement-tables.mjs
+  s_375efeac18ed55::t_7fbd4b544f318d 16-36
+governance/test/bindings.test.mjs
+  s_375efeac18ed55::t_f825b02532743c 67-161
+  s_375efeac18ed55::t_01b28d87b8cf1b 12-13
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_019c5e8152c05d 897-906,929-934
+governance/code-index/index.json
+  s_375efeac18ed55::t_49dfdd1ca02e3e 8204-8205,8215-8216,8226-8227,8237-8238,8248-8249,8259-8260,8270-8271,8281-8282,8292-8293,8303-8304,8490-8491,8501-8502,8512-8513,8523-8524,8535-8537,8545-8546
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c65752ce7451bd6448cb4912ca54e5174dc95ce3",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

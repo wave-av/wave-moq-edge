@@ -1,0 +1,19 @@
+governance/plans/runtime-economy/E7-FX-HARNESS-CITIZEN.md
+  s_9e49fb2dab61f0::t_de18934cf9351c 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a9d57aaceaf6ffd218ed7fb835f2e479d939a460",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

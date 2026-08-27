@@ -1,0 +1,26 @@
+governance/bin/epic-status.mjs
+  s_375efeac18ed55::t_608711359b3cb7 54-55,57
+  s_375efeac18ed55::t_f39543757beda9 124,127
+  s_375efeac18ed55::t_b33b08d0d9082a 155-156
+  s_375efeac18ed55::t_ed9e6dfab77357 254-256
+  s_375efeac18ed55::t_cdb1f18479e6c1 49-53
+  s_375efeac18ed55::t_770aa0dd583b0d 77-78
+governance/test/epic-status.test.mjs
+  s_375efeac18ed55::t_83be07ab6d7303 71-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ea3c20e4cf928c066b99dfd8aa55fb307b234be9",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

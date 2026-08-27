@@ -1,0 +1,25 @@
+governance/plans/egress-authority/EXPANSION.md
+  s_756b33c630d33b::t_61298ac0b64130 1-64
+governance/plans/egress-authority/E6-DRIFT-SWEEP.md
+  s_756b33c630d33b::t_edbcc2ace5b2af 1-23
+governance/tools/explanation-gate/manifests/laws/test-boundary-on-own-schedule.json
+  s_756b33c630d33b::t_af795aff6e5f22 1-22
+governance/plans/egress-authority/NORTH-STAR.md
+  s_756b33c630d33b::t_5a361c845b0b58 34-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "34dde15c8d9d357d2866adf1ccdfcb282b08fabc",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+tests/pr-agent/verdict.bats
+  s_dedb333dd5195e::t_1ff485418742ed 122-123,125-129,136-137,139-143,149-190
+  s_dedb333dd5195e::t_919ac4049d3db6 77-80
+  s_dedb333dd5195e::t_d5d3017db21477 66-76,81-82
+  s_dedb333dd5195e::t_36e75802f7f78c 24-40
+  s_dedb333dd5195e::t_f0f81ef2bcc00a 191
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "36a080d855d47f9dde5424654179289e3124da92",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

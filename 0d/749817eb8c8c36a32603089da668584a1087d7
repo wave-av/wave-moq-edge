@@ -1,0 +1,13 @@
+scripts/bugbot/threads.py
+  ai_agent 1-151
+tests/test_bugbot.py
+  ai_agent 379-417,479
+scripts/bugbot/pipeline.py
+  ai_agent 1-150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "0d749817eb8c8c36a32603089da668584a1087d7",
+  "prompts": {}
+}

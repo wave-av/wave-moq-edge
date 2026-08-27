@@ -1,0 +1,19 @@
+governance/plans/wave-desktop-local/artifacts/THINKING-EVAL-LAW.md
+  s_1fdca12355f003::t_534cb43c3a132a 145-154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2e39c79f89825cf96e7b1e507453fcbf30b39609",
+  "prompts": {},
+  "sessions": {
+    "s_1fdca12355f003": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe82b603cffeCGtlTCg4m3BPii",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

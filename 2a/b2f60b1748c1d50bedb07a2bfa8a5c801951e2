@@ -1,0 +1,33 @@
+governance/tools/equivalence-checker/examples/container.json
+  s_ea7fda6a228496::t_dde1c2dfd6ea61 1-10
+governance/tools/equivalence-checker/lib/index.mjs
+  s_ea7fda6a228496::t_605decc98053b3 1-25
+governance/tools/equivalence-checker/examples/container-results.json
+  s_ea7fda6a228496::t_d7bacfba8290ac 1-5
+governance/tools/equivalence-checker/bin/equivalence-check.mjs
+  s_ea7fda6a228496::t_5124eaf0f6bff9 1-20
+governance/tools/equivalence-checker/tests/equivalence.test.mjs
+  s_ea7fda6a228496::t_083e4d91f6c7e8 1-38
+governance/tools/equivalence-checker/README.md
+  s_ea7fda6a228496::t_aa2d77e01c0611 1-12
+governance/tools/equivalence-checker/package.json
+  s_ea7fda6a228496::t_d297de1be8feb2 1-8
+governance/tools/equivalence-checker/contract.schema.json
+  s_ea7fda6a228496::t_9f3804fc717531 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2ab2f60b1748c1d50bedb07a2bfa8a5c801951e2",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

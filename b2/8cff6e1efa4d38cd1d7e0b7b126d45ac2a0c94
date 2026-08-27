@@ -1,0 +1,20 @@
+hooks/local-llm/session-end-rotate-learnings.sh
+  s_be28a864be8c45::t_f59f6e777e16b7 5
+  s_be28a864be8c45::t_9e6789b4a2c9c1 19-33,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "b28cff6e1efa4d38cd1d7e0b7b126d45ac2a0c94",
+  "prompts": {},
+  "sessions": {
+    "s_be28a864be8c45": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e3c5cdf8-b158-494c-92bb-b93dd5f09c28",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+scripts/filesize-vendored-gate.test.mjs
+  s_52031f4510959b::t_6c544c3c7372ae 1-26,29,33-44,47-50,52-121,177-184
+  s_52031f4510959b::t_8ef860c33372d3 27-28,30-32
+  s_52031f4510959b::t_031085f9c55470 45-46,51
+  s_52031f4510959b::t_795a0917724d64 122-176
+.github/workflows/checks.yml
+  s_52031f4510959b::t_1bd132d9572a57 321-332
+  s_52031f4510959b::t_027c07155dd0f1 217-222
+  s_52031f4510959b::t_a94c62190a87e8 95-119
+  s_52031f4510959b::t_c180d0ad8eca53 145-165,173-180
+  s_52031f4510959b::t_f5604d56331a9a 287-289
+  s_52031f4510959b::t_5f70e657f46fc6 185
+  s_52031f4510959b::t_f870326099a75b 342-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "95ed2c97ab53779f0c96316128e3bf60079413e7",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

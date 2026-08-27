@@ -1,0 +1,21 @@
+governance/plans/wave-golive/E7-STATUS.md
+  s_cf363a68d60e93::t_cc563819800e43 4-7,9-40
+governance/plans/wave-golive/E6-REALNESS.md
+  s_cf363a68d60e93::t_35b75b630bee84 4-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c10cd0a0d570c55aa4137adbb3ffca20e0dbb82a",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

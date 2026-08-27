@@ -1,0 +1,20 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_ce4d7b01042bcb::t_767d4eaa7b5a58 167-171
+  s_ce4d7b01042bcb::t_bffd121073d547 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6129e80a3f94491bfd4a725cf62e21df21204d8e",
+  "prompts": {},
+  "sessions": {
+    "s_ce4d7b01042bcb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fead6346bffey35abXa0ydtxMp",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

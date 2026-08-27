@@ -1,0 +1,22 @@
+hooks/tests/reviewer-route-gate.test.sh
+  s_8d26503dfc73f4::t_0d2ad06abd1734 56-64
+  s_8d26503dfc73f4::t_bce1b60322fa0d 1-55,65-70
+hooks/reviewer-route-gate.py
+  s_8d26503dfc73f4::t_920ca5bedf55a5 1-163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1b1e27d6d87240d0e97aa30bd4af48cf0f89e8cf",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

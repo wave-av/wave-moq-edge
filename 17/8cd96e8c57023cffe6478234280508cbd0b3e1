@@ -1,0 +1,42 @@
+governance/plans/intent-fabric/RECEIPTS.md
+  s_264ae386838c57::t_c7c81371db5602 124-129
+  s_264ae386838c57::t_44b7d7d65ceb53 58-99
+governance/plans/intent-fabric/NORTH-STAR.md
+  s_264ae386838c57::t_f59789a7b94753 105-117,124-151
+  s_f126fb3b7cae07::t_41fda9d421bb72 152
+governance/plans/intent-fabric/E1-REPAIR.md
+  s_264ae386838c57::t_14208b570fbc3e 25-33
+governance/plans/intent-fabric/E0-GROUND.md
+  s_264ae386838c57::t_2dbc07188f982b 57,59,62-66,69-77
+  s_264ae386838c57::t_da7bff3be2ea57 113-127
+  s_264ae386838c57::t_6590fb0e29bd96 34-48
+  s_f126fb3b7cae07::t_0fd32a915b6de4 78
+governance/DASHBOARD.md
+  s_264ae386838c57::t_9550af300c0707 25
+governance/graph.json
+  s_264ae386838c57::t_f7d655b88530a2 18771-18782,19071-19082
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "178cd96e8c57023cffe6478234280508cbd0b3e1",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

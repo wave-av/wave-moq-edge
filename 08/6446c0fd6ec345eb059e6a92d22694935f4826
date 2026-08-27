@@ -1,0 +1,25 @@
+governance/test/migrated-temp-writers.test.mjs
+  s_02abc74f4971c7::t_c75800b5e85271 107-112
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_53e33c889ac0b7 678-679
+  s_02abc74f4971c7::t_c372fafd96a6dd 131-142
+governance/test/semgrep-judgment.test.mjs
+  s_02abc74f4971c7::t_02c9dac9b4aec7 4-7
+  s_02abc74f4971c7::t_14dd68f613e133 102-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "086446c0fd6ec345eb059e6a92d22694935f4826",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

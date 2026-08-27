@@ -1,0 +1,27 @@
+rules/wow-canon.md
+  s_364605915bb7ec::t_f9dd492a6bfced 2
+governance/DASHBOARD.md
+  s_364605915bb7ec::t_aba9ddef60d45e 7-8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_364605915bb7ec::t_e207efc8833b39 10-11,14,452
+governance/graph.json
+  s_364605915bb7ec::t_2a18fe2fc5e930 4618-4626,13289-13294,17405-17416
+hooks/manifest.json
+  s_364605915bb7ec::t_3a2063c547e6af 729-749
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e175e62a7dd7ddf576b527834dd09e3f8b3fcf57",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

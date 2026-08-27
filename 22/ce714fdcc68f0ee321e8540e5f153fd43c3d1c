@@ -1,0 +1,32 @@
+scripts/bugbot/bench.py
+  s_3a52a0989b58af::t_c97bb4b0c7a83f 53-58,68-72,76-77
+  s_3a52a0989b58af::t_e2f5d78d504ab4 163,165,169-170,179-183
+scripts/bugbot/review.py
+  s_3a52a0989b58af::t_81298f537eb87a 911
+  s_3a52a0989b58af::t_4a9a6b1edc9e04 385,388,392
+  s_3a52a0989b58af::t_e33e48ae87074a 366-369,371
+  s_3a52a0989b58af::t_d42b249da94d6b 353-365
+  s_3a52a0989b58af::t_171cba7457e471 472,475,478
+  s_3a52a0989b58af::t_2dfeb7b8ffb899 915
+  s_3a52a0989b58af::t_b9d4b09d1030b1 312-323
+  s_3a52a0989b58af::t_b64c24a3bba13e 325-332,334
+  s_3a52a0989b58af::t_0a39eead6aad88 397
+  s_3a52a0989b58af::t_4600a0c3e43a6f 473-474,476-477
+  s_3a52a0989b58af::t_9e9b359b829cdf 706-731
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "22ce714fdcc68f0ee321e8540e5f153fd43c3d1c",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

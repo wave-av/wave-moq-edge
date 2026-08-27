@@ -1,0 +1,159 @@
+.claude/skills/computer-and-browser-use/SKILL.md
+  s_9bb1b1d1d998d4::t_d83c4269fb6ec1 1-217
+.claude/skills/computer-and-browser-use/references/browser-toolset.md
+  s_9bb1b1d1d998d4::t_321d212ac169ab 1-236
+.claude/skills/computer-and-browser-use/references/computer-toolset.md
+  s_9bb1b1d1d998d4::t_62cc4ba7e19a3b 1-201
+.claude/skills/computer-and-browser-use/references/executor-contract.md
+  s_9bb1b1d1d998d4::t_e5d7f58e86d743 1-438
+.claude/skills/computer-and-browser-use/references/redaction-vectors.mjs
+  s_9bb1b1d1d998d4::t_fbaca5cdf177a3 1-173
+.claude/skills/computer-and-browser-use/references/ssrf-vectors.mjs
+  s_9bb1b1d1d998d4::t_0ac8b2ffef1138 1-271
+.github/actions/desktop-conformance-gate/action.yml
+  s_9bb1b1d1d998d4::t_864ec1620ec3ae 1-51
+.github/workflows/governance.yml
+  s_9bb1b1d1d998d4::t_a8f985c9c42575 185-187
+governance/ENFORCEMENT-BASELINE.json
+  s_9bb1b1d1d998d4::t_813192b22eb891 12-13,223-224
+governance/bin/enforcement-tables.mjs
+  s_9bb1b1d1d998d4::t_138d4b94c646ea 99-103
+governance/conformance/desktop-app-ga/.gitignore
+  s_9bb1b1d1d998d4::t_af858afce18d90 1
+governance/conformance/desktop-app-ga/Dockerfile
+  s_9bb1b1d1d998d4::t_735c946160ed99 1-54
+governance/conformance/desktop-app-ga/run-app-conformance.mjs
+  s_9bb1b1d1d998d4::t_36731613e75828 1-185
+governance/conformance/desktop-app-ga/session.sh
+  s_9bb1b1d1d998d4::t_f5a5f9826adb24 1-66
+governance/conformance/desktop-ga/.gitignore
+  s_9bb1b1d1d998d4::t_ee14aab2219061 1
+governance/conformance/desktop-ga/Dockerfile
+  s_9bb1b1d1d998d4::t_1ee1915e58b3fe 1-55
+governance/conformance/desktop-ga/RECEIPT-2026-08-25.json
+  s_9bb1b1d1d998d4::t_3eb185a74fe81d 1-439
+governance/conformance/desktop-ga/docker-cli.mjs
+  s_9bb1b1d1d998d4::t_57ea3f1d2909bc 1-57
+governance/conformance/desktop-ga/drill.mjs
+  s_9bb1b1d1d998d4::t_882557f1963d95 1-184
+governance/conformance/desktop-ga/probes.mjs
+  s_9bb1b1d1d998d4::t_af857244dfdb68 1-90
+governance/conformance/desktop-ga/run-conformance.mjs
+  s_9bb1b1d1d998d4::t_4047617b496b84 1-290
+governance/conformance/desktop-ga/session.sh
+  s_9bb1b1d1d998d4::t_935406d7bc0b36 1-46
+governance/conformance/executor-refusals/run-refusal-receipt.mjs
+  s_9bb1b1d1d998d4::t_d9dc458d48570c 1-104
+governance/lib/browser-receipt-identity.mjs
+  s_9bb1b1d1d998d4::t_6a12fe91e1ed89 1-115
+governance/lib/computer-use-action-class.mjs
+  s_9bb1b1d1d998d4::t_5733e0405e4ecc 1-309
+governance/lib/computer-use-member-tables.mjs
+  s_9bb1b1d1d998d4::t_7eaf0fa3d1d1c4 1-128
+governance/lib/drill-fixtures-desktop-conformance.mjs
+  s_9bb1b1d1d998d4::t_dabfe600313147 1-71
+governance/lib/storage-state-policy.mjs
+  s_9bb1b1d1d998d4::t_81b77c737849dd 1-128
+governance/lib/toolset-capture-redact.mjs
+  s_9bb1b1d1d998d4::t_d581c3d51a7d67 1-113
+governance/lib/toolset-executor-core.mjs
+  s_9bb1b1d1d998d4::t_71740afc8f657b 1-175
+governance/lib/toolset-ref-map.mjs
+  s_9bb1b1d1d998d4::t_3d139b3563242c 1-167
+governance/lib/toolset-url-guard.mjs
+  s_9bb1b1d1d998d4::t_d789790e50fa0f 1-130
+governance/plans/client-toolset-adoption/ADR-CONTAINMENT-COMPUTER-USE.md
+  s_9bb1b1d1d998d4::t_6d74c2ac1848af 1-151
+governance/plans/client-toolset-adoption/ADR-CONTAINMENT.md
+  s_9bb1b1d1d998d4::t_95ce8fe20376ac 1-133
+governance/plans/client-toolset-adoption/BROWSER-CAPACITY-PLAN.md
+  s_9bb1b1d1d998d4::t_0ec2f766a5ed3c 1-143
+governance/plans/client-toolset-adoption/BUYER-PROBE.md
+  s_9bb1b1d1d998d4::t_49dd6b227ac315 1-175
+governance/plans/client-toolset-adoption/E0-KNOWLEDGE.md
+  s_9bb1b1d1d998d4::t_9d6fd1dffb0793 1-196
+governance/plans/client-toolset-adoption/E1-LAW-AND-GATE.md
+  s_9bb1b1d1d998d4::t_4cbb9c7c1fcc15 1-57
+governance/plans/client-toolset-adoption/E2-EXECUTOR.md
+  s_9bb1b1d1d998d4::t_6604ef77ea5631 1-62
+governance/plans/client-toolset-adoption/E2-P4-RETENTION.md
+  s_9bb1b1d1d998d4::t_f92d53e13c4036 1-71
+governance/plans/client-toolset-adoption/E3-AUTHED-CAPTURE.md
+  s_9bb1b1d1d998d4::t_fb150ad9e86d86 1-47
+governance/plans/client-toolset-adoption/E4-RECEIPTS.md
+  s_9bb1b1d1d998d4::t_7ce85357c51cb3 1-54
+governance/plans/client-toolset-adoption/E5-PRODUCT-VERDICT.md
+  s_9bb1b1d1d998d4::t_4a294471caadaa 1-50
+governance/plans/client-toolset-adoption/E6-DESKTOP-CONFORMANCE.md
+  s_9bb1b1d1d998d4::t_b4c3834caadca2 1-89
+governance/plans/client-toolset-adoption/E7-DESKTOP-APPLICATION.md
+  s_9bb1b1d1d998d4::t_ecd5ba53c3878e 1-57
+governance/plans/client-toolset-adoption/LEARNINGS.md
+  s_9bb1b1d1d998d4::t_c232dd5427c727 1-377
+governance/plans/client-toolset-adoption/NAVIGATE-VECTORS.md
+  s_9bb1b1d1d998d4::t_bba4d876d8b7db 1-195
+governance/plans/client-toolset-adoption/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_98386a804243ef 1-132
+governance/plans/client-toolset-adoption/OUTBOUND-DRAFTS.md
+  s_9bb1b1d1d998d4::t_63ea49a6404268 1-315
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_d0a70029180217 1-389
+governance/plans/engineering-canon/E10-surface-census/E10-SURFACE-CENSUS.md
+  s_9bb1b1d1d998d4::t_bf880ebd47ad2c 98
+governance/plans/engineering-canon/E10-surface-census/SKILL-PLACEHOLDER.md
+  s_9bb1b1d1d998d4::t_ee65eec022eb09 4-9
+governance/plans/fractal-decomposition/E-SKILLS-UPLEVEL.md
+  s_9bb1b1d1d998d4::t_e2e706c07ea314 39
+governance/plans/fractal-decomposition/SKILL-PLACEHOLDER.md
+  s_9bb1b1d1d998d4::t_36899756a6b0db 4-9
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_9bb1b1d1d998d4::t_13317eb3c624d2 43
+governance/plans/namespace-substrate/SKILL-PLACEHOLDER.md
+  s_9bb1b1d1d998d4::t_24362f361e42c6 4-9
+governance/state/canon-gap-map/GAP-MAP.md
+  s_9bb1b1d1d998d4::t_4b78132b02ba4f 98
+governance/state/canon-gap-map/gap-map.json
+  s_9bb1b1d1d998d4::t_9186be2c57099f 2211,2215,2217
+governance/test/browser-receipt-identity.test.mjs
+  s_9bb1b1d1d998d4::t_6b300e5a2fcc9d 1-138
+governance/test/ci-surface.test.mjs
+  s_9bb1b1d1d998d4::t_656aa9d30d4d23 138-143
+governance/test/computer-use-action-class.test.mjs
+  s_9bb1b1d1d998d4::t_da27101f32365b 1-287
+governance/test/desktop-ga-docker-cli.test.mjs
+  s_9bb1b1d1d998d4::t_f42380baa244b1 1-113
+governance/test/opt-in-member-authorization.test.mjs
+  s_9bb1b1d1d998d4::t_b7e2b083c44e88 1-102
+governance/test/receipt-capture-browser.test.mjs
+  s_9bb1b1d1d998d4::t_039ca4b397b866 1-108
+governance/test/storage-state-policy.test.mjs
+  s_9bb1b1d1d998d4::t_c3d59997638050 1-150
+governance/test/toolset-capture-redact.test.mjs
+  s_9bb1b1d1d998d4::t_a1467b34d1acd2 1-148
+governance/test/toolset-executor-core.test.mjs
+  s_9bb1b1d1d998d4::t_f7320066cbd391 1-236
+governance/test/toolset-ref-map.test.mjs
+  s_9bb1b1d1d998d4::t_050ea60dca2237 1-162
+governance/test/toolset-url-guard.test.mjs
+  s_9bb1b1d1d998d4::t_6543c8dd2d4d1f 1-155
+hooks/bin/receipt-capture.mjs
+  s_9bb1b1d1d998d4::t_561d99d1813d55 62-150,173-186
+rules/computer-use-agent-confined-to-declared-surface-with-action-receipts.md
+  s_9bb1b1d1d998d4::t_b85688cf2c82d6 7-12,16-19,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1cb88ea7c570edc075aab57e002358c57e18df54",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

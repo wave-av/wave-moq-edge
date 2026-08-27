@@ -1,0 +1,24 @@
+governance/bin/resolve-generated-conflicts.mjs
+  s_375efeac18ed55::t_ce869e16b820b5 189-190,192-194
+  s_375efeac18ed55::t_da5fcff9f413cc 106-120
+  s_375efeac18ed55::t_ac48ba5c4216a0 71-75,78
+governance/test/resolve-generated-conflicts.test.mjs
+  s_375efeac18ed55::t_a04cfee8454430 171-176,180,184-185,187-198
+  s_375efeac18ed55::t_41965fbf8f2dc3 177-179,181-183
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "17d635631d06e2a117736ff477080b191eec16ca",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

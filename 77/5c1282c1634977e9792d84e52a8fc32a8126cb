@@ -1,0 +1,24 @@
+governance/tools/load-shedder/lib/index.mjs
+  s_9041cf1cf1ccad::t_e1a02e427715f4 232-236
+governance/tools/state-layer/tests/state-layer.test.mjs
+  s_9041cf1cf1ccad::t_6ebdd1b6c15e24 15,26
+  s_9041cf1cf1ccad::t_01ddbfba8f09a5 7
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_9041cf1cf1ccad::t_5fa1ab66b6f3a9 82-85,87-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "775c1282c1634977e9792d84e52a8fc32a8126cb",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

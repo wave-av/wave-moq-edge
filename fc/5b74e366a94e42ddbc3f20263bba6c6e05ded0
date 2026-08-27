@@ -1,0 +1,21 @@
+scripts/bugbot/FLYWHEEL.md
+  s_0b987fef4e1240::t_87b3111f0bbe77 34-39
+scripts/bugbot/test_e2e_smoke.py
+  s_0b987fef4e1240::t_26b35e69214967 1-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "fc5b74e366a94e42ddbc3f20263bba6c6e05ded0",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.gitignore
+  s_cc7a5f76c21d7a::t_19f9873063b258 9-13
+opencode.json
+  s_cc7a5f76c21d7a::t_d2056badeeae21 644-647
+AGENTS.md
+  s_abb9a2be72e2bf::t_05b2184f2bcb4b 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0bba9a609147ffc1535b01607f480849b38d233f",
+  "prompts": {},
+  "sessions": {
+    "s_abb9a2be72e2bf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002c97bcbffepJbWZlswgf5sOd",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_cc7a5f76c21d7a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002539433ffezwnQCVUAZOdqOL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

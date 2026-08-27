@@ -1,0 +1,19 @@
+docs/ALL-PROVIDER-BENCH.md
+  s_ba07216ce52585::t_a5c7afe0d1d3b9 1-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9099f32855baef220ccaf9ccc2cb559809ac4116",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

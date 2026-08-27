@@ -1,0 +1,19 @@
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_7f9c502bf513a1::t_85408392420e81 55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "83d276e0b70f78190824292edcc59bafc735818b",
+  "prompts": {},
+  "sessions": {
+    "s_7f9c502bf513a1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a984e7f5002ac7028",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

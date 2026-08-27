@@ -1,0 +1,29 @@
+governance/plans/generated-artifact-contention/PHASE-C-SWEEP.md
+  s_d9915bbafa9657::t_7b498d66b7ca2c 175-181
+governance/bin/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_4101511e81abdf 113-118
+  s_d9915bbafa9657::t_1c66a2b00279a9 136-140
+  s_d9915bbafa9657::t_fa3904be8be82e 23
+governance/bin/lawbook.mjs
+  s_d9915bbafa9657::t_069c68e61a50e4 72-76,79,81
+  s_d9915bbafa9657::t_8490ec0e8b4851 198-201,204,211-216
+  s_d9915bbafa9657::t_132bd74b0a010a 203,205-209
+  s_d9915bbafa9657::t_d8a443ceedc64c 108-112,114
+  s_d9915bbafa9657::t_d83d4853cc2f2f 57-60,62-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f634532c3ba81bd65273cfaed8cbe8c245bad958",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

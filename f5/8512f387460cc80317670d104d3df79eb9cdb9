@@ -1,0 +1,31 @@
+packages/container-pool/test/pool.test.mjs
+  s_6e7ad4df769349::t_8eabaffa90d3cf 1-40
+packages/container-pool/src/index.ts
+  s_6e7ad4df769349::t_e0993f2a799b18 1-24
+packages/container-pool/tsconfig.json
+  s_6e7ad4df769349::t_d6dffb9bede1d0 1-20
+packages/container-pool/README.md
+  s_6e7ad4df769349::t_7accd3486cf5c4 1-20
+.github/workflows/release-container-pool.yml
+  s_6e7ad4df769349::t_951f149695aef0 1-85
+packages/container-pool/package.json
+  s_6e7ad4df769349::t_204dc77a655b90 1-50
+packages/container-pool/package-lock.json
+  s_6e7ad4df769349::t_47e4c507a3eae5 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "f58512f387460cc80317670d104d3df79eb9cdb9",
+  "prompts": {},
+  "sessions": {
+    "s_6e7ad4df769349": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "91274c95-abfb-4ffd-b243-f2916d2e4e07",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

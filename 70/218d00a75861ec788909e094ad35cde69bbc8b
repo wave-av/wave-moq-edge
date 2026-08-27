@@ -1,0 +1,19 @@
+hookcli/tests/lib/modules.sh
+  s_db128da65a46d5::t_e6bb2ea7b65bfc 76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "70218d00a75861ec788909e094ad35cde69bbc8b",
+  "prompts": {},
+  "sessions": {
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

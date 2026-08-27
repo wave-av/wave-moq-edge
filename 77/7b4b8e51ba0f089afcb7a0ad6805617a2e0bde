@@ -1,0 +1,31 @@
+governance/plans/crypto-money-plane-migration/RECEIPTS.md
+  s_8152bca18f72ee::t_efd4e5b9f3c6b7 1-71
+governance/plans/wave-marketplace-payouts/E4-SURFACE-NAMING.md
+  s_8152bca18f72ee::t_fd0f5d797cb7e9 1-27
+governance/plans/wave-marketplace-payouts/NORTH-STAR.md
+  s_756b33c630d33b::t_5d2cee95bba61e 51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "777b4b8e51ba0f089afcb7a0ad6805617a2e0bde",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

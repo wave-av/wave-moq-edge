@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/action/EPIC-AUDIT-VERIFICATION.md
+  s_124891ed63801b::t_fba62e030f04c4 1-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "70605eafd9a433e43407dd05a41f525e7eb8b709",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

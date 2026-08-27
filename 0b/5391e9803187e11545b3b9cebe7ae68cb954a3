@@ -1,0 +1,47 @@
+governance/bin/wave-money.mjs
+  s_756b33c630d33b::t_02969dc8b0803f 60-64
+  s_756b33c630d33b::t_ce3ede523227c7 68-69,73-74,90-91,94-95,98-99,104-105,108-109,113-122,127-134,137-139,163
+  s_756b33c630d33b::t_5ca87c323b4e3c 25-27
+  s_756b33c630d33b::t_9db483a8817fa0 82-83,87-88,123-126,135-136
+  s_756b33c630d33b::t_ab312fd72d3a13 38-39
+  s_756b33c630d33b::t_04c62bfbcff023 22-24
+  s_756b33c630d33b::t_3406bb3cf6f961 28-30,35-37
+  s_756b33c630d33b::t_de2dffc61bd64e 40-42,57-59
+  s_756b33c630d33b::t_1c2a631db21101 65-67
+  s_756b33c630d33b::t_f562838e277ba6 70-72
+  s_756b33c630d33b::t_8c6af5b36714c9 75-77,79-81
+  s_756b33c630d33b::t_2d0881359d8175 84-86
+  s_756b33c630d33b::t_8c93a81280282b 89
+  s_756b33c630d33b::t_09b34621f19099 92-93
+  s_756b33c630d33b::t_b14524b40ff19b 96-97
+  s_756b33c630d33b::t_9e073fa47eccef 100-103
+  s_756b33c630d33b::t_05c58f9274249a 106-107
+  s_756b33c630d33b::t_0b94b66ede732b 110-112
+  s_756b33c630d33b::t_5409194fdf0d1e 140-142,160-162
+  s_756b33c630d33b::t_d65848ee95fb73 164-166
+  s_e0ddd0b8225532::t_75b34e6af3ba9a 1-21,31-34,43-56,78,143-159,167-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0b5391e9803187e11545b3b9cebe7ae68cb954a3",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e0ddd0b8225532": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdacddd88ffegPo7L7UKYbGAly",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+governance/plans/model-artifact-ingress/E1-E1-OBJECT-STORE.md
+  h_67a1b847dc59d6 2,4-5,7-37
+  s_8af4028370359f::t_834a95e070c314 2-3,6-36
+  s_8af4028370359f::t_9c7878bf3d56ff 1
+  s_8af4028370359f::t_696b36efa7dfe0 37
+governance/plans/model-artifact-ingress/E2-E2-HP-VOLUME-CACHE.md
+  h_67a1b847dc59d6 2,4-5,7-33
+governance/plans/model-artifact-ingress/E3-E3-SERVE-HOOK.md
+  h_67a1b847dc59d6 2,4-5,7-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "432cba151cb24cbe676e368adbaad32a0e75a1fb",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

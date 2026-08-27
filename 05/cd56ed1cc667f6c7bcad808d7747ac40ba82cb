@@ -1,0 +1,24 @@
+governance/test/platform-status-state-root-agreement.test.mjs
+  s_15127d80763110::t_ed1780c9d7ad36 26
+  s_15127d80763110::t_c1de7db380f2a8 133-199
+governance/bin/platform-status.mjs
+  s_15127d80763110::t_ff26d8e051fd5b 207-248,252,254-255,258-264,266-269,271-282
+  s_15127d80763110::t_0e750df88b81a8 182,185-187,191-192,195
+  s_15127d80763110::t_69d34e9e821d7a 290
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "05cd56ed1cc667f6c7bcad808d7747ac40ba82cb",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

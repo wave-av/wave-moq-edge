@@ -1,0 +1,31 @@
+governance/test/struggle-miner/collect-sentry.test.mjs
+  s_37e24b4d920e09::t_af52fec0887a45 1-32
+docs/superpowers/plans/2026-07-31-struggle-inference-pipeline-wave2.md
+  s_37e24b4d920e09::t_cdb4ca821c4b29 66
+governance/bin/struggle-miner/collect-sentry.mjs
+  s_37e24b4d920e09::t_29728bdc99964b 1-73
+governance/bin/struggle-miner-scan.sh
+  s_37e24b4d920e09::t_4a6ddcbe8caa37 32
+governance/test/struggle-miner/fixtures/sentry-issues-response.json
+  s_37e24b4d920e09::t_ab72fc9094c929 1-38
+governance/code-index/CATALOG.md
+  s_37e24b4d920e09::t_63d3d1f3c834a5 5,2812-2820
+governance/code-index/index.json
+  s_37e24b4d920e09::t_7b9218aa744c5c 9-10,12-13,25296-25361
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "85943e6f97a12d4726d1bbbde13ab9da60787aba",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

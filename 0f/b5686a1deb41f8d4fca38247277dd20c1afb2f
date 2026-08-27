@@ -1,0 +1,53 @@
+governance/plans/brand-recycle/E-PRESTIGE.md
+  s_15127d80763110::t_1aeeb9929a5687 4-8
+governance/plans/brand-recycle/E-CANON.md
+  s_15127d80763110::t_2309871f23ff3b 8-13
+governance/plans/brand-recycle/DR-POSTURE.md
+  s_15127d80763110::t_d62d3bef5b9a6d 1,3-4,6-49
+governance/plans/launch-week-set-01/epic.md
+  s_15127d80763110::t_a5cb2f1222c856 6-76
+  s_6f6453b23e3805::t_56db01e73c0492 1-5
+governance/plans/brand-recycle/DR-PRESTIGE.md
+  s_15127d80763110::t_789f876a60468a 1-55
+governance/plans/brand-recycle/AUDIT-CONSOLE-BASELINE.md
+  s_15127d80763110::t_dcfab4242744da 1-64
+governance/plans/waveform-hero/epic.md
+  s_15127d80763110::t_2c077efc2e698a 6-75
+  s_124891ed63801b::t_248e4520038655 1-5
+governance/DASHBOARD.md
+  s_124891ed63801b::t_4c6167a927c6ff 25
+governance/graph.json
+  s_124891ed63801b::t_ada3303665cca5 4504-4516,6740-6752,18441-18452,22545-22592,27801-27842
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0fb5686a1deb41f8d4fca38247277dd20c1afb2f",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

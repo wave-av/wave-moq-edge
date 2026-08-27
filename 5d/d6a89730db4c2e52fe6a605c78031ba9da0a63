@@ -1,0 +1,23 @@
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  s_aa5feb34e0e033::t_4160b25b2ac637 15-16
+  s_aa5feb34e0e033::t_48caf2feed7556 61-62,65,67-72
+  s_aa5feb34e0e033::t_001efbcaf83d92 41-52
+  s_aa5feb34e0e033::t_b74fac726d5d0f 4
+  s_aa5feb34e0e033::t_d1300a1cf96461 77-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5dd6a89730db4c2e52fe6a605c78031ba9da0a63",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

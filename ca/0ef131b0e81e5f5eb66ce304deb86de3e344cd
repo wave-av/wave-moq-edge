@@ -1,0 +1,20 @@
+.coderabbit.yaml
+  s_8d26503dfc73f4::t_8967fdbb1c2a94 113-120
+  s_8d26503dfc73f4::t_612e287afa37f5 1-112,121-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "ca0ef131b0e81e5f5eb66ce304deb86de3e344cd",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

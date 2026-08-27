@@ -1,0 +1,33 @@
+governance/plans/finding-closure/E0-BLEEDING.md
+  s_72f920566e1ac4::t_c57687194bf3bd 43-51,62-69,78-87,96-103
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_72f920566e1ac4::t_1a48ba99dd16e0 262-270,279-287,297-306,481-488
+governance/plans/finding-closure/E2-SLA.md
+  s_72f920566e1ac4::t_d8cd9543a6cdb0 43-52,61-69,78-86,96-103
+governance/plans/finding-closure/E3-GATES.md
+  s_72f920566e1ac4::t_890acc07802a1d 45-53,62-71,81-89,99-108
+governance/plans/finding-closure/E4-BURNDOWN.md
+  s_72f920566e1ac4::t_e91b6de704ecae 40-50,61-70,80-89,98-106
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_72f920566e1ac4::t_f283c55a87b765 58-66,75-83,92-100,110-117
+governance/plans/finding-closure/E6-RUNTIME.md
+  s_72f920566e1ac4::t_5620928a2e2ff3 44-53,63-72,82-90,100-108
+governance/plans/finding-closure/E7-MEASURE.md
+  s_72f920566e1ac4::t_ed12794e8c7b49 57-66,77-85,95-103,113-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f34b485da3c29dbeb5c6821f06d1d6a4d4423713",
+  "prompts": {},
+  "sessions": {
+    "s_72f920566e1ac4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a9fbf5eae033274b9",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

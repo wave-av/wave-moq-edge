@@ -1,0 +1,19 @@
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_be40541f6fd98b::t_97c824ac304700 4-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0d5c4a26f39f2e0cbdc021d79d5ecfcf96515277",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

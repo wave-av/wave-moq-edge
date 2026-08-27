@@ -1,0 +1,38 @@
+scripts/bugbot/drift.py
+  s_07acdfa7e3709a::t_47681a2e0bec5b 80-81
+  s_07acdfa7e3709a::t_c7b44d44eb1bf5 1-79,82-120
+scripts/bugbot/ledger.py
+  s_07acdfa7e3709a::t_b17320f2bee1ba 36-37
+scripts/bugbot/collector.py
+  s_07acdfa7e3709a::t_ef8c82dacd0fc2 183-190
+  s_07acdfa7e3709a::t_09dc9b977cc6d0 37
+scripts/bugbot/regress.py
+  s_07acdfa7e3709a::t_56984e71fe9ceb 65,69
+  s_07acdfa7e3709a::t_6c8c6420f443e9 1-64,66-68,70-99,101-194
+  s_07acdfa7e3709a::t_dee7126fa8d300 100
+scripts/bugbot/daemon.sh
+  s_07acdfa7e3709a::t_b29a56b9a6d475 262,264
+  s_07acdfa7e3709a::t_d378892b70c4d5 38-39
+  s_07acdfa7e3709a::t_00ab126ba495cd 219-249
+tests/test_bugbot_learning.py
+  s_07acdfa7e3709a::t_49874eb7e5290f 209
+  s_07acdfa7e3709a::t_f1dc46ee27ee73 201-208,210-317
+scripts/bugbot/ROLLOUT.md
+  s_07acdfa7e3709a::t_9760b78d52034a 1-136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "91a934b655dcfebeadface5410a83021142e127f",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+governance/test/command-cwd-exec.test.mjs
+  s_85d9e5f433b9aa::t_418e45d0c50151 234-237,239-242,244-245,247-258,260-262
+  s_85d9e5f433b9aa::t_d630a21542714d 233,238,243,246,259,263
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a618bd09224451c09622b04f4a5df723e951a783",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

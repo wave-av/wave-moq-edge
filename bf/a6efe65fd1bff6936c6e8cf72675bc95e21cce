@@ -1,0 +1,27 @@
+scripts/local-arena-multijudge.py
+  s_9bb1b1d1d998d4::t_6f73ab82ed8dc1 1,28,83
+scripts/test-verified-bench.py
+  s_9bb1b1d1d998d4::t_9e1a3b7a9c73eb 1,71
+scripts/wave-eval-http.py
+  s_9bb1b1d1d998d4::t_a2f612578f3942 12,18,52
+scripts/wave-eval-mcp.py
+  s_9bb1b1d1d998d4::t_570a6aa3631c73 7,20,32
+scripts/wave-litellm.mjs
+  s_9bb1b1d1d998d4::t_cae13913bb0091 52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "bfa6efe65fd1bff6936c6e8cf72675bc95e21cce",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

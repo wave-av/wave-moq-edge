@@ -1,0 +1,26 @@
+governance/bin/struggle-miner/aggregate.mjs
+  s_37e24b4d920e09::t_f0c3dbc731ae36 1-80
+governance/test/struggle-miner/aggregate.test.mjs
+  s_37e24b4d920e09::t_494ba82e871b74 1-6,9-28
+  s_37e24b4d920e09::t_92c76f91a402df 7-8
+governance/code-index/CATALOG.md
+  s_37e24b4d920e09::t_cc7740b1bc8d5f 5,2683-2693
+governance/code-index/index.json
+  s_37e24b4d920e09::t_96484108aa3c7d 6-7,9-10,24170-24257
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "2ead24d7de4270abb520691d6344aa2ffffc03a0",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/wave-automation-registry/E6-TRIGGER-FABRIC.md
+  s_d9c6b8d7b42c33::t_94bbf3bd167c54 1-56
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_d9c6b8d7b42c33::t_cef216180099cb 48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b471956453a4b141beaa12004043b82873b6502e",
+  "prompts": {},
+  "sessions": {
+    "s_d9c6b8d7b42c33": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef09a775ffeAeKVdwXbAAKmYI",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

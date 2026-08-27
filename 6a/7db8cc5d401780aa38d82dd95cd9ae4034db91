@@ -1,0 +1,21 @@
+hooks/tests/KNOWN-RED.txt
+  s_e2e3e43d0638c5::t_b429f96ba3f00d 1-28
+.github/workflows/hook-tests.yml
+  s_e2e3e43d0638c5::t_297b61b751767f 1-122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6a7db8cc5d401780aa38d82dd95cd9ae4034db91",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

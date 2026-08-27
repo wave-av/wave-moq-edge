@@ -1,0 +1,21 @@
+rules/multi-repo-workstream-protocol.md
+  s_f9ff6dc10be18e::t_72779b7730b9e0 1-72
+governance/graph.json
+  s_f9ff6dc10be18e::t_bdbb157946f1ba 1124-1130,7262-7339
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "a18e10d56af8eb281e835dc4ece1afab8f4e9bf2",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

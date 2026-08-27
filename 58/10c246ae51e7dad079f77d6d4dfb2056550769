@@ -1,0 +1,25 @@
+governance/bin/build.mjs
+  s_dccee6b7677203::t_18eb089d64795e 249-257
+governance/test/dangling-refs.test.mjs
+  s_dccee6b7677203::t_dcfc88b9862ea8 42-47,49-53,55-75
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_aa2f589873ff77 243
+governance/code-index/index.json
+  s_dccee6b7677203::t_1bd8409da2d7d9 2165-2166
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5810c246ae51e7dad079f77d6d4dfb2056550769",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

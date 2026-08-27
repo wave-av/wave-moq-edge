@@ -1,0 +1,36 @@
+bin/model-vision.mjs
+  s_9677087332ffe8::t_a7938d6c119222 69-96,98,104-108
+  s_9677087332ffe8::t_ca66799729b125 128,130,133
+  s_9677087332ffe8::t_7209b67c169c71 19
+governance/test/embed-eval.test.mjs
+  s_93e13da54cce6f::t_041ca81e620422 202,204
+  s_93e13da54cce6f::t_2e3de4ae0eda30 1-201,203,205-312
+bin/embed-eval.mjs
+  s_93e13da54cce6f::t_ce31abf1a55f74 1-265
+governance/test/model-vision.test.mjs
+  s_9677087332ffe8::t_711b352ff46f1c 3,20-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "95d609121dc0995d8bee13803219d770380b6838",
+  "prompts": {},
+  "sessions": {
+    "s_93e13da54cce6f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fefe98842ffeBHV8pJAfvOVjbX",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9677087332ffe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fefe9b5c4ffeJMFRhapmE3QX08",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

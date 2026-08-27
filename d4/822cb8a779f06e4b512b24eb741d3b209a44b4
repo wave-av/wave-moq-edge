@@ -1,0 +1,22 @@
+.github/workflows/public-guard-drift.yml
+  s_be40541f6fd98b::t_56ed60101b8275 58-70,110,115,120
+  s_be40541f6fd98b::t_66fc115a372e00 81-108
+  s_be40541f6fd98b::t_87e1fa7ce64e0d 10-11,13-21
+  s_be40541f6fd98b::t_c85986e0bf6656 71-80,109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d4822cb8a779f06e4b512b24eb741d3b209a44b4",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

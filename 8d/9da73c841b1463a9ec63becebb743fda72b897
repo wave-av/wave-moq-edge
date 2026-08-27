@@ -1,0 +1,25 @@
+scripts/bugbot/overrides.py
+  s_07acdfa7e3709a::t_006eff3ddfe012 1-96
+scripts/bugbot/daemon.sh
+  s_07acdfa7e3709a::t_8b6de5af3412c7 194
+  s_07acdfa7e3709a::t_716e3556ca930c 36
+  s_07acdfa7e3709a::t_d9781694c37e19 176-184
+tests/test_bugbot_safety.py
+  s_07acdfa7e3709a::t_3c20e2bfba6040 931-968
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "8d9da73c841b1463a9ec63becebb743fda72b897",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

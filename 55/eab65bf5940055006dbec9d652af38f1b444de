@@ -1,0 +1,22 @@
+governance/ENFORCEMENT-BASELINE.json
+  s_9bb1b1d1d998d4::t_147d27f84ea1b0 12-13
+  s_9bb1b1d1d998d4::t_fe3c8c57f96266 223-224
+governance/test/ci-surface.test.mjs
+  s_9bb1b1d1d998d4::t_0f2fba39471c90 138-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "55eab65bf5940055006dbec9d652af38f1b444de",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

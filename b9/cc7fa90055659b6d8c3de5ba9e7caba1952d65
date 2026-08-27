@@ -1,0 +1,31 @@
+cliff.toml
+  s_364605915bb7ec::t_bb9a76b5784a2b 39-47
+  s_364605915bb7ec::t_f0166dfce066cc 48-50
+scripts/release.sh
+  s_364605915bb7ec::t_c7b01f49e1129b 105,107-119
+  s_364605915bb7ec::t_84eabe9e1af129 140-147
+  s_364605915bb7ec::t_b4f0ecae08dc71 40-44
+  s_364605915bb7ec::t_8098c231d1341d 98-101,106,120-139,148-166
+  s_364605915bb7ec::t_77d17c0d6fc117 102,167
+frameworks/gates/test-release-changelog-guard.sh
+  s_364605915bb7ec::t_136b0304873f92 133-142
+  s_364605915bb7ec::t_4c43c574b1cc87 56-57
+  s_364605915bb7ec::t_cb8d291e315ad1 52-55
+  s_364605915bb7ec::t_bbba5c7d4b3036 28,30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b9cc7fa90055659b6d8c3de5ba9e7caba1952d65",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

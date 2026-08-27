@@ -1,0 +1,31 @@
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  s_df3df4882acaf1::t_6d12201f815fb2 118-124
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  s_df3df4882acaf1::t_ee2000e3650556 101-109
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  s_53b49eff5b8c5d::t_20a7d2b9bdf090 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0b14b2e1c061b040ef7daab6bb7c3efc97e66041",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_df3df4882acaf1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd00fcdd7ffe6KbSIhch6wgI5J",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

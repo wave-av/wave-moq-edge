@@ -1,0 +1,40 @@
+governance/plans/effective-authority/E7-RATCHET.md
+  s_be40541f6fd98b::t_1876aa048bbb96 1-67
+governance/plans/effective-authority/NORTH-STAR.md
+  s_be40541f6fd98b::t_33143ee9d8ec9b 1-174
+governance/plans/effective-authority/RECEIPTS.md
+  s_be40541f6fd98b::t_2157dcad9e88d9 99-103,105-106,108-117
+  s_be40541f6fd98b::t_347e7bf26970cd 1-98,104,107,118-136
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  s_be40541f6fd98b::t_261f6818937298 1-53
+governance/plans/effective-authority/E4-DISPATCH.md
+  s_be40541f6fd98b::t_93fc9c72fb1b15 1-60
+governance/plans/effective-authority/E3-OIDC.md
+  s_be40541f6fd98b::t_f7727dac6ef259 1-57
+governance/plans/effective-authority/E2-DEFAULTS.md
+  s_be40541f6fd98b::t_f4eed90eba748a 1-60
+governance/plans/effective-authority/E6-BLAST.md
+  s_be40541f6fd98b::t_c94ebce476647a 1-64
+governance/plans/effective-authority/E5-CEILING.md
+  s_be40541f6fd98b::t_75b358e513e271 1-72
+governance/DASHBOARD.md
+  s_be40541f6fd98b::t_278fffdd56c062 25
+governance/graph.json
+  s_be40541f6fd98b::t_991ed1fded2368 2617-2720,16065-16430
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "dcaa36fd206afd4e0b3243a5fe33ec17d6330bf0",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

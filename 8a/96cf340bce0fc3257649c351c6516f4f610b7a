@@ -1,0 +1,24 @@
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_c17a703235ee71 114-117,121-133
+  s_60a20469ef4369::t_1f5bf23a93036a 16-18,23-25
+  s_60a20469ef4369::t_b7e50d34beb441 44-47
+  s_60a20469ef4369::t_02a31c076d4e94 77,79-81,92-94
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_e19d84dc7ba6f7 308,313,320
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "8a96cf340bce0fc3257649c351c6516f4f610b7a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+wave-model-governance/catalog/RECEIPTS-rebench-2026-08-22.md
+  s_9e432dc94c73ad::t_9b0020e1a09a01 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "075bbb663ec029c1cf151011a88bc7a2dfe343da",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

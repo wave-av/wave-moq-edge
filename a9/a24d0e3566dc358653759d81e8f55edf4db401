@@ -1,0 +1,51 @@
+governance/lib/pr-read-watermark.mjs
+  s_f126fb3b7cae07::t_bcd5b6345245cc 1-103
+governance/bin/pr-head-drift.mjs
+  s_f126fb3b7cae07::t_b48cf381045f52 1-139
+governance/lib/pr-head-drift.mjs
+  s_f126fb3b7cae07::t_7baf8ebbdb1bf3 1-121,123-148,150-188
+  s_f126fb3b7cae07::t_74f5a655867fc6 149
+  s_f126fb3b7cae07::t_4d4c29a5cb014f 122
+governance/test/pr-head-drift.test.mjs
+  s_f126fb3b7cae07::t_2318ce4c6bab46 269
+  s_f126fb3b7cae07::t_73e45051da8da5 1-12,17-85,89-118,121-125,128-130,135-171,174-186,188-195,197-256,260-268,270-275
+  s_f126fb3b7cae07::t_5add964bc9b407 257-259
+  s_f126fb3b7cae07::t_4617f1925045cc 14-16,126,132-133
+  s_f126fb3b7cae07::t_ee4744ef84f61c 13,86-88,119-120,127,131,134,172-173,187,196
+rules/hold-pr-head-stable-during-review.md
+  s_f126fb3b7cae07::t_af3a14f7c3cddb 23-33
+  s_f126fb3b7cae07::t_68671a1ac6e508 39
+hooks/pr-head-drift-advisory.sh
+  s_f126fb3b7cae07::t_16dbafdd74eaf3 1-50
+settings/settings.base.json
+  s_f126fb3b7cae07::t_39bef9c1ab4eba 321-323
+  s_f126fb3b7cae07::t_ab21ceac0af4e7 319-320
+governance/DASHBOARD.md
+  s_f126fb3b7cae07::t_f9d8bd13c62375 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_f126fb3b7cae07::t_6a65bc04aec2bd 423
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_5b7670d56d6308 5,2214-2224,4090-4113
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_5f39ecccd3ca5d 9-10,12-13,19973-20060,35395-35592
+governance/graph.json
+  s_f126fb3b7cae07::t_dcd430c118276a 5487-5495,23122-23133
+hooks/manifest.json
+  s_f126fb3b7cae07::t_45344ccc96cc31 1030-1050
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a9a24d0e3566dc358653759d81e8f55edf4db401",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

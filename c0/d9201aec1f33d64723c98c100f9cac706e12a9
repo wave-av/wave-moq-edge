@@ -1,0 +1,21 @@
+helm/package.json
+  s_364605915bb7ec::t_d7a871009d9ff1 30-34
+helm/package-lock.json
+  s_364605915bb7ec::t_b9a60d305f99b2 1002-1024,3038-3040,6083-6085,6087,6089-6093,6096-6106,6110-6132,6134-6135,6137,6139,6169-6171,6175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c0d9201aec1f33d64723c98c100f9cac706e12a9",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

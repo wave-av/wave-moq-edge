@@ -1,0 +1,23 @@
+.claude/skills/computer-and-browser-use/references/redaction-vectors.mjs
+  s_9bb1b1d1d998d4::t_c22f609af02789 160-164
+  s_9bb1b1d1d998d4::t_fcef963ea7dea0 86-101
+  s_9bb1b1d1d998d4::t_fdcc219235812b 1-85,102-132,135-146,152-159,165-173
+  s_9bb1b1d1d998d4::t_a7e5d72ff6c97b 133-134
+  s_9bb1b1d1d998d4::t_1e6fbbeea19446 147-151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ad2df053f3801b5f8252e72915e8d4463ef5a4a3",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+docs/superpowers/specs/2026-07-31-struggle-inference-pipeline-design.md
+  s_37e24b4d920e09::t_2ea3f57ffa21c1 79-84
+  s_37e24b4d920e09::t_81197212fb721d 161-164
+  s_37e24b4d920e09::t_5aa75669807fbb 118-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5e190bf723672aae9dffdc938e779e8614078267",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

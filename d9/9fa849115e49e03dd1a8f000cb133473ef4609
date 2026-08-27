@@ -1,0 +1,45 @@
+scripts/bugbot/review.py
+  ai_agent 216-218,530-532,675-676,825
+scripts/bugbot/loop.py
+  ai_agent 23-26,90-91
+scripts/bugbot/runtime.py
+  ai_agent 17,28-30
+scripts/bugbot/approve.py
+  ai_agent 39-40
+scripts/bugbot/bench.py
+  ai_agent 36
+tests/test_bugbot.py
+  ai_agent 248-249,484-511,574
+scripts/bugbot/knowledge/security_kb.json
+  ai_agent 53
+scripts/bugbot/com.wave.bugbot.plist
+  ai_agent 37-38,40,42
+scripts/bugbot/deps.py
+  ai_agent 43-44,46-47
+scripts/bugbot/harvest.py
+  ai_agent 30,141-144
+scripts/bugbot/apply.py
+  ai_agent 61-65,87-88
+.github/zizmor.yml
+  s_07acdfa7e3709a::t_8e378e508a2d6d 45-50
+scripts/bugbot/triage.py
+  ai_agent 53-59,64
+scripts/bugbot/learn.py
+  ai_agent 116-117,179-185,404-415
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "d99fa849115e49e03dd1a8f000cb133473ef4609",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

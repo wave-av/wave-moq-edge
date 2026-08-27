@@ -1,0 +1,21 @@
+governance/plans/wave-registry/RECEIPTS.md
+  s_53b49eff5b8c5d::t_4d6589f3d00b01 120-139
+governance/plans/wave-registry/artifacts/schema.sql
+  s_53b49eff5b8c5d::t_e42537fd8dab39 210-232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "71df115b1216b412a8dde47f535edc90a39d2ce2",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

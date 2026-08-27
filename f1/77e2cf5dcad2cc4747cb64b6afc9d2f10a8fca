@@ -1,0 +1,40 @@
+governance/plans/signal-flow/E2-REGISTRY-FOUR-RENDERINGS.md
+  s_6046880c148371::t_9f6ddcc8482ab0 2-15,20-25,30-36
+  s_6046880c148371::t_46138304eddb66 16-19
+  s_6046880c148371::t_2b8833533553d5 26-29
+  s_6046880c148371::t_9204645498ec55 1
+governance/plans/signal-flow/E1-VOICE-DOGFOOD.md
+  s_6046880c148371::t_8dad8992e54cad 16-19
+  s_6046880c148371::t_f8f2b44ede0164 26-29
+  s_6046880c148371::t_e0027ee78e5a86 2-15,20-25,30-36
+  s_6046880c148371::t_7dc72dc8611095 1
+governance/plans/signal-flow/NORTH-STAR.md
+  s_6046880c148371::t_9d8d6d07eca2b6 5-42
+  s_6046880c148371::t_7a398c9f90157a 2-4
+governance/plans/signal-flow/E3-PRODUCTIZE.md
+  s_6046880c148371::t_e4aa047466f2eb 26-29
+  s_6046880c148371::t_827a95e8367acc 16-19
+  s_6046880c148371::t_4c2d9d1ac8eed6 2-15,20-25,30-36
+  s_6046880c148371::t_52984cffe4d0d4 1
+governance/plans/signal-flow/E0-FOUNDATION.md
+  s_6046880c148371::t_64d0fd477bb452 2-13,18-23,28-34
+  s_6046880c148371::t_3a4fa9ba86c231 24-27
+  s_6046880c148371::t_abb71ee3885c80 14-17
+  s_6046880c148371::t_2af499899c9b76 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f177e2cf5dcad2cc4747cb64b6afc9d2f10a8fca",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

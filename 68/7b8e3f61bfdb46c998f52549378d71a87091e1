@@ -1,0 +1,38 @@
+governance/plans/wave-native-cutover/P1-CAPABILITY-PARITY-LEDGER.md
+  s_2f0cb877d2e310::t_2a7aa386661fe6 1-27,30-40,43-66
+  s_687f25daf83ced::t_38c06e2e4a7255 41-42
+  s_687f25daf83ced::t_81a58466dda7f0 29
+  s_16513c8507cec2::t_055a0a157f36b7 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "687b8e3f61bfdb46c998f52549378d71a87091e1",
+  "prompts": {},
+  "sessions": {
+    "s_16513c8507cec2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fce63de8dffeTM50DZYVhvL8lu",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_2f0cb877d2e310": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fce932dadffe1BDlMT9T4TFwL6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_687f25daf83ced": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fce570b25ffeKowg0pQjSblVYS",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

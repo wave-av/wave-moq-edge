@@ -1,0 +1,21 @@
+tests/test_bugbot.py
+  s_07acdfa7e3709a::t_25f9a83a882dc2 546-547,550-553,555-556,568
+tests/_bbharness.py
+  s_07acdfa7e3709a::t_ef08e902176660 32,35-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0dea1f82a13166f49d2f66c7de2ae2dc600dccf4",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

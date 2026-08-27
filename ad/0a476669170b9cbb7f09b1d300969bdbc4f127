@@ -1,0 +1,35 @@
+hooks/lib/config-mode-assertion.mjs
+  s_37d3f61160b2dd::t_dcacecda31781e 1-107
+governance/test/config-mode-assertion.test.mjs
+  s_37d3f61160b2dd::t_8d227ffc7439df 1-20,22-185,187-255
+  s_37d3f61160b2dd::t_eb5381378b39c4 21
+  s_37d3f61160b2dd::t_b96419a5597f08 186
+settings/settings.base.json
+  s_37d3f61160b2dd::t_407235b391f153 644-646
+  s_37d3f61160b2dd::t_200a31344e976a 642-643
+hooks/config-mode-assertion.mjs
+  s_37d3f61160b2dd::t_23b8bf2285d959 46
+  s_37d3f61160b2dd::t_2928dfb4e14ce5 1-45,47-135
+governance/ENFORCEMENT-COVERAGE.md
+  s_37d3f61160b2dd::t_27b17f56f89c54 485
+hooks/data/credential-config-modes.json
+  s_37d3f61160b2dd::t_41dab154696e72 1-15
+hooks/manifest.json
+  s_37d3f61160b2dd::t_d7a32a7f0e6ee1 385-405
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ad0a476669170b9cbb7f09b1d300969bdbc4f127",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

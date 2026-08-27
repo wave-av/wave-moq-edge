@@ -1,0 +1,25 @@
+governance/bin/enforcement-tables.mjs
+  s_96280c922a9418::t_f45062452d93ce 50-55
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_fee8b7f5be14f2 9-10,452
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_5815ed39244681 909-915,917
+governance/code-index/index.json
+  s_96280c922a9418::t_757d6112117743 8238-8240,8248-8249,8259-8260,8270-8271,8281-8282,8292-8293,8303-8304,8325-8326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "af2d7d0e3785a5d03a737e530a614dc2a695ed00",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

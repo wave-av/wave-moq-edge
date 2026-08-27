@@ -1,0 +1,25 @@
+governance/test/ci-surface.test.mjs
+  s_cd907ba81b3e20::t_eb248916bfeb3e 143
+  s_cd907ba81b3e20::t_e227e6d74f4258 124
+governance/lib/drill-fixtures-stub-finder.mjs
+  s_cd907ba81b3e20::t_61697d10b455a6 1-61
+governance/lib/drill-registry.mjs
+  s_cd907ba81b3e20::t_0dd3553803db4b 225
+  s_cd907ba81b3e20::t_b343ec398da54b 61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a3bbdeede56ae66e294fa921b4140a3487120b12",
+  "prompts": {},
+  "sessions": {
+    "s_cd907ba81b3e20": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc51827baffeoNzD0eLWlgbhVb",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

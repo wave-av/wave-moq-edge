@@ -1,0 +1,21 @@
+agents/spoke-dev.md
+  s_85d9e5f433b9aa::t_3fbd29875a7c83 21
+plugins/wave-agents/agents/spoke-dev.md
+  s_85d9e5f433b9aa::t_4a79ed18339a90 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9007b0a2777db7334e41929ecc17b79c3cda30e9",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

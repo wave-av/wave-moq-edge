@@ -1,0 +1,46 @@
+hooks/hooklib/secret-patterns.sh
+  s_63c6ee080d73c3::t_195d7738406505 1-92
+settings/settings.base.json
+  s_63c6ee080d73c3::t_84e0534070c849 177-183
+  s_63c6ee080d73c3::t_900a68ed63cf00 174-176
+hooks/bash-output-secret-scan.sh
+  s_63c6ee080d73c3::t_8b538818b4be54 1-68
+hooks/tests/bash_output_secret_scan_smoke.sh
+  s_63c6ee080d73c3::t_8fb6c9a815ba55 8-15,31-33
+  s_63c6ee080d73c3::t_a080d8a0a0ebb2 1-7,16-30,34-49,57-86
+  s_63c6ee080d73c3::t_3b0b97ae065819 50-56
+hooks/secret-leak-scan.sh
+  s_264ae386838c57::t_dafc86106a2cb4 21-24,26
+governance/DASHBOARD.md
+  s_63c6ee080d73c3::t_828ea0f2b0eaff 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_63c6ee080d73c3::t_13e3bae9713e22 468,482
+governance/graph.json
+  s_63c6ee080d73c3::t_cec85986e6d30a 6974-6982,26990-27001
+hooks/manifest.json
+  s_63c6ee080d73c3::t_881f2e381eb241 82-102,1353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c47e94abbece3a9043dbd50a55b54db037de67ee",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

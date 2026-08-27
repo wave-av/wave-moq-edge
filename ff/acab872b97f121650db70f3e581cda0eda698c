@@ -1,0 +1,21 @@
+bin/factory-audit.mjs
+  s_7ddeb5d251570f::t_aec989561c634b 143-171
+bin/model-lifecycle.mjs
+  s_7ddeb5d251570f::t_da7572753b7b47 34,36,50-54,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ffacab872b97f121650db70f3e581cda0eda698c",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

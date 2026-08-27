@@ -1,0 +1,23 @@
+governance/lib/work-nodes.mjs
+  s_cf363a68d60e93::t_1d26cb97b556f2 31
+  s_cf363a68d60e93::t_59e580a5be2aea 73
+  s_cf363a68d60e93::t_162d006363311e 27-30,32
+governance/test/work-nodes.deps.test.mjs
+  s_cf363a68d60e93::t_c75fc59c88727b 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d343c981c41ca4078007fc8e78bb6c8f88608268",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

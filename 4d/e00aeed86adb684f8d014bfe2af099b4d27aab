@@ -1,0 +1,21 @@
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_9f5f4d9edcf084 125-145,150-151
+hooks/tests/wrangler-deploy-gate-evasion.test.sh
+  s_d9915bbafa9657::t_e741c9c5be2b6f 88-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4de00aeed86adb684f8d014bfe2af099b4d27aab",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

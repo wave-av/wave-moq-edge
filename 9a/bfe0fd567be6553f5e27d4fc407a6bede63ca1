@@ -1,0 +1,25 @@
+governance/lib/wave-cost-ledger-cloudflare-usage-rows.mjs
+  s_2e30bff6169f7a::t_24c04034d4f284 11-15,30,32,68-76,81,102-105,114-120,124
+governance/test/wave-cost-ledger-cloudflare-usage-rows.test.mjs
+  s_2e30bff6169f7a::t_9f2cf34096d7bb 49,55-69,74
+  s_2e30bff6169f7a::t_fdb835a9b73dbd 89-115
+  s_2e30bff6169f7a::t_c891afbaf137cb 177-216
+governance/lib/wave-cost-ledger-cloudflare-usage-datasets.mjs
+  s_2e30bff6169f7a::t_9bbe38947f5829 1-262
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9abfe0fd567be6553f5e27d4fc407a6bede63ca1",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

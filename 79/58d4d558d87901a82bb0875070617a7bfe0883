@@ -1,0 +1,31 @@
+scripts/check-claude-config.sh
+  s_19c8e603d8990b::t_65c779c1fc6a44 43
+  s_19c8e603d8990b::t_0410dbfa3d0263 1-42,44-67
+.github/workflows/checks.yml
+  s_19c8e603d8990b::t_7fd8a63a0b7666 62
+  s_19c8e603d8990b::t_a0280ca387b28d 86
+  s_19c8e603d8990b::t_990ee7dfef1d84 14-22
+  s_19c8e603d8990b::t_cbdea40fe6a288 61,63-85,87-96
+scaffolder/templates/.claude/settings.json
+  s_19c8e603d8990b::t_97fa39c2c83fed 1-16
+.github/.claude-governance-allow
+  s_19c8e603d8990b::t_4184e4fa042516 1-4
+scaffolder/templates/.claude/README.md
+  s_19c8e603d8990b::t_df57f95f0a51c6 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "7958d4d558d87901a82bb0875070617a7bfe0883",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

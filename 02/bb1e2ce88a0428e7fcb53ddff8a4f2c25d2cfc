@@ -1,0 +1,29 @@
+.gitignore
+  s_27c3f37c99074f::t_fa920754ff6e9b 101-106
+governance/test/claude-code-release-watch.test.mjs
+  s_27c3f37c99074f::t_14a194148a6798 1-86
+governance/bin/claude-code-release-watch.mjs
+  s_27c3f37c99074f::t_4b332d9813edc3 1-170
+governance/state/claude-code-release-watch.json
+  s_27c3f37c99074f::t_1fd6733c7d98bb 1-4
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  s_27c3f37c99074f::t_520be28625cb12 13-15,20-21,26-36
+.github/workflows/claude-code-release-watch.yml
+  s_27c3f37c99074f::t_5bffc266cf41ef 1-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "02bb1e2ce88a0428e7fcb53ddff8a4f2c25d2cfc",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

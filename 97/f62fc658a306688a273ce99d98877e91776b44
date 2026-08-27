@@ -1,0 +1,21 @@
+tests/test_bugbot_shiftleft.py
+  s_3a52a0989b58af::t_c114467ab7d2b3 1-63
+tests/test_bugbot.py
+  s_3a52a0989b58af::t_bcffe21d6d638e 767-768,776
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "97f62fc658a306688a273ce99d98877e91776b44",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

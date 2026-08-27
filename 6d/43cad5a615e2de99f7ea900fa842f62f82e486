@@ -1,0 +1,29 @@
+governance/plans/entire-integration/RECEIPTS.md
+  s_32a30bff8591e9::t_8c24e6474bb7ba 60-87
+governance/plans/entire-integration/E2-FIRST-WAVE.md
+  s_9041cf1cf1ccad::t_9215e7dbc2bf0d 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6d43cad5a615e2de99f7ea900fa842f62f82e486",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

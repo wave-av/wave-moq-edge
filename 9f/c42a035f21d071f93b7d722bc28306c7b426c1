@@ -1,0 +1,91 @@
+.github/workflows/namespace-release-watch.yml
+  s_15127d80763110::t_4ccd473fd36056 1-117
+.github/workflows/wave-sec-gate.yml
+  s_15127d80763110::t_19bc22c5b3bd4a 24-27,29-39,41,103-114,132-137
+.gitignore
+  s_15127d80763110::t_ebd6adcc6b8478 100-105
+docs/WAVE-SEC-GATE.md
+  s_15127d80763110::t_3a7fec3b3f1546 1-112
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_a937269291f5b5 25
+governance/bin/namespace-release-watch.mjs
+  s_15127d80763110::t_9d05a1b0f51d8e 1-217
+governance/graph.json
+  s_15127d80763110::t_0f3b14c9ce8640 2450-2452,2637-2727,3664-3676,18023-18028,18053-18064,18803-19162
+governance/lib/vendor-bundle.mjs
+  s_15127d80763110::t_5cce73419d2e82 1-112
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_15127d80763110::t_7f95c3cdba4972 219-224,227-231,233-234
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_15127d80763110::t_bd801fe5ce76fc 27-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_15127d80763110::t_f2b436f579ceed 4-85,91-141,143-149,151,154-155,157-159,161-162,164-165,167,170-177,179-279,282-297,299,302-307,310-311,316-322,326-328,331-345,347-351
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_15127d80763110::t_20b9667b9230c8 4-62,65-74,77-79,82-93,95-98,100-121,123,127-137,140-142,144,146-182,184-203,205-218,220-238,240-244
+governance/plans/ambient-console-auth/E1-DECISION.md
+  s_15127d80763110::t_9b4007f105d62a 1-76
+governance/plans/ambient-console-auth/E2-GATEWAY-MINT.md
+  s_15127d80763110::t_e051821555f069 1-102
+governance/plans/ambient-console-auth/E3-CONSOLE-BROKER.md
+  s_15127d80763110::t_573751f1bbf55e 1-93
+governance/plans/ambient-console-auth/E4-PAGE-CUTOVER.md
+  s_15127d80763110::t_b07ac39868f66a 1-89
+governance/plans/ambient-console-auth/E4B-KEYS-REFRAME.md
+  s_15127d80763110::t_9850d43b3bdd59 1-82
+governance/plans/ambient-console-auth/E5-PROOF.md
+  s_15127d80763110::t_ccda0ff800b8a1 1-73
+governance/plans/ambient-console-auth/NORTH-STAR.md
+  s_15127d80763110::t_a2492b561c2a65 1-321
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_15127d80763110::t_633904f74224f5 4-11,86-87,96-98
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_d9915bbafa9657::t_e90acd225b818a 80-85
+governance/plans/ffmpeg9-lei/action/E10-P1-RECEIPT-SCHEMA.md
+  s_15127d80763110::t_8a82cfbbe2f1c7 1-319
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_15127d80763110::t_4517ba86a18a5b 1-196
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_15127d80763110::t_b4bb9869294c5d 956-974
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_15127d80763110::t_da1c5795689462 8-13,15-21,27,34,36-40,69-95,104-113,120-139,150-167,171-172,177-193,208-218,247-261,269,276,280,287-288,298-325,331-351
+governance/state/namespace-release-watch.json
+  s_15127d80763110::t_7375d5d2835ad7 1-13
+governance/test/namespace-release-watch.test.mjs
+  s_15127d80763110::t_0e50df2144ea1d 1-126
+governance/test/vendor-bundle.test.mjs
+  s_15127d80763110::t_1850b1d5d6c9a4 1-125
+governance/vendor-bundles/public-repo-guard.json
+  s_15127d80763110::t_862eb2c356000b 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9fc42a035f21d071f93b7d722bc28306c7b426c1",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

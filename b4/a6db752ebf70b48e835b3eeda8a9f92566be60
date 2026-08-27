@@ -1,0 +1,33 @@
+governance/research/creator-intelligence/GOVERNANCE-AUDIT-2.md
+  s_8a555a19781a64::t_00672b3d07a359 1-128
+governance/tools/rca-triage/bin/rca-triage.mjs
+  s_aaea93b571a2f9::t_f145ec57ec9dce 75
+governance/tools/smart-error/bin/smart-error.mjs
+  s_aaea93b571a2f9::t_1b5bde676d0108 13
+governance/tools/time-lapse-store/bin/timelapse.mjs
+  s_aaea93b571a2f9::t_bcee9ab434321a 61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b4a6db752ebf70b48e835b3eeda8a9f92566be60",
+  "prompts": {},
+  "sessions": {
+    "s_8a555a19781a64": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00313d729ffe2s7J1hPHuVDK1z",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_aaea93b571a2f9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_003172948ffeACcDqXNDpIg3OJ",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

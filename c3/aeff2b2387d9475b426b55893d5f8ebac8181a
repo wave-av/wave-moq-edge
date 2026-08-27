@@ -1,0 +1,26 @@
+governance/tools/wave-registry/wave-registry.mjs
+  s_c41a97572d8bbc::t_2785899276e1b4 64-68
+  s_c41a97572d8bbc::t_10ad9f5aa3949a 26
+  s_c41a97572d8bbc::t_e8808f6ed3951c 335-424
+  s_c41a97572d8bbc::t_656cc459fd81b1 135-137
+  s_c41a97572d8bbc::t_3b284e53052335 523-524
+  s_c41a97572d8bbc::t_12cb8fa92d75a1 80
+.github/workflows/registry-cadence.yml
+  s_c41a97572d8bbc::t_239dd0ec24f605 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c3aeff2b2387d9475b426b55893d5f8ebac8181a",
+  "prompts": {},
+  "sessions": {
+    "s_c41a97572d8bbc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd41cd02affePk27xUiOVwz4af",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

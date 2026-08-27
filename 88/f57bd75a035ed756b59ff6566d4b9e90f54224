@@ -1,0 +1,37 @@
+packages/spoke-chassis/tsconfig.json
+  s_15127d80763110::t_67061117c2e552 8
+packages/spoke-chassis/scripts/check-canon-drift.mjs
+  s_15127d80763110::t_06d75a3543bec7 1-61
+packages/spoke-chassis/test/tokens.css.test.mjs
+  s_15127d80763110::t_527b7f43b96c19 1-44
+packages/spoke-chassis/src/canon.json
+  s_15127d80763110::t_0ff4e141ba676e 1-47
+packages/spoke-chassis/src/shell.ts
+  s_15127d80763110::t_275dcd6c933ecf 76-87
+  s_15127d80763110::t_92c2d1ef83a51a 45-51,55
+  s_15127d80763110::t_5c1b58e6bb2082 52-54
+  s_15127d80763110::t_7e2362af10bde5 11
+  s_15127d80763110::t_23da7efa1a43b1 124
+packages/spoke-chassis/package.json
+  s_15127d80763110::t_8b9c2d5080401f 27
+packages/spoke-chassis/test/shell-canon.test.mjs
+  s_15127d80763110::t_06621aca4a8be4 1-38
+packages/spoke-chassis/src/tokens.css.ts
+  s_15127d80763110::t_ffb0111360adb7 15-24,27-28,31-42,54-59,61-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "88f57bd75a035ed756b59ff6566d4b9e90f54224",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

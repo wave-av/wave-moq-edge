@@ -1,0 +1,19 @@
+.github/workflows/ci-canary-blacksmith.yml
+  s_cf3356a24071e8::t_876321e2c4dcfc 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "0b1a35ccc5a3ab4d7a63e93b4c939ea0e8383a81",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

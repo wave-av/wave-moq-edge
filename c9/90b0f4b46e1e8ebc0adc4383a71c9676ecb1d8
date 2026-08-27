@@ -1,0 +1,51 @@
+governance/agents/TAXONOMY.yaml
+  s_124891ed63801b::t_a537e44a58ef32 272-282,289-294
+governance/bin/taxonomy.mjs
+  s_124891ed63801b::t_7cd8889acae830 5-8,42-70,75-118,257-275,331-349,362
+governance/package.json
+  s_124891ed63801b::t_e01e0256db6401 3
+governance/plans/brand-recycle/comps/studio-pages-v1.html
+  s_124891ed63801b::t_b5cc94b5022246 1-790
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_124891ed63801b::t_9cbf0dadc6c6ea 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_124891ed63801b::t_6e8e56a3e7af4b 1-181
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_124891ed63801b::t_14fabc13cb7860 5-6,52-56,64,77,79,81-83
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_79e8a080d5e96e 64-65
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_124891ed63801b::t_a81aa810406811 112-171
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_124891ed63801b::t_75f48887221da2 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_124891ed63801b::t_e1d12c5d1ccdfd 318-355,423-528
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_124891ed63801b::t_98f4c9ac2e4ef5 1-90
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_124891ed63801b::t_3ac76da9797d84 399,437-438,441-487
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_124891ed63801b::t_eccef0edc60477 4,8-14,57,60-61,96-109,112-127
+governance/test/taxonomy.test.mjs
+  s_124891ed63801b::t_1545d2fd990dec 8,11,186-319
+governance/DASHBOARD.md
+  s_124891ed63801b::t_2d6aef24ca59f9 25
+governance/graph.json
+  s_124891ed63801b::t_ff2b8ff54cae6b 3508-3520,21005-21028
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c990b0f4b46e1e8ebc0adc4383a71c9676ecb1d8",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

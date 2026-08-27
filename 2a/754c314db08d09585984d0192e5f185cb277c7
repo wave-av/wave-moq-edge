@@ -1,0 +1,27 @@
+governance/tools/effect-lens/lib/index.mjs
+  s_ea7fda6a228496::t_138b763c641606 175,194-199,201-208,225-227
+  s_ea7fda6a228496::t_16032effb952ec 237
+  s_ea7fda6a228496::t_2c5c04975d4969 228
+governance/tools/effect-lens/examples/mux-drift-observations.json
+  s_ea7fda6a228496::t_2335112a48e556 1-11
+governance/tools/effect-lens/tests/effect-lens.test.mjs
+  s_ea7fda6a228496::t_c68d12e304f19b 69-81
+governance/tools/effect-lens/bin/effect-lens.mjs
+  s_ea7fda6a228496::t_10f1544952b2c7 70-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2a754c314db08d09585984d0192e5f185cb277c7",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

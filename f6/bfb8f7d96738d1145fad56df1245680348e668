@@ -1,0 +1,24 @@
+governance/plans/reviewer-fleet/E5-MONITORING.md
+  s_941b8f0612ec3e::t_5cb558a6eba332 103-110
+  s_941b8f0612ec3e::t_18dcade340ed06 4-8
+  s_941b8f0612ec3e::t_72b3fe83f6309f 66-99
+  s_941b8f0612ec3e::t_307796b5bb4277 62-65
+governance/graph.json
+  s_941b8f0612ec3e::t_05e96fbfffb67c 8651,34144,34146,34150,34152,34156,34158-34164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f6bfb8f7d96738d1145fad56df1245680348e668",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+hooks/tests/wrangler-deploy-gate.matrix.test.sh
+  s_7e3e50fa23978e::t_f6303090b96649 4-7
+  s_7e3e50fa23978e::t_f8d17186bb01bd 1-3
+  s_7e3e50fa23978e::t_bc1d78d0688da7 8-10
+  s_7e3e50fa23978e::t_aca6f3a86e1bc6 11-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "fa87076da24862931f1969cc698873d23a67d20f",
+  "prompts": {},
+  "sessions": {
+    "s_7e3e50fa23978e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5c4389db-33e9-4332-aea2-5545d85cbdeb",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+memory/runpod-uplevel-plan.md
+  s_8af4028370359f::t_f204f3d42fb0af 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "217ea24926b991d970f03e6530f1f1a0a376c537",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/bin/reversible-store.mjs
+  s_dccee6b7677203::t_0e70f053db147a 83-90,92-93,98-114,116-122
+governance/test/reversible-store.test.mjs
+  s_dccee6b7677203::t_fede153eef7db7 6,100-155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fec04adfc1959ae2dfef54b13d25403df030bb16",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

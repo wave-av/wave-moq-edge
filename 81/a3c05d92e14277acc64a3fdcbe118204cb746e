@@ -1,0 +1,23 @@
+.github/workflows/checks.yml
+  s_cf3356a24071e8::t_99e10b26e1e0f1 138-154
+scripts/gate-scope-conformance.mjs
+  s_cf3356a24071e8::t_1628bd8c9a1366 1-278
+scripts/gate-scope-conformance.test.mjs
+  s_cf3356a24071e8::t_33b5f323d168b0 1-210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "81a3c05d92e14277acc64a3fdcbe118204cb746e",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

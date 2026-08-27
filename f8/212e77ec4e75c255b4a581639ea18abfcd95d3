@@ -1,0 +1,25 @@
+governance/lib/merge-path-parity.mjs
+  s_c24357e71ae5bc::t_d74407053d9999 279-283
+  s_c24357e71ae5bc::t_e6fcc6f3a92a74 161-185,189,192-199,203-206
+  s_c24357e71ae5bc::t_03a850da8fe491 237,248
+governance/test/merge-path-parity.test.mjs
+  s_c24357e71ae5bc::t_4d859639e6d3ae 156-202
+governance/merge-path-parity.json
+  s_c24357e71ae5bc::t_6126f7b51208e3 15-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f8212e77ec4e75c255b4a581639ea18abfcd95d3",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

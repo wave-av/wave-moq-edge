@@ -1,0 +1,37 @@
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_aad44a281c65f4 8,25
+governance/bin/branch-state-scan.mjs
+  s_375efeac18ed55::t_89f02d58043f1b 1-176
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_904376b8286ff9 5,156-177
+governance/code-index/index.json
+  s_375efeac18ed55::t_792a5679d06e13 6-7,9-10,1433-1652
+governance/graph.json
+  s_375efeac18ed55::t_2a91a822ee1a96 4140-4148,4266-4274,16379-16390,16559-16570
+hooks/branch-truth-ambient.sh
+  s_375efeac18ed55::t_ff64fde4dc2fbb 1-52
+hooks/manifest.json
+  s_375efeac18ed55::t_cbc155bed3fc77 68-96,681-701
+hooks/parked-tree-read-advisory.sh
+  s_375efeac18ed55::t_3e379475546adf 1-121
+hooks/tests/parked_tree_read_smoke.sh
+  s_375efeac18ed55::t_52bfc40002e227 1-140
+settings/settings.base.json
+  s_375efeac18ed55::t_2053519a802f1c 273-277,368-372,405-409
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c1d7184875c6b0c61eeb80081b7c689c033c65af",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

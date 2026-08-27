@@ -1,0 +1,21 @@
+hooks/tests/ask-via-askuserquestion.test.sh
+  s_d9915bbafa9657::t_48aa76e11d5f6c 128-141
+hooks/ask-via-askuserquestion.py
+  s_d9915bbafa9657::t_1e4a21a0ccebcb 172-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5677da04dc56aeb38fe9240d586620d80c6cefbc",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

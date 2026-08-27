@@ -1,0 +1,23 @@
+.github/workflows/unearned-approval-guard.yml
+  s_0227926428e4b1::t_59826079d8e8f1 5-7,9-14,16-20,152-153
+docs/unearned-approval-guard.md
+  s_0227926428e4b1::t_0097bf98599461 1-100
+governance/test/unearned-approval-guard-doc.test.mjs
+  s_0227926428e4b1::t_77be08a9e9bc3a 1-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b8a182379607dbc66130add11708bff4f8a3132f",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

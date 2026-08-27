@@ -1,0 +1,24 @@
+governance/bin/check.mjs
+  s_63c6ee080d73c3::t_7bd05b5c13563e 31-32,42
+  s_63c6ee080d73c3::t_1c5793434ab416 62-63
+  s_63c6ee080d73c3::t_282b06dc06df5c 73-74
+  s_63c6ee080d73c3::t_d10571bddc6bda 100-113,116
+  s_63c6ee080d73c3::t_80ecfc517af7cf 21-30,35-41,43-56
+  s_63c6ee080d73c3::t_a57b8e242b7980 84-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b96bd0dd61103269a7494731d70e23a0d259e77b",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

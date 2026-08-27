@@ -1,0 +1,36 @@
+governance/bin/plugin-home-repo-drift.mjs
+  s_d9915bbafa9657::t_24a160cc33d59d 160,169,173-196,204,210-220
+  s_d9915bbafa9657::t_395217b31ba061 26,28-47
+  s_d9915bbafa9657::t_9e6fff18bf77d9 282-285
+  s_d9915bbafa9657::t_1531487e59b9f1 304-313
+governance/test/plugin-home-repo-drift.test.mjs
+  s_d9915bbafa9657::t_d0ff498121acaf 56-60
+  s_d9915bbafa9657::t_db78bd8735cfed 114-116,118,124-136,140-141,149,152,156,160-175
+  s_d9915bbafa9657::t_5f91d95f6c77f6 207,209-210
+  s_d9915bbafa9657::t_310dc2cf765675 176,193-196,202-206,208
+  s_15127d80763110::t_a3f2cbde63d73c 23,177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "78a9e809bc3860b4778817526a38602baa502267",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

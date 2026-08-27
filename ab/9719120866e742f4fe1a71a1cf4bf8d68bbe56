@@ -1,0 +1,25 @@
+hookcli/tests/stdin-sigpipe.sh
+  s_02abc74f4971c7::t_2119f98f417fb0 1-72
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_69a1b9a901c4ba 113-119
+hookcli/lib/session-exec.sh
+  s_02abc74f4971c7::t_85bdd1fe7cdc24 23-33
+hookcli/tests/fixtures/agg-plain.sh
+  s_02abc74f4971c7::t_8b81329b39b623 5-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "ab9719120866e742f4fe1a71a1cf4bf8d68bbe56",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/bin/plugin-home-repo-drift.mjs
+  s_c24357e71ae5bc::t_b722b20b3cd69e 59,279-281
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "496556a602a6ed741c050e573a584e0a40eb4ef2",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

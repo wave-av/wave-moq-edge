@@ -1,0 +1,21 @@
+bin/model-eval.mjs
+  s_7ddeb5d251570f::t_347c2e387541dd 263
+  s_7ddeb5d251570f::t_d5bfb42a63a394 222-225,227-231
+  s_7ddeb5d251570f::t_f3d4d6ecf78e25 171-192,194-199,205
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "95f417da32f74123d73dae0406fa383b8eb38d98",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

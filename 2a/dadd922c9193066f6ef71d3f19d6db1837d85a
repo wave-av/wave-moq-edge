@@ -1,0 +1,34 @@
+governance/lib/drill-fixtures-closure-audit.mjs
+  s_63c6ee080d73c3::t_dec1aa513ba6b3 1-80
+governance/bin/gate-liveness-drill.mjs
+  s_63c6ee080d73c3::t_cca9d5a5a7d879 64-65
+  s_63c6ee080d73c3::t_09f3d24224dfb5 71
+  s_63c6ee080d73c3::t_8529202d6104ac 36
+governance/bin/closure-audit.mjs
+  s_63c6ee080d73c3::t_41411784f0f80d 28-29
+  s_63c6ee080d73c3::t_70e5c7d09167ef 308-326
+  s_63c6ee080d73c3::t_0ed002ec5f3fd5 221-225,227-235
+  s_63c6ee080d73c3::t_ebcd2e37871cbb 266-268
+  s_63c6ee080d73c3::t_e3c73f977fca1f 37
+  s_63c6ee080d73c3::t_31325cce8703a0 35
+governance/code-index/CATALOG.md
+  s_63c6ee080d73c3::t_47a0f776f9f80d 5,498-516,1620-1627,3882-3888
+governance/code-index/index.json
+  s_63c6ee080d73c3::t_124064ae0fb052 9-10,12-13,4562-4737,14479-14480,14490-14493,14501-14502,14512-14513,14523-14524,14534-14535,14545-14546,14556-14557,33998-34041
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2adadd922c9193066f6ef71d3f19d6db1837d85a",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

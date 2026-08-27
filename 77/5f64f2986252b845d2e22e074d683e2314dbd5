@@ -1,0 +1,19 @@
+governance/test/platform-status-probe-coupling.test.mjs
+  s_9bb1b1d1d998d4::t_dc9e03ab79011c 116-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "775f64f2986252b845d2e22e074d683e2314dbd5",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.githooks/pre-push
+  s_32a30bff8591e9::t_dbc2ca290318ed 2-28
+.entire/redactors/wave.json
+  s_32a30bff8591e9::t_7ceb97a66e8a58 3-4,34
+.entire/settings.json
+  s_32a30bff8591e9::t_7971f76922622a 24
+  s_32a30bff8591e9::t_1b1fbf7568171c 2-4,20
+  s_32a30bff8591e9::t_fd7a4d61943167 1,25
+  s_32a30bff8591e9::t_9510b6c690ef93 5-19,21-23
+.entire/.gitignore
+  s_32a30bff8591e9::t_424d0e2ee579b6 1-5
+  s_32a30bff8591e9::t_6421b4e230047a 6
+governance/plans/entire-integration/E4-GATES.md
+  s_c6f8ac8a8d4078::t_c1087954e9a950 4
+governance/plans/entire-integration/RECEIPTS.md
+  s_c6f8ac8a8d4078::t_b6d2600bbece18 152-173
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8f97c5fcf32051a199de58bc4d556cf116a5f7f5",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c6f8ac8a8d4078": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fff581662ffeexdXYCggXw1yG0",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

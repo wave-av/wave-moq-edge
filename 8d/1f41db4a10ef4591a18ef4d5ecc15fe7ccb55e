@@ -1,0 +1,66 @@
+governance/tools/plan-search-emit/manifests/agentic-wave.bad.json
+  s_0249be4121c1a0::t_92d0a4896f9a51 1-13
+governance/tools/equivalence-checker/manifests/mock-contract.json
+  s_d544a447855380::t_5710b011b4b94b 1-12
+governance/tools/cpa-scaffolding/manifests/methylation-attestation.json
+  s_2ab761d02174b1::t_67ad516508ecc8 1-7
+governance/tools/cpa-scaffolding/manifests/content-engine.json
+  s_2ab761d02174b1::t_6e72029171ce81 1-16
+governance/research/engineering-canon/origin-method.md
+  s_d544a447855380::t_c2747b661dcb8e 176-194
+governance/tools/plan-search-emit/manifests/agentic-wave.good.json
+  s_0249be4121c1a0::t_4a198852444254 1-33
+governance/plans/content-engine/NORTH-STAR.md
+  s_2ab761d02174b1::t_88d5030e0d4b48 48-54
+governance/tools/cpa-scaffolding/manifests/usage-meter.json
+  s_2ab761d02174b1::t_ddc9b0b201e5e8 1-7
+governance/tools/equivalence-checker/manifests/composite-results.json
+  s_d544a447855380::t_10c5260e09afca 1-7
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_0249be4121c1a0::t_16bfced4fbd46d 138-143
+governance/tools/equivalence-checker/manifests/composite-contract.json
+  s_d544a447855380::t_f57d31b21df80d 1-12
+governance/tools/equivalence-checker/manifests/mock-results.json
+  s_d544a447855380::t_6a4c6b3d6ed628 1-7
+governance/tools/plan-search-emit/manifests/agentic-wave.json
+  s_0249be4121c1a0::t_e3e805b91a17c7 1-3,6-7
+  s_0249be4121c1a0::t_ed22a99837dc02 4-5
+governance/tools/equivalence-checker/manifests/container-results.json
+  s_d544a447855380::t_bcc8a0e7dd6d69 1-7
+governance/tools/equivalence-checker/manifests/container-contract.json
+  s_d544a447855380::t_52a0102ff4c4d9 1-12
+governance/tools/equivalence-checker/manifests/canon.json
+  s_d544a447855380::t_f4f5789855b033 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8d1f41db4a10ef4591a18ef4d5ecc15fe7ccb55e",
+  "prompts": {},
+  "sessions": {
+    "s_0249be4121c1a0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0025389e2ffelcguRqYCgws8ml",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2ab761d02174b1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002535842ffeaNf0L4IqrO34Gd",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d544a447855380": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002537af4ffe6hmSih2ddyf1Yv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

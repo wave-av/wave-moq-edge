@@ -1,0 +1,19 @@
+docs/superpowers/specs/2026-07-19-hookcli-sharded-settings-registration-design.md
+  s_60a20469ef4369::t_a7e07ce67ac979 1-195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "58c3774da8dab8227401f86b8e955b23934ffb89",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

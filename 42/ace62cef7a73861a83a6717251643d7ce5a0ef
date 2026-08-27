@@ -1,0 +1,27 @@
+governance/DASHBOARD.md
+  s_02abc74f4971c7::t_ea43421ec24200 25
+governance/ENFORCEMENT-COVERAGE.md
+  s_02abc74f4971c7::t_da2eb95bb924bb 11-12,14,390-394,396,400,408,429,453,475
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_379480033159dd 5,628-642,934-940,971,1751-1769,3737,4043-4046,4501-4512
+governance/code-index/index.json
+  s_02abc74f4971c7::t_574ef58f1d21c5 9-10,12-13,5728-5859,8451-8454,8462-8463,8473-8476,8479,8482,8484-8487,8490,8493,8495-8498,8506-8507,8517-8518,8786-8796,15722-15723,15733-15734,15744-15745,15755-15756,15766-15767,15777-15778,15788-15789,15799-15800,15810-15811,15821-15822,15832-15833,15843-15844,15854-15855,15865-15866,15876-15877,15887-15888,15898-15899,15909-15910,15920-15921,32817-32819,34944-34954,38563-38661
+hooks/manifest.json
+  s_02abc74f4971c7::t_00c7ca4a48f51b 526
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "42ace62cef7a73861a83a6717251643d7ce5a0ef",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

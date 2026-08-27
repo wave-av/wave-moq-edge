@@ -1,0 +1,27 @@
+governance/lib/rl-corpus-write.mjs
+  s_c2bb037074776b::t_1a069a423f020a 189
+  s_c2bb037074776b::t_2dee449617eddd 42-43
+  s_c2bb037074776b::t_8eb7803004b2b1 154-155,158
+governance/lib/rl-corpus-cross-field.mjs
+  s_c2bb037074776b::t_89c456986c0c34 1-85,90-98
+  s_c2bb037074776b::t_29b3f859679b26 86-89
+governance/test/rl-corpus-cross-field.test.mjs
+  s_c2bb037074776b::t_f4078887495180 1-97,99-102,107-126
+  s_c2bb037074776b::t_86e87933ed95f1 98,103-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f3e6c33b53d163df1e21f6d9c01bd96946294456",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

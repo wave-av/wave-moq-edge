@@ -1,0 +1,41 @@
+governance/tools/wave-registry/wave-registry.mjs
+  s_6841381992c8d9::t_66ac34b40ba53a 300-302,305
+  s_6841381992c8d9::t_e16c3b9131314b 1-112,114-299,303-304,306-362
+  s_0213641ac58af6::t_4af2be3e7547f2 113
+governance/tools/wave-registry/ingest-worker.mjs
+  s_8d178c4797cdc8::t_e4c5e8707e8698 1-137
+governance/tools/wave-registry/.gitignore
+  s_0213641ac58af6::t_7e666a76215fac 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0092e6f50b26b782cc652179802775fcc6d861ef",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6841381992c8d9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd9e4b9f5ffeVmv70iRI8GW34J",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8d178c4797cdc8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd9e49caeffeg6ooms6a0F9The",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+governance/tools/explanation-gate/manifests/laws/inference-by-effects.json
+  s_e58558a521c0fb::t_963312a11accfe 1-22
+governance/tools/explanation-gate/manifests/laws/origin-to-invariant.json
+  s_e58558a521c0fb::t_dd0d0c66939a6b 1-27
+governance/tools/explanation-gate/manifests/laws/origin-of-thought.json
+  s_e58558a521c0fb::t_2c1a73c41d0b7f 1-17
+governance/tools/explanation-gate/manifests/laws/noether-conservation.json
+  s_e58558a521c0fb::t_47cdd72801de95 1-22
+governance/tools/explanation-gate/manifests/laws/equivalence-abstraction.json
+  s_e58558a521c0fb::t_dc2f1bf8c28e03 1-17
+governance/tools/explanation-gate/manifests/laws/universal-representation.json
+  s_e58558a521c0fb::t_eb930f52717846 1-22
+governance/tools/explanation-gate/manifests/laws/text-as-presence.json
+  s_e58558a521c0fb::t_cbab8c5ce3e10c 1-22
+governance/tools/explanation-gate/manifests/laws/achievable-distribution.json
+  s_e58558a521c0fb::t_a9bb81fa819395 1-22
+governance/tools/explanation-gate/manifests/laws/distill-delete-grow.json
+  s_e58558a521c0fb::t_68c8fc473bfd44 1-22
+governance/tools/explanation-gate/manifests/laws/we-are-the-first-pilot.json
+  s_e58558a521c0fb::t_e727c43d2e71ae 1-22
+governance/tools/explanation-gate/manifests/laws/sage-not-magician.json
+  s_e58558a521c0fb::t_b7c2657b449e1f 1-22
+governance/tools/explanation-gate/manifests/laws/storage-routing.json
+  s_e58558a521c0fb::t_2c9094aa821ed2 1-22
+governance/tools/explanation-gate/manifests/laws/genome-epigenome.json
+  s_e58558a521c0fb::t_8e9461f6ee2bcf 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "01e77e83b13079b85ffd0409b4d8c544182d982e",
+  "prompts": {},
+  "sessions": {
+    "s_e58558a521c0fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002a16b2fffeTd0saIlVQHzuRs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

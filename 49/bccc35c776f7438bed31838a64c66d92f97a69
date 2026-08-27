@@ -1,0 +1,47 @@
+governance/bin/intent-ledger.mjs
+  s_364605915bb7ec::t_709d3a9beb2be9 300-315,317-318
+  s_364605915bb7ec::t_a66c726f433a95 320,322
+governance/test/board-sweep.test.mjs
+  s_364605915bb7ec::t_3b8ff78a142539 6
+  s_364605915bb7ec::t_f509b5165e51fe 69-85
+settings/settings.base.json
+  s_364605915bb7ec::t_8f1e0a247a141b 501-503
+  s_364605915bb7ec::t_25fc0cf3611ff2 499-500
+governance/bin/board-sweep.mjs
+  s_364605915bb7ec::t_82417480b50c6a 138-140
+  s_364605915bb7ec::t_2264cbea85bca8 40-49
+hooks/board-sweep-pulse.sh
+  s_364605915bb7ec::t_85f35322c1d747 1-17
+governance/code-index/CATALOG.md
+  s_bbfefcc4b3a83d::t_09526a7ed8dd07 5,96,102-112,1164-1165,1171,1173,1182,1190,1192,1194,1196
+governance/code-index/index.json
+  s_bbfefcc4b3a83d::t_dcdc071048bd97 7,9-10,813-815,878-879,889-890,900-901,911-914,922-923,933-934,944-945,955-956,960-981,988-989,11212-11233,11295-11296,11317-11318,11416-11417,11504-11505,11520-11530,11548-11551,11564-11574
+governance/graph.json
+  s_bbfefcc4b3a83d::t_acbe825d9e966b 4329-4336,16523-16534
+hooks/manifest.json
+  s_bbfefcc4b3a83d::t_7c4475b8aa4d9c 26-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "49bccc35c776f7438bed31838a64c66d92f97a69",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_bbfefcc4b3a83d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae0ca481143bd80e7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

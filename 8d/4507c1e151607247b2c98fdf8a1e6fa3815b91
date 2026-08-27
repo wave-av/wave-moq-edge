@@ -1,0 +1,23 @@
+governance/test/struggle-miner/fixtures/sample-transcript.jsonl
+  s_37e24b4d920e09::t_ffa1adec0abaeb 1-4
+tests/struggle_miner/test_collect_transcripts.py
+  s_37e24b4d920e09::t_093b2f766dbb88 1-26
+governance/bin/struggle-miner/collect-transcripts.py
+  s_37e24b4d920e09::t_4cb50d4064cfa1 1-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "8d4507c1e151607247b2c98fdf8a1e6fa3815b91",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+scripts/bugbot/disposition.py
+  s_3a52a0989b58af::t_c576a4fa16076e 256-257
+  s_3a52a0989b58af::t_cca09999050c6e 192-197,200,202-203,207-211,215,220-221,231-232,236-239,241
+tests/test_bugbot_flywheel.py
+  s_3a52a0989b58af::t_04c66bfd20129d 100-101,110-142,144-145
+  s_3a52a0989b58af::t_22d0062b1fa92d 26-28,37-41
+scripts/bugbot/CALIBRATION.md
+  s_3a52a0989b58af::t_3ad6d9d849da91 105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7c536f9f8c4a94421ac07bff96d86ed71e89d45b",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

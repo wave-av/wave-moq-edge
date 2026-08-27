@@ -1,0 +1,37 @@
+agents/lean-delegator.md
+  s_96280c922a9418::t_ae3cead97059ed 1-19
+agents/lean-scout.md
+  s_96280c922a9418::t_ff4e710b18e672 4
+governance/DASHBOARD.md
+  s_96280c922a9418::t_b3b52cf24d4e82 25
+governance/bin/model-router.mjs
+  s_96280c922a9418::t_c1e6e1eeb01a5f 51-62
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_94ea43994a92df 1835,1837,1840-1845
+governance/code-index/index.json
+  s_96280c922a9418::t_26bfc286aa345e 16542-16543,16564-16565,16597-16598,16608-16609,16619-16620,16630-16631,16642-16644,16652-16653
+governance/graph.json
+  s_96280c922a9418::t_f5508c07662fae 2219-2231
+governance/plans/NESTED-DISPATCH-ECONOMY.md
+  s_96280c922a9418::t_2452c872362fe6 1-198
+governance/test/model-router-enforce.test.mjs
+  s_96280c922a9418::t_3aed525f8863f7 60-63,65,109,113
+governance/test/model-router.test.mjs
+  s_96280c922a9418::t_7693bfa9a487f8 8,10-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fccc233e6e95a095f507c6378839938fdb205bb8",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

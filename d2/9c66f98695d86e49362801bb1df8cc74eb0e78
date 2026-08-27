@@ -1,0 +1,32 @@
+.github/workflows/content-watch.yml
+  h_91e57a3221f2ff 100,103-110,121-140,142
+.github/workflows/external-ticket-sweep.yml
+  h_91e57a3221f2ff 147-154,156
+governance/ENFORCEMENT-COVERAGE.md
+  h_91e57a3221f2ff 9-10,469
+governance/bin/enforcement-tables.mjs
+  h_91e57a3221f2ff 157-162
+governance/bin/workflow-lint-issue-dedupe.mjs
+  h_91e57a3221f2ff 1-73
+governance/bin/workflow-lint.mjs
+  h_91e57a3221f2ff 26-29,324
+governance/test/lib/workflow-lint-harness.mjs
+  h_91e57a3221f2ff 1-40
+governance/test/workflow-lint-issue-dedupe.test.mjs
+  h_91e57a3221f2ff 1-65
+governance/test/workflow-lint.test.mjs
+  h_91e57a3221f2ff 5-8,11-13
+rules/background-work-must-fail-loud.md
+  h_91e57a3221f2ff 52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d29c66f98695d86e49362801bb1df8cc74eb0e78",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

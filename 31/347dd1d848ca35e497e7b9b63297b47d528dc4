@@ -1,0 +1,66 @@
+governance/spikes/capnweb-spoke/test/run.mjs
+  s_7c7e203d305c60::t_958636e9ccaf3b 1-75
+governance/spikes/capnweb-spoke/src/scopes.ts
+  s_7c7e203d305c60::t_df5595d1cd84e0 61-68
+  s_7c7e203d305c60::t_856d63e2d5d488 112-151
+  s_7c7e203d305c60::t_ff5817e27ea75f 23,28-29,32
+  s_7c7e203d305c60::t_17fb1d8f611e08 50-60,71,74,77-101,103-104,107-109
+  s_7c7e203d305c60::t_7492e7221ba636 110-111
+governance/spikes/capnweb-spoke/src/meter.ts
+  s_7c7e203d305c60::t_c0807658b9a471 74-79,81-103,108,110-118,120-129
+  s_7c7e203d305c60::t_0406a16f4d35e2 138
+governance/spikes/capnweb-spoke/test/spike.test.mjs
+  s_7c7e203d305c60::t_454e714d36d469 172-189,198-199,201,203
+  s_7c7e203d305c60::t_e48ff8c286f355 21-35
+  s_7c7e203d305c60::t_bd603353419e15 171,190-197,200,202,204-226,231,235,237-238,254-255
+  s_7c7e203d305c60::t_1baea22a389b01 227-230,232-234,236,239-253
+  s_7c7e203d305c60::t_c40820bac532c7 256-275
+governance/spikes/capnweb-spoke/test/negproof.mjs
+  s_7c7e203d305c60::t_77eb602e4b4c57 15-22,27,29-31
+  s_7c7e203d305c60::t_be9d3eaa2e3870 1-14,23-26,28,32-47,63-71,73,75,78-79,82-86,88-95
+  s_7c7e203d305c60::t_966d394018b666 48-62
+  s_7c7e203d305c60::t_2e287eb0dcc7ee 72,74,76-77,80-81,87
+governance/spikes/capnweb-spoke/package.json
+  s_7c7e203d305c60::t_17e9b15e88e312 6,11-14
+governance/spikes/capnweb-spoke/tsconfig.json
+  s_7c7e203d305c60::t_dd441db3150fa7 13-19
+governance/spikes/capnweb-spoke/wrangler.jsonc
+  s_7c7e203d305c60::t_de53132d44cb4a 6-14
+governance/spikes/capnweb-spoke/test/negproof.ts
+  s_7c7e203d305c60::t_7dabdb532fa409 4-7
+governance/spikes/capnweb-spoke/README.md
+  s_7c7e203d305c60::t_9ec05511ada008 423-472,479,481,483-487
+  s_7c7e203d305c60::t_7dd2f774b2d364 279
+  s_7c7e203d305c60::t_cc2b0a315d9dba 316-333
+  s_7c7e203d305c60::t_7a7d5510516393 296-305,308-309
+  s_7c7e203d305c60::t_1811316698f763 310
+governance/spikes/capnweb-spoke/src/worker.ts
+  s_7c7e203d305c60::t_40ccabfdd95897 21
+  s_7c7e203d305c60::t_e427cbea43dca1 62-69
+  s_7c7e203d305c60::t_3f0375a98a9328 100-102
+  s_7c7e203d305c60::t_0b6964d0f4eb78 106-124,129-141
+  s_7c7e203d305c60::t_11ade528099586 143-172,174-177
+  s_7c7e203d305c60::t_7e799ead3b2dc1 180-184
+  s_7c7e203d305c60::t_924d9ba7960943 54-61
+  s_7c7e203d305c60::t_5522dfef90d303 142
+governance/spikes/capnweb-spoke/src/rpc.ts
+  s_7c7e203d305c60::t_7f36a213db583e 47,49,53,57-60
+  s_7c7e203d305c60::t_11340d61d1c077 31
+  s_7c7e203d305c60::t_8b0de7f4fdaa4f 103,105,109,115,117-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "31347dd1d848ca35e497e7b9b63297b47d528dc4",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

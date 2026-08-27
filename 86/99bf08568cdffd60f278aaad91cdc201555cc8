@@ -1,0 +1,24 @@
+governance/plans/network-edge-plane/ACTION-ITEMS.md
+  s_ea8755337f3c0d::t_a5b387bf6785fc 1-16
+governance/bin/anchor-drift-notify.mjs
+  s_ea8755337f3c0d::t_6faf4ced045ca0 23-24
+  s_ea8755337f3c0d::t_07ea622e8e9253 8
+  s_ea8755337f3c0d::t_4245abc0da3488 18-19
+  s_ea8755337f3c0d::t_206ca4e0dc3c29 1-7,9-17,20-22,25-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8699bf08568cdffd60f278aaad91cdc201555cc8",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

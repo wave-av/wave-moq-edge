@@ -1,0 +1,21 @@
+fleet-autonomy/INVARIANT.md
+  s_9041cf1cf1ccad::t_94194b3f34a619 11
+governance/plans/fleet-autonomy/E3-SHADOW-LANE.md
+  s_9041cf1cf1ccad::t_2252c2203323a0 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "85026a8fb72525e917c848605e85f577f68d0f80",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

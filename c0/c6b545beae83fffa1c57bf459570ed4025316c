@@ -1,0 +1,127 @@
+governance/tools/plan-search-emit/trace.schema.json
+  s_e301305392616a::t_e5e66419d55826 1,3,5,7,9,11,28,38,40
+  s_ea7fda6a228496::t_918e386b6e04c1 2,4,6,8,10,12-27,29-37,39
+governance/tools/origin-trail/origin.schema.json
+  s_cf0c27d38d7e49::t_a827a23fa1e950 1,5-12,15-22,25-30,34,36
+  s_ea7fda6a228496::t_2017c5bbce75d7 2-4,13-14,23-24,31-33,35
+governance/tools/smart-error/lib/index.mjs
+  s_ea7fda6a228496::t_d3f022fdc95416 13-14,16-17
+  s_ea7fda6a228496::t_b7f4149c825654 1-12,15,20,23-33
+  s_1f68c2858d4a7b::t_a989411df4ce7f 18-19,21-22,34
+governance/tools/smart-error/error.schema.json
+  s_1f68c2858d4a7b::t_0940f6d69a6bd4 1,5,7,15
+  s_ea7fda6a228496::t_5e5da0a28c425a 2-4,6,8-14
+governance/tools/plan-search-emit/tests/pse.test.mjs
+  s_e301305392616a::t_591f6e0fb7a590 2-4,15-16,22,32,41
+  s_ea7fda6a228496::t_db4bf4edc4d692 1,5-14,17-21,23-31,33-40
+governance/tools/origin-trail/README.md
+  s_cf0c27d38d7e49::t_2731a0233593b5 2,5,8,10,16,18-20,22-25
+  s_ea7fda6a228496::t_bd91d1a730c4ab 1,3-4,6-7,9,11-15,17,21,26-27
+governance/tools/origin-trail/examples/noether-conservation.json
+  s_cf0c27d38d7e49::t_50ebfcff379db5 1,3,6-9,11,13-14
+  s_ea7fda6a228496::t_cdab2a03a1aa2c 2,4-5,10,12
+governance/bin/roadmap-check.mjs
+  s_ea7fda6a228496::t_84c43e39bbe629 19-20
+  s_ea7fda6a228496::t_fdb820e5069c49 3-17,21-22,26-28,31-39,42
+  s_ea7fda6a228496::t_b70b05299d83e7 23-24
+  s_4fd6142f8da7b2::t_b26a54b471d2dc 1-2,18,25,29-30,40-41,43
+governance/tools/smart-error/tests/smart-error.test.mjs
+  s_ea7fda6a228496::t_c514d4ec38ddec 33-34,36
+  s_ea7fda6a228496::t_09a440c10eb5d6 1,3-32,35,37-41
+  s_1f68c2858d4a7b::t_2fd25e87171802 2,42
+governance/tools/plan-search-emit/package.json
+  s_ea7fda6a228496::t_f6de5e92eeee09 1-8
+governance/tools/plan-search-emit/README.md
+  s_e301305392616a::t_7d57cd61d28119 1-2,4,8,12-15,18-21
+  s_ea7fda6a228496::t_620dcc65b5ebe8 3,5-7,9-11,16-17,22-23
+governance/tools/plan-search-emit/lib/index.mjs
+  s_e301305392616a::t_34a7748b7ccb0f 1-2,5,8,11-12,16-17,21-22,27-28,30
+  s_ea7fda6a228496::t_cc0d24e9def8eb 3-4,6-7,9-10,13-15,18-20,23-26,29
+governance/tools/plan-search-emit/bin/pse-check.mjs
+  s_e301305392616a::t_209500cde6274d 1-4
+  s_ea7fda6a228496::t_d133134b6ae29b 5-19
+governance/tools/smart-error/examples/invalid-param.json
+  s_ea7fda6a228496::t_fa9252b779e855 2-3,5-6,8-10
+  s_1f68c2858d4a7b::t_8f9791fa9b4631 1,4,7,11
+governance/tools/origin-trail/bin/origin-trail.mjs
+  s_cf0c27d38d7e49::t_ed55a8742fb02d 1,4-6,9-11,17-18,26-27
+  s_ea7fda6a228496::t_4e4304709d6cb9 2,23-24
+  s_ea7fda6a228496::t_b49fa28c969218 3,7-8,12-16,19-22,25,28
+governance/tools/origin-trail/tests/origin-trail.test.mjs
+  s_ea7fda6a228496::t_7c7bcd4ab4aef6 1,3-46
+  s_cf0c27d38d7e49::t_52695fa17affeb 2,47
+governance/tools/origin-trail/lib/index.mjs
+  s_ea7fda6a228496::t_970b66fd0305c8 2-4,8-11,13-14,16-17,20-23,26-27,30,32-37,39-43
+  s_cf0c27d38d7e49::t_8f77eb7b20ce6b 1,5-7,12,15,18-19,24-25,28-29,31,38,44
+governance/tools/smart-error/bin/smart-error.mjs
+  s_ea7fda6a228496::t_900db0d864a78b 3-13,16-18
+  s_1f68c2858d4a7b::t_bd9d0185c09eb4 1-2,14-15
+governance/tools/plan-search-emit/examples/good-trace.json
+  s_ea7fda6a228496::t_b5ce8692e7ab8f 2-7,9-16
+  s_e301305392616a::t_669e74797e6ba0 1,8,17
+governance/tools/origin-trail/package.json
+  s_ea7fda6a228496::t_b056dcdddcb00c 1-8
+governance/tools/plan-search-emit/examples/bad-trace.json
+  s_e301305392616a::t_6eec62440a0b9d 1,5
+  s_ea7fda6a228496::t_8ebf69933a495a 2-4
+governance/tools/smart-error/README.md
+  s_772068f4dcb7dd::t_d652eae867c96b 1-9
+governance/tools/smart-error/package.json
+  s_772068f4dcb7dd::t_a05f267468e7f9 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c0c6b545beae83fffa1c57bf459570ed4025316c",
+  "prompts": {},
+  "sessions": {
+    "s_1f68c2858d4a7b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006f16006ffe0AIF0r0LfCmQJ7",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4fd6142f8da7b2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006f171b7ffe5B36dvr4t11qMM",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_772068f4dcb7dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-acd82862b613c49a2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_cf0c27d38d7e49": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006f19aaaffe5ovwd5Wkub8J7K",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e301305392616a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006f187b6ffeYzEwmFnRG5nJC5",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

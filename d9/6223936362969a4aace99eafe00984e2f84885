@@ -1,0 +1,30 @@
+hooks/tests/json-emit-invariant.test.sh
+  s_264ae386838c57::t_1fc7bc5c563035 1-59,61-120,142-193,195-199
+  s_264ae386838c57::t_22667175fedb0f 60
+  s_264ae386838c57::t_fff660b2678078 121-141
+  s_264ae386838c57::t_8ea0239e0d3c4c 194
+hooks/merge-premise-guard.sh
+  s_264ae386838c57::t_da79014aa79c5b 63-64
+  s_264ae386838c57::t_6c4994c18930dc 65
+hooks/hooklib/hook.sh
+  s_264ae386838c57::t_9f9a81e8c6cb67 79-105
+  s_264ae386838c57::t_87918deef813f7 25
+hooks/manifest.json
+  s_264ae386838c57::t_3f8f79c0df2bd1 863
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "d96223936362969a4aace99eafe00984e2f84885",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

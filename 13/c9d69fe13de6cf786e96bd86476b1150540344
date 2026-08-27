@@ -1,0 +1,47 @@
+governance/bin/build.mjs
+  s_264ae386838c57::t_52b75d90abb7f9 106
+governance/bin/inject.mjs
+  s_264ae386838c57::t_b4b98f8ecabb51 25,33,148,154-156,159-160,187,189,228-237,239-245,249-250
+governance/lib/runbook-nodes.mjs
+  s_264ae386838c57::t_e96f48fdffa120 62-67
+governance/lib/runbook-relevance.mjs
+  s_264ae386838c57::t_d46a237160b3e4 1-114
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_264ae386838c57::t_281a1d6eede553 217,237-251,253-256
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_264ae386838c57::t_6d30e5a6a11799 14-20,316-343
+governance/test/runbook-relevance.test.mjs
+  s_264ae386838c57::t_aaf71b00026797 1-137
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_264ae386838c57::t_9996fd65d1c330 30,82,91,97,110,125,134,236-237,239,241
+governance/test/wave-cost-ledger-moq-backtest.test.mjs
+  s_264ae386838c57::t_fb03d44915fc50 1-146
+hooks/bin/runbook-use-runner.mjs
+  s_264ae386838c57::t_676e0045202aec 47,58-62,95
+runbooks/bin/runbook.mjs
+  s_264ae386838c57::t_fc1c5d33139ac5 36,40-43,50,53-60,187-196,227-241,252
+runbooks/lib/calibrate.mjs
+  s_264ae386838c57::t_0689915cbe0483 1-200
+runbooks/lib/fingerprint.mjs
+  s_264ae386838c57::t_2338e6dc4ff98b 1-121
+runbooks/lib/observe.mjs
+  s_264ae386838c57::t_071c9e98166380 20-22,25,27-29,31-44,48-49,53,55-57,59-70,72,136-139,141,161,165-190
+runbooks/test/fingerprint.test.mjs
+  s_264ae386838c57::t_b23f3dc2cc4720 1-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "13c9d69fe13de6cf786e96bd86476b1150540344",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

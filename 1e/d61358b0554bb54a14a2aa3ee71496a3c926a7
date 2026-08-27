@@ -1,0 +1,20 @@
+governance/plans/ffmpeg9-lei/E17-P3-DESIGN.md
+  s_686f460a37de51::t_ed332c4b362a65 1-9,21-167
+  s_686f460a37de51::t_5f7792e3095e2b 10-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1ed61358b0554bb54a14a2aa3ee71496a3c926a7",
+  "prompts": {},
+  "sessions": {
+    "s_686f460a37de51": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe9740353ffeTlR04W0oP3cEOF",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

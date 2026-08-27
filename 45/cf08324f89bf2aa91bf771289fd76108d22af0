@@ -1,0 +1,44 @@
+governance/test/learning-health.test.mjs
+  s_d9915bbafa9657::t_ed2a08b986143d 222,230,245,254-268
+  s_d9915bbafa9657::t_2fcfecdc50c1fa 219-221
+  s_d9915bbafa9657::t_aa73a3d8596711 223-225,227-228
+  s_d9915bbafa9657::t_29ff513e254d08 231-234
+  s_d9915bbafa9657::t_c04928fdefac04 246-248,251-253
+  s_d9915bbafa9657::t_1c9ac085713db3 7,11,208-218,226,249-250
+  s_d9915bbafa9657::t_1c9e93e88f182e 236,238-244
+governance/test/graph-absence-sweep.test.mjs
+  s_d9915bbafa9657::t_8087841e456999 1-78,82-91
+  s_d9915bbafa9657::t_a0d5cd2ab65b7e 79-81
+governance/bin/learning-health.mjs
+  s_d9915bbafa9657::t_efd89e10df7581 126-132,151
+  s_d9915bbafa9657::t_7008c424f7ad84 133-150
+  s_d9915bbafa9657::t_78f0868cd31ebf 176-178
+governance/lib/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_e47dd1838c3a70 119-129,133-137,139,142
+  s_d9915bbafa9657::t_c63579efa2e9a8 20,26-33
+  s_d9915bbafa9657::t_c0048ab68c42b4 47-52,54-64
+  s_d9915bbafa9657::t_34aa2add8525c5 172,176,178-184
+governance/plans/generated-artifact-contention/PHASE-C-SWEEP.md
+  s_d9915bbafa9657::t_135a49a3029181 139-168,183-194
+  s_d9915bbafa9657::t_da5f8dea0dbaed 169-182
+governance/bin/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_a3c3a86ab1ef7d 64-72
+  s_d9915bbafa9657::t_29b9f388fa1171 230-233
+  s_d9915bbafa9657::t_da7a4dca76df07 36-37,44,46-47,74,79,108-111,202,214-219
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "45cf08324f89bf2aa91bf771289fd76108d22af0",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

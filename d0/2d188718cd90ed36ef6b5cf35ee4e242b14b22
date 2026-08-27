@@ -1,0 +1,21 @@
+governance/bin/go-live-e2e.mjs
+  s_fb5f8d5cc37013::t_2b5eed18edcfdc 16
+governance/state/e2e-probes.json
+  s_fb5f8d5cc37013::t_86ef8cdb26d570 66,70-73,80,82-85,93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d02d188718cd90ed36ef6b5cf35ee4e242b14b22",
+  "prompts": {},
+  "sessions": {
+    "s_fb5f8d5cc37013": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aae56653abab1b338",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

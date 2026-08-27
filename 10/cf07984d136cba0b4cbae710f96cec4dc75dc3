@@ -1,0 +1,25 @@
+governance/bin/check-gates.mjs
+  s_6912c9a991bfb6::t_6c29d41c7c5b8d 23
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  s_6912c9a991bfb6::t_4921e06db97239 242-244
+  s_6912c9a991bfb6::t_08de1bbea4a55d 18
+governance/tools/presence-audit/examples/governance-values.json
+  s_6912c9a991bfb6::t_3ab3c5a5ab86fd 21-24
+  s_6912c9a991bfb6::t_01208e86927709 5-7,10-12,15-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "10cf07984d136cba0b4cbae710f96cec4dc75dc3",
+  "prompts": {},
+  "sessions": {
+    "s_6912c9a991bfb6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002544c00ffeK4MBn1B0r7oJef",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

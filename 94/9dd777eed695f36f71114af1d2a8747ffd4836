@@ -1,0 +1,27 @@
+.github/workflows/fleet-drift.yml
+  s_f126fb3b7cae07::t_5ae7f2b7da275a 133
+  s_f126fb3b7cae07::t_2d3d9ddbdb410b 183
+  s_f126fb3b7cae07::t_31f800c249e3a7 95-100
+  s_f126fb3b7cae07::t_f7583728638c19 157
+  s_f126fb3b7cae07::t_f45654843be92a 195
+  s_f126fb3b7cae07::t_b9953531444d37 143
+  s_f126fb3b7cae07::t_46c3a1f0e36ddb 171-175
+  s_f126fb3b7cae07::t_4db2d5f65174a4 176-181
+  s_f126fb3b7cae07::t_08f77de3ae360c 102-115,117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "949dd777eed695f36f71114af1d2a8747ffd4836",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+governance/plans/sandbox-tier-ladder/E5-DEVERCEL.md
+  s_d9915bbafa9657::t_de72436d941351 4-12
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_d9915bbafa9657::t_191c3c51882a2f 4-17
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_d9915bbafa9657::t_1a53bebf5ce948 5-16
+governance/plans/wave-automation-registry/E3-CLEANUP-PARKING.md
+  s_d9915bbafa9657::t_14dff3eb1efac9 4-11
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_d9915bbafa9657::t_9f5a52a6997985 4-13
+governance/plans/wave-automation-registry/E5-CUTOVER-VALIDATION.md
+  s_d9915bbafa9657::t_5ad4ebcdd6101a 4-14
+governance/plans/wave-automation-registry/E4-STRUGGLE-MINER-TIEIN.md
+  s_d9915bbafa9657::t_38fb563acf380e 4-10
+governance/plans/wave-automation-registry/E1-REGISTRY-CORE.md
+  s_d9915bbafa9657::t_95d37583e23e4f 4-10
+governance/plans/wave-automation-registry/E2-IMPORT-CATEGORIZE.md
+  s_d9915bbafa9657::t_e9880ee9eb0e58 4-10
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_d9915bbafa9657::t_039903496aaeee 3-7
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_d9915bbafa9657::t_d654820ffb3f34 4-17
+governance/plans/sandbox-tier-ladder/E4-EVAL-CONSUMER.md
+  s_d9915bbafa9657::t_90afe058dd584c 4-13
+governance/plans/sandbox-tier-ladder/E2-TIER2-MICROVM.md
+  s_d9915bbafa9657::t_6e735aefb78e22 4-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1ce29be7f11b74ae058f905faf641bb7c143789c",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

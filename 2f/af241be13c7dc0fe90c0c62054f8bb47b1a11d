@@ -1,0 +1,41 @@
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_63c6ee080d73c3::t_14b8237184b235 269
+  s_63c6ee080d73c3::t_c21e17581562e6 209-245
+governance/bin/owner-assign.mjs
+  s_63c6ee080d73c3::t_e0980636c41d6c 140,143-145,149-150
+  s_63c6ee080d73c3::t_632cacf47f56ee 94
+  s_63c6ee080d73c3::t_35069e5db5aa0d 203
+  s_63c6ee080d73c3::t_a6f314385bfcef 266-275
+  s_63c6ee080d73c3::t_dd24f2f94b4297 226-228,232-233,236
+  s_63c6ee080d73c3::t_13253639ff03ca 256-264
+  s_63c6ee080d73c3::t_f2d154f6ac0325 244
+  s_63c6ee080d73c3::t_8a1a06934f1d0f 66,71-76
+  s_63c6ee080d73c3::t_8f9595f4d5aac8 167-174,176,180-191
+  s_63c6ee080d73c3::t_e345003bb5533f 1-65,67-70,77-93,95-139,141-142,146-148,151-166,175,177-179,192-202,204-225,229-231,234-235,237-243,245-255,265,276-291
+.github/workflows/owner-assign.yml
+  s_63c6ee080d73c3::t_91aebd3cbc1de1 94-115,124
+  s_63c6ee080d73c3::t_b33d2d0bc30675 1-93,116-123,125-160
+governance/bin/board.mjs
+  s_63c6ee080d73c3::t_d3029210e27212 33-42
+governance/test/owner-assign.test.mjs
+  s_63c6ee080d73c3::t_34c582893ae601 1-102,104-105,135-174
+  s_63c6ee080d73c3::t_775deef453536c 103,106-134
+.github/zizmor-baseline.tsv
+  s_63c6ee080d73c3::t_10c3c380cd09e2 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2faf241be13c7dc0fe90c0c62054f8bb47b1a11d",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

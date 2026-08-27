@@ -1,0 +1,24 @@
+governance/plans/console-runs-history/NORTH-STAR.md
+  s_264ae386838c57::t_a9f1daabefa325 50
+  s_264ae386838c57::t_73b7dc9507b15c 210
+governance/plans/console-runs-history/E-CONTRACT.md
+  s_264ae386838c57::t_caa36a478bb0ba 41
+governance/plans/console-runs-history/E-ARTIFACTS.md
+  s_264ae386838c57::t_2265bb69d03ed8 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3ee11dc1403177dba887f6722c6e22b4a2cd12fb",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

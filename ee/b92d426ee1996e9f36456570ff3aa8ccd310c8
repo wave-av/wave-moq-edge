@@ -1,0 +1,20 @@
+scripts/fleet/redeploy.sh
+  s_6c1c1be138dfd4::t_688f4e3178eb41 41-43
+  s_6c1c1be138dfd4::t_f1f033764cb9fe 65-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "eeb92d426ee1996e9f36456570ff3aa8ccd310c8",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

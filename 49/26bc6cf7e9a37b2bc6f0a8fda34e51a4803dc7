@@ -1,0 +1,28 @@
+frameworks/gates/fixtures/workflow-policy/good-rule5-depot-runner.yml
+  s_a4bf449cf66fcd::t_a9cfb69797dcec 1-41
+frameworks/gates/fixtures/workflow-policy/bad-rule5-depot-macos-malformed.yml
+  s_a4bf449cf66fcd::t_7ddf87fb43849d 1-19
+.github/workflows/checks.yml
+  s_a4bf449cf66fcd::t_1932bbcd84b036 518-530
+  s_a4bf449cf66fcd::t_38ed4ac8bf8c9b 758-761,763-764
+frameworks/gates/test-workflow-policy.sh
+  s_a4bf449cf66fcd::t_7284160e044fc2 219
+rules/workflow-authoring.md
+  s_a4bf449cf66fcd::t_e35463863b8f90 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4926bc6cf7e9a37b2bc6f0a8fda34e51a4803dc7",
+  "prompts": {},
+  "sessions": {
+    "s_a4bf449cf66fcd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcbe8519effeLiCWT22OLP2AYd",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

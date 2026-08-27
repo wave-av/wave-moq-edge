@@ -1,0 +1,24 @@
+governance/plans/harness-wars-intel/RECEIPT-TUI-PROBE.md
+  s_d77777f89719d2::t_6aa98980c7ba83 15-24
+governance/bin/tui-probe.mjs
+  s_d77777f89719d2::t_36f9a1631698ca 25-27,29-42,54-56,75,77,83-84
+  s_d77777f89719d2::t_339d1997ad20f2 61,64-70,73
+governance/test/tui-probe.test.mjs
+  s_d77777f89719d2::t_6c47d6e40e25ee 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "faa4bb75562242cfeee9c84942d6b674ff7bf340",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

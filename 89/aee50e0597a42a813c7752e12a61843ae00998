@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_63c6ee080d73c3::t_815db9ccf04e1e 7-13
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_63c6ee080d73c3::t_ee68e123aeb329 6,58,69,84,90-93,100-105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "89aee50e0597a42a813c7752e12a61843ae00998",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

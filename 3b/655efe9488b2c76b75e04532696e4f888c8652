@@ -1,0 +1,26 @@
+scripts/verify_registry_current.py
+  s_96280c922a9418::t_8c4d4814a81cba 1-268
+sync.sh
+  s_96280c922a9418::t_67e2852fab24b7 105-112,123-124
+  s_96280c922a9418::t_342898ef474fd6 113-122
+hooks/tests/registry-current.test.sh
+  s_96280c922a9418::t_968cc0af041b77 78-79
+  s_96280c922a9418::t_b981980a066def 1-76,84-137
+  s_96280c922a9418::t_80876d6e97362d 77,80-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3b655efe9488b2c76b75e04532696e4f888c8652",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

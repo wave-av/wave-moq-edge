@@ -1,0 +1,16 @@
+scripts/wave-ops-mcp.py
+  h_af5ac1a9798224 7-8
+scripts/wave_eval_sdk.py
+  h_af5ac1a9798224 9,12,25,34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d0f37b07e5e9f93110e0b69f8195df0f0c8f6ef9",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

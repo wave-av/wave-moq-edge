@@ -1,0 +1,30 @@
+governance/test/fixtures/registry-ids.json
+  s_db93b1e3103400::t_8a0d872276fff7 1-5
+governance/test/conservation-gate.test.mjs
+  s_db93b1e3103400::t_60e1999c2bfb87 1-57
+governance/test/fixtures/catalog-fail.json
+  s_db93b1e3103400::t_ccc6bedd03d71c 1
+governance/bin/entropy-gate.mjs
+  s_db93b1e3103400::t_18881c580e9a50 1-63
+governance/test/fixtures/catalog-pass.json
+  s_db93b1e3103400::t_37a2b548cde602 1
+governance/test/entropy-gate.test.mjs
+  s_db93b1e3103400::t_51b28c30c23302 35-37
+  s_db93b1e3103400::t_32b7c4980c506e 1-34,38-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "00832af8967628669f7175ccc90e642303a969c0",
+  "prompts": {},
+  "sessions": {
+    "s_db93b1e3103400": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd40745a9ffeGzVQfq595AZU6c",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+governance/plans/wave-marketplace-payouts/E3-PROVE.md
+  s_d9915bbafa9657::t_bdb25ae7a68af7 1-28
+governance/plans/email-bus/E1-TRIAGE-BRAIN.md
+  s_d9915bbafa9657::t_356632599d3a43 4
+  s_d9915bbafa9657::t_73507505e5b6db 5
+  s_d9915bbafa9657::t_d318adb9fb9472 1-3,6-24
+governance/plans/wave-marketplace-payouts/E2-BUILD.md
+  s_d9915bbafa9657::t_cbb59cc8c52c59 1-27
+governance/plans/email-bus/E4-HUMAN-STEERING.md
+  s_d9915bbafa9657::t_e01815addc3cb6 1-20
+governance/plans/wave-marketplace-payouts/NORTH-STAR.md
+  s_d9915bbafa9657::t_e7f12bc490c2bc 1-53
+governance/plans/email-bus/NORTH-STAR.md
+  s_d9915bbafa9657::t_08fbc303604a15 1-54
+governance/plans/email-bus/E3-AUTONOMOUS.md
+  s_d9915bbafa9657::t_906ef276966701 1-21
+governance/plans/wave-marketplace-payouts/E1-DISCOVERY.md
+  s_d9915bbafa9657::t_6ff5310e93c101 1-24
+governance/plans/email-bus/E5-CROSS-CUTTING.md
+  s_d9915bbafa9657::t_3fbeb9487443ef 1-25
+governance/plans/email-bus/E2-ASSISTED-ACTIONER.md
+  s_d9915bbafa9657::t_27523264981b52 1-23
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_ae18a73b6dbd70 25
+governance/graph.json
+  s_d9915bbafa9657::t_dfbd6d4429ac3a 3236,3238-3239,3241-3305,3309,6936-6949,6951-6952,6954-6979,20846-20870,20873,20876,20879,20882,20885,20888,20891-20939,28658-28694,28697,28700,28703,28706,28709,28712-28725,28727,28730,28733
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "16982f73a1b132bc5146e2251c21ca7ce20d24ff",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+governance/bin/artifact-count-regression.mjs
+  s_dedb333dd5195e::t_0ead4f00d2dc29 40,192
+governance/bin/bank-lint.mjs
+  s_dedb333dd5195e::t_0cf4e8a7aa6176 13,17
+governance/bin/branch-truth-lint.mjs
+  s_dedb333dd5195e::t_960a5babda1680 2,349
+governance/bin/brand-asset-hardcoded-color-lint.mjs
+  s_dedb333dd5195e::t_9263d1ea886865 37,138
+governance/bin/cockpit.mjs
+  s_dedb333dd5195e::t_9f68a96920cf24 16,136,142
+governance/bin/cogs-emit.mjs
+  s_53b49eff5b8c5d::t_3a039112eb5819 193,203,209
+governance/bin/cost-ledger.mjs
+  s_53b49eff5b8c5d::t_7be34a2874b02e 321,340,348
+governance/bin/credential-probe.mjs
+  s_dedb333dd5195e::t_2af568dfc5836d 75,249
+governance/bin/decide.mjs
+  s_53b49eff5b8c5d::t_7db266415f929d 131
+governance/bin/decommit-gate.mjs
+  s_53b49eff5b8c5d::t_309d2b865b7e50 23
+governance/bin/distribute-claude-config.mjs
+  s_53b49eff5b8c5d::t_9e6d65ff6a6725 177,192,222
+governance/bin/distribute-sha-pin.mjs
+  s_53b49eff5b8c5d::t_51cc15c0c4b76f 154
+governance/bin/enforce-ignore-lawref.mjs
+  s_dedb333dd5195e::t_ed7966d01a214c 37,219
+governance/bin/enforcement-coverage-audit.mjs
+  s_dedb333dd5195e::t_73f402c5139c06 2,179,183,186
+governance/bin/ess-nas-sync.mjs
+  s_dedb333dd5195e::t_13f36e2ff5e841 31,118
+governance/bin/federate.mjs
+  s_53b49eff5b8c5d::t_985bb6033f708c 336
+governance/bin/fleet/actions-census.mjs
+  s_dedb333dd5195e::t_f3cc6f1a1a6474 31,157
+governance/bin/fleet/contract-triage.mjs
+  s_dedb333dd5195e::t_a440bfc1b2c281 30,254
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_dedb333dd5195e::t_4bf4354290d5f3 47,292
+governance/bin/fleet/ingress-probe.mjs
+  s_dedb333dd5195e::t_fb64bd90f9d5bc 38,253
+governance/bin/fleet/installation-authority-audit.mjs
+  s_dedb333dd5195e::t_6ec8131ce72186 40,207
+governance/bin/fleet/merge-policy-conformance.mjs
+  s_dedb333dd5195e::t_babe92325c51a5 59,235
+governance/bin/fleet/reviewer-config-census.mjs
+  s_dedb333dd5195e::t_1d2a1adf46e0a2 39,285
+governance/bin/fleet/secret-provisioning-audit.mjs
+  s_dedb333dd5195e::t_23625d598c54f1 43,320
+governance/bin/forecast.mjs
+  s_dedb333dd5195e::t_ecbfc9c00a8a85 22,108
+governance/bin/gam-conformance.mjs
+  s_dedb333dd5195e::t_5315ae82dbfd7f 32,136
+governance/bin/gam-reconcile.mjs
+  s_dedb333dd5195e::t_8a14f4b98da7a4 29,115
+governance/bin/gate-coverage-audit.mjs
+  s_dedb333dd5195e::t_b44d8d10f3a2ac 30,96,110
+governance/bin/gate-reality.mjs
+  s_dedb333dd5195e::t_1e0cb59e7e88a0 27,224
+governance/bin/hook-registration-wrapper-lint.mjs
+  s_dedb333dd5195e::t_1b75ccd48041cf 49,157
+governance/bin/intent-ledger.mjs
+  s_dedb333dd5195e::t_d4269af0c31bdf 56,191,284
+governance/bin/known-red-baseline.mjs
+  s_dedb333dd5195e::t_8041923b26f2ac 24,173,177,217
+governance/bin/launchd-cron-parity-lint.mjs
+  s_dedb333dd5195e::t_e03a179bd51479 44,296
+governance/bin/launchd-twin-liveness.mjs
+  s_dedb333dd5195e::t_36fbcce7f4af27 60,181,185
+governance/bin/local-gates.mjs
+  s_dedb333dd5195e::t_2ac3f14dee37cd 35,158
+governance/bin/main-guard-ratchet.mjs
+  s_dedb333dd5195e::t_e96526078ff7c4 30,201
+governance/bin/memory-lint.mjs
+  s_dedb333dd5195e::t_22eab1251cc088 27,96
+governance/bin/merge.mjs
+  s_dedb333dd5195e::t_8b312763fc5415 39,127
+governance/bin/merged-not-released.mjs
+  s_dedb333dd5195e::t_e796086bcef6a1 10,105
+governance/bin/mesh-estate-health.mjs
+  s_dedb333dd5195e::t_88f4a0a771c81e 44,288
+governance/bin/owner-assign.mjs
+  s_dedb333dd5195e::t_90dffbe28502bd 37,324,330
+governance/bin/pagination-completeness.mjs
+  s_53b49eff5b8c5d::t_22bc966e00c36d 256
+governance/bin/plugin-home-repo-drift.mjs
+  s_53b49eff5b8c5d::t_1160b8e1b9fbef 306
+governance/bin/pr-base-conformance.mjs
+  s_dedb333dd5195e::t_915f56de12e8f4 24,136,139
+governance/bin/pr-check-health.mjs
+  s_dedb333dd5195e::t_bfdbccef6aff7d 53,208
+governance/bin/protection-profile-check.mjs
+  s_dedb333dd5195e::t_9843019281d70d 2,236
+governance/bin/reconcile.mjs
+  s_dedb333dd5195e::t_8a1190057c52db 30,251
+governance/bin/required-check-liveness.mjs
+  s_dedb333dd5195e::t_09899df117903b 31,251
+governance/bin/reviewer-liveness-age.mjs
+  s_dedb333dd5195e::t_062fc7ecf8d192 31,173
+governance/bin/reviewer-route.mjs
+  s_dedb333dd5195e::t_5cde82bf87f5fc 30,242
+governance/bin/rl-harvest.mjs
+  s_dedb333dd5195e::t_c534f12016d0a0 43,281
+governance/bin/roi.mjs
+  s_53b49eff5b8c5d::t_674cc898a5a447 214,228,234,241
+governance/bin/settle-guard.mjs
+  s_dedb333dd5195e::t_a87fe38d4c2a00 22,71
+governance/bin/skill-freshness-check.mjs
+  s_dedb333dd5195e::t_3237712d8b502d 52,192
+governance/bin/state-verifier.mjs
+  s_dedb333dd5195e::t_e4de4086629b20 48,236,286
+governance/bin/vendored-gate-audit.mjs
+  s_dedb333dd5195e::t_5d6155ddfff25f 34,85,91
+governance/bin/visibility-rate.mjs
+  s_dedb333dd5195e::t_0d3ee94910df99 35,78
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_dedb333dd5195e::t_7a6cbcaaebb213 31,208
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_dedb333dd5195e::t_a1a376db550624 51,278
+governance/bin/wave-sec.mjs
+  s_dedb333dd5195e::t_5983d1f52f59fa 31,166,238
+governance/bin/workflow-lint.mjs
+  s_dedb333dd5195e::t_e319a81a02e256 27,331
+governance/bin/workflow-pin-currency.mjs
+  s_dedb333dd5195e::t_42bc93d2d8988d 44,234
+governance/gam-port-kit/manifest.json
+  s_700cd0ad928eea::t_fc4e15846e3a51 22
+governance/test/enforce-ignore-lawref.test.mjs
+  s_53b49eff5b8c5d::t_4fb244d2875002 230
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_53b49eff5b8c5d::t_a2dde002304149 39-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2bc6ffdde57d7ea6693aa21da6d8e252a44f7361",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

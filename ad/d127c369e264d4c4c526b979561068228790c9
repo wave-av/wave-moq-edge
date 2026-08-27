@@ -1,0 +1,26 @@
+.github/workflows/harvest-backfill.yml
+  s_0b987fef4e1240::t_76511ca7518bd5 1-57,61-63,67-71,73-97
+  s_0b987fef4e1240::t_c24ea37e3d2453 58-60,64-66,72
+scripts/bugbot/knowledge/corpus/.gitignore
+  s_0b987fef4e1240::t_ee12fa4cfc3c3d 1-6
+scripts/pr-review-extract.sh
+  s_0b987fef4e1240::t_78b145ccadd007 79-81
+.github/workflows/bot-review-gate.yml
+  s_0b987fef4e1240::t_c4697ac15ff9a2 99-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "add127c369e264d4c4c526b979561068228790c9",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

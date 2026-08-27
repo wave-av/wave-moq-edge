@@ -1,0 +1,28 @@
+.github/workflows/checks.yml
+  s_cf3356a24071e8::t_bfc50c70eb30f3 693-702
+  s_cf3356a24071e8::t_08a3e8d33fe920 728
+  s_cf3356a24071e8::t_2daf0e47227658 537-545
+  s_cf3356a24071e8::t_68e08987ffc99c 139-156
+  s_cf3356a24071e8::t_c9f11da2ca6919 191
+  s_cf3356a24071e8::t_62f0c9035f6cb3 556
+  s_cf3356a24071e8::t_e5faffc39b22c8 796-803
+  s_cf3356a24071e8::t_e7e290e9934691 749-754,756-780
+  s_cf3356a24071e8::t_8bca58ae6a5c16 816
+  s_cf3356a24071e8::t_63a03484372914 54-75,86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "5912acd7d8b2dbe76f375b2e1475b0d9cd1c74a8",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

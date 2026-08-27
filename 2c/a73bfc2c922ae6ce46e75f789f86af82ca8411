@@ -1,0 +1,21 @@
+.github/actions/chassis-check/check-chassis-compliance.mjs
+  s_be40541f6fd98b::t_b96782f0df4ed6 9-13
+scripts/sync-public.sh
+  s_be40541f6fd98b::t_78a03f8a1e33d1 27-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2ca73bfc2c922ae6ce46e75f789f86af82ca8411",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

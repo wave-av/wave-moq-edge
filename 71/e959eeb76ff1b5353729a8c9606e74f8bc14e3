@@ -1,0 +1,122 @@
+governance/tools/competence-without-comprehension/bin/competence-check.mjs
+  s_ea7fda6a228496::t_b17832596db445 1-31
+governance/tools/substitution/examples/mock-contract.json
+  s_bd023e7a1416e3::t_f3f2d3da3b4168 1-16
+governance/tools/search-time/search-time.schema.json
+  s_53dff877576355::t_4e30a6adda1c4e 1-46
+governance/tools/search-time/package.json
+  s_53dff877576355::t_82de0a068f6ada 1-8
+governance/tools/competence-without-comprehension/package.json
+  s_ea7fda6a228496::t_15ef60f35c27e4 1-8
+governance/tools/substitution/bin/substitution-check.mjs
+  s_bd023e7a1416e3::t_b9d5c311bb537b 1-43
+governance/tools/competence-without-comprehension/examples/competence-example.json
+  s_ea7fda6a228496::t_fc8f288845f4cb 1-22
+governance/tools/search-time/examples/agentic-wave.json
+  s_43f4a1e03c2f28::t_30796918e550e4 1-30
+governance/research/engineering-canon/origin-method.md
+  s_4de03e1fb969f9::t_f5a3c1a4c5d58c 474-508
+  s_bd023e7a1416e3::t_24c41e06306448 442-473
+  s_b8938ef60e5cc3::t_c6948e1cacf879 314-354
+  s_53dff877576355::t_27b04d666d6808 404-441
+governance/tools/competence-without-comprehension/lib/index.mjs
+  s_ea7fda6a228496::t_54feb18c69aded 1-68
+governance/tools/confluence/examples/by-day-aggregate.json
+  s_4de03e1fb969f9::t_999b976b1bf347 1-7
+governance/tools/substitution/lib/index.mjs
+  s_bd023e7a1416e3::t_c6bf8f3c2cc31c 1-57
+governance/tools/competence-without-comprehension/manifests/agentic-wave.json
+  s_ea7fda6a228496::t_83c557bf8fc4ba 1-30
+governance/tools/substitution/substitution.schema.json
+  s_bd023e7a1416e3::t_bb595938c0525e 1-25
+governance/tools/substitution/manifests/engineering-canon.json
+  s_bd023e7a1416e3::t_21969852bd1e08 1-41
+governance/tools/search-time/bin/search-time-check.mjs
+  s_53dff877576355::t_e6269976f91ee5 1-37
+governance/tools/substitution/README.md
+  s_bd023e7a1416e3::t_7ead90730ff530 1-13
+governance/tools/search-time/lib/index.mjs
+  s_53dff877576355::t_45da516c558c89 1-50
+governance/tools/search-time/manifests/agentic-wave.json
+  s_ea7fda6a228496::t_3601687f6b01c8 1-7,9-10,14,16-20,22-23,27-31
+  s_43f4a1e03c2f28::t_e0bba2203f23a6 8,11-13,15,21,24-26
+governance/tools/search-time/README.md
+  s_43f4a1e03c2f28::t_addf360128fa05 1-25
+governance/tools/competence-without-comprehension/competence.schema.json
+  s_ea7fda6a228496::t_5de9c62de893be 1-38
+governance/tools/substitution/package.json
+  s_bd023e7a1416e3::t_b4475d4a7554cf 1-8
+governance/tools/confluence/confluence.schema.json
+  s_4de03e1fb969f9::t_82e1346890e995 1-27
+governance/tools/competence-without-comprehension/tests/competence.test.mjs
+  s_ea7fda6a228496::t_c79265e00ea64b 1-54
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_ea7fda6a228496::t_cd248ba52d22b9 208-225
+governance/tools/confluence/manifests/wave-usage-lakehouse.json
+  s_4de03e1fb969f9::t_9bf96734652f75 1-25
+governance/plans/wave-usage-lakehouse/NORTH-STAR.md
+  s_4de03e1fb969f9::t_708d005c187e7c 119-122
+governance/tools/confluence/README.md
+  s_4de03e1fb969f9::t_25518b612ba5f3 1-30
+governance/tools/competence-without-comprehension/README.md
+  s_ea7fda6a228496::t_f86444b955b130 1-21
+governance/tools/confluence/bin/confluence-check.mjs
+  s_4de03e1fb969f9::t_b276ef71b09992 12
+  s_4de03e1fb969f9::t_a12165255d4c1d 1-11,13-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "71e959eeb76ff1b5353729a8c9606e74f8bc14e3",
+  "prompts": {},
+  "sessions": {
+    "s_43f4a1e03c2f28": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ed834cffe7znqiVybky1YrE",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4de03e1fb969f9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0020100a6ffecBWz8kBt2pTWd4",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53dff877576355": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00200f1b4ffeIUZKISWmnvH3sN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b8938ef60e5cc3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00200e6b5ffeb9xiODTxX1ANrS",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_bd023e7a1416e3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00200ea31ffeB42UzxCACoGElc",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

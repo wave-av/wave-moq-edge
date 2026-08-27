@@ -1,0 +1,50 @@
+governance/bin/lens-sweep.mjs
+  s_0227926428e4b1::t_30ae00f2caa1d4 182-188
+  s_0227926428e4b1::t_b67c7db0d854f0 19,21
+  s_0227926428e4b1::t_c9cc71c6cece38 30-50
+  s_0227926428e4b1::t_681464b6866ee0 121-125,128-131,134,136-142,144
+  s_0227926428e4b1::t_3abccc5a4e22ac 213-218
+  s_0227926428e4b1::t_c61137f62b511a 235-259,266,273-276
+  s_0227926428e4b1::t_53b83e3bdb5c7a 168,170-181,189,191-192
+governance/test/bank-lint.test.mjs
+  s_0227926428e4b1::t_1469bdb1bc3ef2 134-140,143-144,146
+  s_0227926428e4b1::t_fa3990e4a0b8ce 126-133,141-142,145,147-155
+governance/lib/lens-sweep/reconcile.mjs
+  s_0227926428e4b1::t_1d5beeaaa6bc86 105-112,114-120
+  s_0227926428e4b1::t_3cb754e6bb8649 10
+  s_0227926428e4b1::t_c4cd19212ef976 139-150
+governance/lib/lens-sweep/span-mask.mjs
+  s_0227926428e4b1::t_739511d2db6d9e 97
+  s_0227926428e4b1::t_f0cc3e9c288176 41-48,55
+  s_0227926428e4b1::t_d35371943d91c9 82-96
+runbooks/library/lens-sweep.md
+  s_0227926428e4b1::t_00a6f0b4b8cae1 83-90
+governance/test/lens-sweep-cli.test.mjs
+  s_0227926428e4b1::t_1eb535b2f71ea7 10,12
+  s_0227926428e4b1::t_d10239f0f4e78b 1-9,11,13-59,67-89
+  s_0227926428e4b1::t_eac6782e940c46 60-66
+governance/bin/bank-lint.mjs
+  s_0227926428e4b1::t_6dcf824b17bbe2 41-43
+governance/lib/lens-sweep/manifest.mjs
+  s_0227926428e4b1::t_387b6c4f299504 90-100,103-110,112-113,115-118
+  s_0227926428e4b1::t_f520ae3c4a87da 35,39-41
+  s_0227926428e4b1::t_2af87c35a8e83e 74-85
+governance/test/lens-sweep-manifest.test.mjs
+  s_0227926428e4b1::t_585f99f0a1f38d 6,146-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "04d6b5e8ef137b04259cabc89b03b2bdfa17f1bd",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

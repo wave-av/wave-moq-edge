@@ -1,0 +1,46 @@
+governance/ci-stack/dashboard-driver/tailscale-overlay-test.mjs
+  s_7326a769c7efe8::t_1c34c2f648ef6f 1-62
+governance/ci-stack/dashboard-driver/tailscale-create-credential.mjs
+  s_7326a769c7efe8::t_fc9d956fd13f39 1-70
+governance/ci-stack/dashboard-driver/tailscale-keys-page.mjs
+  s_7326a769c7efe8::t_f905649f1a38be 1-23
+governance/ci-stack/dashboard-driver/tailscale-probe-cbs.mjs
+  s_7326a769c7efe8::t_b3b082183a5f53 1-50
+governance/ci-stack/dashboard-driver/tailscale-dns-test.mjs
+  s_7326a769c7efe8::t_cbc03041e5dbc3 1-55
+governance/ci-stack/dashboard-driver/tailscale-state.mjs
+  s_7326a769c7efe8::t_4656d6957cfed4 1-31
+governance/ci-stack/dashboard-driver/tailscale-create-step1.mjs
+  s_7326a769c7efe8::t_1234dd603629ed 1-61
+governance/ci-stack/dashboard-driver/tailscale-probe.mjs
+  s_7326a769c7efe8::t_a789e92b5fa368 21-26
+  s_7326a769c7efe8::t_62759b9deaed62 1-17,52
+  s_7326a769c7efe8::t_040007c819eb48 20,44-49,51
+  s_7326a769c7efe8::t_58859caddf4e40 18-19,27
+  s_7326a769c7efe8::t_be75258f741041 28-43,50
+governance/ci-stack/dashboard-driver/tailscale-create-step2.mjs
+  s_7326a769c7efe8::t_c79dc4cb87b27f 1-46
+governance/ci-stack/dashboard-driver/tailscale-create-final.mjs
+  s_7326a769c7efe8::t_b5fc6c5bd1be36 45-48,68
+  s_7326a769c7efe8::t_adf41d6e986247 50
+  s_7326a769c7efe8::t_1873303cfbaf1c 44,49,51-57,61-67
+  s_7326a769c7efe8::t_9cab0755c5a04b 1-43,58-60,69
+governance/ci-stack/dashboard-driver/tailscale-create-step3.mjs
+  s_7326a769c7efe8::t_c840710d114661 1-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f51368f078b515c5b7e6af8c8d6b31aa6e1f785c",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

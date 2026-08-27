@@ -1,0 +1,35 @@
+memory/go-live-receipt.md
+  s_2606de950a60c6::t_60b433368aa358 16-21
+  s_2606de950a60c6::t_c302f9bb1e72a6 1-5
+  s_2606de950a60c6::t_2452832427ed65 57-60
+  s_2606de950a60c6::t_7b9f8018194a96 65-73
+  s_2606de950a60c6::t_3dc704aff8db3c 10-11
+  s_2606de950a60c6::t_8e95ca0766b8b1 6-9
+  s_2606de950a60c6::t_6b708d50d7c5af 12-15
+  s_2606de950a60c6::t_7dfd4323a3a64d 22-24,54-56
+  s_2606de950a60c6::t_ca94f62800a410 61-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "aad44a09976f03031f1049e0626e6c41437ca3b3",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

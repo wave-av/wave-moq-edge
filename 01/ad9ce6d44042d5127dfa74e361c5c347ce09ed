@@ -1,0 +1,108 @@
+governance/STUB-BASELINE-2026-08-25.json
+  s_454e810cee6ccd::t_23da5d3e7b298b 7-8,11-47
+  s_454e810cee6ccd::t_dfc0b6a8a99c57 2
+  s_454e810cee6ccd::t_5b8b05405b55af 1
+  s_454e810cee6ccd::t_87d153c4d3f8ce 3-6
+  s_454e810cee6ccd::t_6980623a361126 9-10
+  s_454e810cee6ccd::t_f3396a4a02f8f2 48-50
+governance/bin/mint-token.mjs
+  s_9e49fb2dab61f0::t_75b94a0ece9f19 28,30,38,126,131-146,148-166,168-180,191-193,218-226
+governance/bin/stub-finder.mjs
+  s_9e49fb2dab61f0::t_61f4a5197abd8a 1-312
+governance/bin/transcript-secret-scan.mjs
+  s_9e49fb2dab61f0::t_0a1df3a4854e14 68,80-81
+governance/plans/MEMORY.md
+  s_9e49fb2dab61f0::t_8c0bda5505a5ce 1-14
+governance/plans/STUB-INVENTORY-2026-08-25.md
+  s_9e49fb2dab61f0::t_d6215d966a15e5 1-129
+governance/plans/aikido-trial/RECEIPTS.md
+  s_9e49fb2dab61f0::t_2655142deeeb24 1-11
+governance/plans/brand-recycle/skill.md
+  s_9e49fb2dab61f0::t_fe710c55b11855 1-13
+governance/plans/comms-credit-bureau/E0-INVENTORY.md
+  s_9e49fb2dab61f0::t_a10364c0fc37a3 1-33
+governance/plans/comms-credit-bureau/E1-SCHEMA.md
+  s_9e49fb2dab61f0::t_6206357dd5b45f 1-53
+governance/plans/comms-credit-bureau/E2-MVP.md
+  s_9e49fb2dab61f0::t_7a57b16d6b4bb2 1-36
+governance/plans/comms-credit-bureau/E3-PRODUCT-VERDICT.md
+  s_9e49fb2dab61f0::t_d16ed7bd20a18f 1-44
+governance/plans/comms-credit-bureau/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_8aeec3119e9210 2-3,5,7-12,14,16-19,21-24,26-76
+governance/plans/console-perfection/AGENT-SURFACE.md
+  s_9e49fb2dab61f0::t_ca4e0f38eada95 1-13
+governance/plans/console-perfection/PRODUCT-TRUTH.md
+  s_9e49fb2dab61f0::t_b4a845b588f6fa 1-13
+governance/plans/contract.md
+  s_9e49fb2dab61f0::t_a3803f665c638d 1-14
+governance/plans/engineering-canon/E10-surface-census/SKILL.md
+  s_9e49fb2dab61f0::t_40ce8672c855f7 1-13
+governance/plans/engineering-canon/E3-error-budget/BUDGET-POLICY.md
+  s_9e49fb2dab61f0::t_4422c85f54be8a 1-13
+governance/plans/engineering-canon/E7-dispatch-matrix/contract.md
+  s_9e49fb2dab61f0::t_1a15bb86ba06d0 1-13
+governance/plans/fireworks-integration/RESULTS-E1.md
+  s_9e49fb2dab61f0::t_a595b1902c75a6 1-16
+governance/plans/fractal-decomposition/SKILL.md
+  s_9e49fb2dab61f0::t_b837135f94317f 1-13
+governance/plans/govern-callable-node-actions/E1-PROVE-ONE-NODE.md
+  s_9e49fb2dab61f0::t_dde64ad93dd990 20,29
+governance/plans/monolith-decomposition/API-EDGE-MIGRATION-PLAN.md
+  s_9e49fb2dab61f0::t_2ec9fac8f0fff9 1-241
+governance/plans/monolith-decomposition/E8-PROVE-THE-MONOLITH-IS-DEAD.md
+  s_9e49fb2dab61f0::t_4725611ce293b2 12,63-94
+governance/plans/namespace-substrate/SKILL.md
+  s_9e49fb2dab61f0::t_f9819f1a55ed7a 1-13
+governance/plans/search-feed-digests/E0-INVENTORY.md
+  s_9e49fb2dab61f0::t_8ad9f82620bd36 1-32
+governance/plans/search-feed-digests/E1-SCHEMA.md
+  s_9e49fb2dab61f0::t_ded55c952df1d1 1-64
+governance/plans/search-feed-digests/E2-MVP.md
+  s_9e49fb2dab61f0::t_5bab545ff6cec6 1-32
+governance/plans/search-feed-digests/E3-PRODUCT-VERDICT.md
+  s_9e49fb2dab61f0::t_b91e66c0d69fc6 1-55
+governance/plans/search-feed-digests/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_8609658c26b9fe 1-82
+governance/plans/vision-ingest/E0-INGEST.md
+  s_9e49fb2dab61f0::t_cacc9f25fcc8df 2-78
+governance/plans/vision-ingest/E1-RERANK.md
+  s_9e49fb2dab61f0::t_88340d65e1d7ef 2,4,6-80
+governance/plans/vision-ingest/INGEST-CONTAINER.md
+  s_9e49fb2dab61f0::t_95038e3775b709 1-2,14-15,23,34-35,43-62,64-65
+governance/plans/wave-reinforcement-learning/RECURSION.md
+  s_9e49fb2dab61f0::t_3d7ddc07191abe 1-17
+governance/plans/wave-sec-fleet/RECURSION.md
+  s_9e49fb2dab61f0::t_417eae3c484d65 1-17
+governance/plans/wave-sec-fleet/REVIEW.md
+  s_9e49fb2dab61f0::t_5077b85ba824cb 1-13
+memory/session-bank-v3-2026-08-25.md
+  s_9e49fb2dab61f0::t_6899b6df2405dd 1-20
+memory/session-gap-review-2026-08-24.md
+  s_9e49fb2dab61f0::t_e5ca663839b0d9 1-157
+governance/plans/pen-design-lane/REVIEW.md
+  s_454e810cee6ccd::t_0b44e1a665a8a5 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "01ad9ce6d44042d5127dfa74e361c5c347ce09ed",
+  "prompts": {},
+  "sessions": {
+    "s_454e810cee6ccd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc59058a8ffe3GHLMPpJM6DHEm",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

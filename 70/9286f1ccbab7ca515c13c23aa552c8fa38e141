@@ -1,0 +1,21 @@
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_d9915bbafa9657::t_8c01eb5fc3eb1f 27-28
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_d9915bbafa9657::t_ddd2697648c367 33-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "709286f1ccbab7ca515c13c23aa552c8fa38e141",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

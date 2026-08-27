@@ -1,0 +1,27 @@
+hookcli/tests/fixtures/t4-curl-stub.sh
+  s_60a20469ef4369::t_3c7ecd9c8dc291 1-23
+docs/HOOKCLI-HARVEST.md
+  s_60a20469ef4369::t_1dd8f40423bd6f 105-143
+hookcli/lib/t4-llm.sh
+  s_60a20469ef4369::t_a4a42c1ec54c07 1-151
+hookcli/package.json
+  s_60a20469ef4369::t_9ebaa278a0461e 3
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_3a6cc45624c295 133-184
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "867c5f46b82f9ee0056fd5ffe98573bd8250ea5c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

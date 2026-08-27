@@ -1,0 +1,23 @@
+governance/recall/eval/eval-set.json
+  s_375efeac18ed55::t_eda2d0524ffd72 2-43
+governance/recall/BAKE-OFF.md
+  s_375efeac18ed55::t_d597daf9e974c8 11-38
+  s_375efeac18ed55::t_95c767ad3af16d 10
+  s_375efeac18ed55::t_d9930d5906bb41 7-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "9ed3d909f509d79bfcf256701bb9ad16d1581988",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

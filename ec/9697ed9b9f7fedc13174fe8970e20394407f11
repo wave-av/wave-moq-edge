@@ -1,0 +1,21 @@
+runbooks/bin/ambient-cache-check.mjs
+  s_d9915bbafa9657::t_5aefcfe2766f0b 23,30-40
+runbooks/test/ambient-cache-drift.test.mjs
+  s_d9915bbafa9657::t_8bd9942abf124c 30,101-119,156,189-197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ec9697ed9b9f7fedc13174fe8970e20394407f11",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.github/workflows/hook-tests-macos.yml
+  s_15127d80763110::t_751d027825bce2 102-109
+  s_15127d80763110::t_cbcbe800bf3506 149-165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b746a5ce6c719897dbe66bf54b7f911ef26fbfa5",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

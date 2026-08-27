@@ -1,0 +1,103 @@
+.github/workflows/content-watch.yml
+  s_dccee6b7677203::t_46b11153451ab0 85
+.github/workflows/governance.yml
+  s_dccee6b7677203::t_559d81b336fb38 370-375,378-379
+governance/DASHBOARD.md
+  s_02abc74f4971c7::t_285a80b7f0879e 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_02abc74f4971c7::t_5d7ff3895b7165 417
+governance/bin/board.mjs
+  s_dccee6b7677203::t_1049edc9ceeb40 88-101,104-136,207,209-218
+governance/bin/capability-index.mjs
+  s_dccee6b7677203::t_8c31e0dd511697 21,301-316
+governance/bin/gate-liveness-drill.mjs
+  s_dccee6b7677203::t_99d35af3d86156 11-15,30-33,41-43,53-57,98-99,167-186
+governance/bin/workflow-lint.mjs
+  s_dccee6b7677203::t_6ada928f6da08a 132,152-212,218
+governance/capability/CATALOG.md
+  s_dccee6b7677203::t_6a892147e7d455 5
+governance/capability/index.json
+  s_dccee6b7677203::t_6b1a40d6740d4d 4,111-112,114-116,118,6605,6612-6613,6615,6646,6650-6651,6653,6661,7481,7488-7489,7491,9597,9604-9605,9607,9625-9626,9629-9630,9886-9896,12909-12952
+governance/capability/tier-manifest.json
+  s_dccee6b7677203::t_b2a1bdb78c0939 18
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_cb93622bce1c5a 5,145-149,153-156,158-165,347-379,1437-1444,2797
+governance/code-index/index.json
+  s_02abc74f4971c7::t_a49106a4049416 7,10,1219-1220,1230-1233,1241-1242,1252-1253,1263-1264,1307-1308,1318-1319,1329-1330,1340-1341,1362-1363,1373-1374,1384-1387,1395-1396,1406-1407,1417-1418,1428-1429,1433-1443,3144-3145,3155-3156,3166-3167,3177-3178,3188-3189,3199-3200,3210-3211,3221-3222,3232-3233,3243-3244,3254-3255,3265-3266,3276-3277,3287-3288,3298-3299,3309-3310,3320-3321,3331-3332,3342-3343,3353-3354,3364-3365,3375-3376,3386-3387,3397-3398,3408-3409,3419-3420,3430-3431,3441-3442,3452-3453,3463-3464,3474-3475,3485-3486,3496-3497,12890-12891,12901-12904,12912-12913,12923-12926,12934-12935,12945-12946,12956-12957,12967-12970,25145-25147
+governance/graph.json
+  s_02abc74f4971c7::t_ea6b8a9c4887b0 3195-3332,4489,4507,4525,4626-4633,15688-15741,17416-17427
+governance/lib/capability-ids.mjs
+  s_dccee6b7677203::t_8584a61a377859 1-22
+governance/lib/drill-decide.mjs
+  s_dccee6b7677203::t_5bfc2a3df3b84a 1-191
+governance/lib/drill-fixtures-outtree.mjs
+  s_dccee6b7677203::t_97f57c960052bf 1-114
+governance/lib/drill-fixtures-subsystem.mjs
+  s_dccee6b7677203::t_c29c2afce82740 1-124
+governance/plans/observability-and-dash0-exit/E0-DOGFOOD-LAW.md
+  s_dccee6b7677203::t_e901c637ab5f8e 1-39
+governance/plans/observability-and-dash0-exit/E1-DASH0-EXIT.md
+  s_dccee6b7677203::t_aeb072ea5b6884 1-71
+governance/plans/observability-and-dash0-exit/E2-EMIT-EVERYWHERE.md
+  s_dccee6b7677203::t_f215729413bb50 1-61
+governance/plans/observability-and-dash0-exit/E3-CHASSIS-SPINE.md
+  s_dccee6b7677203::t_85dd1d83949c02 1-54
+governance/plans/observability-and-dash0-exit/E4-INGEST-INDEX.md
+  s_dccee6b7677203::t_7470259bf838fb 1-53
+governance/plans/observability-and-dash0-exit/E5-SELF-HOST-PLANE.md
+  s_dccee6b7677203::t_bf8f649151fdc8 1-57
+governance/plans/observability-and-dash0-exit/E6-PANE.md
+  s_dccee6b7677203::t_614c2dc9f0bc5d 1-58
+governance/plans/observability-and-dash0-exit/E7-PRODUCTIZE.md
+  s_dccee6b7677203::t_3ae21a3f9f8642 1-44
+governance/plans/observability-and-dash0-exit/E8-ATTESTATION-MOAT.md
+  s_dccee6b7677203::t_53cc0e4c1da6a3 1-55
+governance/plans/observability-and-dash0-exit/NORTH-STAR.md
+  s_dccee6b7677203::t_7f89ed5bf7b549 1-129
+governance/plans/observability-and-dash0-exit/RECEIPTS.md
+  s_dccee6b7677203::t_a56e099aec241d 1-119
+governance/runbooks/masterpc-wsl-docker.md
+  s_dccee6b7677203::t_7a86543cb02509 1-113
+governance/runbooks/restore-branch-protection.sh
+  s_dccee6b7677203::t_fefc6c78c44f8b 1-128
+governance/test/board.test.mjs
+  s_dccee6b7677203::t_b8a2dcb3cc6c39 8,90-151
+governance/test/capability-ids.test.mjs
+  s_dccee6b7677203::t_4aa39a3d6539f0 1-70
+governance/test/workflow-lint.test.mjs
+  s_dccee6b7677203::t_d15f86dbdc3d19 83-131
+hooks/hook-integrity-check.py
+  s_dccee6b7677203::t_3963dadc75aa42 1-190
+hooks/manifest.json
+  s_02abc74f4971c7::t_941b0caed56bbf 399-425
+hooks/tests/hook-path-integrity.test.sh
+  s_dccee6b7677203::t_143ffbf92baa3f 1-245
+settings/settings.base.json
+  s_dccee6b7677203::t_5f0776009ca378 280,290,300,411-420
+settings/settings.studio.json
+  s_dccee6b7677203::t_a515d1e9c9fe9b 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f7e08e1c62a35b57365f43aa1e654962583d6475",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

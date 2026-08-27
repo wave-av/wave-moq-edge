@@ -1,0 +1,28 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_521803d4f07056 64-66
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_2466748bdbafd0 63-66
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_653bbb45cf407b 86-91
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_478cdc26c5589e 145-160
+  s_60a20469ef4369::t_5129f978081039 144
+hookcli/tests/secret-dotfile-read.sh
+  s_60a20469ef4369::t_75d7c124cb8a3c 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "81973b3d10c8a5f30dc52757fc4600bcd44a546b",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

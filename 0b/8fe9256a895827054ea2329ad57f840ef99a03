@@ -1,0 +1,40 @@
+hookcli/lib/t3-classify.mjs
+  s_60a20469ef4369::t_4e77566cbca126 1-164
+hookcli/tests/fixtures/t3-node-stub.sh
+  s_60a20469ef4369::t_47a776b0cc19b9 1-9
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_ba6b8c6ab92f1b 185-197,202,204-206,208-250
+  s_60a20469ef4369::t_0d6c53fe303132 198-201,203,207
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_42e981e59a6e66 8-13
+  s_60a20469ef4369::t_f327d2a9b3c5a8 32-33
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_60e85b8c243c88 50-54
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_75ed48e7fb29c7 93-114
+  s_60a20469ef4369::t_07af5c8e8a2c68 25
+hookcli/package.json
+  s_60a20469ef4369::t_0fb326d08d5550 3
+docs/superpowers/specs/2026-07-19-hookcli-t3-classifier-tier-design.md
+  s_60a20469ef4369::t_2d0c966dd970fa 1-65
+docs/HOOKCLI-HARVEST.md
+  s_60a20469ef4369::t_bded69c307911c 139-172,174
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_680f5b750efc8a 48-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "0b8fe9256a895827054ea2329ad57f840ef99a03",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

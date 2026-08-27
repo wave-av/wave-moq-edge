@@ -1,0 +1,23 @@
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_27c3f37c99074f::t_96fd4d18ab4492 50-52
+  s_27c3f37c99074f::t_295f44d33e35f8 365-489
+  s_27c3f37c99074f::t_348e09ca76e747 18-23
+  s_27c3f37c99074f::t_a5702862157d3e 125-145
+  s_27c3f37c99074f::t_f7aa1c61ccb421 187
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d9395a808286cd713693aa562de1d9aa8aafb4ab",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

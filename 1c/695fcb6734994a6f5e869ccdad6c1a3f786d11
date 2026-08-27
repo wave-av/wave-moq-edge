@@ -1,0 +1,59 @@
+governance/bin/cfos-trial-killswitch.mjs
+  s_6f6453b23e3805::t_b1e3391ddee3ca 1-363
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_6f6453b23e3805::t_fe22616c2cad05 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_6f6453b23e3805::t_eeb9843a94ed4c 1-95
+governance/lib/r2-live-buckets.mjs
+  s_6f6453b23e3805::t_ebb9fda8bb4e58 20-31,71,74-81,93,131-132
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_6f6453b23e3805::t_c4e2445761ad4f 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_6f6453b23e3805::t_ceb8d0297f151f 1-61
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_6f6453b23e3805::t_f440a4b8b4c931 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_6f6453b23e3805::t_31c6c28c6d6ef7 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_6f6453b23e3805::t_ca2f1aadfe0bbd 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_6f6453b23e3805::t_d42ea21e948e49 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_6f6453b23e3805::t_f005736ae61982 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_6f6453b23e3805::t_e4b4baa217ad6e 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_6f6453b23e3805::t_d6537e28eeb46b 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_6f6453b23e3805::t_c088ee13258c2b 1-34
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_6f6453b23e3805::t_b8a5db13954ac6 145-170
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-MOAT.md
+  s_6f6453b23e3805::t_629f5f10fedbe7 1-297
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_6f6453b23e3805::t_0a6922b808df8d 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_6f6453b23e3805::t_008d817815b026 1-264
+governance/test/cfos-trial-killswitch.test.mjs
+  s_6f6453b23e3805::t_0244d30a28815f 1-314
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_6f6453b23e3805::t_1bc6075a08fffd 34
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_6f6453b23e3805::t_240f05167f7928 1-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1c695fcb6734994a6f5e869ccdad6c1a3f786d11",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

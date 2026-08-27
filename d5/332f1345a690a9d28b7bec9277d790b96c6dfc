@@ -1,0 +1,27 @@
+scripts/ctx-gauge.ts
+  s_edc0566c52c526::t_f5fe198f1ab233 1-141
+scripts/toolbox.ts
+  s_edc0566c52c526::t_c641aaf01302bd 1-270
+package.json
+  s_edc0566c52c526::t_7ab32ec0cd4aa9 27-30
+plugins/wake.ts
+  s_edc0566c52c526::t_ef3b92fbdf56c7 1-132
+scripts/wake.ts
+  s_edc0566c52c526::t_399a0f702ec9ed 1-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d5332f1345a690a9d28b7bec9277d790b96c6dfc",
+  "prompts": {},
+  "sessions": {
+    "s_edc0566c52c526": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002ee80a3ffe6dY4Dh3P7UW7P0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

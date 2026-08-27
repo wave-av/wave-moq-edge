@@ -1,0 +1,43 @@
+.github/actions/blast-radius-classify/classify.mjs
+  s_dccee6b7677203::t_a4202bd31a3689 35-37,237-250
+governance/MAIN-GUARD-BASELINE.json
+  s_dccee6b7677203::t_a1cece13fc10a4 1-17
+governance/bin/board.mjs
+  s_dccee6b7677203::t_0a390f4fd295b3 24,211
+governance/bin/gate-liveness-drill.mjs
+  s_dccee6b7677203::t_d32ba355367399 33,341-345
+governance/bin/intent-ledger.mjs
+  s_364605915bb7ec::t_9297a7f8ddc8ae 35,324
+governance/bin/main-guard-ratchet.mjs
+  s_dccee6b7677203::t_de2345c8a14faa 1-168
+governance/bin/scaffold-law.mjs
+  s_dccee6b7677203::t_c2a73b5378db82 42,141-142,161-180,420
+governance/lib/is-main.mjs
+  s_dccee6b7677203::t_25cb8045ed8242 1-102
+governance/test/is-main.test.mjs
+  s_dccee6b7677203::t_f345b66d17e4b7 1-265
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fc55d7ad1db363880b0578cbe3c3b4f1b51fecc1",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

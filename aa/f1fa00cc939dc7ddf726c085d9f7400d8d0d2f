@@ -1,0 +1,19 @@
+governance/test/model-retirement.test.mjs
+  s_9673f7dc0983fb::t_21f7be13520f73 224-227
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "aaf1fa00cc939dc7ddf726c085d9f7400d8d0d2f",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 5,9,11,14,392,467
+governance/bin/enforcement-tables.mjs
+  h_67a1b847dc59d6 65-68
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 49,119-120,130
+governance/bin/platform-status.mjs
+  h_67a1b847dc59d6 1-359
+governance/bin/protection-profile-check.mjs
+  h_67a1b847dc59d6 37-45
+governance/contract.md
+  h_67a1b847dc59d6 47,51,53
+governance/graph.json
+  h_67a1b847dc59d6 963-969,1446-1452,6286-6350,8172-8185,8265-8278,9186-9194,9385-9392,13455-13472,15285-15308,27279-27320,31863-31904,32037-32060,32823-32828,33099-33110
+governance/lib/app-token-mint.mjs
+  h_67a1b847dc59d6 1-175
+governance/lib/drill-fixtures-platform-status.mjs
+  h_67a1b847dc59d6 1-196
+governance/lib/platform-status-classify.mjs
+  h_67a1b847dc59d6 1-182
+governance/ops/com.wave.platform-status.plist
+  h_67a1b847dc59d6 1-33
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  h_67a1b847dc59d6 12
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 320-332
+governance/plans/ffmpeg9-lei/action/E12-P1B-PRORES-RAW-DECODE.md
+  h_67a1b847dc59d6 1-335
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  h_67a1b847dc59d6 1-71
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  h_67a1b847dc59d6 1-36
+governance/plans/platform-resilience/E2-OUTAGE-ATTESTER.md
+  h_67a1b847dc59d6 1-42
+governance/plans/platform-resilience/E3-FORGEJO-STANDBY.md
+  h_67a1b847dc59d6 1-28
+governance/plans/platform-resilience/NORTH-STAR.md
+  h_67a1b847dc59d6 1-59
+governance/runbooks/vendored-gate-audit.md
+  h_67a1b847dc59d6 59-73
+governance/test/app-token-mint.test.mjs
+  h_67a1b847dc59d6 1-150
+governance/test/platform-status-cli.test.mjs
+  h_67a1b847dc59d6 1-203
+governance/test/platform-status.test.mjs
+  h_67a1b847dc59d6 1-74
+hooks/degraded-hold-gate.sh
+  h_67a1b847dc59d6 1-255
+hooks/hooklib/gated-command-match.sh
+  h_67a1b847dc59d6 1-251
+hooks/manifest.json
+  h_67a1b847dc59d6 371-391,1121-1141
+hooks/platform-status-inject.sh
+  h_67a1b847dc59d6 1-64
+hooks/tests/degraded-hold-gate.test.sh
+  h_67a1b847dc59d6 1-304
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  h_67a1b847dc59d6 32,39
+rules/hold-under-platform-degradation.md
+  h_67a1b847dc59d6 1-62
+rules/platform-degradation-declared-not-assumed.md
+  h_67a1b847dc59d6 1-61
+runbooks/library/actions-outage-hold-and-drain.md
+  h_67a1b847dc59d6 1-162
+runbooks/library/pr-dispatch-death-repair.md
+  h_67a1b847dc59d6 1-101
+settings/settings.base.json
+  h_67a1b847dc59d6 389-393,610-614
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d95cf575a8c0360211a4efde00106516df16f0c7",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

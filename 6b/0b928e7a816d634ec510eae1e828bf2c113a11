@@ -1,0 +1,21 @@
+AGENTS.md
+  s_abb9a2be72e2bf::t_6d7c2af4b12c7e 1-13
+.gitignore
+  s_abb9a2be72e2bf::t_09a81d7f45a665 9-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6b0b928e7a816d634ec510eae1e828bf2c113a11",
+  "prompts": {},
+  "sessions": {
+    "s_abb9a2be72e2bf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002c97bcbffepJbWZlswgf5sOd",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

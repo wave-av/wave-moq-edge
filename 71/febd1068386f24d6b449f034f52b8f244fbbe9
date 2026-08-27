@@ -1,0 +1,28 @@
+governance/bin/rl-volume.mjs
+  s_c2bb037074776b::t_b95d10b0a15991 18
+  s_c2bb037074776b::t_6c30c307485b53 71-74
+governance/test/rl-volume.test.mjs
+  s_c2bb037074776b::t_3dca2c27f71011 132
+  s_c2bb037074776b::t_a7f849f60a1780 1-131,133-160
+governance/lib/rl-volume-count.mjs
+  s_c2bb037074776b::t_f92180e8e683fd 31-32
+  s_c2bb037074776b::t_6c2978eab17130 28-30
+  s_c2bb037074776b::t_7b0cc31d0bf173 33-35
+  s_c2bb037074776b::t_a10a78b95952af 1-27,36-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "71febd1068386f24d6b449f034f52b8f244fbbe9",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

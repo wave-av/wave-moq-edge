@@ -1,0 +1,23 @@
+governance/plans/agent-mail-plane/receipts/e6-settle-receipt.json
+  s_0785a7f91062ba::t_9a88123d9e406b 1-24
+governance/plans/agent-mail-plane/E6-E6-EMAIL-ECONOMY.md
+  s_0785a7f91062ba::t_57736decb9afbf 4
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_0785a7f91062ba::t_b77b8ee3971258 549-585
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "51d3883251de5912ab4740dd38225e504349e388",
+  "prompts": {},
+  "sessions": {
+    "s_0785a7f91062ba": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff0071d91ffebQqWDyV6mWRfVJ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": null
+    }
+  }
+}

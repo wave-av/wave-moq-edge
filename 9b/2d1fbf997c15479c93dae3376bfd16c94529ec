@@ -1,0 +1,47 @@
+governance/code-index/CATALOG.md
+  s_a293da4db5caf2::t_6753f9fbc1f03a 5,4709-4721,4797-4811,4853-4857,4883-4886
+governance/code-index/index.json
+  s_a293da4db5caf2::t_db03cbffc529af 9-10,12-13,40191-40267,40796-40894,41148-41169,41330-41333,41341-41342,41352-41353,41363-41364
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_a293da4db5caf2::t_f5ece515aa27b7 1-180
+governance/lib/wave-cost-ledger-alert-write.mjs
+  s_a293da4db5caf2::t_98c624e0242b91 1-134
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_a293da4db5caf2::t_426af5be8a9213 1-253
+governance/lib/wave-cost-ledger-remediation-gate.mjs
+  s_a293da4db5caf2::t_c26de42849ad82 1-90
+governance/lib/wave-cost-ledger-rpc.mjs
+  s_a293da4db5caf2::t_d636c0818a7cb2 1-67
+governance/lib/wave-cost-ledger-write.mjs
+  s_a293da4db5caf2::t_df9def02cd735e 15,17-20
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_a293da4db5caf2::t_3fe71d7d0816c8 4-24
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  s_a293da4db5caf2::t_c04c81304a9717 1-173
+governance/test/wave-cost-ledger-alert-policy-dedup.test.mjs
+  s_a293da4db5caf2::t_6248f3283cedb5 1-107
+governance/test/wave-cost-ledger-alert-write.test.mjs
+  s_a293da4db5caf2::t_480db78d6d15d5 1-139
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_a293da4db5caf2::t_3414ccf5468f96 27-80,112,116,124-139,173-175
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_a293da4db5caf2::t_6b74c6a5a623ee 1-320
+governance/test/wave-cost-ledger-remediation-gate.test.mjs
+  s_a293da4db5caf2::t_7d5c6fa19b0499 1-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9b2d1fbf997c15479c93dae3376bfd16c94529ec",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

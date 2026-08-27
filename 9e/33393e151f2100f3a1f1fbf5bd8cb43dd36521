@@ -1,0 +1,26 @@
+scripts/fleet_alerts.py
+  s_3a52a0989b58af::t_3d94a8b8e53371 1-73,75-76,84-93,95-231
+  s_3a52a0989b58af::t_fd937b6fea2048 74,77-83,94
+tests/test_fleet_alerts.py
+  s_3a52a0989b58af::t_d0d2691aabdaa0 62-75
+  s_3a52a0989b58af::t_af8416db7888bd 1-61,76-140,143-164
+  s_3a52a0989b58af::t_da5ef83cbbd9b6 141-142
+fleet/agents/bugbot.json
+  s_3a52a0989b58af::t_24551c433c7b82 4,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "9e33393e151f2100f3a1f1fbf5bd8cb43dd36521",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

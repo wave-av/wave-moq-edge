@@ -1,0 +1,28 @@
+governance/lib/learning-queue-core.mjs
+  s_d9915bbafa9657::t_6d29d15e5ed1d9 1-23,27-182
+  s_d9915bbafa9657::t_bdb2dac53b301d 24-26
+governance/bin/distribute.mjs
+  s_d9915bbafa9657::t_c0139e60577cf1 41-45,49-50
+  s_d9915bbafa9657::t_7dcce629fc4010 46-48
+governance/lib/distribute-core.mjs
+  s_d9915bbafa9657::t_85cf9a5cd77490 1-173
+governance/bin/learning-queue.mjs
+  s_d9915bbafa9657::t_aab74569d02922 50
+  s_d9915bbafa9657::t_637f7c28a7a4c6 35-36,40-47,49,51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "12299248f036c5597537cb70ffc5be5d7e1f740f",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.claude-plugin/marketplace.json
+  h_af5ac1a9798224 13,22
+CHANGELOG.md
+  h_af5ac1a9798224 5-14,333-336
+plugin/.claude-plugin/plugin.json
+  h_af5ac1a9798224 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e1edcc399bf55aac74fa95006d4fadd3ea56c214",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

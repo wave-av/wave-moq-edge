@@ -1,0 +1,19 @@
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_459e6e6028f7c5::t_6f29fcc5d7606e 43-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0cbc66f367a8dc9fe7676fd7abcfbf909976bb21",
+  "prompts": {},
+  "sessions": {
+    "s_459e6e6028f7c5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fde0d8f11ffeljID0GAT3Q4Ix4",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

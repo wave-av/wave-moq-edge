@@ -1,0 +1,19 @@
+governance/bin/cost-to-serve-allocate.mjs
+  s_98d6d3e5073113::t_b74c8c4b94f42c 1-393
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4ce30e7bdc4295ef39c9a366bf68475e70ad6ed4",
+  "prompts": {},
+  "sessions": {
+    "s_98d6d3e5073113": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002ab99adffeeg9xNXFpmIMph0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

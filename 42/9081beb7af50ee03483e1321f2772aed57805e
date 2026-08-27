@@ -1,0 +1,20 @@
+.github/workflows/governance.yml
+  s_264ae386838c57::t_972674ee00b2b0 98-99
+  s_264ae386838c57::t_0a5b9d6fe60226 100,105-125,127-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "429081beb7af50ee03483e1321f2772aed57805e",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

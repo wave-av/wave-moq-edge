@@ -1,0 +1,22 @@
+governance/plans/finding-closure/NORTH-STAR.md
+  s_6f6453b23e3805::t_4f222caa849121 1
+  s_6f6453b23e3805::t_5d823a282b6f22 13-19
+governance/graph.json
+  s_6f6453b23e3805::t_0591c16c91c71a 4861-4873,25153-25206,30325-30330,30439-30444,33679-33684,33805-33810,33913-33918
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5f78f9c3fb66f839facb9c573eda8580efed7c5a",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

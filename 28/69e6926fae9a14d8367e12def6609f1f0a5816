@@ -1,0 +1,30 @@
+governance/tools/teacher-review/lib/index.mjs
+  s_70c7ac7de143f9::t_4292b1d70cefad 170-208
+governance/tools/rca-triage/finding.schema.json
+  s_70c7ac7de143f9::t_f41f8b59f761f9 29
+governance/bin/scrape-dwarkesh.mjs
+  s_70c7ac7de143f9::t_6512164d93ad29 40-62,69,74,87
+governance/tools/pr-sockpuppet-guard/lib/index.mjs
+  s_70c7ac7de143f9::t_3db0b65c8765aa 74-79
+governance/tools/pr-sockpuppet-guard/tests/sockpuppet-guard.test.mjs
+  s_70c7ac7de143f9::t_adfd20ea783bc8 60-70
+governance/tools/teacher-review/tests/teacher-review.test.mjs
+  s_70c7ac7de143f9::t_48e09977230bee 91-97
+  s_70c7ac7de143f9::t_357628c89a7dba 83-90,98-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2869e6926fae9a14d8367e12def6609f1f0a5816",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/pen-design-lane/E3-BRAND-TOKENS.md
+  s_ddcd58c8419ae0::t_1f53e8a352c1ea 4
+governance/plans/pen-design-lane/E5-GRADUATE-FIRST-SURFACE.md
+  s_ddcd58c8419ae0::t_a9398a038e40a0 4
+governance/plans/pen-design-lane/SIGNALFLOW.md
+  s_ddcd58c8419ae0::t_f37fdca6af1516 65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "18872349e949f139ad42f547e28513d719ece85a",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

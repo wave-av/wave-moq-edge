@@ -1,0 +1,37 @@
+governance/test/enforce-dryrun.sh
+  s_60a20469ef4369::t_0c2136fb24be17 115-116,119-120
+  s_60a20469ef4369::t_10f3d33c0f9c44 117-118,121-133
+  s_60a20469ef4369::t_46b92e1edc54a4 190
+governance/bin/enforcement-coverage-audit.mjs
+  s_60a20469ef4369::t_a7ee9e669a714d 44
+governance/bin/enforcement-coverage.mjs
+  s_60a20469ef4369::t_17ad4f06b40005 42
+governance/code-index/index.json
+  s_5fbff946f796e3::t_5acd914e6a642e 6743-6744,6842-6843
+rules/storage-governed.md
+  s_5fbff946f796e3::t_3d9467ee6110d4 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "8300fe7ceb7572bdc8fce5e306be5b65e1d39817",
+  "prompts": {},
+  "sessions": {
+    "s_5fbff946f796e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae9a54df50d33dc4a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

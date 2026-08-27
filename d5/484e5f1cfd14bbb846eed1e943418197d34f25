@@ -1,0 +1,45 @@
+governance/plans/search-analytics/E1-INSIGHTS.md
+  s_6046880c148371::t_e7609e8585f269 2-9
+  s_6046880c148371::t_6a805ce6ca629a 1
+  s_6046880c148371::t_4074e3b8e20835 10
+governance/plans/search-analytics/E0-CAPTURE.md
+  s_6046880c148371::t_d6a718d7eab8fb 2-16
+  s_6046880c148371::t_bb69b77c2c88db 1
+governance/plans/search-analytics/E2-DASHBOARD.md
+  s_6046880c148371::t_75ac7c8ccc6aaf 2-9
+  s_6046880c148371::t_9f517fa412b6e0 1
+  s_6046880c148371::t_20b2756b48b903 10
+governance/plans/search-discovery/NORTH-STAR.md
+  s_6046880c148371::t_a985fb6a5a0e75 3-23
+  s_6046880c148371::t_cadf18ee3c2913 1-2
+governance/plans/search-discovery/E1-RANK.md
+  s_6046880c148371::t_3fff9a82278aa8 2-9
+  s_6046880c148371::t_acd693172e77b2 1
+  s_6046880c148371::t_547ed3264fb70a 10
+governance/plans/search-discovery/E0-SIGNALS.md
+  s_6046880c148371::t_72144061d56dba 2-9
+  s_6046880c148371::t_df614f8862a320 1
+governance/plans/search-discovery/E2-FEED.md
+  s_6046880c148371::t_7eaef7f6bb61d7 2-9
+  s_6046880c148371::t_8904d1c3928b4e 1
+  s_6046880c148371::t_94108ee0c32620 10
+governance/plans/search-analytics/NORTH-STAR.md
+  s_6046880c148371::t_6a3ea543d6f1a4 3-23
+  s_6046880c148371::t_b14f94132b170e 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d5484e5f1cfd14bbb846eed1e943418197d34f25",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

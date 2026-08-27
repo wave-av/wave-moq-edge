@@ -1,0 +1,20 @@
+.github/workflows/auto-merge.yml
+  s_6f6453b23e3805::t_cd9df81a768eaf 117-128
+  s_6f6453b23e3805::t_2228ae94740d13 129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "af35f7326d04d5144153d707119d27d479a62f21",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

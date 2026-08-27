@@ -1,0 +1,31 @@
+hooks/lib/merge-premise-decide.sh
+  s_63c6ee080d73c3::t_300cb1fad309ed 45
+hooks/merge-premise-guard.sh
+  s_02abc74f4971c7::t_58ef30c96c3d6d 104-110,116-117,233-239
+hooks/tests/fixtures/merge-premise-harness.sh
+  s_63c6ee080d73c3::t_8f9c6138279528 27-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "841abb2f669f2c050cbfcbf2553caf196a7b3bad",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

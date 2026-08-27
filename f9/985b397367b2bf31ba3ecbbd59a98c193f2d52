@@ -1,0 +1,23 @@
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_ff74301868b420::t_61ce629852e4f9 54
+  s_ff74301868b420::t_ae4eb917c1376f 134
+  s_ff74301868b420::t_00aaea46912e83 171-172
+governance/plans/agentic-wave/E11-AGENT-RUN-DURABILITY.md
+  s_ff74301868b420::t_a98cd8cd2e1366 1-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f9985b397367b2bf31ba3ecbbd59a98c193f2d52",
+  "prompts": {},
+  "sessions": {
+    "s_ff74301868b420": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef09e9f4ffeDqVEvufJ2Av99r",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

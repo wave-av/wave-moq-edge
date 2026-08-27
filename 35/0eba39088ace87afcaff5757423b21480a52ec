@@ -1,0 +1,22 @@
+rules/proven-live-or-not-done.md
+  s_f9ff6dc10be18e::t_73e3e14d40d5dc 48-55
+  s_f9ff6dc10be18e::t_589344b24e53d5 23-31
+governance/graph.json
+  s_f9ff6dc10be18e::t_e410f13156c7aa 8438-8449
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "350eba39088ace87afcaff5757423b21480a52ec",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

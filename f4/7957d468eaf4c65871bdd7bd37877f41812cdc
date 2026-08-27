@@ -1,0 +1,22 @@
+.github/workflows/checks.yml
+  s_11f01c22e59a16::t_e14de0b6997683 34-42
+  s_11f01c22e59a16::t_67721c55cc9d6c 1682
+  s_11f01c22e59a16::t_de5d4c892bc860 1679-1681
+  s_11f01c22e59a16::t_877d31a1388e7a 1683-1685
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f47957d468eaf4c65871bdd7bd37877f41812cdc",
+  "prompts": {},
+  "sessions": {
+    "s_11f01c22e59a16": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_010f611f8ffeu0PBw8nXYqfkaV",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

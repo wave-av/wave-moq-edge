@@ -1,0 +1,22 @@
+.github/workflows/changelog-unreleased.yml
+  s_364605915bb7ec::t_ec616f88369757 80-85
+.github/workflows/improvement-loop-nightly.yml
+  s_364605915bb7ec::t_f16b5dacb9ad5b 52-55
+  s_364605915bb7ec::t_c924ebdeca2048 56-57,59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b32ac367d888e8f57344a824a71a357c0937bf59",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

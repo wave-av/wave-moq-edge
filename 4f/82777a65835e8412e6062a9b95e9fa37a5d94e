@@ -1,0 +1,27 @@
+governance/test/hook-release-args.test.mjs
+  s_63c6ee080d73c3::t_ea2940c03cd890 1-127
+governance/bin/hook-release.mjs
+  s_63c6ee080d73c3::t_8ade84dfae3a0f 53,66-71
+  s_63c6ee080d73c3::t_87026b53bd15b5 320-321
+  s_63c6ee080d73c3::t_4bd6fe56475929 103,115,213,268-269
+  s_63c6ee080d73c3::t_318ad20acaccbd 72
+governance/lib/hook-release-args.mjs
+  s_63c6ee080d73c3::t_62c06000379797 35
+  s_63c6ee080d73c3::t_4ee48f4e7ab43f 1-34,36-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4f82777a65835e8412e6062a9b95e9fa37a5d94e",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

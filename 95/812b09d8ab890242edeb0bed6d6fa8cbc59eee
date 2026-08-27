@@ -1,0 +1,55 @@
+governance/graph.json
+  s_c24357e71ae5bc::t_4367d9824897bb 33254,33256,33260,33262
+governance/plans/absence-never-reads-as-pass/E1-LAW.md
+  s_c24357e71ae5bc::t_823a230c2678e9 29-30
+governance/plans/absence-never-reads-as-pass/E2-DETECTOR.md
+  s_c24357e71ae5bc::t_444c77a35a2445 39-40
+governance/plans/absence-never-reads-as-pass/E3-RATCHET.md
+  s_c24357e71ae5bc::t_43764dd1171e96 34-35
+governance/plans/agent-lease-protocol/E2-LEASE.md
+  s_c24357e71ae5bc::t_eb1c836dd2e2e1 32-33
+governance/plans/agent-lease-protocol/E3-DRILL.md
+  s_c24357e71ae5bc::t_23727ee8fd96bc 27-28
+governance/plans/lawbook-fleet-distribution/E2-TRANSPORT.md
+  s_c24357e71ae5bc::t_ef22db42fef646 26-27
+governance/plans/lawbook-fleet-distribution/E3-ADOPT.md
+  s_c24357e71ae5bc::t_def6e5edb66492 21-22
+governance/plans/merge-readiness-required/E2-DRILL.md
+  s_c24357e71ae5bc::t_b9fe10334c613c 36-37
+governance/plans/merge-readiness-required/E3-SHADOW.md
+  s_c24357e71ae5bc::t_7db728e00d7736 35-36
+governance/plans/merge-readiness-required/E4-REQUIRE.md
+  s_c24357e71ae5bc::t_48c47dc56b7f6d 28-29
+governance/plans/one-system-of-record/E3-RECONCILE.md
+  s_c24357e71ae5bc::t_2f5045ed40c74f 35-36
+governance/plans/platform-status-consumers/E1-INVENTORY.md
+  s_c24357e71ae5bc::t_3373a53aae1bbc 32-33
+governance/plans/platform-status-consumers/E2-WIRE.md
+  s_c24357e71ae5bc::t_1c20d65296e509 29-30
+governance/plans/platform-status-consumers/E3-DRILL.md
+  s_c24357e71ae5bc::t_5bbf52d0b579ca 29-30
+governance/plans/receipt-bus/E2-DUAL-WRITE.md
+  s_c24357e71ae5bc::t_8f916937bf4e60 27-28
+governance/plans/receipt-bus/E3-QUERY.md
+  s_c24357e71ae5bc::t_30fedfc277bb46 22-23
+governance/plans/reviewer-liveness-billing/E2-PREREGISTER.md
+  s_c24357e71ae5bc::t_532ffa73f40a57 24-25
+governance/plans/reviewer-liveness-billing/E3-DISPOSITION.md
+  s_c24357e71ae5bc::t_9d8974794c47df 26-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "95812b09d8ab890242edeb0bed6d6fa8cbc59eee",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

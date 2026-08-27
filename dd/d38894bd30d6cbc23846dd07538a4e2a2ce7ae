@@ -1,0 +1,26 @@
+governance/lib/reviewer-liveness-read.mjs
+  s_70c7ac7de143f9::t_36aef25bf12d53 123-142,144-146,149-164,166-168,171-173
+  s_70c7ac7de143f9::t_87de6c516e5fd9 96-101
+  s_70c7ac7de143f9::t_1a8e93ba8fde70 58-76,85-86
+governance/test/reviewer-liveness-read.test.mjs
+  s_70c7ac7de143f9::t_888580bd186d0d 153-194
+governance/lib/reviewer-liveness-read-io.mjs
+  s_70c7ac7de143f9::t_c17ac838a86e96 17
+  s_70c7ac7de143f9::t_bc8b9119c2d887 32-76,81-84,93-94,96-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ddd38894bd30d6cbc23846dd07538a4e2a2ce7ae",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

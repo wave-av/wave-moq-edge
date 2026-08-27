@@ -1,0 +1,24 @@
+governance/lib/hook-state-root.mjs
+  s_c2bb037074776b::t_7850f1378152fc 95-104
+governance/lib/rl-volume-count.mjs
+  s_c2bb037074776b::t_cf664a3ec5cc70 124-129
+  s_c2bb037074776b::t_2325512ce175fb 27-40
+governance/test/rl-volume.test.mjs
+  s_c2bb037074776b::t_5b25ce3d38401c 145-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6d2356aa82d0a3e3815ac87b2236a732587447f2",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

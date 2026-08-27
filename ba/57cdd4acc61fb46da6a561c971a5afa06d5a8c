@@ -1,0 +1,29 @@
+governance/plans/wave-mesh-fabric/E7-POLICY.md
+  s_15127d80763110::t_54030a2f4e0ae6 404-424
+  s_15127d80763110::t_02dc38507a5fa5 384-399
+governance/test/mesh-alert-spec.test.mjs
+  s_15127d80763110::t_1f750a265c7439 127-132,135,141,145
+  s_15127d80763110::t_86608d8954350c 1-126,133-134,136-140,142-144,146-163
+governance/lib/mesh-alert-spec.mjs
+  s_15127d80763110::t_c62d5e759ea66a 1-256
+governance/bin/mesh-alert-spec.mjs
+  s_15127d80763110::t_9c1b2460d42f27 1-177
+governance/plans/wave-mesh-fabric/E7-P4-ALERTING.md
+  s_15127d80763110::t_a5285e50d05a12 1-180
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ba57cdd4acc61fb46da6a561c971a5afa06d5a8c",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

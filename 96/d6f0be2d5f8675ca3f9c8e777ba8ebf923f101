@@ -1,0 +1,35 @@
+hookcli/package.json
+  s_60a20469ef4369::t_50682c983c54ec 3
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_3daa44a8ddb4e3 158-172
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_d9438665ee3f1d 490-521
+governance/graph.json
+  s_b62b6f55c43c03::t_38488f68887077 16200-16205
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_2a55c2b09beac4 410
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "96d6f0be2d5f8675ca3f9c8e777ba8ebf923f101",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_b62b6f55c43c03": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a68af10d5763bb51d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

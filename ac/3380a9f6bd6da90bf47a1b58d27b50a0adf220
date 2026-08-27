@@ -1,0 +1,51 @@
+governance/plans/aikido-trial/NORTH-STAR.md
+  s_52031f4510959b::t_da2fe38c96be77 1-129
+governance/plans/aikido-trial/E0-GOVERN.md
+  s_52031f4510959b::t_861bd3f4d4a506 1-28
+governance/plans/aikido-trial/E1-UNIQUENESS.md
+  s_52031f4510959b::t_1c9e71dc85ef26 1-9,11-27
+  s_52031f4510959b::t_ecf8f2a39af9e8 10
+governance/plans/aikido-trial/E4-SIGNAL.md
+  s_52031f4510959b::t_1b7e2401813dd3 1-26
+governance/plans/aikido-trial/agent-seam/NORTH-STAR.md
+  s_52031f4510959b::t_52772de7bf0ec4 1-44
+governance/plans/aikido-trial/E3-EXIT-PROVEN.md
+  s_52031f4510959b::t_95ac34bb0398b6 1-9,11-26
+  s_52031f4510959b::t_4f30ce273c9e14 10
+governance/plans/aikido-trial/E8-DECIDE.md
+  s_52031f4510959b::t_0a27616fe12f95 1-9,11-41
+  s_52031f4510959b::t_f77beef177473d 10
+governance/plans/aikido-trial/commercial/NORTH-STAR.md
+  s_52031f4510959b::t_0813ec0fa7cb1d 1-48
+governance/plans/aikido-trial/E5-AUTOTRIAGE-AUDIT.md
+  s_52031f4510959b::t_269fc3ff3ae07c 1-26
+governance/plans/aikido-trial/E7-GATING-ADVISORY.md
+  s_52031f4510959b::t_d6cb3e22ec1903 1-9,11-36
+  s_52031f4510959b::t_37e5c2e6295b56 10
+governance/plans/aikido-trial/E6-AGENT-SEAM.md
+  s_52031f4510959b::t_f8cc975b2cbd17 1-9,11-27
+  s_52031f4510959b::t_bb6fe6c52eacc0 10
+governance/plans/aikido-trial/E2-CRITICAL-BURNDOWN.md
+  s_52031f4510959b::t_52e7739e133830 10
+  s_52031f4510959b::t_5cf361fa08d5af 1-9,11-27
+governance/plans/aikido-trial/E9-COMMERCIAL.md
+  s_52031f4510959b::t_a21979403617bc 1-26
+governance/graph.json
+  s_52031f4510959b::t_1982928a5b7836 2691-2859,22012-22671
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ac3380a9f6bd6da90bf47a1b58d27b50a0adf220",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

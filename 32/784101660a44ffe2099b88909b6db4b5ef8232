@@ -1,0 +1,25 @@
+governance/plans/nested-dispatch-economy/E2-CACHE-REUSE.md
+  s_96280c922a9418::t_7f9c9d0df29d17 9-11
+  s_96280c922a9418::t_2e10d36508b119 78-141
+  s_96280c922a9418::t_85b32efad29c92 66-73
+  s_96280c922a9418::t_3789d08deef824 147-148
+  s_96280c922a9418::t_20d15c97720907 161-171
+governance/graph.json
+  s_96280c922a9418::t_e054def63b357d 3210-3212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "32784101660a44ffe2099b88909b6db4b5ef8232",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

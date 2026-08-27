@@ -1,0 +1,83 @@
+governance/plans/wave-progressive-delivery/E4-BILLING-EXCLUSION.md
+  s_7c7e203d305c60::t_bb0a732ac08a87 77
+governance/plans/wave-progressive-delivery/E3-LIVE-PATH-GATES.md
+  s_7c7e203d305c60::t_c1965f6e711424 60
+governance/DASHBOARD.md
+  s_b74c2f1736fd36::t_3ad307b304d3ac 25
+governance/bin/cfos-trial-killswitch.mjs
+  s_6f6453b23e3805::t_bf14af69aa6b69 1-363
+governance/graph.json
+  s_b74c2f1736fd36::t_e995053d7dc95b 2975-3091,7585-7599,20008-20151,30670-30699
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_6f6453b23e3805::t_c08c1b0ea7af96 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_6f6453b23e3805::t_b691fa6ba5390e 1-95
+governance/lib/r2-live-buckets.mjs
+  s_6f6453b23e3805::t_30102d65e03214 20-31,71,74-81,93,131-132
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_6f6453b23e3805::t_e32ea19b4b4592 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_6f6453b23e3805::t_2fcc63de56da67 1-61
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_6f6453b23e3805::t_bf55fb0cff7139 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_6f6453b23e3805::t_d3273885ec78da 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_6f6453b23e3805::t_b1eec99ead2cf8 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_6f6453b23e3805::t_a7feee45a437b9 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_6f6453b23e3805::t_9134699a41d028 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_6f6453b23e3805::t_7a23a376a82b6a 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_6f6453b23e3805::t_f5ace41acf0db1 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_6f6453b23e3805::t_63c3d1e01c6997 1-34
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_6f6453b23e3805::t_97207eca0df6d9 145-170
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-MOAT.md
+  s_6f6453b23e3805::t_b8d82ceff77770 1-297
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_6f6453b23e3805::t_81df5e2bd616aa 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_6f6453b23e3805::t_a8e250c27d407c 1-264
+governance/test/cfos-trial-killswitch.test.mjs
+  s_6f6453b23e3805::t_32cfaee58440db 1-314
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_6f6453b23e3805::t_66b245eca7c6a3 34
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_6f6453b23e3805::t_4451b66d7b6772 1-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ac9849c32613e471b289237075810b65e80fde16",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/plans/console-completeness/E3-SPEC.md
+  s_65608d8333ec0a::t_99ace4816e04e3 86,88-91
+  s_65608d8333ec0a::t_259f710343400b 106-110
+governance/plans/console-completeness/comps/MLVC-CODEC-COMP.md
+  s_65608d8333ec0a::t_07d5ab98bbc776 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3d7c74c96768294caa8170c560038757b7c546ca",
+  "prompts": {},
+  "sessions": {
+    "s_65608d8333ec0a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe087c62cffemoP3mlhh2g5Zt1",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

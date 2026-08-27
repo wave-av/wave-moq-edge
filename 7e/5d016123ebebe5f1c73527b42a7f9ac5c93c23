@@ -1,0 +1,21 @@
+governance/plans/aes67-aoip-transport/aes67-http.mjs
+  s_6046880c148371::t_adcf02615ea484 1-118
+governance/plans/aes67-aoip-transport/aes67-http.test.mjs
+  s_6046880c148371::t_a31963c342f780 1-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7e5d016123ebebe5f1c73527b42a7f9ac5c93c23",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

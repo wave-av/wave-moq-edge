@@ -1,0 +1,31 @@
+governance/lib/review-classify.mjs
+  s_6a908cb0f02788::t_5f8b07f19ab160 108
+  s_6a908cb0f02788::t_0e57ec764c052b 105-107
+  s_6a908cb0f02788::t_e17f0774add126 109-111
+  s_6a908cb0f02788::t_5d3d8e50d9aa5c 1-104,112-132
+governance/lib/review-liveness.mjs
+  s_6a908cb0f02788::t_22b6bcc47d7a57 136-141
+  s_6a908cb0f02788::t_091c6c759a4de4 50
+  s_6a908cb0f02788::t_90b4b15dd99d0d 56
+  s_6a908cb0f02788::t_b0d3dfb3197c60 29
+  s_6a908cb0f02788::t_2fbde3c5275f25 30-31
+  s_6a908cb0f02788::t_ca74e6214d1b4a 61-65
+governance/gam-port-kit/manifest.json
+  s_6a908cb0f02788::t_01033cb3e1dd3b 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f9eb5a63cf0b56409050abaad3372ba42353ded2",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

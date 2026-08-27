@@ -1,0 +1,21 @@
+governance/plans/software-factory/E7-SELF-AUDIT.md
+  s_7ddeb5d251570f::t_efda6a5bad28f2 16
+governance/plans/software-factory/NORTH-STAR.md
+  s_7ddeb5d251570f::t_c0ffb583b76137 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "003dd620b65e089b7a11927780e5f6dc16c1dbba",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

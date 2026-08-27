@@ -1,0 +1,19 @@
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_9e49fb2dab61f0::t_3ca21bfcc86482 21-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f15a2f241ba1894c551649af5f568296d58463f6",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

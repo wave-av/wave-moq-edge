@@ -1,0 +1,30 @@
+.github/workflows/zizmor.yml
+  s_07acdfa7e3709a::t_fd72450f0d2438 12
+.github/workflows/self-check.yml
+  s_07acdfa7e3709a::t_66231da41848d8 10
+.github/workflows/dogfood-gate.yml
+  s_07acdfa7e3709a::t_c6ca223ff6127d 8
+.github/workflows/open-core-audit.yml
+  s_07acdfa7e3709a::t_500af028499e06 24
+.github/workflows/ratchet.yml
+  s_07acdfa7e3709a::t_f4a6c7cb7e725b 17
+  s_07acdfa7e3709a::t_f7b9ef8858e060 47,68,96,119,141,167
+.github/workflows/pinact.yml
+  s_07acdfa7e3709a::t_2a19fbf5c31208 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "5700d96ef968140b483796f78a3c4c59c728d59b",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

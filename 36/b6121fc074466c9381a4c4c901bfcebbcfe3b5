@@ -1,0 +1,31 @@
+governance/bin/deploy-audit.mjs
+  s_53b49eff5b8c5d::t_7072bfd46c800f 1-57
+governance/bin/dispute-pack.mjs
+  s_53b49eff5b8c5d::t_079a639546f16c 1-74
+governance/bin/vendor-scoreboard-sync.mjs
+  s_53b49eff5b8c5d::t_d83198efade2de 1-267
+governance/plans/vendor-relationship-ops/DEPLOY-AUDIT-LIST.json
+  s_53b49eff5b8c5d::t_dde7565aafa6a4 1-7
+governance/test/deploy-audit.test.mjs
+  s_53b49eff5b8c5d::t_250a50e1dcbf4b 1-40
+governance/test/dispute-pack.test.mjs
+  s_53b49eff5b8c5d::t_3aa5b036e8e248 1-29
+governance/test/vendor-scoreboard-sync.test.mjs
+  s_53b49eff5b8c5d::t_1a59ff265ce8b1 1-402
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "36b6121fc074466c9381a4c4c901bfcebbcfe3b5",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

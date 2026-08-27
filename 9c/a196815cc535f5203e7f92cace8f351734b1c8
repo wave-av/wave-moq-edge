@@ -1,0 +1,40 @@
+governance/test/enforcement-floor.test.mjs
+  s_0227926428e4b1::t_bbfdfd0293b2c2 88-92,96,103
+  s_de9cc41abe76ba::t_579573fbf60808 314-372
+governance/bin/enforcement-ratchet.mjs
+  s_0227926428e4b1::t_4a2ccaea211159 124,126,134
+governance/lib/enforcement-ratchet-core.mjs
+  s_22c99c27ef1832::t_b061cd32e17a10 151-153,158,172-192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ca196815cc535f5203e7f92cace8f351734b1c8",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_22c99c27ef1832": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a702ad6243e703ad8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_de9cc41abe76ba": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac38d553bb117e64a",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

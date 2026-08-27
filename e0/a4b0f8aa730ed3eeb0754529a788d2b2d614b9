@@ -1,0 +1,19 @@
+memory/entire-integration.md
+  s_32a30bff8591e9::t_f6ad61d02931e1 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e0a4b0f8aa730ed3eeb0754529a788d2b2d614b9",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/voice-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_7002c9ec917ac8 23-25
+governance/plans/voice-completeness/E1-PLUGIN-SINGLE-SOURCE.md
+  s_2606de950a60c6::t_7868f24eed1b0b 4,6-9
+governance/plans/voice-completeness/E0-CI-GATE.md
+  s_2606de950a60c6::t_0d90ca304076b8 4,6-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5512f35d2b12b519fb971a1e7dc47b250a1fa1e7",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

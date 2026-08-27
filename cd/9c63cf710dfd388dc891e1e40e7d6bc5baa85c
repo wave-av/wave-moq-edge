@@ -1,0 +1,33 @@
+skills/trust-secret-flip/SKILL.md
+  s_a4bf449cf66fcd::t_9fe7c58237699e 3-9,19-41
+  s_a4bf449cf66fcd::t_e317860aeb861e 10-18
+  s_9bb1b1d1d998d4::t_e4e81bba19505e 1-2
+skills/depot-ops/SKILL.md
+  s_a4bf449cf66fcd::t_9d246e24d7679d 3-32
+  s_a4bf449cf66fcd::t_52006b8514b8e1 1-2
+  s_a4bf449cf66fcd::t_f4dbb54685ac12 33-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cd9c63cf710dfd388dc891e1e40e7d6bc5baa85c",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a4bf449cf66fcd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcbe8519effeLiCWT22OLP2AYd",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

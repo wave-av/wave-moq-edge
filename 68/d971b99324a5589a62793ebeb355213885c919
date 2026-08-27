@@ -1,0 +1,32 @@
+packages/spoke-chassis/test/pages-agent.test.mjs
+  s_700cd0ad928eea::t_b73692870d4723 76
+  s_9bb1b1d1d998d4::t_2f1ace65d6ceb7 60-75,77-122
+packages/spoke-chassis/src/pages-agent.ts
+  s_700cd0ad928eea::t_5b0650b0d05cfa 25-70,72-87,93,96-100
+packages/spoke-chassis/src/pages.ts
+  s_700cd0ad928eea::t_d1a862eea9e5f7 25-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "68d971b99324a5589a62793ebeb355213885c919",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

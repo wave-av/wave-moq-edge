@@ -1,0 +1,74 @@
+governance/plans/durable-state-off-ephemeral/E2-FIX.md
+  s_d9915bbafa9657::t_faaedf67027965 1-17
+governance/plans/durable-state-off-ephemeral/E9-CHECKLIST.md
+  s_d9915bbafa9657::t_67633d311dc904 1-19
+governance/plans/epic-system/NORTH-STAR.md
+  s_d9915bbafa9657::t_4be14c19ae46ec 1-61
+governance/plans/epic-system/E5-DOGFOOD.md
+  s_d9915bbafa9657::t_c61e985cd9b07f 1-3,5-25
+  s_d9915bbafa9657::t_79b2e4a0eee8fe 4
+governance/plans/durable-state-off-ephemeral/E4-SWEEP.md
+  s_d9915bbafa9657::t_7b8f6776e6ece8 1-19
+governance/plans/durable-capture-off-memory-files/E3-MEMORY-LINT-DRAIN.md
+  s_d9915bbafa9657::t_9fca23e8504a87 1-31
+governance/plans/durable-capture-off-memory-files/E4-KERNEL-TASK-MIGRATION.md
+  s_d9915bbafa9657::t_805ddca576ba3b 1-20
+governance/plans/epic-system/E0-INGEST.md
+  s_d9915bbafa9657::t_21784a0ae29c90 1-19
+governance/plans/durable-capture-off-memory-files/NORTH-STAR.md
+  s_d9915bbafa9657::t_2bb4d72cabff52 1-53
+governance/plans/epic-system/E1-GATE.md
+  s_d9915bbafa9657::t_0490e440d5dd6d 1-19
+governance/plans/epic-system/E2-GRADUATE-LAW.md
+  s_d9915bbafa9657::t_e59a8d6c847e0c 1-18
+governance/plans/durable-state-off-ephemeral/E3-GATE.md
+  s_d9915bbafa9657::t_9b250e032e3f19 1-18
+governance/plans/durable-state-off-ephemeral/E8-WORLD-WRITABLE-PERMS.md
+  s_d9915bbafa9657::t_f2a80205ca4126 1-18
+governance/plans/durable-state-off-ephemeral/E0-LAW.md
+  s_d9915bbafa9657::t_6ed0ae980ac79e 1-19
+governance/plans/durable-state-off-ephemeral/NORTH-STAR.md
+  s_d9915bbafa9657::t_f1499907682498 1-67
+governance/plans/durable-capture-off-memory-files/E0-AUDIT.md
+  s_d9915bbafa9657::t_1a1916585068b0 1-15
+governance/plans/durable-capture-off-memory-files/E2-DECISION-RECORD.md
+  s_d9915bbafa9657::t_70ed8a77c3e223 1-21
+governance/plans/durable-capture-off-memory-files/E5-PHANTOM-TOOL-GATE.md
+  s_d9915bbafa9657::t_9af12ef39823dd 1-19
+governance/plans/epic-system/E3-AUTO-INJECT.md
+  s_d9915bbafa9657::t_ef181a8670c2f8 1-18
+governance/plans/durable-state-off-ephemeral/E6-NO-SECRETS-DURABLE-LOGS.md
+  s_d9915bbafa9657::t_7479fedebe92b1 1-19
+governance/plans/epic-system/E4-INVOKABLE.md
+  s_d9915bbafa9657::t_74ef2e55844233 1-21
+governance/plans/epic-system/E6-SHIP.md
+  s_d9915bbafa9657::t_dede229f4b0447 1-15
+governance/plans/durable-state-off-ephemeral/E5-ATOMIC-WRITES.md
+  s_d9915bbafa9657::t_4606e1298f8f02 1-33
+governance/plans/durable-capture-off-memory-files/E1-HOOK-FALLBACK-FIX.md
+  s_d9915bbafa9657::t_3aeda667880487 1-21
+governance/plans/durable-state-off-ephemeral/E1-HELPER.md
+  s_d9915bbafa9657::t_b4afdf37c33a27 1-21
+governance/plans/durable-state-off-ephemeral/E7-BOUNDED-ROTATION.md
+  s_d9915bbafa9657::t_16ed1ae8b1060f 1-27
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_6f26d23135df27 25
+governance/graph.json
+  s_d9915bbafa9657::t_811cb929ebb3ca 3106,3108-3188,3197,3199-3227,3229-3333,3457,3459-3461,3463-3557,20579,20582,20585,20588,20591,20594,20597,20600,20603,20606,20609,20612,20615-20657,20660,20663,20666,20669,20672,20675,20678,20681,20684,20687,20690,20693-20694,20696,20699-20748,20750,21155,21158,21161,21164,21167,21170,21173,21176-21218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dbb4a3ca1a6afff33087548df766f7f60056cbed",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

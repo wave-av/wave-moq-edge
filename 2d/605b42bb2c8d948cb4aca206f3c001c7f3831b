@@ -1,0 +1,35 @@
+docs/CLAUDE-BRIDGE.md
+  s_bc512dbc62b9a6::t_504104d6e95bcf 1-128
+tools/claude-dispatch.ts
+  s_9e432dc94c73ad::t_c9890bb1fa9811 109-112
+  s_bc512dbc62b9a6::t_6a26f162c309c6 1-63,65-66,68-108,113-474
+  s_9e432dc94c73ad::t_e654ff682a26d0 64,67
+agent/claude-worker.md
+  s_bc512dbc62b9a6::t_9ab15f245f5fb4 1-51
+tools/claude-dispatch.test.ts
+  s_bc512dbc62b9a6::t_31aad5f1c0ef08 1-263
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2d605b42bb2c8d948cb4aca206f3c001c7f3831b",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_bc512dbc62b9a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8634f89ffeJiIf5aTYeieXe4",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

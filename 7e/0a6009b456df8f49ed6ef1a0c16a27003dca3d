@@ -1,0 +1,28 @@
+hooks/tests/unpushed-work-guard-truncation.test.sh
+  s_70c7ac7de143f9::t_c55c61969682f7 130-136,146-147,149-151,154,157-158
+  s_70c7ac7de143f9::t_1c0fd743aa4592 31-34
+  s_70c7ac7de143f9::t_96d4643556ee00 137-145,152-153,155-156
+hooks/unpushed-work-guard.sh
+  s_70c7ac7de143f9::t_e637926d030676 30-44,46-47
+  s_70c7ac7de143f9::t_32993d47d4117b 111-113
+  s_70c7ac7de143f9::t_f785061589a58e 150-153,156-158
+  s_70c7ac7de143f9::t_7f5f70777a6b84 140-144
+hooks/manifest.json
+  s_70c7ac7de143f9::t_8062f132425536 2005
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7e0a6009b456df8f49ed6ef1a0c16a27003dca3d",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

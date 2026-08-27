@@ -1,0 +1,46 @@
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_b5ee852d9e90c5 69-72
+  s_60a20469ef4369::t_81b8de922fd5a4 58,68,73
+  s_60a20469ef4369::t_9c1bd66124e5f8 314
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_11c8ac840fa095 22-30
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_b9df373ea45bd8 200-202,211-213
+  s_60a20469ef4369::t_37bea32e352862 203-210
+  s_60a20469ef4369::t_4ec3dbe6a7ea08 96
+  s_60a20469ef4369::t_d1e3e840f16297 214-220
+  s_60a20469ef4369::t_20ae6cc9b0f6b9 243
+  s_60a20469ef4369::t_88005746bcb02d 194-199,221
+  s_60a20469ef4369::t_1e041a6debef3a 57-95,97-112
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_6e9447954e90c1 83,86
+  s_60a20469ef4369::t_daf38c4a18d1ca 87-88
+hookcli/lib/emit.mjs
+  s_60a20469ef4369::t_fcf81dc4735ba0 111
+  s_60a20469ef4369::t_7215a1dfdec818 130-133
+  s_60a20469ef4369::t_5c1a74b7d19b04 77-93
+hookcli/tests/t4-llm.sh
+  s_60a20469ef4369::t_0b7c8706f2a63c 311-350
+  s_60a20469ef4369::t_6a193e33579f39 351-375
+  s_60a20469ef4369::t_1ab3ec80652706 290-295
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_3f10ea93784dd2 132-137,139-146,152-153,163
+  s_60a20469ef4369::t_3f8258d01cad14 147-151
+  s_60a20469ef4369::t_eccc3e3ac42094 154-162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "dd2d37bbed00e996a418ca69ab889960bbf41883",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

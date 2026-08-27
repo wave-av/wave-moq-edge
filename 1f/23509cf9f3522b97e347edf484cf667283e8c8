@@ -1,0 +1,36 @@
+governance/plans/agent-tool-access/E2-CELLS.md
+  s_c24357e71ae5bc::t_0b9a43c8c00a3d 1-31
+governance/plans/agent-tool-access/E3-ENFORCEMENT.md
+  s_c24357e71ae5bc::t_8c09d1d7dcdbb1 1-31
+governance/plans/agent-tool-access/NORTH-STAR.md
+  s_c24357e71ae5bc::t_0563c6e4314724 13-20
+  s_c24357e71ae5bc::t_1e05b947961761 1-12,21-108
+governance/plans/agent-tool-access/RECEIPTS.md
+  s_c24357e71ae5bc::t_1262718f462543 1-149
+governance/plans/agent-tool-access/E5-ONE-SOURCE.md
+  s_c24357e71ae5bc::t_08a98de598fe2c 1-28
+governance/plans/agent-tool-access/E1-CENSUS.md
+  s_c24357e71ae5bc::t_88729d4630bb71 1-29
+governance/plans/agent-tool-access/E4-DEPTH.md
+  s_c24357e71ae5bc::t_bbdd9c948bb902 1-32
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_cc6828c6a7515b 25
+governance/graph.json
+  s_c24357e71ae5bc::t_c2ff13defbda58 2377-2454,17939-18124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1f23509cf9f3522b97e347edf484cf667283e8c8",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

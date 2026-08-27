@@ -1,0 +1,76 @@
+governance/plans/entire-integration/E6-SURFACES.md
+  s_52b66f34f0ec1d::t_c6d0604ed67f68 20
+  s_52b66f34f0ec1d::t_3aa5587a57adb0 38
+  s_32a30bff8591e9::t_8dffe17d5bd490 2-19,21-37,39-43
+  s_3799c95cb4ab66::t_7602f495f28de5 1
+governance/plans/entire-integration/E2-FIRST-WAVE.md
+  s_52b66f34f0ec1d::t_90f19b867885ac 35
+  s_32a30bff8591e9::t_0c16a7791ee062 2-15,17-24,26-34,36-40
+  s_52b66f34f0ec1d::t_cc5005f601c3bb 16
+  s_52b66f34f0ec1d::t_b503f6650a68e7 25
+  s_3799c95cb4ab66::t_a1c7eb20a56101 1
+governance/plans/entire-integration/E1-GUARDRAILS.md
+  s_52b66f34f0ec1d::t_e7b6db6a989641 31
+  s_52b66f34f0ec1d::t_8ce5c113239896 49
+  s_32a30bff8591e9::t_e322d7bc427647 2-30,32-48,50-54
+  s_3799c95cb4ab66::t_a4b2f6b38384bd 1
+governance/plans/entire-integration/E4-GATES.md
+  s_32a30bff8591e9::t_50cb340ff08b5e 2-19,21-29,31-38,40-43
+  s_52b66f34f0ec1d::t_4f40350b62d88f 39
+  s_52b66f34f0ec1d::t_5ecaee0ad6877b 20
+  s_52b66f34f0ec1d::t_1577aef4f9531d 30
+  s_3799c95cb4ab66::t_8bd7a1fd2466ad 1
+governance/plans/entire-integration/E5-FLEET.md
+  s_52b66f34f0ec1d::t_a6f1f4a93aa020 36
+  s_52b66f34f0ec1d::t_abbf60d32b321e 16
+  s_32a30bff8591e9::t_cca8e969233a6c 2-15,17-35,37-41
+  s_3799c95cb4ab66::t_7a3b7b782335b4 1
+governance/plans/entire-integration/E3-RITUALS.md
+  s_52b66f34f0ec1d::t_4dc1328c9fa01a 30
+  s_52b66f34f0ec1d::t_e809bb5999d81d 49
+  s_32a30bff8591e9::t_4333f4e69a816a 2-20,22-29,31-38,40-48,50-54
+  s_52b66f34f0ec1d::t_d52dcabf0afd4d 21
+  s_52b66f34f0ec1d::t_fc532e6fb63b24 39
+  s_3799c95cb4ab66::t_ba7a975b416e7b 1
+governance/plans/entire-integration/E0-BEACHHEAD.md
+  s_32a30bff8591e9::t_ca1985ed0569e2 2-14,16-23,25-32,34-41
+  s_52b66f34f0ec1d::t_8a95598cf44f89 24
+  s_52b66f34f0ec1d::t_b2a87bfcf075b7 15
+  s_52b66f34f0ec1d::t_5b44bcb1c8f7fe 33
+  s_3799c95cb4ab66::t_24ee6b39512c88 1
+governance/plans/entire-integration/NORTH-STAR.md
+  s_32a30bff8591e9::t_b60193540f6421 5-57
+  s_32a30bff8591e9::t_48c65e99e20c9a 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ae9af6acc876986c397d23d65625774b3a9fdbbc",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_3799c95cb4ab66": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002793183ffeqStyhZfACYAJuJ",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_52b66f34f0ec1d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001d33e45ffefcB0bIKv8AfAq8",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

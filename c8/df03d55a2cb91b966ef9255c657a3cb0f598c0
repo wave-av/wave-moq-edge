@@ -1,0 +1,24 @@
+hooks/secret-leak-scan.sh
+  s_375efeac18ed55::t_b9f752bfc68a89 23-31,33-35
+hooks/tests/secret-leak-scan-prefix-anchor.test.sh
+  s_375efeac18ed55::t_c0a780b4757988 1-25,46-53,59-68,70,73-79,85-98
+  s_375efeac18ed55::t_2875024d751a08 26-45,54-58,69,71-72,80-84
+hooks/manifest.json
+  s_375efeac18ed55::t_9cbb6866d88ca3 1332
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c8df03d55a2cb91b966ef9255c657a3cb0f598c0",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

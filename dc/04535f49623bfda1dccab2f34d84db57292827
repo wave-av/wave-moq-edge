@@ -1,0 +1,37 @@
+governance/plans/wave-voice-program/E2-PSTN.md
+  s_15127d80763110::t_1822c1230bd1e5 21
+  s_15127d80763110::t_9d446c7f33afe3 1-20,22-84
+governance/plans/wave-voice-program/NORTH-STAR.md
+  s_15127d80763110::t_7b30299315e241 1-62,64-160
+  s_15127d80763110::t_3927a4f55a12f2 63
+governance/plans/wave-voice-program/E1-VOICE-AGENT.md
+  s_15127d80763110::t_55e771f32821ce 1-76
+governance/plans/wave-voice-program/E0-INVENTORY.md
+  s_15127d80763110::t_b079bbaccb38b5 1-179
+governance/plans/wave-voice-program/E3-CF-TRANSPORT.md
+  s_15127d80763110::t_5d2f3936c6b73e 1-54
+governance/plans/wave-voice-program/E4-SURFACES.md
+  s_15127d80763110::t_b5ef39406b5205 1-59
+governance/plans/wave-voice-program/E5-SWEEP.md
+  s_15127d80763110::t_4a9c7db789280a 1-76
+governance/DASHBOARD.md
+  s_15127d80763110::t_f54cf8f50feee4 25
+governance/graph.json
+  s_15127d80763110::t_58cd2d80915329 7000-7090,28704-28937
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dc04535f49623bfda1dccab2f34d84db57292827",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

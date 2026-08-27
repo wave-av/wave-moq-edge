@@ -1,0 +1,26 @@
+governance/test/closure-readers-semgrep.test.mjs
+  s_85d9e5f433b9aa::t_35460feaaba4fd 1-66
+governance/lib/closure-readers.mjs
+  s_85d9e5f433b9aa::t_a7258c6a17f81a 229-266
+  s_85d9e5f433b9aa::t_8ab57e834de21f 16-17
+governance/bin/closure-audit.mjs
+  s_85d9e5f433b9aa::t_0b7dea3113180c 29
+  s_85d9e5f433b9aa::t_4818341e89796c 72
+  s_85d9e5f433b9aa::t_860e2644a565b4 20-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e558ff0e047d048d77e6ee5cd22db0f70d861831",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/cost.json
+  h_67a1b847dc59d6 1-6
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/rca.json
+  h_67a1b847dc59d6 1-34
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/scorecard.json
+  h_67a1b847dc59d6 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8844e7a826f8eab6e547053ce3b04ae7d9b39147",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

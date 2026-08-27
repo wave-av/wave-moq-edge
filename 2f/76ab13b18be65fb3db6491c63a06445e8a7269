@@ -1,0 +1,35 @@
+governance/plans/agent-mail-plane/E6-GOVERNANCE-GATES.md
+  s_68a1dc0626acc6::t_874de9928b2e2a 1-23
+governance/plans/own-model-program/E6-E6-LOCAL-POWER.md
+  s_8475ab40e46d2e::t_4f6a05d5b7c567 1-6,8-23
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_8475ab40e46d2e::t_faeb276fa3e3e8 23
+governance/plans/own-model-program/NORTH-STAR.md
+  s_8475ab40e46d2e::t_f5260b018139eb 6
+  s_8475ab40e46d2e::t_5efe808e28d165 7
+  s_8475ab40e46d2e::t_aaf3eda38260f2 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2f76ab13b18be65fb3db6491c63a06445e8a7269",
+  "prompts": {},
+  "sessions": {
+    "s_68a1dc0626acc6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4e4ebb2ffeIk1zeBG7l5n6Tm",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8475ab40e46d2e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffea709ffffelUejCvVmFoEoiy",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

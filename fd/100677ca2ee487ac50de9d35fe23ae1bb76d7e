@@ -1,0 +1,44 @@
+scripts/network-listers.test.mjs
+  s_cf3356a24071e8::t_3bdafc2588a0af 1-18,20-30,35,38-51,61-62,67-73,75-78,80-192,196,207-278,285,290-319
+  s_cf3356a24071e8::t_19d05b33a47dae 31-34,36-37
+  s_cf3356a24071e8::t_dbe4e4207cb9ce 279-284,286-289
+  s_cf3356a24071e8::t_6169de5d77df3c 52-60,63-66,74,79
+  s_cf3356a24071e8::t_5ab1bd5cf63fa8 193-195,197-206
+  s_cf3356a24071e8::t_5f5549c80af4c0 19
+  s_cf3356a24071e8::t_ed069ca727dc04 320-322
+  s_364605915bb7ec::t_ca3815493b4ac7 323-394
+scripts/bugbot/daemon.sh
+  s_cf3356a24071e8::t_924c2491129c99 476-479,481-483
+  s_cf3356a24071e8::t_bdf5bccfff9233 60-63
+  s_cf3356a24071e8::t_da63a637782add 491-502,505,507-518
+  s_cf3356a24071e8::t_1514b2de1ba45b 503-504,506
+  s_cf3356a24071e8::t_002f12ab10fe55 529
+  s_cf3356a24071e8::t_261ef24235b42f 162-170
+.github/workflows/wave-av-drift-weekly.yml
+  s_cf3356a24071e8::t_dc484b10fa9435 95
+  s_cf3356a24071e8::t_68dac2c0914ea8 61-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fd100677ca2ee487ac50de9d35fe23ae1bb76d7e",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

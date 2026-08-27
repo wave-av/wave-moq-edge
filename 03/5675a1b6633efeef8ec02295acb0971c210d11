@@ -1,0 +1,26 @@
+governance/test/model-profile-redteam.test.mjs
+  s_7ddeb5d251570f::t_936f918d6a6dcb 1-43
+bin/model-profile.mjs
+  s_7ddeb5d251570f::t_b15e430d22eff6 1-83
+bin/model-redteam.mjs
+  s_7ddeb5d251570f::t_d7eafb179bb04f 23
+  s_7ddeb5d251570f::t_c464103e10cbb7 1-22,24-53
+bin/model-lifecycle.mjs
+  s_7ddeb5d251570f::t_c512187973db36 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "035675a1b6633efeef8ec02295acb0971c210d11",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

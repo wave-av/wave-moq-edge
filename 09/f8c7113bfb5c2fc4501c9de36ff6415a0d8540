@@ -1,0 +1,19 @@
+hookcli/tests/shadow-sessionstart.sh
+  s_364605915bb7ec::t_df0dafbe5034ba 72-82,85-89,91,102,106-108,111-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "09f8c7113bfb5c2fc4501c9de36ff6415a0d8540",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/wave-desktop-local/artifacts/SECRETS.md
+  s_83b73641415a39::t_bbb863306bf829 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dc1735c9ab9ac8e767b46f4d4f84f6c2a7e3c3e5",
+  "prompts": {},
+  "sessions": {
+    "s_83b73641415a39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd196880ffeXRUvrkjXudtttM",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

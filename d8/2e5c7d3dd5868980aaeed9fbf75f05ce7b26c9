@@ -1,0 +1,29 @@
+scripts/token-budget-check-changed.sh
+  s_cf3356a24071e8::t_6fb8f6319acaf1 87-91
+.github/workflows/checks.yml
+  s_cf3356a24071e8::t_cb8187b5e2e519 166-170
+  s_cf3356a24071e8::t_851dd0f46b38eb 64-74
+scripts/gen-token-budget-baseline.sh
+  s_cf3356a24071e8::t_0c52635111745a 35
+  s_cf3356a24071e8::t_df6063a853cd97 53-59
+scripts/token-budget-check-changed.test.mjs
+  s_cf3356a24071e8::t_5e3b5d29f4dd5b 90-123
+.github/.token-budget-baseline
+  s_cf3356a24071e8::t_856bebb9146b65 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d82e5c7d3dd5868980aaeed9fbf75f05ce7b26c9",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

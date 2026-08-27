@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_e2fe5d13b5d75c::t_197d4eb5478858 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "eeb9aafb7174416639d0fc5fd23e534e562eceaa",
+  "prompts": {},
+  "sessions": {
+    "s_e2fe5d13b5d75c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2d917464cecc9f89",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

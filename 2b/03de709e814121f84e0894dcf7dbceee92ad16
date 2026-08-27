@@ -1,0 +1,27 @@
+hookcli/lib/secret-names.mjs
+  s_9041cf1cf1ccad::t_c7257a54d4a2d1 26-28,30
+  s_9041cf1cf1ccad::t_e19ca306d1d533 1-12,20-21,23-25,29,31-32,34-35,37-38,44,50-52,55-60
+  s_9041cf1cf1ccad::t_b2e07174482a83 13-19,22,33,36,39-43,45-49,53-54
+hookcli/lib/t3-sink.mjs
+  s_9041cf1cf1ccad::t_4f6721fc8b69b4 13-24
+governance/test/secret-name-conformance.test.mjs
+  s_9041cf1cf1ccad::t_06e8a7c4c5a834 1-64,66,72-93,95-104,106-131
+  s_9041cf1cf1ccad::t_135dacc38c08b7 94,105
+  s_9041cf1cf1ccad::t_31122c14811b44 65,67-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2b03de709e814121f84e0894dcf7dbceee92ad16",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

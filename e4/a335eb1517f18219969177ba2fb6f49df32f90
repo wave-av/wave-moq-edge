@@ -1,0 +1,21 @@
+governance/plans/network-edge-plane/RECEIPTS.md
+  s_ea8755337f3c0d::t_7d26e7bf5f8576 75-84
+governance/plans/network-edge-plane/E1-EGRESS-CONTRACT.md
+  s_ea8755337f3c0d::t_5973933c3886f3 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e4a335eb1517f18219969177ba2fb6f49df32f90",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

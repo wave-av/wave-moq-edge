@@ -1,0 +1,76 @@
+governance/plans/wave-reinforcement-learning/E24-SPINE.md
+  s_0950865aa49634::t_727d7815fa6c54 1-69
+governance/plans/wave-reinforcement-learning/E2-CORPUS.md
+  s_0950865aa49634::t_b1ca0275410380 1-59
+governance/plans/wave-reinforcement-learning/E15-REDTEAM.md
+  s_0950865aa49634::t_a0abfd8fec608d 1-54
+governance/plans/wave-reinforcement-learning/E20-DX.md
+  s_0950865aa49634::t_f6ffe354c43606 1-48
+governance/plans/wave-reinforcement-learning/E9-LOOP.md
+  s_0950865aa49634::t_ac46531b9224cc 1-56
+governance/plans/wave-reinforcement-learning/E10-CONTROL.md
+  s_0950865aa49634::t_d13ebc5c5b610f 1-69
+governance/plans/wave-reinforcement-learning/E21-PRICING.md
+  s_0950865aa49634::t_d13c5324e1565d 1-60
+governance/plans/wave-reinforcement-learning/IDEAS.md
+  s_0950865aa49634::t_1308d27ee20570 1-58
+governance/plans/wave-reinforcement-learning/E4-ENVIRONMENT.md
+  s_0950865aa49634::t_9356b9fd4ac086 1-59
+governance/plans/wave-reinforcement-learning/E11-REGISTRY.md
+  s_0950865aa49634::t_a5f07718f95e05 1-62
+governance/plans/wave-reinforcement-learning/E23-DEPRECATE.md
+  s_0950865aa49634::t_a39ec64d5570ed 1-63
+governance/plans/wave-reinforcement-learning/E8-SERVE.md
+  s_0950865aa49634::t_32a021b556806a 1-64
+governance/plans/wave-reinforcement-learning/E12-DISTILL.md
+  s_0950865aa49634::t_8f1ca8e08d21e0 1-58
+governance/plans/wave-reinforcement-learning/E16-OBSERVE.md
+  s_0950865aa49634::t_62a578228af73f 1-53
+governance/plans/wave-reinforcement-learning/E5-ROLLOUT.md
+  s_0950865aa49634::t_63e23770bde7a0 1-53
+governance/plans/wave-reinforcement-learning/E6-TRAINERS.md
+  s_0950865aa49634::t_0b01cc88bd470b 1-69
+governance/plans/wave-reinforcement-learning/E1-INTAKE.md
+  s_0950865aa49634::t_d0cd58eb865ae8 1-64
+governance/plans/wave-reinforcement-learning/E00-SPEC.md
+  s_0950865aa49634::t_183fd742426ae4 1-55
+governance/plans/wave-reinforcement-learning/NORTH-STAR.md
+  s_0950865aa49634::t_0cea5ec720c2c1 152-155,157-196
+  s_0950865aa49634::t_a7646247fad47d 1-151,156,197-200
+governance/plans/wave-reinforcement-learning/E0-SUBSTRATE.md
+  s_0950865aa49634::t_10c299786a7262 1-62
+governance/plans/wave-reinforcement-learning/E13-HUMAN-FEEDBACK.md
+  s_0950865aa49634::t_6b030cb4be43f1 1-62
+governance/plans/wave-reinforcement-learning/E14-CURRICULUM.md
+  s_0950865aa49634::t_13d279b68f8fae 1-49
+governance/plans/wave-reinforcement-learning/E17-RELIABILITY.md
+  s_0950865aa49634::t_4fb9b05b4534f8 1-54
+governance/plans/wave-reinforcement-learning/E19-COMPLIANCE.md
+  s_0950865aa49634::t_10c5687a9b3196 1-61
+governance/plans/wave-reinforcement-learning/E22-GA-GATE.md
+  s_0950865aa49634::t_d1d48f52756974 1-69
+governance/plans/wave-reinforcement-learning/E3-REWARD.md
+  s_0950865aa49634::t_23a8fe5666e76a 1-69
+governance/plans/wave-reinforcement-learning/LIFECYCLE.md
+  s_0950865aa49634::t_4ba36460d33c28 1-163
+governance/plans/wave-reinforcement-learning/E18-RUNBOOKS.md
+  s_0950865aa49634::t_2bcf1007ccb49b 1-64
+governance/plans/wave-reinforcement-learning/E7-EVAL.md
+  s_0950865aa49634::t_c13cee9262b408 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b7ca35ff8431a0c1f6694fd1be638b34d9379514",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

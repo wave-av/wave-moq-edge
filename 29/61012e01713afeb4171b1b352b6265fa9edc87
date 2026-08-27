@@ -1,0 +1,26 @@
+governance/recall/BAKE-OFF.md
+  s_6f6453b23e3805::t_cf1a18172bb760 515
+  s_6f6453b23e3805::t_c2304bc4c330cd 494
+governance/plans/reviewer-fleet/E7-POLICY-SSOT.md
+  s_6f6453b23e3805::t_c973c286a12bc3 254-255
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  s_6f6453b23e3805::t_4112b036e59fe9 14
+  s_6f6453b23e3805::t_a57df6c9ea2a3b 33
+  s_6f6453b23e3805::t_5f52e684de2554 2-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2961012e01713afeb4171b1b352b6265fa9edc87",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

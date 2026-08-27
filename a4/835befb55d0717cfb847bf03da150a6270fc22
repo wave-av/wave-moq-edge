@@ -1,0 +1,21 @@
+governance/plans/brand-recycle/DR-LIBRARY.md
+  s_15127d80763110::t_737ef56af68ee2 1-71
+governance/plans/brand-recycle/E-LIBRARY.md
+  s_15127d80763110::t_ca9ab54198b86a 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a4835befb55d0717cfb847bf03da150a6270fc22",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

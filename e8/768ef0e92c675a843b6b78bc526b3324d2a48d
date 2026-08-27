@@ -1,0 +1,26 @@
+governance/test/drift-check.test.mjs
+  s_60a20469ef4369::t_ad06d260bc61a5 16
+  s_60a20469ef4369::t_1017a7adefed14 47-66
+governance/lib/drill-fixtures-drift.mjs
+  s_60a20469ef4369::t_b82b59e3efb3a6 85
+  s_60a20469ef4369::t_6d84d484b3adc3 70
+  s_60a20469ef4369::t_74ae250eb64a55 49
+  s_60a20469ef4369::t_552a06fd1a602a 97
+  s_60a20469ef4369::t_176731ec182de8 43-48,50-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e8768ef0e92c675a843b6b78bc526b3324d2a48d",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

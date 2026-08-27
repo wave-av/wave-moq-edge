@@ -1,0 +1,62 @@
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_7c7e203d305c60::t_57eda084326b90 54-55
+  s_7c7e203d305c60::t_24371897acb90b 20-23,30-35
+  s_7c7e203d305c60::t_c4f091a8616e9d 104-106
+  s_7c7e203d305c60::t_91b4e787dc6f23 78-92
+  s_7c7e203d305c60::t_3f4f570732903a 5-6
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_7c7e203d305c60::t_68887c587860c3 5
+  s_7c7e203d305c60::t_05c68937b160a0 101-102
+  s_7c7e203d305c60::t_dbb0520a83d620 26-32
+  s_7c7e203d305c60::t_456d33ccccd342 77-82,87-88
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_7c7e203d305c60::t_9b1db2afc62f01 84,89-91,93-104
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_7c7e203d305c60::t_973f5fe178cfc8 102-104
+  s_7c7e203d305c60::t_7a155b332207d8 8-10
+  s_7c7e203d305c60::t_58cd26bb9de9d3 72-73,77-89
+  s_7c7e203d305c60::t_8eb821ddc65087 29-32
+  s_63c6ee080d73c3::t_a61831f9d216c8 90
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_7c7e203d305c60::t_b401a7c7abaf13 6
+  s_7c7e203d305c60::t_5e18b998b2dafa 82
+  s_7c7e203d305c60::t_334fa9189db97c 23-31
+  s_7c7e203d305c60::t_611c763f92d991 66-67
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_7c7e203d305c60::t_c52761ff557561 12,19-22
+  s_7c7e203d305c60::t_f823b9d9c36385 71-85
+  s_7c7e203d305c60::t_b008da1ffefe07 6
+  s_7c7e203d305c60::t_2364111a5e1f0b 95-96
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_7c7e203d305c60::t_3e732df80542fa 82-83,88-89
+  s_7c7e203d305c60::t_e555dfd9d3eba3 103
+  s_7c7e203d305c60::t_ddc6dbe90196b8 37-48
+governance/plans/cloudflare-os-bridge/README.md
+  s_7c7e203d305c60::t_09a18e1a9a999c 24
+governance/graph.json
+  s_7c7e203d305c60::t_a03a6ae4094c05 3060,19828,19830,19834,19836,19840,19842
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3ad505560bf88427ea915303a0883583a8d32083",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

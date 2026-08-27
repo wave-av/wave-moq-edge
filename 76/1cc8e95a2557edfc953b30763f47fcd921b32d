@@ -1,0 +1,36 @@
+hooks/sandbox-bypass-gate.sh
+  s_e017bc8859c6b9::t_7fd03b111ef33b 44
+  s_e017bc8859c6b9::t_be911584af83a0 56-79,97
+  s_0950865aa49634::t_4d13eb7b3052c5 81-84,115-116,118,134
+hooks/tests/sandbox-bypass-gate.test.sh
+  s_e017bc8859c6b9::t_e62d28b6990fb7 134,136-137
+  s_e017bc8859c6b9::t_fc74552d0577b4 40-48,50-52
+  s_e017bc8859c6b9::t_54eed07448e225 116-133,135,138-149
+  s_e017bc8859c6b9::t_c8434090873d0f 59-60
+hooks/manifest.json
+  s_e017bc8859c6b9::t_cdda1145f50ee1 1549
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "761cc8e95a2557edfc953b30763f47fcd921b32d",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

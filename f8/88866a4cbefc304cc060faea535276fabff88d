@@ -1,0 +1,20 @@
+hookcli/tests/require.sh
+  s_dccee6b7677203::t_cfcbe2cdb47dbc 108
+  s_dccee6b7677203::t_998930edd90bf3 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f888866a4cbefc304cc060faea535276fabff88d",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

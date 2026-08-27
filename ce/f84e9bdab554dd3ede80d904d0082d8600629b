@@ -1,0 +1,27 @@
+governance/plans/agentic-wave/REFERENCE-CLOUDFLARE-OS-PATTERNS.md
+  s_7c7e203d305c60::t_f1fa25924b4f86 1-3,5-25,29-467,470-629
+  s_7c7e203d305c60::t_c94810f4c56662 26
+  s_7c7e203d305c60::t_1b83e3086987b4 468-469
+  s_7c7e203d305c60::t_ff8d626c8f741c 4
+  s_7c7e203d305c60::t_a0a456dba1b54a 27-28
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_352ec737df8e19 25
+governance/graph.json
+  s_7c7e203d305c60::t_17815a442614f6 2546-2558,18678-18707
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "cef84e9bdab554dd3ede80d904d0082d8600629b",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

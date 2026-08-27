@@ -1,0 +1,143 @@
+.github/actions/cll-loop-gates/action.yml
+  s_9bb1b1d1d998d4::t_e5776f21561da0 47-54
+.gitignore
+  s_9bb1b1d1d998d4::t_0ae356c4332b22 51-56
+governance/bin/doc-hygiene.mjs
+  s_9bb1b1d1d998d4::t_210c8b5a2c0f4d 1-69
+governance/bin/email-archive.mjs
+  s_9bb1b1d1d998d4::t_08851b0f8bb7b1 5,49-50,83-127,151-159,237,247-251
+governance/bin/main-protection-audit.mjs
+  s_9bb1b1d1d998d4::t_b1ab1d8bcc4257 135-153
+governance/lib/drill-fixtures-doc-hygiene.mjs
+  s_9bb1b1d1d998d4::t_c516295ca5da47 1-77
+governance/lib/drill-registry.mjs
+  s_85113a1cef9a84::t_3f67b6cbe4cda3 39,259
+governance/lib/gmail-direct.mjs
+  s_9bb1b1d1d998d4::t_8980aff502c9be 1-157
+governance/plans/client-toolset-adoption/E0-KNOWLEDGE.md
+  s_9bb1b1d1d998d4::t_a995bc2984f344 4-10
+governance/plans/client-toolset-adoption/E4-RECEIPTS.md
+  s_9bb1b1d1d998d4::t_df1641d6736a7a 8-16
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_ae798db986c3d9 376-420
+governance/plans/harness-wars-intel/TUI-LANDSCAPE.md
+  s_9bb1b1d1d998d4::t_0123008b98e801 1-18
+governance/plans/harness-wars-intel/media-templates/podcast-to-clips.v1.md
+  s_9bb1b1d1d998d4::t_770b38f70eb3b3 1-39
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9bb1b1d1d998d4::t_00bd8489385601 2
+governance/plans/internal-package-spread/PLAN.md
+  s_9bb1b1d1d998d4::t_bfe4e566500c1b 36-56
+governance/plans/network-edge-plane/ADR/0001-warm-standby-multi-region.md
+  s_9bb1b1d1d998d4::t_94ed413006dd14 1-17
+governance/plans/network-edge-plane/ADR/0002-health-authority-independent-quorum.md
+  s_9bb1b1d1d998d4::t_9d11eb09d65a14 1-15
+governance/plans/network-edge-plane/ADR/0003-pin-lifecycle-quarantine.md
+  s_9bb1b1d1d998d4::t_4be3c176e18fe5 1-15
+governance/plans/network-edge-plane/ADR/0004-promotion-state-machine.md
+  s_9bb1b1d1d998d4::t_d6a3d06109822a 1-15
+governance/plans/network-edge-plane/ADR/0005-feed-v2-signed-artifact.md
+  s_9bb1b1d1d998d4::t_d53fde837d5b2d 1-15
+governance/plans/network-edge-plane/ADR/0006-bounded-failover-retries.md
+  s_9bb1b1d1d998d4::t_c4680ae6399d00 1-12
+governance/plans/network-edge-plane/ADR/0007-category-verifiable-egress-identity.md
+  s_9bb1b1d1d998d4::t_383ac556085edd 1-16
+governance/plans/network-edge-plane/ADR/0008-amend-v2-spec.md
+  s_9bb1b1d1d998d4::t_69c26cc1bed63e 1-12
+governance/plans/network-edge-plane/ADR/lens-review-multi-pin-2026-08-25.md
+  s_9bb1b1d1d998d4::t_6e945c02c69a45 1-56
+governance/plans/network-edge-plane/MULTI-PIN-TOPOLOGY.md
+  s_9bb1b1d1d998d4::t_9dbc9c7d79501d 1-29
+governance/plans/network-edge-plane/RCA/0001-dim-override-negated-chassis-fix.md
+  s_9bb1b1d1d998d4::t_5a80d6fbb699ff 1-31
+governance/plans/network-edge-plane/RCA/0002-label-is-not-auto-merge.md
+  s_9bb1b1d1d998d4::t_feac8c5267ee83 1,3,5-7,9-13,15-17,19-29
+governance/plans/network-edge-plane/RCA/0003-migrate-tokens-off-by-one.md
+  s_9bb1b1d1d998d4::t_739da0da1ab8ea 1-32
+governance/plans/network-edge-plane/RUNBOOK.md
+  s_9bb1b1d1d998d4::t_f8884cd4e0649a 56-65
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_9bb1b1d1d998d4::t_d48e05dc45c083 26-31
+governance/plans/network-edge-plane/doc-types.md
+  s_9bb1b1d1d998d4::t_0c3f324f75a713 1-53
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  s_9bb1b1d1d998d4::t_b5eda662eef18f 110-119
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-12b/profiles/headless/cordis.patch.yml
+  s_9bb1b1d1d998d4::t_a87a03facd4b3a 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-12b/profiles/headless/cordis.yml
+  s_9bb1b1d1d998d4::t_b3565a321a6eae 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-12b/profiles/headless/package.json
+  s_9bb1b1d1d998d4::t_5db5e5604ec3d2 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-12b/profiles/headless/pnpm-workspace.yaml
+  s_9bb1b1d1d998d4::t_ee3f9668923602 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-12b/settings.yaml
+  s_9bb1b1d1d998d4::t_366e39bcbc6ea8 1
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_9bb1b1d1d998d4::t_8583d6fab4bcf6 55-56
+governance/plans/runtime-learning-loop/research/pending-rows/gemma4-12b.json
+  s_9bb1b1d1d998d4::t_faafb925626097 1-19
+governance/plans/tokenization-plane/E0-INVENTORY.md
+  s_9bb1b1d1d998d4::t_55bc376d0b7852 1-9
+governance/plans/tokenization-plane/E1-STRIPE-PCI.md
+  s_9bb1b1d1d998d4::t_e70921c14e6e47 1-13
+governance/plans/tokenization-plane/E2-SECRETS-IN-TRANSIT.md
+  s_9bb1b1d1d998d4::t_31008281b83bd7 1-10
+governance/plans/tokenization-plane/E3-WEBHOOK-SIGNING.md
+  s_9bb1b1d1d998d4::t_ff7c84c462b6d7 1-10
+governance/plans/tokenization-plane/E4-MEDIA-KEYS.md
+  s_9bb1b1d1d998d4::t_8a4bb34387aa45 1-10
+governance/plans/tokenization-plane/E5-CI-GATES.md
+  s_9bb1b1d1d998d4::t_72238f33a42319 1-10
+governance/plans/tokenization-plane/INVENTORY.md
+  s_9bb1b1d1d998d4::t_60586dff662080 1-24
+governance/plans/tokenization-plane/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_aa1247a77b6e03 1-27
+governance/plans/wave-models/MODEL-OPPORTUNITY-LIST.md
+  s_9bb1b1d1d998d4::t_7bd1570d42b15c 25
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_9bb1b1d1d998d4::t_9f609e96b3b4e4 18-37
+governance/state/reviewer-liveness.json
+  s_9bb1b1d1d998d4::t_0e9d2140fca129 2,31,39,47,55-56,61-69,79-80,124-131
+governance/story/launches/sandbox-02-launch.md
+  s_9bb1b1d1d998d4::t_bc853293031ce7 1-41
+governance/test/doc-hygiene.test.mjs
+  s_9bb1b1d1d998d4::t_a8f2866b6844dd 1-67
+governance/test/gmail-direct.test.mjs
+  s_9bb1b1d1d998d4::t_3d56eccbd4faba 1-120
+governance/test/main-protection-audit-pagination.test.mjs
+  s_9bb1b1d1d998d4::t_b0264bb5bf796b 15-17,79-105
+governance/test/receipt-capture-browser.test.mjs
+  s_9bb1b1d1d998d4::t_9ecf4ae6c0bc01 20,23-25,27,95-127,143-145
+governance/test/receipt-observer-matcher.test.mjs
+  s_9bb1b1d1d998d4::t_16304f041fbd21 1-76
+hooks/bin/receipt-capture.mjs
+  s_9bb1b1d1d998d4::t_ae0983e866a747 80-113,156
+settings/settings.base.json
+  s_9bb1b1d1d998d4::t_75446085a44991 94
+hooks/manifest.json
+  s_9bb1b1d1d998d4::t_c1ddf82ec25e41 97-98,104,1597,1603
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0c692994f0569ef1b2b7c81d36488f5e9c9a146d",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

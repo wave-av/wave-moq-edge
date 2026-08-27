@@ -1,0 +1,21 @@
+scripts/ctx-gauge.ts
+  s_766d90cdccdebe::t_7a066d8e25388e 112-173,182,186,189,193,197,199-204
+plugins/telemetry.ts
+  s_766d90cdccdebe::t_77976266f463cf 1-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7b82dcbf1d191cbb24472d52c7c4df905c386a38",
+  "prompts": {},
+  "sessions": {
+    "s_766d90cdccdebe": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002afe254ffeMrOmj52jSU5NMk",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

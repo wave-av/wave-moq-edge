@@ -1,0 +1,32 @@
+memory/fleet-todo-ledger.md
+  s_1ad2f47f1d4417::t_ac7dd2b6189e33 500
+  s_1ad2f47f1d4417::t_1b5dd4b24d94df 577
+  s_1ad2f47f1d4417::t_49d3ec95dd7da1 605
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-advisory-soak-setup.md
+  s_1ad2f47f1d4417::t_ca344860cdeb18 35
+governance/plans/vendor-control-plane/NORTH-STAR.md
+  s_1ad2f47f1d4417::t_1112615a340283 66
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  s_1ad2f47f1d4417::t_379118da22aefb 63
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  s_1ad2f47f1d4417::t_af12b3a39b67f3 182
+  s_1ad2f47f1d4417::t_5515cc89a0ddee 49
+governance/plans/namespace-substrate/STORY-PACKAGE-2026-08-21.md
+  s_1ad2f47f1d4417::t_e40a5616463d3c 57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ca57e244797a54815944d8336564d29d78b0e04b",
+  "prompts": {},
+  "sessions": {
+    "s_1ad2f47f1d4417": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd5fe11d0ffeBz7FlWXXvYY949",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

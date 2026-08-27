@@ -1,0 +1,27 @@
+governance/automation-registry/jobs/cleanup.yaml
+  s_4cc5955ed3b098::t_b6f85ea3a36109 8
+governance/automation-registry/jobs/knowledge-graph.yaml
+  s_4cc5955ed3b098::t_78a7d484ca0be7 19
+governance/automation-registry/jobs/local-llm-infra.yaml
+  s_4cc5955ed3b098::t_461a51512c2a71 92
+governance/automation-registry/jobs/messaging.yaml
+  s_4cc5955ed3b098::t_11ce3f33843963 8,95
+governance/automation-registry/jobs/monitoring.yaml
+  s_4cc5955ed3b098::t_b30797a0aea413 26,38-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d0d897ae424f1e7f53350499c347ef1fa1019a3e",
+  "prompts": {},
+  "sessions": {
+    "s_4cc5955ed3b098": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae0775d455ae02d45",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

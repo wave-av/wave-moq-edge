@@ -1,0 +1,65 @@
+memory/runpod-uplevel-plan.md
+  s_8af4028370359f::t_0ea4ff52a018c8 19-23
+  s_8af4028370359f::t_7089d9c0979d7d 3
+  s_8af4028370359f::t_822d8c5460f7a4 1-2
+  s_8af4028370359f::t_5b7a8a6bdc35b1 4-6,16-18
+  s_8af4028370359f::t_51db198275e6eb 24-26
+  s_6046880c148371::t_c153cacfa24d11 7-15,27-125
+memory/runpod-platform-reference.md
+  s_8af4028370359f::t_d357ff956a1249 6,8-27,34,127,137,173,231,243,252,259,269,280,288,298,308,325
+  s_8af4028370359f::t_0a1a4b267ff179 3-5
+  s_8af4028370359f::t_235879467b5d55 7
+  s_8af4028370359f::t_1ea384a1e8d7de 28-33
+  s_8af4028370359f::t_e1e0e965f8f0e4 35-37,124-126
+  s_8af4028370359f::t_b797e2f650e828 128-130,134-136
+  s_8af4028370359f::t_acff941ccb576f 138-140,170-172
+  s_8af4028370359f::t_646e3b35addfbf 174-176,228-230
+  s_8af4028370359f::t_422d91252ed7aa 232-234,240-242
+  s_8af4028370359f::t_7506f47ee385b7 244-246,249-251
+  s_8af4028370359f::t_ebbd004f6cb708 253-258
+  s_8af4028370359f::t_d4643fb724e05b 260-262,266-268
+  s_8af4028370359f::t_a3f9c1771fbb41 270-272,277-279
+  s_8af4028370359f::t_a0aca143c86903 281-283,285-287
+  s_8af4028370359f::t_b242e920f6e3e9 289-291,295-297
+  s_8af4028370359f::t_fb66586052a10d 299-301,305-307
+  s_8af4028370359f::t_2b3f88b4f13c08 309-311,322-324
+  s_8af4028370359f::t_150939ffe109c8 326-328
+  s_7ddeb5d251570f::t_80b737d99d6ede 1-2,38-123,131-133,141-169,177-227,235-239,247-248,263-265,273-276,284,292-294,302-304,312-321,329-337
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "323392cbc57524b343b21db96893a39702c9aff8",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

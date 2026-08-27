@@ -1,0 +1,24 @@
+governance/bin/fleet.mjs
+  s_63c6ee080d73c3::t_719a60294dfa81 18-62,64-65,67-109,111-112,114-120
+  s_63c6ee080d73c3::t_914f90195ecf9f 228
+  s_63c6ee080d73c3::t_5e99418ffff0a4 169-170,172-180
+governance/test/fleet-cli.test.mjs
+  s_63c6ee080d73c3::t_9d5eb0a391ff8e 57-170
+  s_63c6ee080d73c3::t_fce8a9978de4a0 3-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c3c5f15e33e128f8cf15d1086fb193196622efcd",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

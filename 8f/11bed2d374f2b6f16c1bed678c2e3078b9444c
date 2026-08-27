@@ -1,0 +1,19 @@
+governance/research/gpu-deadlock-2026-08-25.md
+  s_9bb1b1d1d998d4::t_0fa7d5e3391bc2 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8f11bed2d374f2b6f16c1bed678c2e3078b9444c",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_124891ed63801b::t_0156dfb552749c 4-8
+governance/plans/ffmpeg9-lei/action/E4-P2-PORTFOLIO.md
+  s_124891ed63801b::t_c73a5e0ecd7776 1-82
+governance/DASHBOARD.md
+  s_124891ed63801b::t_51261b4e11b3f1 25
+governance/graph.json
+  s_124891ed63801b::t_31713a4f0838f7 3391-3398
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a34978ae8ce42abe4c061858344b34fe0c5ff98c",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

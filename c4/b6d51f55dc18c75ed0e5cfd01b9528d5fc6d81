@@ -1,0 +1,25 @@
+hooks/tests/hook-fail-closed.test.sh
+  s_375efeac18ed55::t_0071b3ddde7845 111-150
+hooks/supabase-prod-guard.py
+  s_375efeac18ed55::t_10299e2f7b951a 9-11
+  s_375efeac18ed55::t_a41493739be363 158-175
+  s_375efeac18ed55::t_6eccebd02ec0ee 135-147
+hooks/manifest.json
+  s_375efeac18ed55::t_57e514c5a418f4 1257
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c4b6d51f55dc18c75ed0e5cfd01b9528d5fc6d81",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

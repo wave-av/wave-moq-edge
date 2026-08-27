@@ -1,0 +1,188 @@
+.coderabbit.yaml
+  h_67a1b847dc59d6 156-157,170
+.cursor/BUGBOT.md
+  h_67a1b847dc59d6 68-69,82
+.gitattributes
+  h_67a1b847dc59d6 24-25
+.github/workflows/auto-merge.yml
+  h_67a1b847dc59d6 133-154,312-344
+.github/workflows/governance-enforce.yml
+  h_67a1b847dc59d6 17-31,34
+.github/workflows/governance.yml
+  h_67a1b847dc59d6 385-393
+.github/workflows/trust-surface-regen.yml
+  h_67a1b847dc59d6 1-215
+.github/workflows/trust-surface-staleness.yml
+  h_67a1b847dc59d6 1-119
+.gitignore
+  h_67a1b847dc59d6 112-127
+.greptile/config.json
+  h_67a1b847dc59d6 13
+REVIEW.md
+  h_67a1b847dc59d6 49,63-64,77
+cubic.yaml
+  h_67a1b847dc59d6 71,82-83,96
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/bin/cockpit.mjs
+  h_67a1b847dc59d6 56-57,59,62-67
+governance/bin/committed-not-scheduled.mjs
+  h_67a1b847dc59d6 1-105
+governance/bin/derived-artifact-drift-audit.mjs
+  h_67a1b847dc59d6 96-101
+governance/bin/distribute-bump.mjs
+  h_67a1b847dc59d6 30,32,45,55-62,65,87-89,97-102,114-115,117-123,144-153,157-167,234,237
+governance/bin/epic-status.mjs
+  h_67a1b847dc59d6 21-33,39,41-48,53-61,66-71,73-83,85-90,92-95,97-99,101-110,124-127
+governance/bin/ffmpeg-capability-matrix.mjs
+  h_67a1b847dc59d6 36,43-46
+governance/bin/fleet/installation-authority-audit.mjs
+  h_67a1b847dc59d6 38,170,175
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  h_67a1b847dc59d6 17-23,26-27
+governance/bin/fleet/reviewer-config-census.mjs
+  h_67a1b847dc59d6 37,41
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 30,118,120
+governance/bin/merge-time-artifact-lint.mjs
+  h_67a1b847dc59d6 1-169
+governance/bin/resolve-generated-conflicts.mjs
+  h_67a1b847dc59d6 40-44,51-55,86-93,217-235,262-272
+governance/bin/review-liveness.mjs
+  h_67a1b847dc59d6 58-60
+governance/bin/thread-resolution.mjs
+  h_67a1b847dc59d6 26-28
+governance/bin/trust-surface-gen.mjs
+  h_67a1b847dc59d6 1-210
+governance/graph.json
+  h_67a1b847dc59d6 3177,3179-3180,4093-4105,6360,7825,8109-8122,22731-22736,31365-31412
+governance/lib/audit-args.mjs
+  h_67a1b847dc59d6 23-27,60
+governance/lib/committed-not-scheduled.mjs
+  h_67a1b847dc59d6 1-85
+governance/lib/distribute-bump-core.mjs
+  h_67a1b847dc59d6 7-15,30,78-83,87-99
+governance/lib/distribute-bump-ensure.mjs
+  h_67a1b847dc59d6 1-174
+governance/lib/distribute-bump-report.mjs
+  h_67a1b847dc59d6 1-72
+governance/lib/distribute-bump-shape.mjs
+  h_67a1b847dc59d6 1-282
+governance/lib/drill-fixtures-drift.mjs
+  h_67a1b847dc59d6 26-27,59-94,204-224
+governance/lib/drill-fixtures-pin-currency.mjs
+  h_67a1b847dc59d6 1-115
+governance/lib/epic-status-check.mjs
+  h_67a1b847dc59d6 1-76
+governance/lib/epic-status-scan.mjs
+  h_67a1b847dc59d6 1-202
+governance/lib/ffmpeg-capability-categories.mjs
+  h_67a1b847dc59d6 1-25
+governance/lib/gate-audit-args.mjs
+  h_67a1b847dc59d6 31-36,40
+governance/lib/interactive-sessions.mjs
+  h_67a1b847dc59d6 3,5,12-24,34-42,68-70,82
+governance/lib/merge-time-artifact.mjs
+  h_67a1b847dc59d6 1-88
+governance/lib/ramp-tables.mjs
+  h_67a1b847dc59d6 73-75
+governance/lib/review-liveness-args.mjs
+  h_67a1b847dc59d6 19-24,28-29
+governance/lib/reviewer-census-classify.mjs
+  h_67a1b847dc59d6 117-141
+governance/lib/reviewer-ignore-contract.mjs
+  h_67a1b847dc59d6 14,123-125,130,135-152
+governance/lib/reviewer-policy.mjs
+  h_67a1b847dc59d6 45-79,92-94,96-97,101,154
+governance/lib/thread-resolution-args.mjs
+  h_67a1b847dc59d6 15-19,23
+governance/lib/trust-surface.mjs
+  h_67a1b847dc59d6 1-331
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  h_67a1b847dc59d6 7,17
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  h_67a1b847dc59d6 34-84,112,121
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  h_67a1b847dc59d6 76
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  h_67a1b847dc59d6 11-27,29-32,54-60,62-64,68-69,77-102,108,114-183
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  h_67a1b847dc59d6 13-19
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 209-263
+governance/plans/ffmpeg9-lei/action/E4-P2B-MODNET-SPIKE.md
+  h_67a1b847dc59d6 1-209
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  h_67a1b847dc59d6 5-7,9-25,27-30,51-54,65,78-169
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  h_67a1b847dc59d6 847-949
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  h_67a1b847dc59d6 4,6-22,26
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 55,59,74-171,183,264,274,286,311-349
+governance/reviewer-policy.json
+  h_67a1b847dc59d6 76-82,87-89,118-119,122-128,133,144-151,167-168
+governance/state/trust-surface-launch-claims.json
+  h_67a1b847dc59d6 1-20
+governance/state/trust-surface/index.html
+  h_67a1b847dc59d6 1-303
+governance/state/trust-surface/trust-surface.json
+  h_67a1b847dc59d6 1-7788
+governance/test/cockpit-render.test.mjs
+  h_67a1b847dc59d6 140-142,144-145,156-158,165-171,175
+governance/test/committed-not-scheduled.test.mjs
+  h_67a1b847dc59d6 1-167
+governance/test/distribute-bump-shape.test.mjs
+  h_67a1b847dc59d6 1-272
+governance/test/epic-status-missing-root.test.mjs
+  h_67a1b847dc59d6 1-99
+governance/test/interactive-sessions.test.mjs
+  h_67a1b847dc59d6 6-7,9-10,30,35-36,41,45-64,88-96
+governance/test/merge-time-artifact.test.mjs
+  h_67a1b847dc59d6 1-60
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  h_67a1b847dc59d6 1-102
+governance/test/resolve-generated-conflicts-fixture.mjs
+  h_67a1b847dc59d6 1-73
+governance/test/resolve-generated-conflicts-order.test.mjs
+  h_67a1b847dc59d6 1-41
+governance/test/resolve-generated-conflicts.test.mjs
+  h_67a1b847dc59d6 3,6-9,13-16,116-170
+governance/test/reviewer-census.test.mjs
+  h_67a1b847dc59d6 11-14,120-144
+governance/test/reviewer-demand-shaping.test.mjs
+  h_67a1b847dc59d6 90-143
+governance/test/reviewer-ignore-sync.test.mjs
+  h_67a1b847dc59d6 139-150
+governance/test/reviewer-policy.test.mjs
+  h_67a1b847dc59d6 109-169
+governance/test/status-trigger-coupling.test.mjs
+  h_67a1b847dc59d6 197-343
+governance/test/trust-surface-gen.test.mjs
+  h_67a1b847dc59d6 1-396
+hooks/manifest.json
+  h_67a1b847dc59d6 1318,1330
+hooks/research-bank.sh
+  h_67a1b847dc59d6 31-41,43-50,64-67,69-72,77-150,159-164,166-171
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  h_67a1b847dc59d6 53
+runbooks/library/ab-a-design-fork-with-subagents.md
+  h_67a1b847dc59d6 27-28
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  h_67a1b847dc59d6 1-138
+settings/hooks.d/research-bank.json
+  h_67a1b847dc59d6 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8e6e8bb30f9099b58cc0079a33996b6b741690f6",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

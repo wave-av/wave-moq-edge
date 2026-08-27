@@ -1,0 +1,21 @@
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  s_2e30bff6169f7a::t_2a4ab1ff560809 28
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_2e30bff6169f7a::t_b54f1024d05d33 62-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0a65bc69bbb0332c341d40e394908c28563c578a",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

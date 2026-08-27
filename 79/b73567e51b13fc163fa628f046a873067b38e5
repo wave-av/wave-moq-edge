@@ -1,0 +1,28 @@
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  h_af5ac1a9798224 14,17,222-225,227-231
+governance/bin/wave-cost-ledger-supabase-unit-pull.mjs
+  h_af5ac1a9798224 1-81
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3471-3475,5090-5096
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,30847-30861,42963-43006
+governance/lib/wave-cost-ledger-supabase-stale.mjs
+  h_af5ac1a9798224 1-167
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  h_af5ac1a9798224 4-6,37,41-53,108-160,169-173,179-186,375-380
+governance/test/wave-cost-ledger-supabase-stale.test.mjs
+  h_af5ac1a9798224 1-148
+governance/test/wave-cost-ledger-supabase-write-path.test.mjs
+  h_af5ac1a9798224 18,21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "79b73567e51b13fc163fa628f046a873067b38e5",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

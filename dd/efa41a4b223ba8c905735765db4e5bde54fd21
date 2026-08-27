@@ -1,0 +1,22 @@
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  s_2e30bff6169f7a::t_ad4b4257be0965 1-85
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  s_2e30bff6169f7a::t_14439b51ee8288 1-20,22-175
+  s_2e30bff6169f7a::t_1bec62cc67ba13 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ddefa41a4b223ba8c905735765db4e5bde54fd21",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

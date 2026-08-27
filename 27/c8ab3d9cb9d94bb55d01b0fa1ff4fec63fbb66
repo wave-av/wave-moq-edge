@@ -1,0 +1,223 @@
+.coderabbit.yaml
+  s_2fd4e0c1ae6a7a::t_163f72d473ccc9 156-157
+.cursor/BUGBOT.md
+  s_2fd4e0c1ae6a7a::t_a1ca1e08f13e2b 68-69
+.gitattributes
+  s_2fd4e0c1ae6a7a::t_bc478c4cfca05f 24-25
+.github/workflows/foundation-gate.yml
+  s_2fd4e0c1ae6a7a::t_bc0deb13af8d89 42
+.github/workflows/governance.yml
+  s_2fd4e0c1ae6a7a::t_4720f34b4f2b17 385-393
+.github/workflows/trust-surface-regen.yml
+  s_2fd4e0c1ae6a7a::t_93180568105c1c 1-215
+.github/workflows/trust-surface-staleness.yml
+  s_2fd4e0c1ae6a7a::t_4859ead3116d91 1-119
+.gitignore
+  s_2fd4e0c1ae6a7a::t_dfa21cd5b6c682 112-127
+.greptile/config.json
+  s_2fd4e0c1ae6a7a::t_674384e6a31549 13
+REVIEW.md
+  s_2fd4e0c1ae6a7a::t_524176bcca696b 63-64
+cubic.yaml
+  s_2fd4e0c1ae6a7a::t_3856a08f707c24 82-83
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_283f281b1b5eda 25
+governance/bin/derived-artifact-drift-audit.mjs
+  s_2fd4e0c1ae6a7a::t_9bc0f000f7899c 96-101
+governance/bin/epic-status.mjs
+  s_2fd4e0c1ae6a7a::t_1318348d9d884a 21-33,39,41-48,53-61,66-71,73-83,85-90,92-95,97-99,101-110,124-127
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_2fd4e0c1ae6a7a::t_306d9bcc41ae45 36,43-46
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_2fd4e0c1ae6a7a::t_df57c3724758f1 16-21,23-25
+governance/bin/gate-coverage-audit.mjs
+  s_2fd4e0c1ae6a7a::t_6b7ac12977612f 26-28,62
+governance/bin/gate-liveness-drill.mjs
+  s_2fd4e0c1ae6a7a::t_2b5ebd439a1f31 30,118,120
+governance/bin/hook-release.mjs
+  s_2fd4e0c1ae6a7a::t_b81be53ebf715b 53,57-59,69-75,106,118,216,271-272,323-324
+governance/bin/pr-check-health.mjs
+  s_2fd4e0c1ae6a7a::t_74a81393c67005 43,45-51,64-67,87-91,94-100,103-128,137,146,159-161,168,174-175,178-182,193-194,200
+governance/bin/required-check-liveness.mjs
+  s_2fd4e0c1ae6a7a::t_a98a2e5c375b40 1-267
+governance/bin/resolve-generated-conflicts.mjs
+  s_2fd4e0c1ae6a7a::t_1eea84e58c2c54 86-93,262-272
+governance/bin/trust-surface-gen.mjs
+  s_2fd4e0c1ae6a7a::t_256ac65f0bc104 1-210
+governance/graph.json
+  s_c24357e71ae5bc::t_a869a289c4aeea 3255,3257-3258,3352-3520,4340-4365,20836-21051,23308-23313
+governance/lib/audit-args.mjs
+  s_2fd4e0c1ae6a7a::t_25a1050d729bb3 23-25,60-61
+governance/lib/drill-fixtures-drift.mjs
+  s_2fd4e0c1ae6a7a::t_2a473800c5b1e3 26-27,59-94,204-224
+governance/lib/drill-fixtures-pin-currency.mjs
+  s_2fd4e0c1ae6a7a::t_8318b9631c7fe1 1-115
+governance/lib/epic-status-check.mjs
+  s_2fd4e0c1ae6a7a::t_6e9416ed5c875f 1-76
+governance/lib/epic-status-scan.mjs
+  s_2fd4e0c1ae6a7a::t_cb1817c86a96d6 1-202
+governance/lib/ffmpeg-capability-categories.mjs
+  s_2fd4e0c1ae6a7a::t_4f0cf996739ce7 1-25
+governance/lib/gate-audit-args.mjs
+  s_2fd4e0c1ae6a7a::t_2f2f26a7353612 31-33,36-37,123
+governance/lib/hook-release-args.mjs
+  s_2fd4e0c1ae6a7a::t_9f7fcaca905c2f 1-117
+governance/lib/pr-check-health-absence.mjs
+  s_2fd4e0c1ae6a7a::t_1c5ceec8401bd8 1-5,7-15,17-30,40-149,152,158-165,180-183
+governance/lib/pr-check-health-evaluate.mjs
+  s_2fd4e0c1ae6a7a::t_8ec19cafd1c1b3 1-120
+governance/lib/pr-check-health-fetch.mjs
+  s_2fd4e0c1ae6a7a::t_ca07b6d8bd1d79 1-5,7-10,12-15,21,23,50-56,64-65,125-131,143-160,163-170,172-191,194,199,201,207,209-217,219-228,230,235-243,245,250-252,320
+governance/lib/pr-check-health-platform.mjs
+  s_2fd4e0c1ae6a7a::t_5932ac912c3b6e 119-128,132,232-278
+governance/lib/pr-check-health-required-set.mjs
+  s_2fd4e0c1ae6a7a::t_baa26cdaafa258 1-3,5-10,54-57
+governance/lib/pr-check-health-run.mjs
+  s_2fd4e0c1ae6a7a::t_5706fca4356211 1-110
+governance/lib/pr-check-health-surfaces.mjs
+  s_2fd4e0c1ae6a7a::t_a78409a815c08f 1-3,5-9,11-15,17,19-20,22-26,28-31,33-48,50,52-74,77-110,113-116,118-170
+governance/lib/pr-check-health-verdict.mjs
+  s_2fd4e0c1ae6a7a::t_15ad6930a1831c 1-133
+governance/lib/pr-check-health.mjs
+  s_2fd4e0c1ae6a7a::t_e89d6764137772 9-14,22-26,50-55,73-76,79-81,83-86,88-107,130-131,144-145,148,155,173,177-183,191-194,196-227,240-241,243-248,250-253
+governance/lib/required-check-liveness.mjs
+  s_2fd4e0c1ae6a7a::t_f19a6d72ab6829 1-255
+governance/lib/strict-flags.mjs
+  s_2fd4e0c1ae6a7a::t_cfd42f27b4a1c8 60,63-66
+governance/lib/trust-surface.mjs
+  s_2fd4e0c1ae6a7a::t_aabe9b4fe92edb 1-331
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_2fd4e0c1ae6a7a::t_f9a77291da4919 3-5
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  s_2fd4e0c1ae6a7a::t_e0500f81c5ba82 34-84,112,121
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_2fd4e0c1ae6a7a::t_63301acb775e2d 76
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_2fd4e0c1ae6a7a::t_02d20b9619a26b 11-27,29-32,54-60,62-64,68-69,77-102,108,114-183
+governance/plans/console-completeness/E1-LEGACY-SIX.md
+  s_2fd4e0c1ae6a7a::t_c9f46a9157114d 1-57
+governance/plans/console-completeness/E1-SPEC.md
+  s_2fd4e0c1ae6a7a::t_2135b77ff3bdfb 1-404
+governance/plans/console-completeness/E2-BILLING-USAGE.md
+  s_2fd4e0c1ae6a7a::t_476421288028fd 1-84
+governance/plans/console-completeness/E3-COVERAGE.md
+  s_2fd4e0c1ae6a7a::t_b74ae6b0935b1e 1-91
+governance/plans/console-completeness/E3-SPEC.md
+  s_2fd4e0c1ae6a7a::t_f9a8ed61c36b1f 1-455
+governance/plans/console-completeness/E4-SEMANTICS.md
+  s_2fd4e0c1ae6a7a::t_8f31d010ef042c 1-63
+governance/plans/console-completeness/E5-PERFECTION-PASS.md
+  s_2fd4e0c1ae6a7a::t_4394666dc2f6e0 1-53
+governance/plans/console-completeness/NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_aa80410e7f8281 1-151
+governance/plans/console-completeness/comps/billing-usage-v1.html
+  s_2fd4e0c1ae6a7a::t_ceb8d1932c0371 1-686
+governance/plans/console-perfection/E1-HUMAN-CANON.md
+  s_2fd4e0c1ae6a7a::t_56444c73f3861c 1-119
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  s_2fd4e0c1ae6a7a::t_0aa3cbea523273 1-92
+governance/plans/console-perfection/E3-AGENT-ACCESS.md
+  s_2fd4e0c1ae6a7a::t_21620f2a92a88f 1-81
+governance/plans/console-perfection/E4-AGENT-PAYMENT.md
+  s_2fd4e0c1ae6a7a::t_24f3429c29c38f 1-96
+governance/plans/console-perfection/E5-MCP-PARITY.md
+  s_2fd4e0c1ae6a7a::t_3bf4f0e5c52714 1-90
+governance/plans/console-perfection/E6-NAME-TRUTH.md
+  s_2fd4e0c1ae6a7a::t_d13618de0c52a4 1-114
+governance/plans/console-perfection/NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_c3f8978f318732 1-139
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_2fd4e0c1ae6a7a::t_382a9df1ab974a 10-24,27-33,160-175
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_2fd4e0c1ae6a7a::t_0ea38a1c890469 12-20
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_2fd4e0c1ae6a7a::t_4c586faa71c262 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_2fd4e0c1ae6a7a::t_e70cab3b71c6dc 209-305
+governance/plans/ffmpeg9-lei/action/E10-P2-TIME-MACHINE-POC.md
+  s_2fd4e0c1ae6a7a::t_65d12603fa5e65 1-269
+governance/plans/ffmpeg9-lei/action/E11-P3-UPSTREAM-PATCH.md
+  s_2fd4e0c1ae6a7a::t_0cc03f1204c91f 52,54,63-83,94-95,99-104
+governance/plans/ffmpeg9-lei/action/E15-P1-VALIDATION.md
+  s_2fd4e0c1ae6a7a::t_9e4f849d168657 1-423
+governance/plans/ffmpeg9-lei/action/E15-P2-SUBMISSION-RECEIPTS.md
+  s_2fd4e0c1ae6a7a::t_379afcb6e14dbe 1-220
+governance/plans/ffmpeg9-lei/action/E4-P2B-MODNET-SPIKE.md
+  s_2fd4e0c1ae6a7a::t_1eecefad78f17c 1-209
+governance/plans/ffmpeg9-lei/action/upstream/dnn-io-proc-stride/0001-avfilter-dnn-fix-output-buffer-stride-for-channel-re.patch
+  s_2fd4e0c1ae6a7a::t_cf08b87ce71eb2 1-60
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch1-cover.md
+  s_2fd4e0c1ae6a7a::t_9afb01b1a359fb 1-69
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_2fd4e0c1ae6a7a::t_ea2a4fe0faf86c 1-73
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-11698-comment.md
+  s_2fd4e0c1ae6a7a::t_df11415db8955b 1-56
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-vt-proresraw-draft.md
+  s_2fd4e0c1ae6a7a::t_7ca14572c486c2 1-84
+governance/plans/ffmpeg9-lei/action/upstream/validate/Dockerfile
+  s_2fd4e0c1ae6a7a::t_7be310b1df7ab7 1-121
+governance/recall/BAKE-OFF.md
+  s_2fd4e0c1ae6a7a::t_5f35a57a07b785 55,57,59,74,76-83,85,87-92,94-130,133-135,138-140,143-186,188-225,227-340,354-356,437,447,459,484-566
+governance/recall/eval/repo-corpus.manifest.json
+  s_2fd4e0c1ae6a7a::t_827838150ab1cc 252-254,272,274,288
+governance/reviewer-policy.json
+  s_2fd4e0c1ae6a7a::t_790bc47296c7fc 76-82,87-89
+governance/state/trust-surface-launch-claims.json
+  s_2fd4e0c1ae6a7a::t_c04a3c4f056e91 1-20
+governance/state/trust-surface/index.html
+  s_2fd4e0c1ae6a7a::t_7556c26626186f 1-303
+governance/state/trust-surface/trust-surface.json
+  s_2fd4e0c1ae6a7a::t_9bbad01d817806 1-7788
+governance/test/epic-status-missing-root.test.mjs
+  s_2fd4e0c1ae6a7a::t_154c3795c75d04 1-99
+governance/test/gate-audit-args.test.mjs
+  s_2fd4e0c1ae6a7a::t_5ecf6032fad558 53-55,60,110-114
+governance/test/hook-release-args.test.mjs
+  s_2fd4e0c1ae6a7a::t_d9f9308cc71b39 1-173
+governance/test/pr-check-health-fetch.test.mjs
+  s_2fd4e0c1ae6a7a::t_17b6a586f0d9d7 1-365
+governance/test/pr-check-health-platform.test.mjs
+  s_2fd4e0c1ae6a7a::t_9358053213dbd4 14,123-129,163-172,330-358
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_2fd4e0c1ae6a7a::t_44a58c4d863bcd 14,17,19,64,71,73-78,83-84,89-90,220-227,230-234,237-238,248-249,251-252,255-256,264,266,277,285,287,289,295,297-303,305,308,341-343,350-390,392,394-395
+governance/test/pr-check-health-stall.test.mjs
+  s_2fd4e0c1ae6a7a::t_12187245e611c9 1-199
+governance/test/pr-check-health-surfaces.test.mjs
+  s_2fd4e0c1ae6a7a::t_983084e1139855 1-277
+governance/test/pr-check-health.test.mjs
+  s_2fd4e0c1ae6a7a::t_7cc78cff56a425 10,17-19,56-73,231-240,260,264-349,352-390
+governance/test/required-check-liveness.test.mjs
+  s_2fd4e0c1ae6a7a::t_61853ac09d2985 1-308
+governance/test/resolve-generated-conflicts.test.mjs
+  s_2fd4e0c1ae6a7a::t_2302e7f17a1e4b 116-170
+governance/test/trust-surface-gen.test.mjs
+  s_2fd4e0c1ae6a7a::t_25d1361e1b9010 1-396
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_2fd4e0c1ae6a7a::t_109eb510066282 37
+runbooks/library/ffmpeg-major-bump.md
+  s_2fd4e0c1ae6a7a::t_d125e12bf0905d 16,74-82,150-160,176-182,230-259,273-276,280,282-292
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "27c8ab3d9cb9d94bb55d01b0fa1ff4fec63fbb66",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

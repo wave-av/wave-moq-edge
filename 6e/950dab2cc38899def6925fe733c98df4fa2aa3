@@ -1,0 +1,31 @@
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_8d26503dfc73f4::t_c2427a3e297143 131-161
+governance/DASHBOARD.md
+  s_4c303dc09dc413::t_0f3e4f5ee9b8d6 25
+governance/graph.json
+  s_4c303dc09dc413::t_1e7276285b7f7b 22670-22675
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6e950dab2cc38899def6925fe733c98df4fa2aa3",
+  "prompts": {},
+  "sessions": {
+    "s_4c303dc09dc413": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "35813bc7-8ddc-4e0e-a984-61754090f3fa",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

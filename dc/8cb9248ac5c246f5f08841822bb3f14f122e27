@@ -1,0 +1,125 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_57d49e481e9aa0 345
+  s_124891ed63801b::t_08a0992d438965 346-348
+  s_7c7e203d305c60::t_dffe61a8c3eaef 349-351
+.github/osv-baseline.tsv
+  s_d9915bbafa9657::t_0d25f3947bd9dc 1-16
+.github/workflows/claude-code-release-watch.yml
+  s_d9915bbafa9657::t_b11f537e147d6f 1-118
+.github/workflows/wave-sec-scan.yml
+  s_d9915bbafa9657::t_a1c0d1317f3ca4 209
+.gitignore
+  s_d9915bbafa9657::t_b6246f337b3768 101-106
+governance/README.md
+  s_d9915bbafa9657::t_e306ca926b9717 69-73
+governance/bin/claude-code-release-watch.mjs
+  s_d9915bbafa9657::t_b02a89e8ebf427 1-170
+governance/bin/files-allowlist-lint.mjs
+  s_d9915bbafa9657::t_6950c274268bf3 23-28
+governance/lib/markdown-mask.mjs
+  s_d9915bbafa9657::t_ebeab225347cdc 59-72,84-86,90-92,99,109-110
+governance/lib/mutates.mjs
+  s_d9915bbafa9657::t_082a4d9afdf1fd 26-30
+governance/lib/wave-sec-osv-baseline.mjs
+  s_d9915bbafa9657::t_24c88e00f0cf4a 1-71
+governance/lib/wave-sec-scanners.mjs
+  s_d9915bbafa9657::t_79f0542b3637f0 11,13,52-61,64-65,201-210,239-247,257-260,268
+governance/lib/wave-sec-zizmor-baseline.mjs
+  s_d9915bbafa9657::t_4cdd7f8694ebec 16-21
+governance/lib/work-node-deps.mjs
+  s_d9915bbafa9657::t_5afa817289b901 1-213
+governance/lib/work-nodes.mjs
+  s_d9915bbafa9657::t_3e236febf2ea5a 18,22-24,26
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_d9915bbafa9657::t_df34fa4fce9a7a 10,15-16,21,30-34
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  s_d9915bbafa9657::t_65e4a8397c334e 13-15,20-21,26-36
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_d9915bbafa9657::t_60ce2398d1a045 31-32
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_d9915bbafa9657::t_72a9668edfdafc 3-32,34,36-55,68-77,100,116
+governance/plans/socratic-loop/E1-SPINE.md
+  s_d9915bbafa9657::t_d760301e90c7f5 74
+governance/plans/socratic-loop/E2-ASKING.md
+  s_d9915bbafa9657::t_00a7bf4e0a3e76 667,675
+governance/plans/socratic-loop/E9-ANTI-GAMING.md
+  s_d9915bbafa9657::t_2b8d870867c1e8 6
+governance/plans/stacked-prs/E2-INTRAREPO-STACK.md
+  s_d9915bbafa9657::t_e40fa820816348 4-9
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_d9915bbafa9657::t_bc894dc7903c5d 3-5,7-142
+governance/state/claude-code-release-watch.json
+  s_d9915bbafa9657::t_66c365603a18b9 1-4
+governance/test/claude-code-release-watch.test.mjs
+  s_d9915bbafa9657::t_5b6886b3f56715 1-86
+governance/test/hookcli-package-boundary-controls.test.mjs
+  s_d9915bbafa9657::t_6bf8544f37c31e 1-392
+governance/test/hookcli-package-boundary.test.mjs
+  s_d9915bbafa9657::t_7bcb5c74971a73 1-182
+governance/test/lib/hookcli-package-boundary.mjs
+  s_d9915bbafa9657::t_eb9a9b0a85ec19 1-360
+governance/test/mutates.test.mjs
+  s_d9915bbafa9657::t_c4449c069b12e8 23-28
+governance/test/plan-lint.inverted-deps.test.mjs
+  s_d9915bbafa9657::t_b4570c5e1044d8 70-129
+governance/test/wave-sec-fakebin.mjs
+  s_d9915bbafa9657::t_ef2d90123784d1 1-5
+governance/test/wave-sec-scanners-osv.test.mjs
+  s_d9915bbafa9657::t_e3cccfc247ebd1 1-8,11-12,17-30,32-35,37,40,42,45,49-61,63-72,75-77,80-122,124,126-127,129-182
+governance/test/wave-sec-scanners.test.mjs
+  s_d9915bbafa9657::t_ac8ff64484e45a 12-14,20
+governance/test/work-nodes.deps.test.mjs
+  s_d9915bbafa9657::t_47559998a046cf 40-50,52,58-62,101-288
+hookcli/lib/promote-grade.mjs
+  s_d9915bbafa9657::t_e03b3befc0fa16 2-3
+hookcli/tests/audit-ts.sh
+  s_d9915bbafa9657::t_f232888800258f 64,86
+hookcli/tests/distill-report.sh
+  s_d9915bbafa9657::t_7aa3dd48a70326 7
+hookcli/tests/enforce-review.sh
+  s_d9915bbafa9657::t_34c85e0ef56e90 6-7
+hookcli/tests/promote-candidate.sh
+  s_d9915bbafa9657::t_1071fafc51ff45 7
+hookcli/tests/report-provenance.sh
+  s_d9915bbafa9657::t_a5565530a943cf 16,24,42,49
+hookcli/tests/require-arity.sh
+  s_d9915bbafa9657::t_d416b0246000d3 107-108
+hookcli/tests/require-graduation-report.sh
+  s_d9915bbafa9657::t_14780829ad6842 6
+hookcli/tests/shadow-report.sh
+  s_d9915bbafa9657::t_7c7e9ecc5c589c 4
+hookcli/tools/enforce-review.mjs
+  s_d9915bbafa9657::t_985d59c1de227b 179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dc8cb9248ac5c246f5f08841822bb3f14f122e27",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

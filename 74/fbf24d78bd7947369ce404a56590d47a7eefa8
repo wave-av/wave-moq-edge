@@ -1,0 +1,2577 @@
+.claude/skills/wave-email-craft/SKILL.md
+  s_dedb333dd5195e::t_3083142aa7e79b 253-259
+.coderabbit.yaml
+  s_dedb333dd5195e::t_c3d6a2f04482e8 34-57
+.gitattributes
+  s_dedb333dd5195e::t_fbdba6d575f0f6 47-48
+.github/actionlint-format.tmpl
+  s_dedb333dd5195e::t_d661570ccc5995 1-4
+.github/scripts/install-semgrep.sh
+  s_dedb333dd5195e::t_c011744b81c554 1-25
+.github/scripts/workflow-lint.sh
+  s_dedb333dd5195e::t_a5e50bdf7cf3b1 1-244
+.github/workflows/auto-merge.yml
+  s_dedb333dd5195e::t_c9689f84de684d 224,331
+.github/workflows/blast-radius-dispatch.yml
+  s_dedb333dd5195e::t_8bc0ed1741c4b4 66-67
+.github/workflows/blast-radius.yml
+  s_dedb333dd5195e::t_a0f8e7882701b1 43,70-75,77-78
+.github/workflows/e4-shadow-capture.yml
+  s_dedb333dd5195e::t_4c49fac9408570 1-38
+.github/workflows/foundation-gate.yml
+  s_dedb333dd5195e::t_839690f1315ec6 42
+.github/workflows/governance-publish.yml
+  s_dedb333dd5195e::t_5a097b3b7f4d37 21-22
+.github/workflows/governance.yml
+  s_dedb333dd5195e::t_8f19c9265c6378 56,150,239,270-271
+.github/workflows/harness-watch-sweep.yml
+  s_dedb333dd5195e::t_ad2e05e4fd7095 1-51
+.github/workflows/main-break-detector.yml
+  s_dedb333dd5195e::t_bd36e5bb0ced11 1-37
+.github/workflows/namespace-egress-advisory-soak.yml
+  s_dedb333dd5195e::t_bac7909c974129 1-147
+.github/workflows/namespace-federation-gh-oidc-probe.yml
+  s_dedb333dd5195e::t_e0505b838caaa4 1-74
+.github/workflows/namespace-release-watch.yml
+  s_dedb333dd5195e::t_ba51eeafef7069 67-83,117-124
+.github/workflows/network-edge-audit.yml
+  s_dedb333dd5195e::t_6f06e9f80cba4c 1-145
+.github/workflows/pr-agent.yml
+  s_dedb333dd5195e::t_00b224747886af 21
+.github/workflows/registry-cadence.yml
+  s_dedb333dd5195e::t_2ded0b8b7e5c9e 1-39
+.github/workflows/search-provider-health.yml
+  s_dedb333dd5195e::t_3683278c550763 1-35
+.github/workflows/wave-sec-aikido.yml
+  s_dedb333dd5195e::t_b9776372f80e61 1-118
+.github/workflows/workflow-lint.yml
+  s_dedb333dd5195e::t_3d40599dce29ee 118-121
+.gitignore
+  s_dedb333dd5195e::t_6812fe1a66c91e 45-52,231-233
+bin/audio-eval.mjs
+  s_dedb333dd5195e::t_1b99951ec975d9 1-300
+bin/distill-sft.mjs
+  s_dedb333dd5195e::t_a1302bd417d77a 1-72
+bin/done-audit.mjs
+  s_dedb333dd5195e::t_deeb043d5d443b 1-119
+bin/embed-eval.mjs
+  s_dedb333dd5195e::t_0c71e64a4218dc 1-265
+bin/eval-attest.mjs
+  s_dedb333dd5195e::t_3d6d548ccc1e13 1-87
+bin/evict-idle.mjs
+  s_dedb333dd5195e::t_1cc5d47a2b8525 1-109
+bin/factory-audit.mjs
+  s_dedb333dd5195e::t_b017098b416985 143-171
+bin/factory-bank-export.mjs
+  s_dedb333dd5195e::t_fefd6fccdf3d87 1-65
+bin/factory-bank.mjs
+  s_dedb333dd5195e::t_e4f9c7c9721d50 29,34,65,70
+bin/fleet-model-inventory.mjs
+  s_dedb333dd5195e::t_9b93506a04e9f3 1-66
+bin/fleet-reliability.mjs
+  s_dedb333dd5195e::t_5a783053319ed0 116-132,182-199
+bin/model-conform.mjs
+  s_dedb333dd5195e::t_1f8d8c662584cb 1-102
+bin/model-drift.mjs
+  s_dedb333dd5195e::t_48081b39222964 1-85
+bin/model-eval.mjs
+  s_dedb333dd5195e::t_5f6e3f12f61db7 24,32-45,62,67-74,77-82,86,92,99,104-111,113,119-212,216-221,227,232,241,244-247,249-253,268-285
+bin/model-horizon.mjs
+  s_dedb333dd5195e::t_ddf63f3715aace 1-199
+bin/model-lifecycle.mjs
+  s_dedb333dd5195e::t_70b25d73614ba8 1-94
+bin/model-pareto.mjs
+  s_dedb333dd5195e::t_25b6a4618f12d3 1-44
+bin/model-profile.mjs
+  s_dedb333dd5195e::t_f429352856fd75 1-84
+bin/model-redteam.mjs
+  s_dedb333dd5195e::t_c0ee38ff8049b4 1-54
+bin/model-report.mjs
+  s_dedb333dd5195e::t_f5fb334040f9f9 1-82
+bin/model-stale.mjs
+  s_dedb333dd5195e::t_0e9712308ac6e6 1-53
+bin/model-vision.mjs
+  s_dedb333dd5195e::t_4f96ecb7b1c703 1-142
+bin/provider-alert.mjs
+  s_dedb333dd5195e::t_e9a0fb7ee56b9f 1-43
+bin/provider-fallback.mjs
+  s_dedb333dd5195e::t_59ed66f492dd4f 1-57
+bin/provider-health.mjs
+  s_dedb333dd5195e::t_943cec96315094 1-88
+bin/record-score.mjs
+  s_dedb333dd5195e::t_2fc75b460ee74f 21,52,63,68-87,94,96,101-102
+bin/review-dpo.mjs
+  s_dedb333dd5195e::t_24aa976ec03c2c 1-87
+bin/route-by-capability.mjs
+  s_dedb333dd5195e::t_725590518abd83 21,23,25,30-75,81-100,123,149-151,157,160,165-166,180-183,185-186,188,223-227,229-251,263-287,319,323,329-339,343
+bin/router-analyze.mjs
+  s_dedb333dd5195e::t_ad72402171cffa 1-51
+bin/router-sft.mjs
+  s_dedb333dd5195e::t_f1f9673f99d116 1-78
+bin/score-export.mjs
+  s_dedb333dd5195e::t_ac20675eece0ea 1-57
+bin/wave-inference-server.mjs
+  s_dedb333dd5195e::t_339f4e5cefcf12 1-92
+bin/wave-inference.mjs
+  s_dedb333dd5195e::t_a8a741a72dd5f4 1-125
+capabilities/MATRIX.md
+  s_dedb333dd5195e::t_571ef2d4953d66 7,14,25-26,46
+capabilities/curated.json
+  s_dedb333dd5195e::t_96dff914fd1304 2,4-22,25-46,49-68,71-88,91-108,111-128,131-148,151-170,173-189,192-208,211-230,233-252,255-272,275-293,296-318,321-338,341-358,361-383,386-403,406-422,425-442,445-462,465-485,488-504,507-523,526-542,545-561,564-580,583-599,602-618,621-637,640-655,658-673,676-691,694-710,713-729,732-748,751-850
+capabilities/registry.json
+  s_dedb333dd5195e::t_5a57c04b9061f2 4,34,65,94,123,152,188,218,227-286,308,339,370,400,431,463,493,523,553,583-627,631,659,690,723,755,788,819,854,866,868-870,896,927,957,987,1017,1050,1064,1083,1093-1122,1149,1161,1163-1165,1193,1225,1262,1294,1325,1355
+capabilities/schema/registry.schema.json
+  s_dedb333dd5195e::t_23ffee146997ed 5,8-10,12-14,19-27,33-35,42-48,57-66,71-76,80-82,88-156,163-174,176-180,185-188,190-195,202-218,226-240
+docs/REGISTER-outbound-email-gate.md
+  s_dedb333dd5195e::t_dc350532cd0352 1-152
+governance/DANGLING-REFS-BASELINE.json
+  s_dedb333dd5195e::t_2ef7158c3d0244 9,13-15,17,35,38-39,42,47-50,178-198,201
+governance/ENFORCEMENT-BASELINE.json
+  s_dedb333dd5195e::t_73fafb571e6227 12-13,206-210
+governance/ENFORCEMENT-COVERAGE.md
+  s_53b49eff5b8c5d::t_801e43a51bd3ee 5,9,12,14,30,57,161,203,241,381,485
+governance/automation-registry/jobs/local-llm-infra.yaml
+  s_dedb333dd5195e::t_f41941766981af 170-185
+governance/automation-registry/jobs/triage.yaml
+  s_dedb333dd5195e::t_fcda7d25284b88 1-31
+governance/automation-registry/lib/automations-read.mjs
+  s_dedb333dd5195e::t_d597ec410856db 1-29
+governance/automation-registry/lib/load-registry.mjs
+  s_dedb333dd5195e::t_e279c431c7b97d 31
+governance/automation-registry/lib/normalize-github-event.mjs
+  s_dedb333dd5195e::t_f5b4d027baeb09 1-40
+governance/automation-registry/lib/schema-error.mjs
+  s_dedb333dd5195e::t_289a155b620f74 1-3
+governance/automation-registry/lib/schema-fallback.mjs
+  s_dedb333dd5195e::t_7b24894b2fff04 1-75
+governance/automation-registry/lib/schema.mjs
+  s_dedb333dd5195e::t_512b93b5c3ab81 4-5,9,13-14,16,48,88,99-101,103-104,106-107,109-112,114-115,121-122,142
+governance/automation-registry/lib/trigger-dispatch.mjs
+  s_dedb333dd5195e::t_f4f3d0876ee778 1-40
+governance/automation-registry/lib/trigger-match.mjs
+  s_dedb333dd5195e::t_f8b83d9a3e48d5 1-28
+governance/automation-registry/lib/webhook-receiver.mjs
+  s_dedb333dd5195e::t_d2091a4cec2541 1-35
+governance/automation-registry/lib/webhook-server.mjs
+  s_dedb333dd5195e::t_448cdfb7317a01 1-142
+governance/automation-registry/lib/webhook-signature.mjs
+  s_dedb333dd5195e::t_74d28e43871f7a 1-22
+governance/bin/anchor-drift-notify.mjs
+  s_dedb333dd5195e::t_a2034c8e40ba75 1-74
+governance/bin/anchor-smoke.mjs
+  s_dedb333dd5195e::t_b1d61f239006c9 1-48
+governance/bin/check-gates.mjs
+  s_dedb333dd5195e::t_291d3454d1a93e 2-3,6-28,60-69
+governance/bin/check.mjs
+  s_dedb333dd5195e::t_2468bdc5959b74 13-14,49,72-73,149-160,274
+governance/bin/citation-check.mjs
+  s_dedb333dd5195e::t_fe4fe03366c044 1-188
+governance/bin/code-index-audit.mjs
+  s_dedb333dd5195e::t_f1e573ecccd807 1-100
+governance/bin/code-index.mjs
+  s_dedb333dd5195e::t_a6e9a3877115aa 38-40,52-74,79-84,88,194-197,199-201,204-206,217,228
+governance/bin/devin-v3.mjs
+  s_dedb333dd5195e::t_0f285c6ffbc50e 1-51
+governance/bin/drift-lint.mjs
+  s_dedb333dd5195e::t_fcf5605cba1ceb 1-91
+governance/bin/email-archive.mjs
+  s_dedb333dd5195e::t_341ba88beafdfd 1-83
+governance/bin/email-gate.mjs
+  s_dedb333dd5195e::t_ebdbaef66aa4f6 1-110
+governance/bin/entropy-gate.mjs
+  s_dedb333dd5195e::t_2b32d3084dd104 1-63
+governance/bin/gate-reality.mjs
+  s_dedb333dd5195e::t_241152f896d3fe 1-268
+governance/bin/gmail-bridge.mjs
+  s_dedb333dd5195e::t_64c884fdec9d8a 1-94
+governance/bin/lab-parity.mjs
+  s_dedb333dd5195e::t_4e3fa8b653ac84 76-130,166-174,216-220
+governance/bin/lane-state.mjs
+  s_dedb333dd5195e::t_be08155c92bb9a 1-71
+governance/bin/main-break-detector.mjs
+  s_dedb333dd5195e::t_2183d1b68370ee 1-72
+governance/bin/mint-token.mjs
+  s_dedb333dd5195e::t_db367c2e2686da 1-226
+governance/bin/network-edge-audit.mjs
+  s_dedb333dd5195e::t_9ac8594cf45fe6 1-169
+governance/bin/nsc-version-probe.mjs
+  s_dedb333dd5195e::t_96a912cb65efae 1-113
+governance/bin/nsdevbox-lease.mjs
+  s_dedb333dd5195e::t_2260f79b5a5a36 1-241
+governance/bin/search-provider-health.mjs
+  s_dedb333dd5195e::t_e6d26d1e09bf68 1-60
+governance/bin/surface-check.mjs
+  s_dedb333dd5195e::t_a05b4cfa65df46 1-130
+governance/bin/taxonomy.mjs
+  s_dedb333dd5195e::t_7d01f0b934b1e9 20
+governance/bin/transcript-secret-scan.mjs
+  s_dedb333dd5195e::t_118ea6c8290be6 1-127
+governance/bin/vendor-cidr-sync.mjs
+  s_dedb333dd5195e::t_a5f6a4eb9f6c1b 1-126
+governance/bin/vendor-mail-triage.mjs
+  s_dedb333dd5195e::t_e3bb243776aca7 1-123
+governance/bin/wave-code-mcp.mjs
+  s_dedb333dd5195e::t_1d94fb9b141ca2 14,16,30-31,36-47,52-53,55-59,62,65-67,82
+governance/bin/wave-cost-ledger-runpod-feeder.mjs
+  s_dedb333dd5195e::t_31803ca0429441 1-115
+governance/bin/wave-laws.mjs
+  s_dedb333dd5195e::t_2d84f8ea359376 1-50
+governance/bin/wave-money.mjs
+  s_dedb333dd5195e::t_7ed1d60918c0b2 1-141
+governance/bin/wave-product-cli.mjs
+  s_dedb333dd5195e::t_63c77450907f60 1-110
+governance/bin/wave-product-mcp.mjs
+  s_dedb333dd5195e::t_feca5e5f5a0267 1-146
+governance/bin/wave-search-mcp.mjs
+  s_dedb333dd5195e::t_659c69969b478b 1-111
+governance/bin/wave-sec-pin-bump.mjs
+  s_dedb333dd5195e::t_b1b1c99bd2dcba 1-125
+governance/capability/CATALOG.md
+  s_dedb333dd5195e::t_74dfa6250737be 5,59,88,107-108,290
+governance/capability/index.json
+  s_dedb333dd5195e::t_4fde9ade4b424e 116,122,2359,2368,2471-2525,3627,3636,3657-3659,3677,3686,3695,3718-3720,3736,3804,3813,3835,3854,3863,3872,3893-3895,3913,3973-4027,4953-5011,5018,5027,5034,5057,5062-5068,11219,11226,11257-11263,11267
+governance/ci-stack/bin/ci-metrics.mjs
+  s_dedb333dd5195e::t_9c04da00ff7cdf 1-267
+governance/ci-stack/bin/devbox-sandbox.mjs
+  s_dedb333dd5195e::t_a4f5b14733d46f 1-231
+governance/ci-stack/dashboard-driver/.gitignore
+  s_dedb333dd5195e::t_a12c01bacbf733 1-4
+governance/ci-stack/dashboard-driver/README.md
+  s_dedb333dd5195e::t_328a899b978f0f 1-127
+governance/ci-stack/dashboard-driver/drive.mjs
+  s_dedb333dd5195e::t_6ef99b3de6a4ee 1-204
+governance/ci-stack/dashboard-driver/gitar-cfg-dump.mjs
+  s_dedb333dd5195e::t_514a88a03265c9 1-25
+governance/ci-stack/dashboard-driver/gitar-connect.mjs
+  s_dedb333dd5195e::t_01ef6b0cd7141a 1-42
+governance/ci-stack/dashboard-driver/gitar-connect2.mjs
+  s_dedb333dd5195e::t_4924eeb7f8afc7 1-43
+governance/ci-stack/dashboard-driver/gitar-dump.mjs
+  s_dedb333dd5195e::t_2b9dbb4a754bec 1-40
+governance/ci-stack/dashboard-driver/gitar-finish-connect.mjs
+  s_dedb333dd5195e::t_bdd8480c7b0e88 1-76
+governance/ci-stack/dashboard-driver/gitar-flip.mjs
+  s_dedb333dd5195e::t_5d3fb62f462186 1-55
+governance/ci-stack/dashboard-driver/gitar-home-probe.mjs
+  s_dedb333dd5195e::t_32fa792e3145ec 1-27
+governance/ci-stack/dashboard-driver/gitar-integ-state.mjs
+  s_dedb333dd5195e::t_f87dfae11dfff1 1-22
+governance/ci-stack/dashboard-driver/gitar-integrations.mjs
+  s_dedb333dd5195e::t_8f355220619ea5 1-22
+governance/ci-stack/dashboard-driver/gitar-retry-flip.mjs
+  s_dedb333dd5195e::t_5cc005778740c2 1-46
+governance/ci-stack/dashboard-driver/gitar-seed-connect.mjs
+  s_dedb333dd5195e::t_1b379db94806f3 1-21
+governance/ci-stack/dashboard-driver/gitar-settings-dump.mjs
+  s_dedb333dd5195e::t_b178de219363f2 1-42
+governance/ci-stack/dashboard-driver/gitar-slack-linear-probe.mjs
+  s_dedb333dd5195e::t_a79c4c1bb88143 1-41
+governance/ci-stack/dashboard-driver/gitar-slack-open.mjs
+  s_dedb333dd5195e::t_86fd849b10c650 1-39
+governance/ci-stack/dashboard-driver/gitar-switches.mjs
+  s_dedb333dd5195e::t_9f18a27189cbdd 1-31
+governance/ci-stack/dashboard-driver/gitar-verify.mjs
+  s_dedb333dd5195e::t_ed17165f5a653f 1-29
+governance/ci-stack/dashboard-driver/linear-agents-tail.mjs
+  s_dedb333dd5195e::t_9b14676b000ed3 1-26
+governance/ci-stack/dashboard-driver/package-lock.json
+  s_dedb333dd5195e::t_0ad09388d85b4d 1-59
+governance/ci-stack/dashboard-driver/package.json
+  s_dedb333dd5195e::t_87c3c39281e205 1-14
+governance/ci-stack/dashboard-driver/seed-connect.log
+  s_dedb333dd5195e::t_fe07417009cb85 1-8
+governance/ci-stack/dashboard-driver/seed-gitar.log
+  s_dedb333dd5195e::t_ed1dc1cbd56df0 1-11
+governance/ci-stack/dashboard-driver/slack-webhook-add.mjs
+  s_dedb333dd5195e::t_6389af1b76ae02 1-31
+governance/ci-stack/dashboard-driver/slack-webhook-create.mjs
+  s_dedb333dd5195e::t_96fdfe4cbd77e7 1-55
+governance/ci-stack/dashboard-driver/slack-webhook-new.mjs
+  s_dedb333dd5195e::t_3ba333508d6975 1-29
+governance/ci-stack/dashboard-driver/slack-webhook-probe.mjs
+  s_dedb333dd5195e::t_17e910d1999592 1-24
+governance/ci-stack/dashboard-driver/tailscale-create-credential.mjs
+  s_dedb333dd5195e::t_699e6fbda616bd 1-70
+governance/ci-stack/dashboard-driver/tailscale-create-final.mjs
+  s_dedb333dd5195e::t_3a712007ee7fda 1-69
+governance/ci-stack/dashboard-driver/tailscale-create-live.mjs
+  s_dedb333dd5195e::t_84e189ba484862 1-79
+governance/ci-stack/dashboard-driver/tailscale-create-live2.mjs
+  s_dedb333dd5195e::t_083d2bb530e560 1-86
+governance/ci-stack/dashboard-driver/tailscale-create-step1.mjs
+  s_dedb333dd5195e::t_0f614ed93791a1 1-61
+governance/ci-stack/dashboard-driver/tailscale-create-step2.mjs
+  s_dedb333dd5195e::t_fa747e20ddae92 1-46
+governance/ci-stack/dashboard-driver/tailscale-create-step3.mjs
+  s_dedb333dd5195e::t_60b36d3402a554 1-93
+governance/ci-stack/dashboard-driver/tailscale-dns-test.mjs
+  s_dedb333dd5195e::t_5b42bd75614763 1-55
+governance/ci-stack/dashboard-driver/tailscale-drive.mjs
+  s_dedb333dd5195e::t_fe439a5c52d695 1-37
+governance/ci-stack/dashboard-driver/tailscale-keys-page.mjs
+  s_dedb333dd5195e::t_576cf74da4123a 1-23
+governance/ci-stack/dashboard-driver/tailscale-overlay-test.mjs
+  s_dedb333dd5195e::t_186fa91fac6ba8 1-62
+governance/ci-stack/dashboard-driver/tailscale-probe-cbs.mjs
+  s_dedb333dd5195e::t_f1538b99778097 1-50
+governance/ci-stack/dashboard-driver/tailscale-probe.mjs
+  s_dedb333dd5195e::t_1a274ae4d7ebf0 1-52
+governance/ci-stack/dashboard-driver/tailscale-seed.log
+  s_dedb333dd5195e::t_7f005ac1f9d7f5 1-9
+governance/ci-stack/dashboard-driver/tailscale-state.mjs
+  s_dedb333dd5195e::t_7dfe0d120f28a1 1-31
+governance/ci-stack/dashboard-driver/ts-acl-current.json
+  s_dedb333dd5195e::t_40c921d160f1a8 1-75
+governance/ci-stack/dashboard-driver/ts-dns-https.mjs
+  s_dedb333dd5195e::t_7632591bcf135b 1-31
+governance/ci-stack/dashboard-driver/ts-federated-gh-oidc.txt
+  s_dedb333dd5195e::t_1add4554caa26d 1
+governance/ci-stack/dashboard-driver/ts-federated-id.txt
+  s_dedb333dd5195e::t_6618e2c497aaca 1
+governance/ci-stack/dashboard-driver/ts-keys-probe.mjs
+  s_dedb333dd5195e::t_26107457507fae 1-23
+governance/ci-stack/dashboard-driver/ts-token-generate.mjs
+  s_dedb333dd5195e::t_6de9f7b672e4ba 1-52
+governance/ci-stack/dashboard-driver/ts-token-wizard.mjs
+  s_dedb333dd5195e::t_3f4902e6757df9 1-24
+governance/ci-stack/deploy/sonarqube-namespace.md
+  s_dedb333dd5195e::t_6591401a9edd6b 1-224
+governance/ci-stack/dockerfiles/wave-ci-base.Dockerfile
+  s_dedb333dd5195e::t_1032fe8879a512 1-18
+governance/contract.md
+  s_53b49eff5b8c5d::t_2aa350909610f8 57,59
+governance/data/vendor-cidr/datadog-webhooks.json
+  s_dedb333dd5195e::t_fbdc669b3cec18 1-40
+governance/data/vendor-cidr/github-hooks.json
+  s_dedb333dd5195e::t_532a6c1e685f08 1-11
+governance/data/vendor-cidr/stripe-webhooks.json
+  s_dedb333dd5195e::t_2d18ec5bdd1bf1 1-20
+governance/devbox-status/devbox-status-server.mjs
+  s_dedb333dd5195e::t_cd5b72bc584eb2 1-48
+governance/devbox-status/lib/devbox-read.mjs
+  s_dedb333dd5195e::t_b8b277f9e7e48c 1-36
+governance/lib/citation-check.mjs
+  s_dedb333dd5195e::t_5d558594d0c0bb 1-174
+governance/lib/cli-manifest.mjs
+  s_dedb333dd5195e::t_8dacb0cb5b49fb 1-32
+governance/lib/code-index-roots.mjs
+  s_dedb333dd5195e::t_5fad1616f72f79 1-7,9-54
+governance/lib/drill-fixtures-anchor-drift-notify.mjs
+  s_dedb333dd5195e::t_5f02454402de1c 1-48
+governance/lib/drill-fixtures-network-edge-audit.mjs
+  s_dedb333dd5195e::t_884ba6cdb7eb2d 1-82
+governance/lib/drill-fixtures-vendor-cidr.mjs
+  s_dedb333dd5195e::t_23a7011acd79cf 1-68
+governance/lib/drill-registry.mjs
+  s_dedb333dd5195e::t_998ad86e26baad 25,44,62,140-146,179,198,216
+governance/lib/email-craft-rules.mjs
+  s_dedb333dd5195e::t_fd630cb7fc70c5 1-266
+governance/lib/gate-reality.mjs
+  s_dedb333dd5195e::t_997cf01989ba4d 1-188
+governance/lib/latency-stats.mjs
+  s_dedb333dd5195e::t_236b9769bc6c88 1-175
+governance/lib/ledger-surface.mjs
+  s_dedb333dd5195e::t_d82291a39a9c78 20-29,51-113,139-146
+governance/lib/review-liveness-rules.mjs
+  s_dedb333dd5195e::t_2f5c04f068f539 35,38-41
+governance/lib/review-rule-facts.mjs
+  s_dedb333dd5195e::t_e14f0e7270088e 13-18,23-56
+governance/lib/review-sufficiency.mjs
+  s_dedb333dd5195e::t_f70795cbe1aa36 23,112-115,118,180-184,195-197
+governance/lib/review-surfaces-identity.mjs
+  s_dedb333dd5195e::t_eeb17d53c9a675 22-28,30-38,58-63
+governance/lib/reviewer-census-classify.mjs
+  s_dedb333dd5195e::t_d69faaa9c78910 27
+governance/lib/reviewer-roster.mjs
+  s_dedb333dd5195e::t_97f21f7fa4b154 45-77
+governance/lib/rl-source-hooks.mjs
+  s_dedb333dd5195e::t_dc14a1b98bed15 14-23,48-80,283-292,294,320-329
+governance/lib/spend-ceiling.mjs
+  s_dedb333dd5195e::t_3a7fd92b8f06d2 1-257
+governance/lib/stdout-flush.mjs
+  s_dedb333dd5195e::t_f2c69281386f18 66-68,70
+governance/lib/surface-checks-local.mjs
+  s_dedb333dd5195e::t_6c6b70d7e13295 1-284
+governance/lib/surface-checks-remote.mjs
+  s_dedb333dd5195e::t_c33f2fb5b82465 1-176
+governance/lib/surface-probe-lib.mjs
+  s_dedb333dd5195e::t_2aeabb2620a72f 1-94
+governance/lib/surface-probes.mjs
+  s_dedb333dd5195e::t_53c6b3905262b3 1-53
+governance/lib/surface-verdict.mjs
+  s_dedb333dd5195e::t_0232f6b54295a4 1-216
+governance/lib/task-executor.mjs
+  s_dedb333dd5195e::t_cc6c04ed469f49 45-73,77-82,122-123,128-154,156-158,161-172,174
+governance/lib/tier1-sandbox.mjs
+  s_dedb333dd5195e::t_c238b479a85270 1-248
+governance/lib/wave-cost-ledger-runpod-adapter.mjs
+  s_dedb333dd5195e::t_c4adf736282923 1-209
+governance/plans/absence-never-reads-as-pass/NORTH-STAR.md
+  s_dedb333dd5195e::t_fd902319e59537 6,26-28,32-62
+governance/plans/agent-computer-substrate/E0-PROVISION.md
+  s_dedb333dd5195e::t_2c1e22d8d048d0 1-52
+governance/plans/agent-computer-substrate/E1-COMPUTER-USE.md
+  s_dedb333dd5195e::t_bb6a0a14a7f4f7 1-52
+governance/plans/agent-computer-substrate/E2-FILESYSTEM-TERMINAL.md
+  s_dedb333dd5195e::t_708910274ed9e4 1-52
+governance/plans/agent-computer-substrate/E3-REMOTE-DESKTOP-TAKEOVER.md
+  s_dedb333dd5195e::t_1e2558b88ba640 1-52
+governance/plans/agent-computer-substrate/E4-ARTIFACTS.md
+  s_dedb333dd5195e::t_a91ee04a8ba39b 1-52
+governance/plans/agent-computer-substrate/E5-ISOLATION-COUNTERPOSITION.md
+  s_dedb333dd5195e::t_f0bd712f098b79 1-52
+governance/plans/agent-computer-substrate/NORTH-STAR.md
+  s_dedb333dd5195e::t_d3516400921ea1 1-34
+governance/plans/agent-identity-fabric/E1-E1-REPUTATION-SEED.md
+  s_dedb333dd5195e::t_b2618fe55a813a 1-26
+governance/plans/agent-identity-fabric/E2-E2-THREAD-FABRIC.md
+  s_dedb333dd5195e::t_cca8924ff1f689 1-24
+governance/plans/agent-identity-fabric/NORTH-STAR.md
+  s_dedb333dd5195e::t_dddc6ea431c606 1-36
+governance/plans/agent-identity-fabric/tools/hops.json
+  s_dedb333dd5195e::t_fa1af64381e5f3 1-55
+governance/plans/agent-identity-fabric/tools/identity-map.json
+  s_dedb333dd5195e::t_c00ca591c51107 1-8
+governance/plans/agent-identity-fabric/tools/resolve.mjs
+  s_dedb333dd5195e::t_ee009068423297 1-27
+governance/plans/agent-mail-plane/E0-E0-FOUNDATION.md
+  s_dedb333dd5195e::t_ac3c5ff31f6563 1-29
+governance/plans/agent-mail-plane/E1-E1-AGENT-IDENTITY.md
+  s_dedb333dd5195e::t_4626c038dce440 1-26
+governance/plans/agent-mail-plane/E2-E2-PAID-EMAIL-RAIL.md
+  s_dedb333dd5195e::t_ec2f35b033afcf 1-28
+governance/plans/agent-mail-plane/E3-E3-POD-MULTITENANCY.md
+  s_dedb333dd5195e::t_61c8f6b1aab6d5 1-28
+governance/plans/agent-mail-plane/E4-E4-PAY-TO-REACH.md
+  s_dedb333dd5195e::t_39c06374e3457f 1-29
+governance/plans/agent-mail-plane/E4-RECEIPTS.md
+  s_dedb333dd5195e::t_8e8eb8124c9240 1-4
+governance/plans/agent-mail-plane/E5-E5-SIGNUP-BILLING-LOOP.md
+  s_dedb333dd5195e::t_9502fcda1472ef 1-26
+governance/plans/agent-mail-plane/E6-E6-EMAIL-ECONOMY.md
+  s_dedb333dd5195e::t_421c49901b1e39 1-28
+governance/plans/agent-mail-plane/E6-GOVERNANCE-GATES.md
+  s_dedb333dd5195e::t_06e72d536b39e9 1-23
+governance/plans/agent-mail-plane/E6-PAID-EMAIL-ECONOMY-SYNTHESIS.md
+  s_dedb333dd5195e::t_b2f948fc752333 1-52
+governance/plans/agent-mail-plane/E7-E7-MULTICHANNEL-EXPANSION.md
+  s_dedb333dd5195e::t_bffe9fa281f4b1 1-45
+governance/plans/agent-mail-plane/E8-THREAD-HISTORY.md
+  s_dedb333dd5195e::t_b670e97bcb7f62 1-36
+governance/plans/agent-mail-plane/E9-PODS-TENANT-ISOLATION.md
+  s_dedb333dd5195e::t_915d4f94db8f5e 1-26
+governance/plans/agent-mail-plane/EMAIL-ECONOMY-VISION.md
+  s_dedb333dd5195e::t_701f26a66fefc2 1-129
+governance/plans/agent-mail-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_ca9247574da425 1-45
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_dedb333dd5195e::t_4e424e3b7bd8fe 1-596
+governance/plans/agent-mail-plane/e6-lenses/pragmatist-economist.md
+  s_dedb333dd5195e::t_0c3815cccf9fd5 1-34
+governance/plans/agent-mail-plane/e6-lenses/redteam-premortem.md
+  s_dedb333dd5195e::t_4f5a87fade406d 1-69
+governance/plans/agent-mail-plane/e6-lenses/visionary-wildcard.md
+  s_dedb333dd5195e::t_e4292155c48879 1-61
+governance/plans/agent-mail-plane/e7-lenses/pragmatist.md
+  s_dedb333dd5195e::t_47e1119bafd1f8 1-44
+governance/plans/agent-mail-plane/e7-lenses/redteam.md
+  s_dedb333dd5195e::t_28238d23ac5edb 1-55
+governance/plans/agent-mail-plane/e7-lenses/visionary.md
+  s_dedb333dd5195e::t_c24c84a68d33d5 1-75
+governance/plans/agent-mail-plane/inbox-map.md
+  s_dedb333dd5195e::t_e2b18ef542d09a 1-25
+governance/plans/agent-mail-plane/receipts/e6-settle-receipt.json
+  s_dedb333dd5195e::t_4326ff50fd8748 1-24
+governance/plans/agent-mail-plane/scripts/agent-signup.mjs
+  s_dedb333dd5195e::t_f564ef5ed1af28 1-108
+governance/plans/agent-mail-plane/scripts/agentmail-event-listener.mjs
+  s_dedb333dd5195e::t_50ba6030d83370 1-38
+governance/plans/agent-mail-plane/scripts/domain-dns-plan.mjs
+  s_dedb333dd5195e::t_21b2dff8f5c946 1-115
+governance/plans/agent-mail-plane/scripts/provision-fleet-inboxes.mjs
+  s_dedb333dd5195e::t_98834fb1bc7a41 1-96
+governance/plans/agent-mail-plane/scripts/tenant-onboard.mjs
+  s_dedb333dd5195e::t_95f64f228f2b2d 1-105
+governance/plans/agent-marketplace/NORTH-STAR.md
+  s_dedb333dd5195e::t_585c51ec7d8ef0 1-33
+governance/plans/agent-marketplace/receipts/e1-settle-receipt.json
+  s_dedb333dd5195e::t_66c6804b3f89e6 1-23
+governance/plans/agent-native-cli/E0-INVENTORY.md
+  s_dedb333dd5195e::t_e47ed8f7387a9e 1-25
+governance/plans/agent-native-cli/E1-MANIFEST.md
+  s_dedb333dd5195e::t_8d6ee35c84cd91 1-9
+governance/plans/agent-native-cli/E2-SCHEMA.md
+  s_dedb333dd5195e::t_6c7d6e3c00ae9d 1-9
+governance/plans/agent-native-cli/E3-MCP-GEN.md
+  s_dedb333dd5195e::t_525308fd1c7b1e 1-9
+governance/plans/agent-native-cli/E4-SKILLS-GEN.md
+  s_dedb333dd5195e::t_3096aaedb21c19 1-9
+governance/plans/agent-native-cli/E5-DOGFOOD.md
+  s_dedb333dd5195e::t_056084845b5751 1-9
+governance/plans/agent-native-cli/E6-EMBEDDABILITY.md
+  s_dedb333dd5195e::t_51d696eeab4d7a 1-31
+governance/plans/agent-native-cli/NORTH-STAR.md
+  s_dedb333dd5195e::t_139b50f82488bf 1-28
+governance/plans/agent-native-cli/RECEIPTS.md
+  s_dedb333dd5195e::t_82842d754d4799 1-41
+governance/plans/agent-native-cli/SIGNAL-LANGFUSE-2026-08-21.md
+  s_dedb333dd5195e::t_cc32a1daaa7c68 1-16
+governance/plans/agent-tool-access/E6-MODEL-TIERING.md
+  s_dedb333dd5195e::t_d7a9e25d6b2fae 1-45
+governance/plans/agent-tool-access/NORTH-STAR.md
+  s_dedb333dd5195e::t_9fcde01f5dfc00 101
+governance/plans/agentic-wave/E11-AGENT-MEDIA-LADDER.md
+  s_dedb333dd5195e::t_31458d69bec87e 1-14
+governance/plans/agentic-wave/E12-AGENT-RUN-DURABILITY.md
+  s_dedb333dd5195e::t_eb594d633e9ff6 1-80
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_dedb333dd5195e::t_9962a98b381c91 54,134,171-174
+governance/plans/agents-have-eyes/E8-TEACH-BY-DEMONSTRATION.md
+  s_dedb333dd5195e::t_c7e69d79c0f047 1-41
+governance/plans/agents-have-eyes/NORTH-STAR.md
+  s_dedb333dd5195e::t_f3c207c7280cbc 96
+governance/plans/aikido-trial/E-INTEGRATION-MAP.md
+  s_dedb333dd5195e::t_c7e32d153e2566 1-110
+governance/plans/ci-stack-integration/BRAINSTORM.md
+  s_dedb333dd5195e::t_93b1a01ce02585 1-54
+governance/plans/ci-stack-integration/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_5e3480143db153 1-31
+governance/plans/ci-stack-integration/E1-TRUNK-FLAKE-GATE.md
+  s_dedb333dd5195e::t_cd8cdc4483f025 1-38
+governance/plans/ci-stack-integration/E2-NAMESPACE-DEEPEN.md
+  s_dedb333dd5195e::t_307bf8be7fc2b0 1-51
+governance/plans/ci-stack-integration/E3-SONARQUBE-SELFHOST.md
+  s_dedb333dd5195e::t_fb9739f50c52a2 1-37
+governance/plans/ci-stack-integration/E4-GITAR-EVAL.md
+  s_dedb333dd5195e::t_d102c9bae64e2d 1-35
+governance/plans/ci-stack-integration/E5-CONVERGENCE.md
+  s_dedb333dd5195e::t_1e57f5b56e4415 1-36
+governance/plans/ci-stack-integration/E6-PREVIEWS.md
+  s_dedb333dd5195e::t_779011fb20206f 1-28
+governance/plans/ci-stack-integration/E7-TAILNET-HARDEN.md
+  s_dedb333dd5195e::t_c2863366568b45 1-34
+governance/plans/ci-stack-integration/NAMESPACE-AUDIT.md
+  s_dedb333dd5195e::t_da489dac9743ea 1-19
+governance/plans/ci-stack-integration/NORTH-STAR.md
+  s_dedb333dd5195e::t_fd135a763521f4 1-107
+governance/plans/ci-stack-integration/NUMBERS.md
+  s_dedb333dd5195e::t_3a09e195f2c996 1-32
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_dedb333dd5195e::t_73ba0607cfe36a 1-724
+governance/plans/ci-stack-integration/RUNBOOK.md
+  s_dedb333dd5195e::t_840c88f75a5467 1-57
+governance/plans/ci-stack-integration/TSCALE-CAPABILITIES.md
+  s_dedb333dd5195e::t_0f82b34d5c3301 1-78
+governance/plans/ci-stack-integration/hotspots-triage-2026-08-17.txt
+  s_dedb333dd5195e::t_f8a86a73074aba 1-100
+governance/plans/cli-completeness/E0-CORE-SURFACES.md
+  s_dedb333dd5195e::t_592912f619148f 1-9
+governance/plans/cli-completeness/E1-THIN-SPOKES.md
+  s_dedb333dd5195e::t_882bdc00177cda 1-10
+governance/plans/cli-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_5595ebc2dc020c 1-35
+governance/plans/comms-branding-layer/NORTH-STAR.md
+  s_dedb333dd5195e::t_5ac47e9e81bb78 1-60
+governance/plans/comms-credit-bureau/NORTH-STAR.md
+  s_dedb333dd5195e::t_081296a0891dbf 1-27
+governance/plans/comms-meter-console/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_0047419bc5627a 1-9
+governance/plans/comms-meter-console/E1-METER-READ.md
+  s_dedb333dd5195e::t_86d380879127d9 1-10
+governance/plans/comms-meter-console/E2-API-SURFACE.md
+  s_dedb333dd5195e::t_3ae9f0d52f1076 1-10
+governance/plans/comms-meter-console/E3-FOUR-RENDERINGS.md
+  s_dedb333dd5195e::t_e2aa41ae234458 1-10
+governance/plans/comms-meter-console/NORTH-STAR.md
+  s_dedb333dd5195e::t_1f78b646e5d219 1-30
+governance/plans/comms-productization/E4-NEWSLETTER-SPEC.md
+  s_dedb333dd5195e::t_063fc20dce2b70 1-26
+governance/plans/comms-productization/NORTH-STAR.md
+  s_dedb333dd5195e::t_9f8f77973f1f0c 1-45
+governance/plans/comms-productization/PRICING.md
+  s_dedb333dd5195e::t_5f1af306d65dfc 1-26
+governance/plans/console-completeness/E3-SPEC.md
+  s_dedb333dd5195e::t_0fd54c7518b850 86,88-91,106-110
+governance/plans/console-completeness/comps/MLVC-CODEC-COMP.md
+  s_dedb333dd5195e::t_64b8511e89eca3 1-43
+governance/plans/context-economy-headroom/E0-RE-EVALUATE.md
+  s_dedb333dd5195e::t_c06a0b9d537b02 1-9
+governance/plans/context-economy-headroom/E1-LEVERAGE.md
+  s_dedb333dd5195e::t_92bf4b79cafc81 1-10
+governance/plans/context-economy-headroom/E2-EVAL-GATE.md
+  s_dedb333dd5195e::t_e1e476d167237e 1-10
+governance/plans/context-economy-headroom/E3-MCP-INTEGRATE.md
+  s_dedb333dd5195e::t_439e384503b1c4 1-10
+governance/plans/context-economy-headroom/E4-LEARN-INTEGRATE.md
+  s_dedb333dd5195e::t_4062148d6b8843 1-10
+governance/plans/context-economy-headroom/E5-DOGFOOD.md
+  s_dedb333dd5195e::t_87575d1fe938e9 1-10
+governance/plans/context-economy-headroom/NORTH-STAR.md
+  s_dedb333dd5195e::t_835ce94e7c5232 1-27
+governance/plans/cordis-dogfood/ADR-CORDIS.md
+  s_dedb333dd5195e::t_25a4e641742703 1-32
+governance/plans/cordis-dogfood/DOGFOOD-EVIDENCE.md
+  s_dedb333dd5195e::t_1f7b660222665e 1-40
+governance/plans/cordis-dogfood/E0-PAPER-GROUND.md
+  s_dedb333dd5195e::t_b09c22d6d5bff4 1-23
+governance/plans/cordis-dogfood/E1-PLUGIN-DOGFOOD.md
+  s_dedb333dd5195e::t_2e497a61bfe298 1-22
+governance/plans/cordis-dogfood/E2-FLOOR-ADR.md
+  s_dedb333dd5195e::t_d76874da362da7 1-23
+governance/plans/cordis-dogfood/E3-PILOT.md
+  s_dedb333dd5195e::t_d7e1800a5ea048 1-22
+governance/plans/cordis-dogfood/NORTH-STAR.md
+  s_dedb333dd5195e::t_79228314b46d2f 1-46
+governance/plans/cordis-dogfood/PAPER-GROUND.md
+  s_dedb333dd5195e::t_ba669f520e8fce 1-28
+governance/plans/cordis-dogfood/paper.txt
+  s_dedb333dd5195e::t_ec256de1121f6f 1-4057
+governance/plans/design-scoring-integrity/E0-MEASUREMENT.md
+  s_dedb333dd5195e::t_f52b744bf1d58a 1-49
+governance/plans/design-scoring-integrity/E1-REPRODUCIBILITY.md
+  s_dedb333dd5195e::t_8a8b2d8b3de5ca 1-45
+governance/plans/design-scoring-integrity/E2-TIER0-CHECKS.md
+  s_dedb333dd5195e::t_9786ffb5544dfd 1-87
+governance/plans/design-scoring-integrity/E3-WEIGHTS-EARNED.md
+  s_dedb333dd5195e::t_00c79ed16c3363 1-51
+governance/plans/design-scoring-integrity/E4-HANDOFF-CONTRACT.md
+  s_dedb333dd5195e::t_763ab9c44f9a4e 1-106
+governance/plans/design-scoring-integrity/E5-PRODUCT-SURFACE-EXPANSION.md
+  s_dedb333dd5195e::t_d6f8886d34bc7d 1-73
+governance/plans/design-scoring-integrity/E6-TOKEN-VOCABULARY.md
+  s_dedb333dd5195e::t_e37e264f196995 1-145
+governance/plans/design-scoring-integrity/E7-DESIGN-REGISTRY.md
+  s_dedb333dd5195e::t_4ad71d848564e2 1-85
+governance/plans/design-scoring-integrity/NORTH-STAR.md
+  s_dedb333dd5195e::t_6a79516a5134a5 1-158
+governance/plans/dispatch-leaderboard-integration/E0-SCORE-EXPORT.md
+  s_dedb333dd5195e::t_6c5df40364631c 1-9
+governance/plans/dispatch-leaderboard-integration/E1-MAP-UPDATE.md
+  s_dedb333dd5195e::t_0c12d2c9b21d27 1-10
+governance/plans/dispatch-leaderboard-integration/E2-SHADOW.md
+  s_dedb333dd5195e::t_e7fd9d3246f097 1-10
+governance/plans/dispatch-leaderboard-integration/NORTH-STAR.md
+  s_dedb333dd5195e::t_5f173806f2838e 1-26
+governance/plans/dsh-fleet-skills/AUDIT-01.md
+  s_dedb333dd5195e::t_e17fef3be04616 1-21
+governance/plans/dsh-fleet-skills/E0-DSH-RUN.md
+  s_dedb333dd5195e::t_21c08566957cd1 1-23
+governance/plans/dsh-fleet-skills/E1-DSH-PLUGIN.md
+  s_dedb333dd5195e::t_2fc98f8fa7635e 1-23
+governance/plans/dsh-fleet-skills/E2-PLUGIN-HARVEST.md
+  s_dedb333dd5195e::t_4163646c23a172 1-23
+governance/plans/dsh-fleet-skills/E3-TRAJECTORY-AUDIT.md
+  s_dedb333dd5195e::t_d806f545840c24 1-23
+governance/plans/dsh-fleet-skills/E4-SESSION-LOG-PROJECTION.md
+  s_dedb333dd5195e::t_7ed1734b489f94 1-24
+governance/plans/dsh-fleet-skills/E5-CREATOR-MODE-GOVERNANCE.md
+  s_dedb333dd5195e::t_1c68a4e08b0f5f 1-26
+governance/plans/dsh-fleet-skills/NORTH-STAR.md
+  s_dedb333dd5195e::t_85461d7f7ee24d 1-51
+governance/plans/dsh-fleet-skills/RCA-01.md
+  s_dedb333dd5195e::t_478219c22f43e0 1-46
+governance/plans/dsh-fleet-skills/RULING-01.md
+  s_dedb333dd5195e::t_096000f73286dc 1-15
+governance/plans/dsh-fleet-skills/hello-plugin/cordis.yml
+  s_dedb333dd5195e::t_87758cb8d69ea7 1-3
+governance/plans/dsh-fleet-skills/hello-plugin/hello-plugin.ts
+  s_dedb333dd5195e::t_a40376728ae77a 1-17
+governance/plans/dsh-fleet-skills/hello-plugin/plugin-run.log
+  s_dedb333dd5195e::t_05532b0fe69458 1-3
+governance/plans/durable-state-off-ephemeral/E10-CHECKPOINTS.md
+  s_dedb333dd5195e::t_01dcf1b55f80c7 1-41
+governance/plans/durable-state-off-ephemeral/NORTH-STAR.md
+  s_dedb333dd5195e::t_1ce45c40a20954 56
+governance/plans/egress-authority/DELIVERY-RECEIPT.md
+  s_dedb333dd5195e::t_65de596aac80fd 1-44
+governance/plans/egress-authority/E0-BLUEPRINT-SPEC.md
+  s_dedb333dd5195e::t_69371e69bb2bb4 1-54
+governance/plans/egress-authority/E1-GATEWAY-BOUNDARY.md
+  s_dedb333dd5195e::t_12c3684fb8f191 1-30
+governance/plans/egress-authority/E2-SANDBOX-FIREWALL.md
+  s_dedb333dd5195e::t_7334987021188e 1-22
+governance/plans/egress-authority/E3-CREDENTIAL-BROKERING.md
+  s_dedb333dd5195e::t_05e9a22b4584bb 1-22
+governance/plans/egress-authority/E4-ADVERSARIAL-BATTERY.md
+  s_dedb333dd5195e::t_8bebd210f9fbb1 1-20
+governance/plans/egress-authority/E5-EGRESS-COVERAGE.md
+  s_dedb333dd5195e::t_d3943be092d4bc 1-62
+governance/plans/egress-authority/E6-DRIFT-SWEEP.md
+  s_dedb333dd5195e::t_2e91fc1f651f41 1-54
+governance/plans/egress-authority/EXPANSION.md
+  s_dedb333dd5195e::t_6d45be8ac0a771 1-112
+governance/plans/egress-authority/NORTH-STAR.md
+  s_dedb333dd5195e::t_6d631d972cd9af 1-55
+governance/plans/epic-system/NORTH-STAR.md
+  s_dedb333dd5195e::t_c2e9c4b23ffb17 64-67
+governance/plans/eval-backend-parity/E0-VISION-API.md
+  s_dedb333dd5195e::t_0cfa1224e631d5 1-9
+governance/plans/eval-backend-parity/E1-HORIZON-API.md
+  s_dedb333dd5195e::t_392be6387a75e8 1-10
+governance/plans/eval-backend-parity/E2-GATE-RESULTS.md
+  s_dedb333dd5195e::t_b808ca07e9158c 1-10
+governance/plans/eval-backend-parity/NORTH-STAR.md
+  s_dedb333dd5195e::t_e37583bc29fe6e 1-26
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  s_dedb333dd5195e::t_609651f966948e 1-98
+governance/plans/ffmpeg9-lei/E17-P3-DESIGN.md
+  s_dedb333dd5195e::t_b2fb5d2a8b00da 1-167
+governance/plans/ffmpeg9-lei/E18-LEARNED-CODEC-RUNTIME.md
+  s_dedb333dd5195e::t_07b6d47f7a2ed2 1-36
+governance/plans/ffmpeg9-lei/E19-IMAGE-VARIANT.md
+  s_dedb333dd5195e::t_e2cfccc89ed3ac 1-36
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_dedb333dd5195e::t_35091aebd2a769 95-97
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_dedb333dd5195e::t_1dd541fb48031f 378-450
+governance/plans/ffmpeg9-lei/action/MLVC-PROTOCOL-BRIDGE-MATRIX.md
+  s_dedb333dd5195e::t_674bf659a3c0b7 1-20
+governance/plans/fireworks-integration/E4-OWN-MODEL.md
+  s_dedb333dd5195e::t_dce76104c1cfdf 47-71
+governance/plans/fireworks-integration/NORTH-STAR.md
+  s_dedb333dd5195e::t_bec27019451d77 25,30
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_dedb333dd5195e::t_3c172542a68528 45-54
+governance/plans/fireworks-integration/TRAINING-ACCESS-FORM.md
+  s_dedb333dd5195e::t_59f7c681e69cfd 1-31
+governance/plans/fleet-epic-queue/FLEET-EPIC-QUEUE.md
+  s_dedb333dd5195e::t_1ee633b77b6645 1-59
+governance/plans/fleet-epic-queue/NORTH-STAR.md
+  s_dedb333dd5195e::t_e9663911f479cf 1-66
+governance/plans/fleet-epic-queue/QUEUE-NORTHSTAR-CARDS.md
+  s_dedb333dd5195e::t_3b77c492ce0d7d 1-72
+governance/plans/fleet-epic-queue/QUEUE-V2.md
+  s_dedb333dd5195e::t_86bc194f597943 1-27
+governance/plans/fleet-epic-queue/lanes/acp-v0-spec.md
+  s_dedb333dd5195e::t_2764af3eec526b 1-30
+governance/plans/fleet-epic-queue/lanes/lanes-9-10.md
+  s_dedb333dd5195e::t_09b19a9b1d67d8 1-19
+governance/plans/fleet-epic-queue/lanes/meter-console-lane.md
+  s_dedb333dd5195e::t_00caa600694eef 1-26
+governance/plans/fleet-epic-queue/lanes/meter-gateway-endpoint.md
+  s_dedb333dd5195e::t_b3b0d6a53f1e72 1-41
+governance/plans/fleet-epic-queue/lanes/pro-media-lane.md
+  s_dedb333dd5195e::t_80453d97667f88 1-9
+governance/plans/fleet-epic-queue/lanes/v2-top2-phases.md
+  s_dedb333dd5195e::t_fc928ad8a7d1ce 1-21
+governance/plans/fleet-epic-queue/tools/acp-conformance.mjs
+  s_dedb333dd5195e::t_d8c9f788ac9577 1-50
+governance/plans/fleet-ops-toolkit/API-FIRST-MATRIX.md
+  s_dedb333dd5195e::t_ae0aea9a4b0449 1-28
+governance/plans/fleet-ops-toolkit/E1-E1-SESSION-TO-SKILL.md
+  s_dedb333dd5195e::t_73156343a8c16c 1-18
+governance/plans/fleet-ops-toolkit/E2-E2-GATE-AUTOPSY.md
+  s_dedb333dd5195e::t_d55e36b720f18b 1-13
+governance/plans/fleet-ops-toolkit/E3-E3-CRON-WIRING.md
+  s_dedb333dd5195e::t_2feaf56be95db6 1-9
+governance/plans/fleet-ops-toolkit/E4-E4-COCKPIT.md
+  s_dedb333dd5195e::t_e6e4d4b389950f 1-9
+governance/plans/fleet-ops-toolkit/E5-E5-DOPPLER-GUARD.md
+  s_dedb333dd5195e::t_7f5c3531bbbf83 1-9
+governance/plans/fleet-ops-toolkit/E6-E6-NEXT-UNIT.md
+  s_dedb333dd5195e::t_d5da00e807f037 1-9
+governance/plans/fleet-ops-toolkit/NORTH-STAR.md
+  s_dedb333dd5195e::t_e8f40e4b79d556 1-34
+governance/plans/fleet-ops-toolkit/skill-merge-gate-fixer.md
+  s_dedb333dd5195e::t_8742c083e1a96a 1-37
+governance/plans/fleet-ops-toolkit/skills/token-budget-ratchet.md
+  s_dedb333dd5195e::t_e029866e82eeb0 1-26
+governance/plans/fleet-ops-toolkit/skills/twilio-ops-v2.md
+  s_dedb333dd5195e::t_efbb4fabb99136 1-37
+governance/plans/fleet-ops-toolkit/skills/vendor-console-automation.md
+  s_dedb333dd5195e::t_d35bf68abe46aa 1-17
+governance/plans/fleet-ops-toolkit/tools/belt/EXAMPLES.md
+  s_dedb333dd5195e::t_57a308301074a3 1-21
+governance/plans/fleet-ops-toolkit/tools/belt/README.md
+  s_dedb333dd5195e::t_48799e88f34545 1-14
+governance/plans/fleet-ops-toolkit/tools/belt/audit-read.mjs
+  s_dedb333dd5195e::t_419df178f51ce4 1-13
+governance/plans/fleet-ops-toolkit/tools/belt/dpg.mjs
+  s_dedb333dd5195e::t_0c6832142fce7d 1-25
+governance/plans/fleet-ops-toolkit/tools/belt/fleet-status.mjs
+  s_dedb333dd5195e::t_5a79312494146d 1-29
+governance/plans/fleet-ops-toolkit/tools/belt/mail-send.mjs
+  s_dedb333dd5195e::t_f47285f2b4841d 1-33
+governance/plans/fleet-ops-toolkit/tools/belt/mgn.mjs
+  s_dedb333dd5195e::t_027698f16e8d07 1-53
+governance/plans/fleet-ops-toolkit/tools/belt/next-unit.mjs
+  s_dedb333dd5195e::t_ce14c4c60f861f 1-22
+governance/plans/fleet-ops-toolkit/tools/belt/skill-from-session.mjs
+  s_dedb333dd5195e::t_6b3967699b0d41 1-49
+governance/plans/fleet-ops-toolkit/tools/belt/sms-send.mjs
+  s_dedb333dd5195e::t_74c9ce65780991 1-35
+governance/plans/fleet-ops-toolkit/tools/dpg.mjs
+  s_dedb333dd5195e::t_9a23adf837f23a 1-25
+governance/plans/fleet-ops-toolkit/tools/fleet-status.mjs
+  s_dedb333dd5195e::t_49083073f9b64d 1-29
+governance/plans/fleet-ops-toolkit/tools/mgn.mjs
+  s_dedb333dd5195e::t_a9171d0c1ad86c 1-53
+governance/plans/fleet-ops-toolkit/tools/next-unit.mjs
+  s_dedb333dd5195e::t_9057893fb48e62 1-22
+governance/plans/fleet-ops-toolkit/tools/skill-from-session.mjs
+  s_dedb333dd5195e::t_83338e37a63392 1-49
+governance/plans/harness-wars-intel/CORPUS.md
+  s_dedb333dd5195e::t_dbcfb00841df1c 1-57
+governance/plans/harness-wars-intel/DIGEST-01.md
+  s_dedb333dd5195e::t_6b368e65092394 1-34
+governance/plans/harness-wars-intel/DIGEST-02.md
+  s_dedb333dd5195e::t_7ec8587413284a 1-35
+governance/plans/harness-wars-intel/DIGEST-03.md
+  s_dedb333dd5195e::t_8bbf656027cbf1 1-31
+governance/plans/harness-wars-intel/E0-CORPUS.md
+  s_dedb333dd5195e::t_9c4c4e1a0b013b 1-21
+governance/plans/harness-wars-intel/E1-DIGEST-R1.md
+  s_dedb333dd5195e::t_ebc460e790ace8 1-24
+governance/plans/harness-wars-intel/E2-INSTITUTIONALIZE.md
+  s_dedb333dd5195e::t_b6fd21f4fad4dc 1-22
+governance/plans/harness-wars-intel/NORTH-STAR.md
+  s_dedb333dd5195e::t_29cf0c098a2445 1-45
+governance/plans/harness-wars-intel/WATCH-DESIGN.md
+  s_dedb333dd5195e::t_a0f2da1cc123ca 1-33
+governance/plans/harness-wars-intel/harness-watch.mjs
+  s_dedb333dd5195e::t_b04a7fedec3497 1-35
+governance/plans/harness-wars-intel/issue-body.tmp.md
+  s_dedb333dd5195e::t_5d189d2b2dfa2e 1-8
+governance/plans/harness-wars-intel/state/last-seen.json
+  s_dedb333dd5195e::t_6cd3c2e91e9ac5 1-6
+governance/plans/hook-system-overhaul/E6-LIFECYCLE-EVENT-BUS.md
+  s_dedb333dd5195e::t_6d9115f2d9afc2 1-82
+governance/plans/hook-system-overhaul/NORTH-STAR.md
+  s_dedb333dd5195e::t_8ae3b1c419b951 63
+governance/plans/hybrid-orchestration-plane/E1-CLAUDE-WORKER-POOL.md
+  s_dedb333dd5195e::t_aca55cf649926b 1-33
+governance/plans/hybrid-orchestration-plane/E2-CORPUS-MEMORY.md
+  s_dedb333dd5195e::t_48dcecdccf3e9e 1-31
+governance/plans/hybrid-orchestration-plane/E3-ROUTING-POLICY.md
+  s_dedb333dd5195e::t_5de156f876f4b2 1-31
+governance/plans/hybrid-orchestration-plane/E4-ORIGIN-FEED.md
+  s_dedb333dd5195e::t_204287bfc2e5c7 1-30
+governance/plans/hybrid-orchestration-plane/E5-TELEMETRY-PER-RAIL.md
+  s_dedb333dd5195e::t_06563be79b1908 1-30
+governance/plans/hybrid-orchestration-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_3ef57a09420b98 1-78
+governance/plans/imessage-channel/NORTH-STAR.md
+  s_dedb333dd5195e::t_292d9cb062c50b 1-26
+governance/plans/income-rails/E0-E1-BILLING-SURFACE.md
+  s_dedb333dd5195e::t_fa19a0ca970d04 1-9
+governance/plans/income-rails/E1-E2-METERED-ARM.md
+  s_dedb333dd5195e::t_b4b31a8a54ef97 1-10
+governance/plans/income-rails/E2-E3-METER-COVERAGE.md
+  s_dedb333dd5195e::t_671392cd92b86e 1-10
+governance/plans/income-rails/E3-E4-INVOICE-SYNC.md
+  s_dedb333dd5195e::t_be591767455c38 1-10
+governance/plans/income-rails/NORTH-STAR.md
+  s_dedb333dd5195e::t_308787c09f6a4b 1-40
+governance/plans/integrations/E0-SLACK.md
+  s_dedb333dd5195e::t_caaefbea8dba9a 1-29
+governance/plans/integrations/E1-GOOGLE.md
+  s_dedb333dd5195e::t_be1c3dc12ae944 1-29
+governance/plans/integrations/E10-SALESFORCE.md
+  s_dedb333dd5195e::t_28187981d20965 1-29
+governance/plans/integrations/E11-AGENTMAIL.md
+  s_dedb333dd5195e::t_c7628a296646f3 1-29
+governance/plans/integrations/E12-TWILIO.md
+  s_dedb333dd5195e::t_79b76086559775 1-29
+governance/plans/integrations/E13-OAUTH-CORE.md
+  s_dedb333dd5195e::t_4fe295f89cb860 1-29
+governance/plans/integrations/E2-NOTION.md
+  s_dedb333dd5195e::t_e3faa2980bd594 1-29
+governance/plans/integrations/E3-GITHUB.md
+  s_dedb333dd5195e::t_f674624e1a0e3b 1-29
+governance/plans/integrations/E4-GITLAB.md
+  s_dedb333dd5195e::t_a3ef876116e018 1-29
+governance/plans/integrations/E5-LINEAR.md
+  s_dedb333dd5195e::t_4f756d51ce3a19 1-29
+governance/plans/integrations/E6-ZOOM.md
+  s_dedb333dd5195e::t_a9294fc678b83f 1-29
+governance/plans/integrations/E7-DISCORD.md
+  s_dedb333dd5195e::t_a279c34de5f92b 1-29
+governance/plans/integrations/E8-TEAMS.md
+  s_dedb333dd5195e::t_c08491d60fa88e 1-29
+governance/plans/integrations/E9-STRIPE.md
+  s_dedb333dd5195e::t_06fda558efd8b0 1-29
+governance/plans/integrations/NORTH-STAR.md
+  s_dedb333dd5195e::t_7bdda8abff21dd 1-35
+governance/plans/langfuse-integration/E0-DECIDE.md
+  s_dedb333dd5195e::t_2eacc48f8535cc 1-15
+governance/plans/langfuse-integration/E0-DECISION.md
+  s_dedb333dd5195e::t_4c065a114218d7 1-51
+governance/plans/langfuse-integration/E1-SELF-HOST.md
+  s_dedb333dd5195e::t_0241efc62115ae 1-13
+governance/plans/langfuse-integration/E2-INSTRUMENT.md
+  s_dedb333dd5195e::t_6393bc6384cb8b 1-16
+governance/plans/langfuse-integration/E3-FEED.md
+  s_dedb333dd5195e::t_21556189bda331 1-14
+governance/plans/langfuse-integration/NORTH-STAR.md
+  s_dedb333dd5195e::t_71d85e27d6bb47 1-42
+governance/plans/mcp-completeness/E0-CORE-SURFACES.md
+  s_dedb333dd5195e::t_b69043363ff1b7 1-9
+governance/plans/mcp-completeness/E1-THIN-SPOKES.md
+  s_dedb333dd5195e::t_5cdc6ae3943ac8 1-10
+governance/plans/mcp-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_1788c44ef9f0d8 1-30
+governance/plans/meeting-intelligence/E0-E0-DOGFOOD-DIGEST.md
+  s_dedb333dd5195e::t_8f27a11e651ae6 1-12
+governance/plans/meeting-intelligence/E1-E1-GATED-ARTIFACTS.md
+  s_dedb333dd5195e::t_b45ed1a5d42d59 1-9
+governance/plans/meeting-intelligence/E2-E2-SERIES-DIGEST.md
+  s_dedb333dd5195e::t_24a3eb1ccf7831 1-9
+governance/plans/meeting-intelligence/NORTH-STAR.md
+  s_dedb333dd5195e::t_695f56ac06cd80 1-26
+governance/plans/meeting-intelligence/tools/digest-pipeline.mjs
+  s_dedb333dd5195e::t_8223e3cee297e5 1-25
+governance/plans/mlvc-api-plane/E0-CLI.md
+  s_dedb333dd5195e::t_d0ff3c975341fa 1-16
+governance/plans/mlvc-api-plane/E1-SERVICE.md
+  s_dedb333dd5195e::t_bf6acae1e6be08 1-16
+governance/plans/mlvc-api-plane/E2-SDK.md
+  s_dedb333dd5195e::t_d80b39dcd87b77 1-16
+governance/plans/mlvc-api-plane/E3-MCP.md
+  s_dedb333dd5195e::t_5ee2ba5e104c57 1-16
+governance/plans/mlvc-api-plane/E4-EDGE-SPOKE.md
+  s_dedb333dd5195e::t_f9fea963de7a6c 1-16
+governance/plans/mlvc-api-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_fbd9c9929e49c7 1-35
+governance/plans/mlvc-api-plane/PRICING.md
+  s_dedb333dd5195e::t_b20f3861b530ee 1-35
+governance/plans/mlvc-api-plane/PRODUCT-MAP.md
+  s_dedb333dd5195e::t_f8bfcfe31a5ba1 1-33
+governance/plans/mlvc-api-plane/SYSTEMS-MAP.md
+  s_dedb333dd5195e::t_b94eea8ae4b1b0 1-53
+governance/plans/mlvc-conformance/E0-VECTOR-CORPUS.md
+  s_dedb333dd5195e::t_496cdd22002b39 1-9
+governance/plans/mlvc-conformance/E1-SUITE-TOOL.md
+  s_dedb333dd5195e::t_d58e142f19e847 1-9
+governance/plans/mlvc-conformance/E2-PUBLISH.md
+  s_dedb333dd5195e::t_5f311d062ed3a0 1-9
+governance/plans/mlvc-conformance/E3-PARTNER-PROOF.md
+  s_dedb333dd5195e::t_0a316269031e65 1-9
+governance/plans/mlvc-conformance/NORTH-STAR.md
+  s_dedb333dd5195e::t_ef673544eaff21 1-29
+governance/plans/model-artifact-ingress/E0-E0-FOUNDATION.md
+  s_dedb333dd5195e::t_84fcdf80aff685 1-40
+governance/plans/model-artifact-ingress/E1-E1-OBJECT-STORE.md
+  s_dedb333dd5195e::t_3a9f8a61b6108f 1-37
+governance/plans/model-artifact-ingress/E2-E2-HP-VOLUME-CACHE.md
+  s_dedb333dd5195e::t_8feb49f71c653b 1-33
+governance/plans/model-artifact-ingress/E3-E3-SERVE-HOOK.md
+  s_dedb333dd5195e::t_ed06d90f51d268 1-26
+governance/plans/model-artifact-ingress/NORTH-STAR.md
+  s_dedb333dd5195e::t_3ae7cb568b5a06 1-60
+governance/plans/model-economy/artifacts/SIGNAL-OX-ALPHA-OPENROUTER-2026-08-21.md
+  s_dedb333dd5195e::t_b4692bf90dd147 1-29
+governance/plans/model-identity-overlay/E0-IDENTITY-STRIP.md
+  s_dedb333dd5195e::t_fed3a1ce0aef96 1-9
+governance/plans/model-identity-overlay/E1-CONFORM.md
+  s_dedb333dd5195e::t_76500146647703 1-10
+governance/plans/model-identity-overlay/E2-PROMOTE.md
+  s_dedb333dd5195e::t_c7248728c37512 1-10
+governance/plans/model-identity-overlay/NORTH-STAR.md
+  s_dedb333dd5195e::t_d35d4795cf19e1 1-26
+governance/plans/model-observability/E0-COCKPIT.md
+  s_dedb333dd5195e::t_572509fbafaf98 1-9
+governance/plans/model-observability/E1-DRIFT-MONITOR.md
+  s_dedb333dd5195e::t_3a51cd666780e2 1-10
+governance/plans/model-observability/E2-PROVIDER-HEALTH.md
+  s_dedb333dd5195e::t_0851ae2871e4bf 1-10
+governance/plans/model-observability/NORTH-STAR.md
+  s_dedb333dd5195e::t_08a86e94f6f454 1-24
+governance/plans/model-selection-completion/E5-ROUTER-MODES.md
+  s_dedb333dd5195e::t_5e6534505c8f23 1-41
+governance/plans/model-selection-completion/NORTH-STAR.md
+  s_dedb333dd5195e::t_f87e8cd822991a 75
+governance/plans/model-selection-completion/RECEIPTS.md
+  s_dedb333dd5195e::t_ccdcdc9b73e25e 60-252
+governance/plans/model-selection-completion/RUNBOOK.md
+  s_dedb333dd5195e::t_0656f94e88b99a 1-58
+governance/plans/model-selection-completion/RUNPOD-SERVING-PLAN.md
+  s_dedb333dd5195e::t_65f07b1f64b69d 1-58
+governance/plans/model-selection-completion/STEERING-FINDING.md
+  s_dedb333dd5195e::t_dec57807f6d8a8 1-182
+governance/plans/model-selection-completion/finetune-steering.sh
+  s_dedb333dd5195e::t_2bfe7dd88be76d 1-74
+governance/plans/model-selection-completion/probes.json
+  s_dedb333dd5195e::t_ecf003e9cc3bb6 2-113
+governance/plans/model-selection-completion/steering-dataset.jsonl
+  s_dedb333dd5195e::t_5a1f45d05baa48 1-25
+governance/plans/moq-deadline-scheduler/E4-LEARNED-CODEC-CATALOG.md
+  s_dedb333dd5195e::t_30161bff312d4f 1-9
+governance/plans/moq-deadline-scheduler/NORTH-STAR.md
+  s_dedb333dd5195e::t_1ff633267bc781 31
+governance/plans/namespace-substrate/E0-GOVERN.md
+  s_dedb333dd5195e::t_c4f7e33436d789 22
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_dedb333dd5195e::t_f30286238688f3 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_dedb333dd5195e::t_2a7a625f725979 22-25
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_dedb333dd5195e::t_c858eb5ad47e14 72-73
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_dedb333dd5195e::t_6f136fd9aa066f 43-45
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  s_dedb333dd5195e::t_42927765caf815 22
+governance/plans/namespace-substrate/E6-DECIDE.md
+  s_dedb333dd5195e::t_1ee28da5cd5f45 4,20
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  s_dedb333dd5195e::t_6d13fb90c2c185 133-135
+governance/plans/namespace-substrate/NORTH-STAR.md
+  s_dedb333dd5195e::t_63b38fec37f665 4,27-30,32-34
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-advisory-soak-setup.md
+  s_dedb333dd5195e::t_a09e433514a78b 1-54
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-build-measure.md
+  s_dedb333dd5195e::t_1fe028ff1abb87 1-59
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-x86-falsifier.md
+  s_dedb333dd5195e::t_8b60f6f6b7805d 1-68
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-artifact-cache-pilot.md
+  s_dedb333dd5195e::t_90bc8fb6c80a96 1-177
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-egress-v2.md
+  s_dedb333dd5195e::t_13ea523023338b 1-132
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-gh-oidc-federation.md
+  s_dedb333dd5195e::t_3949a13d2ce67e 1-154
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-k8s-smoke.md
+  s_dedb333dd5195e::t_d14de628c37c88 1-122
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-metrics-e2e-live.md
+  s_dedb333dd5195e::t_ea0f0aaa45cb60 1-267
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-npm-mirror-rescope.md
+  s_dedb333dd5195e::t_26a4a32776044e 1-176
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-prometheus-probe.md
+  s_dedb333dd5195e::t_a680c7e8ecbd37 1-201
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-sdk-repo.md
+  s_dedb333dd5195e::t_a175cecd8c32d5 1-70
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-secrets-map.md
+  s_dedb333dd5195e::t_95545bc04c9379 1-80
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-tailscale-join.md
+  s_dedb333dd5195e::t_23451bcf9dd4d1 1-244
+governance/plans/namespace-substrate/STORY-PACKAGE-2026-08-21.md
+  s_dedb333dd5195e::t_f56ae7e9e4393f 1-78
+governance/plans/namespace-substrate/nsc-version-pin.json
+  s_dedb333dd5195e::t_b103f21d05575d 1
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-advisory.json
+  s_dedb333dd5195e::t_fc57248719a650 1-61
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-policy.json
+  s_dedb333dd5195e::t_1526d07e1725b6 1-61
+governance/plans/network-edge-plane/ACTION-ITEMS.md
+  s_dedb333dd5195e::t_e59cb6ee1e425c 1-37
+governance/plans/network-edge-plane/E0-CENSUS.md
+  s_dedb333dd5195e::t_79790e1c2a4dfb 1-11
+governance/plans/network-edge-plane/E1-EGRESS-CONTRACT.md
+  s_dedb333dd5195e::t_905518f6ebdb0c 1-11
+governance/plans/network-edge-plane/E2-PROD-CROSSING.md
+  s_dedb333dd5195e::t_1c2646280b54bd 1-11
+governance/plans/network-edge-plane/E3-INGRESS-CONTRACT.md
+  s_dedb333dd5195e::t_6efff0e8b728bf 1-11
+governance/plans/network-edge-plane/E4-LAW.md
+  s_dedb333dd5195e::t_c851b5bd29ceda 1-24
+governance/plans/network-edge-plane/E4-MANAGED-ORIGIN.md
+  s_dedb333dd5195e::t_f19e7231384446 1-11
+governance/plans/network-edge-plane/E5-DRIFT-PROOF.md
+  s_dedb333dd5195e::t_0f675b8ca09a49 1-11
+governance/plans/network-edge-plane/E6-PRODUCTIZATION.md
+  s_dedb333dd5195e::t_0dafbaea70a172 1-25
+governance/plans/network-edge-plane/EXPANSION.md
+  s_dedb333dd5195e::t_b3c23e70ad33e9 1-59
+governance/plans/network-edge-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_4211b110c6af86 1-124
+governance/plans/network-edge-plane/POSITIONING.md
+  s_dedb333dd5195e::t_3a890727c1c60a 1-92
+governance/plans/network-edge-plane/RECEIPTS.md
+  s_dedb333dd5195e::t_dda971afe8cb35 1-112
+governance/plans/network-edge-plane/RENDERINGS-MATRIX.md
+  s_dedb333dd5195e::t_f5de2985c14d5e 1-20
+governance/plans/network-edge-plane/SURFACE-CONTRACT.json
+  s_dedb333dd5195e::t_a7f3158bc8be1e 1-39
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_dedb333dd5195e::t_0a139b25870306 1-15
+governance/plans/network-edge-plane/WAVE-ANCHOR.md
+  s_dedb333dd5195e::t_da9e3819d89d18 1-44
+governance/plans/network-edge-plane/WOW.md
+  s_dedb333dd5195e::t_0af14914cee0ae 1-38
+governance/plans/neural-archive-codec/E0-STORAGE-MEASURE.md
+  s_dedb333dd5195e::t_c49a4309d76bac 1-9
+governance/plans/neural-archive-codec/E1-REENCODE-PIPELINE.md
+  s_dedb333dd5195e::t_3305d5804e52d6 1-9
+governance/plans/neural-archive-codec/E2-LEDGER-ATTRIBUTION.md
+  s_dedb333dd5195e::t_f20947bb86a5fd 1-9
+governance/plans/neural-archive-codec/E3-MARGIN-RECEIPT.md
+  s_dedb333dd5195e::t_8bb07249737d1f 1-9
+governance/plans/neural-archive-codec/NORTH-STAR.md
+  s_dedb333dd5195e::t_2a669dba8aa5b5 1-29
+governance/plans/neural-contribution/E0-MEASURE.md
+  s_dedb333dd5195e::t_f632369898436d 1-9
+governance/plans/neural-contribution/E1-EDGE-ENCODER.md
+  s_dedb333dd5195e::t_f544f304b1b66c 1-9
+governance/plans/neural-contribution/E2-DECODE-SURFACE.md
+  s_dedb333dd5195e::t_4f76064def6d02 1-9
+governance/plans/neural-contribution/E3-METER.md
+  s_dedb333dd5195e::t_cdcf17b0a0aaa2 1-9
+governance/plans/neural-contribution/NORTH-STAR.md
+  s_dedb333dd5195e::t_ecc9db569ae048 1-29
+governance/plans/neural-moq-lane/E0-CATALOG-REAL.md
+  s_dedb333dd5195e::t_e1dd635093e55e 1-9
+governance/plans/neural-moq-lane/E1-DECODER-SPIKE.md
+  s_dedb333dd5195e::t_00949ff6d8b18e 1-9
+governance/plans/neural-moq-lane/E2-SCHEDULER-INTERPLAY.md
+  s_dedb333dd5195e::t_e7c30ed1807277 1-9
+governance/plans/neural-moq-lane/E3-LIVE-ARENA.md
+  s_dedb333dd5195e::t_96097c7522b797 1-9
+governance/plans/neural-moq-lane/MOQ-INTEGRATION.md
+  s_dedb333dd5195e::t_112b43f729ac6c 1-33
+governance/plans/neural-moq-lane/NORTH-STAR.md
+  s_dedb333dd5195e::t_966639a10ddb9c 1-29
+governance/plans/non-llm-eval-coverage/E0-EMBED-EVAL.md
+  s_dedb333dd5195e::t_50070350b88270 1-9
+governance/plans/non-llm-eval-coverage/E1-AUDIO-EVAL.md
+  s_dedb333dd5195e::t_bb8b4f9d7e2ac4 1-10
+governance/plans/non-llm-eval-coverage/E2-GATE-RESULTS.md
+  s_dedb333dd5195e::t_5f5a716b94bcbb 1-10
+governance/plans/non-llm-eval-coverage/NORTH-STAR.md
+  s_dedb333dd5195e::t_17490d38278748 1-26
+governance/plans/own-model-program/E6-E6-LOCAL-POWER.md
+  s_dedb333dd5195e::t_d0db955d45dace 23
+governance/plans/own-model-program/NORTH-STAR.md
+  s_dedb333dd5195e::t_bf7f527db79b25 54
+governance/plans/pen-design-lane/CORRECTIONS-2026-08-15.md
+  s_dedb333dd5195e::t_639104208cb91a 164-402
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_dedb333dd5195e::t_8b358c8b4c1b47 25-27,33-44,122-153
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_dedb333dd5195e::t_6fed0e8fb199ec 36-57
+governance/plans/pen-design-lane/E5-GRADUATE-FIRST-SURFACE.md
+  s_dedb333dd5195e::t_6eb346f971cfe7 5-15
+governance/plans/pen-design-lane/NORTH-STAR.md
+  s_dedb333dd5195e::t_a7374ba7fbb9fb 4-20,53
+governance/plans/pen-design-lane/PROPOSAL-review-liveness-merge-precondition.md
+  s_dedb333dd5195e::t_1419abb78fc241 1-209
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_dedb333dd5195e::t_fdda8836bc82db 1-20
+governance/plans/physics-of-compute/E1-SSD-STREAMING-MEASURE.md
+  s_dedb333dd5195e::t_6993d1e9cd823f 1-24
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_dedb333dd5195e::t_41026b184c0b42 1-22
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_dedb333dd5195e::t_f616b432de2345 1-46
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_dedb333dd5195e::t_34140bb751ce52 1-57
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  s_dedb333dd5195e::t_280ab1b4471ffc 1-57
+governance/plans/physics-of-compute/NORTH-STAR.md
+  s_dedb333dd5195e::t_529401dc2791e0 1-108
+governance/plans/physics-of-compute/RECEIPTS-E1-preflight.md
+  s_dedb333dd5195e::t_08f2729425b91f 1-78
+governance/plans/polyrepo-velocity/E7-AGENT-CACHE.md
+  s_dedb333dd5195e::t_50b3e825a866c3 84-87
+governance/plans/pricing-pages/E0-MANIFEST-SPEC.md
+  s_dedb333dd5195e::t_4f539da4e8715a 1-38
+governance/plans/pricing-pages/E5-SPOKE-PRICING-STANDARD.md
+  s_dedb333dd5195e::t_322a07e1259d7d 1-18
+governance/plans/pricing-pages/NORTH-STAR.md
+  s_dedb333dd5195e::t_de943d2ffe630d 1-24
+governance/plans/rendering-completeness/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_0a9236c540e7f4 1-16
+governance/plans/rendering-completeness/E1-SDK-COVERAGE.md
+  s_dedb333dd5195e::t_818e2ff0d3b34a 1-15
+governance/plans/rendering-completeness/E2-CLI-COVERAGE.md
+  s_dedb333dd5195e::t_0c30e684a99325 1-13
+governance/plans/rendering-completeness/E3-MCP-COVERAGE.md
+  s_dedb333dd5195e::t_8f4e0fc1070e42 1-13
+governance/plans/rendering-completeness/E4-SKILLS-COVERAGE.md
+  s_dedb333dd5195e::t_5b62a4a5f95795 1-13
+governance/plans/rendering-completeness/E5-VOICE-COVERAGE.md
+  s_dedb333dd5195e::t_82a3521dc407e7 1-16
+governance/plans/rendering-completeness/GAP-MAP.md
+  s_dedb333dd5195e::t_ea000fed284ca6 1-70
+governance/plans/rendering-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_631ecfc1721d27 1-61
+governance/plans/runtime-economy/ADR-INTEROPERATE-NOT-BECOME.md
+  s_dedb333dd5195e::t_54acb5a12a37db 1-48
+governance/plans/runtime-economy/ADR-RUNTIME-ECONOMY-POSITIONING.md
+  s_dedb333dd5195e::t_9692ec4e6c8e88 1-47
+governance/plans/runtime-economy/DECIDE.md
+  s_dedb333dd5195e::t_751940b3378daa 1-23
+governance/plans/runtime-economy/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_85096e29b454a5 1-38
+governance/plans/runtime-economy/E1-PROVIDER-BRIDGE.md
+  s_dedb333dd5195e::t_48f8898ad69686 1-36
+governance/plans/runtime-economy/E2-DOGFOOD-RUN.md
+  s_dedb333dd5195e::t_c0e76ced89f862 1-31
+governance/plans/runtime-economy/E3-WAVE-BUNDLE.md
+  s_dedb333dd5195e::t_364e147d032802 1-48
+governance/plans/runtime-economy/E4-SCORECARD.md
+  s_dedb333dd5195e::t_ce6a5ef192d101 1-28
+governance/plans/runtime-economy/E5-RECEIPTS-PRODUCT.md
+  s_dedb333dd5195e::t_dd2f09ffe30ab5 1-25
+governance/plans/runtime-economy/E6-REGISTRY-DECISION.md
+  s_dedb333dd5195e::t_6d0b35bae658e9 1-27
+governance/plans/runtime-economy/EXPENSES-AND-CUTOVER.md
+  s_dedb333dd5195e::t_96725c0a173854 1-47
+governance/plans/runtime-economy/NORTH-STAR.md
+  s_dedb333dd5195e::t_7f4fe266235220 1-75
+governance/plans/runtime-economy/RECEIPTS.md
+  s_dedb333dd5195e::t_f44c1ad8d91b9c 1-54
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  s_dedb333dd5195e::t_b3970de165c60d 1-117
+governance/plans/runtime-economy/RUNPOD-COST-MODEL.md
+  s_dedb333dd5195e::t_a82595e328dfcb 1-60
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  s_dedb333dd5195e::t_3afd1e27e75448 1-103
+governance/plans/runtime-economy/bridge/BRIDGE-FINDINGS.md
+  s_dedb333dd5195e::t_660c4a3164e16c 1-189
+governance/plans/runtime-economy/bridge/probe.mjs
+  s_dedb333dd5195e::t_f077e44f03efe9 1-28
+governance/plans/runtime-economy/bridge/sdk-fixture-test.mjs
+  s_dedb333dd5195e::t_2e0d92428fcdd3 1-17
+governance/plans/runtime-economy/bridge/sdk-test.mjs
+  s_dedb333dd5195e::t_6398b1ae205d62 1-21
+governance/plans/runtime-economy/bridge/shim.log
+  s_dedb333dd5195e::t_09a224ebe0be80 1-9
+governance/plans/runtime-economy/bridge/shim.mjs
+  s_dedb333dd5195e::t_bbac1b77300878 1-118
+governance/plans/runtime-economy/bridge/shim10.log
+  s_dedb333dd5195e::t_b25581695b9493 1-16
+governance/plans/runtime-economy/bridge/shim11.log
+  s_dedb333dd5195e::t_b2846714931d6f 1-16
+governance/plans/runtime-economy/bridge/shim12.log
+  s_dedb333dd5195e::t_7afd6a8ee4ecb7 1-16
+governance/plans/runtime-economy/bridge/shim13.log
+  s_dedb333dd5195e::t_3ba55d1b28b973 1-16
+governance/plans/runtime-economy/bridge/shim2.log
+  s_dedb333dd5195e::t_f3f038a66f363f 1-9
+governance/plans/runtime-economy/bridge/shim3.log
+  s_dedb333dd5195e::t_185adbcfe19dd8 1-13
+governance/plans/runtime-economy/bridge/shim4.log
+  s_dedb333dd5195e::t_8a98c615746011 1-13
+governance/plans/runtime-economy/bridge/shim5.log
+  s_dedb333dd5195e::t_eb4a4fb3c264ce 1-13
+governance/plans/runtime-economy/bridge/shim6.log
+  s_dedb333dd5195e::t_4ea26c3253a3ef 1-13
+governance/plans/runtime-economy/bridge/shim7.log
+  s_dedb333dd5195e::t_e4284a49804d60 1-13
+governance/plans/runtime-economy/bridge/shim8.log
+  s_dedb333dd5195e::t_6c4367168f263b 1-13
+governance/plans/runtime-economy/bridge/shim9.log
+  s_dedb333dd5195e::t_0d48e08ac17196 1-16
+governance/plans/runtime-economy/bridge/sse-fixture.mjs
+  s_dedb333dd5195e::t_1a77098d5fd0e3 1-17
+governance/plans/runtime-economy/bridge/worker.js
+  s_dedb333dd5195e::t_b85af9064d088a 1-213
+governance/plans/runtime-economy/bridge/wrangler.toml
+  s_dedb333dd5195e::t_1ff98e4c53fd5d 1-14
+governance/plans/runtime-economy/bundle/README.md
+  s_dedb333dd5195e::t_de645b13329fe6 1-39
+governance/plans/runtime-economy/bundle/cordis.yml
+  s_dedb333dd5195e::t_b3c4175c672082 1-11
+governance/plans/runtime-economy/bundle/mcp-pool.yml
+  s_dedb333dd5195e::t_e205449f04b5d2 1-7
+governance/plans/runtime-economy/bundle/wave-dispatch/README.md
+  s_dedb333dd5195e::t_fbd03a0c24058c 1-25
+governance/plans/runtime-economy/bundle/wave-dispatch/index.ts
+  s_dedb333dd5195e::t_815eb82b150173 1-68
+governance/plans/runtime-economy/bundle/wave-dispatch/package.json
+  s_dedb333dd5195e::t_e903330764e83f 1-13
+governance/plans/runtime-economy/bundle/wave-mail/README.md
+  s_dedb333dd5195e::t_7c4d8ec7288e7e 1-18
+governance/plans/runtime-economy/bundle/wave-mail/index.ts
+  s_dedb333dd5195e::t_a76039de9ceb63 1-64
+governance/plans/runtime-economy/bundle/wave-mail/package.json
+  s_dedb333dd5195e::t_9c44e9bb40940d 1-13
+governance/plans/runtime-economy/bundle/wave-memory/README.md
+  s_dedb333dd5195e::t_0d1a9560d42ac6 1-17
+governance/plans/runtime-economy/bundle/wave-memory/index.ts
+  s_dedb333dd5195e::t_d81361b469fc57 1-24
+governance/plans/runtime-economy/bundle/wave-memory/package.json
+  s_dedb333dd5195e::t_2e7f4bbbeaa31c 1-13
+governance/plans/runtime-economy/bundle/wave-pay/README.md
+  s_dedb333dd5195e::t_ce93bb932a854a 1-17
+governance/plans/runtime-economy/bundle/wave-pay/index.ts
+  s_dedb333dd5195e::t_611b08d7928fdc 1-34
+governance/plans/runtime-economy/bundle/wave-pay/package.json
+  s_dedb333dd5195e::t_1bc8233ade7c7c 1-13
+governance/plans/runtime-economy/bundle/wave-provider/README.md
+  s_dedb333dd5195e::t_a175396a783bea 1-17
+governance/plans/runtime-economy/bundle/wave-provider/index.ts
+  s_dedb333dd5195e::t_536cced8cde2fe 1-25
+governance/plans/runtime-economy/bundle/wave-provider/package.json
+  s_dedb333dd5195e::t_71565e45e8c932 1-13
+governance/plans/runtime-economy/design/RECEIPTS-PRODUCT.md
+  s_dedb333dd5195e::t_bcbb26b7aa0f9a 1-25
+governance/plans/runtime-economy/dogfood/FINDINGS.md
+  s_dedb333dd5195e::t_3dce913c686335 1-75
+governance/plans/runtime-economy/dogfood/bridge-run-1.log
+  s_dedb333dd5195e::t_4e837971be3498 1-2
+governance/plans/runtime-economy/dogfood/bridge-run-2.log
+  s_dedb333dd5195e::t_7259f87bab2119 1-2
+governance/plans/runtime-economy/dogfood/bridge-run-3.log
+  s_dedb333dd5195e::t_03844626f5b9db 1-2
+governance/plans/runtime-economy/dogfood/bridge-run-4.log
+  s_dedb333dd5195e::t_0a2b8be8815bd0 1-2
+governance/plans/runtime-economy/dogfood/bridge-run-5.log
+  s_dedb333dd5195e::t_331846580b2514 1-2
+governance/plans/runtime-economy/dogfood/bridge-run-6.log
+  s_dedb333dd5195e::t_67791ac65eee10 1-2
+governance/plans/runtime-economy/dogfood/bundle-boot.log
+  s_dedb333dd5195e::t_2819d9d22dbb03 1-46
+governance/plans/runtime-economy/dogfood/bundle-boot2.log
+  s_dedb333dd5195e::t_fd1e222a5c936d 1-41
+governance/plans/runtime-economy/dogfood/bundle-boot3.log
+  s_dedb333dd5195e::t_515c11480e7262 1-9
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_1af0b70ac51c99 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_f84e6094c2a477 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/profiles/headless/package.json
+  s_dedb333dd5195e::t_ed6aec3b5b1d04 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_9019c004443fee 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/settings.yaml
+  s_dedb333dd5195e::t_9a5fce472b1f1e 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_fc43644fa720dc 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_672370b1b8cf82 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/profiles/headless/package.json
+  s_dedb333dd5195e::t_1606c00e06d499 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_52853dfed4c96c 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-canonical/settings.yaml
+  s_dedb333dd5195e::t_4a2566059754a8 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_d2ba2a9e7eb666 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_f11919f0530ef6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/package.json
+  s_dedb333dd5195e::t_9d7b9b1af4e1c9 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_012bec1fd21424 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/settings.yaml
+  s_dedb333dd5195e::t_60757c8dbc0ffb 1
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_919afe74b57bc2 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_a86fce9a05d7f6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/package.json
+  s_dedb333dd5195e::t_e844d9933045f5 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_20ccd3bd345b80 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/settings.yaml
+  s_dedb333dd5195e::t_f0a8552b351986 1
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_d37d3f442ba8aa 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_b347b217314382 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/package.json
+  s_dedb333dd5195e::t_be787f564c1664 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_25e16338be2d44 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/settings.yaml
+  s_dedb333dd5195e::t_3b31827514224b 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_81e71254594a80 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_eabac2755848e1 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/package.json
+  s_dedb333dd5195e::t_38d2e8d6569043 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_efdc68321533dc 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/settings.yaml
+  s_dedb333dd5195e::t_6d4ab2575bddac 1
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_a2cdf75ec400fa 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_7547f2fc2eeab0 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/package.json
+  s_dedb333dd5195e::t_c154ca97ac6d61 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_4e51e6c728e4a2 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/settings.yaml
+  s_dedb333dd5195e::t_5afe46fab5ce25 1
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_afb15b79e7ba93 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_b0ffc34a5e7785 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/package.json
+  s_dedb333dd5195e::t_f71daa94b582b2 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_3dcd1087092426 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/settings.yaml
+  s_dedb333dd5195e::t_c79b881f5b190c 1
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_d11aa89c1d4c75 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_1af6a53f7dbada 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/profiles/headless/package.json
+  s_dedb333dd5195e::t_f48c767393dd3c 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_3f96b449a7fee0 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/settings.yaml
+  s_dedb333dd5195e::t_4fa546f6c7957c 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/acp/cordis.patch.yml
+  s_dedb333dd5195e::t_a4f015bbaa240a 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/acp/package.json
+  s_dedb333dd5195e::t_45ba6655991bb2 1-12
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/acp/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_01c8a5eb1041ed 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_d1a8a8c4960f83 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_a8a27603ebe846 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/headless/package.json
+  s_dedb333dd5195e::t_3e13c2c9add4bb 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_6027e430ca281b 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool/settings.yaml
+  s_dedb333dd5195e::t_b2f87a529d089a 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_35638f93287996 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_ff19432700bbb4 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/package.json
+  s_dedb333dd5195e::t_54de8bd87b72f6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_988a212326aef1 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/settings.yaml
+  s_dedb333dd5195e::t_dc3a9e8b6a0a6e 1
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_f4c1f4fa0fb291 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_c4e101b8ac991d 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/package.json
+  s_dedb333dd5195e::t_e42145b915fffd 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_467e12a007464d 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/settings.yaml
+  s_dedb333dd5195e::t_d0d42834b51d88 1
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_daf778412faa37 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_209b555cd0d910 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/package.json
+  s_dedb333dd5195e::t_3f91628652feb6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_9f71ffcd836842 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  s_dedb333dd5195e::t_09f5d544d9e92f 1
+governance/plans/runtime-economy/dogfood/dsh-home-runtime/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_7237b898ff3ef3 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-runtime/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_783ae779677afa 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-runtime/profiles/headless/package.json
+  s_dedb333dd5195e::t_ba0d61736c3237 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-runtime/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_7aa0a4bc9dd8d0 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-runtime/settings.yaml
+  s_dedb333dd5195e::t_edd00da6104dde 1-15
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_d1b6dfb3ee3116 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_656bd5329bfa22 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/package.json
+  s_dedb333dd5195e::t_e63d1135d50b25 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_a8c931d6ffc0f4 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  s_dedb333dd5195e::t_77b31435cf7c5b 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_58a2e5889e3903 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_15213255067961 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/package.json
+  s_dedb333dd5195e::t_781f98a81702c9 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_faa946360d3c51 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/settings.yaml
+  s_dedb333dd5195e::t_a46d49f32d2d10 1
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/headless/cordis.patch.yml
+  s_dedb333dd5195e::t_a79d96f950a1ab 1-4
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/headless/cordis.yml
+  s_dedb333dd5195e::t_ffeb37db9510f4 1-4
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/headless/package.json
+  s_dedb333dd5195e::t_86d0ccd5e8c4c1 1-13
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/headless/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_caa20f1b0b692a 1-5
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/web/cordis.patch.yml
+  s_dedb333dd5195e::t_ada0f3b38ad986 1-4
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/web/cordis.yml
+  s_dedb333dd5195e::t_d6061ede8cc426 1-4
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/web/package.json
+  s_dedb333dd5195e::t_aafc77637d925b 1-13
+governance/plans/runtime-economy/dogfood/dsh-home/profiles/web/pnpm-workspace.yaml
+  s_dedb333dd5195e::t_1946725eaefde0 1-5
+governance/plans/runtime-economy/dogfood/dsh-home/settings.yaml
+  s_dedb333dd5195e::t_06e2ebd94ccdab 1-12
+governance/plans/runtime-economy/dogfood/dsh-home/storages/workspace.json
+  s_dedb333dd5195e::t_0fbcb372bf7aaa 1-26
+governance/plans/runtime-economy/dogfood/e2e-canonical.log
+  s_dedb333dd5195e::t_059bc69d0bb65a 1-2
+governance/plans/runtime-economy/dogfood/e2e-final.log
+  s_dedb333dd5195e::t_fb2c4f9fcc803a 1-2
+governance/plans/runtime-economy/dogfood/e2e-final2.log
+  s_dedb333dd5195e::t_a3b1f23e36769c 1-2
+governance/plans/runtime-economy/dogfood/e2e-final3.log
+  s_dedb333dd5195e::t_8d331018062bf9 1-2
+governance/plans/runtime-economy/dogfood/e2e-final4.log
+  s_dedb333dd5195e::t_9c6e4ff54c3155 1-2
+governance/plans/runtime-economy/dogfood/e2e-final5.log
+  s_dedb333dd5195e::t_bbd42d0757fa9c 1-2
+governance/plans/runtime-economy/dogfood/e2e-final6.log
+  s_dedb333dd5195e::t_8fa4d433c07548 1-2
+governance/plans/runtime-economy/dogfood/e2e-final7.log
+  s_dedb333dd5195e::t_d33ecda6b34e11 1-2
+governance/plans/runtime-economy/dogfood/e2e-final8.log
+  s_dedb333dd5195e::t_84be5fd24711d6 1-2
+governance/plans/runtime-economy/dogfood/e2e-finale.log
+  s_dedb333dd5195e::t_aff51a6c7c0079 1-7
+governance/plans/runtime-economy/dogfood/e2e-livebridge-1.log
+  s_dedb333dd5195e::t_673c9b7162e4aa 1-2
+governance/plans/runtime-economy/dogfood/e2e-livebridge-2.log
+  s_dedb333dd5195e::t_87429a06169536 1-2
+governance/plans/runtime-economy/dogfood/e2e-livebridge-3.log
+  s_dedb333dd5195e::t_f1aa147564fbd8 1-2
+governance/plans/runtime-economy/dogfood/e2e-native-final.log
+  s_dedb333dd5195e::t_9c3fbbb750621c 1-2
+governance/plans/runtime-economy/dogfood/e2e-pool-1.log
+  s_dedb333dd5195e::t_7526a929159e39 1-24
+governance/plans/runtime-economy/dogfood/e2e-run-1.log
+  s_dedb333dd5195e::t_399fbad0042e16 1-2
+governance/plans/runtime-economy/dogfood/e2e-run-2.log
+  s_dedb333dd5195e::t_6039e052a32f8a 1-2
+governance/plans/runtime-economy/dogfood/e2e-run-3.log
+  s_dedb333dd5195e::t_9e13081a867549 1-2
+governance/plans/runtime-economy/dogfood/e2e-run-4.log
+  s_dedb333dd5195e::t_384fe879a9ab48 1-2
+governance/plans/runtime-economy/dogfood/e2e-runtime-1.log
+  s_dedb333dd5195e::t_2720fb5f90b70f 1-2
+governance/plans/runtime-economy/dogfood/e2e-shim.log
+  s_dedb333dd5195e::t_c57390afa75780 1-2
+governance/plans/runtime-economy/dogfood/e2e-spoke-final.log
+  s_dedb333dd5195e::t_23f887a28546e8 1-2
+governance/plans/runtime-economy/dogfood/e2e-usage-test.log
+  s_dedb333dd5195e::t_7d223dcb210049 1
+governance/plans/runtime-economy/dogfood/gateway-run-1.log
+  s_dedb333dd5195e::t_649e78711ffc1c 1-2
+governance/plans/runtime-economy/dogfood/greeting.txt
+  s_dedb333dd5195e::t_4c9f661bac7222 1
+governance/plans/runtime-economy/dogfood/pay-plugin-receipt.log
+  s_dedb333dd5195e::t_9e25c41d019d89 1-19
+governance/plans/runtime-economy/dogfood/rc2-t1.log
+  s_dedb333dd5195e::t_e4506b951f6ad3 1-17
+governance/plans/runtime-economy/dogfood/rc8-t1b.log
+  s_dedb333dd5195e::t_0b446978f8d166 1-3
+governance/plans/runtime-economy/dogfood/rc8-t1c.log
+  s_dedb333dd5195e::t_713a0a0caab206 1-92
+governance/plans/runtime-economy/dogfood/run-1.log
+  s_dedb333dd5195e::t_6b8e6eb191e90a 1
+governance/plans/runtime-economy/dogfood/scorecard-task1-run2.log
+  s_dedb333dd5195e::t_57986525e7882c 1-24
+governance/plans/runtime-economy/dogfood/scorecard-task1-run3.log
+  s_dedb333dd5195e::t_1786dc8631ef0e 1-51
+governance/plans/runtime-economy/dogfood/scorecard-task1-run4.log
+  s_dedb333dd5195e::t_98efb0e3dde1e0 1-3
+governance/plans/runtime-economy/dogfood/scorecard-task1-run5.log
+  s_dedb333dd5195e::t_aab442e602e576 1-23
+governance/plans/runtime-economy/dogfood/scorecard-task1-run6.log
+  s_dedb333dd5195e::t_20717cbaf9a71f 1-48
+governance/plans/runtime-economy/dogfood/scorecard-task1.log
+  s_dedb333dd5195e::t_172f0e1793f736 1-14
+governance/plans/runtime-economy/dogfood/scorecard-task3.log
+  s_dedb333dd5195e::t_3c483a6c31a686 1
+governance/plans/runtime-economy/dogfood/tier-30b-t1.log
+  s_dedb333dd5195e::t_bed302b7d21dcb 1-2
+governance/plans/runtime-economy/dogfood/tier-3b-t1-run2.log
+  s_dedb333dd5195e::t_13a655dd343092 1-11
+governance/plans/runtime-economy/dogfood/tier-3b-t1-run3.log
+  s_dedb333dd5195e::t_1c4a9491165b21 1-263
+governance/plans/runtime-economy/dogfood/tier-3b-t1-run4.log
+  s_dedb333dd5195e::t_3799f88d0bbab4 1-274
+governance/plans/runtime-economy/dogfood/tier-3b-t1-run5.log
+  s_dedb333dd5195e::t_ae045aa1c11371 1-63
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run1.log
+  s_dedb333dd5195e::t_c6019e4c202c93 1-11
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run2.log
+  s_dedb333dd5195e::t_e25930b990cc34 1-15
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run3.log
+  s_dedb333dd5195e::t_1459347d31e301 1-19
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run4.log
+  s_dedb333dd5195e::t_47ac6373e5942c 1-31
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run5.log
+  s_dedb333dd5195e::t_f43cc5cd858f24 1-18
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run1.log
+  s_dedb333dd5195e::t_7248ddf868e0a2 1-74
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run2.log
+  s_dedb333dd5195e::t_5e3ed5e73a5eb8 1-63
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run3.log
+  s_dedb333dd5195e::t_33b9a0406acf94 1-32
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run4.log
+  s_dedb333dd5195e::t_90cfd1a6d895c3 1-65
+governance/plans/runtime-economy/dogfood/tier-pool-gemma4-31b-run5.log
+  s_dedb333dd5195e::t_be633ea2aefcb4 1
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run1.log
+  s_dedb333dd5195e::t_a796291d0870f0 1-46
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run2.log
+  s_dedb333dd5195e::t_43d275a0e1d0c1 1-45
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run3.log
+  s_dedb333dd5195e::t_6ac81f4d3f8193 1-44
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run4.log
+  s_dedb333dd5195e::t_7a313a92688934 1-49
+governance/plans/runtime-economy/dogfood/tier-pool-wave-qwen38-ad-iq3s-run5.log
+  s_dedb333dd5195e::t_97107b75271397 1
+governance/plans/runtime-economy/dogfood/tier-pool30b-run1.log
+  s_dedb333dd5195e::t_2dfe42fabcfe45 1-11
+governance/plans/runtime-economy/dogfood/tier-pool30b-run2.log
+  s_dedb333dd5195e::t_2c8835d80dc75d 1-71
+governance/plans/runtime-economy/dogfood/tier-pool30b-run3.log
+  s_dedb333dd5195e::t_cacf2b79360308 1-74
+governance/plans/runtime-economy/dogfood/tier-pool30b-run4.log
+  s_dedb333dd5195e::t_8b23072208fe1d 1-71
+governance/plans/runtime-economy/dogfood/tier-pool30b-run5.log
+  s_dedb333dd5195e::t_1045f77c3d1983 1-73
+governance/plans/runtime-economy/dogfood/tier-pool30b-t1.log
+  s_dedb333dd5195e::t_6acb4b1c11e045 1-16
+governance/plans/runtime-economy/dogfood/wave-model.yml
+  s_dedb333dd5195e::t_42409462cfb6c8 1-4
+governance/plans/runtime-economy/dogfood/wave-proof.txt
+  s_dedb333dd5195e::t_6e6575ff6b1f66 1
+governance/plans/runtime-economy/dogfood/web-smoke.log
+  s_dedb333dd5195e::t_d7f1676063509a 1
+governance/plans/runtime-economy/leaderboard-tui/.cursor/rules/use-bun-instead-of-node-vite-npm-pnpm.mdc
+  s_dedb333dd5195e::t_1ae745e741eb93 1-111
+governance/plans/runtime-economy/leaderboard-tui/.gitignore
+  s_dedb333dd5195e::t_803c2577023e2e 1-34
+governance/plans/runtime-economy/leaderboard-tui/README.md
+  s_dedb333dd5195e::t_7b94b7238e2e4e 1-42
+governance/plans/runtime-economy/leaderboard-tui/bun.lock
+  s_dedb333dd5195e::t_27971b7427aee0 1-65
+governance/plans/runtime-economy/leaderboard-tui/index.ts
+  s_dedb333dd5195e::t_8b2c7d3dd3abbd 1-168
+governance/plans/runtime-economy/leaderboard-tui/package.json
+  s_dedb333dd5195e::t_f36b94ec3d29fa 1-15
+governance/plans/runtime-economy/leaderboard-tui/tsconfig.json
+  s_dedb333dd5195e::t_4f5b2d036c8cfe 1-30
+governance/plans/runtime-economy/preset/PROVIDER.md
+  s_dedb333dd5195e::t_fd5defc7504c24 1-25
+governance/plans/runtime-economy/preset/wave-settings.yaml
+  s_dedb333dd5195e::t_d5f7015faa336b 1-23
+governance/plans/runtime-economy/research/BILLING-COMPLETION.md
+  s_dedb333dd5195e::t_8be004613f9986 1-38
+governance/plans/runtime-economy/research/PRODUCT-OFFER.md
+  s_dedb333dd5195e::t_95b074bae7d0d6 1-87
+governance/plans/runtime-economy/research/REGISTRY-LANDSCAPE-01.md
+  s_dedb333dd5195e::t_f0835cb78d4cab 1-34
+governance/plans/runtime-economy/research/SOURCE-REFERENCE.md
+  s_dedb333dd5195e::t_23e993bf108c97 1-57
+governance/plans/runtime-economy/research/UPSTREAM-CONTRIBUTIONS.md
+  s_dedb333dd5195e::t_94994f4bbd3b71 1-33
+governance/plans/runtime-economy/research/WAVE-FLEET-MAP.md
+  s_dedb333dd5195e::t_9359d3bb405316 1-38
+governance/plans/runtime-economy/research/dsh-opportunity-map.md
+  s_dedb333dd5195e::t_5993cfc0e2682a 1-138
+governance/plans/runtime-economy/research/dsh-revertible-effects/GROUND.md
+  s_dedb333dd5195e::t_41f83938f4e985 1-43
+governance/plans/runtime-economy/research/dsh-revertible-effects/SYNTHESIS.md
+  s_dedb333dd5195e::t_b9609f6684a316 1-66
+governance/plans/runtime-economy/scorecard/TASKSET.md
+  s_dedb333dd5195e::t_db0dc35304d180 1-40
+governance/plans/runtime-hardening/E0-CF-DEPLOY-AUTH.md
+  s_dedb333dd5195e::t_abb92ce1a60ce1 1-22
+governance/plans/runtime-hardening/E1-30B-TRANSPORT.md
+  s_dedb333dd5195e::t_8cbe647da842ba 1-21
+governance/plans/runtime-hardening/E2-LADDER-SHADOW-RUNG.md
+  s_dedb333dd5195e::t_bdcfeb42ccb999 1-20
+governance/plans/runtime-hardening/E3-WARM-WORKER-LAW.md
+  s_dedb333dd5195e::t_4f17c1f8c82e79 1-19
+governance/plans/runtime-hardening/E4-EMPTY-STREAM-TAXONOMY.md
+  s_dedb333dd5195e::t_07195e392cd813 1-20
+governance/plans/runtime-hardening/NORTH-STAR.md
+  s_dedb333dd5195e::t_bbd9a78b13635b 1-32
+governance/plans/runtime-hardening/bin/check-runpod-endpoints-drift.mjs
+  s_dedb333dd5195e::t_f0053b512d7334 1-58
+governance/plans/runtime-integrations/ADR-WORKFLOWS.md
+  s_dedb333dd5195e::t_4fdf00799b4b8f 1-38
+governance/plans/runtime-integrations/E0-FIT-MATRIX.md
+  s_dedb333dd5195e::t_17f8f9dfff922f 1-14
+governance/plans/runtime-integrations/E1-WORKFLOWS.md
+  s_dedb333dd5195e::t_c040d9dfe0c713 1-14
+governance/plans/runtime-integrations/E2-MCP-CATALOG.md
+  s_dedb333dd5195e::t_b6f9f03be8916c 1-13
+governance/plans/runtime-integrations/E3-VOICE-VISION-MOUNTS.md
+  s_dedb333dd5195e::t_04cce167ee0ec2 1-14
+governance/plans/runtime-integrations/FIT-MATRIX.md
+  s_dedb333dd5195e::t_43d55d5389845d 1-24
+governance/plans/runtime-integrations/NORTH-STAR.md
+  s_dedb333dd5195e::t_2453b75d92791f 1-52
+governance/plans/runtime-integrations/bin/emit-mcp.mjs
+  s_dedb333dd5195e::t_928ad3d4b63b16 1-61
+governance/plans/runtime-integrations/catalog.json
+  s_dedb333dd5195e::t_b9e02b74ad5703 1-55
+governance/plans/runtime-integrations/mcp-fragments/mcp-agentmail.yml
+  s_dedb333dd5195e::t_35d53e200ef662 1-11
+governance/plans/runtime-integrations/mcp-fragments/mcp-link-cli.yml
+  s_dedb333dd5195e::t_d6325a2c81c60d 1-9
+governance/plans/runtime-integrations/mcp-fragments/mcp-wave-dispatch.yml
+  s_dedb333dd5195e::t_573cb83b5dc7cf 1-7
+governance/plans/runtime-integrations/mcp-fragments/mcp-wave-pool.yml
+  s_dedb333dd5195e::t_eebf93f90cebfb 1-7
+governance/plans/runtime-integrations/mcp-fragments/mcp-wave-runtime-mcp.yml
+  s_dedb333dd5195e::t_ca0ed0a41eca75 1-10
+governance/plans/runtime-integrations/mcp-fragments/mcp-wave-vision.yml
+  s_dedb333dd5195e::t_230504642d9e5a 1-7
+governance/plans/runtime-learning-loop/E0-INTAKE.md
+  s_dedb333dd5195e::t_828bddeb77f8b1 1-14
+governance/plans/runtime-learning-loop/E1-TRAJECTORY-FEED.md
+  s_dedb333dd5195e::t_9a7eb01de29aa4 1-13
+governance/plans/runtime-learning-loop/E2-ROUTER-FEEDBACK.md
+  s_dedb333dd5195e::t_b8165b1008e4c8 1-14
+governance/plans/runtime-learning-loop/E3-COST-ATTRIBUTION.md
+  s_dedb333dd5195e::t_6c17535b7ad589 1-13
+governance/plans/runtime-learning-loop/LEADERBOARD-AUTO-FEED.md
+  s_dedb333dd5195e::t_c2416c3d0f2def 1-27
+governance/plans/runtime-learning-loop/NORTH-STAR.md
+  s_dedb333dd5195e::t_d9114a3a9b5957 1-52
+governance/plans/runtime-learning-loop/bin/intake.mjs
+  s_dedb333dd5195e::t_b3347074802615 1-68
+governance/plans/runtime-learning-loop/bin/measure-tier.mjs
+  s_dedb333dd5195e::t_be864dc7d9a119 1-113
+governance/plans/runtime-learning-loop/bin/merge-pending-rows.mjs
+  s_dedb333dd5195e::t_8a1fcd455e73ee 1-46
+governance/plans/runtime-learning-loop/bin/rca.mjs
+  s_dedb333dd5195e::t_42c8a6d6e77260 1-56
+governance/plans/runtime-learning-loop/intake-finale/cost.json
+  s_dedb333dd5195e::t_fea039ef23d5e1 1-3
+governance/plans/runtime-learning-loop/intake-finale/rca-entry.json
+  s_dedb333dd5195e::t_d67aa8b2675c59 1-11
+governance/plans/runtime-learning-loop/intake-finale/rca.json
+  s_dedb333dd5195e::t_f6f082aae146f6 1-35
+governance/plans/runtime-learning-loop/intake-finale/scorecard.json
+  s_dedb333dd5195e::t_95e802a261ff8b 1-12
+governance/plans/runtime-learning-loop/intake-pool/cost.json
+  s_dedb333dd5195e::t_9974078aca28f4 1-3
+governance/plans/runtime-learning-loop/intake-pool/rca-entry.json
+  s_dedb333dd5195e::t_ced56788e9e0a8 1-11
+governance/plans/runtime-learning-loop/intake-pool/rca.json
+  s_dedb333dd5195e::t_084fbd34ae5bd3 1-20
+governance/plans/runtime-learning-loop/intake-pool/scorecard.json
+  s_dedb333dd5195e::t_f3fa90c00ea355 1-7
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/cost.json
+  s_dedb333dd5195e::t_d122d5c6ec8d22 1-6
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/rca.json
+  s_dedb333dd5195e::t_61ed1ac303b87d 1-34
+governance/plans/runtime-learning-loop/intake-qwen3-coder-30b/scorecard.json
+  s_dedb333dd5195e::t_7b8c078035e56a 1-12
+governance/plans/runtime-learning-loop/intake-usage/cost.json
+  s_dedb333dd5195e::t_e876d87ab31c03 1-6
+governance/plans/runtime-learning-loop/intake-usage/rca.json
+  s_dedb333dd5195e::t_d1775ab7e95c38 1-34
+governance/plans/runtime-learning-loop/intake-usage/scorecard.json
+  s_dedb333dd5195e::t_68f5d4226741e5 1-12
+governance/plans/runtime-learning-loop/intake-usage2/cost.json
+  s_dedb333dd5195e::t_b533729f867e47 1-6
+governance/plans/runtime-learning-loop/intake-usage2/rca.json
+  s_dedb333dd5195e::t_627cab56955664 1-34
+governance/plans/runtime-learning-loop/intake-usage2/scorecard.json
+  s_dedb333dd5195e::t_1f684b36d49b54 1-12
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_dedb333dd5195e::t_6f101be2d21332 1-46
+governance/plans/runtime-learning-loop/research/pending-rows/deepcoder-14b.json
+  s_dedb333dd5195e::t_2385463ec03837 1-13
+governance/plans/runtime-learning-loop/research/pending-rows/gemma4-31b.json
+  s_dedb333dd5195e::t_4a1603b8e430f9 1-19
+governance/plans/runtime-learning-loop/research/pending-rows/qwen2.5-3b.json
+  s_dedb333dd5195e::t_2f473a5a693115 1-13
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3-coder.json
+  s_dedb333dd5195e::t_b1739551da6cf8 1-13
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  s_dedb333dd5195e::t_f44f6fac2afda0 1-20
+governance/plans/runtime-learning-loop/research/pending-rows/wave-qwen38-27b.json
+  s_dedb333dd5195e::t_3350e2876ba916 1-20
+governance/plans/runtime-learning-loop/research/pending-rows/wave-qwen38-ad-iq3s.json
+  s_dedb333dd5195e::t_7142cae8290882 1-19
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_dedb333dd5195e::t_eea5b6f4831f14 31-41
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_dedb333dd5195e::t_ed643edc3e15e8 22-28
+governance/plans/sdk-completeness/E0-CORE-SURFACES.md
+  s_dedb333dd5195e::t_048e6218e1bc53 1-9
+governance/plans/sdk-completeness/E1-THIN-SPOKES.md
+  s_dedb333dd5195e::t_1462980630e11e 1-10
+governance/plans/sdk-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_d39761794995fd 1-35
+governance/plans/search-analytics/E0-CAPTURE.md
+  s_dedb333dd5195e::t_1c82836c672810 1-16
+governance/plans/search-analytics/E1-INSIGHTS.md
+  s_dedb333dd5195e::t_cd76b3289be1dd 1-10
+governance/plans/search-analytics/E2-DASHBOARD.md
+  s_dedb333dd5195e::t_0b0e23f8617a2b 1-10
+governance/plans/search-analytics/E3-HEALTH.md
+  s_dedb333dd5195e::t_dab049e52a091f 1-17
+governance/plans/search-analytics/NORTH-STAR.md
+  s_dedb333dd5195e::t_0f3d0623585a4b 1-24
+governance/plans/search-analytics/RECEIPTS.md
+  s_dedb333dd5195e::t_a99b7a2169d17c 1-5
+governance/plans/search-discovery/E0-SIGNALS.md
+  s_dedb333dd5195e::t_41f653e0aef746 1-9
+governance/plans/search-discovery/E1-RANK.md
+  s_dedb333dd5195e::t_f4088305e1ea56 1-10
+governance/plans/search-discovery/E2-FEED.md
+  s_dedb333dd5195e::t_69342fcf9b9214 1-10
+governance/plans/search-discovery/NORTH-STAR.md
+  s_dedb333dd5195e::t_b1fced0fbda599 1-23
+governance/plans/search-launch/E0-LANDING.md
+  s_dedb333dd5195e::t_7bb0712866590f 1-22
+governance/plans/search-launch/E1-DOCS.md
+  s_dedb333dd5195e::t_8d173530e7754b 1-27
+governance/plans/search-launch/E2-OPENAPI.md
+  s_dedb333dd5195e::t_b4c19e98ec1a03 1-22
+governance/plans/search-launch/E3-WOW.md
+  s_dedb333dd5195e::t_66a8a6e71f7007 1-22
+governance/plans/search-launch/E4-GA.md
+  s_dedb333dd5195e::t_e92d5c3be1c814 1-22
+governance/plans/search-launch/NORTH-STAR.md
+  s_dedb333dd5195e::t_27f91a03ae8c46 1-36
+governance/plans/search-router/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_0c9f427f91be01 1-54
+governance/plans/search-router/E1-ROUTER.md
+  s_dedb333dd5195e::t_babc18416817de 1-32
+governance/plans/search-router/E2-CLASSIFIER.md
+  s_dedb333dd5195e::t_624bbf4422d053 1-42
+governance/plans/search-router/E3-PRODUCT.md
+  s_dedb333dd5195e::t_385c439b7ccb5a 1-56
+governance/plans/search-router/NORTH-STAR.md
+  s_dedb333dd5195e::t_03baa820fc8a1c 1-36
+governance/plans/search-router/RECEIPTS.md
+  s_dedb333dd5195e::t_aefbb3a697c465 1-40
+governance/plans/search-router/search-route.eval.json
+  s_dedb333dd5195e::t_27941e19259d12 1-25
+governance/plans/search-router/search-route.mjs
+  s_dedb333dd5195e::t_cbdb500a35e506 1-113
+governance/plans/search-router/search-router/SKILL.md
+  s_dedb333dd5195e::t_4454769f25eb0a 1-84
+governance/plans/search-router/search_source_map.json
+  s_dedb333dd5195e::t_7948adca053b24 1-113
+governance/plans/search-router/wave-product/SKILL.md
+  s_dedb333dd5195e::t_5b06cf5e59ad53 1-63
+governance/plans/sign-in-with-apple/NORTH-STAR.md
+  s_dedb333dd5195e::t_6c928a3c7d1532 1-26
+governance/plans/skills-completeness/E0-CORE-SURFACES.md
+  s_dedb333dd5195e::t_21a0c6b6507a72 1-9
+governance/plans/skills-completeness/E1-THIN-SPOKES.md
+  s_dedb333dd5195e::t_7e8c6629614610 1-10
+governance/plans/skills-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_06432f5fb49ed8 1-31
+governance/plans/sovereign-capacity/E3-REFRESH.md
+  s_dedb333dd5195e::t_a2d30ebc8128d3 128-139
+governance/plans/sovereign-capacity/RECEIPTS.md
+  s_dedb333dd5195e::t_a413d9988f5f8a 73-92,103-142,207-231,317-385
+governance/plans/sovereign-capacity/SIGNAL-OMACOM-2026-08-21.md
+  s_dedb333dd5195e::t_32bd9a72ab3c5d 1-31
+governance/plans/sovereign-capacity/SLATE-antares-2026-08-16.md
+  s_dedb333dd5195e::t_f9e40c06c2bf08 1-107
+governance/plans/sovereign-lab-parity/E1-TRAJECTORY-EMIT.md
+  s_dedb333dd5195e::t_e9b1c04e9be485 4-6,68-269
+governance/plans/sovereign-lab-parity/E2-VERIFIED-ENVIRONMENTS.md
+  s_dedb333dd5195e::t_7fdb4c4b9ea674 4-13,107-108,110-157,159-161
+governance/plans/sovereign-lab-parity/E3-SERVING-TOPOLOGY.md
+  s_dedb333dd5195e::t_d4b6a7ee7bafbe 4-18,38-41,44-53,59-142
+governance/plans/sovereign-lab-parity/RECEIPTS-E3-serving-2026-08-16.md
+  s_dedb333dd5195e::t_62aab4b9e445e2 1-251
+governance/plans/stripe-settlement-truth/E0-BOUNDARY.md
+  s_dedb333dd5195e::t_97e53961a80477 1-211
+governance/plans/stripe-settlement-truth/E1-DESTINATION.md
+  s_dedb333dd5195e::t_77777f33fc63bc 1-121
+governance/plans/stripe-settlement-truth/E2-POSTURE.md
+  s_dedb333dd5195e::t_eb766d99e8e2fa 1-95
+governance/plans/stripe-settlement-truth/E3-SYNC-LIVE.md
+  s_dedb333dd5195e::t_8f66d029debf99 1-60
+governance/plans/stripe-settlement-truth/E4-JOIN.md
+  s_dedb333dd5195e::t_9985ed31e679c2 1-289
+governance/plans/stripe-settlement-truth/E5-TRIANGLE.md
+  s_dedb333dd5195e::t_22dfc1494365d2 1-261
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_dedb333dd5195e::t_409abe237f0a94 1-129
+governance/plans/stripe-settlement-truth/NORTH-STAR.md
+  s_dedb333dd5195e::t_54a9b95bc9917e 1-142
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_dedb333dd5195e::t_fa671948a7ea2e 1-2178
+governance/plans/stripe-settlement-truth/reference/TEARDOWN-RUNBOOK.md
+  s_dedb333dd5195e::t_36b04621ac4142 1-150
+governance/plans/stripe-settlement-truth/reference/allowlist_drift.py
+  s_dedb333dd5195e::t_1dc5d4fe1a9563 1-78
+governance/plans/stripe-settlement-truth/reference/check-allowlist-drift.sh
+  s_dedb333dd5195e::t_098946c5b5a694 1-44
+governance/plans/stripe-settlement-truth/reference/recon-core.mjs
+  s_dedb333dd5195e::t_ca46b7c91891c2 1-211
+governance/plans/stripe-settlement-truth/reference/recon-core.test.mjs
+  s_dedb333dd5195e::t_d69ad0b9d2365f 1-254
+governance/plans/stripe-settlement-truth/reference/stripe-egress-ips.txt
+  s_dedb333dd5195e::t_129071c28eec15 1-37
+governance/plans/stripe-settlement-truth/reference/sync-scope-conformance.mjs
+  s_dedb333dd5195e::t_2be92e14d07785 1-147
+governance/plans/stripe-settlement-truth/reference/sync-scope-conformance.test.mjs
+  s_dedb333dd5195e::t_0581a8bf4cf3d9 1-116
+governance/plans/tier-uplift-2026/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_50629c3869dba5 1-9
+governance/plans/tier-uplift-2026/E1-TIER-REBASELINE.md
+  s_dedb333dd5195e::t_57b3659fbe6fff 1-10
+governance/plans/tier-uplift-2026/E2-ORIGIN-METHOD-INTAKE.md
+  s_dedb333dd5195e::t_6d259dae6004c8 1-10
+governance/plans/tier-uplift-2026/E3-SOCRATIC-DECISION.md
+  s_dedb333dd5195e::t_3dcaee7d11be14 1-10
+governance/plans/tier-uplift-2026/E4-INTERNAL-FLYWHEEL.md
+  s_dedb333dd5195e::t_6257e1da549052 1-10
+governance/plans/tier-uplift-2026/E5-CLOSE.md
+  s_dedb333dd5195e::t_06953db113cd93 1-10
+governance/plans/tier-uplift-2026/E6-SIGNAL-SWITCHING.md
+  s_dedb333dd5195e::t_ee09e7dcdfed12 1-29
+governance/plans/tier-uplift-2026/NORTH-STAR.md
+  s_dedb333dd5195e::t_8d4f6656a48dfb 1-28
+governance/plans/tier-uplift-2026/RECEIPTS.md
+  s_dedb333dd5195e::t_a74abfc72e6d93 1-33
+governance/plans/twitter-signal-plane/E0-SOURCE-REGISTRY.md
+  s_dedb333dd5195e::t_dd72e47d775b4b 1-14
+governance/plans/twitter-signal-plane/E1-PULL.md
+  s_dedb333dd5195e::t_9292fa5ebec2d5 1-16
+governance/plans/twitter-signal-plane/E2-RENDERINGS.md
+  s_dedb333dd5195e::t_e4babcaf3a205d 1-18
+governance/plans/twitter-signal-plane/E3-STEALTH-DETECT.md
+  s_dedb333dd5195e::t_63dbcfa1211e98 1-18
+governance/plans/twitter-signal-plane/E4-FEED.md
+  s_dedb333dd5195e::t_529627b183415f 1-19
+governance/plans/twitter-signal-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_f22d4ee79545a1 1-56
+governance/plans/twitter-signal-plane/RECEIPTS.md
+  s_dedb333dd5195e::t_027c2a3fe1eeb2 1-30
+governance/plans/twitter-signal-plane/artifacts/ox-harness-VERDICT.md
+  s_dedb333dd5195e::t_fed6fb90bdb9a2 1-62
+governance/plans/twitter-signal-plane/artifacts/ox-harness-full.jsonl
+  s_dedb333dd5195e::t_67249daa5b2e7e 1-24
+governance/plans/twitter-signal-plane/artifacts/ox-harness.jsonl
+  s_dedb333dd5195e::t_7610f74f974967 1-10
+governance/plans/twitter-signal-plane/artifacts/ox-harness.mjs
+  s_dedb333dd5195e::t_ac7d69ed846477 1-232
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  s_dedb333dd5195e::t_541433e1baf1b2 1-79
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  s_dedb333dd5195e::t_d07a5b9ad7647b 1-240
+governance/plans/vendor-control-plane/E1-schema.draft.ts
+  s_dedb333dd5195e::t_b2319288e13dec 1-303
+governance/plans/vendor-control-plane/E2-NAMESPACE-ADAPTER.md
+  s_dedb333dd5195e::t_b7ac58add4bfe4 1-42
+governance/plans/vendor-control-plane/E3-RUNPOD-ADAPTER.md
+  s_dedb333dd5195e::t_72589cd8b7b70d 1-39
+governance/plans/vendor-control-plane/E4-CF-ADAPTER.md
+  s_dedb333dd5195e::t_a84bba787c4a50 1-33
+governance/plans/vendor-control-plane/E5-META.md
+  s_dedb333dd5195e::t_ff16e6cffbea7b 1-36
+governance/plans/vendor-control-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_caaa3d619f775a 1-85
+governance/plans/vendor-control-plane/RECEIPTS.md
+  s_dedb333dd5195e::t_d17627d77cc85a 1-16
+governance/plans/vendor-modernization-2026/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_55a5e982ecd2f6 1-21
+governance/plans/vendor-modernization-2026/E1-TWILIO-CLOCK.md
+  s_dedb333dd5195e::t_c4ba83f247ceaf 1-39
+governance/plans/vendor-modernization-2026/E10-CLOSE.md
+  s_dedb333dd5195e::t_da9835ee7fe439 1-49
+governance/plans/vendor-modernization-2026/E2-ZOOM-OBF.md
+  s_dedb333dd5195e::t_f08b29534db588 1-29
+governance/plans/vendor-modernization-2026/E3-OBSERVABILITY-SCHEMA.md
+  s_dedb333dd5195e::t_901187694cd2cb 1-30
+governance/plans/vendor-modernization-2026/E4-LEGACY-KEYS.md
+  s_dedb333dd5195e::t_1d720c79ac5bd5 1-39
+governance/plans/vendor-modernization-2026/E5-MPP-VECTORIZE.md
+  s_dedb333dd5195e::t_502cf953a556b4 1-21
+governance/plans/vendor-modernization-2026/E6-CF-AI-PLANE-PILOT.md
+  s_dedb333dd5195e::t_def7f0c72675dd 1-22
+governance/plans/vendor-modernization-2026/E7-STRIPE-X402-RECORDER.md
+  s_dedb333dd5195e::t_f143807eb9ac31 1-21
+governance/plans/vendor-modernization-2026/E8-CAPTIONS-ZDR.md
+  s_dedb333dd5195e::t_4dba88527e32f0 1-21
+governance/plans/vendor-modernization-2026/E9-RUNPOD-FLASH.md
+  s_dedb333dd5195e::t_d9d32969b007b6 1-21
+governance/plans/vendor-modernization-2026/NORTH-STAR.md
+  s_dedb333dd5195e::t_3659721262d73b 1-42
+governance/plans/vendor-modernization-2026/RECEIPTS.md
+  s_dedb333dd5195e::t_0e9c1958903771 1-176
+governance/plans/vendor-relationship-ops/GOLDEN-SEED.md
+  s_dedb333dd5195e::t_f77393180b2b94 1-39
+governance/plans/vendor-relationship-ops/NORTH-STAR.md
+  s_dedb333dd5195e::t_4bf91044bcda81 1-102
+governance/plans/vendor-relationship-ops/SCOREBOARD-2026-08-21.md
+  s_dedb333dd5195e::t_26798777a475d8 1-63
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  s_dedb333dd5195e::t_b681552c637ba2 1-40
+governance/plans/vendor-reply-loop/NORTH-STAR.md
+  s_dedb333dd5195e::t_3fb2d4db17c812 1-53
+governance/plans/voice-completeness/E0-CI-GATE.md
+  s_dedb333dd5195e::t_806886cab30bfd 1-9
+governance/plans/voice-completeness/E1-PLUGIN-SINGLE-SOURCE.md
+  s_dedb333dd5195e::t_07dca00e32fac2 1-10
+governance/plans/voice-completeness/E2-WOW-JUDGE-ROLLOUT.md
+  s_dedb333dd5195e::t_792d7c5e24fe3b 1-10
+governance/plans/voice-completeness/NORTH-STAR.md
+  s_dedb333dd5195e::t_127cd163db3b07 1-35
+governance/plans/voice-transcript-plane/E0-API.md
+  s_dedb333dd5195e::t_782631829ca905 1-17
+governance/plans/voice-transcript-plane/E1-CLOSE-HOOK.md
+  s_dedb333dd5195e::t_8e3a2646d7e105 1-16
+governance/plans/voice-transcript-plane/E2-CONSOLE-UI.md
+  s_dedb333dd5195e::t_6d0e4ae2d0eede 1-17
+governance/plans/voice-transcript-plane/E3-SDK-CLI-MCP.md
+  s_dedb333dd5195e::t_6eb9e8ae0f32aa 1-16
+governance/plans/voice-transcript-plane/E4-CATALOG.md
+  s_dedb333dd5195e::t_c3f986c3e248ff 1-16
+governance/plans/voice-transcript-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_ac1146e1c9d6be 1-57
+governance/plans/volumetric-delivery-proof/E0-SIXTEEN-TRACKS.md
+  s_dedb333dd5195e::t_615cc053056c15 1-77
+governance/plans/volumetric-delivery-proof/E1-TAI-BRIDGE.md
+  s_dedb333dd5195e::t_c6bc0d1936b1aa 1-80
+governance/plans/volumetric-delivery-proof/E2-VIEWER-PLAYER.md
+  s_dedb333dd5195e::t_7bcafd3f9bb2f3 1-70
+governance/plans/volumetric-delivery-proof/E3-ONPREM-SHAPE.md
+  s_dedb333dd5195e::t_7418f0449bb3b3 1-86
+governance/plans/volumetric-delivery-proof/E4-STANDARDS-CLOCK.md
+  s_dedb333dd5195e::t_b5487b2e071946 1-126
+governance/plans/volumetric-delivery-proof/NORTH-STAR.md
+  s_dedb333dd5195e::t_f23aea7ffd40dc 1-125
+governance/plans/volumetric-delivery-proof/RECEIPTS.md
+  s_dedb333dd5195e::t_7e4ccb5fb3c817 1-156
+governance/plans/wave-automation-registry/E6-TRIGGER-FABRIC.md
+  s_dedb333dd5195e::t_bf9e0790734d63 1-40
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_dedb333dd5195e::t_ea5f85bec4acc6 48
+governance/plans/wave-control/E4-DESIGN.md
+  s_dedb333dd5195e::t_dccd9e52832edd 1-91
+governance/plans/wave-control/E7-CHIEF-OF-STAFF.md
+  s_dedb333dd5195e::t_cb966093658b51 1-40
+governance/plans/wave-control/NORTH-STAR.md
+  s_dedb333dd5195e::t_2354ba7e3ef5a8 263
+governance/plans/wave-dogfood/E0-SURFACE-REGISTRY.md
+  s_dedb333dd5195e::t_81111f27d38107 1-26
+governance/plans/wave-dogfood/E1-CLI.md
+  s_dedb333dd5195e::t_a0edc1ce5d1d65 1-28
+governance/plans/wave-dogfood/E2-PROBES.md
+  s_dedb333dd5195e::t_bc568409fc5303 1-20
+governance/plans/wave-dogfood/E3-RECEIPTS.md
+  s_dedb333dd5195e::t_a4a12e3273d3f4 1-18
+governance/plans/wave-dogfood/E4-CI.md
+  s_dedb333dd5195e::t_f00158fe03b40e 1-18
+governance/plans/wave-dogfood/NORTH-STAR.md
+  s_dedb333dd5195e::t_886cb4ca13ab24 1-71
+governance/plans/wave-internal-search/E0-SURFACE.md
+  s_dedb333dd5195e::t_1a1d52acc34bf8 1-31
+governance/plans/wave-internal-search/E1-INDEX.md
+  s_dedb333dd5195e::t_6827208094d772 1-32
+governance/plans/wave-internal-search/E2-MEMORY.md
+  s_dedb333dd5195e::t_d49067ce12ed5c 1-31
+governance/plans/wave-internal-search/E3-PRODUCT.md
+  s_dedb333dd5195e::t_007cf9f9c45ca5 1-32
+governance/plans/wave-internal-search/NORTH-STAR.md
+  s_dedb333dd5195e::t_47f969fc4d9a8c 1-36
+governance/plans/wave-registry/E0-SCHEMA.md
+  s_dedb333dd5195e::t_f9317e3f322936 1-13
+governance/plans/wave-registry/E1-MODELS.md
+  s_dedb333dd5195e::t_2b0ac31d43fc70 1-14
+governance/plans/wave-registry/E2-TOOLS.md
+  s_dedb333dd5195e::t_7bf8d499df3844 1-13
+governance/plans/wave-registry/E3-EVALS.md
+  s_dedb333dd5195e::t_e3c2e64f5183f0 1-13
+governance/plans/wave-registry/E4-PROMPTS.md
+  s_dedb333dd5195e::t_70ab50dbd60525 1-14
+governance/plans/wave-registry/E5-USAGE-LOGS.md
+  s_dedb333dd5195e::t_e935e003977f8a 1-16
+governance/plans/wave-registry/E6-QUERY.md
+  s_dedb333dd5195e::t_e66e9895c0fd25 1-14
+governance/plans/wave-registry/HOW-DB-STAYS-IN-SYNC.md
+  s_dedb333dd5195e::t_06a606771ccffe 1-50
+governance/plans/wave-registry/NORTH-STAR.md
+  s_dedb333dd5195e::t_a6ce292ab7226a 1-50
+governance/plans/wave-registry/RECEIPTS.md
+  s_dedb333dd5195e::t_76a702dd02bdc5 1-164
+governance/plans/wave-registry/REGISTRY-INVENTORY.md
+  s_dedb333dd5195e::t_9563468dbad7ed 1-45
+governance/plans/wave-registry/TASK-LOG.md
+  s_dedb333dd5195e::t_ee93806d1c20aa 1-19
+governance/plans/wave-registry/artifacts/fleet-catalog.json
+  s_dedb333dd5195e::t_1aa7e2f0a24212 1-6
+governance/plans/wave-registry/artifacts/schema.sql
+  s_dedb333dd5195e::t_ea43cd834d354f 1-271
+governance/plans/wave-registry/artifacts/wave-registry-core.zig
+  s_dedb333dd5195e::t_8c46701a3d43d2 1-24
+governance/plans/wave-registry/migrate.mjs
+  s_dedb333dd5195e::t_7925713ce1e324 1-40
+governance/plans/wave-registry/migrations/0001_init.sql
+  s_dedb333dd5195e::t_494685bed02096 1-228
+governance/plans/wave-registry/migrations/0002_frame_ledger.sql
+  s_dedb333dd5195e::t_d22352371d342d 1-3
+governance/plans/wave-search/E0-FOUNDATION.md
+  s_dedb333dd5195e::t_54aa14959a476e 1-41
+governance/plans/wave-search/E1-WEB.md
+  s_dedb333dd5195e::t_dc19e71a19959b 1-33
+governance/plans/wave-search/E2-RERANK.md
+  s_dedb333dd5195e::t_8b142ac55f6aad 1-32
+governance/plans/wave-search/E3-GA.md
+  s_dedb333dd5195e::t_7a3cc77208f159 1-32
+governance/plans/wave-search/E4-CACHE.md
+  s_dedb333dd5195e::t_744e01faf07c16 1-17
+governance/plans/wave-search/E5-RATE-LIMIT.md
+  s_dedb333dd5195e::t_442c6984d379ec 1-17
+governance/plans/wave-search/NORTH-STAR.md
+  s_dedb333dd5195e::t_d99dc5abe8604c 1-39
+governance/plans/wave-skills-distribution/E3-PROGRESSIVE-LOADING.md
+  s_dedb333dd5195e::t_ccbdcd8329fdae 1-79
+governance/plans/wave-voice-program/DR-TELEPHONY.md
+  s_dedb333dd5195e::t_3d612ce6a35959 1-24
+governance/plans/wave-voice-program/E0-INVENTORY.md
+  s_dedb333dd5195e::t_3413a9d4fdd364 3-5,183-229
+governance/plans/wave-voice-program/E1-CANARY-RUNBOOK.md
+  s_dedb333dd5195e::t_9096f15f61a10f 1-52
+governance/plans/wave-voice-program/E1-VOICE-AGENT.md
+  s_dedb333dd5195e::t_7a2572196f5526 3-19
+governance/plans/wave-voice-program/E2-CONSENT-COMPLIANCE.md
+  s_dedb333dd5195e::t_f40eb89943abe1 1-64
+governance/plans/wave-voice-program/E2-PSTN.md
+  s_dedb333dd5195e::t_746edc2801807d 3-5,88-94
+governance/plans/wave-voice-program/E3-CF-TRANSPORT.md
+  s_dedb333dd5195e::t_b9d98fbf011622 3-5
+governance/plans/wave-voice-program/E4-SURFACES.md
+  s_dedb333dd5195e::t_59d6188dc0d02c 3-5
+governance/plans/wave-voice-program/E5-SWEEP.md
+  s_dedb333dd5195e::t_937afc6b1a640e 3-5
+governance/plans/wave-voice-program/NORTH-STAR.md
+  s_dedb333dd5195e::t_a84888c9f94950 1,4-6
+governance/plans/wave-writer/NORTH-STAR.md
+  s_dedb333dd5195e::t_989675e6194cf2 1-52
+governance/plans/webhook-plane/E0-TRANSPORT.md
+  s_dedb333dd5195e::t_d88667800e0171 1-18
+governance/plans/webhook-plane/E1-VERIFIERS.md
+  s_dedb333dd5195e::t_b56ed0db081dcb 1-14
+governance/plans/webhook-plane/E2-ACTIONS.md
+  s_dedb333dd5195e::t_74ed802de96a82 1-22
+governance/plans/webhook-plane/E3-VENDORS.md
+  s_dedb333dd5195e::t_883ba831f6a30b 1-20
+governance/plans/webhook-plane/E4-PRODUCT.md
+  s_dedb333dd5195e::t_e85bdd05a33449 1-13
+governance/plans/webhook-plane/E5-OUTBOUND.md
+  s_dedb333dd5195e::t_38b42ba341dd59 1-32
+governance/plans/webhook-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_9b35544224cda4 1-71
+governance/plans/webhook-plane/WEBHOOK-ARCHITECTURE.md
+  s_dedb333dd5195e::t_066ec6db5c2226 1-82
+governance/plans/wow-canon/WAVE-DISPATCH-COORDINATE.md
+  s_dedb333dd5195e::t_77f91106520dcf 1-83
+governance/plans/wow-canon/WOW-STANDARDS-UPLEVEL.md
+  s_dedb333dd5195e::t_29ee8f5de0407e 1-53
+governance/research/REQUIRED-FOR-SUCCESS-2026-08-22.md
+  s_dedb333dd5195e::t_313d45ae3e7aea 1-32
+governance/research/SESSION-BANK-2026-08-22.md
+  s_dedb333dd5195e::t_467ee379d03ca4 1-56
+governance/research/applying-fxsh-2026-08-22.md
+  s_dedb333dd5195e::t_01f07503e9cdad 1-68
+governance/research/brainstorm-steal-synthesis-2026-08-22.md
+  s_dedb333dd5195e::t_b9f5ff98347623 1-45
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-19.md
+  s_dedb333dd5195e::t_a7792da49a0799 1-52
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-21-namespace-arc.md
+  s_dedb333dd5195e::t_267c6c38669098 1-48
+governance/research/creator-intelligence/PHYSICS-OF-COMPUTE-CAMPAIGN.md
+  s_dedb333dd5195e::t_57514efb5346a3 1-93
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  s_dedb333dd5195e::t_57c4f5ea517bb3 29-37
+governance/research/creator-intelligence/aa-vals-model-landscape/GROUND.md
+  s_dedb333dd5195e::t_c8f28eee235331 1-50
+governance/research/creator-intelligence/aa-vals-model-landscape/SYNTHESIS.md
+  s_dedb333dd5195e::t_3af6b61a3a9691 1-25
+governance/research/creator-intelligence/dsh-opportunity-map.md
+  s_dedb333dd5195e::t_a703ec22d1d058 1-138
+governance/research/cross-functional-solutions-2026-08-22.md
+  s_dedb333dd5195e::t_e746977ca082b3 1-60
+governance/research/engineering-canon/agentic-governance.md
+  s_dedb333dd5195e::t_b93426eda4459a 443-494,513-522
+governance/research/integration-leverage-map-2026-08-22.md
+  s_dedb333dd5195e::t_b3486c4d122323 1-56
+governance/research/langfuse-build-vs-buy-2026-08-21.md
+  s_dedb333dd5195e::t_923f9ddccff922 1-64
+governance/research/physics-laws-of-wave-2026-08-22.md
+  s_dedb333dd5195e::t_1feb471b29517d 1-45
+governance/research/physics-of-wave-2026-08-22.md
+  s_dedb333dd5195e::t_2ee48838dbac4c 1-45
+governance/research/platform-advancements-2026-08-22.md
+  s_dedb333dd5195e::t_756d0e92488060 1-49
+governance/research/router-docs-digest.md
+  s_dedb333dd5195e::t_e0abe9e1c1182f 1-46
+governance/runbooks/boundary-red-team.md
+  s_dedb333dd5195e::t_46de8c061ce1a1 1-48
+governance/scripts/e4-shadow-capture.mjs
+  s_dedb333dd5195e::t_36d67d754cedfc 1-25
+governance/sources/drift-pairs.json
+  s_dedb333dd5195e::t_5df18bb66852d6 1-21
+governance/state/canon-gap-map/GAP-MAP.md
+  s_dedb333dd5195e::t_2051b00f59c697 16,24,46,76
+governance/state/canon-gap-map/gap-map.json
+  s_dedb333dd5195e::t_1d95d19fab1483 4,46-47,49,270,272,274,801,804,806,1603-1604,1606
+governance/state/email-archive/aikido/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_0bc22c07f54c40 1-14
+governance/state/email-archive/chris/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_0ddf8ff0602bba 1-8
+governance/state/email-archive/cloudflare/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_87abfd9b46c2ac 1-7
+governance/state/email-archive/coderabbit/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_4d96a035fd94de 1-14
+governance/state/email-archive/cubic/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_08c1bd0f59014a 1-2
+governance/state/email-archive/devin/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_7f664ab45aa4b0 1-33
+governance/state/email-archive/exa/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_3e392bf74dcc2c 1-5
+governance/state/email-archive/fireworks/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_cfde4163d51b7d 1-10
+governance/state/email-archive/greptile/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_864d48da3ecc83 1-2
+governance/state/email-archive/macroscope/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_d27557ba966546 1-2
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_a8a19284df55e5 1-17
+governance/state/email-archive/terry/thread-2026-08.jsonl
+  s_dedb333dd5195e::t_d6e32d541bd8b8 1
+governance/state/model-scores.json
+  s_dedb333dd5195e::t_dbad9ccae2efd9 22-56,61,63-1537
+governance/state/reviewer-liveness.json
+  s_dedb333dd5195e::t_4bb02898a9df29 2,29-37,39-40,43,45,47,53,55,63,69,71-72,77,79,85,87,93,96
+governance/story/artifacts/landing.md
+  s_dedb333dd5195e::t_68f0128da2e201 1-26
+governance/story/artifacts/onepager.md
+  s_dedb333dd5195e::t_c92de6aa4a1f70 1-19
+governance/story/wave-story.mjs
+  s_dedb333dd5195e::t_3a10b535c3ef53 1-177
+governance/test/audio-eval.test.mjs
+  s_dedb333dd5195e::t_15912aed9534eb 1-160
+governance/test/automation-registry/automations-read.test.mjs
+  s_dedb333dd5195e::t_9439df3422177f 1-76
+governance/test/automation-registry/fallback-declaration.test.mjs
+  s_dedb333dd5195e::t_2ef6aebcb326cf 12
+governance/test/automation-registry/normalize-github-event.test.mjs
+  s_dedb333dd5195e::t_9d6f457b60a2f2 1-71
+governance/test/automation-registry/schema.test.mjs
+  s_dedb333dd5195e::t_9e9cfeaafbdecb 254-290
+governance/test/automation-registry/trigger-match-dispatch.test.mjs
+  s_dedb333dd5195e::t_f9b1e5e5c1c1f4 1-59
+governance/test/automation-registry/webhook-receiver.test.mjs
+  s_dedb333dd5195e::t_a58a76d87a2185 1-39
+governance/test/automation-registry/webhook-server-registry-shape.test.mjs
+  s_dedb333dd5195e::t_bd6aa0ba5fcb8e 1-74
+governance/test/automation-registry/webhook-signature.test.mjs
+  s_dedb333dd5195e::t_f3dc2c74067437 1-36
+governance/test/capability-probe.test.mjs
+  s_dedb333dd5195e::t_e1aebd22f5c49b 1-18
+governance/test/citation-check.test.mjs
+  s_dedb333dd5195e::t_6b38d01c5c0674 1-105
+governance/test/code-index.test.mjs
+  s_dedb333dd5195e::t_ed26bdef5b1462 29-30,45-46,48
+governance/test/config-mode-assertion.test.mjs
+  s_dedb333dd5195e::t_156a6635dcc1c4 1-352
+governance/test/conservation-gate.test.mjs
+  s_dedb333dd5195e::t_315641aaf79745 1-57
+governance/test/devbox-status/devbox-read.test.mjs
+  s_dedb333dd5195e::t_6c4b69474c7411 1-81
+governance/test/distill-sft.test.mjs
+  s_dedb333dd5195e::t_0ca5343a68da0f 1-18
+governance/test/done-audit.test.mjs
+  s_dedb333dd5195e::t_2762df31a72865 1-54
+governance/test/drift-lint.test.mjs
+  s_dedb333dd5195e::t_c92fda485308dd 1-44
+governance/test/email-gate.test.mjs
+  s_dedb333dd5195e::t_9fca853d88bf75 1-344
+governance/test/embed-eval.test.mjs
+  s_dedb333dd5195e::t_63854ee829707f 1-312
+governance/test/entropy-gate.test.mjs
+  s_dedb333dd5195e::t_68d9374ee731da 1-69
+governance/test/eval-attest.test.mjs
+  s_dedb333dd5195e::t_0f07e26c6c260a 1-32
+governance/test/evict-idle.test.mjs
+  s_dedb333dd5195e::t_a258c16b275782 1-40
+governance/test/factory-audit.test.mjs
+  s_dedb333dd5195e::t_79a352fb130b69 3,86-113
+governance/test/factory-bank-export.test.mjs
+  s_dedb333dd5195e::t_cbd3eb97c9c2c9 1-30
+governance/test/fixtures/catalog-fail.json
+  s_dedb333dd5195e::t_7c64be6e77e173 1
+governance/test/fixtures/catalog-pass.json
+  s_dedb333dd5195e::t_e7921b934d5d64 1
+governance/test/fixtures/registry-ids.json
+  s_dedb333dd5195e::t_f37cbb51e69cd9 1-5
+governance/test/fleet-model-inventory.test.mjs
+  s_dedb333dd5195e::t_b7a51fa2f94c10 1-24
+governance/test/fleet-reliability.test.mjs
+  s_dedb333dd5195e::t_253033a43c1446 10,161-190
+governance/test/gate-reality.test.mjs
+  s_dedb333dd5195e::t_0717e0d4c86f31 1-135
+governance/test/lab-parity.test.mjs
+  s_dedb333dd5195e::t_8d4bbc331085dc 17,93-166
+governance/test/latency-harness-runonce.test.mjs
+  s_dedb333dd5195e::t_13eb2bbdca0208 1-54
+governance/test/latency-stats.test.mjs
+  s_dedb333dd5195e::t_99b3a481b81e4a 1-141
+governance/test/ledger-surface-actionability.test.mjs
+  s_dedb333dd5195e::t_940a84402461c7 1-180
+governance/test/model-conform.test.mjs
+  s_dedb333dd5195e::t_220d7bed56131f 1-56
+governance/test/model-drift.test.mjs
+  s_dedb333dd5195e::t_0c1a5401cea79a 1-34
+governance/test/model-eval.test.mjs
+  s_dedb333dd5195e::t_c8a5cceff5d41f 7,29-42,72-147
+governance/test/model-horizon.test.mjs
+  s_dedb333dd5195e::t_2ae2fed6755182 1-152
+governance/test/model-pareto.test.mjs
+  s_dedb333dd5195e::t_3db38049b0d62f 1-30
+governance/test/model-profile-redteam.test.mjs
+  s_dedb333dd5195e::t_5d9047e40742ee 1-56
+governance/test/model-report.test.mjs
+  s_dedb333dd5195e::t_596306927153fe 1-34
+governance/test/model-stale.test.mjs
+  s_dedb333dd5195e::t_e8d5a45aa11fd8 1-28
+governance/test/model-vision.test.mjs
+  s_dedb333dd5195e::t_6b1604115fa646 1-78
+governance/test/network-edge-audit.test.mjs
+  s_dedb333dd5195e::t_5e5f715762c5d5 1-90
+governance/test/provider-alert.test.mjs
+  s_dedb333dd5195e::t_8dd583511deb99 1-33
+governance/test/provider-fallback.test.mjs
+  s_dedb333dd5195e::t_668d40b159fa96 1-27
+governance/test/provider-health.test.mjs
+  s_dedb333dd5195e::t_462a9a87fde7ab 1-27
+governance/test/review-dpo.test.mjs
+  s_dedb333dd5195e::t_05da73bf26bd3f 1-23
+governance/test/review-liveness-class.test.mjs
+  s_dedb333dd5195e::t_1d5d6172382fa2 16,181-239
+governance/test/review-liveness-duration.test.mjs
+  s_dedb333dd5195e::t_024727358c4160 126-202
+governance/test/rl-source-hooks-features.test.mjs
+  s_dedb333dd5195e::t_d4de42ee038373 1-112
+governance/test/rl-source-hooks.test.mjs
+  s_dedb333dd5195e::t_4b0d1b4b86088f 45-46,50-51
+governance/test/route-by-capability.test.mjs
+  s_dedb333dd5195e::t_44685073f2e0ad 5,8,28,30,34-43,45-49,78-95,122-178
+governance/test/router-analyze.test.mjs
+  s_dedb333dd5195e::t_c615391e7668b3 1-23
+governance/test/router-sft.test.mjs
+  s_dedb333dd5195e::t_43d3b6b7abcaa7 1-33
+governance/test/score-export.test.mjs
+  s_dedb333dd5195e::t_df560ce804f06e 1-40
+governance/test/semgrep-install-order.test.mjs
+  s_dedb333dd5195e::t_59da2677dec06a 24,49-55
+governance/test/spend-ceiling.test.mjs
+  s_dedb333dd5195e::t_55af009178f753 1-177
+governance/test/surface-check.test.mjs
+  s_dedb333dd5195e::t_6bed1e5ca119fc 1-421
+governance/test/taxonomy.test.mjs
+  s_dedb333dd5195e::t_8a87c04d0b5ff3 9
+governance/test/tier1-sandbox.test.mjs
+  s_dedb333dd5195e::t_ed81ce974e3cf2 1-179
+governance/test/vendor-mail-triage.test.mjs
+  s_dedb333dd5195e::t_8c94a40e35512f 1-102
+governance/test/voice-artifacts.test.mjs
+  s_dedb333dd5195e::t_3b7fea547b6674 1-24
+governance/test/voice-law.test.mjs
+  s_dedb333dd5195e::t_78a7caa86a8ef3 1-88
+governance/test/voice-plugin-drift.test.mjs
+  s_dedb333dd5195e::t_2c2753e1529a2d 1-38
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_dedb333dd5195e::t_6f912a367335e2 189
+governance/test/wave-cost-ledger-runpod-adapter.test.mjs
+  s_dedb333dd5195e::t_f4f8dbf8062896 1-215
+governance/test/wave-inference-server.test.mjs
+  s_dedb333dd5195e::t_0727bc7d4bfed5 1-56
+governance/test/wave-inference.test.mjs
+  s_dedb333dd5195e::t_cb4ba8db820c21 1-55
+governance/test/wave-story.test.mjs
+  s_dedb333dd5195e::t_02920a28adaccd 1-28
+governance/test/wave-writer.test.mjs
+  s_dedb333dd5195e::t_1604b09cb79cca 1-99
+governance/test/wow-judge.test.mjs
+  s_dedb333dd5195e::t_b9005ed89a0bfd 1-39
+governance/tools/wave-registry/.gitignore
+  s_dedb333dd5195e::t_769cd47ea54df8 1
+governance/tools/wave-registry/cadence.mjs
+  s_dedb333dd5195e::t_fcf4713cd92878 1-158
+governance/tools/wave-registry/ingest-worker.mjs
+  s_dedb333dd5195e::t_c1880eb84d8fb6 1-137
+governance/tools/wave-registry/wave-registry.mjs
+  s_dedb333dd5195e::t_d75f1061fea91a 1-489
+governance/tools/wave-twitter/.gitignore
+  s_dedb333dd5195e::t_1220f767bfd54f 1
+governance/tools/wave-twitter/README.md
+  s_dedb333dd5195e::t_91edca3a2a3baf 1-33
+governance/tools/wave-twitter/acp.mjs
+  s_dedb333dd5195e::t_c4d1b28e072fc2 1-158
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_dedb333dd5195e::t_d2b1d288c59239 1-395
+governance/voice/VOICE.md
+  s_dedb333dd5195e::t_11bef6080d8df8 1-87
+governance/voice/WRITING-REGISTER.md
+  s_dedb333dd5195e::t_8cfff2d4ea8721 1-30
+governance/voice/voice-gate.mjs
+  s_dedb333dd5195e::t_700213093ab0fb 1-106
+governance/voice/voice-law.mjs
+  s_dedb333dd5195e::t_08958d9a4583b8 1-60
+governance/voice/wave-content-mcp.mjs
+  s_dedb333dd5195e::t_5b405b1867c226 1-152
+governance/voice/wave-writer.mjs
+  s_dedb333dd5195e::t_784acc269d3c9f 1-98
+governance/voice/wow-judge.mjs
+  s_dedb333dd5195e::t_0aa54240084d73 1-166
+hookcli/bin/hookcli
+  s_dedb333dd5195e::t_2c899688081049 62-63,114-157,163-184,279-301
+hookcli/lib/advisory-rank.sh
+  s_dedb333dd5195e::t_acae295912ed94 1-41
+hookcli/lib/event-pretooluse.sh
+  s_dedb333dd5195e::t_80adb986d87b3e 243-284
+hookcli/lib/t3-classify.mjs
+  s_dedb333dd5195e::t_d9c1057f4ff023 29,151-152
+hookcli/lib/t3-git.mjs
+  s_dedb333dd5195e::t_7c9a5eebcdb924 254-284
+hookcli/rules/rules.json
+  s_dedb333dd5195e::t_7296f80d935511 11,15-16
+hookcli/tests/advisory-rank.sh
+  s_dedb333dd5195e::t_9d22bae087bac7 1-53
+hookcli/tests/evasion-matrix.sh
+  s_dedb333dd5195e::t_0379afbabe61ed 162
+hookcli/tests/gate-dispatch.sh
+  s_dedb333dd5195e::t_e7d1610451217b 148-153
+hookcli/tests/lib/modules-2.sh
+  s_dedb333dd5195e::t_cf18ec96fb6464 126-132
+hookcli/tests/lib/modules.sh
+  s_dedb333dd5195e::t_997c3312c76d23 235-238
+hookcli/tests/module-registration.sh
+  s_dedb333dd5195e::t_c3ac972c069c34 90-102
+hookcli/tests/trajectory-emit.sh
+  s_dedb333dd5195e::t_d526b7e169dacc 1-125
+hookcli/tools/latency-harness.mjs
+  s_dedb333dd5195e::t_fe9ee390737575 1-324
+hooks/bin/lifecycle-bus.mjs
+  s_dedb333dd5195e::t_79a9e60522ecf6 1-136
+hooks/config-mode-assertion.mjs
+  s_dedb333dd5195e::t_367fe2e48efd4f 1-168
+hooks/data/credential-config-modes.json
+  s_dedb333dd5195e::t_bdeb45eb1c43f4 1-15
+hooks/lib/config-mode-assertion.mjs
+  s_dedb333dd5195e::t_adf50bbba953ab 1-120
+hooks/lib/email_gate_verdict.py
+  s_dedb333dd5195e::t_1efb363ad6860e 1-148
+hooks/lib/email_payload_normalize.py
+  s_dedb333dd5195e::t_a0db3600d9d66b 1-172
+hooks/lib/email_rules_invoke.py
+  s_dedb333dd5195e::t_6d950498bfafba 1-138
+hooks/lib/email_send_detect.py
+  s_dedb333dd5195e::t_f7fce302c62d26 1-372
+hooks/manifest.json
+  s_53b49eff5b8c5d::t_738c299e7b07c9 173-207,385-405
+hooks/outbound-email-gate.py
+  s_dedb333dd5195e::t_dbd8f15cd5eeca 1-299
+hooks/tests/KNOWN-RED.txt
+  s_dedb333dd5195e::t_0273aa407ecd50 37-39
+hooks/tests/lib/oe-gate-harness.sh
+  s_dedb333dd5195e::t_34ac277f48f218 1-152
+hooks/tests/lifecycle-bus.test.sh
+  s_dedb333dd5195e::t_13a6ad18f5de39 1-228
+hooks/tests/outbound-email-gate-command-position.test.sh
+  s_dedb333dd5195e::t_c211e914ba611e 1-75
+hooks/tests/outbound-email-gate.test.sh
+  s_dedb333dd5195e::t_4928a32f84ec90 1-206
+memory/MEMORY.md
+  s_dedb333dd5195e::t_cfb15c44b841ab 16
+memory/agent-actionable-deliverables.md
+  s_dedb333dd5195e::t_324e3726d75b7a 1-55
+memory/agent-mail-plane-playbook.md
+  s_dedb333dd5195e::t_06a41318c1b3e2 1-133
+memory/agent-surface-completeness.md
+  s_dedb333dd5195e::t_6b4430ac77ea7d 1-51
+memory/ai-market-signal-intake-2026-08-21.md
+  s_dedb333dd5195e::t_3b96218f45d2bc 1-138
+memory/ambient-session-auth-integration-map.md
+  s_dedb333dd5195e::t_885b5fe3d68c26 1-44
+memory/api-first-surfaces.md
+  s_dedb333dd5195e::t_059c59b8b85ffd 1-49
+memory/brainstorm-queue.md
+  s_dedb333dd5195e::t_e2958f7a8e086c 1-101
+memory/fleet-todo-ledger.md
+  s_dedb333dd5195e::t_cb383b0a9c3b75 6-11,13,16,21,26,28-29,31,37-47,49-51,56-78,133-680
+memory/go-live-receipt.md
+  s_dedb333dd5195e::t_1ff08060a597db 1-73
+memory/grok-bot-competitive-intel.md
+  s_dedb333dd5195e::t_0650e8d050edd7 1-33
+memory/grok-bot-cursor-steal-map.md
+  s_dedb333dd5195e::t_fd465a9829b879 1-47
+memory/namespace-arc-session-bank-2026-08-21.md
+  s_dedb333dd5195e::t_aba056e232be24 1-37
+memory/runpod-platform-reference.md
+  s_dedb333dd5195e::t_8ac1650a5fab71 1-337
+memory/runpod-uplevel-plan.md
+  s_dedb333dd5195e::t_6c827c02e8bd93 1-125
+memory/vendor-integration-quirks.md
+  s_dedb333dd5195e::t_57ad7bd6672e83 1-67
+memory/vendor-startup-audit-2026-08-20.md
+  s_dedb333dd5195e::t_66089e471b5aeb 1-6
+memory/vercel-sandbox-bounty-attack-surface.md
+  s_dedb333dd5195e::t_4de17d13e65e99 1-135
+memory/voice-ingest-direct-path-design.md
+  s_dedb333dd5195e::t_84aa8f7a53e1c2 1-43
+plugins/wave-canon/skills/vendor-reply-loop/SKILL.md
+  s_dedb333dd5195e::t_90b3217b59eff0 1-76
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_dedb333dd5195e::t_25356428f3de8c 253-259
+plugins/wave-canon/skills/wave-writer/SKILL.md
+  s_dedb333dd5195e::t_1089a4219cb0ef 1-99
+rules/chokepoint-not-denylist.md
+  s_dedb333dd5195e::t_31bbb801c666cc 1-11
+rules/egress-authority-outside-compute.md
+  s_dedb333dd5195e::t_9da67cd83ecc50 1-11
+rules/never-log-or-leak-sensitive-data.md
+  s_dedb333dd5195e::t_6b9b41eccd800e 9-10
+rules/test-boundary-on-own-schedule.md
+  s_dedb333dd5195e::t_39b8bfa7d1aa3b 1-11
+sdk/LICENSE
+  s_dedb333dd5195e::t_c1a9c70d86a806 1-6
+sdk/package.json
+  s_dedb333dd5195e::t_6b5eba84e94095 1-30
+sdk/tsconfig.json
+  s_dedb333dd5195e::t_629c79d1745ebd 1-17
+sdk/wave-codec-client.ts
+  s_dedb333dd5195e::t_381beedb919a89 1-24
+sdk/wave_codec_client.py
+  s_dedb333dd5195e::t_d73fa4ed3b4485 1-22
+settings/settings.base.json
+  s_dedb333dd5195e::t_280fa28e888d91 642-646,897-932
+tools/mlvc-bench.mjs
+  s_dedb333dd5195e::t_0249ecb360714a 1-49
+tools/otp-login.mjs
+  s_dedb333dd5195e::t_81c38be0be422a 1-68
+tools/repo-surface-audit.mjs
+  s_dedb333dd5195e::t_9f17c1909c17e2 1-102
+tools/wave-codec-mcp.mjs
+  s_dedb333dd5195e::t_4ebb05403fb3f9 1-60
+tools/wave-codec.mjs
+  s_dedb333dd5195e::t_6ef0f4f86b5f74 1-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "74fbf24d78bd7947369ce404a56590d47a7eefa8",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

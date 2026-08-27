@@ -1,0 +1,19 @@
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  s_a293da4db5caf2::t_3191806eb10c48 32,109,172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "beb9c53025d7bbef03895b6a4ddc6c4edba2d2e2",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

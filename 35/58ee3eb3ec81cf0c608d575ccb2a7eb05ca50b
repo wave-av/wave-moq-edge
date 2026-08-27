@@ -1,0 +1,25 @@
+hooks/local-llm/ollama-protocol-checker.sh
+  s_96280c922a9418::t_e805c595c6dc0d 164-180
+  s_96280c922a9418::t_a9a26a5ee6f163 97-110
+hooks/local-llm/ollama-agent-validator.sh
+  s_96280c922a9418::t_027c9a0a373114 79-93
+hooks/tests/ollama-hooks-live.test.sh
+  s_96280c922a9418::t_b92add106fe17d 132-136,145-151
+  s_96280c922a9418::t_ed485c6b411dee 137-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "3558ee3eb3ec81cf0c608d575ccb2a7eb05ca50b",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

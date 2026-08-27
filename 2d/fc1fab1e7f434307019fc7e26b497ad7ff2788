@@ -1,0 +1,148 @@
+.github/workflows/governance.yml
+  h_af5ac1a9798224 306-316
+governance/DASHBOARD.md
+  h_af5ac1a9798224 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  h_af5ac1a9798224 408,480
+governance/bin/struggle-miner-scan.sh
+  h_af5ac1a9798224 42-48
+governance/bin/struggle-miner/collect-successes.py
+  h_af5ac1a9798224 1-282
+governance/bin/struggle-miner/lib/command_family.py
+  h_af5ac1a9798224 1-197
+governance/bin/struggle-miner/lib/transcript_filter.py
+  h_af5ac1a9798224 150-155,163,165-166
+governance/bin/tmp-literal-lint.mjs
+  h_af5ac1a9798224 1-129
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3181-3197,3822-3824,4693-4721,4797-4811,4853-4857,4883-4886
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,28399-28552,33448-33458,33465-33466,33476-33479,40048-40267,40796-40894,41148-41169,41330-41333,41341-41342,41352-41353,41363-41364
+governance/graph.json
+  h_af5ac1a9798224 5914-5922,24389-24400
+governance/lib/drill-fixtures-shell.mjs
+  h_af5ac1a9798224 35,120-156
+governance/lib/tmp-literal.mjs
+  h_af5ac1a9798224 1-185
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  h_af5ac1a9798224 1-180
+governance/lib/wave-cost-ledger-alert-write.mjs
+  h_af5ac1a9798224 1-134
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  h_af5ac1a9798224 1-253
+governance/lib/wave-cost-ledger-remediation-gate.mjs
+  h_af5ac1a9798224 1-90
+governance/lib/wave-cost-ledger-rpc.mjs
+  h_af5ac1a9798224 1-67
+governance/lib/wave-cost-ledger-write.mjs
+  h_af5ac1a9798224 15,17-20
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  h_af5ac1a9798224 4-24
+governance/test/fixtures/bad-tmp-literal/clean.sh
+  h_af5ac1a9798224 1-35
+governance/test/fixtures/bad-tmp-literal/writes.sh
+  h_af5ac1a9798224 1-24
+governance/test/tmp-literal-lint.test.mjs
+  h_af5ac1a9798224 1-181
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  h_af5ac1a9798224 1-173
+governance/test/wave-cost-ledger-alert-policy-dedup.test.mjs
+  h_af5ac1a9798224 1-107
+governance/test/wave-cost-ledger-alert-write.test.mjs
+  h_af5ac1a9798224 1-139
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 27-80,112,116,124-139,173-175
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  h_af5ac1a9798224 1-320
+governance/test/wave-cost-ledger-remediation-gate.test.mjs
+  h_af5ac1a9798224 1-83
+hookcli/tests/fixtures/t3-node-stub.sh
+  h_af5ac1a9798224 6-16
+hookcli/tests/t3-classifier.sh
+  h_af5ac1a9798224 60
+hookcli/tests/t4-llm-escalation.sh
+  h_af5ac1a9798224 161
+hookcli/tests/t4-llm.sh
+  h_af5ac1a9798224 89,101
+hooks/context-budget-warn.sh
+  h_af5ac1a9798224 30-34,87,89,91
+hooks/doppler-env-guard.sh
+  h_af5ac1a9798224 38-42
+hooks/doppler-secrets-cache.sh
+  h_af5ac1a9798224 13-19
+hooks/file-size-warning.sh
+  h_af5ac1a9798224 63
+hooks/local-llm/api-failure-counter.sh
+  h_af5ac1a9798224 35
+hooks/local-llm/ollama-agent-debrief.sh
+  h_af5ac1a9798224 18
+hooks/local-llm/ollama-billing-guard.sh
+  h_af5ac1a9798224 21
+hooks/local-llm/ollama-helper.sh
+  h_af5ac1a9798224 18-22
+hooks/manifest.json
+  h_af5ac1a9798224 260,323,344,456,1052,1269,1289-1309,1374,1416,1500,1521,1542,1584
+hooks/post-compact-restore.sh
+  h_af5ac1a9798224 8
+hooks/return-absorb-guard.sh
+  h_af5ac1a9798224 95
+hooks/reviewer-route-gate.py
+  h_af5ac1a9798224 52-60
+hooks/session-econ-meter.sh
+  h_af5ac1a9798224 135
+hooks/skill-load-defense.sh
+  h_af5ac1a9798224 38-39,58
+hooks/stop-nudge.sh
+  h_af5ac1a9798224 119-120,193
+hooks/subagent-budget-signal.sh
+  h_af5ac1a9798224 21-25,46
+hooks/subagent-dispatch-gate.sh
+  h_af5ac1a9798224 79,103
+hooks/subagent-read-budget.sh
+  h_af5ac1a9798224 78
+hooks/tests/cccr_smoke_decision_engine.sh
+  h_af5ac1a9798224 6-11,13-21,42-43
+hooks/tests/cccr_smoke_floor_capture.sh
+  h_af5ac1a9798224 7-9,14-16
+hooks/tests/doppler_guard_smoke.sh
+  h_af5ac1a9798224 6-26,32,35,44
+hooks/tests/enhancer_smoke.sh
+  h_af5ac1a9798224 22-30,32,35-56
+hooks/tests/phaseC/doppler-single-quote.sh
+  h_af5ac1a9798224 9-19
+hooks/tests/phaseC/subagent-budget-templeak.sh
+  h_af5ac1a9798224 8-21,23-39
+hooks/tests/phaseD/cross-project-nag.sh
+  h_af5ac1a9798224 10-17,28,31
+hooks/tests/phaseD/hysteresis-two-turn.sh
+  h_af5ac1a9798224 4,8-15,26,31
+hooks/tests/phaseD/strategic-compact-band-nudge.sh
+  h_af5ac1a9798224 13-20,29
+hooks/tests/public-github-write-gate-cwd.test.sh
+  h_af5ac1a9798224 65-66,82,217
+hooks/tests/return_absorb_smoke.sh
+  h_af5ac1a9798224 15-34,68-71
+hooks/tests/session_econ_meter_smoke.sh
+  h_af5ac1a9798224 14-16
+hooks/tests/subagent_read_budget_smoke.sh
+  h_af5ac1a9798224 12-22
+settings/settings.base.json
+  h_af5ac1a9798224 369-373
+tests/struggle_miner/test_collect_denials.py
+  h_af5ac1a9798224 127-132
+tests/struggle_miner/test_collect_successes.py
+  h_af5ac1a9798224 1-254
+tests/struggle_miner/test_command_family.py
+  h_af5ac1a9798224 1-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2dfc1fab1e7f434307019fc7e26b497ad7ff2788",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

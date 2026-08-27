@@ -1,0 +1,49 @@
+governance/plans/routing-plane-unification/NORTH-STAR.md
+  s_13086dcbacd4a6::t_c1145709dfc842 2-36
+  s_9bb1b1d1d998d4::t_fb9c9ac8b771e8 1,37-42
+governance/plans/physics-of-compute/RECEIPTS-E2-memory-wall.md
+  s_98dc4ec44a1372::t_9c93f8da0deba5 2-102
+  s_37d3f61160b2dd::t_08f456f14d0dd1 1,103
+governance/plans/routing-plane-unification/E10-PROFILE-ROUTING.md
+  s_9bb1b1d1d998d4::t_d90bb7c3e55db4 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5f9cfd9221ed987520b24b88c30e225c955ef01d",
+  "prompts": {},
+  "sessions": {
+    "s_13086dcbacd4a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef676a74ffeGDIpvQIhMKNdae",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_98dc4ec44a1372": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd60ebae4ffeq3OcPzkueFciyz",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

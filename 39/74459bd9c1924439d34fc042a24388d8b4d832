@@ -1,0 +1,21 @@
+governance/plans/brand-recycle/comps/studio-pages-v1.html
+  s_15127d80763110::t_77e28e3c297f80 1-10,13-71,73-790
+  s_15127d80763110::t_6408a81bca5e1f 11-12
+  s_15127d80763110::t_5f06dbfffec043 72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3974459bd9c1924439d34fc042a24388d8b4d832",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

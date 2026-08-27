@@ -1,0 +1,21 @@
+governance/plans/neural-moq-lane/E3-LIVE-ARENA.md
+  s_7fdb77d682999f::t_0c6f47cc6d5ac1 4
+governance/plans/ffmpeg9-lei/E18-LEARNED-CODEC-RUNTIME.md
+  s_7fdb77d682999f::t_ab10efe89f2405 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6c45a933fa45e81c96e97e601e036027f0424034",
+  "prompts": {},
+  "sessions": {
+    "s_7fdb77d682999f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdf07392dffe3AHqRMXaXmV83y",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

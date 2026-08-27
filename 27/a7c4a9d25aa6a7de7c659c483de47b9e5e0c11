@@ -1,0 +1,31 @@
+governance/plans/own-model-program/E5-E5-PRODUCTIZE.md
+  s_0f536580ccd1cb::t_bce7d9a32509e4 19-20
+governance/plans/own-model-program/E3-E3-EVAL-GATE.md
+  s_0f536580ccd1cb::t_aa8c07f230d73b 21-23
+governance/plans/own-model-program/creative/SYNTHESIS.md
+  s_0f536580ccd1cb::t_25318b0472f616 1-170
+governance/plans/own-model-program/E1-E1-TRAIN.md
+  s_0f536580ccd1cb::t_43d8f11a212dbe 21-22
+governance/plans/own-model-program/E4-E4-ECONOMY.md
+  s_0f536580ccd1cb::t_f9b0f28981f4d9 20-21
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_0f536580ccd1cb::t_ff78bfa5f704c4 21-22
+governance/plans/own-model-program/NORTH-STAR.md
+  s_0f536580ccd1cb::t_a73091c1f9db70 9-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "27a7c4a9d25aa6a7de7c659c483de47b9e5e0c11",
+  "prompts": {},
+  "sessions": {
+    "s_0f536580ccd1cb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffeca13eaffe8xOrhGqgskNMZI",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

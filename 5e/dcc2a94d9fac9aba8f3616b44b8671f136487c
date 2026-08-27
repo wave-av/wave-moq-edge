@@ -1,0 +1,24 @@
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_7901a3aeb8ee85::t_f6ee644838c04c 458-496
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5edcc2a94d9fac9aba8f3616b44b8671f136487c",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_7901a3aeb8ee85": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff268a92bffeoV1B4HZEc54Gid",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

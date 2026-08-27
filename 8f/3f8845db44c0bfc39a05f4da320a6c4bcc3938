@@ -1,0 +1,50 @@
+governance/lib/drill-fixtures-decommit.mjs
+  s_be94c45efdaafe::t_31d1599cc4c0bc 1-110
+governance/lib/decommit-gate.mjs
+  s_be94c45efdaafe::t_750281449e4cb4 51-63
+  s_be94c45efdaafe::t_c7b2a04bdcf8ed 1-18,21-50,64-74
+  s_be94c45efdaafe::t_f66c657e1de893 19-20
+governance/plans/generated-artifact-contention/epic.md
+  s_be94c45efdaafe::t_122e95a2a36ca1 64-72
+governance/test/decommit-gate.test.mjs
+  s_be94c45efdaafe::t_d0fa74dad5ae70 1-124
+governance/plans/generated-artifact-contention/PHASE-D-GATE.md
+  s_be94c45efdaafe::t_c4105dc73bc92f 19-29
+  s_be94c45efdaafe::t_6bebb0be496be7 122-145
+  s_be94c45efdaafe::t_2c667562c075cd 1-18,30-121,177-181
+  s_be94c45efdaafe::t_e6b5e4e9818965 146-176
+  s_be94c45efdaafe::t_4e8b253d85278f 182-190
+governance/bin/check.mjs
+  s_be94c45efdaafe::t_95a08ef9c89c3b 58-62,64,66-67
+  s_be94c45efdaafe::t_ecfcf905657ec5 68-76,83-85
+  s_be94c45efdaafe::t_7972c939097d11 77-82,88-101
+  s_be94c45efdaafe::t_a53843d86b059e 110-111
+  s_be94c45efdaafe::t_475674b0616b22 13
+  s_be94c45efdaafe::t_5ba4d8695da5b1 3-4
+  s_be94c45efdaafe::t_dd7fb6802edd27 23
+  s_be94c45efdaafe::t_5c9c400c1d1217 102
+governance/bin/decommit-gate.mjs
+  s_be94c45efdaafe::t_9648eb21f41494 1-80
+governance/lib/drill-registry.mjs
+  s_be94c45efdaafe::t_f739fc4e3b398e 139
+  s_be94c45efdaafe::t_e00b6edafd1595 44
+  s_be94c45efdaafe::t_38d4bece68ece2 119-122
+governance/lib/drill-inline-required.mjs
+  s_be94c45efdaafe::t_9fba8ab4979da2 66-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8f3f8845db44c0bfc39a05f4da320a6c4bcc3938",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

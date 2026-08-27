@@ -1,0 +1,47 @@
+governance/plans/sovereign-capacity/E3-REFRESH.md
+  s_aa5feb34e0e033::t_6ce3b4b73c7c27 1-145
+governance/plans/sovereign-capacity/E2-ENVELOPE.md
+  s_aa5feb34e0e033::t_3870adb662d8af 1-80
+governance/plans/sovereign-capacity/E4-SOAK.md
+  s_aa5feb34e0e033::t_cde78bf670eff0 1-71
+governance/plans/sovereign-capacity/E7-OPERATIONALIZE.md
+  s_aa5feb34e0e033::t_91a98ae35b328c 1-85
+governance/plans/sovereign-capacity/E0-RESTORE.md
+  s_aa5feb34e0e033::t_2944aca121f228 1-118
+governance/plans/sovereign-capacity/RECEIPTS.md
+  s_aa5feb34e0e033::t_d21c5cf9094083 1-41
+governance/plans/sovereign-capacity/E5-BURST.md
+  s_aa5feb34e0e033::t_ef42f6ead5dcd6 1-86
+governance/plans/sovereign-capacity/E6-HARNESS.md
+  s_aa5feb34e0e033::t_eab261ae55513a 1-79
+governance/plans/sovereign-capacity/E1-MAP.md
+  s_aa5feb34e0e033::t_4cf3cafaaaace2 1-82
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  s_c24357e71ae5bc::t_8d745bcbfad1e1 1-96
+governance/graph.json
+  s_aa5feb34e0e033::t_fb687cab707451 9222-9338,35861-36262
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e6589547af303b8142dcdcaae323570b40f6b6b7",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

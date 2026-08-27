@@ -1,0 +1,33 @@
+governance/plans/sdk-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_bb413d1ef09d0e 5-34
+  s_2606de950a60c6::t_907625130dcdcd 2-4
+  s_2606de950a60c6::t_c2614da7e6bec5 1
+governance/plans/cli-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_45bfaa5302c77a 5-32
+  s_2606de950a60c6::t_11b6927a7877c5 2-4
+governance/plans/skills-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_78f3bfb820ffa2 5-31
+  s_2606de950a60c6::t_9de9e2d1874caa 2-4
+governance/plans/voice-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_83e75c791b7ee5 5-35
+  s_2606de950a60c6::t_e0f2417ee1ee38 2-4
+governance/plans/mcp-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_c53a15a309caca 5-30
+  s_2606de950a60c6::t_563886806e3008 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8522002fbf0ac05a20cc777f2033421fe5199bf3",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

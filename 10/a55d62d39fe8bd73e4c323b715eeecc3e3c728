@@ -1,0 +1,23 @@
+governance/bin/hook-contract-lint.mjs
+  s_1911ebcba68c5b::t_ee875b1a025781 41
+  s_1911ebcba68c5b::t_f490c9e2fae2fa 98-127
+governance/test/hook-contract-lint.test.mjs
+  s_1911ebcba68c5b::t_49594ed25a8621 151-170,172-190
+  s_1911ebcba68c5b::t_b3d4e93b5e5e03 171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "10a55d62d39fe8bd73e4c323b715eeecc3e3c728",
+  "prompts": {},
+  "sessions": {
+    "s_1911ebcba68c5b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6241c250-fea2-40f2-adae-61d7344441fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

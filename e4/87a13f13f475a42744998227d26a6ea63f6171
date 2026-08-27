@@ -1,0 +1,26 @@
+governance/bin/triage.mjs
+  s_e2e3e43d0638c5::t_51b51b5c130bf5 45-46,56-79,84-85
+governance/bin/federate.mjs
+  s_e2e3e43d0638c5::t_071a76736502c8 224-227
+  s_e2e3e43d0638c5::t_d13afa11d32e44 84,87-91,103-106,108-126,128-131,136,138-140
+governance/bin/reconcile.mjs
+  s_e2e3e43d0638c5::t_8cfe8797f92e51 205
+  s_e2e3e43d0638c5::t_5237f2677e0441 68-93,97-98,101-104
+  s_e2e3e43d0638c5::t_fc2f4dcc5d6206 106-110,112-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e487a13f13f475a42744998227d26a6ea63f6171",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

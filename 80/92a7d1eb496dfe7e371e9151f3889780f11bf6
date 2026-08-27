@@ -1,0 +1,29 @@
+governance/plans/fireworks-integration/RUNPOD-SURFACE.md
+  s_d194bca44f85df::t_a749f8618997c2 1-358
+governance/plans/fireworks-integration/MODEL-FIT-MATRIX.md
+  s_6bca9a31ea0a27::t_81751d31aa0ef9 1-207
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8092a7d1eb496dfe7e371e9151f3889780f11bf6",
+  "prompts": {},
+  "sessions": {
+    "s_6bca9a31ea0a27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff9ccb2cbffetKfMnT1SwYHlqg",
+        "model": "qwen3.8-max"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d194bca44f85df": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffa328722ffevLPalWixQb4hUs",
+        "model": "qwen3.8-max"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

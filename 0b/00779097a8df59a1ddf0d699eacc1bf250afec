@@ -1,0 +1,20 @@
+bin/model-horizon.mjs
+  s_7ddeb5d251570f::t_28c706c46bfe8b 104,106,109
+  s_7ddeb5d251570f::t_a61e5226b85951 65,72-76,80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0b00779097a8df59a1ddf0d699eacc1bf250afec",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

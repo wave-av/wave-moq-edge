@@ -1,0 +1,20 @@
+governance/ENFORCEMENT-BASELINE.json
+  s_e077f59d8037ec::t_86d806e3e5ac00 11-12
+  s_e077f59d8037ec::t_30ba5557ac8b24 180-184
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d315e408f263306cb49ace1e754e4279f5600422",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

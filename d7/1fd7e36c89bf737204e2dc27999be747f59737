@@ -1,0 +1,25 @@
+governance/bin/repo-corpus-under-inclusion-gate.mjs
+  s_c24357e71ae5bc::t_bd3c66f3c76707 1-99
+governance/test/recall-repo-gate.test.mjs
+  s_c24357e71ae5bc::t_b2e679a259106c 169-182
+governance/test/repo-corpus-under-inclusion-gate.test.mjs
+  s_c24357e71ae5bc::t_a656132952a216 1-39
+.github/workflows/repo-corpus-under-inclusion-watch.yml
+  s_c24357e71ae5bc::t_f4d4ce993bad4a 1-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d71fd7e36c89bf737204e2dc27999be747f59737",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

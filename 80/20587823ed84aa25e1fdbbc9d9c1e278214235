@@ -1,0 +1,19 @@
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  s_f24caa326b86f6::t_fb8ae1f4297c91 789-795
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8020587823ed84aa25e1fdbbc9d9c1e278214235",
+  "prompts": {},
+  "sessions": {
+    "s_f24caa326b86f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "adc1828d-f1dc-483b-b7cd-a61bedf1dbc1",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+hooks/supabase-prod-guard.py
+  s_364605915bb7ec::t_b8c592f6014e74 127-131,133-136,138-142,144-149,151-153,155-164,167-168
+  s_364605915bb7ec::t_9a6cbf4cb6ea3c 20-31,41-42,57-119,121-123
+hooks/tests/phaseC/supabase-prod-guard-411.py
+  s_364605915bb7ec::t_b49d1ac4137473 1-4,7-13,15-16,22-51
+  s_364605915bb7ec::t_81576262d31480 18
+  s_364605915bb7ec::t_d84bd37b6fbb3b 5-6,14,17,19-21
+hooks/tests/phaseC/supabase-prod-guard.sh
+  s_364605915bb7ec::t_856057a30a1f59 28-31
+  s_364605915bb7ec::t_f42a8df9901fb3 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "2b661a15a0433e6a6c0bbc8473d4684c6a7c1023",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/plans/sdk-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_61e02225c96bef 8-12,14-19,25-26,34
+governance/plans/cli-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_b4be2117217b39 21,23-26
+governance/plans/rendering-completeness/GAP-MAP.md
+  s_2606de950a60c6::t_14d24d88b19aa2 52,54-57
+governance/plans/rendering-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_ec79643ec84384 35-37
+  s_2606de950a60c6::t_732d241dc3e219 52-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6d130c9b43fbda5c21993defc15e5067d97504d5",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

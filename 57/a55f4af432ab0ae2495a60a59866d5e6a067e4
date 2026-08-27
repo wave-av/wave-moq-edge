@@ -1,0 +1,19 @@
+.github/workflows/namespace-egress-advisory-soak.yml
+  s_ea656710814124::t_1f5d0651840b9b 127-130,138-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "57a55f4af432ab0ae2495a60a59866d5e6a067e4",
+  "prompts": {},
+  "sessions": {
+    "s_ea656710814124": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd5d4a2f0ffezuGFgxx1yQdxoZ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

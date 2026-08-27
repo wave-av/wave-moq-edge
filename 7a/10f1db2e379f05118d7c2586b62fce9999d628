@@ -1,0 +1,118 @@
+.coderabbit.yaml
+  h_67a1b847dc59d6 12
+.github/workflows/unearned-approval-guard.yml
+  h_67a1b847dc59d6 25
+cubic.yaml
+  h_67a1b847dc59d6 17
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 404,428
+governance/bin/merged-not-released.mjs
+  h_67a1b847dc59d6 1-116
+governance/bin/platform-status.mjs
+  h_67a1b847dc59d6 45-54,179,182-189,196-254,257-262,264,292,294-295,297-309
+governance/graph.json
+  h_67a1b847dc59d6 5429-5481,5484,5488,6755-6859,6861-6862,6865-6868,7528,9752-9760,9905-9912,19479,19481,20817,20819,25910-26000,26003-26009,26012,26015,26018,26021,26024,26027,26030,26033,26036-26037,26039,26042-26043,26045,26048-26060,26063,28771-28962,33171,33173,34525-34542,34777-34794
+governance/lib/drill-fixtures-platform-status.mjs
+  h_67a1b847dc59d6 130-148
+governance/lib/epic-status-scan.mjs
+  h_67a1b847dc59d6 116-117,191
+governance/lib/merged-not-released.mjs
+  h_67a1b847dc59d6 1-120
+governance/lib/platform-status-classify.mjs
+  h_67a1b847dc59d6 30-35,65-70,129-148,151-152,154-156,161-166,198-202,206,213-215
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  h_67a1b847dc59d6 2-5,8,14,33
+governance/lib/wave-sec-scanners.mjs
+  h_67a1b847dc59d6 11,197-236,273-280,287-289
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  h_67a1b847dc59d6 27,73,144,302
+governance/plans/brand-recycle/DR-PRESTIGE.md
+  h_67a1b847dc59d6 12
+governance/plans/brand-recycle/E-PRESTIGE.md
+  h_67a1b847dc59d6 5
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  h_67a1b847dc59d6 169
+governance/plans/launch-week-set-01/E1-INVENTORY.md
+  h_67a1b847dc59d6 1-30
+governance/plans/launch-week-set-01/E2-CHASSIS.md
+  h_67a1b847dc59d6 1-29
+governance/plans/launch-week-set-01/E3-LIVE-WEEK.md
+  h_67a1b847dc59d6 1-27
+governance/plans/launch-week-set-01/E4-RITUAL-DECISION.md
+  h_67a1b847dc59d6 1-24
+governance/plans/launch-week-set-01/NORTH-STAR.md
+  h_67a1b847dc59d6 1,5-14,22-31,35,39,41-46,49-52
+governance/plans/reviewer-fleet/E0-SCOREBOARD.md
+  h_67a1b847dc59d6 1-70
+governance/plans/reviewer-fleet/E1-ROUTING.md
+  h_67a1b847dc59d6 1-91
+governance/plans/reviewer-fleet/E2-OVERLAP-SAMPLE.md
+  h_67a1b847dc59d6 1-34
+governance/plans/reviewer-fleet/E3-VERDICT-LOOP.md
+  h_67a1b847dc59d6 1-30
+governance/plans/reviewer-fleet/E4-CONFIG-AS-CODE.md
+  h_67a1b847dc59d6 1-35,83,302,304-305,307-311,408-416
+governance/plans/reviewer-fleet/E5-MONITORING.md
+  h_67a1b847dc59d6 1-28
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  h_67a1b847dc59d6 1-35
+governance/plans/reviewer-fleet/E7-POLICY-SSOT.md
+  h_67a1b847dc59d6 1-41,43-45,254-255
+governance/plans/reviewer-fleet/NORTH-STAR.md
+  h_67a1b847dc59d6 2-24,28,37-41,51-54,56,63-71,73-75,77,80,84,102-167,171-176
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  h_67a1b847dc59d6 167
+governance/plans/waveform-hero/epic.md
+  h_67a1b847dc59d6 70
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 57,59-61,75-115
+governance/recall/eval/repo-corpus.manifest.json
+  h_67a1b847dc59d6 425-429,562-570
+governance/test/fixtures-terminate.test.mjs
+  h_67a1b847dc59d6 1-103
+governance/test/fixtures/bad-anti-loop/undeclared-deny.mjs
+  h_67a1b847dc59d6 7-25,29
+governance/test/installation-authority-audit-args.test.mjs
+  h_67a1b847dc59d6 47-57
+governance/test/merged-not-released.test.mjs
+  h_67a1b847dc59d6 1-183
+governance/test/platform-status-probe-coupling.test.mjs
+  h_67a1b847dc59d6 1-48
+governance/test/platform-status.test.mjs
+  h_67a1b847dc59d6 12,75-184
+governance/test/wave-sec-fakebin.mjs
+  h_67a1b847dc59d6 1-29
+governance/test/wave-sec-osv-accepted.test.mjs
+  h_67a1b847dc59d6 1-116
+governance/test/wave-sec-scanners.test.mjs
+  h_67a1b847dc59d6 14,18-20
+governance/work-state.json
+  h_67a1b847dc59d6 3,5-6,9-15,22,27,32,38,44,50,56,62,68,74,80,88,94,100,106,111-113,117-119,123-124,207-210,214-215,224
+helm/package-lock.json
+  h_67a1b847dc59d6 3598-3600,3604-3606,3611,5241-5251
+helm/package.json
+  h_67a1b847dc59d6 36
+hooks/last-handoff-capture.sh
+  h_67a1b847dc59d6 1-75
+hooks/last-handoff-restore.sh
+  h_67a1b847dc59d6 1-25
+hooks/manifest.json
+  h_67a1b847dc59d6 734-775
+hooks/tests/hook-path-integrity.test.sh
+  h_67a1b847dc59d6 228,230
+hooks/tests/matcher-capability.test.sh
+  h_67a1b847dc59d6 107,109
+settings/settings.base.json
+  h_67a1b847dc59d6 634-643,803-807
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7a10f1db2e379f05118d7c2586b62fce9999d628",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+packages/observability/src/traceparent.ts
+  s_eb2f7e65359b4f::t_751a3a4af03326 1-73
+packages/observability/src/types.ts
+  s_eb2f7e65359b4f::t_751a3a4af03326 19-24
+packages/observability/src/edge-otlp.ts
+  s_eb2f7e65359b4f::t_751a3a4af03326 1-127
+packages/observability/src/index.ts
+  s_eb2f7e65359b4f::t_751a3a4af03326 21-22
+packages/observability/test/traceparent.test.mjs
+  s_eb2f7e65359b4f::t_751a3a4af03326 1-63
+packages/observability/package.json
+  s_eb2f7e65359b4f::t_751a3a4af03326 3
+packages/observability/src/worker.ts
+  s_eb2f7e65359b4f::t_751a3a4af03326 3-5,7,33-35
+packages/observability/test/edge-otlp.test.mjs
+  s_eb2f7e65359b4f::t_751a3a4af03326 1-112
+packages/spoke-chassis/src/worker.ts
+  s_eb2f7e65359b4f::t_3cd4e227783601 261-268,272-273,275-279,282,291,296-297
+  s_eb2f7e65359b4f::t_3525a573aac223 45-46
+packages/observability/package-lock.json
+  s_eb2f7e65359b4f::t_751a3a4af03326 3,9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7d246a24e62751ff5078e5708fca195f4030e661",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

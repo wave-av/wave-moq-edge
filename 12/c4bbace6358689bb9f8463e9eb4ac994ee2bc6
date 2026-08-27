@@ -1,0 +1,20 @@
+settings/settings.base.json
+  s_dccee6b7677203::t_6d0787d14d573c 324-326
+  s_dccee6b7677203::t_d20f07932bdc5c 322-323
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "12c4bbace6358689bb9f8463e9eb4ac994ee2bc6",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

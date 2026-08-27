@@ -1,0 +1,50 @@
+governance/test/release-containment.test.mjs
+  s_96280c922a9418::t_cf592c2f9d0f8c 15
+  s_96280c922a9418::t_58d71fcf229a6b 150-152
+  s_96280c922a9418::t_12ad14d12b6153 1-14,16-149,153-165,187-198
+  s_96280c922a9418::t_54770dc92f9194 166-186
+governance/test/hook-resolution-check.test.mjs
+  s_96280c922a9418::t_66cbe7a8dc4de8 16-20
+governance/lib/release-containment.mjs
+  s_96280c922a9418::t_5bdc11c4039645 77-93,95
+  s_96280c922a9418::t_a456b2a33e1965 1-76,94,96-100
+governance/bin/hook-resolution-check.mjs
+  s_37e24b4d920e09::t_e5d1ed5d09e745 24-41,51,67-71,76-77,90-103,118-121,265-288,291,294-304,307-308,313-324,327
+  s_375efeac18ed55::t_881a1b88bab350 104-111
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_d7160be149be82 1584,1587-1588,1590,1593,1596-1598,1602,1605-1607
+governance/code-index/index.json
+  s_96280c922a9418::t_fca54aa037947d 14243-14244,14259-14264,14267-14269,14276-14277,14287-14288,14309-14310,14342-14343,14358-14363,14366-14368,14375-14376,14380-14401,14441-14442,14474-14475,14479-14489,14496-14497
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "fb8c585d38f0c58bc56dd118abd6129e62d020a3",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

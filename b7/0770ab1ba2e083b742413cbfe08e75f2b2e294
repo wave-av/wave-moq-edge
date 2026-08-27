@@ -1,0 +1,19 @@
+docs/EPICS-DISPATCH.md
+  s_2f1bfe8237f0ee::t_032a1879902069 44-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b70770ab1ba2e083b742413cbfe08e75f2b2e294",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+governance/plans/twitter-signal-plane/artifacts/ox-harness.mjs
+  s_b935002259a7fd::t_96464af6752088 13
+  s_b935002259a7fd::t_1a0989f1f8eb44 21-25,31-35,41-70,76-85,110-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "93f74b05aeddedf9a4f083709777b1a131c1e1ab",
+  "prompts": {},
+  "sessions": {
+    "s_b935002259a7fd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda70fe9fffe3d2qx1tyyiiz7K",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

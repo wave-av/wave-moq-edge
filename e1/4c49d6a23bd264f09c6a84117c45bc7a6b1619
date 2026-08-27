@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_124891ed63801b::t_0a03ccf18e6ba1 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_124891ed63801b::t_f1fd445f48c18e 4
+governance/plans/ffmpeg9-lei/action/E5-E7-JOINT-BRAINSTORM.md
+  s_124891ed63801b::t_1b592f8c39a867 1-230
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_72253a16bf015d 97-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e14c49d6a23bd264f09c6a84117c45bc7a6b1619",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

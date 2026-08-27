@@ -1,0 +1,20 @@
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 5,11,14,394
+governance/contract.md
+  h_67a1b847dc59d6 33-35,56
+governance/sources/lawbook.json
+  h_67a1b847dc59d6 2,5-6,20-21,23
+rules/no-destructive-git-op-without-gate.md
+  h_67a1b847dc59d6 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "51d560d1059e739726e95598f4aab99b12722a76",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

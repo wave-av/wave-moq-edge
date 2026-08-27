@@ -1,0 +1,37 @@
+governance/plans/wave-principals/E6-AUDIT.md
+  s_15127d80763110::t_03cd3129b3a0da 1-94
+governance/plans/wave-principals/E4-GRANTS.md
+  s_15127d80763110::t_8d816d489aac5d 1-123
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_15127d80763110::t_9f7f11e092d81e 1-97
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_15127d80763110::t_f7a1496aa4b958 1-122
+governance/plans/wave-principals/NORTH-STAR.md
+  s_15127d80763110::t_99584a4f2c1294 1-210
+governance/plans/wave-principals/E2-ROLES.md
+  s_15127d80763110::t_4dad000df4a148 1-94
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_15127d80763110::t_850d2907f4f3de 1-112
+governance/plans/wave-principals/E1-MODEL.md
+  s_15127d80763110::t_b684bc8275c0d9 1-99
+governance/DASHBOARD.md
+  s_15127d80763110::t_de25620bff4e73 25
+governance/graph.json
+  s_15127d80763110::t_3c3a2ced453ae1 6831-6934,28411-28872
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8218d9cfc18b54c9035ad06b04ea1ed2586762d4",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

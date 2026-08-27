@@ -1,0 +1,19 @@
+governance/plans/wave-audio-signal-plane/PRODUCT-SURFACE.md
+  s_6046880c148371::t_51ebd1447f9993 1-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ff32661bb2af5d6e9255fb9cb659c88a2cea996b",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

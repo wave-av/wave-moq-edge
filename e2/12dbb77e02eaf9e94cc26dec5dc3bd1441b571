@@ -1,0 +1,21 @@
+hooks/stop-nudge.sh
+  s_60a20469ef4369::t_6c82a5e10d1127 37-42,45,158-161,163,169-171
+hooks/tests/phaseD/strategic-compact-band-nudge.sh
+  s_60a20469ef4369::t_62dcd37320cf7c 17-18,21,43-59,66,68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e212dbb77e02eaf9e94cc26dec5dc3bd1441b571",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

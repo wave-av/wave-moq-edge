@@ -1,0 +1,50 @@
+governance/plans/runtime-hardening/NORTH-STAR.md
+  s_2b4acc7ceba309::t_0c52095392ff6e 1-26
+governance/plans/runtime-hardening/E2-LADDER-SHADOW-RUNG.md
+  s_2b4acc7ceba309::t_86417ce052959f 1-20
+governance/plans/runtime-hardening/E4-EMPTY-STREAM-TAXONOMY.md
+  s_2b4acc7ceba309::t_81bd9d323568ec 1-20
+governance/plans/runtime-hardening/E0-CF-DEPLOY-AUTH.md
+  s_2b4acc7ceba309::t_5f2c7c95bc1dc5 1-22
+governance/plans/runtime-hardening/E3-WARM-WORKER-LAW.md
+  s_2b4acc7ceba309::t_e6634c7147f37d 1-19
+memory/fleet-todo-ledger.md
+  s_2b4acc7ceba309::t_2b4813a95b1cc7 43
+  s_2b4acc7ceba309::t_5fe668609e5f68 32-35
+  s_2b4acc7ceba309::t_4cf44c3a0e0854 29-31
+  s_2b4acc7ceba309::t_2bb44be8bb004a 36-38,40-42
+  s_2b4acc7ceba309::t_b4682208cb69d2 44-46
+governance/plans/runtime-hardening/E1-30B-TRANSPORT.md
+  s_2b4acc7ceba309::t_cbbde09eda9fec 1-21
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  s_2b4acc7ceba309::t_85e89b5fa812ad 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "23c2cba8c21aeaac981120aef143381c4b2f410d",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

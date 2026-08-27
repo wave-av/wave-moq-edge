@@ -1,0 +1,21 @@
+governance/plans/signal-flow/signal-flow.schema.json
+  s_6046880c148371::t_d78656d4be46ef 1-78
+governance/plans/signal-flow/flows/voice-agent.flow.json
+  s_6046880c148371::t_00f8efbc400b59 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9f68f75657c12af36476b422872f47cb1386b3fc",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

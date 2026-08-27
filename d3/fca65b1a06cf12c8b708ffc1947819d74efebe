@@ -1,0 +1,31 @@
+governance/lib/epic-status-render.mjs
+  s_264ae386838c57::t_e5161b1229cd21 90-109
+governance/bin/epic-status.mjs
+  s_264ae386838c57::t_12462654b1f437 31-34
+  s_264ae386838c57::t_21fc303303e49b 37-39
+  s_264ae386838c57::t_351e01b7747d7e 303-313
+governance/lib/epic-status-provenance.mjs
+  s_264ae386838c57::t_4a143d34bc8488 1-183
+governance/lib/epic-status-display.mjs
+  s_264ae386838c57::t_aae94fe6fb6f22 86-94
+  s_264ae386838c57::t_dbd983c4901990 1-85,95-102
+governance/test/epic-status-provenance.test.mjs
+  s_264ae386838c57::t_c8fd4b5ffae4b9 1-189,196-198,200-268
+  s_264ae386838c57::t_62b52389c37b18 190-195,199
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d3fca65b1a06cf12c8b708ffc1947819d74efebe",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/plans/console-perfection/E7-INTENTION.md
+  s_15127d80763110::t_75998835e09941 1-138
+governance/plans/console-perfection/NORTH-STAR.md
+  s_15127d80763110::t_400df81cf7df78 117
+  s_15127d80763110::t_6b517a0cb68b69 142-144
+  s_15127d80763110::t_81636f7f6c6a4b 104-106
+governance/DASHBOARD.md
+  s_15127d80763110::t_7705c25acf4081 25
+governance/graph.json
+  s_15127d80763110::t_80a3102d5d508f 3430-3442,3453,20819-20836,20891-20896
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fa75f2ecd2d849eb9351f30e53968eb65f470d07",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/bin/main-break-detector.mjs
+  s_7326a769c7efe8::t_6c7a05367a8553 1-38,40-41,43-67
+  s_7326a769c7efe8::t_befedb6936d25a 39,42
+.github/workflows/main-break-detector.yml
+  s_7326a769c7efe8::t_c5641bf88c6892 3-7,11,29-30,34-37
+  s_7326a769c7efe8::t_ddec5360468a26 1-2,8-10,12-28,31-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e55f5c978d0e95a2b1d8e242ea9e4fb4f16ebbcf",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

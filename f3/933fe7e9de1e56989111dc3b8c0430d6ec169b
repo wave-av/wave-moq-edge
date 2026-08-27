@@ -1,0 +1,21 @@
+governance/test/factory-bank-export.test.mjs
+  s_7ddeb5d251570f::t_c5c4a3a8d5c708 1-30
+bin/factory-bank-export.mjs
+  s_7ddeb5d251570f::t_ecf3f30f1d9b9f 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f3933fe7e9de1e56989111dc3b8c0430d6ec169b",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+scripts/bugbot/factory.py
+  s_0b987fef4e1240::t_244c6d141434ca 43-50
+  s_0b987fef4e1240::t_4e9caab77a5c52 141
+scripts/bugbot/test_factory.py
+  s_0b987fef4e1240::t_6459e4990966e0 173-183
+  s_0b987fef4e1240::t_0896d0a1fe168d 198
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f179f69df56fbbdef802250eaa709341f8232bb8",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

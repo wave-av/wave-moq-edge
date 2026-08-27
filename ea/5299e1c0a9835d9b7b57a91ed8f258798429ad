@@ -1,0 +1,33 @@
+governance/test/ALLOWED-SKIPS.json
+  s_02abc74f4971c7::t_fbb2b0deb2d0c7 1-109
+governance/test/skip-audit.mjs
+  s_02abc74f4971c7::t_7029474515d857 1-145,147-195
+  s_02abc74f4971c7::t_d4803037c7a6a6 146
+  s_02abc74f4971c7::t_e27b311bbc52b2 196-198
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_6ae8a25c2ab63e 179-183,186-192
+governance/test/governance-skip-audit.test.mjs
+  s_02abc74f4971c7::t_1a6c57f1e4d320 1-162
+governance/lib/drill-fixtures-skip-audit.mjs
+  s_02abc74f4971c7::t_951eb1a7326991 1-60
+  s_02abc74f4971c7::t_b1fee338e45194 61-63
+  s_02abc74f4971c7::t_3d727fffcd3079 64
+governance/bin/gate-liveness-drill.mjs
+  s_02abc74f4971c7::t_b5c02cf7ba449c 39,72-74,79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ea5299e1c0a9835d9b7b57a91ed8f258798429ad",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

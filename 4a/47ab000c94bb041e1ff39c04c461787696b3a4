@@ -1,0 +1,29 @@
+hookcli/tests/lib/modules.sh
+  s_dccee6b7677203::t_e54f81774bbd39 1-2,11-14
+  s_dccee6b7677203::t_e3a4534a3f0bb6 3-10,15-209
+hookcli/tests/lib/harness.sh
+  s_dccee6b7677203::t_7d0c8f447388a7 1-2
+  s_dccee6b7677203::t_845b7bed99029d 3-37
+hookcli/tests/lib/env.sh
+  s_dccee6b7677203::t_ebc4a7a0acbf93 2-45
+  s_dccee6b7677203::t_03d82199d1889a 1
+hookcli/tests/run.sh
+  s_dccee6b7677203::t_29394c3943ca22 2
+  s_dccee6b7677203::t_db243a58a5decd 12-17,19-20,22-29,31-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "4a47ab000c94bb041e1ff39c04c461787696b3a4",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

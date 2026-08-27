@@ -1,0 +1,27 @@
+governance/state/mechanism-intent.json
+  s_be40541f6fd98b::t_e24298e523d853 1-14
+governance/lib/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_52a0d78233119d 90-101
+governance/test/closed-loop-audit.test.mjs
+  s_be40541f6fd98b::t_6ebe2ca89f5143 155-162
+governance/bin/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_f4e9faff0d96f0 35-40
+.gitignore
+  s_be40541f6fd98b::t_1413337363df20 80-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "84d2c15c1a0e3036938370669695f2fb39f98eab",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

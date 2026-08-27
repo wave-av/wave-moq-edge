@@ -1,0 +1,23 @@
+governance/lib/wave-cost-ledger-write.mjs
+  s_2e30bff6169f7a::t_9cabd80261ea0e 45-49,54,69
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_774576035e444b 4473-4475
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_6993fd43d415bd 38437-38438,38448-38449,38459-38462
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ac753758d7170b10196f44ddecc92ccf5355db72",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

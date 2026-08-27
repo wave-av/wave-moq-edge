@@ -1,0 +1,26 @@
+governance/test/recall-regression.test.mjs
+  s_60a20469ef4369::t_5a89af67774a35 33-34
+  s_60a20469ef4369::t_597b0bd358c195 27-32,35-42
+  s_60a20469ef4369::t_dc78484102b89c 72-73
+  s_60a20469ef4369::t_50d05209b8a5ff 50-51
+governance/test/anchor-spine-integration.test.mjs
+  s_60a20469ef4369::t_ae84cc66bfd9c1 8-19
+  s_60a20469ef4369::t_483ae6d84ea884 42-44
+  s_60a20469ef4369::t_4a9d5ce16ead13 58-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "9da33fbfa6b5b16f65ea2c9b040410c3134c3fd5",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

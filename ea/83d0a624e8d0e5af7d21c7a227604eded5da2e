@@ -1,0 +1,31 @@
+governance/plans/conservation-law-design/E3-CANON.md
+  s_75b096e998a553::t_9cf64cdeb1ce4e 16-38
+governance/plans/conservation-law-design/E0-METHOD.md
+  s_75b096e998a553::t_054d867a2956cf 4
+governance/plans/genome-epigenome-releases/E0-GENOME.md
+  s_f3ecd1239f2da4::t_83ce1161f7880d 4,16-180
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ea83d0a624e8d0e5af7d21c7a227604eded5da2e",
+  "prompts": {},
+  "sessions": {
+    "s_75b096e998a553": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00825e1b7ffeVTeoAk8V1P4NHI",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f3ecd1239f2da4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00825d616ffeREvCKUHwLybPAD",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

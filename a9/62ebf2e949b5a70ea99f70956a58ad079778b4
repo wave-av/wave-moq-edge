@@ -1,0 +1,112 @@
+governance/lib/rl-source-pr.mjs
+  s_0950865aa49634::t_96044233e44b4c 51-55
+  s_0950865aa49634::t_055fb8a17797c4 225-227,230-235
+.github/actions/cll-loop-gates/action.yml
+  s_15127d80763110::t_381738398ce93c 117-131
+governance/ENFORCEMENT-BASELINE.json
+  s_15127d80763110::t_8c7b847abba61e 7,10,12-13,204
+governance/bin/enforcement-tables.mjs
+  s_15127d80763110::t_6b729a3ccf79ec 9,81-83,130-142
+governance/bin/hook-release.mjs
+  s_15127d80763110::t_3bd7703c68f80a 53,317-320,323,327,329-333,336,338-362
+governance/bin/monolith-lib-matrix.mjs
+  s_15127d80763110::t_a8ad7aafb0a1ce 1-324
+governance/bin/nulltest.mjs
+  s_15127d80763110::t_fb96dc94609c1c 1-269
+governance/bin/pagination-completeness.mjs
+  s_15127d80763110::t_16f49ceac9cf8d 1-324
+governance/bin/rl-sources.mjs
+  s_15127d80763110::t_fe82ef3f74a11b 22-24,60-62
+governance/bin/struggle-miner/collect-cloudflare.mjs
+  s_15127d80763110::t_ee4b78ed96e90a 88-89
+governance/lib/drill-fixtures-pagination.mjs
+  s_15127d80763110::t_bf6b172ac8f3d8 1-68
+governance/lib/drill-registry.mjs
+  s_15127d80763110::t_029c3f513de997 43,135-137,155
+governance/lib/hookcli-deny-laws.mjs
+  s_15127d80763110::t_cc86a501fc8e5c 1-35
+governance/lib/platform-status-probes.mjs
+  s_15127d80763110::t_ff1a374f20c842 136-137,169-170
+governance/lib/release-freshness.mjs
+  s_15127d80763110::t_c342813734e83b 125-131,136-141,143-145
+governance/lib/release-status.mjs
+  s_15127d80763110::t_11823bae087fba 1-99
+governance/plans/archive-found-live-defects/E0-PROVE-WHICH-PATH-IS-LIVE.md
+  s_15127d80763110::t_620ee8fd9cfb83 1-84
+governance/plans/archive-found-live-defects/E1-ADJUDICATE-THE-ACCESS-SWEEP.md
+  s_15127d80763110::t_b422d64380873a 1-120
+governance/plans/archive-found-live-defects/E2-DRAIN-THE-CORRIDOR-GATE.md
+  s_15127d80763110::t_12abc7ab16b29e 1-97
+governance/plans/archive-found-live-defects/NORTH-STAR.md
+  s_15127d80763110::t_6ae3e62ea041de 1-85
+governance/plans/floor-control-not-turn-taking/BANKS.md
+  s_15127d80763110::t_098d841f9ba167 1-25
+governance/plans/floor-control-not-turn-taking/E0-CLOSE-THE-DEAD-METER.md
+  s_15127d80763110::t_cb35af4afbd58e 1-243
+governance/plans/floor-control-not-turn-taking/GROUNDING-V2.md
+  s_15127d80763110::t_c9a11f35d7e791 1-178
+governance/plans/floor-control-not-turn-taking/NORTH-STAR.md
+  s_15127d80763110::t_9fdf1993e9da43 1-256
+governance/plans/floor-control-not-turn-taking/RECEIPTS.md
+  s_15127d80763110::t_64357c668a78f2 1-97
+governance/plans/floor-control-not-turn-taking/SYNTHESIS-R2.md
+  s_15127d80763110::t_954a43430bf12c 1-182
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_15127d80763110::t_4b08873bb64bee 16-35,119,121-128,142-144
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_15127d80763110::t_8f599993f4783c 8-20,117-203
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  s_15127d80763110::t_71fbccedbb22ee 4-7,46-65
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_15127d80763110::t_12d84601f3e94c 4-21,40,46-68,76-78
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_15127d80763110::t_d6918e1e88274f 27-34
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_15127d80763110::t_3865d467d63905 191-241
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_15127d80763110::t_793c5e16e7576b 251-252,354-372
+governance/state/canon-gap-map/GAP-MAP.md
+  s_15127d80763110::t_758b638978452e 22,31,81,95,103
+governance/state/canon-gap-map/gap-map.json
+  s_15127d80763110::t_109a5931f42a18 206,212,214,464,467,469,1754,1758,1760,2137,2142,2144,2363,2367,2369
+governance/test/ci-surface.test.mjs
+  s_15127d80763110::t_6b6239bc52c76d 124,127-128,140-141
+governance/test/pagination-same-line-loop.test.mjs
+  s_15127d80763110::t_8f6a35551eacf0 1-76
+governance/test/release-status.test.mjs
+  s_15127d80763110::t_af9638d5632a1c 1-153
+hooks/tests/hook-release-skills.test.sh
+  s_15127d80763110::t_af5d1fb5143990 56-57,151-153
+hooks/tests/hook-release-status-exit.test.sh
+  s_15127d80763110::t_13339df38635e3 44-53,158-170
+hooks/tests/hook-release.test.sh
+  s_15127d80763110::t_47acaa8e776699 55-59,236-237,255-256
+rules/agreement-across-methods-is-worthless-when-they-share-an-input.md
+  s_15127d80763110::t_7994841d66cdca 60
+governance/ENFORCEMENT-COVERAGE.md
+  s_15127d80763110::t_005fa923351a49 9,12,14,456
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a962ebf2e949b5a70ea99f70956a58ad079778b4",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

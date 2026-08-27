@@ -1,0 +1,36 @@
+hookcli/lib/t4-llm.sh
+  s_60a20469ef4369::t_aac31125f97731 33-36,41-42
+governance/test/enforce-ramp.test.mjs
+  s_60a20469ef4369::t_88d0f19453b3ee 48-73
+governance/bin/enforce-ramp.mjs
+  s_60a20469ef4369::t_e882623214d2a5 434
+  s_60a20469ef4369::t_8a7ad2aa0ee3fc 149-151
+  s_60a20469ef4369::t_160cd5933ea26d 430-433,435-444
+  s_60a20469ef4369::t_a845f6ce32058b 141-148
+governance/bin/enforcement-coverage.mjs
+  s_60a20469ef4369::t_9250796528869a 146-150
+rules/durable-state-off-ephemeral-storage.md
+  s_60a20469ef4369::t_d59f64da00ef2a 24
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_a68aceafdebe11 5,10,14,413
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_35431e1878af83 5,679,684-685,691,695-697,700-705,707,732-733,735-739,741-744
+governance/code-index/index.json
+  s_60a20469ef4369::t_16d68e6df10350 7,9,6537-6547,6598-6599,6609-6610,6669-6679,6719-6720,6730-6731,6741-6742,6774-6775,6785-6786,6796-6797,6807-6808,6818-6819,6829-6830,6851-6852,7061-7063,7071-7072,7093-7094,7104-7105,7115-7116,7126-7127,7137-7138,7159-7160,7170-7171,7181-7182,7192-7193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9fa6ff86d89f43a6f21b1f0c5bd5796a99dd684c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

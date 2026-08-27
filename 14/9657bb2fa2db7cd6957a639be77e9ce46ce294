@@ -1,0 +1,20 @@
+.github/workflows/bot-review-gate.yml
+  s_0b987fef4e1240::t_72374dede9ecac 45
+  s_0b987fef4e1240::t_2f896afce5c077 78-81,83-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "149657bb2fa2db7cd6957a639be77e9ce46ce294",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

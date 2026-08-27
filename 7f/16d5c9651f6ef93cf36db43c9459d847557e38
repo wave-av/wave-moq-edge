@@ -1,0 +1,87 @@
+.claude/skills/strategic-compact/SKILL.md
+  s_2e30bff6169f7a::t_d024e9c4967c65 89-95,118
+governance/bin/epic-status.mjs
+  s_2e30bff6169f7a::t_4473c591ccd875 1-143
+governance/bin/pr-create.mjs
+  s_2e30bff6169f7a::t_765669afd8d575 1-195
+governance/bin/reviewer-route.mjs
+  s_2e30bff6169f7a::t_08228312bdf16f 48-54,56-57
+governance/lib/pr-create-guards.mjs
+  s_2e30bff6169f7a::t_fb25388ca85fc9 1-264
+governance/lib/pr-create-push-dest.mjs
+  s_2e30bff6169f7a::t_a61ee8545c629a 1-172
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  s_2e30bff6169f7a::t_db8e7dee379f90 4-8
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_eec64b8935eb3d 4-6
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_2e30bff6169f7a::t_84a14d5c39324a 4-5
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_8152092f68091f 4-5
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_82041d2eb965ee 4-5
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_a94c2bbc62acd8 4-5
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_664c6809087eb2 4-5
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_c69116a3ef380e 4-5
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_2e30bff6169f7a::t_0ab60c7a5b953d 4
+governance/runbooks/restore-branch-protection.sh
+  s_2e30bff6169f7a::t_a1c767f641c0e9 186,190-193
+governance/test/epic-status.test.mjs
+  s_2e30bff6169f7a::t_0e68fc7550ecad 1-155
+governance/test/pr-create-flag-drift.test.mjs
+  s_2e30bff6169f7a::t_f0d0a5ddb72a55 1-152
+governance/test/pr-create-push-dest.test.mjs
+  s_2e30bff6169f7a::t_1c858ae9d22df7 1-245
+governance/test/pr-create.test.mjs
+  s_2e30bff6169f7a::t_415026886b720e 1-331
+hooks/gap-scan-guard.sh
+  s_2e30bff6169f7a::t_491d25587dec20 2,4,10-15,29-54
+hooks/lib/bash_prepasses.py
+  s_2e30bff6169f7a::t_6c11479162374d 1-345
+hooks/lib/bash_segments.py
+  s_2e30bff6169f7a::t_62beb962951329 1-270
+hooks/lib/command_words.py
+  s_2e30bff6169f7a::t_6e82bcc077fcab 1-134
+hooks/lib/gh_command_shape.py
+  s_2e30bff6169f7a::t_4edea4cef552da 33-43,48-53,59-75,181-210,270-272,284,308-351
+hooks/lib/gh_pr_target.py
+  s_2e30bff6169f7a::t_a693a12a1b14df 1-335
+hooks/lib/gh_write_scan.py
+  s_2e30bff6169f7a::t_48b3ac3b66c687 31
+hooks/public-github-write-gate.py
+  s_2e30bff6169f7a::t_fe5605a4813eeb 184-190,230-240
+hooks/reviewer-route-gate.py
+  s_2e30bff6169f7a::t_0cb8eb141eb4b0 1-323
+hooks/tests/public-github-write-gate-wrapper.test.sh
+  s_2e30bff6169f7a::t_8b20a2e8b34c27 1-159
+hooks/tests/public-github-write-gate.test.sh
+  s_2e30bff6169f7a::t_787b7950f308aa 259-269
+hooks/tests/reviewer-route-gate-heredoc.test.sh
+  s_2e30bff6169f7a::t_ce7dca7860c7a8 1-82
+hooks/tests/reviewer-route-gate-lexer.test.sh
+  s_2e30bff6169f7a::t_bf8aeef3f3232a 1-233
+hooks/tests/reviewer-route-gate-scope.test.sh
+  s_2e30bff6169f7a::t_111f7757b60d48 1-228
+hooks/tests/reviewer-route-gate.test.sh
+  s_2e30bff6169f7a::t_2941f35a6f66ef 1-163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7f16d5c9651f6ef93cf36db43c9459d847557e38",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

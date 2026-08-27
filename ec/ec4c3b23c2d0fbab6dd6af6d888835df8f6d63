@@ -1,0 +1,23 @@
+scripts/tournament-build.ts
+  s_672079ccfe8ce6::t_6ae569a091752c 1-314
+scripts/tournament-render.ts
+  s_672079ccfe8ce6::t_e102c395f3d58a 1-77
+scripts/tournament.ts
+  s_672079ccfe8ce6::t_ba619a19fbe5e9 13-19,26-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ecec4c3b23c2d0fbab6dd6af6d888835df8f6d63",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

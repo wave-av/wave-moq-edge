@@ -1,0 +1,33 @@
+rules/epic-runs-to-done-or-escalates.md
+  s_375efeac18ed55::t_0c560961d924d9 1-59
+rules/always-own-web-research.md
+  s_375efeac18ed55::t_3704b6ce103187 3
+governance/sources/lifecycles.json
+  s_375efeac18ed55::t_491b5b8315dbaf 6
+rules/public-surface-projects-curated-identity.md
+  s_375efeac18ed55::t_bac78f2d8c2e43 3
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_dcf16d6fb6ab87 7,9,16,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_375efeac18ed55::t_f3573c206e76a1 5,10,14,416
+governance/contract.md
+  s_375efeac18ed55::t_814f1b2abfa547 47,53
+governance/graph.json
+  s_375efeac18ed55::t_64e9b8405dd63b 655-661,3913-3928,5033-5038,7115-7150,10475-10480,17171-17176,17231-17236
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "024ac408639d48274ac5c1e9457fb6d06fc3d711",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

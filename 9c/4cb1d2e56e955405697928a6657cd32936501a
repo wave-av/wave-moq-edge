@@ -1,0 +1,19 @@
+governance/plans/agent-mail-plane/E6-E6-EMAIL-ECONOMY.md
+  s_f415985ecc5485::t_aada01ebac17b5 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9c4cb1d2e56e955405697928a6657cd32936501a",
+  "prompts": {},
+  "sessions": {
+    "s_f415985ecc5485": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff219e4a7ffekq7uOJatpvNV46",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/plans/content-engine/IMPL-PLAN-increment-1.md
+  s_e2e3e43d0638c5::t_cd39990382807a 3-13
+governance/plans/content-engine/NORTH-STAR.md
+  s_e2e3e43d0638c5::t_21af385a7044da 4-9
+governance/specs/2026-07-20-content-engine-design.md
+  s_e2e3e43d0638c5::t_43a8a8b570ac55 3-8
+governance/WAVE-CONTEXT-POINTER.md
+  s_e2e3e43d0638c5::t_1f324ab5c3c49c 21-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3be2a134ba5742eeee545b3a3c048cdf6fb1f1b2",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

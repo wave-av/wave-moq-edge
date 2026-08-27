@@ -1,0 +1,60 @@
+.github/workflows/namespace-federation-gh-oidc-probe.yml
+  h_67a1b847dc59d6 1-74
+.github/workflows/namespace-release-watch.yml
+  h_67a1b847dc59d6 67-83,117-124
+governance/bin/nsc-version-probe.mjs
+  h_67a1b847dc59d6 1-122
+governance/bin/nsdevbox-lease.mjs
+  h_67a1b847dc59d6 1-240
+governance/plans/namespace-substrate/E0-GOVERN.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E3-CACHES.md
+  h_67a1b847dc59d6 72-73
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  h_67a1b847dc59d6 43-45
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E6-DECIDE.md
+  h_67a1b847dc59d6 4,20
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  h_67a1b847dc59d6 133-135
+governance/plans/namespace-substrate/NORTH-STAR.md
+  h_67a1b847dc59d6 4,27-30,32-34
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-artifact-cache-pilot.md
+  h_67a1b847dc59d6 1-177
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-egress-v2.md
+  h_67a1b847dc59d6 1-132
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-gh-oidc-federation.md
+  h_67a1b847dc59d6 1-154
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-k8s-smoke.md
+  h_67a1b847dc59d6 1-122
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-prometheus-probe.md
+  h_67a1b847dc59d6 1-201
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-sdk-repo.md
+  h_67a1b847dc59d6 1-70
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-secrets-map.md
+  h_67a1b847dc59d6 1-80
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-tailscale-join.md
+  h_67a1b847dc59d6 1-244
+governance/plans/namespace-substrate/nsc-version-pin.json
+  h_67a1b847dc59d6 1
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-advisory.json
+  h_67a1b847dc59d6 1-61
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-policy.json
+  h_67a1b847dc59d6 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "15afadb170e8b10e363ed059c3a9efc0999f5c66",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

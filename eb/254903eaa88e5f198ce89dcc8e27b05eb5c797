@@ -1,0 +1,21 @@
+governance/bin/main-protection-audit.mjs
+  s_c143fe6abc2d8f::t_9ef18a06ce9b7c 49
+  s_c143fe6abc2d8f::t_76d23c669e52e0 33-47,50,56
+  s_c143fe6abc2d8f::t_8b6ae204a384f7 55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "eb254903eaa88e5f198ce89dcc8e27b05eb5c797",
+  "prompts": {},
+  "sessions": {
+    "s_c143fe6abc2d8f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5728f36ffeRA8Jxqi5OBAJwn",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/observability-and-dash0-exit/E3-CHASSIS-SPINE.md
+  s_375efeac18ed55::t_e5433a8038730e 40
+governance/DANGLING-REFS-BASELINE.json
+  s_375efeac18ed55::t_56f8c1a189d987 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "6939422e2ce3de9070f9897ce3a962f1309b1e81",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

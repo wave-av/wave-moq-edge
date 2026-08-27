@@ -1,0 +1,27 @@
+governance/plans/golden-path-restoration/E0-FORENSICS.md
+  s_264ae386838c57::t_611a2056a20203 22
+  s_264ae386838c57::t_135df00895c326 10-12,19-21,23-58
+  s_264ae386838c57::t_32d566e0169655 59
+governance/bin/external-tickets.mjs
+  s_264ae386838c57::t_26cea91ce6244b 91-112
+  s_264ae386838c57::t_47159f794c258a 143
+  s_264ae386838c57::t_8a9d81002a791a 139-142
+governance/test/external-tickets.test.mjs
+  s_264ae386838c57::t_30c835eef7baf6 119-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e9d704ecf59651e9c4adc1732b9da6b59f464434",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

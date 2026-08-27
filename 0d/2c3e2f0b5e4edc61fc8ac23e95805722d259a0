@@ -1,0 +1,20 @@
+scripts/cloudflare/provision-kv-namespace.sh
+  s_1cea981189627b::t_da6aacc252f8bb 75,78-79
+  s_1cea981189627b::t_0a32575dac4694 14-19,43,56-61,71-73,85-93,95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0d2c3e2f0b5e4edc61fc8ac23e95805722d259a0",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

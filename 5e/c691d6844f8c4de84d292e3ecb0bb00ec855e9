@@ -1,0 +1,53 @@
+governance/plans/agent-tool-access/E2-CELLS.md
+  s_c24357e71ae5bc::t_51c098c088b325 10-17
+  s_c24357e71ae5bc::t_ab658096297009 7,21
+governance/plans/agent-tool-access/RECEIPTS.md
+  s_c24357e71ae5bc::t_d4198c6d4eabb3 51-53,57-71,73-75,79-119
+  s_c24357e71ae5bc::t_d47b0b85b25367 120
+governance/bin/gate-coverage-audit.mjs
+  s_c24357e71ae5bc::t_73a3fa16cae759 1-184
+governance/bin/vendored-gate-audit.mjs
+  s_c24357e71ae5bc::t_c33d21da2c7201 31,57-60,63,67,72-75,93-96
+governance/lib/gate-audit-args.mjs
+  s_c24357e71ae5bc::t_eb83be53ba022c 1-2,33-70,73-89,91,94,98-101,106-107,109-110,112-114,118-130
+governance/lib/gate-audit-io.mjs
+  s_c24357e71ae5bc::t_fe4081cd0c08fe 1-87
+governance/lib/gate-coverage.mjs
+  s_c24357e71ae5bc::t_922a82bbfd9b2a 1-266
+governance/lib/vendored-gate-classify.mjs
+  s_c24357e71ae5bc::t_db216947b1fe1b 24-76,81-83,87,89-91,93,97-101
+governance/plans/agent-tool-access/E4-DEPTH.md
+  s_c24357e71ae5bc::t_f316b01c6689c8 16
+governance/plans/agent-tool-access/NORTH-STAR.md
+  s_c24357e71ae5bc::t_bef0f3fc7afb78 35,39-44,46-50,108
+governance/plans/frontier-program/E-ENFORCE.md
+  s_c24357e71ae5bc::t_330f4ec15d9dbd 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_c24357e71ae5bc::t_86d0b4685692cf 519-562
+governance/test/gate-audit-args.test.mjs
+  s_c24357e71ae5bc::t_567071203e2df5 11-14,17,73-111,133-141
+governance/test/gate-coverage.test.mjs
+  s_c24357e71ae5bc::t_9cf81ee2cdf83a 1-448
+governance/work-state.json
+  s_c24357e71ae5bc::t_2cb1b01afd627d 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,76-78,80-83,86-89,92-95,98-101,104-107,110-113,117-119,123,136-141,144-145,147-149,152-153,155-157,160-161,163-165,168-169,171-173,176-177,179-181,184-189,192-193,195-197,201-204,208-209,218
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_4012c13189a9b7 25
+governance/graph.json
+  s_c24357e71ae5bc::t_e69d4a41d2d08e 2398,22325-22330
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5ec691d6844f8c4de84d292e3ecb0bb00ec855e9",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

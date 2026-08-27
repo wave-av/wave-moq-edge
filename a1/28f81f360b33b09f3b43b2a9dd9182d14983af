@@ -1,0 +1,21 @@
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_c24357e71ae5bc::t_eecfaf42421310 1-51
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_c24357e71ae5bc::t_3608ab04a6b690 1,3-6,10-29,31,33,35-41,45-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a128f81f360b33b09f3b43b2a9dd9182d14983af",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

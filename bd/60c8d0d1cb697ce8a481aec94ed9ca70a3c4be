@@ -1,0 +1,21 @@
+hooks/tests/subagent_read_budget_smoke.sh
+  s_375efeac18ed55::t_180ccd3b0b123b 48,52,56,61,67-74
+  s_375efeac18ed55::t_7bd472288b2942 13-25,28-36
+  s_375efeac18ed55::t_f808e12f81bbd4 75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "bd60c8d0d1cb697ce8a481aec94ed9ca70a3c4be",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

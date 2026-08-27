@@ -1,0 +1,21 @@
+governance/plans/neural-moq-lane/E3-LIVE-ARENA.md
+  s_d4083f4c0fe43d::t_91dfb4feab6272 4
+governance/plans/neural-contribution/E1-EDGE-ENCODER.md
+  s_d4083f4c0fe43d::t_c701fea7fa4ec3 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b5566576b38d2ea851a125da42fb1abed94e84ac",
+  "prompts": {},
+  "sessions": {
+    "s_d4083f4c0fe43d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdfb750cfffeKiXNGN8T1o5y9W",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

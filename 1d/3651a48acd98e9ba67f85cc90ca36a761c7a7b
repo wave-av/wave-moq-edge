@@ -1,0 +1,66 @@
+bin/trust-ladder.test.mjs
+  s_c6f8ac8a8d4078::t_234b41bf9bc027 1-55,57-68,71,73-74,76-92,94-114,116-136,138-160,162-185,187-206,208-238,240-263,265-281,283-292
+  s_c6f8ac8a8d4078::t_7175272f076fa0 56,75,93,115,137,161,186,207,239,264,282
+  s_c6f8ac8a8d4078::t_268807b0b1f592 69-70,72
+fleet-autonomy/ceilings.json
+  s_c6f8ac8a8d4078::t_735919f7ea092a 1-5
+bin/cost-ceiling.mjs
+  s_c6f8ac8a8d4078::t_82262d85afa5c2 26-27
+  s_c6f8ac8a8d4078::t_3298a822946c5e 168
+  s_c6f8ac8a8d4078::t_ba89c9e1ff02c3 204,222-223,230
+  s_c6f8ac8a8d4078::t_fedccbacc4b4cc 28
+  s_c6f8ac8a8d4078::t_f82e7140048a29 1-25,29-84,87-130,133-143,145-157,159-167,169-171,173-184,186-203,205-221,224-229,231-240
+  s_c6f8ac8a8d4078::t_852039ed2bc92d 185
+  s_c6f8ac8a8d4078::t_1243e4a56b9cc1 85
+  s_c6f8ac8a8d4078::t_dafabfda617981 172
+  s_c6f8ac8a8d4078::t_e31f2f5d338667 86
+  s_c6f8ac8a8d4078::t_4b5c5ae3c98dbb 132
+  s_c6f8ac8a8d4078::t_01d5adcd6e6952 144
+  s_c6f8ac8a8d4078::t_42330e74b7b668 158
+  s_c6f8ac8a8d4078::t_7514efd7c582a1 131
+fleet-autonomy/E4-TRUSTED-LANE-PROMOTION.md
+  s_c6f8ac8a8d4078::t_8d0b0b703e151e 1-55
+bin/trust-ladder.mjs
+  s_c6f8ac8a8d4078::t_99d58f2ce493bb 189,195,206,213,218
+  s_c6f8ac8a8d4078::t_c814f16ed7f8c8 26-27
+  s_c6f8ac8a8d4078::t_bd292a520bcc96 170
+  s_c6f8ac8a8d4078::t_3e3bd9796acdf2 19
+  s_c6f8ac8a8d4078::t_d2b834bc3c8e83 1-18,20-25,28-169,171-188,190-194,196-205,207-212,214-217,219-229,231-242
+  s_c6f8ac8a8d4078::t_57e5bf0a6905aa 230
+.gitignore
+  s_c6f8ac8a8d4078::t_6412d931002bd1 17,19-21
+bin/trust-gates.test.mjs
+  s_c6f8ac8a8d4078::t_aa50d300cd408f 154-159
+  s_c6f8ac8a8d4078::t_708ebda9874e69 1-65,71-80,82-95,97-117,119-153,160-196
+  s_c6f8ac8a8d4078::t_bf2d481f6a4f8f 66-70
+  s_c6f8ac8a8d4078::t_7701a204fb8fb3 81,96,118
+bin/cost-ceiling.test.mjs
+  s_c6f8ac8a8d4078::t_1a49acaa8530ef 89
+  s_c6f8ac8a8d4078::t_8fa07044af8daa 65,79,112,116,131,148,165,180-181,195,210
+  s_c6f8ac8a8d4078::t_0f257dc11644e7 1-52,55-64,66-78,80-82,84-88,90-111,113-115,117-130,132-147,149-164,166-178,182-194,196-209,211-213,215-227
+  s_c6f8ac8a8d4078::t_f13fe68ede5066 214
+  s_c6f8ac8a8d4078::t_01079b887facdb 53-54
+  s_c6f8ac8a8d4078::t_2d601461c1262c 83
+  s_c6f8ac8a8d4078::t_ccb53ebd66f8fa 179
+bin/trust-gates.mjs
+  s_c6f8ac8a8d4078::t_a0b9f342f9b11e 1-26,29-135,137-161,165-227
+  s_c6f8ac8a8d4078::t_7e391847c4e095 136
+  s_c6f8ac8a8d4078::t_462a4d7e93aef1 27-28
+  s_c6f8ac8a8d4078::t_86bcb4cac0df9a 162-164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1d3651a48acd98e9ba67f85cc90ca36a761c7a7b",
+  "prompts": {},
+  "sessions": {
+    "s_c6f8ac8a8d4078": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fff581662ffeexdXYCggXw1yG0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+frameworks/gates/scripts/pre-push.sh
+  s_e2e3e43d0638c5::t_2175d3bbc0458a 31-48
+frameworks/gates/test-pre-push.sh
+  s_e2e3e43d0638c5::t_120910891c1a1e 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "949a7d9a318b646c22d333ba260668afccc0d1fa",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

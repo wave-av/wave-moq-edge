@@ -1,0 +1,20 @@
+governance/test/known-red-baseline-wiring.test.mjs
+  s_15127d80763110::t_1e83cc6c54ae16 203-209
+  s_15127d80763110::t_37b34b81aae101 25-31,33-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6434f62f08b4a6a30310c26fa5c8bbc065bea9fc",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

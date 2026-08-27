@@ -1,0 +1,35 @@
+governance/plans/design-scoring-integrity/E2-TIER0-CHECKS.md
+  s_dedb333dd5195e::t_6d546bc2be20a1 47,49-75
+  s_dedb333dd5195e::t_74f5e3145e1d60 4-5,10-18,20-25
+governance/plans/design-scoring-integrity/E7-DESIGN-REGISTRY.md
+  s_dedb333dd5195e::t_bef54a2185650c 1-85
+governance/plans/design-scoring-integrity/E4-HANDOFF-CONTRACT.md
+  s_dedb333dd5195e::t_57369eac20e51d 4-6
+  s_dedb333dd5195e::t_adfdede19cef7e 22-27
+  s_dedb333dd5195e::t_41d1669762c945 81-106
+governance/plans/design-scoring-integrity/E6-TOKEN-VOCABULARY.md
+  s_dedb333dd5195e::t_8ef557fc0ef3ba 1-145
+governance/plans/design-scoring-integrity/NORTH-STAR.md
+  s_dedb333dd5195e::t_5a271e93b0bb06 61-62,65-70
+  s_dedb333dd5195e::t_47f7346aa56087 145-147,149-155,157-158
+  s_dedb333dd5195e::t_7d7afedb29477d 77-108
+  s_dedb333dd5195e::t_fb2b328a6d36db 30-34,36-37
+  s_dedb333dd5195e::t_1a21b37ee49626 132-133
+  s_dedb333dd5195e::t_e5ebe7efcbeee4 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "99bb0f76796acd9a008dacf04a0f3e17a3876cda",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

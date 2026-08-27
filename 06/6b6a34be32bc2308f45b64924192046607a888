@@ -1,0 +1,40 @@
+governance/plans/upstash-org-integration/E6-OPERATIONALIZE.md
+  s_32308d89320687::t_976b0679e7239c 6-9
+  s_32308d89320687::t_f69d116dc83581 13,15-17
+  s_32308d89320687::t_5a8499e89155d9 19,21-23
+governance/plans/upstash-org-integration/E5-DECIDE.md
+  s_32308d89320687::t_7759199d5063e8 2,4,6-9,11-24
+governance/plans/upstash-org-integration/E2-QSTASH-GOLIVE.md
+  s_32308d89320687::t_b14be7b96e7100 9
+  s_32308d89320687::t_81016bc21198c5 26,28-30
+  s_32308d89320687::t_4df7ef750386ca 6
+governance/plans/upstash-org-integration/E3-RATELIMIT-EDGE.md
+  s_32308d89320687::t_04753a6b5d3ea7 6-8
+governance/plans/upstash-org-integration/E4-WORKFLOW-EVAL.md
+  s_32308d89320687::t_99058cd0b4ee88 6-9
+governance/plans/upstash-org-integration/E1-ACTIVATE-REDIS-VECTOR.md
+  s_32308d89320687::t_9318c3625b026f 6
+governance/plans/upstash-org-integration/NORTH-STAR.md
+  s_32308d89320687::t_f682adde57995c 42
+  s_32308d89320687::t_043a438e803782 7-9
+governance/plans/upstash-org-integration/BUILD-VS-BUY.md
+  s_32308d89320687::t_5b76548c174a33 1-52
+governance/plans/upstash-org-integration/E5-UNEXPLORED-DECIDE.md
+  s_32308d89320687::t_e7443d2262c96e 6-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "066b6a34be32bc2308f45b64924192046607a888",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

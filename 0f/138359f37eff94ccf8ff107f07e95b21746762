@@ -1,0 +1,22 @@
+scripts/bugbot/protected.py
+  s_07acdfa7e3709a::t_460e0c2155db87 32-37
+  s_07acdfa7e3709a::t_c207f15aaddaf6 53-55
+tests/test_bugbot_safety.py
+  s_07acdfa7e3709a::t_fffc02b57505a8 18-21,23-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0f138359f37eff94ccf8ff107f07e95b21746762",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  s_27c3f37c99074f::t_ddf62923d0b2b4 43-53
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_27c3f37c99074f::t_55f175f78235b7 22-24
+  s_27c3f37c99074f::t_6d4440aa9d13e2 48-81
+runbooks/library/automode-classifier-vs-hand-rolled-gate-comparison.md
+  s_27c3f37c99074f::t_a43214e5e2441f 3-71
+  s_27c3f37c99074f::t_1e1a037291d9aa 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "918393dd83d025cbf92aa3568ea2628a90db8388",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

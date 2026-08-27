@@ -1,0 +1,21 @@
+docs/EPICS-DISPATCH.md
+  s_2f1bfe8237f0ee::t_f30d1245fe2be9 1-47
+docs/R4-CACHING-DESIGN.md
+  s_2f1bfe8237f0ee::t_4c4b7bad0cebf8 1-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b0d6ae71425787753f4f4da1c25036cc199c05f0",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+hookcli/tests/fast.sh
+  s_db128da65a46d5::t_8a2e7e8d532375 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1de75e2e537f0e32f76ab39ea116d6672dbeeec1",
+  "prompts": {},
+  "sessions": {
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

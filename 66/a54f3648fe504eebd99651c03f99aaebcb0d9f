@@ -1,0 +1,22 @@
+shell/claude-doppler.zsh
+  s_19c8e603d8990b::t_f02fe84e2f51b9 17-22,24-27,29-46
+test/claude-doppler.test.zsh
+  s_19c8e603d8990b::t_f16cd04bda00e0 1-44,46-48,54-55,59,61,63,65,67
+  s_19c8e603d8990b::t_fa0eaf0e84f582 45,49-53,56-58,60,62,64,66,68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "66a54f3648fe504eebd99651c03f99aaebcb0d9f",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

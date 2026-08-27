@@ -1,0 +1,20 @@
+governance/test/merge-routing-parity.test.mjs
+  s_02abc74f4971c7::t_4de07399c60d75 39-44
+  s_02abc74f4971c7::t_3a8037c2288724 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2923a798af015d0e40d4da1b52faeaf4eff5ea64",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

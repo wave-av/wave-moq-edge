@@ -1,0 +1,42 @@
+governance/bin/known-red-baseline.mjs
+  s_375efeac18ed55::t_61ffeb64063d1f 231-232,241-243
+  s_375efeac18ed55::t_805cae19df1b1a 1-22,25-90,113-149,154-156,159-173,175-178,180-230
+  s_375efeac18ed55::t_e36527a56fdd92 233-240
+  s_375efeac18ed55::t_a4cf46c8733c2e 174
+  s_375efeac18ed55::t_fea013b63d3acd 91-112
+  s_375efeac18ed55::t_d3f9446d8c3e14 23-24
+  s_375efeac18ed55::t_5c1d93539e6fd8 150-153
+  s_375efeac18ed55::t_31850321186b4d 157-158
+  s_375efeac18ed55::t_47eea9c05f8475 179
+governance/test/known-red-baseline-wiring.test.mjs
+  s_375efeac18ed55::t_d2df69a1396be0 1-138
+.github/workflows/hook-tests.yml
+  s_375efeac18ed55::t_724f33d619a247 79-85
+  s_375efeac18ed55::t_05b3b9756cc23e 129-161
+governance/lib/known-red-baseline.mjs
+  s_375efeac18ed55::t_4ed90a6dd5c987 1-49,52-115,117-184
+  s_375efeac18ed55::t_69e77218a044c5 50-51
+  s_375efeac18ed55::t_4b3d48f37c330b 116
+governance/test/known-red-baseline.test.mjs
+  s_375efeac18ed55::t_01a72cb95faa54 1-278
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_8a24ef546ae9ea 5,1595-1615
+governance/code-index/index.json
+  s_375efeac18ed55::t_07c05194541e52 6-7,9-10,14347-14544
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "54c849a905db448fb9f63cd8321dda531941e019",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

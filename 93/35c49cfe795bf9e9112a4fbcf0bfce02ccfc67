@@ -1,0 +1,34 @@
+governance/bin/route-matrix.mjs
+  s_60a20469ef4369::t_1fd0b9f488ea37 354-363,366-367
+  s_60a20469ef4369::t_d2ef428d40d870 48
+  s_60a20469ef4369::t_bf0d5d541ac701 346-351
+governance/lib/route-matrix-selftest.mjs
+  s_60a20469ef4369::t_d8303e0a1544d4 1-98
+governance/bin/learning-triage.mjs
+  s_60a20469ef4369::t_1640a207e12ad9 57
+  s_60a20469ef4369::t_25d4485ed7c28e 49-51,53-56,58-81
+  s_60a20469ef4369::t_eb1131257121e9 104
+governance/lib/learning-triage-core.mjs
+  s_60a20469ef4369::t_4542e3a0494bd9 36-38
+  s_60a20469ef4369::t_763b3d2a79a2d4 1-35,39-231
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_f939d72ace6968 5,1414-1422,1953,1959
+governance/code-index/index.json
+  s_60a20469ef4369::t_33c8b6f655c5bb 7,9-10,13704-13705,13715-13716,13726-13727,13737-13738,13748-13749,13759-13760,13770-13771,13781-13782,13792-13793,18818-18822,18885-18888
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "9335c49cfe795bf9e9112a4fbcf0bfce02ccfc67",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+scripts/bugbot/test_governor.py
+  s_0b987fef4e1240::t_a6a77c4b966c91 1-41
+scripts/bugbot/factory.py
+  s_0b987fef4e1240::t_76469f599ad660 1-83
+scripts/bugbot/test_factory.py
+  s_0b987fef4e1240::t_e873e1da2c3c80 1-49
+scripts/bugbot/test_allocator.py
+  s_0b987fef4e1240::t_7e17f978ee6da4 1-41
+scripts/bugbot/governor.py
+  s_0b987fef4e1240::t_0304b16e558782 1-56
+scripts/bugbot/allocator.py
+  s_0b987fef4e1240::t_06224e1e1a4c09 1-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "dce48a270d316cb521a7e1b49554e2dc20da8caf",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/tools/teacher-engine/lib/index.mjs
+  s_ea7fda6a228496::t_c8bacacaa2c7dd 21,25-33,36,38-41,44,46-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "31e90d2dae6fa5ebabaed574d61f44524663b7e9",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

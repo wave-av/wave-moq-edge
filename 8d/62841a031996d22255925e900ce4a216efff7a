@@ -1,0 +1,66 @@
+hookcli/tests/distill-report.sh
+  s_157583aa3b6686::t_3ab957948f503d 98-114
+hookcli/bin/hookcli
+  s_157583aa3b6686::t_3ab957948f503d 201-226
+governance/bin/struggle-miner/collect-sentry.mjs
+  s_157583aa3b6686::t_3ab957948f503d 1-73
+governance/test/struggle-miner/collect-sentry.test.mjs
+  s_157583aa3b6686::t_3ab957948f503d 1-32
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_157583aa3b6686::t_3ab957948f503d 8,45,47-61
+governance/plans/wave-secdev/RECEIPTS.md
+  s_157583aa3b6686::t_3ab957948f503d 87,117-185
+  s_157583aa3b6686::t_d769743c8ef3aa 186
+hookcli/lib/eval-t1.sh
+  s_157583aa3b6686::t_3ab957948f503d 40-43
+governance/bin/struggle-miner-scan.sh
+  s_157583aa3b6686::t_3ab957948f503d 32
+hookcli/tests/rules-version.sh
+  s_157583aa3b6686::t_3ab957948f503d 73-132,169,173-222,237-238,265-268
+docs/superpowers/plans/2026-07-31-struggle-inference-pipeline-wave2.md
+  s_157583aa3b6686::t_3ab957948f503d 66
+governance/test/release-containment.test.mjs
+  s_157583aa3b6686::t_3ab957948f503d 1-250
+hookcli/bin/distill-report.mjs
+  s_157583aa3b6686::t_3ab957948f503d 64-68,115,141,269-270
+hookcli/tests/gate-dispatch.sh
+  s_157583aa3b6686::t_3ab957948f503d 135-206
+hookcli/tests/lib/modules.sh
+  s_157583aa3b6686::t_3ab957948f503d 218-226
+governance/test/hook-resolution-check.test.mjs
+  s_157583aa3b6686::t_3ab957948f503d 16-20
+hookcli/tests/protected-push-advisory.sh
+  s_157583aa3b6686::t_3ab957948f503d 1-104
+governance/lib/release-containment.mjs
+  s_157583aa3b6686::t_3ab957948f503d 1-115
+governance/test/struggle-miner/fixtures/sentry-issues-response.json
+  s_157583aa3b6686::t_3ab957948f503d 1-38
+hookcli/rules/rules.json
+  s_157583aa3b6686::t_3ab957948f503d 124,128,431,435,444
+governance/DASHBOARD.md
+  s_157583aa3b6686::t_e9e5b0dc8ec173 25
+governance/bin/hook-resolution-check.mjs
+  s_157583aa3b6686::t_6f79d49d3eec81 24-41,51,67-71,76-77,90-111,118-121,265-295,298,301-311,314-315,320-331,334
+governance/code-index/CATALOG.md
+  s_157583aa3b6686::t_c440237baa098c 5,1587-1610,2817-2825,3899-3908
+governance/code-index/index.json
+  s_157583aa3b6686::t_10f646bb2cdde3 9-10,12-15,14281-14282,14292-14293,14297-14307,14314-14315,14325-14326,14336-14337,14347-14348,14358-14359,14369-14370,14380-14381,14391-14392,14396-14406,14413-14414,14418-14439,14446-14447,14457-14458,14468-14469,14479-14480,14490-14491,14501-14502,14512-14513,14517-14527,14534-14535,25352-25417,33789-33865
+governance/graph.json
+  s_157583aa3b6686::t_aa557a9955ec13 4148,19237-19242
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "8d62841a031996d22255925e900ce4a216efff7a",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

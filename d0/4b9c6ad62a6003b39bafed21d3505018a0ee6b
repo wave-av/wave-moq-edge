@@ -1,0 +1,19 @@
+governance/plans/wow-canon/WOW-STANDARDS-UPLEVEL.md
+  s_37d3f61160b2dd::t_43e263a8ee67e5 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d04b9c6ad62a6003b39bafed21d3505018a0ee6b",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

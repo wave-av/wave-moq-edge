@@ -1,0 +1,29 @@
+.gitattributes
+  s_dccee6b7677203::t_59afcccb554895 1-20
+governance/ENFORCEMENT-COVERAGE.md
+  s_dccee6b7677203::t_d46f466e045af9 414,422,445
+governance/bin/resolve-generated-conflicts.mjs
+  s_dccee6b7677203::t_c782a91e075c6c 1-197
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_1d6fd848a26c88 5,2151-2165
+governance/code-index/index.json
+  s_dccee6b7677203::t_8f13e4d6dd4a8c 6-7,9-10,19374-19505
+governance/test/resolve-generated-conflicts.test.mjs
+  s_dccee6b7677203::t_dfcfe88af0ed5e 1-219
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "7c2fe8f888de8ec0b5e551ca4a995a8e24b10809",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

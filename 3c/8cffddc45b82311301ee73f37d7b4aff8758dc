@@ -1,0 +1,22 @@
+hookcli/lib/board.mjs
+  s_60a20469ef4369::t_6b83666dccf1d2 161-166
+  s_60a20469ef4369::t_e26cab584978d2 84-96,101-105,109
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_dbfc5c530a0c97 545-554,557
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "3c8cffddc45b82311301ee73f37d7b4aff8758dc",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+governance/bin/lens-sweep.mjs
+  s_0227926428e4b1::t_83752938083770 18-23,26,28-29,45-46
+governance/lib/lens-sweep/commands.mjs
+  s_0227926428e4b1::t_616a976513821c 1-264
+governance/lib/lens-sweep/reconcile.mjs
+  s_0227926428e4b1::t_a674ae8bc39480 22-38,84,113
+governance/test/lens-sweep-reconcile.test.mjs
+  s_d9915bbafa9657::t_26497e4010b06f 59-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "70bcc167b2e0d3feaca2d5bf823cc746f9fffcbb",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

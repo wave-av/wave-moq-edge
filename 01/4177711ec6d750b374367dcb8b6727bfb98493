@@ -1,0 +1,20 @@
+scripts/orchestrator-bench.py
+  s_9e432dc94c73ad::t_ad22f53e18a394 42-45
+  s_9e432dc94c73ad::t_ac672881c4cd16 303-309
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "014177711ec6d750b374367dcb8b6727bfb98493",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

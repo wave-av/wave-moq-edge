@@ -1,0 +1,24 @@
+frameworks/pricing/pricing.schema.json
+  s_19c8e603d8990b::t_e534f310b6d671 80
+  s_19c8e603d8990b::t_fce848bba0364f 46
+frameworks/billing/billing-config.schema.json
+  s_19c8e603d8990b::t_d582c79c4ab6df 47
+frameworks/pricing/meters.json
+  s_19c8e603d8990b::t_9ceca5df54ca0e 77-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "a5dee81db2510caa382dcaca3ead9fec00b860dd",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/bin/release-sweep.mjs
+  s_2b4acc7ceba309::t_2b688dca537559 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6ffdc1aa09a5488f9e85b0c457a7e8821f9ae139",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

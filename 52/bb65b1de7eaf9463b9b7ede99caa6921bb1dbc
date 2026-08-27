@@ -1,0 +1,21 @@
+.github/workflows/ci.yml
+  s_ba07216ce52585::t_ee43a4707d3293 24-25
+scripts/check-secrets.ts
+  s_ba07216ce52585::t_f71ad95873b689 1-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "52bb65b1de7eaf9463b9b7ede99caa6921bb1dbc",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

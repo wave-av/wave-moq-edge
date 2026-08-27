@@ -1,0 +1,31 @@
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_3dffaa7229dd02 196
+  s_3a52a0989b58af::t_401191c3d67e86 109-114
+  s_3a52a0989b58af::t_2499099eaabe77 199
+  s_3a52a0989b58af::t_35d36e92cf9656 192
+scripts/bugbot/astgate.py
+  s_3a52a0989b58af::t_969bf873749d37 1-117
+scripts/bugbot/pipeline.py
+  s_3a52a0989b58af::t_7d8bcd1108ed5a 40
+tests/test_gate_gauntlet.py
+  s_3a52a0989b58af::t_a72b0cd7167111 1-67,69,71-72,75-141
+  s_3a52a0989b58af::t_4deb92e07a8599 68,70,73-74
+scripts/gate_gauntlet.py
+  s_3a52a0989b58af::t_c152ee1b3e3767 1-153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "896a62f43550e6556cc3d38ea37fa30948fefa43",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

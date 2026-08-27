@@ -1,0 +1,21 @@
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_8aff987b7595ee::t_b57ffa7aab6948 170-171
+governance/plans/agentic-wave/E11-AGENT-MEDIA-LADDER.md
+  s_8aff987b7595ee::t_72401f8b0b1100 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "58f0f8b311b2dcfb470087a555ea0356f8e58151",
+  "prompts": {},
+  "sessions": {
+    "s_8aff987b7595ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed699938ffe6Lwajgv39gPxLg",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

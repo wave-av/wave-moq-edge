@@ -1,0 +1,95 @@
+governance/bin/check.mjs
+  s_0950865aa49634::t_d88852b400f225 3-4,13,23,58-62,64,66-85,88-102,110-111
+governance/bin/decommit-gate.mjs
+  s_0950865aa49634::t_0d2ab5a3ceb396 1-86
+governance/bin/files-allowlist-lint.mjs
+  s_0950865aa49634::t_3dc196f0c39554 149-151
+governance/bin/graph-absence-sweep.mjs
+  s_0950865aa49634::t_e3aa786bb1cc3a 104-105,178-179
+governance/bin/mesh-estate-health.mjs
+  s_0950865aa49634::t_0652540b0c24d6 1-301
+governance/bin/resolve-generated-conflicts.mjs
+  s_0950865aa49634::t_d602d9a54d60be 167-170,213-247
+governance/lib/decommit-gate.mjs
+  s_0950865aa49634::t_f66a0aa3dedfb1 1-74
+governance/lib/drill-fixtures-decommit.mjs
+  s_0950865aa49634::t_f5b78c06783d50 1-110
+governance/lib/drill-fixtures-outtree.mjs
+  s_0950865aa49634::t_3432ef8fbe2a8e 62-66
+governance/lib/drill-inline-required.mjs
+  s_dd42a206f882e3::t_67ab7fedafd27e 66-74,79,91-94
+governance/lib/drill-registry.mjs
+  s_0950865aa49634::t_88ee65cbf1a055 44,121-124,151
+governance/lib/mesh-estate-guards.mjs
+  s_0950865aa49634::t_1271f54891e345 1-118
+governance/lib/mesh-estate-health.mjs
+  s_0950865aa49634::t_b43a4998a14f25 1-360
+governance/package.json
+  s_0950865aa49634::t_35c98a8c96448c 20
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_0950865aa49634::t_7bcbf763c1a167 4-286,289-295,298-301,310-312,315-316,318-333
+governance/plans/gates-report-coverage/E0-EVIDENCE.md
+  s_0950865aa49634::t_eda61d3e1961fe 4,6-10,13-14,16-27
+governance/plans/generated-artifact-contention/PHASE-D-GATE.md
+  s_0950865aa49634::t_c8bfd1fb23fc21 1-202
+governance/plans/generated-artifact-contention/epic.md
+  s_0950865aa49634::t_3e67a09758d356 64-72
+governance/test/command-cwd-heredoc-budget.test.mjs
+  s_0950865aa49634::t_bf4cefc257dbc8 38,40-41,43-62,78,112,115-118
+governance/test/decommit-gate.test.mjs
+  s_0950865aa49634::t_d8927091fa55e2 1-124
+governance/test/hookcli-budget-fits-timeout.test.mjs
+  s_0950865aa49634::t_1f914b2273a269 1-233
+governance/test/mesh-estate-health.test.mjs
+  s_0950865aa49634::t_c5321ca0bc47d0 1-302
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  s_0950865aa49634::t_68cf833edcda3e 20-21,29,37,185-211
+hookcli/bin/hookcli
+  s_0950865aa49634::t_f627cb4adc7e0e 42-50
+hookcli/bin/hookcli-settings-gen.mjs
+  s_0950865aa49634::t_e814045fde8a58 25-29,92-95,102-109,144-154,167-176
+hookcli/bin/validate-rules.mjs
+  s_0950865aa49634::t_558e88972d57be 11,207-211
+hookcli/lib/hook-event-timeouts.mjs
+  s_0950865aa49634::t_b99fe8184ce0dc 1-148
+hookcli/lib/validate-budget-fit.mjs
+  s_0950865aa49634::t_216f9c9d83671b 1-107
+hookcli/tests/settings-shard.sh
+  s_0950865aa49634::t_97d063389f6941 23-37,42
+hooks/sandbox-bypass-gate.sh
+  s_0950865aa49634::t_6c1d682c265d34 1-140
+hooks/tests/hook-fail-closed.test.sh
+  s_0950865aa49634::t_fab884e75156a1 86-90,104-107,195-215
+hooks/tests/sandbox-bypass-gate.test.sh
+  s_0950865aa49634::t_4679dbbe17c202 1-159
+mcp/mcp.base.json
+  s_0950865aa49634::t_d022d84796f6a9 28,30-38,42-44
+scripts/doppler-run-resilient.sh
+  s_0950865aa49634::t_114bd5e46f47dc 1-35
+settings/hooks.d/hookcli.json
+  s_0950865aa49634::t_1a82fdde2e3581 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "354b29729c1f438d9f60fcfe8b4564d5a7a35ac0",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

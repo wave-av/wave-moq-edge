@@ -1,0 +1,117 @@
+governance/tools/effect-lens/README.md
+  s_d43e77194828f2::t_26b1124800ab99 1-96
+governance/plans/conservation-law-design/E3-CANON.md
+  s_5bafa6b5c3856a::t_ade7b47da7e801 4
+  s_5bafa6b5c3856a::t_acfe6e514c2fc4 39-123
+governance/tools/teacher-review/README.md
+  s_d82b8c4ab2ccc3::t_ee8c467aaa6f83 32
+  s_d82b8c4ab2ccc3::t_29afe4895d1884 1-31,33-75
+governance/plans/self-play-refactoring/E2-AIRGAP-GATE.md
+  s_9ea701eefe5d29::t_85137e4d67adc2 20-78
+  s_9ea701eefe5d29::t_28cdf8d6d3e70e 4
+governance/tools/effect-lens/tests/effect-lens.test.mjs
+  s_d43e77194828f2::t_ddf1fc3606501d 1-96
+governance/tools/teacher-review/rubric.md
+  s_d82b8c4ab2ccc3::t_4c13cb4645eea7 1-67
+governance/tools/conservation-lint/manifest.schema.json
+  s_73a79dc468d028::t_87ed44aa04c9b6 1-55
+governance/tools/teacher-review/examples/raw-finding-example.json
+  s_d82b8c4ab2ccc3::t_da7b55f93bb00e 1-8
+governance/tools/effect-lens/examples/mux-ingest.lens.json
+  s_d43e77194828f2::t_10a0d686dce90b 1-63
+governance/tools/conservation-lint/examples/wave-gateway.manifest.json
+  s_73a79dc468d028::t_4c899709e8b97d 1-32
+governance/tools/effect-lens/bin/effect-lens.mjs
+  s_d43e77194828f2::t_1d66a00351c512 1-26,36-73
+  s_d43e77194828f2::t_76b03c6a855900 27-35
+governance/plans/genome-epigenome-releases/E2-REDLINES.md
+  s_7589d1008e1ed0::t_6b26b963848e8b 4,17-99
+governance/tools/teacher-review/diagnosis.schema.json
+  s_d82b8c4ab2ccc3::t_42a22b6bfe69c7 1-69
+governance/tools/teacher-review/bin/teacher-review.mjs
+  s_d82b8c4ab2ccc3::t_3be23127290b08 1-95
+governance/tools/teacher-review/package.json
+  s_d82b8c4ab2ccc3::t_413ec7be5526da 1-33
+governance/tools/conservation-lint/lib/index.mjs
+  s_9ea701eefe5d29::t_fe30b74f2c7629 1-126
+governance/tools/conservation-lint/bin/conservation-lint.mjs
+  s_73a79dc468d028::t_59172e99d1e4a3 1-25,27-58,60-78,80-118
+  s_73a79dc468d028::t_aab9e64914adf9 26
+  s_73a79dc468d028::t_f273df0fff9096 79
+  s_73a79dc468d028::t_d6465c8af8283e 59
+governance/tools/effect-lens/lens.schema.json
+  s_d43e77194828f2::t_2e78b43c2952af 1-72
+governance/tools/teacher-review/lib/index.mjs
+  s_d82b8c4ab2ccc3::t_c672b3726fd796 84-85,90
+  s_d82b8c4ab2ccc3::t_212d10aecdd286 1-83,86-89,91-198
+governance/tools/teacher-review/examples/finding-example.json
+  s_d82b8c4ab2ccc3::t_f51df5ef6cac64 1-19
+governance/tools/conservation-lint/package.json
+  s_73a79dc468d028::t_f87aac06e2946f 1-32
+governance/tools/teacher-review/tests/teacher-review.test.mjs
+  s_d82b8c4ab2ccc3::t_451e3b6717d170 1-188
+governance/tools/conservation-lint/tests/conservation-lint.test.mjs
+  s_73a79dc468d028::t_210c8a71b740f4 5,10
+  s_73a79dc468d028::t_ecd116c779cb52 1-4,6-9,11-112
+governance/tools/conservation-lint/README.md
+  s_73a79dc468d028::t_7b3d5ff99f9b65 41-42
+  s_73a79dc468d028::t_197f71cff8fce6 1-40,43-70
+governance/tools/effect-lens/lib/index.mjs
+  s_d43e77194828f2::t_4fdc99a3b5349e 1-232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "157c2dc669b5c6f0d8e5b4c57e41642583b57b14",
+  "prompts": {},
+  "sessions": {
+    "s_5bafa6b5c3856a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00714fa89ffeciq7DxECCYVCPp",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_73a79dc468d028": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00714c48effei5ub2Xtszo7S8q",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7589d1008e1ed0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00714eb68ffeQ69Jo0F596wxAV",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9ea701eefe5d29": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00714dcc7ffe3Y7QY4n4fwmun1",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d43e77194828f2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0070b55beffei7Htgy0YISsTqT",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d82b8c4ab2ccc3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0070b3e72ffeTL9D4AZ0DTri1o",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

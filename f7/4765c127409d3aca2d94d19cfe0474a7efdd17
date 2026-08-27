@@ -1,0 +1,19 @@
+governance/lib/drill-registry-catalogue.md
+  s_85113a1cef9a84::t_3fb105abcdd7fc 206,218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f74765c127409d3aca2d94d19cfe0474a7efdd17",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

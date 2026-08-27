@@ -1,0 +1,28 @@
+governance/plans/cost-to-serve/E0-JOIN-POLICY.md
+  s_fed391465a5384::t_e8b26bdf284258 82,84
+  s_fed391465a5384::t_e476259a24abc8 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "be153b0cc202dad8ca8954cc67e9cab9be92b3c0",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_fed391465a5384": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006564961ffeZhHbGEnsZSLoS0",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

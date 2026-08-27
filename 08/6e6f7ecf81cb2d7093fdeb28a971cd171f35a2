@@ -1,0 +1,19 @@
+docs/E-EVAL-LEADERBOARD.md
+  s_ba07216ce52585::t_98de8b3084a35c 39-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "086e6f7ecf81cb2d7093fdeb28a971cd171f35a2",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

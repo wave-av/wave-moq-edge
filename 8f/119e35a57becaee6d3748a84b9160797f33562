@@ -1,0 +1,23 @@
+governance/plans/wave-golive/E4-BILLING.md
+  s_cf363a68d60e93::t_d0f08e9df177a3 8-40
+governance/plans/wave-golive/E2-PRODUCT.md
+  s_cf363a68d60e93::t_b47e7a695942af 9-37
+governance/graph.json
+  s_cf363a68d60e93::t_7df98f1c08a624 10900-10905
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8f119e35a57becaee6d3748a84b9160797f33562",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

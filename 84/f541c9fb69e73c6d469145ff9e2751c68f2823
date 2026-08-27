@@ -1,0 +1,32 @@
+governance/test/ledger-surface.test.mjs
+  s_157583aa3b6686::t_8baaa55568adad 77-80,82-83
+  s_157583aa3b6686::t_eddacbb9426849 1-76,81,84-120
+governance/lib/ledger-surface.mjs
+  s_157583aa3b6686::t_bf1803eee95b33 1-55,63-90
+  s_157583aa3b6686::t_15bba36260209f 56-62
+governance/bin/intent-ledger.mjs
+  s_157583aa3b6686::t_97decc41050ed8 164-166
+  s_157583aa3b6686::t_7a20ff9a02e4f4 35-37
+  s_157583aa3b6686::t_0c3eb2d6c6e8bb 268
+  s_157583aa3b6686::t_f27a169e507b91 174
+governance/code-index/CATALOG.md
+  s_157583aa3b6686::t_04d1547bc749d9 1573-1605
+governance/code-index/index.json
+  s_157583aa3b6686::t_69eea2be99b2d1 14155-14156,14166-14167,14177-14178,14188-14189,14199-14200,14210-14211,14221-14222,14232-14233,14243-14244,14254-14255,14265-14266,14276-14277,14287-14290,14298-14299,14309-14310,14320-14321,14331-14332,14342-14343,14353-14354,14364-14365,14375-14376,14386-14387,14397-14398,14408-14409,14419-14420,14430-14431,14441-14442,14452-14453,14463-14466,14474-14475,14485-14486,14496-14497,14507-14508
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "84f541c9fb69e73c6d469145ff9e2751c68f2823",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

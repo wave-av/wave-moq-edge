@@ -1,0 +1,21 @@
+governance/plans/moq-deadline-scheduler/E4-LEARNED-CODEC-CATALOG.md
+  s_eb15602e30c3b4::t_8e65970713da63 1-21
+governance/plans/moq-deadline-scheduler/NORTH-STAR.md
+  s_eb15602e30c3b4::t_8e65970713da63 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "67aa169fd5ee01860490544db67c48f1b20cb990",
+  "prompts": {},
+  "sessions": {
+    "s_eb15602e30c3b4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed69c29dffe7gm93yLDhUBMHn",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

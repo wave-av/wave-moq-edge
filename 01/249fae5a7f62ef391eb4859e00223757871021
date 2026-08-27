@@ -1,0 +1,21 @@
+governance/bin/enforcement-tables.mjs
+  s_9bb1b1d1d998d4::t_654046d62bac10 99-102
+.github/workflows/governance.yml
+  s_9bb1b1d1d998d4::t_fb4ea958cd7cf2 185-186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "01249fae5a7f62ef391eb4859e00223757871021",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

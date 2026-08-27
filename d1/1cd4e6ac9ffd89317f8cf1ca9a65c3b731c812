@@ -1,0 +1,30 @@
+governance/recall/BAKE-OFF.md
+  s_15127d80763110::t_6186fbc8e2c3b9 231-232,234
+  s_15127d80763110::t_bd6f1f741d4310 219
+  s_15127d80763110::t_d6d78fe24e978f 233,235-242
+  s_9a1c51cd7d992a::t_71cac70a79bfd7 55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d11cd4e6ac9ffd89317f8cf1ca9a65c3b731c812",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9a1c51cd7d992a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a67a399e8b6b93755",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

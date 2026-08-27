@@ -1,0 +1,108 @@
+governance/bin/pr-create.mjs
+  h_af5ac1a9798224 1-195
+governance/bin/reviewer-route.mjs
+  h_af5ac1a9798224 48-54,56-57
+governance/bin/struggle-miner-scan.sh
+  h_af5ac1a9798224 36-41
+governance/bin/struggle-miner/collect-corrections.py
+  h_af5ac1a9798224 1-145
+governance/bin/struggle-miner/lib/transcript_filter.py
+  h_af5ac1a9798224 25-26,28-31,37-59
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  h_af5ac1a9798224 1-360
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,2243-2251,2712,2714-2716,3313-3323,4250-4266,4659-4719
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,20226-20291,24346-24349,24362-24372,24379-24380,24390-24391,29587-29674,36627-36747,39773-40212
+governance/lib/pr-create-guards.mjs
+  h_af5ac1a9798224 1-264
+governance/lib/pr-create-push-dest.mjs
+  h_af5ac1a9798224 1-172
+governance/lib/wave-cost-ledger-cloudflare-account.mjs
+  h_af5ac1a9798224 1-82
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  h_af5ac1a9798224 1-254
+governance/lib/wave-cost-ledger-cloudflare-do-mapping.mjs
+  h_af5ac1a9798224 1-335
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  h_af5ac1a9798224 1-180
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  h_af5ac1a9798224 1-261
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 1-189
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  h_af5ac1a9798224 1-68
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 163-164,168-179
+governance/runbooks/restore-branch-protection.sh
+  h_af5ac1a9798224 186,190-193
+governance/test/pr-create-flag-drift.test.mjs
+  h_af5ac1a9798224 1-152
+governance/test/pr-create-push-dest.test.mjs
+  h_af5ac1a9798224 1-245
+governance/test/pr-create.test.mjs
+  h_af5ac1a9798224 1-331
+governance/test/wave-cost-ledger-cloudflare-alert-fixture.mjs
+  h_af5ac1a9798224 1-48
+governance/test/wave-cost-ledger-cloudflare-alert-history-fetch.test.mjs
+  h_af5ac1a9798224 1-177
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  h_af5ac1a9798224 1-318
+governance/test/wave-cost-ledger-cloudflare-do-mapping-cache.test.mjs
+  h_af5ac1a9798224 1-383
+governance/test/wave-cost-ledger-cloudflare-do-mapping-fixture.mjs
+  h_af5ac1a9798224 1-25
+governance/test/wave-cost-ledger-cloudflare-do-mapping.test.mjs
+  h_af5ac1a9798224 1-386
+governance/test/wave-cost-ledger-cloudflare-estimate.test.mjs
+  h_af5ac1a9798224 1-123
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  h_af5ac1a9798224 1-173
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  h_af5ac1a9798224 1-411
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 1-118
+hooks/lib/bash_prepasses.py
+  h_af5ac1a9798224 1-345
+hooks/lib/bash_segments.py
+  h_af5ac1a9798224 1-270
+hooks/lib/command_words.py
+  h_af5ac1a9798224 1-134
+hooks/lib/gh_command_shape.py
+  h_af5ac1a9798224 33-43,48-53,59-75,181-210,270-272,284,308-351
+hooks/lib/gh_pr_target.py
+  h_af5ac1a9798224 1-335
+hooks/lib/gh_write_scan.py
+  h_af5ac1a9798224 31
+hooks/manifest.json
+  h_af5ac1a9798224 1220
+hooks/public-github-write-gate.py
+  h_af5ac1a9798224 184-190,230-240
+hooks/reviewer-route-gate.py
+  h_af5ac1a9798224 1-323
+hooks/tests/public-github-write-gate-wrapper.test.sh
+  h_af5ac1a9798224 1-159
+hooks/tests/public-github-write-gate.test.sh
+  h_af5ac1a9798224 259-269
+hooks/tests/reviewer-route-gate-heredoc.test.sh
+  h_af5ac1a9798224 1-82
+hooks/tests/reviewer-route-gate-lexer.test.sh
+  h_af5ac1a9798224 1-233
+hooks/tests/reviewer-route-gate-scope.test.sh
+  h_af5ac1a9798224 1-228
+hooks/tests/reviewer-route-gate.test.sh
+  h_af5ac1a9798224 1-163
+tests/struggle_miner/test_collect_corrections.py
+  h_af5ac1a9798224 1-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0d74cde916bbe58d73ca494357b274a88157b1eb",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_60a20469ef4369::t_85cb724bcbf8f8 45,47-61
+  s_60a20469ef4369::t_32d7298de05763 8
+governance/plans/wave-secdev/RECEIPTS.md
+  s_60a20469ef4369::t_772cfc316854ab 87
+  s_60a20469ef4369::t_2a322d4676b12e 117-186
+governance/DASHBOARD.md
+  s_60a20469ef4369::t_f2cc7f39a13adf 25
+governance/graph.json
+  s_60a20469ef4369::t_2b27bbdeb09bfa 4148,19237-19242
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "34a7c3e723aff587322e039ade457bdd48d597b7",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

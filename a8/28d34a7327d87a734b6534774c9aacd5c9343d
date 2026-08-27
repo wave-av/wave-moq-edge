@@ -1,0 +1,16 @@
+.github/workflows/harness-watch-sweep.yml
+  h_91e57a3221f2ff 10
+governance/plans/harness-wars-intel/bin/release-sweep.mjs
+  h_91e57a3221f2ff 30,47-67,79-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a828d34a7327d87a734b6534774c9aacd5c9343d",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

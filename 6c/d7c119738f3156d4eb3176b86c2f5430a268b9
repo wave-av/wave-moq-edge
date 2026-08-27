@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_124891ed63801b::t_397e83f900e2fb 9
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_4cd901bc389d4c 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6cd7c119738f3156d4eb3176b86c2f5430a268b9",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

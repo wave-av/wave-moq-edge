@@ -1,0 +1,59 @@
+governance/lib/evidence/git-run.mjs
+  s_02abc74f4971c7::t_577ec985b4cc24 1,3-11
+governance/bin/derived-artifact-drift-audit.mjs
+  s_02abc74f4971c7::t_553bf3bc8a10a6 38
+  s_02abc74f4971c7::t_21c9b28b736551 148-157
+governance/bin/gam-conformance.mjs
+  s_02abc74f4971c7::t_dd2ec269478c71 20-21
+  s_02abc74f4971c7::t_f21f4d27ea2a21 257-261
+  s_02abc74f4971c7::t_28166241ee55f5 262-266
+governance/SUBPROCESS-STDIO-BASELINE.json
+  s_02abc74f4971c7::t_313909ecca1fba 1-35
+governance/lib/drill-fixtures-subprocess.mjs
+  s_02abc74f4971c7::t_1e99413d1f8923 1-46
+governance/bin/subprocess-stdio-lint.mjs
+  s_02abc74f4971c7::t_f8158eb56ba5ed 1-77,117-132,165-169,171-173,179,181-188,190-234,243-263
+  s_02abc74f4971c7::t_87809654e9fb45 78-116
+  s_02abc74f4971c7::t_3b3a8e6ac373ba 170,174-178,180
+  s_02abc74f4971c7::t_81fc187cbbac21 189
+  s_02abc74f4971c7::t_b0dd43cf4e792e 235-242
+  s_02abc74f4971c7::t_730c2598201a2b 133-164
+governance/test/fixtures/bad-subprocess-stdio/leaky.mjs
+  s_02abc74f4971c7::t_1f0cfd7f69a6ff 1-64,71,77-84
+  s_02abc74f4971c7::t_b1b22ec64e2f2e 65-70,72-76
+governance/test/subprocess-stdio-lint.test.mjs
+  s_02abc74f4971c7::t_952d116a35f36d 1-102,106,110-132,141,156-182,186-189,200-231
+  s_02abc74f4971c7::t_a7694fef4c9f89 133-140,142-155
+  s_02abc74f4971c7::t_b2c67ba672930c 183-185
+  s_02abc74f4971c7::t_b11ea8584e65ad 103-105,107-109
+  s_02abc74f4971c7::t_a4c35a3f301ecc 190-199
+governance/lib/git-run.mjs
+  s_02abc74f4971c7::t_9083912897bb25 36-44
+  s_02abc74f4971c7::t_c080d8ed308239 1-35,45-84
+governance/bin/gate-liveness-drill.mjs
+  s_02abc74f4971c7::t_b531b5d2371f88 32
+  s_02abc74f4971c7::t_1977c57b1d78cf 57-58
+governance/bin/base-freshness.mjs
+  s_02abc74f4971c7::t_f9314c6bd14a16 17
+  s_02abc74f4971c7::t_efc59e4d3fc721 36-43
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_4db85b932986d2 5,96-99,658,662,664,666,668-669,671-672,674,676-677,983,987,989-990,995-996,1379-1395,1447-1454,2626-2655
+governance/code-index/index.json
+  s_02abc74f4971c7::t_1ed1f51c515670 6-7,9-10,747-749,757-758,768-769,779-780,6004-6005,6048-6049,6070-6071,6093-6095,6114-6115,6125-6126,6147-6148,6158-6159,6180-6181,6202-6203,6213-6214,8919-8920,8963-8964,8979-8989,8996-8997,9051-9052,9062-9063,12384-12385,12395-12396,12406-12407,12417-12418,12428-12429,12439-12440,12450-12451,12461-12462,12472-12473,12483-12484,12494-12495,12505-12506,12516-12517,12527-12528,12538-12539,12549-12550,12560-12561,13000-13001,13011-13014,13022-13023,13033-13034,13044-13045,13055-13056,13066-13067,13077-13078,23675-23971
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "6860104bda17dc10b11ae689c46afdc20d887070",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

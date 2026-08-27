@@ -1,0 +1,21 @@
+governance/automation-registry/lint.mjs
+  s_672079ccfe8ce6::t_601643d93f4a27 24-32,52-57
+governance/test/automation-registry/lint.test.mjs
+  s_672079ccfe8ce6::t_47585ee120f77a 6,59-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "d29fa2255a4eb3eb42073e38572c1267eb5728e6",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

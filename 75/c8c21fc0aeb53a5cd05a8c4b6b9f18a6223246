@@ -1,0 +1,22 @@
+governance/test/provider-health.test.mjs
+  s_7ddeb5d251570f::t_1f5c56c9da59fc 1-27
+bin/provider-health.mjs
+  s_7ddeb5d251570f::t_3b5f2c7c202155 25,28-36,39-40,49-55,75
+  s_7ddeb5d251570f::t_24a7c83221e37b 1-24,26-27,37-38,41-48,56-74,76-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "75c8c21fc0aeb53a5cd05a8c4b6b9f18a6223246",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

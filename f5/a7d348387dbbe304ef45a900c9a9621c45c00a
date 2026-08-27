@@ -1,0 +1,37 @@
+governance/plans/model-economy/E2-ADMIT.md
+  s_d9915bbafa9657::t_d3a4137a244125 7-12
+governance/plans/model-economy/E1-SENSE.md
+  s_d9915bbafa9657::t_16113375df8b82 7-15
+governance/plans/model-economy/E3-REACH.md
+  s_d9915bbafa9657::t_1dfc4f8e607868 7-16
+governance/plans/model-economy/E4-MEASURE.md
+  s_d9915bbafa9657::t_560019e2e272df 8-17
+governance/plans/model-economy/E6-ROUTE.md
+  s_d9915bbafa9657::t_ab581836d8f95a 7-15
+governance/plans/model-economy/E8-FLYWHEEL.md
+  s_d9915bbafa9657::t_ba567b6b4a8c11 7-12
+governance/plans/model-economy/E7-OFFER.md
+  s_d9915bbafa9657::t_961f16839cdb82 7-14
+governance/plans/model-economy/E5-PRICE.md
+  s_d9915bbafa9657::t_b3e2080130a39a 7-13
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_2dea1015761aff 25
+governance/graph.json
+  s_d9915bbafa9657::t_37322e86dfbbd6 24061-24066
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f5a7d348387dbbe304ef45a900c9a9621c45c00a",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

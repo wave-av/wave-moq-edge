@@ -1,0 +1,22 @@
+governance/plans/network-edge-plane/SURFACE-CONTRACT.json
+  s_ea8755337f3c0d::t_04db07ce1fa789 1-39
+governance/plans/network-edge-plane/E3-INGRESS-CONTRACT.md
+  s_ea8755337f3c0d::t_e427311c09e522 4
+  s_ea8755337f3c0d::t_a69db7b7e4725d 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4158e54a14edc4588568073730fda5d2ca0c74a5",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/tools/wave-registry/wave-registry.mjs
+  s_0213641ac58af6::t_3aaf442b970158 320
+  s_0213641ac58af6::t_a5fdb1ca86ae4a 12
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_0213641ac58af6::t_f714986f52ec15 333
+  s_0213641ac58af6::t_fd1071f2c24e6a 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "722ee00c91f16305e36794ace6af33d8f254e4f7",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

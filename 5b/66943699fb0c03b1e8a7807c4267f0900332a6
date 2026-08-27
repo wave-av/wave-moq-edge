@@ -1,0 +1,21 @@
+governance/test/fleet-model-inventory.test.mjs
+  s_7ddeb5d251570f::t_65e613f39f7ba5 1-24
+bin/fleet-model-inventory.mjs
+  s_7ddeb5d251570f::t_8551e73c5a7613 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5b66943699fb0c03b1e8a7807c4267f0900332a6",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

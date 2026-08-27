@@ -1,0 +1,21 @@
+governance/plans/vendor-relationship-ops/SCOREBOARD-2026-08-21.md
+  s_ea8755337f3c0d::t_9e3d585d7695c2 64-71
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_ea8755337f3c0d::t_18903f4bd14106 18-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "178c39a3d6e2e72369438a7cc1f6ce9ef23cceea",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

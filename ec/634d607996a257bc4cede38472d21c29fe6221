@@ -1,0 +1,23 @@
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_9bb1b1d1d998d4::t_aaed23a391ce2c 53-54
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  s_9bb1b1d1d998d4::t_8163da607feb7c 3-4,9-10,12
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  s_9bb1b1d1d998d4::t_5fb393e025f979 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ec634d607996a257bc4cede38472d21c29fe6221",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

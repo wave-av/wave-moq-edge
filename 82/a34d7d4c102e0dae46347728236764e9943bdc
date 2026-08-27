@@ -1,0 +1,43 @@
+.github/scripts/provision-fleet-clones.sh
+  s_2e30bff6169f7a::t_a8f65ad28511be 1-188
+.github/workflows/governance.yml
+  s_2e30bff6169f7a::t_4d821370fea1da 107-111,120
+.github/workflows/workflow-lint.yml
+  s_2e30bff6169f7a::t_1d21df1e700ce1 219-248
+governance/bin/workflow-lint.mjs
+  s_2e30bff6169f7a::t_8dfe74dff2997d 63-81,208-235,239-241,243-259,261-271,273-303,305-318,329-334,336,338,340
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_7672efc88d8d76 5,3388,3391,3393-3398,3401-3404
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_bf9520a26561e5 10,12-13,30264-30265,30297-30298,30319-30322,30330-30331,30341-30342,30352-30353,30363-30364,30368-30378,30401-30444
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_2e30bff6169f7a::t_7c23cc75259c26 198-256,263
+governance/test/workflow-lint.test.mjs
+  s_2e30bff6169f7a::t_155a0e4fe86f07 132-251
+governance/test/xrepo-provisioning.test.mjs
+  s_2e30bff6169f7a::t_699eba2fe84161 8-16,30-31,34,42,44,48,50-51,53,133-135,154-172
+hooks/local-llm/e2-shadow-table.sh
+  s_2e30bff6169f7a::t_a6f7e10620e8a5 1-86
+hooks/local-llm/enhance-compare-report.sh
+  s_2e30bff6169f7a::t_d775cc15930f72 23-28,31-39,45,52-54,66,91
+hooks/local-llm/lib/compare_rows.py
+  s_2e30bff6169f7a::t_565ca5399b47ba 1-143
+hooks/tests/e2-shadow-table.test.sh
+  s_2e30bff6169f7a::t_35b261def823a0 1-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "82a34d7d4c102e0dae46347728236764e9943bdc",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

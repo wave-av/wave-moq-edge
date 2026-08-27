@@ -1,0 +1,21 @@
+scripts/bugbot/apply.py
+  ai_agent 25,101,105
+scripts/bugbot/fix.py
+  ai_agent 25,113
+scripts/bugbot/approve.py
+  ai_agent 21,80-88
+scripts/bugbot/disposition.py
+  ai_agent 28,61,72-73
+scripts/bugbot/governance.py
+  ai_agent 20,53-55
+scripts/bugbot/threads.py
+  ai_agent 25,79-83,85,112-113
+scripts/bugbot/render.py
+  ai_agent 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "6a4816a967d114e05b216d595f7317471d33b5b4",
+  "prompts": {}
+}

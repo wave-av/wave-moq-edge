@@ -1,0 +1,36 @@
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_634ef66efc584d::t_3e7e22e30f76ce 22
+governance/bin/wave-search-cli.mjs
+  s_634ef66efc584d::t_caf3f1ff06b4bc 1-29,31,33-39
+  s_634ef66efc584d::t_ffa9dec4b9f904 30,32
+governance/bin/wave-search-mcp.mjs
+  s_634ef66efc584d::t_caf3f1ff06b4bc 13
+governance/lib/wave-search-sdk.mjs
+  s_634ef66efc584d::t_caf3f1ff06b4bc 1-10
+governance/plans/wave-internal-search/NORTH-STAR.md
+  s_634ef66efc584d::t_c3ac3cade9aeef 22-35
+governance/test/wave-search-cli.test.mjs
+  s_634ef66efc584d::t_3bbdac53f9f113 1-3,5-23,31-40
+  s_634ef66efc584d::t_ffa9dec4b9f904 4,24-30
+docs/wave-search-renderings.md
+  s_634ef66efc584d::t_3bbdac53f9f113 1-12,16-47
+  s_634ef66efc584d::t_c42152e8bb6640 13-15
+governance/lib/wave-search-core.mjs
+  s_634ef66efc584d::t_caf3f1ff06b4bc 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "955b6ae5e713b84c3dc18e32550af342731e40db",
+  "prompts": {},
+  "sessions": {
+    "s_634ef66efc584d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcb0de00fffemGeufHgNHWrwkO",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

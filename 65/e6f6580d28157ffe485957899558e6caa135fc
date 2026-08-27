@@ -1,0 +1,76 @@
+governance/plans/wave-registry/E1-MODELS.md
+  s_0213641ac58af6::t_b8a5acb099166f 2-13
+  s_0213641ac58af6::t_ae8dcbba1ec9b9 1
+  s_0213641ac58af6::t_e03cf59357b2d9 14
+governance/plans/wave-registry/E6-QUERY.md
+  s_0213641ac58af6::t_725edbebfb4876 2-14
+  s_0213641ac58af6::t_8ad365be7113c7 1
+governance/plans/langfuse-integration/NORTH-STAR.md
+  s_0213641ac58af6::t_c968be1a8b3e42 5-42
+  s_dedb333dd5195e::t_6ccd42b9635f85 1-4
+governance/plans/wave-registry/E0-SCHEMA.md
+  s_0213641ac58af6::t_0b852b464aabf0 2-13
+  s_37d3f61160b2dd::t_8950015d0c0eb8 1
+governance/plans/wave-registry/E5-USAGE-LOGS.md
+  s_0213641ac58af6::t_460a530f22d814 2-16
+  s_0213641ac58af6::t_e142fa24bef73a 1
+governance/plans/wave-registry/NORTH-STAR.md
+  s_0213641ac58af6::t_66e4add7d013ef 5-50
+  s_0213641ac58af6::t_6b3b105f50ab4e 2-4
+governance/plans/wave-registry/E4-PROMPTS.md
+  s_0213641ac58af6::t_6d6e0575a3aed8 2-14
+  s_37d3f61160b2dd::t_ad9cb7e65694e3 1
+governance/plans/wave-registry/E2-TOOLS.md
+  s_0213641ac58af6::t_0ca17b559d45b5 2-13
+  s_0213641ac58af6::t_7c43b6e58770a0 1
+governance/plans/wave-registry/E3-EVALS.md
+  s_0213641ac58af6::t_ef9fb5ba7c739f 2-13
+  s_dedb333dd5195e::t_0ce67e1f386ba6 1
+governance/plans/langfuse-integration/E1-SELF-HOST.md
+  s_0213641ac58af6::t_d9a89275c28dfd 2-12
+  s_0213641ac58af6::t_fa0de6020df22d 1
+  s_0213641ac58af6::t_d2aa3e50294baf 13
+governance/plans/langfuse-integration/E3-FEED.md
+  s_0213641ac58af6::t_0805ca6bbfd3fa 2-13
+  s_0213641ac58af6::t_04773518ca4e07 1
+  s_0213641ac58af6::t_e487fef3a130bd 14
+governance/plans/langfuse-integration/E0-DECIDE.md
+  s_0213641ac58af6::t_2e84ba1103b720 2-14
+  s_37d3f61160b2dd::t_08c908d7313fe9 1
+governance/plans/langfuse-integration/E2-INSTRUMENT.md
+  s_0213641ac58af6::t_2a2262a84502c6 2-15
+  s_0213641ac58af6::t_69953ded1a8f32 1
+  s_0213641ac58af6::t_e886cc60652dd0 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "65e6f6580d28157ffe485957899558e6caa135fc",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

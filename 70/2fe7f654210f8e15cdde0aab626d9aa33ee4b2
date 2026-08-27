@@ -1,0 +1,19 @@
+governance/research/creator-intelligence/ADVERSARIAL-SYNTHESIS.md
+  s_ea7fda6a228496::t_31efe20d580159 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "702fe7f654210f8e15cdde0aab626d9aa33ee4b2",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

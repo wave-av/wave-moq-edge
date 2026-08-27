@@ -1,0 +1,24 @@
+frameworks/verify-loop/verify-loop.mjs
+  s_be40541f6fd98b::t_7af32edd99b0f9 260
+  s_be40541f6fd98b::t_e424f610df74d9 294
+frameworks/gates/scripts/verify-receipt.sh
+  s_be40541f6fd98b::t_18ebba63636f7e 30-32
+frameworks/gates/test-verify-receipt.sh
+  s_be40541f6fd98b::t_5f1e8c91976ebf 30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a818ad4992cf982984ec274ee4e5aa08c447f278",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

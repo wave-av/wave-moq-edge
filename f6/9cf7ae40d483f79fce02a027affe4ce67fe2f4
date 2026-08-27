@@ -1,0 +1,39 @@
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_60a20469ef4369::t_328d1dea7e1bbe 1-97
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  s_60a20469ef4369::t_d027806170be46 1-68
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  s_60a20469ef4369::t_5d00cc699d83e7 1-67
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  s_60a20469ef4369::t_301cbe63cd01d7 1-91
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  s_60a20469ef4369::t_0f13feca2460f4 1-71
+governance/plans/wave-secdev/RECEIPTS.md
+  s_60a20469ef4369::t_6b26955ad6fba0 1-123
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  s_60a20469ef4369::t_fdcc4e234d2f0c 1-76
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_60a20469ef4369::t_a9c7ad61b400cc 1-155
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  s_60a20469ef4369::t_4a821ec0e40e6b 1-77
+governance/DASHBOARD.md
+  s_60a20469ef4369::t_25c3391f01cb43 25
+governance/graph.json
+  s_60a20469ef4369::t_1b0f5deab6d6d0 4126-4229,19207-19458
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f69cf7ae40d483f79fce02a027affe4ce67fe2f4",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

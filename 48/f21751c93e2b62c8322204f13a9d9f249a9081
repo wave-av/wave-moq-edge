@@ -1,0 +1,28 @@
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_1aa9fd3d65ed69 99-116
+  s_d9915bbafa9657::t_4c58f475f6d755 47-49
+hooks/tests/wrangler-deploy-gate-xargs.test.sh
+  s_d9915bbafa9657::t_55ef6deff3b504 97-107,111-125
+  s_d9915bbafa9657::t_55bde780277c3c 108-110
+hooks/hooklib/wrangler-deploy-patterns.sh
+  s_d9915bbafa9657::t_d54d9c5ef8d0c2 208-228
+  s_d9915bbafa9657::t_28cf9bafe887bc 197
+  s_d9915bbafa9657::t_a519fe94b70db9 246
+  s_d9915bbafa9657::t_1eb58add18fa05 229-241,243,245
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "48f21751c93e2b62c8322204f13a9d9f249a9081",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

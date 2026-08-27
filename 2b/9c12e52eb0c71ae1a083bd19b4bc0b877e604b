@@ -1,0 +1,26 @@
+governance/test/intent-ledger-sweep-voice.test.mjs
+  s_37d3f61160b2dd::t_28a83b2e724c2d 88-96,106-107
+  s_37d3f61160b2dd::t_d7ff1d2b5411d2 81-87,97-105,108-126,128-133
+  s_37d3f61160b2dd::t_8c54703df0efb8 127
+governance/bin/intent-ledger.mjs
+  s_37d3f61160b2dd::t_6a4ca2bd7f3675 54
+  s_37d3f61160b2dd::t_03573c89842cec 222-224,229-232,238-239,241-242
+governance/lib/ledger-sweep.mjs
+  s_37d3f61160b2dd::t_63b1bdc6cc8c4e 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2b9c12e52eb0c71ae1a083bd19b4bc0b877e604b",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

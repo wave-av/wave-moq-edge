@@ -1,0 +1,23 @@
+governance/bin/enforcement-tables.mjs
+  s_bb427c936df473::t_1778c7b8371a0e 145-157
+rules/agreement-across-methods-is-worthless-when-they-share-an-input.md
+  s_bb427c936df473::t_3e629876372e04 60
+governance/ENFORCEMENT-COVERAGE.md
+  s_bb427c936df473::t_f914e101d36e9a 9,12,14,456
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c9affdbd2b1d1d3a895b69751b8736a285f376dd",
+  "prompts": {},
+  "sessions": {
+    "s_bb427c936df473": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7b43792-3f0b-445c-9602-06c4ace7ee1e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

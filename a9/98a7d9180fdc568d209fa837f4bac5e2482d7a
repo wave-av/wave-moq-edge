@@ -1,0 +1,66 @@
+governance/test/release-containment.test.mjs
+  s_f3374ecb835c4c::t_88ed9e4d76ba57 251-319
+  s_f3374ecb835c4c::t_3d212258344226 19
+settings/settings.base.json
+  s_f3374ecb835c4c::t_43e7fe16ae0b14 492
+hooks/tests/hookcli-sealed.test.sh
+  s_f3374ecb835c4c::t_a5ad07ca885ae5 1-89,95,106,117-134
+  s_f3374ecb835c4c::t_e72bead4080039 90-94,96-105,107-116
+hookcli/tests/settings-shard.sh
+  s_f3374ecb835c4c::t_2b314b80677e75 20-26,31,33
+governance/lib/release-containment.mjs
+  s_f3374ecb835c4c::t_baba7eab119b50 148-150
+  s_f3374ecb835c4c::t_438399dfd535df 38-66
+  s_f3374ecb835c4c::t_6131852ac11b32 130-135
+settings/hooks.d/hookcli.json
+  s_f3374ecb835c4c::t_6542fd836f98ae 13,25,36,47
+hooks/hookcli.sh
+  s_f3374ecb835c4c::t_fc77342717252d 1-69
+hooks/bin/gen-manifest.mjs
+  s_f3374ecb835c4c::t_c7a081acb0f7f0 25
+  s_f3374ecb835c4c::t_a314d028fb7a9a 114-122
+  s_f3374ecb835c4c::t_b2d40d9bfeeeec 41-58
+hookcli/tests/enforcement-clone.sh
+  s_f3374ecb835c4c::t_5c99790b931ea0 43-54,62-69,71-72
+hooks/manifest.json
+  s_f3374ecb835c4c::t_3b6612f8848d02 534-537,540-541,545-562,568-573,578,1687-1690
+  s_f3374ecb835c4c::t_547be32d496b0d 531-533,538-539,542-544,563-567,574-577,579
+hookcli/bin/hookcli-settings-gen.mjs
+  s_f3374ecb835c4c::t_fd1416a8ad1317 64-71,73-87
+governance/ENFORCEMENT-COVERAGE.md
+  s_f3374ecb835c4c::t_bc762503a0b17a 436
+governance/DASHBOARD.md
+  s_f3374ecb835c4c::t_b9bfd269ed23d9 25
+governance/bin/hook-resolution-check.mjs
+  s_672079ccfe8ce6::t_ed52f3eb091b3e 51,121-123,283,285-291,309,320,333,335-336
+governance/code-index/CATALOG.md
+  s_f3374ecb835c4c::t_ae7891ee8daf44 5,1593,1597,1599-1602,1605,1609-1611,1613-1614,3918-3921,3924
+governance/code-index/index.json
+  s_f3374ecb835c4c::t_0d3a2139d6ede7 10,12-13,14347-14348,14391-14392,14413-14414,14418-14439,14446-14447,14479-14480,14523-14524,14534-14535,14545-14546,14567-14568,14578-14579,33949-33950,33954-33964,33971-33974,33982-33983,34015-34016
+governance/graph.json
+  s_f3374ecb835c4c::t_cd02efdfd62022 4916-4923,20122-20127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "a998a7d9180fdc568d209fa837f4bac5e2482d7a",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_f3374ecb835c4c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3c78cc41-af2a-4425-ad7a-dc11db67dd3e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

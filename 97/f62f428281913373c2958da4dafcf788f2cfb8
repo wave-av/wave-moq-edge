@@ -1,0 +1,43 @@
+governance/lib/launchd-cron-parity-plan.mjs
+  s_941b8f0612ec3e::t_4ad8e973428cfb 96-109
+  s_941b8f0612ec3e::t_43c373879e454d 153
+  s_75d6e7d8af4a2d::t_bdf2b1f8902e34 53,156,180-182,265,268
+governance/test/cron-failover-witness.test.mjs
+  s_941b8f0612ec3e::t_90caf4800f0c92 252-274
+governance/bin/launchd-cron-parity-lint.mjs
+  s_7dac6f9260837f::t_5063f5a6cc6828 150-153,255-256,258,268-275
+governance/lib/cron-failover-jobmatch.mjs
+  s_941b8f0612ec3e::t_aab8d2fe54c404 100,103-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "97f62f428281913373c2958da4dafcf788f2cfb8",
+  "prompts": {},
+  "sessions": {
+    "s_75d6e7d8af4a2d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a9d8980b7266445ad",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7dac6f9260837f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac6a6a49961aa2bf5",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

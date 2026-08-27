@@ -1,0 +1,26 @@
+scripts/check-spend-authority.sh
+  s_cf3356a24071e8::t_0f7ec30b442a72 39-58,62-73,75-85,88-89,97,103
+  s_cf3356a24071e8::t_8a665b868f25cf 59-61
+  s_cf3356a24071e8::t_2a480357cfeac6 91-94
+  s_cf3356a24071e8::t_e084e68ba6f2ae 95-96,98-102
+  s_cf3356a24071e8::t_6b2dae2b70d3e2 106-108
+scripts/check-spend-authority.test.mjs
+  s_cf3356a24071e8::t_f26d452ae678ed 18
+  s_cf3356a24071e8::t_6cfd0f2e90b35d 1-17,19-159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a297dc9de2449c23da67530022f39f100b32083a",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+governance/plans/ci-stack-integration/NORTH-STAR.md
+  s_8f2a49f4d6f32f::t_6e7e405bfb1e3d 76-78
+  s_8f2a49f4d6f32f::t_23c8266f80d1fe 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8dd75ca592a311d555cc5963efb672a55cca11c5",
+  "prompts": {},
+  "sessions": {
+    "s_8f2a49f4d6f32f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed12a046ffe1RGZHzniPGFakp",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+governance/test/main-protection-audit-pagination.test.mjs
+  s_9bb1b1d1d998d4::t_39078b184c19c8 1-75
+governance/bin/main-protection-audit.mjs
+  s_9bb1b1d1d998d4::t_8315a53606bbfd 59
+  s_9bb1b1d1d998d4::t_35ba8bebe8951e 22-26,28,33-58,60-63,65-72
+  s_9bb1b1d1d998d4::t_1f0a9731ea9e8b 64
+  s_9bb1b1d1d998d4::t_3d97da102238fb 73
+  s_06cce2874af707::t_4d8f160adbdfa6 75,80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "93aca98c33bea2d9a9975255e23213fc5e21a829",
+  "prompts": {},
+  "sessions": {
+    "s_06cce2874af707": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab7f247e55a7a316e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

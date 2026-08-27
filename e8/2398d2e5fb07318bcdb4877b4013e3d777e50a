@@ -1,0 +1,69 @@
+governance/plans/own-model-program/creative/visionary.md
+  s_f39c4def036e39::t_d90a5275c67cf2 1-90
+governance/plans/own-model-program/creative/wildcard.md
+  s_329238ae9095fb::t_8ae6b0c154f409 1-87
+governance/plans/own-model-program/creative/pragmatist.md
+  s_e5d0b571db54ab::t_42b357d0330460 1-101
+governance/plans/own-model-program/creative/economist.md
+  s_5607ebe7546d42::t_9d9561eaab1567 1-347
+governance/plans/own-model-program/creative/redteam.md
+  s_a6a0e87bba90be::t_6d849d967448d3 1-108
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_0950db28a6ae27::t_6c0b2b49273e38 33-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e82398d2e5fb07318bcdb4877b4013e3d777e50a",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_329238ae9095fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed7e450ffe9cQXoL7MirSTOY",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_5607ebe7546d42": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed2672bffemfI0N6iHqNG3t7",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a6a0e87bba90be": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed7b8aaffekW6NVdsnuLVw7L",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e5d0b571db54ab": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed82a4effeN6chlSp2981xFt",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f39c4def036e39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffed80463ffewFJrOp8HGEX9Mc",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

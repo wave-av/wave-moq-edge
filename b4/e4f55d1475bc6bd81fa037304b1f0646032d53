@@ -1,0 +1,48 @@
+governance/lib/public-release-gate.mjs
+  s_63c6ee080d73c3::t_2aa42e15b69150 141-181
+  s_6f6453b23e3805::t_0fb45325b84ddc 140
+governance/test/public-release-gate-audit.test.mjs
+  s_63c6ee080d73c3::t_c4307f92a59723 17
+  s_63c6ee080d73c3::t_2e3797e653bc83 401-451
+governance/test/vendored-gate-probe.test.mjs
+  s_63c6ee080d73c3::t_8fe8e37664937e 1-82
+governance/lib/vendored-gate-probe.mjs
+  s_63c6ee080d73c3::t_a6b38ea19b1dfe 1-55
+  s_63c6ee080d73c3::t_d29af9541401f4 72-80
+  s_63c6ee080d73c3::t_65c952a2f22eb4 56-71,81-116
+governance/bin/public-release-gate-audit.mjs
+  s_63c6ee080d73c3::t_79ff23477ce7fe 51
+  s_63c6ee080d73c3::t_97ad311d18e251 49
+  s_63c6ee080d73c3::t_d537aa9b656bd0 354-356
+  s_63c6ee080d73c3::t_26e8f0058d2aac 273-274,277-281
+  s_63c6ee080d73c3::t_9bd8df0ef836ac 50
+  s_63c6ee080d73c3::t_45307de45f3f15 357
+  s_63c6ee080d73c3::t_6bb45e45b30461 166,168-169,174-175,178-181
+  s_63c6ee080d73c3::t_ddbd06ad4f4cb0 167,182-183
+  s_63c6ee080d73c3::t_579e013a773d3e 275-276,282
+  s_63c6ee080d73c3::t_4eb0a8ccbd3414 170-173,176-177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b4e4f55d1475bc6bd81fa037304b1f0646032d53",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

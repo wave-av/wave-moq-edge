@@ -1,0 +1,19 @@
+governance/plans/merge-path-parity/E3-PATH-SHARE.md
+  s_124891ed63801b::t_39f876c739e249 10,32,49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d9313a8685c7f96381d88d60464cfaaf1ccaf45f",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

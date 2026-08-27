@@ -1,0 +1,47 @@
+.github/workflows/wave-cost-ledger-coverage-diff.yml
+  s_2e30bff6169f7a::t_f3eacdb8e8d2bb 51-66,68-82
+governance/bin/wave-cost-ledger-coverage-diff.mjs
+  s_2e30bff6169f7a::t_a9d33d7ae47fd5 68-72,77,84-87,91-94,129-138,193-197,199-200,202-207
+governance/bin/wave-cost-ledger-registry-sync.mjs
+  s_2e30bff6169f7a::t_a68426ca7149c9 24,35-39
+governance/lib/wave-cost-ledger-classify.mjs
+  s_a293da4db5caf2::t_4461a3f147693e 11-13,23-30,32-56,86-87,100-113,116-119
+governance/lib/wave-cost-ledger-doppler.mjs
+  s_2e30bff6169f7a::t_8f878c017da395 43-53,68-69,74-85,158-172
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_432cc2e63ae803 20-28,38-40
+governance/test/wave-cost-ledger-classify.test.mjs
+  s_2e30bff6169f7a::t_2acfa7314a929c 6-8,11,16-18,57,59-60,67-78,104-117
+governance/test/wave-cost-ledger-coverage-diff.test.mjs
+  s_2e30bff6169f7a::t_7fdc7b9c01b972 56-75,151,167
+governance/test/wave-cost-ledger-doppler.test.mjs
+  s_2e30bff6169f7a::t_5ea4dd2f86457d 4-5,31-39,95-132
+governance/test/wave-cost-ledger-gaps.test.mjs
+  s_2e30bff6169f7a::t_375e91bad050a0 8,12,25,30-31,34,60
+governance/test/wave-cost-ledger-registry-sync.test.mjs
+  s_2e30bff6169f7a::t_94e982068f0565 21,23-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d3fb02b0d30620c52161e1cb0daaccb2fcf00796",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

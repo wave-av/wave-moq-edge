@@ -1,0 +1,37 @@
+governance/plans/wave-golive/E5-SAFETY.md
+  s_d9915bbafa9657::t_7d28a0bf336b97 4-5
+governance/plans/wave-golive/E1-OBSERVE.md
+  s_d9915bbafa9657::t_25a4afdde62f9e 4-5
+governance/plans/wave-golive/E2-PRODUCT.md
+  s_d9915bbafa9657::t_778ac5b9a51ddb 4-5
+governance/plans/wave-golive/E4-BILLING.md
+  s_d9915bbafa9657::t_6ca9991de63c85 4-5
+governance/plans/wave-golive/E6-REALNESS.md
+  s_d9915bbafa9657::t_e9e69a5c4e4fab 4-5
+governance/plans/wave-golive/E3-FUNNEL.md
+  s_d9915bbafa9657::t_2e1c82cf9e7347 4-5
+governance/plans/wave-golive/E7-STATUS.md
+  s_d9915bbafa9657::t_93bead7e9818fb 4-5
+governance/plans/wave-golive/E9-SKILLS.md
+  s_d9915bbafa9657::t_9c7332723a07e0 4-5
+governance/plans/wave-golive/NORTH-STAR.md
+  s_d9915bbafa9657::t_b645016f808fc7 4-5
+governance/plans/wave-golive/E8-TIER0.md
+  s_d9915bbafa9657::t_063e8eb72d8e2c 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fc70f8a5ff825cbadc9b06c9ab201a223e5c1147",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+hookcli/track4b.json
+  s_60a20469ef4369::t_45a63a6f716f53 14-29
+hookcli/tests/fixtures/agg-plain.sh
+  s_60a20469ef4369::t_8f48a34cb9b884 1-5
+hookcli/lib/session-exec.sh
+  s_60a20469ef4369::t_12dab65fe22dad 97-98,102-111,113,116,131-136,138-142,147-160
+  s_60a20469ef4369::t_9aa5f6b6f4d9c6 161
+hookcli/tests/exec-env.sh
+  s_60a20469ef4369::t_a24a58bc5e75fe 31-33,39-42
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_a4c19be356c89e 69-75
+  s_60a20469ef4369::t_052caa97ffaf22 81-85
+hookcli/tests/aggregate-sessionstart.sh
+  s_60a20469ef4369::t_417cdd3863f2c8 1-68
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_c29a8d5827c7aa 292-300,302
+  s_60a20469ef4369::t_f3794947f162d3 341-345,347-355,363-364
+  s_60a20469ef4369::t_a823340d144f65 365
+hookcli/tests/shadow-sessionstart.sh
+  s_60a20469ef4369::t_278b310faf5b72 8-13,17
+  s_60a20469ef4369::t_476551d96dd8df 72-81,83-88,95-99,102-103
+hookcli/tests/fixtures/agg-json.sh
+  s_60a20469ef4369::t_602dfadd628d52 1-6
+governance/ENFORCEMENT-COVERAGE.md
+  s_db6b6bae723b17::t_c37ad0172fdd02 400,413,462
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "7a9cfc435dde06036f258ddc7f04df5e0c4f5a79",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_db6b6bae723b17": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af8740f8d01765b83",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

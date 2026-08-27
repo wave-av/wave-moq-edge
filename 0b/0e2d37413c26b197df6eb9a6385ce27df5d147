@@ -1,0 +1,23 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_6ba73ee90b074d 102-106
+hookcli/tests/require-graduation-report.sh
+  s_60a20469ef4369::t_5c9cb05483e834 1-122
+hookcli/bin/require-graduation-report.mjs
+  s_60a20469ef4369::t_2feca435392e3e 1-131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0b0e2d37413c26b197df6eb9a6385ce27df5d147",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

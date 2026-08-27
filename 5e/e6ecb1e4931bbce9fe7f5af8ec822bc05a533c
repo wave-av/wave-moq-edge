@@ -1,0 +1,23 @@
+bin/field-signals.mjs
+  s_7ddeb5d251570f::t_afee19e542c4f9 1-69,75,77,82,84-112
+  s_7ddeb5d251570f::t_75a3eadf9baa49 70-74,76,78-81,83
+governance/test/field-signals.test.mjs
+  s_7ddeb5d251570f::t_606628fde2dde7 50,52-56
+  s_7ddeb5d251570f::t_c8132455a04b8c 1-49,51,57-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5ee6ecb1e4931bbce9fe7f5af8ec822bc05a533c",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+governance/lib/release-freshness.mjs
+  s_15127d80763110::t_57dd2a8dfde6cc 134-139,141-143
+governance/bin/hook-release.mjs
+  s_15127d80763110::t_5edb41d7e1ff91 345-346
+governance/test/release-status.test.mjs
+  s_15127d80763110::t_750c2146e4a985 95,112-123
+  s_15127d80763110::t_81af9c9845bbbe 124-125
+  s_15127d80763110::t_34aad20615a1bf 130
+hooks/tests/hook-release-status-exit.test.sh
+  s_15127d80763110::t_6a667b8a80e0c5 156-180
+  s_15127d80763110::t_58ed51ae7e1854 44,46-51
+governance/lib/release-status.mjs
+  s_15127d80763110::t_1fbcb3b7d277f5 22-27
+  s_15127d80763110::t_76959036afc1c2 59-64,67-68
+  s_15127d80763110::t_4ba7cf8247f0db 76,84,86-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e239a8d74728f18dac5bcd22a144fce62096318c",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

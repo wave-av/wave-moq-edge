@@ -1,0 +1,19 @@
+tools/claude-dispatch.test.ts
+  s_9e432dc94c73ad::t_86929e0e7137cb 264-282
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9a0ac5c720566d5fbe23867533f72b3e3d2c4178",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

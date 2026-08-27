@@ -1,0 +1,29 @@
+bin/trust-gates.mjs
+  s_9041cf1cf1ccad::t_435025e0d402ca 24
+  s_9041cf1cf1ccad::t_3ceafdb15c3a4e 203,210,216
+bin/cost-ceiling.test.mjs
+  s_9041cf1cf1ccad::t_af299d3a43bd25 219
+bin/trust-ladder.mjs
+  s_9041cf1cf1ccad::t_71f09a267cfc32 23
+  s_9041cf1cf1ccad::t_5949edb07c1357 191,198,204
+  s_9041cf1cf1ccad::t_7cba624ee4ef9a 229
+bin/cost-ceiling.mjs
+  s_9041cf1cf1ccad::t_3ceafdb15c3a4e 218,226,232
+  s_9041cf1cf1ccad::t_435025e0d402ca 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6dda1ec0256cc479d845a22fa2e89d19415179a5",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

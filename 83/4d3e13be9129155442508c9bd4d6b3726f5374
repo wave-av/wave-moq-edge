@@ -1,0 +1,21 @@
+governance/plans/agent-tool-access/E6-MODEL-TIERING.md
+  s_d9c6b8d7b42c33::t_b29ddf0b503570 1-45
+governance/plans/agent-tool-access/NORTH-STAR.md
+  s_d9c6b8d7b42c33::t_b1c3c1263d8e1a 101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "834d3e13be9129155442508c9bd4d6b3726f5374",
+  "prompts": {},
+  "sessions": {
+    "s_d9c6b8d7b42c33": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef09a775ffeAeKVdwXbAAKmYI",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

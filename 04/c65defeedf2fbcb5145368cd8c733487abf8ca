@@ -1,0 +1,23 @@
+governance/plans/post-merge-integrity/E1-MEASURE.md
+  s_02abc74f4971c7::t_815e9569907157 1-134
+governance/DASHBOARD.md
+  s_02abc74f4971c7::t_aa9dbf8f66e4f0 25
+governance/graph.json
+  s_02abc74f4971c7::t_b4f4ce177e942b 4465-4477,21985-21990
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "04c65defeedf2fbcb5145368cd8c733487abf8ca",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

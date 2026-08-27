@@ -1,0 +1,21 @@
+runbooks/library/ffmpeg-major-bump.md
+  s_d9915bbafa9657::t_ba66077340667e 19-20
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_d9915bbafa9657::t_0d60ac5cb35d00 17-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "941a98204113a8a9cb0afdc9207e016f0adfd181",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

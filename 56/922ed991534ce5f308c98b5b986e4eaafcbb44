@@ -1,0 +1,28 @@
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_a096fd28304f92 126-135
+  s_d9915bbafa9657::t_adfe85db268f32 4-6
+  s_d9915bbafa9657::t_f27f527b0a9cef 33-77
+  s_d9915bbafa9657::t_d03c812261fd2f 99
+governance/plans/agentic-wave/E1-AGENT-TAXONOMY.md
+  s_d9915bbafa9657::t_2ccf8e216892ab 4-8
+  s_d9915bbafa9657::t_68614163cfe96f 64
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_d9915bbafa9657::t_2f07a9d0b42750 4-10
+  s_d9915bbafa9657::t_05eb0c53dcc261 54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "56922ed991534ce5f308c98b5b986e4eaafcbb44",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

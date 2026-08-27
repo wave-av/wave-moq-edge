@@ -1,0 +1,29 @@
+governance/sources/lawbook.json
+  s_e2e3e43d0638c5::t_ff04359f37af6b 19-20
+governance/graph.json
+  s_8cb58d275f7834::t_0b42a8e61a617c 2069-2075,3644-3656,12282-12329,15672-15719
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "8e1b3a55c6814e3d49338af7efba7d0837f954b4",
+  "prompts": {},
+  "sessions": {
+    "s_8cb58d275f7834": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-afd2fec43c71e891d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

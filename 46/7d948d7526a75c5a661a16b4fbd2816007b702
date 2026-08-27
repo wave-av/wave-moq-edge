@@ -1,0 +1,26 @@
+hookcli/lib/t3-credential.mjs
+  s_be40541f6fd98b::t_159e79f0cbdfd5 23
+  s_be40541f6fd98b::t_e04587d017c2d9 53-61,63-72
+  s_be40541f6fd98b::t_8fd966dbbd5fc9 37-46
+  s_be40541f6fd98b::t_b9965eb534be88 90-91
+hookcli/tests/credential-sink-and-pipe.sh
+  s_be40541f6fd98b::t_bed9a727b8ba57 1-72
+hookcli/tests/lib/modules.sh
+  s_be40541f6fd98b::t_9c5014c984c9a6 309-315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "467d948d7526a75c5a661a16b4fbd2816007b702",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

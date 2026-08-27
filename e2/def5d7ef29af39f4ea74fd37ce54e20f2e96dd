@@ -1,0 +1,19 @@
+governance/bin/skill-conformance-lint.mjs
+  s_e077f59d8037ec::t_aa4134aa3ace5b 1-155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e2def5d7ef29af39f4ea74fd37ce54e20f2e96dd",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/agent-mail-plane/RECEIPTS.md
+  s_e23006ff5125ac::t_d631882fa46c4c 432-457
+governance/plans/agent-mail-plane/EMAIL-ECONOMY-VISION.md
+  s_e23006ff5125ac::t_782d1aca8563db 104-129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5b5a72af8c2826b099773814b1bbd5306072c0ea",
+  "prompts": {},
+  "sessions": {
+    "s_e23006ff5125ac": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff28d5f6cffezadP4FfANsonXx",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

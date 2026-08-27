@@ -1,0 +1,26 @@
+hooks/tests/durable-orphan-recovery.test.sh
+  s_96280c922a9418::t_7d8f21b1283b89 95-103,105
+  s_96280c922a9418::t_3d5613766343b6 1-94,104,106-124
+hooks/session-econ-meter.sh
+  s_96280c922a9418::t_f4a66eb902de86 43-46,48
+scripts/state-root.sh
+  s_96280c922a9418::t_7f1f21ce3efec5 119-126,128-161
+hooks/manifest.json
+  s_96280c922a9418::t_a3ffd8b78f32da 1220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "8d522cbaa0880de2fa28b3d43f4083b5003832a9",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+hooks/tests/wrangler-deploy-gate-ifs.test.sh
+  s_aa5feb34e0e033::t_1e7cb0081e99a3 202-204,209-241
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ac8ba20cfd149b71bcd54b1df8afcca26a5b637d",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

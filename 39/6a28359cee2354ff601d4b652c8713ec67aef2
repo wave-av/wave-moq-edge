@@ -1,0 +1,37 @@
+.github/workflows/reviewer-alarm.yml
+  s_941b8f0612ec3e::t_1e907208585842 69-72,75-82
+  s_941b8f0612ec3e::t_1557ad60935c3c 1-68,73-74,83-95
+governance/test/reviewer-alarm.test.mjs
+  s_941b8f0612ec3e::t_c77488933cfd3d 150-152,157-174
+  s_941b8f0612ec3e::t_2830e3001b9014 153-156
+  s_941b8f0612ec3e::t_fae34d7faa2b47 1-37,41,43-149,175
+  s_941b8f0612ec3e::t_43d9729a25d8ba 38-40,42
+governance/plans/reviewer-fleet/E5-MONITORING.md
+  s_941b8f0612ec3e::t_d527a6c6b2f1f3 20-25,37-59
+  s_941b8f0612ec3e::t_af3a0d7e6397eb 26-36
+  s_941b8f0612ec3e::t_d4c00df6b2bf42 63-67
+  s_941b8f0612ec3e::t_f394bef0db3887 4
+governance/lib/reviewer-alarm.mjs
+  s_941b8f0612ec3e::t_c02d688c59071e 1-63,65-236
+  s_941b8f0612ec3e::t_a5f36b745afdc9 64
+governance/bin/reviewer-alarm.mjs
+  s_941b8f0612ec3e::t_920eec8c71f37c 1-256
+governance/graph.json
+  s_941b8f0612ec3e::t_04d62f530cff71 8651,34136-34141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "396a28359cee2354ff601d4b652c8713ec67aef2",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

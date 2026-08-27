@@ -1,0 +1,26 @@
+runbooks/lib/fingerprint.mjs
+  s_a293da4db5caf2::t_6feb72c6d1984c 84-86
+  s_a293da4db5caf2::t_16036d0eb8843d 42-55
+runbooks/test/fingerprint.test.mjs
+  s_a293da4db5caf2::t_2eb626d7b17760 48-55
+  s_a293da4db5caf2::t_0a1dd162fabc14 139-143,172
+  s_a293da4db5caf2::t_de4a448326efc2 169-171
+  s_a293da4db5caf2::t_2c106e06a0fb4e 173
+  s_a293da4db5caf2::t_e26e90e2d66c14 155-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "dd4d54bf270ceaa6c9e24e64adefbb1cc3fa9cec",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

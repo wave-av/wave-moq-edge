@@ -1,0 +1,22 @@
+runbooks/test/observe.test.mjs
+  s_a293da4db5caf2::t_47ef4b9ff058b8 148-167
+runbooks/lib/store.mjs
+  s_a293da4db5caf2::t_384fda1a183aa8 11
+  s_a293da4db5caf2::t_4296b82d9308f1 15-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a1c7bd551cd80d9dc1bc77387361a734b929f451",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

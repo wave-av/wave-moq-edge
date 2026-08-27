@@ -1,0 +1,23 @@
+scripts/audit-identity-policy.sh
+  s_364605915bb7ec::t_01d956e9ad2d4b 53-70,77-88,92
+scripts/config-scanners.test.mjs
+  s_364605915bb7ec::t_551cf34f1ca795 132-137
+scripts/audit-identity-policy.test.mjs
+  s_364605915bb7ec::t_1bcf7ef9812944 1-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "fb8a1a525de9664e14af35b4bdbcf65b071ddc7f",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.github/.token-budget-baseline
+  s_7326a769c7efe8::t_1a6cee62868c64 127
+  s_7326a769c7efe8::t_ea9edbc258a2bf 72-73
+.github/workflows/governance.yml
+  s_7326a769c7efe8::t_f2eb4c529b81d6 153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dedc146b5d471660c3cfb3f192b7fc0ccff3f1fd",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

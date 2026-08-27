@@ -1,0 +1,43 @@
+governance/lib/platform-status-classify.mjs
+  s_941b8f0612ec3e::t_b4ff4a8d87877e 36-42
+  s_941b8f0612ec3e::t_54261f24824fda 119-126,132-133
+  s_941b8f0612ec3e::t_beb0fcbd92cd79 326-331
+  s_941b8f0612ec3e::t_d92e1e2f2ceecc 336-341,343-345
+  s_941b8f0612ec3e::t_55b3907a3b2680 261-272,274-275
+  s_941b8f0612ec3e::t_cc77e87f8f0883 310-316,319
+  s_941b8f0612ec3e::t_1733fffc4ec1ab 109-115,118,127,131,134
+  s_941b8f0612ec3e::t_0899ea6c63fa43 322-325
+  s_941b8f0612ec3e::t_8b2b47e0da6522 116-117,128-130
+  s_941b8f0612ec3e::t_783b787ee5ba49 140,349-350
+governance/lib/platform-status-probes.mjs
+  s_941b8f0612ec3e::t_7fe9480eab4518 175
+  s_941b8f0612ec3e::t_e9ea0dd833a2cc 160-165,167
+governance/lib/drill-fixtures-platform-status.mjs
+  s_941b8f0612ec3e::t_580f19d00db448 214-257
+governance/test/platform-status.test.mjs
+  s_22c99c27ef1832::t_2fe641db9fed27 418-530
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ca92aae05d89840b9e77d1d6b7ab014dc8f953e0",
+  "prompts": {},
+  "sessions": {
+    "s_22c99c27ef1832": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a702ad6243e703ad8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.github/workflows/chassis-gate.yml
+  s_19c8e603d8990b::t_378080bc980883 4-12
+  s_19c8e603d8990b::t_cf373ffdbc6624 27-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "8273d3c94aa390e4635c2a986b6f6961cacf9fb3",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

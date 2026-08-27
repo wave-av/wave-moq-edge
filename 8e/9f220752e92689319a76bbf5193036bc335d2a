@@ -1,0 +1,47 @@
+governance/plans/wave-credential-custody/RECEIPTS.md
+  s_7c7e203d305c60::t_3c1a975a0c2a08 1-79
+governance/plans/wave-credential-custody/E0-CUSTODY-CENSUS.md
+  s_7c7e203d305c60::t_56b8f2914bb7a7 1-177
+governance/plans/wave-credential-custody/E2-DEPLOY-AUTHORITY.md
+  s_7c7e203d305c60::t_024924ebb34f33 1-175
+governance/plans/wave-credential-custody/E3-HIGH-FANOUT-ROTATION.md
+  s_7c7e203d305c60::t_2d5674a86156b4 1-186
+governance/plans/wave-credential-custody/E1-PROPAGATION-PROOF.md
+  s_7c7e203d305c60::t_d08227872586b8 1-220
+governance/plans/wave-credential-custody/E5-CONTINUOUS-PROOF.md
+  s_7c7e203d305c60::t_3f6f00dba4b326 1-165
+governance/plans/wave-credential-custody/E4-ENVELOPE-CUSTODY.md
+  s_7c7e203d305c60::t_3a29d8e0b984bd 1-235
+governance/plans/wave-credential-custody/NORTH-STAR.md
+  s_7c7e203d305c60::t_997426f9af9579 156
+  s_7c7e203d305c60::t_dc89cbf926fab6 158
+  s_7c7e203d305c60::t_160ef4bebbf2e9 1-155,157,159-244
+governance/DASHBOARD.md
+  s_06884a56c888be::t_c3d5b9e886b3a9 25
+governance/graph.json
+  s_06884a56c888be::t_df753c7c841140 6428-6518,27808-28335
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8e9f220752e92689319a76bbf5193036bc335d2a",
+  "prompts": {},
+  "sessions": {
+    "s_06884a56c888be": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a56f8fd7b7b8cfe68",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

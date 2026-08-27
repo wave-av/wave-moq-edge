@@ -1,0 +1,28 @@
+governance/bin/cron-failover.mjs
+  s_941b8f0612ec3e::t_98494ab7016198 5
+  s_941b8f0612ec3e::t_57ecdcfb78f3a9 19-45
+  s_941b8f0612ec3e::t_b83d5996d1abdb 119-216,225-238
+  s_941b8f0612ec3e::t_f85ebf754719ba 217-224
+  s_941b8f0612ec3e::t_18d012f6501a41 243,247
+  s_941b8f0612ec3e::t_52b9d21a34b5de 268-271,274-292,294-295,299,301-305,308,310,312,316
+governance/test/cron-failover.test.mjs
+  s_941b8f0612ec3e::t_fff04526608b12 249-288,291,293-454
+  s_941b8f0612ec3e::t_8a03d971345903 289-290,292
+  s_941b8f0612ec3e::t_ab85fa46fb2e07 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "59176bfd74438f5f04eb12a55699784dd89f791a",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

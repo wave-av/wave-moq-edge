@@ -1,0 +1,39 @@
+governance/bin/enforcement-tables.mjs
+  s_941b8f0612ec3e::t_612cef2daa7577 65-68
+governance/ENFORCEMENT-COVERAGE.md
+  s_abd85a8b834c55::t_17b7c001c48348 9-10,467
+rules/hold-under-platform-degradation.md
+  s_b74c2f1736fd36::t_34b8d71bfe832b 52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e90d2a03849dd28826ad62f4cf8671551b2d86d",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_abd85a8b834c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a01cfff60873042f7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

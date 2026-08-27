@@ -1,0 +1,30 @@
+governance/graph.json
+  h_67a1b847dc59d6 10724-10827,40051-40434
+governance/plans/wave-private-network/E0-CENSUS.md
+  h_67a1b847dc59d6 1-162
+governance/plans/wave-private-network/E1-MEASURE.md
+  h_67a1b847dc59d6 1-200
+governance/plans/wave-private-network/E2-PRIVATE-ORIGIN.md
+  h_67a1b847dc59d6 1-148
+governance/plans/wave-private-network/E3-FLY-INGRESS.md
+  h_67a1b847dc59d6 1-129
+governance/plans/wave-private-network/E4-MESH-REACH.md
+  h_67a1b847dc59d6 1-165
+governance/plans/wave-private-network/E5-PROD-CROSSING.md
+  h_67a1b847dc59d6 1-129
+governance/plans/wave-private-network/E6-CONTINUOUS-PROOF.md
+  h_67a1b847dc59d6 1-136
+governance/plans/wave-private-network/NORTH-STAR.md
+  h_67a1b847dc59d6 1-222
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a17721b9b23cd3baaf8100e7bd4d90b86df94f4d",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

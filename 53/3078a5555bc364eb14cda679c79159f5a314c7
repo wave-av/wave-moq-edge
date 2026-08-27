@@ -1,0 +1,36 @@
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_e5dbd2ea4dd536 59-61
+  s_60a20469ef4369::t_066c712b1caec4 62
+  s_60a20469ef4369::t_0180233acfe13a 50-54
+hookcli/bin/require-graduation-report.mjs
+  s_60a20469ef4369::t_c6eec71d95ac2a 32-39
+  s_60a20469ef4369::t_dfa21d14d47bae 68
+  s_60a20469ef4369::t_23160a83f2c4d0 94-97,99
+  s_60a20469ef4369::t_a6c19f7939733a 112-113,122-130,134-135,148-149
+  s_60a20469ef4369::t_5cb239d53938bc 6-8,10-12
+hookcli/tests/require-graduation-report.sh
+  s_60a20469ef4369::t_99c60db692796a 28,30
+  s_60a20469ef4369::t_ef660cc0c1f5b1 90
+  s_60a20469ef4369::t_d233d9cf497331 39,41-42
+  s_60a20469ef4369::t_a5f510bd4f5d81 108
+  s_60a20469ef4369::t_1fc9fdefeed391 118
+  s_60a20469ef4369::t_57353620bdd87c 126-141,143-145
+  s_60a20469ef4369::t_e17d6067db21e2 142
+  s_60a20469ef4369::t_3ed5916417a397 13-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "533078a5555bc364eb14cda679c79159f5a314c7",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

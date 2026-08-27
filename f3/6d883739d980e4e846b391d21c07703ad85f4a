@@ -1,0 +1,49 @@
+governance/lib/drill-hook-harness.mjs
+  s_85113a1cef9a84::t_6324bdaba14d3d 29-30
+  s_85113a1cef9a84::t_a6e380d39fd25d 47-49
+  s_85113a1cef9a84::t_90194ddffe0f63 33-37
+  s_85113a1cef9a84::t_58790f42229708 166-170
+  s_85113a1cef9a84::t_a62bae4bdab699 64
+  s_85113a1cef9a84::t_93b9d55066caad 246-247
+  s_85113a1cef9a84::t_2d1f6864187047 253-256
+  s_85113a1cef9a84::t_db0f775e12b7d5 13
+  s_85113a1cef9a84::t_96fd4cdea17440 290-291
+  s_85113a1cef9a84::t_808d791abcb58a 10-11
+  s_85113a1cef9a84::t_90c44aff4fdb1d 8-9
+  s_85113a1cef9a84::t_71808598676daf 83-84
+  s_85113a1cef9a84::t_b583231229d1e6 1-7,12,14-28,31-32,38-39,42-46,50,57-63,65-82,86-113,116-137,141-149,151-165,171-185,189-196,198-227,230-245,248-252,257-289,292-303
+  s_85113a1cef9a84::t_f75aa12498b9d3 114-115
+  s_85113a1cef9a84::t_17c2e9ce709838 138-140
+  s_85113a1cef9a84::t_8a7b3a4ac0fe0a 40-41
+  s_85113a1cef9a84::t_77131a45a9d862 228-229
+  s_85113a1cef9a84::t_ef6c6c254cb608 150
+  s_85113a1cef9a84::t_7243f755ccef46 186-188
+  s_85113a1cef9a84::t_eed3be4643232a 51-56
+  s_85113a1cef9a84::t_696c0edfc064ae 85
+  s_85113a1cef9a84::t_dc022915953edc 197
+governance/lib/drill-fixtures-ticket-hygiene-guard.mjs
+  s_85113a1cef9a84::t_b92c6ced9c5908 11-13,15-22,33,39-40,43-47,60-61,68-71,76-78,80-86,88-89,91,93,95-98,108-109,116-117,124-125,132-133,150-151,160-162,166-169,173-174,185-186,194-215,228,236-237,245-246,253-254,261-271,278,288
+  s_85113a1cef9a84::t_ec9a742c739aaf 216-222
+governance/lib/drill-fixtures-sync-freshness-gate.mjs
+  s_85113a1cef9a84::t_954a1989332597 2-4,6-15,17-26,57,59,63-71,75,120-124,128-132,136-137,152,164-166,177-178,189,191,202,212,223,234
+governance/lib/drill-fixtures-commit-identity-guard.mjs
+  s_85113a1cef9a84::t_a7eb7704c66c1e 3-5,14,18-19,29,37-38,42,46-52,64-67,70-74,76-81,83-84,97,104,110,116,126,132,138,147,157,162,172-174,180-181,185-190,200,207,213,221,227,235,241,248,256-258
+governance/lib/drill-fixtures-doppler-env-guard.mjs
+  s_85113a1cef9a84::t_2bf567f13f712d 19-20,42-43,45,58-68,89-92,96,131,140,149-150,158-159,167-168,179,186,197,205,214,222,231,242,251,253
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f36d883739d980e4e846b391d21c07703ad85f4a",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

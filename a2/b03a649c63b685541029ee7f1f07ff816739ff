@@ -1,0 +1,51 @@
+governance/gam-port-kit/manifest.json
+  s_28efdc23129d94::t_e16aa08c6bd603 34-36
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_28efdc23129d94::t_627582e5b3cfeb 78-94
+governance/lib/review-liveness-fixture.mjs
+  s_28efdc23129d94::t_c02833b3d5873d 1-98
+governance/bin/review-liveness-facts-io.mjs
+  s_28efdc23129d94::t_ff4488fd1b099b 1-104
+governance/lib/review-liveness-args.mjs
+  s_28efdc23129d94::t_747dddf5c5bea1 40
+  s_28efdc23129d94::t_dd2f6c7cb72852 55-66,71,74
+  s_28efdc23129d94::t_71277aee2eb2b9 27,30-31
+governance/test/review-liveness-fixture.test.mjs
+  s_28efdc23129d94::t_fd495df35812b3 1-173
+governance/bin/review-liveness-fixture-io.mjs
+  s_28efdc23129d94::t_b9ec3997bce7a0 64-70
+  s_28efdc23129d94::t_edfa5627de487f 1-63,71-86
+governance/bin/review-liveness.mjs
+  s_28efdc23129d94::t_78eec437fb8a38 44,47-53
+  s_28efdc23129d94::t_42b9ab5482db85 132-141
+  s_28efdc23129d94::t_53ac4896d27442 150-152
+  s_28efdc23129d94::t_e9fb1e8b14cc6f 143-149,153
+  s_28efdc23129d94::t_02b479c634f44c 186-191
+  s_28efdc23129d94::t_d87ef966c656ec 142
+governance/lib/drill-fixtures-review-liveness.mjs
+  s_28efdc23129d94::t_f8b2402a7c0355 1-114
+governance/test/review-liveness-args.test.mjs
+  s_28efdc23129d94::t_1cf738de58bafa 59-62,65
+governance/lib/drill-registry.mjs
+  s_28efdc23129d94::t_892c2e8b0798b4 119-123
+  s_28efdc23129d94::t_96897f15b8d673 140
+  s_28efdc23129d94::t_98c4b3f127f701 44
+governance/lib/drill-inline-required.mjs
+  s_28efdc23129d94::t_c9a235fda8ba4e 66-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a2b03a649c63b685541029ee7f1f07ff816739ff",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_d9915bbafa9657::t_5449716f043dac 1-18,20-43
+  s_d9915bbafa9657::t_56eacd06d7c9a7 19
+governance/plans/agentic-wave/RECEIPTS.md
+  s_d9915bbafa9657::t_71dbcd600024ec 58-60
+  s_d9915bbafa9657::t_f9b870154291f9 69-97
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_d9915bbafa9657::t_a40b6816ebc460 24-26
+  s_d9915bbafa9657::t_79d282e4abf8fa 41-102
+governance/plans/agentic-wave/E1-AGENT-TAXONOMY.md
+  s_d9915bbafa9657::t_20c4d830f64b3e 28-32,36-37
+  s_d9915bbafa9657::t_15a74e1c30d988 54-119
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_fb8036f16f72ba 49-97
+  s_d9915bbafa9657::t_f08ad805602134 19-23
+  s_d9915bbafa9657::t_2635c74dc31e63 36-41
+governance/graph.json
+  s_d9915bbafa9657::t_7ce12b60614187 2403-2415,2517,2530,16747-16770,16903-16908,16969-16974
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_d9915bbafa9657::t_98f9c988ad6fc8 20-24,32
+  s_d9915bbafa9657::t_617b73b75f061b 28-29
+  s_d9915bbafa9657::t_60e0d226da8509 47-109
+governance/plans/agentic-wave/E3-CI-AGENT-GOVERNANCE.md
+  s_d9915bbafa9657::t_b5d8f06348d899 11-20
+  s_d9915bbafa9657::t_d1f7bae527a032 28-32
+  s_d9915bbafa9657::t_36142f6c3dea39 49-89
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_d9915bbafa9657::t_ecf1e1721bb83c 12-14
+  s_d9915bbafa9657::t_7107de808a4d87 10-11
+  s_d9915bbafa9657::t_15aeefd1b8e865 37-82
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_908e8ef8f32e11 20-24
+  s_d9915bbafa9657::t_125c58a73b4143 39-75
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_d9915bbafa9657::t_92d424ff7172de 45
+  s_d9915bbafa9657::t_537493dd2716da 149-154
+  s_d9915bbafa9657::t_59b7e342252ca2 43-44
+  s_d9915bbafa9657::t_8fa75279b5f57e 163-168
+  s_d9915bbafa9657::t_849e8f493e0beb 110-124,126-127
+  s_d9915bbafa9657::t_f32e2f1136b024 32-38
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_d9915bbafa9657::t_5f7394154cfdf7 37-98
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_d9915bbafa9657::t_556b9cb064e663 21-25
+  s_d9915bbafa9657::t_ccec91d9411c97 43-105
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_d9915bbafa9657::t_5d2666a8c1a964 48-98
+  s_d9915bbafa9657::t_11f41aa36b3696 28,32-35
+  s_d9915bbafa9657::t_39f1927c383125 9-12,18-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5caba88938133d7392ef185da75afe669f9ab4ed",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

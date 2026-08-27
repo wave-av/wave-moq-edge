@@ -1,0 +1,23 @@
+governance/lib/review-liveness.mjs
+  s_8d26503dfc73f4::t_e82e476bc53928 40-45
+governance/code-index/CATALOG.md
+  s_8d26503dfc73f4::t_14307dd0e15b28 4142-4146,4148-4162
+governance/code-index/index.json
+  s_8d26503dfc73f4::t_a6179cd74c4c59 35753-35754,35764-35765,35775-35776,35787-35789,35797-35798,35819-35820,35830-35831,35841-35842,35852-35853,35863-35864,35874-35875,35885-35886,35896-35897,35907-35908,35918-35919,35929-35930,35940-35941,35951-35952,35962-35963,35973-35974
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "065dda96c40f70fd02de3efe25b9b5d3cfb7f7e1",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

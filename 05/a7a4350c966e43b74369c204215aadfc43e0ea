@@ -1,0 +1,66 @@
+governance/bin/enforce.mjs
+  h_67a1b847dc59d6 79,81-90
+governance/bin/pr-check-health.mjs
+  h_67a1b847dc59d6 1-277
+governance/bin/reversible-store.mjs
+  h_67a1b847dc59d6 38,48-51,63-68
+governance/lib/enforce-patterns.mjs
+  h_67a1b847dc59d6 41-46,63-66,102-104,107-113
+governance/lib/pr-check-health-classify.mjs
+  h_67a1b847dc59d6 1-122
+governance/lib/pr-check-health-fetch.mjs
+  h_67a1b847dc59d6 1-300
+governance/lib/pr-check-health-platform.mjs
+  h_67a1b847dc59d6 1-221
+governance/lib/pr-check-health-required-set.mjs
+  h_67a1b847dc59d6 1-56
+governance/lib/pr-check-health-statuses.mjs
+  h_67a1b847dc59d6 1-86
+governance/lib/pr-check-health.mjs
+  h_67a1b847dc59d6 1-271
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  h_67a1b847dc59d6 10-14
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  h_67a1b847dc59d6 17-24
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 121-142,148-150
+governance/plans/ffmpeg9-lei/action/E5-E7-JOINT-BRAINSTORM.md
+  h_67a1b847dc59d6 244,246,253-255
+governance/plans/ffmpeg9-lei/action/E6-P3-GPU-RESIDENT-BRAINSTORM.md
+  h_67a1b847dc59d6 1-202
+governance/plans/ffmpeg9-lei/action/E8-P4-TRUST-SURFACE-DESIGN.md
+  h_67a1b847dc59d6 1-235
+governance/plans/ffmpeg9-lei/action/E9-P3-COGS-BENCH.md
+  h_67a1b847dc59d6 1-222
+governance/test/enforce-secrets.test.mjs
+  h_67a1b847dc59d6 1-250
+governance/test/enforce.test.mjs
+  h_67a1b847dc59d6 4-8,11,14-15
+governance/test/lib/enforce-harness.mjs
+  h_67a1b847dc59d6 1-44
+governance/test/pr-check-health-platform.test.mjs
+  h_67a1b847dc59d6 1-311
+governance/test/pr-check-health-review-fixes.test.mjs
+  h_67a1b847dc59d6 1-336
+governance/test/pr-check-health.test.mjs
+  h_67a1b847dc59d6 1-241
+governance/test/reversible-store.test.mjs
+  h_67a1b847dc59d6 26-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "05a7a4350c966e43b74369c204215aadfc43e0ea",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

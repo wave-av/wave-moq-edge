@@ -1,0 +1,29 @@
+hookcli/lib/t3-git.mjs
+  s_9041cf1cf1ccad::t_8ac5ec82e53d3f 254-284
+hookcli/tests/evasion-matrix.sh
+  s_9041cf1cf1ccad::t_538086ab82af6c 162
+hookcli/lib/t3-classify.mjs
+  s_9041cf1cf1ccad::t_dc7cd483c2f26e 151-152
+  s_9041cf1cf1ccad::t_0c01bd8e9adf85 29
+hookcli/tests/gate-dispatch.sh
+  s_9041cf1cf1ccad::t_c8a9d39a4015f2 148-153
+hookcli/rules/rules.json
+  s_9041cf1cf1ccad::t_43b5488e13d6a4 15-16
+  s_9041cf1cf1ccad::t_e5bb8d70c4c7bd 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "68fd58fb66f48bf1244d7445143c5e77b9d8a411",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

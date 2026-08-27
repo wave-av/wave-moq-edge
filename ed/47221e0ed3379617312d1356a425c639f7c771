@@ -1,0 +1,34 @@
+tests/pr-agent/verdict.bats
+  s_dedb333dd5195e::t_811890140c6aa0 1-111
+.github/workflows/issue-ops-tests.yml
+  s_dedb333dd5195e::t_14335c024e5891 3-8
+  s_37d3f61160b2dd::t_e16f4db9a15c27 29-30,41-42,74
+.github/workflows/reusable-pr-agent.yml
+  s_dedb333dd5195e::t_7b8c1f7f5aba30 96-103,106-122
+  s_dedb333dd5195e::t_3e9ebcab7713ba 157-166,171,182-199
+  s_dedb333dd5195e::t_8b56a685360e03 143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ed47221e0ed3379617312d1356a425c639f7c771",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

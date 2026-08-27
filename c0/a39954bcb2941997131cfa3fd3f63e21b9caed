@@ -1,0 +1,23 @@
+packages/observability/src/edge-otlp.ts
+  s_eb2f7e65359b4f::t_61ab0837104440 91-95,98,101-103
+packages/observability/test/edge-otlp.test.mjs
+  s_eb2f7e65359b4f::t_1f60977062f7cc 72,81-86,92-93
+packages/observability/src/types.ts
+  s_eb2f7e65359b4f::t_16072054ac37bf 22-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c0a39954bcb2941997131cfa3fd3f63e21b9caed",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

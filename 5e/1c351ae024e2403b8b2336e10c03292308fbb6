@@ -1,0 +1,20 @@
+governance/bin/wave-sec-pin-bump.mjs
+  s_f899da0dedd734::t_a8cadb929749ea 1-82,90-123
+  s_f899da0dedd734::t_4fff1959c8c0c4 83-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5e1c351ae024e2403b8b2336e10c03292308fbb6",
+  "prompts": {},
+  "sessions": {
+    "s_f899da0dedd734": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe86b9ffbffeZv8vAY2m13ZjyN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

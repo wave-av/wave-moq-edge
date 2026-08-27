@@ -1,0 +1,19 @@
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_ddcd58c8419ae0::t_00f25ff8869b17 4-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "66ed858696156174621c6447516769a79a680559",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

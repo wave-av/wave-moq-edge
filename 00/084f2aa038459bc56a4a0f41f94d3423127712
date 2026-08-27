@@ -1,0 +1,32 @@
+governance/lib/deploy-inventory-scan.mjs
+  s_941b8f0612ec3e::t_45e74daa2120ca 152
+  s_941b8f0612ec3e::t_524c17505f075b 37-42
+  s_941b8f0612ec3e::t_6c27bc2bcb2e58 336-347
+governance/lib/deploy-inventory-config.mjs
+  s_941b8f0612ec3e::t_cecfec400a3e96 1-164
+governance/test/deploy-inventory-config.test.mjs
+  s_941b8f0612ec3e::t_c59f21b27e788e 1-166
+governance/bin/deploy-inventory.mjs
+  s_941b8f0612ec3e::t_7f10d0455e7ece 170,175-179
+  s_941b8f0612ec3e::t_3d5e66facb2b39 37
+  s_941b8f0612ec3e::t_37e1e5bd1cd6e2 110-125,131-140,142-156
+  s_941b8f0612ec3e::t_92bf0c58c42e78 204-207
+governance/test/deploy-inventory-scan.test.mjs
+  s_941b8f0612ec3e::t_365051a5ae3061 351-375
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "00084f2aa038459bc56a4a0f41f94d3423127712",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

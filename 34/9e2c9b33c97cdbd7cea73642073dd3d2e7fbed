@@ -1,0 +1,21 @@
+.github/workflows/e4-shadow-capture.yml
+  s_6b1c60f5e5c1a6::t_bdb20f840ed176 22
+hooks/tests/KNOWN-RED.txt
+  s_6b1c60f5e5c1a6::t_3d3e25c0606f5f 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "349e2c9b33c97cdbd7cea73642073dd3d2e7fbed",
+  "prompts": {},
+  "sessions": {
+    "s_6b1c60f5e5c1a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feae91484ffeXhVHA219xHmUsj",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

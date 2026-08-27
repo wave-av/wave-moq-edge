@@ -1,0 +1,39 @@
+governance/tools/invariant-budget/examples/wave-invariants.json
+  s_f30f84f50b298e::t_5915eb5ec1990b 1-49
+governance/tools/invariant-budget/invariant.schema.json
+  s_f30f84f50b298e::t_40687e716b5fc6 1-67
+governance/tools/invariant-budget/lib/index.mjs
+  s_f30f84f50b298e::t_6f081a362f5c1a 1-140
+governance/tools/invariant-budget/tests/invariant-budget.test.mjs
+  s_f30f84f50b298e::t_bc243e269894cc 1-285
+governance/tools/invariant-budget/bin/invariant-budget.mjs
+  s_f30f84f50b298e::t_5d8951b682471d 1-80
+governance/tools/invariant-budget/README.md
+  s_f30f84f50b298e::t_5f2540d834b97e 1-100
+governance/research/creator-intelligence/KARPATHY-VICTOR.md
+  s_cd5f55b5b876a1::t_e978bb67d26c8f 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1421e3965e2eba4fd7c0dad9c71a4c6fead4a823",
+  "prompts": {},
+  "sessions": {
+    "s_cd5f55b5b876a1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0037b9cadffeh1kXIwVcv4n044",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f30f84f50b298e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0037797fbffefR7PdCo7UuVtB6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

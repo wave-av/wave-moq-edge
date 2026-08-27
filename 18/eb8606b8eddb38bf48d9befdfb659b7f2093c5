@@ -1,0 +1,37 @@
+scripts/fleet-loop.ts
+  s_4aa36284d4ce33::t_217421b0ae3c03 179-183
+  s_4aa36284d4ce33::t_2c2f1916c3db55 212
+  s_4aa36284d4ce33::t_6d6db9204d9d7d 244-254
+  s_4aa36284d4ce33::t_c5ba94d94888d6 10-11
+  s_4aa36284d4ce33::t_99452e9dc6ff9e 197-198
+  s_4aa36284d4ce33::t_8cba6404e03a31 37-43
+  s_4aa36284d4ce33::t_2fd7580aefccbd 159,163,166-168,176,184-187,189,194,199-202,204,208-210,213-215,217-219,237-243,255-284
+scripts/fleet-loop.test.ts
+  s_4aa36284d4ce33::t_c40cc45ea7deae 15,22
+  s_4aa36284d4ce33::t_0ba57540c91bbb 152-159
+  s_4aa36284d4ce33::t_54fc97b5bb06fb 104-105
+  s_4aa36284d4ce33::t_37902c0487df1b 16-21,23-81,83-103,106-150
+  s_4aa36284d4ce33::t_209b45e344c000 82
+  s_4aa36284d4ce33::t_db85d307f68131 151
+scripts/fleet-loop-ship.ts
+  s_4aa36284d4ce33::t_53172a6ff5b475 1-151,153-154,156-165,174-185
+  s_4aa36284d4ce33::t_de284c16bbab8b 155
+  s_4aa36284d4ce33::t_63afff064f70e8 152
+  s_4aa36284d4ce33::t_6daca09856f5bc 166-173
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "18eb8606b8eddb38bf48d9befdfb659b7f2093c5",
+  "prompts": {},
+  "sessions": {
+    "s_4aa36284d4ce33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0daaba5-d592-4b63-9e95-e8967f0b7542",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

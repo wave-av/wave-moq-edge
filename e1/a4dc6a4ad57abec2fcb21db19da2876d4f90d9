@@ -1,0 +1,33 @@
+hooks/ask-design-fork-lint.sh
+  s_a293da4db5caf2::t_971629186ce424 1-29
+settings/settings.base.json
+  s_a293da4db5caf2::t_cca2d1faf0a8bf 258-262
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_673b76fde05f10 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_a293da4db5caf2::t_cb0b4cc6d81b89 10,12,14,400
+governance/contract.md
+  s_a293da4db5caf2::t_dfca61f02e86df 47,51,53
+governance/graph.json
+  s_a293da4db5caf2::t_381261b37ad32b 5752-5760,24128-24139
+hooks/manifest.json
+  s_a293da4db5caf2::t_9ecdb0df1ae1d7 5-25
+rules/ab-the-fork-dont-forward-it.md
+  s_a293da4db5caf2::t_1ee14c0b76265e 58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e1a4dc6a4ad57abec2fcb21db19da2876d4f90d9",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/test/artifact-count-regression.test.mjs
+  s_dccee6b7677203::t_919dcce3160134 1-140
+governance/bin/artifact-count-regression.mjs
+  s_dccee6b7677203::t_b7fdd13cdcb94a 1-183
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_8b2c2119ec5c60 45-60
+governance/code-index/index.json
+  s_dccee6b7677203::t_865ff129b4653b 6,366-508
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5a62d64614c5787031b1eaf51882bb783a024da4",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

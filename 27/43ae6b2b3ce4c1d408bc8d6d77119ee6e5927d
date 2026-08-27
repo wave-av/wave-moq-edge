@@ -1,0 +1,33 @@
+governance/test/xrepo-provisioning.test.mjs
+  s_02abc74f4971c7::t_50fc8341f8d1a1 17
+  s_02abc74f4971c7::t_369fad8d1a43c8 80,83-87
+  s_02abc74f4971c7::t_5287714cb6222f 143,145,148-150
+  s_02abc74f4971c7::t_3a5b78ff0f61b0 272-280
+  s_02abc74f4971c7::t_bc44ddf32d62e0 248-269,271,281-283
+  s_02abc74f4971c7::t_6e98dcc94405e9 270
+  s_8a470910d81a67::t_e22e73f963ae36 151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2743ae6b2b3ce4c1d408bc8d6d77119ee6e5927d",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8a470910d81a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9143d3ec-9637-4788-8bc2-510e83aa2fe3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

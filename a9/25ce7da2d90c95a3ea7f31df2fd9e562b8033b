@@ -1,0 +1,35 @@
+governance/bin/vendor-mail-triage.mjs
+  s_6eb0c3ee542e1a::t_70dee3e0e984ca 1-121
+governance/plans/vendor-reply-loop/NORTH-STAR.md
+  s_6eb0c3ee542e1a::t_f2763fdf03865b 1-53
+governance/test/vendor-mail-triage.test.mjs
+  s_6eb0c3ee542e1a::t_53b060677c8fc7 1-102
+governance/bin/gmail-bridge.mjs
+  s_6eb0c3ee542e1a::t_019831d2fb2d49 1-94
+plugins/wave-canon/skills/vendor-reply-loop/SKILL.md
+  s_8152bca18f72ee::t_6908affa9d808f 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a925ce7da2d90c95a3ea7f31df2fd9e562b8033b",
+  "prompts": {},
+  "sessions": {
+    "s_6eb0c3ee542e1a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddfdd912ffeYFh1s7vshPA6Xs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

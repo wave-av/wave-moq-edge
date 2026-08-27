@@ -1,0 +1,113 @@
+.gitignore
+  s_2e30bff6169f7a::t_5c8faacc854e0d 93
+governance/DASHBOARD.md
+  s_2e30bff6169f7a::t_7c748d8d7f1989 25
+governance/bin/closure-audit.mjs
+  s_2e30bff6169f7a::t_6d55a10db248dd 20-21,29,72,145,228-231
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_2e30bff6169f7a::t_7e7efc29085665 1-280
+governance/bin/gate-liveness-drill.mjs
+  s_2e30bff6169f7a::t_4d7887c8951153 46,48,94,101-105,114
+governance/bin/public-release-gate-audit.mjs
+  s_2e30bff6169f7a::t_d48a76ce7d3f7c 49-51,166-183,273-282,354-357
+governance/graph.json
+  s_2e30bff6169f7a::t_05223d2cbc5b09 6961-6973,7275-7288,28819-28830
+governance/lib/closure-decide.mjs
+  s_2e30bff6169f7a::t_01bcf68bf9707e 22-25,33
+governance/lib/closure-readers.mjs
+  s_2e30bff6169f7a::t_b0cbdbafb6dee8 16-17,229-297
+governance/lib/drill-fixtures-wave-sec.mjs
+  s_2e30bff6169f7a::t_fb2ca2aedfe36b 1-111
+governance/lib/drill-inline-required.mjs
+  s_2e30bff6169f7a::t_3c395744cbd6b1 1-19
+governance/lib/public-release-gate.mjs
+  s_2e30bff6169f7a::t_7f27cfb5117b26 140-181
+governance/lib/vendored-gate-probe.mjs
+  s_2e30bff6169f7a::t_fdd80ec679c87a 1-116
+governance/lib/wave-sec-lanes.mjs
+  s_2e30bff6169f7a::t_3f5825efc2380f 29-33,105-109,120-125,128,131,133,137,141-155,169,172,176
+governance/plans/brand-recycle/BRAND-GAP.md
+  s_2e30bff6169f7a::t_2f00c3aed6a21c 1-72
+governance/plans/brand-recycle/E-CANON.md
+  s_2e30bff6169f7a::t_72a2205456eb10 14-15
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_2e30bff6169f7a::t_32c8bc32e7ec76 41-44
+governance/plans/brand-recycle/E-LIBRARY.md
+  s_2e30bff6169f7a::t_e1d350d9a53344 48-56,59-60
+governance/plans/brand-recycle/ICON-INVENTORY.md
+  s_2e30bff6169f7a::t_ef7328e6d7c921 1-59
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_2e30bff6169f7a::t_0b40c373340073 4
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_2e30bff6169f7a::t_4ec6ff641afc3e 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_2e30bff6169f7a::t_679e178de384ac 4,72-79,108-125
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_2e30bff6169f7a::t_f3b0c89e979183 4
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_2e30bff6169f7a::t_f008e13afbcc20 4
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_2e30bff6169f7a::t_4e2327ac9d2850 4-5
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_2e30bff6169f7a::t_fd765ab3b29b70 51-61
+governance/plans/ffmpeg9-lei/action/E8-P3-COVERAGE-DELTA.md
+  s_2e30bff6169f7a::t_a63f95f0f6d230 1-59
+governance/plans/ffmpeg9-lei/action/PRODUCT-MEMO-2026-08-05.md
+  s_2e30bff6169f7a::t_e7b3b7214c9dc2 1-67
+governance/plans/namespace-substrate/E0-GOVERN.md
+  s_2e30bff6169f7a::t_30ed717efa6022 4,19-21
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_2e30bff6169f7a::t_18c68b817d57aa 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_2e30bff6169f7a::t_9d65f1981cb911 1-157
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_2e30bff6169f7a::t_f4007786a59cd8 222-229,264-416,440-510,522-525,538-546,559-561
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_2e30bff6169f7a::t_28166ec55db3b8 7-9,18,64-67,69-70,146-147,162-164,166,179,238,246
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_2e30bff6169f7a::t_dd26010140de16 8-13,59-60,63-111
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_2e30bff6169f7a::t_b0c280e23bd2d6 4-10,17,19-43,46-149
+governance/plans/waveform-hero/DR-AUDIO-SOURCE.md
+  s_2e30bff6169f7a::t_625b852c9de6dd 1-63
+governance/plans/waveform-hero/epic.md
+  s_2e30bff6169f7a::t_e2d0cb4b4d63e2 6-8,23-26
+governance/schema/graph.schema.json
+  s_2e30bff6169f7a::t_a4e5d792a50927 61
+governance/state/ffmpeg-capability-matrix.json
+  s_2e30bff6169f7a::t_a11092854e7746 1-7498
+governance/test/closure-readers-semgrep.test.mjs
+  s_2e30bff6169f7a::t_f5219ffe54ceb0 1-99
+governance/test/drill-fixtures-wave-sec.test.mjs
+  s_2e30bff6169f7a::t_1b627e498cf90e 1-47
+governance/test/ffmpeg-capability-matrix.test.mjs
+  s_2e30bff6169f7a::t_466856fad66234 1-223
+governance/test/public-release-gate-audit.test.mjs
+  s_2e30bff6169f7a::t_c3a3768c1bb488 17,401-451
+governance/test/vendored-gate-probe.test.mjs
+  s_2e30bff6169f7a::t_8ce56e9b1f504d 1-82
+governance/test/wave-sec-lanes-semgrep-timeout.test.mjs
+  s_2e30bff6169f7a::t_c8cb3b2426ea06 1-98
+governance/test/wave-sec-lanes-semgrep.test.mjs
+  s_2e30bff6169f7a::t_1ef2f221c9f5ab 1-123
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_2e30bff6169f7a::t_894f54a276c479 51
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_2e30bff6169f7a::t_2c295b5c830ff1 1-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7acf3b2f31671cad2ce28668df2ae3ac9d990333",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

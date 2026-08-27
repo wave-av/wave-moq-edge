@@ -1,0 +1,29 @@
+governance/plans/public-supply-chain/E2-CI-ONLY-PUBLISH.md
+  s_63c6ee080d73c3::t_9b745f96316e58 33-35
+  s_63c6ee080d73c3::t_fe71a7368c14cb 44-59
+  s_63c6ee080d73c3::t_83b032c375344d 4-9
+  s_63c6ee080d73c3::t_dddbd2e0d3789a 66-74
+  s_63c6ee080d73c3::t_d02b651e69fb24 84-90
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_63c6ee080d73c3::t_1b1ad746e29c2a 6-7
+  s_63c6ee080d73c3::t_fd5d5dc5ff0c84 175-179
+  s_63c6ee080d73c3::t_53e63a45d17270 57
+  s_63c6ee080d73c3::t_67720d61809cf8 68-101
+  s_63c6ee080d73c3::t_91421d670d378b 118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "be65fa308e7b2254befa42e3a564edc47e1f049a",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

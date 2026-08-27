@@ -1,0 +1,32 @@
+hookcli/lib/require-eval.mjs
+  s_02abc74f4971c7::t_5f3c4ad517cb9f 10-19
+  s_02abc74f4971c7::t_796efaf4cc5e25 55-59
+hookcli/bin/require-graduation-report.mjs
+  s_02abc74f4971c7::t_a84fa4ecbd3379 194,198-202,205
+  s_02abc74f4971c7::t_51d94f9e26857d 93-95
+  s_02abc74f4971c7::t_a7c51bc1dfe51f 223
+  s_02abc74f4971c7::t_a60a3cb7a9a274 106-112
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_b983ffe63ec1a8 511
+  s_02abc74f4971c7::t_552575fcc1d450 526
+  s_02abc74f4971c7::t_6c69cea60ce691 510
+  s_02abc74f4971c7::t_36540661fe944c 505-509,512-525
+hookcli/tests/require.sh
+  s_02abc74f4971c7::t_dd9b13c2258e19 213-320
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "9106f2dee8335ed32c299f9ee7daf3af959b6adc",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

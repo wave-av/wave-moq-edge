@@ -1,0 +1,26 @@
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  h_af5ac1a9798224 63,106,249
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3307-3311,3314,4659-4661,4737-4738
+governance/code-index/index.json
+  h_af5ac1a9798224 10,12,29538-29539,29550-29552,29560-29563,29571-29572,29582-29583,29615-29616,39790-39793,39801-39804,39812-39815,40351-40365
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  h_af5ac1a9798224 58-70,74,79-83,91-98,102,136-141,148,150-155,197,210-214
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  h_af5ac1a9798224 35-48,103,123-124,134
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  h_af5ac1a9798224 148-184,304-316
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  h_af5ac1a9798224 104-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "82b426e6153dcb395d78711c3f99292c42de373e",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

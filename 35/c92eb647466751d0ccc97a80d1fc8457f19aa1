@@ -1,0 +1,42 @@
+governance/test/econ-advisor.test.mjs
+  s_60a20469ef4369::t_07573ea24193b0 1-85
+governance/bin/econ-advisor.mjs
+  s_60a20469ef4369::t_7551f7da25f812 1-151
+settings/settings.base.json
+  s_60a20469ef4369::t_02827730e93171 354-356
+  s_60a20469ef4369::t_e7d323e1df9b99 352-353
+hooks/econ-advisor.sh
+  s_60a20469ef4369::t_e36f02c53aef3c 1-16
+governance/code-index/CATALOG.md
+  s_3235daddc9a373::t_3c7df961482134 5,618-627
+governance/code-index/index.json
+  s_3235daddc9a373::t_72c85222397b4f 6-7,9-10,5987-6074
+governance/graph.json
+  s_3235daddc9a373::t_a0c8fe5ecd2367 4103-4110,16009-16014
+hooks/manifest.json
+  s_3235daddc9a373::t_cd826db303e0b0 171-188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "35c92eb647466751d0ccc97a80d1fc8457f19aa1",
+  "prompts": {},
+  "sessions": {
+    "s_3235daddc9a373": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a7887d693d85c7e60",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

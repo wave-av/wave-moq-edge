@@ -1,0 +1,23 @@
+governance/bin/closure-audit.mjs
+  s_63c6ee080d73c3::t_4ae4b646d493fc 1-361
+governance/code-index/CATALOG.md
+  s_63c6ee080d73c3::t_6f6eaf3881672d 5,498-516
+governance/code-index/index.json
+  s_63c6ee080d73c3::t_56e85b288a719a 9-10,12-13,4562-4737
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3b9208e29ded8b364fae51aa95754eff717535ce",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

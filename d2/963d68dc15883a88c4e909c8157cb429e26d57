@@ -1,0 +1,21 @@
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_15127d80763110::t_c1bcd6ecd54a8a 43-55
+  s_15127d80763110::t_6607bf775e00f6 258-288
+  s_15127d80763110::t_edddecf4218648 558-603
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d2963d68dc15883a88c4e909c8157cb429e26d57",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

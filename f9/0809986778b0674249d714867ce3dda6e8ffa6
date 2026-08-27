@@ -1,0 +1,32 @@
+governance/bin/gam-conformance.mjs
+  s_cf3356a24071e8::t_ad737974ec0ba9 52-59,82-83
+  s_cf3356a24071e8::t_9f5319cf907a18 60-81
+  s_cf3356a24071e8::t_5ea1c9b4e1e8bd 95-110
+  s_cf3356a24071e8::t_f2599e34eca28e 117-124
+governance/bin/prove-gam-conformance-gate.mjs
+  s_cf3356a24071e8::t_5e262aa4467ac4 3,6-8,11-16,20-22,28,30-31,33
+  s_cf3356a24071e8::t_667da616238366 42-81,96-145,161-165
+  s_cf3356a24071e8::t_e2b6eca597a3b4 146-160
+  s_cf3356a24071e8::t_bfb2e052e128e3 176
+  s_cf3356a24071e8::t_363fda2c428473 82-95
+governance/code-index/CATALOG.md
+  s_cf3356a24071e8::t_75bb0104b23dfa 5,1087,1092-1095,1098,1102,1717-1730
+governance/code-index/index.json
+  s_cf3356a24071e8::t_bb97d58cb388d6 7,9-10,10481-10482,10536-10537,10547-10548,10558-10559,10569-10570,10602-10603,10646-10647,16569-16612,16619-16620,16630-16631,16641-16642,16652-16653,16663-16664,16674-16675,16679-16689,16696-16697,16707-16721
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "f90809986778b0674249d714867ce3dda6e8ffa6",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

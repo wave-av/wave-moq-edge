@@ -1,0 +1,21 @@
+governance/research/llms.txt
+  s_06fa8c1bdb2c92::t_f36f0e16ee86f7 1-29
+governance/research/voice-greats-2026-08-24.md
+  s_06fa8c1bdb2c92::t_63c081dece607c 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a5c74c1aba3100bb2706a2a73710ebab42594eff",
+  "prompts": {},
+  "sessions": {
+    "s_06fa8c1bdb2c92": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a7df4243509e16292",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

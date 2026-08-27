@@ -1,0 +1,32 @@
+hooks/wrangler-deploy-gate.sh
+  s_375efeac18ed55::t_38a5a30a84418d 15-32
+hooks/subagent-read-budget.sh
+  s_375efeac18ed55::t_9425027bdcf254 234-239,241-244
+hooks/subagent-dispatch-gate.sh
+  s_375efeac18ed55::t_84f77fba0a4db2 207-216,218-221
+hooks/tests/hook-fail-closed.test.sh
+  s_375efeac18ed55::t_ae434e2ec4d4bd 1-28,39-40,42-47,49-51,60-62,68,73-108,110-112
+  s_375efeac18ed55::t_d0a4bc4c38b39e 29-38,41,48
+  s_375efeac18ed55::t_c01614e6df5065 52-56,58
+  s_375efeac18ed55::t_fbc72ee31c6c37 63-67,69-72
+  s_375efeac18ed55::t_37303287ccaff9 109
+  s_375efeac18ed55::t_3172ef93ba4855 57,59
+hooks/doppler-env-guard.sh
+  s_375efeac18ed55::t_448a06bd3f0acb 16-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fee26a598bf119404d389ed80f1b6c6caa5921b2",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

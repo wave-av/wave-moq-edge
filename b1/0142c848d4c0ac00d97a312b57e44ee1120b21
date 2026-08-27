@@ -1,0 +1,34 @@
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run1.log
+  h_67a1b847dc59d6 1-11
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run2.log
+  h_67a1b847dc59d6 1-15
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run3.log
+  h_67a1b847dc59d6 1-19
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run4.log
+  h_67a1b847dc59d6 1-31
+governance/plans/runtime-economy/dogfood/tier-pool-deepcoder-14b-run5.log
+  h_67a1b847dc59d6 1-18
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 27-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b10142c848d4c0ac00d97a312b57e44ee1120b21",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

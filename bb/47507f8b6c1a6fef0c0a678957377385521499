@@ -1,0 +1,23 @@
+.github/workflows/self-check.yml
+  s_e2e3e43d0638c5::t_87b5d2ee1e30a2 30,32
+.pre-commit-config.yaml
+  s_e2e3e43d0638c5::t_93839bc65e10dd 141-146
+frameworks/gates/registry.yaml
+  s_e2e3e43d0638c5::t_94fb2d698b527a 22-24,59-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "bb47507f8b6c1a6fef0c0a678957377385521499",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

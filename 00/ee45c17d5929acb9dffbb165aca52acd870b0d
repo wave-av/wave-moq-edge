@@ -1,0 +1,19 @@
+governance/plans/capability-registry/templates/check.mjs
+  s_60a20469ef4369::t_24c355d7f9aa91 32,34,38-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "00ee45c17d5929acb9dffbb165aca52acd870b0d",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

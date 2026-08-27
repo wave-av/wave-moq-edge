@@ -1,0 +1,43 @@
+governance/plans/ci-depot-carveout/NORTH-STAR.md
+  s_700cd0ad928eea::t_51febe482b6294 1-46
+governance/plans/origin-gateway-lock/TASK-LOG.md
+  s_dedb333dd5195e::t_33669c6e0fef02 1-8
+governance/plans/origin-gateway-lock/origin-index.ts.patched
+  s_9bb1b1d1d998d4::t_d3ee01c63fd8c1 1-155
+governance/plans/origin-gateway-lock/wave-origin-verify.patch
+  s_dedb333dd5195e::t_b6909e3b753641 1-75
+governance/plans/wave-ci/E1-API.md
+  s_dedb333dd5195e::t_b8e82dee04da41 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0625b715769e80419f59737564330a5bdcc71456",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

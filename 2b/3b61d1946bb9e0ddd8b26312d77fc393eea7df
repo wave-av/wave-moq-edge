@@ -1,0 +1,48 @@
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_5ea7e4451daeff 1-63
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_85d9e5f433b9aa::t_5845d57879d4b4 1-44
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_85d9e5f433b9aa::t_7ca05c532db754 1-70
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_85d9e5f433b9aa::t_c475b2720b7145 1-32
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_a6f40927bbcbe9 160-184
+  s_85d9e5f433b9aa::t_fa46f96f3f7bd6 194
+  s_85d9e5f433b9aa::t_4f8b01f6916799 33
+  s_85d9e5f433b9aa::t_0ec04e250322cf 28
+  s_85d9e5f433b9aa::t_cc748aa188cace 40
+  s_85d9e5f433b9aa::t_3f17307cbd140f 12-14
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_85d9e5f433b9aa::t_81d4bd16eee8ff 1-22
+governance/test/wave-sec-closure.test.mjs
+  s_85d9e5f433b9aa::t_1dedb40e961426 22
+  s_85d9e5f433b9aa::t_68e58ae03c48a8 80
+  s_85d9e5f433b9aa::t_05102bb78f509c 1-21,23-32,36-39,50-52,54,56-79,81-126,128-136
+  s_85d9e5f433b9aa::t_1a87c4ced4704a 127
+  s_85d9e5f433b9aa::t_3e7dad9f73e224 33-35,40-49,53,55
+governance/lib/wave-sec-closure.mjs
+  s_85d9e5f433b9aa::t_1d477906967f72 33-43,51
+  s_85d9e5f433b9aa::t_d6432dff886cb6 1-32,44-50,52-86,88-100
+  s_85d9e5f433b9aa::t_4524ae7977227a 87
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_bf4598b77885ef 25
+governance/graph.json
+  s_85d9e5f433b9aa::t_a0b514f0cf630e 6468,6470-6523,6529,27037-27091,27094,27097,27100,27103,27106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2b3b61d1946bb9e0ddd8b26312d77fc393eea7df",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

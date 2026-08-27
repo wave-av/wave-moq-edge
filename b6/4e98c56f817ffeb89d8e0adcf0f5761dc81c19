@@ -1,0 +1,64 @@
+governance/plans/nested-dispatch-economy/E3-ESCALATION.md
+  s_96280c922a9418::t_46d86788d8f97e 88-110
+  s_96280c922a9418::t_8e0012eafbe3bf 8-9
+  s_96280c922a9418::t_8582a9dc8951d2 127
+hooks/escalation-ladder-gate.sh
+  s_96280c922a9418::t_1409d708913340 1-360
+governance/test/escalation-ladder-gate.test.mjs
+  s_96280c922a9418::t_4a93265ac44665 1-13,16,18-20,30-72
+  s_96280c922a9418::t_10c38bf16511dd 14-15,17,21-29
+hooks/tests/escalation_ladder_gate_smoke.sh
+  s_96280c922a9418::t_c7e92f77c0e2f9 1-137,150-164
+  s_96280c922a9418::t_2e47b9dfeb713b 138-141,144-149
+  s_96280c922a9418::t_0ce531f2bbdbde 142-143
+governance/bin/enforcement-tables.mjs
+  s_96280c922a9418::t_ebe69fe664a438 56-60
+settings/settings.base.json
+  s_96280c922a9418::t_268e0524f69cbb 421-423
+  s_96280c922a9418::t_4bae1e4e0174cf 97-105,419-420
+  s_96280c922a9418::t_854c459959c28b 6-7
+  s_02abc74f4971c7::t_a98c6852615927 96
+governance/bin/validate-envelope.mjs
+  s_96280c922a9418::t_9ff23115eeea89 155-197,199-204,242
+  s_96280c922a9418::t_d92e076f0ca671 28
+  s_96280c922a9418::t_0d4a0dbc7a721a 215-216,219,228-234,238-241
+  s_96280c922a9418::t_327b9ed52f69ec 17,20-23
+governance/DASHBOARD.md
+  s_96280c922a9418::t_e3ff2616d8947a 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_cb74bebd2b8064 452
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_e0ac42ee25e668 5,911-917,919,2757-2773
+governance/code-index/index.json
+  s_96280c922a9418::t_b6bdf8a4fd04e6 9-10,8260-8262,8270-8271,8281-8282,8292-8293,8303-8304,8314-8315,8325-8326,8347-8348,24902-24903,24913-24914,24924-24925,24935-24936,24946-24947,24957-24958,24968-24969,24979-24980,24990-24991,25001-25002,25006-25016,25023-25024,25034-25035,25045-25046,25056-25057,25067-25068,25078-25079
+governance/graph.json
+  s_96280c922a9418::t_283653b073a276 3223-3224,4437-4445,17244-17261
+governance/test/escalation-envelope.test.mjs
+  s_96280c922a9418::t_c5ed30391b9099 11,121-157
+hooks/manifest.json
+  s_96280c922a9418::t_bf6aaaf2d90fb6 301-328
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b64e98c56f817ffeb89d8e0adcf0f5761dc81c19",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+governance/plans/fireworks-integration/FIREWORKS-SURFACE.md
+  s_8133761f2f345a::t_d85880ad3f3252 36-200,249
+  s_8133761f2f345a::t_6fd62c98c88c52 2-35
+  s_8133761f2f345a::t_3196a112014957 201-248
+  s_0950db28a6ae27::t_5b909029f1a946 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ff819fa06f980178ca771f5b56a78fd88b2ccb8d",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8133761f2f345a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fff284170ffeVMHOAA0dlqv6MH",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

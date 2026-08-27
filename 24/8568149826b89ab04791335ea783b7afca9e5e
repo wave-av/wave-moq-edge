@@ -1,0 +1,26 @@
+scripts/gate-scope-conformance.test.mjs
+  s_364605915bb7ec::t_61bd23b3039eb8 128
+  s_364605915bb7ec::t_9015f2e7d34f7a 134
+  s_364605915bb7ec::t_d2d937b5413980 43-45
+  s_364605915bb7ec::t_60faa1bf1b4c90 4-9,11,14,32-42,46,58-59,61,65-75,108-112,121-122,126-127,132-133,152-153,161-162,170-171,175-179,184-191,200,218,221-222,226,238,242-244,247
+  s_364605915bb7ec::t_6936756b5e990c 48-57
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_6b9f349dbc19af 194,197-206
+  s_364605915bb7ec::t_d5ffe7da7d130d 224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "248568149826b89ab04791335ea783b7afca9e5e",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

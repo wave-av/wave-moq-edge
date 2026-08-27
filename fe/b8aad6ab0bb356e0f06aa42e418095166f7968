@@ -1,0 +1,19 @@
+memory/ssd-streamed-serving-tier-live.md
+  s_178ce0d17d56f0::t_eaf3cbc2b483c1 128-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "feb8aad6ab0bb356e0f06aa42e418095166f7968",
+  "prompts": {},
+  "sessions": {
+    "s_178ce0d17d56f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5bcb6f54a19f9330",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

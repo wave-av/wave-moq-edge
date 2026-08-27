@@ -1,0 +1,19 @@
+governance/capability/tier-manifest.json
+  s_27c3f37c99074f::t_8033e97bfb5a7d 124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "021812aa3ab3b7c305846d9fa2dbb36a95846b1e",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+bin/audit-routing-efficiency.mjs
+  s_37d3f61160b2dd::t_b97a326d867c01 5-10,13,15,18,31-119,121-124,127-158,161-166
+  s_37d3f61160b2dd::t_b77b395490d9fc 5-10,13,15,18,31-119,121-124,127-158,161-166
+bin/audit-routing-efficiency.test.mjs
+  s_37d3f61160b2dd::t_e11ae93ae398a5 1-128
+  s_37d3f61160b2dd::t_63d173e2883423 1-41,48,53-56,58-128
+  s_37d3f61160b2dd::t_b74603333cb0af 42-47,49-52,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "89caa7153bbfaa9334a206e223d0162150622901",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

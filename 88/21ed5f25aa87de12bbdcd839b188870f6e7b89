@@ -1,0 +1,27 @@
+scripts/agentic-arena.py
+  s_9bb1b1d1d998d4::t_3a239b7b4dabb2 1,23,70
+scripts/claude-pool-mcp.py
+  s_9bb1b1d1d998d4::t_9b4e400eccb467 6,9
+scripts/hosted-baseline.py
+  s_9bb1b1d1d998d4::t_a68b7981cf8b64 4,7,19
+scripts/humaneval-bench.py
+  s_9bb1b1d1d998d4::t_38a51bbfe7fa2a 1,86
+scripts/judge-chain.py
+  s_9bb1b1d1d998d4::t_57830fcfb147a0 1,5,24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8821ed5f25aa87de12bbdcd839b188870f6e7b89",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

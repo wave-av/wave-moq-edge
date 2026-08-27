@@ -1,0 +1,34 @@
+agents/deploy-runner.md
+  s_941b8f0612ec3e::t_3b4f811c082564 74-103
+  s_941b8f0612ec3e::t_c511a91cd6c537 144-145
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_941b8f0612ec3e::t_fdf48b23b2620f 36
+runbooks/library/deploy-degraded-studio-wrangler.md
+  s_941b8f0612ec3e::t_f920455bec11d2 1-244
+plugins/wave-agents/agents/deploy-runner.md
+  s_0f19133d33385f::t_6b9f214a285df0 74-103,144-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "86f48f1b728c5c2cee5165dd1a01b8698894b725",
+  "prompts": {},
+  "sessions": {
+    "s_0f19133d33385f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a0cd0a49b3623ff53",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/plans/brand-recycle/DR-ACCENT.md
+  s_15127d80763110::t_8f6c8444faf31b 1-51
+governance/plans/brand-recycle/DR-DISPLAY.md
+  s_15127d80763110::t_4b93dfa4aeb426 1-51
+governance/plans/brand-recycle/DR-POSTURE.md
+  s_15127d80763110::t_7279ed840ff130 1-47
+governance/plans/brand-recycle/E-CANON.md
+  s_15127d80763110::t_013b597922e2d0 4-11
+governance/plans/brand-recycle/DR-MONO.md
+  s_15127d80763110::t_2114523004156b 1-52
+governance/plans/brand-recycle/comps/display-comps.html
+  s_15127d80763110::t_979c52354b6e5f 1-260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "cba016608aefd87ef2c059ef5fe1e3f8522fee0a",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+hookcli/lib/rules-version.sh
+  s_02abc74f4971c7::t_e4f8d1de4aee0b 2-31,33-34,36-43,47-53,56-59
+  s_02abc74f4971c7::t_3ef70f276c734e 44-46
+  s_02abc74f4971c7::t_75d16813f8c6d0 54
+  s_02abc74f4971c7::t_415883ea0954fb 55
+  s_02abc74f4971c7::t_f11ef906f03af7 1
+  s_02abc74f4971c7::t_59e71b8bb93781 32,35
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_77cd96d532884d 204
+  s_02abc74f4971c7::t_a349188c9646ff 40-53,183
+  s_02abc74f4971c7::t_954ecb8db3e623 373
+  s_02abc74f4971c7::t_6ed325a20f37bb 248
+  s_02abc74f4971c7::t_3be8216bd5c620 188
+  s_02abc74f4971c7::t_12b975c7ba4d65 291
+  s_02abc74f4971c7::t_3ba746947c7f77 283
+hookcli/tests/rules-version.sh
+  s_02abc74f4971c7::t_75d5dccbec1023 1-100
+hookcli/tests/run.sh
+  s_02abc74f4971c7::t_c4d2ceafd257c7 187-192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "601fb544ffe9f69643838021d31a2df70827d44b",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

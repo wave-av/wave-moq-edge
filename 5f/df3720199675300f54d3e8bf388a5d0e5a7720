@@ -1,0 +1,23 @@
+governance/bin/derived-artifact-drift-audit.mjs
+  s_b09c4e2af6b53a::t_ef43ab49fe10f0 130-135
+.github/workflows/governance.yml
+  s_b09c4e2af6b53a::t_a5a76e425fc70d 82-86
+governance/bin/stub-finder.mjs
+  s_b09c4e2af6b53a::t_205fd615d73d84 274-277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5fdf3720199675300f54d3e8bf388a5d0e5a7720",
+  "prompts": {},
+  "sessions": {
+    "s_b09c4e2af6b53a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc53d0945ffeZ2VzCQcB0UPiK8",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

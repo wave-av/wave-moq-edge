@@ -1,0 +1,24 @@
+governance/plans/closed-loop-mechanisms/NORTH-STAR.md
+  s_be40541f6fd98b::t_563948d69ff2e0 1,10-19
+  s_be40541f6fd98b::t_0065cced5babcf 20
+governance/DASHBOARD.md
+  s_be40541f6fd98b::t_d31eb58899e761 25
+governance/graph.json
+  s_be40541f6fd98b::t_06d9c50d95b011 2598-2610,17230-17277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1dccffb53111838af03582a184a87624403ce3d2",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

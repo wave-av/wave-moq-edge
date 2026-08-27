@@ -1,0 +1,19 @@
+scripts/assess.ts
+  s_9673f7dc0983fb::t_f823a2cd7e05c9 27-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5761ebc0c9856c73bda7fad64635ece4cbd4b69e",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

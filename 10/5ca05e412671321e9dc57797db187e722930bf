@@ -1,0 +1,118 @@
+.github/actionlint.yaml
+  h_af5ac1a9798224 15
+.github/workflows/artifact-source-audit.yml
+  h_af5ac1a9798224 1-99
+.github/workflows/foundation-gate.yml
+  h_af5ac1a9798224 42
+.github/workflows/hook-tests.yml
+  h_af5ac1a9798224 37-41,47-51,185-455
+governance/DANGLING-REFS-BASELINE.json
+  h_af5ac1a9798224 11,24,95-104
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/bin/artifact-source-audit.mjs
+  h_af5ac1a9798224 1-191
+governance/bin/gate-liveness-drill.mjs
+  h_af5ac1a9798224 42,83-86,93
+governance/bin/monolith-coverage.mjs
+  h_af5ac1a9798224 1-223
+governance/bin/monolith-manifest.mjs
+  h_af5ac1a9798224 350
+governance/bin/monolith-project.mjs
+  h_af5ac1a9798224 1-339
+governance/bin/wave-cost-ledger-gha-budget-alert.mjs
+  h_af5ac1a9798224 38,107-111,113-114
+governance/graph.json
+  h_af5ac1a9798224 2425-2426,3274-3390,19914-20045,22938-22943
+governance/lib/artifact-source.mjs
+  h_af5ac1a9798224 1-139
+governance/lib/drill-fixtures-artifact-source.mjs
+  h_af5ac1a9798224 1-87
+governance/lib/wave-cost-ledger-gha-billing.mjs
+  h_af5ac1a9798224 24-26,30-100,184-207,209-213,235-237,246-250,264-266
+governance/lib/wave-cost-ledger-gha-budget-detector.mjs
+  h_af5ac1a9798224 96-104,106,148-155,158-163,168-169,240-247,249,252-253,256-259,321
+governance/lib/wave-cost-ledger-gha-budget-read.mjs
+  h_af5ac1a9798224 1-74
+governance/lib/wave-cost-ledger-gha-row-classify.mjs
+  h_af5ac1a9798224 1-123
+governance/lib/wave-cost-ledger-pull-read.mjs
+  h_af5ac1a9798224 74-80,89-99,114-138
+governance/lib/wave-cost-ledger-registry-audit.mjs
+  h_af5ac1a9798224 57,72-79
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  h_af5ac1a9798224 4-10,19-21,25-26,34-37
+governance/plans/ffmpeg9-lei/E0-CANARY.md
+  h_af5ac1a9798224 1-70
+governance/plans/ffmpeg9-lei/E1-BREAKAGE.md
+  h_af5ac1a9798224 1-156
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  h_af5ac1a9798224 1-157
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  h_af5ac1a9798224 1-161
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  h_af5ac1a9798224 1-166
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  h_af5ac1a9798224 1-173
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  h_af5ac1a9798224 1-166
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  h_af5ac1a9798224 1-166
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  h_af5ac1a9798224 1-175
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  h_af5ac1a9798224 1-90
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_af5ac1a9798224 1-36
+governance/plans/ffmpeg9-lei/action/E0-P2-BUILD-TRIAGE.md
+  h_af5ac1a9798224 1-26
+governance/plans/ffmpeg9-lei/action/E1-P1-inventory.md
+  h_af5ac1a9798224 1-129
+governance/plans/ffmpeg9-lei/action/E2-P1-pin-table.md
+  h_af5ac1a9798224 1-65
+governance/plans/ffmpeg9-lei/action/E8-P1-watcher-recon.md
+  h_af5ac1a9798224 1-24
+governance/plans/governed-autonomous-merge/epic.md
+  h_af5ac1a9798224 6-7
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  h_af5ac1a9798224 9-16,125-163
+governance/plans/monolith-decomposition/E1-TRIAGE-THE-DEAD.md
+  h_af5ac1a9798224 11-15,62-114
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  h_af5ac1a9798224 5-9,41-97
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  h_af5ac1a9798224 87-124
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  h_af5ac1a9798224 37-38
+governance/test/artifact-source-audit.test.mjs
+  h_af5ac1a9798224 1-228
+governance/test/known-red-baseline-wiring.test.mjs
+  h_af5ac1a9798224 87-95,97-107,124-181
+governance/test/monolith-coverage.test.mjs
+  h_af5ac1a9798224 1-135
+governance/test/monolith-project.test.mjs
+  h_af5ac1a9798224 1-224
+governance/test/monolith-triage-fixture.mjs
+  h_af5ac1a9798224 20,48-55,143-147,149
+governance/test/wave-cost-ledger-gha-billing.test.mjs
+  h_af5ac1a9798224 9,107,111,122,125-139,146-149,151-152,156-157,160,165,169-195
+governance/test/wave-cost-ledger-gha-budget-alert.test.mjs
+  h_af5ac1a9798224 299-303,347-350
+governance/test/wave-cost-ledger-gha-budget-detector.test.mjs
+  h_af5ac1a9798224 182-203
+governance/test/wave-cost-ledger-gha-row-classify.test.mjs
+  h_af5ac1a9798224 1-142
+governance/test/wave-cost-ledger-pull-read.test.mjs
+  h_af5ac1a9798224 72-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "105ca05e412671321e9dc57797db187e722930bf",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

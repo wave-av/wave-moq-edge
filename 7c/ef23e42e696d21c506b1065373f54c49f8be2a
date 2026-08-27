@@ -1,0 +1,29 @@
+governance/lib/wave-cost-ledger-runpod-adapter.mjs
+  s_4a4b906cd95c6b::t_521bec9cae142b 1-45,56-129,137-144,159-191,194-206
+  s_4a4b906cd95c6b::t_c058d68cccd8fe 46-55
+  s_4a4b906cd95c6b::t_1336477197c8d2 192-193
+  s_4a4b906cd95c6b::t_e38fd901b026a6 130-136,145-158
+governance/test/wave-cost-ledger-runpod-adapter.test.mjs
+  s_4a4b906cd95c6b::t_dd6935aaf1dcd0 198
+  s_4a4b906cd95c6b::t_4bfa40e1942768 134
+  s_4a4b906cd95c6b::t_fb35d2f92b7454 1-133,135-140,142-197,199-215
+  s_4a4b906cd95c6b::t_9080e97d21a48f 141
+governance/bin/wave-cost-ledger-runpod-feeder.mjs
+  s_4a4b906cd95c6b::t_62a7fae3e479b2 1-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7cef23e42e696d21c506b1065373f54c49f8be2a",
+  "prompts": {},
+  "sessions": {
+    "s_4a4b906cd95c6b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fead49aa8ffeIR6QN2wiivQZUO",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

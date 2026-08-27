@@ -1,0 +1,19 @@
+governance/plans/wave-inference-fabric/E6-GOVERNANCE-DRIFT.md
+  s_c24357e71ae5bc::t_f949a902ce713e 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5f208dfbc7623a6733282e399a1b0e9a6c9ea929",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

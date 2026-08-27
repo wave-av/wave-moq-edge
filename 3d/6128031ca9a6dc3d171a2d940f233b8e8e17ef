@@ -1,0 +1,27 @@
+scripts/bugbot/metrics.py
+  s_0b987fef4e1240::t_d63f58566cc119 221-241,247-249,254-255
+scripts/bugbot/RIG.md
+  s_0b987fef4e1240::t_ef78f0f6c5d2a3 1-65
+scripts/bugbot/daemon.sh
+  s_0b987fef4e1240::t_a0f2f34b62f5fd 333-360
+  s_0b987fef4e1240::t_f1c72f96432a4f 401-402
+scripts/bugbot/test_metrics.py
+  s_0b987fef4e1240::t_59b9322b5c2c56 201-202
+  s_0b987fef4e1240::t_db8416c9cdc163 167-191
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "3d6128031ca9a6dc3d171a2d940f233b8e8e17ef",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

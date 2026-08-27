@@ -1,0 +1,51 @@
+governance/plans/review-actioning/E1-TIERS.md
+  s_d9915bbafa9657::t_a11b20db38d776 40-47
+  s_d9915bbafa9657::t_c8e375ee0a07f4 56-63
+  s_d9915bbafa9657::t_2a25c77b470ebe 71-78
+governance/plans/review-actioning/E7-MEASURE.md
+  s_d9915bbafa9657::t_2ec98f68d62d78 42-49
+  s_d9915bbafa9657::t_9fc49e36de63b6 73-80
+  s_d9915bbafa9657::t_69d226ea366d2d 57-65
+governance/plans/review-actioning/E3-CAPTURE.md
+  s_d9915bbafa9657::t_93f201fcdf229b 35-42
+  s_d9915bbafa9657::t_8b0a1cbf53ab7b 50-57
+  s_d9915bbafa9657::t_db3931302365da 66-73
+governance/plans/review-actioning/E5-DISPOSITION.md
+  s_d9915bbafa9657::t_26445d1dc11da9 43-51
+  s_d9915bbafa9657::t_2f01ea9feceae5 74-82
+  s_d9915bbafa9657::t_9cf61702a8ab89 90-96
+  s_d9915bbafa9657::t_67a3d296d5c77d 59-66
+governance/plans/review-actioning/E6-FEEDBACK.md
+  s_d9915bbafa9657::t_29200a62bce635 76-84
+  s_d9915bbafa9657::t_1769920e8b2b11 45-52
+  s_d9915bbafa9657::t_333d63b44d64e2 60-67
+governance/plans/review-actioning/E2-LIVENESS.md
+  s_d9915bbafa9657::t_15d879ab3be8b0 39-46
+  s_d9915bbafa9657::t_d6cd4a501bf060 55-61
+  s_d9915bbafa9657::t_d8042958dfb6d8 68-74
+  s_d9915bbafa9657::t_4f9402b84f12ea 82-90
+governance/plans/review-actioning/E4-TRIAGE.md
+  s_d9915bbafa9657::t_b96c3b42f77b61 67-74
+  s_d9915bbafa9657::t_2e3d6aef6b4802 51-59
+  s_d9915bbafa9657::t_5220c29f183d2a 35-43
+governance/plans/review-actioning/E0-CENSUS.md
+  s_d9915bbafa9657::t_eadaa58c12d9a5 40-47
+  s_d9915bbafa9657::t_034b4ebe503afa 56-63
+  s_d9915bbafa9657::t_d482a17be128f9 71-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6ae24bfca2cc25bcddf9c90da7fd93a46ebafb68",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

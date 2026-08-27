@@ -1,0 +1,29 @@
+scripts/vector.ts
+  s_9673f7dc0983fb::t_cae4a62cb4a405 2
+package.json
+  s_32308d89320687::t_90308960e8d713 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "426baf208973a2b90476992d151f007a297e0842",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": null
+    }
+  }
+}

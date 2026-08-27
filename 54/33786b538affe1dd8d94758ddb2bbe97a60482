@@ -1,0 +1,32 @@
+hooks/local-llm/ollama-agent-validator.sh
+  s_96280c922a9418::t_1cee9bcf63452c 10-13
+hooks/local-llm/ollama-agent-debrief.sh
+  s_96280c922a9418::t_693297c79eb2ca 9-12
+hooks/local-llm/ollama-helper.sh
+  s_96280c922a9418::t_5bd83ee5a1406f 133-160
+hooks/local-llm/ollama-billing-guard.sh
+  s_96280c922a9418::t_df77af5f8f78c7 85-92,95-113
+  s_96280c922a9418::t_603e5b2989b66e 10-17
+hooks/tests/ollama-hooks-live.test.sh
+  s_96280c922a9418::t_3c15fb79387bd2 101-105,116,118
+  s_96280c922a9418::t_4d1fc225d4956a 106-115
+  s_96280c922a9418::t_0b2ded51d8aee3 1-100,117,119-133
+hooks/local-llm/ollama-protocol-checker.sh
+  s_96280c922a9418::t_2528d9b0bc38eb 10-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "5433786b538affe1dd8d94758ddb2bbe97a60482",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+rules/ssot-board-coordination.md
+  s_364605915bb7ec::t_5cc05509f387d7 1-18
+docs/BOARD-RUNBOOK.md
+  s_364605915bb7ec::t_6fde76190ea186 50-78,106,116-123,126,140-142,146-148,152-155,167
+  s_364605915bb7ec::t_a67f08d44cfe62 127-139
+  s_364605915bb7ec::t_767141b1f88d04 143-145,149-151,156-166
+  s_364605915bb7ec::t_0eb397a0cf148c 79-105,107-115,124-125
+governance/graph.json
+  s_364605915bb7ec::t_448f1caef3a5d4 1803-1809,11406-11429
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "731f148c1ba340bcbb65640effc36ac443c9eb16",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

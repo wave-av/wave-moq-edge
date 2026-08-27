@@ -1,0 +1,47 @@
+governance/plans/local-inference-integrity/NORTH-STAR.md
+  s_264ae386838c57::t_215b7007bba628 1-52,54,56-259,262
+  s_264ae386838c57::t_9a8cddfa74ab1d 53,261
+  s_264ae386838c57::t_489f1b33a89c5f 55,260
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_264ae386838c57::t_277a3180a71aaf 1-136
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_264ae386838c57::t_c47cc8be4116b3 1-88
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_264ae386838c57::t_0ac71dd0176c2f 1-91
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_264ae386838c57::t_08880051b7c424 1-104
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_264ae386838c57::t_8d34c7fc365700 1-110
+governance/plans/local-inference-integrity/E1-ENCODE.md
+  s_264ae386838c57::t_6a3c72d5d284a5 1-94
+governance/plans/local-inference-integrity/E5-SIGNAL.md
+  s_264ae386838c57::t_0f5f3e97818e61 1-122
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_893cda700f9177 1-85
+governance/graph.json
+  s_ba894a06f09b42::t_e9c6a128227bf9 3470-3573,18611-18820
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "74febbe9286bf31b13e7a19cfd5ea0e3acaf1971",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_ba894a06f09b42": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac18bd87146fcf269",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

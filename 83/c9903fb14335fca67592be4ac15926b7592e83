@@ -1,0 +1,36 @@
+governance/plans/credential-provisioning-integrity/NORTH-STAR.md
+  s_be40541f6fd98b::t_e67f50ae3b6af6 75
+  s_3a85f9517b2690::t_cd75371c2eeb6c 6,100
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_be40541f6fd98b::t_e3fe8991a72a45 55
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  s_be40541f6fd98b::t_86125cce93138b 5,44
+governance/plans/credential-provisioning-integrity/E5-MALFORMED.md
+  s_be40541f6fd98b::t_c3a6ead1a5cf8d 4
+governance/graph.json
+  s_be40541f6fd98b::t_2bb61521b62c9a 2508,2533,2587
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "83c9903fb14335fca67592be4ac15926b7592e83",
+  "prompts": {},
+  "sessions": {
+    "s_3a85f9517b2690": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53fe31ed-c163-43e8-8627-782bc98741f8",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

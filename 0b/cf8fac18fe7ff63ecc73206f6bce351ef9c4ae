@@ -1,0 +1,175 @@
+hooks/local-llm/ollama-billing-guard.sh
+  s_be28a864be8c45::t_29555c814aba07 79
+  s_02abc74f4971c7::t_4d5a489468982a 1-78,80-86
+hooks/local-llm/travel-flag.sh
+  s_be28a864be8c45::t_fa39eabbf2342c 1-90
+hooks/local-llm/ollama-agent-debrief.sh
+  s_be28a864be8c45::t_4b401b8a701f90 17
+  s_be28a864be8c45::t_ca40ed5e139ca0 110
+  s_02abc74f4971c7::t_d78d62b17bde4d 1-16,18-109,111-116
+scripts/travel/pre-flight-travel.sh
+  s_be28a864be8c45::t_2d98b9a2e016d4 1-148
+scripts/travel/travel-mode.sh
+  s_be28a864be8c45::t_b1c2d3bc2cf744 1-132
+hooks/local-llm/api-failure-counter.sh
+  s_be28a864be8c45::t_da72db081e0998 42-43,47-48,59,65,71,87,125-126,130-144
+  s_be28a864be8c45::t_f33d4c70e69fca 25-31
+  s_be28a864be8c45::t_c6a7a39d2f3402 46
+  s_dccee6b7677203::t_7952e76684c4a9 1-24,32-41,44-45,49-58,60-64,66-70,72-86,88-124,127-129,145-152
+docs/runbooks/travel/OPERATOR-ACTIONS.md
+  s_be28a864be8c45::t_b4234f3e5b3b42 1-59,61-63,109-137,139-156,158-176,178-185
+  s_be28a864be8c45::t_be3a8857b71835 60
+  s_be28a864be8c45::t_ed0cf1f71fa4b5 64-108
+  s_7d6d0c7abd029f::t_13913c984acd33 138,157,177
+hooks/local-llm/ollama-protocol-checker.sh
+  s_be28a864be8c45::t_40a87869354957 89-144
+  s_02abc74f4971c7::t_818ed98e118407 1-88,145-162
+scripts/travel/claude-wrapper.sh
+  s_be28a864be8c45::t_ca1c3ce063a3fa 1-168
+hooks/local-llm/trip-telemetry.sh
+  s_be28a864be8c45::t_08e9b6a0ee2859 16-25
+  s_157583aa3b6686::t_d7b020b411e673 1-15,26-117
+scripts/travel/__tests__/claude-wrapper.test.sh
+  s_be28a864be8c45::t_edb306d1225ad2 1-67,75-116
+  s_be28a864be8c45::t_7e8865879c6ad5 68-74
+scripts/travel/statusline-segments.sh
+  s_be28a864be8c45::t_c4f9bfa97ee123 20-22
+  s_02abc74f4971c7::t_2766ea763693e6 1-19,23-233
+hooks/local-llm/ollama-agent-validator.sh
+  s_be28a864be8c45::t_7b43da8743462a 73
+  s_7d6d0c7abd029f::t_bfeaa80fe211d7 1-72,74-91
+.claude/skills/travel/SKILL.md
+  s_be28a864be8c45::t_4badaa069a58a5 1-74
+scripts/local-llm/__tests__/agent-ollama-bridge.travel-mode.test.sh
+  s_be28a864be8c45::t_0e729a3514f4de 39-42,44-46
+  s_be28a864be8c45::t_e09f0c01fff48a 54-62,77,81
+  s_be28a864be8c45::t_5d7c809f7039b0 21-35,43,47-53,72,76
+  s_157583aa3b6686::t_32317763e91735 1-20,36-38,63-71,73-75,78-80,82-155
+scripts/local-llm/agent-ollama-bridge.sh
+  s_be28a864be8c45::t_745e058a648a7d 26-30
+  s_02abc74f4971c7::t_8dd216f3f836c4 1-25,31-324
+.claude/scripts/lib/agent-otel-env.sh
+  s_be28a864be8c45::t_a8f0f53a140f94 1-88
+docs/runbooks/travel/cellular-degraded.md
+  s_be28a864be8c45::t_4d4b8fd5f21882 1-111
+docs/runbooks/travel/failure-modes.md
+  s_be28a864be8c45::t_ff45f7872bf831 1-142
+docs/runbooks/travel/headless-approval-flow.md
+  s_be28a864be8c45::t_e21f10a34368bd 1-63
+docs/runbooks/travel/ios-shortcut-quick-post.md
+  s_be28a864be8c45::t_7a6e1ffa042405 1-120
+docs/runbooks/travel/learnings-not-rotating.md
+  s_be28a864be8c45::t_88b95d27dd1496 1-147
+docs/runbooks/travel/multi-day-session-hygiene.md
+  s_be28a864be8c45::t_e96ea253f7fd02 1-143
+docs/runbooks/travel/operator-gotchas-2026-05-13.md
+  s_be28a864be8c45::t_b978e6336c60b7 1-107
+docs/runbooks/travel/pre-flight-operator-checklist.md
+  s_be28a864be8c45::t_53d47422dedd69 1-105
+docs/runbooks/travel/pre-trip-operator-checklist.md
+  s_be28a864be8c45::t_dfe55c39a722a4 1-115
+docs/runbooks/travel/studio-lockdown.md
+  s_be28a864be8c45::t_f327305e0e05f8 1-179
+docs/runbooks/travel/studio-reboot-recovery.md
+  s_be28a864be8c45::t_935b40a4b92272 1-160
+docs/runbooks/travel/studio-unreachable.md
+  s_be28a864be8c45::t_33438a04fcce0c 1-129
+docs/runbooks/travel/tailscale-acl.md
+  s_be28a864be8c45::t_568df25462a643 1-122
+docs/runbooks/travel/tmux-corrupted.md
+  s_be28a864be8c45::t_7acab328b6cd5f 1-91
+hooks/local-llm/session-end-rotate-learnings.sh
+  s_be28a864be8c45::t_d0d41034ec551f 1-21
+scripts/local-llm/__tests__/test_redact_learnings.py
+  s_be28a864be8c45::t_840541c3a05430 1-270
+scripts/local-llm/redact-learnings.py
+  s_be28a864be8c45::t_f957d1eafbd52c 1-247
+scripts/local-llm/rotate-learnings.sh
+  s_be28a864be8c45::t_e8053255b4446c 1-65
+scripts/local-llm/route-task.sh
+  s_be28a864be8c45::t_52ed97307d843b 1-109
+scripts/travel/air-aliases.sh
+  s_be28a864be8c45::t_15f58fad33e8c5 1-100
+scripts/travel/air-latency-logger.sh
+  s_be28a864be8c45::t_eb89672dceac26 1-72
+scripts/travel/air-side-bg-mirror.sh
+  s_be28a864be8c45::t_e1e8c5a1c3ff47 1-50
+scripts/travel/air-zerostate-check.sh
+  s_be28a864be8c45::t_23e867f61a8b43 1-71
+scripts/travel/bootstrap-air.sh
+  s_be28a864be8c45::t_58d82bc935bf21 1-211
+scripts/travel/env-toggle.sh
+  s_be28a864be8c45::t_609fcdb3d22aba 1-164
+scripts/travel/finalize-air.sh
+  s_be28a864be8c45::t_9279ab0120c56e 1-162
+scripts/travel/ios-shortcut-wave-note.json
+  s_be28a864be8c45::t_b4993ba58f683b 1-35
+scripts/travel/online.wave.air-latency.plist
+  s_be28a864be8c45::t_2322569fa503fd 1-17
+scripts/travel/online.wave.strip-thinking-proxy.plist
+  s_be28a864be8c45::t_1a27029b8e4005 1-46
+scripts/travel/orchestrate-air-from-studio.sh
+  s_be28a864be8c45::t_70bf82e9939507 1-257
+scripts/travel/pre-flight-check.sh
+  s_be28a864be8c45::t_48faa2924c88ce 1-162
+scripts/travel/rotate-tailscale-key.sh
+  s_be28a864be8c45::t_52a3a0e48e4af0 1-80
+scripts/travel/setup-claude-code-router.sh
+  s_be28a864be8c45::t_3ef53b5d53143f 1-213
+scripts/travel/strip-thinking-proxy.mjs
+  s_be28a864be8c45::t_9c9c677f9a40b0 1-84
+scripts/travel/test-local-routing.sh
+  s_be28a864be8c45::t_d6440ad24d1a1a 1-227
+scripts/travel/trip-watchdog.sh
+  s_be28a864be8c45::t_552f5a15dae0eb 1-211
+scripts/travel/wave-session.sh
+  s_be28a864be8c45::t_d2efb9d38891a1 1-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "0bcf8fac18fe7ff63ecc73206f6bce351ef9c4ae",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_7d6d0c7abd029f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16a3804a-0558-4895-bc83-85ed8cbfb634",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be28a864be8c45": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e3c5cdf8-b158-494c-92bb-b93dd5f09c28",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

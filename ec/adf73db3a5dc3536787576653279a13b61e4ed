@@ -1,0 +1,33 @@
+governance/test/ramp-file-size.test.mjs
+  s_0227926428e4b1::t_bb67824e2542e0 108,114-121
+  s_0227926428e4b1::t_9554016a0e3087 20,22-24
+  s_0227926428e4b1::t_39a2511962cfa3 122-123
+hooks/file-authoring-gate.sh
+  s_0227926428e4b1::t_9234a52f43c459 95-108
+governance/test/file-size-tiers.test.mjs
+  s_0227926428e4b1::t_bc1af158bcf86f 54-56,58-66
+  s_0227926428e4b1::t_a3dcaed6a82da7 1-53,57,67-183
+governance/lib/ramp-detectors.mjs
+  s_0227926428e4b1::t_ec4b90dc3cb70e 15
+  s_0227926428e4b1::t_cbbee104b8cccf 223-226
+governance/lib/file-size-tiers.mjs
+  s_0227926428e4b1::t_c72a585f93a51b 35-61
+hooks/manifest.json
+  s_0227926428e4b1::t_90e3e9c1d75de0 547
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ecadf73db3a5dc3536787576653279a13b61e4ed",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

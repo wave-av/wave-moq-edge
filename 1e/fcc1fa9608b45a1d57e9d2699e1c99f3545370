@@ -1,0 +1,21 @@
+docs/autonomy/plans/2026-06-14-e5p2-work-router.md
+  s_274bffb23af05d::t_d760ba0b0165bb 1-546
+docs/autonomy/specs/2026-06-14-e5p2-work-router-design.md
+  s_274bffb23af05d::t_2713b1b9eda659 69-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "1efcc1fa9608b45a1d57e9d2699e1c99f3545370",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.github/workflows/auto-merge.yml
+  s_53b49eff5b8c5d::t_01f9ff7654d40d 225
+.github/workflows/blast-radius.yml
+  s_53b49eff5b8c5d::t_10e4422efdbecf 26
+.github/workflows/canon-gap-map-drift.yml
+  s_53b49eff5b8c5d::t_40df26c53f9896 67
+.github/workflows/capability-drift.yml
+  s_53b49eff5b8c5d::t_7eb4dc35ecd77a 45
+.github/workflows/catena-snapshot-staleness.yml
+  s_53b49eff5b8c5d::t_00f33283401437 24-31,145-170,172,177-179,185-188,195-196,198-201,203-213,218-226,239-241,243,249,251-264
+.github/workflows/content-watch.yml
+  s_53b49eff5b8c5d::t_884401ce15913f 100,103-110,121-140,142
+.github/workflows/external-ticket-sweep.yml
+  s_53b49eff5b8c5d::t_a7cd923b8c07dd 147-154,156
+.github/workflows/fleet-drift.yml
+  s_53b49eff5b8c5d::t_5d9928eb52614f 249-294
+.github/workflows/floor-budget.yml
+  s_53b49eff5b8c5d::t_0c17341af9b539 37
+.github/workflows/gam-conformance.yml
+  s_53b49eff5b8c5d::t_015d2c28ade986 38
+.github/workflows/governance-enforce.yml
+  s_53b49eff5b8c5d::t_a61763be6a4663 43
+.github/workflows/governance-publish.yml
+  s_53b49eff5b8c5d::t_c648293206e70a 18
+.github/workflows/governance.yml
+  s_53b49eff5b8c5d::t_c295fcea2b9458 45,236,270
+.github/workflows/hook-tests-macos.yml
+  s_53b49eff5b8c5d::t_5455603f4a742c 22
+.github/workflows/hook-tests.yml
+  s_53b49eff5b8c5d::t_6aff1b6d51842b 56,203
+.github/workflows/law-ref-guard.yml
+  s_53b49eff5b8c5d::t_bd70079b335938 1,3-4,6-7,11-18,20-21,25-27,29-37,39,41-42
+.github/workflows/pr-agent.yml
+  s_53b49eff5b8c5d::t_fec79b6dde4978 15-24,26
+.github/workflows/registry-cadence.yml
+  s_53b49eff5b8c5d::t_665b82c8859082 38-39
+.github/workflows/thread-resolved.yml
+  s_53b49eff5b8c5d::t_fcecefea3e0427 90
+.github/workflows/workflow-lint.yml
+  s_53b49eff5b8c5d::t_b9e059af02c65c 78
+.github/workflows/wsc-salvage-coverage.yml
+  s_53b49eff5b8c5d::t_ac2d2a3f5af3a1 37
+docs/wave-search-renderings.md
+  s_53b49eff5b8c5d::t_0203ed577538ab 1-47
+governance/ENFORCEMENT-COVERAGE.md
+  s_53b49eff5b8c5d::t_83ef1f3b27d072 9-10,469
+governance/bin/call-contract-lint.mjs
+  s_53b49eff5b8c5d::t_8a6e2a47082ca3 1-76
+governance/bin/cap-audit.mjs
+  s_53b49eff5b8c5d::t_02a26c807bf586 2,10-25,27-31,33-103,107,109,118-121,123,128-132,134-145
+governance/bin/catena-device-model.mjs
+  s_53b49eff5b8c5d::t_c42add2ff97afe 69,174-176,328-361
+governance/bin/catena-fixture-fidelity.mjs
+  s_53b49eff5b8c5d::t_3af9cfae639c36 1-161
+governance/bin/enforcement-tables.mjs
+  s_53b49eff5b8c5d::t_f31ad4df196146 157-162
+governance/bin/fleet-drift-notify.sh
+  s_53b49eff5b8c5d::t_90bdef9ba9279a 1-138
+governance/bin/law-ref-guard.mjs
+  s_53b49eff5b8c5d::t_024a5ea48f6dd2 1-127
+governance/bin/mint-token.mjs
+  s_53b49eff5b8c5d::t_0bea1113f69f1a 28,30-31,126,131-142,144-155,157-169,180-188,213-240
+governance/bin/stuck-queue-detect.mjs
+  s_53b49eff5b8c5d::t_10a563228612a8 1-133
+governance/bin/wave-search-cli.mjs
+  s_53b49eff5b8c5d::t_46661d129d33e2 1-39
+governance/bin/wave-search-mcp.mjs
+  s_53b49eff5b8c5d::t_0b0c9c2df023af 13
+governance/bin/workflow-lint-issue-dedupe.mjs
+  s_53b49eff5b8c5d::t_9fd70922597a06 1-90
+governance/bin/workflow-lint.mjs
+  s_53b49eff5b8c5d::t_ab75d869f4eba4 26-29,324
+governance/lib/catena-extract.mjs
+  s_53b49eff5b8c5d::t_3c30249f4030f9 41-70,73-76,83-86,96-99
+governance/lib/catena-snapshot.mjs
+  s_53b49eff5b8c5d::t_fb24108ef347c4 131-156
+governance/lib/email-craft-rules.mjs
+  s_53b49eff5b8c5d::t_3f5b8485d14474 22-25,50-52,179-180,182-184
+governance/lib/email-html-rules.mjs
+  s_53b49eff5b8c5d::t_cfeb0f4ffd965d 1-104
+governance/lib/email-html-wrapper.mjs
+  s_53b49eff5b8c5d::t_2b1bb208e3f153 193-203,210,296-402
+governance/lib/platform-status-probes.mjs
+  s_53b49eff5b8c5d::t_aec867169cfab7 108,121-138
+governance/lib/wave-search-core.mjs
+  s_53b49eff5b8c5d::t_510264997be9e3 1-38
+governance/lib/wave-search-sdk.mjs
+  s_53b49eff5b8c5d::t_f42b2bc3de0733 1-10
+governance/plans/integrations/METER-PRICING.md
+  s_53b49eff5b8c5d::t_e4e8e9d6efced1 1-115
+governance/plans/integrations/money-rail-plugin.md
+  s_53b49eff5b8c5d::t_2821b8d4485fcf 1-175
+governance/plans/model-routing/E1-IMPLEMENT.md
+  s_53b49eff5b8c5d::t_4e2920b9729517 1-23
+governance/plans/model-routing/E2-EVAL.md
+  s_53b49eff5b8c5d::t_4a0b8d793b939e 1-78
+governance/plans/network-edge-plane/LEARNINGS.md
+  s_53b49eff5b8c5d::t_1b3eec1d326c30 1-23
+governance/plans/network-edge-plane/SUBDOMAIN-SCOREBOARD.md
+  s_53b49eff5b8c5d::t_4e83a51623670d 33-36
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_53b49eff5b8c5d::t_8dcc0e968e9ac3 19-22
+governance/plans/vendor-relationship-ops/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_26a1a43cdd9607 296-328
+governance/plans/vision-ingest/E0-INGEST.md
+  s_53b49eff5b8c5d::t_43985e92bf75d8 6-21
+governance/plans/vision-ingest/INGEST-CONTAINER.md
+  s_53b49eff5b8c5d::t_00d0fb0e073273 1-217
+governance/plans/wave-internal-search/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_7963ab38e75002 22-35
+governance/plans/wave-native-cutover/P1-CAPABILITY-PARITY-LEDGER.md
+  s_53b49eff5b8c5d::t_9991e253603d0b 1-75
+governance/state/email-archive/greptile/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_64809fe23fd8e4 3
+governance/state/reviewer-liveness.json
+  s_53b49eff5b8c5d::t_5c7c5c5b0c9d1b 2,31,47,55-56,61,63,69-77,79-80,85,87-88
+governance/test/cap-audit-fail-closed.test.mjs
+  s_53b49eff5b8c5d::t_9d17b6c380e5c6 1-132
+governance/test/catena-device-model.test.mjs
+  s_53b49eff5b8c5d::t_2ad910247606c3 171-206
+governance/test/catena-exit-contract.test.mjs
+  s_53b49eff5b8c5d::t_2aa50d014a5a0b 1-162
+governance/test/catena-snapshot-gate.test.mjs
+  s_53b49eff5b8c5d::t_b2e531fe1ad2ce 229-253
+governance/test/email-overwide-important.test.mjs
+  s_53b49eff5b8c5d::t_c88c366f36b74b 1-72
+governance/test/email-overwide.test.mjs
+  s_53b49eff5b8c5d::t_79f7784bbb71e3 1-111
+governance/test/fixtures/catena/control.ts.txt
+  s_53b49eff5b8c5d::t_36c9d9dd1467da 57-58,63
+governance/test/law-ref-guard.test.mjs
+  s_53b49eff5b8c5d::t_e69887db2f836a 1-186
+governance/test/lib/workflow-lint-harness.mjs
+  s_53b49eff5b8c5d::t_76ccb4834e125f 1-40
+governance/test/platform-status-probe-coupling.test.mjs
+  s_53b49eff5b8c5d::t_6a079a267d9ced 3-28,31,35,37-38,40-42,46-70,72-73,78-79,82,85-86
+governance/test/stuck-queue-detect.test.mjs
+  s_53b49eff5b8c5d::t_0a049b24f5f232 1-85
+governance/test/wave-search-cli.test.mjs
+  s_53b49eff5b8c5d::t_903594a1bc99e2 1-40
+governance/test/workflow-lint-issue-dedupe.test.mjs
+  s_53b49eff5b8c5d::t_1e20a8e42c2612 1-91
+governance/test/workflow-lint.test.mjs
+  s_53b49eff5b8c5d::t_b2acecaebd2dd4 5-8,11-13
+governance/tools/wave-registry/cadence.mjs
+  s_53b49eff5b8c5d::t_5986809186063e 159-197
+governance/tools/wave-registry/wave-registry.mjs
+  s_53b49eff5b8c5d::t_7a6914a57921df 13,90,484-489
+governance/voice/voice-gate.mjs
+  s_53b49eff5b8c5d::t_2759a064cf0b19 16,28,30-31,89
+governance/voice/voice-law.mjs
+  s_53b49eff5b8c5d::t_f0725b0d6d80c7 28-52,70-75
+rules/background-work-must-fail-loud.md
+  s_53b49eff5b8c5d::t_20fd3a4f106691 52
+rules/public-surface-projects-curated-identity.md
+  s_53b49eff5b8c5d::t_2a1a2d5312c102 34-64,72-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c7ffbf6fc12af34a73c364385802fc75246d3d73",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

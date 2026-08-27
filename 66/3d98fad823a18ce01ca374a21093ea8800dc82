@@ -1,0 +1,31 @@
+governance/lib/plan-bare-ref-reads.mjs
+  s_41871fb068a796::t_606505bbc72937 77,157-159,202-205,253,257-260,287
+governance/lib/plan-block-boundary.mjs
+  s_5cfb353d409f83::t_b3d9d85e11ae9d 12-13,40-47
+governance/test/plan-bare-ref-reads-scope.test.mjs
+  s_41871fb068a796::t_09464e85368795 317-322,327-339,341-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "663d98fad823a18ce01ca374a21093ea8800dc82",
+  "prompts": {},
+  "sessions": {
+    "s_41871fb068a796": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae0af15b998561ee7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_5cfb353d409f83": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac5a1a7b78eb61513",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

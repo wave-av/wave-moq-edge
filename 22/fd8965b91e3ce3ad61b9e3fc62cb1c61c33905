@@ -1,0 +1,21 @@
+governance/lib/rl-corpus-detectors.mjs
+  s_4316a0be1499cf::t_42ea71134415b6 1-70
+governance/lib/rl-corpus-write.mjs
+  s_4316a0be1499cf::t_9974ca123feb09 31-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "22fd8965b91e3ce3ad61b9e3fc62cb1c61c33905",
+  "prompts": {},
+  "sessions": {
+    "s_4316a0be1499cf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_4316a0be1499cf",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

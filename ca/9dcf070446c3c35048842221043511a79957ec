@@ -1,0 +1,23 @@
+governance/test/agent-plugins-spec-watch.test.mjs
+  s_e077f59d8037ec::t_da5171b0f144ba 1-56
+.github/workflows/agent-plugins-spec-watch.yml
+  s_e077f59d8037ec::t_a91522fde96782 1-128
+governance/bin/agent-plugins-spec-watch.mjs
+  s_e077f59d8037ec::t_1a43f51cb6b0f0 1-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ca9dcf070446c3c35048842221043511a79957ec",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/bin/readme-drift-fleet.mjs
+  s_e2e3e43d0638c5::t_3d2e11436d5750 31-37,41-42
+  s_e2e3e43d0638c5::t_92dcbba1f901ae 93-185
+  s_e2e3e43d0638c5::t_26e4aba78caf4b 390-394
+  s_e2e3e43d0638c5::t_63f3143e8f700b 405-415,422-423
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "415767a11ddb49faf2c1ab0ec31291c13da65e34",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

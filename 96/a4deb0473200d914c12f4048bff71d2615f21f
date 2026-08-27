@@ -1,0 +1,19 @@
+governance/plans/sandbox-tier-ladder/E4-EVAL-CONSUMER.md
+  s_f9ff6dc10be18e::t_7b689dc60ef390 29-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "96a4deb0473200d914c12f4048bff71d2615f21f",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

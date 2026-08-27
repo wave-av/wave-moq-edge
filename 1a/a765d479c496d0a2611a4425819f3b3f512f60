@@ -1,0 +1,24 @@
+governance/lib/citation-re.mjs
+  s_375efeac18ed55::t_96f50caf0be4b8 26-36
+  s_375efeac18ed55::t_5a1657b8da2c68 37
+governance/test/citation-re.test.mjs
+  s_375efeac18ed55::t_0949b0b252d533 2,12-15,57,59-115,121,123-124,126-129,141-164
+governance/graph.json
+  s_375efeac18ed55::t_f9619a1eed56ee 13687-13692,14041-14046
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "1aa765d479c496d0a2611a4425819f3b3f512f60",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

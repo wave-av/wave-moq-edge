@@ -1,0 +1,27 @@
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_42309c3e10e84c 162-178
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_d2d905feaa25d5 361-416
+.github/workflows/wave-cost-ledger-pullers.yml
+  s_2e30bff6169f7a::t_77c05109053ad5 1-68,81-87,90-133,135-178,180-226,228-270
+  s_2e30bff6169f7a::t_7736467d957730 69-80,88-89
+  s_2e30bff6169f7a::t_0ae6a7ec1cf980 179
+  s_2e30bff6169f7a::t_6920a9bb9bd6a7 227
+  s_2e30bff6169f7a::t_06b78f540f91c1 134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "51b2dbce07162c8b01ff504a34741aaabe117dfa",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

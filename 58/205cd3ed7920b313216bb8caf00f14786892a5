@@ -1,0 +1,29 @@
+governance/plans/cli-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_8b495832106a85 35
+governance/plans/mcp-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_4e216de59ddb69 30
+governance/plans/rendering-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_cce734b64fa88d 59-60
+governance/plans/sdk-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_eb9e7cb0e3cf6e 34
+governance/plans/skills-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_c3f728249f3c7c 31
+governance/plans/voice-completeness/NORTH-STAR.md
+  s_1062b54a24b98c::t_6767e50125947d 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "58205cd3ed7920b313216bb8caf00f14786892a5",
+  "prompts": {},
+  "sessions": {
+    "s_1062b54a24b98c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe3be45d5ffehpk9u1IeevQuyP",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

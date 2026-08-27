@@ -1,0 +1,23 @@
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_06c6f1f9639543 8,25
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_3d1d257539cf8e 5,156-177
+governance/code-index/index.json
+  s_375efeac18ed55::t_2ee99dd2362fb6 6-7,9-10,1433-1652
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "2ad77ca488e43e940bd52188dab80ac7b8f08120",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

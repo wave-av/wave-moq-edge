@@ -1,0 +1,95 @@
+governance/tools/smart-recycling/package.json
+  s_1639a86f902c9d::t_91c5a5a9486781 1-15
+governance/tools/smart-recycling/lib/index.mjs
+  s_1639a86f902c9d::t_e68389bfde9601 1-177
+governance/tools/data-gravity-lint/README.md
+  s_c06f9914be4f73::t_0c6234c495835d 1-97
+governance/tools/time-lapse-store/examples/usage-timeline.json
+  s_cb63cc265b14f6::t_a1b8ad17124188 1-64
+governance/tools/smart-recycling/README.md
+  s_1639a86f902c9d::t_3e4bd5350c8def 1-91
+governance/tools/smart-recycling/pack.schema.json
+  s_1639a86f902c9d::t_a6a8aa2d8e040d 1-63
+governance/tools/time-lapse-store/README.md
+  s_cb63cc265b14f6::t_f8b4ea01f4bcfb 1-101
+governance/tools/smart-recycling/examples/fluency-pack.json
+  s_1639a86f902c9d::t_64e2d5995d09a2 1-29
+governance/tools/time-lapse-store/lib/index.mjs
+  s_cb63cc265b14f6::t_7c69cf5b80b808 1-50,52-59,61-223
+  s_cb63cc265b14f6::t_4f289f26415dcc 51,60
+governance/tools/units-as-types/tests/units-as-types.test.mjs
+  s_2d176467639faf::t_4f411c02543c9b 1-330
+governance/tools/data-gravity-lint/format.schema.json
+  s_c06f9914be4f73::t_0578f25bf7735f 1-59
+governance/tools/units-as-types/lib/index.mjs
+  s_2d176467639faf::t_78349139c91ac1 1-202
+governance/tools/data-gravity-lint/bin/gravity-lint.mjs
+  s_c06f9914be4f73::t_3f219fdb10017b 1-78
+governance/tools/units-as-types/package.json
+  s_2d176467639faf::t_c0435c1b11538e 1-15
+governance/tools/smart-recycling/tests/smart-recycling.test.mjs
+  s_1639a86f902c9d::t_45cd57f8b4e04e 152-154
+  s_1639a86f902c9d::t_98a5cfcd9d7a10 1-151,155-304
+governance/tools/time-lapse-store/tests/timelapse.test.mjs
+  s_cb63cc265b14f6::t_8f19c91fb50bd1 1-150
+governance/tools/units-as-types/bin/units-lint.mjs
+  s_2d176467639faf::t_b054c918830e15 1-75
+governance/tools/units-as-types/manifest.schema.json
+  s_2d176467639faf::t_3491f8cf936383 1-53
+governance/tools/smart-recycling/bin/recycle.mjs
+  s_1639a86f902c9d::t_c3c17aa84c6a53 1-81
+governance/tools/time-lapse-store/store.schema.json
+  s_cb63cc265b14f6::t_062d861cc37db6 1-47
+governance/tools/time-lapse-store/bin/timelapse.mjs
+  s_cb63cc265b14f6::t_ccabf25fcc1dde 1-82
+governance/tools/units-as-types/examples/gis-ops.json
+  s_2d176467639faf::t_3782302518f555 1-38
+governance/tools/data-gravity-lint/lib/index.mjs
+  s_c06f9914be4f73::t_702cd09dbd0093 1-156
+governance/tools/data-gravity-lint/tests/data-gravity-lint.test.mjs
+  s_c06f9914be4f73::t_c00945178e97ab 1-275
+governance/tools/data-gravity-lint/examples/wave-formats.json
+  s_c06f9914be4f73::t_78037e890bfda3 1-51
+governance/tools/units-as-types/README.md
+  s_2d176467639faf::t_4e0eff457e4a9e 1-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "85d43e36e08ed7d5f858d39af4fb4a2b76cffc12",
+  "prompts": {},
+  "sessions": {
+    "s_1639a86f902c9d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068b903fffeKgVciujnA5dV3A",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2d176467639faf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068ba2aeffe7hBsHjKWk3PFBG",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c06f9914be4f73": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068bb729ffev0z7K9jfcTCGWC",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_cb63cc265b14f6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068bcd0dffeXd2cq75ecmxrZi",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

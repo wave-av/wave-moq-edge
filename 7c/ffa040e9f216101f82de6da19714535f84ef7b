@@ -1,0 +1,26 @@
+.github/workflows/trust-surface-staleness.yml
+  s_124891ed63801b::t_7deec94e29d1c8 1-116
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_1f7c82864e45c3 109-119
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_3af5604193be15 14-19
+.github/workflows/trust-surface-regen.yml
+  s_124891ed63801b::t_70ee62ab46fb19 1-96,99-116
+  s_124891ed63801b::t_8584fba58d2e05 97-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7cffa040e9f216101f82de6da19714535f84ef7b",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

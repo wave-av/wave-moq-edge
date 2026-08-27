@@ -1,0 +1,19 @@
+governance/plans/vendor-relationship-ops/ORIGIN-SYNTHESIS.md
+  s_33808c00e16d52::t_8d9a7646cdf600 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7d655528f764bbaa183599fb23d333753601919a",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

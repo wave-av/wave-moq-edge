@@ -1,0 +1,41 @@
+rules/bind-or-omit.md
+  s_ddc6ab5f5d6b64::t_21a8f069464152 1-50
+runbooks/library/pen-2-lane-concurrency-recipe.md
+  s_ddc6ab5f5d6b64::t_29ece89f6ab628 1-98
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_ddc6ab5f5d6b64::t_13954fef8f7cb5 58
+  s_ddc6ab5f5d6b64::t_d2bc62b1640ffd 60-95
+  s_ddc6ab5f5d6b64::t_72c5625d889622 59
+governance/plans/pen-design-lane/ENFORCEMENT-REGISTRATION-2026-08-15.md
+  s_ddc6ab5f5d6b64::t_35df3b031dc598 1-159
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_ddc6ab5f5d6b64::t_49843b7107c722 36-52
+governance/plans/pen-design-lane/PROMOTION-DECLINES-2026-08-15.md
+  s_ddc6ab5f5d6b64::t_33d80c49236ccb 1-45
+runbooks/library/pen-design-finals-recipe.md
+  s_ddc6ab5f5d6b64::t_4b00dd59050c8d 1-126
+governance/plans/pen-design-lane/E7-SCALE.md
+  s_ddc6ab5f5d6b64::t_9f9384d68e65a6 28-43
+rules/brand-truth.md
+  s_ddc6ab5f5d6b64::t_9370449f47b65a 1-46
+governance/ENFORCEMENT-COVERAGE.md
+  s_ddc6ab5f5d6b64::t_0ff2fd7c7a03f9 5,12,14,27,29,194,196
+governance/contract.md
+  s_ddc6ab5f5d6b64::t_c7dae1688cfb2f 57,59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e7fc1e9dd8c05aba60ee0ab6a14d2f6e6ad76e41",
+  "prompts": {},
+  "sessions": {
+    "s_ddc6ab5f5d6b64": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bd40e21a-4a9f-4329-af7d-2d974870ae31",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

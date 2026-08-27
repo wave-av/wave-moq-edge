@@ -1,0 +1,29 @@
+memory/dogfood-to-product.md
+  s_375efeac18ed55::t_31edb8d17ff685 1-46
+memory/wave-status-page.md
+  s_375efeac18ed55::t_d9f51a362b86a3 1-73
+governance/DANGLING-REFS-BASELINE.json
+  s_375efeac18ed55::t_8fa9400a052fd8 78-83
+memory/MEMORY.md
+  s_375efeac18ed55::t_ac66cceefdb356 17-18
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_19c5f01e6ad4b1 25
+governance/graph.json
+  s_375efeac18ed55::t_85cff099d95867 4943-4958,16895-16900,17855-17860
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "fc47612e16dbac71b3f046763153bda6867c06da",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

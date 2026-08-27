@@ -1,0 +1,19 @@
+docs/superpowers/specs/2026-07-23-wsc-decommission-design.md
+  s_364605915bb7ec::t_4c9e6a2ef6a1ac 1-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d71b8e0036f80a4fed374a193efd1512a45055f9",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

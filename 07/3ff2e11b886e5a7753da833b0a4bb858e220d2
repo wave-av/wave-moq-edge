@@ -1,0 +1,59 @@
+governance/bin/hook-release.mjs
+  s_48b0f422701dc2::t_5aec0404393fb7 52-60,303-309,314-318,330-333,340
+governance/lib/hook-release-args.mjs
+  s_bcd3e1f2943c1f::t_4c8aa3397f8a1b 32-37,41-44,51,122
+governance/lib/release-freshness.mjs
+  s_f4919a35f44acf::t_135d0c43ef151b 93-131,136-137,141,151-181,186-187,191-193
+governance/test/hook-release-args.test.mjs
+  s_4b86428543fda7::t_1f6b27b3e8340c 96,98,100,102,104-106,108,110-116
+hooks/tests/hook-release-status-exit.test.sh
+  s_4c1f171f08cf8a::t_ac8ab96fb22ebd 1-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "073ff2e11b886e5a7753da833b0a4bb858e220d2",
+  "prompts": {},
+  "sessions": {
+    "s_48b0f422701dc2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af9353f968a867da1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4b86428543fda7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5e78f3cd6dad9885",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4c1f171f08cf8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a1a9e9b011c159530",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_bcd3e1f2943c1f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aa3b3a08b2652a0e2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f4919a35f44acf": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5bf3704239330c7b",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_15127d80763110::t_6e6f4d7410e0cb 4-6,34-36,38,56-58,80-81,104-107,112,134-149,155-164,174-178
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_15127d80763110::t_12d9e378cd4a60 5-6,64,78,80-81,87-88
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_15127d80763110::t_a91e5f3ed88590 11-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9286001e438e88c304a899c054994add0491dc53",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

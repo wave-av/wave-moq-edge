@@ -1,0 +1,30 @@
+hookcli/lib/t3-git.mjs
+  s_db1b2a792e5f25::t_5c78fdfd7f99b7 168-172,175-176
+  s_db1b2a792e5f25::t_05f1359eb8a68d 183-193,197,200-202
+hookcli/lib/worktree-clean-probe.mjs
+  s_db1b2a792e5f25::t_d540818be3cdd7 13-14,24-32,34,44-45,50-52,58,63-64,66-74,76,79-84,90-105,107,109,111-124
+  s_db1b2a792e5f25::t_c57b0e70c66128 1-12,15-23,33,35-43,46-49,53-57,59-62,65,75,77-78,85-89,106,108,110,125-126
+hookcli/tests/t3-classifier-git.sh
+  s_db1b2a792e5f25::t_81cf1a73ab92a6 155-203,211-221
+  s_db1b2a792e5f25::t_97a813a2d89086 204-210
+hookcli/lib/t3-classify.mjs
+  s_db1b2a792e5f25::t_72d53e3874bd6c 279
+  s_db1b2a792e5f25::t_7d205ecf5e7aa8 45-48
+  s_db1b2a792e5f25::t_874230a969968b 248-265
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "49b3b79c0d668f742448d6a26081963b633b90a6",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

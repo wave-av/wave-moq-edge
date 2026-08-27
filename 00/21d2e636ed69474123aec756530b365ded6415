@@ -1,0 +1,33 @@
+governance/test/struggle-miner/event-schema.test.mjs
+  s_37e24b4d920e09::t_2a13a6e72db6a6 1-27
+governance/bin/struggle-miner/lib/event-schema.mjs
+  s_37e24b4d920e09::t_f756d0bbd077c0 1-28
+.gitignore
+  s_37e24b4d920e09::t_677a442afa8559 38-41
+governance/bin/struggle-miner/lib/signature.mjs
+  s_37e24b4d920e09::t_adeeb4221d958b 1
+  s_37e24b4d920e09::t_3cfdda93f7cac1 2-9
+governance/test/struggle-miner/signature.test.mjs
+  s_37e24b4d920e09::t_a7c4725be20194 6
+  s_37e24b4d920e09::t_5b8e99c30ab540 1-5,7-13
+governance/code-index/CATALOG.md
+  s_37e24b4d920e09::t_bffb3b514f566b 5,2683-2695
+governance/code-index/index.json
+  s_37e24b4d920e09::t_a7d52c1f7e45f8 6-7,9-10,24170-24246
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "0021d2e636ed69474123aec756530b365ded6415",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

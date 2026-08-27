@@ -1,0 +1,37 @@
+plugins/wave-canon/.claude-plugin/plugin.json
+  s_d9915bbafa9657::t_aa4fec7afbc533 1-20
+plugins/wave-canon/README.md
+  s_d9915bbafa9657::t_fcd1f60fb23378 1-18
+governance/test/plugin-canon-drift.test.mjs
+  s_d9915bbafa9657::t_c54aae391b3e99 1-29
+plugins/wave-canon/skills/state-of-play/SKILL.md
+  s_9a2efecfa9877c::t_17fa5bb753e196 1-134
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_9a2efecfa9877c::t_407e49c5a7def1 1-226
+plugins/wave-canon/skills/wow-canon/SKILL.md
+  s_9a2efecfa9877c::t_e30a6ce4cbf87c 1-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "36d1a8e2a0051e1bca78b0e0c6e868fb311f3b06",
+  "prompts": {},
+  "sessions": {
+    "s_9a2efecfa9877c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-afc23dceab665ab1c",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

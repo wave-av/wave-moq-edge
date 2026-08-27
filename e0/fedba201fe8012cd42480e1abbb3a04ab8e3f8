@@ -1,0 +1,50 @@
+hookcli/tests/plan-receipt.sh
+  s_375efeac18ed55::t_fa341fd618a188 86-87
+  s_375efeac18ed55::t_690e060cbfc32f 91-93
+governance/test/never-squash-law.test.mjs
+  s_375efeac18ed55::t_0054ce55e713c4 154-164,168-169,172-179,183,185
+  s_375efeac18ed55::t_bab4a9ff783de1 1-153,165-167,170-171,180-182,184,186-218
+hookcli/rules/rules.json
+  s_375efeac18ed55::t_2ec4c763a54f15 289
+  s_375efeac18ed55::t_4f6e59d36b7dc0 287-288
+  s_375efeac18ed55::t_caffa10f1ae71c 290-292
+  s_375efeac18ed55::t_c0874b17ea719f 293-305
+rules/never-squash-merge-keep-history.md
+  s_375efeac18ed55::t_38cb5b3e4541c3 53
+  s_375efeac18ed55::t_0c0a0d5b08b333 50-52
+  s_375efeac18ed55::t_3e7f3a7c2bcdd6 1-49
+governance/bin/gam-conformance.mjs
+  s_375efeac18ed55::t_7f1b46ea0afbc5 95-103
+governance/plans/E13-CLAUDE-CONFIG-GOVERNANCE.md
+  s_375efeac18ed55::t_5be596e3e8bdaa 28
+hookcli/tests/require.sh
+  s_375efeac18ed55::t_b78ce6953810b6 68,71,73-75
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_56f5451bec4d40 7,16,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_375efeac18ed55::t_f084a104210261 5,9,14,469
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_51ac773cbbafb5 1382,1387-1390,1393,1397
+governance/code-index/index.json
+  s_375efeac18ed55::t_1748f5b646ae67 12417-12418,12472-12473,12483-12484,12494-12495,12505-12506,12538-12539,12582-12583
+governance/contract.md
+  s_375efeac18ed55::t_e9204054395424 47,53
+governance/graph.json
+  s_375efeac18ed55::t_48d092a97fc56e 1243-1249,9768-9791,13392-13397,17772-17777
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e0fedba201fe8012cd42480e1abbb3a04ab8e3f8",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

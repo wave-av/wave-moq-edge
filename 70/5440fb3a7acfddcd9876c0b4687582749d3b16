@@ -1,0 +1,113 @@
+governance/bin/plan-lint.mjs
+  s_385b66188ddb12::t_74ff89975bd866 22,24,26-27,65-70,75,81,93-117,149-175,177-197,199,254-259
+governance/lib/levels.mjs
+  s_385b66188ddb12::t_e7d3bf87820bde 172-204,214-229,237,256-268,270-275,277-290,292-316,319-324
+governance/lib/markdown-mask.mjs
+  s_385b66188ddb12::t_931cc0d2356c0f 18-22,24,34-38,81-87,122,128-165
+governance/lib/mutates.mjs
+  s_385b66188ddb12::t_969ce1be5d751a 30
+governance/lib/plan-mutates-advisory.mjs
+  s_385b66188ddb12::t_1d36839465ef6e 1-65
+governance/lib/work-node-deps.mjs
+  s_385b66188ddb12::t_e2957b76283fbd 28-36,43-78,149-165,182-197
+governance/lib/work-nodes.mjs
+  s_385b66188ddb12::t_1270a47877e58b 16,25
+governance/plans/engineering-canon/E1-assurance-ladder/E1-ASSURANCE-LADDER.md
+  s_385b66188ddb12::t_c6ae58a43d8e36 4-5
+governance/plans/engineering-canon/E10-surface-census/E10-SURFACE-CENSUS.md
+  s_385b66188ddb12::t_d0228f977f9cab 4-5
+governance/plans/engineering-canon/E11-enforcement-supply-chain/E11-ENFORCEMENT-SUPPLY-CHAIN.md
+  s_385b66188ddb12::t_dd4631ead21d73 4-5
+governance/plans/engineering-canon/E12-graduated-sanctions/E12-GRADUATED-SANCTIONS.md
+  s_385b66188ddb12::t_5134a844c5778c 4-5
+governance/plans/engineering-canon/E13-sweep-operation/E13-SWEEP-OPERATION.md
+  s_385b66188ddb12::t_a6482023fe1b81 4-5
+governance/plans/engineering-canon/E2-independence/E2-INDEPENDENCE.md
+  s_385b66188ddb12::t_6839ec2bfd232a 4-5
+governance/plans/engineering-canon/E3-error-budget/E3-ERROR-BUDGET.md
+  s_385b66188ddb12::t_36a067d8c12476 4-5
+governance/plans/engineering-canon/E4-defect-spine/E4-DEFECT-SPINE.md
+  s_385b66188ddb12::t_18090c7b4b928f 4-5
+governance/plans/engineering-canon/E5-stop-the-line/E5-STOP-THE-LINE.md
+  s_385b66188ddb12::t_056e95b0f72e88 4-5
+governance/plans/engineering-canon/E6-control-structure/E6-CONTROL-STRUCTURE.md
+  s_385b66188ddb12::t_669e6170448721 4-5
+governance/plans/engineering-canon/E7-dispatch-matrix/E7-DISPATCH-MATRIX.md
+  s_385b66188ddb12::t_51bcf667927303 4-5
+governance/plans/engineering-canon/E8-gap-map/E8-GAP-MAP.md
+  s_385b66188ddb12::t_cf010392e7183c 4-5
+governance/plans/engineering-canon/E9-defeater-gates/E9-DEFEATER-GATES.md
+  s_385b66188ddb12::t_79d03a3cc6caa5 4-5
+governance/plans/socratic-loop/E11-GOVERNANCE-BINDING.md
+  s_385b66188ddb12::t_d0e2643e770943 295-300
+governance/plans/socratic-loop/E5-LEDGER.md
+  s_385b66188ddb12::t_99e33a6e7190d3 558
+governance/plans/wave-private-network/E0-CENSUS.md
+  s_385b66188ddb12::t_c024fa1490517a 1-162
+governance/plans/wave-private-network/E1-MEASURE.md
+  s_385b66188ddb12::t_e15b6dcb4b1bb4 1-200
+governance/plans/wave-private-network/E2-PRIVATE-ORIGIN.md
+  s_385b66188ddb12::t_46d9afad1031c4 1-148
+governance/plans/wave-private-network/E3-FLY-INGRESS.md
+  s_385b66188ddb12::t_c4198df4c63561 1-129
+governance/plans/wave-private-network/E4-MESH-REACH.md
+  s_385b66188ddb12::t_ae5efbf89a075f 1-165
+governance/plans/wave-private-network/E5-PROD-CROSSING.md
+  s_385b66188ddb12::t_ac8736dfabad9a 1-129
+governance/plans/wave-private-network/E6-CONTINUOUS-PROOF.md
+  s_385b66188ddb12::t_8adf213eabd98e 1-136
+governance/plans/wave-private-network/NORTH-STAR.md
+  s_385b66188ddb12::t_0837c560843edf 1-222
+governance/plans/wave-retrieval/E0-GROUND-AND-GOVERN.md
+  s_385b66188ddb12::t_0734948247d994 1-89
+governance/plans/wave-retrieval/E1-BENCHMARK.md
+  s_385b66188ddb12::t_001c12c3a4137a 1-182
+governance/plans/wave-retrieval/E2-METADATA-CEILING.md
+  s_385b66188ddb12::t_9fc1200fc54937 1-111
+governance/plans/wave-retrieval/E3-TRANSCRIPT-BRIDGE.md
+  s_385b66188ddb12::t_8a6dd857a9d442 1-103
+governance/plans/wave-retrieval/E4-GATEWAY-METER.md
+  s_385b66188ddb12::t_3391256d4bd2b3 1-98
+governance/plans/wave-retrieval/E5-DECIDE.md
+  s_385b66188ddb12::t_0d0ebc12238237 1-102
+governance/plans/wave-retrieval/NORTH-STAR.md
+  s_385b66188ddb12::t_e9190483cbd4b9 1-212
+governance/state/reviewer-liveness.json
+  s_385b66188ddb12::t_0269ae68634796 2,12-13,16,19-21,23,28,35-36,49-57,75-81,99
+governance/test/hookcli-package-boundary.test.mjs
+  s_385b66188ddb12::t_963f737ffba2c0 124-130
+governance/test/levels.short-phase-pattern.test.mjs
+  s_385b66188ddb12::t_b90f2142508123 19,138,142-179
+governance/test/levels.test.mjs
+  s_385b66188ddb12::t_103f10823233b8 13,86-169
+governance/test/markdown-mask.test.mjs
+  s_385b66188ddb12::t_5a5e93d14a6f5b 89,92-102
+governance/test/merge-authority-failure-attribution.test.mjs
+  s_385b66188ddb12::t_fa73ee64248f64 1-104
+governance/test/plan-lint.deps-scope.test.mjs
+  s_385b66188ddb12::t_fd499d1d6d4302 1-216
+governance/test/work-nodes.deps.unbulleted.test.mjs
+  s_385b66188ddb12::t_f44247c1581ddd 1-136
+hookcli/lib/t3-merge-authority-repo.mjs
+  s_385b66188ddb12::t_6660a30e873583 1-156
+hookcli/lib/t3-merge-authority.mjs
+  s_385b66188ddb12::t_23d13250b7ba5e 35-37,42-48,50-51,54-55,57,82-87,96
+hookcli/tests/t3-split-integrity.sh
+  s_385b66188ddb12::t_040822e3150750 89-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "705440fb3a7acfddcd9876c0b4687582749d3b16",
+  "prompts": {},
+  "sessions": {
+    "s_385b66188ddb12": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2e7c8c6f20b99991",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

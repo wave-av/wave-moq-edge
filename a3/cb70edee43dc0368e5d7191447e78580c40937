@@ -1,0 +1,21 @@
+governance/test/codify.test.mjs
+  s_7ddeb5d251570f::t_9ad0169af24cc4 1-47
+bin/codify.mjs
+  s_7ddeb5d251570f::t_19c03e1ac7e7d2 1-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a3cb70edee43dc0368e5d7191447e78580c40937",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

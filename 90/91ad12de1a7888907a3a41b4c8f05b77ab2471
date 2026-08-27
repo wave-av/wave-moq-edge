@@ -1,0 +1,23 @@
+governance/test/toolset-capture-redact.test.mjs
+  s_9bb1b1d1d998d4::t_97a9a3481df062 6-13,21-23,35-37,39,139
+  s_9bb1b1d1d998d4::t_aba439e3a87e10 1-2,14-20,24-26,29-32,41-138,140-148
+  s_9bb1b1d1d998d4::t_a53d42d6488143 3-5,27-28,33-34,38,40
+governance/lib/toolset-capture-redact.mjs
+  s_9bb1b1d1d998d4::t_4b4f2b5378ded4 1-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9091ad12de1a7888907a3a41b4c8f05b77ab2471",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

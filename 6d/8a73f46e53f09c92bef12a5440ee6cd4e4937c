@@ -1,0 +1,25 @@
+governance/plans/model-selection-completion/probes.json
+  s_7ddeb5d251570f::t_8b5c59906bfd81 12-17
+bin/model-conform.mjs
+  s_7ddeb5d251570f::t_f92ed8d0a58ae3 1-102
+governance/test/model-conform.test.mjs
+  s_7ddeb5d251570f::t_c06f49fdd1aa3a 1-56
+bin/model-eval.mjs
+  s_7ddeb5d251570f::t_b4708753a595c9 31,34,42-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6d8a73f46e53f09c92bef12a5440ee6cd4e4937c",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

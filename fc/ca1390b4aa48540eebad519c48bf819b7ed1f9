@@ -1,0 +1,29 @@
+governance/bin/nulltest-coverage.mjs
+  s_dd42a206f882e3::t_dc81a30c7c9b79 1-142
+governance/bin/nulltest.mjs
+  s_dd42a206f882e3::t_1a708d53be0cca 51-52,55-65
+  s_dd42a206f882e3::t_a3ee235cc8687a 74
+  s_dd42a206f882e3::t_03089329b2ec52 176-179,182-183,187-190
+  s_dd42a206f882e3::t_4c1ad7de92dbfa 204,207
+governance/test/nulltest-splice.test.mjs
+  s_dd42a206f882e3::t_7518dd5462a5c8 1-60
+governance/lib/nulltest-splice.mjs
+  s_dd42a206f882e3::t_50ee331e1a77ef 1-163,170-171,173-183
+  s_dd42a206f882e3::t_1aca72fb091997 164-169,172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fcca1390b4aa48540eebad519c48bf819b7ed1f9",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+hooks/bin/git-baseline-capture.mjs
+  s_60a20469ef4369::t_ae745fd4f10059 1-20,24-31
+  s_60a20469ef4369::t_7881855d0c65ec 21-23
+hooks/bin/git-baseline-runner.mjs
+  s_60a20469ef4369::t_ff966ba27c4eed 1-34,48-62
+  s_60a20469ef4369::t_a01f0dae8c5912 35-47
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_50f4424b6f20c2 32
+  s_60a20469ef4369::t_dc3e593b8c3320 85-93,95-106
+  s_60a20469ef4369::t_828f7c911e2c77 62-79
+hookcli/tests/git-baseline.sh
+  s_60a20469ef4369::t_aec9bf046cba0f 124-138
+  s_60a20469ef4369::t_828ef413d85ade 95-97
+  s_60a20469ef4369::t_99e07b6e1074c7 1-94,98-123,139
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_9f650959029818 87-92
+hooks/session-baseline-observer.sh
+  s_60a20469ef4369::t_df7bd806ab1e1d 1-29
+settings/settings.base.json
+  s_60a20469ef4369::t_0515f8a6775c78 361-363
+  s_60a20469ef4369::t_66dcdeaba027f9 359-360
+hookcli/lib/git-state.mjs
+  s_60a20469ef4369::t_f36b6c2e3747a9 1-51
+governance/graph.json
+  s_60a20469ef4369::t_e14291aaf0e2c1 4209-4216,16349-16360
+hooks/manifest.json
+  s_60a20469ef4369::t_e2b862856bcb33 820-840
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "7ee7f991d72f106616a2a00184217b7799a8895b",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

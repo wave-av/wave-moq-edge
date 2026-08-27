@@ -1,0 +1,39 @@
+docs/rules-audit-2026-06-10.md
+  s_07acdfa7e3709a::t_15e16ebf8f13dc 1-89
+rules/behavioral-rules.md
+  s_07acdfa7e3709a::t_759b0cc158b35e 22
+rules/script-robustness.md
+  s_07acdfa7e3709a::t_8a753ba8032168 12
+rules/git-safety.md
+  s_07acdfa7e3709a::t_f509d7371c74ee 62-65
+  s_07acdfa7e3709a::t_662d27be04af16 25-46
+  s_07acdfa7e3709a::t_8f697b0406a28a 54
+  s_07acdfa7e3709a::t_92e93ed726473d 58
+scripts/bugbot/ROLLOUT.md
+  s_07acdfa7e3709a::t_75530499e221f8 56-59
+scripts/bugbot/safe-deploy.sh
+  s_07acdfa7e3709a::t_1f3e4ecc57d9ca 1-44
+rules/safe-git-and-actions.md
+  s_07acdfa7e3709a::t_5442f96ddb418f 8
+rules/work-through-blockers.md
+  s_07acdfa7e3709a::t_2875f4ef2189c1 69-72
+rules/rejection-awareness.md
+  s_07acdfa7e3709a::t_9f526a73ffd10a 48-54
+  s_07acdfa7e3709a::t_0541a103893ba3 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "75d2acc9b2518566946485c6e53a32b790955481",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

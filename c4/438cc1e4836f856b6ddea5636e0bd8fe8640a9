@@ -1,0 +1,26 @@
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  h_af5ac1a9798224 6,55-102,105-106,112-114,131-137
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3355,3359,3361-3362,3364-3365,4832-4836,4845
+governance/code-index/index.json
+  h_af5ac1a9798224 10,12-13,29928-29938,29978-29979,29994-30004,30011-30014,30033-30034,30044-30045,41066-41067,41077-41078,41088-41091,41099-41100,41110-41111,41176-41177
+governance/lib/wave-cost-ledger-gha-absent-check.mjs
+  h_af5ac1a9798224 35-37,56-63,68-76
+governance/lib/wave-cost-ledger-gha-billing.mjs
+  h_af5ac1a9798224 124-130
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  h_af5ac1a9798224 3-4,7-9,11,14-17,24-35,39,41,43,61,65,70,75-77,110,112,137,139,152-190
+governance/test/wave-cost-ledger-gha-absent-check.test.mjs
+  h_af5ac1a9798224 248-277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c4438cc1e4836f856b6ddea5636e0bd8fe8640a9",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

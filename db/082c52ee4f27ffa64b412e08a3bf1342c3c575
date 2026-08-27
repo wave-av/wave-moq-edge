@@ -1,0 +1,25 @@
+governance/lib/vendor-schema.mjs
+  s_2fd4e0c1ae6a7a::t_c2e2bfb942902a 132-148,153-154
+governance/test/vendor-schema.test.mjs
+  s_2fd4e0c1ae6a7a::t_3f74ee9928a7f4 283-327
+governance/test/reviewer-census.test.mjs
+  s_2fd4e0c1ae6a7a::t_b733509ff2b8e6 363-386
+governance/lib/reviewer-census-classify.mjs
+  s_2fd4e0c1ae6a7a::t_b8164ccdda10c2 72-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "db082c52ee4f27ffa64b412e08a3bf1342c3c575",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

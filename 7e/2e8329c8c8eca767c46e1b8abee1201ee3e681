@@ -1,0 +1,22 @@
+docs/ADR-0001-live-config-is-the-repo.md
+  s_1141e273d7dc5c::t_2c223e355bf04c 78-86
+  s_1141e273d7dc5c::t_6b97ab32b030dc 75-76
+  s_1141e273d7dc5c::t_66ed6dcdf113bc 92-97
+  s_1141e273d7dc5c::t_b725bdb88fa3bf 77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7e2e8329c8c8eca767c46e1b8abee1201ee3e681",
+  "prompts": {},
+  "sessions": {
+    "s_1141e273d7dc5c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "31529da2-8ae8-4a20-a3c2-1820030a8a5d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

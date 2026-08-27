@@ -1,0 +1,27 @@
+scripts/lane_registry.py
+  s_3a52a0989b58af::t_9892bbc5c8233f 1-170
+fleet/lanes.json
+  s_3a52a0989b58af::t_69fb723bd2039a 1-30
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_3db1af0c5a3630 180
+  s_3a52a0989b58af::t_981616ea5b3c20 117-121
+  s_3a52a0989b58af::t_b002345df59fb4 175-176
+tests/test_lane_registry.py
+  s_3a52a0989b58af::t_320fb030241683 1-129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "02ebece9516d54ba3e77ae435cd9b9eeca12d5b9",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

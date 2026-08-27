@@ -1,0 +1,23 @@
+governance/graph.json
+  s_63c6ee080d73c3::t_01edeb3d0f0c65 5667,7045
+governance/plans/merge-path-parity/NORTH-STAR.md
+  s_63c6ee080d73c3::t_a7c9067faae504 1
+governance/plans/reviewer-fleet/NORTH-STAR.md
+  s_63c6ee080d73c3::t_5a9a9030a2ee96 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "42c2a242030390b177213e3f4000ecbbfc9cbeef",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

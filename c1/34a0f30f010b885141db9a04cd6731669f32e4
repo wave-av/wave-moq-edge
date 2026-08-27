@@ -1,0 +1,44 @@
+governance/bin/fleet/fleet-scan.mjs
+  s_dccee6b7677203::t_18f6a40bd32cd4 74,81-84,87
+  s_dccee6b7677203::t_90eb5bda7accf0 298
+  s_dccee6b7677203::t_716df532d52d81 22
+  s_dccee6b7677203::t_cf0dbd0963de38 75-80,85-86
+  s_dccee6b7677203::t_494506f165f702 250-258,260,264-268
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_0f852e53542fce 123-145
+  s_dccee6b7677203::t_89b53c93e2bb35 102-105
+  s_dccee6b7677203::t_a7edba71244739 82
+governance/bin/fleet/tests/cases/67-schema-decisions.sh
+  s_dccee6b7677203::t_75c86db8f91f96 59-66
+governance/bin/fleet/tests/cases/70-none-is-earned.sh
+  s_dccee6b7677203::t_192dd124dc74ce 1-31,33-34,44-106,109-111
+  s_dccee6b7677203::t_3aa4211d372e0a 32,35-43
+  s_dccee6b7677203::t_6c7ba9295563ca 107-108
+governance/plans/polyrepo-velocity/E5-PAVED-ROAD.md
+  s_dccee6b7677203::t_1ff831473b03bb 327-385
+governance/bin/fleet/lib/repo-content.mjs
+  s_dccee6b7677203::t_3a225d2777fb76 65
+  s_dccee6b7677203::t_2d910b2a79934d 1-28,30,42-64,66-86,88-92,102-106,108,110-113
+  s_dccee6b7677203::t_9e7ab612462ee0 29,31-41
+  s_dccee6b7677203::t_7df8779a0f7b91 87,93-101,107,109
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_2754cffe99c114 5,1155-1178,1219-1229
+governance/code-index/index.json
+  s_dccee6b7677203::t_aead39b19e7002 6-7,9-10,10514-10515,10525-10526,10536-10537,10547-10548,10558-10559,10569-10570,10574-10584,10591-10592,10602-10603,10613-10614,10624-10625,10635-10636,10646-10649,10657-10658,10668-10669,10679-10680,10690-10691,10701-10702,10712-10713,10723-10726,10734-10735,10745-10746,10756-10757,10767-10770,11036-11123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c134a0f30f010b885141db9a04cd6731669f32e4",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/agent-mail-plane/E9-PODS-TENANT-ISOLATION.md
+  s_37d3f61160b2dd::t_694ce547227688 1-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "fa60a430d9581df5da678f83aff5216fcdc818a6",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

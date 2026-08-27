@@ -1,0 +1,22 @@
+governance/test/plan-lint.deps.test.mjs
+  s_cf363a68d60e93::t_a190a06174d778 1-20
+governance/bin/plan-lint.mjs
+  s_cf363a68d60e93::t_ada5a27a7aed9c 32-43
+  s_cf363a68d60e93::t_ab2a7926443228 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "560405b1f1212bd052b496a93dd1e7256636d8c8",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

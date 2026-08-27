@@ -1,0 +1,35 @@
+governance/test/receipt-capture-browser.test.mjs
+  s_9bb1b1d1d998d4::t_2faa84ac3e3a2a 20
+  s_9bb1b1d1d998d4::t_ecefd35d976e7e 23-25,27
+  s_9bb1b1d1d998d4::t_e2eb5f4e2d98aa 95-127
+  s_9bb1b1d1d998d4::t_c0c07ebf3804da 143-145
+settings/settings.base.json
+  s_9bb1b1d1d998d4::t_0dd8c273779171 94
+hooks/bin/receipt-capture.mjs
+  s_9bb1b1d1d998d4::t_fe1ac273816945 80-113
+  s_9bb1b1d1d998d4::t_fd5aed0a5c1a9d 156
+governance/plans/client-toolset-adoption/E4-RECEIPTS.md
+  s_9bb1b1d1d998d4::t_220099d724ac95 8-16
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_c8f894b3222efe 376-420
+governance/test/receipt-observer-matcher.test.mjs
+  s_9bb1b1d1d998d4::t_9eb1bc40dc1191 1-76
+hooks/manifest.json
+  s_9bb1b1d1d998d4::t_d3470b86390ccd 97-98,104,1597,1603
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "89087eaa92151cea7aa9642326e686f598b9fec5",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

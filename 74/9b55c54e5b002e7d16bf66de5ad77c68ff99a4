@@ -1,0 +1,81 @@
+.github/workflows/governance-enforce.yml
+  s_2fd4e0c1ae6a7a::t_13ca4b2ed14c98 13-15,21-25,29-30,35,41-42,44,47,49-58
+governance/DASHBOARD.md
+  s_2fd4e0c1ae6a7a::t_386c73f9bc9387 25
+governance/bin/gate-coverage-audit.mjs
+  s_2fd4e0c1ae6a7a::t_b9cec256a47358 1-184
+governance/bin/vendored-gate-audit.mjs
+  s_2fd4e0c1ae6a7a::t_bca7eb36a7b959 31,57-60,63,67,72-75,93-96
+governance/graph.json
+  s_2fd4e0c1ae6a7a::t_a249643a96e47d 7182-7285,22456-22461,29338-29799
+governance/lib/gate-audit-args.mjs
+  s_2fd4e0c1ae6a7a::t_996e39641d1201 1-2,33-70,73-89,91,94,98-101,106-107,109-110,112-114,118-130
+governance/lib/gate-audit-io.mjs
+  s_2fd4e0c1ae6a7a::t_5df2bccd9be0db 1-87
+governance/lib/gate-coverage.mjs
+  s_2fd4e0c1ae6a7a::t_a294d0b11d80a8 1-266
+governance/lib/vendored-gate-classify.mjs
+  s_2fd4e0c1ae6a7a::t_53b4c7b6d7c42a 24-76,81-83,87,89-91,93,97-101
+governance/plans/actions-execution-integrity/DECISIONS.md
+  s_2fd4e0c1ae6a7a::t_7eb47d3ddcb501 4-10
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_2fd4e0c1ae6a7a::t_5f07816c795209 4-12
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_2fd4e0c1ae6a7a::t_2ce10c5eaf1609 4-9
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_2fd4e0c1ae6a7a::t_1fa3e096005061 4-13
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_2fd4e0c1ae6a7a::t_422ac299b6bdc6 4-13
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_2fd4e0c1ae6a7a::t_b8caeafa2c7e63 4-9
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_2fd4e0c1ae6a7a::t_72037a2a278366 4-9
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_2fd4e0c1ae6a7a::t_b4a2215a3915b7 4-10
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_2fd4e0c1ae6a7a::t_f2e9ffa44fb497 4-9
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_e3941f63d21ec1 4-13
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_2fd4e0c1ae6a7a::t_06379617be9e1a 4-10
+governance/plans/frontier-program/E-ENFORCE.md
+  s_2fd4e0c1ae6a7a::t_298c191aba6511 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_2fd4e0c1ae6a7a::t_390dd471e4d04f 519-562
+governance/plans/wave-principals/E1-MODEL.md
+  s_2fd4e0c1ae6a7a::t_4ad5a1e142f590 1-99
+governance/plans/wave-principals/E2-ROLES.md
+  s_2fd4e0c1ae6a7a::t_ddba22df9dedcb 1-94
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_2fd4e0c1ae6a7a::t_8d365ea52687a7 1-122
+governance/plans/wave-principals/E4-GRANTS.md
+  s_2fd4e0c1ae6a7a::t_b3c0d730c26b57 1-123
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_2fd4e0c1ae6a7a::t_0edaf5a03e5624 1-112
+governance/plans/wave-principals/E6-AUDIT.md
+  s_2fd4e0c1ae6a7a::t_4368be455ba83a 1-94
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_2fd4e0c1ae6a7a::t_d3a9e63d740a36 1-97
+governance/plans/wave-principals/NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_2f6602697cec53 1-210
+governance/test/gate-audit-args.test.mjs
+  s_2fd4e0c1ae6a7a::t_a4319a3ea05ca8 11-14,17,73-111,133-141
+governance/test/gate-coverage.test.mjs
+  s_2fd4e0c1ae6a7a::t_224f59f1fb21b9 1-448
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "749b55c54e5b002e7d16bf66de5ad77c68ff99a4",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

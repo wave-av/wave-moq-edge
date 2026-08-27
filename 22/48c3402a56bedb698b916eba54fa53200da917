@@ -1,0 +1,35 @@
+hooks/tests/inline-secret-assignment-gate.test.sh
+  s_e017bc8859c6b9::t_a5884cf8c15cab 89,91,93,95
+  s_e017bc8859c6b9::t_7e1bcf7f8f604e 5-7,14-17,19-23,26-27,36-42,64-67,86-88,90,92,94,97-98,103,107-108
+  s_e017bc8859c6b9::t_bc63fd0e526048 1-4,8-13,18,24-25,28-35,43-63,68-85,96,99-102,104-106,109-124
+settings/settings.base.json
+  s_e017bc8859c6b9::t_57085be7a0c52d 362-365
+  s_e017bc8859c6b9::t_1659bc29d0c044 361
+hooks/hooklib/secret-patterns.sh
+  s_e017bc8859c6b9::t_1bc7a19a57d773 77-91
+hooks/inline-secret-assignment-gate.sh
+  s_e017bc8859c6b9::t_3b67208e77d8a6 1-103,111-132
+  s_e017bc8859c6b9::t_dc2b05511f545f 104-110
+governance/ENFORCEMENT-COVERAGE.md
+  s_e017bc8859c6b9::t_91cacec4f10765 474,479,490
+governance/graph.json
+  s_e017bc8859c6b9::t_ba0d5c89e80a00 12212-12220,42455-42472
+hooks/manifest.json
+  s_e017bc8859c6b9::t_219cf4fd2bcc8b 755-775
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2248c3402a56bedb698b916eba54fa53200da917",
+  "prompts": {},
+  "sessions": {
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

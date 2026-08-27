@@ -1,0 +1,22 @@
+governance/bin/inject.mjs
+  h_af5ac1a9798224 31,139-140,143
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 1773-1792
+governance/code-index/index.json
+  h_af5ac1a9798224 15898-15899,15909-15910,15920-15921,15931-15932,15942-15943,15953-15954,15964-15965,15975-15976,15986-15987,15997-16000,16008-16009,16019-16020,16030-16031,16041-16042,16052-16053,16063-16064,16074-16075,16085-16086,16096-16097,16107-16108
+runbooks/bin/runbook.mjs
+  h_af5ac1a9798224 29
+runbooks/lib/frontmatter.mjs
+  h_af5ac1a9798224 25-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fa786a21a7c1f8ffdb4f5cc3a982b4867f6750d1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

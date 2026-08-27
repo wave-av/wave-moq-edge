@@ -1,0 +1,29 @@
+rules/service-routing.md
+  s_07acdfa7e3709a::t_1eca98dc7574e7 38-40
+rules/when-to-use-what.md
+  s_07acdfa7e3709a::t_6b8a5291f2c4eb 10-11,20,29-30,47,58,64,103-104
+  s_07acdfa7e3709a::t_5f8c236f639b06 5-6
+  s_07acdfa7e3709a::t_25b542a853afd0 131-133
+  s_07acdfa7e3709a::t_b7c1505efad6e0 128-130
+rules/no-mock-data.md
+  s_07acdfa7e3709a::t_2575dc9ca4cb39 44-45
+rules/work-through-blockers.md
+  s_07acdfa7e3709a::t_e3ca9fc9b664bf 24
+  s_07acdfa7e3709a::t_dd09badcf0ae6d 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "1f44e4298438f5fe6e88235dfc22aea64588b229",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

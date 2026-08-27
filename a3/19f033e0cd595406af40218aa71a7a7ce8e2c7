@@ -1,0 +1,20 @@
+governance/plans/render-qa/E-ENFORCE.md
+  s_264ae386838c57::t_04bd06a18a541a 10-12
+  s_264ae386838c57::t_8be1012ea43ac9 10-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a319f033e0cd595406af40218aa71a7a7ce8e2c7",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

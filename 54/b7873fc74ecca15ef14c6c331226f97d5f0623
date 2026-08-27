@@ -1,0 +1,29 @@
+.github/workflows/self-check.yml
+  s_364605915bb7ec::t_c24b85b80713e7 333
+  s_364605915bb7ec::t_fbd141729d4e42 322-332,334-336
+scripts/tap-count-real-tests.test.mjs
+  s_364605915bb7ec::t_a59a61dc34c418 1-14,16-96,98-116
+  s_364605915bb7ec::t_a6d5ba83888b32 15
+  s_364605915bb7ec::t_cc414783b513b4 97
+frameworks/gates/test-node-suite-discovery.sh
+  s_364605915bb7ec::t_33d19fad23bbc2 162-178
+  s_364605915bb7ec::t_7a5d74c2edacc9 79-85,89
+scripts/tap-count-real-tests.mjs
+  s_364605915bb7ec::t_8a4fcb547fef01 1-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "54b7873fc74ecca15ef14c6c331226f97d5f0623",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

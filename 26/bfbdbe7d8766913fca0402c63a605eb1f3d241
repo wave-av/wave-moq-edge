@@ -1,0 +1,52 @@
+governance/lib/merge-authority.mjs
+  s_dccee6b7677203::t_e2134088ab3756 1-58
+hookcli/rules/rules.json
+  s_dccee6b7677203::t_55bd7800e246e5 309
+  s_dccee6b7677203::t_6339ee11b109c8 324
+  s_dccee6b7677203::t_a4d90bed847fd1 325-328
+hookcli/lib/t3-merge-authority.mjs
+  s_dccee6b7677203::t_e45670b5e14d49 1-127
+governance/test/merge-authority.test.mjs
+  s_dccee6b7677203::t_42cacc9576483f 1-221
+hookcli/lib/t3-pr-merge.mjs
+  s_dccee6b7677203::t_a48f38e61abe3d 160-161
+  s_dccee6b7677203::t_df4545f35f43aa 44
+  s_dccee6b7677203::t_2f863c31b9a4b7 197-206,208-212
+  s_dccee6b7677203::t_b6716bf83a6cef 42-43
+  s_dccee6b7677203::t_16244abf8d36c3 170-177
+  s_dccee6b7677203::t_dc4a758e3f7626 182-183,186,191-196
+governance/test/pr-merge-classifier.test.mjs
+  s_dccee6b7677203::t_17023a656f20f2 103-108
+  s_dccee6b7677203::t_c006bb58195b51 24-27
+  s_dccee6b7677203::t_0a4dbe8eb45c41 41-45
+governance/lib/pr-base-conformance.mjs
+  s_dccee6b7677203::t_bf11199b27ae2d 169-179,181-182
+governance/DASHBOARD.md
+  s_dccee6b7677203::t_6174691142f38f 7,16-17
+governance/ENFORCEMENT-COVERAGE.md
+  s_dccee6b7677203::t_3181226ac463b7 9,12,14,470
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_6edef1d4045f9f 5,3773-3777,3811,3815-3816
+governance/code-index/index.json
+  s_dccee6b7677203::t_0dcbad35ae5d34 9-10,12-13,32766-32787,33069-33070,33113-33116,33124-33125
+governance/contract.md
+  s_dccee6b7677203::t_eccfdaeef2884a 47,51,53
+governance/graph.json
+  s_dccee6b7677203::t_e7a3052e9d0bf2 20457-20462
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "26bfbdbe7d8766913fca0402c63a605eb1f3d241",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

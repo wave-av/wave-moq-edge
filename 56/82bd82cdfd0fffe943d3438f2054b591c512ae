@@ -1,0 +1,25 @@
+governance/plans/wave-desktop-local/artifacts/MODEL-PLAN.md
+  s_83b73641415a39::t_6a08af8a0115c3 1-40
+governance/plans/wave-desktop-local/artifacts/wave-corpus-export.py
+  s_83b73641415a39::t_c407889b52cfcb 6-7,52,55,61
+  s_83b73641415a39::t_0ddd79fe533709 1-5,8-11,13-15,18-51,53-54,56-60,62-64,66-68,77-84
+  s_83b73641415a39::t_2660c2e13b2205 69-76
+  s_83b73641415a39::t_17dc03e9958565 65
+  s_83b73641415a39::t_6126e30a7fa5c2 12,16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5682bd82cdfd0fffe943d3438f2054b591c512ae",
+  "prompts": {},
+  "sessions": {
+    "s_83b73641415a39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd196880ffeXRUvrkjXudtttM",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

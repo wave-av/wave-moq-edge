@@ -1,0 +1,27 @@
+governance/lib/secret-rule-scan.mjs
+  s_be94c45efdaafe::t_a62b37f4542218 1-153
+  s_be94c45efdaafe::t_3d396ff3c0398f 154-156
+  s_be94c45efdaafe::t_880f27f55eb482 157-165
+governance/test/secret-rule-scan.test.mjs
+  s_be94c45efdaafe::t_4be744d3b20e5f 1-57,63-133
+  s_be94c45efdaafe::t_e3acf811cef2b1 58-62
+governance/bin/purge-secret-rules.mjs
+  s_be94c45efdaafe::t_325a808c2f8777 1-25,31-203
+  s_be94c45efdaafe::t_113de99ff606b5 26-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "567cb31f680c92f88f6659c194225cf9ee06e5c3",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

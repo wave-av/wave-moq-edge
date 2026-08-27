@@ -1,0 +1,22 @@
+governance/lib/platform-status-gh.mjs
+  s_dd42a206f882e3::t_53343241692f69 38-43
+  s_dd42a206f882e3::t_6a1decd6cf5b89 52-66
+governance/test/platform-status-gh-missing.test.mjs
+  s_dd42a206f882e3::t_a8267190e8510d 1-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5f1884e7cf995daeede6265279128a155e814e56",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

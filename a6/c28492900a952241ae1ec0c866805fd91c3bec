@@ -1,0 +1,20 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_157583aa3b6686::t_35dbe0df807986 66-70
+  s_157583aa3b6686::t_1ce845737f1476 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a6c28492900a952241ae1ec0c866805fd91c3bec",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

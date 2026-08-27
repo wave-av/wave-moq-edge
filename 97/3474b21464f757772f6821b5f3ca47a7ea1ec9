@@ -1,0 +1,19 @@
+governance/plans/client-toolset-adoption/E5-PRODUCT-VERDICT.md
+  s_9bb1b1d1d998d4::t_04fdcf8ed13d1b 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "973474b21464f757772f6821b5f3ca47a7ea1ec9",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

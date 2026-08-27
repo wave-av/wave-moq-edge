@@ -1,0 +1,21 @@
+governance/test/ALLOWED-SKIPS.json
+  s_02abc74f4971c7::t_54e2d787f6ec3c 93-103
+governance/test/skip-audit.mjs
+  s_02abc74f4971c7::t_ee21ba56484ff0 69-73,77,85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9bc31a6d6fc425f4998c7052630d010e707428fb",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

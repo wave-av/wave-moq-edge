@@ -1,0 +1,26 @@
+governance/bin/platform-status.mjs
+  s_85d9e5f433b9aa::t_2f01a299f3e186 39-46
+governance/lib/platform-status-probes.mjs
+  s_85d9e5f433b9aa::t_3403f61239ddb8 141-151
+  s_85d9e5f433b9aa::t_35054bad229b45 138-140
+  s_85d9e5f433b9aa::t_978110bbd5bba5 152-154
+  s_85d9e5f433b9aa::t_02c343608c9e4c 1-137,155-285
+governance/test/platform-status-queued-pagination.test.mjs
+  s_85d9e5f433b9aa::t_f52535ea28d969 1-142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7e3fc8be8d040e369f991a11bfb20b91fb211c64",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

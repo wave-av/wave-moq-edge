@@ -1,0 +1,32 @@
+governance/lib/code-mask.mjs
+  s_157583aa3b6686::t_216fe77a4f1c18 1-86
+governance/bin/no-execsync-lint.mjs
+  s_157583aa3b6686::t_6c974c2dd15dbb 18
+  s_157583aa3b6686::t_b1b30da32346f9 68-72,74
+  s_157583aa3b6686::t_cb87fa37b6e3fc 47-57
+governance/test/no-execsync-lint.test.mjs
+  s_157583aa3b6686::t_e57f93b5f9c303 1-120
+governance/bin/subprocess-stdio-lint.mjs
+  s_157583aa3b6686::t_e8cadaf47749fd 79-84
+  s_157583aa3b6686::t_fb24eff465b415 43
+governance/code-index/CATALOG.md
+  s_157583aa3b6686::t_eeb062ddabbaa9 1853-1860,2630-2655
+governance/code-index/index.json
+  s_157583aa3b6686::t_b88982eee0f7f5 10,16707-16708,16718-16719,16729-16730,16740-16741,16751-16752,16762-16765,16773-16774,16784-16785,23703-23704,23714-23715,23725-23726,23736-23737,23747-23748,23758-23759,23769-23770,23780-23781,23791-23792,23802-23803,23813-23814,23824-23825,23835-23836,23846-23847,23857-23858,23868-23869,23879-23880,23890-23891,23901-23902,23912-23913,23923-23924,23934-23935,23945-23946,23956-23957,23967-23968,23978-23979
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "a3defe3ab81328cace5934a8a5e0921cc39af274",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

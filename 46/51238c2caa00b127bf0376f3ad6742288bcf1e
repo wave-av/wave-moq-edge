@@ -1,0 +1,41 @@
+governance/plans/design-state-signal/NORTH-STAR.md
+  s_700cd0ad928eea::t_8f194bebda0d3c 112
+governance/plans/encoder-plane/E5-PRODUCTIZE.md
+  s_700cd0ad928eea::t_19281724854d7b 6
+governance/plans/encoder-plane/NORTH-STAR.md
+  s_700cd0ad928eea::t_e6e84df1c76dd1 7,42
+governance/plans/model-distribution/NORTH-STAR.md
+  s_700cd0ad928eea::t_66bfe483c3a291 31
+governance/plans/stripe-settlement-truth/E2-POSTURE.md
+  s_700cd0ad928eea::t_368690d961b034 8
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_700cd0ad928eea::t_14fdd6c9b97f90 8,47,121
+governance/plans/stripe-settlement-truth/NORTH-STAR.md
+  s_700cd0ad928eea::t_acaffd2279e9e8 141
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_700cd0ad928eea::t_e25f824f9c38b5 181,323,561,609
+governance/plans/verification-plane/NORTH-STAR.md
+  s_700cd0ad928eea::t_abfb2fc1035f40 29
+governance/plans/wave-dogfood/NORTH-STAR.md
+  s_700cd0ad928eea::t_e59fe927798dd1 9-10,70
+governance/plans/wave-tui/NORTH-STAR.md
+  s_700cd0ad928eea::t_9a3b8e2092c755 31
+governance/plans/wow-canon/WOW-STANDARDS-UPLEVEL.md
+  s_700cd0ad928eea::t_f9092cf7a50a4b 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4651238c2caa00b127bf0376f3ad6742288bcf1e",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

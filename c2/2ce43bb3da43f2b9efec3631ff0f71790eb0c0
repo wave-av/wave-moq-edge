@@ -1,0 +1,19 @@
+governance/plans/fireworks-integration/MODEL-CAPABILITY-REGISTRY.md
+  s_b3961e1e9f5a7a::t_965da0f910e7da 1-155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c22ce43bb3da43f2b9efec3631ff0f71790eb0c0",
+  "prompts": {},
+  "sessions": {
+    "s_b3961e1e9f5a7a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff8f14129ffemkkw81DxYotrBt",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

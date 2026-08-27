@@ -1,0 +1,27 @@
+.github/workflows/reusable-auto-approve.yml
+  s_be40541f6fd98b::t_40049d14143f27 16
+  s_be40541f6fd98b::t_526ced6e5fb29f 56-63
+  s_be40541f6fd98b::t_7dff0e63df8720 128-181
+  s_be40541f6fd98b::t_f9bec6fc10e88d 112
+governance/auto-approve/README.md
+  s_be40541f6fd98b::t_508dad381167cd 120-145
+  s_be40541f6fd98b::t_c7cce34ff0707c 38
+governance/auto-approve/test-self-modification-gate.sh
+  s_be40541f6fd98b::t_c74aa95d86c870 1-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ab7af5b68bb12a8be2ab658fd5d99de79654c2d8",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+scripts/bugbot/ROADMAP.md
+  s_0b987fef4e1240::t_09915bc243504f 88
+  s_0b987fef4e1240::t_1f9a500387df18 9
+  s_0b987fef4e1240::t_ecbbb57a62c6a5 71-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "ad60bd2a84350d31233d0ab137537a9d9cb32d57",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

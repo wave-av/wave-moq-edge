@@ -1,0 +1,18 @@
+bin/route-by-capability.mjs
+  h_67a1b847dc59d6 236-237
+governance/state/model-scores.json
+  h_67a1b847dc59d6 923-1094
+governance/test/route-by-capability.test.mjs
+  h_67a1b847dc59d6 45-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a4b74835aac2029293cb4e9b01b02e53e471c50e",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

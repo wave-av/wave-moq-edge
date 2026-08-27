@@ -1,0 +1,19 @@
+tests/test_agent_rehydrate.py
+  s_274bffb23af05d::t_67341379322ae5 113-119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "589b0a23f624f36c7b269c94d968b2c72574b05d",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

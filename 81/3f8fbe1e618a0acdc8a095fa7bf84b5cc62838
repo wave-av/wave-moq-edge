@@ -1,0 +1,29 @@
+settings/settings.base.json
+  s_70c7ac7de143f9::t_e6178a1d3ff79a 850-852
+  s_70c7ac7de143f9::t_9d4315bd1d3d53 848-849
+hooks/pr-inflight-capture.sh
+  s_70c7ac7de143f9::t_458145f848be09 80-84,93-111
+  s_70c7ac7de143f9::t_2f43362cb415cf 1-79,85-92,112-118
+hooks/tests/pr-inflight-capture.test.sh
+  s_70c7ac7de143f9::t_f09f830a27917e 1-128
+governance/ENFORCEMENT-COVERAGE.md
+  s_70c7ac7de143f9::t_0b90f1822351d1 408,433
+hooks/manifest.json
+  s_70c7ac7de143f9::t_a775796ee6d2b2 1366-1386
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "813f8fbe1e618a0acdc8a095fa7bf84b5cc62838",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

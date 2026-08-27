@@ -1,0 +1,41 @@
+governance/bin/struggle-miner-scan.sh
+  s_364605915bb7ec::t_c4b95b4008359e 29-30
+governance/bin/struggle-miner/collect-corridor.mjs
+  s_364605915bb7ec::t_40b43a71ac2cb9 1-57
+governance/bin/struggle-miner/collect-supabase.mjs
+  s_364605915bb7ec::t_cee0b7ac20dce7 1-83
+governance/bin/struggle-miner/config/corridor.json
+  s_364605915bb7ec::t_e872bbc23ddeab 1-3
+governance/bin/struggle-miner/config/supabase-projects.json
+  s_364605915bb7ec::t_11bb2073a41c68 1-3
+governance/code-index/CATALOG.md
+  s_364605915bb7ec::t_204b8a877d44ab 5,2734-2740,2759-2768
+governance/code-index/index.json
+  s_364605915bb7ec::t_c885e759426d44 6-7,9-10,24632-24675,24808-24884
+governance/test/struggle-miner/collect-corridor.test.mjs
+  s_364605915bb7ec::t_dc18ecfb9fe570 1-18
+governance/test/struggle-miner/collect-supabase.test.mjs
+  s_364605915bb7ec::t_b5ef17e0d15b0a 1-26
+governance/test/struggle-miner/fixtures/corridor-findings-response.json
+  s_364605915bb7ec::t_c8af5a1b728fcf 1-20
+governance/test/struggle-miner/fixtures/supabase-advisors-response.json
+  s_364605915bb7ec::t_60d2ea47ca0282 1-6
+governance/test/struggle-miner/fixtures/supabase-logs-response.json
+  s_364605915bb7ec::t_133f807fa7894b 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "180a66f72bc48ac57948b0099770e890555c39d7",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/client-toolset-adoption/E0-KNOWLEDGE.md
+  s_9bb1b1d1d998d4::t_18e1dd7b55c9a6 35-36,39-41
+governance/plans/client-toolset-adoption/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_788fb5b1bfe6d8 39-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "bf0bea8a5e162ddb633bc3ae55c097b6f8cf8dd9",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

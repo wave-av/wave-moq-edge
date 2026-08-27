@@ -1,0 +1,32 @@
+hookcli/track4b.json
+  s_60a20469ef4369::t_bd5e16f60e4ead 1-8
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_865787ffb7488d 669-672
+hookcli/bin/hookcli-settings-gen.mjs
+  s_60a20469ef4369::t_b984baa3201bab 29-53
+  s_60a20469ef4369::t_e5002dc784fd5c 77-88,101-102
+hookcli/tests/shadow-sessionstart.sh
+  s_60a20469ef4369::t_0bcfcbf32d43c0 1-53
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_f6f9c6282aad35 342-379
+  s_60a20469ef4369::t_0db6f2c13ac373 47-50,56-70,72-73,75-80,82-85,87,89-96,98-103,105-117
+  s_60a20469ef4369::t_bf211806033b49 28
+settings/hooks.d/hookcli.json
+  s_60a20469ef4369::t_1208dc3c545fb7 20-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "a66ce5b5389c8b03c44605c42f018a60f6298249",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+governance/test/ingress-probe.test.mjs
+  s_be40541f6fd98b::t_f4845049373f89 1-91
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_be40541f6fd98b::t_9ec96d81487e0a 215-293,298-299
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_be40541f6fd98b::t_61f6e1bfcb7786 27-65
+governance/bin/fleet/ingress-probe.mjs
+  s_be40541f6fd98b::t_99fbe9e036f307 189-195,201-210
+  s_be40541f6fd98b::t_bd76e9d802d99c 1-188,196-200,211-291
+governance/code-index/CATALOG.md
+  s_be40541f6fd98b::t_fae4f3f1ea6924 5,1225-1240
+governance/code-index/index.json
+  s_be40541f6fd98b::t_16252f98a4c3d6 9-10,12-13,11140-11282
+governance/graph.json
+  s_be40541f6fd98b::t_cb8c357b151c2c 14175,14177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "2a74a91b1f994592ab25ccf7bc050728d0354a3d",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.github/workflows/gateway-secret-sync.yml
+  s_7e3e50fa23978e::t_a277dd7c978229 1-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "6ad98575bfd75f27a18209cb3f94715b9cf7f2b1",
+  "prompts": {},
+  "sessions": {
+    "s_7e3e50fa23978e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5c4389db-33e9-4332-aea2-5545d85cbdeb",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

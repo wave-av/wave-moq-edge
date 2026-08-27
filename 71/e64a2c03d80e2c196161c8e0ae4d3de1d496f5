@@ -1,0 +1,64 @@
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/graph.json
+  h_67a1b847dc59d6 4665-4677,23759-23788
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 306-319
+governance/plans/ffmpeg9-lei/action/E14-P1-PROSPECTS.md
+  h_67a1b847dc59d6 1-283
+governance/plans/generated-artifact-contention/epic.md
+  h_67a1b847dc59d6 1-85
+governance/plans/hookcli/E1-CORE.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E2-HARVEST.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/E3-RULES.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E4-TIERS.md
+  h_67a1b847dc59d6 4-12
+governance/plans/hookcli/E5-BOARD.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E7-DISTILL.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/NORTH-STAR.md
+  h_67a1b847dc59d6 8-18
+governance/plans/wave-credential-custody/RESEARCH-NANGO-CUSTODY.md
+  h_67a1b847dc59d6 1-350
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  h_67a1b847dc59d6 6-16
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/NORTH-STAR.md
+  h_67a1b847dc59d6 11-19
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 168,342-348,512-513,527-538,541-548,587-599
+governance/recall/eval/repo-corpus.manifest.json
+  h_67a1b847dc59d6 293,357,603
+mcp/zoom-s2s-mcp.mjs
+  h_67a1b847dc59d6 4,24-26,28-31,50-81,89-93,107-112,120,125,128-134,201-203,205
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "71e64a2c03d80e2c196161c8e0ae4d3de1d496f5",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

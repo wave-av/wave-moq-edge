@@ -1,0 +1,25 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_8089f19d3c4657 165-170
+hookcli/bin/promote-candidate-report.mjs
+  s_60a20469ef4369::t_25f3c744de2767 1-263
+hookcli/tests/promote-candidate.sh
+  s_60a20469ef4369::t_41ea281bf4cc76 33
+  s_60a20469ef4369::t_6303e966c7bff5 76-79
+  s_60a20469ef4369::t_cdeb3ab7d7d4bc 1-32,34-75,80-135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "989d6aa3ac1b74a055f187eb1d6f3307c1101f72",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

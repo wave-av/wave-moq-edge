@@ -1,0 +1,25 @@
+governance/plans/merge-path-parity/E0-INVENTORY.md
+  s_c24357e71ae5bc::t_c28169efd39352 47
+governance/plans/merge-path-parity/E1-CONFORMANCE.md
+  s_c24357e71ae5bc::t_6ce4587b167ea0 70
+governance/plans/merge-path-parity/E2-RECONCILE.md
+  s_c24357e71ae5bc::t_cd3e074881331a 41
+governance/plans/merge-path-parity/E3-PATH-SHARE.md
+  s_c24357e71ae5bc::t_0f802bcf8d1f77 60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9327a22748ab8a7960b8f06c80295efe8e6e3b5d",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+hooks/tests/wrangler-deploy-gate.test.sh
+  s_96280c922a9418::t_3398c6507798c4 69-73,76-79
+  s_96280c922a9418::t_77b4d63c208f47 1-68,74-75,80-89
+hooks/wrangler-deploy-gate.sh
+  s_96280c922a9418::t_bb8dedd4bea04a 123
+  s_96280c922a9418::t_3396dc1d3ed3ef 62-66
+  s_96280c922a9418::t_fd584701fc1731 106-110
+  s_96280c922a9418::t_9bef02df9c72cb 118-122,124
+  s_96280c922a9418::t_addb6655477460 67
+  s_96280c922a9418::t_ef65ae003b066a 37-61,68-102
+  s_96280c922a9418::t_a4a99a267d9f0e 111
+hooks/manifest.json
+  s_96280c922a9418::t_907e13ecd0dcf1 1550
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "bfeaae037ee25f140dc789614cb0de0d645e1fc6",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

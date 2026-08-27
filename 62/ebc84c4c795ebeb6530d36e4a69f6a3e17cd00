@@ -1,0 +1,42 @@
+governance/plans/polyrepo-velocity/E5-PAVED-ROAD.md
+  s_dccee6b7677203::t_c0ff729cdc7f90 138-194
+governance/bin/fleet/lib/completeness.mjs
+  s_dccee6b7677203::t_c387a5b80894cc 1-27
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_4e25be583468d9 115
+  s_dccee6b7677203::t_814f372cedcfd1 112-114
+  s_dccee6b7677203::t_691f8a9146a539 26,61-65,80,103-111
+governance/bin/fleet/contract-triage.mjs
+  s_dccee6b7677203::t_d97728dd48ef58 213
+  s_dccee6b7677203::t_1f93bfe1fc8c60 283-287
+  s_dccee6b7677203::t_93816e41b5fa9b 210-212
+  s_dccee6b7677203::t_4b50a0fa2758c1 214-216,280-282
+  s_dccee6b7677203::t_db25969b0b8d02 288-290
+  s_dccee6b7677203::t_ffd6bc160f7586 1-209,217-279,291-302
+governance/bin/fleet/agents-md-gen.mjs
+  s_dccee6b7677203::t_19f4527c26b34e 30,44-45
+governance/bin/fleet/tests/cases/66-contract-triage.sh
+  s_dccee6b7677203::t_fb051aec343747 1-76
+governance/bin/fleet/tests/lib/fixtures.sh
+  s_dccee6b7677203::t_6b0e2a530a9610 54-94
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_3ae094bc4896db 5,1075-1084,1098-1118,1172-1177
+governance/code-index/index.json
+  s_dccee6b7677203::t_6ace6c6de62948 6-7,9-10,9799-9800,9810-9811,9821-9822,9832-9833,9843-9844,9854-9855,9865-9866,9876-9877,9887-9888,9898-9899,10002-10199,10684-10716
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "62ebc84c4c795ebeb6530d36e4a69f6a3e17cd00",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

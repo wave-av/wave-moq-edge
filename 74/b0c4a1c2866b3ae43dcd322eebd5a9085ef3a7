@@ -1,0 +1,43 @@
+hookcli/bin/promote-candidate-report.mjs
+  s_60a20469ef4369::t_d39c3800ea50cc 53-54
+  s_60a20469ef4369::t_b8c472db8b0ad1 268
+  s_60a20469ef4369::t_155d3ab4773e89 236
+  s_60a20469ef4369::t_cf94cc6e0d10b0 33
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_140a0484b45347 171-175
+hookcli/bin/distill-report.mjs
+  s_60a20469ef4369::t_213b54a14dd780 23
+  s_60a20469ef4369::t_ea9627d109c8e1 265
+  s_60a20469ef4369::t_d0d8d2935d6248 40-41
+  s_60a20469ef4369::t_ee1348c72b99b8 232-235
+hookcli/lib/report-provenance.mjs
+  s_60a20469ef4369::t_ef5f7479cc7ba3 1-29
+hookcli/tests/report-provenance.sh
+  s_60a20469ef4369::t_a0d6a80a53ffa3 1-54
+hookcli/bin/require-graduation-report.mjs
+  s_60a20469ef4369::t_14a9f52fae54c8 206-207
+  s_60a20469ef4369::t_a0b9fb4d69a689 21,24-28
+  s_60a20469ef4369::t_503e87b99e1fed 184
+hookcli/bin/shadow-report.mjs
+  s_60a20469ef4369::t_35b261a6a1e9d3 17-21
+  s_60a20469ef4369::t_880ee696a38cc9 46
+  s_60a20469ef4369::t_87f856382ce4ec 14
+  s_60a20469ef4369::t_d2f1af55bf676b 110
+  s_60a20469ef4369::t_df1bbe88ea2a80 125-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "74b0c4a1c2866b3ae43dcd322eebd5a9085ef3a7",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

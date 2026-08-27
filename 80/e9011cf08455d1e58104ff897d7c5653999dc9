@@ -1,0 +1,21 @@
+scripts/check-claude-config.sh
+  s_19c8e603d8990b::t_5fec92a68ca66a 55-58
+.github/workflows/checks.yml
+  s_19c8e603d8990b::t_e0dcb804e6616c 92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "80e9011cf08455d1e58104ff897d7c5653999dc9",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

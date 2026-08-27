@@ -1,0 +1,21 @@
+scripts/tournament.ts
+  s_1141e273d7dc5c::t_9dde59482dd505 29-33,38
+scripts/prove.ts
+  s_1141e273d7dc5c::t_117ccc3f911ae9 69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3433b18f4369f37030276c2cfd3b48e5d2c6b779",
+  "prompts": {},
+  "sessions": {
+    "s_1141e273d7dc5c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "31529da2-8ae8-4a20-a3c2-1820030a8a5d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+hooks/tests/self-review-gate.test.sh
+  s_0227926428e4b1::t_50e553ca5474a6 104-112
+hooks/self-review-gate.sh
+  s_0227926428e4b1::t_c1718cde266406 118-123,125
+  s_0227926428e4b1::t_798ea035e4671f 94-95
+governance/plans/self-review-gate/E1-RECEIPT-AND-LAW.md
+  s_0227926428e4b1::t_80b771109bc23e 11-13
+governance/test/self-review-law.test.mjs
+  s_0227926428e4b1::t_b0005711acf21b 31-33
+governance/bin/self-review-receipt.mjs
+  s_0227926428e4b1::t_12bf138c4aaae0 18-25
+rules/review-your-own-pr-before-requesting-review.md
+  s_0227926428e4b1::t_bd31b0a53eb57d 37
+governance/graph.json
+  s_0227926428e4b1::t_69c9c5813bc6b3 7758
+hooks/manifest.json
+  s_0227926428e4b1::t_1ac8de349c3bf4 1528
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c8d375032485a84b3e7f8bf47b01923aafbeb70a",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

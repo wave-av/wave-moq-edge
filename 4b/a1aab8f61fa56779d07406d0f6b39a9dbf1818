@@ -1,0 +1,29 @@
+rules/a-log-is-not-a-report.md
+  s_cf3356a24071e8::t_3c8ac45c291151 45
+governance/cross-repo-bindings.json
+  s_cf3356a24071e8::t_2d5dbfee9c03e9 2-16
+governance/DASHBOARD.md
+  s_cf3356a24071e8::t_f1483038f7c1c2 7,17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_cf3356a24071e8::t_b4bef9535516c1 5,9,14,453
+governance/contract.md
+  s_cf3356a24071e8::t_89ea9b9ad7d225 51,53
+governance/graph.json
+  s_cf3356a24071e8::t_37f5f2e328fe3f 4663-4678,17545-17556
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4ba1aab8f61fa56779d07406d0f6b39a9dbf1818",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 33,67-70,72,76-78,99-102,104-107,109
+governance/lib/drill-decide.mjs
+  h_67a1b847dc59d6 11,13-24,27,29-33,37-38
+governance/lib/drill-fixtures-drift.mjs
+  h_67a1b847dc59d6 28,39-47,52-53,101-103,106,142,164,257-260,265,272
+governance/lib/drill-selftest-cases.mjs
+  h_67a1b847dc59d6 15-24
+governance/lib/drill-stage-imports.mjs
+  h_67a1b847dc59d6 1-101
+governance/lib/drill-startup-failure.mjs
+  h_67a1b847dc59d6 1-55
+governance/test/drill-startup-failure.test.mjs
+  h_67a1b847dc59d6 1-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dacba7c773fb439cee1d0dae1936b2e807b7fc52",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+hooks/lawbook-inject.sh
+  s_96280c922a9418::t_ef39ea6cf49362 3
+governance/DASHBOARD.md
+  s_96280c922a9418::t_ad5d8fee01c2f1 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_02b85025962c28 434
+governance/contract.md
+  s_96280c922a9418::t_ce6be044e4a310 47,51,53
+governance/graph.json
+  s_96280c922a9418::t_4ddb5c8ead0474 20289-20294
+hooks/manifest.json
+  s_96280c922a9418::t_86f2fb04e5a863 574
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "96725545d704c9004a4de1b7e87c07a5ab805d9e",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+hookcli/tests/evasion-matrix.sh
+  s_9041cf1cf1ccad::t_d5b27d9e19c8a8 88-106
+  s_9041cf1cf1ccad::t_e7b4f4495dc75f 128
+  s_9041cf1cf1ccad::t_ca298c270f807c 119-127
+  s_9041cf1cf1ccad::t_914b99dd2c6eee 153-154
+hookcli/lib/eval-t1.sh
+  s_9041cf1cf1ccad::t_786b59a6030a71 32
+  s_9041cf1cf1ccad::t_2b7be4ab7f0a40 23-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1d5a485224c656719191ebbdb8741010b2ff556d",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

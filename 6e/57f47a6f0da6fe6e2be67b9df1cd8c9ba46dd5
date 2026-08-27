@@ -1,0 +1,29 @@
+governance/test/lib-cli-collision-lint.test.mjs
+  s_0227926428e4b1::t_40d610ac52cf6e 131-134
+  s_0227926428e4b1::t_4b0fb1912f28ed 4-5,7-11,14,19,23-24,27-37,41-45,48,52-53,55-57,60-61,64,66-67,70,72-73,75,77,80-85,89-109,127,130,135-138,141,143-145,148-149,156
+governance/bin/lib-cli-collision-lint.mjs
+  s_0227926428e4b1::t_69dc707aa8b2a5 39-40,43
+  s_0227926428e4b1::t_735a47d19d11bd 51-53
+  s_0227926428e4b1::t_6e9067678498d1 114-118
+  s_0227926428e4b1::t_c855f8e028d3e3 55-66,68-76,78-87
+  s_0227926428e4b1::t_007a3a4b86abc2 159-160,168,170,172
+governance/lib/drill-fixtures-lib-cli-collision.mjs
+  s_0227926428e4b1::t_e1f98a2502cc03 24-30,37-39
+  s_0227926428e4b1::t_6ac609340b7adc 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e57f47a6f0da6fe6e2be67b9df1cd8c9ba46dd5",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

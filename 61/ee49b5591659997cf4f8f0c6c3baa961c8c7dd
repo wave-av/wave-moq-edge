@@ -1,0 +1,57 @@
+hookcli/tests/gate-dispatch.sh
+  s_60a20469ef4369::t_450fcb5e88951a 29,31,33
+hookcli/tests/scratch-token.sh
+  s_60a20469ef4369::t_4334ac06aca96d 42,51,54,66,72,89,102-103
+hookcli/tests/posttooluse-shadow.sh
+  s_60a20469ef4369::t_a8dd0e95916ebd 22,29,31,53,59,61,65,68,70
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_814f90745db2b7 3,6,8,18,20,22,35,38,40,64,66,68,81,83,85
+governance/test/state-root.test.mjs
+  s_60a20469ef4369::t_461dc5bd1f6e16 1-75
+hookcli/tests/cc-shadow-mutation.sh
+  s_60a20469ef4369::t_2b251018197c44 56,67,69,106
+hookcli/tests/shadow-sessionstart.sh
+  s_60a20469ef4369::t_545123ddf43c11 14,17,19,26,30,32,36,39,41,63,66,92,100-101,103,117,121,123
+hookcli/tests/shadow-env.sh
+  s_60a20469ef4369::t_4f0e598f595577 19,22,24,32,34,36
+hookcli/tests/exec-env.sh
+  s_60a20469ef4369::t_8a42ff180dd71a 36,40,42
+hookcli/bin/require-graduation-report.mjs
+  s_60a20469ef4369::t_08ff411314cd39 18,20-23
+hookcli/tests/shadow-report.sh
+  s_60a20469ef4369::t_bbc8075bbcb1b4 64
+hookcli/bin/shadow-report.mjs
+  s_60a20469ef4369::t_78a4674969cee7 13,15-18
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_ab3d46003daf76 17-23
+hookcli/README.md
+  s_60a20469ef4369::t_c94af8315bcd20 17-19
+scripts/state-root.sh
+  s_60a20469ef4369::t_790d727a7d343f 1-48
+hookcli/tests/emit-warn-ask.sh
+  s_60a20469ef4369::t_087ef1abe2606d 79,81,83,93,96,98
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_60f4092f7e49df 23-29
+governance/lib/state-root.mjs
+  s_60a20469ef4369::t_c4ff223dd885ea 1-70
+hookcli/lib/t4-llm.sh
+  s_60a20469ef4369::t_98c2daf9d2898c 35-41
+hookcli/tests/t3-classifier.sh
+  s_60a20469ef4369::t_b13b4567538736 72,76,78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "61ee49b5591659997cf4f8f0c6c3baa961c8c7dd",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

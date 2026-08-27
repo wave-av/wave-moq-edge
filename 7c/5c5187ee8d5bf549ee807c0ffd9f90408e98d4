@@ -1,0 +1,21 @@
+governance/ci-stack/dashboard-driver/gitar-connect2.mjs
+  s_7326a769c7efe8::t_217f8caf572259 1-43
+governance/ci-stack/dashboard-driver/gitar-integ-state.mjs
+  s_7326a769c7efe8::t_1a5ab64afafc2e 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7c5c5187ee8d5bf549ee807c0ffd9f90408e98d4",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

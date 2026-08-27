@@ -1,0 +1,47 @@
+.github/actions/origin-tools-suites/action.yml
+  s_d46122ac53ac6f::t_6d7589cd7863a7 1-13
+.github/workflows/governance.yml
+  s_d46122ac53ac6f::t_937b9c73c39df0 166-168
+governance/DANGLING-REFS-BASELINE.json
+  s_dd42a206f882e3::t_dc2195156addbf 2,6,13,16-17,19,21-22,24,32-34,46,51,56,61,67,73,98,113,118,123,143,148,151
+governance/lib/stdout-flush.mjs
+  s_d46122ac53ac6f::t_5d968d892a49e2 63-105
+governance/plans/agent-execution-platform/CORPUS-SKILL-SERVICE.md
+  s_dd42a206f882e3::t_b6cac04dfefea4 3
+governance/plans/agent-execution-platform/METER-DESIGN.md
+  s_dd42a206f882e3::t_0d53ec302149b7 3
+governance/plans/genome-epigenome-releases/SERVICE-DESIGN.md
+  s_dd42a206f882e3::t_1306553ad7e6d5 3
+governance/plans/new-ideas-integration/NORTH-STAR.md
+  s_d46122ac53ac6f::t_f43d62d728d1e2 36
+governance/plans/self-play-refactoring/SERVICE-DESIGN.md
+  s_d46122ac53ac6f::t_30f4726161e6b3 3
+governance/plans/universal-data-representation/SERVICE-DESIGN.md
+  s_dd42a206f882e3::t_dd9d936ff9f9da 3
+governance/tools/teacher-review/bin/teacher-review.mjs
+  s_dd42a206f882e3::t_a9581c0b988d82 13,91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7e426f75e8161430ac2ef86224fdf783d9ebef58",
+  "prompts": {},
+  "sessions": {
+    "s_d46122ac53ac6f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5b1e6300-3f2d-46a2-9206-17f5f04551a8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

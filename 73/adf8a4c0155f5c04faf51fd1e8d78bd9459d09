@@ -1,0 +1,19 @@
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  s_941b8f0612ec3e::t_458975792ce82f 4-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "73adf8a4c0155f5c04faf51fd1e8d78bd9459d09",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

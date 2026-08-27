@@ -1,0 +1,28 @@
+router/src/verify/deterministic.test.ts
+  s_587096120f3e43::t_db983c53f64454 1-302
+router/src/verify/deterministic.ts
+  s_587096120f3e43::t_f0eaabae429093 50-69,77,79-87,89-93
+  s_587096120f3e43::t_9d3a5ca3553504 34-35
+  s_587096120f3e43::t_c23cdb62e90277 3,5
+  s_587096120f3e43::t_86053771ff2629 150-174
+  s_587096120f3e43::t_80d3f3c1a4beaa 188-190
+  s_587096120f3e43::t_f62147f285c757 8
+router/src/verify/types.ts
+  s_587096120f3e43::t_ec8a410196d36d 44-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ffd503297316c905c0e350f4dc0c8627042a4ba6",
+  "prompts": {},
+  "sessions": {
+    "s_587096120f3e43": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00e7fa8f1ffe3My52EdHjIQr8W",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

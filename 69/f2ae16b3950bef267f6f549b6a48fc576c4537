@@ -1,0 +1,19 @@
+memory/model-ops-map.md
+  s_2a017e6ef25c4f::t_b8e12e788285e4 982-991
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "69f2ae16b3950bef267f6f549b6a48fc576c4537",
+  "prompts": {},
+  "sessions": {
+    "s_2a017e6ef25c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aabaf9a4cab33ffd0",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

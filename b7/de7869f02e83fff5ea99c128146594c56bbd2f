@@ -1,0 +1,25 @@
+governance/plans/capability-registry/templates/registry.schema.json
+  s_60a20469ef4369::t_ae987f4997ae3e 1-57
+governance/plans/capability-registry/REPLICATION-RUNBOOK.md
+  s_60a20469ef4369::t_5fbc75c2dd8051 1-272
+governance/plans/capability-registry/templates/curated.json
+  s_60a20469ef4369::t_1355bdb8d44084 1-14
+governance/plans/capability-registry/templates/check.mjs
+  s_60a20469ef4369::t_607e490f9df6b4 1-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b7de7869f02e83fff5ea99c128146594c56bbd2f",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

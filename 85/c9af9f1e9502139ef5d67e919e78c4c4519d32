@@ -1,0 +1,45 @@
+governance/bin/inject.mjs
+  s_a293da4db5caf2::t_99e909a188c5ef 31,117-145,162-166,169
+governance/lib/code-index-store.mjs
+  s_a293da4db5caf2::t_092cdce91fe8e3 17-32
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_a293da4db5caf2::t_b53cf027c4d673 4-9
+governance/plans/local-inference-integrity/E1-ENCODE.md
+  s_a293da4db5caf2::t_6364414c897e76 4-9
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_a293da4db5caf2::t_142d64fb324560 4-9
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_a293da4db5caf2::t_69a1f6b7c27f47 4-9
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_a293da4db5caf2::t_eed6b37b0a6bd5 4-11
+governance/plans/local-inference-integrity/E5-SIGNAL.md
+  s_a293da4db5caf2::t_47fce60cf011f0 4-7
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_a293da4db5caf2::t_617acb3f1d573b 4-9
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_a293da4db5caf2::t_1aa54fc326eb50 4-6,21-39
+governance/test/code-index.test.mjs
+  s_a293da4db5caf2::t_396455b2399279 86-122
+governance/test/inject-runbooks.test.mjs
+  s_a293da4db5caf2::t_ed45c1ed5571f1 1-83
+runbooks/bin/runbook.mjs
+  s_a293da4db5caf2::t_8289a3337fbc43 29
+runbooks/lib/frontmatter.mjs
+  s_a293da4db5caf2::t_a91dc8464c3ab6 25-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "85c9af9f1e9502139ef5d67e919e78c4c4519d32",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

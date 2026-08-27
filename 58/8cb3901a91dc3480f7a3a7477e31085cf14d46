@@ -1,0 +1,19 @@
+governance/plans/client-toolset-adoption/LEARNINGS.md
+  s_9bb1b1d1d998d4::t_1e1e0f7b52e77d 271-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "588cb3901a91dc3480f7a3a7477e31085cf14d46",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

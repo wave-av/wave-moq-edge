@@ -1,0 +1,29 @@
+governance/plans/frontier-program/E-EVAL-PLATFORM.md
+  s_375efeac18ed55::t_dbb08b1dfffd53 76
+  s_375efeac18ed55::t_b00ebb08186f43 1-22,24-75,77-90
+  s_375efeac18ed55::t_237e60c01d77fd 23
+governance/plans/frontier-program/NORTH-STAR.md
+  s_375efeac18ed55::t_7c0c7528c7b7f0 22
+governance/DANGLING-REFS-BASELINE.json
+  s_375efeac18ed55::t_1046d8f647fc11 56-60
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_048f3e38c4a5f1 25
+governance/graph.json
+  s_375efeac18ed55::t_76cfd0fd4aebf1 2707-2719,13810-13815,14098-14103,15352-15399,15502-15507
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "42271e487440f8602d69ea267d0c4c24744592fa",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

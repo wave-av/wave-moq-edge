@@ -1,0 +1,47 @@
+governance/research/voice-greats-2026-08-24.md
+  s_0213641ac58af6::t_0f1d1cc85d5ab8 1-32
+governance/research/launch-registry-governed-mind.json
+  s_0213641ac58af6::t_84ba38bda4d49b 1-27
+governance/tools/wave-registry/copy-gen.mjs
+  s_53b49eff5b8c5d::t_063862bebe2011 47-51
+  s_53b49eff5b8c5d::t_328f8a6ed863d4 44-46
+  s_53b49eff5b8c5d::t_ed2e522612e6e8 52-54
+governance/voice/prose-axes.json
+  s_0213641ac58af6::t_86c1948d378899 1-28
+governance/research/llms.txt
+  s_0213641ac58af6::t_9ebd52725f67d3 1-29
+governance/tools/wave-registry/prose-score.mjs
+  s_9bb1b1d1d998d4::t_efc33ae95999e6 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4fdd3b55884df6ea5b597b1f5c1115df1b1fde70",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

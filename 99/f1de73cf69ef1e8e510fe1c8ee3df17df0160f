@@ -1,0 +1,66 @@
+hooks/lib/ctx-band.sh
+  s_e2e3e43d0638c5::t_eda97a52489032 37-47
+hooks/manifest.json
+  s_e2e3e43d0638c5::t_eda97a52489032 399-425
+settings/settings.base.json
+  s_96280c922a9418::t_d56c271ad0b34b 4-7,67-71,96-105,236-245,309,319,329,332-336,342-346,419-423,450-459,465-484
+hooks/local-llm/ollama-helper.sh
+  s_96280c922a9418::t_1b626733478095 26-31
+  s_96280c922a9418::t_121199e6e55fca 54-58
+settings/settings.studio.json
+  s_96280c922a9418::t_9efab3862e4d39 43
+  s_364605915bb7ec::t_5e36ece43b1b7d 2
+governance/test/model-router.test.mjs
+  s_e2e3e43d0638c5::t_eda97a52489032 8,10-11
+hooks/tests/phaseC/ollama-helper.sh
+  s_96280c922a9418::t_7ca19c69ae1c18 24
+agents/lean-scout.md
+  s_96280c922a9418::t_5468ad76153503 4
+governance/test/model-router-enforce.test.mjs
+  s_96280c922a9418::t_22a13f3150514d 60-63,65
+  s_e2e3e43d0638c5::t_eda97a52489032 109,113
+governance/bin/model-router.mjs
+  s_96280c922a9418::t_d06bea0f18b627 51-62
+governance/DASHBOARD.md
+  s_96280c922a9418::t_f5a364201c905f 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_bccec93575c20a 417
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_deabaa450d8bca 1797,1799,1802-1807
+governance/code-index/index.json
+  s_96280c922a9418::t_c88f79c9bcaae5 16190-16191,16212-16213,16245-16246,16256-16257,16267-16268,16278-16279,16290-16292,16300-16301
+governance/graph.json
+  s_96280c922a9418::t_eada7d8e5e334e 2212-2224,4195-4203,4222-4230,4382,4400,4418-4427,4528-4544,17273-17284
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "99f1de73cf69ef1e8e510fe1c8ee3df17df0160f",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/test/platform-status-hook-state-root.test.mjs
+  s_c2bb037074776b::t_ff956f661ec8a3 84-91,93-106,110,112
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d61c4911d21a218081533e1c352fdfa83f49ce0f",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

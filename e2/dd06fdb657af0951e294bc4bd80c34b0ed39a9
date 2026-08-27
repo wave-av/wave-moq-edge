@@ -1,0 +1,51 @@
+runbooks/lib/frontmatter.mjs
+  s_c24357e71ae5bc::t_385c472032b796 110-114
+  s_c24357e71ae5bc::t_d9e82bc008a166 153-154,157-164,168-170,173
+hooks/bin/runbook-use-runner.mjs
+  s_c24357e71ae5bc::t_5d473cd656e98f 14,19
+  s_c24357e71ae5bc::t_298043eeb4affc 64-83
+runbooks/test/cli.test.mjs
+  s_c24357e71ae5bc::t_b0019996d287e3 20
+  s_c24357e71ae5bc::t_9bd1258a6f4890 115-166
+  s_c24357e71ae5bc::t_21bd7a86345603 33-34,48-55
+  s_c24357e71ae5bc::t_4f00821af032c2 56
+runbooks/bin/runbook.mjs
+  s_c24357e71ae5bc::t_0f133be1dfa673 26
+  s_c24357e71ae5bc::t_2bf2e16d962955 299-303
+  s_c24357e71ae5bc::t_ca59c3004d4ffd 30,32
+  s_c24357e71ae5bc::t_22f1b60eeccfab 151-153
+  s_c24357e71ae5bc::t_1693390a277442 294-298,304-312,317
+  s_c24357e71ae5bc::t_8c2d1dd65eaade 165-175
+  s_c24357e71ae5bc::t_94c5c5314d2b15 194-198,200-203
+  s_c24357e71ae5bc::t_36a1b152bb31bc 233-239
+hooks/runbook-use-observer.sh
+  s_c24357e71ae5bc::t_b4f68a377d0847 5-13
+runbooks/lib/counters.mjs
+  s_c24357e71ae5bc::t_a342cebd16505d 1-120,126-212
+  s_c24357e71ae5bc::t_136445dbbd0da3 121-125
+runbooks/test/counters.test.mjs
+  s_c24357e71ae5bc::t_c37065dd679750 1-11,13-120,123-298,301-302
+  s_c24357e71ae5bc::t_8a6eab66470638 12
+  s_c24357e71ae5bc::t_5cbe4366621eee 121-122
+  s_c24357e71ae5bc::t_cc6e3c80e195e1 299-300
+governance/lib/runbook-nodes.mjs
+  s_c24357e71ae5bc::t_9ccf9a07316beb 57-62
+hooks/manifest.json
+  s_c24357e71ae5bc::t_3c0dc2dfd19abd 1486
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e2dd06fdb657af0951e294bc4bd80c34b0ed39a9",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

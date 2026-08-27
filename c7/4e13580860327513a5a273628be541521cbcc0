@@ -1,0 +1,23 @@
+hooks/tests/phaseC/supabase-prod-guard.sh
+  s_cf3356a24071e8::t_f7124f8b84d6a0 28-51
+agents/deploy-runner.md
+  s_cf3356a24071e8::t_6dc46cf5816229 44-60
+hooks/supabase-prod-guard.py
+  s_cf3356a24071e8::t_0f52342d9b5e61 20-31,41-42,57-119,121-123,127-131,133-136,138-142,144-149,151-153,155-164,167-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "c74e13580860327513a5a273628be541521cbcc0",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

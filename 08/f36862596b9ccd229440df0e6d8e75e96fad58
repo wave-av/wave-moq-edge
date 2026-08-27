@@ -1,0 +1,35 @@
+governance/bin/plan-lint.mjs
+  s_afd7bfc6bbcc17::t_ff1ee33edd9b8c 24,54-55,75-89,185-189
+governance/lib/levels.mjs
+  s_afd7bfc6bbcc17::t_5ac87db0c23a77 13,103-155
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_afd7bfc6bbcc17::t_5fe7c1a13cc582 12-13,17-35,89,91-93,112
+governance/plans/claude-code-upstream-absorption/E2-DECIDE.md
+  s_afd7bfc6bbcc17::t_0d4d8fe6337c94 9-13,18-20,25-26
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  s_afd7bfc6bbcc17::t_5e15b1b2e530bb 10-12,20-21,26-31
+governance/plans/claude-code-upstream-absorption/action/backfill-82-raw-findings.json
+  s_afd7bfc6bbcc17::t_5891b76779090b 1-4566
+governance/recall/BAKE-OFF.md
+  s_afd7bfc6bbcc17::t_15e3315c481ed8 57,74-99
+governance/recall/eval/repo-corpus.manifest.json
+  s_afd7bfc6bbcc17::t_7d673e820bae43 22-24,180-185,214-220,298,300,364,509-513,536,603-612
+governance/test/levels.phase-blindspot.test.mjs
+  s_afd7bfc6bbcc17::t_157daf812de093 1-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "08f36862596b9ccd229440df0e6d8e75e96fad58",
+  "prompts": {},
+  "sessions": {
+    "s_afd7bfc6bbcc17": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ada7bdfdced9b4e67",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

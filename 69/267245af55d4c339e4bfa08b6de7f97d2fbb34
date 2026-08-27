@@ -1,0 +1,19 @@
+governance/plans/sovereign-capacity/RECEIPTS.md
+  s_e8946ec92c298a::t_55b793307b2abd 130-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "69267245af55d4c339e4bfa08b6de7f97d2fbb34",
+  "prompts": {},
+  "sessions": {
+    "s_e8946ec92c298a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ae3a93ffeqjuBTF7t6a1XIP",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

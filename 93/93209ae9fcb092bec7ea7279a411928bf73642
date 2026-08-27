@@ -1,0 +1,39 @@
+governance/test/epic-status-markers.test.mjs
+  s_264ae386838c57::t_5fc4d151b660ef 28-29
+  s_264ae386838c57::t_d434a23bf90478 77-87
+  s_264ae386838c57::t_72378069182e3a 33-36
+governance/bin/epic-status.mjs
+  s_264ae386838c57::t_abd374cf1aa75d 33-41,66,68,95-96
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_92d4662c5f97b4 978-983
+governance/code-index/index.json
+  s_02abc74f4971c7::t_e42b53bcf9b680 8836-8837,8847-8848,8858-8859,8870-8872,8880-8883,8891-8894
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_264ae386838c57::t_0c4809ef61bf86 11,14-24
+governance/test/epic-status.test.mjs
+  s_264ae386838c57::t_3709605a4057e5 48-62,113-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9393209ae9fcb092bec7ea7279a411928bf73642",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

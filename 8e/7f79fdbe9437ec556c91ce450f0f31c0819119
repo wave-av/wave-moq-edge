@@ -1,0 +1,235 @@
+agents/act-worker.md
+  s_c24357e71ae5bc::t_d0724f92ece099 3,6,22-30
+cubic.yaml
+  s_c24357e71ae5bc::t_347f0de806d35a 1
+docs/AGENT-CAPABILITY-MAP.md
+  s_c24357e71ae5bc::t_0a930cd4baf603 12,29,80-88
+docs/posthog/INSTRUMENTATION-AUDIT.md
+  s_c24357e71ae5bc::t_0ac5803e05e634 1-491
+docs/posthog/LLM-OBSERVABILITY-VERDICT.md
+  s_c24357e71ae5bc::t_ae6f6bba8fdee9 1-388
+docs/posthog/MCP-REGISTRATION.md
+  s_c24357e71ae5bc::t_8e160ee4d509be 1-454
+governance/agents/TAXONOMY.yaml
+  s_c24357e71ae5bc::t_f97810adf6ab8d 62-63,67-68
+governance/bin/enforcement-tables.mjs
+  s_c24357e71ae5bc::t_a0df7efac3507b 65-68
+governance/bin/fleet/reviewer-config-census.mjs
+  s_c24357e71ae5bc::t_318c44b0a4297d 37,45-106,138-158,161,164-167,262-272,286
+governance/bin/gate-liveness-drill.mjs
+  s_c24357e71ae5bc::t_cb7000f60a180d 49,119-120,130
+governance/bin/platform-status.mjs
+  s_c24357e71ae5bc::t_de4fcdf273210c 1-359
+governance/bin/protection-profile-check.mjs
+  s_c24357e71ae5bc::t_298768b3b35aab 37-45
+governance/bin/reviewer-scoreboard.mjs
+  s_c24357e71ae5bc::t_fa8c5d2540e063 109-123
+governance/capability/tier-manifest.json
+  s_c24357e71ae5bc::t_e5d91a9a60ce7a 124
+governance/lib/app-token-mint.mjs
+  s_c24357e71ae5bc::t_aa2e8e29994e00 1-175
+governance/lib/drill-fixtures-platform-status.mjs
+  s_c24357e71ae5bc::t_236e973bbb5fb0 1-196
+governance/lib/platform-status-classify.mjs
+  s_c24357e71ae5bc::t_2870586f9c6152 1-182
+governance/lib/reviewer-census-classify.mjs
+  s_c24357e71ae5bc::t_658d685a29a735 33-43,46-62,211-219,221-230
+governance/lib/reviewer-coverage.mjs
+  s_c24357e71ae5bc::t_4ada510be6cbcd 1-73
+governance/lib/reviewer-scoreboard.mjs
+  s_c24357e71ae5bc::t_93e01f6d11d0e8 44-46,357
+governance/lib/vendor-schema-fetch.mjs
+  s_c24357e71ae5bc::t_ac797c6e1d7877 24-37
+governance/lib/vendor-schema.mjs
+  s_c24357e71ae5bc::t_b122a38798875d 32,53-64,95,131,141,156-158,161-238
+governance/ops/com.wave.platform-status.plist
+  s_c24357e71ae5bc::t_b3ff5478a548da 1-33
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_c24357e71ae5bc::t_bee82e48077b2e 4-125,128-134,136-160,163-190,193-204,206-217,222-224,226-289
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_c24357e71ae5bc::t_9527169f02fa3f 1-94
+governance/plans/claude-code-upstream-absorption/E2-DECIDE.md
+  s_c24357e71ae5bc::t_3a695e89348dba 1-22
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  s_c24357e71ae5bc::t_d0fa3ca665220b 1-28
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_c24357e71ae5bc::t_535dad1f78ddb4 1-22
+governance/plans/claude-code-upstream-absorption/E5-INSTITUTIONALIZE.md
+  s_c24357e71ae5bc::t_95e3184be68e29 1-25
+governance/plans/claude-code-upstream-absorption/NORTH-STAR.md
+  s_c24357e71ae5bc::t_f73080a759086f 1-66
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_c24357e71ae5bc::t_bb6a8c14a3ca17 12
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_c24357e71ae5bc::t_087aabfd8ede24 295-296,307-333
+governance/plans/ffmpeg9-lei/action/E12-P1B-PRORES-RAW-DECODE.md
+  s_c24357e71ae5bc::t_8b5790b58a0169 1-335
+governance/plans/ffmpeg9-lei/action/E14-P1-PROSPECTS.md
+  s_c24357e71ae5bc::t_2deb2f04b5f580 1-283
+governance/plans/ffmpeg9-lei/action/E15-P1-VALIDATION.md
+  s_c24357e71ae5bc::t_fc181412d4d8cc 335-346,373-392
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  s_c24357e71ae5bc::t_f818238e68de95 4
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch1-cover.md
+  s_c24357e71ae5bc::t_e033e8efa0cc68 1-16,39-46
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_c24357e71ae5bc::t_36182157f405ed 1-14,70-84
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-11698-comment.md
+  s_c24357e71ae5bc::t_282e14b9973eaa 1-10
+governance/plans/generated-artifact-contention/epic.md
+  s_c24357e71ae5bc::t_e5bddbc88f5caf 1-85
+governance/plans/hookcli/E1-CORE.md
+  s_c24357e71ae5bc::t_5b2347a3771cb3 4-13
+governance/plans/hookcli/E2-HARVEST.md
+  s_c24357e71ae5bc::t_011a6d23c5b863 4-14
+governance/plans/hookcli/E3-RULES.md
+  s_c24357e71ae5bc::t_7721d5609c9987 4-13
+governance/plans/hookcli/E4-TIERS.md
+  s_c24357e71ae5bc::t_d7dba1cb44bea6 4-12
+governance/plans/hookcli/E5-BOARD.md
+  s_c24357e71ae5bc::t_d4def431eb29b5 4-13
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  s_c24357e71ae5bc::t_61104e51d798a3 4-13
+governance/plans/hookcli/E7-DISTILL.md
+  s_c24357e71ae5bc::t_38642cd258325f 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  s_c24357e71ae5bc::t_1deb6e58381cb8 4-14
+governance/plans/hookcli/NORTH-STAR.md
+  s_c24357e71ae5bc::t_59375cecc5dc10 8-18
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  s_c24357e71ae5bc::t_02e29c07666ff4 50
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  s_c24357e71ae5bc::t_62f68196c26076 1-89
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  s_c24357e71ae5bc::t_ed0c7227c34aca 1-36
+governance/plans/platform-resilience/E2-OUTAGE-ATTESTER.md
+  s_c24357e71ae5bc::t_cfade2c40adc43 1-42
+governance/plans/platform-resilience/E3-FORGEJO-STANDBY.md
+  s_c24357e71ae5bc::t_73d485cbb23de3 1-28
+governance/plans/platform-resilience/NORTH-STAR.md
+  s_c24357e71ae5bc::t_9e1079c49f340e 1-59
+governance/plans/receipts/E1-tier1-arming-crossing-2026-07-06.md
+  s_c24357e71ae5bc::t_9d48915dbebdd9 1-59
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_c24357e71ae5bc::t_60f8ed6e319a35 120-123
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_c24357e71ae5bc::t_aa67fa884517d8 30-40
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_c24357e71ae5bc::t_6ad57b9c1724fa 53
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_c24357e71ae5bc::t_f3190c657fe4fe 29-32
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_c24357e71ae5bc::t_64eb049c5a799b 30-52,56-80
+governance/plans/wave-control/DECISION-E8-RELATIONSHIP.md
+  s_c24357e71ae5bc::t_4a2c52ff999d1b 1-125
+governance/plans/wave-control/DECISION-URL.md
+  s_c24357e71ae5bc::t_87a86532269f5a 1-120
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  s_c24357e71ae5bc::t_85f57753ea2add 1-160
+governance/plans/wave-control/E1-SOURCING.md
+  s_c24357e71ae5bc::t_b42a45a921e883 1-172
+governance/plans/wave-control/E2-SCOPED-TOPOLOGY.md
+  s_c24357e71ae5bc::t_06e3f20294fea9 1-165
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  s_c24357e71ae5bc::t_f91dead39b8acd 1-139
+governance/plans/wave-control/E4-CAPABILITY-CUSTODY.md
+  s_c24357e71ae5bc::t_9d95056e927670 1-150
+governance/plans/wave-control/E5-ALWAYS-ON-FLEET.md
+  s_c24357e71ae5bc::t_2bdf132b1ecfd5 1-127
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  s_c24357e71ae5bc::t_2c0182c0a0faa7 1-173
+governance/plans/wave-control/NORTH-STAR.md
+  s_c24357e71ae5bc::t_e628a217f9ebc7 1-298
+governance/plans/wave-credential-custody/RESEARCH-NANGO-CUSTODY.md
+  s_c24357e71ae5bc::t_8a235ef19ea3c1 1-350
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  s_c24357e71ae5bc::t_63df896df1f567 6-18
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_c24357e71ae5bc::t_7480d26eb2d1e0 6-16
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  s_c24357e71ae5bc::t_fc7fec4528e524 6-18
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  s_c24357e71ae5bc::t_afd3adb2b52a1a 6-13
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  s_c24357e71ae5bc::t_a59c18e2e4074c 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  s_c24357e71ae5bc::t_7c559f74c5d289 6-12
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  s_c24357e71ae5bc::t_dfb75679ab63ba 6-12
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_c24357e71ae5bc::t_f785d2a0c2ea28 11-19
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_d9e898bca24f63 168,342-348,512-513,527-538,541-548,587-599
+governance/recall/eval/repo-corpus.manifest.json
+  s_c24357e71ae5bc::t_d01b82c6df659f 197-204,276,284,288,304-307,590
+governance/runbooks/vendored-gate-audit.md
+  s_c24357e71ae5bc::t_b7f2853974be8e 59-73
+governance/schema/graph.schema.json
+  s_c24357e71ae5bc::t_fad4419ff5c7fa 29
+governance/test/app-token-mint.test.mjs
+  s_c24357e71ae5bc::t_f26aebbbfa280f 1-150
+governance/test/platform-status-cli.test.mjs
+  s_c24357e71ae5bc::t_b0681ce7a585df 1-203
+governance/test/platform-status.test.mjs
+  s_c24357e71ae5bc::t_5a989593c70a21 1-74
+governance/test/reviewer-census-fixture.mjs
+  s_c24357e71ae5bc::t_c27f71929347a8 7-8,48-53
+governance/test/reviewer-census-schema.test.mjs
+  s_c24357e71ae5bc::t_79e7dcf23cf99b 10-11,150-155,157-167,169-194
+governance/test/reviewer-census.test.mjs
+  s_c24357e71ae5bc::t_4ffe46cbdfa3f4 12-13,15-16,194-247
+governance/test/reviewer-coverage.test.mjs
+  s_c24357e71ae5bc::t_4e4f422a715059 1-100
+governance/test/vendor-schema.test.mjs
+  s_c24357e71ae5bc::t_2becc2ca3bac6c 197-289
+governance/work-state.json
+  s_c24357e71ae5bc::t_2dc7efc3f74c57 3,5-6,9-15,22,27,32,38,44,48-54,56,60,62,66,68,72,74,78,80,88,94,100,106,111-113,117-119,123-125,166-178,182-183,190-191,198-199,207-210,214-215,224
+hooks/degraded-hold-gate.sh
+  s_c24357e71ae5bc::t_0529e16ee47386 1-255
+hooks/hooklib/gated-command-match.sh
+  s_c24357e71ae5bc::t_39d64637003331 1-251
+hooks/platform-status-inject.sh
+  s_c24357e71ae5bc::t_86dfd0f9173c9f 1-64
+hooks/tests/degraded-hold-gate.test.sh
+  s_c24357e71ae5bc::t_3488347b3e9917 1-304
+hooks/worktree-remove-observer.sh
+  s_c24357e71ae5bc::t_6056248dc8b19d 1-35
+mcp/zoom-s2s-mcp.mjs
+  s_c24357e71ae5bc::t_e6943c535a8cc8 4,24-26,28-31,50-81,89-93,107-112,120,125,128-134,201-203,205
+plugins/wave-agents/agents/act-worker.md
+  s_c24357e71ae5bc::t_99520bc5caa323 3,6,22-30
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_c24357e71ae5bc::t_599dbac7b939a0 32,39
+rules/hold-under-platform-degradation.md
+  s_c24357e71ae5bc::t_36de7159d8da9c 1-62
+rules/per-worktree-background-isolation-set-explicitly.md
+  s_c24357e71ae5bc::t_658fd30f6a9964 40
+rules/platform-degradation-declared-not-assumed.md
+  s_c24357e71ae5bc::t_3c08bce23fe305 1-61
+runbooks/library/actions-outage-hold-and-drain.md
+  s_c24357e71ae5bc::t_418df3e125f3ea 1-162
+runbooks/library/pr-dispatch-death-repair.md
+  s_c24357e71ae5bc::t_2de8d5842253f7 1-101
+settings/settings.air.json
+  s_c24357e71ae5bc::t_9cd7a54d1b2561 58
+settings/settings.base.json
+  s_c24357e71ae5bc::t_7057f1a43a523d 26-29,31-42,405-409,626-630,797-798
+settings/settings.studio.json
+  s_c24357e71ae5bc::t_76668b6ee01d2c 33,45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8e7f79fdbe9437ec556c91ce450f0f31c0819119",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+hookcli/tests/parity-file-authoring-gate.sh
+  s_60a20469ef4369::t_7b7c7f6380cd27 1-63
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_8e213299f2b505 202-211
+hookcli/track4b.json
+  s_60a20469ef4369::t_22f0d9bc0d4112 55-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "793b71480428dfda26abbd3b9e25ba43305b5b7b",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.github/workflows/wave-sec-scan.yml
+  s_85d9e5f433b9aa::t_ed663eade0a87c 2-25
+  s_85d9e5f433b9aa::t_295582e1c98256 96,98-102,104-105
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_5ba348de71c7ec 30
+  s_85d9e5f433b9aa::t_5653108671475d 37-38,40-43
+  s_85d9e5f433b9aa::t_9c5adbb9784498 86-92,102,110,113-116,118
+governance/test/wave-sec-severity.test.mjs
+  s_85d9e5f433b9aa::t_af49cef0345b6f 1-50
+governance/lib/wave-sec-severity.mjs
+  s_85d9e5f433b9aa::t_2e8dc611e6073a 1-47
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_85d9e5f433b9aa::t_144f57eb2823d0 6-12
+  s_85d9e5f433b9aa::t_69779489b6aa18 38,40-46,48-112,115-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "13627f0bd6e7fcee0a331f75f1213379cf9b6e99",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

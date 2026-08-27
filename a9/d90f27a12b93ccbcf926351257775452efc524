@@ -1,0 +1,99 @@
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_c24357e71ae5bc::t_5113c6f46229be 16-21,23-25
+governance/bin/gate-coverage-audit.mjs
+  s_c24357e71ae5bc::t_ecebf6518c8b72 26-28,62
+governance/bin/hook-release.mjs
+  s_c24357e71ae5bc::t_88fa6b2d882708 53,57-59,69-75,106,118,216,271-272,323-324
+governance/bin/required-check-liveness.mjs
+  s_c24357e71ae5bc::t_b844c88b306855 1-267
+governance/lib/audit-args.mjs
+  s_c24357e71ae5bc::t_b5c5b8cc06eeda 23-25,60-61
+governance/lib/gate-audit-args.mjs
+  s_c24357e71ae5bc::t_96430090006364 31-33,36-37,123
+governance/lib/hook-release-args.mjs
+  s_c24357e71ae5bc::t_cbac7531fb56b5 1-117
+governance/lib/pr-check-health-absence.mjs
+  s_c24357e71ae5bc::t_f8c95033d66432 70-88,121-148
+governance/lib/pr-check-health-evaluate.mjs
+  s_c24357e71ae5bc::t_d47a7695487feb 16-17,104-118
+governance/lib/pr-check-health.mjs
+  s_c24357e71ae5bc::t_e1137a296ee48d 95
+governance/lib/required-check-liveness.mjs
+  s_c24357e71ae5bc::t_046a7b9389dcda 1-255
+governance/lib/strict-flags.mjs
+  s_c24357e71ae5bc::t_6bec615ef329ee 60,63-66
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_c24357e71ae5bc::t_a23c83bac4bf13 3-5
+governance/plans/console-perfection/E1-HUMAN-CANON.md
+  s_c24357e71ae5bc::t_eee621d6645872 1-119
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  s_c24357e71ae5bc::t_de141fde1acf2a 1-92
+governance/plans/console-perfection/E3-AGENT-ACCESS.md
+  s_c24357e71ae5bc::t_9f11a74b5da679 1-81
+governance/plans/console-perfection/E4-AGENT-PAYMENT.md
+  s_c24357e71ae5bc::t_754b8811b3a14f 1-96
+governance/plans/console-perfection/E5-MCP-PARITY.md
+  s_c24357e71ae5bc::t_62818e8e5da971 1-90
+governance/plans/console-perfection/E6-NAME-TRUTH.md
+  s_c24357e71ae5bc::t_c5208abd6524b6 1-114
+governance/plans/console-perfection/NORTH-STAR.md
+  s_c24357e71ae5bc::t_34779a7e2d1d7e 1-139
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_c24357e71ae5bc::t_63248191029489 10-24,160-175
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_c24357e71ae5bc::t_1375bef7117aa6 12-20
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_c24357e71ae5bc::t_210d4ce0cc6f47 264-305
+governance/plans/ffmpeg9-lei/action/E10-P2-TIME-MACHINE-POC.md
+  s_c24357e71ae5bc::t_a37b219454ce73 1-269
+governance/plans/ffmpeg9-lei/action/E11-P3-UPSTREAM-PATCH.md
+  s_c24357e71ae5bc::t_da276c7e1f2bc3 52,54,63-83,94-95,99-104
+governance/plans/ffmpeg9-lei/action/E15-P1-VALIDATION.md
+  s_c24357e71ae5bc::t_f1336962045cf8 1-423
+governance/plans/ffmpeg9-lei/action/E15-P2-SUBMISSION-RECEIPTS.md
+  s_c24357e71ae5bc::t_9fb57787bc9ced 1-220
+governance/plans/ffmpeg9-lei/action/upstream/dnn-io-proc-stride/0001-avfilter-dnn-fix-output-buffer-stride-for-channel-re.patch
+  s_c24357e71ae5bc::t_89f26cbe4b7bdf 1-60
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch1-cover.md
+  s_c24357e71ae5bc::t_ed4f72a7936c61 1-69
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_c24357e71ae5bc::t_48f84c1ca2a317 1-73
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-11698-comment.md
+  s_c24357e71ae5bc::t_0aa7f3b1dc0457 1-56
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/trac-vt-proresraw-draft.md
+  s_c24357e71ae5bc::t_3e2caf5f68b60f 1-84
+governance/plans/ffmpeg9-lei/action/upstream/validate/Dockerfile
+  s_c24357e71ae5bc::t_d002a2b229ae12 1-121
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_6f1e71bb692267 57,74-218,229,274-299,301-305,307-340,354-356,512-518,530-566
+governance/recall/eval/repo-corpus.manifest.json
+  s_c24357e71ae5bc::t_dd249bfafd7340 274
+governance/test/gate-audit-args.test.mjs
+  s_c24357e71ae5bc::t_eac35acfab278c 53-55,60,110-114
+governance/test/hook-release-args.test.mjs
+  s_c24357e71ae5bc::t_b8c6245d4d0b6a 1-173
+governance/test/pr-check-health-stall.test.mjs
+  s_c24357e71ae5bc::t_ff9d57396bb278 15,125-188
+governance/test/required-check-liveness.test.mjs
+  s_c24357e71ae5bc::t_24e3b458bb5e21 1-308
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_c24357e71ae5bc::t_1da7f3499fd779 37
+runbooks/library/ffmpeg-major-bump.md
+  s_c24357e71ae5bc::t_b7618d74354ff6 16,74-82,150-160,176-182,230-259,273-276,280,282-292
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a9d90f27a12b93ccbcf926351257775452efc524",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

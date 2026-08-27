@@ -1,0 +1,54 @@
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  h_af5ac1a9798224 1-360
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3294-3304,4618-4678
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,29444-29531,39487-39926
+governance/lib/wave-cost-ledger-cloudflare-account.mjs
+  h_af5ac1a9798224 1-82
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  h_af5ac1a9798224 1-254
+governance/lib/wave-cost-ledger-cloudflare-do-mapping.mjs
+  h_af5ac1a9798224 1-335
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  h_af5ac1a9798224 1-180
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  h_af5ac1a9798224 1-261
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 1-189
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  h_af5ac1a9798224 1-68
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 163-164,168-179
+governance/test/wave-cost-ledger-cloudflare-alert-fixture.mjs
+  h_af5ac1a9798224 1-48
+governance/test/wave-cost-ledger-cloudflare-alert-history-fetch.test.mjs
+  h_af5ac1a9798224 1-177
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  h_af5ac1a9798224 1-318
+governance/test/wave-cost-ledger-cloudflare-do-mapping-cache.test.mjs
+  h_af5ac1a9798224 1-383
+governance/test/wave-cost-ledger-cloudflare-do-mapping-fixture.mjs
+  h_af5ac1a9798224 1-25
+governance/test/wave-cost-ledger-cloudflare-do-mapping.test.mjs
+  h_af5ac1a9798224 1-386
+governance/test/wave-cost-ledger-cloudflare-estimate.test.mjs
+  h_af5ac1a9798224 1-123
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  h_af5ac1a9798224 1-173
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  h_af5ac1a9798224 1-411
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 1-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4f740fbcb173030ebd761b4088957b0cc5296ee9",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

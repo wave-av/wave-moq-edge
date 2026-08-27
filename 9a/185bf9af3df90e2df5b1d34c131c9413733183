@@ -1,0 +1,48 @@
+governance/test/wave-cost-ledger-root-cause-prompt-template.test.mjs
+  s_2e30bff6169f7a::t_9ce1824dbf2e4a 1-7,9-55
+  s_2e30bff6169f7a::t_34279e6dab3a75 8
+governance/lib/wave-cost-ledger-root-cause-outlier.mjs
+  s_2e30bff6169f7a::t_a1ba69790e20db 1-129
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  s_2e30bff6169f7a::t_491768639a95d8 1-66,68,74-78
+  s_2e30bff6169f7a::t_56eab336958125 69-73
+  s_2e30bff6169f7a::t_faa1ce83bf7964 67
+governance/lib/wave-cost-ledger-root-cause-resolve.mjs
+  s_2e30bff6169f7a::t_58150181a01358 43,47-50,58-65
+  s_2e30bff6169f7a::t_336d5c55fd1e9d 1-42,44-46,51-57,66-76
+governance/test/wave-cost-ledger-root-cause-outlier.test.mjs
+  s_2e30bff6169f7a::t_f2440f1c261d0e 1-82
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  s_2e30bff6169f7a::t_5af1702ff33955 1-90
+governance/test/wave-cost-ledger-root-cause-resolve.test.mjs
+  s_2e30bff6169f7a::t_44619ab7977f41 1-54
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_2e30bff6169f7a::t_f9e5b76977a1e6 76-90,96-108,116
+  s_2e30bff6169f7a::t_9c77900abc17bf 33
+  s_2e30bff6169f7a::t_bd4f2eb678b44a 1-32,34-75,91-95,114-115,117-218
+  s_2e30bff6169f7a::t_c3a9074e353258 109-113
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_be8e88bf2c73b8 4-29
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_00afd153049d2f 5,3301-3309,4645-4661
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_80bea8439a7231 9-10,12-13,29488-29553,39685-39772
+governance/graph.json
+  s_2e30bff6169f7a::t_95767c4876b503 22576,22578,22582,22584
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9a185bf9af3df90e2df5b1d34c131c9413733183",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+governance/graph.json
+  s_0227926428e4b1::t_45922ea76d1ef3 1624,7808
+governance/plans/self-review-gate/E1-RECEIPT-AND-LAW.md
+  s_0227926428e4b1::t_132faa26927a00 40
+governance/plans/self-review-gate/NORTH-STAR.md
+  s_0227926428e4b1::t_6cb363e6f96157 11,55
+governance/plans/self-review-gate/creative/E1-redteam.md
+  s_0227926428e4b1::t_2d1464458ae5e4 74
+governance/plans/self-review-gate/creative/E2-ops-sre.md
+  s_0227926428e4b1::t_1038d6efb3ce18 87
+governance/plans/self-review-gate/creative/E3-economist.md
+  s_0227926428e4b1::t_cdc7fe6ddc94b6 40
+governance/plans/self-review-gate/creative/E3-ops-sre.md
+  s_0227926428e4b1::t_f78b7f9250a4e3 80
+governance/plans/self-review-gate/creative/E3-redteam.md
+  s_0227926428e4b1::t_54ddb9b7897fc3 83,138
+governance/plans/self-review-gate/creative/E4-first-principles.md
+  s_0227926428e4b1::t_cf1758280978f6 64,67
+governance/plans/self-review-gate/creative/E4-premortem.md
+  s_0227926428e4b1::t_ca67392dbdd1d6 140
+governance/plans/self-review-gate/creative/ops-sre.md
+  s_0227926428e4b1::t_e8afb59378cf6d 53,113,197
+governance/plans/self-review-gate/creative/pragmatist.md
+  s_0227926428e4b1::t_434ee1d529d2ed 147,160,198
+governance/plans/self-review-gate/creative/premortem.md
+  s_0227926428e4b1::t_ea8e3346c25930 18,50
+governance/plans/self-review-gate/creative/redteam.md
+  s_0227926428e4b1::t_20686de8992aab 94,112,142,191,234
+rules/review-your-own-pr-before-requesting-review.md
+  s_0227926428e4b1::t_4332baee4ba710 1,3,16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "04a84366c8114aa76ab9201ec7142a569fcc5ba1",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

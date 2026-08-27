@@ -1,0 +1,21 @@
+governance/plans/harness-wars-intel/RECEIPT-RUN-CODEMODE.md
+  s_d77777f89719d2::t_fbbc1e095721a6 1-38
+governance/plans/harness-wars-intel/PRODUCT-VERDICT-RUN.md
+  s_d77777f89719d2::t_94de045d17076d 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "dce75623d6a552a41e8e15c4dcf4323648be284f",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

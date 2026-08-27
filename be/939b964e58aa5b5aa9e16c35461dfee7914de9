@@ -1,0 +1,19 @@
+hooks/hooklib/attester-scope-exonerate.sh
+  s_3b2d43cae68bda::t_68faf9bea3a5c8 238-260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "be939b964e58aa5b5aa9e16c35461dfee7914de9",
+  "prompts": {},
+  "sessions": {
+    "s_3b2d43cae68bda": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5025ab9f4b01ba7e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

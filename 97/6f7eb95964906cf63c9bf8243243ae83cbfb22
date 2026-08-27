@@ -1,0 +1,23 @@
+governance/test/mcp-server-paths.test.mjs
+  s_1c0352e957b5f6::t_d0eba2e7314d7c 19
+  s_1c0352e957b5f6::t_1a7790dca8b660 1-18,20-74,79-81
+  s_1c0352e957b5f6::t_4613f599501cae 75-78
+mcp/mcp.base.json
+  s_1c0352e957b5f6::t_cfc079d28b1471 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "976f7eb95964906cf63c9bf8243243ae83cbfb22",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

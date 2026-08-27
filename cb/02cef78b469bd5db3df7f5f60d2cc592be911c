@@ -1,0 +1,31 @@
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_60a20469ef4369::t_8a843b02c05b7f 8
+governance/plans/wave-secdev/RECEIPTS.md
+  s_60a20469ef4369::t_3038afd84b966b 117,121-124,127-135
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  s_60a20469ef4369::t_5d61100aeaf4b4 39
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  s_60a20469ef4369::t_f3cbf0fc25478d 50
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_60a20469ef4369::t_30352f9e4f6383 13
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  s_60a20469ef4369::t_22e2e1f348b52b 33
+governance/graph.json
+  s_60a20469ef4369::t_f74b88d58830b1 4148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "cb02cef78b469bd5db3df7f5f60d2cc592be911c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

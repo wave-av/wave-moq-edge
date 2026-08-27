@@ -1,0 +1,1203 @@
+.claude/skills/linkedin-saved-posts/SKILL.md
+  s_c24357e71ae5bc::t_1035fdf8e5289f 1-128
+.claude/skills/state-of-play/SKILL.md
+  s_c24357e71ae5bc::t_a6cbd4993545b2 63,134
+.claude/skills/wave-email-craft/SKILL.md
+  s_c24357e71ae5bc::t_6cb307abd6da42 33-56,207-208
+.claude/skills/wow-canon/SKILL.md
+  s_c24357e71ae5bc::t_2f9bd232ed586c 3,48
+.github/actionlint.yaml
+  s_c24357e71ae5bc::t_a78b8d95d7e1a8 15
+.github/dependabot.yml
+  s_c24357e71ae5bc::t_968150aa2c1672 24-82
+.github/wave-sec-semgrep-requirements.txt
+  s_c24357e71ae5bc::t_2e9104dcee8f20 1-998
+.github/workflows/agentic-conformance.yml
+  s_c24357e71ae5bc::t_c8d44d6f437a60 1-98
+.github/workflows/artifact-source-audit.yml
+  s_c24357e71ae5bc::t_c48aeb0d862557 1-212
+.github/workflows/auto-merge.yml
+  s_c24357e71ae5bc::t_288660da29e8dd 123-134,441,443-452,454,514-519,522,525,527-535,539-650
+.github/workflows/external-ticket-sweep.yml
+  s_c24357e71ae5bc::t_d3fb7409240298 1-179
+.github/workflows/ffmpeg-channel-watch.yml
+  s_c24357e71ae5bc::t_84fca85edd11d6 1-110
+.github/workflows/ffmpeg-release-watch.yml
+  s_c24357e71ae5bc::t_00400718908ce9 1-137
+.github/workflows/foundation-gate.yml
+  s_c24357e71ae5bc::t_3ac86a486a5cb4 42
+.github/workflows/governance-enforce.yml
+  s_c24357e71ae5bc::t_80ab139cacbd45 13-15,21-25,29-30,35,41-42,44,47,49-58
+.github/workflows/governance.yml
+  s_c24357e71ae5bc::t_1b1c4e9d9f1834 229-253,352-371
+.github/workflows/hook-tests.yml
+  s_c24357e71ae5bc::t_9a348ad3670030 37-41,47-51,185-455
+.github/workflows/namespace-release-watch.yml
+  s_c24357e71ae5bc::t_735f59d6d33973 1-117
+.github/workflows/public-release-gate-audit.yml
+  s_c24357e71ae5bc::t_f8e54b07c548b5 1-200
+.github/workflows/unearned-approval-guard.yml
+  s_c24357e71ae5bc::t_3172707cd62d3e 223
+.github/workflows/wave-cost-ledger-absent-check-sweep.yml
+  s_c24357e71ae5bc::t_08cac54aa2ef73 1-121
+.github/workflows/wave-cost-ledger-coverage-diff.yml
+  s_c24357e71ae5bc::t_ff3112ec5f1b63 45,48
+.github/workflows/wave-cost-ledger-pullers.yml
+  s_c24357e71ae5bc::t_f4ee5937014203 142,145,175,178,208,211,264,267,312,315
+.github/workflows/wave-sec-gate.yml
+  s_c24357e71ae5bc::t_7f01187cfcc440 1-337
+.github/workflows/wave-sec-scan.yml
+  s_c24357e71ae5bc::t_f47083c0bb7309 1-209
+.github/workflows/workflow-lint.yml
+  s_c24357e71ae5bc::t_0a7487055552d1 56-60,180-191,193-208,210,279-284
+.github/workflows/wsc-salvage-coverage.yml
+  s_c24357e71ae5bc::t_209c6c585349ab 1-52
+.gitignore
+  s_c24357e71ae5bc::t_6d804c21c30cfa 80-105
+REVIEW.md
+  s_c24357e71ae5bc::t_84b620baf3e324 74-75
+agents/spoke-dev.md
+  s_c24357e71ae5bc::t_c3a08b74e7e516 21
+docs/WAVE-SEC-GATE.md
+  s_c24357e71ae5bc::t_8cdc41e0eddc84 1-141
+docs/cubic-deleted-agents-backup-2026-08-04.md
+  s_c24357e71ae5bc::t_e592e645f8e10a 3-5
+governance/.gitignore
+  s_c24357e71ae5bc::t_f6ff29b2fb3768 26-29
+governance/DANGLING-REFS-BASELINE.json
+  s_c24357e71ae5bc::t_a6a148fbc9f7ee 9,11,24,90-104
+governance/PROSE-LAW-TRIAGE.md
+  s_c24357e71ae5bc::t_b1ea9bcb7cc4cd 119-180
+governance/agents/TAXONOMY.yaml
+  s_c24357e71ae5bc::t_0969388014069b 1-334
+governance/automation-registry/generate.mjs
+  s_c24357e71ae5bc::t_9b13ffe3e71316 13,113
+governance/automation-registry/lib/schema.mjs
+  s_c24357e71ae5bc::t_09113e1f34f2f2 97-237,245-252,255-271
+governance/automation-registry/lib/taxonomy.mjs
+  s_c24357e71ae5bc::t_458bccae456e84 1-47
+governance/automation-registry/lint.mjs
+  s_c24357e71ae5bc::t_9d51b7b46691e2 11,112
+governance/automation-registry/list-dead-ids.mjs
+  s_c24357e71ae5bc::t_9d6ccabe81c054 9,17
+governance/automation-registry/sync-check.mjs
+  s_c24357e71ae5bc::t_ec24ec13bce0a2 12,65
+governance/bin/agentic-conformance.mjs
+  s_c24357e71ae5bc::t_64cfa2f6a18180 1-165
+governance/bin/anti-loop-lint.mjs
+  s_c24357e71ae5bc::t_9a4b8155f4515c 30,58-71,76-78,82,93-100,106-109,116,127-128,131,135
+governance/bin/artifact-source-audit.mjs
+  s_c24357e71ae5bc::t_b375cbb6ad6ca2 1-313
+governance/bin/build.mjs
+  s_c24357e71ae5bc::t_ffca197d4b5080 6-7,124-128,133-134,136
+governance/bin/closed-loop-audit.mjs
+  s_c24357e71ae5bc::t_040fdc98a62796 1-146
+governance/bin/closure-audit.mjs
+  s_c24357e71ae5bc::t_78c3ab360af9c4 20-21,29,72,145,228-231
+governance/bin/credential-probe.mjs
+  s_c24357e71ae5bc::t_cc901a969b248f 43-48,98-103,130-142,144-147,228
+governance/bin/enforcement-coverage-audit.mjs
+  s_c24357e71ae5bc::t_c3f1c20625b10b 12-15,31-45,100-104,106,116-130,132,140-146,169,175
+governance/bin/enforcement-tables.mjs
+  s_c24357e71ae5bc::t_e23bd151b7f282 61-64
+governance/bin/epic-status.mjs
+  s_c24357e71ae5bc::t_e291ee51a861bd 12,16-20,30-39,115,122-139,146,169,265,268-278,303-313
+governance/bin/external-tickets.mjs
+  s_c24357e71ae5bc::t_e3e8c39a7ee98e 1-364
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_c24357e71ae5bc::t_c2614a1e8515ec 1-280
+governance/bin/ffmpeg-channel-watch.mjs
+  s_c24357e71ae5bc::t_05e805183deb38 1-288
+governance/bin/ffmpeg-release-watch.mjs
+  s_c24357e71ae5bc::t_b8ed4492244b41 1-227
+governance/bin/gate-coverage-audit.mjs
+  s_c24357e71ae5bc::t_91c0c299f7f281 1-184
+governance/bin/gate-liveness-drill.mjs
+  s_c24357e71ae5bc::t_58c18ddeb1b7e2 38,41-46,48,83-105,111-114,179,274-289
+governance/bin/gate-scope-conformance.mjs
+  s_c24357e71ae5bc::t_c212208f6506f9 4-5,35-38,40-41,45-54,123-127,161,197-201,204,213-217,219-223,225-232,235
+governance/bin/hook-contract-lint.mjs
+  s_c24357e71ae5bc::t_ffc8247e918a4e 13-15,31,64,66-75,77-85,120
+governance/bin/hook-failopen-lint.mjs
+  s_c24357e71ae5bc::t_16cc207a1d43bf 18,20-25,36-37,68-73,76-94,101-167,169-189,191-195,197-202,209,213,224
+governance/bin/learning-admit.mjs
+  s_c24357e71ae5bc::t_d4796a057e9042 99
+governance/bin/learning-queue.mjs
+  s_c24357e71ae5bc::t_971ba0afae091c 117,197
+governance/bin/monolith-confirm-strings.mjs
+  s_c24357e71ae5bc::t_4595a4d63d50c3 1-314
+governance/bin/monolith-coverage.mjs
+  s_c24357e71ae5bc::t_2c568a06be3f7c 1-223
+governance/bin/monolith-manifest.mjs
+  s_c24357e71ae5bc::t_99a113b6cc4c5a 1-375
+governance/bin/monolith-project.mjs
+  s_c24357e71ae5bc::t_41e30b2e8a7d75 1-339
+governance/bin/monolith-triage.mjs
+  s_c24357e71ae5bc::t_0496515d35df7d 1-368
+governance/bin/namespace-release-watch.mjs
+  s_c24357e71ae5bc::t_d0f8c5d00d9084 1-217
+governance/bin/namespace-usage-pull.mjs
+  s_c24357e71ae5bc::t_ab34a161371b58 1-267
+governance/bin/plan-lint.mjs
+  s_c24357e71ae5bc::t_2e6684e9f55d7e 26,127-156
+governance/bin/plugin-home-repo-drift.mjs
+  s_c24357e71ae5bc::t_60c7efc624274e 1-350
+governance/bin/post-merge-replay.mjs
+  s_c24357e71ae5bc::t_10b3f7ebd35aeb 1-316
+governance/bin/prove-anti-loop-gate.mjs
+  s_c24357e71ae5bc::t_20e9c704071d9e 41-91
+governance/bin/prove-gate-scope-conformance.mjs
+  s_c24357e71ae5bc::t_90cea842975bbb 4-6,8-9,40-78,80-87,106-111,153-181,187,193,195,197,208-226,228-230
+governance/bin/prove-hook-contract-gate.mjs
+  s_c24357e71ae5bc::t_90a806292e5af2 40-56
+governance/bin/prove-hook-failopen-gate.mjs
+  s_c24357e71ae5bc::t_d9b6bd3ece7dee 41-248
+governance/bin/public-release-gate-audit.mjs
+  s_c24357e71ae5bc::t_04228325d0d45d 1-383
+governance/bin/review-liveness-scope-io.mjs
+  s_c24357e71ae5bc::t_e131e3d87c719c 1-104
+governance/bin/review-liveness.mjs
+  s_c24357e71ae5bc::t_50c2b82af6c9fb 12-30,45,48-57,64-91,98-103,107-115,119-124,152-155,178-181,183-184,188-218,221-223,225,227-253,259-282
+governance/bin/reviewer-scoreboard.mjs
+  s_c24357e71ae5bc::t_92c898ccf5ec5a 72-76,84,86,88,96-97,101
+governance/bin/roi.mjs
+  s_c24357e71ae5bc::t_d7bd215e3a7158 31,71-80
+governance/bin/struggle-miner/collect-automation-drift.mjs
+  s_c24357e71ae5bc::t_7d3f530732a916 84-86,88
+governance/bin/taxonomy.mjs
+  s_c24357e71ae5bc::t_3327330c052c9d 1-368
+governance/bin/thread-resolution.mjs
+  s_c24357e71ae5bc::t_911726865ba375 1-153
+governance/bin/vendored-gate-audit-scan.sh
+  s_c24357e71ae5bc::t_2da9911f063d12 1-94
+governance/bin/vendored-gate-audit.mjs
+  s_c24357e71ae5bc::t_b0a060f53b4fee 1-132
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  s_c24357e71ae5bc::t_30ea82c71e006f 16-20,185-207,213-217,244-251,253-260,262-267,284-299
+governance/bin/wave-cost-ledger-gha-budget-alert.mjs
+  s_c24357e71ae5bc::t_3f985bbeeb3d49 38,107-111,113-114
+governance/bin/wave-sec.mjs
+  s_c24357e71ae5bc::t_59b78f492e72b5 1-260
+governance/bin/work-graph.mjs
+  s_c24357e71ae5bc::t_0fab9b7bcd6b78 5,28,63-68,73,195-214,244
+governance/ci-scan-set.pin.json
+  s_c24357e71ae5bc::t_68e8adff95da3e 5-6,23-24,26-28,30-34
+governance/drafts/coderabbit-api-access-DRAFT-DO-NOT-SEND.md
+  s_c24357e71ae5bc::t_b7300f6d332774 1-65
+governance/fixtures/post-merge-integrity/cases.json
+  s_c24357e71ae5bc::t_ce1f6ffdbd2b99 1-79
+governance/gam-port-kit/manifest.json
+  s_c24357e71ae5bc::t_67dcae13e63491 21-36
+governance/hooks/work-sentinel.sh
+  s_c24357e71ae5bc::t_e9aa5d965a54a6 44-58,60,63-64,72-77,183-189,199-208
+governance/lib/artifact-source.mjs
+  s_c24357e71ae5bc::t_e2e52700438f07 1-139
+governance/lib/closed-loop-audit.mjs
+  s_c24357e71ae5bc::t_84c41ee3f5c0be 1-262
+governance/lib/closed-loop-observe.mjs
+  s_c24357e71ae5bc::t_edc70ad18dfde8 1-194
+governance/lib/closure-decide.mjs
+  s_c24357e71ae5bc::t_0a712a5fbcb53b 22-25,33
+governance/lib/closure-readers.mjs
+  s_c24357e71ae5bc::t_d7ff0d1767539f 16-17,229-297
+governance/lib/drill-decide.mjs
+  s_c24357e71ae5bc::t_3cf96597edd9ca 61-67,70,73,141-148
+governance/lib/drill-fixtures-artifact-source.mjs
+  s_c24357e71ae5bc::t_4f3fdc93db498e 1-87
+governance/lib/drill-fixtures-ask-gate.mjs
+  s_c24357e71ae5bc::t_de099e56047806 1-51
+governance/lib/drill-fixtures-external-tickets.mjs
+  s_c24357e71ae5bc::t_40914d7ffaef9e 1-114
+governance/lib/drill-fixtures-post-merge-replay.mjs
+  s_c24357e71ae5bc::t_6db37342a0a1e0 1-58
+governance/lib/drill-fixtures-public-release-gate.mjs
+  s_c24357e71ae5bc::t_f93f3ca30d2c3e 1-92
+governance/lib/drill-fixtures-thread-resolution.mjs
+  s_c24357e71ae5bc::t_084b2b4ce24a26 1-73
+governance/lib/drill-fixtures-wave-sec.mjs
+  s_c24357e71ae5bc::t_827bffe5facca3 1-111
+governance/lib/drill-inline-required.mjs
+  s_c24357e71ae5bc::t_3a79d55febf904 1-19
+governance/lib/epic-declared-scope.mjs
+  s_c24357e71ae5bc::t_2ea23cc06db6b9 1-99
+governance/lib/epic-states.mjs
+  s_c24357e71ae5bc::t_3885c9b940049a 1-12
+governance/lib/epic-status-display.mjs
+  s_c24357e71ae5bc::t_f19dc2f2061d82 1-130
+governance/lib/epic-status-parse.mjs
+  s_c24357e71ae5bc::t_ddfd56b64f4bba 11,61-94
+governance/lib/epic-status-provenance.mjs
+  s_c24357e71ae5bc::t_af72dff8118e3a 1-270
+governance/lib/epic-status-render.mjs
+  s_c24357e71ae5bc::t_4278d44c65f1f1 8-9,12-13,15,20-26,32-71,73-77,100-119,130-132,144-150,157
+governance/lib/epic-status-verdict.mjs
+  s_c24357e71ae5bc::t_e3a315dd8f7479 9-10,12,17,19-53
+governance/lib/gam-workflow-checks.mjs
+  s_c24357e71ae5bc::t_c8bdd4f470f432 198-228
+governance/lib/gate-audit-args.mjs
+  s_c24357e71ae5bc::t_102a6b1869a36c 1-131
+governance/lib/gate-audit-io.mjs
+  s_c24357e71ae5bc::t_0964b061e10cff 1-87
+governance/lib/gate-coverage.mjs
+  s_c24357e71ae5bc::t_2e9da9266bfa8c 1-266
+governance/lib/gh-err-line.mjs
+  s_c24357e71ae5bc::t_36631c1e217706 1-16
+governance/lib/git-run.mjs
+  s_c24357e71ae5bc::t_fb2011b87433e3 45,50-53
+governance/lib/hash-code-view.mjs
+  s_c24357e71ae5bc::t_d32926752185fd 1-187
+governance/lib/hook-deny-signals.mjs
+  s_c24357e71ae5bc::t_59cef481cac0e4 1-198
+governance/lib/js-code-view.mjs
+  s_c24357e71ae5bc::t_a1baa2cdeff9da 1-190
+governance/lib/law-bindings.mjs
+  s_c24357e71ae5bc::t_58ccc56b270bd8 60-103
+governance/lib/monolith-classify.mjs
+  s_c24357e71ae5bc::t_8495bb1fe23edd 1-81
+governance/lib/monolith-doors.mjs
+  s_c24357e71ae5bc::t_4cdc155861e9e5 1-222
+governance/lib/namespace-usage-report.mjs
+  s_c24357e71ae5bc::t_10d44e32b1de3a 1-239
+governance/lib/public-release-gate.mjs
+  s_c24357e71ae5bc::t_81986bcd9c781c 1-252
+governance/lib/ramp-tables.mjs
+  s_c24357e71ae5bc::t_602afaca3706b3 50-55
+governance/lib/review-liveness-report.mjs
+  s_c24357e71ae5bc::t_96648798519b8a 1-66
+governance/lib/review-liveness-rules.mjs
+  s_c24357e71ae5bc::t_b0232049362051 1-267
+governance/lib/review-liveness-scope.mjs
+  s_c24357e71ae5bc::t_bd9aa41b833b56 1-97
+governance/lib/review-liveness.mjs
+  s_c24357e71ae5bc::t_9bdcc1e7c29c20 3-6,28-34,37-39,48-58,61-72,74-75,77,80-82,87-93,98,103-109,125-127,150-176,192
+governance/lib/review-markers.mjs
+  s_c24357e71ae5bc::t_18ef91cd463725 27-46,55-59,80-115
+governance/lib/review-pending.mjs
+  s_c24357e71ae5bc::t_c878578a9a278b 1-120
+governance/lib/review-surfaces.mjs
+  s_c24357e71ae5bc::t_5b08b8aff49eff 143-147,165-170
+governance/lib/reviewer-scoreboard.mjs
+  s_c24357e71ae5bc::t_bed77347db6758 30,103,110-119,145-149,217-221,231-235,312,326-333,339
+governance/lib/thread-resolution.mjs
+  s_c24357e71ae5bc::t_65de7eb05cd3b7 1-129
+governance/lib/vendor-bundle.mjs
+  s_c24357e71ae5bc::t_878b9d38eb1a06 1-112
+governance/lib/vendored-gate-classify.mjs
+  s_c24357e71ae5bc::t_5cd723c4d5bf3c 1-249
+governance/lib/vendored-gate-probe.mjs
+  s_c24357e71ae5bc::t_f38fe137287950 1-116
+governance/lib/wave-cost-ledger-anomaly-read.mjs
+  s_c24357e71ae5bc::t_c9823e59443ab0 12-44,81-89
+governance/lib/wave-cost-ledger-classify.mjs
+  s_c24357e71ae5bc::t_04eb972d031040 57-60
+governance/lib/wave-cost-ledger-gha-absent-check.mjs
+  s_c24357e71ae5bc::t_778a6f4497a9ac 199-262
+governance/lib/wave-cost-ledger-gha-billing.mjs
+  s_c24357e71ae5bc::t_9f36ae0a64326d 24-26,30-100,184-207,209-213,235-237,246-250,264-266
+governance/lib/wave-cost-ledger-gha-budget-detector.mjs
+  s_c24357e71ae5bc::t_16f00a466d43bd 96-104,106,148-155,158-163,168-169,240-247,249,252-253,256-259,321
+governance/lib/wave-cost-ledger-gha-budget-read.mjs
+  s_c24357e71ae5bc::t_eb7cd641e4af6e 1-74
+governance/lib/wave-cost-ledger-gha-row-classify.mjs
+  s_c24357e71ae5bc::t_332bb1dcd1fd5f 1-123
+governance/lib/wave-cost-ledger-pull-read.mjs
+  s_c24357e71ae5bc::t_0051ea860eb30c 74-80,89-99,114-138
+governance/lib/wave-cost-ledger-registry-audit.mjs
+  s_c24357e71ae5bc::t_3a2191690f1292 57,72-79
+governance/lib/wave-sec-closure.mjs
+  s_c24357e71ae5bc::t_03b297f952184f 1-112
+governance/lib/wave-sec-lanes-github.mjs
+  s_c24357e71ae5bc::t_0fc0a5b04981f1 1-179
+governance/lib/wave-sec-lanes.mjs
+  s_c24357e71ae5bc::t_2c262eda8b3c40 1-271
+governance/lib/wave-sec-progress.mjs
+  s_c24357e71ae5bc::t_e06f95cd49ec85 1-16
+governance/lib/wave-sec-scanners.mjs
+  s_c24357e71ae5bc::t_e16c9d34a0b30a 1-330
+governance/lib/wave-sec-sentry.mjs
+  s_c24357e71ae5bc::t_fcf0f7ba9b8f51 1-142
+governance/lib/wave-sec-severity.mjs
+  s_c24357e71ae5bc::t_e90963fc4ef890 1-65
+governance/lib/wave-sec-zizmor-baseline.mjs
+  s_c24357e71ae5bc::t_1b410c0e3378a5 1-96
+governance/ops/com.wave.vendored-gate-audit.plist
+  s_c24357e71ae5bc::t_b45a4081989602 1-33
+governance/package.json
+  s_c24357e71ae5bc::t_6cc6a3869ec3fc 3
+governance/plans/2026-07-08-L1-presend-memo-plan.md
+  s_c24357e71ae5bc::t_ff611564cd36bb 76
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_79f60386765ee0 153-160
+governance/plans/actions-execution-integrity/DECISIONS.md
+  s_c24357e71ae5bc::t_d88bc6add673b4 4-10
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_c24357e71ae5bc::t_449a4af38cd748 4-12
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_c24357e71ae5bc::t_cf68b4ed8525c0 4-9
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_c24357e71ae5bc::t_81eb9c7d2ef3f6 4-13
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_c24357e71ae5bc::t_dcf3706130fdae 4-13
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_c24357e71ae5bc::t_8bede7585f18ee 4-9,12
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_c24357e71ae5bc::t_c447203fafa85d 4-9
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_c24357e71ae5bc::t_0ed764a117050b 4-10
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_c24357e71ae5bc::t_ff6aeff89fceb3 4-9
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_c24357e71ae5bc::t_8244c1a3c33a75 4-13
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_c24357e71ae5bc::t_0fabe386f922d6 4-10
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_c24357e71ae5bc::t_f5631cd53f4db8 1-126
+governance/plans/agentic-wave/E1-AGENT-TAXONOMY.md
+  s_c24357e71ae5bc::t_8e2ff880204d4d 1-123
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_c24357e71ae5bc::t_53664138b41292 1-241
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_c24357e71ae5bc::t_1ee775f3b9b28e 1-438
+governance/plans/agentic-wave/E3-CI-AGENT-GOVERNANCE.md
+  s_c24357e71ae5bc::t_d6a12b8ff42b13 1-277
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_c24357e71ae5bc::t_483ef011151db7 1-351
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_c24357e71ae5bc::t_b520ea1d8da8d5 1-244
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_c24357e71ae5bc::t_e3bbe55c37ef56 1-102
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_c24357e71ae5bc::t_0d81e4618ec8e9 1-292
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_c24357e71ae5bc::t_a9e211d69b5696 1-105
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_c24357e71ae5bc::t_4d69e67fe8b757 1-371
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_c24357e71ae5bc::t_f0ed2dda839dd0 1-178
+governance/plans/agentic-wave/RECEIPTS.md
+  s_c24357e71ae5bc::t_51368093badb64 1-98
+governance/plans/ambient-console-auth/E1-DECISION.md
+  s_c24357e71ae5bc::t_bf50d1e0414045 1-76
+governance/plans/ambient-console-auth/E2-GATEWAY-MINT.md
+  s_c24357e71ae5bc::t_505341bf11eee8 1-102
+governance/plans/ambient-console-auth/E3-CONSOLE-BROKER.md
+  s_c24357e71ae5bc::t_6d124129138b2e 1-93
+governance/plans/ambient-console-auth/E4-PAGE-CUTOVER.md
+  s_c24357e71ae5bc::t_42f835f1fc65a2 1-89
+governance/plans/ambient-console-auth/E4B-KEYS-REFRAME.md
+  s_c24357e71ae5bc::t_db7d323341ae33 1-82
+governance/plans/ambient-console-auth/E5-PROOF.md
+  s_c24357e71ae5bc::t_ece327767db0fd 1-73
+governance/plans/ambient-console-auth/NORTH-STAR.md
+  s_c24357e71ae5bc::t_67dc1f8dd1120b 1-321
+governance/plans/brand-recycle/AUDIT-CONSOLE-BASELINE.md
+  s_c24357e71ae5bc::t_cd8ee3a321456f 1-64
+governance/plans/brand-recycle/BRAND-GAP.md
+  s_c24357e71ae5bc::t_44538c3545f9cf 1-72
+governance/plans/brand-recycle/BRIEF.md
+  s_c24357e71ae5bc::t_8a33cf913eb086 1-87
+governance/plans/brand-recycle/CANON.md
+  s_c24357e71ae5bc::t_11c5d9e23b1a2e 1-110
+governance/plans/brand-recycle/CONSOLE-FAILURES.md
+  s_c24357e71ae5bc::t_f8c0a3ae49aea2 1-71
+governance/plans/brand-recycle/DR-ACCENT.md
+  s_c24357e71ae5bc::t_7de4d2bb7a9648 1-51
+governance/plans/brand-recycle/DR-DISPLAY.md
+  s_c24357e71ae5bc::t_506d8368f3439b 1-51
+governance/plans/brand-recycle/DR-LIBRARY.md
+  s_c24357e71ae5bc::t_eeea47027042ce 1-71
+governance/plans/brand-recycle/DR-MONO.md
+  s_c24357e71ae5bc::t_1dcb1f2174a2b8 1-52
+governance/plans/brand-recycle/DR-POSTURE.md
+  s_c24357e71ae5bc::t_18ddd565bd1d25 1-90
+governance/plans/brand-recycle/DR-PRESTIGE.md
+  s_c24357e71ae5bc::t_90666223dad3d6 1-55
+governance/plans/brand-recycle/DR-THEME-3.md
+  s_c24357e71ae5bc::t_9a0c53c4f656be 1-52
+governance/plans/brand-recycle/E-CANON.md
+  s_c24357e71ae5bc::t_f2ce384e6f5b24 1-93
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_c24357e71ae5bc::t_e19face4acb1af 1-98
+governance/plans/brand-recycle/E-ENFORCE.md
+  s_c24357e71ae5bc::t_94ffda840d45f6 1-294
+governance/plans/brand-recycle/E-ESTATE.md
+  s_c24357e71ae5bc::t_41892f19e57810 1-76
+governance/plans/brand-recycle/E-LIBRARY.md
+  s_c24357e71ae5bc::t_d472ff92cc1ab7 1-75
+governance/plans/brand-recycle/E-PRESTIGE.md
+  s_c24357e71ae5bc::t_c406aa62cdd5f0 1-57
+governance/plans/brand-recycle/ICON-INVENTORY.md
+  s_c24357e71ae5bc::t_4956dd60065190 1-59
+governance/plans/brand-recycle/NORTH-STAR.md
+  s_c24357e71ae5bc::t_fcf83991a3524a 1-69
+governance/plans/brand-recycle/WOW-TAIL.md
+  s_c24357e71ae5bc::t_41a15f968a6a11 1-130
+governance/plans/brand-recycle/comps/dashboard-v2.html
+  s_c24357e71ae5bc::t_66f3f708ab7f8b 1-481
+governance/plans/brand-recycle/comps/display-comps.html
+  s_c24357e71ae5bc::t_06f1e4595b50ce 1-260
+governance/plans/brand-recycle/comps/pages-v2.html
+  s_c24357e71ae5bc::t_09f39d6f6a4530 1-474
+governance/plans/brand-recycle/comps/studio-pages-v1.html
+  s_c24357e71ae5bc::t_300258eab39836 1-790
+governance/plans/brand-recycle/comps/wow-tail-v1.html
+  s_c24357e71ae5bc::t_b190beffd421f3 1-593
+governance/plans/closed-loop-mechanisms/E0-INVENTORY.md
+  s_c24357e71ae5bc::t_892931366b85ab 1-101
+governance/plans/closed-loop-mechanisms/E1-REQUIRE.md
+  s_c24357e71ae5bc::t_3915d15f290e2f 1-106
+governance/plans/closed-loop-mechanisms/E2-LASTMILE.md
+  s_c24357e71ae5bc::t_958128372c29cc 1-58
+governance/plans/closed-loop-mechanisms/E3-MERGEPATH.md
+  s_c24357e71ae5bc::t_d52b7ddd391b63 1-62
+governance/plans/closed-loop-mechanisms/E4-CREDENTIAL.md
+  s_c24357e71ae5bc::t_20069bce9fb894 1-73
+governance/plans/closed-loop-mechanisms/E5-MIRROR.md
+  s_c24357e71ae5bc::t_f52176bda000f9 1-58
+governance/plans/closed-loop-mechanisms/E6-FLAKE.md
+  s_c24357e71ae5bc::t_d5e03c90bcc6b2 1-53
+governance/plans/closed-loop-mechanisms/E7-MEASURE.md
+  s_c24357e71ae5bc::t_4e18b74924d3fd 1-58
+governance/plans/closed-loop-mechanisms/NORTH-STAR.md
+  s_c24357e71ae5bc::t_2b1ad6bd48d24b 1-133
+governance/plans/closed-loop-mechanisms/RECEIPTS.md
+  s_c24357e71ae5bc::t_6660478a351a32 1-142
+governance/plans/console-rebuild/epic.md
+  s_c24357e71ae5bc::t_0cad39cfd52939 1-341
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  s_c24357e71ae5bc::t_2dbc65a8d11df4 36-39,80-92,103,105-203,213-214,299-337,363-371,378,389-422,425-426,440-449,459-486,488-493,495-521,528-540,556-571,580-581,583-587,598-619,626-668,703-705,719-722,732-771,790-840,849-858,874-903
+governance/plans/eve-audit/E-CHAN.md
+  s_c24357e71ae5bc::t_93673be4be98e8 4-14
+governance/plans/eve-audit/E-CONN.md
+  s_c24357e71ae5bc::t_d636997b4894ec 4-17
+governance/plans/eve-audit/E-DIR.md
+  s_c24357e71ae5bc::t_de651a73d24b22 4-13
+governance/plans/eve-audit/E-DUR.md
+  s_c24357e71ae5bc::t_b491d704eb84d9 4-13
+governance/plans/eve-audit/E-OTEL.md
+  s_c24357e71ae5bc::t_029b73d8c47cf8 4-16
+governance/plans/eve-audit/E0-AUDIT-HARNESS.md
+  s_c24357e71ae5bc::t_0c8c5e308c7dde 4-19
+governance/plans/eve-audit/NORTH-STAR.md
+  s_c24357e71ae5bc::t_d0a181dcb76873 5-22,40
+governance/plans/ffmpeg9-lei/E0-CANARY.md
+  s_c24357e71ae5bc::t_e7f618365bdb24 1-70
+governance/plans/ffmpeg9-lei/E1-BREAKAGE.md
+  s_c24357e71ae5bc::t_2026067016a986 1-161
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_c24357e71ae5bc::t_95d318bc31876f 1-166
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_c24357e71ae5bc::t_3d000ac43b53b1 1-202
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_c24357e71ae5bc::t_8457d69bb2b766 1-187
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_c24357e71ae5bc::t_7e8ff55bc2bb04 1-162
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_c24357e71ae5bc::t_9c9d46e26666ec 1-172
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_c24357e71ae5bc::t_73ecb9e970307f 1-161
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_c24357e71ae5bc::t_8b70f84fd56bbe 1-166
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_c24357e71ae5bc::t_15b10e3663d626 1-173
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_c24357e71ae5bc::t_97e52ca6745e16 1-195
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_c24357e71ae5bc::t_b586f6b9aa2b6d 1-166
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_c24357e71ae5bc::t_b86f0c5cac2523 1-180
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_c24357e71ae5bc::t_093125cf220890 1-195
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_c24357e71ae5bc::t_81f044de2ce253 1-125
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_c24357e71ae5bc::t_9ac63c97710c7a 1-96
+governance/plans/ffmpeg9-lei/action/E0-P2-BUILD-TRIAGE.md
+  s_c24357e71ae5bc::t_d229abef8d6edb 1-26
+governance/plans/ffmpeg9-lei/action/E1-P1-inventory.md
+  s_c24357e71ae5bc::t_d57bed542948bc 1-169
+governance/plans/ffmpeg9-lei/action/E10-P1-RECEIPT-SCHEMA.md
+  s_c24357e71ae5bc::t_7c58ae81c0c90b 1-319
+governance/plans/ffmpeg9-lei/action/E11-P1-RTSP-EVAL.md
+  s_c24357e71ae5bc::t_ace3cf64e930c0 1-149
+governance/plans/ffmpeg9-lei/action/E11-P2-MODERATION-POC.md
+  s_c24357e71ae5bc::t_5aa56332b71742 1-106
+governance/plans/ffmpeg9-lei/action/E11-P2B-DETECT.md
+  s_c24357e71ae5bc::t_cf068cefd348a3 1-88
+governance/plans/ffmpeg9-lei/action/E2-P1-POLICY.md
+  s_c24357e71ae5bc::t_6439c7cff91519 1-98
+governance/plans/ffmpeg9-lei/action/E2-P1-pin-table.md
+  s_c24357e71ae5bc::t_396c8474e638bb 1-65
+governance/plans/ffmpeg9-lei/action/E3-P1-HYPOTHESIS.md
+  s_c24357e71ae5bc::t_312ef9c2612d67 1-85
+governance/plans/ffmpeg9-lei/action/E8-P1-watcher-recon.md
+  s_c24357e71ae5bc::t_55b866d4cdb26a 1-24
+governance/plans/ffmpeg9-lei/action/E8-P3-COVERAGE-DELTA.md
+  s_c24357e71ae5bc::t_ad8f5a503b952d 1-59
+governance/plans/ffmpeg9-lei/action/E9-P1-MAP.md
+  s_c24357e71ae5bc::t_efcaca0d353c88 1-127
+governance/plans/ffmpeg9-lei/action/E9-P2-THUMBNAIL-PRODUCT.md
+  s_c24357e71ae5bc::t_9ff779f5d72ab0 1-211
+governance/plans/ffmpeg9-lei/action/PRODUCT-MEMO-2026-08-05.md
+  s_c24357e71ae5bc::t_21865e435d0e75 1-67
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_c24357e71ae5bc::t_6cfc95688686bd 12-19,283,286-450
+governance/plans/finding-closure/E7-MEASURE.md
+  s_c24357e71ae5bc::t_12eb1f72ac874d 14-17
+governance/plans/frontier-program/E-CONTEXT.md
+  s_c24357e71ae5bc::t_70ef0ce6885073 4-12,34
+governance/plans/frontier-program/E-ENFORCE.md
+  s_c24357e71ae5bc::t_bc61d06a1122b9 4-5,8-10,20,30-124
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  s_c24357e71ae5bc::t_2df3642cf5c879 4-8,13-14,20-22
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  s_c24357e71ae5bc::t_fb3dab446399ca 4-8,33-50
+governance/plans/gates-that-can-see/E7-STACKED-PR-BLINDNESS.md
+  s_c24357e71ae5bc::t_3a8fcacafdb338 1-123
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_c24357e71ae5bc::t_054f449a03f850 4-7,14,52-53,56,67-72,94,101,112-171
+governance/plans/golden-path-restoration/E0-FORENSICS.md
+  s_c24357e71ae5bc::t_33264e03aac95e 1-103
+governance/plans/golden-path-restoration/E1-HARVEST-THE-REAL-179.md
+  s_c24357e71ae5bc::t_51573ac3a671a3 1-126
+governance/plans/golden-path-restoration/E2-RESTORE-SERVICERESULT.md
+  s_c24357e71ae5bc::t_fce07d9c545cbd 1-58
+governance/plans/golden-path-restoration/E3-RESTORE-TRACER.md
+  s_c24357e71ae5bc::t_66de05ccff5c54 1-106
+governance/plans/golden-path-restoration/E4-MIGRATE-SERVICES.md
+  s_c24357e71ae5bc::t_4f7946e79eb33a 1-58
+governance/plans/golden-path-restoration/E5-MIGRATE-FETCH.md
+  s_c24357e71ae5bc::t_2a6cd304c5fe2c 1-67
+governance/plans/golden-path-restoration/E6-RULE-INTEGRITY-GATE.md
+  s_c24357e71ae5bc::t_be98df8ae121d8 1-58
+governance/plans/golden-path-restoration/E7-SCAFFOLD-SWEEP.md
+  s_c24357e71ae5bc::t_b67725ecb4ecd6 1-67
+governance/plans/golden-path-restoration/NORTH-STAR.md
+  s_c24357e71ae5bc::t_5ca8de465f689f 1-207
+governance/plans/golden-path-restoration/RECEIPTS.md
+  s_c24357e71ae5bc::t_9e1564337a65f9 1-207
+governance/plans/governed-autonomous-merge/epic.md
+  s_c24357e71ae5bc::t_6fce68b45007a2 6-7
+governance/plans/intelligence-eval/E-CI-GATE.md
+  s_c24357e71ae5bc::t_5706235de2a670 9-19
+governance/plans/intelligence-eval/E-D4-VISION.md
+  s_c24357e71ae5bc::t_95953c6842a6d6 19-20,28-35,41-44,48-51
+governance/plans/intelligence-eval/E-EVALCHAIN-PRODUCTS.md
+  s_c24357e71ae5bc::t_c7c19dc161430f 8-18
+governance/plans/intelligence-eval/E-RECURSIVE-SELFEVAL.md
+  s_c24357e71ae5bc::t_ab7a7d68d19484 4-8
+governance/plans/intelligence-eval/E-ROUTER-GOLIVE.md
+  s_c24357e71ae5bc::t_801d6b03b4c2dc 7-13,17
+governance/plans/intelligence-eval/NORTH-STAR.md
+  s_c24357e71ae5bc::t_761045a0bd2668 12-19
+governance/plans/launch-week-set-01/epic.md
+  s_c24357e71ae5bc::t_2236034c83735f 1-68
+governance/plans/monetization-gateway/PAYG-MODEL-ANALYSIS.md
+  s_c24357e71ae5bc::t_b4a59bf28a13d2 1-256
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_c24357e71ae5bc::t_b69458232bbc6f 1-163
+governance/plans/monolith-decomposition/E1-TRIAGE-THE-DEAD.md
+  s_c24357e71ae5bc::t_cd7fd40e1da2ef 1-407
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_c24357e71ae5bc::t_90e3d49868943c 1-125
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  s_c24357e71ae5bc::t_5f43a727317031 1-58
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_c24357e71ae5bc::t_eb6ac26e085017 1-56
+governance/plans/monolith-decomposition/E5-MOVE-THE-MASS.md
+  s_c24357e71ae5bc::t_b43f1d195063c7 1-52
+governance/plans/monolith-decomposition/E6-DISSOLVE-THE-HUBS.md
+  s_c24357e71ae5bc::t_cc29ae9bb38e46 1-62
+governance/plans/monolith-decomposition/E7-PRESERVE-PROVENANCE.md
+  s_c24357e71ae5bc::t_1be23858af4ee4 1-65
+governance/plans/monolith-decomposition/E8-PROVE-THE-MONOLITH-IS-DEAD.md
+  s_c24357e71ae5bc::t_d99e14403d7560 1-62
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_c24357e71ae5bc::t_811bcd574b4f2d 1-210
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_c24357e71ae5bc::t_52ed98861b2189 1-200
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_c24357e71ae5bc::t_804d6c52420514 1-51
+governance/plans/namespace-substrate/E0-GOVERN.md
+  s_c24357e71ae5bc::t_3c97f5f178009d 1-26
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_c24357e71ae5bc::t_5f5e790f3d5bf5 1-26
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_c24357e71ae5bc::t_6d29acaad8e177 1-26
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_c24357e71ae5bc::t_84c7c0ab9deacc 1-26
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_c24357e71ae5bc::t_08c341a54d69ee 1-26
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  s_c24357e71ae5bc::t_cbb10d3810c615 1-26
+governance/plans/namespace-substrate/E6-DECIDE.md
+  s_c24357e71ae5bc::t_6ca744334f4a7a 1-26
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  s_c24357e71ae5bc::t_c08ddd975a371b 1-32
+governance/plans/namespace-substrate/MISSION-WEAVE.md
+  s_c24357e71ae5bc::t_20ef21c6f2a07b 1-72
+governance/plans/namespace-substrate/NORTH-STAR.md
+  s_c24357e71ae5bc::t_3e864b28044ecd 1-47
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_c24357e71ae5bc::t_f8963dbe2ee3a3 1-96
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_257b7aa1b0ac10 1-1025
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_c24357e71ae5bc::t_4b28ea10359b10 1-351
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_c24357e71ae5bc::t_542dea2d8fdd44 1-51
+governance/plans/post-merge-integrity/E1-MEASURE.md
+  s_c24357e71ae5bc::t_a3572d30d1ea6c 4-9,84-117,135-142
+governance/plans/public-supply-chain/E0-INVENTORY.md
+  s_c24357e71ae5bc::t_4d1bfa7c24c60c 1-185
+governance/plans/public-supply-chain/E1-PROVENANCE.md
+  s_c24357e71ae5bc::t_6fe4b984a34fa1 1-263
+governance/plans/public-supply-chain/E2-CI-ONLY-PUBLISH.md
+  s_c24357e71ae5bc::t_cb4df319104855 1-155
+governance/plans/public-supply-chain/E3-TOKEN-RETIREMENT.md
+  s_c24357e71ae5bc::t_6baf3dffdd63e1 1-280
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_c24357e71ae5bc::t_60426ac91e391c 1-811
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_c24357e71ae5bc::t_cab9ef9900f479 1-218
+governance/plans/public-supply-chain/E6-CONTINUOUS-PROOF.md
+  s_c24357e71ae5bc::t_f7407bb28a73f6 1-100
+governance/plans/public-supply-chain/NORTH-STAR.md
+  s_c24357e71ae5bc::t_19954b72ebc3d6 1-158
+governance/plans/render-qa/E-ENFORCE.md
+  s_c24357e71ae5bc::t_6bcea1da33e945 4-22,28,34,44,46,59
+governance/plans/render-qa/E-GEOMETRY.md
+  s_c24357e71ae5bc::t_c1cdf8ccc04e9c 4-23
+governance/plans/render-qa/E-PERCEPTUAL.md
+  s_c24357e71ae5bc::t_7f55b99c37ca9f 4-24
+governance/plans/render-qa/E-PRODUCT.md
+  s_c24357e71ae5bc::t_6792f4f79b150c 4-31,35,42,59
+governance/plans/render-qa/E-VERDICT-CACHE.md
+  s_c24357e71ae5bc::t_364e8ce3c22c3e 4-22
+governance/plans/render-qa/E-VISION.md
+  s_c24357e71ae5bc::t_9d48fead9c5c26 4-23,26,38
+governance/plans/render-qa/NORTH-STAR.md
+  s_c24357e71ae5bc::t_1ce5a06a93e6f7 4-27,50,52,69,79,94
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_124891ed63801b::t_0c8e9fa6f4ad1f 2,109,135,141,147,153,159,165,171,177,187-189,191,209-210
+governance/plans/schema-truth/E0-DIVERGENCE.md
+  s_c24357e71ae5bc::t_77a3380829fc98 1-198
+governance/plans/schema-truth/E1-HONEST-SENTINEL.md
+  s_c24357e71ae5bc::t_dd3a942bc8a9d6 1-81
+governance/plans/schema-truth/E2-CONVERGE.md
+  s_c24357e71ae5bc::t_c6cfd1b74d4227 1-99
+governance/plans/schema-truth/E3-EXECUTION-GATES.md
+  s_c24357e71ae5bc::t_9f9fd6d6d8f6e5 1-85
+governance/plans/schema-truth/E4-ONE-WAY-TRUTH.md
+  s_c24357e71ae5bc::t_fc621fd7646811 1-77
+governance/plans/schema-truth/E5-PLATFORM-CURRENCY.md
+  s_c24357e71ae5bc::t_866446515546c9 1-141
+governance/plans/schema-truth/E6-GATE-LIVENESS.md
+  s_c24357e71ae5bc::t_eef199342ef3ce 1-76
+governance/plans/schema-truth/NORTH-STAR.md
+  s_c24357e71ae5bc::t_db7d1e718a3f99 1-101
+governance/plans/socratic-loop/ACTORS.md
+  s_c24357e71ae5bc::t_13f3cbd23009aa 136-162
+governance/plans/socratic-loop/E1-SPINE.md
+  s_c24357e71ae5bc::t_519998a8dc2faa 156-162
+governance/plans/socratic-loop/E10-PROVENANCE.md
+  s_c24357e71ae5bc::t_310210a77c2421 174-179,181-193,239,255-258,261-268,272-297,299-306,308-320,322-329,344-373,450-451,453-505,514-516,518-520,546-595,609-630,641-648,661-690,878-883,927,931-932,953-970,987
+governance/plans/socratic-loop/E11-GOVERNANCE-BINDING.md
+  s_c24357e71ae5bc::t_ff0a3d28b5a9b2 45-60,72-73,77-84,120-144,147-154,203-215,297-299,353-362,366,370-371,395-396,399,401-404,429-435,438-442,452-457,490,493-495,531,534
+governance/plans/socratic-loop/E2-ASKING.md
+  s_c24357e71ae5bc::t_ea9134b8412da6 153,155-170,174-182,202-212,275-299,307-314
+governance/plans/socratic-loop/E3-ANSWERING.md
+  s_c24357e71ae5bc::t_3d2447bedde939 70-75,90-99,105-126,130-132,148-154,173-178,241,312,570
+governance/plans/socratic-loop/E4-ELENCHUS.md
+  s_c24357e71ae5bc::t_10c863a0608f00 41-43,67-74,76-87,89-90,168-183,219-233,235-243,436-441,443-449,486-498
+governance/plans/socratic-loop/E5-LEDGER.md
+  s_c24357e71ae5bc::t_c523b90e59b35f 108-109,153,155-171,184-186,389-407,409-417,427-429,439-444,446-450,454-456,472-474,552,556
+governance/plans/socratic-loop/E6-CALIBRATION.md
+  s_c24357e71ae5bc::t_8c3e9c3ac8f328 88-99,216-223,304-340,346-354,366-368,416-430,440-444,487-497,501,512-515,520-527,531-534,650-667,698-701,703-707,711-712,725,731-736,740-743,767-772,776-778
+governance/plans/socratic-loop/E7-GENERATIVE.md
+  s_c24357e71ae5bc::t_3e22ed3ea6352d 98-105,337-345,349-352,415-433,475-479,488-498,522
+governance/plans/socratic-loop/E8-OPERATOR-MODEL.md
+  s_c24357e71ae5bc::t_5580fe5bcdd9df 76-132,143-155,167-183,185-225,230-236,240-249,251-270,285-289,292-300,303-331,333-338,371-471,473-493,506-534,550-560,562,567-569,575-584,629-638,641-643,661-665,714-726,730-732,738-742,746-749,752-794,800-802,806-808,831-833,919-921,961-962,968-969,991-997
+governance/plans/socratic-loop/E9-ANTI-GAMING.md
+  s_c24357e71ae5bc::t_e20e48a54cad62 104,124-131,133-140,142-144,177-183,187-189,243-247,259-264,297-306,320-324,331-332,348-352,356-358,360-405,416-427,444-449,492-522,524-580,583-586,594-616,629-666,670-684,699-733,737-746,805-813,816-820
+governance/plans/socratic-loop/METHOD-CANON.md
+  s_c24357e71ae5bc::t_cd7647c9b5304f 207,217-219
+governance/plans/socratic-loop/NORTH-STAR.md
+  s_c24357e71ae5bc::t_e2815cdf345734 141,163-168
+governance/plans/socratic-loop/RECEIPTS.md
+  s_c24357e71ae5bc::t_5f9c289d99a5a8 36-53,120-152,156-167,179-181
+governance/plans/socratic-loop/TAXONOMY.md
+  s_c24357e71ae5bc::t_e9c664c472551d 128-130,134-147,193,203,253-256
+governance/plans/upstream-ask-mcp-instruction-deferral.md
+  s_c24357e71ae5bc::t_99a50457cc532f 3-26,31-41
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_c24357e71ae5bc::t_872c825b70f99f 6-14,27-56,70-73,76-81,124-136,180,182-187
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_c24357e71ae5bc::t_e622565feecdf1 25-133,152-156,160-163
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_c24357e71ae5bc::t_575d71fb7c14ee 284-288
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_c24357e71ae5bc::t_92a8da808a5045 4-15,107-159
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  s_c24357e71ae5bc::t_a7224de409de4b 26-37
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_c24357e71ae5bc::t_df6e9c0a79d6d1 7-9,18,64-67,69-70,146-149,164-166,168,181-185,244,252
+governance/plans/wave-principals/E1-MODEL.md
+  s_c24357e71ae5bc::t_a74e5e175dfb4f 1-99
+governance/plans/wave-principals/E2-ROLES.md
+  s_c24357e71ae5bc::t_f52bd12405bb0b 1-94
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_c24357e71ae5bc::t_97f685ac822f6c 1-122
+governance/plans/wave-principals/E4-GRANTS.md
+  s_c24357e71ae5bc::t_38cb8e383e8018 1-123
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_c24357e71ae5bc::t_beea3e8eb7c84c 1-112
+governance/plans/wave-principals/E6-AUDIT.md
+  s_c24357e71ae5bc::t_433267f2494a0f 1-94
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_c24357e71ae5bc::t_ab9227254983cd 1-97
+governance/plans/wave-principals/NORTH-STAR.md
+  s_c24357e71ae5bc::t_5865b9c0d82359 1-210
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_c24357e71ae5bc::t_d1d5954a4547ff 1-88
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_c24357e71ae5bc::t_c5cd2e4e798ba5 1-295
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_c24357e71ae5bc::t_eb2d8dbc3c0a2c 1-150
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_c24357e71ae5bc::t_705776cf7b9f2b 1-462
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_c24357e71ae5bc::t_b67b53d8fd8cca 1-63
+governance/plans/waveform-hero/DR-AUDIO-SOURCE.md
+  s_c24357e71ae5bc::t_46836ce5b999bd 1-63
+governance/plans/waveform-hero/epic.md
+  s_c24357e71ae5bc::t_5f320de6110241 1-71
+governance/proposals/vendor-trial-is-reconnaissance.md
+  s_c24357e71ae5bc::t_6e8399c0a06580 1-82
+governance/public-release-gate-known-weak.json
+  s_c24357e71ae5bc::t_280b77dd9f5087 1-54
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_02ad272c166779 12-20,55,59-60,69,74-165
+governance/recall/bakeoff.mjs
+  s_c24357e71ae5bc::t_26d6d7d1790be5 20-22,28,36-37
+governance/recall/baseline-misses.mjs
+  s_c24357e71ae5bc::t_b32baa91dbb4a6 1-86
+governance/runbooks/vendored-gate-audit.md
+  s_c24357e71ae5bc::t_a42f7cef4d256f 1-93
+governance/schema/graph.schema.json
+  s_c24357e71ae5bc::t_5469a086ebaeb7 61
+governance/state/ffmpeg-capability-matrix.json
+  s_c24357e71ae5bc::t_479ae5bc24228c 1-7498
+governance/state/ffmpeg-channel-watch.json
+  s_c24357e71ae5bc::t_6179952d4cf1d2 1-25
+governance/state/ffmpeg-release-watch.json
+  s_c24357e71ae5bc::t_71ca6a527f24b5 1-12
+governance/state/mechanism-intent.json
+  s_c24357e71ae5bc::t_45f82972511085 1-14
+governance/state/namespace-release-watch.json
+  s_c24357e71ae5bc::t_eb8f45546eaa0c 1-13
+governance/test/ALLOWED-SKIPS.json
+  s_c24357e71ae5bc::t_d00d2abb1bcafa 65-70,75-80
+governance/test/allowed-bulk-edit-tool-has-guard.test.mjs
+  s_c24357e71ae5bc::t_c9049f2d328e40 1-110
+governance/test/anti-loop-lint.test.mjs
+  s_c24357e71ae5bc::t_208f5b1a3af819 164-186
+governance/test/artifact-source-audit.test.mjs
+  s_c24357e71ae5bc::t_cbffabc4d15476 1-334
+governance/test/automation-registry/fallback-declaration.test.mjs
+  s_c24357e71ae5bc::t_9081632cf8f333 1-217
+governance/test/baseline-misses.test.mjs
+  s_c24357e71ae5bc::t_8d166158c1320b 1-86
+governance/test/capability-index.test.mjs
+  s_c24357e71ae5bc::t_b51f3fe166b3f2 21-55
+governance/test/closed-loop-audit.test.mjs
+  s_c24357e71ae5bc::t_87623ff4fa8110 1-169
+governance/test/closed-loop-fixture.mjs
+  s_c24357e71ae5bc::t_2cc6893fef7bb5 1-33
+governance/test/closed-loop-surface.test.mjs
+  s_c24357e71ae5bc::t_45200c03ec383d 1-290
+governance/test/closure-readers-semgrep.test.mjs
+  s_c24357e71ae5bc::t_765b945342dbde 1-99
+governance/test/credential-probe.test.mjs
+  s_c24357e71ae5bc::t_e897356d5866fd 67-82
+governance/test/drill-fixtures-wave-sec.test.mjs
+  s_c24357e71ae5bc::t_bf841cab89737e 1-47
+governance/test/epic-declared-scope.test.mjs
+  s_c24357e71ae5bc::t_33be280ce8ec46 1-134
+governance/test/epic-status-check.test.mjs
+  s_c24357e71ae5bc::t_28be406b03e64d 57-62,67,126-144
+governance/test/epic-status-closed.test.mjs
+  s_c24357e71ae5bc::t_268a3d88be01ff 1-118
+governance/test/epic-status-provenance.test.mjs
+  s_c24357e71ae5bc::t_5e3e6dadd4e48f 1-222
+governance/test/epic-status-refusal.test.mjs
+  s_c24357e71ae5bc::t_10126618da00dc 1-231
+governance/test/epic-status.test.mjs
+  s_c24357e71ae5bc::t_0b9b827cb0a405 5-6,175-188,218-239
+governance/test/external-tickets.test.mjs
+  s_c24357e71ae5bc::t_9a9f9f7c9b4ba6 1-332
+governance/test/ffmpeg-capability-matrix.test.mjs
+  s_c24357e71ae5bc::t_69c9e06efe33ee 1-223
+governance/test/ffmpeg-channel-watch.test.mjs
+  s_c24357e71ae5bc::t_6c9bfcfe1ad30e 1-148
+governance/test/ffmpeg-release-watch.test.mjs
+  s_c24357e71ae5bc::t_5d7dea793e9fa6 1-99
+governance/test/fixtures/bad-anti-loop/comment-countered-loop-prone.sh
+  s_c24357e71ae5bc::t_1d869207ed501e 1-10
+governance/test/fixtures/bad-anti-loop/conforming-commented-empty-reason.sh
+  s_c24357e71ae5bc::t_a8d8d18ba86948 1-13
+governance/test/fixtures/bad-anti-loop/embedded-python-deny.sh
+  s_c24357e71ae5bc::t_6452421b8a3107 1-18
+governance/test/fixtures/bad-anti-loop/escaped-quote-heredoc-deny.sh
+  s_c24357e71ae5bc::t_805ea5ce936cbe 1-19
+governance/test/fixtures/bad-anti-loop/quoted-inline-python-deny.sh
+  s_c24357e71ae5bc::t_843d6a805a5909 1-13
+governance/test/fixtures/bad-anti-loop/undeclared-deny.mjs
+  s_c24357e71ae5bc::t_177a565f5511af 1-15
+governance/test/fixtures/bad-hook-contract/hooks/orphan-hook.mjs
+  s_c24357e71ae5bc::t_80969a64e4e243 1-7
+governance/test/fixtures/bad-hook-contract/hooks/orphan-hook.sh
+  s_c24357e71ae5bc::t_1cb65a6e03b1bc 5-8
+governance/test/fixtures/bad-hook-contract/hooks/trailing-comment-referenced-orphan.sh
+  s_c24357e71ae5bc::t_c2c90a98b019d9 1-9
+governance/test/fixtures/bad-hook/comment-laundered-advisory.mjs
+  s_c24357e71ae5bc::t_f7eeb1d868bc60 1-19
+governance/test/fixtures/bad-hook/comment-laundered-advisory.py
+  s_c24357e71ae5bc::t_95935d2c2d85e8 1-15
+governance/test/fixtures/bad-hook/conforming-crossline-set-advisory.sh
+  s_c24357e71ae5bc::t_5af80a2f2bd3e1 1-15
+governance/test/fixtures/bad-hook/conforming-hyphenated-set-advisory.sh
+  s_c24357e71ae5bc::t_18c685cd5daa71 1-12
+governance/test/fixtures/bad-hook/conforming-quoted-set-advisory.sh
+  s_c24357e71ae5bc::t_9f4c1f7c659fec 1-11
+governance/test/fixtures/bad-hook/conforming-real-trap-advisory.sh
+  s_c24357e71ae5bc::t_bb63e9ec170162 1-14
+governance/test/fixtures/bad-hook/conforming-trailing-note-advisory.py
+  s_c24357e71ae5bc::t_d5ba2416d2390f 1-16
+governance/test/fixtures/bad-hook/cross-language-laundered-advisory.mjs
+  s_c24357e71ae5bc::t_867a6a97219eb3 1-19
+governance/test/fixtures/bad-hook/cross-language-laundered-advisory.sh
+  s_c24357e71ae5bc::t_70c3c780e3b392 1-12
+governance/test/fixtures/bad-hook/docstring-laundered-advisory.py
+  s_c24357e71ae5bc::t_14291f8972a94e 1-18
+governance/test/fixtures/bad-hook/errexit-combined-flag-advisory.sh
+  s_c24357e71ae5bc::t_d464e9baf4a673 1-15
+governance/test/fixtures/bad-hook/errexit-later-flag-advisory.sh
+  s_c24357e71ae5bc::t_8df41cefc73ea2 1-13
+governance/test/fixtures/bad-hook/errexit-long-flag-advisory.sh
+  s_c24357e71ae5bc::t_0fce39a199c21b 1-13
+governance/test/fixtures/bad-hook/errexit-plus-group-reenabled-advisory.sh
+  s_c24357e71ae5bc::t_d127774ef5ea22 1-15
+governance/test/fixtures/bad-hook/errexit-second-set-advisory.sh
+  s_c24357e71ae5bc::t_55d66ddd877174 1-14
+governance/test/fixtures/bad-hook/fail-closed-advisory.mjs
+  s_c24357e71ae5bc::t_35639c11e390e5 1-17
+governance/test/fixtures/bad-hook/metachar-comment-laundered-advisory.sh
+  s_c24357e71ae5bc::t_a39ae3c6a03037 1-11
+governance/test/fixtures/bad-hook/nospace-comment-laundered-advisory.py
+  s_c24357e71ae5bc::t_64680d6e94c59d 1-18
+governance/test/fixtures/bad-hook/odd-quote-laundered-advisory.sh
+  s_c24357e71ae5bc::t_01f69dba57ab00 1-15
+governance/test/fixtures/bad-hook/string-laundered-advisory.sh
+  s_c24357e71ae5bc::t_de51dc7b9039db 1-14
+governance/test/fixtures/bad-hook/string-trap-excused-advisory.sh
+  s_c24357e71ae5bc::t_a7f677c24b91d4 1-14
+governance/test/fixtures/bad-hook/trailing-comment-laundered-advisory.py
+  s_c24357e71ae5bc::t_43b96f08f127d3 1-16
+governance/test/fixtures/bad-hook/trailing-comment-laundered-advisory.sh
+  s_c24357e71ae5bc::t_157f9223959635 1-11
+governance/test/fixtures/bad-hook/trailing-trap-excused-advisory.sh
+  s_c24357e71ae5bc::t_e0508e92a50b1a 1-11
+governance/test/gam-workflow-checks.test.mjs
+  s_c24357e71ae5bc::t_61dcc8385b33a0 64-77,113-115,157-206
+governance/test/gate-audit-args.test.mjs
+  s_c24357e71ae5bc::t_fa907d1b95024e 1-141
+governance/test/gate-coverage.test.mjs
+  s_c24357e71ae5bc::t_2022a894dc3392 1-448
+governance/test/hash-code-view.test.mjs
+  s_c24357e71ae5bc::t_ae8003d60bf976 1-137
+governance/test/hook-contract-lint.test.mjs
+  s_c24357e71ae5bc::t_793dcaa5f3cca3 121-142
+governance/test/hook-deny-signals.test.mjs
+  s_c24357e71ae5bc::t_acf97b27aae73b 1-244
+governance/test/js-code-view.test.mjs
+  s_c24357e71ae5bc::t_c1d971e6ba3753 1-211
+governance/test/known-red-baseline-wiring.test.mjs
+  s_c24357e71ae5bc::t_9578d127ae882f 67-88,108-116,118-128,145-202
+governance/test/law-bindings-declares-blocking.test.mjs
+  s_c24357e71ae5bc::t_523955208035e3 1-87
+governance/test/linkedin-saved-posts.test.mjs
+  s_c24357e71ae5bc::t_660c5e84c34331 1-198
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_c24357e71ae5bc::t_09623b717868b7 14-15,185-201
+governance/test/memo.test.mjs
+  s_c24357e71ae5bc::t_f31071639fe261 39
+governance/test/monolith-confirm-strings.test.mjs
+  s_c24357e71ae5bc::t_128bb03c1d9223 1-329
+governance/test/monolith-coverage.test.mjs
+  s_c24357e71ae5bc::t_7566b2de542f04 1-135
+governance/test/monolith-manifest.test.mjs
+  s_c24357e71ae5bc::t_4655d306b8a48a 1-323
+governance/test/monolith-project.test.mjs
+  s_c24357e71ae5bc::t_0abc446fc5d510 1-224
+governance/test/monolith-triage-fixture.mjs
+  s_c24357e71ae5bc::t_de27dd0bdc56f8 1-152
+governance/test/monolith-triage-refusals.test.mjs
+  s_c24357e71ae5bc::t_d7e858688b3e7c 1-198
+governance/test/monolith-triage.test.mjs
+  s_c24357e71ae5bc::t_290299e33a51e9 1-204
+governance/test/namespace-release-watch.test.mjs
+  s_c24357e71ae5bc::t_56885fb72d6fa3 1-126
+governance/test/namespace-usage-pull.test.mjs
+  s_c24357e71ae5bc::t_60185d6ef74b20 1-349
+governance/test/plan-lint.test.mjs
+  s_c24357e71ae5bc::t_b7f6f407d27707 4,56-114
+governance/test/plugin-agents-drift.test.mjs
+  s_c24357e71ae5bc::t_5b81624b78b69b 1-86
+governance/test/plugin-canon-drift.test.mjs
+  s_c24357e71ae5bc::t_ca12370792ca2e 1-29
+governance/test/plugin-home-repo-drift.test.mjs
+  s_c24357e71ae5bc::t_9e7a0616760e54 1-259
+governance/test/plugin-runbooks-drift.test.mjs
+  s_c24357e71ae5bc::t_85bc31994c39ca 1-36
+governance/test/plugin-skill-drift.test.mjs
+  s_c24357e71ae5bc::t_f89e4c5eb848b4 1-40
+governance/test/post-merge-replay.test.mjs
+  s_c24357e71ae5bc::t_c5667586ce5e46 1-175
+governance/test/public-release-gate-audit.test.mjs
+  s_c24357e71ae5bc::t_e63254d9d99a57 1-451
+governance/test/recall-regression.test.mjs
+  s_c24357e71ae5bc::t_33947de438e13c 72-80,97,100-109,124-152
+governance/test/recall-repo-gate.test.mjs
+  s_c24357e71ae5bc::t_bbb32c477d8cf4 21-25,62-64,67-147
+governance/test/refresh-anchors.test.mjs
+  s_c24357e71ae5bc::t_55b204eddbf37d 78-89
+governance/test/review-liveness-cause-token.test.mjs
+  s_c24357e71ae5bc::t_d6d7af5847e36b 1-171
+governance/test/review-liveness-pending.test.mjs
+  s_c24357e71ae5bc::t_cbf8d103dd436d 1-250
+governance/test/review-liveness-report.test.mjs
+  s_c24357e71ae5bc::t_f6d9a554fa6ce1 1-74
+governance/test/review-liveness-scope.test.mjs
+  s_c24357e71ae5bc::t_ae9c9b1e1e04f6 1-113
+governance/test/review-liveness-title-skip.test.mjs
+  s_c24357e71ae5bc::t_7f2f0daa6898bc 1-120
+governance/test/review-liveness.test.mjs
+  s_c24357e71ae5bc::t_2970b8af852eb3 12,213-238
+governance/test/reviewer-scoreboard.test.mjs
+  s_c24357e71ae5bc::t_c7fc9f39ddee27 249-267
+governance/test/taxonomy.test.mjs
+  s_c24357e71ae5bc::t_3d1eb82ef93e3d 1-319
+governance/test/thread-resolution.test.mjs
+  s_c24357e71ae5bc::t_11112809b234f5 1-205
+governance/test/unearned-approval-guard-markers.test.mjs
+  s_c24357e71ae5bc::t_5cd75c37e51d4c 115-124,131-132,170
+governance/test/vendor-bundle.test.mjs
+  s_c24357e71ae5bc::t_d58a382a670c1f 1-125
+governance/test/vendored-gate-audit.test.mjs
+  s_c24357e71ae5bc::t_8970c9c5ab31c8 1-232
+governance/test/vendored-gate-probe.test.mjs
+  s_c24357e71ae5bc::t_c1d5537209ecdc 1-82
+governance/test/wave-cost-ledger-anomaly-read.test.mjs
+  s_c24357e71ae5bc::t_c1c1f8afb11a62 4,6-8,30-35,59,76,91,102,113,124,133-134,137,140-146,148,150-169
+governance/test/wave-cost-ledger-classify.test.mjs
+  s_c24357e71ae5bc::t_cb8cc8ddd3041a 21-27
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  s_c24357e71ae5bc::t_0567fddd762e81 9,11-13,195-326
+governance/test/wave-cost-ledger-gha-billing.test.mjs
+  s_c24357e71ae5bc::t_f65114b1a9ca51 9,107,111,122,125-139,146-149,151-152,156-157,160,165,169-195
+governance/test/wave-cost-ledger-gha-budget-alert.test.mjs
+  s_c24357e71ae5bc::t_9d94b49ba24153 299-303,347-350
+governance/test/wave-cost-ledger-gha-budget-detector.test.mjs
+  s_c24357e71ae5bc::t_e78923e4802367 182-203
+governance/test/wave-cost-ledger-gha-row-classify.test.mjs
+  s_c24357e71ae5bc::t_8e26a73a131abd 1-142
+governance/test/wave-cost-ledger-pull-read.test.mjs
+  s_c24357e71ae5bc::t_37a0430583b3cc 72-107
+governance/test/wave-sec-closure.test.mjs
+  s_c24357e71ae5bc::t_b7662e1dc4e486 1-186
+governance/test/wave-sec-lanes-semgrep-timeout.test.mjs
+  s_c24357e71ae5bc::t_c9f42c44d83078 1-98
+governance/test/wave-sec-lanes-semgrep.test.mjs
+  s_c24357e71ae5bc::t_dc67c809adb33b 1-123
+governance/test/wave-sec-scanners.test.mjs
+  s_c24357e71ae5bc::t_ee47a68ee70cd0 1-324
+governance/test/wave-sec-sentry.test.mjs
+  s_c24357e71ae5bc::t_cd50f66fd136c1 1-210
+governance/test/wave-sec-severity.test.mjs
+  s_c24357e71ae5bc::t_7d4d687c25a36a 1-80
+governance/test/wave-sec-zizmor-baseline.test.mjs
+  s_c24357e71ae5bc::t_59ae08194d5c83 1-97
+governance/test/wave-sec.test.mjs
+  s_c24357e71ae5bc::t_46342b438175a5 1-54
+governance/test/work-sentinel-lock.test.mjs
+  s_c24357e71ae5bc::t_74a925954c7123 20,131-136,138-162,165-169,184,186-187,189-193,196-207,209-227,234
+governance/vendor-bundles/public-repo-guard.json
+  s_c24357e71ae5bc::t_87de754f1c9fb5 1-18
+governance/wave-cost-ledger-absent-check-baseline.json
+  s_c24357e71ae5bc::t_62be1ecda09d39 1-29
+governance/work-state.json
+  s_c24357e71ae5bc::t_c48f3d1e0eb62e 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,78-80,82-84,86-89,92-95,98-101,104-107,110-113,116-119,123-125,129,142-147,150-151,153-155,158-159,161-163,166-167,169-171,174-179,182-183,185-187,190-191,193-195,198-199,201-203,207-210,214-215,224
+governance/wsc-salvage/check-coverage.mjs
+  s_c24357e71ae5bc::t_3af20c1899d11c 1-120
+governance/wsc-salvage/manifest.json
+  s_c24357e71ae5bc::t_b5b9dc98dfa6ee 1-268
+helm/package-lock.json
+  s_c24357e71ae5bc::t_42c04853a4c4c0 3038-3040,3689-3691,6271-6273
+helm/package.json
+  s_c24357e71ae5bc::t_5f308812c417fa 35-37
+hookcli/lib/board-redact.mjs
+  s_c24357e71ae5bc::t_9ebb1614253e1a 22-40,42-44,47-48,51-53,55-60
+hookcli/lib/t3-review-liveness.mjs
+  s_c24357e71ae5bc::t_26c1dd3b7e015d 56,148-179,200-204,207
+hooks/ask-via-askuserquestion.py
+  s_c24357e71ae5bc::t_2f04155007bd74 1-206
+hooks/ask-via-askuserquestion.sh
+  s_c24357e71ae5bc::t_b1b1161f69a374 1-14
+hooks/bash-output-secret-scan.sh
+  s_c24357e71ae5bc::t_7dcb0120cd43c2 1-189
+hooks/bin/runbook-use-runner.mjs
+  s_c24357e71ae5bc::t_1060492b1578de 19,63-65
+hooks/doppler-env-guard.sh
+  s_c24357e71ae5bc::t_55c9f17f367289 35-126
+hooks/file-authoring-gate.sh
+  s_c24357e71ae5bc::t_953db7654f12e9 50-71,75-92
+hooks/hooklib/secret-patterns.sh
+  s_c24357e71ae5bc::t_9244fcbe2c4cef 1-102
+hooks/mcp-merge-authority-gate.mjs
+  s_c24357e71ae5bc::t_13f606e03405e5 3,190-200,242-247,249,264-267,272-279,298-305,317-320
+hooks/public-content-leak-scan.sh
+  s_c24357e71ae5bc::t_a54fe0df4de339 50-56,72-78,82
+hooks/secret-leak-scan.sh
+  s_c24357e71ae5bc::t_c1cf37f8af513c 21-34,36,40-41,43-44
+hooks/tests/ask-via-askuserquestion.test.sh
+  s_c24357e71ae5bc::t_b4186e8e1b624f 1-161
+hooks/tests/bash_output_secret_scan_smoke.sh
+  s_c24357e71ae5bc::t_82ec816b14fc34 1-244
+hooks/tests/doppler_guard_smoke.sh
+  s_c24357e71ae5bc::t_66ec2eb7dfe1db 50-252
+hooks/tests/file-authoring-gate_smoke.sh
+  s_c24357e71ae5bc::t_43578da63bcf77 51-100
+hooks/tests/merge-premise-split.test.sh
+  s_c24357e71ae5bc::t_a4f887448c78bc 65-74,79-88,103-105,107
+hooks/tests/portable-shell.test.sh
+  s_c24357e71ae5bc::t_deb43545993597 1-249
+hooks/tests/public-content-leak-scan.sh
+  s_c24357e71ae5bc::t_c53b09511af89d 68-81
+hooks/tests/secret-leak-scan-prefix-anchor.test.sh
+  s_c24357e71ae5bc::t_e4204b967ed024 1-122
+memory/MEMORY.md
+  s_c24357e71ae5bc::t_2f9a84316dac8c 20
+memory/check-memory-and-public-registry-before-claiming-a-credential-blocker.md
+  s_c24357e71ae5bc::t_203ef988c9c000 1-40
+plugins/wave-agents/.claude-plugin/plugin.json
+  s_c24357e71ae5bc::t_0e290abb89b8c3 1-19
+plugins/wave-agents/README.md
+  s_c24357e71ae5bc::t_e359b8b196915a 1-32
+plugins/wave-agents/agents/act-worker.md
+  s_c24357e71ae5bc::t_fbae4b14cc95f4 1-52
+plugins/wave-agents/agents/code-reviewer.md
+  s_c24357e71ae5bc::t_db0e096d76e611 1-46
+plugins/wave-agents/agents/config-auditor.md
+  s_c24357e71ae5bc::t_444e4c690b0a91 1-68
+plugins/wave-agents/agents/deploy-runner.md
+  s_c24357e71ae5bc::t_6aec32dca55293 1-113
+plugins/wave-agents/agents/gateway-dev.md
+  s_c24357e71ae5bc::t_342b6c9ae83dd3 1-79
+plugins/wave-agents/agents/lean-delegator.md
+  s_c24357e71ae5bc::t_19130f4a405a14 1-19
+plugins/wave-agents/agents/lean-scout.md
+  s_c24357e71ae5bc::t_3e7bd710b3414c 1-20
+plugins/wave-agents/agents/pr-reviewer.md
+  s_c24357e71ae5bc::t_fda6b8290a41d6 1-28
+plugins/wave-agents/agents/security-reviewer.md
+  s_c24357e71ae5bc::t_47ea1c34a77adb 1-33
+plugins/wave-agents/agents/spoke-dev.md
+  s_c24357e71ae5bc::t_f74f09c810a779 1-96
+plugins/wave-canon/.claude-plugin/plugin.json
+  s_c24357e71ae5bc::t_4edddf9c3b1f6d 1-20
+plugins/wave-canon/README.md
+  s_c24357e71ae5bc::t_db8882ba70016d 1-18
+plugins/wave-canon/skills/state-of-play/SKILL.md
+  s_c24357e71ae5bc::t_c4a67cc73da971 1-134
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_c24357e71ae5bc::t_37d50c9d6de69a 1-252
+plugins/wave-canon/skills/wow-canon/SKILL.md
+  s_c24357e71ae5bc::t_b95aed19fdfd01 1-168
+plugins/wave-governance/.claude-plugin/plugin.json
+  s_c24357e71ae5bc::t_f03f935a746fbe 1-19
+plugins/wave-governance/README.md
+  s_c24357e71ae5bc::t_5fbeffe9fd547d 1-15
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  s_c24357e71ae5bc::t_4f7d3d69a07c07 1-59
+plugins/wave-runbooks/.claude-plugin/plugin.json
+  s_c24357e71ae5bc::t_8c1d1922127ae7 1-18
+plugins/wave-runbooks/README.md
+  s_c24357e71ae5bc::t_5d4f5062548c3e 1-14
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_c24357e71ae5bc::t_24da9c04ab80ae 1-60
+rules/ask-when-blocked.md
+  s_c24357e71ae5bc::t_eb24003f70869e 33
+rules/generated-brand-assets-use-real-design-system.md
+  s_c24357e71ae5bc::t_d85172606f1dcb 5,9,15
+runbooks/bin/runbook.mjs
+  s_c24357e71ae5bc::t_4b5e703c9c6506 29,157-159
+runbooks/lib/fingerprint.mjs
+  s_c24357e71ae5bc::t_ba52a3eab60453 42-66,95-97,140-162
+runbooks/lib/frontmatter.mjs
+  s_c24357e71ae5bc::t_66dd5b57806cc6 148-173
+runbooks/library/ffmpeg-major-bump.md
+  s_c24357e71ae5bc::t_62ce73a84bbf27 1-225
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_c24357e71ae5bc::t_efff7056110810 1-103
+runbooks/library/wave-database-prod-schema-change.md
+  s_c24357e71ae5bc::t_64d3c4f36732e1 19-20
+runbooks/test/fingerprint.test.mjs
+  s_c24357e71ae5bc::t_592a13b58ccb82 48-55,139-143,155-229
+runbooks/test/frontmatter.test.mjs
+  s_c24357e71ae5bc::t_bbe559ee3eed01 10,92-110
+scripts/linkedin-saved-posts.mjs
+  s_c24357e71ae5bc::t_49ab61a575a38a 1-401
+settings/settings.base.json
+  s_c24357e71ae5bc::t_51eda7e69e1eb0 12,176-185,256-260,331,346,351,361,366,371,387,393,414,425,536,541,551,643-647,807-811,829
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_2cbb352632bc6c 7-8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_c24357e71ae5bc::t_542db5e0b61489 10-11,14,400,467-469,482
+governance/graph.json
+  s_c24357e71ae5bc::t_49ad3d5d64360a 2377-2532,2637-2831,2845-2974,3483,3485-3486,3489-3492,3496,3498-3499,3502-3505,3509,3511-3512,3515-3518,3522,3524-3525,3528-3531,3535,3537-3538,3541-3738,3945,4028-4040,4049,4054-4170,4396-4397,4699-4711,5038,5040-5041,5044-5047,5051,5053-5054,5057-5060,5064,5066-5067,5070-5073,5077,5079-5080,5083-5086,5090,5092-5093,5096-5099,5103,5105-5106,5109-5112,5116,5118-5120,5122-5125,5129,5131-5132,5135-5138,5142,5144-5145,5148-5151,5155-5402,5661-5764,5838,5857,5859-5860,5961,5963-5964,5967-5970,5974,5976-5977,5980-5983,5987,5989-5990,5993-5996,6000,6002-6003,6006-6009,6013,6015-6119,7000-7168,7273-7298,7364-7376,7600-7613,7645,8080-8088,8314-8322,8526-8533,8662-8669,17678-17683,17979-17980,17982,17985-17986,17988,17991-17992,17994,17997-17998,18000,18003-18004,18006,18009-18010,18012,18015-18016,18018,18021-18022,18024,18027-18028,18030,18033-18034,18036,18039-18040,18042,18045-18046,18048,18051-18052,18054,18057-18058,18060,18063-18064,18066,18069-18070,18072-18432,18945-18946,18948,18951-18952,18954,18957-18958,18960,18963-18964,18966,18969-18970,18972,18975-18976,18978,18981-18982,18984,18987-18988,18990,18993-18994,18996,18999-19000,19002,19005-19006,19008,19011-19012,19014,19017-19018,19020,19023-19024,19026,19029-19030,19032,19035-19036,19038,19041-19042,19044,19047-19048,19050,19053-19054,19056,19059-19060,19062,19065-19066,19068,19071-19072,19074,19077-19078,19080,19083-19084,19086,19089-19090,19092,19095-19096,19098,19101-19102,19104,19107-19108,19110,19113-19114,19116,19119-19125,19128,19131-19132,19134,19137-19138,19140,19143-19144,19146,19149-19150,19152,19155-19156,19158,19161-19162,19164,19167-19168,19170,19173-19174,19176,19179-19180,19182,19185-19186,19188,19191-19192,19194,19197-19198,19200,19203-19204,19206,19209-19210,19212,19215-19216,19218,19221-19222,19224,19227-19228,19230,19233-19234,19236,19239-19240,19242,19245-19246,19248,19251-19252,19254,19257-19258,19260,19263-19264,19266,19269-19270,19272,19275,19278,19281-19282,19284,19287-19288,19290,19293-19294,19296,19299-19300,19302,19305-19306,19308,19311-19312,19314,19317-19318,19320,19323-19324,19326,19329-19330,19332,19335-19336,19338,19341-19342,19344,19347-19348,19350,19353-19354,19356,19359-19360,19362,19365-19366,19368,19371-19372,19374,19377-19378,19380,19383-19384,19386,19389-19390,19392,19395-19396,19398,19401-19402,19404,19407-19408,19410,19413-19414,19416,19419-19420,19422,19425-19426,19428,19431-19432,19434,19437-19438,19440,19443-19444,19446,19449-19450,19452,19455-19456,19458,19461-19462,19464,19467-19468,19470,19473-19474,19476,19479-19480,19482,19485-19486,19488,19491-19492,19494,19497-19498,19500,19503-19504,19506,19509-19510,19512,19515-19516,19518,19521-19522,19524,19527-19528,19530,19533-19534,19536,19539-19540,19542,19545,19548,19551-19552,19554,19557-19558,19560,19563-19564,19566,19569-19570,19572,19575-19576,19578,19581-19582,19584,19587-19588,19590,19593-19594,19596,19599-19600,19602,19605-19606,19608,19611-19612,19614,19617-19618,19620,19623-19624,19626,19629-19630,19632,19635-19636,19638,19641-19642,19644,19647-19648,19650,19653-19654,19656,19659-19660,19662,19665-19666,19668,19671-19672,19674,19677-19678,19680,19683-19684,19686,19689-19690,19692,19695-19696,19698,19701-19702,19704,19707-19708,19710,19713-19714,19716,19719-19720,19722,19725-19726,19728,19731-19732,19734,19737-19738,19740,19743-19744,19746,19749-19750,19752,19755-19756,19758,19761-19762,19764,19767-19768,19770,19773-19774,19776,19779-19780,19782,19785-19786,19788,19791-19792,19794,19797-19798,19800,19803-19804,19806,19809-19810,19812,19815-19816,19818,19821-19822,19824,19827-19828,19830,19833-19834,19836,19839,19842,19845-19846,19848,19851-19852,19854,19857-19858,19860,19863-19864,19866,19869-19870,19872,19875-19876,19878,19881-19882,19884,19887-19888,19890,19893-19894,19896,19899-19900,19902,19905-19906,19908,19911-19912,19914,19917-19918,19920,19923-19924,19926,19929-19930,19932,19935,19938,19941-19947,19950,19953,19956,19959-19960,19962,19965,19968,19971,19974,19977-19978,19980,19983-19984,19986,19989-19990,19992,19995-19996,19998,20001-20002,20004,20007-20008,20010,20013-20014,20016,20019-20020,20022,20025-20026,20028,20031-20032,20034,20037-20038,20040,20043-20044,20046,20049-20050,20052,20055-20056,20058,20061-20062,20064,20067-20068,20070,20073-20074,20076,20079-20080,20082,20085-20086,20088,20091-20092,20094,20097-20098,20100,20103-20104,20106,20109-20110,20112,20115-20116,20118,20121-20122,20124,20127-20128,20130,20133-20134,20136,20139-20140,20142,20145-20146,20148,20151-20152,20154,20157-20158,20160,20163-20164,20166,20169-20170,20172,20175-20176,20178,20181-20182,20184,20187-20188,20190,20193-20194,20196,20199-20200,20202,20205-20206,20208,20211-20212,20214,20217-20218,20220,20223-20224,20226,20229-20230,20232,20235-20236,20238,20241-20242,20244,20247-20248,20250,20253-20254,20256,20259-20260,20262,20265-20266,20268,20271-20272,20274,20277-20278,20280,20283-20284,20286,20289-20290,20292,20295-20296,20298,20301-20302,20304,20307-20308,20310,20313-20314,20316,20319-20320,20322,20325-20326,20328,20331-20332,20334,20337-20338,20340,20343-20344,20346,20349-20350,20352,20355-20356,20358,20361-20364,20367-20368,20370,20373-20374,20376,20379-20380,20382,20385-20386,20388,20391-20392,20394,20397-20398,20400,20403-20404,20406,20409-20410,20412,20415-20416,20418,20421-20422,20424,20427-20428,20430,20433-20434,20436,20439-20440,20442,20445-20446,20448,20451-20452,20454,20457-20458,20460,20463-20464,20466,20469-20470,20472,20475-20476,20478,20481-20482,20484,20487-20488,20490,20493-20494,20496,20499-20500,20502,20505-20506,20508,20511-20512,20514,20517-20518,20520,20523-20524,20526,20529-20530,20532,20535-20536,20538,20541-20542,20544,20547-20548,20550,20553-20554,20556,20559-20560,20562,20565-20566,20568,20571-20572,20574,20577-20578,20580,20583-20584,20586,20589-20590,20592,20595-20596,20598,20601-20602,20604,20607-20608,20610,20613,20616,20619-20620,20622,20625-20626,20628,20631-20632,20634,20637-20638,20640,20643-20644,20646,20649-20650,20652,20655-20656,20658,20661-20662,20664,20667-20668,20670,20673-20674,20676,20679-20680,20682,20685-20686,20688,20691-20692,20694,20697-20698,20700,20703-20704,20706,20709-20710,20712,20715-20716,20718,20721-20722,20724,20727-20728,20730,20733-20734,20736,20739-20740,20742,20745-20746,20748,20751-20752,20754,20757-20758,20760,20763-20764,20766,20769-20770,20772,20775-20776,20778,20781-20782,20784,20787-20788,20790,20793-20794,20796,20799-20800,20802,20805-20806,20808,20811-20812,20814,20817-20818,20820,20823-20824,20826,20829-20830,20832,20835-20836,20838,20841-20842,20844,20847-20848,20850,20853-20854,20856,20859-20860,20862,20865-20866,20868,20871-20872,20874,20877-20878,20880,20883-20884,20886,20889-20890,20892,20895,20898,20901,20904,20907-20908,20910,20913-20914,20916,20919-20920,20922,20925,20928,20931-20932,20934,20937-20938,20940,20943-20944,20946,20949-20950,20952,20955-20956,20958,20961-20962,20964,20967-20968,20970,20973-20974,20976,20979-20980,20982,20985-20986,20988,20991-20992,20994,20997-20998,21000,21003-21004,21006,21009-21010,21012,21015-21016,21018,21021-21022,21024,21027-21028,21030,21033-21034,21036,21039-21040,21042,21045-21046,21048,21051-21052,21054,21057-21058,21060,21063-21064,21066,21069-21070,21072,21075-21076,21078,21081-21082,21084,21087-21088,21090,21093-21094,21096,21099-21100,21102,21105-21106,21108,21111-21112,21114,21117-21118,21120,21123-21124,21126,21129-21130,21132,21135-21136,21138,21141-21142,21144,21147-21148,21150,21153-21154,21156,21159-21160,21162,21165-21166,21168,21171-21172,21174,21177-21178,21180,21183-21184,21186,21189-21190,21192,21195-21196,21198,21201-21202,21204,21207-21208,21210,21213-21214,21216,21219-21220,21222,21225-21226,21228,21231-21232,21234,21237-21238,21240,21243-21244,21246,21249-21250,21252,21255-21256,21258,21261,21264,21267-21268,21270,21273-21274,21276,21279-21280,21282,21285-21286,21288,21291-21292,21294,21297-21298,21300,21303-21304,21306,21309-21310,21312,21315-21316,21318,21321-21322,21324,21327-21328,21330,21333-21334,21336,21339-21340,21342,21345-21346,21348,21351-21352,21354,21357-21358,21360,21363-21364,21366,21369-21370,21372,21375-21376,21378,21381-21382,21384,21387-21388,21390,21393-21394,21396,21399-21400,21402,21405-21406,21408,21411-21412,21414,21417-21418,21420,21423-21424,21426,21429-21430,21432,21435-21436,21438,21441-21442,21444,21447-21448,21450,21453-21454,21456,21459-21460,21462,21465-21466,21468,21471-21472,21474,21477-21478,21480,21483-21484,21486,21489-21490,21492,21495-21496,21498,21501-21502,21504,21507-21508,21510,21513-21514,21516,21519-21520,21522,21525-21526,21528,21531-21532,21534,21537-21538,21540,21543-21544,21546,21549-21550,21552,21555-21556,21558,21561-21562,21564,21567-21568,21570,21573-21574,21576,21579-21580,21582,21585-21586,21588,21591-21592,21594,21597-21598,21600,21603-21604,21606,21609-21610,21612,21615-21616,21618,21621-21622,21624,21627-21628,21630,21633-21634,21636,21639-21640,21642,21645-21646,21648,21651-21652,21654,21657-21658,21660,21663-21664,21666,21669-21670,21672,21675-21676,21678,21681-21682,21684,21687-21688,21690,21693-21694,21696,21699-21700,21702,21705-21706,21708,21711-21712,21714,21717-21718,21720,21723-21724,21726,21729-21730,21732,21735-21736,21738,21741-21742,21744,21747-21748,21750,21753-21754,21756,21759-21760,21762,21765-21766,21768,21771-21772,21774,21777-21778,21780,21783-21784,21786,21789-21790,21792,21795-21796,21798,21801-21802,21804,21807-21808,21810,21813-21814,21816,21819-21820,21822,21825-21826,21828,21831-21832,21834,21837-21838,21840,21843-21844,21846,21849-21850,21852,21855-21856,21858,21861-21862,21864,21867-21868,21870,21873-21874,21876,21879-21880,21882,21885-21886,21888,21891-21892,21894,21897-21898,21900,21903-21904,21906,21909-21910,21912,21915-21916,21918,21921-21922,21924,21927,21930,21933-21934,21936,21939-21940,21942,21945-21946,21948,21951-21952,21954,21957-21958,21960,21963-21964,21966,21969-21970,21972,21975-21976,21978,21981-21982,21984,21987-21988,21990,21993-21994,21996,21999-22000,22002,22005-22006,22008,22011-22012,22014,22017-22018,22020,22023-22024,22026,22029-22030,22032,22035-22036,22038,22041-22042,22044,22047-22048,22050,22053-22054,22056,22059-22060,22062,22065-22066,22068,22071-22072,22074,22077-22078,22080,22083-22084,22086,22089-22090,22092,22095-22096,22098,22101-22102,22104,22107-22108,22110,22113-22114,22116,22119-22120,22122,22125-22126,22128,22131-22132,22134,22137-22138,22140,22143-22144,22146,22149-22150,22152,22155-22156,22158,22161-22162,22164,22167-22168,22170,22173-22174,22176,22179-22180,22182,22185-22186,22188,22191-22192,22194,22197-22198,22200,22203-22204,22206,22209-22210,22212,22215-22216,22218,22221-22222,22224,22227-22228,22230,22233-22234,22236,22239-22240,22242,22245-22246,22248,22251-22252,22254,22257-22258,22260,22263-22264,22266,22269-22270,22272,22275-22276,22278,22281-22282,22284,22287-22288,22290,22293-22294,22296,22299-22300,22302,22305-22306,22308,22311-22312,22314,22317-22318,22320,22323-22324,22326,22329-22330,22332,22335-22336,22338,22341-22342,22344,22347-22348,22350,22353-22354,22356,22359-22360,22362,22365-22366,22368,22371-22372,22374,22377-22378,22380,22383-22384,22386,22389-22390,22392,22395-22396,22398,22401-22402,22404,22407-22408,22410,22413-22414,22416,22419-22420,22422,22425-22426,22428,22431-22432,22434,22437-22438,22440,22443-22444,22446,22449-22450,22452,22455-22456,22458,22461-22462,22464,22467-22468,22470,22473-22474,22476,22479-22480,22482,22485-22486,22488,22491-22492,22494,22497-22498,22500,22503-22504,22506,22509-22510,22512,22515-22516,22518,22521-22522,22524,22527-22528,22530,22533-22534,22536,22539-22540,22542,22545-22546,22548,22551-22552,22554,22557-22558,22560,22563-22564,22566,22569-22570,22572,22575-22576,22578,22581-22582,22584,22587-22588,22590,22593-22594,22596,22599-22600,22602,22605-22606,22608,22611-22612,22614,22617-22618,22620,22623-22624,22626,22629-22630,22632,22635-22636,22638,22641-22642,22644,22647-22648,22650,22653-22654,22656,22659-22660,22662,22665-22666,22668,22671-22672,22674,22677-22678,22680,22683-22684,22686,22689-22690,22692,22695-22696,22698,22701-22702,22704,22707-22708,22710,22713-22714,22716,22719-22720,22722,22725-22726,22728,22731-22732,22734,22737-22738,22740,22743-22744,22746,22749-22750,22752,22755-22756,22758,22761-22762,22764,22767-22768,22770,22773-22774,22776,22779-22780,22782,22785-22786,22788,22791-22792,22794,22797-22798,22800,22803-22804,22806,22809-22810,22812,22815-22816,22818,22821-22822,22824,22827-22828,22830,22833-22834,22836,22839-22840,22842,22845-22846,22848,22851-22852,22854,22857-22858,22860,22863-22864,22866,22869-22870,22872,22875-22876,22878,22881-22882,22884,22887-22888,22890,22893-22894,22896,22899-22900,22902,22905-22906,22908,22911-22912,22914,22917-22918,22920,22923-22924,22926,22929-22930,22932,22935-22936,22938,22941-22942,22944,22947-22948,22950,22953-22954,22956,22959-22960,22962,22965-22966,22968,22971-22972,22974,22977-22978,22980,22983-22984,22986,22989-22990,22992,22995-22996,22998,23001-23002,23004,23007-23008,23010,23013-23014,23016,23019-23020,23022,23025-23026,23028,23031-23032,23034,23037-23038,23040,23043-23044,23046,23049-23050,23052,23055-23056,23058,23061-23062,23064,23067-23068,23070,23073-23074,23076,23079-23080,23082,23085-23086,23088,23091-23092,23094,23097-23098,23100,23103-23104,23106,23109-23110,23112,23115-23116,23118,23121-23122,23124,23127-23128,23130,23133-23134,23136,23139-23140,23142,23145,23148,23151-23152,23154,23157-23158,23160,23163-23164,23166,23169-23170,23172,23175-23176,23178,23181-23182,23184,23187-23188,23190,23193-23194,23196,23199-23200,23202,23205-23206,23208,23211-23212,23214,23217-23218,23220,23223-23224,23226,23229-23230,23232,23235-23236,23238,23241-23242,23244,23247-23248,23250,23253-23254,23256,23259-23260,23262,23265-23266,23268,23271-23272,23274,23277-23278,23280,23283-23284,23286,23289-23290,23292,23295-23296,23298,23301-23302,23304,23307-23308,23310,23313-23314,23316,23319-23320,23322,23325-23326,23328,23331-23332,23334,23337-23338,23340,23343-23344,23346,23349-23350,23352,23355-23356,23358,23361-23362,23364,23367-23368,23370,23373-23374,23376,23379-23380,23382,23385-23386,23388,23391-23392,23394,23397-23398,23400,23403-23404,23406,23409-23410,23412,23415-23416,23418,23421-23422,23424,23427-23428,23430,23433-23434,23436,23439-23440,23442,23445-23446,23448,23451-23452,23454,23457-23458,23460,23463-23464,23466,23469-23470,23472,23475-23476,23478,23481-23482,23484,23487-23488,23490,23493-23494,23496,23499-23500,23502,23505-23506,23508,23511-23512,23514,23517-23518,23520,23523-23524,23526,23529-23530,23532,23535-23536,23538,23541-23542,23544,23547-23548,23550,23553-23554,23556,23559-23560,23562,23565-23566,23568,23571-23572,23574,23577-23578,23580,23583-23584,23586,23589-23590,23592,23595-23596,23598,23601-23602,23604,23607-23608,23610,23613-23614,23616,23619-23620,23622,23625-23626,23628,23631-23632,23634,23637-23638,23640,23643-23644,23646,23649-23650,23652,23655-23656,23658,23661-23662,23664,23667-23668,23670,23673-23674,23676,23679-23680,23682,23685-23688,23691-23692,23694,23697-23698,23700,23703-23704,23706,23709-23710,23712,23715-23716,23718,23721-23722,23724,23727-23728,23730,23733-23734,23736,23739-23740,23742,23745-23746,23748,23751-23752,23754,23757-23758,23760,23763-23764,23766,23769-23770,23772,23775-23776,23778,23781-23782,23784,23787-23788,23790,23793-23794,23796,23799-23800,23802,23805-23806,23808,23811-23812,23814,23817-23818,23820,23823-23824,23826,23829-23830,23832,23835-23836,23838,23841-23842,23844,23847-23848,23850,23853-23854,23856,23859-23860,23862,23865-23866,23868,23871-23872,23874,23877-23878,23880,23883-23884,23886,23889-23890,23892,23895-23896,23898,23901-23902,23904,23907-23908,23910,23913-23914,23916,23919-23920,23922,23925-23926,23928,23931-23932,23934,23937-23938,23940,23943-23944,23946,23949-23950,23952,23955-23956,23958,23961-23962,23964,23967-23968,23970,23973-23974,23976,23979-23980,23982,23985-23986,23988,23991-23992,23994,23997-23998,24000,24003-24004,24006,24009-24010,24012,24015-24016,24018,24021-24022,24024,24027-24028,24030,24033-24034,24036,24039-24040,24042,24045-24046,24048,24051-24052,24054,24057-24058,24060,24063-24064,24066,24069-24070,24072,24075-24076,24078,24081-24082,24084,24087-24088,24090,24093-24094,24096,24099-24100,24102,24105-24106,24108,24111-24112,24114,24117-24118,24120,24123-24124,24126,24129-24130,24132,24135-24136,24138,24141-24142,24144,24147-24148,24150,24153-24154,24156,24159-24160,24162,24165-24166,24168,24171-24172,24174,24177-24178,24180,24183-24184,24186,24189-24190,24192,24195-24196,24198,24201-24202,24204,24207-24208,24210,24213-24214,24216,24219-24220,24222,24225-24226,24228,24231-24232,24234,24237-24238,24240,24243-24244,24246,24249-24250,24252,24255-24256,24258,24261-24262,24264,24267-24268,24270,24273-24274,24276,24279-24280,24282,24285-24286,24288,24291-24292,24294,24297-24298,24300,24303-24304,24306,24309-24310,24312,24315-24316,24318,24321-24322,24324,24327-24328,24330,24333-24334,24336,24339-24340,24342,24345-24346,24348,24351-24352,24354,24357-24358,24360,24363-24364,24366,24369-24370,24372,24375-24376,24378,24381-24382,24384,24387-24388,24390,24393-24394,24396,24399-24400,24402,24405-24406,24408,24411-24412,24414,24417-24418,24420,24423-24424,24426,24429-24430,24432,24435-24436,24438,24441-24442,24444,24447-24448,24450,24453-24454,24456,24459-24460,24462,24465-24466,24468,24471-24472,24474,24477-24478,24480,24483-24484,24486,24489-24490,24492,24495-24496,24498,24501-24502,24504,24507-24508,24510,24513-24514,24516,24519-24520,24522,24525-24526,24528,24531-24532,24534,24537-24538,24540,24543-24544,24546,24549-24550,24552,24555-24556,24558,24561-24562,24564,24567-24568,24570,24573-24574,24576,24579-24580,24582,24585-24586,24588,24591-24592,24594,24597-24598,24600,24603-24604,24606,24609-24610,24612,24615-24616,24618,24621-24622,24624,24627-24633,24636,24639-24640,24642,24645-24646,24648,24651-24652,24654,24657-24660,24663-24664,24666,24669-24670,24672,24675-24678,24681-24682,24684,24687-24688,24690-27150,27153-27154,27156,27159-27160,27162,27165-27166,27168,27171-27172,27174,27177-27178,27180,27183-27184,27186,27189-27190,27192,27195-27196,27198,27201-27202,27204,27207-27208,27210,27213-27214,27216,27219-27220,27222,27225-27226,27228,27231-27232,27234,27237-27238,27240,27243-27244,27246,27249-27250,27252,27255-27256,27258,27261-27262,27264,27267-27268,27270,27273-27274,27276,27279-27280,27282,27285-27286,27288,27291-27292,27294,27297-27298,27300,27303-27304,27306,27309-27310,27312,27315-27316,27318,27321-27322,27324,27327-27328,27330,27333-27334,27336,27339-27340,27342,27345-27346,27348,27351-27352,27354,27357-27358,27360,27363-27364,27366,27369-27370,27372,27375-27376,27378,27381-27382,27384,27387-27388,27390,27393-27394,27396,27399-27400,27402,27405-27406,27408,27411-27412,27414,27417-27418,27420,27423-27424,27426,27429-27430,27432,27435-27436,27438,27441-27442,27444,27447-27448,27450,27453-27454,27456,27459-27460,27462,27465-27466,27468,27471-27472,27474,27477-27478,27480,27483-27484,27486,27489-27490,27492,27495-27496,27498,27501-27502,27504,27507-27508,27510,27513-27514,27516,27519-27520,27522,27525-27526,27528,27531-27532,27534,27537-27538,27540,27543-27544,27546,27549-27550,27552,27555-27556,27558,27561-27562,27564,27567-27568,27570,27573-27574,27576,27579-27580,27582,27585-27586,27588,27591-27592,27594,27597-27598,27600,27603-27604,27606,27609-27610,27612,27615-27616,27618,27621-27622,27624,27627-27628,27630,27633-27634,27636,27639-27640,27642,27645-27646,27648,27651-27652,27654,27657-27658,27660,27663-27664,27666,27669-27670,27672,27675-27676,27678,27681-27682,27684,27687-27688,27690,27693-27694,27696,27699-27700,27702,27705,27708,27711-27712,27714,27717-27718,27720,27723-27724,27726,27729-27730,27732,27735-27736,27738,27741-27742,27744,27747-27748,27750,27753-27754,27756,27759-27760,27762,27765-27766,27768,27771-27772,27774,27777-27778,27780,27783-27784,27786,27789-27790,27792,27795-27796,27798,27801-27802,27804,27807-27808,27810,27813-27814,27816,27819-27820,27822,27825-27826,27828,27831-27832,27834,27837-27838,27840,27843-27844,27846,27849-27850,27852,27855-27856,27858,27861-27862,27864,27867-27868,27870,27873-27874,27876,27879-27880,27882,27885-27886,27888,27891-27892,27894,27897-27898,27900,27903-27904,27906,27909-27910,27912,27915-27916,27918,27921-27922,27924,27927-27928,27930,27933-27934,27936,27939-27940,27942,27945-27946,27948,27951-27952,27954,27957-27958,27960,27963-27964,27966,27969-27970,27972,27975-27976,27978,27981-27982,27984,27987-27988,27990,27993-27994,27996,27999-28000,28002,28005-28006,28008,28011-28012,28014,28017-28018,28020,28023-28026,28029-28030,28032,28035-28036,28038,28041-28042,28044,28047-28048,28050,28053-28054,28056,28059-28060,28062,28065-28066,28068,28071-28072,28074,28077-28078,28080,28083-28084,28086,28089-28090,28092,28095-28096,28098,28101-28102,28104,28107-28108,28110,28113-28114,28116,28119-28120,28122,28125-28126,28128,28131-28132,28134,28137-28138,28140,28143-28144,28146,28149-28150,28152,28155-28156,28158,28161-28162,28164,28167-28168,28170,28173-28174,28176,28179-28180,28182,28185-28186,28188,28191-28192,28194,28197-28198,28200,28203-28204,28206,28209-28210,28212,28215-28216,28218,28221-28222,28224,28227-28228,28230,28233-28234,28236,28239-28240,28242,28245-28246,28248,28251-28252,28254,28257-28258,28260,28263-28264,28266,28269-28270,28272,28275-28276,28278,28281-28282,28284,28287-28288,28290,28293-28294,28296,28299-28300,28302,28305-28306,28308,28311-28312,28314,28317-28318,28320,28323-28324,28326,28329-28330,28332,28335-28336,28338,28341-28342,28344,28347-28348,28350,28353-28354,28356,28359-28360,28362,28365-28366,28368,28371-28372,28374,28377-28378,28380,28383-28384,28386,28389-28390,28392,28395-28396,28398,28401-28402,28404,28407-28408,28410,28413-28414,28416,28419-28420,28422,28425-28426,28428,28431-28432,28434,28437-28438,28440,28443-28444,28446,28449-28450,28452,28455-28456,28458,28461-28462,28464,28467-28468,28470,28473-28474,28476,28479-28480,28482,28485-28486,28488,28491-28492,28494,28497-28498,28500,28503-28504,28506,28509-28510,28512,28515-28516,28518,28521-28522,28524,28527-28528,28530,28533-28534,28536,28539-28540,28542,28545-28546,28548,28551-28552,28554,28557-28560,28563-28564,28566,28569-28570,28572,28575-28576,28578,28581-28582,28584,28587-28588,28590,28593-28594,28596,28599-28600,28602,28605-28606,28608,28611-28612,28614,28617-28618,28620,28623-28624,28626,28629-28630,28632,28635-28636,28638,28641-28642,28644,28647-28648,28650,28653-28654,28656,28659-28660,28662,28665-28666,28668,28671-28672,28674,28677-28678,28680,28683-28684,28686,28689-28690,28692,28695-28696,28698,28701-28702,28704,28707-28708,28710,28713-28714,28716,28719-28720,28722,28725-28726,28728,28731-28732,28734,28737-28738,28740,28743-28744,28746,28749-28750,28752,28755-28756,28758,28761-28762,28764,28767-28768,28770,28773-28774,28776,28779-28780,28782,28785-28786,28788,28791-28792,28794,28797-28798,28800,28803-28804,28806,28809-28810,28812,28815-28816,28818,28821-28822,28824,28827-28828,28830,28833-28834,28836,28839-28840,28842,28845-28846,28848,28851-28852,28854,28857-28858,28860,28863-28864,28866,28869-28870,28872,28875-28876,28878,28881-28882,28884,28887-28888,28890,28893-28894,28896,28899-28900,28902,28905-28906,28908,28911-28912,28914,28917-28918,28920,28923-28924,28926,28929-28930,28932,28935-28936,28938,28940-28942,28944,28947-28948,28950,28953-28954,28956,28959-28960,28962,28965-28966,28968,28971-28972,28974,28977-28978,28980,28983-28984,28986,28989-28990,28992,28995-28996,28998,29001-29002,29004,29007-29008,29010,29013-29014,29016,29019-29020,29022,29025-29026,29028,29031-29032,29034,29037-29038,29040,29043-29044,29046,29049-29050,29052,29055-29056,29058,29061-29062,29064,29067-29068,29070,29073-29074,29076,29079-29080,29082,29085-29086,29088,29091-29092,29094,29097-29098,29100,29103-29104,29106,29109-29110,29112,29115-29116,29118,29121-29122,29124,29127-29128,29130,29133-29134,29136,29139-29140,29142,29145-29146,29148,29151-29152,29154,29157-29158,29160,29163-29164,29166,29169-29170,29172,29175-29176,29178,29181-29182,29184,29187-29188,29190,29193-29194,29196,29199-29200,29202,29205-29206,29208,29211-29212,29214,29217-29218,29220,29223-29224,29226,29229-29230,29232,29235-29236,29238,29241,29244,29247-29248,29250,29253-29254,29256,29259-29260,29262,29265-29266,29268,29271-29272,29274,29277-29278,29280,29283,29286,29289-29290,29292,29295-29296,29298,29301-29302,29304,29307-29308,29310,29313-29314,29316,29319-29320,29322,29325-29326,29328,29331-29332,29334,29337-29338,29340,29343-29344,29346,29349-29350,29352,29355-29356,29358,29361-29362,29364,29367-29368,29370,29373-29374,29376,29379-29380,29382,29385-29386,29388,29391-29392,29394,29397-29398,29400,29403-29404,29406,29409-29410,29412,29415-29416,29418,29421-29422,29424,29427-29428,29430,29433-29434,29436,29439-29440,29442,29445-29446,29448,29451-29452,29454,29457-29458,29460,29463-29464,29466,29469-29470,29472,29475-29476,29478,29481-29482,29484,29487-29488,29490,29493-29494,29496,29499-29500,29502,29505-29506,29508,29511-29512,29514,29517-29518,29520,29523-29524,29526,29529-29530,29532,29535-29536,29538,29541-29542,29544,29547-29548,29550,29553-29554,29556,29559-29560,29562,29565-29566,29568,29571-29572,29574,29577-29578,29580,29583-29584,29586,29589-29590,29592,29852-29893,30020-30049,30278-30289,30554-30565,30830-30841,31142-31153
+hooks/manifest.json
+  s_c24357e71ae5bc::t_307e6fe29da9c1 47-67,103-130,372,484,891,1248,1381
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d138a9c673f1db617207bcee96b2c974ca6d20f0",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

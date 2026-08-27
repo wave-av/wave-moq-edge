@@ -1,0 +1,31 @@
+governance/lib/r2-live-buckets.mjs
+  s_f126fb3b7cae07::t_a57e73ddab2be7 1-68
+governance/bin/registry-sync-fleet.mjs
+  s_f126fb3b7cae07::t_02c34133e5746c 175-176
+  s_f126fb3b7cae07::t_c239caadc740e4 37
+governance/test/registry-sync-fleet.test.mjs
+  s_f126fb3b7cae07::t_b5eb61feb3acf1 6-7
+  s_f126fb3b7cae07::t_18e93ab2b4d964 205-207
+  s_f126fb3b7cae07::t_01dffc1c226399 286
+  s_f126fb3b7cae07::t_56c03624f776d7 233-285,287-293
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_2c1da7349b1f61 5,2605-2621,4165-4169
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_bfe24c90ce78c6 9-10,13,23400-23401,23411-23412,23422-23423,23433-23434,23444-23445,23455-23456,23466-23467,23477-23478,23488-23489,23499-23500,23510-23511,23521-23522,23532-23533,23543-23544,23554-23555,23565-23566,23576-23577,36022-36043
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a15a986be3c391ef386b91c4378ba4c194261ee0",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

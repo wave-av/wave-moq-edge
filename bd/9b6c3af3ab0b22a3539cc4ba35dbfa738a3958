@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/action/E11-P1-RTSP-EVAL.md
+  s_124891ed63801b::t_1914f3484a8685 1-149
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_124891ed63801b::t_1ff52c8bb1a962 30-39
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_84d52ece4eb141 91-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "bd9b6c3af3ab0b22a3539cc4ba35dbfa738a3958",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+docs/BOARD-RUNBOOK.md
+  h_af5ac1a9798224 3
+docs/runbooks/travel/failure-modes.md
+  h_af5ac1a9798224 130
+docs/runbooks/travel/pre-flight-operator-checklist.md
+  h_af5ac1a9798224 38-41,43-44,46
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/bin/inject.mjs
+  h_af5ac1a9798224 31,117-145,162-166,169
+governance/bin/wave-cost-ledger-gha-budget-alert.mjs
+  h_af5ac1a9798224 1-305
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  h_af5ac1a9798224 14,17,222-225,227-231
+governance/bin/wave-cost-ledger-supabase-unit-pull.mjs
+  h_af5ac1a9798224 1-81
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,1773-1792,3453-3461,3491-3495,5056-5073,5131-5137
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,15898-15899,15909-15910,15920-15921,15931-15932,15942-15943,15953-15954,15964-15965,15975-15976,15986-15987,15991-16001,16008-16009,16019-16020,16030-16031,16041-16042,16052-16053,16063-16064,16074-16077,16085-16086,16096-16097,16107-16108,30797-30862,31034-31048,42853-43017,43348-43391
+governance/graph.json
+  h_af5ac1a9798224 5423-5440,5450-5611,5621-5656,24429-24458,24483-24710,24735-24782
+governance/lib/wave-cost-ledger-gha-budget-detector.mjs
+  h_af5ac1a9798224 1-332
+governance/lib/wave-cost-ledger-supabase-stale.mjs
+  h_af5ac1a9798224 1-167
+governance/plans/capability-registry/REPLICATION-RUNBOOK.md
+  h_af5ac1a9798224 44,52,89,252
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  h_af5ac1a9798224 22-58
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  h_af5ac1a9798224 4-6,37,41-53,108-160,169-173,179-186,375-380
+governance/test/inject-runbooks.test.mjs
+  h_af5ac1a9798224 1-83
+governance/test/wave-cost-ledger-gha-budget-alert.test.mjs
+  h_af5ac1a9798224 1-239
+governance/test/wave-cost-ledger-gha-budget-detector.test.mjs
+  h_af5ac1a9798224 1-231
+governance/test/wave-cost-ledger-supabase-stale.test.mjs
+  h_af5ac1a9798224 1-148
+governance/test/wave-cost-ledger-supabase-write-path.test.mjs
+  h_af5ac1a9798224 18,21
+runbooks/bin/backfill.mjs
+  h_af5ac1a9798224 1-262
+runbooks/bin/runbook.mjs
+  h_af5ac1a9798224 29
+runbooks/lib/backfill.mjs
+  h_af5ac1a9798224 1-303
+runbooks/lib/frontmatter.mjs
+  h_af5ac1a9798224 25-33,98-104
+runbooks/library/board-runbook.md
+  h_af5ac1a9798224 1-198
+runbooks/library/capability-registry-replication-runbook.md
+  h_af5ac1a9798224 1-295
+runbooks/library/masterpc-wsl-docker.md
+  h_af5ac1a9798224 1-137
+runbooks/library/travel-cellular-degraded.md
+  h_af5ac1a9798224 1-135
+runbooks/library/travel-failure-modes.md
+  h_af5ac1a9798224 1-165
+runbooks/library/travel-headless-approval-flow.md
+  h_af5ac1a9798224 1-85
+runbooks/library/travel-ios-shortcut-quick-post.md
+  h_af5ac1a9798224 1-142
+runbooks/library/travel-learnings-not-rotating.md
+  h_af5ac1a9798224 1-171
+runbooks/library/travel-multi-day-session-hygiene.md
+  h_af5ac1a9798224 1-167
+runbooks/library/travel-operator-actions.md
+  h_af5ac1a9798224 1-251
+runbooks/library/travel-operator-gotchas-2026-05-13.md
+  h_af5ac1a9798224 1-129
+runbooks/library/travel-pre-flight-operator-checklist.md
+  h_af5ac1a9798224 1-134
+runbooks/library/travel-pre-trip-operator-checklist.md
+  h_af5ac1a9798224 1-154
+runbooks/library/travel-studio-lockdown.md
+  h_af5ac1a9798224 1-202
+runbooks/library/travel-studio-reboot-recovery.md
+  h_af5ac1a9798224 1-183
+runbooks/library/travel-studio-unreachable.md
+  h_af5ac1a9798224 1-153
+runbooks/library/travel-tailscale-acl.md
+  h_af5ac1a9798224 1-145
+runbooks/library/travel-tmux-corrupted.md
+  h_af5ac1a9798224 1-115
+runbooks/library/wave-database-0001-fdw-stripe-s3.md
+  h_af5ac1a9798224 1-105
+runbooks/library/wave-database-0002-prod-schema-and-data-migration.md
+  h_af5ac1a9798224 1-93
+runbooks/library/wave-zoom-enforce-flip-rollback.md
+  h_af5ac1a9798224 1-97
+runbooks/library/wave-zoom-gateway-arm-and-deploy.md
+  h_af5ac1a9798224 1-89
+runbooks/library/wave-zoom-incident-response.md
+  h_af5ac1a9798224 1-82
+runbooks/library/wave-zoom-prove-live-and-billing.md
+  h_af5ac1a9798224 1-86
+runbooks/test/backfill.test.mjs
+  h_af5ac1a9798224 1-275
+scripts/travel/rotate-tailscale-key.sh
+  h_af5ac1a9798224 24,35-36,41-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ebc2bc9f103e4b5f2035356f458dd7c6dd5e14b0",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

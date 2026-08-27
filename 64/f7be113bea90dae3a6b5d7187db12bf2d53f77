@@ -1,0 +1,34 @@
+governance/test/derived-artifact-drift-audit.test.mjs
+  s_60a20469ef4369::t_1229304cc88915 1-96
+governance/bin/derived-artifact-drift-audit.mjs
+  s_60a20469ef4369::t_c30ef74e9f9379 82-93,97-100
+  s_60a20469ef4369::t_d78e44d06ebf19 223-224
+  s_60a20469ef4369::t_8b4359caf98b4a 122,124-125
+  s_60a20469ef4369::t_4575514d8c014b 193-209,214
+  s_60a20469ef4369::t_b84351b8b4d94d 35-40
+  s_60a20469ef4369::t_44b49de0ee30e0 235
+  s_60a20469ef4369::t_f28df667dbe82e 74-75
+  s_60a20469ef4369::t_6b7f5be2ee8516 1-28,30-34,41-73,76-81,104-121,123,126-192,210-213,215-222,225-234,236-306
+  s_60a20469ef4369::t_61848a647c7905 29
+  s_60a20469ef4369::t_86b8ca159d40fa 94-96,101-103
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_b62f0f3530a24b 5,579-609
+governance/code-index/index.json
+  s_60a20469ef4369::t_6ee0d1f5c7a32c 6-7,9-10,5580-5898
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "64f7be113bea90dae3a6b5d7187db12bf2d53f77",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

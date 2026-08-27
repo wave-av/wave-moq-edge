@@ -1,0 +1,21 @@
+governance/plans/aikido-trial/E1-P4-FLEET-DEDUPE.md
+  s_52031f4510959b::t_076b194d3a6f8c 1-114
+governance/plans/aikido-trial/E1-UNIQUENESS.md
+  s_52031f4510959b::t_c07d83a5c78344 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8ef1303648effdfa76f6d7d22b985d0154b268a0",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

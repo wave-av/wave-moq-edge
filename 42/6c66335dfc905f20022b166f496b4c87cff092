@@ -1,0 +1,29 @@
+governance/lib/wave-sec-lanes.mjs
+  s_85d9e5f433b9aa::t_b4f1074e1757d2 39-40
+governance/drafts/coderabbit-api-access-DRAFT-DO-NOT-SEND.md
+  s_85d9e5f433b9aa::t_a9af23d335324f 1-65
+governance/test/wave-sec-sentry.test.mjs
+  s_85d9e5f433b9aa::t_2b4820b9a8f997 1-97
+governance/lib/wave-sec-sentry.mjs
+  s_85d9e5f433b9aa::t_c9defc6dbcec10 1-97
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_7d8a53cc43637b 29,43,45,67
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_85d9e5f433b9aa::t_98f14bcc5e0e31 4-10,32,37-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "426c66335dfc905f20022b166f496b4c87cff092",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

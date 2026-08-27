@@ -1,0 +1,32 @@
+governance/plans/wave-internal-search/E3-PRODUCT.md
+  s_6046880c148371::t_5194aa670ca7bc 2-32
+  s_6046880c148371::t_56ba2b46ea8a74 1
+governance/plans/wave-internal-search/E2-MEMORY.md
+  s_6046880c148371::t_aa920f4ea41736 2-31
+  s_6046880c148371::t_ad9458ea1309be 1
+governance/plans/wave-internal-search/E1-INDEX.md
+  s_6046880c148371::t_1d961346902b7d 2-32
+  s_6046880c148371::t_55642023bc9aeb 1
+governance/plans/wave-internal-search/E0-SURFACE.md
+  s_6046880c148371::t_4b7c308f203429 2-31
+  s_6046880c148371::t_75eb90bbaf0945 1
+governance/plans/wave-internal-search/NORTH-STAR.md
+  s_6046880c148371::t_e8a880e5e80a80 3-36
+  s_6046880c148371::t_4a6f87e954d035 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b1c133650c09ed8187b4c08a3aef15a107efb50c",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

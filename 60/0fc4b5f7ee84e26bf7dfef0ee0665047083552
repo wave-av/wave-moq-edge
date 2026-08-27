@@ -1,0 +1,81 @@
+governance/DASHBOARD.md
+  s_02abc74f4971c7::t_025c37068fd4a0 25
+governance/bin/epic-status.mjs
+  s_02abc74f4971c7::t_93d41e61d73c3d 22-27,45-59,61,120,123,130-133,162-163,301-313
+governance/graph.json
+  s_02abc74f4971c7::t_c645eebda80346 3261-3364,4569-4581,19351-19386,22147-22152
+governance/hooks/work-sentinel.sh
+  s_02abc74f4971c7::t_7865e94fc969fa 55-61,131-154,158-205
+governance/lib/epic-status-render.mjs
+  s_02abc74f4971c7::t_7c49810138de1e 1-72
+governance/lib/epic-status-verdict.mjs
+  s_02abc74f4971c7::t_8fb521b88e2490 1-34
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  s_02abc74f4971c7::t_6899bf0c3f1e20 77-82,98-101,215-223,244-245,258-264,296-393
+governance/plans/fractal-decomposition/NORTH-STAR.md
+  s_02abc74f4971c7::t_2d9a192a2b6847 6-15
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  s_02abc74f4971c7::t_44c09c01e2a897 1-62
+governance/plans/gates-that-can-see/E1-ESLINT-BLIND.md
+  s_02abc74f4971c7::t_49960ab09fa520 1-65
+governance/plans/gates-that-can-see/E2-DIRECT-PUSH.md
+  s_02abc74f4971c7::t_a64e3fbcbed560 1-60
+governance/plans/gates-that-can-see/E3-WARNINGS-CONTRADICTION.md
+  s_02abc74f4971c7::t_3b679629aad8a2 1-53
+governance/plans/gates-that-can-see/E4-PARSE-INVARIANT.md
+  s_02abc74f4971c7::t_451c73e8941f23 1-68
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  s_02abc74f4971c7::t_6489ba7b5eb62b 1-69
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  s_02abc74f4971c7::t_e726ac192c05dc 1-57
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_02abc74f4971c7::t_5e5c5064287c6a 1-102
+governance/plans/just-bash/NORTH-STAR.md
+  s_02abc74f4971c7::t_133a9a51c9dfa6 4-17
+governance/plans/post-merge-integrity/E1-MEASURE.md
+  s_02abc74f4971c7::t_884348e0f66e0e 1-153
+governance/plans/socratic-loop/NORTH-STAR.md
+  s_02abc74f4971c7::t_39f3dba2f46d43 4-19
+governance/plans/socratic-loop/RECEIPTS.md
+  s_02abc74f4971c7::t_353348705ee58b 19-20,25-32
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_02abc74f4971c7::t_39f4d4f98a5df8 18-21
+governance/plans/wow-canon/NORTH-STAR.md
+  s_02abc74f4971c7::t_52e2f517e318e1 4-16
+governance/test/epic-status-check.test.mjs
+  s_02abc74f4971c7::t_334803689b7b85 63-75
+governance/test/epic-status-cli.test.mjs
+  s_02abc74f4971c7::t_fed1717b28ba50 1-277
+governance/test/epic-status-markers.test.mjs
+  s_02abc74f4971c7::t_9eed7a424f2d35 14-17,45,74-78,80,83-86,88,92-130,135-163,183-184,188-192,198,205-206,210-220
+governance/test/epic-status.test.mjs
+  s_02abc74f4971c7::t_1ea46af322cb9c 4-6,39-44,60-106,166-170,172-173,176-180,182-183
+governance/test/work-sentinel-lock.test.mjs
+  s_02abc74f4971c7::t_8c9e9dbbf1f61f 1-182
+hooks/lib/ticket_hygiene_classify.py
+  s_02abc74f4971c7::t_6018bc20a097e7 1-181
+hooks/manifest.json
+  s_02abc74f4971c7::t_3912c37a223c46 1746
+hooks/tests/ticket-hygiene-guard-test.py
+  s_02abc74f4971c7::t_7f29b10f83b5b3 9-13,16-25,43-44,48,51,58,68,71,73,77,80-100,102-113,115,118-119,122-123,125-127,129,131-133,136-253
+hooks/ticket-hygiene-guard.py
+  s_02abc74f4971c7::t_7403dc7180f204 3-44,47-56,60-80,95-106,116,118,121-133,135-148,151-161,172,174-175,182-200,203-211,216-233
+rules/tracked-issue-carries-type-area-priority.md
+  s_02abc74f4971c7::t_91ed96a17b5aa9 17-18,25-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "600fc4b5f7ee84e26bf7dfef0ee0665047083552",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

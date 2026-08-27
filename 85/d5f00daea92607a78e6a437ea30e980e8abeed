@@ -1,0 +1,45 @@
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_d9915bbafa9657::t_2f38945c4423d9 1-36
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_d9915bbafa9657::t_00302d2b5cd488 1-36
+governance/plans/agentic-wave/RECEIPTS.md
+  s_d9915bbafa9657::t_eb6a75225f15b3 1-68
+governance/plans/agentic-wave/E1-AGENT-TAXONOMY.md
+  s_d9915bbafa9657::t_d88d2c134c0b67 1-46
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_d9915bbafa9657::t_781d1b62f89756 1-40
+governance/plans/agentic-wave/NORTH-STAR.md
+  s_d9915bbafa9657::t_bbc5aad947ecee 1-153
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_d9915bbafa9657::t_41316e3349575f 1-39
+governance/plans/agentic-wave/E3-CI-AGENT-GOVERNANCE.md
+  s_d9915bbafa9657::t_a49372bb1c81ca 1-36
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_d9915bbafa9657::t_aa2ee15a3d6ff1 1-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_d9915bbafa9657::t_044709479bc231 1-36
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_d9915bbafa9657::t_2dae752057760e 1-38
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_d9915bbafa9657::t_44a44f95a9316e 1-41
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_a48b21e1ccf9f4 25
+governance/graph.json
+  s_d9915bbafa9657::t_f4a2734ab7a362 2377-2519,16572-16799
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "85d5f00daea92607a78e6a437ea30e980e8abeed",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

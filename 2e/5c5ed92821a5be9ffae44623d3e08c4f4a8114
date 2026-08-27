@@ -1,0 +1,23 @@
+governance/ENFORCEMENT-COVERAGE.md
+  s_db94f917bdf4ff::t_94f33ba0b5cc70 5,12,14,151,364,401,410,412,429,431
+governance/graph.json
+  s_db94f917bdf4ff::t_5ea15338155516 11406-11411
+rules/ssot-board-coordination.md
+  s_db94f917bdf4ff::t_a21d7364a0314e 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "2e5c5ed92821a5be9ffae44623d3e08c4f4a8114",
+  "prompts": {},
+  "sessions": {
+    "s_db94f917bdf4ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "79dc6e12-ee6f-4616-bc24-bbd40d39f3a8",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

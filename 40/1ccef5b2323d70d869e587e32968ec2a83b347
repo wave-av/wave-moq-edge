@@ -1,0 +1,34 @@
+hooks/tests/ask-via-askuserquestion.test.sh
+  s_d9915bbafa9657::t_cd4fe1a27e30bc 1-90
+hooks/ask-via-askuserquestion.py
+  s_d9915bbafa9657::t_210fe0f1faee46 1-176
+hooks/ask-via-askuserquestion.sh
+  s_d9915bbafa9657::t_0b979fe50f737d 6-14
+  s_d9915bbafa9657::t_4f6a50b44c12ad 1-5
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_42fc2323632f7b 7-8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_d9915bbafa9657::t_2a7869c746afb1 10-11,14,400
+governance/graph.json
+  s_d9915bbafa9657::t_865bed42c951fd 7836-7843,28580-28591
+hooks/manifest.json
+  s_d9915bbafa9657::t_29d7cd48c79fda 47-67
+settings/settings.base.json
+  s_d9915bbafa9657::t_c0af00e3c63d13 12,331,346,351,361,366,371,387,393,414,425,536,541,551,643-646
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "401ccef5b2323d70d869e587e32968ec2a83b347",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

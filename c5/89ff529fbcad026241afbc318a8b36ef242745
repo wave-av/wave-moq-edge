@@ -1,0 +1,41 @@
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_264ae386838c57::t_70a731ef9923e9 130-135
+  s_264ae386838c57::t_4d568d7075d6f9 118-123
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_264ae386838c57::t_8ef74c8afd54fe 10-11,15-22
+  s_264ae386838c57::t_736662c9c55a2c 51,72,98
+docs/superpowers/specs/2026-08-01-local-inference-integrity-design.md
+  s_264ae386838c57::t_cda434052006e3 30
+  s_264ae386838c57::t_e1f902726ddf3a 84-89
+  s_264ae386838c57::t_a1baf3e405e2cb 266,270,276,280,284
+governance/plans/local-inference-integrity/DEPENDENCIES.md
+  s_264ae386838c57::t_efb15e44970975 33,48,60,71,85,99,113,132
+governance/plans/local-inference-integrity/E1-ENCODE.md
+  s_264ae386838c57::t_56a0be2d43049c 45,59,72,98
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_264ae386838c57::t_975b238163e698 51,82,107
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_264ae386838c57::t_d7fb3f02b153f2 56,74,98,131,156
+governance/plans/local-inference-integrity/E5-SIGNAL.md
+  s_264ae386838c57::t_e08241760a5a5a 50,65,81,106,131
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_264ae386838c57::t_808e9529571cf2 52,68,92,107
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_d06044fd451a22 34,38,44,48,52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c589ff529fbcad026241afbc318a8b36ef242745",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

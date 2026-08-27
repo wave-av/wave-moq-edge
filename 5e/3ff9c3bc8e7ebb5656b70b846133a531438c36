@@ -1,0 +1,19 @@
+governance/work-state.json
+  s_15127d80763110::t_e08e741fe93962 3,5-6,9-15,17,21-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,76,78-81,84-87,90-93,96-129,132-141,144-167,171-173,177,190-194,197-198,200-201,204-205,207-208,211-212,214-215,218-222,225-226,228-229,232-233,235-236,239-240,242-243,247-250,254-255,264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5e3ff9c3bc8e7ebb5656b70b846133a531438c36",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.github/workflows/foundation-gate.yml
+  h_af5ac1a9798224 42
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/graph.json
+  h_af5ac1a9798224 7678-7685,18566-18571,19832-19837
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  h_af5ac1a9798224 79-81,85-87,127-153,300-321,369-374,390-393,404-405,448,454-463,479-482,505,507-513,600-605
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  h_af5ac1a9798224 277,280,282-283,286-290,293-307,313-348
+memory/MEMORY.md
+  h_af5ac1a9798224 20
+memory/check-memory-and-public-registry-before-claiming-a-credential-blocker.md
+  h_af5ac1a9798224 1-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "21689b9a439fc60a8171aa953719c503fbe3b3cc",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

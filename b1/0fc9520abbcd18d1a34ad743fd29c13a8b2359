@@ -1,0 +1,53 @@
+.github/workflows/governance-enforce.yml
+  s_85d9e5f433b9aa::t_e7e6fa7b58946c 13-15,21-25,29-30,35,41-42,44,47,49-58
+governance/bin/gate-coverage-audit.mjs
+  s_85d9e5f433b9aa::t_f9930852cd08d6 1-184
+governance/bin/vendored-gate-audit.mjs
+  s_85d9e5f433b9aa::t_1b10d1f5d0f09d 31,57-60,63,67,72-75,93-96
+governance/graph.json
+  s_85d9e5f433b9aa::t_4fe3f7cbb35657 22061-22066
+governance/lib/gate-audit-args.mjs
+  s_85d9e5f433b9aa::t_2630974b44926b 1-2,16,32-131
+governance/lib/gate-audit-io.mjs
+  s_85d9e5f433b9aa::t_e712d3a0f1ce00 1-87
+governance/lib/gate-coverage.mjs
+  s_85d9e5f433b9aa::t_8a22f92710f6ac 1-266
+governance/lib/vendored-gate-classify.mjs
+  s_85d9e5f433b9aa::t_97315130f5ec13 24-76,81-83,87,89-91,93,97-101
+governance/lib/wave-sec-scanners.mjs
+  s_85d9e5f433b9aa::t_33bba8a50259d7 292-308,310
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_85d9e5f433b9aa::t_fe238d283ff188 4-15
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_85d9e5f433b9aa::t_2c0f97e78e2375 30-39,140
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_85d9e5f433b9aa::t_6ec4143e90a9b7 91-96
+governance/plans/ffmpeg9-lei/action/E11-P1-RTSP-EVAL.md
+  s_85d9e5f433b9aa::t_491eabb5f31365 1-149
+governance/plans/frontier-program/E-ENFORCE.md
+  s_85d9e5f433b9aa::t_3b45e1a9f73c34 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_85d9e5f433b9aa::t_ef6136fe5a9419 519-562
+governance/test/gate-audit-args.test.mjs
+  s_85d9e5f433b9aa::t_48da2678ba2ebe 11-14,17,92-130,152-160
+governance/test/gate-coverage.test.mjs
+  s_85d9e5f433b9aa::t_35b2f9112b4d07 1-448
+governance/test/wave-sec-scanners.test.mjs
+  s_85d9e5f433b9aa::t_7896d0b8f10762 305-316
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b10fc9520abbcd18d1a34ad743fd29c13a8b2359",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

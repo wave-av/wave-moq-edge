@@ -1,0 +1,22 @@
+governance/plans/console-perfection/E2-MACHINE-CONTRACT.md
+  s_e077f59d8037ec::t_9d9b2b20653345 4-6
+  s_e077f59d8037ec::t_6454438745b599 40-55
+governance/plans/console-perfection/NORTH-STAR.md
+  s_e077f59d8037ec::t_286cc8e338886f 150-170
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "472ee43e24491cffdb4c38dfbf57c773a0c03004",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

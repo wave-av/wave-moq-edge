@@ -1,0 +1,22 @@
+governance/plans/generated-artifact-contention/PHASE-A-INVENTORY.md
+  s_d9915bbafa9657::t_e78a299475564b 220
+  s_d9915bbafa9657::t_6f860bbd3d4412 184-186
+  s_d9915bbafa9657::t_c218ae54e31dd3 196,198-202,205-219
+  s_d9915bbafa9657::t_b7d2837f4a76b1 244-247,250
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c85e18fdd5d10f4318620371577a64ae9d65cb32",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

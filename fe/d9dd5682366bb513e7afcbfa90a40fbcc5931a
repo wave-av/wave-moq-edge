@@ -1,0 +1,30 @@
+governance/bin/agent-matrix.mjs
+  s_0227926428e4b1::t_e2a42c35535877 135,138-151,153
+  s_6f1ee1fe116ea3::t_37a4e8a94c098f 42
+governance/agent-matrix.json
+  s_6f1ee1fe116ea3::t_b5f8cfb6c028d0 624,641-642,653-654,665-666,675-680,689-690,701-702,713-714,735-736,747-748,759-760,825-826,839-840,851-856,867-868,881-882,895-896,907-912,923-924,933
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fed9dd5682366bb513e7afcbfa90a40fbcc5931a",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6f1ee1fe116ea3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a8e8165373b61106a",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

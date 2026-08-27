@@ -1,0 +1,19 @@
+governance/test/dispute-pack.test.mjs
+  s_5da871dff98ff0::t_d499b313466d8e 9,19,25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c56bf820e040737c8d5651f03c9eb8352beeb8d2",
+  "prompts": {},
+  "sessions": {
+    "s_5da871dff98ff0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a36b13c1553eaa31f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

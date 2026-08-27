@@ -1,0 +1,27 @@
+governance/DASHBOARD.md
+  s_d0b8f374e477b6::t_71188516def33b 25
+governance/graph.json
+  s_d0b8f374e477b6::t_01a33e43e2e1a3 16227-16232,16323-16328
+governance/plans/effective-authority/E4-DISPATCH.md
+  s_d0b8f374e477b6::t_acf5354c00c1dd 31
+governance/plans/effective-authority/E6-BLAST.md
+  s_d0b8f374e477b6::t_22848482b5d737 28
+governance/plans/effective-authority/E7-RATCHET.md
+  s_d0b8f374e477b6::t_8453fc73e1d32f 29,33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "8608121dcef580b875f5e1a75fa2ed3935ae6e4d",
+  "prompts": {},
+  "sessions": {
+    "s_d0b8f374e477b6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a8e1651fc5ec75e35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

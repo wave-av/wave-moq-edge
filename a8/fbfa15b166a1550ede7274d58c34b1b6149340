@@ -1,0 +1,19 @@
+governance/lib/drill-registry.mjs
+  s_9bb1b1d1d998d4::t_d52b9485b1862c 50,213
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a8fbfa15b166a1550ede7274d58c34b1b6149340",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

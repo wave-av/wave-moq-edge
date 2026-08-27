@@ -1,0 +1,19 @@
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_8d26503dfc73f4::t_affaca1ed5425d 8-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9d4eae2e24dc5551c071eba17ad4093caa84e2cf",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+packages/observability/package.json
+  s_eb2f7e65359b4f::t_451017208b392d 3
+packages/observability/src/edge-otlp.ts
+  s_eb2f7e65359b4f::t_9173c00772e2cf 1-124
+packages/observability/test/traceparent.test.mjs
+  s_eb2f7e65359b4f::t_0ce48071334c1a 1-63
+packages/observability/src/worker.ts
+  s_eb2f7e65359b4f::t_dff74a5504f090 33-35
+  s_eb2f7e65359b4f::t_3f9887d044584e 3-5,7
+packages/observability/package-lock.json
+  s_eb2f7e65359b4f::t_f7b2e90c52f9da 3,9
+packages/observability/test/edge-otlp.test.mjs
+  s_eb2f7e65359b4f::t_b0ebb0087d0ecb 12-15
+  s_eb2f7e65359b4f::t_c4793c986b9a2f 1-11,16-106
+packages/observability/src/index.ts
+  s_eb2f7e65359b4f::t_f33bf676796b0f 21-22
+packages/observability/src/traceparent.ts
+  s_eb2f7e65359b4f::t_43b21645cdbe05 1-73
+packages/observability/src/types.ts
+  s_eb2f7e65359b4f::t_e3eac16fa7808d 19-24
+rules/telemetry-standard.md
+  s_eb2f7e65359b4f::t_c41e2d540caebb 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "102016a05dc2b73f4a1b02aa9bdddc582a470fb0",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_c93b6e39d546e4 69-71,75,77-89
+  s_85d9e5f433b9aa::t_0250f521edce36 72-74
+  s_85d9e5f433b9aa::t_0d89833281e8c4 19
+  s_85d9e5f433b9aa::t_2340e79cc77740 24
+  s_85d9e5f433b9aa::t_277a1e202051e3 31-32
+governance/lib/wave-sec-lanes.mjs
+  s_85d9e5f433b9aa::t_0456ca1db8c748 29
+  s_85d9e5f433b9aa::t_3954c3475108e9 35
+governance/lib/wave-sec-scanners.mjs
+  s_85d9e5f433b9aa::t_5ed63bd5613a1d 1-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "57583585d2b726ad3cf977dcfe709aa726263aaf",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

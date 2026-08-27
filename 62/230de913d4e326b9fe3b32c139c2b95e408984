@@ -1,0 +1,39 @@
+governance/plans/wave-models/E0-FOUNDATION.md
+  s_2b4acc7ceba309::t_f96a93301d8bfd 2,4,6-15
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9e49fb2dab61f0::t_247f80160b1d33 2
+governance/plans/wave-models/NORTH-STAR.md
+  s_7b5321012e85fb::t_9b3fe5cf6c7a0e 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "62230de913d4e326b9fe3b32c139c2b95e408984",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_7b5321012e85fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc63f415bffezF89rWmILD16yl",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+rules/learning-iteration-protocol.md
+  s_07acdfa7e3709a::t_38cc8efbaff724 46
+docs/rules-audit-2026-06-10.md
+  s_07acdfa7e3709a::t_e9af4e90069fe7 90-137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "5a09debfdd13069c90863dc813ef32910adbdfb6",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
