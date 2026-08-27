@@ -76,6 +76,13 @@ export interface SessionReport {
   ordering: OrderingStats;
   latency: LatencyStats;
   observedAt: string;
+  /**
+   * Raw per-object end-to-end latency samples (ms), subscriber role only. Optional and additive —
+   * `latency` above remains the authoritative per-session percentile summary; this field exists so
+   * a caller running many sessions can pool raw samples into one true cross-session percentile
+   * distribution instead of averaging percentiles (which is not a valid operation).
+   */
+  rawLatencySamplesMs?: number[];
   /** Peer close code/reason when the session ended by a close rather than by completing. */
   closeCode?: number;
   closeReason?: string;
@@ -165,6 +172,7 @@ export async function runSubscribe(o: SubscribeOpts): Promise<SessionReport> {
     bytes,
     ordering: { outOfOrder, missing, monotonic: outOfOrder === 0 && missing === 0 },
     latency: percentiles(latencies),
+    rawLatencySamplesMs: latencies,
     closeCode: close?.code,
     closeReason: close?.reason,
   });

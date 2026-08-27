@@ -139,13 +139,16 @@ function withToken(url: string): string {
   return u.toString();
 }
 
-async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish'): Promise<Transport> {
+export async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish'): Promise<Transport> {
   // Session-first flow: the relay creates the publisher session on a plain REST request and returns
   // `websocket_url`; dialing the WS directly on a session-less track 404s (and the DOM-style WS error
   // event hides the status — "connection refused" is a lie). REST handshake first, then WS to the
   // returned URL; a 4xx surfaces as a legible error instead.
   try {
-    const res = await fetch(withToken(url), { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
+    // fetch() has no ws/wss scheme (undici: "unknown scheme") — the REST leg is plain HTTP(S); only
+    // the *returned* websocket_url is dialed as a WebSocket. Normalize just for this request.
+    const restUrl = withToken(url).replace(/^ws(s?):\/\//, 'http$1://');
+    const res = await fetch(restUrl, { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
     if (res.status >= 400) {
       const body = (await res.text()).slice(0, 120);
       throw new Error(`relay http ${res.status}: ${body}`);
