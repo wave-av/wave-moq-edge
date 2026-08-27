@@ -1,0 +1,62 @@
+scripts/check-tai-mapping-draft-pin.sh
+  s_3c7a371f5618a4::t_9d5c580b60d6bd 1-44
+tools/tai-bench/tsconfig.json
+  s_3c7a371f5618a4::t_4b152fe41858e6 1-27
+tsconfig.json
+  s_3c7a371f5618a4::t_edeb3823869cbc 10
+src/PIN-DECISION.md
+  s_3c7a371f5618a4::t_393f298001ae43 1-50
+__tests__/tai-group-mapping.test.ts
+  s_3c7a371f5618a4::t_457b576af320e4 15
+  s_3c7a371f5618a4::t_2ab283fcd166ae 157,159-161,165-166
+  s_3c7a371f5618a4::t_6f2ddf5e26b244 1-14,16-156,158,162-164,167-195
+src/tai-group-mapping.ts
+  s_3c7a371f5618a4::t_4ee8740ffc8e9a 1-123
+src/st2110-timing-properties.ts
+  s_3c7a371f5618a4::t_a571886bc4e71c 22-28
+  s_3c7a371f5618a4::t_59760632638851 1-21,29-135
+package.json
+  s_3c7a371f5618a4::t_49a4a35af1f93b 16,19,21-22
+tools/tai-bench/bench-loopback-run.ts
+  s_3c7a371f5618a4::t_63123ebff05702 21-24
+  s_3c7a371f5618a4::t_54a4230e6cf9b3 1-20,25-120
+tools/tai-bench/bench-sender-sim.ts
+  s_3c7a371f5618a4::t_5fcfa6278f5b10 17
+  s_3c7a371f5618a4::t_243b9eb1261bbc 1-16,18-50
+tools/tai-bench/src/tai-bench-publisher.ts
+  s_3c7a371f5618a4::t_ffa54d3dd175af 22-24
+  s_3c7a371f5618a4::t_09a3359fb85381 19-21
+  s_3c7a371f5618a4::t_071be6c7470d94 25-27
+  s_ea7238a5542c74::t_4d8c3e25d7abce 1-18,28-111
+tools/tai-bench/__tests__/tai-two-sender-determinism.test.ts
+  s_3c7a371f5618a4::t_be82207b229451 19
+  s_3c7a371f5618a4::t_b5ce35b780adb4 16-18
+  s_3c7a371f5618a4::t_ce23c4f3fd27e0 20-22
+  s_ea7238a5542c74::t_3bdd67b4426e06 1-15,23-94
+tools/tai-bench/__tests__/tai-bench-auth.test.ts
+  s_3c7a371f5618a4::t_059c2ed64ad608 1-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f6130d9a64d43a7bd67e11c85d99ce29bea69651",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_ea7238a5542c74": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae0402b6903e1aea3",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
