@@ -30,6 +30,7 @@ import {
   type SubgroupHeader,
   type SubgroupObject,
 } from '../../src/moq-wire.ts';
+import { taiMap, parseRateFlag, formatTaiMapReport } from './src/tai-map.ts';
 
 interface Args {
   cmd: string;
@@ -79,6 +80,14 @@ const USAGE = `moq-client — non-Worker MoQ interop client
     --interval=100         ms between subgroup frames
     --transport=websocket|webtransport
     --json                 Emit a JSON report
+
+  tai-map                  E1-TAI-BRIDGE: TAI instant + exact frame rate -> deterministic MoQ
+                           group id (pure function, no network). Scriptable / no relay required.
+    --tai-ns=<ns>          Absolute source time, TAI nanoseconds (required)
+    --rate=<num>/<den>     Exact frame rate as a rational, e.g. 30000/1001 (default: 30/1)
+    --frame-index=<n>      If set, also emit the RTP-style media clock value for this frame index
+    --media-clock-rate=<hz>  Media clock rate in Hz, used with --frame-index (default: 90000)
+    --json                 Emit a JSON report (default: human-readable)
 
 Auth: set MOQ_JOIN_TOKEN in the environment. It is never printed.`;
 
@@ -362,6 +371,27 @@ function formatReport(r: SessionReport): string {
   );
 }
 
+function cmdTaiMap(args: Args): number {
+  const taiNsRaw = args.flags.get('tai-ns');
+  if (!taiNsRaw) {
+    process.stderr.write('error: --tai-ns=<TAI nanoseconds> is required\n');
+    return 2;
+  }
+  try {
+    const report = taiMap({
+      taiNs: BigInt(taiNsRaw),
+      rate: parseRateFlag(args.flags.get('rate')),
+      frameIndex: args.flags.has('frame-index') ? BigInt(args.flags.get('frame-index')!) : undefined,
+      mediaClockRateHz: args.flags.has('media-clock-rate') ? BigInt(args.flags.get('media-clock-rate')!) : undefined,
+    });
+    process.stdout.write(args.flags.has('json') ? `${JSON.stringify(report, null, 2)}\n` : formatTaiMapReport(report));
+    return 0;
+  } catch (e) {
+    process.stderr.write(`tai-map: ${e instanceof Error ? e.message : String(e)}\n`);
+    return 2;
+  }
+}
+
 async function main(): Promise<number> {
   const args = parseArgs(process.argv.slice(2));
   switch (args.cmd) {
@@ -373,6 +403,8 @@ async function main(): Promise<number> {
       return cmdSession(args, 'publish');
     case 'publish-subgroup':
       return cmdPublishSubgroup(args);
+    case 'tai-map':
+      return cmdTaiMap(args);
     default:
       process.stdout.write(`${USAGE}\n`);
       return args.cmd === 'help' ? 0 : 2;
