@@ -1,0 +1,27 @@
+{
+  "//": "The E1-TAI-BRIDGE bench is NODE code (real dgram sockets, node:crypto, child_process), not Worker code — same reasoning as tools/moq-client/tsconfig.json, which this file mirrors. It deliberately does not inherit the root tsconfig, whose `types: [@cloudflare/workers-types]` describes a runtime this tool never runs in. The pure mapping + property-bag modules it imports (src/tai-group-mapping.ts, src/st2110-timing-properties.ts) stay Workers-portable and are typechecked under the root tsconfig; only the Node-specific bench glue lives here.",
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM"],
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "bench-loopback-run.ts",
+    "bench-sender-sim.ts",
+    "src/**/*.ts",
+    "__tests__/**/*.ts",
+    "../../src/moq-wire.ts",
+    "../../src/tai-group-mapping.ts",
+    "../../src/st2110-timing-properties.ts"
+  ]
+}

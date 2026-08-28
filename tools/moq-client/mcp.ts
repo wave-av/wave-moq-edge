@@ -17,8 +17,10 @@
  *   node --experimental-transform-types tools/moq-client/mcp.ts --self-test  # smoke test
  */
 
+import { createInterface } from 'node:readline';
 import { runPublish, runSubscribe } from './src/session.ts';
 import { WebSocketTransport, type Transport } from './src/transport.ts';
+import { taiMap, parseRateFlag } from './src/tai-map.ts';
 import {
   MOQ_ROLE,
   MOQ_OBJECT_STATUS,
@@ -160,6 +162,21 @@ const TOOLS = [
         track: { type: 'string', description: 'Track name (default: check).' },
       },
       required: [],
+    },
+  },
+  {
+    name: 'tai_map',
+    description:
+      'E1-TAI-BRIDGE: map an absolute TAI instant + exact frame rate to the deterministic MoQ group id (pure function, no network, no relay required). Same inputs always produce the same groupId in any process. Also returns the exact frame period, the round-trip group-start instant, an optional media-clock value, and the ST 2110 timing property-bag byte length.',
+    inputSchema: {
+      type: 'object' as const,
+      properties: {
+        taiNs: { type: 'string', description: 'Absolute source time, TAI nanoseconds (string to preserve bigint precision).' },
+        rate: { type: 'string', description: 'Exact frame rate as NUM/DEN, e.g. "30000/1001" (default: "30/1").' },
+        frameIndex: { type: 'string', description: 'If set, also compute the media-clock value for this frame index.' },
+        mediaClockRateHz: { type: 'string', description: 'Media clock rate in Hz, used with frameIndex (default: 90000).' },
+      },
+      required: ['taiNs'],
     },
   },
 ] as const;
@@ -364,6 +381,17 @@ async function handlePublishHealth(args: Record<string, unknown>): Promise<unkno
   }
 }
 
+async function handleTaiMap(args: Record<string, unknown>): Promise<unknown> {
+  const taiNsRaw = args.taiNs as string | undefined;
+  if (!taiNsRaw) throw new Error('taiNs is required');
+  return taiMap({
+    taiNs: BigInt(taiNsRaw),
+    rate: parseRateFlag(args.rate as string | undefined),
+    frameIndex: args.frameIndex !== undefined ? BigInt(args.frameIndex as string) : undefined,
+    mediaClockRateHz: args.mediaClockRateHz !== undefined ? BigInt(args.mediaClockRateHz as string) : undefined,
+  });
+}
+
 // ── JSON-RPC dispatch ─────────────────────────────────────────────────────────
 
 const HANDLERS: Record<string, (args: Record<string, unknown>) => Promise<unknown>> = {
@@ -371,6 +399,7 @@ const HANDLERS: Record<string, (args: Record<string, unknown>) => Promise<unknow
   subscribe: handleSubscribe,
   status: handleStatus,
   publish_health: handlePublishHealth,
+  tai_map: handleTaiMap,
 };
 
 function respond(id: number | string | null, result: unknown): JsonRpcResponse {
@@ -414,11 +443,23 @@ async function handleRequest(req: JsonRpcRequest): Promise<JsonRpcResponse> {
 
 // ── stdin/stdout reader ───────────────────────────────────────────────────────
 
+// `rl.on('line', async ...)` fires-and-forgets a promise per line; `readline`'s 'close' event
+// (stdin EOF) does NOT wait for those promises to settle, so exiting on 'close' can race an
+// in-flight `tools/call` and drop its response before it reaches stdout — a real bug found while
+// building this phase's end-to-end MCP receipt (a single-request pipe reproduced it 100% of the
+// time). Fixed by tracking in-flight request count and deferring `process.exit` until it drains.
+let inFlight = 0;
+let closed = false;
+function maybeExit(): void {
+  if (closed && inFlight === 0) process.exit(0);
+}
+
 function runServer(): void {
   const rl = createInterface({ input: process.stdin });
   rl.on('line', async (line) => {
     const trimmed = line.trim();
     if (!trimmed) return;
+    inFlight++;
     try {
       const req = JSON.parse(trimmed) as JsonRpcRequest;
       const res = await handleRequest(req);
@@ -427,9 +468,15 @@ function runServer(): void {
       process.stdout.write(
         JSON.stringify(respondError(null, -32700, 'Parse error')) + '\n',
       );
+    } finally {
+      inFlight--;
+      maybeExit();
     }
   });
-  rl.on('close', () => process.exit(0));
+  rl.on('close', () => {
+    closed = true;
+    maybeExit();
+  });
 }
 
 // ── Self-test ─────────────────────────────────────────────────────────────────
@@ -449,7 +496,7 @@ async function selfTest(): Promise<number> {
   const listRes = await handleRequest(listReq);
   const listResult = listRes.result as { tools: Array<{ name: string }> } | undefined;
   const toolNames = listResult?.tools?.map((t) => t.name) ?? [];
-  const expected = ['publish_subgroup', 'subscribe', 'status', 'publish_health'];
+  const expected = ['publish_subgroup', 'subscribe', 'status', 'publish_health', 'tai_map'];
   const listOk = expected.every((n) => toolNames.includes(n));
   results.push(`tools/list: ${listOk ? 'PASS' : 'FAIL'} (found: ${toolNames.join(', ')})`);
 
@@ -487,7 +534,8 @@ Tools:
   publish_subgroup   SETUP + PUBLISH_NAMESPACE + SUBGROUP_HEADER frames
   subscribe          SETUP + SUBSCRIBE, report objects/ordering/p50/p95
   status             REST handshake probe (no WebSocket opened)
-  publish_health     Single-object health check`;
+  publish_health     Single-object health check
+  tai_map            E1-TAI-BRIDGE: TAI instant + rate -> deterministic MoQ group id (no network)`;
 
 async function main(): Promise<number> {
   const args = process.argv.slice(2);
@@ -498,8 +546,14 @@ async function main(): Promise<number> {
   if (args.includes('--self-test')) {
     return selfTest();
   }
+  // Server mode: `main()` must NOT resolve here — the outer `.then` below calls `process.exit`
+  // the instant this promise settles, which (found while building this phase's end-to-end MCP
+  // receipt) killed the process before `runServer`'s readline ever got a turn on the event loop,
+  // so every stdio request was silently dropped regardless of the close-race fix above. Returning
+  // a promise that never resolves keeps main() pending while the (unref'd-nothing, still real)
+  // stdin listener keeps the event loop alive; `runServer`'s own `maybeExit()` is the only exit path.
   runServer();
-  return 0;
+  return new Promise<number>(() => {});
 }
 
 main().then(

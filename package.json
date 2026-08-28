@@ -13,10 +13,14 @@
     "lint": "eslint . --max-warnings 0",
     "test": "vitest run __tests__/",
     "test:client": "vitest run tools/moq-client/__tests__/",
+    "test:tai-bench": "vitest run tools/tai-bench/__tests__/",
     "typecheck": "tsc --noEmit",
     "typecheck:client": "tsc --noEmit -p tools/moq-client/tsconfig.json",
+    "typecheck:tai-bench": "tsc --noEmit -p tools/tai-bench/tsconfig.json",
     "moq-client": "node --experimental-transform-types tools/moq-client/cli.ts",
     "bench:sixteen-track": "node --experimental-transform-types tools/moq-client/bench-sixteen-track.ts",
+    "tai-bench-loopback": "node --experimental-transform-types tools/tai-bench/bench-loopback-run.ts",
+    "check-tai-mapping-pin": "bash scripts/check-tai-mapping-draft-pin.sh",
     "tail": "wrangler tail moq-edge-production --format pretty"
   },
   "dependencies": {
