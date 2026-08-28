@@ -1,0 +1,36 @@
+tools/moq-client/mcp.ts
+  s_3c7a371f5618a4::t_2017f332af9548 20
+  s_3c7a371f5618a4::t_0c933faa18d537 167-181
+  s_3c7a371f5618a4::t_36c3b2329689c4 549-554,556
+  s_3c7a371f5618a4::t_61834c8e7b5ecc 499
+  s_3c7a371f5618a4::t_4a74182c316e55 537-538
+  s_3c7a371f5618a4::t_405a8a94a0f17a 23
+  s_3c7a371f5618a4::t_cb87b91ead6df4 446-456,462,471-473,476-479
+  s_3c7a371f5618a4::t_3efc4da58c55ed 384-394,402
+tools/moq-client/__tests__/mcp-stdio.test.ts
+  s_3c7a371f5618a4::t_0a132ca3251fe8 1-92
+tools/moq-client/cli.ts
+  s_3c7a371f5618a4::t_370dd49fd5ec31 33
+  s_3c7a371f5618a4::t_d3eb49489945fc 374-394,406-407
+  s_3c7a371f5618a4::t_d97f18cc6961a6 84-91
+tools/moq-client/src/tai-map.ts
+  s_3c7a371f5618a4::t_198ec3ddb4f599 1-86
+tools/moq-client/__tests__/tai-map.test.ts
+  s_3c7a371f5618a4::t_5740f0f9a8bb35 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "af86be29102ca34533f6a18352fcbd1322b6aaa9",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
