@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit",
     "typecheck:client": "tsc --noEmit -p tools/moq-client/tsconfig.json",
     "moq-client": "node --experimental-transform-types tools/moq-client/cli.ts",
+    "bench:sixteen-track": "node --experimental-transform-types tools/moq-client/bench-sixteen-track.ts",
     "tail": "wrangler tail moq-edge-production --format pretty"
   },
   "dependencies": {

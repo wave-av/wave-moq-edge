@@ -1,0 +1,266 @@
+#!/usr/bin/env node --experimental-transform-types
+/**
+ * sixteen-track bench — the E0-SIXTEEN-TRACKS workload generator.
+ *
+ * Drives N concurrent publisher+subscriber MoQ sessions against a relay (production or otherwise),
+ * each track independently accounted (its own ordering/latency report), and prints an aggregate
+ * percentile distribution plus a drop/reorder count over the whole run.
+ *
+ * Safety, by construction (governance/plans/volumetric-delivery-proof/E0-SIXTEEN-TRACKS.md P3
+ * hard-gate):
+ *   - MAX_DURATION_MS is a compiled ceiling, not a parameter — `--duration` is clamped to it.
+ *   - Every track publishes under a namespace PREFIXED with the reserved bench label
+ *     (BENCH_NAMESPACE_PREFIX), so a subscriber can never mistake a bench track for a customer one.
+ *   - Payload sizes and cadence are bench-scale (kilobytes/10Hz-class), not real video bitrate —
+ *     this measures track-count/latency/ordering behaviour, not encode throughput.
+ *   - A canary wave (first CANARY_TRACKS tracks) must clear ERROR_RATE_ABORT_THRESHOLD before the
+ *     remaining tracks are launched — a threshold fixed here, before any run, not chosen after
+ *     seeing the data.
+ */
+import { runPublish, runSubscribe, percentiles, type SessionReport } from './src/session.ts';
+import { openTransport } from './cli.ts';
+import type { Transport } from './src/transport.ts';
+
+/** Compiled hard ceiling on run duration. Not overridable by any flag past this. */
+export const MAX_DURATION_MS = 30_000;
+
+/** Reserved namespace prefix so a subscriber can never mistake a bench track for a customer one. */
+export const BENCH_NAMESPACE_PREFIX = 'bench-vdp-e0';
+
+/** First wave launched before committing to the full track count. */
+export const CANARY_TRACKS = 4;
+
+/** Fixed before any run: abort further launch if more than this fraction of the canary fails. */
+export const ERROR_RATE_ABORT_THRESHOLD = 0.25;
+
+export type TrackClass = '1080p-class' | '2160p-class';
+
+export interface TrackConfig {
+  namespace: string[];
+  track: string;
+  trackClass: TrackClass;
+  intervalMs: number;
+  payloadBytes: number;
+}
+
+/**
+ * The track set is DATA, not a hard-coded constant: any `n` produces `n` independently-named,
+ * independently-accounted tracks. A fixed fraction (roughly a quarter, rounded up) is the
+ * higher-cadence/larger-payload "2160p-class"; the rest are "1080p-class" — proportions chosen so
+ * a 16-track run has both classes represented without either being a single outlier.
+ */
+export function buildTrackSet(n: number, runId: string): TrackConfig[] {
+  if (n < 1) throw new Error(`track count must be >= 1, got ${n}`);
+  const namespace = [BENCH_NAMESPACE_PREFIX, runId];
+  const highResCount = Math.max(1, Math.round(n / 4));
+  const tracks: TrackConfig[] = [];
+  for (let i = 0; i < n; i++) {
+    const isHigh = i < highResCount;
+    tracks.push({
+      namespace,
+      track: `cam${String(i).padStart(2, '0')}-${isHigh ? '2160p' : '1080p'}`,
+      trackClass: isHigh ? '2160p-class' : '1080p-class',
+      intervalMs: 100,
+      payloadBytes: isHigh ? 8_000 : 2_000,
+    });
+  }
+  return tracks;
+}
+
+export interface TrackResult {
+  config: TrackConfig;
+  publisher: SessionReport;
+  subscriber: SessionReport;
+}
+
+function wsUrl(relayBase: string, role: 'publish' | 'subscribe', ns: string[], track: string): string {
+  const u = new URL(relayBase);
+  u.protocol = u.protocol === 'https:' ? 'wss:' : u.protocol;
+  u.pathname = `/v1/${role}/${ns.join('/')}/${track}`;
+  return u.toString();
+}
+
+async function runOneTrack(relayBase: string, cfg: TrackConfig, durationMs: number): Promise<TrackResult> {
+  const pubUrl = wsUrl(relayBase, 'publish', cfg.namespace, cfg.track);
+  const subUrl = wsUrl(relayBase, 'subscribe', cfg.namespace, cfg.track);
+  const count = Math.max(1, Math.floor(durationMs / cfg.intervalMs));
+
+  let subTransport: Transport | undefined;
+  let pubTransport: Transport | undefined;
+  try {
+    // Subscriber first, so it is attached before the publisher's first object goes out.
+    subTransport = await openTransport(subUrl, 'websocket', 'subscribe');
+    const subscriberPromise = runSubscribe({
+      transport: subTransport,
+      peer: subUrl,
+      namespace: cfg.namespace,
+      track: cfg.track,
+      durationMs: durationMs + 3_000, // grace window past the publisher's own stop
+      maxObjects: count,
+    });
+
+    pubTransport = await openTransport(pubUrl, 'websocket', 'publish');
+    const publisherPromise = runPublish({
+      transport: pubTransport,
+      peer: pubUrl,
+      namespace: cfg.namespace,
+      track: cfg.track,
+      count,
+      intervalMs: cfg.intervalMs,
+      payloadBytes: cfg.payloadBytes,
+    });
+
+    const [publisher, subscriber] = await Promise.all([publisherPromise, subscriberPromise]);
+    return { config: cfg, publisher, subscriber };
+  } finally {
+    pubTransport?.close();
+    subTransport?.close();
+  }
+}
+
+export interface CatalogTrackSummary {
+  namespace: string;
+  track: string;
+}
+
+export async function readCatalog(relayBase: string): Promise<{ status: number; tracks: CatalogTrackSummary[]; raw: unknown }> {
+  const url = new URL('/v1/catalog', relayBase).toString();
+  const res = await fetch(url);
+  const raw = await res.json().catch(() => null);
+  const tracks: CatalogTrackSummary[] = Array.isArray((raw as { tracks?: unknown })?.tracks)
+    ? (raw as { tracks: Array<{ namespace?: string; name?: string }> }).tracks.map((t) => ({
+        namespace: t.namespace ?? '',
+        track: t.name ?? '',
+      }))
+    : [];
+  return { status: res.status, tracks, raw };
+}
+
+function errorRate(results: PromiseSettledResult<TrackResult>[]): number {
+  if (results.length === 0) return 0;
+  const bad = results.filter(
+    (r) => r.status === 'rejected' || r.value.publisher.outcome !== 'ok' || r.value.subscriber.outcome !== 'ok',
+  ).length;
+  return bad / results.length;
+}
+
+interface Args {
+  tracks: number;
+  durationMs: number;
+  relay: string;
+  json: boolean;
+}
+
+function parseArgs(argv: string[]): Args {
+  const flags = new Map<string, string>();
+  for (const a of argv) {
+    if (!a.startsWith('--')) continue;
+    const eq = a.indexOf('=');
+    if (eq === -1) flags.set(a.slice(2), 'true');
+    else flags.set(a.slice(2, eq), a.slice(eq + 1));
+  }
+  const tracks = Number(flags.get('tracks') ?? 16);
+  const requestedDuration = Number(flags.get('duration') ?? MAX_DURATION_MS);
+  return {
+    tracks,
+    durationMs: Math.min(requestedDuration, MAX_DURATION_MS),
+    relay: flags.get('relay') ?? 'https://moq.wave.online',
+    json: flags.has('json'),
+  };
+}
+
+async function main(): Promise<number> {
+  const args = parseArgs(process.argv.slice(2));
+  const runId = `${Date.now()}`;
+  const trackSet = buildTrackSet(args.tracks, runId);
+  const benchNamespace = `${BENCH_NAMESPACE_PREFIX}/${runId}`;
+
+  const startedAt = new Date().toISOString();
+  process.stderr.write(
+    `[bench] run=${runId} relay=${args.relay} tracks=${trackSet.length} durationMs=${args.durationMs} ns=${benchNamespace}\n`,
+  );
+
+  // Canary wave: launch the first CANARY_TRACKS, check the error rate, only then launch the rest.
+  const canary = trackSet.slice(0, Math.min(CANARY_TRACKS, trackSet.length));
+  const rest = trackSet.slice(canary.length);
+
+  const canarySettled = await Promise.allSettled(canary.map((t) => runOneTrack(args.relay, t, args.durationMs)));
+  const canaryErrorRate = errorRate(canarySettled);
+  process.stderr.write(`[bench] canary n=${canary.length} error_rate=${canaryErrorRate.toFixed(2)}\n`);
+
+  let restSettled: PromiseSettledResult<TrackResult>[] = [];
+  let aborted = false;
+  if (canaryErrorRate > ERROR_RATE_ABORT_THRESHOLD) {
+    aborted = true;
+    process.stderr.write(
+      `[bench] ABORTED — canary error rate ${canaryErrorRate.toFixed(2)} > threshold ${ERROR_RATE_ABORT_THRESHOLD}; remaining ${rest.length} track(s) not launched\n`,
+    );
+  } else if (rest.length > 0) {
+    restSettled = await Promise.allSettled(rest.map((t) => runOneTrack(args.relay, t, args.durationMs)));
+  }
+
+  const settled = [...canarySettled, ...restSettled];
+  const results: TrackResult[] = settled.filter((r): r is PromiseFulfilledResult<TrackResult> => r.status === 'fulfilled').map((r) => r.value);
+  const failures = settled.length - results.length;
+
+  // Catalog read WHILE tracks are (mostly) still connected — subscribers hold for durationMs+3s grace.
+  const catalogDuring = await readCatalog(args.relay).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
+
+  // Aggregate latency across every subscriber's samples (true end-to-end: publisher timestamp -> receipt).
+  const allLatencySamplesMs: number[] = [];
+  let totalMissing = 0;
+  let totalOutOfOrder = 0;
+  let totalObjectsReceived = 0;
+  for (const r of results) {
+    totalMissing += r.subscriber.ordering.missing;
+    totalOutOfOrder += r.subscriber.ordering.outOfOrder;
+    totalObjectsReceived += r.subscriber.objects;
+    if (r.subscriber.rawLatencySamplesMs) allLatencySamplesMs.push(...r.subscriber.rawLatencySamplesMs);
+  }
+  // Percentiles are never averaged across sessions — every raw sample is pooled once, then the
+  // percentile is computed on the pooled set, so this is a true cross-track distribution.
+  const aggregate = percentiles(allLatencySamplesMs);
+
+  // Give the relay a moment to expire announce state after publishers close, then re-read.
+  await new Promise((r) => setTimeout(r, 2_000));
+  const catalogAfter = await readCatalog(args.relay).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
+
+  const finishedAt = new Date().toISOString();
+
+  const report = {
+    runId,
+    startedAt,
+    finishedAt,
+    relay: args.relay,
+    benchNamespace,
+    configuredTracks: trackSet.length,
+    canaryTracks: canary.length,
+    canaryErrorRate,
+    aborted,
+    durationMs: args.durationMs,
+    tracksCompleted: results.length,
+    tracksFailed: failures,
+    drop: { missing: totalMissing, outOfOrder: totalOutOfOrder, objectsReceived: totalObjectsReceived },
+    perTrack: results.map((r) => ({
+      track: r.config.track,
+      trackClass: r.config.trackClass,
+      publisherOutcome: r.publisher.outcome,
+      subscriberOutcome: r.subscriber.outcome,
+      objectsSent: r.publisher.objects,
+      objectsReceived: r.subscriber.objects,
+      latency: r.subscriber.latency,
+      ordering: r.subscriber.ordering,
+    })),
+    aggregate,
+    catalogDuring: { status: catalogDuring.status, benchTracksLive: catalogDuring.tracks.filter((t) => t.namespace.startsWith(BENCH_NAMESPACE_PREFIX)).length, tracks: catalogDuring.tracks },
+    catalogAfter: { status: catalogAfter.status, benchTracksLive: catalogAfter.tracks.filter((t) => t.namespace.startsWith(BENCH_NAMESPACE_PREFIX)).length, tracks: catalogAfter.tracks },
+  };
+
+  process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
+  return aborted || failures > 0 ? 1 : 0;
+}
+
+// Only run when executed directly (not when imported for its exports by tests).
+if (process.argv[1] && (process.argv[1].endsWith('bench-sixteen-track.ts') || process.argv[1].endsWith('bench-sixteen-track.js'))) {
+  main().then((code) => process.exit(code));
+}
