@@ -1,6 +1,6 @@
 # TESTING
 
-How wave-moq-edge.refresh is tested, for people and for agents. The fenced
+How wave-moq-edge is tested, for people and for agents. The fenced
 `yaml test-contract` block below is the machine surface: `contracts validate`
 checks it, `contracts run` executes it and writes receipts, and the Stop gate
 verifies receipts before an agent may claim DONE. Edit the YAML, keep the

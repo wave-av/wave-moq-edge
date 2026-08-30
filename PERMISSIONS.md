@@ -28,6 +28,10 @@ rules:
     tool: Bash
     cmd_pattern: "doppler *"
     reason: secret-manager operations are approved, never silent
+  - verdict: ask
+    tool: Bash
+    cmd_pattern: "doppler"
+    reason: a bare doppler invocation (login, interactive) is the same crossing
   - verdict: deny
     path_glob: "**/*.pem"
     reason: key material stays unread
