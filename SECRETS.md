@@ -52,3 +52,20 @@ _(none currently)_
 - `wave-foundation/docs/conventions/url-naming.md` — what `deploy.yml` routes to
 - `wave-foundation/scripts/consume.sh` — vendoring shared rules
 - This repo's `wrangler.toml` — the `# SECRETS` block lists every runtime secret the worker expects
+
+
+## Machine surface
+
+```yaml secrets-contract
+version: "0.1"
+secrets:
+  - name: CLOUDFLARE_API_TOKEN
+    vault: "gh:wave-av/wave-moq-edge"
+  - name: CLOUDFLARE_ACCOUNT_ID
+    vault: "gh:wave-av/wave-moq-edge"
+deny_paths:
+  - ".dev.vars"
+  - ".dev.vars.*"
+  - ".env"
+  - ".env.*"
+```
