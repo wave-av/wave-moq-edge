@@ -24,6 +24,10 @@ rules:
     tool: Bash
     cmd_pattern: "git push*"
     reason: remote mutation
+  - verdict: ask
+    tool: Bash
+    cmd_pattern: "doppler *"
+    reason: secret-manager operations are approved, never silent
   - verdict: deny
     path_glob: "**/*.pem"
     reason: key material stays unread
@@ -42,6 +46,9 @@ floors:
 crossings:
   - name: prod-merge
     verdict: ask
+  - name: secret-write
+    verdict: ask
+    reason: writing a secret to any vault is a named floor
   - name: credential-mint
     verdict: deny
     reason: operator-owned, never autonomous
