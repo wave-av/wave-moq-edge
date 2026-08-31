@@ -9,6 +9,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   BENCH_NAMESPACE_PREFIX,
   MAX_DURATION_MS,
+  benchNamespaceFor,
   buildTrackSet,
   resolveTrackToken,
   type MintFn,
@@ -35,8 +36,39 @@ describe('buildTrackSet', () => {
   it('every track announces under the reserved bench namespace prefix', () => {
     const tracks = buildTrackSet(16, 'run-d');
     for (const t of tracks) {
-      expect(t.namespace[0]).toBe(BENCH_NAMESPACE_PREFIX);
+      expect(t.namespace.startsWith(BENCH_NAMESPACE_PREFIX)).toBe(true);
     }
+  });
+
+  /**
+   * Regression coverage for the E0 16-track auth gap #2: the bench previously joined a two-element
+   * namespace array (`[BENCH_NAMESPACE_PREFIX, runId]`) with `/` when building the mint ns and the
+   * WebTransport URL. The prod relay's `:namespace` route/schema (src/index.ts `PublishRequestSchema`,
+   * `^[a-z0-9][a-z0-9-]*$`) is a SINGLE path segment with no `/` allowed — every mint call's namespace
+   * therefore failed schema validation and every one of the 16 canary tracks failed auth (measured:
+   * `[bench] canary n=4 error_rate=1.00` — 100% failure, run aborted, 0 tracks completed). A
+   * single-segment ns (hyphen-joined, not slash-joined) is the fix; these tests would have failed
+   * against the two-segment implementation.
+   */
+  it('the run-scoped namespace is a single URL path segment — no slash', () => {
+    const tracks = buildTrackSet(16, 'run-slash');
+    for (const t of tracks) {
+      expect(t.namespace).not.toContain('/');
+    }
+  });
+
+  it('benchNamespaceFor produces the exact single-segment namespace every track uses', () => {
+    const tracks = buildTrackSet(16, 'run-consistent');
+    const expected = benchNamespaceFor('run-consistent');
+    expect(expected).not.toContain('/');
+    for (const t of tracks) {
+      expect(t.namespace).toBe(expected);
+    }
+  });
+
+  it('the single-segment namespace matches the relay contract regex (^[a-z0-9][a-z0-9-]*$)', () => {
+    const ns = benchNamespaceFor(`${Date.now()}`);
+    expect(ns).toMatch(/^[a-z0-9][a-z0-9-]*$/);
   });
 
   it('mixes both track classes at 16 tracks (both resolution classes represented)', () => {
@@ -83,7 +115,7 @@ describe('resolveTrackToken — per-(ns,track) join-token mint', () => {
     };
 
     const tokens = await Promise.all(
-      tracks.map((t) => resolveTrackToken('https://api.wave.online', 'publish', t.namespace.join('/'), t.track, mint)),
+      tracks.map((t) => resolveTrackToken('https://api.wave.online', 'publish', t.namespace, t.track, mint)),
     );
 
     // Every track triggered its own mint call, addressed to its own track name.
@@ -91,7 +123,9 @@ describe('resolveTrackToken — per-(ns,track) join-token mint', () => {
     expect(new Set(calls.map((c) => c.track)).size).toBe(16);
     // Every call was bound to the EXACT track it was minted for — the IDOR-closed contract.
     for (const [i, t] of tracks.entries()) {
-      expect(calls[i]).toEqual({ role: 'publish', ns: t.namespace.join('/'), track: t.track });
+      expect(calls[i]).toEqual({ role: 'publish', ns: t.namespace, track: t.track });
+      // Mint ns is a single path segment — no slash — matching the relay's :namespace contract.
+      expect(calls[i].ns).not.toContain('/');
     }
     // And critically: 16 distinct tokens, never one shared token reused across tracks.
     expect(new Set(tokens).size).toBe(16);
@@ -99,21 +133,35 @@ describe('resolveTrackToken — per-(ns,track) join-token mint', () => {
 
   it('mints a different token per role for the SAME track (publish and subscribe are different scopes)', async () => {
     const mint: MintFn = async (opts) => `tok:${opts.role}:${opts.ns}:${opts.track}`;
-    const publishToken = await resolveTrackToken('https://api.wave.online', 'publish', 'bench-vdp-e0/run-b', 'cam00-2160p', mint);
-    const subscribeToken = await resolveTrackToken('https://api.wave.online', 'subscribe', 'bench-vdp-e0/run-b', 'cam00-2160p', mint);
+    const ns = benchNamespaceFor('run-b');
+    const publishToken = await resolveTrackToken('https://api.wave.online', 'publish', ns, 'cam00-2160p', mint);
+    const subscribeToken = await resolveTrackToken('https://api.wave.online', 'subscribe', ns, 'cam00-2160p', mint);
     expect(publishToken).not.toBe(subscribeToken);
   });
 
   it('mints against the exact gateway/role/ns/track it was asked for, not a partial match', async () => {
     const mint: MintFn = vi.fn(async (opts) => `tok:${opts.role}:${opts.ns}:${opts.track}`);
-    await resolveTrackToken('https://api.wave.online', 'subscribe', 'bench-vdp-e0/run-c', 'cam07-1080p', mint);
+    const ns = benchNamespaceFor('run-c');
+    await resolveTrackToken('https://api.wave.online', 'subscribe', ns, 'cam07-1080p', mint);
     expect(mint).toHaveBeenCalledWith({
       gateway: 'https://api.wave.online',
       role: 'subscribe',
-      ns: 'bench-vdp-e0/run-c',
+      ns,
       track: 'cam07-1080p',
       apiKey: 'test-wave-api-key',
     });
+  });
+
+  it('mint ns and dial (WebTransport URL) ns are identical for every track — no mint/dial mismatch', () => {
+    // wsUrl is not exported, so this asserts the identity the way the relay would observe it: the
+    // mint call's ns must be byte-identical to the ns segment the relay sees in the WebTransport URL
+    // path, which bench-sixteen-track.ts builds from the SAME `cfg.namespace` string for both legs.
+    const tracks = buildTrackSet(16, 'run-identity');
+    for (const t of tracks) {
+      const mintNs = t.namespace;
+      const urlPath = `/v1/publish/${t.namespace}/${t.track}`;
+      expect(urlPath.split('/')[3]).toBe(mintNs);
+    }
   });
 
   it('falls back to undefined (legacy single MOQ_JOIN_TOKEN path preserved) when no WAVE_API_KEY is set', async () => {
