@@ -1,0 +1,27 @@
+tools/moq-client/__tests__/bench-sixteen-track.test.ts
+  s_3c7a371f5618a4::t_ef14a27eee9af0 8,13-14
+  s_3c7a371f5618a4::t_2d20e4229ec9f6 58-126
+tools/moq-client/src/join-mint.ts
+  s_3c7a371f5618a4::t_ef297e3c1fa68b 1-51
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_ded16806adcc07 22
+  s_3c7a371f5618a4::t_1c1cb5892b8570 84-124,132-135,145-146
+tools/moq-client/cli.ts
+  s_3c7a371f5618a4::t_444eea522bffe2 143-156,158,162,170,177,182-183
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "280b4ea2dddf2b0c5401d9eeb878aa7eca8331be",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
