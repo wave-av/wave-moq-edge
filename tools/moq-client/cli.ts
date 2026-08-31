@@ -140,15 +140,26 @@ async function cmdProbeAlpn(args: Args): Promise<number> {
   return 0;
 }
 
-function withToken(url: string): string {
-  const token = process.env.MOQ_JOIN_TOKEN;
-  if (!token) return url;
+/**
+ * Attach a join token to a relay URL as `?join=<token>`.
+ *
+ * `token` is an explicit per-call override — the caller's own freshly-minted, exact-(ns,track)-bound
+ * token (see `tools/moq-client/src/join-mint.ts` and `bench-sixteen-track.ts`'s per-track mint).
+ * Only when no explicit token is passed does this fall back to the single global MOQ_JOIN_TOKEN env
+ * var, which is correct for the single-track `subscribe`/`publish` CLI commands but MUST NOT be
+ * reused across multiple distinct (ns,track) pairs in the same run — the relay's join verification
+ * (src/moq-join-verify.ts) rejects a token whose bound ns/track do not exactly match the URL (no
+ * prefix/wildcard match, IDOR closed, #58).
+ */
+function withToken(url: string, token?: string): string {
+  const t = token ?? process.env.MOQ_JOIN_TOKEN;
+  if (!t) return url;
   const u = new URL(url);
-  u.searchParams.set('join', token);
+  u.searchParams.set('join', t);
   return u.toString();
 }
 
-export async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish'): Promise<Transport> {
+export async function openTransport(url: string, kind: string, role: 'subscribe' | 'publish', token?: string): Promise<Transport> {
   // Session-first flow: the relay creates the publisher session on a plain REST request and returns
   // `websocket_url`; dialing the WS directly on a session-less track 404s (and the DOM-style WS error
   // event hides the status — "connection refused" is a lie). REST handshake first, then WS to the
@@ -156,20 +167,20 @@ export async function openTransport(url: string, kind: string, role: 'subscribe'
   try {
     // fetch() has no ws/wss scheme (undici: "unknown scheme") — the REST leg is plain HTTP(S); only
     // the *returned* websocket_url is dialed as a WebSocket. Normalize just for this request.
-    const restUrl = withToken(url).replace(/^ws(s?):\/\//, 'http$1://');
+    const restUrl = withToken(url, token).replace(/^ws(s?):\/\//, 'http$1://');
     const res = await fetch(restUrl, { method: role === 'publish' ? 'POST' : 'GET', redirect: 'manual', signal: AbortSignal.timeout(30000) });
     if (res.status >= 400) {
       const body = (await res.text()).slice(0, 120);
       throw new Error(`relay http ${res.status}: ${body}`);
     }
     const data = (await res.json()) as { websocket_url?: string };
-    if (data.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url));
+    if (data.websocket_url) return WebSocketTransport.connect(withToken(data.websocket_url, token));
   } catch (e) {
     if (e instanceof TypeError) throw new Error(`websocket connection failed before open (${(e as TypeError & { cause?: { code?: string } }).cause?.code ?? 'network'})`);
     throw e;
   }
-  if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url));
-  return WebSocketTransport.connect(withToken(url));
+  if (kind === 'webtransport') return WebTransportTransport.connect(withToken(url, token));
+  return WebSocketTransport.connect(withToken(url, token));
 }
 
 function printReport(r: SessionReport, json: boolean): void {

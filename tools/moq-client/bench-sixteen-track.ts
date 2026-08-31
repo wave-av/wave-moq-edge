@@ -19,6 +19,7 @@
  */
 import { runPublish, runSubscribe, percentiles, type SessionReport } from './src/session.ts';
 import { openTransport } from './cli.ts';
+import { mintJoinToken, type MintJoinTokenOpts } from './src/join-mint.ts';
 import type { Transport } from './src/transport.ts';
 
 /** Compiled hard ceiling on run duration. Not overridable by any flag past this. */
@@ -80,7 +81,47 @@ function wsUrl(relayBase: string, role: 'publish' | 'subscribe', ns: string[], t
   return u.toString();
 }
 
-async function runOneTrack(relayBase: string, cfg: TrackConfig, durationMs: number): Promise<TrackResult> {
+/** Injectable so tests can assert on mint calls without a real network round trip. */
+export type MintFn = (opts: MintJoinTokenOpts) => Promise<string>;
+
+/**
+ * Resolve the join token for ONE leg (publish or subscribe) of ONE track.
+ *
+ * THE FIX (this bench previously minted a single static MOQ_JOIN_TOKEN and applied it, unchanged, to
+ * all 16 distinct track URLs): the production relay (src/moq-join-verify.ts) binds every join token
+ * to an EXACT (ns, track) pair at mint time — no prefix/wildcard match, IDOR closed (#58) — so one
+ * token can never authorize more than one track. This is therefore called once per role per track,
+ * never once for the whole run; see `runOneTrack` below.
+ *
+ * TTL / re-mint: the gateway caps a minted token at MOQJ_MAX_TTL_SEC=120s (src/moq-join-token.ts).
+ * This bench's own hard ceiling is MAX_DURATION_MS=30s, so minting once per track at session open is
+ * always well inside the token's TTL and no re-mint-on-expiry path is implemented. A future variant
+ * of this bench that runs a single track past ~120s WOULD need to re-mint mid-session — out of scope
+ * here.
+ *
+ * Falls back to `undefined` (openTransport()/withToken() then applies the legacy single global
+ * MOQ_JOIN_TOKEN env var, if set, unchanged) when no WAVE_API_KEY is configured — e.g. against a
+ * relay with join enforcement off, or when the operator supplies one pre-minted token out of band.
+ */
+export async function resolveTrackToken(
+  gateway: string,
+  role: 'publish' | 'subscribe',
+  ns: string,
+  track: string,
+  mint: MintFn = mintJoinToken,
+  apiKey: string | undefined = process.env.WAVE_API_KEY,
+): Promise<string | undefined> {
+  if (!apiKey) return undefined;
+  return mint({ gateway, role, ns, track, apiKey });
+}
+
+async function runOneTrack(
+  relayBase: string,
+  cfg: TrackConfig,
+  durationMs: number,
+  gateway = process.env.WAVE_GATEWAY ?? 'https://api.wave.online',
+): Promise<TrackResult> {
+  const ns = cfg.namespace.join('/');
   const pubUrl = wsUrl(relayBase, 'publish', cfg.namespace, cfg.track);
   const subUrl = wsUrl(relayBase, 'subscribe', cfg.namespace, cfg.track);
   const count = Math.max(1, Math.floor(durationMs / cfg.intervalMs));
@@ -88,8 +129,10 @@ async function runOneTrack(relayBase: string, cfg: TrackConfig, durationMs: numb
   let subTransport: Transport | undefined;
   let pubTransport: Transport | undefined;
   try {
-    // Subscriber first, so it is attached before the publisher's first object goes out.
-    subTransport = await openTransport(subUrl, 'websocket', 'subscribe');
+    // Subscriber first, so it is attached before the publisher's first object goes out. Each leg
+    // mints its OWN token, bound to its OWN (role, ns, track) — see resolveTrackToken above.
+    const subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track);
+    subTransport = await openTransport(subUrl, 'websocket', 'subscribe', subToken);
     const subscriberPromise = runSubscribe({
       transport: subTransport,
       peer: subUrl,
@@ -99,7 +142,8 @@ async function runOneTrack(relayBase: string, cfg: TrackConfig, durationMs: numb
       maxObjects: count,
     });
 
-    pubTransport = await openTransport(pubUrl, 'websocket', 'publish');
+    const pubToken = await resolveTrackToken(gateway, 'publish', ns, cfg.track);
+    pubTransport = await openTransport(pubUrl, 'websocket', 'publish', pubToken);
     const publisherPromise = runPublish({
       transport: pubTransport,
       peer: pubUrl,
