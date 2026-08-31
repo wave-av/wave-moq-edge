@@ -259,6 +259,23 @@ export interface PublishOpts {
   intervalMs: number;
   payloadBytes?: number;
   path?: string;
+  /**
+   * Fired synchronously right after PUBLISH_NAMESPACE is sent, before any object is emitted. Lets a
+   * caller learn the track is announced (so a subscriber's publisher-not-found 404 can now resolve)
+   * WITHOUT having also started the object stream. Optional; publishers that don't coordinate a
+   * subscriber ignore it.
+   */
+  onAnnounced?: () => void;
+  /**
+   * Awaited AFTER announce and BEFORE the first object is sent. When provided, the object stream is
+   * held until this resolves — so a coordinating caller can attach the subscriber first and every
+   * emitted object is published into an already-attached subscriber. This is what makes the measured
+   * end-to-end latency steady-state rather than an on-attach backlog burst (bench-sixteen-track:
+   * publisher used to send from t=0 while the subscriber attached ~seconds later, and the relay then
+   * delivered those early objects late, inflating p50/p95 ~50x over the true per-hop floor). Optional;
+   * omitted → the stream starts immediately after announce, unchanged.
+   */
+  startSignal?: Promise<void>;
 }
 
 /** SETUP → PUBLISH_NAMESPACE → emit `count` timestamped objects on one group, in order. */
@@ -276,6 +293,12 @@ export async function runPublish(o: PublishOpts): Promise<SessionReport> {
 
   tracked(WS_KIND.CONTROL, encodeSetup({ role: MOQ_ROLE.PUBLISHER, maxSubscriptions: 0n, path: o.path }), t);
   tracked(WS_KIND.CONTROL, encodePublishNamespace({ requestId: 1n, trackNamespace: o.namespace }), t);
+
+  // Announced now, but not one object sent yet. A coordinating caller uses onAnnounced to release the
+  // subscriber's attach, then resolves startSignal once attached — so the object stream below only
+  // begins against an already-attached subscriber (steady-state latency, no on-attach backlog).
+  o.onAnnounced?.();
+  if (o.startSignal) await o.startSignal;
 
   let sent = 0;
   let bytes = 0;

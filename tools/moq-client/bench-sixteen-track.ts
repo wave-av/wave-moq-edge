@@ -179,6 +179,18 @@ export async function runOneTrack(
     } catch (e) {
       throw new TrackStageError(e, 'publisher', 'transport-connect', ns, cfg.track);
     }
+    // Coordination for STEADY-STATE latency: gate the publisher's object stream on the subscriber
+    // being attached. `announced` resolves once PUBLISH_NAMESPACE is sent (so the subscriber's
+    // 404-retry can succeed); `subscriberReady` is resolved once the subscriber is attached, releasing
+    // the publisher's send loop. Without this the publisher sent from t=0 while the subscriber attached
+    // ~seconds later, and the relay delivered those early objects late — inflating p50/p95 ~50x over
+    // the true per-hop floor. `subscriberReady` is resolved in a finally so a subscriber failure can
+    // never leave the publisher parked forever on its startSignal.
+    let resolveAnnounced!: () => void;
+    const announced = new Promise<void>((r) => { resolveAnnounced = r; });
+    let resolveSubscriberReady!: () => void;
+    const subscriberReady = new Promise<void>((r) => { resolveSubscriberReady = r; });
+
     const publisherPromise = runPublish({
       transport: pubTransport,
       peer: pubUrl,
@@ -187,25 +199,38 @@ export async function runOneTrack(
       count,
       intervalMs: cfg.intervalMs,
       payloadBytes: cfg.payloadBytes,
+      onAnnounced: resolveAnnounced,
+      startSignal: subscriberReady,
     }).catch((e) => {
       throw new TrackStageError(e, 'publisher', 'publish', ns, cfg.track);
     });
 
-    // Subscriber second — its own open() retries a bounded number of times on the relay's
-    // publisher-not-yet-announced 404 (announce propagation is not instantaneous even though the
-    // publisher's transport is already open above), instead of racing it once and failing the track.
-    let subToken: string | undefined;
     try {
-      subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track, mint);
-    } catch (e) {
-      throw new TrackStageError(e, 'subscriber', 'mint', ns, cfg.track);
-    }
-    try {
-      subTransport = sleep
-        ? await openSubscriberWithRetry(open, subUrl, subToken, undefined, sleep)
-        : await openSubscriberWithRetry(open, subUrl, subToken);
-    } catch (e) {
-      throw new TrackStageError(e, 'subscriber', 'transport-connect', ns, cfg.track);
+      // Wait until the publisher has announced before attaching the subscriber. Race against
+      // publisherPromise so an announce-time publisher failure surfaces here rather than hanging.
+      await Promise.race([announced, publisherPromise]);
+
+      // Subscriber second — its own open() retries a bounded number of times on the relay's
+      // publisher-not-yet-announced 404 (announce propagation is not instantaneous even though the
+      // publisher's transport is already open above), instead of racing it once and failing the track.
+      let subToken: string | undefined;
+      try {
+        subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track, mint);
+      } catch (e) {
+        throw new TrackStageError(e, 'subscriber', 'mint', ns, cfg.track);
+      }
+      try {
+        subTransport = sleep
+          ? await openSubscriberWithRetry(open, subUrl, subToken, undefined, sleep)
+          : await openSubscriberWithRetry(open, subUrl, subToken);
+      } catch (e) {
+        throw new TrackStageError(e, 'subscriber', 'transport-connect', ns, cfg.track);
+      }
+    } finally {
+      // Release the publisher's object stream no matter what: on success the subscriber is attached
+      // (steady-state), on failure this lets the parked publisher observe the closed transport and
+      // return cleanly instead of dangling on an unresolved startSignal.
+      resolveSubscriberReady();
     }
     const subscriberPromise = runSubscribe({
       transport: subTransport,
