@@ -36,8 +36,21 @@ export const ERROR_RATE_ABORT_THRESHOLD = 0.25;
 
 export type TrackClass = '1080p-class' | '2160p-class';
 
+/**
+ * The relay's `:namespace` path/schema contract (src/index.ts `PublishRequestSchema`,
+ * `^[a-z0-9][a-z0-9-]*$`) is a SINGLE lowercase-alphanumeric-dash segment — no `/`. This bench must
+ * conform to that prod contract, not the other way around. Run identity is folded into the prefix
+ * with a HYPHEN, never a path separator, so the mint call's `:namespace` segment and the WebTransport
+ * URL's `:namespace` segment are always the same single token.
+ */
+export function benchNamespaceFor(runId: string): string {
+  return `${BENCH_NAMESPACE_PREFIX}-${runId}`;
+}
+
 export interface TrackConfig {
-  namespace: string[];
+  /** Single-segment, run-scoped namespace — see `benchNamespaceFor`. Identical string used for the
+   *  mint call, the WebTransport URL, and the MoQT wire-protocol namespace tuple (wrapped as [ns]). */
+  namespace: string;
   track: string;
   trackClass: TrackClass;
   intervalMs: number;
@@ -52,7 +65,7 @@ export interface TrackConfig {
  */
 export function buildTrackSet(n: number, runId: string): TrackConfig[] {
   if (n < 1) throw new Error(`track count must be >= 1, got ${n}`);
-  const namespace = [BENCH_NAMESPACE_PREFIX, runId];
+  const namespace = benchNamespaceFor(runId);
   const highResCount = Math.max(1, Math.round(n / 4));
   const tracks: TrackConfig[] = [];
   for (let i = 0; i < n; i++) {
@@ -74,10 +87,10 @@ export interface TrackResult {
   subscriber: SessionReport;
 }
 
-function wsUrl(relayBase: string, role: 'publish' | 'subscribe', ns: string[], track: string): string {
+function wsUrl(relayBase: string, role: 'publish' | 'subscribe', ns: string, track: string): string {
   const u = new URL(relayBase);
   u.protocol = u.protocol === 'https:' ? 'wss:' : u.protocol;
-  u.pathname = `/v1/${role}/${ns.join('/')}/${track}`;
+  u.pathname = `/v1/${role}/${ns}/${track}`;
   return u.toString();
 }
 
@@ -121,9 +134,11 @@ async function runOneTrack(
   durationMs: number,
   gateway = process.env.WAVE_GATEWAY ?? 'https://api.wave.online',
 ): Promise<TrackResult> {
-  const ns = cfg.namespace.join('/');
-  const pubUrl = wsUrl(relayBase, 'publish', cfg.namespace, cfg.track);
-  const subUrl = wsUrl(relayBase, 'subscribe', cfg.namespace, cfg.track);
+  // Single-segment ns — identical string used for the mint call and the dialed URL below, so the
+  // relay's exact-binding check (minted ns == dialed ns) always sees a match.
+  const ns = cfg.namespace;
+  const pubUrl = wsUrl(relayBase, 'publish', ns, cfg.track);
+  const subUrl = wsUrl(relayBase, 'subscribe', ns, cfg.track);
   const count = Math.max(1, Math.floor(durationMs / cfg.intervalMs));
 
   let subTransport: Transport | undefined;
@@ -136,7 +151,7 @@ async function runOneTrack(
     const subscriberPromise = runSubscribe({
       transport: subTransport,
       peer: subUrl,
-      namespace: cfg.namespace,
+      namespace: [ns],
       track: cfg.track,
       durationMs: durationMs + 3_000, // grace window past the publisher's own stop
       maxObjects: count,
@@ -147,7 +162,7 @@ async function runOneTrack(
     const publisherPromise = runPublish({
       transport: pubTransport,
       peer: pubUrl,
-      namespace: cfg.namespace,
+      namespace: [ns],
       track: cfg.track,
       count,
       intervalMs: cfg.intervalMs,
@@ -217,7 +232,7 @@ async function main(): Promise<number> {
   const args = parseArgs(process.argv.slice(2));
   const runId = `${Date.now()}`;
   const trackSet = buildTrackSet(args.tracks, runId);
-  const benchNamespace = `${BENCH_NAMESPACE_PREFIX}/${runId}`;
+  const benchNamespace = benchNamespaceFor(runId);
 
   const startedAt = new Date().toISOString();
   process.stderr.write(
