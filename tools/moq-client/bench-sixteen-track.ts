@@ -27,6 +27,7 @@ import {
   logTrackFailure,
   type CanaryErrorDetail,
 } from './src/track-failure.ts';
+import { openSubscriberWithRetry, type SleepFn } from './src/subscriber-retry.ts';
 
 /** Compiled hard ceiling on run duration. Not overridable by any flag past this. */
 export const MAX_DURATION_MS = 30_000;
@@ -152,6 +153,7 @@ export async function runOneTrack(
   gateway = process.env.WAVE_GATEWAY ?? 'https://api.wave.online',
   mint: MintFn = mintJoinToken,
   open: OpenTransportFn = openTransport,
+  sleep: SleepFn | undefined = undefined,
 ): Promise<TrackResult> {
   // Single-segment ns — identical string used for the mint call and the dialed URL below, so the
   // relay's exact-binding check (minted ns == dialed ns) always sees a match.
@@ -163,30 +165,9 @@ export async function runOneTrack(
   let subTransport: Transport | undefined;
   let pubTransport: Transport | undefined;
   try {
-    // Subscriber first, so it is attached before the publisher's first object goes out. Each leg
-    // mints its OWN token, bound to its OWN (role, ns, track) — see resolveTrackToken above.
-    let subToken: string | undefined;
-    try {
-      subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track, mint);
-    } catch (e) {
-      throw new TrackStageError(e, 'subscriber', 'mint', ns, cfg.track);
-    }
-    try {
-      subTransport = await open(subUrl, 'websocket', 'subscribe', subToken);
-    } catch (e) {
-      throw new TrackStageError(e, 'subscriber', 'transport-connect', ns, cfg.track);
-    }
-    const subscriberPromise = runSubscribe({
-      transport: subTransport,
-      peer: subUrl,
-      namespace: [ns],
-      track: cfg.track,
-      durationMs: durationMs + 3_000, // grace window past the publisher's own stop
-      maxObjects: count,
-    }).catch((e) => {
-      throw new TrackStageError(e, 'subscriber', 'subscribe', ns, cfg.track);
-    });
-
+    // THE FIX: publisher first, subscriber second. The relay requires an active publisher for a
+    // subscribe to succeed — see ./src/subscriber-retry.ts for the full rationale and the measured
+    // failure this fixes. Each leg still mints its OWN token, bound to its OWN (role, ns, track).
     let pubToken: string | undefined;
     try {
       pubToken = await resolveTrackToken(gateway, 'publish', ns, cfg.track, mint);
@@ -208,6 +189,33 @@ export async function runOneTrack(
       payloadBytes: cfg.payloadBytes,
     }).catch((e) => {
       throw new TrackStageError(e, 'publisher', 'publish', ns, cfg.track);
+    });
+
+    // Subscriber second — its own open() retries a bounded number of times on the relay's
+    // publisher-not-yet-announced 404 (announce propagation is not instantaneous even though the
+    // publisher's transport is already open above), instead of racing it once and failing the track.
+    let subToken: string | undefined;
+    try {
+      subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track, mint);
+    } catch (e) {
+      throw new TrackStageError(e, 'subscriber', 'mint', ns, cfg.track);
+    }
+    try {
+      subTransport = sleep
+        ? await openSubscriberWithRetry(open, subUrl, subToken, undefined, sleep)
+        : await openSubscriberWithRetry(open, subUrl, subToken);
+    } catch (e) {
+      throw new TrackStageError(e, 'subscriber', 'transport-connect', ns, cfg.track);
+    }
+    const subscriberPromise = runSubscribe({
+      transport: subTransport,
+      peer: subUrl,
+      namespace: [ns],
+      track: cfg.track,
+      durationMs: durationMs + 3_000, // grace window past the publisher's own stop
+      maxObjects: count,
+    }).catch((e) => {
+      throw new TrackStageError(e, 'subscriber', 'subscribe', ns, cfg.track);
     });
 
     const [publisher, subscriber] = await Promise.all([publisherPromise, subscriberPromise]);
