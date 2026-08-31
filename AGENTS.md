@@ -53,5 +53,11 @@ Top-level directories: __tests__, docs, examples, scripts, src, tools.
 ```yaml agents-router
 version: "0.1"
 budget_lines: 200
-index: []
+index:
+  - family: permissions-contract
+    path: PERMISSIONS.md
+  - family: secrets-contract
+    path: SECRETS.md
+  - family: test-contract
+    path: TESTING.md
 ```
