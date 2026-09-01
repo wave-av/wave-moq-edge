@@ -490,7 +490,7 @@ export function untagFrame(bytes: Uint8Array): { kind: number; body: Uint8Array 
 // decodeObject, SubgroupHeader, subgroupTypeByte, isSubgroupType, encodeSubgroupStream,
 // decodeSubgroupStream, DATAGRAM_FLAG, claimsSubgroupType, assertValid*TypeByte, etc.) working
 // unchanged. See that file's header for the E2 (#1774) strict-bitfield + datagram-type-byte details.
-export * from './moq-wire-object';
+export * from './moq-wire-object.ts';
 
 // ── FETCH + Message Parameters (§10.13, §5.1.2, §5.1.3) ─────────────────────────────────────────────
 // Split into `moq-wire-fetch.ts` (#212 E3) for the same file-size-gate reason as moq-wire-object.ts
@@ -499,4 +499,4 @@ export * from './moq-wire-object';
 // encodeLocationFilter, decodeLocationFilter, FillParameters, encodeFillParameters,
 // decodeFillParameters) working unchanged. See that file's header for the E3 (#1673/#1809)
 // fill-fetch-replaces-Joining-FETCH details.
-export * from './moq-wire-fetch';
+export * from './moq-wire-fetch.ts';
