@@ -54,8 +54,8 @@
  * relative-to-live-edge range.
  */
 
-import { Reader, Writer, frameControl, MOQ_MSG } from './moq-wire';
-import { encodeLocationFilterOnlyParams, decodeLocationFilterOnlyParams, type LocationFilter } from './moq-wire-fetch';
+import { Reader, Writer, frameControl, MOQ_MSG } from './moq-wire.ts';
+import { encodeLocationFilterOnlyParams, decodeLocationFilterOnlyParams, type LocationFilter } from './moq-wire-fetch.ts';
 
 export interface SubscribeMsg {
   requestId: bigint;
