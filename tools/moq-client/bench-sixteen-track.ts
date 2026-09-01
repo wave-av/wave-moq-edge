@@ -70,8 +70,9 @@ export interface TrackConfig {
  * higher-cadence/larger-payload "2160p-class"; the rest are "1080p-class" — proportions chosen so
  * a 16-track run has both classes represented without either being a single outlier.
  */
-export function buildTrackSet(n: number, runId: string): TrackConfig[] {
+export function buildTrackSet(n: number, runId: string, intervalMs = 100): TrackConfig[] {
   if (n < 1) throw new Error(`track count must be >= 1, got ${n}`);
+  if (intervalMs < 1) throw new Error(`intervalMs must be >= 1, got ${intervalMs}`);
   const namespace = benchNamespaceFor(runId);
   const highResCount = Math.max(1, Math.round(n / 4));
   const tracks: TrackConfig[] = [];
@@ -81,7 +82,10 @@ export function buildTrackSet(n: number, runId: string): TrackConfig[] {
       namespace,
       track: `cam${String(i).padStart(2, '0')}-${isHigh ? '2160p' : '1080p'}`,
       trackClass: isHigh ? '2160p-class' : '1080p-class',
-      intervalMs: 100,
+      // Publish cadence. Default 100ms (10 obj/s). `--interval` overrides it so a run can probe whether
+      // the relay's delivery pacing is a fixed throughput ceiling (slower publish → subscriber keeps up,
+      // latency flat) or rate-coupled (still ramps) — the discriminator for the ~126ms/object artifact.
+      intervalMs,
       payloadBytes: isHigh ? 8_000 : 2_000,
     });
   }
@@ -280,6 +284,7 @@ function errorRate(results: PromiseSettledResult<TrackResult>[]): number {
 interface Args {
   tracks: number;
   durationMs: number;
+  intervalMs: number;
   relay: string;
   json: boolean;
 }
@@ -297,6 +302,7 @@ function parseArgs(argv: string[]): Args {
   return {
     tracks,
     durationMs: Math.min(requestedDuration, MAX_DURATION_MS),
+    intervalMs: Math.max(1, Number(flags.get('interval') ?? 100)),
     relay: flags.get('relay') ?? 'https://moq.wave.online',
     json: flags.has('json'),
   };
@@ -305,7 +311,7 @@ function parseArgs(argv: string[]): Args {
 async function main(): Promise<number> {
   const args = parseArgs(process.argv.slice(2));
   const runId = `${Date.now()}`;
-  const trackSet = buildTrackSet(args.tracks, runId);
+  const trackSet = buildTrackSet(args.tracks, runId, args.intervalMs);
   const benchNamespace = benchNamespaceFor(runId);
 
   const startedAt = new Date().toISOString();
