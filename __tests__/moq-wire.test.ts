@@ -9,6 +9,7 @@ import {
   MOQ_OBJECT_STATUS,
   MOQ_DRAFT_VERSION,
   MOQ_ALPN,
+  MOQ_SESSION_ERROR,
   encodeSetup,
   decodeSetup,
   encodeSubscribe,
@@ -43,10 +44,10 @@ import {
   isSubgroupType,
 } from '../src/moq-wire';
 
-describe('draft-18 constants', () => {
-  it('pins draft 18 + ALPN + the relay control codes', () => {
-    expect(MOQ_DRAFT_VERSION).toBe(18);
-    expect(MOQ_ALPN).toBe('moqt-18');
+describe('draft-20 constants (#212 E0/E1 uplevel from draft-18)', () => {
+  it('pins draft 20 + ALPN + the relay control codes', () => {
+    expect(MOQ_DRAFT_VERSION).toBe(20);
+    expect(MOQ_ALPN).toBe('moqt-20');
     expect(MOQ_MSG.SETUP).toBe(0x2f00);
     expect(MOQ_MSG.SUBSCRIBE).toBe(0x3);
     expect(MOQ_MSG.SUBSCRIBE_OK).toBe(0x4);
@@ -55,12 +56,18 @@ describe('draft-18 constants', () => {
     expect(MOQ_MSG.REQUEST_OK).toBe(0x7);
     expect(MOQ_MSG.GOAWAY).toBe(0x10);
   });
-  it('pins the full draft-18 message set codes (verified against the tagged source)', () => {
+  it('pins the full draft-18-base message set codes (verified against the tagged source)', () => {
     expect(MOQ_MSG.PUBLISH).toBe(0x1d);
     expect(MOQ_MSG.FETCH).toBe(0x16);
     expect(MOQ_MSG.FETCH_OK).toBe(0x18);
     expect(MOQ_MSG.TRACK_STATUS).toBe(0xd);
     expect(MOQ_MSG.SUBSCRIBE_NAMESPACE).toBe(0x50);
+  });
+  it('PUBLISH_SKIPPED resolves (draft-19 #1779 rename of PUBLISH_BLOCKED)', () => {
+    expect(MOQ_MSG.PUBLISH_SKIPPED).toBe(0xf);
+  });
+  it('TOO_MANY_REQUEST_UPDATES resolves in the Session Termination table (draft-19 #1613)', () => {
+    expect(MOQ_SESSION_ERROR.TOO_MANY_REQUEST_UPDATES).toBe(0x1b);
   });
 });
 
@@ -151,7 +158,20 @@ describe('control messages round-trip', () => {
       expect(m.role).toBe(MOQ_ROLE.PUBSUB);
       expect(m.maxSubscriptions).toBe(1000n);
       expect(m.path).toBe(path);
+      expect(m.maxRequestUpdates).toBeUndefined();
     }
+  });
+  it('SETUP with MAX_REQUEST_UPDATES (option 0x08, draft-19 #1613)', () => {
+    const enc = encodeSetup({ role: MOQ_ROLE.SUBSCRIBER, maxSubscriptions: 10n, maxRequestUpdates: 4n });
+    const m = decodeSetup(parseControl(enc).payload);
+    expect(m.maxRequestUpdates).toBe(4n);
+    expect(m.path).toBeUndefined();
+  });
+  it('SETUP with PATH and MAX_REQUEST_UPDATES together', () => {
+    const enc = encodeSetup({ role: MOQ_ROLE.PUBLISHER, maxSubscriptions: 0n, path: '/edge', maxRequestUpdates: 0n });
+    const m = decodeSetup(parseControl(enc).payload);
+    expect(m.path).toBe('/edge');
+    expect(m.maxRequestUpdates).toBe(0n);
   });
   it('SUBSCRIBE', () => {
     const enc = encodeSubscribe({ requestId: 42n, trackNamespace: ['wave', 'cam-1'], trackName: 'video' });
@@ -253,11 +273,13 @@ describe('full draft-18 message set round-trip', () => {
     expect(parseControl(enc).type).toBe(MOQ_MSG.FETCH_OK);
     expect(decodeFetchOk(parseControl(enc).payload)).toEqual({ endOfTrack: true, end: { group: 9n, object: 4n } });
   });
-  it('GOAWAY with + without a control-stream request id', () => {
+  it('GOAWAY round-trips WITHOUT a Request ID (draft-19 #1623 dropped the field)', () => {
     const a = decodeGoaway(parseControl(encodeGoaway({ newSessionUri: '', timeoutMs: 5000n })).payload);
-    expect(a).toEqual({ newSessionUri: '', timeoutMs: 5000n, requestId: undefined });
-    const b = decodeGoaway(parseControl(encodeGoaway({ newSessionUri: 'wss://b/relay', timeoutMs: 0n, requestId: 12n })).payload);
-    expect(b).toEqual({ newSessionUri: 'wss://b/relay', timeoutMs: 0n, requestId: 12n });
+    expect(a).toEqual({ newSessionUri: '', timeoutMs: 5000n });
+    const b = decodeGoaway(parseControl(encodeGoaway({ newSessionUri: 'wss://b/relay', timeoutMs: 0n })).payload);
+    expect(b).toEqual({ newSessionUri: 'wss://b/relay', timeoutMs: 0n });
+    // No trailing bytes are emitted — the body is exactly NewSessionUri(strLP) + Timeout(i).
+    expect(Object.keys(a)).not.toContain('requestId');
   });
 });
 

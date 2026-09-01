@@ -20,10 +20,11 @@ export interface RelayTarget {
  *
  * `moqt-NN` is the draft-NN ALPN token from MoQ Transport §3.1 (ALPN-carried version negotiation).
  * `moq-00` is the pre-`moqt-` token still served by some long-lived deployments.
- * WAVE's own relay advertises 18..7 (`MOQ_DRAFT_SUPPORTED` in wrangler.toml), so a multi-version
- * offer is the normal case, not an exotic one.
+ * WAVE's own relay advertises 20..7 (`MOQ_DRAFT_SUPPORTED` in wrangler.toml, #212 E0), so a
+ * multi-version offer is the normal case, not an exotic one.
  */
 export const MOQ_ALPN_CANDIDATES = [
+  'moqt-20', // draft-20, published 2026-08-31 — this relay's preferred draft as of #212 E0
   'moqt-19', // draft-19, published 2026-07-06
   'moqt-18',
   'moqt-17',

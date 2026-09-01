@@ -2,7 +2,7 @@
 
 > **Canonical repository.** This repo is the source of truth for WAVE MoQ edge — it is **no longer an auto-mirror** of an internal WAVE monorepo's `workers/moq-edge`. Open PRs **here**. (The upstream `workers/moq-edge` directory is being retired per the WAVE Protocol Plane spec.)
 
-**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) at **draft-18** — the current IETF working draft (2026-05-12), the frontier of the spec. Publish a track. Subscribe to it. Globally distributed in under 100ms.
+**Sub-second live media at the edge.** A Cloudflare Worker that implements [IETF draft-ietf-moq-transport](https://datatracker.ietf.org/doc/draft-ietf-moq-transport/) at **draft-20** — the current IETF working draft (2026-08-31), the frontier of the spec. Publish a track. Subscribe to it. Globally distributed in under 100ms.
 
 ```
 POST   /v1/publish/:namespace/:track       Become a publisher
@@ -62,14 +62,16 @@ See [`examples/quick-start.md`](./examples/quick-start.md) for a full walkthroug
 
 ## Spec compliance
 
-moq-edge tracks the IETF draft at the frontier. The wire codec (`src/moq-wire.ts`) implements **draft-18** — the current IETF working draft (2026-05-12) — including its spec-distinctive changes: ALPN-only version negotiation (`moqt-18`), leading-1-bits varints (§1.4.1, *not* RFC 9000's 2-bit prefix), and the `ANNOUNCE`→`PUBLISH_NAMESPACE` rename.
+moq-edge tracks the IETF draft at the frontier. The wire codec (`src/moq-wire.ts`) implements **draft-20** — the current IETF working draft (2026-08-31) — including its spec-distinctive changes: ALPN-only version negotiation (`moqt-20`), leading-1-bits varints (§1.4.1, *not* RFC 9000's 2-bit prefix), and the `ANNOUNCE`→`PUBLISH_NAMESPACE` rename. #212 tracks the draft-18→20 uplevel epic; E0/E1 (this bump, plus the safe -19 renames — GOAWAY drops Request ID, `PUBLISH_BLOCKED`→`PUBLISH_SKIPPED`, `MAX_REQUEST_UPDATES`) ship no wire-body change. E2+ (strict Type-Flags bitfields, fill-fetch, Range Filters, `REQUEST_UPDATE`) land as separate later phases.
 
 | Release | Preferred draft | Advertised range | Status |
 |---|---|---|---|
-| 0.x | draft-18 | draft-07 .. draft-18 | Current |
-| (planned) 1.x | draft-19+ | drops drafts < 12 | Future |
+| 0.x | draft-20 | draft-07 .. draft-20 | Current |
+| (planned) 1.x | draft-21+ | drops drafts < 12 | Future |
 
-**What the advertised range is — and isn't.** The codec is draft-18-native. The draft-07 floor is the *advertised* negotiation minimum, not a guarantee of cross-version wire interop: draft-18's leading-1-bits varint is not byte-compatible with the RFC-9000 varints used by draft ≤17, so a real connection below draft-18 also needs a varint bridge (plus `UNSUBSCRIBE`, currently unimplemented). Treat anything below draft-18 as a roadmap target, not proven interop.
+**What the advertised range is — and isn't.** The codec is draft-20-native (base draft-18 message shapes, uplevel per #212). The draft-07 floor is the *advertised* negotiation minimum, not a guarantee of cross-version wire interop: draft-18's leading-1-bits varint is not byte-compatible with the RFC-9000 varints used by draft ≤17, so a real connection below draft-18 also needs a varint bridge (plus `UNSUBSCRIBE`, currently unimplemented). Treat anything below draft-18 as a roadmap target, not proven interop.
+
+**Negotiation-safety note (#212 E0).** This relay speaks MoQ over a single CF Workers WebSocket (no WebTransport-server API), so there is no TLS ALPN on the wire between our own relay and moq-client — `MOQ_ALPN` is a single hardcoded string constant, not an accept-set the relay checks. Because of that, E0's version bump is NOT a live wire-negotiated flip: relay and moq-client (both in this repo) ship together in one Worker deploy, which flips both atomically — there is no mid-deploy window where they could disagree. `MOQ_DRAFT_SUPPORTED` in `wrangler.toml` is the informational advertised range and stays additive (`20,19,18,...`) so a real ALPN-based peer (native QUIC/WebTransport, once that binding lands) still sees `moqt-18` offered alongside `moqt-20`.
 
 **Interop target.** Cloudflare runs public MoQ relays at `draft-07.cloudflare.mediaoverquic.com` and `draft-14.cloudflare.mediaoverquic.com` — their deployment currently tracks **draft-07**, eleven revisions behind the spec. Those endpoints are the named targets for cross-relay interop testing once the native WebTransport/QUIC binding lands (today's transport is WebSocket — see [CHANGELOG](./CHANGELOG.md)).
 
@@ -111,8 +113,8 @@ name = "moq-edge"
 main = "index.ts"
 
 [vars]
-MOQ_DRAFT_PREFERRED = "draft-18"
-MOQ_DRAFT_SUPPORTED = "draft-18,draft-17,draft-16,draft-15,draft-14,draft-13,draft-12,draft-11,draft-10,draft-09,draft-08,draft-07"
+MOQ_DRAFT_PREFERRED = "draft-20"
+MOQ_DRAFT_SUPPORTED = "draft-20,draft-19,draft-18,draft-17,draft-16,draft-15,draft-14,draft-13,draft-12,draft-11,draft-10,draft-09,draft-08,draft-07"
 MAX_SUBSCRIBERS_PER_TRACK = "1000"
 MAX_OBJECT_SIZE_BYTES = "1048576"  # 1MB
 
