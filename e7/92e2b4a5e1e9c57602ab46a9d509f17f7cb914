@@ -1,0 +1,40 @@
+__tests__/moq-relay.test.ts
+  s_3c7a371f5618a4::t_68def5c6fe6969 390-486
+src/moq-relay.ts
+  s_3c7a371f5618a4::t_af63b4d985fd0d 496
+  s_3c7a371f5618a4::t_1ff8b932ebc464 456-470
+  s_3c7a371f5618a4::t_6ed7c37edbd4e0 68-78,81-84
+  s_3c7a371f5618a4::t_1edef947f0fbaa 560-593
+  s_3c7a371f5618a4::t_44f1c7ad89e6f4 202-206,208-217,220-223
+  s_3c7a371f5618a4::t_72d9d764268baa 306-309,311,314
+  s_3c7a371f5618a4::t_b8676403f7a851 432
+  s_3c7a371f5618a4::t_63a8010aa6fab2 42
+__tests__/moq-wire.test.ts
+  s_3c7a371f5618a4::t_c23c0140d47b96 205-210
+  s_3c7a371f5618a4::t_8c6eeeeeb4e5ec 182-204
+src/moq-wire-fetch.ts
+  s_3c7a371f5618a4::t_f7316dfee57838 146
+  s_3c7a371f5618a4::t_45c6c7e2bea893 188
+  s_3c7a371f5618a4::t_b2999e4c931e3e 100-111,115-120
+src/moq-wire.ts
+  s_3c7a371f5618a4::t_69e5cc26246fcb 328-329
+  s_3c7a371f5618a4::t_a929fa66844ba4 504-510
+src/moq-wire-subscribe.ts
+  s_3c7a371f5618a4::t_0b7859b11b169e 1-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e792e2b4a5e1e9c57602ab46a9d509f17f7cb914",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
