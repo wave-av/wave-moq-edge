@@ -508,3 +508,13 @@ export * from './moq-wire-publish';
 // existing `from './moq-wire'` import (SubscribeMsg, encodeSubscribe, decodeSubscribe) working
 // unchanged. See that file's header for the E5 range-filter (per-viewport) details.
 export * from './moq-wire-subscribe';
+
+// ── REQUEST_UPDATE (§message-request-update) ─────────────────────────────────────────────────────
+// New module from day one (#212 E6, same reasoning moq-wire-publish.ts used for PUBLISH_STATE_NOTIFY
+// — landing REQUEST_UPDATE's codec here avoids growing this already-over-advisory file further). The
+// REQUEST_UPDATE message TYPE CONSTANT itself has lived in MOQ_MSG since E1 (codec surface only, see
+// SetupMsg's maxRequestUpdates doc above) — this phase adds the encode/decode pair + relay behavior.
+// Re-export keeps a single `from './moq-wire'` import surface: RequestUpdateMsg, encodeRequestUpdate,
+// decodeRequestUpdate, REQUEST_UPDATE_PARAM. See that file's header for the E6 wire-shape + Message
+// Parameter details and the Request-ID-correlation discrepancy note.
+export * from './moq-wire-request-update';
