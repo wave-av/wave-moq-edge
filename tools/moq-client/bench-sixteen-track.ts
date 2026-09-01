@@ -21,6 +21,12 @@ import { runPublish, runSubscribe, percentiles, type SessionReport } from './src
 import { openTransport } from './cli.ts';
 import { mintJoinToken, type MintJoinTokenOpts } from './src/join-mint.ts';
 import type { Transport } from './src/transport.ts';
+import {
+  TrackStageError,
+  collectCanaryErrors,
+  logTrackFailure,
+  type CanaryErrorDetail,
+} from './src/track-failure.ts';
 
 /** Compiled hard ceiling on run duration. Not overridable by any flag past this. */
 export const MAX_DURATION_MS = 30_000;
@@ -97,6 +103,9 @@ function wsUrl(relayBase: string, role: 'publish' | 'subscribe', ns: string, tra
 /** Injectable so tests can assert on mint calls without a real network round trip. */
 export type MintFn = (opts: MintJoinTokenOpts) => Promise<string>;
 
+/** Injectable so tests can force a transport-connect failure without a real network round trip. */
+export type OpenTransportFn = typeof openTransport;
+
 /**
  * Resolve the join token for ONE leg (publish or subscribe) of ONE track.
  *
@@ -128,11 +137,21 @@ export async function resolveTrackToken(
   return mint({ gateway, role, ns, track, apiKey });
 }
 
-async function runOneTrack(
+/**
+ * Runs one track's publish+subscribe pair. Every awaited setup step (mint, transport-connect) is
+ * individually wrapped so a failure is rethrown as a `TrackStageError` carrying WHICH leg (publisher
+ * or subscriber), WHICH stage (mint vs transport-connect), and the (ns, track) it failed for — instead
+ * of a bare, indistinguishable rejection that `Promise.allSettled` in `main()` can only count, not
+ * explain. `mint`/`open` are injectable so tests can force a failure at a specific stage without a
+ * real network round trip.
+ */
+export async function runOneTrack(
   relayBase: string,
   cfg: TrackConfig,
   durationMs: number,
   gateway = process.env.WAVE_GATEWAY ?? 'https://api.wave.online',
+  mint: MintFn = mintJoinToken,
+  open: OpenTransportFn = openTransport,
 ): Promise<TrackResult> {
   // Single-segment ns — identical string used for the mint call and the dialed URL below, so the
   // relay's exact-binding check (minted ns == dialed ns) always sees a match.
@@ -146,8 +165,17 @@ async function runOneTrack(
   try {
     // Subscriber first, so it is attached before the publisher's first object goes out. Each leg
     // mints its OWN token, bound to its OWN (role, ns, track) — see resolveTrackToken above.
-    const subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track);
-    subTransport = await openTransport(subUrl, 'websocket', 'subscribe', subToken);
+    let subToken: string | undefined;
+    try {
+      subToken = await resolveTrackToken(gateway, 'subscribe', ns, cfg.track, mint);
+    } catch (e) {
+      throw new TrackStageError(e, 'subscriber', 'mint', ns, cfg.track);
+    }
+    try {
+      subTransport = await open(subUrl, 'websocket', 'subscribe', subToken);
+    } catch (e) {
+      throw new TrackStageError(e, 'subscriber', 'transport-connect', ns, cfg.track);
+    }
     const subscriberPromise = runSubscribe({
       transport: subTransport,
       peer: subUrl,
@@ -155,10 +183,21 @@ async function runOneTrack(
       track: cfg.track,
       durationMs: durationMs + 3_000, // grace window past the publisher's own stop
       maxObjects: count,
+    }).catch((e) => {
+      throw new TrackStageError(e, 'subscriber', 'subscribe', ns, cfg.track);
     });
 
-    const pubToken = await resolveTrackToken(gateway, 'publish', ns, cfg.track);
-    pubTransport = await openTransport(pubUrl, 'websocket', 'publish', pubToken);
+    let pubToken: string | undefined;
+    try {
+      pubToken = await resolveTrackToken(gateway, 'publish', ns, cfg.track, mint);
+    } catch (e) {
+      throw new TrackStageError(e, 'publisher', 'mint', ns, cfg.track);
+    }
+    try {
+      pubTransport = await open(pubUrl, 'websocket', 'publish', pubToken);
+    } catch (e) {
+      throw new TrackStageError(e, 'publisher', 'transport-connect', ns, cfg.track);
+    }
     const publisherPromise = runPublish({
       transport: pubTransport,
       peer: pubUrl,
@@ -167,6 +206,8 @@ async function runOneTrack(
       count,
       intervalMs: cfg.intervalMs,
       payloadBytes: cfg.payloadBytes,
+    }).catch((e) => {
+      throw new TrackStageError(e, 'publisher', 'publish', ns, cfg.track);
     });
 
     const [publisher, subscriber] = await Promise.all([publisherPromise, subscriberPromise]);
@@ -262,6 +303,12 @@ async function main(): Promise<number> {
   const results: TrackResult[] = settled.filter((r): r is PromiseFulfilledResult<TrackResult> => r.status === 'fulfilled').map((r) => r.value);
   const failures = settled.length - results.length;
 
+  // Surface WHY each failed track failed — previously the per-track error was caught only by
+  // `Promise.allSettled` above and discarded, so a canary abort gave no clue whether mint,
+  // transport-connect, or the session itself was the failing stage. See src/track-failure.ts.
+  const canaryErrors: CanaryErrorDetail[] = collectCanaryErrors(settled);
+  for (const e of canaryErrors) logTrackFailure(e);
+
   // Catalog read WHILE tracks are (mostly) still connected — subscribers hold for durationMs+3s grace.
   const catalogDuring = await readCatalog(args.relay).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
 
@@ -299,6 +346,9 @@ async function main(): Promise<number> {
     durationMs: args.durationMs,
     tracksCompleted: results.length,
     tracksFailed: failures,
+    // Self-describing on its own: every failed track's role/ns/track/stage/message, so a re-run's
+    // JSON needs no paired stderr scrollback to explain a nonzero tracksFailed/error_rate.
+    canaryErrors,
     drop: { missing: totalMissing, outOfOrder: totalOutOfOrder, objectsReceived: totalObjectsReceived },
     perTrack: results.map((r) => ({
       track: r.config.track,
