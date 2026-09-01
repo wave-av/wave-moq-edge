@@ -1,0 +1,52 @@
+src/moq-wire-publish.ts
+  s_3c7a371f5618a4::t_862826fc057a48 80-81
+src/moq-wire.ts
+  s_3c7a371f5618a4::t_aec4ea80dfc99d 506,514
+  s_09b3661dbc190e::t_6e603025e632b4 497
+.github/workflows/bundle-eval-gate.yml
+  s_3c7a371f5618a4::t_0f9baa94e6fb67 1-73
+.github/workflows/lint.yml
+  s_3c7a371f5618a4::t_f2fac191a96725 34
+.github/workflows/test.yml
+  s_3c7a371f5618a4::t_06cd51ce8591dc 51
+.nvmrc
+  s_3c7a371f5618a4::t_be173f2cd01a91 1
+package.json
+  s_3c7a371f5618a4::t_70b8a35b8dc018 24
+scripts/ci/bundle-eval-gate.mjs
+  s_3c7a371f5618a4::t_10159ca18c44a5 1-170
+src/moq-wire-fetch.ts
+  s_3c7a371f5618a4::t_4b9aee7b756984 35-36
+src/moq-wire-object.ts
+  s_3c7a371f5618a4::t_fa388e0e59d3b8 25-26
+tools/moq-client/__tests__/catalog-read.test.ts
+  s_3c7a371f5618a4::t_857980e8148298 1-116
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_b2c05f9b16a17d 31,255-257,332-354,356,375,407-411
+tools/moq-client/src/catalog-read.ts
+  s_3c7a371f5618a4::t_399651ed667984 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f36942d1138bfad668d571996b53a72c69f7281b",
+  "prompts": {},
+  "sessions": {
+    "s_09b3661dbc190e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a4747febe688edcb8",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
