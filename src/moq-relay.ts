@@ -33,6 +33,7 @@ import {
   encodeFetchOk,
   encodeRequestOk,
   encodeRequestError,
+  decodePublishStateNotify,
   decodeObject,
   decodeSubgroupStream,
   encodeObject,
@@ -215,6 +216,17 @@ export class MoqRelay {
       case MOQ_MSG.GOAWAY: {
         // A peer signalling graceful drain/migration. The relay has no upstream to migrate to, so we
         // accept it silently (no reply per spec). Disconnect handling runs on socket close.
+        break;
+      }
+      case MOQ_MSG.PUBLISH_STATE_NOTIFY: {
+        // #212 E4 (draft-20 §ps-notify, 0x22) — UNILATERAL notification, no REQUEST_OK/REQUEST_ERROR
+        // reply. Explicit case (vs `default`) fixes a real bug: `default`'s readFirstVarint() would
+        // otherwise misread this message's "Number of Parameters" varint as a Request ID and reply
+        // with a spurious REQUEST_ERROR — this message has no Request ID field (implied by the bidi
+        // stream, like FETCH_OK). Decode-only to surface PROTOCOL_VIOLATION on a malformed frame; no
+        // per-subscription state applied — SUBSCRIBE carries no Message Parameters yet in this relay
+        // (moq-wire-fetch.ts), so this is codec-surface-only, matching E1/E3's precedent.
+        decodePublishStateNotify(payload);
         break;
       }
       default: {

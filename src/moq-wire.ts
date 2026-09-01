@@ -62,6 +62,10 @@ export const MOQ_MSG = {
   // draft-19 #1779 renamed PUBLISH_BLOCKED → PUBLISH_SKIPPED (draft-20 §message-publish-skipped).
   // Constant only in E1 — it answers a SUBSCRIBE_TRACKS (E5 scope), so no encode/decode pair yet.
   PUBLISH_SKIPPED: 0xf,
+  // draft-20 #1820 (§ps-notify) — a NEW message, not renamed/moved from an earlier draft. Publisher-
+  // initiated, unilateral (no REQUEST_OK/REQUEST_ERROR reply), sent on a subscription's bidi Request
+  // stream. Codec lives in moq-wire-publish.ts (#212 E4) — see that file's header.
+  PUBLISH_STATE_NOTIFY: 0x22,
 } as const;
 
 /** Data-stream header type codes (§11) — distinct number space from control types. */
@@ -500,3 +504,11 @@ export * from './moq-wire-object';
 // decodeFillParameters) working unchanged. See that file's header for the E3 (#1673/#1809)
 // fill-fetch-replaces-Joining-FETCH details.
 export * from './moq-wire-fetch';
+
+// ── PUBLISH_STATE_NOTIFY (#ps-notify) ──────────────────────────────────────────────────────────────
+// Split into `moq-wire-publish.ts` (#212 E4) — a NEW draft-20 message (#1820), so it never lived in
+// this file to begin with; landing it in its own module from day one avoids growing this file further
+// past the file-size gate. Re-export keeps a single `from './moq-wire'` import surface (matches E2/E3
+// above): PublishStateNotifyMsg, encodePublishStateNotify, decodePublishStateNotify. See that file's
+// header for the E4 wire-shape + Message Parameter details.
+export * from './moq-wire-publish';
