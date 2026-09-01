@@ -20,7 +20,7 @@ import {
   MOQ_ERROR,
   MOQ_FETCH_TYPE,
   Reader,
-  isSubgroupType,
+  claimsSubgroupType,
   parseControl,
   decodeSetup,
   encodeSetup,
@@ -283,10 +283,19 @@ export class MoqRelay {
     // decodes, stamps priority, and feeds the scheduler. When OFF, fall through to decodeObject
     // — it fails to parse the subgroup format (different structure), producing the same
     // silent-drop as today (byte-identical FIFO preserved).
+    //
+    // #212 E2 (#1774): dispatch on `claimsSubgroupType` (bit 4 alone), NOT the strict `isSubgroupType`.
+    // Bit 4 is reserved-must-be-zero for OBJECT_DATAGRAM (moq-wire-object.ts), so a bit-4-set byte is
+    // NEVER a valid datagram either — routing a malformed-but-bit-4-set byte to `decodeObject` instead
+    // of `onSubgroupFrame` would silently reinterpret a PROTOCOL_VIOLATION as a differently-malformed
+    // datagram (which decodeObject would then also reject, but for the wrong reason, on the wrong
+    // path). `onSubgroupFrame` → `decodeSubgroupStream` throws `MoqProtocolViolationError` for any
+    // malformed bit-4-set byte; the existing try/catch below still drops it (fail-safe, same observed
+    // behavior as before), but the classification is now correct.
     if (this.schedulerEnabled) {
       try {
         const typeByte = new Reader(frame).varintNum();
-        if (isSubgroupType(typeByte)) {
+        if (claimsSubgroupType(typeByte)) {
           return this.onSubgroupFrame(frame);
         }
       } catch {

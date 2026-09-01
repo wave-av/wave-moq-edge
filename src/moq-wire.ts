@@ -123,6 +123,22 @@ export const MOQ_SESSION_ERROR = {
 /** Role values for the SETUP ROLE option — Publisher / Subscriber / PubSub. */
 export const MOQ_ROLE = { PUBLISHER: 0, SUBSCRIBER: 1, PUBSUB: 2 } as const;
 
+/**
+ * Thrown by a decoder that detects a wire-level PROTOCOL_VIOLATION (draft-20 §session-termination,
+ * error 0x3) — as distinct from a plain truncated/malformed-length `RangeError`. #212 E2 (#1774)
+ * introduces the first violation class this codec can detect on its own: an OBJECT_DATAGRAM or
+ * SUBGROUP_HEADER Type Flags byte with a set-but-undefined bit. Callers that only care "did this
+ * frame parse" can still catch it as an `Error`; callers that need to distinguish a violation from
+ * an ordinary truncation (e.g. to decide whether to log/report vs. silently drop) can check
+ * `instanceof MoqProtocolViolationError` or `.name === 'MoqProtocolViolationError'`.
+ */
+export class MoqProtocolViolationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'MoqProtocolViolationError';
+  }
+}
+
 // ── byte cursor primitives ─────────────────────────────────────────────────────────────────────
 
 /** Growable big-endian byte writer. */
@@ -527,180 +543,10 @@ export function untagFrame(bytes: Uint8Array): { kind: number; body: Uint8Array 
   return { kind: bytes[0], body: bytes.subarray(1) };
 }
 
-// ── object data model (§11) — OBJECT_DATAGRAM form (one object per frame, ideal for a WS binding) ──
-
-export interface MoqObject {
-  trackAlias: bigint;
-  groupId: bigint;
-  objectId: bigint;
-  status: number; // MOQ_OBJECT_STATUS.*
-  payload: Uint8Array; // empty when status != NORMAL
-  /**
-   * Opaque Object Properties block (the §2.5 extension-header bag), carried VERBATIM. The relay MUST
-   * NOT modify it, MUST forward it and MUST cache it with the object — draft-19 §2.5 states this
-   * explicitly and draft-18's SUBGROUP_HEADER already reserves the PROPERTIES flag (0x01) plus the
-   * length-prefixed block that `skipObjectProperties` walks. This field is the datagram-form
-   * equivalent; `viewport-properties.ts` owns the codec for the block's contents.
-   *
-   * WIRE NOTE — the block is appended AFTER the payload, not before it. In native draft-18/-19 the
-   * extension headers precede the payload and are signalled by the datagram type byte. On the WS
-   * envelope (already a documented deviation: explicit Object Status + length-prefixed payload) a
-   * TRAILING optional block is what makes the change strictly additive: a frame with no properties is
-   * byte-identical to the pre-existing encoding, and an older decoder simply stops reading. When the
-   * WebTransport binding lands the block moves ahead of the payload with no change to its contents.
-   */
-  properties?: Uint8Array;
-  /**
-   * Non-wire scheduling hint (E1 deadline scheduler) — NOT serialized by encodeObject and NOT
-   * populated by decodeObject. The OBJECT_DATAGRAM wire form carries no priority field: priority
-   * lives only on the SUBGROUP_HEADER stream form (`SubgroupHeader.priority`, 0-255 where LOWER =
-   * HIGHER priority per draft-18 §subgroup-header), which the relay's forward path never decodes.
-   * Populated only by a future subgroup-decode path or by tests. Absent → the scheduler falls back
-   * to arrival order (fail-open, never drops a group).
-   */
-  priority?: number;
-  /**
-   * Non-wire scheduling hint (E1 deadline scheduler): the playout deadline (epoch ms) by which the
-   * object must reach the player's jitter buffer. NOT serialized / decoded — same provenance as
-   * `priority`. Absent → the scheduler falls back to arrival order (fail-open).
-   */
-  deadlineMs?: number;
-}
-
-/**
- * Encode one object as an OBJECT_DATAGRAM (§11.3.1). We always include an explicit Object Status and
- * a length-prefixed payload so the framing is self-describing on a message-oriented transport (WS).
- * Layout: TrackAlias(i) GroupId(i) ObjectId(i) Status(i) PayloadLen(i) Payload [PropsLen(i) Props].
- */
-export function encodeObject(o: MoqObject): Uint8Array {
-  const w = new Writer()
-    .varint(o.trackAlias)
-    .varint(o.groupId)
-    .varint(o.objectId)
-    .varint(o.status)
-    .bytesLP(o.status === MOQ_OBJECT_STATUS.NORMAL ? o.payload : new Uint8Array(0));
-  if (o.properties !== undefined && o.properties.length > 0) w.bytesLP(o.properties);
-  return w.bytes();
-}
-export function decodeObject(bytes: Uint8Array): MoqObject {
-  const r = new Reader(bytes);
-  const trackAlias = r.varint();
-  const groupId = r.varint();
-  const objectId = r.varint();
-  const status = r.varintNum();
-  const payload = r.bytesLP();
-  const properties = r.remaining > 0 ? r.bytesLP() : undefined;
-  return { trackAlias, groupId, objectId, status, payload, ...(properties ? { properties } : {}) };
-}
-
-// ── SUBGROUP_HEADER multi-object stream (§subgroup-header) ──────────────────────────────────────────
-//
-// A subgroup carries MANY objects of one group on a single QUIC unidirectional stream (vs one object
-// per OBJECT_DATAGRAM). On the WS binding we carry the whole subgroup as one tagged frame. The stream
-// TYPE BYTE is a bitfield (SUBGROUP_BASE | flags); the header fields and per-object layout depend on
-// those flags. Object IDs are DELTA-coded (first absolute, rest are deltas) per §subgroup-header.
-
-export interface SubgroupObject {
-  objectId: bigint;
-  status: number; // MOQ_OBJECT_STATUS.* (only serialized when payload is empty)
-  payload: Uint8Array;
-  /**
-   * Priority stamped from the enclosing SubgroupHeader — 0-255 where LOWER = HIGHER priority
-   * per draft-18 §subgroup-header. Undefined when `defaultPriority` is set on the header (the
-   * wire form omits the field and the scheduler falls back to arrival order).
-   */
-  priority?: number;
-}
-export interface SubgroupHeader {
-  trackAlias: bigint;
-  groupId: bigint;
-  subgroupId: bigint; // resolved value (see idMode for how it was encoded)
-  idMode: number; // SUBGROUP_ID_MODE.* — how subgroupId is carried on the wire
-  priority: number; // 0-255; ignored when defaultPriority is set
-  defaultPriority: boolean; // omit the Priority field, inherit subscription priority
-  endOfGroup: boolean;
-  firstObject: boolean;
-}
-
-/** Compose the SUBGROUP_HEADER type byte from header flags. */
-export function subgroupTypeByte(h: Pick<SubgroupHeader, 'idMode' | 'defaultPriority' | 'endOfGroup' | 'firstObject'>): number {
-  if (h.idMode === 3) throw new RangeError('subgroup id mode 3 is reserved/invalid');
-  let t = MOQ_STREAM.SUBGROUP_BASE;
-  t |= (h.idMode & 0x3) << SUBGROUP_FLAG.SUBGROUP_ID_SHIFT;
-  if (h.endOfGroup) t |= SUBGROUP_FLAG.END_OF_GROUP;
-  if (h.defaultPriority) t |= SUBGROUP_FLAG.DEFAULT_PRIORITY;
-  if (h.firstObject) t |= SUBGROUP_FLAG.FIRST_OBJECT;
-  // NOTE: PROPERTIES (0x01) is not emitted — we never attach per-object extension headers.
-  return t;
-}
-
-/** Is `typeByte` a valid SUBGROUP_HEADER stream type (bit 4 set, id-mode != 3)? */
-export function isSubgroupType(typeByte: number): boolean {
-  if ((typeByte & 0x10) === 0) return false; // bit 4 must be set
-  if ((typeByte & 0xffffff80) !== 0) return false; // only the low 7 bits are defined here
-  const idMode = (typeByte >> SUBGROUP_FLAG.SUBGROUP_ID_SHIFT) & 0x3;
-  return idMode !== 3; // mode 3 is a PROTOCOL_VIOLATION
-}
-
-/** Encode a full subgroup (header + objects) as one frame. Object IDs are delta-coded from the first. */
-export function encodeSubgroupStream(h: SubgroupHeader, objects: SubgroupObject[]): Uint8Array {
-  const w = new Writer().varint(subgroupTypeByte(h)).varint(h.trackAlias).varint(h.groupId);
-  if (h.idMode === SUBGROUP_ID_MODE.EXPLICIT) w.varint(h.subgroupId);
-  if (!h.defaultPriority) w.u8(h.priority & 0xff);
-  let prev: bigint | null = null;
-  for (const o of objects) {
-    const delta = prev === null ? o.objectId : o.objectId - prev;
-    if (delta < 0n) throw new RangeError('subgroup object ids must be non-decreasing');
-    prev = o.objectId;
-    w.varint(delta);
-    const isNormal = o.status === MOQ_OBJECT_STATUS.NORMAL && o.payload.length > 0;
-    if (isNormal) {
-      w.varint(o.payload.length).raw(o.payload);
-    } else {
-      w.varint(0).varint(o.status); // Object Status carried only when payload length is 0
-    }
-  }
-  return w.bytes();
-}
-
-/** Decode a subgroup frame → header + objects. Resolves delta-coded object IDs to absolute. */
-export function decodeSubgroupStream(bytes: Uint8Array): { header: SubgroupHeader; objects: SubgroupObject[] } {
-  const r = new Reader(bytes);
-  const typeByte = r.varintNum();
-  if (!isSubgroupType(typeByte)) throw new RangeError(`not a subgroup stream type: 0x${typeByte.toString(16)}`);
-  const properties = (typeByte & SUBGROUP_FLAG.PROPERTIES) !== 0;
-  const idMode = (typeByte >> SUBGROUP_FLAG.SUBGROUP_ID_SHIFT) & 0x3;
-  const endOfGroup = (typeByte & SUBGROUP_FLAG.END_OF_GROUP) !== 0;
-  const defaultPriority = (typeByte & SUBGROUP_FLAG.DEFAULT_PRIORITY) !== 0;
-  const firstObject = (typeByte & SUBGROUP_FLAG.FIRST_OBJECT) !== 0;
-
-  const trackAlias = r.varint();
-  const groupId = r.varint();
-  let subgroupId = 0n;
-  if (idMode === SUBGROUP_ID_MODE.EXPLICIT) subgroupId = r.varint();
-  const priority = defaultPriority ? 0 : r.u8();
-
-  const objects: SubgroupObject[] = [];
-  let cur: bigint | null = null;
-  while (r.remaining > 0) {
-    const delta = r.varint();
-    cur = cur === null ? delta : cur + delta;
-    if (idMode === SUBGROUP_ID_MODE.FIRST_OBJECT_ID && objects.length === 0) subgroupId = cur;
-    if (properties) skipObjectProperties(r); // we don't model extension headers; skip them faithfully
-    const len = r.varintNum();
-    const objPriority = defaultPriority ? undefined : priority;
-    if (len > 0) {
-      objects.push({ objectId: cur, status: MOQ_OBJECT_STATUS.NORMAL, payload: r.raw(len), ...(objPriority !== undefined ? { priority: objPriority } : {}) });
-    } else {
-      const status = r.varintNum();
-      objects.push({ objectId: cur, status, payload: new Uint8Array(0), ...(objPriority !== undefined ? { priority: objPriority } : {}) });
-    }
-  }
-  return { header: { trackAlias, groupId, subgroupId, idMode, priority, defaultPriority, endOfGroup, firstObject }, objects };
-}
-
-/** Skip a per-object Object Properties block (a length-prefixed extension-header bag). */
-function skipObjectProperties(r: Reader): void {
-  const len = r.varintNum();
-  r.raw(len);
-}
+// ── object data model (§11) — OBJECT_DATAGRAM + SUBGROUP_HEADER ────────────────────────────────────
+// Split into `moq-wire-object.ts` (#212 E2) once this module crossed the repo's file-size gate; the
+// re-export below keeps every existing `from './moq-wire'` import (MoqObject, encodeObject,
+// decodeObject, SubgroupHeader, subgroupTypeByte, isSubgroupType, encodeSubgroupStream,
+// decodeSubgroupStream, DATAGRAM_FLAG, claimsSubgroupType, assertValid*TypeByte, etc.) working
+// unchanged. See that file's header for the E2 (#1774) strict-bitfield + datagram-type-byte details.
+export * from './moq-wire-object';
