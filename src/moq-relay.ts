@@ -18,7 +18,6 @@ import {
   MOQ_MSG,
   MOQ_ROLE,
   MOQ_ERROR,
-  MOQ_FETCH_TYPE,
   Reader,
   claimsSubgroupType,
   parseControl,
@@ -38,6 +37,7 @@ import {
   decodeSubgroupStream,
   encodeObject,
   type MoqObject,
+  type MoqLocation,
 } from './moq-wire';
 import { PendingGroupBuffer, SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
 
@@ -242,19 +242,48 @@ export class MoqRelay {
   }
 
   /**
-   * Serve a FETCH from the late-joiner cache. Standalone fetches replay every cached object whose
-   * (group, object) location falls within [start, end] to the requester, preceded by FETCH_OK with the
-   * largest available location. A fetch with nothing in range → REQUEST_ERROR(INVALID_RANGE). Joining
-   * fetches aren't modeled (one track per DO) → REQUEST_ERROR(NOT_SUPPORTED).
+   * Serve a FETCH from the late-joiner cache. #212 E3: draft-20 drops the FetchType/joining variant
+   * (see moq-wire-fetch.ts header) — every FETCH is now the same shape, and its range comes from an
+   * OPTIONAL LOCATION_FILTER parameter instead of dedicated message fields. This handler resolves the
+   * absolute forms of that filter (an omitted filter ⇒ whole cached track; explicit StartGroup+
+   * StartObject with an optional EndGroupDelta[+EndObject] ⇒ that range, EndObject omitted meaning
+   * "rest of the End Group") and replays every cached object in range, preceded by FETCH_OK with the
+   * largest matched location. A fetch with nothing in range → REQUEST_ERROR(INVALID_RANGE).
+   *
+   * draft-20 §5.1.2 also defines two RELATIVE forms of LOCATION_FILTER (a lone StartGroup, or
+   * StartGroup=StartObject=0) resolved against "Largest Object" — this relay's bounded per-track
+   * cache doesn't track Largest Object independently of what it still retains, so those forms →
+   * REQUEST_ERROR(NOT_SUPPORTED), same as the "joining" FETCH variant they functionally replace was
+   * before E3 (fill-fetch, draft-20's actual replacement mechanism, is SUBSCRIBE-side — see
+   * moq-wire-fetch.ts's FillParameters doc — and isn't wired into this one-track-per-DO relay yet).
    */
   private onFetch(sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[]): void {
     const m = decodeFetch(payload);
-    if (m.fetchType !== MOQ_FETCH_TYPE.STANDALONE || !m.standalone) {
-      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'only standalone fetch' }) });
-      return;
+    const f = m.locationFilter;
+
+    let start: MoqLocation = { group: 0n, object: 0n };
+    let end: MoqLocation | undefined; // undefined ⇒ unbounded (through the end of the cache)
+    let endGroupOpen = false; // true ⇒ EndObject was omitted: include the whole End Group
+
+    if (f !== undefined && f.startGroup !== undefined) {
+      const isRelative = f.startObject === undefined || (f.startGroup === 0n && f.startObject === 0n && f.endGroupDelta === undefined);
+      if (isRelative) {
+        replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }) });
+        return;
+      }
+      start = { group: f.startGroup, object: f.startObject! };
+      if (f.endGroupDelta !== undefined) {
+        end = { group: f.startGroup + f.endGroupDelta, object: f.endObject ?? 0n };
+        endGroupOpen = f.endObject === undefined;
+      }
     }
-    const { start, end } = m.standalone;
-    const inRange = (g: bigint, o: bigint) => !(g < start.group || g > end.group || (g === start.group && o < start.object) || (g === end.group && end.object !== 0n && o > end.object));
+
+    const inRange = (g: bigint, o: bigint) => {
+      if (g < start.group || (g === start.group && o < start.object)) return false;
+      if (end === undefined) return true;
+      if (g > end.group) return false;
+      return !(g === end.group && !endGroupOpen && o > end.object);
+    };
 
     const matched: Array<{ frame: Uint8Array; group: bigint; object: bigint }> = [];
     for (const grp of this.cache) for (const o of grp.objects) if (inRange(grp.groupId, o.objectId)) matched.push({ frame: o.frame, group: grp.groupId, object: o.objectId });

@@ -21,7 +21,6 @@ import {
   decodeRequestOk,
   encodeRequestError,
   decodeRequestError,
-  MOQ_FETCH_TYPE,
   encodeSubscribeNamespace,
   decodeSubscribeNamespace,
   encodePublish,
@@ -34,6 +33,12 @@ import {
   decodeFetchOk,
   encodeGoaway,
   decodeGoaway,
+  MOQ_PARAM,
+  encodeLocationFilter,
+  decodeLocationFilter,
+  encodeFillParameters,
+  decodeFillParameters,
+  MoqProtocolViolationError,
 } from '../src/moq-wire';
 
 describe('draft-20 constants (#212 E0/E1 uplevel from draft-18)', () => {
@@ -211,22 +216,75 @@ describe('full draft-18 message set round-trip', () => {
     const m = decodeTrackStatus(parseControl(enc).payload);
     expect(m).toEqual({ requestId: 8n, trackNamespace: ['wave'], trackName: 'audio' });
   });
-  it('FETCH standalone (group/object range)', () => {
+  it('FETCH with a LOCATION_FILTER (draft-20 #1809 — range moved from message fields to a parameter)', () => {
     const enc = encodeFetch({
       requestId: 4n,
-      fetchType: MOQ_FETCH_TYPE.STANDALONE,
-      standalone: { trackNamespace: ['wave', 'cam-1'], trackName: 'v', start: { group: 2n, object: 0n }, end: { group: 5n, object: 0n } },
+      trackNamespace: ['wave', 'cam-1'],
+      trackName: 'v',
+      locationFilter: { startGroup: 2n, startObject: 0n, endGroupDelta: 3n, endObject: 0n },
     });
     expect(parseControl(enc).type).toBe(MOQ_MSG.FETCH);
     const m = decodeFetch(parseControl(enc).payload);
-    expect(m.requestId).toBe(4n);
-    expect(m.fetchType).toBe(MOQ_FETCH_TYPE.STANDALONE);
-    expect(m.standalone).toEqual({ trackNamespace: ['wave', 'cam-1'], trackName: 'v', start: { group: 2n, object: 0n }, end: { group: 5n, object: 0n } });
+    expect(m).toEqual({
+      requestId: 4n,
+      trackNamespace: ['wave', 'cam-1'],
+      trackName: 'v',
+      locationFilter: { startGroup: 2n, startObject: 0n, endGroupDelta: 3n, endObject: 0n },
+    });
   });
-  it('FETCH joining', () => {
-    const enc = encodeFetch({ requestId: 6n, fetchType: MOQ_FETCH_TYPE.RELATIVE_JOINING, joining: { joiningRequestId: 2n, joiningStart: 1n } });
+  it('FETCH without a filter round-trips with no LOCATION_FILTER param (whole-track fetch)', () => {
+    const enc = encodeFetch({ requestId: 5n, trackNamespace: ['wave'], trackName: 'audio' });
     const m = decodeFetch(parseControl(enc).payload);
-    expect(m.joining).toEqual({ joiningRequestId: 2n, joiningStart: 1n });
+    expect(m).toEqual({ requestId: 5n, trackNamespace: ['wave'], trackName: 'audio', locationFilter: undefined });
+  });
+  it('FETCH has no FetchType/joining variant any more (draft-20 #1673 removed it)', () => {
+    const enc = encodeFetch({ requestId: 6n, trackNamespace: ['wave'], trackName: 'v' });
+    const m = decodeFetch(parseControl(enc).payload);
+    expect(m).not.toHaveProperty('fetchType');
+    expect(m).not.toHaveProperty('standalone');
+    expect(m).not.toHaveProperty('joining');
+  });
+  it('LOCATION_FILTER (§5.1.2) positional-prefix field encoding round-trips 0..4 fields', () => {
+    expect(decodeLocationFilter(encodeLocationFilter({}))).toEqual({});
+    expect(decodeLocationFilter(encodeLocationFilter({ startGroup: 7n }))).toEqual({ startGroup: 7n });
+    expect(decodeLocationFilter(encodeLocationFilter({ startGroup: 7n, startObject: 0n }))).toEqual({ startGroup: 7n, startObject: 0n });
+    expect(decodeLocationFilter(encodeLocationFilter({ startGroup: 1n, startObject: 0n, endGroupDelta: 4n }))).toEqual({
+      startGroup: 1n,
+      startObject: 0n,
+      endGroupDelta: 4n,
+    });
+    expect(decodeLocationFilter(encodeLocationFilter({ startGroup: 1n, startObject: 0n, endGroupDelta: 4n, endObject: 9n }))).toEqual({
+      startGroup: 1n,
+      startObject: 0n,
+      endGroupDelta: 4n,
+      endObject: 9n,
+    });
+  });
+  it('LOCATION_FILTER rejects a non-positional-prefix combination (e.g. startObject without startGroup)', () => {
+    expect(() => encodeLocationFilter({ startObject: 1n })).toThrow(/startGroup/);
+    expect(() => encodeLocationFilter({ startGroup: 1n, endGroupDelta: 2n })).toThrow(/startObject/);
+    expect(() => encodeLocationFilter({ endObject: 1n })).toThrow(/endGroupDelta/);
+  });
+  it('FILL_PARAMETERS (0x23, §10.2.15) is the draft-20 #1673 replacement for Joining FETCH', () => {
+    expect(MOQ_PARAM.FILL_PARAMETERS).toBe(0x23);
+    expect(MOQ_PARAM.LOCATION_FILTER).toBe(0x21);
+  });
+  it('FILL_PARAMETERS round-trips a fill range and an empty (no-op) value', () => {
+    const withFilter = decodeFillParameters(encodeFillParameters({ locationFilter: { startGroup: 4n, startObject: 0n, endGroupDelta: 1n } }));
+    expect(withFilter).toEqual({ locationFilter: { startGroup: 4n, startObject: 0n, endGroupDelta: 1n } });
+    const empty = decodeFillParameters(encodeFillParameters({}));
+    expect(empty).toEqual({ locationFilter: undefined });
+  });
+  it('decodeLocationFilter rejects more than 4 positional fields as a PROTOCOL_VIOLATION (§5.1.2)', () => {
+    const tooMany = new Writer().varint(1n).varint(2n).varint(3n).varint(4n).varint(5n).bytes();
+    expect(() => decodeLocationFilter(tooMany)).toThrow(MoqProtocolViolationError);
+  });
+  it('decodeFetch rejects an unknown Message Parameter as a PROTOCOL_VIOLATION (§10.2)', () => {
+    // Number of Parameters=1, TypeDelta=0x99 (unknown), Length=0.
+    const params = new Writer().varint(1n).varint(0x99n).varint(0n).bytes();
+    const body = new Writer().varint(7n).tuple(['wave']).strLP('v').raw(params).bytes();
+    const enc = frameControl(MOQ_MSG.FETCH, body);
+    expect(() => decodeFetch(parseControl(enc).payload)).toThrow(MoqProtocolViolationError);
   });
   it('FETCH_OK (no request id; end location)', () => {
     const enc = encodeFetchOk({ endOfTrack: true, end: { group: 9n, object: 4n } });

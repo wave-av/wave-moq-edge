@@ -4,7 +4,6 @@ import {
   MOQ_MSG,
   MOQ_ROLE,
   MOQ_ERROR,
-  MOQ_FETCH_TYPE,
   parseControl,
   encodeSetup,
   encodeSubscribe,
@@ -188,28 +187,43 @@ describe('MoqRelay FETCH from cache', () => {
     for (const g of [0, 1, 2]) for (const o of [0, 1]) pushObj(relay, g, o);
     return relay;
   }
-  it('standalone fetch replays the in-range objects after FETCH_OK', () => {
+  it('fetch with an absolute LOCATION_FILTER replays the in-range objects after FETCH_OK', () => {
     const relay = seed();
     const { replies, objects } = relay.onControl(
       'f',
-      encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.STANDALONE, standalone: { trackNamespace: NS, trackName: 'v', start: { group: 1n, object: 0n }, end: { group: 2n, object: 0n } } })
+      encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 1n } })
     );
     expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.FETCH_OK);
-    // groups 1 & 2 (end.object=0 ⇒ whole group 2): 4 objects
+    // groups 1 & 2 (EndObject omitted ⇒ whole End Group per §5.1.2): 4 objects
     expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [1, 1], [2, 0], [2, 1]]);
+  });
+  it('fetch with an EndGroupDelta but no EndObject includes the whole End Group (§5.1.2 "omitted EndObject")', () => {
+    const relay = seed();
+    const { objects } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 2n, startObject: 0n, endGroupDelta: 0n } }));
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[2, 0], [2, 1]]);
+  });
+  it('fetch with no LOCATION_FILTER replays the whole cached track (§5.1.2 "unfiltered ⇒ {0,0} to Largest Object")', () => {
+    const relay = seed();
+    const { objects } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v' }));
+    expect(objects).toHaveLength(6); // groups 0,1,2 × objects 0,1
   });
   it('out-of-range fetch → REQUEST_ERROR INVALID_RANGE, no objects', () => {
     const relay = seed();
     const { replies, objects } = relay.onControl(
       'f',
-      encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.STANDALONE, standalone: { trackNamespace: NS, trackName: 'v', start: { group: 99n, object: 0n }, end: { group: 100n, object: 0n } } })
+      encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 99n, startObject: 0n, endGroupDelta: 1n, endObject: 0n } })
     );
     expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.INVALID_RANGE);
     expect(objects).toHaveLength(0);
   });
-  it('joining fetch → REQUEST_ERROR NOT_SUPPORTED', () => {
+  it('relative LOCATION_FILTER (draft-20 #1673 replaced Joining FETCH with SUBSCRIBE-side fill-fetch) → REQUEST_ERROR NOT_SUPPORTED', () => {
     const relay = seed();
-    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, fetchType: MOQ_FETCH_TYPE.RELATIVE_JOINING, joining: { joiningRequestId: 1n, joiningStart: 0n } }));
+    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
+  });
+  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) → REQUEST_ERROR NOT_SUPPORTED', () => {
+    const relay = seed();
+    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
     expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
   });
 });

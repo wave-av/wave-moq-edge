@@ -82,9 +82,6 @@ export const SUBGROUP_FLAG = {
 /** Subgroup ID encoding mode (SUBGROUP_FLAG bits 1-2). 3 is reserved/invalid (PROTOCOL_VIOLATION). */
 export const SUBGROUP_ID_MODE = { ZERO: 0, FIRST_OBJECT_ID: 1, EXPLICIT: 2 } as const;
 
-/** FETCH Fetch Type — draft-18 §message-fetch. */
-export const MOQ_FETCH_TYPE = { STANDALONE: 0x1, RELATIVE_JOINING: 0x2, ABSOLUTE_JOINING: 0x3 } as const;
-
 /** Object Status codes — draft-18 §10 ("Object Status"). */
 export const MOQ_OBJECT_STATUS = {
   NORMAL: 0x0,
@@ -447,62 +444,6 @@ export function decodeTrackStatus(payload: Uint8Array): TrackStatusMsg {
   return { requestId: r.varint(), trackNamespace: r.tuple(), trackName: r.strLP() };
 }
 
-/** A Group/Object location pair (§location). */
-export interface MoqLocation {
-  group: bigint;
-  object: bigint;
-}
-export interface FetchMsg {
-  requestId: bigint;
-  fetchType: number; // MOQ_FETCH_TYPE.*
-  // Present iff fetchType === STANDALONE:
-  standalone?: { trackNamespace: string[]; trackName: string; start: MoqLocation; end: MoqLocation };
-  // Present iff fetchType is a joining type:
-  joining?: { joiningRequestId: bigint; joiningStart: bigint };
-}
-// FETCH (§message-fetch, 0x16) — pull past objects. RequestId(i) + FetchType(i) + variant + Params(0).
-export function encodeFetch(m: FetchMsg): Uint8Array {
-  const w = new Writer().varint(m.requestId).varint(m.fetchType);
-  if (m.fetchType === MOQ_FETCH_TYPE.STANDALONE) {
-    if (!m.standalone) throw new RangeError('standalone fetch requires standalone fields');
-    const s = m.standalone;
-    w.tuple(s.trackNamespace).strLP(s.trackName).varint(s.start.group).varint(s.start.object).varint(s.end.group).varint(s.end.object);
-  } else {
-    if (!m.joining) throw new RangeError('joining fetch requires joining fields');
-    w.varint(m.joining.joiningRequestId).varint(m.joining.joiningStart);
-  }
-  w.varint(0); // 0 parameters
-  return frameControl(MOQ_MSG.FETCH, w.bytes());
-}
-export function decodeFetch(payload: Uint8Array): FetchMsg {
-  const r = new Reader(payload);
-  const requestId = r.varint();
-  const fetchType = r.varintNum();
-  if (fetchType === MOQ_FETCH_TYPE.STANDALONE) {
-    const trackNamespace = r.tuple();
-    const trackName = r.strLP();
-    const start: MoqLocation = { group: r.varint(), object: r.varint() };
-    const end: MoqLocation = { group: r.varint(), object: r.varint() };
-    return { requestId, fetchType, standalone: { trackNamespace, trackName, start, end } };
-  }
-  return { requestId, fetchType, joining: { joiningRequestId: r.varint(), joiningStart: r.varint() } };
-}
-
-export interface FetchOkMsg {
-  endOfTrack: boolean;
-  end: MoqLocation; // largest available group/object
-}
-// FETCH_OK (§message-fetch-ok, 0x18) — first response on the FETCH bidi stream. No Request ID (it is
-// implied by the stream). EndOfTrack(8) + EndLocation(i,i) + Params(0) + TrackProps(empty).
-export function encodeFetchOk(m: FetchOkMsg): Uint8Array {
-  const w = new Writer().u8(m.endOfTrack ? 1 : 0).varint(m.end.group).varint(m.end.object).varint(0);
-  return frameControl(MOQ_MSG.FETCH_OK, w.bytes());
-}
-export function decodeFetchOk(payload: Uint8Array): FetchOkMsg {
-  const r = new Reader(payload);
-  return { endOfTrack: r.u8() === 1, end: { group: r.varint(), object: r.varint() } };
-}
-
 export interface GoawayMsg {
   newSessionUri: string; // "" = reuse current URI (the only client-legal value)
   timeoutMs: bigint; // 0 = no specific timeout
@@ -550,3 +491,12 @@ export function untagFrame(bytes: Uint8Array): { kind: number; body: Uint8Array 
 // decodeSubgroupStream, DATAGRAM_FLAG, claimsSubgroupType, assertValid*TypeByte, etc.) working
 // unchanged. See that file's header for the E2 (#1774) strict-bitfield + datagram-type-byte details.
 export * from './moq-wire-object';
+
+// ── FETCH + Message Parameters (§10.13, §5.1.2, §5.1.3) ─────────────────────────────────────────────
+// Split into `moq-wire-fetch.ts` (#212 E3) for the same file-size-gate reason as moq-wire-object.ts
+// above; the re-export below keeps every existing `from './moq-wire'` import (MoqLocation, FetchMsg,
+// encodeFetch, decodeFetch, FetchOkMsg, encodeFetchOk, decodeFetchOk, MOQ_PARAM, LocationFilter,
+// encodeLocationFilter, decodeLocationFilter, FillParameters, encodeFillParameters,
+// decodeFillParameters) working unchanged. See that file's header for the E3 (#1673/#1809)
+// fill-fetch-replaces-Joining-FETCH details.
+export * from './moq-wire-fetch';
