@@ -97,12 +97,27 @@ export function decodeLocationFilter(bytes: Uint8Array): LocationFilter {
   return out;
 }
 
+/** Write a message's Parameters block (`Number of Parameters(vi64)` + ascending TypeDelta+length-
+ * prefixed-Value entries) carrying at most a single LOCATION_FILTER — the "0|1 params, LOCATION_FILTER
+ * only" shape shared by FETCH, FILL_PARAMETERS, and SUBSCRIBE (`moq-wire-subscribe.ts`, #212 E5). An
+ * `undefined` filter emits Number of Parameters=0 (§location-filters: "omitted ⇒ unfiltered"). */
+export function encodeLocationFilterOnlyParams(w: Writer, f: LocationFilter | undefined): void {
+  if (f !== undefined) {
+    w.varint(1).varint(MOQ_PARAM.LOCATION_FILTER).bytesLP(encodeLocationFilter(f));
+  } else {
+    w.varint(0);
+  }
+}
+
 /** Read a message's Parameters block (`Number of Parameters(vi64)` + ascending TypeDelta+length-
  * prefixed-Value entries), resolving only LOCATION_FILTER (this relay's only modeled Message
  * Parameter today) and rejecting anything else as a PROTOCOL_VIOLATION per §10.2 ("an endpoint that
- * receives an unknown Message Parameter MUST close the session"). Shared by decodeFetch below and
- * decodeFillParameters (FILL_PARAMETERS' Value is itself "a sequence of Parameters", §10.2.15). */
-function decodeLocationFilterOnlyParams(r: Reader, context: string): LocationFilter | undefined {
+ * receives an unknown Message Parameter MUST close the session"). Shared by decodeFetch below,
+ * decodeFillParameters (FILL_PARAMETERS' Value is itself "a sequence of Parameters", §10.2.15), and
+ * decodeSubscribe (`moq-wire-subscribe.ts`, #212 E5 — SUBSCRIBE's Parameters block has the identical
+ * shape per draft-20 §message-subscribe-req). Exported (not file-local) so that split-out module can
+ * reuse it instead of re-implementing the same ascending-Type-Delta parse loop a fourth time. */
+export function decodeLocationFilterOnlyParams(r: Reader, context: string): LocationFilter | undefined {
   const nParams = r.varintNum();
   let locationFilter: LocationFilter | undefined;
   let prevType = 0;
@@ -128,11 +143,7 @@ export interface FetchMsg {
 // standalone variant entirely: RequestId(i) + TrackNamespace(tuple) + TrackName(strLP) + Params(0|1).
 export function encodeFetch(m: FetchMsg): Uint8Array {
   const w = new Writer().varint(m.requestId).tuple(m.trackNamespace).strLP(m.trackName);
-  if (m.locationFilter !== undefined) {
-    w.varint(1).varint(MOQ_PARAM.LOCATION_FILTER).bytesLP(encodeLocationFilter(m.locationFilter));
-  } else {
-    w.varint(0);
-  }
+  encodeLocationFilterOnlyParams(w, m.locationFilter);
   return frameControl(MOQ_MSG.FETCH, w.bytes());
 }
 export function decodeFetch(payload: Uint8Array): FetchMsg {
@@ -174,11 +185,7 @@ export interface FillParameters {
 }
 export function encodeFillParameters(m: FillParameters): Uint8Array {
   const w = new Writer();
-  if (m.locationFilter !== undefined) {
-    w.varint(1).varint(MOQ_PARAM.LOCATION_FILTER).bytesLP(encodeLocationFilter(m.locationFilter));
-  } else {
-    w.varint(0);
-  }
+  encodeLocationFilterOnlyParams(w, m.locationFilter);
   return w.bytes();
 }
 export function decodeFillParameters(bytes: Uint8Array): FillParameters {

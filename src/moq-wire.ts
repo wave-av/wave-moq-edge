@@ -325,19 +325,8 @@ export function decodeSetup(payload: Uint8Array): SetupMsg {
   return { role, maxSubscriptions, path, maxRequestUpdates };
 }
 
-export interface SubscribeMsg {
-  requestId: bigint;
-  trackNamespace: string[]; // tuple
-  trackName: string;
-}
-export function encodeSubscribe(m: SubscribeMsg): Uint8Array {
-  const w = new Writer().varint(m.requestId).tuple(m.trackNamespace).strLP(m.trackName);
-  return frameControl(MOQ_MSG.SUBSCRIBE, w.bytes());
-}
-export function decodeSubscribe(payload: Uint8Array): SubscribeMsg {
-  const r = new Reader(payload);
-  return { requestId: r.varint(), trackNamespace: r.tuple(), trackName: r.strLP() };
-}
+// SubscribeMsg / encodeSubscribe / decodeSubscribe moved to `moq-wire-subscribe.ts` (#212 E5) — see
+// this file's re-export comment below for why (file-size gate, matches the E2/E3/E4 split pattern).
 
 export interface SubscribeOkMsg {
   requestId: bigint;
@@ -512,3 +501,10 @@ export * from './moq-wire-fetch';
 // above): PublishStateNotifyMsg, encodePublishStateNotify, decodePublishStateNotify. See that file's
 // header for the E4 wire-shape + Message Parameter details.
 export * from './moq-wire-publish';
+
+// ── SUBSCRIBE + Location Filter (§message-subscribe-req, §5.1.2) ────────────────────────────────────
+// Split into `moq-wire-subscribe.ts` (#212 E5) for the same file-size-gate reason as
+// moq-wire-object.ts/moq-wire-fetch.ts/moq-wire-publish.ts above; the re-export below keeps every
+// existing `from './moq-wire'` import (SubscribeMsg, encodeSubscribe, decodeSubscribe) working
+// unchanged. See that file's header for the E5 range-filter (per-viewport) details.
+export * from './moq-wire-subscribe';

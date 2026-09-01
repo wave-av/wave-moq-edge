@@ -39,6 +39,7 @@ import {
   encodeObject,
   type MoqObject,
   type MoqLocation,
+  type LocationFilter,
 } from './moq-wire';
 import { PendingGroupBuffer, SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
 
@@ -64,8 +65,23 @@ export interface RelayEvent {
   payload?: Uint8Array;
 }
 
+/** An absolute Location range (#212 E5) — the resolved form of an absolute LOCATION_FILTER. `end`
+ * undefined ⇒ open-ended (§location-filters: "When EndGroupDelta and EndObject are omitted from a
+ * subscription filter, the subscription is open-ended"). `endGroupOpen` true ⇒ EndObject was omitted,
+ * so the whole End Group passes (§location-filters: "the filter includes all objects in the End
+ * Group"). Relative-to-Largest-Object forms are NOT representable here — see `resolveLocationFilter`. */
+interface ResolvedRange {
+  start: MoqLocation;
+  end?: MoqLocation;
+  endGroupOpen: boolean;
+}
+
 interface Subscriber {
   requestId: bigint;
+  /** Resolved absolute LOCATION_FILTER range (#212 E5) — the per-viewport filter. `undefined` means
+   * the subscription carried no filter (or was decoded with one that resolved to unfiltered): forward
+   * every object, byte-identical to pre-E5 fan-out. */
+  range?: ResolvedRange;
 }
 
 /** One cached group: the forwarded object frames of a single Group ID, in arrival order. */
@@ -183,12 +199,28 @@ export class MoqRelay {
         break;
       }
       case MOQ_MSG.SUBSCRIBE: {
+        // #212 E5 (draft-20 §location-filters, #1809): SUBSCRIBE now carries an OPTIONAL
+        // LOCATION_FILTER Message Parameter (`moq-wire-subscribe.ts`) — the per-viewport range
+        // selector. Same resolution/support rules as `onFetch`'s LOCATION_FILTER handling below:
+        // the four absolute forms filter; the two relative-to-Largest-Object forms are rejected
+        // (this relay does not track Largest Object independently of the cache it retains).
         const m = decodeSubscribe(payload);
-        this.subscribers.set(sessionId, { requestId: m.requestId });
+        const resolved = resolveLocationFilter(m.locationFilter);
+        if (resolved.relative) {
+          replies.push({
+            to: sessionId,
+            kind: 'control',
+            frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }),
+          });
+          break;
+        }
+        this.subscribers.set(sessionId, { requestId: m.requestId, range: resolved.range });
         replies.push({ to: sessionId, kind: 'control', frame: encodeSubscribeOk({ requestId: m.requestId, expires: 0n }) });
         // Late-joiner replay: hand the new subscriber the cached recent groups so it can begin
-        // decoding from a recent group boundary instead of waiting for the next one.
-        for (const g of this.cache) for (const o of g.objects) objects.push({ to: sessionId, kind: 'object', frame: o.frame });
+        // decoding from a recent group boundary instead of waiting for the next one. E5: only the
+        // objects inside this subscriber's range replay — an unfiltered subscriber (range
+        // undefined) still gets every cached object, byte-identical to pre-E5.
+        for (const g of this.cache) for (const o of g.objects) if (locationInRange(g.groupId, o.objectId, resolved.range)) objects.push({ to: sessionId, kind: 'object', frame: o.frame });
         events.push({ kind: 'subscribe', sessionId });
         break;
       }
@@ -271,34 +303,15 @@ export class MoqRelay {
    */
   private onFetch(sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[]): void {
     const m = decodeFetch(payload);
-    const f = m.locationFilter;
-
-    let start: MoqLocation = { group: 0n, object: 0n };
-    let end: MoqLocation | undefined; // undefined ⇒ unbounded (through the end of the cache)
-    let endGroupOpen = false; // true ⇒ EndObject was omitted: include the whole End Group
-
-    if (f !== undefined && f.startGroup !== undefined) {
-      const isRelative = f.startObject === undefined || (f.startGroup === 0n && f.startObject === 0n && f.endGroupDelta === undefined);
-      if (isRelative) {
-        replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }) });
-        return;
-      }
-      start = { group: f.startGroup, object: f.startObject! };
-      if (f.endGroupDelta !== undefined) {
-        end = { group: f.startGroup + f.endGroupDelta, object: f.endObject ?? 0n };
-        endGroupOpen = f.endObject === undefined;
-      }
+    const resolved = resolveLocationFilter(m.locationFilter);
+    if (resolved.relative) {
+      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }) });
+      return;
     }
-
-    const inRange = (g: bigint, o: bigint) => {
-      if (g < start.group || (g === start.group && o < start.object)) return false;
-      if (end === undefined) return true;
-      if (g > end.group) return false;
-      return !(g === end.group && !endGroupOpen && o > end.object);
-    };
+    const range = resolved.range;
 
     const matched: Array<{ frame: Uint8Array; group: bigint; object: bigint }> = [];
-    for (const grp of this.cache) for (const o of grp.objects) if (inRange(grp.groupId, o.objectId)) matched.push({ frame: o.frame, group: grp.groupId, object: o.objectId });
+    for (const grp of this.cache) for (const o of grp.objects) if (locationInRange(grp.groupId, o.objectId, range)) matched.push({ frame: o.frame, group: grp.groupId, object: o.objectId });
 
     if (matched.length === 0) {
       replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.INVALID_RANGE, reason: 'range not in cache' }) });
@@ -416,7 +429,7 @@ export class MoqRelay {
     if (this.schedulerEnabled) {
       this.schedule(obj.groupId, obj.objectId, forwarded, obj.priority, obj.deadlineMs, fanout);
     } else {
-      this.fanOut(forwarded, fanout);
+      this.fanOut(forwarded, fanout, obj.groupId, obj.objectId);
       this.cacheObject(obj.groupId, obj.objectId, forwarded);
     }
 
@@ -440,9 +453,21 @@ export class MoqRelay {
     grp.objects.push({ objectId, frame });
   }
 
-  /** Fan one forwarded frame out to every subscriber, in subscriber arrival (Map insertion) order. */
-  private fanOut(frame: Uint8Array, out: Outbound[]): void {
-    for (const subId of this.subscribers.keys()) out.push({ to: subId, kind: 'object', frame });
+  /**
+   * Fan one forwarded frame out to every subscriber whose Location filter admits it, in subscriber
+   * arrival (Map insertion) order. #212 E5: this is the per-viewport live-delivery filter — a
+   * subscriber with no filter (`range === undefined`) always receives the object, byte-identical to
+   * pre-E5 fan-out; a subscriber with a range only receives objects whose (group, object) Location
+   * falls inside it (§location-filters: "A publisher MUST NOT send subscription-delivered objects
+   * from outside the requested range"). The SAME frame bytes go to every admitted subscriber — only
+   * the recipient SET changes, never the bytes or the per-subscriber delivery order — so this does
+   * not disturb the E2 whole-group-flush ordering invariant.
+   */
+  private fanOut(frame: Uint8Array, out: Outbound[], groupId: bigint, objectId: bigint): void {
+    for (const [subId, sub] of this.subscribers) {
+      if (!locationInRange(groupId, objectId, sub.range)) continue;
+      out.push({ to: subId, kind: 'object', frame });
+    }
   }
 
   /**
@@ -468,7 +493,7 @@ export class MoqRelay {
   /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */
   private flushPending(out: Outbound[]): void {
     for (const p of this.pending.drain()) {
-      this.fanOut(p.frame, out);
+      this.fanOut(p.frame, out, p.groupId, p.objectId);
       this.cacheObject(p.groupId, p.objectId, p.frame);
     }
   }
@@ -530,6 +555,40 @@ export class MoqRelay {
     }
     return events;
   }
+}
+
+/**
+ * Resolve a decoded LOCATION_FILTER (#212 E5, §location-filters) into either an ABSOLUTE
+ * `ResolvedRange` (or `undefined` for "no filter" / unfiltered) or a `{ relative: true }` marker for
+ * the two forms this bounded-cache relay does not resolve: a lone StartGroup, or
+ * StartGroup=StartObject=0 (both defined relative to `Largest Object`, which this relay does not track
+ * independently of the last-N-groups cache it retains). Shared by `onFetch` and the SUBSCRIBE handler
+ * — the resolution rules are identical for both message types (§location-filters applies the same
+ * positional-field semantics to FETCH and SUBSCRIBE Location filters).
+ */
+function resolveLocationFilter(f: LocationFilter | undefined): { relative: true } | { relative: false; range?: ResolvedRange } {
+  if (f === undefined || f.startGroup === undefined) return { relative: false, range: undefined };
+  const isRelative = f.startObject === undefined || (f.startGroup === 0n && f.startObject === 0n && f.endGroupDelta === undefined);
+  if (isRelative) return { relative: true };
+  const start: MoqLocation = { group: f.startGroup, object: f.startObject! };
+  let end: MoqLocation | undefined;
+  let endGroupOpen = false;
+  if (f.endGroupDelta !== undefined) {
+    end = { group: f.startGroup + f.endGroupDelta, object: f.endObject ?? 0n };
+    endGroupOpen = f.endObject === undefined;
+  }
+  return { relative: false, range: { start, end, endGroupOpen } };
+}
+
+/** Whether Location {g, o} falls inside `range` (inclusive both ends, §location-filters). `range`
+ * `undefined` means unfiltered — everything passes (the fast path every non-filtering subscriber and
+ * every unfiltered FETCH takes). */
+function locationInRange(g: bigint, o: bigint, range: ResolvedRange | undefined): boolean {
+  if (range === undefined) return true;
+  if (g < range.start.group || (g === range.start.group && o < range.start.object)) return false;
+  if (range.end === undefined) return true;
+  if (g > range.end.group) return false;
+  return !(g === range.end.group && !range.endGroupOpen && o > range.end.object);
 }
 
 /** Read the first varint of a control payload (the Request ID of request-type messages), or null. */

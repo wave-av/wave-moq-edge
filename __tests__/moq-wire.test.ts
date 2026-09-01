@@ -179,6 +179,35 @@ describe('control messages round-trip', () => {
     expect(m.requestId).toBe(42n);
     expect(m.trackNamespace).toEqual(['wave', 'cam-1']);
     expect(m.trackName).toBe('video');
+    expect(m.locationFilter).toBeUndefined();
+  });
+  it('SUBSCRIBE with a LOCATION_FILTER (#212 E5 — draft-20 #1809 range filter, shared with FETCH)', () => {
+    const enc = encodeSubscribe({
+      requestId: 43n,
+      trackNamespace: ['wave', 'viewport-3'],
+      trackName: 'volumetric',
+      locationFilter: { startGroup: 10n, startObject: 0n, endGroupDelta: 5n, endObject: 2n },
+    });
+    expect(parseControl(enc).type).toBe(MOQ_MSG.SUBSCRIBE);
+    const m = decodeSubscribe(parseControl(enc).payload);
+    expect(m).toEqual({
+      requestId: 43n,
+      trackNamespace: ['wave', 'viewport-3'],
+      trackName: 'volumetric',
+      locationFilter: { startGroup: 10n, startObject: 0n, endGroupDelta: 5n, endObject: 2n },
+    });
+  });
+  it('SUBSCRIBE without a filter round-trips with no LOCATION_FILTER param (unfiltered subscription)', () => {
+    const enc = encodeSubscribe({ requestId: 44n, trackNamespace: ['wave'], trackName: 'audio' });
+    const m = decodeSubscribe(parseControl(enc).payload);
+    expect(m).toEqual({ requestId: 44n, trackNamespace: ['wave'], trackName: 'audio', locationFilter: undefined });
+  });
+  it('decodeSubscribe rejects an unknown Message Parameter as a PROTOCOL_VIOLATION (§message-params, matches decodeFetch)', () => {
+    // Number of Parameters=1, TypeDelta=0x99 (unknown), Length=0.
+    const params = new Writer().varint(1n).varint(0x99n).varint(0n).bytes();
+    const body = new Writer().varint(45n).tuple(['wave']).strLP('v').raw(params).bytes();
+    const enc = frameControl(MOQ_MSG.SUBSCRIBE, body);
+    expect(() => decodeSubscribe(parseControl(enc).payload)).toThrow(MoqProtocolViolationError);
   });
   it('SUBSCRIBE_OK', () => {
     const enc = encodeSubscribeOk({ requestId: 42n, expires: 5000n });
