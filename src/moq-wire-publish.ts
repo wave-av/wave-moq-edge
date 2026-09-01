@@ -77,8 +77,8 @@
  * SUBSCRIBE and never see this relay act as a publisher toward them post-notify) are unaffected.
  */
 
-import { Reader, Writer, MoqProtocolViolationError, frameControl, MOQ_MSG } from './moq-wire';
-import { MOQ_PARAM, decodeLocationFilter, encodeLocationFilter, type LocationFilter, type MoqLocation } from './moq-wire-fetch';
+import { Reader, Writer, MoqProtocolViolationError, frameControl, MOQ_MSG } from './moq-wire.ts';
+import { MOQ_PARAM, decodeLocationFilter, encodeLocationFilter, type LocationFilter, type MoqLocation } from './moq-wire-fetch.ts';
 
 /** Message Parameter type codes this module's PUBLISH_STATE_NOTIFY codec understands (§message-params
  * table entries that list PUBLISH_STATE_NOTIFY — see file header for the full grounding). */

@@ -22,8 +22,8 @@
  *     follows is unchanged. This is a WIRE-COMPAT BREAK on the datagram path (see moq-wire.ts header).
  */
 
-import { Reader, Writer, MoqProtocolViolationError } from './moq-wire';
-import { MOQ_STREAM, SUBGROUP_FLAG, SUBGROUP_ID_MODE, MOQ_OBJECT_STATUS } from './moq-wire';
+import { Reader, Writer, MoqProtocolViolationError } from './moq-wire.ts';
+import { MOQ_STREAM, SUBGROUP_FLAG, SUBGROUP_ID_MODE, MOQ_OBJECT_STATUS } from './moq-wire.ts';
 
 // ── OBJECT_DATAGRAM Type Flags (draft-20 §object-datagram-format) ──────────────────────────────────
 

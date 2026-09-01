@@ -32,8 +32,8 @@
  *     preserve.
  */
 
-import { Reader, Writer, MoqProtocolViolationError, frameControl } from './moq-wire';
-import { MOQ_MSG } from './moq-wire';
+import { Reader, Writer, MoqProtocolViolationError, frameControl } from './moq-wire.ts';
+import { MOQ_MSG } from './moq-wire.ts';
 
 /**
  * Message Parameter type codes (draft-20 §10.2) this module's FETCH/FILL_PARAMETERS codec

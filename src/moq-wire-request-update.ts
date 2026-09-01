@@ -110,9 +110,9 @@
  * No existing message's bytes change.
  */
 
-import { Reader, Writer, MoqProtocolViolationError, frameControl, MOQ_MSG } from './moq-wire';
-import { MOQ_PARAM, decodeLocationFilter, encodeLocationFilter, type LocationFilter } from './moq-wire-fetch';
-import { PUBLISH_STATE_NOTIFY_PARAM } from './moq-wire-publish';
+import { Reader, Writer, MoqProtocolViolationError, frameControl, MOQ_MSG } from './moq-wire.ts';
+import { MOQ_PARAM, decodeLocationFilter, encodeLocationFilter, type LocationFilter } from './moq-wire-fetch.ts';
+import { PUBLISH_STATE_NOTIFY_PARAM } from './moq-wire-publish.ts';
 
 /** Message Parameter type codes this module's REQUEST_UPDATE codec understands — reused UNCHANGED
  * from the modules that already mint them (see file header for why no new codes are minted here). */

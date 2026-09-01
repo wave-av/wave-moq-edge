@@ -28,6 +28,7 @@ import {
   type CanaryErrorDetail,
 } from './src/track-failure.ts';
 import { openSubscriberWithRetry, type SleepFn } from './src/subscriber-retry.ts';
+import { readCatalog } from './src/catalog-read.ts';
 
 /** Compiled hard ceiling on run duration. Not overridable by any flag past this. */
 export const MAX_DURATION_MS = 30_000;
@@ -251,23 +252,9 @@ export async function runOneTrack(
   }
 }
 
-export interface CatalogTrackSummary {
-  namespace: string;
-  track: string;
-}
-
-export async function readCatalog(relayBase: string): Promise<{ status: number; tracks: CatalogTrackSummary[]; raw: unknown }> {
-  const url = new URL('/v1/catalog', relayBase).toString();
-  const res = await fetch(url);
-  const raw = await res.json().catch(() => null);
-  const tracks: CatalogTrackSummary[] = Array.isArray((raw as { tracks?: unknown })?.tracks)
-    ? (raw as { tracks: Array<{ namespace?: string; name?: string }> }).tracks.map((t) => ({
-        namespace: t.namespace ?? '',
-        track: t.name ?? '',
-      }))
-    : [];
-  return { status: res.status, tracks, raw };
-}
+// #213: catalog-read is split into ./src/catalog-read.ts (file-size gate) — re-exported here so
+// existing callers/imports of `readCatalog`/`CatalogTrackSummary` from this module keep working.
+export { readCatalog, type CatalogTrackSummary, type CatalogReadResult } from './src/catalog-read.ts';
 
 function errorRate(results: PromiseSettledResult<TrackResult>[]): number {
   if (results.length === 0) return 0;
@@ -342,8 +329,31 @@ async function main(): Promise<number> {
   const canaryErrors: CanaryErrorDetail[] = collectCanaryErrors(settled);
   for (const e of canaryErrors) logTrackFailure(e);
 
+  // #213: `/v1/catalog` fail-closes to an empty list for an unauthenticated caller when the relay
+  // runs MOQ_REQUIRE_AUTH + MOQ_DISCOVERY_JOIN (production does) — by design, not a registration gap
+  // (see src/catalog-read.ts). Mint ONE `moq:read` join-token, bound to any track in THIS run's
+  // namespace, and reuse it for both catalog reads below — #112 scopes a join-token-authed listing to
+  // the token's whole `ns` claim, so one token surfaces every one of this run's tracks. Same
+  // WAVE_API_KEY / mint path the publish/subscribe legs already use; absent key or a mint failure
+  // degrades to the pre-#213 unauthenticated read (never blocks the run — catalog visibility is
+  // observability, not a hard-gate).
+  let catalogJoinToken: string | undefined;
+  if (trackSet.length > 0) {
+    try {
+      catalogJoinToken = await resolveTrackToken(
+        process.env.WAVE_GATEWAY ?? 'https://api.wave.online',
+        'subscribe',
+        benchNamespace,
+        trackSet[0].track,
+      );
+    } catch (e) {
+      process.stderr.write(`[bench] catalog join-token mint failed (falling back to unauthenticated catalog read): ${String(e)}\n`);
+    }
+  }
+  const catalogAuth = catalogJoinToken ? 'join-token' : 'unauthenticated';
+
   // Catalog read WHILE tracks are (mostly) still connected — subscribers hold for durationMs+3s grace.
-  const catalogDuring = await readCatalog(args.relay).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
+  const catalogDuring = await readCatalog(args.relay, catalogJoinToken).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
 
   // Aggregate latency across every subscriber's samples (true end-to-end: publisher timestamp -> receipt).
   const allLatencySamplesMs: number[] = [];
@@ -362,7 +372,7 @@ async function main(): Promise<number> {
 
   // Give the relay a moment to expire announce state after publishers close, then re-read.
   await new Promise((r) => setTimeout(r, 2_000));
-  const catalogAfter = await readCatalog(args.relay).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
+  const catalogAfter = await readCatalog(args.relay, catalogJoinToken).catch((e) => ({ status: -1, tracks: [], raw: String(e) }));
 
   const finishedAt = new Date().toISOString();
 
@@ -394,6 +404,11 @@ async function main(): Promise<number> {
       ordering: r.subscriber.ordering,
     })),
     aggregate,
+    // #213: `catalogAuth` makes the report self-describing — a future `benchTracksLive: 0` is either
+    // a real catalog gap (catalogAuth: 'join-token', still zero) or an expected anonymous fail-closed
+    // read (catalogAuth: 'unauthenticated', e.g. no WAVE_API_KEY configured for this run) — never
+    // ambiguous between the two again.
+    catalogAuth,
     catalogDuring: { status: catalogDuring.status, benchTracksLive: catalogDuring.tracks.filter((t) => t.namespace.startsWith(BENCH_NAMESPACE_PREFIX)).length, tracks: catalogDuring.tracks },
     catalogAfter: { status: catalogAfter.status, benchTracksLive: catalogAfter.tracks.filter((t) => t.namespace.startsWith(BENCH_NAMESPACE_PREFIX)).length, tracks: catalogAfter.tracks },
   };
