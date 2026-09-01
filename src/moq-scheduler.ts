@@ -11,6 +11,15 @@
  *
  * E2-fix: the scheduler now exposes `earliestDeadline` so the relay can make deadline-driven
  * flush decisions without holding objects until the next group boundary.
+ *
+ * E3-fix (#211): mid-group deadline-pressure flushing was tried and REJECTED here (E2-fix) — it
+ * breaks whole-group priority ordering. But the relay's ONLY flush triggers were a group boundary
+ * or a 64-object window (see moq-relay.ts SCHEDULER_WINDOW_OBJECTS), so a low-rate or single-group
+ * track that never trips either one buffers its tail forever. `PendingGroupBuffer` adds a bounded
+ * max-buffer-age as a THIRD, additional trigger: the buffer is still always flushed as a WHOLE unit,
+ * in (priority, deadline) order — never a partial/mid-group flush — so the E2-fix ordering guarantee
+ * holds. It is pure state (no wall-clock reads; the caller supplies `now`) so it stays hermetically
+ * testable with an injected clock, same as `orderByDeadline`.
  */
 
 /** The subset of scheduling fields an orderable item must expose (see MoqObject). */
@@ -59,4 +68,57 @@ export function earliestDeadline<T extends ScheduledItem>(items: readonly T[]): 
     }
   }
   return min;
+}
+
+/** Default max-buffer-age (ms) before a pending group/window is flushed regardless of size (#211). */
+export const SCHEDULER_MAX_BUFFER_MS = 30;
+
+/** The subset of fields `PendingGroupBuffer` needs to know an item's group (see moq-relay.PendingObject). */
+export interface BufferedItem extends ScheduledItem {
+  groupId: bigint;
+}
+
+/**
+ * The E1/E3 pending-group buffer: holds one group's (or one reordering window's) worth of items,
+ * remembers when the FIRST item was buffered, and reports staleness against a caller-supplied clock.
+ * Pure — no timers, no wall-clock reads — so time-based flush is exercised in tests with a plain
+ * counter as `now`. `drain()` always returns the WHOLE buffer in (priority, deadline) order, matching
+ * every other flush trigger (group boundary, window, time) — never a partial/out-of-order emission.
+ */
+export class PendingGroupBuffer<T extends BufferedItem> {
+  private items: T[] = [];
+  private bufferedAt: number | null = null;
+
+  /** Number of items currently buffered. */
+  get length(): number {
+    return this.items.length;
+  }
+  /** The group ID of the buffered items (they are always all the same group), or null if empty. */
+  get groupId(): bigint | null {
+    return this.items.length > 0 ? this.items[0].groupId : null;
+  }
+  /** The clock reading (per the caller's `now`) at which the FIRST item was buffered, or null if empty. */
+  get bufferedSince(): number | null {
+    return this.bufferedAt;
+  }
+
+  /** Buffer one item, stamping the buffer's start time from the first item added. */
+  push(item: T, now: number): void {
+    if (this.items.length === 0) this.bufferedAt = now;
+    this.items.push(item);
+  }
+
+  /** Whether the buffer is non-empty and has been open at least `maxAgeMs` as of `now`. */
+  isStale(now: number, maxAgeMs: number): boolean {
+    return this.bufferedAt !== null && now - this.bufferedAt >= maxAgeMs;
+  }
+
+  /** Drain and return the buffer's contents in (priority, deadline) order; resets to empty. */
+  drain(): T[] {
+    if (this.items.length === 0) return [];
+    const ordered = orderByDeadline(this.items);
+    this.items = [];
+    this.bufferedAt = null;
+    return ordered;
+  }
 }
