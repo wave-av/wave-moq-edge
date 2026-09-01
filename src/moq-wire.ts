@@ -1,27 +1,45 @@
 /**
- * MoQ Transport wire codec — draft-ietf-moq-transport-18 (2026-05-12).
+ * MoQ Transport wire codec — draft-ietf-moq-transport-20 (2026-08-31), uplevel of draft-18 (#212 E0/E1).
  *
  * Spec-grounded serialization for the relay-relevant subset of the IETF MoQ Transport wire format.
- * Constants and field layouts read VERBATIM from the moq-wg/moq-transport GitHub source at tag
- * `draft-ietf-moq-transport-18` (not inferred). This module is PURE: bytes in / structs out, no
- * I/O, no platform calls — so it is hermetically unit-testable (see __tests__/moq-wire.test.ts) and
- * transport-independent. The relay (moq-relay.ts) drives it; the Durable Object binds it to a
- * WebSocket today (CF Workers has no WebTransport *server* API yet) — the codec is the part that is
- * portable to WebTransport/QUIC the moment that lands.
+ * Constants and field layouts read VERBATIM from the moq-wg/moq-transport GitHub source, base tag
+ * `draft-ietf-moq-transport-18` plus the -19/-20 deltas this epic's E1 phase applies (not inferred).
+ * This module is PURE: bytes in / structs out, no I/O, no platform calls — so it is hermetically
+ * unit-testable (see __tests__/moq-wire.test.ts) and transport-independent. The relay (moq-relay.ts)
+ * drives it; the Durable Object binds it to a WebSocket today (CF Workers has no WebTransport
+ * *server* API yet) — the codec is the part that is portable to WebTransport/QUIC the moment that lands.
  *
- * Wire facts used here, with draft-18 section refs:
+ * Wire facts used here, with draft-18 section refs (still current at -20 unless noted):
  *   §1.4.1  varint: a leading-1-bits length prefix (NOT RFC 9000's 2-bit prefix) — 1..9 byte sizes.
  *   §1.4.2  Track Namespace: a tuple = count(i) followed by N length-prefixed byte fields.
  *   §10     control framing on a bidi request stream: Type(i) + Length(16) + Payload.
  *   §10     control type codes: SETUP=0x2F00, SUBSCRIBE=0x3, SUBSCRIBE_OK=0x4, REQUEST_ERROR=0x5,
  *           PUBLISH_NAMESPACE=0x6, REQUEST_OK=0x7, GOAWAY=0x10.
  *   §11     object model: OBJECT_DATAGRAM + SUBGROUP_HEADER; Object Status 0x0/0x3/0x4.
+ *
+ * draft-19/-20 deltas applied in E1 (#212):
+ *   - PUBLISH_BLOCKED renamed PUBLISH_SKIPPED (naming only — no codec existed for it here yet).
+ *   - "Message Payload" renamed "Message Body" in the control-framing docs (naming only).
+ *   - GOAWAY (§message-goaway, draft-19 #1623) drops its Request ID field — it is carried on the
+ *     control stream and needs no per-message id.
+ *   - SETUP gains the MAX_REQUEST_UPDATES option (draft-19 #1613) and REQUEST_ERROR gains the
+ *     TOO_MANY_REQUEST_UPDATES code. Codec surface only in this phase — enforcement lands in E6.
  */
 
-// ── draft-18 constants (verbatim from the tagged moq-wg/moq-transport markdown) ────────────────────
+// ── draft-20 constants (base draft-18, uplevel per #212 E0/E1) ─────────────────────────────────────
 
-export const MOQ_DRAFT_VERSION = 18;
-export const MOQ_ALPN = 'moqt-18'; // §3.1 — ALPN-only version negotiation (no integer version in SETUP)
+export const MOQ_DRAFT_VERSION = 20;
+/**
+ * §3.1 — ALPN-only version negotiation (no integer version in SETUP) for a NATIVE QUIC/WebTransport
+ * binding. This relay runs over a single CF Workers WebSocket today (no WebTransport-server API), so
+ * this constant is NOT read by any accept/reject path in moq-relay.ts / moq-session-do.ts — there is
+ * no TLS ALPN on the wire to negotiate over WS, and message *bodies* are unchanged by the E0 bump (see
+ * README "Spec compliance" + PR #212-E0/E1 body for the deploy-safety note: because it is a single
+ * hardcoded string with no accept-set here, relay + moq-client (both in this repo) must ship together
+ * — one Worker deploy flips both atomically). `MOQ_DRAFT_SUPPORTED` in wrangler.toml is the actual
+ * additive negotiation-range advertisement and keeps 18 in the set (see wrangler.toml).
+ */
+export const MOQ_ALPN = 'moqt-20';
 
 /** Control message type codes — draft-18 §10 (verbatim from the tagged moq-wg/moq-transport source). */
 export const MOQ_MSG = {
@@ -41,6 +59,9 @@ export const MOQ_MSG = {
   SUBSCRIBE_NAMESPACE: 0x50, // subscriber announces interest in a namespace prefix
   NAMESPACE: 0x8, // sent on the SUBSCRIBE_NAMESPACE response stream
   NAMESPACE_DONE: 0xe,
+  // draft-19 #1779 renamed PUBLISH_BLOCKED → PUBLISH_SKIPPED (draft-20 §message-publish-skipped).
+  // Constant only in E1 — it answers a SUBSCRIBE_TRACKS (E5 scope), so no encode/decode pair yet.
+  PUBLISH_SKIPPED: 0xf,
 } as const;
 
 /** Data-stream header type codes (§11) — distinct number space from control types. */
@@ -84,6 +105,19 @@ export const MOQ_ERROR = {
   DOES_NOT_EXIST: 0x10,
   INVALID_RANGE: 0x11,
   UNINTERESTED: 0x20,
+} as const;
+
+/**
+ * Session Termination error codes — draft-20 §iana-session-termination. A DIFFERENT IANA table from
+ * `MOQ_ERROR` (REQUEST_ERROR codes, above): these close the whole session rather than fail one
+ * request, so their code space and values are independent (e.g. INTERNAL_ERROR is 0x0 in MOQ_ERROR
+ * but 0x1 here). TOO_MANY_REQUEST_UPDATES (draft-19 #1613, code 0x1B) is added here — NOT to
+ * MOQ_ERROR — because the spec's own table places it under session termination: a peer that sends a
+ * REQUEST_UPDATE past the MAX_REQUEST_UPDATES setup-option credit closes the *session*, not just that
+ * request. Only the one code this phase needs is modeled; the rest of the table is future scope.
+ */
+export const MOQ_SESSION_ERROR = {
+  TOO_MANY_REQUEST_UPDATES: 0x1b,
 } as const;
 
 /** Role values for the SETUP ROLE option — Publisher / Subscriber / PubSub. */
@@ -216,15 +250,17 @@ export class Reader {
   }
 }
 
-// ── control message framing (§10): Type(i) + Length(16) + Payload ─────────────────────────────────
+// ── control message framing (§10): Type(i) + Length(16) + Message Body ─────────────────────────────
+// draft-19 renamed the framed payload from "Message Payload" to "Message Body" (naming only — the
+// Type(i) + Length(16) + Body layout is byte-identical).
 
-/** Frame a control payload: Type(varint) + Length(16-bit) + Payload. */
-export function frameControl(type: number, payload: Uint8Array): Uint8Array {
-  if (payload.length > 0xffff) throw new RangeError('control payload exceeds 16-bit length');
-  return new Writer().varint(type).u16(payload.length).raw(payload).bytes();
+/** Frame a control message: Type(varint) + Length(16-bit) + Message Body. */
+export function frameControl(type: number, body: Uint8Array): Uint8Array {
+  if (body.length > 0xffff) throw new RangeError('control message body exceeds 16-bit length');
+  return new Writer().varint(type).u16(body.length).raw(body).bytes();
 }
 
-/** Parse one framed control message → {type, payload}. */
+/** Parse one framed control message → {type, payload} (payload = the Message Body). */
 export function parseControl(bytes: Uint8Array): { type: number; payload: Uint8Array } {
   const r = new Reader(bytes);
   const type = r.varintNum();
@@ -238,12 +274,22 @@ export interface SetupMsg {
   role: number; // MOQ_ROLE.*
   maxSubscriptions: bigint;
   path?: string; // SETUP option PATH (0x01)
+  /**
+   * SETUP option MAX_REQUEST_UPDATES (0x08, draft-19 #1613) — max unacknowledged REQUEST_UPDATE
+   * messages per request stream the sender will accept; 0/absent = unlimited. Codec surface only in
+   * this phase (E1): the relay does not yet enforce the credit or emit TOO_MANY_REQUEST_UPDATES on
+   * breach — that lands with the REQUEST_UPDATE codec itself in E6.
+   */
+  maxRequestUpdates?: bigint;
 }
 export function encodeSetup(m: SetupMsg): Uint8Array {
   const w = new Writer().varint(m.role).varint(m.maxSubscriptions);
-  // Setup options as count + (code, length-prefixed value) pairs. Only PATH (0x01) when present.
-  if (m.path !== undefined) w.varint(1).varint(0x01).strLP(m.path);
-  else w.varint(0);
+  // Setup options as count + (code, length-prefixed value) pairs.
+  const opts: Array<[number, Uint8Array]> = [];
+  if (m.path !== undefined) opts.push([0x01, new TextEncoder().encode(m.path)]);
+  if (m.maxRequestUpdates !== undefined) opts.push([0x08, new Writer().varint(m.maxRequestUpdates).bytes()]);
+  w.varint(opts.length);
+  for (const [code, val] of opts) w.varint(code).bytesLP(val);
   return frameControl(MOQ_MSG.SETUP, w.bytes());
 }
 export function decodeSetup(payload: Uint8Array): SetupMsg {
@@ -252,12 +298,14 @@ export function decodeSetup(payload: Uint8Array): SetupMsg {
   const maxSubscriptions = r.varint();
   const nOpts = r.varintNum();
   let path: string | undefined;
+  let maxRequestUpdates: bigint | undefined;
   for (let i = 0; i < nOpts; i++) {
     const code = r.varintNum();
     const val = r.bytesLP();
     if (code === 0x01) path = new TextDecoder().decode(val);
+    else if (code === 0x08) maxRequestUpdates = new Reader(val).varint();
   }
-  return { role, maxSubscriptions, path };
+  return { role, maxSubscriptions, path, maxRequestUpdates };
 }
 
 export interface SubscribeMsg {
@@ -442,20 +490,21 @@ export function decodeFetchOk(payload: Uint8Array): FetchOkMsg {
 export interface GoawayMsg {
   newSessionUri: string; // "" = reuse current URI (the only client-legal value)
   timeoutMs: bigint; // 0 = no specific timeout
-  requestId?: bigint; // present only when carried on the control stream (our WS control envelope)
 }
 // GOAWAY (§message-goaway, 0x10) — graceful drain / migration signal. No reply expected.
+// draft-19 #1623 drops the Request ID field: GOAWAY is carried on the control stream (or a request
+// stream) and needs no per-message id there, so the wire body is NewSessionUri(strLP) + Timeout(i)
+// only. This also removes the WS-envelope trailing-varint special-case decodeGoaway used to carry —
+// there is no longer an optional trailing field to detect via `r.remaining`.
 export function encodeGoaway(m: GoawayMsg): Uint8Array {
   const w = new Writer().strLP(m.newSessionUri).varint(m.timeoutMs);
-  if (m.requestId !== undefined) w.varint(m.requestId);
   return frameControl(MOQ_MSG.GOAWAY, w.bytes());
 }
 export function decodeGoaway(payload: Uint8Array): GoawayMsg {
   const r = new Reader(payload);
   const newSessionUri = r.strLP();
   const timeoutMs = r.varint();
-  const requestId = r.remaining > 0 ? r.varint() : undefined;
-  return { newSessionUri, timeoutMs, requestId };
+  return { newSessionUri, timeoutMs };
 }
 
 // ── WebSocket transport envelope ──────────────────────────────────────────────────────────────────

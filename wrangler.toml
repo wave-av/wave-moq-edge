@@ -54,8 +54,11 @@ route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
 [env.production.vars]
 ENVIRONMENT = "production"
 MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3: scheduler ON in prod — subgroup-priority reorder live (staging canary proven 2026-08-17; regular OBJECT_DATAGRAM traffic stays arrival-order, fail-open)
-MOQ_DRAFT_VERSION = "18"
-MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
+MOQ_DRAFT_VERSION = "20"
+# #212 E0: preferred bumped to 20, additive — 18 stays in the supported set through E4 (per the epic's
+# own dependency-ordering note) so a mid-deploy where relay/client are briefly on different builds does
+# not strand a peer. Bytes are unchanged by E0/E1; narrow this only after E5/E6 clients ship.
+MOQ_DRAFT_SUPPORTED = "20,19,18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "10000"
 MAX_OBJECT_SIZE_BYTES = "16777216"  # 16 MiB
 LOG_LEVEL = "info"
@@ -156,8 +159,8 @@ route = { pattern = "moq.staging.wave.online/*", zone_name = "wave.online" }
 
 [env.staging.vars]
 ENVIRONMENT = "staging"
-MOQ_DRAFT_VERSION = "18"
-MOQ_DRAFT_SUPPORTED = "18,17,16,15,14,13,12,11,10,9,8,7"
+MOQ_DRAFT_VERSION = "20"
+MOQ_DRAFT_SUPPORTED = "20,19,18,17,16,15,14,13,12,11,10,9,8,7"
 MAX_SUBSCRIBERS_PER_TRACK = "1000"
 MAX_OBJECT_SIZE_BYTES = "16777216"
 LOG_LEVEL = "debug"
