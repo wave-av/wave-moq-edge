@@ -20,6 +20,8 @@ import {
   decodeRequestError,
   decodeObject,
   MOQ_OBJECT_STATUS,
+  encodeSubgroupStream,
+  SUBGROUP_ID_MODE,
 } from '../src/moq-wire';
 import { MetricsCollector, type MoqMetric } from '../metrics-collector';
 
@@ -261,5 +263,100 @@ describe('relay events fold into the R4 wave.usage meter', () => {
     expect(usage.bytes).toBe(300);
     expect(usage.integrity.checked).toBe(3);
     expect(usage.integrity.matches).toBe(3);
+  });
+});
+
+describe('#212 E2 forwarding conformance (draft-19 #1762: a relay MAY NOT reorder or drop objects)', () => {
+  it('scheduler ON: whole-group flush preserves cross-group order — within-group priority reorder never crosses a group boundary, and nothing is dropped', () => {
+    const relay = new MoqRelay({ scheduler: true });
+    relay.onControl('pub', encodePublishNamespace({ requestId: 1n, trackNamespace: NS }));
+    relay.onControl('a', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v' }));
+
+    const delivered: Array<{ group: number; object: number }> = [];
+    const collect = (fanout: { frame: Uint8Array }[]) => {
+      for (const f of fanout) {
+        const o = decodeObject(f.frame);
+        delivered.push({ group: Number(o.groupId), object: Number(o.objectId) });
+      }
+    };
+
+    // Three groups of three objects each, arriving strictly in group order 0, 1, 2. Priorities are
+    // deliberately scrambled WITHIN each group so the E1/E3 scheduler has something to reorder — the
+    // invariant under test is that this reorder is scoped to ONE group at a time and never disturbs
+    // cross-group arrival order (draft-19 #1762).
+    for (let g = 0; g < 3; g++) {
+      const prios = [30, 10, 20]; // object 0 lowest priority, object 1 highest, object 2 middle
+      for (let o = 0; o < 3; o++) {
+        const r = relay.onDecodedObject({
+          trackAlias: 99n,
+          groupId: BigInt(g),
+          objectId: BigInt(o),
+          status: MOQ_OBJECT_STATUS.NORMAL,
+          payload: new Uint8Array([g, o]),
+          priority: prios[o],
+        });
+        collect(r.fanout);
+      }
+    }
+    collect(relay.flush()); // drain the final buffered group (no group-boundary trigger for it)
+
+    // No drop: every one of the 9 (group, object) pairs was delivered exactly once.
+    expect(delivered).toHaveLength(9);
+    expect(new Set(delivered.map((d) => `${d.group}.${d.object}`)).size).toBe(9);
+
+    // No cross-group reorder: once a group's objects start appearing, no OTHER group's objects
+    // interleave before that group is fully drained — i.e. a group never "resumes" after another
+    // group has started (which would mean the relay put a later-arriving group ahead of an earlier
+    // one, or split one group's delivery around another's).
+    let lastGroup = -1;
+    const finishedGroups = new Set<number>();
+    for (const d of delivered) {
+      if (d.group !== lastGroup) {
+        expect(finishedGroups.has(d.group)).toBe(false);
+        if (lastGroup !== -1) finishedGroups.add(lastGroup);
+        lastGroup = d.group;
+      }
+    }
+    expect([...new Set(delivered.map((d) => d.group))]).toEqual([0, 1, 2]); // arrival order, not renumbered
+
+    // Within group 0, the scheduler DID reorder by priority (10, 20, 30 → objects 1, 2, 0) — proving
+    // the reorder is real and scoped, not merely absent.
+    expect(delivered.filter((d) => d.group === 0).map((d) => d.object)).toEqual([1, 2, 0]);
+  });
+
+  it('SUBGROUP_HEADER path: onSubgroupFrame flushes a whole group on endOfGroup, preserving cross-group order with no drop', () => {
+    const relay = new MoqRelay({ scheduler: true });
+    relay.onControl('pub', encodePublishNamespace({ requestId: 1n, trackNamespace: NS }));
+    relay.onControl('a', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v' }));
+
+    const delivered: Array<{ group: number; object: number }> = [];
+    for (let g = 0; g < 3; g++) {
+      const header = {
+        trackAlias: 99n,
+        groupId: BigInt(g),
+        subgroupId: 0n,
+        idMode: SUBGROUP_ID_MODE.ZERO,
+        priority: 10,
+        defaultPriority: false,
+        endOfGroup: true, // whole-group unit: the header's own FIN-implies-largest-object contract
+        firstObject: true,
+      };
+      const objects = [
+        { objectId: 0n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([g, 0]) },
+        { objectId: 1n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([g, 1]) },
+        { objectId: 2n, status: MOQ_OBJECT_STATUS.NORMAL, payload: new Uint8Array([g, 2]) },
+      ];
+      const { fanout } = relay.onSubgroupFrame(encodeSubgroupStream(header, objects));
+      for (const f of fanout) {
+        const o = decodeObject(f.frame);
+        delivered.push({ group: Number(o.groupId), object: Number(o.objectId) });
+      }
+    }
+
+    // No drop: 3 groups x 3 objects, every one delivered.
+    expect(delivered).toHaveLength(9);
+    // No cross-group reorder: each subgroup's endOfGroup flush drains that group in full, in order,
+    // BEFORE the next group's frame is even processed — so arrival order is preserved exactly.
+    expect(delivered.map((d) => `${d.group}.${d.object}`)).toEqual(['0.0', '0.1', '0.2', '1.0', '1.1', '1.2', '2.0', '2.1', '2.2']);
   });
 });
