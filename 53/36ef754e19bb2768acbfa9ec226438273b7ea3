@@ -1,0 +1,42 @@
+tools/moq-client/src/targets.ts
+  s_3c7a371f5618a4::t_a9939e5ecbcf36 27
+  s_3c7a371f5618a4::t_5b6417eaabca1f 23-24
+wrangler.toml
+  s_3c7a371f5618a4::t_f5a1d17c5fbc9f 57-61
+  s_3c7a371f5618a4::t_dad6930d2d8f1a 162-163
+README.md
+  s_3c7a371f5618a4::t_cde9a3281bebb5 116-117
+  s_3c7a371f5618a4::t_102202d31c3cca 5
+  s_3c7a371f5618a4::t_7605edecf17fa0 65,69-70,72-74
+scripts/check-moq-draft-version.sh
+  s_3c7a371f5618a4::t_62089362597d3f 48
+  s_3c7a371f5618a4::t_5e7ef62c4a76c9 23
+src/moq-wire.ts
+  s_3c7a371f5618a4::t_297b088a7d4819 495-498,507
+  s_3c7a371f5618a4::t_1e08b50d87d089 62-64
+  s_3c7a371f5618a4::t_20cbbf04b3e559 2,5-10,12,19-26,29,31-42
+  s_3c7a371f5618a4::t_74e0854bde12e2 253-255,257-260,263
+  s_3c7a371f5618a4::t_69fa6a3e80b2d5 110-122
+  s_3c7a371f5618a4::t_1d8a4a3d18723b 277-283,287-292,301,306,308
+__tests__/moq-wire.test.ts
+  s_3c7a371f5618a4::t_a1ee561539a8f8 276,278-282
+  s_3c7a371f5618a4::t_7a319cef4854eb 12
+  s_3c7a371f5618a4::t_35a671f7f79ecc 47-50,59,66-70
+  s_3c7a371f5618a4::t_a876e5f79abb25 71,161,164-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5336ef754e19bb2768acbfa9ec226438273b7ea3",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
