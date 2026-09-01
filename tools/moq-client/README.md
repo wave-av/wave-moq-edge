@@ -123,7 +123,7 @@ an error to swallow.
 | Node WebTransport addon | ALPN is hard-coded `h3` — structurally cannot answer the ALPN question. |
 | Rust + `quinn` | No Rust toolchain present; and it would fork the wire codec. |
 
-The deciding factor is the codec. `src/moq-wire.ts` is the draft-18 codec this relay actually runs,
+The deciding factor is the codec. `src/moq-wire.ts` is the draft-20 codec this relay actually runs,
 and it is imported **unmodified** — not ported, not copied. A client carrying its own second copy of
 the codec would prove only that the copy agrees with itself. `src/moq-wire.ts` was not changed.
 
@@ -149,7 +149,7 @@ one pretends to answer the other's question.
   we do not implement. Offering one ALPN at a time is what makes that inference airtight: with a
   single-element offer, nothing else could have been selected. The joint multi-ALPN probe therefore
   reports accept/refuse as a **set** and deliberately refuses to name a winner it cannot read.
-- **No `moqt-16` session.** The imported codec is draft-18. Completing a session against the interop
+- **No `moqt-16` session.** The imported codec is draft-20. Completing a session against the interop
   relay needs a draft-16 data plane over raw QUIC, which this tool does not have.
 - **Node version.** `src/moq-wire.ts` uses a TypeScript parameter property, which Node's *strip-only*
   mode rejects. Run on **Node 22.23–24.x**, which have `--experimental-transform-types`; Node 26
