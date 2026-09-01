@@ -387,3 +387,100 @@ describe('#212 E2 forwarding conformance (draft-19 #1762: a relay MAY NOT reorde
     expect(delivered.map((d) => `${d.group}.${d.object}`)).toEqual(['0.0', '0.1', '0.2', '1.0', '1.1', '1.2', '2.0', '2.1', '2.2']);
   });
 });
+
+describe('#212 E5 per-viewport SUBSCRIBE range filtering (draft-20 #1809 LOCATION_FILTER on SUBSCRIBE)', () => {
+  function deliveredLocations(fanout: ReturnType<MoqRelay['onObject']>['fanout'], to: string): Array<string> {
+    return fanout.filter((f) => f.to === to).map((f) => {
+      const o = decodeObject(f.frame);
+      return `${o.groupId}.${o.objectId}`;
+    });
+  }
+
+  it('an object INSIDE the requested range is forwarded to the filtered subscriber live', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 0n, endObject: 2n } }));
+
+    const { fanout } = pushObj(relay, 1, 1); // inside {1,0}..{1,2}
+    expect(deliveredLocations(fanout, 'viewport')).toEqual(['1.1']);
+  });
+
+  it('an object OUTSIDE the requested range is dropped for the filtered subscriber, but still reaches an unfiltered one', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 0n, endObject: 2n } }));
+    relay.onControl('everything', encodeSubscribe({ requestId: 3n, trackNamespace: NS, trackName: 'v' }));
+
+    const before = pushObj(relay, 0, 5); // group 0 — before the {1,0}..{1,2} range
+    expect(deliveredLocations(before.fanout, 'viewport')).toEqual([]);
+    expect(deliveredLocations(before.fanout, 'everything')).toEqual(['0.5']);
+
+    const after = pushObj(relay, 2, 0); // group 2 — after the range
+    expect(deliveredLocations(after.fanout, 'viewport')).toEqual([]);
+    expect(deliveredLocations(after.fanout, 'everything')).toEqual(['2.0']);
+  });
+
+  it('boundary objects at the exact StartGroup/StartObject and EndGroup/EndObject pass (inclusive range, §location-filters)', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 2n, endGroupDelta: 0n, endObject: 4n } }));
+
+    expect(deliveredLocations(pushObj(relay, 1, 1).fanout, 'viewport')).toEqual([]); // just before start
+    expect(deliveredLocations(pushObj(relay, 1, 2).fanout, 'viewport')).toEqual(['1.2']); // == start (inclusive)
+    expect(deliveredLocations(pushObj(relay, 1, 4).fanout, 'viewport')).toEqual(['1.4']); // == end (inclusive)
+    expect(deliveredLocations(pushObj(relay, 1, 5).fanout, 'viewport')).toEqual([]); // just past end
+  });
+
+  it('EndObject omitted includes the whole End Group (§location-filters "all objects in the End Group")', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 0n } }));
+
+    expect(deliveredLocations(pushObj(relay, 1, 99).fanout, 'viewport')).toEqual(['1.99']); // whole End Group 1
+    expect(deliveredLocations(pushObj(relay, 2, 0).fanout, 'viewport')).toEqual([]); // group 2 excluded
+  });
+
+  it('an open-ended filter (EndGroupDelta/EndObject omitted) keeps forwarding past the start indefinitely', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 5n, startObject: 0n } }));
+
+    expect(deliveredLocations(pushObj(relay, 4, 0).fanout, 'viewport')).toEqual([]);
+    expect(deliveredLocations(pushObj(relay, 5, 0).fanout, 'viewport')).toEqual(['5.0']);
+    expect(deliveredLocations(pushObj(relay, 50, 3).fanout, 'viewport')).toEqual(['50.3']);
+  });
+
+  it('late-joiner cache replay is filtered by the range too (only cached objects inside the range replay)', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    for (const g of [0, 1, 2]) for (const o of [0, 1]) pushObj(relay, g, o);
+
+    const { objects } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 0n } }));
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [1, 1]]);
+  });
+
+  it('an unfiltered SUBSCRIBE still receives every object, byte-identical to pre-E5 fan-out', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    relay.onControl('all', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v' }));
+    const locs: string[] = [];
+    for (const g of [0, 1, 2]) for (const o of [0, 1]) locs.push(...deliveredLocations(pushObj(relay, g, o).fanout, 'all'));
+    expect(locs).toEqual(['0.0', '0.1', '1.0', '1.1', '2.0', '2.1']);
+  });
+
+  it('a relative LOCATION_FILTER on SUBSCRIBE (lone StartGroup) → REQUEST_ERROR NOT_SUPPORTED, subscriber not registered', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    const { replies } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
+    expect(relay.subscriberCount).toBe(0);
+  });
+
+  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) on SUBSCRIBE → REQUEST_ERROR NOT_SUPPORTED', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    const { replies } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
+    expect(relay.subscriberCount).toBe(0);
+  });
+});
