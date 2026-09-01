@@ -269,7 +269,7 @@ describe('MoqRelay hibernation rehydration', () => {
 describe('relay events fold into the R4 wave.usage meter', () => {
   it('object_received increments frames + bytes in the canonical meter', async () => {
     const relay = new MoqRelay();
-    const collector = new MetricsCollector({ MOQ_TRACK_REGISTRY: {} as never, ENVIRONMENT: 'test', MOQ_DRAFT_VERSION: '18' });
+    const collector = new MetricsCollector({ MOQ_TRACK_REGISTRY: {} as never, ENVIRONMENT: 'test', MOQ_DRAFT_VERSION: '20' });
     const trackKey = 'wave/cam-1';
 
     relay.onControl('pub', encodePublishNamespace({ requestId: 1n, trackNamespace: NS }));
