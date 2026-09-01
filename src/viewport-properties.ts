@@ -48,7 +48,19 @@ export const VIEWPORT_PROP = {
   RIG_ID: 0xff05,
 } as const;
 
-/** The decoded contents of a viewport property block. Every field is optional on the wire. */
+/**
+ * The decoded contents of a viewport property block. Every field is optional on the wire.
+ *
+ * #212 E2 note (draft-20 #1844): `OBJECT_DELIVERY_TIMEOUT` now starts counting at the LAST HEADER
+ * BYTE — i.e. the end of this Properties block when one is present (or the end of the length-prefixed
+ * Payload when it is absent) — rather than the first Payload byte as in draft-18/-19. This block's own
+ * encode/decode (`encodeViewportProperties`/`decodeViewportProperties`) is a pure byte-in/byte-out
+ * codec and neither computes nor enforces any delivery-timeout deadline, so this module needs no code
+ * change for the shift; it is documented here because a FUTURE delivery-timeout implementation reading
+ * `ViewportObjectMeta` must anchor its clock to "this block finished decoding" (matching the trailing
+ * placement of `MoqObject.properties` on this repo's WS-binding — see moq-wire-object.ts), NOT to the
+ * first payload byte the pre-E2 draft would have implied.
+ */
 export interface ViewportObjectMeta {
   viewportId?: number;
   captureTaiNs?: bigint;

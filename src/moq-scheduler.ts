@@ -20,6 +20,24 @@
  * in (priority, deadline) order — never a partial/mid-group flush — so the E2-fix ordering guarantee
  * holds. It is pure state (no wall-clock reads; the caller supplies `now`) so it stays hermetically
  * testable with an injected clock, same as `orderByDeadline`.
+ *
+ * #212 E2 CONFORMANCE NOTE (draft-19 #1762: a relay MAY NOT reorder or drop objects, vs. this
+ * module's own (priority, deadline) reordering): the tension is resolved by SCOPE, not by removing
+ * the reorder. `orderByDeadline` only ever reorders objects that belong to the SAME group — the
+ * caller (`moq-relay.ts` `schedule()`) flushes `PendingGroupBuffer` on every group-boundary crossing
+ * BEFORE buffering the next group's first object (`boundaryCrossed` check), so a `PendingGroupBuffer`
+ * instance NEVER holds objects from more than one group at once (see `groupId` getter — it is a
+ * single value, not a set). `drain()` therefore always emits one whole group, reordered internally
+ * by (priority, deadline), with NO possibility of a cross-group reorder and NO possibility of a drop
+ * (every pushed item is returned by `drain()` — see `orderByDeadline`'s "no drop, no dup" contract).
+ * This is documented here as "subgroup-priority scheduling, not object drop/reorder across the
+ * subscription": #1762 governs cross-group/cross-subscription ordering and delivery, which this
+ * module never touches; within-group reordering by priority is the SUBGROUP_HEADER's own documented
+ * mechanism (multiple subgroups of one group MAY be delivered in any order — draft-18/-19/-20
+ * §subgroup-header — the scheduler is choosing among already-permitted orderings, not inventing a
+ * new one). See `__tests__/moq-relay.test.ts` "#212 E2 forwarding conformance" for the assertion
+ * that a multi-group publish sequence is forwarded/cached in group-arrival order with the scheduler
+ * ON, i.e. no cross-group reorder and no drop.
  */
 
 /** The subset of scheduling fields an orderable item must expose (see MoqObject). */
