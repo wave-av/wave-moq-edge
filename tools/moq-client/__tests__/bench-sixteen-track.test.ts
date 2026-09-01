@@ -12,8 +12,11 @@ import {
   benchNamespaceFor,
   buildTrackSet,
   resolveTrackToken,
+  runOneTrack,
   type MintFn,
+  type OpenTransportFn,
 } from '../bench-sixteen-track.ts';
+import type { Transport } from '../src/transport.ts';
 
 describe('buildTrackSet', () => {
   it('emits exactly n independently-accounted rows for n=16 (the phase target)', () => {
@@ -170,5 +173,86 @@ describe('resolveTrackToken — per-(ns,track) join-token mint', () => {
     const token = await resolveTrackToken('https://api.wave.online', 'publish', 'ns', 'track', mint);
     expect(token).toBeUndefined();
     expect(mint).not.toHaveBeenCalled();
+  });
+});
+
+function fakeTransport(): Transport {
+  return {
+    kind: 'websocket',
+    alpn: null,
+    send: () => {},
+    receive: async () => null,
+    close: () => {},
+    closeInfo: new Promise(() => {}), // never resolves — irrelevant to these ordering tests
+  };
+}
+
+/**
+ * Regression coverage for the exact live failure this branch fixes: 2026-08-31, all 4 canary tracks
+ * failed identically — role=subscriber stage=transport-connect, `relay http 404: {"title":"Track not
+ * found or no active publisher"...}` — because `runOneTrack` opened the subscriber's transport before
+ * the publisher's. These tests assert the subscriber is not opened until the publisher-ready condition
+ * is met: a fake publisher that becomes ready after N ticks, and a subscriber whose connect defers
+ * (retries on a simulated 404) until then.
+ */
+describe('runOneTrack — publisher-first ordering', () => {
+  const track = buildTrackSet(1, 'run-order-a')[0];
+  const noSleep = async () => {}; // tests inject a no-op sleep so the retry backoff costs 0ms
+
+  it('opens the publisher transport before the subscriber transport for the same track', async () => {
+    const order: Array<'publish' | 'subscribe'> = [];
+    const open: OpenTransportFn = async (_url, _kind, role) => {
+      order.push(role);
+      return fakeTransport();
+    };
+    const mint: MintFn = async (opts) => `tok:${opts.role}`;
+
+    await runOneTrack('https://relay.example', track, 20, 'https://api.wave.online', mint, open, noSleep);
+
+    expect(order).toEqual(['publish', 'subscribe']);
+  });
+
+  it('defers the subscriber connect until the publisher is ready — retries a simulated 404 then succeeds', async () => {
+    const order: Array<{ role: 'publish' | 'subscribe'; attempt: number }> = [];
+    let subscriberAttempts = 0;
+    const publisherReadyAfterTicks = 2; // the fake publisher "announces" only after this many subscriber attempts
+    const open: OpenTransportFn = async (_url, _kind, role) => {
+      if (role === 'publish') {
+        order.push({ role, attempt: 1 });
+        return fakeTransport();
+      }
+      subscriberAttempts++;
+      order.push({ role, attempt: subscriberAttempts });
+      if (subscriberAttempts <= publisherReadyAfterTicks) {
+        throw new Error('relay http 404: {"title":"Track not found or no active publisher","status":404}');
+      }
+      return fakeTransport();
+    };
+    const mint: MintFn = async (opts) => `tok:${opts.role}`;
+
+    const result = await runOneTrack('https://relay.example', track, 20, 'https://api.wave.online', mint, open, noSleep);
+
+    // The subscriber was NOT opened successfully until the 3rd attempt (after the publisher-ready tick).
+    expect(subscriberAttempts).toBe(publisherReadyAfterTicks + 1);
+    // Publisher's connect happened first, and every subscriber attempt happened strictly after it.
+    expect(order[0]).toEqual({ role: 'publish', attempt: 1 });
+    expect(order.slice(1).every((o) => o.role === 'subscribe')).toBe(true);
+    // The track still completes successfully once the retry catches the publisher becoming ready.
+    expect(result.config).toBe(track);
+  });
+
+  it('does not retry the subscriber on a non-404 transport-connect failure — fails the track immediately', async () => {
+    let subscriberAttempts = 0;
+    const open: OpenTransportFn = async (_url, _kind, role) => {
+      if (role === 'publish') return fakeTransport();
+      subscriberAttempts++;
+      throw new Error('relay http 401: {"title":"unauthorized"}');
+    };
+    const mint: MintFn = async (opts) => `tok:${opts.role}`;
+
+    await expect(
+      runOneTrack('https://relay.example', track, 20, 'https://api.wave.online', mint, open, noSleep),
+    ).rejects.toThrow(/relay http 401/);
+    expect(subscriberAttempts).toBe(1);
   });
 });

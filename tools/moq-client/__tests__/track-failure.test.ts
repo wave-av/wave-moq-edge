@@ -33,12 +33,16 @@ function fakeSessionReport(overrides: Partial<SessionReport> = {}): SessionRepor
 }
 
 describe('runOneTrack — per-stage error tagging', () => {
-  it('tags a mint failure with role=subscriber stage=mint (subscriber mints first)', async () => {
+  // NOTE (fix/e0-bench-publisher-first): `runOneTrack` now opens the PUBLISHER before the SUBSCRIBER
+  // (see src/subscriber-retry.ts for the ordering fix and its rationale), so a mint/open fake that
+  // throws unconditionally regardless of role is now reached by the publisher's leg FIRST — these
+  // tests updated their expected `role` from 'subscriber' to 'publisher' to match.
+  it('tags a mint failure with role=publisher stage=mint (publisher mints/connects first)', async () => {
     process.env.WAVE_API_KEY = 'test-wave-api-key';
     try {
       const [track] = buildTrackSet(1, 'run-mint-fail');
       const throwingMint: MintFn = async () => {
-        throw new Error('mint GET https://api.wave.online/v1/moq/subscribe/ns/track → 402 Payment Required: no MoQ entitlement');
+        throw new Error('mint POST https://api.wave.online/v1/moq/publish/ns/track → 402 Payment Required: no MoQ entitlement');
       };
       const neverCalledOpen: OpenTransportFn = async () => {
         throw new Error('open should not be reached when mint fails first');
@@ -47,7 +51,7 @@ describe('runOneTrack — per-stage error tagging', () => {
       await expect(runOneTrack('https://relay.test', track, 1000, 'https://api.wave.online', throwingMint, neverCalledOpen)).rejects.toMatchObject(
         {
           name: 'TrackStageError',
-          role: 'subscriber',
+          role: 'publisher',
           stage: 'mint',
           track: track.track,
           mintStatus: 402,
@@ -77,7 +81,7 @@ describe('runOneTrack — per-stage error tagging', () => {
 
       expect(caught).toBeInstanceOf(TrackStageError);
       const err = caught as TrackStageError;
-      expect(err.role).toBe('subscriber');
+      expect(err.role).toBe('publisher');
       expect(err.stage).toBe('transport-connect');
       expect(err.track).toBe(track.track);
       expect(err.message).not.toContain(secretToken);
@@ -104,7 +108,8 @@ describe('collectCanaryErrors — turns settled results into the report\'s canar
 
       const errors = collectCanaryErrors(settled);
       expect(errors).toHaveLength(1);
-      expect(errors[0].role).toBe('subscriber');
+      // Publisher mints first now (fix/e0-bench-publisher-first) — see the note above.
+      expect(errors[0].role).toBe('publisher');
       expect(errors[0].track).toBe(track.track);
       expect(errors[0].stage).toBe('mint');
       expect(errors[0].message).toContain('500');
