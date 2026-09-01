@@ -34,6 +34,7 @@ import {
   encodeRequestOk,
   encodeRequestError,
   decodePublishStateNotify,
+  decodeRequestUpdate,
   decodeObject,
   decodeSubgroupStream,
   encodeObject,
@@ -78,10 +79,15 @@ interface ResolvedRange {
 
 interface Subscriber {
   requestId: bigint;
-  /** Resolved absolute LOCATION_FILTER range (#212 E5) — the per-viewport filter. `undefined` means
-   * the subscription carried no filter (or was decoded with one that resolved to unfiltered): forward
-   * every object, byte-identical to pre-E5 fan-out. */
+  /** Resolved absolute LOCATION_FILTER range (#212 E5, updatable in-place by #212 E6's REQUEST_UPDATE)
+   * — the per-viewport filter. `undefined` means the subscription carried no filter (or was decoded
+   * with one that resolved to unfiltered): forward every object, byte-identical to pre-E5 fan-out. */
   range?: ResolvedRange;
+  /** FORWARD state (#212 E6, §forward-parameter) — 0 = paused, 1/undefined = forwarding. Only
+   * REQUEST_UPDATE sets this today (SUBSCRIBE itself carries no FORWARD parameter in this codec — see
+   * moq-wire-subscribe.ts); `undefined` is the default forwarding-ON state, matching every
+   * pre-E6 subscriber's behavior byte-for-byte. */
+  forward?: 0 | 1;
 }
 
 /** One cached group: the forwarded object frames of a single Group ID, in arrival order. */
@@ -250,6 +256,10 @@ export class MoqRelay {
         // accept it silently (no reply per spec). Disconnect handling runs on socket close.
         break;
       }
+      case MOQ_MSG.REQUEST_UPDATE: {
+        this.onRequestUpdate(sessionId, payload, replies);
+        break;
+      }
       case MOQ_MSG.PUBLISH_STATE_NOTIFY: {
         // #212 E4 (draft-20 §ps-notify, 0x22) — UNILATERAL notification, no REQUEST_OK/REQUEST_ERROR
         // reply. Explicit case (vs `default`) fixes a real bug: `default`'s readFirstVarint() would
@@ -320,6 +330,57 @@ export class MoqRelay {
     const last = matched[matched.length - 1];
     replies.push({ to: sessionId, kind: 'control', frame: encodeFetchOk({ endOfTrack: false, end: { group: last.group, object: last.object } }) });
     for (const x of matched) objects.push({ to: sessionId, kind: 'object', frame: x.frame });
+  }
+
+  /**
+   * Handle REQUEST_UPDATE (#212 E6, draft-20 §message-request-update, 0x2) — the mid-stream
+   * viewport-update payoff: a viewer updates its active LOCATION_FILTER (and/or FORWARD state) on an
+   * already-open subscription WITHOUT tearing it down and re-SUBSCRIBEing. Per `moq-wire-request-update.ts`'s
+   * header discrepancy note, this relay correlates the update to a subscription by SESSION (its one
+   * bidi-request-stream stand-in on the WS transport), not by matching the REQUEST_UPDATE's own (new)
+   * Request ID against the original SUBSCRIBE's.
+   *
+   * A session with no active subscriber entry has nothing to update — draft-20 says an
+   * out-of-context REQUEST_UPDATE "MUST close the session with PROTOCOL_VIOLATION"; this relay takes
+   * the same softer REQUEST_ERROR(DOES_NOT_EXIST) posture `onControl`'s TRACK_STATUS case already
+   * uses for "no such state" rather than tearing down the whole session, matching this relay's
+   * established pattern of REQUEST_ERROR over hard session termination for request-scoped failures
+   * (see the relative-Location-Filter NOT_SUPPORTED replies above).
+   *
+   * LOCATION_FILTER present ⇒ REPLACES the subscriber's range entirely (never merged field-by-field,
+   * §message-request-update / §location-filters); a relative form is rejected the same way SUBSCRIBE's
+   * initial filter is (this relay does not track Largest Object independently of its cache). A
+   * zero-length LOCATION_FILTER (`{}`, all fields undefined) resolves to `range: undefined` via the
+   * SAME `resolveLocationFilter` SUBSCRIBE/FETCH already use — no special-casing needed, since an
+   * all-undefined LocationFilter already means "unfiltered" there (§location-filters: "Length 0 ...
+   * remove the filter"). FORWARD present ⇒ sets the subscriber's forwarding state; 0 pauses fan-out to
+   * this subscriber (checked in `fanOut` below) without dropping the subscription itself.
+   */
+  private onRequestUpdate(sessionId: string, payload: Uint8Array, replies: Outbound[]): void {
+    const m = decodeRequestUpdate(payload);
+    const sub = this.subscribers.get(sessionId);
+    if (!sub) {
+      replies.push({
+        to: sessionId,
+        kind: 'control',
+        frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.DOES_NOT_EXIST, reason: 'no active subscription to update' }),
+      });
+      return;
+    }
+    if (m.locationFilter !== undefined) {
+      const resolved = resolveLocationFilter(m.locationFilter);
+      if (resolved.relative) {
+        replies.push({
+          to: sessionId,
+          kind: 'control',
+          frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }),
+        });
+        return;
+      }
+      sub.range = resolved.range;
+    }
+    if (m.forward !== undefined) sub.forward = m.forward;
+    replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
   }
 
   /**
@@ -465,6 +526,7 @@ export class MoqRelay {
    */
   private fanOut(frame: Uint8Array, out: Outbound[], groupId: bigint, objectId: bigint): void {
     for (const [subId, sub] of this.subscribers) {
+      if (sub.forward === 0) continue; // #212 E6: REQUEST_UPDATE(FORWARD=0) paused this subscriber
       if (!locationInRange(groupId, objectId, sub.range)) continue;
       out.push({ to: subId, kind: 'object', frame });
     }
