@@ -39,6 +39,9 @@ import {
   encodeFillParameters,
   decodeFillParameters,
   MoqProtocolViolationError,
+  encodePublishStateNotify,
+  decodePublishStateNotify,
+  PUBLISH_STATE_NOTIFY_PARAM,
 } from '../src/moq-wire';
 
 describe('draft-20 constants (#212 E0/E1 uplevel from draft-18)', () => {
@@ -298,5 +301,61 @@ describe('full draft-18 message set round-trip', () => {
     expect(b).toEqual({ newSessionUri: 'wss://b/relay', timeoutMs: 0n });
     // No trailing bytes are emitted — the body is exactly NewSessionUri(strLP) + Timeout(i).
     expect(Object.keys(a)).not.toContain('requestId');
+  });
+});
+
+describe('PUBLISH_STATE_NOTIFY (draft-20 §ps-notify, 0x22, #1820 — new in draft-20) — #212 E4', () => {
+  it('has type 0x22 and no Request ID field (implied by the bidi stream, like FETCH_OK)', () => {
+    expect(MOQ_MSG.PUBLISH_STATE_NOTIFY).toBe(0x22);
+    const enc = encodePublishStateNotify({});
+    expect(parseControl(enc).type).toBe(MOQ_MSG.PUBLISH_STATE_NOTIFY);
+    expect(decodePublishStateNotify(parseControl(enc).payload)).not.toHaveProperty('requestId');
+  });
+  it('round-trips an empty notification (no parameters changed)', () => {
+    const enc = encodePublishStateNotify({});
+    expect(decodePublishStateNotify(parseControl(enc).payload)).toEqual({});
+  });
+  it('round-trips LARGEST_OBJECT (0x9, §largest-param) — Location as two raw varints, no length prefix', () => {
+    const enc = encodePublishStateNotify({ largestObject: { group: 12n, object: 4n } });
+    expect(decodePublishStateNotify(parseControl(enc).payload)).toEqual({ largestObject: { group: 12n, object: 4n } });
+  });
+  it('round-trips FORWARD (0x10, §forward-parameter) — uint8, 0 or 1', () => {
+    expect(decodePublishStateNotify(parseControl(encodePublishStateNotify({ forward: 0 })).payload)).toEqual({ forward: 0 });
+    expect(decodePublishStateNotify(parseControl(encodePublishStateNotify({ forward: 1 })).payload)).toEqual({ forward: 1 });
+  });
+  it('round-trips LOCATION_FILTER (0x21, §location-filter) — shared LocationFilter type/codec with FETCH', () => {
+    const enc = encodePublishStateNotify({ locationFilter: { startGroup: 3n, startObject: 0n } });
+    expect(decodePublishStateNotify(parseControl(enc).payload)).toEqual({ locationFilter: { startGroup: 3n, startObject: 0n } });
+  });
+  it('round-trips all three parameters together, serialized in ascending Type order regardless of field order', () => {
+    const enc = encodePublishStateNotify({
+      locationFilter: { startGroup: 1n },
+      forward: 1,
+      largestObject: { group: 5n, object: 2n },
+    });
+    expect(decodePublishStateNotify(parseControl(enc).payload)).toEqual({
+      largestObject: { group: 5n, object: 2n },
+      forward: 1,
+      locationFilter: { startGroup: 1n },
+    });
+  });
+  it('rejects an out-of-range FORWARD value as a PROTOCOL_VIOLATION (§forward-parameter)', () => {
+    // Number of Parameters=1, TypeDelta=FORWARD(0x10), Value=2 (only 0/1 are legal).
+    const body = new Writer().varint(1n).varint(PUBLISH_STATE_NOTIFY_PARAM.FORWARD).u8(2).bytes();
+    const enc = frameControl(MOQ_MSG.PUBLISH_STATE_NOTIFY, body);
+    expect(() => decodePublishStateNotify(parseControl(enc).payload)).toThrow(MoqProtocolViolationError);
+  });
+  it('rejects an unknown Message Parameter as a PROTOCOL_VIOLATION (§message-params — e.g. GROUP_ORDER is not valid here)', () => {
+    // Number of Parameters=1, TypeDelta=0x22 (GROUP_ORDER — valid elsewhere, NOT listed for
+    // PUBLISH_STATE_NOTIFY), Length=1, Value=1.
+    const body = new Writer().varint(1n).varint(0x22n).varint(1n).u8(1).bytes();
+    const enc = frameControl(MOQ_MSG.PUBLISH_STATE_NOTIFY, body);
+    expect(() => decodePublishStateNotify(parseControl(enc).payload)).toThrow(MoqProtocolViolationError);
+  });
+  it('rejects a repeated Message Parameter type as a PROTOCOL_VIOLATION (§message-params: "MUST NOT repeat")', () => {
+    // Number of Parameters=2, both FORWARD (0x10): TypeDelta=0x10,Value=1 then TypeDelta=0(repeat),Value=1.
+    const body = new Writer().varint(2n).varint(0x10n).u8(1).varint(0n).u8(1).bytes();
+    const enc = frameControl(MOQ_MSG.PUBLISH_STATE_NOTIFY, body);
+    expect(() => decodePublishStateNotify(parseControl(enc).payload)).toThrow(MoqProtocolViolationError);
   });
 });

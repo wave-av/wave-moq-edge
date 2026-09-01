@@ -13,6 +13,7 @@ import {
   encodeSubscribeNamespace,
   encodeFetch,
   encodeGoaway,
+  encodePublishStateNotify,
   encodeObject,
   decodeSubscribeOk,
   decodeRequestOk,
@@ -144,6 +145,18 @@ describe('MoqRelay full draft-18 control handlers', () => {
     expect(replies).toHaveLength(0);
     expect(objects).toHaveLength(0);
     expect(events).toHaveLength(0);
+  });
+  it('PUBLISH_STATE_NOTIFY (#212 E4, draft-20 §ps-notify) is accepted silently (no REQUEST_OK/REQUEST_ERROR reply)', () => {
+    const relay = new MoqRelay();
+    const { replies, objects, events } = relay.onControl('pub', encodePublishStateNotify({ forward: 1, largestObject: { group: 3n, object: 0n } }));
+    expect(replies).toHaveLength(0);
+    expect(objects).toHaveLength(0);
+    expect(events).toHaveLength(0);
+  });
+  it('PUBLISH_STATE_NOTIFY does NOT fall through to the default handler\'s spurious REQUEST_ERROR (its leading varint is Number of Parameters, not a Request ID)', () => {
+    const relay = new MoqRelay();
+    const { replies } = relay.onControl('pub', encodePublishStateNotify({}));
+    expect(replies).toHaveLength(0); // if mishandled by `default`, this would be a REQUEST_ERROR reply
   });
 });
 
