@@ -1,0 +1,73 @@
+name: bundle eval gate
+
+# Systemic prevention for #215 — the 5-day prod outage where every `wrangler deploy` failed at
+# Cloudflare's upload step with `Uncaught ReferenceError: buildTokensCss is not defined`, while
+# `tsc --noEmit` (test.yml) and a bundle-only `wrangler deploy --dry-run` both stayed green the
+# whole time. Neither typechecks nor bundles EVALUATE the produced JS — Cloudflare's upload step
+# does that server-side, which is why the break shipped silently.
+#
+# This job boots the actual Worker bundle inside workerd via `wrangler dev` (local mode, zero
+# Cloudflare credentials) — the same bundling path `wrangler deploy` uses, then a real workerd
+# isolate loads the module graph exactly like Cloudflare's upload-time evaluation does. A
+# top-level ReferenceError/SyntaxError fails the boot before "Ready on" ever prints, and
+# the gate script (scripts/ci/bundle-eval-gate.mjs) fails loudly with the captured error.
+#
+# Making this a REQUIRED status check (branch protection) is the durable half of the fix — see
+# scripts/ci/bundle-eval-gate.mjs for the full rationale and the node-eval-vs-workerd-load
+# tradeoff writeup.
+
+on:
+  push:
+    branches: [main, master, staging]
+    paths:
+      - "src/**"
+      - "*.ts"
+      - "wrangler.toml"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/ci/bundle-eval-gate.mjs"
+      - ".github/workflows/bundle-eval-gate.yml"
+  pull_request:
+    paths:
+      - "src/**"
+      - "*.ts"
+      - "wrangler.toml"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/ci/bundle-eval-gate.mjs"
+      - ".github/workflows/bundle-eval-gate.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: bundle-eval-gate-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: read # required to pull @wave-av/spoke-chassis from GitHub Packages
+
+jobs:
+  bundle-eval:
+    name: boot worker bundle in workerd
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: step-security/harden-runner@ab7a9404c0f3da075243ca237b5fac12c98deaa5 # v2.19.3
+        with:
+          egress-policy: audit # npm registry only — no real Cloudflare account is touched
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: "20"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@wave-av"
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Boot the Worker bundle in workerd (module-eval gate)
+        run: npm run test:bundle-eval
