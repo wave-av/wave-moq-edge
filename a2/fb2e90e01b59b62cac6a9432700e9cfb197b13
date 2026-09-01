@@ -1,0 +1,29 @@
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_87c587ebb9728e 292
+  s_3c7a371f5618a4::t_cc1618c96f2d1d 311
+  s_3c7a371f5618a4::t_3921b6f99f0dec 320
+  s_3c7a371f5618a4::t_326a9009071ed6 92
+  s_3c7a371f5618a4::t_d915054f25959a 209
+  s_3c7a371f5618a4::t_a8ba62efed3505 65-66
+  s_3c7a371f5618a4::t_f128e075a575f2 75
+tools/moq-client/src/session.ts
+  s_3c7a371f5618a4::t_e9a779f314884a 263-268
+  s_3c7a371f5618a4::t_2c74ef444b245a 334-341,344-345
+  s_3c7a371f5618a4::t_7a48e39c99e42e 262
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a2fb2e90e01b59b62cac6a9432700e9cfb197b13",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
