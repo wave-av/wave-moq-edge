@@ -23,7 +23,7 @@
  * The legacy JSON endpoints (/state, POST register, GET subscribe-register) are preserved so the
  * Worker's metadata routes and any HTTP client keep working alongside the new WS relay path.
  */
-import { MoqRelay, type RelayEvent } from './src/moq-relay';
+import { MoqRelay, SCHEDULER_MAX_BUFFER_MS, type RelayEvent } from './src/moq-relay';
 import { WS_KIND, tagFrame, untagFrame } from './src/moq-wire';
 import { MetricsCollector } from './metrics-collector';
 import { emitMoqUsage } from './usage-emit';
@@ -51,6 +51,7 @@ interface Env {
   LOG_LEVEL: string;
   MOQ_CACHED_GROUPS?: string; // late-joiner cache depth (default 3)
   MOQ_DEADLINE_SCHEDULER_ENABLED?: string; // E1: '1' enables the deadline scheduler (default OFF)
+  MOQ_SCHEDULER_MAX_BUFFER_MS?: string; // #211: max-buffer-age flush threshold ms (default SCHEDULER_MAX_BUFFER_MS)
   // #284 usage emit (both optional → emit is INERT until an operator provisions them; see usage-emit.ts):
   GATEWAY_BASE_URL?: string; //   gateway origin for POST /v1/internal/usage + /recordings/register (var)
   WAVE_SERVICE_TOKEN?: string; // internal service bearer for the ingest + register endpoints (secret)
@@ -121,6 +122,12 @@ export class MOQSessionDurableObject {
   // the session for a loss-tolerant media frame — see send()).
   private sendDrops = 0;
 
+  // #211: max-buffer-age flush threshold (mirrors relay.flushStale()'s own copy), used only to compute
+  // the DO alarm deadline (relay.pendingBufferedAt + maxBufferAgeMs) — a DO alarm (not setTimeout)
+  // survives hibernation, so a stalled publisher's buffered tail still flushes even if the DO was
+  // evicted from memory between the last object and the deadline.
+  private readonly maxBufferAgeMs: number;
+
   constructor(state: DurableObjectState, env: Env) {
     this.state = state;
     this.env = env;
@@ -128,7 +135,13 @@ export class MOQSessionDurableObject {
     const cachedGroups = parseInt(env.MOQ_CACHED_GROUPS ?? '', 10);
     // E1 deadline scheduler: INERT unless MOQ_DEADLINE_SCHEDULER_ENABLED === '1' (E3 rollout flips it).
     const scheduler = env.MOQ_DEADLINE_SCHEDULER_ENABLED === '1';
-    this.relay = new MoqRelay({ cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined, scheduler });
+    const maxBufferAgeMs = parseInt(env.MOQ_SCHEDULER_MAX_BUFFER_MS ?? '', 10);
+    this.maxBufferAgeMs = Number.isFinite(maxBufferAgeMs) && maxBufferAgeMs > 0 ? maxBufferAgeMs : SCHEDULER_MAX_BUFFER_MS;
+    this.relay = new MoqRelay({
+      cachedGroups: Number.isFinite(cachedGroups) ? cachedGroups : undefined,
+      scheduler,
+      maxBufferAgeMs: this.maxBufferAgeMs,
+    });
   }
 
   /**
@@ -307,6 +320,27 @@ export class MOQSessionDurableObject {
     await this.webSocketClose(ws);
   }
 
+  /**
+   * #211 stall case: fires at `relay.pendingBufferedAt + maxBufferAgeMs` (armed by `armFlushAlarm()`
+   * after every object/close event). A DO alarm — not `setTimeout` — because it is durable across a
+   * hibernation eviction: a low-rate publisher can go quiet for the DO's whole memory lifetime, and
+   * the alarm still fires on the next wake. `relay.flushStale()` re-checks staleness against the
+   * relay's own clock and is a no-op if another trigger already flushed the buffer, so a stale/late
+   * alarm firing is always safe.
+   */
+  async alarm(): Promise<void> {
+    this.ensureRehydrated();
+    for (const out of this.relay.flushStale()) this.send(out.to, WS_KIND.OBJECT, out.frame);
+    await this.armFlushAlarm();
+  }
+
+  /** Arm (or leave unset) the max-buffer-age alarm to match whatever the relay currently has pending. */
+  private async armFlushAlarm(): Promise<void> {
+    const bufferedAt = this.relay.pendingBufferedAt;
+    if (bufferedAt === null) return; // nothing pending — no alarm needed (a stale one is harmless if left set)
+    await this.state.storage.setAlarm(bufferedAt + this.maxBufferAgeMs);
+  }
+
   /** Resolve a socket's session id from the live map, falling back to its survival attachment. */
   private sessionIdFor(ws: WebSocket): string | null {
     const known = this.socketIds.get(ws);
@@ -340,6 +374,9 @@ export class MOQSessionDurableObject {
       const r = this.relay.onObject(sessionId, body);
       for (const out of r.fanout) this.send(out.to, WS_KIND.OBJECT, out.frame);
       events = r.events;
+      // #211: re-sync the max-buffer-age alarm to whatever the relay now has pending (a fresh group's
+      // buffer start, or nothing if this object's arrival itself flushed via boundary/window).
+      await this.armFlushAlarm();
     }
     // Pin the learned role into the socket attachment so a hibernation wake can rebuild the relay.
     for (const e of events) {
