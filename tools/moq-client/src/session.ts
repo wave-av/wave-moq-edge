@@ -260,6 +260,13 @@ export interface PublishOpts {
   payloadBytes?: number;
   path?: string;
   /**
+   * Objects per Group. Undefined/0 = the whole stream is one group (groupId 0, objectId increments) —
+   * the legacy behavior, pathological for a per-group relay scheduler. A positive value emits a new
+   * group every N objects (groupId = floor(i/N), objectId = i%N), modelling real GoP/frame structure;
+   * groupSize=1 makes each object its own group (max-live).
+   */
+  groupSize?: number;
+  /**
    * Fired synchronously right after PUBLISH_NAMESPACE is sent, before any object is emitted. Lets a
    * caller learn the track is announced (so a subscriber's publisher-not-found 404 can now resolve)
    * WITHOUT having also started the object stream. Optional; publishers that don't coordinate a
@@ -324,10 +331,18 @@ export async function runPublish(o: PublishOpts): Promise<SessionReport> {
 
     const at = process.hrtime.bigint();
     const payload = makeProbePayload(o.payloadBytes ?? 64);
+    // groupSize models real MoQ group structure: a Group is a GoP / subscription join point, normally
+    // per-frame. Default (undefined) keeps the whole stream in ONE group (groupId 0) — how this bench
+    // originally ran, and pathological for the relay's per-group scheduler, which buffers/flushes at
+    // group boundaries it then never sees. A positive groupSize starts a new group every N objects so
+    // the relay observes real boundaries (groupSize=1 = each object its own group = max-live).
+    const gs = o.groupSize && o.groupSize > 0 ? o.groupSize : 0;
+    const groupId = gs ? BigInt(Math.floor(i / gs)) : 0n;
+    const objectId = gs ? BigInt(i % gs) : BigInt(i);
     const frame = encodeObject({
       trackAlias: 1n,
-      groupId: 0n,
-      objectId: BigInt(i),
+      groupId,
+      objectId,
       status: MOQ_OBJECT_STATUS.NORMAL,
       payload,
     });

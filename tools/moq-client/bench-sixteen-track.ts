@@ -62,6 +62,8 @@ export interface TrackConfig {
   trackClass: TrackClass;
   intervalMs: number;
   payloadBytes: number;
+  /** Objects per Group (GoP). 0 = one group for the whole stream (legacy). See PublishOpts.groupSize. */
+  groupSize: number;
 }
 
 /**
@@ -70,7 +72,7 @@ export interface TrackConfig {
  * higher-cadence/larger-payload "2160p-class"; the rest are "1080p-class" — proportions chosen so
  * a 16-track run has both classes represented without either being a single outlier.
  */
-export function buildTrackSet(n: number, runId: string, intervalMs = 100): TrackConfig[] {
+export function buildTrackSet(n: number, runId: string, intervalMs = 100, groupSize = 0): TrackConfig[] {
   if (n < 1) throw new Error(`track count must be >= 1, got ${n}`);
   if (intervalMs < 1) throw new Error(`intervalMs must be >= 1, got ${intervalMs}`);
   const namespace = benchNamespaceFor(runId);
@@ -87,6 +89,7 @@ export function buildTrackSet(n: number, runId: string, intervalMs = 100): Track
       // latency flat) or rate-coupled (still ramps) — the discriminator for the ~126ms/object artifact.
       intervalMs,
       payloadBytes: isHigh ? 8_000 : 2_000,
+      groupSize,
     });
   }
   return tracks;
@@ -203,6 +206,7 @@ export async function runOneTrack(
       count,
       intervalMs: cfg.intervalMs,
       payloadBytes: cfg.payloadBytes,
+      groupSize: cfg.groupSize,
       onAnnounced: resolveAnnounced,
       startSignal: subscriberReady,
     }).catch((e) => {
@@ -285,6 +289,7 @@ interface Args {
   tracks: number;
   durationMs: number;
   intervalMs: number;
+  groupSize: number;
   relay: string;
   json: boolean;
 }
@@ -303,6 +308,7 @@ function parseArgs(argv: string[]): Args {
     tracks,
     durationMs: Math.min(requestedDuration, MAX_DURATION_MS),
     intervalMs: Math.max(1, Number(flags.get('interval') ?? 100)),
+    groupSize: Math.max(0, Number(flags.get('group-size') ?? 0)),
     relay: flags.get('relay') ?? 'https://moq.wave.online',
     json: flags.has('json'),
   };
@@ -311,7 +317,7 @@ function parseArgs(argv: string[]): Args {
 async function main(): Promise<number> {
   const args = parseArgs(process.argv.slice(2));
   const runId = `${Date.now()}`;
-  const trackSet = buildTrackSet(args.tracks, runId, args.intervalMs);
+  const trackSet = buildTrackSet(args.tracks, runId, args.intervalMs, args.groupSize);
   const benchNamespace = benchNamespaceFor(runId);
 
   const startedAt = new Date().toISOString();
