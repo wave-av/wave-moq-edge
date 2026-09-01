@@ -3,6 +3,7 @@
 // default `:root{...}` block verbatim inside <style> — so this file starts from the identical
 // chassis default (no visual change to existing tokens) and appends the `.gfx` motif CSS after it,
 // exactly like the pattern used in sibling spokes (e.g. wave-voice-edge/src/tokens.css.ts).
+import { buildTokensCss } from "@wave-av/spoke-chassis";
 const TOKENS = buildTokensCss("dark", { accent: "oklch(0.78 0.15 220)" });
 export const TOKENS_CSS = `${TOKENS}.gfx{display:flex;justify-content:center;margin:1.5rem 0 .6rem}
 .gfx svg{width:min(360px,92%);height:auto}
