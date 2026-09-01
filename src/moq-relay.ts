@@ -39,7 +39,9 @@ import {
   encodeObject,
   type MoqObject,
 } from './moq-wire';
-import { orderByDeadline } from './moq-scheduler';
+import { PendingGroupBuffer, SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
+
+export { SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
 
 /** Reordering window: max objects buffered before a forced flush (E2-fix). */
 export const SCHEDULER_WINDOW_OBJECTS = 64;
@@ -104,15 +106,21 @@ export class MoqRelay {
   private readonly maxCachedGroups: number;
 
   // E1 deadline scheduler. When OFF (default) the forward path is byte-identical FIFO. When ON, the
-  // objects of the CURRENT group are buffered and flushed in (priority, deadline) order at the next
-  // group boundary (or on flush()); unknown priority/deadline falls back to arrival order (fail-open).
+  // objects of the CURRENT group are buffered and flushed in (priority, deadline) order at a group
+  // boundary, a 64-object window, or a max-buffer-age timeout (#211); unknown priority/deadline
+  // falls back to arrival order (fail-open). `now`/`maxBufferAgeMs` are injectable so the time-based
+  // trigger is hermetically testable (see __tests__/moq-deadline-scheduler.test.ts).
   private readonly schedulerEnabled: boolean;
-  private pendingGroup: PendingObject[] | null = null;
+  private readonly maxBufferAgeMs: number;
+  private readonly now: () => number;
+  private readonly pending = new PendingGroupBuffer<PendingObject>();
 
-  constructor(opts: { cachedGroups?: number; scheduler?: boolean } = {}) {
+  constructor(opts: { cachedGroups?: number; scheduler?: boolean; maxBufferAgeMs?: number; now?: () => number } = {}) {
     const n = opts.cachedGroups ?? DEFAULT_CACHED_GROUPS;
     this.maxCachedGroups = n > 0 ? n : 0;
     this.schedulerEnabled = opts.scheduler === true;
+    this.maxBufferAgeMs = opts.maxBufferAgeMs ?? SCHEDULER_MAX_BUFFER_MS;
+    this.now = opts.now ?? Date.now;
   }
 
   /** Whether a publisher session is currently attached. */
@@ -343,8 +351,10 @@ export class MoqRelay {
    * decodes a wire frame then delegates here; a future subgroup-decode path (or a test) may populate
    * `obj.priority`/`obj.deadlineMs`, since the OBJECT_DATAGRAM wire form carries neither (live traffic
    * is therefore always fail-open arrival order). Scheduler OFF (default): fan out + cache immediately,
-   * byte-identical FIFO. Scheduler ON: buffer per group and flush the PREVIOUS group in (priority,
-   * deadline) order at each group boundary; call flush() to emit the final group (publish_end / tests).
+   * byte-identical FIFO. Scheduler ON: buffer per group and flush the PREVIOUS buffer in (priority,
+   * deadline) order at a group boundary, a 64-object window, or a max-buffer-age timeout (#211, see
+   * `schedule()`); call flush() to emit the final group (publish_end / tests), or flushStale() for the
+   * stalled-stream case (see moq-session-do.ts's alarm-armed call).
    */
   onDecodedObject(obj: MoqObject): { fanout: Outbound[]; events: RelayEvent[] } {
     const fanout: Outbound[] = [];
@@ -386,36 +396,50 @@ export class MoqRelay {
   }
 
   /**
-   * E1 scheduler (ON only): buffer the object in its group. When the incoming object starts a NEW
-   * group, first flush the previous group in (priority, deadline) order. Frames are pre-encoded
-   * (re-stamped with TRACK_ALIAS) so ordering never changes a single byte on the wire.
+   * E1/E3 scheduler (ON only): buffer the object in its group. Flush the pending buffer FIRST (as a
+   * whole unit, in (priority, deadline) order — never mid-group/partial, per the E2-fix rejection of
+   * deadline-pressure flushing) when either trigger fires: (1) a group boundary — the incoming
+   * object's group differs from the buffered group, or (2) max-buffer-age (#211) — the buffer has
+   * been open at least `maxBufferAgeMs`, so a low-rate/single-group track's tail can't sit forever
+   * waiting for a boundary that may never come. Frames are pre-encoded (re-stamped with TRACK_ALIAS)
+   * so ordering never changes a single byte on the wire.
    */
   private schedule(groupId: bigint, objectId: bigint, frame: Uint8Array, priority: number | undefined, deadlineMs: number | undefined, out: Outbound[]): void {
-    // Flush the previous group at a group boundary — the ONLY hint-triggered flush.
-    // Mid-group deadline-pressure flushing was tried and REJECTED (E2-fix): it emits
-    // partial sorted subsets and breaks the whole-group ordering guarantee (unit test
-    // `emits a group in (priority, deadline) order on flush()` fails; across-window
-    // inversions appear). Ordering correctness wins over mid-group latency.
-    if (this.pendingGroup !== null && this.pendingGroup.length > 0 && this.pendingGroup[0].groupId !== groupId) {
-      this.flushPending(out);
-    }
-    if (this.pendingGroup === null) this.pendingGroup = [];
-    this.pendingGroup.push({ groupId, objectId, frame, priority, deadlineMs });
-    // Bounded-window reordering: flush when the window fills, so delivery never
-    // depends on a run-end flush. Group boundaries remain the primary trigger;
-    // absent hints retain arrival order (stable sorter).
-    if (this.pendingGroup.length >= SCHEDULER_WINDOW_OBJECTS) this.flushPending(out);
+    const nowMs = this.now();
+    const boundaryCrossed = this.pending.length > 0 && this.pending.groupId !== groupId;
+    if (boundaryCrossed || this.pending.isStale(nowMs, this.maxBufferAgeMs)) this.flushPending(out);
+    this.pending.push({ groupId, objectId, frame, priority, deadlineMs }, nowMs);
+    // Bounded-window reordering: flush when the window fills, so delivery never depends on a
+    // run-end flush. Group boundary and max-buffer-age remain the other two triggers; absent
+    // hints retain arrival order (stable sorter).
+    if (this.pending.length >= SCHEDULER_WINDOW_OBJECTS) this.flushPending(out);
   }
 
   /** Emit the scheduler's buffered group (if any) in (priority, deadline) order into `out`. */
   private flushPending(out: Outbound[]): void {
-    if (this.pendingGroup === null) return;
-    const ordered = orderByDeadline(this.pendingGroup);
-    this.pendingGroup = null;
-    for (const p of ordered) {
+    for (const p of this.pending.drain()) {
       this.fanOut(p.frame, out);
       this.cacheObject(p.groupId, p.objectId, p.frame);
     }
+  }
+
+  /**
+   * The max-buffer-age flush's STALL case (#211): a stream that stops sending new objects mid-group
+   * never re-enters `schedule()`, so nothing re-checks staleness. The DO arms a timer/alarm off
+   * `pendingBufferedAt` and calls this from it; `flushStale()` re-checks age against the relay's own
+   * clock (`now`) and flushes only if still due (idempotent / safe to call speculatively — a no-op if
+   * the buffer was already flushed by another trigger in the meantime, or isn't stale yet).
+   */
+  flushStale(): Outbound[] {
+    const out: Outbound[] = [];
+    if (this.schedulerEnabled && this.pending.isStale(this.now(), this.maxBufferAgeMs)) this.flushPending(out);
+    return out;
+  }
+
+  /** When the currently pending group/window started buffering (relay clock), or null if nothing is
+   * pending. The DO reads this to arm a `flushStale()` timer/alarm at `pendingBufferedAt + maxBufferAgeMs`. */
+  get pendingBufferedAt(): number | null {
+    return this.pending.bufferedSince;
   }
 
   /**
