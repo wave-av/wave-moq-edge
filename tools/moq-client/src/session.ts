@@ -2,7 +2,7 @@
  * MoQ session client — publish and subscribe over any Transport, with an ordering and latency report.
  *
  * The wire codec is NOT reimplemented here. Every byte on the wire is produced and consumed by
- * `src/moq-wire.ts`, the repo's draft-18 codec, imported unmodified. That is deliberate: a client
+ * `src/moq-wire.ts`, the repo's draft-20 codec, imported unmodified. That is deliberate: a client
  * with its own second copy of the codec would prove only that the copy agrees with itself, whereas
  * this one exercises the exact encoder the relay runs. If the codec is wrong, this client is wrong in
  * the same direction — which is the honest result for an interop instrument.

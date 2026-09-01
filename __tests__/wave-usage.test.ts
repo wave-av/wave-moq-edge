@@ -3,7 +3,7 @@ import { newUsage, usageJson, edgeClock, WaveUsage } from '../src/wave-usage';
 import { MetricsCollector, MoqMetric } from '../metrics-collector';
 
 // Minimal Env stub — MetricsCollector only touches env behind `void this.env`.
-const env = { MOQ_TRACK_REGISTRY: {} as any, ENVIRONMENT: 'test', MOQ_DRAFT_VERSION: 'draft-17' };
+const env = { MOQ_TRACK_REGISTRY: {} as any, ENVIRONMENT: 'test', MOQ_DRAFT_VERSION: '20' };
 
 const ev = (kind: MoqMetric['kind'], trackKey: string, bytes?: number): MoqMetric => ({
   ts: '2026-06-04T00:00:00.000Z',

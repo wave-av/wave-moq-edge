@@ -61,7 +61,7 @@ function buildEnv(doNs: DurableObjectNamespace, overrides: Partial<Env> = {}): E
     MOQ_TRACK_REGISTRY: makeKvStub(),
     MOQ_RECORDINGS: makeR2Stub(),
     ENVIRONMENT: 'test',
-    MOQ_DRAFT_VERSION: '18',
+    MOQ_DRAFT_VERSION: '20',
     MAX_SUBSCRIBERS_PER_TRACK: '100',
     MAX_OBJECT_SIZE_BYTES: '16777216',
     LOG_LEVEL: 'debug',

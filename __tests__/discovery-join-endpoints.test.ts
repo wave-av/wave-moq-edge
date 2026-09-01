@@ -35,7 +35,7 @@ function makeEnv(overrides: Partial<Env> = {}): Env {
     MOQ_TRACK_REGISTRY: kv,
     MOQ_RECORDINGS: {} as R2Bucket,
     ENVIRONMENT: 'test',
-    MOQ_DRAFT_VERSION: '18',
+    MOQ_DRAFT_VERSION: '20',
     MAX_SUBSCRIBERS_PER_TRACK: '100',
     MAX_OBJECT_SIZE_BYTES: '16777216',
     LOG_LEVEL: 'debug',
