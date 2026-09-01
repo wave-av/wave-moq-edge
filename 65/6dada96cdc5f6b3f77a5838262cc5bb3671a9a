@@ -1,0 +1,36 @@
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  h_af5ac1a9798224 112-117,121,123-132,145,173,178-179,184,196-204
+governance/bin/wave-cost-ledger-gha-puller.mjs
+  h_af5ac1a9798224 17,60-89,138-156,160,164
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3341,3345-3346,3353-3356,4770-4774,4783
+governance/code-index/index.json
+  h_af5ac1a9798224 10,13,29813-29816,29857-29860,29868-29869,29912-29915,29923-29924,29935-29948,40582-40585,40593-40618,40626-40627,40692-40695
+governance/lib/wave-cost-ledger-gha-absent-check.mjs
+  h_af5ac1a9798224 29-49,51,54-75,80-81,83-86,88-98,132-147,155-165,171,173-175
+governance/lib/wave-cost-ledger-gha-billing.mjs
+  h_af5ac1a9798224 111-122,160-163
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  h_af5ac1a9798224 7-12
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 70-86,90,98,109,111-113
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  h_af5ac1a9798224 90,93-139
+governance/test/wave-cost-ledger-gha-absent-check.test.mjs
+  h_af5ac1a9798224 6,46-110,153-247
+governance/test/wave-cost-ledger-gha-billing.test.mjs
+  h_af5ac1a9798224 110,120-139
+governance/test/wave-cost-ledger-gha-puller.test.mjs
+  h_af5ac1a9798224 5,70-113,125-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "656dada96cdc5f6b3f77a5838262cc5bb3671a9a",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

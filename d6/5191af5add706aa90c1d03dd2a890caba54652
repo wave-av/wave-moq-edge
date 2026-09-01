@@ -1,0 +1,21 @@
+.github/workflows/renovate-reaper.yml
+  s_1c0352e957b5f6::t_1b628d184082b8 46
+  s_1c0352e957b5f6::t_654a4226cfa321 86-102
+  s_1c0352e957b5f6::t_5bf3bfc83d8170 104-111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d65191af5add706aa90c1d03dd2a890caba54652",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

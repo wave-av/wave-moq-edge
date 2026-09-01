@@ -1,0 +1,21 @@
+.github/workflows/unearned-approval-guard.yml
+  s_8d26503dfc73f4::t_4eb38f08a79672 197-201
+  s_8d26503dfc73f4::t_91db945063ef1d 1-139,141-196,202-203
+  s_8d26503dfc73f4::t_e62432cec8d346 140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c46589d8148a5855f5d2338e2f65de5a29253d6e",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

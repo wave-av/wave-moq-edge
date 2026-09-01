@@ -1,0 +1,107 @@
+.claude/skills/state-of-play/SKILL.md
+  s_2e30bff6169f7a::t_50bee1dd4fe4ad 63,134
+.claude/skills/wow-canon/SKILL.md
+  s_2e30bff6169f7a::t_b26de00919f534 3,48
+.github/workflows/auto-merge.yml
+  s_2e30bff6169f7a::t_45cf9324d1eb8e 441,443-452,454,514-519,522,525,527-535,539-580
+.github/workflows/wave-cost-ledger-absent-check-sweep.yml
+  s_2e30bff6169f7a::t_0a7f255b31a0f5 1-121
+.gitignore
+  s_2e30bff6169f7a::t_55efaf5cd67f22 80-86
+governance/bin/closed-loop-audit.mjs
+  s_2e30bff6169f7a::t_0a1272d683d704 1-141
+governance/bin/external-tickets.mjs
+  s_2e30bff6169f7a::t_f4b3a329ecbde1 35,37,42-57,264-279,286-301,355-364
+governance/bin/review-liveness.mjs
+  s_2e30bff6169f7a::t_ea453a0468045f 15-27,50-71,78-83,87-102,106-111,162-165,167-168,203-226
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  s_2e30bff6169f7a::t_0afb5b912fc997 16-20,185-207,213-217,244-251,253-260,262-267,284-299
+governance/gam-port-kit/manifest.json
+  s_2e30bff6169f7a::t_d2d34d0a567e8a 21-27
+governance/lib/closed-loop-audit.mjs
+  s_2e30bff6169f7a::t_279793ec2b3dcd 1-242
+governance/lib/drill-fixtures-external-tickets.mjs
+  s_2e30bff6169f7a::t_46fc9e9245508c 21,36-42
+governance/lib/gam-workflow-checks.mjs
+  s_2e30bff6169f7a::t_65ff4445d549bf 198-228
+governance/lib/wave-cost-ledger-gha-absent-check.mjs
+  s_2e30bff6169f7a::t_9484c109bb4af1 199-262
+governance/plans/2026-07-08-L1-presend-memo-plan.md
+  s_2e30bff6169f7a::t_ab02e073d31aa4 76
+governance/plans/upstream-ask-mcp-instruction-deferral.md
+  s_2e30bff6169f7a::t_381aac8c50eb59 31-41
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_2e30bff6169f7a::t_ff100c9bbd4196 30-73,114-118,122-125
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_959d211c8f9a9c 96-148
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  s_2e30bff6169f7a::t_d8f43e2582d7ab 28-29
+governance/recall/BAKE-OFF.md
+  s_2e30bff6169f7a::t_c95bca5a04db2e 12-20
+governance/recall/bakeoff.mjs
+  s_2e30bff6169f7a::t_147c1f0abc38e6 20-22,28,36-37
+governance/state/mechanism-intent.json
+  s_2e30bff6169f7a::t_933d4f60a6fcd7 1-14
+governance/test/closed-loop-audit.test.mjs
+  s_2e30bff6169f7a::t_5188226ed2686e 1-180
+governance/test/external-tickets.test.mjs
+  s_2e30bff6169f7a::t_ef58a12c806870 11-14,198-332
+governance/test/gam-workflow-checks.test.mjs
+  s_2e30bff6169f7a::t_102dc28b6eb63c 64-77,113-115
+governance/test/memo.test.mjs
+  s_2e30bff6169f7a::t_53596c756fdc78 39
+governance/test/plugin-canon-drift.test.mjs
+  s_2e30bff6169f7a::t_1e8fb4735ab08d 1-29
+governance/test/recall-regression.test.mjs
+  s_2e30bff6169f7a::t_e7e757200eca96 72-80,97,100-109,124-152
+governance/test/recall-repo-gate.test.mjs
+  s_2e30bff6169f7a::t_e8b30d1c0d168f 64-69,71-92
+governance/test/review-liveness-cause-token.test.mjs
+  s_2e30bff6169f7a::t_08ff559523ab67 1-96
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  s_2e30bff6169f7a::t_0bb21c6eb18afd 9,11-13,195-326
+governance/wave-cost-ledger-absent-check-baseline.json
+  s_2e30bff6169f7a::t_c364164be1910c 1-29
+hookcli/lib/board-redact.mjs
+  s_2e30bff6169f7a::t_6aaca29f03dd36 22-40,51-53,55-60
+hooks/bash-output-secret-scan.sh
+  s_2e30bff6169f7a::t_f57ad5886cca44 1-189
+hooks/hooklib/secret-patterns.sh
+  s_2e30bff6169f7a::t_2c07f256c522e0 1-102
+hooks/secret-leak-scan.sh
+  s_2e30bff6169f7a::t_3a0e306bcd1b3c 21-23,25-34,36,40-41,43-44
+hooks/tests/bash_output_secret_scan_smoke.sh
+  s_2e30bff6169f7a::t_c793047a57419d 1-244
+hooks/tests/merge-premise-split.test.sh
+  s_2e30bff6169f7a::t_7b3d95cf90ebb4 65-74,79-88,103-105,107
+hooks/tests/portable-shell.test.sh
+  s_2e30bff6169f7a::t_0fe0eef0a18d11 1-249
+plugins/wave-canon/.claude-plugin/plugin.json
+  s_2e30bff6169f7a::t_d07fdfa7f5c1e6 1-20
+plugins/wave-canon/README.md
+  s_2e30bff6169f7a::t_a4b9616a5e4d82 1-18
+plugins/wave-canon/skills/state-of-play/SKILL.md
+  s_2e30bff6169f7a::t_0ccc939d21c83e 1-134
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_2e30bff6169f7a::t_092d9e79104fb1 1-226
+plugins/wave-canon/skills/wow-canon/SKILL.md
+  s_2e30bff6169f7a::t_8975b6d9930a4f 1-168
+settings/settings.base.json
+  s_2e30bff6169f7a::t_883abf950729ac 176-185,256-260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0f6ae95faf6f59eb59e8f23268bd68e0560b6462",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

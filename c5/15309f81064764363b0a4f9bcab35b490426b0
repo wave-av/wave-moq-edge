@@ -1,0 +1,31 @@
+.gitignore
+  s_33808c00e16d52::t_b187937a19c5d9 57-61
+governance/bin/go-live-e2e.mjs
+  s_9bb1b1d1d998d4::t_b772126988966a 8-9
+governance/state/e2e-probes.json
+  s_9bb1b1d1d998d4::t_5d4e2f2de5fa64 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c515309f81064764363b0a4f9bcab35b490426b0",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

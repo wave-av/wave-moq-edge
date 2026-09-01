@@ -1,0 +1,19 @@
+governance/plans/network-edge-plane/RECEIPTS.md
+  s_4b7beace6c6e0b::t_b6f84fcc92e964 90-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "43f37ca5d51b49c340a9222ca8e388df5f744835",
+  "prompts": {},
+  "sessions": {
+    "s_4b7beace6c6e0b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a4e47640d4c562dcc",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

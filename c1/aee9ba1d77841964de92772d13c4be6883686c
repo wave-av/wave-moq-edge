@@ -1,0 +1,25 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_be94c45efdaafe::t_e4fb4eb618e37e 2,6,8,24-25,39,44,49,54,60,66,91,106,109-131
+governance/ENFORCEMENT-COVERAGE.md
+  s_be94c45efdaafe::t_2d9aae6effbd2e 5,9-12,14,66,124,249,328,394,408-409,428-429,433,463,471,482,487,489
+governance/contract.md
+  s_be94c45efdaafe::t_861fc91f8374ef 47,51,53
+hooks/manifest.json
+  s_be94c45efdaafe::t_de78712f1659a7 68-88,287-307,350-370,434-454,568,659,797-838,1185,1226-1246,1507,1528,1590-1610,1759,1780,1822,1864,1870-1871,1877,1883,2046-2066,2068
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c1aee9ba1d77841964de92772d13c4be6883686c",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

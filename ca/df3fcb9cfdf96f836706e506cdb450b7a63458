@@ -1,0 +1,20 @@
+governance/agents/TAXONOMY.yaml
+  h_af5ac1a9798224 111,122
+governance/bin/taxonomy.mjs
+  h_af5ac1a9798224 113-125
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  h_af5ac1a9798224 30-31
+governance/test/taxonomy.test.mjs
+  h_af5ac1a9798224 150-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "cadf3fcb9cfdf96f836706e506cdb450b7a63458",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

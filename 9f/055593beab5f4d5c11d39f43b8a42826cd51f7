@@ -1,0 +1,28 @@
+hooks/tests/hook-fail-closed.test.sh
+  s_375efeac18ed55::t_5adcc653d9abd7 142-145,147,149,152,154,156
+  s_375efeac18ed55::t_3d0f072e8380b8 128-130,133,135
+  s_375efeac18ed55::t_4ba950d895d352 17-24,162
+  s_375efeac18ed55::t_f34f1493ffbc46 159-161
+  s_375efeac18ed55::t_3e5613c87ea709 163-165
+  s_375efeac18ed55::t_c395438f691d19 166-185
+hooks/self-governance-guard.py
+  s_375efeac18ed55::t_98042bee51052a 27
+  s_375efeac18ed55::t_f29ff187db32b9 29-33
+  s_375efeac18ed55::t_82a4035c87c80b 41-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "9f055593beab5f4d5c11d39f43b8a42826cd51f7",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

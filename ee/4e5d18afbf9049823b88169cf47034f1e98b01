@@ -1,0 +1,36 @@
+governance/plans/pen-design-lane/E8-REVENUE-CHECKPOINT.md
+  s_ddcd58c8419ae0::t_aaef18d5e63b8e 1-28
+governance/plans/pen-design-lane/E6-DESIGN-REVIEW-GATE.md
+  s_ddcd58c8419ae0::t_d741da9780147d 1-19
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_ddcd58c8419ae0::t_a34621a83808d3 1-33
+governance/plans/pen-design-lane/E2-DATA-HANDLING.md
+  s_ddcd58c8419ae0::t_cb0dbe40474b72 1-31
+governance/plans/pen-design-lane/E5-GRADUATE-FIRST-SURFACE.md
+  s_ddcd58c8419ae0::t_8fc606df33e0fc 1-33
+governance/plans/pen-design-lane/E3-BRAND-TOKENS.md
+  s_ddcd58c8419ae0::t_4f571df46effda 1-19
+governance/plans/pen-design-lane/NORTH-STAR.md
+  s_ddcd58c8419ae0::t_953a4c704bbe91 1-3,8-97
+  s_ddcd58c8419ae0::t_5207e5c2f0cfc7 4-7
+governance/plans/pen-design-lane/E7-SCALE.md
+  s_ddcd58c8419ae0::t_c6ce4366651608 1-23
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_ddcd58c8419ae0::t_7f03de39b798d5 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ee4e5d18afbf9049823b88169cf47034f1e98b01",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

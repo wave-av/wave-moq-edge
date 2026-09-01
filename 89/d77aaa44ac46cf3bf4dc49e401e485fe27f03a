@@ -1,0 +1,21 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_9041cf1cf1ccad::t_80626bf15b7fbe 161-165
+  s_9041cf1cf1ccad::t_07dc473fc119d6 26
+  s_9041cf1cf1ccad::t_ec4855ffa91adb 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "89d77aaa44ac46cf3bf4dc49e401e485fe27f03a",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

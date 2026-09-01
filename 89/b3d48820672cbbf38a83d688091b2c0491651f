@@ -1,0 +1,24 @@
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  s_7c7e203d305c60::t_ca6d48271a88f6 1-17,27-119
+  s_7c7e203d305c60::t_bdca16aab688b8 18-26
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_21164bfaa52413 25
+governance/graph.json
+  s_7c7e203d305c60::t_c5b8b7a8705ddf 2377-2388
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "89b3d48820672cbbf38a83d688091b2c0491651f",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

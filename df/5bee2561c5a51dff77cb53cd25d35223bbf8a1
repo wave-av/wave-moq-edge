@@ -1,0 +1,24 @@
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,4722,4724,4726-4728,4831-4836
+governance/code-index/index.json
+  h_af5ac1a9798224 10,12,40253-40255,40274-40275,40296-40297,40307-40308,40318-40319,41055-41056,41060-41070,41077-41078,41088-41091,41099-41100,41110-41113
+governance/lib/wave-cost-ledger-classify.mjs
+  h_af5ac1a9798224 90-97
+governance/lib/wave-cost-ledger-gaps.mjs
+  h_af5ac1a9798224 19-30,32-33,35,38-42,45-46,65-66
+governance/test/wave-cost-ledger-classify.test.mjs
+  h_af5ac1a9798224 79-94
+governance/test/wave-cost-ledger-gaps.test.mjs
+  h_af5ac1a9798224 4,23-35,47,53,57,72-74,77-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "df5bee2561c5a51dff77cb53cd25d35223bbf8a1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

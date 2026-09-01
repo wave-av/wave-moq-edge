@@ -1,0 +1,32 @@
+docs/autonomy/lanes/bugbot-NORTHSTAR.md
+  s_274bffb23af05d::t_ccf88f1d7d2ccf 49
+  s_274bffb23af05d::t_3aae3f6a9a7f86 50
+  s_274bffb23af05d::t_8d0eaaf800f9a9 21
+  s_274bffb23af05d::t_f1d8d3b64d2af2 81
+  s_274bffb23af05d::t_370af5ccb4737c 1-20,22-48,51-80,82-94
+docs/autonomy/lanes/dispatch-NORTHSTAR.md
+  s_274bffb23af05d::t_ddecc827db877c 1-66
+docs/autonomy/lanes/rig-NORTHSTAR.md
+  s_274bffb23af05d::t_1886fcbeb60642 1-98
+docs/autonomy/FLEET-NORTHSTAR.md
+  s_274bffb23af05d::t_61aafa85bb028b 49,51-58
+  s_274bffb23af05d::t_facdccf213cc31 91-99
+docs/autonomy/lanes/render-NORTHSTAR.md
+  s_274bffb23af05d::t_d72de4950e2c6e 1-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "4f87c1d111dd0875049754b93ea4de822c7f62f2",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

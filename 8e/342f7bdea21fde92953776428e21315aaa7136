@@ -1,0 +1,27 @@
+governance/plans/catena-control-plane/spec/st2138-12-endpoints.md
+  s_53b49eff5b8c5d::t_c3d531f50093aa 1-136
+governance/plans/catena-control-plane/spec/st2138-12.md
+  s_53b49eff5b8c5d::t_593df917e7ce7a 1-8,13-65,73,81-114,135-137,147-179
+  s_53b49eff5b8c5d::t_b2c8c62374b9ae 115-134
+  s_53b49eff5b8c5d::t_da16404827585b 138-146
+  s_53b49eff5b8c5d::t_cf196ed4a5a44a 66-72,74-80
+  s_53b49eff5b8c5d::t_9427f4bb674f85 9-12
+governance/plans/catena-control-plane/st2138-pin.json
+  s_53b49eff5b8c5d::t_539cdbb1f4160a 20,24-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8e342f7bdea21fde92953776428e21315aaa7136",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

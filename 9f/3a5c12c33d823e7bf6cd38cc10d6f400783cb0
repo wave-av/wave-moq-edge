@@ -1,0 +1,225 @@
+.claude/skills/adversarial-review/SKILL.md
+  s_e017bc8859c6b9::t_62e96ea8160fe6 1-179
+.claude/skills/north-star-epic/SKILL.md
+  s_e017bc8859c6b9::t_5ba4e11c396f87 1-158
+.claude/skills/strategic-compact/SKILL.md
+  s_e017bc8859c6b9::t_590acee6623ad1 73-95,112-113,122-123,136-137,141-186
+governance/ENFORCEMENT-BASELINE.json
+  s_e017bc8859c6b9::t_a1d69f8ed72942 4-5,7-8,10,12-13,196-200,203-205
+governance/bin/mesh-estate-health.mjs
+  s_e017bc8859c6b9::t_c10ccd665c9950 1-301
+governance/bin/review-liveness-facts-io.mjs
+  s_e017bc8859c6b9::t_61859f7647f2c7 1-104
+governance/bin/review-liveness-fixture-io.mjs
+  s_e017bc8859c6b9::t_8926469a207911 1-86
+governance/bin/review-liveness.mjs
+  s_e017bc8859c6b9::t_d4762ff1ac6c57 44,47-53,132-153,186-191,200-218
+governance/gam-port-kit/manifest.json
+  s_e017bc8859c6b9::t_e5776fb5d31d09 34-36
+governance/lib/drill-fixtures-outtree.mjs
+  s_e017bc8859c6b9::t_8e79c03428ce6c 62-66
+governance/lib/drill-fixtures-review-liveness.mjs
+  s_e017bc8859c6b9::t_fedafc9a4fae41 1-136
+governance/lib/drill-inline-required.mjs
+  s_e017bc8859c6b9::t_b792d399528951 70-86
+governance/lib/drill-registry.mjs
+  s_e017bc8859c6b9::t_6e8cf3a4a9429f 45,124-128,146
+governance/lib/mesh-estate-guards.mjs
+  s_e017bc8859c6b9::t_78888ddfdd5ca9 1-118
+governance/lib/mesh-estate-health.mjs
+  s_e017bc8859c6b9::t_499272ad5bbbf5 1-360
+governance/lib/review-liveness-args.mjs
+  s_e017bc8859c6b9::t_7215507e17bb06 27,30-31,40,55-66,71,74
+governance/lib/review-liveness-fixture.mjs
+  s_e017bc8859c6b9::t_04d7bb7a00508e 1-98
+governance/plans/agent-first-console/E1-COMMAND-REGISTRY.md
+  s_e017bc8859c6b9::t_3bd17e79b60163 1-117
+governance/plans/agent-first-console/E2-PALETTE.md
+  s_e017bc8859c6b9::t_f91c172e15285b 1-109
+governance/plans/agent-first-console/E3-MCP-SURFACE.md
+  s_e017bc8859c6b9::t_fe179aac8b7b3b 1-146
+governance/plans/agent-first-console/E4-DISCOVERY.md
+  s_e017bc8859c6b9::t_8539f50effb13a 1-116
+governance/plans/agent-first-console/E5-PROOF.md
+  s_e017bc8859c6b9::t_ed942fcd69712e 1-94
+governance/plans/agent-first-console/NORTH-STAR.md
+  s_e017bc8859c6b9::t_074d9aac4d2a52 1-288
+governance/plans/agent-tool-access/E1-CENSUS.md
+  s_e017bc8859c6b9::t_a50d85d6fd25b0 1-29
+governance/plans/agent-tool-access/E2-CELLS.md
+  s_e017bc8859c6b9::t_5dfaa3a736206f 1-38
+governance/plans/agent-tool-access/E3-ENFORCEMENT.md
+  s_e017bc8859c6b9::t_a30b508902093c 1-31
+governance/plans/agent-tool-access/E4-DEPTH.md
+  s_e017bc8859c6b9::t_081e4dd9d802cb 1-32
+governance/plans/agent-tool-access/E5-ONE-SOURCE.md
+  s_e017bc8859c6b9::t_540e7a7cbc4f26 1-28
+governance/plans/agent-tool-access/NORTH-STAR.md
+  s_e017bc8859c6b9::t_6d8f9481ecd7d9 1-113
+governance/plans/agent-tool-access/RECEIPTS.md
+  s_e017bc8859c6b9::t_edf59e31ff9ce7 1-203
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_e017bc8859c6b9::t_d4431bd874b354 4-286,289-295,298-301,310-312,315-316,318-333
+governance/plans/console-runs-history/E-ARTIFACTS.md
+  s_e017bc8859c6b9::t_4ced668d9eddfc 1-48
+governance/plans/console-runs-history/E-CAPTURE.md
+  s_e017bc8859c6b9::t_e19bd43ed72959 1-51
+governance/plans/console-runs-history/E-CONTRACT.md
+  s_e017bc8859c6b9::t_6c165c66008ae7 1-54
+governance/plans/console-runs-history/E-PRIVACY.md
+  s_e017bc8859c6b9::t_c06276bfbe2c4a 1-50
+governance/plans/console-runs-history/E-STORE.md
+  s_e017bc8859c6b9::t_44d2d5e5405cee 1-50
+governance/plans/console-runs-history/E-SURFACES.md
+  s_e017bc8859c6b9::t_358f9b1ef2c01c 1-54
+governance/plans/console-runs-history/NORTH-STAR.md
+  s_e017bc8859c6b9::t_25c1ee8ae56e08 1-210
+governance/plans/cost-to-serve/E0-JOIN-POLICY.md
+  s_e017bc8859c6b9::t_831bc005b6f674 1-54
+governance/plans/cost-to-serve/E1-ALLOCATION-ENGINE.md
+  s_e017bc8859c6b9::t_c097d4a98857df 1-37
+governance/plans/cost-to-serve/E2-RECONCILIATION.md
+  s_e017bc8859c6b9::t_b8c8579b562295 1-37
+governance/plans/cost-to-serve/E3-REVENUE-JOIN.md
+  s_e017bc8859c6b9::t_22fe755328514f 1-33
+governance/plans/cost-to-serve/E4-CONSUMER-SURFACE.md
+  s_e017bc8859c6b9::t_5c3baca3daff29 1-37
+governance/plans/cost-to-serve/NORTH-STAR.md
+  s_e017bc8859c6b9::t_951679c1395c65 1-124
+governance/plans/cost-to-serve/RECEIPTS.md
+  s_e017bc8859c6b9::t_7c3df289e7c170 1-114
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_e017bc8859c6b9::t_895ef816a5e0b9 4-14
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_e017bc8859c6b9::t_83e65ee35fb00f 307-313
+governance/plans/ffmpeg9-lei/action/E4-P2-PORTFOLIO.md
+  s_e017bc8859c6b9::t_141232a2be7777 1-90
+governance/plans/ffmpeg9-lei/action/E4-P5-V2-DESIGN.md
+  s_e017bc8859c6b9::t_5c74847f3f2bb4 1-238
+governance/plans/fractal-decomposition/E-SKILLS-UPLEVEL.md
+  s_e017bc8859c6b9::t_6194bd1f34e34d 38-43
+governance/plans/fractal-decomposition/E-TOOLING.md
+  s_e017bc8859c6b9::t_33e4997811668c 4-26,50-59
+governance/plans/fractal-decomposition/NORTH-STAR.md
+  s_e017bc8859c6b9::t_514f87ec92fee0 6-18
+governance/plans/fractal-decomposition/RECEIPTS.md
+  s_e017bc8859c6b9::t_a429d2d4356898 1-66
+governance/plans/gates-report-coverage/E0-EVIDENCE.md
+  s_e017bc8859c6b9::t_1c8574e3cd7c14 1-94
+governance/plans/gates-report-coverage/E1-FOUR-STATE-CONTRACT.md
+  s_e017bc8859c6b9::t_6a7201371f9751 1-47
+governance/plans/gates-report-coverage/E2-SCOPE-DECLARATION.md
+  s_e017bc8859c6b9::t_532d9397288fb0 1-32
+governance/plans/gates-report-coverage/E3-RETROFIT.md
+  s_e017bc8859c6b9::t_82acfeba0705df 1-57
+governance/plans/gates-report-coverage/E4-FLEET-DETECTOR.md
+  s_e017bc8859c6b9::t_0757214f61c45c 1-29
+governance/plans/gates-report-coverage/E5-SECRETS-INVENTORY.md
+  s_e017bc8859c6b9::t_ad07ce346489eb 1-70
+governance/plans/gates-report-coverage/NORTH-STAR.md
+  s_e017bc8859c6b9::t_14901aaf46d446 1-105
+governance/plans/sfu-media-plane/E1-PEER-SPINE.md
+  s_e017bc8859c6b9::t_5e3499fee143e0 1-109
+governance/plans/sfu-media-plane/E2-PUBLISH.md
+  s_e017bc8859c6b9::t_3f3b0ef9bb15ff 1-121
+governance/plans/sfu-media-plane/E3-REMOTE-RENDER.md
+  s_e017bc8859c6b9::t_c8e49336d583ae 1-119
+governance/plans/sfu-media-plane/E4-ROOM-LIFECYCLE.md
+  s_e017bc8859c6b9::t_17c708957e2219 1-107
+governance/plans/sfu-media-plane/E5-METER-TRUTH.md
+  s_e017bc8859c6b9::t_92605b384e9cba 1-102
+governance/plans/sfu-media-plane/E6-LIVE-PROOF.md
+  s_e017bc8859c6b9::t_50d59c520adde6 1-103
+governance/plans/sfu-media-plane/NORTH-STAR.md
+  s_e017bc8859c6b9::t_e0a49a7ac06605 1-247
+governance/plans/wave-control/BOUNDARY-VERIFICATION.md
+  s_e017bc8859c6b9::t_fda969b683db96 1-329
+governance/plans/wave-credential-custody/E0-CUSTODY-CENSUS.md
+  s_e017bc8859c6b9::t_46bfae9659e2b3 1-185
+governance/plans/wave-credential-custody/E1-PROPAGATION-PROOF.md
+  s_e017bc8859c6b9::t_bdd0ff13865de2 1-220
+governance/plans/wave-credential-custody/E2-DEPLOY-AUTHORITY.md
+  s_e017bc8859c6b9::t_4d50a537399cb1 1-175
+governance/plans/wave-credential-custody/E3-HIGH-FANOUT-ROTATION.md
+  s_e017bc8859c6b9::t_1b6dd221e42ae8 1-186
+governance/plans/wave-credential-custody/E4-ENVELOPE-CUSTODY.md
+  s_e017bc8859c6b9::t_32fdca0853bcf1 1-235
+governance/plans/wave-credential-custody/E5-CONTINUOUS-PROOF.md
+  s_e017bc8859c6b9::t_41bcb1affdfaa4 1-165
+governance/plans/wave-credential-custody/NORTH-STAR.md
+  s_e017bc8859c6b9::t_8ca172787738f1 1-244
+governance/plans/wave-credential-custody/RECEIPTS.md
+  s_e017bc8859c6b9::t_663626d118784d 1-79
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_e017bc8859c6b9::t_69d609f32be4c8 43-59,262-312,582-627
+governance/plans/wave-skills-distribution/E1-ONBOARDING-DISCOVERY.md
+  s_e017bc8859c6b9::t_ddfcdb00d2202f 1-75
+governance/plans/wave-skills-distribution/E2-USAGE-ATTRIBUTION.md
+  s_e017bc8859c6b9::t_fb505627331929 1-154
+governance/plans/wave-skills-distribution/NORTH-STAR.md
+  s_e017bc8859c6b9::t_c2dce23655979b 1-119
+governance/plans/wave-usage-lakehouse/E0-BOUNDARY.md
+  s_e017bc8859c6b9::t_a2635bdae2f142 1-71
+governance/plans/wave-usage-lakehouse/E1-CATALOG-STANDUP.md
+  s_e017bc8859c6b9::t_daaf7adf4e1778 1-83
+governance/plans/wave-usage-lakehouse/E2-BENCHMARK.md
+  s_e017bc8859c6b9::t_fad76aa6cd5147 1-98
+governance/plans/wave-usage-lakehouse/E3-DELETION-PATH.md
+  s_e017bc8859c6b9::t_c4baf3a235da0d 1-101
+governance/plans/wave-usage-lakehouse/E4-INGEST.md
+  s_e017bc8859c6b9::t_c69ffa3b2a6f5a 1-89
+governance/plans/wave-usage-lakehouse/E5-OPERATIONALIZE.md
+  s_e017bc8859c6b9::t_5161ee376f86a2 1-111
+governance/plans/wave-usage-lakehouse/NORTH-STAR.md
+  s_e017bc8859c6b9::t_b80293bae99ec8 1-99
+governance/state/canon-gap-map/GAP-MAP.md
+  s_e017bc8859c6b9::t_84ad0e0ba7b3e5 18,20,27-28,40,53,61,65,69,71-72,75-78,80,84,87,89,91-93,105
+governance/state/canon-gap-map/gap-map.json
+  s_e017bc8859c6b9::t_fadf46fdc3b4f2 90,98,147,154,156,351,357,359,382,386,388,653,655,657,945,947,949,1173,1179,1181,1285,1292,1294,1403,1408,1410,1463,1466,1468,1492,1495,1497,1578,1584,1586,1607,1613,1615,1637,1642,1644,1668,1671,1673,1726,1729,1731,1833,1838,1840,1908,1910,1912,1965,1968,1970,2021,2026,2028,2052,2055,2057,2077,2084,2086,2422,2425,2427
+governance/test/command-cwd-heredoc-budget.test.mjs
+  s_e017bc8859c6b9::t_4dffce3a14ede3 38,40-41,43-62,78,112,115-118
+governance/test/hookcli-budget-fits-timeout.test.mjs
+  s_e017bc8859c6b9::t_747cde8861b113 1-233
+governance/test/mesh-estate-health.test.mjs
+  s_e017bc8859c6b9::t_4a99a8039acd20 1-302
+governance/test/review-liveness-args.test.mjs
+  s_e017bc8859c6b9::t_9b094e261f0a97 59-62,65
+governance/test/review-liveness-fixture.test.mjs
+  s_e017bc8859c6b9::t_116f9f69421748 1-219
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_e017bc8859c6b9::t_5ec57316860373 78-94
+hookcli/bin/hookcli
+  s_e017bc8859c6b9::t_6324d7fddabac0 42-50
+hookcli/bin/hookcli-settings-gen.mjs
+  s_e017bc8859c6b9::t_d6cbd7751958b0 25-29,92-95,102-109,144-154,167-176
+hookcli/bin/validate-rules.mjs
+  s_e017bc8859c6b9::t_8b516de718507a 11,207-211
+hookcli/lib/hook-event-timeouts.mjs
+  s_e017bc8859c6b9::t_199d1baaf2cecf 1-148
+hookcli/lib/validate-budget-fit.mjs
+  s_e017bc8859c6b9::t_e11ee8ec2a6f48 1-107
+hookcli/tests/settings-shard.sh
+  s_e017bc8859c6b9::t_8c5a1ca074832f 23-37,42
+hooks/stop-nudge.sh
+  s_e017bc8859c6b9::t_dbf66ececda515 263-264,280,282,284
+rules/agreement-across-methods-is-worthless-when-they-share-an-input.md
+  s_e017bc8859c6b9::t_b266119391cecf 1-64
+settings/hooks.d/hookcli.json
+  s_e017bc8859c6b9::t_19976f6fcd8bc7 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9f3a5c12c33d823e7bf6cd38cc10d6f400783cb0",
+  "prompts": {},
+  "sessions": {
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

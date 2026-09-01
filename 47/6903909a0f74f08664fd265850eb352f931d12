@@ -1,0 +1,31 @@
+hookcli/tests/no-squash-matcher.sh
+  s_9041cf1cf1ccad::t_a4c082a1b09f09 31-43,45,48-51,54-56
+  s_9041cf1cf1ccad::t_03d9e63e1b6a54 3-9
+  s_9041cf1cf1ccad::t_9bdc149e077345 44
+hookcli/tests/fixtures/no-squash-rules.json
+  s_db128da65a46d5::t_277f32b23c51e2 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "476903909a0f74f08664fd265850eb352f931d12",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

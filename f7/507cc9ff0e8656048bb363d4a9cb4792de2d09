@@ -1,0 +1,33 @@
+hooks/tests/unpushed-work-guard-truncation.test.sh
+  s_70c7ac7de143f9::t_20395806bb0215 47-56
+  s_70c7ac7de143f9::t_2191e2b573986f 1-46,57-65,72,75-129
+  s_70c7ac7de143f9::t_9efc32a86c2032 66-71,73-74
+hooks/unpushed-work-guard.sh
+  s_70c7ac7de143f9::t_edcac32077a94e 83-86
+  s_70c7ac7de143f9::t_87a8045339a7b7 155-162
+  s_70c7ac7de143f9::t_3449ed8c831064 189-205
+  s_70c7ac7de143f9::t_ba97d04d40cd4d 27-42,52
+  s_70c7ac7de143f9::t_2a0a5000416ae2 18-23
+  s_70c7ac7de143f9::t_7ea091fa8498f6 153
+  s_70c7ac7de143f9::t_21f1ff6f39cd20 140,142-147
+  s_70c7ac7de143f9::t_ce3f191c969a00 111-134,138,141,149
+  s_70c7ac7de143f9::t_ace068d61ba43b 166
+hooks/manifest.json
+  s_70c7ac7de143f9::t_788ca48789d612 2005
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f7507cc9ff0e8656048bb363d4a9cb4792de2d09",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

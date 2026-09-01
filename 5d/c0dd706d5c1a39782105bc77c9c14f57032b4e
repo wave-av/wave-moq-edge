@@ -1,0 +1,19 @@
+governance/plans/model-selection-completion/steering-dataset.jsonl
+  s_67f92a5760821f::t_a3be155b349999 12-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5dc0dd706d5c1a39782105bc77c9c14f57032b4e",
+  "prompts": {},
+  "sessions": {
+    "s_67f92a5760821f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aa8a4ad4d629b37f1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

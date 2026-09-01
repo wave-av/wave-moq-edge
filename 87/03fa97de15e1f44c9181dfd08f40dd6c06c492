@@ -1,0 +1,21 @@
+governance/bin/check-gates.mjs
+  s_aa5feb34e0e033::t_bd47f5cc2e6d6a 1-34
+governance/bin/check.mjs
+  s_aa5feb34e0e033::t_25022430ee7e33 291-292
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8703fa97de15e1f44c9181dfd08f40dd6c06c492",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

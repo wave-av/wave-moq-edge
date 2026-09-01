@@ -1,0 +1,71 @@
+governance/DASHBOARD.md
+  s_b74c2f1736fd36::t_8faa29671c8b77 25
+governance/bin/cfos-trial-killswitch.mjs
+  s_abd85a8b834c55::t_90b86c5cf954d7 1-363
+governance/graph.json
+  s_b74c2f1736fd36::t_d3773e988c0ffb 2975-3091,7585-7599,20008-20151,30784-30813
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_abd85a8b834c55::t_effce21dbe52fa 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_abd85a8b834c55::t_55c563bc0f0c80 1-95
+governance/lib/r2-live-buckets.mjs
+  s_abd85a8b834c55::t_0631c26339cb18 20-31,71,74-81,93,131-132
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_abd85a8b834c55::t_e9c9f58ef59e21 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_abd85a8b834c55::t_39b566ffa2e0f4 1-61
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_abd85a8b834c55::t_7c649e67d61e86 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_abd85a8b834c55::t_93ae53a0c281b3 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_abd85a8b834c55::t_e1322629da4473 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_abd85a8b834c55::t_e974bbfcb72e75 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_abd85a8b834c55::t_cc233245a8a9a5 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_abd85a8b834c55::t_ec94488b946fdb 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_abd85a8b834c55::t_6a77d9034ab4aa 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_abd85a8b834c55::t_89f6634d01d9f6 1-34
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_abd85a8b834c55::t_98df046d534bcc 145-170
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-MOAT.md
+  s_abd85a8b834c55::t_5e7278e9036d2f 1-297
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_abd85a8b834c55::t_124f9854a6d0b3 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_abd85a8b834c55::t_8beffb4d6ebd2c 1-264
+governance/test/cfos-trial-killswitch.test.mjs
+  s_abd85a8b834c55::t_9f0f335ba30986 1-314
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_abd85a8b834c55::t_811c7f700d9af9 34
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_abd85a8b834c55::t_9be3cae947d966 1-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "181ac68fe6bb6bde61672d0043c3d9ef71973b8c",
+  "prompts": {},
+  "sessions": {
+    "s_abd85a8b834c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a01cfff60873042f7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

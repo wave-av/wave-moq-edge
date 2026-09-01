@@ -1,0 +1,47 @@
+governance/lib/drill-hook-required.mjs
+  s_53b49eff5b8c5d::t_f72267bedc1c1f 46-49
+  s_53b49eff5b8c5d::t_9d379c558a8e6c 1-45,50-68,70-73,75-130,142,144-158
+  s_53b49eff5b8c5d::t_055b2ca8adf7e9 74
+  s_53b49eff5b8c5d::t_8eee71da9da374 131-141,143
+  s_53b49eff5b8c5d::t_fae9a833fe7df6 69
+governance/test/drill-hook-required.test.mjs
+  s_53b49eff5b8c5d::t_af5aef09925227 225
+  s_53b49eff5b8c5d::t_e01bfdce87c210 13
+  s_53b49eff5b8c5d::t_51533a58358778 162-165
+  s_53b49eff5b8c5d::t_e8425a5cacd035 20
+  s_53b49eff5b8c5d::t_b20557c3bf06a0 1-12,14-19,21-161,166-224,226-241
+governance/lib/drill-inline-required.mjs
+  s_53b49eff5b8c5d::t_47bd50359c6442 100-106
+governance/lib/drill-io.mjs
+  s_53b49eff5b8c5d::t_5d1dea78873386 25-43
+governance/bin/gate-liveness-drill.mjs
+  s_53b49eff5b8c5d::t_d9450f74a6946a 11-19
+  s_53b49eff5b8c5d::t_552977ac93ac37 36-37
+  s_53b49eff5b8c5d::t_f4504bcf1572b6 65-75,77-84
+  s_53b49eff5b8c5d::t_54091791c5874e 128-133
+governance/lib/drill-decide.mjs
+  s_53b49eff5b8c5d::t_4242cb1bcfaa04 94-97
+  s_53b49eff5b8c5d::t_fbc3de10eaba44 199,202-210
+  s_53b49eff5b8c5d::t_6f0399c8e114ea 98
+  s_53b49eff5b8c5d::t_9f41b75b467aa6 107-108,112-113
+  s_53b49eff5b8c5d::t_b3e3c7e40253a7 222-224
+  s_53b49eff5b8c5d::t_d224ec2d13d31a 221,225-226,231-235
+  s_53b49eff5b8c5d::t_b5cfb1ae7bd51c 200-201
+  s_53b49eff5b8c5d::t_5811afbebf467f 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cf04bc30893911b9062b54b73adb9fe743137a68",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/test/automation-registry/lint.test.mjs
+  s_37e24b4d920e09::t_4c2135cdf93b1e 76-84
+governance/automation-registry/lint.mjs
+  s_37e24b4d920e09::t_4bdb6203ff29b7 60
+  s_37e24b4d920e09::t_066dea96bf5978 53-58
+  s_37e24b4d920e09::t_6141b127c10d15 59
+  s_37e24b4d920e09::t_543404c22ac84f 32
+governance/plans/wave-automation-registry/RECEIPTS.md
+  s_37e24b4d920e09::t_182c8bf4a7249f 247,249-284
+  s_37e24b4d920e09::t_79eae85a11d38f 189
+  s_37e24b4d920e09::t_84660a0c580682 208
+governance/automation-registry/sync-check.mjs
+  s_37e24b4d920e09::t_b59e7df220c5d5 62-74,82
+governance/bin/enforce.mjs
+  s_37e24b4d920e09::t_53f4816a02cd97 113-116
+governance/test/automation-registry/sync-check.test.mjs
+  s_37e24b4d920e09::t_d634b0328ef23b 9
+  s_37e24b4d920e09::t_1f76dfa25aad43 47-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "03c6aff98024076704707a929a89214d10caea40",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/golden-path-restoration/E1-HARVEST-THE-REAL-179.md
+  s_8d26503dfc73f4::t_c018bb804094d1 4-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "df888ce9ea1df17cea72457c1b3b9c72e1bae7e3",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

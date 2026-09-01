@@ -1,0 +1,37 @@
+bin/fleet-reliability.mjs
+  s_7ddeb5d251570f::t_a0b7904abb8bce 23,29,111-121,123-130
+  s_7ddeb5d251570f::t_2ba93dabacfb69 122
+  s_7ddeb5d251570f::t_7eae328001be53 26
+  s_7ddeb5d251570f::t_778d8befc347d8 1-22,24-25,27-28,30-110
+governance/research/engineering-canon/agentic-governance.md
+  s_7ddeb5d251570f::t_9f206dad7dfc18 341
+bin/migrate-fleet-log-outcomes.mjs
+  s_7ddeb5d251570f::t_47ef798bc1e250 1-19,21-22,24-25,27-85,100
+  s_7ddeb5d251570f::t_ebad3ed2891379 23
+  s_7ddeb5d251570f::t_1f1fb6e16ba6e7 88
+  s_7ddeb5d251570f::t_0fafe7edb23a5e 20,26,86-87,89-99,101-102
+bin/fleet-log.mjs
+  s_7ddeb5d251570f::t_126a7a270f2882 13-14,21,29,34,56-57,65,84,118
+governance/plans/software-factory/NORTH-STAR.md
+  s_7ddeb5d251570f::t_91941d6a88bb52 10
+governance/plans/software-factory/E0-FOUNDATION.md
+  s_7ddeb5d251570f::t_b1dc4b7c534996 7,9,15,17,24,28,32,37,39,43-44
+governance/test/fleet-reliability.test.mjs
+  s_7ddeb5d251570f::t_6bdc4be8d6d14b 1-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4a8f531231abaeaef3bf3039b00f3dd53b2cd2de",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

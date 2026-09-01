@@ -1,0 +1,21 @@
+governance/plans/model-selection-completion/BENCHMARK-HARVEST.md
+  s_7ddeb5d251570f::t_5dd736244bbe48 1-59
+bin/capability-probe.mjs
+  s_7ddeb5d251570f::t_ec9954e8ee2c47 1-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2bb95efce94cd6e215827aab931e78061a7156cd",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

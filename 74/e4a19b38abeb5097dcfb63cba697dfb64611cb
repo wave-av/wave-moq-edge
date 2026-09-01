@@ -1,0 +1,39 @@
+governance/plans/verification-plane/E0-VISION-SCORE.md
+  s_8152bca18f72ee::t_fb46ba140838ca 1-9
+governance/plans/verification-plane/E1-DAILY-DRIVER-LABEL.md
+  s_8152bca18f72ee::t_bdc33dedce0a5e 1-10
+governance/plans/verification-plane/E2-QUANT-CHECK.md
+  s_8152bca18f72ee::t_2691fa611c7c6d 1-10
+governance/plans/verification-plane/E3-GLM-SHARD1.md
+  s_8152bca18f72ee::t_addd870ae590ba 1-10
+governance/plans/verification-plane/E4-DEEPSEEK-INTEGRITY.md
+  s_8152bca18f72ee::t_d294886121fd47 1-10
+governance/plans/verification-plane/E5-SOAK-GATE.md
+  s_8152bca18f72ee::t_4c0ff2e930cadf 1-10
+governance/plans/verification-plane/E6-LONG-HORIZON-BANK.md
+  s_8152bca18f72ee::t_443532d0bfce6a 1-10
+governance/plans/verification-plane/E7-PROVIDER-DRILL.md
+  s_8152bca18f72ee::t_0bc2f1c3a299ce 1-10
+governance/plans/verification-plane/E8-SPEND-LEDGER.md
+  s_8152bca18f72ee::t_0a56ee2e898c7c 1-10
+governance/plans/verification-plane/E9-STRIP-AUDIT.md
+  s_8152bca18f72ee::t_72cde5680275cb 1-10
+governance/plans/verification-plane/NORTH-STAR.md
+  s_8152bca18f72ee::t_67ecadce19d641 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "74e4a19b38abeb5097dcfb63cba697dfb64611cb",
+  "prompts": {},
+  "sessions": {
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

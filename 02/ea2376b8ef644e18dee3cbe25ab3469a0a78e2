@@ -1,0 +1,64 @@
+governance/plans/runtime-economy/bridge/shim.mjs
+  s_2b4acc7ceba309::t_7644bb9103dc4f 84-87
+  s_2b4acc7ceba309::t_b30e7de520a0b5 9-18,20-55,88,90,93
+  s_2b4acc7ceba309::t_1e739555d5abfe 1-8,56-75,77-82,89,91-92,94-102
+  s_2b4acc7ceba309::t_5a78858c3e0f84 19
+  s_2b4acc7ceba309::t_eff4d97ddad7bb 76
+  s_2b4acc7ceba309::t_c7c16adea04136 83
+governance/plans/runtime-economy/dogfood/dsh-home-bridge/settings.yaml
+  s_2b4acc7ceba309::t_07c6cbc789ff7a 1-13
+governance/plans/runtime-economy/bridge/probe.mjs
+  s_2b4acc7ceba309::t_2b53d18a297e68 1-28
+governance/plans/runtime-economy/bridge/BRIDGE-FINDINGS.md
+  s_2b4acc7ceba309::t_b3cf317d2040ae 1-37
+governance/plans/runtime-economy/bundle/cordis.yml
+  s_2b4acc7ceba309::t_11568311e20d7f 1-11
+governance/plans/runtime-economy/bundle/README.md
+  s_2b4acc7ceba309::t_0531768ed10da1 1-25
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/settings.yaml
+  s_2b4acc7ceba309::t_bc399d4fbb1f08 1-13
+governance/plans/runtime-economy/bridge/sdk-test.mjs
+  s_2b4acc7ceba309::t_305b18fdc43400 1-21
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/cordis.patch.yml
+  s_a3b153f1194a47::t_c0a4be3335e560 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/cordis.yml
+  s_a3b153f1194a47::t_f181c0344ba037 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/package.json
+  s_a3b153f1194a47::t_9db9e71ecdb2d2 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gateway/profiles/headless/pnpm-workspace.yaml
+  s_a3b153f1194a47::t_597eb4cc329d33 1-5
+governance/plans/runtime-economy/dogfood/gateway-run-1.log
+  s_7ddeb5d251570f::t_5961f66674e43a 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "02ea2376b8ef644e18dee3cbe25ab3469a0a78e2",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a3b153f1194a47": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff34ced7bffeVOgbFqfbjMHt66",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

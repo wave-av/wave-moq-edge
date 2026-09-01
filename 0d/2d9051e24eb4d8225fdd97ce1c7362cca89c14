@@ -1,0 +1,26 @@
+governance/plans/neural-moq-lane/E1-DECODER-SPIKE.md
+  s_086930f9471e9a::t_642b15841f0b0e 4
+governance/plans/fireworks-integration/RECEIPTS.md
+  h_67a1b847dc59d6 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0d2d9051e24eb4d8225fdd97ce1c7362cca89c14",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_086930f9471e9a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe39a2c5cffevgIxTkK4UgFqco",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

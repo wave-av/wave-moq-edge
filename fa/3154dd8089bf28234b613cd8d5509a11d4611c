@@ -1,0 +1,29 @@
+frameworks/discoverability/audit-discoverability.py
+  s_be40541f6fd98b::t_7ccc357b80d741 89-92
+  s_be40541f6fd98b::t_bc5f45c375ae86 82-87
+  s_be40541f6fd98b::t_7a20cb90a8239b 21
+frameworks/platform-registry/workflows/publish-capabilities.yml
+  s_be40541f6fd98b::t_5cfdbf0309f81a 48-51,53-54
+frameworks/prompts/additional-context-lib.sh
+  s_be40541f6fd98b::t_9c515524186f4f 345-348
+frameworks/copywriting/copy-audit.yml
+  s_be40541f6fd98b::t_c94a1ab0735ef3 17
+frameworks/positioning/positioning-audit.yml
+  s_be40541f6fd98b::t_0c9a82913c3209 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fa3154dd8089bf28234b613cd8d5509a11d4611c",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

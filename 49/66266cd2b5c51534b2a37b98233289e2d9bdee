@@ -1,0 +1,85 @@
+.github/workflows/blast-radius-dispatch.yml
+  s_dccee6b7677203::t_0fa34e315d8e57 71-79,81-84,87
+governance/bin/fleet/tests/run.sh
+  s_dccee6b7677203::t_fe62a2bd7ee484 4-14,19-23,28-29,31,33-51
+governance/bin/fleet/tests/cases/30-credential-audit.sh
+  s_dccee6b7677203::t_6ad507eff25b07 1-34
+governance/bin/fleet/tests/lib/fixtures.sh
+  s_dccee6b7677203::t_66d36a92ea3054 1-50
+governance/config/fleet-contract.schema.json
+  s_dccee6b7677203::t_422bf33604b18f 12
+governance/bin/fleet/tests/cases/70-resolve-consumers.sh
+  s_dccee6b7677203::t_df24c642d43c33 1-55,57-70
+  s_dccee6b7677203::t_85891bc8d2343a 56
+governance/bin/fleet/tests/cases/80-publish-graph.sh
+  s_dccee6b7677203::t_e9d308a9ec8311 1-102
+governance/bin/fleet/tests/cases/20-consumer-graph.sh
+  s_dccee6b7677203::t_04842646447e6e 1-55
+governance/bin/fleet/tests/lib/harness.sh
+  s_dccee6b7677203::t_a0df0b4cf795c7 1-17
+governance/bin/fleet/tests/cases/50-contract-block.sh
+  s_dccee6b7677203::t_621ce2e3c3b6e8 1-31
+governance/bin/fleet/resolve-consumers.mjs
+  s_dccee6b7677203::t_f02e7f2bd677a1 92-96
+  s_dccee6b7677203::t_03f96666d10432 77-83
+  s_dccee6b7677203::t_bb09b19d0d03ca 12-27
+  s_dccee6b7677203::t_56fd73a3552443 100-119,127-136
+  s_dccee6b7677203::t_755a9c400f03a1 44-45,52-55,58-65
+  s_dccee6b7677203::t_57eddb8b16f7e5 162
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_3a0ebb3c6e1ebf 163-166
+  s_dccee6b7677203::t_bd4ccaff1e5b3b 118-140
+  s_dccee6b7677203::t_62f58ea33c6622 12,17,19-24,31-38
+  s_dccee6b7677203::t_9031122e4e349e 63-68,72-73,76-83
+  s_dccee6b7677203::t_fd44d040640168 39
+governance/data/fleet/consumers.json
+  s_dccee6b7677203::t_f28ff0094a6979 1-466
+.github/workflows/governance.yml
+  s_dccee6b7677203::t_144af9e63e4cc9 46-60
+governance/bin/fleet/tests/cases/40-agents-md-gen.sh
+  s_dccee6b7677203::t_45da78662d7fcc 1-59
+governance/bin/fleet/lib/graph-digest.mjs
+  s_dccee6b7677203::t_754d2ddf189f65 1-82
+governance/config/fleet-consumers.schema.json
+  s_dccee6b7677203::t_016184b1fbeb09 1-94
+governance/plans/polyrepo-velocity/E3-BLAST-RADIUS.md
+  s_dccee6b7677203::t_24f82976ab8bd8 109-156
+  s_dccee6b7677203::t_576a4e78b917fc 12
+governance/bin/fleet/publish-graph.mjs
+  s_dccee6b7677203::t_fe4c30a94f920a 60
+  s_dccee6b7677203::t_0e02b04e1fd07d 1-33,39-40,43-59,61-133,145-147,150-151,159,161,163-165,186-260
+  s_dccee6b7677203::t_1a7f09c1bb5475 134-144,148-149,152-158,160,162,166-185
+  s_dccee6b7677203::t_12a7d777180500 34-38,41-42
+  s_dccee6b7677203::t_8f3a759b7bf458 261-263
+governance/bin/fleet/lib/fleet-policy.mjs
+  s_dccee6b7677203::t_9a2201c108b640 1-34
+governance/bin/fleet/tests/cases/10-safe-fs.sh
+  s_dccee6b7677203::t_043a5bb4599130 1-50
+governance/bin/fleet/lib/json-shape.mjs
+  s_dccee6b7677203::t_f7ef94aff45330 11,16-30,40-46,58-63
+  s_dccee6b7677203::t_ce483ba81aa2da 1-10,12-15,31-39,47-57,64-109
+governance/bin/fleet/tests/cases/60-contract-validate.sh
+  s_dccee6b7677203::t_aa8aad243fa7fd 1-32
+governance/bin/fleet/contract-validate.mjs
+  s_dccee6b7677203::t_23460d48c5eaa1 33
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_7a91dd89f3cf3d 5,1101-1110,1157-1176,1191-1208,1211-1219
+governance/code-index/index.json
+  s_dccee6b7677203::t_046519125e76fa 6-7,9-10,10019-10020,10030-10031,10041-10042,10052-10053,10063-10064,10074-10075,10085-10086,10096-10097,10107-10108,10118-10119,10519-10639,10761-10925,10932-10935,10943-10946,10949,10952,10954-10957,10965-10966,10976-10977,10981-10991,10998-10999,11009-11010,11020-11023
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4966266cd2b5c51534b2a37b98233289e2d9bdee",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

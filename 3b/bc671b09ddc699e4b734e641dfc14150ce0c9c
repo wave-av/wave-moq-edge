@@ -1,0 +1,73 @@
+.claude/skills/work-graph/SKILL.md
+  s_7c7e203d305c60::t_a3d01ec2c8d329 46,74,82-83
+governance/bin/epic-status.mjs
+  s_7c7e203d305c60::t_b04f095a17247f 112,115-118,171-175,271-276
+governance/bin/fleet.mjs
+  s_7c7e203d305c60::t_27ba9cb45d4da0 18-78,80-81,83-146,148-149,151-157,206-207,209-217,265
+governance/bin/fleet/reviewer-config-census.mjs
+  s_7c7e203d305c60::t_903de317859732 7-10,26-30,32,37,39-41,64,70-83,86-87,102,109-111,113-118,122-123,126-130,132-156,159,185-186,188-193,195,204,206,208-213,216-218
+governance/gam-port-kit/manifest.json
+  s_7c7e203d305c60::t_3e999ada5fd6bf 24
+governance/lib/epic-status-parse.mjs
+  s_7c7e203d305c60::t_c8879632435b16 43-48,51-58,70,72-78
+governance/lib/reviewer-census-classify.mjs
+  s_7c7e203d305c60::t_61f4c360f58344 1-217
+governance/lib/vendor-schema-fetch.mjs
+  s_7c7e203d305c60::t_19d3a6bf50f693 1-136
+governance/lib/vendor-schema-properties.mjs
+  s_7c7e203d305c60::t_f1f8567d7ceed1 1-215
+governance/lib/vendor-schema.mjs
+  s_7c7e203d305c60::t_617d2258232972 1-146
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_7c7e203d305c60::t_9de2d2b73e8b79 14-28
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_7c7e203d305c60::t_9aea3dc60c836f 45-53
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  s_7c7e203d305c60::t_40d3caf232f2cf 1-161
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_7c7e203d305c60::t_6e294fc0b73267 1-152
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_7c7e203d305c60::t_89ccf7eb92eae2 1-174
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_7c7e203d305c60::t_5ef362a0b010d0 74,92-94,102-109,116-133
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_7c7e203d305c60::t_fbc2484883e1bc 191-208
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_7c7e203d305c60::t_6714f2f0bc5989 1-72
+governance/plans/reviewer-fleet/RF-P4-CONFIG.md
+  s_7c7e203d305c60::t_dc060c0f30dcf0 101-107,171
+governance/test/epic-status-unterminated-receipt.test.mjs
+  s_7c7e203d305c60::t_930fa8b79287f7 1-69
+governance/test/fleet-cli.test.mjs
+  s_7c7e203d305c60::t_f4c2aecf008c1c 3-26,76-228
+governance/test/reviewer-census-fixture.mjs
+  s_7c7e203d305c60::t_7f8cfb7ad58490 1-70
+governance/test/reviewer-census-schema.test.mjs
+  s_7c7e203d305c60::t_a81c78be1cd7ab 1-182
+governance/test/reviewer-census.test.mjs
+  s_7c7e203d305c60::t_1e5c5bdd7f197b 4-7,11,13,16,18,22-23,34,37,41,46,52,54,108,113,127-163
+governance/test/vendor-schema-combinator.test.mjs
+  s_7c7e203d305c60::t_89620ac4765faa 1-228
+governance/test/vendor-schema-fetch.test.mjs
+  s_7c7e203d305c60::t_27e890a7f9c143 1-203
+governance/test/vendor-schema-fixture.mjs
+  s_7c7e203d305c60::t_bbe7c014221c0c 1-26
+governance/test/vendor-schema.test.mjs
+  s_7c7e203d305c60::t_9a3a9129cf9746 1-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3bbc671b09ddc699e4b734e641dfc14150ce0c9c",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

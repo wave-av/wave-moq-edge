@@ -1,0 +1,23 @@
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_63c6ee080d73c3::t_866271e4c379b4 4-7
+  s_63c6ee080d73c3::t_172e799bb4c3dd 132-135
+  s_63c6ee080d73c3::t_63b57387775676 139-143
+  s_63c6ee080d73c3::t_934e66a3cd9d7a 157-160
+  s_63c6ee080d73c3::t_9c641dde59d2a5 83-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "645ee894dc479c0827d92d2727537ddf49c5217e",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

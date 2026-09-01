@@ -1,0 +1,39 @@
+governance/plans/runtime-economy/bundle/wave-pay/README.md
+  s_cdd171d7860de8::t_3ebd98bf86d736 1-17
+governance/plans/runtime-economy/bundle/wave-provider/package.json
+  s_cdd171d7860de8::t_db43775bda7b3b 1-13
+governance/plans/runtime-economy/bundle/wave-pay/package.json
+  s_cdd171d7860de8::t_0995113d42d898 1-13
+governance/plans/runtime-economy/bundle/README.md
+  s_cdd171d7860de8::t_7109505b466931 21-34
+governance/plans/runtime-economy/bundle/wave-memory/README.md
+  s_cdd171d7860de8::t_d6304eea17ecc7 1-17
+governance/plans/runtime-economy/bundle/wave-provider/README.md
+  s_cdd171d7860de8::t_db0dd7a0455980 1-17
+governance/plans/runtime-economy/bundle/wave-dispatch/package.json
+  s_cdd171d7860de8::t_b2143f2e930ba7 1-13
+governance/plans/runtime-economy/bundle/wave-dispatch/README.md
+  s_cdd171d7860de8::t_cf5baae18d08ba 1-18
+governance/plans/runtime-economy/bundle/wave-mail/package.json
+  s_cdd171d7860de8::t_6b8a1dafe275c8 1-13
+governance/plans/runtime-economy/bundle/wave-mail/README.md
+  s_cdd171d7860de8::t_88c8c2c93ffc04 1-18
+governance/plans/runtime-economy/bundle/wave-memory/package.json
+  s_cdd171d7860de8::t_9eb521dc0da1b2 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "baf0470ab189cee1c4615f83aa50b29584b09c5b",
+  "prompts": {},
+  "sessions": {
+    "s_cdd171d7860de8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed88a7b2ffe5jxoWL8B8K4skK",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

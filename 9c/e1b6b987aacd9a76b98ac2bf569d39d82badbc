@@ -1,0 +1,19 @@
+.github/workflows/pr-review-context.yml
+  s_60a20469ef4369::t_bee3d9591b100a 28-34,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9ce1b6b987aacd9a76b98ac2bf569d39d82badbc",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

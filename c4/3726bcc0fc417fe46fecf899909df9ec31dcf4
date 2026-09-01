@@ -1,0 +1,20 @@
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_ff25d342a10843 55,70-81
+  s_85d9e5f433b9aa::t_f656cb0f3a7c3c 82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c43726bcc0fc417fe46fecf899909df9ec31dcf4",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

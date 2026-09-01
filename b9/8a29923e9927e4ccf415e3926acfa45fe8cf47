@@ -1,0 +1,19 @@
+governance/plans/console-completeness/comps/billing-usage-v1.html
+  s_15127d80763110::t_41b411fba6c0f0 1-686
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b98a29923e9927e4ccf415e3926acfa45fe8cf47",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

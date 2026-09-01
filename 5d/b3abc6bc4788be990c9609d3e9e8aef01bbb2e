@@ -1,0 +1,131 @@
+.coderabbit.yaml
+  s_53b49eff5b8c5d::t_9e4a91154d32d4 34-57
+.github/workflows/auto-merge.yml
+  s_53b49eff5b8c5d::t_63645af5ed4740 224
+.github/workflows/harness-watch-sweep.yml
+  s_53b49eff5b8c5d::t_b646834702e091 26,29
+.github/workflows/namespace-egress-advisory-soak.yml
+  s_53b49eff5b8c5d::t_363fd0166c3dc1 122
+.github/workflows/network-edge-audit.yml
+  s_53b49eff5b8c5d::t_1ef9d4a067fab9 41-44,81-90
+.github/workflows/wave-sec-aikido.yml
+  s_53b49eff5b8c5d::t_19ada1f5d53235 104
+docs/REGISTER-outbound-email-gate.md
+  s_53b49eff5b8c5d::t_b8c038eb5704b4 1-152
+governance/automation-registry/lib/webhook-server.mjs
+  s_53b49eff5b8c5d::t_796f91e1754639 32-44,46-53,88-98
+governance/bin/anchor-drift-notify.mjs
+  s_53b49eff5b8c5d::t_c4872e792564b6 43-67
+governance/bin/email-gate.mjs
+  s_53b49eff5b8c5d::t_e277248340dbff 1-110
+governance/bin/surface-check.mjs
+  s_53b49eff5b8c5d::t_f34e31cf16d06e 1-130
+governance/lib/email-craft-rules.mjs
+  s_53b49eff5b8c5d::t_870399af119088 1-266
+governance/lib/review-liveness-rules.mjs
+  s_53b49eff5b8c5d::t_ca35cd2864475e 35,38-41
+governance/lib/review-rule-facts.mjs
+  s_53b49eff5b8c5d::t_c5c07a200ed305 13-18,23-56
+governance/lib/review-sufficiency.mjs
+  s_53b49eff5b8c5d::t_72641594bad830 23,112-115,118,180-184,195-197
+governance/lib/review-surfaces-identity.mjs
+  s_53b49eff5b8c5d::t_14a755bd2bc689 22-28,30-38,58-63
+governance/lib/reviewer-roster.mjs
+  s_53b49eff5b8c5d::t_f0be9292cb0887 45-77
+governance/lib/surface-checks-local.mjs
+  s_53b49eff5b8c5d::t_006ed1745709c4 1-284
+governance/lib/surface-checks-remote.mjs
+  s_53b49eff5b8c5d::t_25f3724852ffc4 1-176
+governance/lib/surface-probe-lib.mjs
+  s_53b49eff5b8c5d::t_1947e25fff6536 1-94
+governance/lib/surface-probes.mjs
+  s_53b49eff5b8c5d::t_8828008bf6f76d 1-53
+governance/lib/surface-verdict.mjs
+  s_53b49eff5b8c5d::t_e57e53c479954e 1-216
+governance/plans/network-edge-plane/POSITIONING.md
+  s_53b49eff5b8c5d::t_0de93994939cee 1-92
+governance/plans/network-edge-plane/WOW.md
+  s_53b49eff5b8c5d::t_b39364e01b6b90 1-38
+governance/plans/pen-design-lane/CORRECTIONS-2026-08-15.md
+  s_53b49eff5b8c5d::t_74707ac7b5e93d 164-402
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_53b49eff5b8c5d::t_8745d14ba048f4 25-27,33-44,122-153
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_53b49eff5b8c5d::t_f0355d6c52b2ee 36-57
+governance/plans/pen-design-lane/E5-GRADUATE-FIRST-SURFACE.md
+  s_53b49eff5b8c5d::t_81fe041e59996a 5-15
+governance/plans/pen-design-lane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_105d0d7d3df283 4-20,53
+governance/plans/pen-design-lane/PROPOSAL-review-liveness-merge-precondition.md
+  s_53b49eff5b8c5d::t_9b81bcba598513 1-209
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  s_53b49eff5b8c5d::t_c364f4a2a1a1e6 118-126
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  s_53b49eff5b8c5d::t_97ae262ad20c8e 101-109
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  s_53b49eff5b8c5d::t_4870c7ee9fe7df 1
+governance/plans/runtime-economy/leaderboard-tui/index.ts
+  s_37d3f61160b2dd::t_e3a39ac0abb42c 227
+governance/runbooks/pool-restore.sh
+  s_53b49eff5b8c5d::t_f529fd49c49b6d 1-48
+governance/test/automation-registry/webhook-server-registry-shape.test.mjs
+  s_53b49eff5b8c5d::t_81fadff8ff19f0 1-74
+governance/test/email-gate.test.mjs
+  s_53b49eff5b8c5d::t_294d0a0931a30b 1-344
+governance/test/review-liveness-class.test.mjs
+  s_53b49eff5b8c5d::t_d991d4c064f9fd 16,181-239
+governance/test/review-liveness-duration.test.mjs
+  s_53b49eff5b8c5d::t_cacf3f91974f02 126-202
+governance/test/surface-check.test.mjs
+  s_53b49eff5b8c5d::t_fa56837a3e743f 1-421
+governance/voice/WRITING-REGISTER.md
+  s_53b49eff5b8c5d::t_6287d6c2bd40c7 1-30
+hooks/lib/email_gate_verdict.py
+  s_53b49eff5b8c5d::t_1fd8a735dc12ba 1-148
+hooks/lib/email_payload_normalize.py
+  s_53b49eff5b8c5d::t_566d409867562d 1-172
+hooks/lib/email_rules_invoke.py
+  s_53b49eff5b8c5d::t_bf5355b39e7700 1-138
+hooks/lib/email_send_detect.py
+  s_53b49eff5b8c5d::t_06fb3e7a904b82 1-372
+hooks/outbound-email-gate.py
+  s_53b49eff5b8c5d::t_3cdb30908be156 1-299
+hooks/tests/lib/oe-gate-harness.sh
+  s_53b49eff5b8c5d::t_ee74cda2036b37 1-152
+hooks/tests/outbound-email-gate-command-position.test.sh
+  s_53b49eff5b8c5d::t_8c755dc1f1de1d 1-75
+hooks/tests/outbound-email-gate.test.sh
+  s_53b49eff5b8c5d::t_3f91130635b38d 1-206
+sdk/LICENSE
+  s_53b49eff5b8c5d::t_62aff049896d2a 1-6
+sdk/package.json
+  s_53b49eff5b8c5d::t_30ac62fe9b07f0 1-30
+sdk/tsconfig.json
+  s_53b49eff5b8c5d::t_9456ada4bf9a9d 1-17
+sdk/wave-codec-client.ts
+  s_53b49eff5b8c5d::t_1714b0c5bb1d77 14,23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5db3abc6bc4788be990c9609d3e9e8aef01bbb2e",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

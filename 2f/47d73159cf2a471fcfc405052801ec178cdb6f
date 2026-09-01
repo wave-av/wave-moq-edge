@@ -1,0 +1,28 @@
+scripts/pr-merge-base-drill.sh
+  s_264ae386838c57::t_9affdc7c85a921 58-59
+  s_264ae386838c57::t_927c61e7157db5 79-80
+  s_264ae386838c57::t_ef6ae1351442fe 68-72,77,82-91
+  s_264ae386838c57::t_1e9a96d596eb91 98-99
+  s_264ae386838c57::t_1bce9cad6caa64 1-57,60-67,73-76,78,81,92-97,100-103
+.github/workflows/checks.yml
+  s_264ae386838c57::t_d386274a29f09f 135-138,999-1002
+  s_264ae386838c57::t_ccd08b9ccce1eb 209-213
+  s_264ae386838c57::t_2d242ff331d8b0 1052-1053
+  s_264ae386838c57::t_8dfbc792b91491 179-200,1018-1039
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2f47d73159cf2a471fcfc405052801ec178cdb6f",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

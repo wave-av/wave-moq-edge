@@ -1,0 +1,32 @@
+router/src/router/router-hooks.test.ts
+  s_8767ce81cadb71::t_a2d73e59c49e34 1-203
+router/src/router/router-hooks.ts
+  s_8767ce81cadb71::t_3919a94451ed4c 77
+  s_8767ce81cadb71::t_dc3759a6aca28e 1-55,57-76,78-102
+  s_8767ce81cadb71::t_ed61e32279c3c2 56
+router/src/index.ts
+  s_8767ce81cadb71::t_827f97e97820fb 545-555
+  s_8767ce81cadb71::t_2dc3366cdc77bf 41
+  s_8767ce81cadb71::t_f28dde53929c1f 816-825
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1c7982142597134b0463d4f9c312697787b9edc7",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_8767ce81cadb71": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff40227feffextbUZsMCw2pbyv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

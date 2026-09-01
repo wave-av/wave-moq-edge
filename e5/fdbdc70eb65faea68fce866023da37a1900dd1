@@ -1,0 +1,100 @@
+.gitignore
+  h_af5ac1a9798224 1-6
+README.md
+  h_af5ac1a9798224 1-42
+REMINDER-dual-tree.md
+  h_af5ac1a9798224 1-28
+agent/act-worker.md
+  h_af5ac1a9798224 1-79
+agent/code-reviewer.md
+  h_af5ac1a9798224 1-64
+agent/config-auditor.md
+  h_af5ac1a9798224 1-86
+agent/deploy-runner.md
+  h_af5ac1a9798224 1-162
+agent/gateway-dev.md
+  h_af5ac1a9798224 1-112
+agent/lean-delegator.md
+  h_af5ac1a9798224 1-36
+agent/lean-scout.md
+  h_af5ac1a9798224 1-26
+agent/pr-reviewer.md
+  h_af5ac1a9798224 1-46
+agent/security-reviewer.md
+  h_af5ac1a9798224 1-51
+agent/spoke-dev.md
+  h_af5ac1a9798224 1-129
+docs/NORTH-STAR.md
+  h_af5ac1a9798224 1-53
+docs/STATUS.md
+  h_af5ac1a9798224 1-58
+opencode.json
+  h_af5ac1a9798224 1-608
+package-lock.json
+  h_af5ac1a9798224 1-401
+package.json
+  h_af5ac1a9798224 1-5
+plugins/git-ai.ts
+  h_af5ac1a9798224 1-515
+router/README.md
+  h_af5ac1a9798224 1-670
+router/package.json
+  h_af5ac1a9798224 1-53
+router/src/escalate/ladder.ts
+  h_af5ac1a9798224 1-201
+router/src/guard/enforce.ts
+  h_af5ac1a9798224 1-135
+router/src/guard/fingerprint.ts
+  h_af5ac1a9798224 1-16
+router/src/guard/guards.ts
+  h_af5ac1a9798224 1-343
+router/src/guard/narration.ts
+  h_af5ac1a9798224 1-34
+router/src/guard/scrub.ts
+  h_af5ac1a9798224 1-26
+router/src/guard/store.ts
+  h_af5ac1a9798224 1-39
+router/src/index.ts
+  h_af5ac1a9798224 1-1068
+router/src/router/config.ts
+  h_af5ac1a9798224 1-480
+router/src/router/enforcement.ts
+  h_af5ac1a9798224 1-53
+router/src/router/protocol.ts
+  h_af5ac1a9798224 1-306
+router/src/router/sessions.ts
+  h_af5ac1a9798224 1-268
+router/src/telemetry/trajectory.ts
+  h_af5ac1a9798224 1-180
+router/src/verify/checker.ts
+  h_af5ac1a9798224 1-224
+router/src/verify/deterministic.ts
+  h_af5ac1a9798224 1-319
+router/src/verify/dispatch.ts
+  h_af5ac1a9798224 1-162
+router/src/verify/dod.ts
+  h_af5ac1a9798224 1-274
+router/src/verify/gate.ts
+  h_af5ac1a9798224 1-166
+router/src/verify/types.ts
+  h_af5ac1a9798224 1-49
+router/tiers.json
+  h_af5ac1a9798224 1-425
+steer/steer-policy.md
+  h_af5ac1a9798224 1-107
+steer/steer.test.ts
+  h_af5ac1a9798224 1-252
+steer/steer.ts
+  h_af5ac1a9798224 1-416
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e5fdbdc70eb65faea68fce866023da37a1900dd1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

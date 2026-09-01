@@ -1,0 +1,25 @@
+scripts/bugbot/review.py
+  s_0b987fef4e1240::t_ab6a2ed3ac509a 382
+  s_0b987fef4e1240::t_95a984e889fa1a 628-632
+  s_0b987fef4e1240::t_b78d270358ffe7 340-341
+scripts/bugbot/specialists.py
+  s_0b987fef4e1240::t_ea090b51ca3d8b 1-126
+scripts/bugbot/test_specialists.py
+  s_0b987fef4e1240::t_2cb29edef47489 1-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4cec55683e2fc2e0cdfc6910dc0a396e430ca8c0",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

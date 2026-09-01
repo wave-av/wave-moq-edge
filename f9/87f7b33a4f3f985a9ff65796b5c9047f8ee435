@@ -1,0 +1,41 @@
+bin/model-horizon.mjs
+  s_0800e111555ead::t_be279cfba49d97 77-132,134
+  s_0800e111555ead::t_71446d0b6489e5 16
+  s_0800e111555ead::t_d1df659c7ab5b6 177,179,186,192
+  s_0800e111555ead::t_519a37b2e172fd 135-137
+bin/audio-eval.mjs
+  s_69361be1ab7da8::t_e889f7dd98d1cc 61
+  s_69361be1ab7da8::t_a8ca2e50e78c8f 1-60,62-300
+governance/test/audio-eval.test.mjs
+  s_69361be1ab7da8::t_dea39fe16f3b59 1-160
+governance/test/model-horizon.test.mjs
+  s_0800e111555ead::t_9e5f897c308880 66-68
+  s_0800e111555ead::t_708db95ca6b756 88,90-93
+  s_0800e111555ead::t_b4a16f446b538c 60-65,69-87,89,94-104,106,108-152
+  s_0800e111555ead::t_5118bec2cbc45c 105,107
+  s_0800e111555ead::t_b5078378b02612 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f987f7b33a4f3f985a9ff65796b5c9047f8ee435",
+  "prompts": {},
+  "sessions": {
+    "s_0800e111555ead": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fefce1cd3ffe0A26jST58JuCt3",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_69361be1ab7da8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fefcdee22ffex9DmvVI2x6jpO1",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

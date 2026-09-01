@@ -1,0 +1,32 @@
+hooks/merge-premise-guard.sh
+  s_db1b2a792e5f25::t_5a6e01c36ebfb9 1-20,24-34,38,42-71,78-90,92,94-95,97-106,108-110,112-113,120-128,131,134-138
+  s_db1b2a792e5f25::t_51ab4737919571 114-119
+  s_db1b2a792e5f25::t_9eb9057e1cd102 129-130,132-133
+  s_db1b2a792e5f25::t_cff4d8e190327b 96
+  s_db1b2a792e5f25::t_a91eedd0007835 72-77
+  s_db1b2a792e5f25::t_ca02aab1b6fb7d 35-37,39-41
+  s_db1b2a792e5f25::t_93e1009e9aaca2 91,93
+  s_db1b2a792e5f25::t_7f237d2d71b0ca 21-23
+  s_db1b2a792e5f25::t_b1116cd254c9b3 107
+  s_db1b2a792e5f25::t_743bee5f6b0faa 111
+hooks/tests/merge-premise-guard.test.sh
+  s_db1b2a792e5f25::t_53c2a13fa2f570 54-63
+  s_db1b2a792e5f25::t_17bbcf3b2f718f 101-111
+  s_db1b2a792e5f25::t_01298e31430d31 1-53,64-100,112-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4ebfce3848be38c4d270dbed8fbfefe9ce590723",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+docs/ADR-0001-live-config-is-the-repo.md
+  s_9673f7dc0983fb::t_c16f4948f8fd8f 29-30,33,36-52,72-87
+CHANGELOG.internal.md
+  s_9673f7dc0983fb::t_c16f4948f8fd8f 1-19
+opencode.json
+  s_9673f7dc0983fb::t_4fe0ce89042000 594-595
+CHANGELOG.md
+  s_9673f7dc0983fb::t_c16f4948f8fd8f 1-18
+docs/E-EVAL-LEADERBOARD.md
+  s_9673f7dc0983fb::t_c16f4948f8fd8f 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d668fc16c12b41ba50d45a662dded33cf3d4e18f",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

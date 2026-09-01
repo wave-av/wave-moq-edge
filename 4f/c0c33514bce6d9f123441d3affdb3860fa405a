@@ -1,0 +1,23 @@
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_85d9e5f433b9aa::t_5ea2c98b445364 29,35-59
+  s_85d9e5f433b9aa::t_3286af44a50662 4-10
+.github/workflows/wave-sec-scan.yml
+  s_85d9e5f433b9aa::t_ad52420abb558e 47-69,76
+  s_85d9e5f433b9aa::t_dab7f265c7103b 2-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4fc0c33514bce6d9f123441d3affdb3860fa405a",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

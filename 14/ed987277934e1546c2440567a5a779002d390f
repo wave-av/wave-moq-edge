@@ -1,0 +1,46 @@
+governance/lib/sha-pin-federate.mjs
+  s_db1b2a792e5f25::t_de0afa2ed2c53e 1-89
+.github/workflows/governance.yml
+  s_db1b2a792e5f25::t_19c1d60027bc22 259-269
+governance/lib/action-pin-classify.mjs
+  s_db1b2a792e5f25::t_a4981d907579dd 189-193
+  s_db1b2a792e5f25::t_ef9f4d928c225f 1-29,32-33,35-88
+  s_db1b2a792e5f25::t_a9ac28441c150f 30-31
+  s_db1b2a792e5f25::t_63dd552225d8fe 34
+  s_db1b2a792e5f25::t_93ca66d6c53b76 89-188,194
+governance/bin/distribute-sha-pin.mjs
+  s_db1b2a792e5f25::t_01745669945b8c 44-50,52-53
+  s_db1b2a792e5f25::t_ca68071b5f1d82 116-118,120,123,128,130-131,138
+  s_db1b2a792e5f25::t_ac6371d2253332 36-37
+  s_db1b2a792e5f25::t_0e9945faf04efe 109-112
+  s_db1b2a792e5f25::t_54f2fa8f21a769 151-166,168,170-184,186-191
+  s_db1b2a792e5f25::t_806cf4841d3e1d 227,231-241,244
+  s_db1b2a792e5f25::t_0a5eeff23415b3 262
+  s_db1b2a792e5f25::t_fb379d3566a773 268-291
+  s_db1b2a792e5f25::t_73fb9569443693 28,81-86,92-93,99-101,104-105
+  s_db1b2a792e5f25::t_11d4aedf24d9a4 17,20-27
+  s_db1b2a792e5f25::t_acbdbb5e8334dd 195
+  s_db1b2a792e5f25::t_2d66a1b6332b3e 256-260
+.github/workflows/fleet-drift.yml
+  s_db1b2a792e5f25::t_c9ce2395e22a1d 88-94
+governance/code-index/CATALOG.md
+  s_db1b2a792e5f25::t_0b0795d744d636 5,753-771,3159-3169,4008-4017
+governance/code-index/index.json
+  s_db1b2a792e5f25::t_5127c531966d6c 9-10,12-13,6889-6890,6900-6903,6911-6912,6917,6920,6922-6925,6928,6931,6933-6936,6944-6947,6955-6958,6966-6967,6977-6978,6983,6986,6988-6991,6994,6997,6999-7002,7010-7011,7021-7024,7032-7035,7043-7046,7054-7057,7065-7066,7076-7079,7082,7085,7087-7090,28355-28442,34625-34701
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "14ed987277934e1546c2440567a5a779002d390f",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

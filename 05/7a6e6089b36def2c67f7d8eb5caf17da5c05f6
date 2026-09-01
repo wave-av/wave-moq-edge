@@ -1,0 +1,24 @@
+governance/plans/ffmpeg9-lei/action/E13-P1-DABPLUS-POC.md
+  s_124891ed63801b::t_dcb4d0ab383fdb 1-169
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_e461034e4f3fa5 91-96
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_124891ed63801b::t_eeaa84b98344fa 4,7-9
+  s_124891ed63801b::t_954ed912001a12 58-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "057a6e6089b36def2c67f7d8eb5caf17da5c05f6",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

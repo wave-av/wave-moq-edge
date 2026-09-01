@@ -1,0 +1,38 @@
+governance/plans/edge-audio-ai/E4-SECURITY-REVIEW.md
+  s_ee374fdf782767::t_1d7b19c380795e 1-46
+governance/plans/edge-audio-ai/E3-CHANNEL-PRESENCE.md
+  s_ee374fdf782767::t_6f74169ce479d8 1-47
+governance/plans/edge-audio-ai/E5-COMPLIANCE.md
+  s_ee374fdf782767::t_8a6684fc6819f1 1-46
+governance/plans/edge-audio-ai/E6-MARKET-RECEIPTS.md
+  s_ee374fdf782767::t_f3c8f74d5d20ac 1-46
+governance/plans/edge-audio-ai/E1-FEATURES-SPEC.md
+  s_ee374fdf782767::t_932e6e9e35bbaa 1-47
+governance/plans/edge-audio-ai/NORTH-STAR.md
+  s_ee374fdf782767::t_601cc2acd37f6c 76
+  s_ee374fdf782767::t_82df0e8baddc3e 1-75,77-97
+governance/plans/edge-audio-ai/E2-PROVENANCE.md
+  s_ee374fdf782767::t_5f93eca190d4b2 1-42
+governance/plans/edge-audio-ai/RECEIPTS.md
+  s_ee374fdf782767::t_16a0707982c633 1-42
+governance/plans/edge-audio-ai/E0-WATCH-OPS.md
+  s_ee374fdf782767::t_e8e39574192ed3 1-44
+governance/graph.json
+  s_ee374fdf782767::t_e6b222ecb1fff6 4225-4328,24631-24792
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5bc01ddf17821810af1a34ea621609adc4bce5f6",
+  "prompts": {},
+  "sessions": {
+    "s_ee374fdf782767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e20f63ea-8846-4609-bc0b-ebc7bdd03bfc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

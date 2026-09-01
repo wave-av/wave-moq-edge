@@ -1,0 +1,23 @@
+governance/bin/code-index.mjs
+  s_db1b2a792e5f25::t_e05e51f0209486 11-20,44-49,160-163,194,204,224-225,232
+governance/test/code-index.test.mjs
+  s_db1b2a792e5f25::t_94da5f7ab8e757 2-6,22,24-48
+governance/test/wave-code-mcp.test.mjs
+  s_db1b2a792e5f25::t_fdfe91ec9881de 52,58-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "7cf8d4f81fda97f2fcfb936cf81ab37d287b315e",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

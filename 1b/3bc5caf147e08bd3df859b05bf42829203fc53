@@ -1,0 +1,23 @@
+runbooks/library/pen-design-lane.md
+  s_ddcd58c8419ae0::t_cd008b9928ffef 3-142
+  s_ddcd58c8419ae0::t_5f638ba102ba7f 143-146
+  s_ddcd58c8419ae0::t_e6c4e80fa251f3 1-2
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_ddcd58c8419ae0::t_e97365cdecbb4e 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1b3bc5caf147e08bd3df859b05bf42829203fc53",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

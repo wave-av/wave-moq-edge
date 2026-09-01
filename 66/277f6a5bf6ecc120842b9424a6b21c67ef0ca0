@@ -1,0 +1,59 @@
+settings/settings.base.json
+  s_1c0352e957b5f6::t_a81265a397347a 72-81
+  s_1c0352e957b5f6::t_3b9f1790dd2cf7 471-480
+  s_e8946ec92c298a::t_40fc3a1306d999 71,470
+hooks/serena-project-observer.sh
+  s_1c0352e957b5f6::t_a052959563f41d 1-76
+hooks/manifest.json
+  s_9041cf1cf1ccad::t_9f5503ef5a878f 1220,1226-1227,1237-1242,1723-1743
+hooks/hooklib/hook.sh
+  s_1c0352e957b5f6::t_bec5a37d7995a5 20-21,48,59
+hooks/hooklib/parse.py
+  s_1c0352e957b5f6::t_33802aa40b32f7 26
+hooks/parked-tree-read-advisory.sh
+  s_8ec7d8b4c3385d::t_b1fd0917750d0c 73-107
+governance/ENFORCEMENT-COVERAGE.md
+  s_1c0352e957b5f6::t_28266da2290e9b 456
+hooks/tests/parked_tree_read_smoke.sh
+  s_1c0352e957b5f6::t_0a962b11c4ad2a 60-67,234-278
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "66277f6a5bf6ecc120842b9424a6b21c67ef0ca0",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8ec7d8b4c3385d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffeb86ecfffecuzKLTQe3nhMd2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e8946ec92c298a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ae3a93ffeqjuBTF7t6a1XIP",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

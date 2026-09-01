@@ -1,0 +1,30 @@
+rules/workflow-authoring.md
+  s_cf3356a24071e8::t_9e26b5412f7462 36-37,39-40
+  s_cf3356a24071e8::t_f3ac3ad167bf3b 21,23-24
+frameworks/gates/fixtures/workflow-policy/good-rule5-blacksmith-runner.yml
+  s_cf3356a24071e8::t_055966483b7a2a 1-24
+frameworks/gates/fixtures/workflow-policy/bad-rule5-blacksmith-malformed.yml
+  s_cf3356a24071e8::t_5ad11701787e39 1-16
+.github/workflows/checks.yml
+  s_cf3356a24071e8::t_ae5b304cafe8bd 363-364,378-381
+  s_cf3356a24071e8::t_cfad29033bdb5d 146
+  s_cf3356a24071e8::t_ab64e8b35b56a5 154,161-162,166-173
+frameworks/gates/test-workflow-policy.sh
+  s_cf3356a24071e8::t_7223be781c6ad1 276
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "727a44a25389381e071a52ce1b5d8a0f280ceaaf",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/durable-state-off-ephemeral/NORTH-STAR.md
+  s_ebb03699588f1f::t_88ae3a2084fbca 56
+governance/plans/durable-state-off-ephemeral/E10-CHECKPOINTS.md
+  s_ebb03699588f1f::t_c73df43d7cabbd 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "416647a2bda62b41108d3f738f21951e2149d969",
+  "prompts": {},
+  "sessions": {
+    "s_ebb03699588f1f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef0961c9ffePmSdySf28FmUvD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

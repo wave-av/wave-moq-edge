@@ -1,0 +1,23 @@
+governance/bin/silent-vendor-rate.mjs
+  s_9bb1b1d1d998d4::t_1c4da4958b9ad3 1-163,190-197,214-217
+  s_9bb1b1d1d998d4::t_70c1877de879f6 174-178
+  s_9bb1b1d1d998d4::t_6b0afccee33bb2 198-213
+  s_9bb1b1d1d998d4::t_2bf2bbf26311f9 186-189
+  s_9bb1b1d1d998d4::t_ca651fb0d86d73 164-173,179-185
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2e17b9dc4cf206d54c31a494742518ce51bd8927",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

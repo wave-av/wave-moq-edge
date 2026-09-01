@@ -1,0 +1,18 @@
+governance/state/runbook-ambient-cache.json
+  h_67a1b847dc59d6 2,4,13-14,17-18,21-22,53,57-58,65,101,105,109,133-134,141,157,225,229-230,233-234,261
+runbooks/bin/calibrate-cache.mjs
+  h_67a1b847dc59d6 80-84
+runbooks/lib/ambient-cache.mjs
+  h_67a1b847dc59d6 157-162,199-200
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "56f02fb1d626ff613b80518d8c005a338cffd090",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

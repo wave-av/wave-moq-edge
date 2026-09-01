@@ -1,0 +1,24 @@
+governance/bin/check.mjs
+  s_7ddeb5d251570f::t_56960ea1db203f 13
+  s_7ddeb5d251570f::t_c7f4ac120716b4 72-73
+  s_7ddeb5d251570f::t_3425a95cc33ea3 14
+governance/bin/check-gates.mjs
+  s_7ddeb5d251570f::t_8dbc62e6be1d77 2-3,6-27
+  s_7ddeb5d251570f::t_7fc9b80e5c7d1e 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d2631d1e67bb35fd57a9ce58b420df93f6996f39",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

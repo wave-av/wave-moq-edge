@@ -1,0 +1,27 @@
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_596f7151f66ef3 105
+  s_85d9e5f433b9aa::t_c34e4845baade6 6-7,11,14-16,18-19
+governance/plans/gates-that-can-see/E8-STALE-EVIDENCE.md
+  s_85d9e5f433b9aa::t_adeecdf1d7fc6f 1-182
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  s_85d9e5f433b9aa::t_8869df0de961b7 49-83
+  s_85d9e5f433b9aa::t_a3856cf5a6c494 4-7
+governance/graph.json
+  s_85d9e5f433b9aa::t_af7d77f2fd063c 4770-4782,4791,24394-24399
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "669cbce5e862d4f8d3cb5b2cfa37d152690d1117",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

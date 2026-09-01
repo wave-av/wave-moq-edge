@@ -1,0 +1,29 @@
+hooks/hooklib/gated-command-match.sh
+  s_d3818c61f3b27a::t_71b92224f27874 121-141
+hooks/tests/degraded-hold-gate-2141.test.sh
+  s_4b86428543fda7::t_39291c34215983 1-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "673985a0bcf66a9f14fa3b69c24d0b6b442f3d42",
+  "prompts": {},
+  "sessions": {
+    "s_4b86428543fda7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5e78f3cd6dad9885",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d3818c61f3b27a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aebd03280c006ec0c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

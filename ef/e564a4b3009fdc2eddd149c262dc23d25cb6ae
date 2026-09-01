@@ -1,0 +1,45 @@
+scripts/img.ts
+  s_9673f7dc0983fb::t_f594d71d22977a 2
+  s_9673f7dc0983fb::t_cffd7dc8a655ae 7-23
+  s_9673f7dc0983fb::t_cd5f93825e96c8 6
+scripts/grok-img.ts
+  s_9673f7dc0983fb::t_807350ec072f38 3-13,15-16,18-30
+  s_9673f7dc0983fb::t_f1440706044fd5 2
+  s_9673f7dc0983fb::t_dadc214e25762a 17
+scripts/grok-vid.ts
+  s_9673f7dc0983fb::t_a7c84781d0f015 2-13,16,18-23
+scripts/test-spec.ts
+  s_9673f7dc0983fb::t_b735c361376fc2 82
+  s_9673f7dc0983fb::t_785e2340e8e481 33
+  s_9673f7dc0983fb::t_96090a987ccfb8 1-32,34-50,53-54,56-61,63-81,83-126
+  s_9673f7dc0983fb::t_3a094a2f08d66e 55
+  s_9673f7dc0983fb::t_415fe0d0d4295a 51-52
+  s_9673f7dc0983fb::t_c5a94fdb5e8fea 62
+scripts/guard.ts
+  s_9673f7dc0983fb::t_7230fdb88a3a0e 2-12,15-16
+  s_9673f7dc0983fb::t_df8fe3acd4762f 17-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "efe564a4b3009fdc2eddd149c262dc23d25cb6ae",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.github/scripts/bench.mjs
+  s_6c1c1be138dfd4::t_d59efd1c53fe0b 127,131-135,137-140
+  s_6c1c1be138dfd4::t_cfe59a63d50367 67-78,80-81,83-84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "311e0bba73e40c26946e21865b078fdf719148b1",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+scripts/sync-public.sh
+  s_be40541f6fd98b::t_dc584d79e4c242 181,185
+  s_be40541f6fd98b::t_e7eaea374b007b 198-201
+  s_be40541f6fd98b::t_f684f4439d3e21 100-121,129-142,145-154,157-161,164-172
+  s_be40541f6fd98b::t_7428aa1f8118d4 24-28
+  s_be40541f6fd98b::t_eaee6d5fac9e32 122-128
+  s_be40541f6fd98b::t_ef61ed72b670c3 143-144
+  s_be40541f6fd98b::t_c8188169dfe216 155-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5979cd02000587d23e84d60c09d6cb6fffa58562",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

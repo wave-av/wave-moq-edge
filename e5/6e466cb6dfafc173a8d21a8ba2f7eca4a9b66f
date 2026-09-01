@@ -1,0 +1,92 @@
+runbooks/lib/backfill.mjs
+  s_a293da4db5caf2::t_f7ccfd4cc3c754 1-186
+runbooks/bin/backfill.mjs
+  s_a293da4db5caf2::t_45e220a3776e24 1-157
+docs/runbooks/travel/pre-flight-operator-checklist.md
+  s_a293da4db5caf2::t_61e2197606d00c 43-44
+  s_067429aeefd287::t_8a1ada3c635093 38-41
+runbooks/test/backfill.test.mjs
+  s_a293da4db5caf2::t_2727b8925d96b6 1-48,52-62,65-130
+  s_a293da4db5caf2::t_2d082d842edb9e 49-51
+  s_a293da4db5caf2::t_593f811daed6e8 63-64
+docs/runbooks/travel/failure-modes.md
+  s_280c3e1ea9d413::t_06a4a3e42dc8bb 130
+runbooks/library/board-runbook.md
+  s_a293da4db5caf2::t_15910a4028aa61 1-198
+runbooks/library/capability-registry-replication-runbook.md
+  s_a293da4db5caf2::t_beab6e80592e38 1-296
+runbooks/library/masterpc-wsl-docker.md
+  s_a293da4db5caf2::t_a33d7ad3ae124a 1-137
+runbooks/library/travel-cellular-degraded.md
+  s_a293da4db5caf2::t_03bbe11872e55c 1-135
+runbooks/library/travel-failure-modes.md
+  s_a293da4db5caf2::t_020c1188934851 1-165
+runbooks/library/travel-headless-approval-flow.md
+  s_a293da4db5caf2::t_058aa65f159343 1-85
+runbooks/library/travel-ios-shortcut-quick-post.md
+  s_a293da4db5caf2::t_3a8d9e713f7c2d 1-142
+runbooks/library/travel-learnings-not-rotating.md
+  s_a293da4db5caf2::t_5a1448f67d248c 1-171
+runbooks/library/travel-multi-day-session-hygiene.md
+  s_a293da4db5caf2::t_cd45079992e229 1-167
+runbooks/library/travel-operator-actions.md
+  s_a293da4db5caf2::t_72703f3be3c551 1-251
+runbooks/library/travel-operator-gotchas-2026-05-13.md
+  s_a293da4db5caf2::t_896f2e7399a5d6 1-129
+runbooks/library/travel-pre-flight-operator-checklist.md
+  s_a293da4db5caf2::t_10da3726c9fc3f 1-133
+runbooks/library/travel-pre-trip-operator-checklist.md
+  s_a293da4db5caf2::t_97ae477d2dda82 1-154
+runbooks/library/travel-studio-lockdown.md
+  s_a293da4db5caf2::t_9fbbcec201cd80 1-202
+runbooks/library/travel-studio-reboot-recovery.md
+  s_a293da4db5caf2::t_53b8a17fa9d92f 1-183
+runbooks/library/travel-studio-unreachable.md
+  s_a293da4db5caf2::t_b5c4110253bbc3 1-153
+runbooks/library/travel-tailscale-acl.md
+  s_a293da4db5caf2::t_66e7fe7d5d265b 1-145
+runbooks/library/travel-tmux-corrupted.md
+  s_a293da4db5caf2::t_e5a44328dee075 1-115
+runbooks/library/wave-database-0001-fdw-stripe-s3.md
+  s_a293da4db5caf2::t_73cd9cfee347ff 1-106
+runbooks/library/wave-zoom-enforce-flip-rollback.md
+  s_a293da4db5caf2::t_efcf27a356cd56 1-97
+runbooks/library/wave-zoom-gateway-arm-and-deploy.md
+  s_a293da4db5caf2::t_c88f9a76dfbbe2 1-89
+runbooks/library/wave-zoom-incident-response.md
+  s_a293da4db5caf2::t_78c45b43350f52 1-82
+runbooks/library/wave-zoom-prove-live-and-billing.md
+  s_a293da4db5caf2::t_77e36dca5ea81c 1-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e56e466cb6dfafc173a8d21a8ba2f7eca4a9b66f",
+  "prompts": {},
+  "sessions": {
+    "s_067429aeefd287": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aba322a47718f9b2d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_280c3e1ea9d413": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a847e283e79135017",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

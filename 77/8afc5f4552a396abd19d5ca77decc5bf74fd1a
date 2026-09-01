@@ -1,0 +1,23 @@
+scripts/bugbot/test_learn.py
+  s_0b987fef4e1240::t_a62a3cb2de318a 319-349
+  s_0b987fef4e1240::t_33aaf7a454eeb6 361
+scripts/bugbot/learn.py
+  s_0b987fef4e1240::t_6df3ebbe552d75 630-634,640
+  s_0b987fef4e1240::t_341ea6c89ae886 663-666
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "778afc5f4552a396abd19d5ca77decc5bf74fd1a",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/bin/validate-envelope.mjs
+  s_02abc74f4971c7::t_cc4cebb00dc0c9 151
+  s_02abc74f4971c7::t_513f5ba9b2d460 23
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_ea255914816019 5,2757-2772
+governance/code-index/index.json
+  s_02abc74f4971c7::t_fb2c4a56d86523 7,9,24902-24903,24913-24914,24924-24925,24935-24936,24946-24947,24957-24958,24968-24969,24979-24980,24990-24991,25001-25002,25012-25013,25023-25024,25034-25035,25045-25046,25056-25057,25067-25068
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "e374e3358f7976abb1d477d2d60e9423dbfae47c",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

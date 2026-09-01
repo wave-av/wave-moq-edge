@@ -1,0 +1,48 @@
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  s_60a20469ef4369::t_f3ada1c36f0daa 1-8
+governance/plans/hookcli/E7-DISTILL.md
+  s_60a20469ef4369::t_bef801426d99be 1-8
+governance/plans/hookcli/NORTH-STAR.md
+  s_60a20469ef4369::t_390be797862595 1-35
+governance/plans/hookcli/E3-RULES.md
+  s_60a20469ef4369::t_e7cec5620468c1 1-8
+  s_60a20469ef4369::t_a2c3e7f09087f4 9-27
+governance/plans/hookcli/E4-TIERS.md
+  s_60a20469ef4369::t_2616ab011fd85f 1-8
+docs/HOOKCLI-MAP.md
+  s_60a20469ef4369::t_82278469620ccf 287-314
+  s_60a20469ef4369::t_cb9fa15c36cd48 155-180
+  s_60a20469ef4369::t_8cc51884080197 141-154
+  s_60a20469ef4369::t_aa651adc85c372 263,265-269,273-286,315
+  s_60a20469ef4369::t_dd733005db1309 183,185-197,200-202
+  s_60a20469ef4369::t_ef60e96c4aa711 3,5-10
+  s_60a20469ef4369::t_8fc880c3adb161 226-259
+  s_60a20469ef4369::t_d1d44fc631cc0e 1-2,4,11-67,92-140,181-182,184,198-199,203-225,260-262,264,270-272,316-319
+  s_60a20469ef4369::t_7329252648f5ed 68-91
+governance/plans/hookcli/E1-CORE.md
+  s_60a20469ef4369::t_9a383a0678ed22 1-8
+  s_60a20469ef4369::t_b1d5612e41cde8 9-31
+governance/plans/hookcli/E8-ROLLOUT.md
+  s_60a20469ef4369::t_350a207a47bff2 1-8
+governance/plans/hookcli/E2-HARVEST.md
+  s_60a20469ef4369::t_9a2f7e140a420e 1-8
+  s_60a20469ef4369::t_bf8c72295de5d6 9-23
+governance/plans/hookcli/E5-BOARD.md
+  s_60a20469ef4369::t_ecfad3f420e192 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "4ec4fc06d917a5e943410fdf9b4c160cae0a6a4f",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

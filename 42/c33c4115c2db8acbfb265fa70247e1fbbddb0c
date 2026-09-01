@@ -1,0 +1,27 @@
+.github/workflows/registry-cadence.yml
+  s_b7f1929f2208cc::t_8f80ff2b962eb4 36-37
+governance/plans/wave-registry/artifacts/fleet-catalog.json
+  s_b7f1929f2208cc::t_f94a230c7267e0 1-6
+governance/tools/wave-registry/wave-registry.mjs
+  s_b7f1929f2208cc::t_e65e15d950a368 645-646
+  s_b7f1929f2208cc::t_ba42553ee7b859 111
+  s_b7f1929f2208cc::t_c7695082f7bbd5 88
+  s_b7f1929f2208cc::t_c9580650134a0b 69-75
+  s_b7f1929f2208cc::t_bd4d7b79256ef2 446-544
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "42c33c4115c2db8acbfb265fa70247e1fbbddb0c",
+  "prompts": {},
+  "sessions": {
+    "s_b7f1929f2208cc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd3fcba05ffe0XXxbfiNSc673k",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

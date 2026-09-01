@@ -1,0 +1,58 @@
+docs/INFRASTRUCTURE.md
+  s_672079ccfe8ce6::t_2347998ceaef5b 50-52
+docs/TOOLKIT.md
+  s_672079ccfe8ce6::t_5875f26db1201c 45-46,48-54,57-60,62-63
+scripts/tournament.ts
+  s_672079ccfe8ce6::t_56d6e0fd485844 404-411,413-423,429-432,436-443
+  s_672079ccfe8ce6::t_e300f4b6bc7cd5 15-16,28-32,34-38
+  s_672079ccfe8ce6::t_bcd9ba32af15ae 426-427
+  s_672079ccfe8ce6::t_8a67683f050b42 412
+  s_672079ccfe8ce6::t_eeabe53473b287 365,367-369
+  s_672079ccfe8ce6::t_9f6059f32e67b1 338
+  s_672079ccfe8ce6::t_2f0e0edeaa2532 226-228,233-245
+  s_672079ccfe8ce6::t_34180b80edeff2 166-172
+  s_672079ccfe8ce6::t_fecdc6db530a1c 225
+  s_672079ccfe8ce6::t_abbfcea2807882 428
+  s_672079ccfe8ce6::t_f62c912fba782e 444
+scripts/recommend.ts
+  s_672079ccfe8ce6::t_0ff29cdb706fac 23-24
+  s_672079ccfe8ce6::t_96d01014bab0b0 41-45,47-51
+scripts/prove.ts
+  s_672079ccfe8ce6::t_ce7b3e9ec82634 42-60,68
+scripts/tournament.test.ts
+  s_672079ccfe8ce6::t_e93647a0d64653 96-98
+  s_672079ccfe8ce6::t_afb07b63b63a13 100-106
+  s_672079ccfe8ce6::t_da4e824a5acee1 78-95,99,107-116
+  s_672079ccfe8ce6::t_6a0ccc08c17ee4 1-12,14-77,117-153
+  s_672079ccfe8ce6::t_12fc6e86ebb746 13
+scripts/cost-ledger.ts
+  s_672079ccfe8ce6::t_80d7046f4f57c5 21,32-41
+  s_672079ccfe8ce6::t_578e07d910dbd4 76
+  s_672079ccfe8ce6::t_1d3972761679df 42-43
+scripts/auto-optimize.ts
+  s_672079ccfe8ce6::t_dd96fceafdaa26 111-116,122,130-152
+  s_672079ccfe8ce6::t_85b2c77eb4fa7e 19-20
+  s_672079ccfe8ce6::t_b699ecfc7cf5d5 28-30
+scripts/catalog.ts
+  s_672079ccfe8ce6::t_c9e61c7cc1e2db 20-21
+  s_672079ccfe8ce6::t_1fe64c1bb1546d 148
+  s_672079ccfe8ce6::t_3fd6dd88a04239 150
+package.json
+  s_672079ccfe8ce6::t_3ef96c2795ba71 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d9eea6cf9934ca13282244de8ed6af59aaf859eb",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

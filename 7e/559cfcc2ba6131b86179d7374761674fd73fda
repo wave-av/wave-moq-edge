@@ -1,0 +1,23 @@
+governance/plans/client-toolset-adoption/E1-LAW-AND-GATE.md
+  s_9bb1b1d1d998d4::t_2e7615fb7d1ef2 4-8
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_8e16f5a9ea0264 303-332
+governance/conformance/executor-refusals/run-refusal-receipt.mjs
+  s_9bb1b1d1d998d4::t_d44ea16ea6ad59 1-104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7e559cfcc2ba6131b86179d7374761674fd73fda",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

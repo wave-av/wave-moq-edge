@@ -1,0 +1,29 @@
+governance/plans/wave-control/E4-DESIGN.md
+  s_6b1c60f5e5c1a6::t_4b3248adb4b0d9 6-27
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_0950db28a6ae27::t_8e8552f0950524 31-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b975fec7e9db62f726c0147cfece680639d51a68",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6b1c60f5e5c1a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feae91484ffeXhVHA219xHmUsj",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/test/work-history.test.mjs
+  s_364605915bb7ec::t_6d32872967d3f4 42-54
+  s_364605915bb7ec::t_14cc9412120463 5
+governance/bin/work-history.mjs
+  s_364605915bb7ec::t_d9195156a878c5 40,43,47,52-54
+  s_364605915bb7ec::t_d7072740b3a81d 139-143
+  s_364605915bb7ec::t_318e0902d2ec58 55,80-111,113,115-119
+  s_364605915bb7ec::t_7f93209f44eeb2 56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "83b5f6ba59e42da25c7930ee7432d1edee8e0f14",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

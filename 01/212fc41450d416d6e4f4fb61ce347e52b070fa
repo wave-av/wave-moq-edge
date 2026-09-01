@@ -1,0 +1,19 @@
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_bb427c936df473::t_b31eb2d40aa6cf 4-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "01212fc41450d416d6e4f4fb61ce347e52b070fa",
+  "prompts": {},
+  "sessions": {
+    "s_bb427c936df473": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7b43792-3f0b-445c-9602-06c4ace7ee1e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+hooks/doppler-secrets-cache.sh
+  s_02abc74f4971c7::t_6786794098e03e 14-19
+hooks/tests/return_absorb_smoke.sh
+  s_02abc74f4971c7::t_3ccd1641772828 68-70
+  s_02abc74f4971c7::t_601886b8c23161 15-34
+hooks/tests/phaseC/subagent-budget-templeak.sh
+  s_02abc74f4971c7::t_8cd08d5627ab77 15-21
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_02abc74f4971c7::t_d284ef86e4a083 42
+  s_02abc74f4971c7::t_e2caa22e01e170 13-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7c89b0885abd9dd4b563405d66efbc59b30553e1",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/fireworks-integration/GLM-5.3-READINESS.md
+  s_0950db28a6ae27::t_0ec55b92daae61 1-34
+governance/plans/fireworks-integration/WATCHLIST.md
+  s_0950db28a6ae27::t_44ca843768671c 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1f4f3fb4e1366cacb5526a81f1624d5d4b41cb23",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

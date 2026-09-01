@@ -1,0 +1,19 @@
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_f9ff6dc10be18e::t_9a2fc5d93fdbd5 24-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4998dbd8591f3582ab019ec6cf19fa8859b70dd7",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

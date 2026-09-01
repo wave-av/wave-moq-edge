@@ -1,0 +1,20 @@
+tools/moq-client/README.md
+  s_9dceede681ea5a::t_9eee03fd1db423 104-108
+  s_9dceede681ea5a::t_e8cdcadd8e5ada 165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0b4bc6e99c4aba0231bca3ff97043fa1aefcb0dc",
+  "prompts": {},
+  "sessions": {
+    "s_9dceede681ea5a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8295972ffe8hlyoW07FM6s8m",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_85d9e5f433b9aa::t_cd91ea8a43069d 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "04b559e3017f69591ceb978f75299efee81853e3",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_8d8c5f5973fe23 137-141,154,165
+  s_3c7a371f5618a4::t_e8625b4b08ad54 90,93
+  s_3c7a371f5618a4::t_dacfd807e51da0 235
+  s_3c7a371f5618a4::t_5d9f4ed0348ea9 39-49,51-53,68
+tools/moq-client/__tests__/bench-sixteen-track.test.ts
+  s_3c7a371f5618a4::t_50a36957fcbf6e 39,43-72,165
+  s_3c7a371f5618a4::t_22b8877471fcba 12
+  s_3c7a371f5618a4::t_d10dd41cee76d0 118,126-128,136-138,144-145,149,155-164
+  s_3c7a371f5618a4::t_b980e984b8ba82 73
+  s_3c7a371f5618a4::t_ad8abdde2a1b5d 166
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c79ee33190fb9c271b7f7d12d8f673dac70cb1de",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

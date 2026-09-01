@@ -1,0 +1,39 @@
+rules/correctness-by-design.md
+  s_60a20469ef4369::t_49ec819399469a 34
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_ad616a9eeed380 10-11,14,410
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_2657369642b444 83-86
+hooks/plan-receipt-observer.sh
+  s_60a20469ef4369::t_db904e0dd17bab 1-32
+governance/graph.json
+  s_60a20469ef4369::t_558421383b9c61 3867-3875,15759-15770
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_5b7383b9a94827 67-70
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_a074ec3da0bee0 1,3-7
+  s_60a20469ef4369::t_559eaf8f1e461d 92-111
+settings/settings.base.json
+  s_60a20469ef4369::t_6fc1d74d21f831 66
+  s_60a20469ef4369::t_46ff16d9b5f6e3 67-76
+hooks/bin/plan-receipt-runner.mjs
+  s_60a20469ef4369::t_dca3f5e8624d44 6-8
+hooks/manifest.json
+  s_60a20469ef4369::t_1e06224df19806 589-609
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "6b0b4049db9e31cfc0dd6407d857a702f25bf924",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

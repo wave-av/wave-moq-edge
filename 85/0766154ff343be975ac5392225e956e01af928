@@ -1,0 +1,92 @@
+docs/WAVE-SEC-GATE.md
+  h_67a1b847dc59d6 312-323
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 9-10,460
+governance/bin/cockpit.mjs
+  h_67a1b847dc59d6 13-14,25,48-49,54-62,120-126,132,144
+governance/bin/gate-liveness-drill.mjs
+  h_67a1b847dc59d6 27,48,51,108-113,125,141
+governance/bin/wave-sec.mjs
+  h_67a1b847dc59d6 29,31,59-60,62,117-120,245-247
+governance/graph.json
+  h_67a1b847dc59d6 31406-31411
+governance/lib/drill-fixtures-wave-sec-l2.mjs
+  h_67a1b847dc59d6 1-181
+governance/lib/drill-inline-required.mjs
+  h_67a1b847dc59d6 19-28
+governance/lib/drill-io.mjs
+  h_67a1b847dc59d6 1-60
+governance/lib/interactive-sessions.mjs
+  h_67a1b847dc59d6 1-80
+governance/lib/wave-sec-closure.mjs
+  h_67a1b847dc59d6 50-53
+governance/lib/wave-sec-corridor.mjs
+  h_67a1b847dc59d6 1-267
+governance/lib/wave-sec-lanes.mjs
+  h_67a1b847dc59d6 39-48,54-68,71-82
+governance/lib/wave-sec-scanners.mjs
+  h_67a1b847dc59d6 2-5,13-14,16
+governance/lib/wave-sec-spawn.mjs
+  h_67a1b847dc59d6 1-16
+governance/lib/wave-sec-trufflehog.mjs
+  h_67a1b847dc59d6 1-114
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  h_67a1b847dc59d6 4,7-9,12,14,58-73
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  h_67a1b847dc59d6 8-10
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 97-102
+governance/plans/ffmpeg9-lei/action/E13-P1-DABPLUS-POC.md
+  h_67a1b847dc59d6 1-174
+governance/plans/wave-sec-fleet/E0-LANES.md
+  h_67a1b847dc59d6 5-17,26-29,35-43,51,54-58,81-96
+governance/plans/wave-sec-fleet/E1-GATE.md
+  h_67a1b847dc59d6 296-384
+governance/test/cockpit-render.test.mjs
+  h_67a1b847dc59d6 139-163
+governance/test/interactive-sessions.test.mjs
+  h_67a1b847dc59d6 1-78
+governance/test/wave-sec-corridor-repo-filter.test.mjs
+  h_67a1b847dc59d6 1-201
+governance/test/wave-sec-corridor.test.mjs
+  h_67a1b847dc59d6 1-367
+governance/test/wave-sec-scanners.test.mjs
+  h_67a1b847dc59d6 294-322,324-336
+hookcli/bin/lefthook-gen.mjs
+  h_67a1b847dc59d6 29-48
+hookcli/lib/eval-t1.sh
+  h_67a1b847dc59d6 30-37
+hookcli/rules/rules.json
+  h_67a1b847dc59d6 530-547
+hookcli/schema/rule.schema.json
+  h_67a1b847dc59d6 39-43
+hookcli/tests/lefthook-gen-yaml.sh
+  h_67a1b847dc59d6 1-61
+hookcli/tests/lib/modules.sh
+  h_67a1b847dc59d6 18-22
+hookcli/tests/plan-receipt.sh
+  h_67a1b847dc59d6 86-88,92-93
+hookcli/tests/require.sh
+  h_67a1b847dc59d6 68,71-73,75-76
+hooks/manifest.json
+  h_67a1b847dc59d6 1318
+hooks/research-bank.sh
+  h_67a1b847dc59d6 19-30,49-66
+hooks/tests/push-target-not-protected-default.test.sh
+  h_67a1b847dc59d6 1-42
+rules/enforcement-defense-in-depth-lattice.md
+  h_67a1b847dc59d6 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "850766154ff343be975ac5392225e956e01af928",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

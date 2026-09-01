@@ -1,0 +1,47 @@
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_a293da4db5caf2::t_3d341dac2ee6cf 150-155
+  s_a293da4db5caf2::t_236363d1e8b06f 163,165-166
+governance/bin/struggle-miner-scan.sh
+  s_a293da4db5caf2::t_b861a9c4404201 42-48
+tests/struggle_miner/test_command_family.py
+  s_a293da4db5caf2::t_0a7d3f4e455796 1-123
+governance/bin/struggle-miner/lib/command_family.py
+  s_a293da4db5caf2::t_5dbbd1d4996a17 56-58
+  s_a293da4db5caf2::t_2a7c576793a6f5 1-39,55,75-101,111-126,134-141,143,159,164-166,170-197
+  s_a293da4db5caf2::t_1232887475957b 40-54
+  s_a293da4db5caf2::t_c7a61caad3cc46 66-70
+  s_a293da4db5caf2::t_5b4ff69a0b3375 110
+  s_a293da4db5caf2::t_906291a6dfdd48 71-74
+  s_a293da4db5caf2::t_056c121c4d6a62 127-133
+  s_a293da4db5caf2::t_4b5628c331d302 142,144-146,150-154
+  s_a293da4db5caf2::t_b33420b80d1f1f 59-65
+  s_a293da4db5caf2::t_b5abef0eea2fae 108-109
+  s_a293da4db5caf2::t_19443bd3cbdd52 147,155-158,160-163,167-169
+  s_a293da4db5caf2::t_0b7769b2f72096 102-107
+  s_a293da4db5caf2::t_cd7cd240d24861 148-149
+tests/struggle_miner/test_collect_denials.py
+  s_a293da4db5caf2::t_624523e7306d14 127-132
+governance/bin/struggle-miner/collect-successes.py
+  s_a293da4db5caf2::t_16de1ae5645cc1 43,47,50,54-55
+  s_a293da4db5caf2::t_67264308e6d98d 7-9,12,15-18,20,33-35,41-42,44,48-49,51-53,62-65,67,114,125,136,138,140,145,148,151-152,159,166-167,180-181,193-194,212-214,217
+  s_a293da4db5caf2::t_0c1074c7864a54 1-6,10-11,13-14,19,21-32,36-40,45-46,56-61,66,68-113,115-124,126-135,137,139,141-144,146-147,149-150,153-158,160-165,168-179,182-192,195-211,215-216,218-220,224-282
+  s_a293da4db5caf2::t_f3e73a2f076b9b 221-223
+tests/struggle_miner/test_collect_successes.py
+  s_a293da4db5caf2::t_9905524cd760e7 1-254
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0f14800590f36c5655a37a4a0de2e9e717f24812",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

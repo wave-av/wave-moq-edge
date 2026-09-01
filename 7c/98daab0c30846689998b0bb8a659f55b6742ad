@@ -1,0 +1,38 @@
+governance/ci-stack/dashboard-driver/gitar-finish-connect.mjs
+  s_7326a769c7efe8::t_e86a7dc04c8b41 29,32-51,57-64,73
+  s_7326a769c7efe8::t_cd240f46688394 1-28,30-31,52-56,65-72,74
+governance/ci-stack/dashboard-driver/gitar-slack-open.mjs
+  s_7326a769c7efe8::t_94a6fbfbf1c1ab 1-39
+governance/ci-stack/dashboard-driver/linear-agents-tail.mjs
+  s_7326a769c7efe8::t_0794271171bd99 1-26
+governance/ci-stack/dashboard-driver/gitar-slack-linear-probe.mjs
+  s_7326a769c7efe8::t_b2f7747c31a04f 1-41
+governance/ci-stack/dashboard-driver/gitar-home-probe.mjs
+  s_7326a769c7efe8::t_9578828de4db10 1-27
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_0785a7f91062ba::t_8653c32b00688a 494-505
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7c98daab0c30846689998b0bb8a659f55b6742ad",
+  "prompts": {},
+  "sessions": {
+    "s_0785a7f91062ba": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff0071d91ffebQqWDyV6mWRfVJ",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

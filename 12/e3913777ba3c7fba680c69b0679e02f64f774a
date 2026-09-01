@@ -1,0 +1,63 @@
+hookcli/tests/require-graduation-report.sh
+  s_60a20469ef4369::t_82e636b86c5c59 24
+  s_60a20469ef4369::t_4c73efefe3d520 111
+  s_60a20469ef4369::t_95c43058f26cf2 35
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_e04a6969c63063 61
+hookcli/tests/t4-llm.sh
+  s_60a20469ef4369::t_a3b9543098ddae 63-64
+  s_60a20469ef4369::t_0815602cee0d72 109-110
+hookcli/tests/shadow-sessionstart.sh
+  s_60a20469ef4369::t_eb0b8f0cbd3b6c 98
+  s_60a20469ef4369::t_6041206b1a6fc0 67-68
+hookcli/tests/aggregate-sessionstart.sh
+  s_60a20469ef4369::t_e82daff87dda1d 28-30
+hookcli/tests/emit-warn-ask.sh
+  s_60a20469ef4369::t_85dbea67ff5aa5 67-69
+  s_60a20469ef4369::t_121034bd8d6cac 45-47
+  s_60a20469ef4369::t_0c7f88f7329074 8-9
+  s_60a20469ef4369::t_826408585fd776 74
+hookcli/tests/shadow-report.sh
+  s_60a20469ef4369::t_ee8a9a0c34486d 22
+  s_60a20469ef4369::t_e1ea454e2153b0 67
+  s_60a20469ef4369::t_e5a4b9c6d64a63 34
+  s_60a20469ef4369::t_ef58693262c80a 58
+hookcli/tests/t3-classifier.sh
+  s_60a20469ef4369::t_e05b6af6a77896 88
+  s_60a20469ef4369::t_2dd8b68d0cebf0 165
+  s_60a20469ef4369::t_e2a815f8cd8be4 182
+  s_60a20469ef4369::t_7e3038262ff11d 207
+  s_60a20469ef4369::t_2d33b255f445e7 59
+  s_60a20469ef4369::t_5effa1308c5367 65
+  s_60a20469ef4369::t_4f57ed41662a70 74-75
+hookcli/tests/git-baseline.sh
+  s_60a20469ef4369::t_3f37875373d03b 35
+  s_60a20469ef4369::t_6b6527875b5d2a 25
+  s_60a20469ef4369::t_049e7e22b721b1 64
+  s_60a20469ef4369::t_ec988557092b1a 49
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_738f269268b246 19
+hookcli/tests/session-modified.sh
+  s_60a20469ef4369::t_6ada3209757f5a 20-21
+hookcli/tests/gate-dispatch.sh
+  s_60a20469ef4369::t_4d55618b0167c2 53
+  s_60a20469ef4369::t_e8c45ef26d8285 77
+  s_60a20469ef4369::t_407bc39008e6bd 95
+  s_60a20469ef4369::t_b48b1da8e347a4 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "12e3913777ba3c7fba680c69b0679e02f64f774a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

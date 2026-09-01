@@ -1,0 +1,33 @@
+governance/bin/thin-review-fire-rate.mjs
+  s_8d26503dfc73f4::t_ce53d1c4c94093 1-63
+governance/lib/review-floor.mjs
+  s_8d26503dfc73f4::t_2e7b7e73fc719e 1-40
+governance/lib/review-liveness.mjs
+  s_8d26503dfc73f4::t_d67d230939fa18 39-48,231-266,322-329
+governance/lib/review-markers.mjs
+  s_8d26503dfc73f4::t_273cf8af42b33f 1-55
+governance/test/review-liveness-thin-floor.test.mjs
+  s_8d26503dfc73f4::t_55213fca7c39ba 1-146
+hookcli/lib/t3-credential.mjs
+  s_8d26503dfc73f4::t_a8b0f7d87dbeac 23,37-46,53-61,63-72,90-91
+hookcli/tests/credential-sink-and-pipe.sh
+  s_8d26503dfc73f4::t_79c68ad6b80e28 1-72
+hookcli/tests/lib/modules.sh
+  s_8d26503dfc73f4::t_1a8b0be99770e6 309-315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "14663c2c73feceef0771d3bfe94b81471162a6a7",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

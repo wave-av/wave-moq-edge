@@ -1,0 +1,23 @@
+governance/bin/catena-pin-check.mjs
+  s_53b49eff5b8c5d::t_ebde515b87cad3 61-68
+governance/plans/catena-control-plane/st2138-pin.json
+  s_53b49eff5b8c5d::t_d0d271b57ad00f 23-25
+governance/plans/catena-control-plane/spec/st2138-50.md
+  s_53b49eff5b8c5d::t_1b0cdfe8f3d245 1-251
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "37880dcf405f3ea312ccc4316030bd99e58778fc",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

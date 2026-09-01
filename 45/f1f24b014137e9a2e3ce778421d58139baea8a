@@ -1,0 +1,86 @@
+governance/plans/wave-linear/E3-SESSIONS.md
+  s_d9915bbafa9657::t_90ccef4028cd19 92-95
+  s_d9915bbafa9657::t_e57da95ca59104 76-79
+  s_d9915bbafa9657::t_205640b5d7f1b0 150-153
+  s_d9915bbafa9657::t_2d9da0b34dc1d3 186-189
+  s_d9915bbafa9657::t_999a0f0297f5a4 59-62
+  s_d9915bbafa9657::t_f05e7bfea800bc 118-121
+  s_d9915bbafa9657::t_dc9f0212d6af04 58
+  s_d9915bbafa9657::t_16195c78811042 63
+  s_d9915bbafa9657::t_9d34ed2fc1c9c7 75
+  s_d9915bbafa9657::t_f31d6687e9feef 80
+  s_d9915bbafa9657::t_88f3b11d612ecf 91
+  s_d9915bbafa9657::t_b2c719ca2aa560 117
+  s_d9915bbafa9657::t_12d1cae2a9ee2e 122
+  s_d9915bbafa9657::t_52b4e9f65efad2 149
+  s_d9915bbafa9657::t_f79c482669442c 185
+  s_d9915bbafa9657::t_c6f26b36903c11 190
+  s_d9915bbafa9657::t_89b8090723d1e5 67,69,84,86,101,107,112,126,139,143,160,174,195,198
+governance/plans/wave-linear/E8-LIVENESS.md
+  s_d9915bbafa9657::t_1e793266bc827b 68-74
+  s_d9915bbafa9657::t_f467bca777f82d 126
+  s_d9915bbafa9657::t_548f8b9567a79c 106
+  s_d9915bbafa9657::t_2f0d7c4b8cc725 61-64
+  s_d9915bbafa9657::t_d9dc862e445c4f 89-94
+  s_d9915bbafa9657::t_110aa5d6090420 149
+  s_d9915bbafa9657::t_93486c13d98282 132-136
+  s_d9915bbafa9657::t_bfdd1651e4eed9 83-85
+  s_d9915bbafa9657::t_8e3078243c00bc 48-52
+  s_d9915bbafa9657::t_1b95c8de576fec 112-116
+governance/plans/wave-linear/E11-INSIGHTS.md
+  s_d9915bbafa9657::t_2ec34007b2ddac 61-67
+  s_d9915bbafa9657::t_c68aafd74776bc 127-133
+  s_d9915bbafa9657::t_db23765102ca49 111-118
+  s_d9915bbafa9657::t_684fbfef24ee88 77-85
+  s_d9915bbafa9657::t_f17b2f61582ad6 96-102
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_d9915bbafa9657::t_ad07438dd0d0e5 219-221
+  s_d9915bbafa9657::t_d7e4acedae8ca9 146-149
+  s_d9915bbafa9657::t_4323714fdea7a2 79,95,102,116,126,139,185,199,210,228
+governance/plans/wave-linear/E0-GROUND.md
+  s_d9915bbafa9657::t_bda7a3a2203e5f 93-99
+  s_d9915bbafa9657::t_4f90015d0cdfc1 72-78
+  s_d9915bbafa9657::t_d274bcfd2fc799 109,111,119,129,138,142,153-154
+governance/plans/wave-linear/E1-SCHEMA.md
+  s_5cfb353d409f83::t_c4ccff2e80eb4f 46-47,49,65,67,69,177-178,203,209,211,223,229,231,233
+governance/plans/wave-linear/E12-COST.md
+  s_5cfb353d409f83::t_d162ffd4efab69 70,72,84,91-92,94,99-100,104,113,115,118
+governance/plans/wave-linear/E13-UTILIZATION.md
+  s_5cfb353d409f83::t_259a8ca14839a8 57,73,80,86,89,97,102,105,127,132,136,149
+governance/plans/wave-linear/E5-COMMITMENTS.md
+  s_5cfb353d409f83::t_f394639bba9d3b 63-64,70,75,77,83,88,92,95,101-102,106,112-113,122,128,130,135
+governance/plans/wave-linear/E10-HERITAGE.md
+  s_d9915bbafa9657::t_ae02cef6533c73 62,70,78,85,93,98,104,111,117,121
+governance/plans/wave-linear/E2-IDENTITY.md
+  s_d9915bbafa9657::t_8ffd38e5e1e646 61,65,73,77,86,91,99,105,112,118
+governance/plans/wave-linear/E4-CONTRACT.md
+  s_d9915bbafa9657::t_599305cdeee6dc 55,57,65,69,78,82,90,98,108,111,121,124,134,137
+governance/plans/wave-linear/E6-HANDOFF.md
+  s_d9915bbafa9657::t_ba7c119d070ce4 67,75,83,95,103,107,114,117,125,128
+governance/plans/wave-linear/E9-CUSTOMER.md
+  s_d9915bbafa9657::t_8886431a6efdac 56,59,67,72,80,82,88,90,96-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "45f1f24b014137e9a2e3ce778421d58139baea8a",
+  "prompts": {},
+  "sessions": {
+    "s_5cfb353d409f83": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac5a1a7b78eb61513",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+scripts/bugbot/audit_num_ctx.py
+  s_0b987fef4e1240::t_0d4aab4c478ec4 29-39
+  s_0b987fef4e1240::t_3be28b7ee68974 103-114,121-123
+scripts/bugbot/aggregate.py
+  s_0b987fef4e1240::t_f6dc7d0d8a1a76 91-96
+  s_0b987fef4e1240::t_1a4b1f306fbaf8 15-18
+  s_0b987fef4e1240::t_2767e8ccf87fc0 53-59
+scripts/bugbot/allocator.py
+  s_0b987fef4e1240::t_542e93bd4adbed 42-43
+  s_0b987fef4e1240::t_46979cf64bd609 32-34
+scripts/bugbot/test_aggregate.py
+  s_0b987fef4e1240::t_7aa8212ea84995 1-73
+scripts/bugbot/test_audit_fable.py
+  s_0b987fef4e1240::t_c07924ba5f6c91 300-301
+  s_0b987fef4e1240::t_e9f0697d062191 43-64
+scripts/bugbot/test_audit_num_ctx.py
+  s_0b987fef4e1240::t_c26bb29a6ceedf 1-65
+scripts/bugbot/test_approve.py
+  s_0b987fef4e1240::t_960507e101923b 95-128,136-139
+scripts/bugbot/test_apply.py
+  s_0b987fef4e1240::t_872507c4059d93 1-137
+scripts/bugbot/test_allocator.py
+  s_0b987fef4e1240::t_5e348deb7c72d9 46-55
+  s_0b987fef4e1240::t_edb7c8e419d258 69
+scripts/bugbot/apply.py
+  s_0b987fef4e1240::t_a68cda6131e44b 191-193
+  s_0b987fef4e1240::t_00a6a709f6a1dc 236-242
+  s_0b987fef4e1240::t_61c14d226ca505 72-79
+  s_0b987fef4e1240::t_9d83ea1441e50f 26
+  s_0b987fef4e1240::t_415a70e65b824e 149,151
+scripts/bugbot/audit_fable.py
+  s_0b987fef4e1240::t_4a172c42e5844b 211
+  s_0b987fef4e1240::t_49692ce0be7fb1 182-192
+  s_0b987fef4e1240::t_6678a87090ec6e 53-58,61-67,69,71-78
+scripts/bugbot/approve.py
+  s_0b987fef4e1240::t_f33684f2ed9e1b 122
+  s_0b987fef4e1240::t_d504553bc2ec09 252-259
+  s_0b987fef4e1240::t_f88a8c777f68fa 29-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "8899f4773d65ea2bceabc95ab1d245890f8aa072",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

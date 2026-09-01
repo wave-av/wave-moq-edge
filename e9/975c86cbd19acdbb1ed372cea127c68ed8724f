@@ -1,0 +1,28 @@
+governance/plans/frontier-program/E-CONTEXT.md
+  s_264ae386838c57::t_644c8208038f79 4-9
+governance/plans/frontier-program/E-ENFORCE.md
+  s_264ae386838c57::t_9416ef5f6785b0 4-12
+governance/plans/frontier-program/E-EVAL-PLATFORM.md
+  s_264ae386838c57::t_e11e80c7074688 4-11
+governance/plans/frontier-program/E-FRONTIER.md
+  s_264ae386838c57::t_b5f72c3a663015 4-10
+governance/plans/frontier-program/E-OFFLOOR.md
+  s_264ae386838c57::t_8bd9a902a534ea 4-6
+  s_264ae386838c57::t_dda69eb414cbcb 7-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e9975c86cbd19acdbb1ed372cea127c68ed8724f",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

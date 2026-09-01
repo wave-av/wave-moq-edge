@@ -1,0 +1,347 @@
+governance/bin/recall.mjs
+  s_c24357e71ae5bc::t_9c8bb77fb20c5d 47-51
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_bf03f55abc3f9f 57-67,69
+  s_c24357e71ae5bc::t_522ed1b47b75f9 304,315-318
+  s_c24357e71ae5bc::t_f89e25daf7983c 319
+  s_c24357e71ae5bc::t_aef5d975ee35b1 70-72
+  s_3175b77ffc13f2::t_d7319fb2fb6d6e 86-125,370-377,407-413,610-734,1115-1194
+agents/code-reviewer.md
+  s_52dd41400dfb6c::t_88440782b53679 7
+agents/config-auditor.md
+  s_52dd41400dfb6c::t_06b018edbf4413 7
+agents/deploy-runner.md
+  s_52dd41400dfb6c::t_d81af1f2215490 7
+agents/gateway-dev.md
+  s_52dd41400dfb6c::t_ff75368fc27faf 7
+agents/lean-delegator.md
+  s_52dd41400dfb6c::t_22b4b98f4bfc8b 7
+agents/lean-scout.md
+  s_52dd41400dfb6c::t_4093c5f2877cab 7
+agents/pr-reviewer.md
+  s_52dd41400dfb6c::t_c83f299cc4302c 7
+agents/security-reviewer.md
+  s_52dd41400dfb6c::t_74e4a97a3803ea 7
+agents/spoke-dev.md
+  s_52dd41400dfb6c::t_5d720298011a8b 7
+governance/automation-registry/README.md
+  s_52dd41400dfb6c::t_7487bba81a5503 4,6-17
+governance/automation-registry/generate.mjs
+  s_52dd41400dfb6c::t_568b5e5ead0592 3-4,14,105,112
+governance/automation-registry/jobs/ci-build.yaml
+  s_52dd41400dfb6c::t_211a1e2edc1830 1-61
+governance/automation-registry/jobs/cleanup.yaml
+  s_52dd41400dfb6c::t_453c992c2bc7dc 1-19
+governance/automation-registry/jobs/dev-tooling.yaml
+  s_52dd41400dfb6c::t_67165398c37797 1-91
+governance/automation-registry/jobs/governance.yaml
+  s_52dd41400dfb6c::t_08ae196f43e271 1-5,10-17,25-33,45-47,56-58,66-71,79-84,92-97,105-110,118-123,131-136,144-149,157-162,170-175,182-190,198-204,213-218
+governance/automation-registry/jobs/hardware-audio.yaml
+  s_52dd41400dfb6c::t_7e18b9d3a3923e 1-30
+governance/automation-registry/jobs/knowledge-graph.yaml
+  s_52dd41400dfb6c::t_fb992265c78d93 1-39
+governance/automation-registry/jobs/local-llm-infra.yaml
+  s_52dd41400dfb6c::t_5d7aaef9d4534d 1-142
+governance/automation-registry/jobs/messaging.yaml
+  s_52dd41400dfb6c::t_1cb65f6b958aea 1-168
+governance/automation-registry/jobs/monitoring.yaml
+  s_52dd41400dfb6c::t_4620d9d5685c07 1-71
+governance/automation-registry/jobs/tunnel-infra.yaml
+  s_52dd41400dfb6c::t_dbf09bd561d7f9 1-45
+governance/automation-registry/lib/load-registry.mjs
+  s_52dd41400dfb6c::t_d18498cea2ca83 1-153
+governance/automation-registry/lint.mjs
+  s_52dd41400dfb6c::t_0f921b8732f1c9 5,7,11,110
+governance/automation-registry/list-dead-ids.mjs
+  s_52dd41400dfb6c::t_d45936a3496520 4,8,13
+governance/automation-registry/sync-check.mjs
+  s_52dd41400dfb6c::t_ddc83926bcb981 12,63
+governance/bin/branch-state-scan.mjs
+  s_52dd41400dfb6c::t_db853152dd52d4 129-133
+governance/bin/build.mjs
+  s_52dd41400dfb6c::t_b940a3a1298e3b 28,53-57,71,84,106-107,187
+governance/bin/gate-liveness-drill.mjs
+  s_52dd41400dfb6c::t_5758ea57ddd0b3 51,123-124,134
+governance/bin/install-completeness.mjs
+  s_52dd41400dfb6c::t_3d10afd7dcef50 1-98
+governance/bin/launchd-cron-parity-lint.mjs
+  s_52dd41400dfb6c::t_fae121c2cc3360 1-145
+governance/bin/launchd-twin-liveness.mjs
+  s_52dd41400dfb6c::t_fc60cac614d60d 1-199
+governance/bin/merge-path-parity.mjs
+  s_52dd41400dfb6c::t_2c0be0c8855c34 1-319
+governance/bin/required-check-liveness.mjs
+  s_52dd41400dfb6c::t_df27994f7bff8d 22-25,158-166,173-174,193-198,203,206,210
+governance/bin/struggle-miner/collect-automation-drift.mjs
+  s_52dd41400dfb6c::t_0209bdaacd5ced 16,21-29,38,51,62,75-82,92,101-104,133-135
+governance/graph.json
+  s_b343b90d214886::t_5b648b5c959c69 3075,4446,4448-4449,4451-4489,4494,7919,7921,7970-7971,7973,8012,8022-8025,8159,8161-8162,8164-8215,8220,8471,8473-8474,8476-8553,9319-9331,20541-20546,21759-21764,24514-24544,24547,24550,24553,24556,24559,27231-27242,31439,31441,31445,31447,31451,31453,32230-32237,32239,32242,32245-32257,32260-32266,32269,32272-32308,32311-32347,32350,32353,32356,32359,32362-32363,32365,32368-32369,32371,32374-32375,32377,32380-32381,32383,32386-32387,32389,32392-32393,32395,32398-32399,32401-32407,32800-32801,32803,32806-32807,32809,32812-32813,32815,32818-32819,32821,32824-32825,32827,32830-32831,32833,32836-32849,32851,32854-32866,32869,32872,32875,32878-32879,32881,32884-32885,32887,32890-32891,32893,32896-32897,32899,32902-32903,32905,32908,32911-32917,32920-32932,32935,32938,32941-32947,32950,32953,32956,32959,32962-33011,33013-33067,34641-34646,35013-35024
+governance/lib/citation-re.mjs
+  s_52dd41400dfb6c::t_f81f2ea169a82b 70-103
+governance/lib/drill-fixtures-launchd-twin-liveness.mjs
+  s_52dd41400dfb6c::t_36584b90cb8c6c 1-78
+governance/lib/drill-fixtures-merge-path-parity.mjs
+  s_52dd41400dfb6c::t_adea587924188d 1-382
+governance/lib/drill-inline-required.mjs
+  s_52dd41400dfb6c::t_db1e062e2c4f8e 28-35
+governance/lib/enforce-patterns.mjs
+  s_52dd41400dfb6c::t_ab4219e27825ae 71-80,85,87-93
+governance/lib/ingest/plans.mjs
+  s_52dd41400dfb6c::t_88484c949ebc6d 3,5,9-10,22-40
+governance/lib/install-completeness.mjs
+  s_52dd41400dfb6c::t_45bfcae5ecac06 1-115
+governance/lib/launchd-cron-parity-plan.mjs
+  s_52dd41400dfb6c::t_38aeaec7bf37e9 1-97
+governance/lib/launchd-twin-liveness-plan.mjs
+  s_52dd41400dfb6c::t_d180dbad6df5f1 1-171
+governance/lib/merge-path-parity-declaration.mjs
+  s_52dd41400dfb6c::t_f64d0f21359b93 1-156
+governance/lib/merge-path-parity.mjs
+  s_52dd41400dfb6c::t_045e827539539d 1-263
+governance/lib/namespace-usage-report.mjs
+  s_52dd41400dfb6c::t_99cd6af2833255 9-18,157-163
+governance/lib/ontology.mjs
+  s_52dd41400dfb6c::t_31da536b68f819 12,63-65,131,145-156
+governance/lib/required-check-liveness.mjs
+  s_52dd41400dfb6c::t_723755b109dd59 25-35,137-155,176-181,204-207,218-253
+governance/merge-path-parity.json
+  s_52dd41400dfb6c::t_8c26a16e65fae9 1-74
+governance/ops/launchd/cron-manifest.json
+  s_52dd41400dfb6c::t_6890b1f7e58419 1-51
+governance/plans/agents-have-eyes/E1-CAPTURE-KERNEL.md
+  s_52dd41400dfb6c::t_80113d76fd7ee4 4-12
+governance/plans/agents-have-eyes/E2-VISION-GATEWAY.md
+  s_52dd41400dfb6c::t_42fda451a1b3f5 4-14
+governance/plans/agents-have-eyes/E3-SEMANTIC-DIFF.md
+  s_52dd41400dfb6c::t_64550ab8d57463 4-10
+governance/plans/agents-have-eyes/E4-LIFECYCLE-GATE.md
+  s_52dd41400dfb6c::t_201b5443105f19 4-14
+governance/plans/agents-have-eyes/E5-SDK-MCP.md
+  s_52dd41400dfb6c::t_821e93e90240dc 4-10
+governance/plans/agents-have-eyes/E6-GOVERNANCE.md
+  s_52dd41400dfb6c::t_c7e4d716a5c47a 4-12
+governance/plans/agents-have-eyes/E7-CLIENT-PRODUCT.md
+  s_52dd41400dfb6c::t_fa7d88064024c7 4-13
+governance/plans/agents-have-eyes/NORTH-STAR.md
+  s_52dd41400dfb6c::t_1aaeb07251a9d7 4-18
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_52dd41400dfb6c::t_c941762a39e8b7 13-14,109-142,148
+governance/plans/console-perfection/PLAYBACK-SURFACE.md
+  s_52dd41400dfb6c::t_8a46780c154900 1-259
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_52dd41400dfb6c::t_875c09e3a17491 4-5
+governance/plans/credential-provisioning-integrity/E2-TRAPS.md
+  s_52dd41400dfb6c::t_354eeb2d082371 4-5
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  s_52dd41400dfb6c::t_4ac24f39a2f583 4-5,135-136
+governance/plans/credential-provisioning-integrity/E4-GRANTS.md
+  s_52dd41400dfb6c::t_504a67ded6acd0 4-5
+governance/plans/credential-provisioning-integrity/E5-MALFORMED.md
+  s_52dd41400dfb6c::t_27c78219171e29 4-5
+governance/plans/credential-provisioning-integrity/E6-SCOPE.md
+  s_52dd41400dfb6c::t_a636e3bbaa9f20 4-5
+governance/plans/credential-provisioning-integrity/E7-RATCHET.md
+  s_52dd41400dfb6c::t_a2bc857255477a 4-5
+governance/plans/credential-provisioning-integrity/E8-ROTATE.md
+  s_52dd41400dfb6c::t_f0a76815e48372 4-5
+governance/plans/credential-provisioning-integrity/NORTH-STAR.md
+  s_52dd41400dfb6c::t_888d9de4fb804f 4-5,31-33
+governance/plans/credential-provisioning-integrity/RECEIPTS.md
+  s_52dd41400dfb6c::t_a272760dd4b636 4-5,39-41
+governance/plans/fabric-phase-d-lifecycle/E1-DISCOVERY.md
+  s_52dd41400dfb6c::t_e51582d80c0e85 1-16
+governance/plans/fabric-phase-d-lifecycle/E2-BUILD.md
+  s_52dd41400dfb6c::t_b1cdd6cd2a18ff 1-2,4-10,17-19
+governance/plans/fabric-phase-d-lifecycle/E3-PROVE.md
+  s_52dd41400dfb6c::t_eb15a1d1afc83a 1-19
+governance/plans/fabric-phase-d-lifecycle/NORTH-STAR.md
+  s_52dd41400dfb6c::t_a08c6fd88e2d1f 1-36
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_52dd41400dfb6c::t_3d6fa49ef36581 343-362
+governance/plans/law-proposals/2026-08-07-a-correction-is-a-new-claim.md
+  s_52dd41400dfb6c::t_3546e031829de3 1-95
+governance/plans/merge-path-parity/E1-CONFORMANCE.md
+  s_52dd41400dfb6c::t_24b2c46119e37d 4-58,102-106,112-117,123-127,133-140
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_52dd41400dfb6c::t_84cff3866fd78c 4-48
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_52dd41400dfb6c::t_49f0504ac59125 148-151,932-937,1045-1198
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_52dd41400dfb6c::t_a8dbd999549265 22-26,38,93-98,100-111,121-124,131-133,199-201,203-206,217-220,296
+governance/plans/namespace-substrate/profiles-as-code/README.md
+  s_52dd41400dfb6c::t_57fe70da93dc5f 1-128
+governance/plans/namespace-substrate/profiles-as-code/RECEIPTS-2026-08-06.md
+  s_52dd41400dfb6c::t_6424866bb4567b 1-165
+governance/plans/namespace-substrate/profiles-as-code/artifact-roundtrip.sh
+  s_52dd41400dfb6c::t_fd08f2475e0089 1-132
+governance/plans/namespace-substrate/profiles-as-code/cache-experiment.sh
+  s_52dd41400dfb6c::t_1cd54fe9e8ee7a 1-372
+governance/plans/namespace-substrate/profiles-as-code/capture-profiles.sh
+  s_52dd41400dfb6c::t_99034e7043ae08 1-138
+governance/plans/namespace-substrate/profiles-as-code/ci-oidc-artifact.yml
+  s_52dd41400dfb6c::t_c20032c5decd83 1-91
+governance/plans/namespace-substrate/profiles-as-code/profiles/default-arm64.json
+  s_52dd41400dfb6c::t_b299d8858f0bfb 1-15
+governance/plans/namespace-substrate/profiles-as-code/profiles/default.json
+  s_52dd41400dfb6c::t_1bafaf7989034f 1-15
+governance/plans/namespace-substrate/profiles-as-code/profiles/wave-fenced-amd64.json
+  s_52dd41400dfb6c::t_ad6ba4e16b43fb 1-30
+governance/plans/namespace-substrate/profiles-as-code/profiles/wave-std.json
+  s_52dd41400dfb6c::t_99227fef07b096 1-26
+governance/plans/wave-control/DECISION-URL.md
+  s_52dd41400dfb6c::t_4c7322186acf0f 12-30,41-47,50-53
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  s_52dd41400dfb6c::t_023801a03f957f 62-76,80-81,86,89-100,104-117
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  s_52dd41400dfb6c::t_52144f055ee73f 8-9,14-15,40-44,55-73,93-94,144
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  s_52dd41400dfb6c::t_ad93844f1ea208 43-45,57-77,129
+governance/plans/wave-control/NORTH-STAR.md
+  s_52dd41400dfb6c::t_f50185f2cd96e2 16-46,57-58,60-63,65-67,97,103-107,139-140,291
+governance/plans/wave-fabric-placement-engine/E1-DISCOVERY.md
+  s_52dd41400dfb6c::t_bf46b5ad5f9f6e 1-18
+governance/plans/wave-fabric-placement-engine/E2-WIRE-INERT.md
+  s_52dd41400dfb6c::t_91df5585be0099 1-22
+governance/plans/wave-fabric-placement-engine/E3-SOAK.md
+  s_52dd41400dfb6c::t_72c4eeaad30752 1-20
+governance/plans/wave-fabric-placement-engine/E4-ENFORCE-FLIP.md
+  s_52dd41400dfb6c::t_31d73220675878 1-17
+governance/plans/wave-fabric-placement-engine/NORTH-STAR.md
+  s_52dd41400dfb6c::t_70729a172dd92f 1,3,5-10,12-16,20-25,27-32,34,36-41
+governance/plans/wave-inference-fabric/E1-CATALOG-DRIFT.md
+  s_52dd41400dfb6c::t_affeea7ec6f7dc 1-42
+governance/plans/wave-inference-fabric/E2-PLACEMENT-ENGINE.md
+  s_52dd41400dfb6c::t_583ce9a353fd7f 1-24
+governance/plans/wave-inference-fabric/E3-SERVING-TIERS.md
+  s_52dd41400dfb6c::t_901fb3cb6c0c93 1-34
+governance/plans/wave-inference-fabric/E4-LIFECYCLE.md
+  s_52dd41400dfb6c::t_6216ae0f4357c0 1-28
+governance/plans/wave-inference-fabric/E5-COGS-WIRING.md
+  s_52dd41400dfb6c::t_09c7bbe8168049 1-21
+governance/plans/wave-inference-fabric/E6-GOVERNANCE-DRIFT.md
+  s_52dd41400dfb6c::t_58f1a43acd3d68 1-24
+governance/plans/wave-inference-fabric/NORTH-STAR.md
+  s_52dd41400dfb6c::t_6dca3ee80fde06 1,3-11,18-24,28,30-33,35,37-40,42,44-51,54-62
+governance/plans/wave-native-cutover/E-AGENTS-TO-85.md
+  s_52dd41400dfb6c::t_e1b1dabe478bd3 4-17
+governance/plans/wave-native-cutover/E-DECOMMISSION.md
+  s_52dd41400dfb6c::t_97628a9e6e4daa 4-20
+governance/plans/wave-native-cutover/E-EGRESS-ROUTER.md
+  s_52dd41400dfb6c::t_615e94ec3fb9ee 4-14
+governance/plans/wave-native-cutover/E-INGRESS.md
+  s_52dd41400dfb6c::t_3043df44aaf1d3 4-13
+governance/plans/wave-native-cutover/E-MEDIA-TAP.md
+  s_52dd41400dfb6c::t_bd46b39695c937 4-15
+governance/plans/wave-native-cutover/E-ROOMS.md
+  s_52dd41400dfb6c::t_28e15bc2bad5e6 4-17
+governance/plans/wave-native-cutover/NORTH-STAR.md
+  s_52dd41400dfb6c::t_e1c85b9114c63f 4-21
+governance/plans/waveform-hero/DR-AUDIO-SOURCE.md
+  s_52dd41400dfb6c::t_8a5b39567f79b6 5,59-62
+governance/recall/eval/repo-corpus.manifest.json
+  s_52dd41400dfb6c::t_c102953bdfee9b 297-300,690-694,714-720
+governance/state/claude-code-release-watch.json
+  s_52dd41400dfb6c::t_cd0f43b103055a 2-3
+governance/test/automation-registry/lint.test.mjs
+  s_52dd41400dfb6c::t_9b5af79b581150 5,11,16-20,171-172,175-176,179-180
+governance/test/automation-registry/load-registry.test.mjs
+  s_52dd41400dfb6c::t_dc2032c38155cd 1-207
+governance/test/citation-re.test.mjs
+  s_52dd41400dfb6c::t_bfebf31f599112 25,113-139
+governance/test/graph-edge-type-contract.test.mjs
+  s_52dd41400dfb6c::t_918deb71225fb8 19,47-62
+governance/test/ingest-plans.test.mjs
+  s_52dd41400dfb6c::t_f21b2aad460694 20-27,38-78
+governance/test/install-completeness.test.mjs
+  s_52dd41400dfb6c::t_2747a4b49a5f37 1-101
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_52dd41400dfb6c::t_aff60e9ceb0f3a 1-230
+governance/test/launchd-twin-liveness.test.mjs
+  s_52dd41400dfb6c::t_edd14948d5d7cd 1-318
+governance/test/merge-path-parity-cli.test.mjs
+  s_52dd41400dfb6c::t_421cf3c776f624 1-188
+governance/test/merge-path-parity.test.mjs
+  s_52dd41400dfb6c::t_d5623759f4f693 1-338
+governance/test/namespace-usage-pull.test.mjs
+  s_52dd41400dfb6c::t_ac31698cc984ae 76,81,89-99,117-127
+governance/test/ontology.test.mjs
+  s_52dd41400dfb6c::t_8b087a7b15630c 3,14,42-51
+governance/test/plugin-agents-drift.test.mjs
+  s_52dd41400dfb6c::t_7fcc868b84708d 42-75
+governance/test/required-check-liveness.test.mjs
+  s_52dd41400dfb6c::t_dbc5cbf45da235 231-289
+hooks/bin/gen-manifest.mjs
+  s_52dd41400dfb6c::t_6af6b2d15df01c 52-57
+hooks/manifest.json
+  s_b343b90d214886::t_bb26e487e35f42 1122,1675
+hooks/parked-tree-read-advisory.sh
+  s_52dd41400dfb6c::t_9eef2366f0c371 28-36,103,105-106,114-117
+hooks/stop-gate.sh
+  s_52dd41400dfb6c::t_76175c9504eaae 29,32-42,44-48,50-59
+hooks/tests/parked_tree_read_smoke.sh
+  s_52dd41400dfb6c::t_a847ad5fe44814 78-89,103-115
+plugins/wave-agents/agents/code-reviewer.md
+  s_52dd41400dfb6c::t_6cdcff4aff0f28 7
+plugins/wave-agents/agents/config-auditor.md
+  s_52dd41400dfb6c::t_79f073dd1577bb 7
+plugins/wave-agents/agents/deploy-runner.md
+  s_52dd41400dfb6c::t_ff765424455ddf 7
+plugins/wave-agents/agents/gateway-dev.md
+  s_52dd41400dfb6c::t_d37bd7de4f8758 7
+plugins/wave-agents/agents/lean-delegator.md
+  s_52dd41400dfb6c::t_d3d6165e34e7c9 7
+plugins/wave-agents/agents/lean-scout.md
+  s_52dd41400dfb6c::t_97defe7772a881 7
+plugins/wave-agents/agents/pr-reviewer.md
+  s_52dd41400dfb6c::t_816027605b1cfe 7
+plugins/wave-agents/agents/security-reviewer.md
+  s_52dd41400dfb6c::t_9ab6c5cfe92209 7
+plugins/wave-agents/agents/spoke-dev.md
+  s_52dd41400dfb6c::t_1c81ca110f9f16 7
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_52dd41400dfb6c::t_7f0b880e46f704 40
+runbooks/library/namespace-runner-outage.md
+  s_52dd41400dfb6c::t_2b11cd41b1c660 1-216
+settings/settings.base.json
+  s_52dd41400dfb6c::t_ea1f07be1f11f4 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "85970df2d2d54c38427b224d185f59ca81cad700",
+  "prompts": {},
+  "sessions": {
+    "s_3175b77ffc13f2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5342094649a33222",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_52dd41400dfb6c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae621c64b48d178c5",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b343b90d214886": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a39b7aee6d13caf70",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

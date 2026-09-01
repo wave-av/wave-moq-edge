@@ -1,0 +1,64 @@
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  h_af5ac1a9798224 20,24-28,70-76,85-90,93-96,118,125-126,138,236-239,242,306
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  h_af5ac1a9798224 1-251
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3345-3346,3348-3351,3368-3373,4719-4729,4742,4745-4746,4748,4766,4769,4774-4778,4788-4820
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,29857-29858,29868-29869,29890-29893,29901-29904,29912-29915,29923,29925-29926,30027-30059,40252-40253,40263-40264,40274-40275,40285-40286,40296-40297,40307-40308,40312-40322,40329-40343,40351-40354,40362-40365,40439-40442,40472-40473,40483-40484,40505-40506,40637-40638,40664-40674,40693-40706,40763-40960
+governance/graph.json
+  h_af5ac1a9798224 22546,22548,22552,22554
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  h_af5ac1a9798224 15,96-107,141-165,177-208,214-215,219,242-276,308-310
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  h_af5ac1a9798224 95-99
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 182-191
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  h_af5ac1a9798224 19-25
+governance/lib/wave-cost-ledger-cloudflare-subscription-period.mjs
+  h_af5ac1a9798224 1-54
+governance/lib/wave-cost-ledger-root-cause-lookup.mjs
+  h_af5ac1a9798224 1-80
+governance/lib/wave-cost-ledger-root-cause-outlier.mjs
+  h_af5ac1a9798224 1-153
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  h_af5ac1a9798224 1-97
+governance/lib/wave-cost-ledger-root-cause-resolve.mjs
+  h_af5ac1a9798224 1-76
+governance/lib/wave-cost-ledger-root-cause-sweep-dimensions.mjs
+  h_af5ac1a9798224 1-269
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  h_af5ac1a9798224 4-30,86
+governance/test/wave-cost-ledger-cloudflare-alert-malformed.test.mjs
+  h_af5ac1a9798224 1-312
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  h_af5ac1a9798224 1-7,32-36,39-42,44-68,70-71,75,78-81,83
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  h_af5ac1a9798224 9-10
+governance/test/wave-cost-ledger-cloudflare-subscription-period.test.mjs
+  h_af5ac1a9798224 1-109
+governance/test/wave-cost-ledger-root-cause-incident-fixture.mjs
+  h_af5ac1a9798224 1-62
+governance/test/wave-cost-ledger-root-cause-outlier.test.mjs
+  h_af5ac1a9798224 1-121
+governance/test/wave-cost-ledger-root-cause-prompt-template.test.mjs
+  h_af5ac1a9798224 1-74
+governance/test/wave-cost-ledger-root-cause-resolve.test.mjs
+  h_af5ac1a9798224 1-54
+governance/test/wave-cost-ledger-root-cause-sweep-dimensions.test.mjs
+  h_af5ac1a9798224 1-196
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  h_af5ac1a9798224 1-219
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fac24fe856242e4e287a55cf0dd35960912f54f1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

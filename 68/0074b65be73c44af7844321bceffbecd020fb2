@@ -1,0 +1,30 @@
+governance/bin/ffmpeg-channel-watch.mjs
+  s_124891ed63801b::t_f775182d2f24d9 1-239
+governance/test/ffmpeg-channel-watch.test.mjs
+  s_124891ed63801b::t_4fb72c547df31b 1-123
+.github/workflows/ffmpeg-channel-watch.yml
+  s_124891ed63801b::t_1cb7fcec9af894 1-104
+governance/state/ffmpeg-channel-watch.json
+  s_124891ed63801b::t_f513b415413c6e 1-21
+.gitignore
+  s_124891ed63801b::t_4a766177ea7f7e 94-99
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_124891ed63801b::t_193b591a4ae927 6-14
+  s_124891ed63801b::t_37fced0fe390fd 135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "680074b65be73c44af7844321bceffbecd020fb2",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

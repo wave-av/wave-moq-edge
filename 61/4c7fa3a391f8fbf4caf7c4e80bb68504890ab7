@@ -1,0 +1,25 @@
+governance/lib/hook-state-root.mjs
+  s_c2bb037074776b::t_1b709a73ab77bc 112-123
+governance/lib/rl-hook-ledger-root.mjs
+  s_c2bb037074776b::t_df6304cbb285ce 93-100
+governance/test/rl-hook-ledger-root.test.mjs
+  s_c2bb037074776b::t_76f6dbc87ec76e 163-177
+governance/test/platform-status-state-root-agreement.test.mjs
+  s_c2bb037074776b::t_fd150474dae4d0 97-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "614c7fa3a391f8fbf4caf7c4e80bb68504890ab7",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

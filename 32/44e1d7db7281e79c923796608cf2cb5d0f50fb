@@ -1,0 +1,167 @@
+.coderabbit.yaml
+  s_3efd00a852f851::t_4864e76d06a134 168
+.cursor/BUGBOT.md
+  s_3efd00a852f851::t_8b4d5345481964 80
+.github/workflows/auto-merge.yml
+  s_3efd00a852f851::t_64da3be040892d 133-154,312-344
+.github/workflows/governance-enforce.yml
+  s_3efd00a852f851::t_1675fcd054a5b7 17-31,34
+.greptile/config.json
+  s_3efd00a852f851::t_7ed9337681e71e 13
+REVIEW.md
+  s_3efd00a852f851::t_0eb248e0c674c6 49,75
+cubic.yaml
+  s_3efd00a852f851::t_1fe41865c7ce4b 71,94
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_d29b19ac517675 25
+governance/bin/cockpit.mjs
+  s_3efd00a852f851::t_4d1306d7245d93 56-57,59,62-67
+governance/bin/committed-not-scheduled.mjs
+  s_3efd00a852f851::t_407855fca7a799 1-105
+governance/bin/distribute-bump.mjs
+  s_3efd00a852f851::t_b8786de47cf497 30,32,45,55-62,65,87-89,97-102,114-115,117-123,144-153,157-167,234,237
+governance/bin/epic-status.mjs
+  s_3efd00a852f851::t_f95f967c4bca8c 112,115-118,171-175,271-276
+governance/bin/fleet/installation-authority-audit.mjs
+  s_3efd00a852f851::t_d00dc57de59324 38,170,175
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_3efd00a852f851::t_72d40774b3f0d7 17-23,26-27
+governance/bin/fleet/reviewer-config-census.mjs
+  s_3efd00a852f851::t_fad219f88db252 37,41
+governance/bin/merge-time-artifact-lint.mjs
+  s_3efd00a852f851::t_291cd17d130a35 1-169
+governance/bin/resolve-generated-conflicts.mjs
+  s_3efd00a852f851::t_a53657988d4a49 40-44,51-55,209-227
+governance/bin/review-liveness.mjs
+  s_3efd00a852f851::t_9456d990002097 58-60
+governance/bin/thread-resolution.mjs
+  s_3efd00a852f851::t_0094ce0201ef02 26-28
+governance/graph.json
+  s_c24357e71ae5bc::t_0f0aeb5a0f6e5d 4015-4053,6425,7877,8161-8174,22603-22608,22627-22632,22681-22722,31495-31542
+governance/lib/audit-args.mjs
+  s_3efd00a852f851::t_ae9302283f551b 23-27,60
+governance/lib/committed-not-scheduled.mjs
+  s_3efd00a852f851::t_e7c234d57ae989 1-85
+governance/lib/distribute-bump-core.mjs
+  s_3efd00a852f851::t_412b8ff778177f 7-15,30,78-83,87-99
+governance/lib/distribute-bump-ensure.mjs
+  s_3efd00a852f851::t_45cc52433bc19e 1-174
+governance/lib/distribute-bump-report.mjs
+  s_3efd00a852f851::t_c0de1436af9f38 1-72
+governance/lib/distribute-bump-shape.mjs
+  s_3efd00a852f851::t_27bdef2308d1b8 1-282
+governance/lib/epic-status-parse.mjs
+  s_3efd00a852f851::t_be6b722d87a441 43-48,51-58,70,72-78
+governance/lib/gate-audit-args.mjs
+  s_3efd00a852f851::t_0df312bdbe036c 31-36,40
+governance/lib/interactive-sessions.mjs
+  s_3efd00a852f851::t_409d5b355a6594 3,5,12-24,34-42,68-70,82
+governance/lib/merge-time-artifact.mjs
+  s_3efd00a852f851::t_1d0925c466bcf3 1-88
+governance/lib/ramp-tables.mjs
+  s_3efd00a852f851::t_4916168b8ee7fd 73-75
+governance/lib/review-liveness-args.mjs
+  s_3efd00a852f851::t_c642e467679a4c 19-24,28-29
+governance/lib/reviewer-census-classify.mjs
+  s_3efd00a852f851::t_342897aaa13a69 117-141
+governance/lib/reviewer-ignore-contract.mjs
+  s_3efd00a852f851::t_cd5ba0c1fce8c1 14,123-125,130,135-152
+governance/lib/reviewer-policy.mjs
+  s_3efd00a852f851::t_5e4fa0c7c68af0 45-79,92-94,96-97,101,154
+governance/lib/thread-resolution-args.mjs
+  s_3efd00a852f851::t_1652d995838069 15-19,23
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_3efd00a852f851::t_4e6fef4a46e5a7 7,17
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_3efd00a852f851::t_06eedae9f08b34 14-28
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_3efd00a852f851::t_0564a15f406f41 45-53
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  s_3efd00a852f851::t_2f61124e7697d6 1-161
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_3efd00a852f851::t_1b34fc5c07442b 1-152
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_3efd00a852f851::t_da42bc5dba72b2 1-174
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_3efd00a852f851::t_998f2ec49557f3 74,92-94,102-109,116-133
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_3efd00a852f851::t_f9e42d06408ed6 191-208
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_3efd00a852f851::t_e062a6c6f98578 1-72
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_3efd00a852f851::t_a55d69c7d7af59 5-7,9-25,27-30,51-54,65,78-169
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_3efd00a852f851::t_babf995ca885a5 847-949
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_3efd00a852f851::t_2bdf86409e30bb 4,6-22,26
+governance/recall/BAKE-OFF.md
+  s_3efd00a852f851::t_a0bb9cc548dba7 74-116,128
+governance/reviewer-policy.json
+  s_3efd00a852f851::t_b6462ae7c086a0 110-111,114-120,125,136-143,159-160
+governance/test/cockpit-render.test.mjs
+  s_3efd00a852f851::t_a6facfa7cf3279 140-142,144-145,156-158,165-171,175
+governance/test/committed-not-scheduled.test.mjs
+  s_3efd00a852f851::t_c618b5eaf54446 1-167
+governance/test/distribute-bump-shape.test.mjs
+  s_3efd00a852f851::t_e5cbb29356537b 1-272
+governance/test/epic-status-unterminated-receipt.test.mjs
+  s_3efd00a852f851::t_3d7b2ca33aeaa9 1-69
+governance/test/interactive-sessions.test.mjs
+  s_3efd00a852f851::t_15d33622a74ee2 6-7,9-10,30,35-36,41,45-64,88-96
+governance/test/merge-time-artifact.test.mjs
+  s_3efd00a852f851::t_900df638223e8b 1-60
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  s_3efd00a852f851::t_afb159e2c951ff 1-102
+governance/test/resolve-generated-conflicts-fixture.mjs
+  s_3efd00a852f851::t_989404fe4dd43a 1-73
+governance/test/resolve-generated-conflicts-order.test.mjs
+  s_3efd00a852f851::t_900d3ab4e84870 1-41
+governance/test/resolve-generated-conflicts.test.mjs
+  s_3efd00a852f851::t_d2dfce3e1831ad 3,6-9,13-16
+governance/test/reviewer-census.test.mjs
+  s_3efd00a852f851::t_f59a45bbeb0fd2 11-14,120-144
+governance/test/reviewer-demand-shaping.test.mjs
+  s_3efd00a852f851::t_73cbe679126bc8 90-143
+governance/test/reviewer-ignore-sync.test.mjs
+  s_3efd00a852f851::t_c240fd70a41bd3 139-150
+governance/test/reviewer-policy.test.mjs
+  s_3efd00a852f851::t_348a0356256684 109-169
+governance/test/status-trigger-coupling.test.mjs
+  s_3efd00a852f851::t_baffe01cecb4cc 197-343
+hooks/manifest.json
+  s_c24357e71ae5bc::t_ec28b3906994ea 1318,1330
+hooks/research-bank.sh
+  s_3efd00a852f851::t_48067bc47e43f4 31-41,43-50,64-67,69-72,77-150,159-164,166-171
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_3efd00a852f851::t_8ac4210dd50192 53
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_3efd00a852f851::t_56a0b9f6000b0c 27-28
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  s_3efd00a852f851::t_4dc51410d44150 1-138
+settings/hooks.d/research-bank.json
+  s_3efd00a852f851::t_716bcb28c43e03 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3244e1d7db7281e79c923796608cf2cb5d0f50fb",
+  "prompts": {},
+  "sessions": {
+    "s_3efd00a852f851": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aa1c8567da633dc8f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

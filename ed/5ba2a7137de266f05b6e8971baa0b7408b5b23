@@ -1,0 +1,21 @@
+hooks/tests/ctx-band-untrusted-publisher.test.sh
+  s_375efeac18ed55::t_37cb6ff2aa822d 1-99
+hooks/lib/ctx-band.sh
+  s_375efeac18ed55::t_9beac470d86658 113-119,121-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ed5ba2a7137de266f05b6e8971baa0b7408b5b23",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

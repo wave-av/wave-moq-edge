@@ -1,0 +1,39 @@
+hooks/wrangler-deploy-gate.sh
+  s_d9915bbafa9657::t_b874616893ff77 184-196,199,204-208
+hooks/hooklib/wrangler-deploy-patterns.sh
+  s_d9915bbafa9657::t_a39bb7baa97e96 28-34
+  s_d9915bbafa9657::t_4e855db32028dc 35-51
+  s_d9915bbafa9657::t_0917631115aa3a 175-187
+  s_d9915bbafa9657::t_9795d3bf454c34 191
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_66075dc2632972 145-148
+  s_d9915bbafa9657::t_20aed50dbbf98d 149
+hooks/manifest.json
+  s_52031f4510959b::t_4ddfd591c59c9a 2026
+hooks/tests/wrangler-deploy-gate-evasion.test.sh
+  s_d9915bbafa9657::t_65fb16e6664c79 97-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "312c72c3ebd4c9439a7e5bd98ba1b083783bcdba",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

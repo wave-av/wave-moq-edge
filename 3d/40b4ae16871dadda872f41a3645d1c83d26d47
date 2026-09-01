@@ -1,0 +1,30 @@
+bin/telemetry-patterns.mjs
+  s_2801b677583640::t_59c26f63884e23 1-221
+bin/fixtures/telemetry-fixture.jsonl
+  s_2801b677583640::t_3c1f2e11d6fc0f 1-18
+bin/telemetry-patterns.test.mjs
+  s_2801b677583640::t_54c8c2789eaef5 1-103,106-107
+  s_2801b677583640::t_6fa29ed036b6d0 104-105
+governance/plans/fleet-autonomy/E2-TELEMETRY-PATTERNS.md
+  s_2801b677583640::t_10c59afb7e1883 5-12
+  s_2801b677583640::t_3982a264c96d26 41-58
+  s_2801b677583640::t_78b655b85fe49c 4
+bin/policy-recommend.mjs
+  s_2801b677583640::t_f3cc13d5c92725 1-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3d40b4ae16871dadda872f41a3645d1c83d26d47",
+  "prompts": {},
+  "sessions": {
+    "s_2801b677583640": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dc9a4dffehAF1kJKvt1ElBN",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+bin/distill-sft.mjs
+  s_7ddeb5d251570f::t_92f424beef6aa2 15
+  s_7ddeb5d251570f::t_a8c36458340d0b 1-14,16-72
+governance/test/distill-sft.test.mjs
+  s_7ddeb5d251570f::t_7849906360bd6b 1-8,11-18
+  s_7ddeb5d251570f::t_6ead942bacbf9d 9-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3f8a63252883a6e669dd42e03953e612953ec208",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

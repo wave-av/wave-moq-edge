@@ -1,0 +1,30 @@
+governance/WAVE-CONTEXT-POINTER.md
+  s_e2e3e43d0638c5::t_554e8d12f7069c 9-12
+  s_e2e3e43d0638c5::t_a09f29948ebded 6-8
+  s_e2e3e43d0638c5::t_1c78d4f7e98081 13-15
+  s_782a66ad926254::t_8279e1ed9b0a4e 1-5,16-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "ff00c41b21254a4cc79042c0c775afeaee9b56ff",
+  "prompts": {},
+  "sessions": {
+    "s_782a66ad926254": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab35301a88618c50e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

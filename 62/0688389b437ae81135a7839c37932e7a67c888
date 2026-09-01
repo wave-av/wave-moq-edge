@@ -1,0 +1,26 @@
+frameworks/workflow-engines/engine/outcome-reporter.sh
+  s_cf3356a24071e8::t_360c368e3f0837 297-311,313
+  s_cf3356a24071e8::t_8662f8bee51fd3 326-327
+frameworks/prompts/session-start-context.sh
+  s_cf3356a24071e8::t_d1d072c26e3020 159-160
+  s_cf3356a24071e8::t_c542590d00db07 111-127,135
+  s_cf3356a24071e8::t_bbc8b6f24dc9c8 128-134,136-139
+scripts/worktree-prune.sh
+  s_cf3356a24071e8::t_9ac051575b08c8 56-76,84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "620688389b437ae81135a7839c37932e7a67c888",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  s_2e30bff6169f7a::t_042812b7fe6d7d 1-94,96,105-108,110-112,114-119
+  s_2e30bff6169f7a::t_32ab3d98c4b5e9 95,97-104,109,113
+governance/test/wave-cost-ledger-alert-policy-dedup.test.mjs
+  s_2e30bff6169f7a::t_cdd7455cdbdef3 1-19,21-60,63-66,68-69,71-72,75-101,103-104
+  s_2e30bff6169f7a::t_be0dd6032d4d46 20
+  s_2e30bff6169f7a::t_cc42b6101a5692 61-62
+  s_2e30bff6169f7a::t_a0179c28fba616 102
+  s_2e30bff6169f7a::t_7bd6dada1736db 67,70,73-74
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  s_2e30bff6169f7a::t_70737d0cac4885 1-5,7-12,14-15,18-27,29-40,42-57,59-74,76-79
+  s_2e30bff6169f7a::t_cf289b2e1d37da 6,13,16-17,28,41,58,75
+governance/test/wave-cost-ledger-alert-write.test.mjs
+  s_2e30bff6169f7a::t_b615858e2f6952 36-39
+  s_2e30bff6169f7a::t_7858de14906e8d 17-19
+  s_2e30bff6169f7a::t_95084fc0dd2785 1-16,20-23,25-35,40-45
+  s_2e30bff6169f7a::t_1490c05683d1dc 24
+governance/lib/wave-cost-ledger-alert-write.mjs
+  s_2e30bff6169f7a::t_46d26dc74ffe15 1-90
+  s_2e30bff6169f7a::t_285c3722701eed 91-110
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  s_2e30bff6169f7a::t_60ab4e86c31c99 1-100
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_2e30bff6169f7a::t_cd897c929ca9fd 76,81,83-85,94-98,105-108,111-114,118
+  s_2e30bff6169f7a::t_96d6f3b85227e9 1-6,17-75,77-80,82,86-93,99-104,109-110,119-123
+  s_2e30bff6169f7a::t_c015784228c98a 115-117
+  s_2e30bff6169f7a::t_084c4eb30dfdf9 7-16
+governance/lib/wave-cost-ledger-remediation-gate.mjs
+  s_2e30bff6169f7a::t_af8d8a0ac12b83 62
+  s_2e30bff6169f7a::t_7aac835fb9805b 1-61,63-80
+governance/test/wave-cost-ledger-remediation-gate.test.mjs
+  s_2e30bff6169f7a::t_b9454d2e3210fa 50-56,64
+  s_2e30bff6169f7a::t_d44f93cf4ac1fc 1-8,10-49,57-63,65-77
+  s_2e30bff6169f7a::t_651672e9a2a7cd 9
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_f2dcdaeae64aa9 5,4566-4593
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_6af7e5629e9468 9-10,12-13,39113-39288
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_846662fbde7da7 4-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7c12077178fbf4ad46dd78c00c12981e1f4f2a71",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

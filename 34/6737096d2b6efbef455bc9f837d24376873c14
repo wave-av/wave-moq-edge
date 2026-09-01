@@ -1,0 +1,45 @@
+hookcli/bin/expand-anchors.mjs
+  s_db128da65a46d5::t_444a770d2f190a 1-66
+hookcli/tests/evasion-matrix.sh
+  s_db128da65a46d5::t_1c50ceb131bc10 1-97,100-120,162-175,190-195
+  s_db128da65a46d5::t_9085d3042a6ec3 176-189
+  s_db128da65a46d5::t_cc1cd6ba3bc651 121-137,140-161
+  s_db128da65a46d5::t_fd80c2c5ef7983 98-99
+  s_db128da65a46d5::t_fa32ec9f41c404 138-139
+hookcli/lib/rule-anchors.mjs
+  s_db128da65a46d5::t_8b06dd2df6d291 104-123
+  s_db128da65a46d5::t_68e980466ccdeb 125
+  s_db128da65a46d5::t_3330bb8ddd0c27 1-40,75-77,92,99-103,124,126-165
+  s_db128da65a46d5::t_d878022ae986f6 41-42,74,78-82,93-98
+  s_db128da65a46d5::t_63a62a0b652822 43-73
+  s_db128da65a46d5::t_1cc543db3d2d25 83-91
+  s_db128da65a46d5::t_d6b4e9f84cc643 166-168
+hookcli/lib/t3-shell.mjs
+  s_db128da65a46d5::t_c177be7b88e985 278-280,282
+  s_db128da65a46d5::t_7cbc25974da918 281
+hookcli/lib/validate-anchors.mjs
+  s_db128da65a46d5::t_0de69c3a4dcca5 1-59
+hookcli/bin/validate-rules.mjs
+  s_db128da65a46d5::t_87fe0c4d4f15ab 267-270
+  s_db128da65a46d5::t_b7fc6420d0229c 271
+hookcli/rules/rules.json
+  s_db128da65a46d5::t_7f9626e7312b3e 11-12,31-32,50,68-69,113-114,132-133,290-291,313-314,350-351,368-369,411-412,454-455,476-477,497-498,515-516,533-534,600-601,612-620
+hookcli/schema/rule.schema.json
+  s_db128da65a46d5::t_a0a17194c56988 8-11,13-16,19-28,35-44,46-53,56-66,72-90,93-103,107,112-117,119-132,138,142-145,147,151-154,164-174,182,188,193-196,198-215,220-230,233-237,239,241-253,256-265,269-280,283-302,305-314,316-328,332-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "346737096d2b6efbef455bc9f837d24376873c14",
+  "prompts": {},
+  "sessions": {
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

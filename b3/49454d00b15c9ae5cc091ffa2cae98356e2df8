@@ -1,0 +1,24 @@
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,4422-4423,4425-4434,4436-4445
+governance/code-index/index.json
+  h_af5ac1a9798224 10,12-13,37942-37943,37953-37956,37975-37976,37986-37987,37991-38001,38008-38022,38030-38031,38035-38045,38052-38055,38063-38064,38074-38075,38096-38099,38107-38108,38112-38144,38151-38165,38173-38176,38184-38187,38195-38196,41816-41817
+governance/lib/override-ordering.mjs
+  h_af5ac1a9798224 42,58-68,79-85,92-108,123-128,130,132-134,136-143,145,149-159,164-167,183-220,223-226,259-264,267,273-306,344,347,350-352,355-365,373-384,389-399,402-406,413-419,439-441,474-476
+governance/lib/tmp-literal.mjs
+  h_af5ac1a9798224 51
+governance/test/fixtures/bad-override-ordering/clean.sh
+  h_af5ac1a9798224 16-27,61
+governance/test/override-ordering-lint.test.mjs
+  h_af5ac1a9798224 46-125,165-184,207-224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b349454d00b15c9ae5cc091ffa2cae98356e2df8",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

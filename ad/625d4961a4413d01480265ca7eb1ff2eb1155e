@@ -1,0 +1,25 @@
+governance/plans/software-factory/E7-SELF-AUDIT.md
+  s_7ddeb5d251570f::t_736527af531bc9 26-29
+governance/test/factory-audit.test.mjs
+  s_7ddeb5d251570f::t_4fd48fd4ea5b03 3
+  s_7ddeb5d251570f::t_64f22b91229130 46
+  s_7ddeb5d251570f::t_c782c95827b910 1-2,4-45,47-85
+bin/factory-audit.mjs
+  s_7ddeb5d251570f::t_76e425709e1098 1-152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ad625d4961a4413d01480265ca7eb1ff2eb1155e",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

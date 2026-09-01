@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  s_080a521de9a7ca::t_dd4c4500ffca90 2,4-6,8-21,23,25,27,29-31,33-66,70-79,81-84,86,88-91,93,95-98
+memory/brainstorm-queue.md
+  s_080a521de9a7ca::t_8259f35e945802 1-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "657866c6d55e7bc200c03cfceab8a21814a9032b",
+  "prompts": {},
+  "sessions": {
+    "s_080a521de9a7ca": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed126e47ffe14bskiesEna6Ot",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+bin/provider-alert.mjs
+  s_7ddeb5d251570f::t_f65f91981c156c 1-43
+governance/test/provider-alert.test.mjs
+  s_7ddeb5d251570f::t_9de24747abf5f6 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5f0164f025105f0d825ffaad1feea1e07d6fdbee",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/test/voice-artifacts.test.mjs
+  s_2606de950a60c6::t_6fb3b2cf9e60f7 14-15
+  s_2606de950a60c6::t_85ab9ad715decf 11-13
+  s_2606de950a60c6::t_39e1d5220c1565 16-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6893d06fa7de8151d82f291f752799538fe611af",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

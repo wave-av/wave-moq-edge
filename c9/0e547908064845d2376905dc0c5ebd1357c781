@@ -1,0 +1,30 @@
+governance/bin/wave-money.mjs
+  h_67a1b847dc59d6 1-133
+governance/lib/cli-manifest.mjs
+  h_67a1b847dc59d6 1-32
+governance/plans/agent-native-cli/E0-INVENTORY.md
+  h_67a1b847dc59d6 1-25
+governance/plans/agent-native-cli/E1-MANIFEST.md
+  h_67a1b847dc59d6 1-9
+governance/plans/agent-native-cli/E2-SCHEMA.md
+  h_67a1b847dc59d6 1-9
+governance/plans/agent-native-cli/E3-MCP-GEN.md
+  h_67a1b847dc59d6 1-9
+governance/plans/agent-native-cli/E4-SKILLS-GEN.md
+  h_67a1b847dc59d6 1-9
+governance/plans/agent-native-cli/E5-DOGFOOD.md
+  h_67a1b847dc59d6 1-9
+governance/plans/agent-native-cli/NORTH-STAR.md
+  h_67a1b847dc59d6 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c90e547908064845d2376905dc0c5ebd1357c781",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

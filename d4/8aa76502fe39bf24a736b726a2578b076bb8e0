@@ -1,0 +1,38 @@
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_af2ba68525d1dd 162-177
+  s_60a20469ef4369::t_bd933ad3154d9d 161
+hookcli/tests/filepath-match.sh
+  s_60a20469ef4369::t_e50814a0d9818f 1-37
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_aa2a126eb2d58f 63-67
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_18a83d39f4e77e 86-92
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_ce8cab032da81d 22,27-30
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_292637d6b176cc 33-34
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_b18ede7d608b49 67-70
+hookcli/tests/settings-shard.sh
+  s_60a20469ef4369::t_8d650685bfe764 16-18,23,25-26
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_2a46ce0943a266 91-101
+settings/hooks.d/hookcli.json
+  s_60a20469ef4369::t_341a956f0bbd3d 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d48aa76502fe39bf24a736b726a2578b076bb8e0",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

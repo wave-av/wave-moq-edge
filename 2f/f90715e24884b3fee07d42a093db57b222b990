@@ -1,0 +1,19 @@
+governance/plans/client-toolset-adoption/E3-AUTHED-CAPTURE.md
+  s_baddc91338ed9a::t_2954aa6d21ed87 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2ff90715e24884b3fee07d42a093db57b222b990",
+  "prompts": {},
+  "sessions": {
+    "s_baddc91338ed9a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a3179cdb5d26ffbe5",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

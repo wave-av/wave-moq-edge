@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/RECEIPT-TUI-PROBE.md
+  s_d77777f89719d2::t_58c281d2aed9b4 25-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cee7b7852a5d7d03148c6ded058ff7e7f1a9e647",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

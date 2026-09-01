@@ -1,0 +1,24 @@
+scripts/bugbot/daemon.sh
+  s_3a52a0989b58af::t_cae2651d9f212a 358
+  s_3a52a0989b58af::t_3b3c4f7acceaa7 326-345
+  s_3a52a0989b58af::t_8a75a3afcf3a83 367
+  s_3a52a0989b58af::t_3a9e234bdd6ccc 64-91,96-109
+  s_3a52a0989b58af::t_433c6e065da8e7 171
+  s_3a52a0989b58af::t_b73904c6fbb414 353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "86d8a364d1c44752142f34eeea26b76ee490ad0a",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

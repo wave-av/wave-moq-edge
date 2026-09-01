@@ -1,0 +1,23 @@
+governance/test/drift-lint.test.mjs
+  s_756b33c630d33b::t_79566e01369a2b 1-44
+governance/bin/drift-lint.mjs
+  s_756b33c630d33b::t_2c4a20aa836a0d 1-68
+rules/chokepoint-not-denylist.md
+  s_756b33c630d33b::t_5e922753736d93 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9bc4d656144f083c16282ae73c5b29aca022e9c5",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

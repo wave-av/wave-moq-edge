@@ -1,0 +1,60 @@
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/agents/TAXONOMY.yaml
+  h_af5ac1a9798224 111,122,249-281
+governance/bin/post-merge-replay.mjs
+  h_af5ac1a9798224 15,143-146,163-197,250-253,255,316
+governance/bin/taxonomy.mjs
+  h_af5ac1a9798224 113-125,149-152,162-165
+governance/graph.json
+  h_af5ac1a9798224 7678-7685,16694-16699,17084-17089,17126-17131,17204-17209,18566-18571,19928-19933,24830-24835
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  h_af5ac1a9798224 153-159
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  h_af5ac1a9798224 6
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  h_af5ac1a9798224 37-39
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  h_af5ac1a9798224 40,43-47,51-53,56-58,60-71,76-79,85-88,91-93
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  h_af5ac1a9798224 71-75,83-86
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  h_af5ac1a9798224 46-48
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  h_af5ac1a9798224 79-81,85-87,127-153,300-321,369-374,390-393,404-405,448,454-463,479-482,505,507-513,600-605
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  h_af5ac1a9798224 277,280-308
+governance/plans/finding-closure/E7-MEASURE.md
+  h_af5ac1a9798224 14-17
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 6-14,27-56,70-73,76-81,124-136,180,182-187
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  h_af5ac1a9798224 284-288
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  h_af5ac1a9798224 30-32
+governance/test/post-merge-replay.test.mjs
+  h_af5ac1a9798224 21,97-165
+governance/test/taxonomy.test.mjs
+  h_af5ac1a9798224 126-174
+hooks/doppler-env-guard.sh
+  h_af5ac1a9798224 48-53,61-108,110-120
+hooks/manifest.json
+  h_af5ac1a9798224 351
+hooks/tests/doppler_guard_smoke.sh
+  h_af5ac1a9798224 67-213,215-216,220-224,238-252
+memory/MEMORY.md
+  h_af5ac1a9798224 20
+memory/check-memory-and-public-registry-before-claiming-a-credential-blocker.md
+  h_af5ac1a9798224 1-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0e7ac6443fd90ec7443a6d8b636823608338f5b1",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

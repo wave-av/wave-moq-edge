@@ -1,0 +1,38 @@
+governance/bin/email-archive-freshness.mjs
+  s_9e49fb2dab61f0::t_31358d2d9d96c1 253
+  s_9e49fb2dab61f0::t_e4602efa8b4210 57-63
+  s_9e49fb2dab61f0::t_9a7ed501e86ae1 209-211
+  s_9e49fb2dab61f0::t_f681ffcdc9999c 160-162
+  s_9e49fb2dab61f0::t_f0632fe8bacde7 18-21
+  s_9e49fb2dab61f0::t_16f1193af89d8c 168-169
+  s_9e49fb2dab61f0::t_0e84c94ad48aba 245
+governance/lib/email-archive-freshness.mjs
+  s_9e49fb2dab61f0::t_a06fe4429b6a7f 256-257,260-262
+  s_9e49fb2dab61f0::t_c169bc7038068a 283
+  s_9e49fb2dab61f0::t_627632be82a9bf 71-76
+  s_9e49fb2dab61f0::t_c344992688df82 60-62
+  s_9e49fb2dab61f0::t_eaae61731235e1 217-218,220-228
+  s_9e49fb2dab61f0::t_efb620c84455b7 23-34
+governance/test/email-archive-freshness.test.mjs
+  s_9e49fb2dab61f0::t_cc5b5114d823fe 24
+  s_9e49fb2dab61f0::t_2ad1f38fea8a76 156-216,218,221-259
+  s_9e49fb2dab61f0::t_f1cd5a541da7c6 144-151,153,155
+  s_9e49fb2dab61f0::t_e12adb4fa63786 217,219-220
+  s_9e49fb2dab61f0::t_762d5546d240d4 1,3-6,8-9,30,61,85,97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c1f2be4ca3049a49daa2046b4061344ab3e8140f",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

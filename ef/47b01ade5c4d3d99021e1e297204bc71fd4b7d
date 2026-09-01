@@ -1,0 +1,19 @@
+.github/workflows/e4-shadow-capture.yml
+  s_31059bbfb27db3::t_6e65aee51cb3d7 11-14,19,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ef47b01ade5c4d3d99021e1e297204bc71fd4b7d",
+  "prompts": {},
+  "sessions": {
+    "s_31059bbfb27db3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feaf709f4ffevs77rSklawkjZD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

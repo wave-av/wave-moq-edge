@@ -1,0 +1,20 @@
+rules/prod-supabase-migration-via-branch-merge.md
+  s_e2e3e43d0638c5::t_7f48c2c0c0882b 1-18,23-49
+  s_e2e3e43d0638c5::t_5cdc54e09caf57 19-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "bd1b98dd52e1d06c351447a4d390fe7c7c1a45fe",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

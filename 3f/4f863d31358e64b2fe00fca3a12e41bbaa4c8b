@@ -1,0 +1,21 @@
+governance/DASHBOARD.md
+  s_15127d80763110::t_311e7802810070 25
+governance/graph.json
+  s_15127d80763110::t_3c146928aa0bca 7104-7207,29308-29769
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3f4f863d31358e64b2fe00fca3a12e41bbaa4c8b",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

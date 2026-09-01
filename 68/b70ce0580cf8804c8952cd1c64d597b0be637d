@@ -1,0 +1,149 @@
+.github/actions/content-lints/action.yml
+  s_9bb1b1d1d998d4::t_946ee680df42bb 234-281
+.github/workflows/auto-merge.yml
+  s_9bb1b1d1d998d4::t_9f754d7dc25d6a 225
+.github/workflows/blast-radius.yml
+  s_9bb1b1d1d998d4::t_e582335f58290e 26
+.github/workflows/canon-gap-map-drift.yml
+  s_9bb1b1d1d998d4::t_3c437d1fb8f782 67
+.github/workflows/capability-drift.yml
+  s_9bb1b1d1d998d4::t_6fbc2363d4a44f 45
+.github/workflows/catena-snapshot-staleness.yml
+  s_9bb1b1d1d998d4::t_f5f14299bdfe5a 24-31,145-170,172,177-179,185-188,195-196,198-201,203-213,218-226,239-241,243,249,251-264
+.github/workflows/content-watch.yml
+  s_9bb1b1d1d998d4::t_d631573aa82a36 100,103-110,121-140,142
+.github/workflows/external-ticket-sweep.yml
+  s_9bb1b1d1d998d4::t_57c0466e9c17ad 147-154,156
+.github/workflows/floor-budget.yml
+  s_9bb1b1d1d998d4::t_a6a82cb5c56a56 37
+.github/workflows/gam-conformance.yml
+  s_9bb1b1d1d998d4::t_4b71d56caafc3b 38
+.github/workflows/governance-enforce.yml
+  s_9bb1b1d1d998d4::t_6d77a32c190bed 43
+.github/workflows/governance-publish.yml
+  s_9bb1b1d1d998d4::t_b7204fbaf7db0c 18
+.github/workflows/governance.yml
+  s_9bb1b1d1d998d4::t_47d04e9943cb61 45,48-52,236,270
+.github/workflows/hook-tests-macos.yml
+  s_9bb1b1d1d998d4::t_9547302fa019b8 22
+.github/workflows/hook-tests.yml
+  s_9bb1b1d1d998d4::t_173e18aa4a4d27 56,203
+.github/workflows/law-ref-guard.yml
+  s_9bb1b1d1d998d4::t_9f87d821e3f631 1,3-4,6-7,11-18,20-21,25-27,29-37,39,41-42
+.github/workflows/registry-cadence.yml
+  s_9bb1b1d1d998d4::t_0a955ad59e5ad1 38-39
+.github/workflows/thread-resolved.yml
+  s_9bb1b1d1d998d4::t_8caf0b082d75ff 90
+.github/workflows/workflow-lint.yml
+  s_9bb1b1d1d998d4::t_0a6e276de5f7a7 78
+.github/workflows/wsc-salvage-coverage.yml
+  s_9bb1b1d1d998d4::t_396e5f7749e1e2 37
+governance/bin/call-contract-lint.mjs
+  s_9bb1b1d1d998d4::t_5e9be853314a07 1-76
+governance/bin/catena-device-model.mjs
+  s_9bb1b1d1d998d4::t_c59f279413ad6e 69,174-176,328-361
+governance/bin/catena-fixture-fidelity.mjs
+  s_9bb1b1d1d998d4::t_45b2dadf43afff 1-161
+governance/bin/enforcement-tables.mjs
+  s_9bb1b1d1d998d4::t_c3e2ce1c9b2c93 157-162
+governance/bin/law-ref-guard.mjs
+  s_9bb1b1d1d998d4::t_008c9e05e76378 1-127
+governance/bin/mint-token.mjs
+  s_9bb1b1d1d998d4::t_63d70c62d1c272 28,30-31,126,131-142,144-155,157-169,180-188,213-240
+governance/bin/stuck-queue-detect.mjs
+  s_9bb1b1d1d998d4::t_09090e9123b0f4 1-133
+governance/bin/workflow-lint-issue-dedupe.mjs
+  s_9bb1b1d1d998d4::t_d8431166ae0bf6 1-90
+governance/bin/workflow-lint.mjs
+  s_9bb1b1d1d998d4::t_8ae2f50f311e3f 26-29,324
+governance/lib/catena-extract.mjs
+  s_9bb1b1d1d998d4::t_faad7a453fb148 41-70,73-76,83-86,96-99
+governance/lib/catena-snapshot.mjs
+  s_9bb1b1d1d998d4::t_894895d83538e2 131-156
+governance/lib/email-craft-rules.mjs
+  s_9bb1b1d1d998d4::t_dc0cbb5f2fa674 22-25,50-52,179-180,182-184
+governance/lib/email-html-rules.mjs
+  s_9bb1b1d1d998d4::t_3421412b55d399 1-104
+governance/lib/email-html-wrapper.mjs
+  s_9bb1b1d1d998d4::t_1cf46c31094552 193-203,210,296-402
+governance/lib/platform-status-probes.mjs
+  s_9bb1b1d1d998d4::t_4a261b4a4e58ce 108,121-138
+governance/plans/ffmpeg9-lei/FLEET-SCALE-LADDER.md
+  s_9bb1b1d1d998d4::t_5916a7561d4a6b 11-13
+governance/plans/ffmpeg9-lei/SCALE-LADDER.md
+  s_9bb1b1d1d998d4::t_d2e958f8b53833 29-33
+governance/plans/integrations/METER-PRICING.md
+  s_9bb1b1d1d998d4::t_8f256d0144b859 1-91
+governance/plans/integrations/money-rail-plugin.md
+  s_9bb1b1d1d998d4::t_50ec3baf7fbce6 1-175
+governance/plans/model-routing/E1-IMPLEMENT.md
+  s_9bb1b1d1d998d4::t_56f43b4e4b2d95 1-23
+governance/plans/model-routing/E2-EVAL.md
+  s_9bb1b1d1d998d4::t_564b039b4eaa94 10,66-78
+governance/plans/network-edge-plane/LEARNINGS.md
+  s_9bb1b1d1d998d4::t_b9481e9914f0bb 1-23
+governance/plans/network-edge-plane/SUBDOMAIN-SCOREBOARD.md
+  s_9bb1b1d1d998d4::t_62d9bf9d9f8912 33-36
+governance/plans/network-edge-plane/TASK-LOG.md
+  s_9bb1b1d1d998d4::t_0bdb43a52b1bb7 19-21
+governance/plans/vision-ingest/E0-INGEST.md
+  s_9bb1b1d1d998d4::t_2c4c40fc67dbeb 6-21
+governance/plans/vision-ingest/INGEST-CONTAINER.md
+  s_9bb1b1d1d998d4::t_3f6cb3e58d4f6a 1-217
+governance/plans/wave-native-cutover/P1-CAPABILITY-PARITY-LEDGER.md
+  s_9bb1b1d1d998d4::t_8eb32e210ebbca 1-75
+governance/state/reviewer-liveness.json
+  s_9bb1b1d1d998d4::t_2c23435fc2fe42 2,31,47,55-56,61,63,69-77,79-80,85,87-88
+governance/test/catena-device-model.test.mjs
+  s_9bb1b1d1d998d4::t_05245791397c94 171-206
+governance/test/catena-exit-contract.test.mjs
+  s_9bb1b1d1d998d4::t_613569ff41263d 1-162
+governance/test/catena-snapshot-gate.test.mjs
+  s_9bb1b1d1d998d4::t_c5254455de34aa 229-253
+governance/test/ci-surface.test.mjs
+  s_9bb1b1d1d998d4::t_7483cecb9c6137 45
+governance/test/email-overwide-important.test.mjs
+  s_9bb1b1d1d998d4::t_5fc452feacc817 1-72
+governance/test/email-overwide.test.mjs
+  s_9bb1b1d1d998d4::t_17612d6fb7a4d1 1-111
+governance/test/fixtures/catena/control.ts.txt
+  s_9bb1b1d1d998d4::t_9d2f3a5cfd486a 57-58,63
+governance/test/law-ref-guard.test.mjs
+  s_9bb1b1d1d998d4::t_0ded76f9e587e0 1-186
+governance/test/lib/workflow-lint-harness.mjs
+  s_9bb1b1d1d998d4::t_74751a78141f01 1-40
+governance/test/platform-status-probe-coupling.test.mjs
+  s_9bb1b1d1d998d4::t_1a1464a975a9e3 3-28,31,35,37-38,40-42,46-70,72-73,78-79,82,85-86
+governance/test/stuck-queue-detect.test.mjs
+  s_9bb1b1d1d998d4::t_01956ce0c439c1 1-85
+governance/test/workflow-lint-issue-dedupe.test.mjs
+  s_9bb1b1d1d998d4::t_8c42fb18b641f6 1-91
+governance/test/workflow-lint.test.mjs
+  s_9bb1b1d1d998d4::t_7dbba909ec362c 5-8,11-13
+governance/tools/wave-registry/cadence.mjs
+  s_9bb1b1d1d998d4::t_09a78d6884e451 159-197
+governance/tools/wave-registry/wave-registry.mjs
+  s_9bb1b1d1d998d4::t_dacf024bb17ac3 13,90,484-489
+governance/voice/voice-gate.mjs
+  s_9bb1b1d1d998d4::t_7c879a61cf87b4 16,28,30-31,89
+governance/voice/voice-law.mjs
+  s_9bb1b1d1d998d4::t_8b2742b0a99a71 28-52,70-75
+rules/background-work-must-fail-loud.md
+  s_9bb1b1d1d998d4::t_17680db7eacad6 52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "68b70ce0580cf8804c8952cd1c64d597b0be637d",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

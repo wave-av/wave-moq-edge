@@ -1,0 +1,33 @@
+index.ts
+  s_6e7ad4df769349::t_bedad8986fcef6 107-111,120
+  s_6e7ad4df769349::t_4af0fcd7089723 32
+  s_6e7ad4df769349::t_45ad223449de8b 161-163,168
+moq-session-do.ts
+  s_6e7ad4df769349::t_7e9241f391bf7e 35
+  s_6e7ad4df769349::t_81427caf880bc7 189-195
+src/gateway-trust.ts
+  s_6e7ad4df769349::t_7482c8a2cba705 34-39
+src/wave-auth.ts
+  s_6e7ad4df769349::t_8ab66556c8c667 202-225
+__tests__/declared-protocol-strip.test.ts
+  s_6e7ad4df769349::t_d7d7c40a1ca97f 1-116
+__tests__/wave-auth.test.ts
+  s_6e7ad4df769349::t_7023ce3da1b7bd 14-16
+  s_6e7ad4df769349::t_09d8427688ac90 189-218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2ba3cc76d92006aac233f4d39d1f9abfe787052b",
+  "prompts": {},
+  "sessions": {
+    "s_6e7ad4df769349": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "91274c95-abfb-4ffd-b243-f2916d2e4e07",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

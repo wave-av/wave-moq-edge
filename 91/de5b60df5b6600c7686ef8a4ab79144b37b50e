@@ -1,0 +1,25 @@
+rules/relocation-invariant-metering.md
+  s_ee374fdf782767::t_aa93252c38b536 1-47
+governance/ENFORCEMENT-COVERAGE.md
+  s_ee374fdf782767::t_ef5f7dfea16f78 5,12,14,123,326
+governance/contract.md
+  s_ee374fdf782767::t_11e71e710ff67f 51,53
+governance/graph.json
+  s_ee374fdf782767::t_093deabe6e488f 1607-1613,17832-17849
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "91de5b60df5b6600c7686ef8a4ab79144b37b50e",
+  "prompts": {},
+  "sessions": {
+    "s_ee374fdf782767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e20f63ea-8846-4609-bc0b-ebc7bdd03bfc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_a0707f2f931ab6::t_e9846758c981c6 390-395
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6c1a510864b5b052b1bc9c7bf5509dc523ae8baf",
+  "prompts": {},
+  "sessions": {
+    "s_a0707f2f931ab6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe901a5d1ffep1aFPUJpqlTa7d",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

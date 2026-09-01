@@ -1,0 +1,26 @@
+governance/lib/computer-use-action-class.mjs
+  s_9bb1b1d1d998d4::t_d39fdef0a024c2 237-295
+  s_9bb1b1d1d998d4::t_b838abec5f951d 178-189
+  s_9bb1b1d1d998d4::t_5bb806fb983baa 312-320,322-331
+governance/test/computer-use-action-class.test.mjs
+  s_9bb1b1d1d998d4::t_b297137e5ae881 158-190,193,200-221
+  s_9bb1b1d1d998d4::t_037b830a04b4e1 222,227
+governance/lib/toolset-executor-core.mjs
+  s_9bb1b1d1d998d4::t_980cf48bfae324 130-131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "dd7532c1dea3e663377a56e1d5ecdd8732b2fd18",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

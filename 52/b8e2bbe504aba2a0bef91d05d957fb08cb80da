@@ -1,0 +1,24 @@
+governance/plans/runtime-economy/bridge/wrangler.toml
+  s_2b4acc7ceba309::t_8ef733cfc2f7ac 9-11
+  s_2b4acc7ceba309::t_fb59baa1f84378 8
+governance/plans/runtime-economy/bridge/worker.js
+  s_2b4acc7ceba309::t_5b2fd0d1c1c4af 1-3
+  s_2b4acc7ceba309::t_b8040b42371ca3 70,74,76
+  s_2b4acc7ceba309::t_5a8e3325472427 99-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "52b8e2bbe504aba2a0bef91d05d957fb08cb80da",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

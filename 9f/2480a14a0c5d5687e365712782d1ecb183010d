@@ -1,0 +1,20 @@
+governance/plans/sandbox-tier-ladder/E5-DEVERCEL.md
+  s_f9ff6dc10be18e::t_251ce61343d3e5 39
+  s_f9ff6dc10be18e::t_418d08fac358ab 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "9f2480a14a0c5d5687e365712782d1ecb183010d",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

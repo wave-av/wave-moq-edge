@@ -1,0 +1,21 @@
+governance/test/epic-status-stale-gate.test.mjs
+  s_264ae386838c57::t_12d705a4af8a4c 1-202
+governance/test/epic-status-provenance.test.mjs
+  s_264ae386838c57::t_de2a9f9a2bd540 6-11,15,17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7b09cbe216a50e7000883130ff738a5292765729",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

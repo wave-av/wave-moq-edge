@@ -1,0 +1,22 @@
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_f7392322922e26 115
+  s_60a20469ef4369::t_6e8f3b672f2eae 98
+hookcli/tests/t3-classifier.sh
+  s_60a20469ef4369::t_d43d8b5ac9f941 147,150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "70b9331cd3198672cef5d25eb21f027cd8895f37",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

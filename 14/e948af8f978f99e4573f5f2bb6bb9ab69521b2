@@ -1,0 +1,47 @@
+runbooks/lib/observe.mjs
+  s_c24357e71ae5bc::t_c103efe50c4c5f 41-44,46,52-53,61-63,65,70,77-78
+  s_c24357e71ae5bc::t_e29959d19efdd5 45
+  s_c24357e71ae5bc::t_607ff9ebfa59f3 23
+  s_c24357e71ae5bc::t_c8cdf2a33f00d3 156-158,172
+.gitignore
+  s_c24357e71ae5bc::t_2681185d08c877 113-120
+runbooks/bin/runbook.mjs
+  s_c24357e71ae5bc::t_ef7abe68cb770d 195-199
+  s_c24357e71ae5bc::t_70427acbfc1e84 240-243
+  s_c24357e71ae5bc::t_cdea0c3dce286e 37
+runbooks/lib/ambient-cache.mjs
+  s_c24357e71ae5bc::t_5a0f6c991cbabc 1-86
+runbooks/bin/calibrate-cache.mjs
+  s_c24357e71ae5bc::t_2ecd38db4656ed 1-54
+hooks/bin/runbook-use-runner.mjs
+  s_c24357e71ae5bc::t_59b82eaed8d7c2 21
+  s_c24357e71ae5bc::t_cfb843d0867a21 96-99
+runbooks/test/observe.test.mjs
+  s_c24357e71ae5bc::t_411a5672ea9afb 247-328
+governance/state/runbook-ambient-cache.json
+  s_b343b90d214886::t_373c636e16e62c 1-221
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "14e948af8f978f99e4573f5f2bb6bb9ab69521b2",
+  "prompts": {},
+  "sessions": {
+    "s_b343b90d214886": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a39b7aee6d13caf70",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

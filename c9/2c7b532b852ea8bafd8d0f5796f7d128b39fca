@@ -1,0 +1,21 @@
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_264ae386838c57::t_5d0bf43d2fa941 10-18
+governance/graph.json
+  s_264ae386838c57::t_5b2927149da4be 3583
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c92c7b532b852ea8bafd8d0f5796f7d128b39fca",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

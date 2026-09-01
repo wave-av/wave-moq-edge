@@ -1,0 +1,20 @@
+scripts/watchdog.ts
+  s_9673f7dc0983fb::t_c3152ded2dd1c9 45-47
+  s_9673f7dc0983fb::t_de15e50b7b7bac 81-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bc327a6c9cfcd0059d29158e85ea2ac6c80659ae",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

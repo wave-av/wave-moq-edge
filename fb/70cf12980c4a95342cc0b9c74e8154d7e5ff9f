@@ -1,0 +1,21 @@
+governance/bin/email-archive.mjs
+  s_bc45ad868fb3d0::t_ba40a212a2c45a 3
+governance/bin/lane-state.mjs
+  s_bc45ad868fb3d0::t_360758b99969ff 3,64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "fb70cf12980c4a95342cc0b9c74e8154d7e5ff9f",
+  "prompts": {},
+  "sessions": {
+    "s_bc45ad868fb3d0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd5698542ffeCdQCDXVVodtry6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

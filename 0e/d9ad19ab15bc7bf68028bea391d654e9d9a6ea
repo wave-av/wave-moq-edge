@@ -1,0 +1,22 @@
+governance/plans/ffmpeg9-lei/action/E17-P0-BRAINSTORM.md
+  s_8d34dc2035def4::t_f257fbfac6cdfe 1-67,71,73-74
+  s_8d34dc2035def4::t_f78c15fc63fe6b 68-70,72,75-76
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  s_8d34dc2035def4::t_b534f92828f747 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0ed9ad19ab15bc7bf68028bea391d654e9d9a6ea",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/test/drift-lint-fleet-survey.test.mjs
+  s_9bb1b1d1d998d4::t_4a14f69d406906 1-167
+.github/workflows/fleet-drift.yml
+  s_9bb1b1d1d998d4::t_2bf66ab2993da8 212-219,221
+  s_9bb1b1d1d998d4::t_776fe765a21b9c 220,222-224
+.github/actions/drift-lint-fleet-survey/action.yml
+  s_9bb1b1d1d998d4::t_396eb515b5719b 1-74
+  s_9bb1b1d1d998d4::t_9631aecee544fb 75
+governance/bin/check.mjs
+  s_9bb1b1d1d998d4::t_592c2df6e576cd 154-164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a77a0f0ec5c696ed5a2e0c573f59607efc6d727e",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

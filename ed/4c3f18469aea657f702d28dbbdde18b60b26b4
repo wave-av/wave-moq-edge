@@ -1,0 +1,24 @@
+governance/plans/voice-completeness/E2-WOW-JUDGE-ROLLOUT.md
+  s_2606de950a60c6::t_8cf6d621d065f8 4,6-9
+governance/story/wave-story.mjs
+  s_2606de950a60c6::t_1d9348eacf0cfc 112-138,150,157
+  s_2606de950a60c6::t_8f0fc1203f9934 20
+governance/test/wave-story.test.mjs
+  s_2606de950a60c6::t_a0d1e22ef37aa6 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ed4c3f18469aea657f702d28dbbdde18b60b26b4",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+hookcli/track4b.json
+  s_60a20469ef4369::t_811456ddbcf686 41-46
+hookcli/tests/parity-memory-write-guard.sh
+  s_60a20469ef4369::t_a0011092843331 1-67
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_fc0fcf6bc2ac38 160-167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "17c223ce5eb7ee0c4b9f0659b425767fa767ef0e",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

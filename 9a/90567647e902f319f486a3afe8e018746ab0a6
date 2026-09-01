@@ -1,0 +1,21 @@
+governance/plans/runtime-economy/leaderboard-tui/bun.lock
+  s_700cd0ad928eea::t_a195cfbf86a90c 8,17,19,21,23,25,27,29,31,33
+governance/plans/runtime-economy/leaderboard-tui/package.json
+  s_700cd0ad928eea::t_ccd2fdab65d853 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9a90567647e902f319f486a3afe8e018746ab0a6",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

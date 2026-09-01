@@ -1,0 +1,30 @@
+fleet/agents/bugbot.json
+  s_3a52a0989b58af::t_2a390d2f3de0ce 1-8
+tests/test_agent_status.py
+  s_3a52a0989b58af::t_66024d43d7ad70 123-178
+  s_3a52a0989b58af::t_3cf1cb389c4ea7 10
+  s_3a52a0989b58af::t_87c38340735122 204-206
+scripts/agent_status.py
+  s_3a52a0989b58af::t_f6cae5dad8c35e 71-132
+  s_3a52a0989b58af::t_276d6eae5c1c60 228-232,235-245
+  s_3a52a0989b58af::t_ee4bb1d9a30e00 309-316,318-329,334,339,345
+  s_3a52a0989b58af::t_f66d96cdb30abc 28
+fleet/agents/README.md
+  s_3a52a0989b58af::t_7ab7410a4e2b45 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0d678a1cc1a6e3dbf1a11a54d6e305f27efd9b06",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

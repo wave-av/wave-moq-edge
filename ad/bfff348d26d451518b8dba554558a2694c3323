@@ -1,0 +1,27 @@
+governance/bin/enforce-ramp.mjs
+  s_60a20469ef4369::t_d0f1c76ea2b3cd 460
+  s_60a20469ef4369::t_1c57fcc294dcd2 157-162
+  s_60a20469ef4369::t_84522f73e25b92 445
+governance/test/enforce-ramp.test.mjs
+  s_60a20469ef4369::t_b07dda04ba8030 74-92
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_0281ddd780f9cb 5,694,696,699,707-709,712-718,720
+governance/code-index/index.json
+  s_60a20469ef4369::t_a36dc47983b3ac 7,9,6686-6687,6708-6709,6735-6745,6829-6830,6840-6841,6851-6852,6878-6888,6895-6896,6906-6907,6917-6918,6928-6929,6939-6940,6950-6951,6972-6973
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "adbfff348d26d451518b8dba554558a2694c3323",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

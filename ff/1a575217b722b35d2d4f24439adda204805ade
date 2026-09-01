@@ -1,0 +1,90 @@
+governance/plans/self-play-refactoring/E3-RL-INTEGRATION.md
+  s_76bcfdc05b3c4d::t_eaab5df5e5e74e 19-42
+governance/plans/genome-epigenome-releases/E0-GENOME.md
+  s_6dff29046d1e58::t_699d5dabaf2965 181-194
+governance/plans/universal-data-representation/E1-UNIFY-PILOT.md
+  s_76bcfdc05b3c4d::t_964932bc453a03 105-132
+governance/plans/conservation-law-design/E0-METHOD.md
+  s_6dff29046d1e58::t_82eb8d140aaa9b 17-30
+governance/plans/universal-data-representation/E3-CANON-DOGMA.md
+  s_76bcfdc05b3c4d::t_c74b39a4d8edaa 19-46
+governance/plans/agent-execution-platform/E1-INTERNAL-ENFORCE.md
+  s_157f2b8fd9c6ee::t_8a78db41ef36c7 11-37
+governance/plans/universal-data-representation/E0-REDUCTION-CATALOG.md
+  s_76bcfdc05b3c4d::t_587cb78c0fbf70 74-102
+governance/plans/explainable-media-platform/E0-FOUNDATION.md
+  s_157f2b8fd9c6ee::t_59abe1e6b530e2 9-36
+governance/plans/self-play-refactoring/E0-GAME-DEF.md
+  s_76bcfdc05b3c4d::t_8b69147054198d 110-137
+governance/plans/conservation-law-design/E2-CONSERVATION-LINT.md
+  s_6dff29046d1e58::t_dab5c41de14988 15-28
+governance/plans/self-play-refactoring/E1-SELFPLAY-PILOT.md
+  s_76bcfdc05b3c4d::t_0f119d13802261 40-47
+  s_76bcfdc05b3c4d::t_e4c30410e63300 18-39
+governance/plans/explainable-media-platform/E3-DECISION-GATE.md
+  s_157f2b8fd9c6ee::t_adfe4d89415ec9 11-37
+governance/plans/explainable-media-platform/E2-INTERNAL-PILOT.md
+  s_157f2b8fd9c6ee::t_dc82f10a1e06c2 11-37
+governance/plans/genome-epigenome-releases/E1-METHYLATION.md
+  s_6dff29046d1e58::t_0c95324de53c41 226-240
+governance/plans/agent-execution-platform/E2-METER-DESIGN.md
+  s_157f2b8fd9c6ee::t_1fa160b4b7bfa1 11-37
+governance/plans/inference-by-effects/E0-EFFECT-MODEL.md
+  s_76bcfdc05b3c4d::t_7511bef7533de6 138-166
+governance/plans/agent-execution-platform/E0-SURFACE-DEF.md
+  s_157f2b8fd9c6ee::t_3f4d646a4fe0fb 10-36
+governance/plans/genome-epigenome-releases/E2-REDLINES.md
+  s_6dff29046d1e58::t_6737fb9104e674 100-113
+governance/plans/universal-data-representation/E2-LOSSLESS-GATE.md
+  s_76bcfdc05b3c4d::t_67205ea56fe355 20-47
+governance/plans/inference-by-effects/E3-LAKEHOUSE-INTEGRATION.md
+  s_76bcfdc05b3c4d::t_5a18490293ecd7 20-43
+governance/plans/inference-by-effects/E1-DRIFT-PROBE.md
+  s_76bcfdc05b3c4d::t_7280663b29f1fb 18-42
+governance/plans/agent-execution-platform/E3-EXTERNAL-GATE.md
+  s_157f2b8fd9c6ee::t_221305abfbf501 11-37
+governance/plans/inference-by-effects/E2-ORACLE-CERT.md
+  s_76bcfdc05b3c4d::t_613bf85fc1f200 20-43
+governance/plans/conservation-law-design/E3-CANON.md
+  s_6dff29046d1e58::t_5cfc27e93aa09d 17-30
+governance/plans/conservation-law-design/E1-POC-GATEWAY.md
+  s_6dff29046d1e58::t_701800afb1ba9b 18-31
+governance/plans/self-play-refactoring/E2-AIRGAP-GATE.md
+  s_76bcfdc05b3c4d::t_7e40b1536a64cf 79-107
+governance/plans/genome-epigenome-releases/E3-PILOT.md
+  s_6dff29046d1e58::t_092ad4e66da7f4 17-30
+governance/plans/explainable-media-platform/E1-INERT-SPOKES.md
+  s_157f2b8fd9c6ee::t_ac624a6e682c22 11-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ff1a575217b722b35d2d4f24439adda204805ade",
+  "prompts": {},
+  "sessions": {
+    "s_157f2b8fd9c6ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006aac0a4ffeWuTNRSqpZflXNo",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6dff29046d1e58": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006aae0baffeGnGtsfNEJKLpXe",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_76bcfdc05b3c4d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006aad066ffeHOYTk4NpXHhR03",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

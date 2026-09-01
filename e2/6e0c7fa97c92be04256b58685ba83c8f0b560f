@@ -1,0 +1,22 @@
+.github/workflows/checks.yml
+  s_07acdfa7e3709a::t_54dfbf8c438b63 250
+  s_07acdfa7e3709a::t_ded0e68306e646 220-221
+frameworks/copywriting/voice-and-tone.md
+  s_07acdfa7e3709a::t_8e13d0fc617c6c 58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e26e0c7fa97c92be04256b58685ba83c8f0b560f",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

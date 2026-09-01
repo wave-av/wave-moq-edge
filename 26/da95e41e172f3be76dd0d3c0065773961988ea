@@ -1,0 +1,26 @@
+scripts/bugbot/review.py
+  s_3a52a0989b58af::t_3f80a91e359b66 70-73,96,127-130,761-772,777-785,787-788
+  s_3a52a0989b58af::t_8fbd2da2a1aecc 48-49
+scripts/bugbot/ghio.py
+  s_3a52a0989b58af::t_1690ea6eabfc55 1-143
+scripts/bugbot/test_chunking.py
+  s_3a52a0989b58af::t_b67e61c8727579 1-129
+scripts/bugbot/chunking.py
+  s_3a52a0989b58af::t_9431847223c9bf 1-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "26da95e41e172f3be76dd0d3c0065773961988ea",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

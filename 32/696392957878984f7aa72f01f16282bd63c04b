@@ -1,0 +1,33 @@
+governance/bin/mesh-refusal-query.mjs
+  s_15127d80763110::t_b3514ae97f7bc9 73
+governance/test/mesh-refusal-read-headers.test.mjs
+  s_15127d80763110::t_c9c614d19df21b 1-96
+governance/lib/mesh-refusal-query.mjs
+  s_15127d80763110::t_f41a678d93a390 86-89
+  s_15127d80763110::t_60371517a9bc48 73-76
+  s_15127d80763110::t_928cc21cc2fa21 142-143
+  s_15127d80763110::t_746a4f4bd09519 288-296
+governance/lib/mesh-refusal-read.mjs
+  s_15127d80763110::t_bf732006fdb6fe 42-47,49,53-65
+  s_15127d80763110::t_55a2744b44a69b 147-154
+  s_15127d80763110::t_48c6244082b497 181
+  s_15127d80763110::t_86cd4361a9f412 111,116,120-132
+  s_15127d80763110::t_48716962ed4554 66
+  s_15127d80763110::t_c8cc6aaccef728 133-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "32696392957878984f7aa72f01f16282bd63c04b",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

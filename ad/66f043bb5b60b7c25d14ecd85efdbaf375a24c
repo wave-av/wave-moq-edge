@@ -1,0 +1,61 @@
+scripts/bugbot/review.py
+  ai_agent 1-877
+scripts/bugbot/aggregate.py
+  ai_agent 1-172
+scripts/bugbot/knowledge/competitor_rules.json
+  ai_agent 1-19
+scripts/bugbot/learn.py
+  ai_agent 1-415
+.github/workflows/bot-review-gate.yml
+  s_07acdfa7e3709a::t_0fb06dcb861808 73-74
+tests/test_bugbot.py
+  s_07acdfa7e3709a::t_14a8586c119123 1-423
+scripts/bugbot/orchestrate.py
+  ai_agent 1-293
+scripts/bugbot/WHATS-NEW.md
+  ai_agent 1-51
+scripts/bugbot/daemon.sh
+  ai_agent 1-86
+scripts/bugbot/SUITE.md
+  ai_agent 1-63
+scripts/bugbot/MODELS.md
+  ai_agent 1-85
+scripts/bugbot/com.wave.bugbot.plist
+  ai_agent 1-46
+scripts/bugbot/SETUP.md
+  ai_agent 1-183
+scripts/bugbot/deps.py
+  ai_agent 1-158
+scripts/bugbot/harvest.py
+  ai_agent 1-160
+scripts/bugbot/CALIBRATION.md
+  ai_agent 1-72
+scripts/bugbot/bench.py
+  ai_agent 1-167
+scripts/bugbot/knowledge/knowledge.py
+  ai_agent 1-115
+scripts/bugbot/knowledge/security_kb.json
+  ai_agent 1-105
+scripts/bugbot/knowledge/sync.py
+  ai_agent 1-166
+scripts/bugbot/runtime.py
+  ai_agent 1-64
+scripts/bugbot/modelfiles/wave-bugbot-reviewer.Modelfile
+  ai_agent 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ad66f043bb5b60b7c25d14ecd85efdbaf375a24c",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

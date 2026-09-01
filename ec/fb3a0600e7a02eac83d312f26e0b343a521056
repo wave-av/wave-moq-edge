@@ -1,0 +1,45 @@
+governance/sources/lawbook.json
+  s_33d5a62459f688::t_f90549dc8641ce 23-29
+governance/plans/post-merge-integrity/NORTH-STAR.md
+  s_9b6e8926e8a726::t_f2ed2a49cc7b28 129-130
+governance/plans/capability-registry/NORTH-STAR.md
+  s_9b6e8926e8a726::t_9a9dc2c94fc2c4 78-79
+governance/plans/universal-data-representation/NORTH-STAR.md
+  s_33d5a62459f688::t_a4f4f11b52940e 65
+governance/plans/self-play-refactoring/NORTH-STAR.md
+  s_33d5a62459f688::t_22e4488a217da2 63-64
+governance/plans/conservation-law-design/NORTH-STAR.md
+  s_33d5a62459f688::t_255d6e8cfaf56a 58-59
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_9b6e8926e8a726::t_93a347c10d53a2 46-47
+governance/plans/inference-by-effects/NORTH-STAR.md
+  s_33d5a62459f688::t_d9a72e089208be 63
+governance/plans/wave-mesh-fabric/NORTH-STAR.md
+  s_9b6e8926e8a726::t_0db8df68f5948f 137
+governance/plans/genome-epigenome-releases/NORTH-STAR.md
+  s_33d5a62459f688::t_cc8440b6b26f36 60-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ecfb3a0600e7a02eac83d312f26e0b343a521056",
+  "prompts": {},
+  "sessions": {
+    "s_33d5a62459f688": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0071eebc8ffelA266J1ne8G5Ty",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9b6e8926e8a726": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0071eda57ffeYIWIf2zyuBYivf",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_d706c977cf66bf 299-303
+  s_60a20469ef4369::t_c10b219f4e03e6 53-55,57-58
+hookcli/tests/fixtures/echo-env.sh
+  s_60a20469ef4369::t_61b0359bd78e91 1-5
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_017596aeccab26 687-691
+hooks/bin/gen-manifest.mjs
+  s_60a20469ef4369::t_5f7b94764b0c29 45-58
+  s_60a20469ef4369::t_af403da57999cb 154-158
+  s_60a20469ef4369::t_3921d49a3fdafe 114-118
+hookcli/lib/session-exec.sh
+  s_60a20469ef4369::t_0e952d1ab0b3e7 1-113
+hookcli/tests/exec-env.sh
+  s_60a20469ef4369::t_da8ddbb2b100a3 1-39
+hooks/manifest.json
+  s_6fbc9dfcba8bd1::t_8987352e65c43b 416-418,1211-1213
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "653e45a8f0bf2356c599c57597ef35fc6e7cfd77",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_6fbc9dfcba8bd1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2f54504ea350bc0f",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

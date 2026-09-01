@@ -1,0 +1,56 @@
+hooks/session-modified-observer.sh
+  s_60a20469ef4369::t_f76e98dc1a47b3 1-33
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_8049f873936ca5 59-89
+  s_60a20469ef4369::t_87fcbfc8609d86 142
+hooks/bin/session-modified-runner.mjs
+  s_60a20469ef4369::t_01600f3136104c 1-47
+settings/settings.base.json
+  s_60a20469ef4369::t_ed0ddebe7d4242 83
+  s_60a20469ef4369::t_e59a8114ff7b4b 78-82,84-86
+  s_60a20469ef4369::t_94ac3269522061 77
+hookcli/bin/require-graduation-report.mjs
+  s_60a20469ef4369::t_c399a9a607efb1 68-80
+  s_60a20469ef4369::t_ff674876e0d00f 110-111,113
+  s_60a20469ef4369::t_d78d0b847597d9 124-129,132,136-137,139-145,147,149-150,154-157,168-170
+hookcli/tests/require-graduation-report.sh
+  s_60a20469ef4369::t_1e75003a4fbac1 146-164
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_fd0d66a0b8efad 74
+  s_60a20469ef4369::t_baf86abcc0efaa 25,27
+  s_60a20469ef4369::t_fe3ea8a68cfbd8 91,104-113
+  s_60a20469ef4369::t_50e47560a485ef 2-16,19,22
+hooks/bin/session-modified-capture.mjs
+  s_60a20469ef4369::t_a24965dce9f5b3 1-18,37-59
+  s_60a20469ef4369::t_efa88867e70fa2 19-36
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_a453f48a0b2082 232
+  s_60a20469ef4369::t_97cb96148bdfe5 220
+  s_60a20469ef4369::t_f77dff8de39a31 224
+hookcli/tests/session-modified.sh
+  s_60a20469ef4369::t_3c50f542d23a4f 1-123
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_a905e0529a194c 81-86
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_bb2298f4f3b914 127
+governance/graph.json
+  s_60a20469ef4369::t_8ffbcdebb95604 3975-3983,16035-16046
+hooks/manifest.json
+  s_60a20469ef4369::t_5e861673cce368 841-861
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "24eff6dd2d147235db8dd82f6858b577bc787c29",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

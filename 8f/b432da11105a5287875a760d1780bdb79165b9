@@ -1,0 +1,57 @@
+governance/plans/mlvc-conformance/NORTH-STAR.md
+  s_8d34dc2035def4::t_92b06a2ea61c3d 1-29
+governance/plans/neural-moq-lane/E1-DECODER-SPIKE.md
+  s_8d34dc2035def4::t_dc5415730ec775 1-9
+governance/plans/mlvc-conformance/E1-SUITE-TOOL.md
+  s_8d34dc2035def4::t_08d05a5dde65e1 1-9
+governance/plans/mlvc-conformance/E3-PARTNER-PROOF.md
+  s_8d34dc2035def4::t_68107057e8bedc 1-9
+governance/plans/mlvc-conformance/E2-PUBLISH.md
+  s_8d34dc2035def4::t_683ff9431b09f3 1-9
+governance/plans/mlvc-conformance/E0-VECTOR-CORPUS.md
+  s_8d34dc2035def4::t_00df2398a8c214 1-9
+governance/plans/neural-moq-lane/E3-LIVE-ARENA.md
+  s_8d34dc2035def4::t_992603bf6955df 1-9
+governance/plans/neural-contribution/E0-MEASURE.md
+  s_8d34dc2035def4::t_07c6bad565b84f 1-9
+governance/plans/neural-archive-codec/E0-STORAGE-MEASURE.md
+  s_8d34dc2035def4::t_108facbb5915da 1-9
+governance/plans/neural-archive-codec/E3-MARGIN-RECEIPT.md
+  s_8d34dc2035def4::t_65fb04f3f7df8a 1-9
+governance/plans/neural-contribution/E2-DECODE-SURFACE.md
+  s_8d34dc2035def4::t_fea91d9aebb6e6 1-9
+governance/plans/neural-contribution/E3-METER.md
+  s_8d34dc2035def4::t_a5c4f71011637e 1-9
+governance/plans/neural-archive-codec/E2-LEDGER-ATTRIBUTION.md
+  s_8d34dc2035def4::t_16d652f0bf478f 1-9
+governance/plans/neural-moq-lane/NORTH-STAR.md
+  s_8d34dc2035def4::t_a32c15ab7ebac5 1-29
+governance/plans/neural-contribution/E1-EDGE-ENCODER.md
+  s_8d34dc2035def4::t_d5e526981efdc6 1-9
+governance/plans/neural-moq-lane/E2-SCHEDULER-INTERPLAY.md
+  s_8d34dc2035def4::t_081691cc8c806c 1-9
+governance/plans/neural-archive-codec/NORTH-STAR.md
+  s_8d34dc2035def4::t_21d4459f88b12d 1-29
+governance/plans/neural-archive-codec/E1-REENCODE-PIPELINE.md
+  s_8d34dc2035def4::t_506633d10c7ef1 1-9
+governance/plans/neural-contribution/NORTH-STAR.md
+  s_8d34dc2035def4::t_965721b52af2c9 1-29
+governance/plans/neural-moq-lane/E0-CATALOG-REAL.md
+  s_8d34dc2035def4::t_02ec85d00af406 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8fb432da11105a5287875a760d1780bdb79165b9",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

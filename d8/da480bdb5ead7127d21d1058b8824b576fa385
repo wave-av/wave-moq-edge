@@ -1,0 +1,54 @@
+hookcli/lib/t3-pr-merge.mjs
+  s_be40541f6fd98b::t_d63c1efcb0401d 37
+  s_be40541f6fd98b::t_c58aaac11d2313 44-47
+  s_be40541f6fd98b::t_4e8ae1584eb8f1 89-94
+governance/lib/pr-base-conformance.mjs
+  s_be40541f6fd98b::t_822ad8a1b31627 32-35
+  s_be40541f6fd98b::t_a53701798b85b6 264-268
+governance/test/merge-authority.test.mjs
+  s_be40541f6fd98b::t_0bb92543831c9a 104-124
+governance/test/command-cwd.test.mjs
+  s_be40541f6fd98b::t_f056c50a745854 78-79
+  s_be40541f6fd98b::t_6da5c931cd156e 1-77,80-141
+governance/test/pr-base-conformance.test.mjs
+  s_be40541f6fd98b::t_1a86031a2843f7 194-202
+rules/merge-authority-scoped-by-repo-visibility.md
+  s_be40541f6fd98b::t_5579a0b130af11 29-38
+governance/lib/command-cwd.mjs
+  s_be40541f6fd98b::t_499e8493429276 1-11,13-125
+  s_be40541f6fd98b::t_5d7761c64db812 12
+hookcli/lib/t3-merge-authority.mjs
+  s_be40541f6fd98b::t_236a4d004f4a02 40-53
+  s_be40541f6fd98b::t_aff004f366f546 152-160,168-181,183,196-199
+  s_be40541f6fd98b::t_2b38e0fbc79b50 63-71,74,81-114
+  s_be40541f6fd98b::t_dff3aee72e70c5 129-137,140
+  s_8a470910d81a67::t_7b9b0d20b2755d 115-116
+governance/code-index/CATALOG.md
+  s_be40541f6fd98b::t_2dcd3fc277ac3a 5,3467-3473,4085-4096
+governance/code-index/index.json
+  s_be40541f6fd98b::t_b789e8fda27900 9-10,12-13,30852-30895,35324-35325,35335-35336,35346-35347,35357-35358,35368-35369,35379-35380,35390-35391,35401-35402,35412-35413,35423-35424,35434-35435,35445-35448
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d8da480bdb5ead7127d21d1058b8824b576fa385",
+  "prompts": {},
+  "sessions": {
+    "s_8a470910d81a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9143d3ec-9637-4788-8bc2-510e83aa2fe3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

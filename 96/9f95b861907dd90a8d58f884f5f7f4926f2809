@@ -1,0 +1,27 @@
+hookcli/tests/t3-classifier-git.sh
+  s_02abc74f4971c7::t_9ff7f4cf677a1f 8-10,12,17-45,125
+  s_02abc74f4971c7::t_8be231f5179b6c 122-124
+  s_02abc74f4971c7::t_a8d6d89358c811 126-128
+  s_02abc74f4971c7::t_01b426d523988b 116-121,129
+hookcli/lib/t3-git.mjs
+  s_02abc74f4971c7::t_64402e85070653 151-156,158-159
+  s_02abc74f4971c7::t_923fef533bec7c 51-59,61-67,69
+hookcli/rules/rules.json
+  s_02abc74f4971c7::t_963f772055b3da 249
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "969f95b861907dd90a8d58f884f5f7f4926f2809",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

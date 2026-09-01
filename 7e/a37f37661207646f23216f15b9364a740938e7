@@ -1,0 +1,53 @@
+governance/plans/ci-stack-integration/E0-FOUNDATION.md
+  s_7326a769c7efe8::t_495e8ff9fd0870 21,27
+  s_7326a769c7efe8::t_aa099a73a49046 2,4,6-20,22-26,28-31
+  s_7326a769c7efe8::t_2e353dc5d16355 1,3,5
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_7326a769c7efe8::t_fec137e2ef60e9 1-38
+governance/plans/ci-stack-integration/E1-TRUNK-FLAKE-GATE.md
+  s_7326a769c7efe8::t_df1af1d18ea262 2-25,27-32,34-38
+  s_7326a769c7efe8::t_2e353dc5d16355 1
+  s_7326a769c7efe8::t_a7ba38c574a437 26,33
+governance/plans/ci-stack-integration/E3-SONARQUBE-SELFHOST.md
+  s_7326a769c7efe8::t_3654755b841c29 26,32
+  s_7326a769c7efe8::t_5e1dcde321a760 2-25,27-31,33-37
+  s_7326a769c7efe8::t_2e353dc5d16355 1
+governance/plans/ci-stack-integration/NORTH-STAR.md
+  s_7326a769c7efe8::t_0854e29b55e697 5,7-18,21-39,41-66,69,71-76,81-104
+  s_7326a769c7efe8::t_2e353dc5d16355 1-4,6,19-20,40,67-68,70
+  s_7326a769c7efe8::t_60db61f4bf8da5 77-80
+governance/plans/ci-stack-integration/BRAINSTORM.md
+  s_7326a769c7efe8::t_b43d9c20b3dedb 1-54
+governance/plans/ci-stack-integration/E2-NAMESPACE-DEEPEN.md
+  s_7326a769c7efe8::t_869af2228e1350 2-25,27-31,33-37,39-42
+  s_7326a769c7efe8::t_3d5e8ec37f8242 26,32,38
+  s_7326a769c7efe8::t_2e353dc5d16355 1
+governance/plans/ci-stack-integration/E4-GITAR-EVAL.md
+  s_7326a769c7efe8::t_51941cf25bc8bd 25,31
+  s_7326a769c7efe8::t_0ba69b8f17406b 2-24,26-30,32-35
+  s_7326a769c7efe8::t_2e353dc5d16355 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7ea37f37661207646f23216f15b9364a740938e7",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

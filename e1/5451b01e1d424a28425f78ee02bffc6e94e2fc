@@ -1,0 +1,30 @@
+governance/bin/learning-queue.mjs
+  s_60a20469ef4369::t_be1b394a272bcf 413-415
+hooks/local-llm/ollama-helper.sh
+  s_60a20469ef4369::t_540d0a0bea49d0 12-17
+governance/bin/distribute.mjs
+  s_60a20469ef4369::t_a132db09c8419d 475
+governance/bin/cache-metrics.mjs
+  s_60a20469ef4369::t_44256b2e6bb7b6 166
+  s_60a20469ef4369::t_ec04fa9f799bd0 29
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_5202249775cf48 5,167-193
+governance/code-index/index.json
+  s_60a20469ef4369::t_953d99a6fc5c75 7,9,1505-1506,1516-1517,1527-1528,1538-1539,1549-1550,1560-1561,1571-1572,1582-1583,1593-1594,1604-1607,1615-1616,1626-1627,1637-1638,1648-1649,1659-1660,1670-1671,1681-1682,1692-1693,1703-1704,1714-1715,1725-1726,1736-1737,1747-1748,1758-1759,1769-1770,1780-1781,1791-1792,5973-5974,12452-12453
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e15451b01e1d424a28425f78ee02bffc6e94e2fc",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

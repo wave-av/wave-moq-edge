@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_b497066f6c7642::t_40e4edbee1daed 95
+governance/plans/ffmpeg9-lei/E18-LEARNED-CODEC-RUNTIME.md
+  s_b497066f6c7642::t_ec2a24f0527574 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3225f912dc7554610e3105e7cfbd5a33b6a94c27",
+  "prompts": {},
+  "sessions": {
+    "s_b497066f6c7642": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed2be39affeFwU2Agx3o6G5N1",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

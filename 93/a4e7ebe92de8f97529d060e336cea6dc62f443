@@ -1,0 +1,68 @@
+governance/tools/embedding-compression/bin/embed-audit.mjs
+  s_e041f6a16a4df0::t_269d7699a17548 53
+governance/tools/data-gravity-lint/manifests/lakehouse.json
+  s_e041f6a16a4df0::t_70385ef91c4727 2
+governance/tools/layered-error-budget/lib/index.mjs
+  s_e041f6a16a4df0::t_f03bbaad9bb70d 140-141
+governance/tools/embedding-compression/lib/index.mjs
+  s_e041f6a16a4df0::t_4f9063f5a89374 178-179
+governance/tools/storage-router/lib/index.mjs
+  s_e041f6a16a4df0::t_d558cae4b1e2ef 145-146
+governance/tools/internal-affairs/lib/index.mjs
+  s_e041f6a16a4df0::t_7239d947418bc8 120
+  s_e041f6a16a4df0::t_b4938c4f011c98 17-20,23-25
+governance/tools/coherence-budget/bin/coherence-budget.mjs
+  s_e041f6a16a4df0::t_c1343867016501 52
+governance/tools/data-gravity-lint/format.schema.json
+  s_e041f6a16a4df0::t_29502b034caff1 6-10
+  s_e041f6a16a4df0::t_4c35e38b125187 15-19
+governance/tools/internal-affairs/manifests/wave-sec.json
+  s_e041f6a16a4df0::t_92926c84509eac 2
+governance/tools/data-gravity-lint/lib/index.mjs
+  s_e041f6a16a4df0::t_1d12054bac703e 122-123
+governance/tools/coherence-budget/lib/index.mjs
+  s_e041f6a16a4df0::t_437c40d2175162 88-89
+governance/tools/internal-affairs/audit.schema.json
+  s_e041f6a16a4df0::t_03a7c51565ce94 16-21
+  s_e041f6a16a4df0::t_43d861dc0c9773 6-10
+governance/tools/layered-error-budget/budget.schema.json
+  s_e041f6a16a4df0::t_958bf72a2b16c3 6-10
+  s_e041f6a16a4df0::t_58c9f97a3fa146 15-19
+governance/tools/storage-router/routing.schema.json
+  s_e041f6a16a4df0::t_a81194e22377d9 6-10,15-19
+governance/tools/layered-error-budget/manifests/agentic-wave.json
+  s_e041f6a16a4df0::t_9436e525521cee 2
+governance/tools/coherence-budget/budget.schema.json
+  s_e041f6a16a4df0::t_4d1f28d541c3b8 6-10
+  s_e041f6a16a4df0::t_5f240319842080 15-19
+governance/tools/storage-router/manifests/rl-corpus.json
+  s_e041f6a16a4df0::t_edd54e845b933c 2
+governance/tools/coherence-budget/manifests/agentic-wave.json
+  s_e041f6a16a4df0::t_e4b9e5184888a6 2
+governance/tools/data-gravity-lint/bin/gravity-lint.mjs
+  s_e041f6a16a4df0::t_cceee194ba8cf1 53
+governance/tools/layered-error-budget/bin/error-budget.mjs
+  s_e041f6a16a4df0::t_a888c8616f2608 56
+governance/tools/embedding-compression/manifests/rl-corpus.json
+  s_e041f6a16a4df0::t_6b6855264b907c 2
+governance/tools/storage-router/bin/storage-router.mjs
+  s_e041f6a16a4df0::t_f7947b0fda21c8 52
+governance/tools/embedding-compression/audit.schema.json
+  s_e041f6a16a4df0::t_f281e08efc87a3 6-10,15-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "93a4e7ebe92de8f97529d060e336cea6dc62f443",
+  "prompts": {},
+  "sessions": {
+    "s_e041f6a16a4df0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0021becabfferPPvGEnsLyAGbc",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

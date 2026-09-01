@@ -1,0 +1,36 @@
+governance/plans/intelligence-eval/E-AUDIO-DISCRIM.md
+  s_264ae386838c57::t_f06b4ac69f9178 4-15
+  s_264ae386838c57::t_f1fdfc8a7fc440 16
+governance/plans/intelligence-eval/E-CI-GATE.md
+  s_264ae386838c57::t_0a8b80544e2e49 4-18
+governance/plans/intelligence-eval/E-D3-SEMANTICS.md
+  s_264ae386838c57::t_e89d63d8e77631 4-13
+governance/plans/intelligence-eval/E-D4-VISION.md
+  s_264ae386838c57::t_0fa6b80160acdb 4-15
+governance/plans/intelligence-eval/E-EVALCHAIN-PRODUCTS.md
+  s_264ae386838c57::t_0f38dcf7b14337 4-15
+governance/plans/intelligence-eval/E-MODEL-MIGRATION.md
+  s_264ae386838c57::t_c8c1f347e495b0 4-17
+governance/plans/intelligence-eval/E-RECURSIVE-SELFEVAL.md
+  s_264ae386838c57::t_d501f2baa8c582 4-14
+governance/plans/intelligence-eval/E-ROUTER-GOLIVE.md
+  s_264ae386838c57::t_26ba53edb590a0 4-16
+governance/plans/intelligence-eval/NORTH-STAR.md
+  s_264ae386838c57::t_5f2784aacb63c9 4-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "74c7c5a0d05f6a904338b134181c01fd0e1de622",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

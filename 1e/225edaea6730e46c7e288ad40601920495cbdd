@@ -1,0 +1,25 @@
+governance/plans/local-inference-integrity/E0-CONTAIN.md
+  s_264ae386838c57::t_1701bef826e77b 108-122
+  s_264ae386838c57::t_f83afa41d18357 98-100
+  s_264ae386838c57::t_89258e74ffe53a 53-55
+  s_264ae386838c57::t_fdbbf6a96f4ae8 93
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_2fcc6967cc44bd 89-94
+  s_264ae386838c57::t_cb3046bba57f44 23-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "1e225edaea6730e46c7e288ad40601920495cbdd",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

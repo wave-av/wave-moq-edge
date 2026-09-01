@@ -1,0 +1,23 @@
+governance/bin/merged-not-released.mjs
+  s_63c6ee080d73c3::t_7a152fc6f3f920 1-80
+governance/lib/merged-not-released.mjs
+  s_63c6ee080d73c3::t_7a152fc6f3f920 1-97
+governance/test/merged-not-released.test.mjs
+  s_63c6ee080d73c3::t_6dccdb283cb134 1-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "878c923700658969916faa4f9f890a7a640fe852",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/test/ramp-diff-scoping.test.mjs
+  s_60a20469ef4369::t_deb78369e3a29b 1-166
+governance/test/ramp-detectors.test.mjs
+  s_60a20469ef4369::t_ea7c54f0f5de04 117-119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "270e7553c2586f8555d9d8f8d718a104f7822931",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

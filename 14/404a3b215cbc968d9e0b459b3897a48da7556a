@@ -1,0 +1,32 @@
+scripts/bugbot/test_metrics.py
+  s_0b987fef4e1240::t_7d6fd5312f09a4 215-268
+  s_0b987fef4e1240::t_786c8898abc1cd 280-282
+scripts/bugbot/test_flywheel_alerts.py
+  s_0b987fef4e1240::t_6a570c1f5c2649 34,38
+scripts/bugbot/flywheel-alerts.yml
+  s_0b987fef4e1240::t_153f7e32900154 23-25,27
+  s_0b987fef4e1240::t_a78f36e9d63dc2 73-76,78
+scripts/bugbot/metrics.py
+  s_0b987fef4e1240::t_80f902f1051481 132,134-151
+  s_0b987fef4e1240::t_aaf014a9f8b5e2 102-111
+scripts/bugbot/test_dash0_sync_alerts.py
+  s_0b987fef4e1240::t_c190c494765c43 1-71
+scripts/bugbot/dash0_sync_alerts.py
+  s_0b987fef4e1240::t_4503719da07ed3 1-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "14404a3b215cbc968d9e0b459b3897a48da7556a",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

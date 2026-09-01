@@ -1,0 +1,33 @@
+governance/plans/agent-first-console/E4-DISCOVERY.md
+  s_15127d80763110::t_978bb2b198421a 1-116
+governance/plans/agent-first-console/E5-PROOF.md
+  s_15127d80763110::t_936bf8ea9e1635 1-94
+governance/plans/agent-first-console/E1-COMMAND-REGISTRY.md
+  s_15127d80763110::t_ad9f4d7f4561f9 1-117
+governance/plans/agent-first-console/E3-MCP-SURFACE.md
+  s_15127d80763110::t_be747907f65590 1-146
+governance/plans/agent-first-console/NORTH-STAR.md
+  s_15127d80763110::t_265698ac227ef5 1-288
+governance/plans/agent-first-console/E2-PALETTE.md
+  s_15127d80763110::t_63fc84f1091290 1-109
+governance/DASHBOARD.md
+  s_15127d80763110::t_6edd31bdbff924 25
+governance/graph.json
+  s_15127d80763110::t_0b8f3c174f48db 2377-2454,17783-18034
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1a84bf4fc510321b93c2615305a5b2072c809a91",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

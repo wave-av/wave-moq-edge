@@ -1,0 +1,26 @@
+governance/plans/own-model-program/E6-E6-LOCAL-POWER.md
+  s_8475ab40e46d2e::t_4f6a05d5b7c567 1-24
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_8475ab40e46d2e::t_faeb276fa3e3e8 23
+governance/plans/own-model-program/NORTH-STAR.md
+  s_8475ab40e46d2e::t_f5260b018139eb 6
+  s_8475ab40e46d2e::t_5efe808e28d165 7
+  s_8475ab40e46d2e::t_aaf3eda38260f2 23
+  s_8475ab40e46d2e::t_1b50a7c537fa5b 49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "eaf35006f6219d5c2140c1dd6db60642f7eefad9",
+  "prompts": {},
+  "sessions": {
+    "s_8475ab40e46d2e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffea709ffffelUejCvVmFoEoiy",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

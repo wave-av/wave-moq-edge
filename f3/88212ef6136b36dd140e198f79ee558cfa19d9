@@ -1,0 +1,30 @@
+governance/plans/webhook-plane/WEBHOOK-ARCHITECTURE.md
+  s_8152bca18f72ee::t_c93f3563287054 1-82
+governance/plans/webhook-plane/NORTH-STAR.md
+  s_8152bca18f72ee::t_771e0bcc78ae25 5
+  s_8152bca18f72ee::t_163b2387a1bfa5 55-56,58
+  s_8152bca18f72ee::t_77c616facefe8e 37-48
+  s_8152bca18f72ee::t_cf91422d913783 66
+governance/plans/webhook-plane/E3-VENDORS.md
+  s_8152bca18f72ee::t_b76e1889052b26 4,9-12,14-19
+governance/plans/webhook-plane/E5-OUTBOUND.md
+  s_8152bca18f72ee::t_09bfc3f2679d1b 1-21
+governance/plans/webhook-plane/E2-ACTIONS.md
+  s_8152bca18f72ee::t_6c0b35be4a50e5 4,6-14,16-18,20-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f388212ef6136b36dd140e198f79ee558cfa19d9",
+  "prompts": {},
+  "sessions": {
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

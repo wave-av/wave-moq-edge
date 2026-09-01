@@ -1,0 +1,23 @@
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_d9915bbafa9657::t_c9a80a46da4dbe 4-74,89-93,98,101,104-105,108-109,111-112,114-116,118-235
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_66712543403912 25
+governance/graph.json
+  s_d9915bbafa9657::t_0f052c3791f4fe 17817-17822
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fdab2f38c4d70083cc262dd7a09b17eecd8e7948",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+governance/lib/reviewer-roster.mjs
+  s_28efdc23129d94::t_49cdefda68c1a2 62-96
+  s_28efdc23129d94::t_77a22844c65a44 45-49
+  s_28efdc23129d94::t_e46af9045b6b54 97-109
+  s_28efdc23129d94::t_46b94922af5a51 126-133
+governance/test/review-liveness-class.test.mjs
+  s_28efdc23129d94::t_baffbe106e4947 179-186
+  s_28efdc23129d94::t_eb8d6d834e9ef5 15-17
+  s_28efdc23129d94::t_de9015130a5d42 147,149-150,152
+governance/lib/reviewer-alarm.mjs
+  s_28efdc23129d94::t_f74db95a30db20 388-390
+  s_28efdc23129d94::t_d75f1ce395fb80 271-274,279-283
+  s_28efdc23129d94::t_a514182be9758f 30
+  s_28efdc23129d94::t_d34b0dc3fcf114 318-321
+  s_28efdc23129d94::t_02b2c0c6d43819 289
+  s_28efdc23129d94::t_24286144437b14 304
+governance/test/reviewer-alarm.test.mjs
+  s_28efdc23129d94::t_3bf9bf33fe024c 433-470
+  s_28efdc23129d94::t_ce636c9e0db017 430-432
+  s_28efdc23129d94::t_ff0e89772b0485 471-473
+  s_28efdc23129d94::t_fc166432474f36 420-429,474-482
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "25d6f97ca6f9d0b1a19979ac616b841b0e3e5670",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

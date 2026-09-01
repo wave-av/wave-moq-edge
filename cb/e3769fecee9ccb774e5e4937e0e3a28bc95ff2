@@ -1,0 +1,22 @@
+scripts/verify-public-mirror.sh
+  s_5f27fa5b8237cd::t_71989e10626dba 23
+scripts/sync-public.sh
+  s_5f27fa5b8237cd::t_91a7085adf36eb 35
+  s_5f27fa5b8237cd::t_e71118ef238042 39-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "cbe3769fecee9ccb774e5e4937e0e3a28bc95ff2",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

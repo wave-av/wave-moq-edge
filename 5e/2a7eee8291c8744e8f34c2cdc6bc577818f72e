@@ -1,0 +1,26 @@
+governance/plans/socratic-loop/E10-PROVENANCE.md
+  s_f126fb3b7cae07::t_781115b2cd5661 219-221
+  s_f126fb3b7cae07::t_24d459b88062d3 333-351,354-359,361-363
+  s_f126fb3b7cae07::t_3ad0f65cb308fe 237-270,272-280,283-284,287,291-297
+  s_f126fb3b7cae07::t_ce99c6574cd74c 170-173,175-176
+  s_f126fb3b7cae07::t_2b4a00fb2ad31a 310-318
+  s_f126fb3b7cae07::t_0735b5bc5e1304 298
+governance/plans/socratic-loop/E8-OPERATOR-MODEL.md
+  s_f126fb3b7cae07::t_d5d747c438dbff 97,99,101-108,111-114,123-127,130-133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5e2a7eee8291c8744e8f34c2cdc6bc577818f72e",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

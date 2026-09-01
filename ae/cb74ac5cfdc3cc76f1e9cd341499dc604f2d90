@@ -1,0 +1,20 @@
+.github/workflows/reusable-pr-agent.yml
+  s_2f1bfe8237f0ee::t_03d7c0ddbf38f8 73-74,77-79,81-82
+  s_2f1bfe8237f0ee::t_b120a9ffd9d47f 84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "aecb74ac5cfdc3cc76f1e9cd341499dc604f2d90",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

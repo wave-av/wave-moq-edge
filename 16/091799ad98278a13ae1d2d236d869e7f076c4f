@@ -1,0 +1,120 @@
+frameworks/supabase-for-platforms/provision-tenant.ts
+  s_5f27fa5b8237cd::t_a26c07e4f2698d 5
+frameworks/supabase-for-platforms/tenant-schema-template.sql
+  s_5f27fa5b8237cd::t_6ac7f4ae6bc28a 4
+scripts/sync-public.sh
+  s_5f27fa5b8237cd::t_9c0e831898a463 35-41
+  s_5f27fa5b8237cd::t_2a651bf25221ff 51
+  s_5f27fa5b8237cd::t_06189e087202a9 42-45
+rules/file-size-gate.md
+  s_5f27fa5b8237cd::t_6c149ae8f88ecf 3
+frameworks/platform-registry/scripts/check-honesty.ts
+  s_5f27fa5b8237cd::t_0cf671ea93403c 24
+  s_5f27fa5b8237cd::t_1945a1ba61e38d 103
+  s_5f27fa5b8237cd::t_659ce8071a2b54 28
+  s_5f27fa5b8237cd::t_f7c5f56e7158e9 217
+  s_5f27fa5b8237cd::t_8f12d90a8c773b 70-74
+  s_5f27fa5b8237cd::t_12d262fe9b96d1 234
+  s_5f27fa5b8237cd::t_bc908c39e2e4f6 219,238
+frameworks/hooks/hook-circuit-breaker-wrapper.sh
+  s_5f27fa5b8237cd::t_c0c79d536dec9d 23
+frameworks/customer-storage/bucket-for-tenant.ts
+  s_5f27fa5b8237cd::t_765808b4f5f8b3 2
+frameworks/tech-debt/README.md
+  s_5f27fa5b8237cd::t_16b5610354e74c 7
+.github/workflows/semantic-pr.yml
+  s_5f27fa5b8237cd::t_496da180914cf7 2
+frameworks/never-done/post-comment.sh
+  s_5f27fa5b8237cd::t_990b5f4c74cc3f 8
+.github/workflows/bot-review-gate.yml
+  s_5f27fa5b8237cd::t_d0627a00d4b2d7 6
+frameworks/hooks/hook-timer-wrapper.sh
+  s_5f27fa5b8237cd::t_d04ee4ab91c2f8 17
+frameworks/methodology.md
+  s_5f27fa5b8237cd::t_32d4606a36c99e 61
+  s_5f27fa5b8237cd::t_e5a2d0d13b762a 55
+frameworks/platform-registry/AGENT-GROUNDING.md
+  s_5f27fa5b8237cd::t_9f6c9021685786 31
+frameworks/customer-storage/tests/test_parity.py
+  s_5f27fa5b8237cd::t_118edea65735de 5
+frameworks/supabase-for-platforms/project-per-tenant.md
+  s_5f27fa5b8237cd::t_04a6c22f1810a3 59
+frameworks/platform-registry/examples/capabilities.example.json
+  s_5f27fa5b8237cd::t_2b76ce6c279ee1 18
+frameworks/harvest/README.md
+  s_5f27fa5b8237cd::t_4d4517140ced1b 14
+frameworks/platform-registry/README.md
+  s_5f27fa5b8237cd::t_bfa82466d10bfb 165
+  s_5f27fa5b8237cd::t_1d711ed77d3cbf 169
+  s_5f27fa5b8237cd::t_b2e37241279472 127
+frameworks/media-engine-smoke-gate/README.md
+  s_5f27fa5b8237cd::t_f528ff9c2eca25 54
+cliff.toml
+  s_5f27fa5b8237cd::t_a555c72c1ed854 3-4
+frameworks/platform-registry/examples/per-layer-examples.md
+  s_5f27fa5b8237cd::t_4bf1a436a951d2 18
+  s_5f27fa5b8237cd::t_277a27b80d49ec 23
+  s_5f27fa5b8237cd::t_afd698f94d3d1e 28
+.coderabbit.yaml
+  s_5f27fa5b8237cd::t_9a88521ac40ba2 2
+.github/workflows/reusable-bot-token.yml
+  s_5f27fa5b8237cd::t_43159069528c64 3
+frameworks/copywriting/voice-and-tone.md
+  s_5f27fa5b8237cd::t_b7ac491b432cd0 3
+frameworks/supabase-for-platforms/README.md
+  s_5f27fa5b8237cd::t_52fe37d5beb1e2 67
+  s_5f27fa5b8237cd::t_c993d394c8134b 3
+  s_5f27fa5b8237cd::t_a168a90373a985 17
+  s_5f27fa5b8237cd::t_97c4d3079f3e5e 50
+frameworks/build-on-wave/README.md
+  s_5f27fa5b8237cd::t_33be0de9789956 47
+  s_5f27fa5b8237cd::t_85cd85a63a0664 43
+frameworks/claude-api/identity-and-usage.md
+  s_5f27fa5b8237cd::t_4e57ddf2691f90 164
+frameworks/customer-storage/bucket_for_tenant.py
+  s_5f27fa5b8237cd::t_5d08777fc4f73e 3
+frameworks/codec-watch/README.md
+  s_5f27fa5b8237cd::t_8ee22d89f00e1b 14
+  s_5f27fa5b8237cd::t_5b7ad7506a70c2 47
+frameworks/customer-storage/README.md
+  s_5f27fa5b8237cd::t_077cdee57a730b 21
+  s_5f27fa5b8237cd::t_47990bada0e3ee 44
+  s_5f27fa5b8237cd::t_e6289f12652c48 3
+docs/ratchet.md
+  s_5f27fa5b8237cd::t_9a64e5fa165617 88
+  s_5f27fa5b8237cd::t_1b73501506a467 130
+  s_5f27fa5b8237cd::t_146c7864323b4a 123
+  s_5f27fa5b8237cd::t_b8e52a3e7fbd5a 109-110
+frameworks/doppler-tenant-namespace/tenant-secrets.ts
+  s_5f27fa5b8237cd::t_0d37c3dba6fbe6 3
+.github/workflows/ratchet.yml
+  s_5f27fa5b8237cd::t_e010a66bd67657 10
+taxonomy/README.md
+  s_5f27fa5b8237cd::t_5196a840f7b904 4
+frameworks/platform-registry/workflows/validate-capabilities.yml
+  s_5f27fa5b8237cd::t_987d9d29a05134 115,121-124
+frameworks/doppler-tenant-namespace/README.md
+  s_5f27fa5b8237cd::t_b992f70aebffa6 3
+  s_5f27fa5b8237cd::t_42e30d4afb56d9 12
+  s_5f27fa5b8237cd::t_99c53ca3838b40 39
+frameworks/protocol-plane/README.md
+  s_5f27fa5b8237cd::t_2d2cf8336b099b 55-56
+scripts/verify-public-mirror.sh
+  s_5f27fa5b8237cd::t_4ef4dde4e37634 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "16091799ad98278a13ae1d2d236d869e7f076c4f",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

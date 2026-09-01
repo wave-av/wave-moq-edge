@@ -1,0 +1,27 @@
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_a4a06db73d52cd 155
+  s_02abc74f4971c7::t_e0b099746a674e 138-142
+governance/test/skip-audit.mjs
+  s_02abc74f4971c7::t_dede5899864ba6 22,27-31
+  s_02abc74f4971c7::t_2292e3f3374cdd 32
+governance/test/governance-skip-audit.test.mjs
+  s_02abc74f4971c7::t_d3cd5648cca616 164-180
+governance/test/ALLOWED-SKIPS.json
+  s_02abc74f4971c7::t_d99dd9fcf37c6c 29-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1c4f94b58a984b20cd31f4371ef301075386824c",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

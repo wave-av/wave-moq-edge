@@ -1,0 +1,23 @@
+governance/bin/roadmap-check.mjs
+  s_6a908cb0f02788::t_66b90805c10687 46-55
+governance/bin/origin.mjs
+  s_6a908cb0f02788::t_1021976305d158 79-89
+governance/test/roadmap-check.test.mjs
+  s_6a908cb0f02788::t_bf2e9ec9bd3212 142-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5fc7c86bc21ee7d2a5203dcf2df88fa5e86713c1",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

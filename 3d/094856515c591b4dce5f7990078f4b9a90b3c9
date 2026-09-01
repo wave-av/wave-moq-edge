@@ -1,0 +1,29 @@
+governance/bin/wave-ops-api.mjs
+  s_0213641ac58af6::t_d9214f03f3dfd7 18
+  s_0213641ac58af6::t_9174d5e91c6a6c 6
+governance/bin/runpod-meter.mjs
+  s_0213641ac58af6::t_0697293cb84abb 19
+  s_0213641ac58af6::t_226449a7df5949 5-6
+governance/bin/model-registry.mjs
+  s_0213641ac58af6::t_77ed3d38563c56 5
+  s_0213641ac58af6::t_c2dbf5eba1a896 32
+governance/bin/blocked-agent-board.mjs
+  s_0213641ac58af6::t_160f48eecd896a 5
+  s_0213641ac58af6::t_fd35ef2b093313 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3d094856515c591b4dce5f7990078f4b9a90b3c9",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/wave-mesh-fabric/E1-P1-ESTATE-LATENCY.md
+  s_15127d80763110::t_e5f92363acdb3a 52-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9b5f6ac072e00b8b4e6caf5dea2f98b6de4c33eb",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

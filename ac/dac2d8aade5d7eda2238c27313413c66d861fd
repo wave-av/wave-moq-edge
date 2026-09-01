@@ -1,0 +1,19 @@
+.gitignore
+  s_fc4726285dbc5c::t_a548fa181c68cf 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "acdac2d8aade5d7eda2238c27313413c66d861fd",
+  "prompts": {},
+  "sessions": {
+    "s_fc4726285dbc5c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffdd0c8faffek1Qvn7JWTHevCK",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

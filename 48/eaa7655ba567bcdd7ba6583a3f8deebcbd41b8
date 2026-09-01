@@ -1,0 +1,22 @@
+scripts/agentic-bench.py
+  s_9e432dc94c73ad::t_92b486d96f1bfc 16
+  s_9e432dc94c73ad::t_0486b850f763dc 92-98
+  s_9e432dc94c73ad::t_bf27997c1744ca 49-63
+  s_9e432dc94c73ad::t_4f2c9a16be697a 68-71,75-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "48eaa7655ba567bcdd7ba6583a3f8deebcbd41b8",
+  "prompts": {},
+  "sessions": {
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

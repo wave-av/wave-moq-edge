@@ -1,0 +1,21 @@
+__tests__/moq-subgroup-transport-hookup.test.ts
+  s_7b60aa0dad5d81::t_ca14e0592f6ee2 87-107
+src/moq-relay.ts
+  s_7b60aa0dad5d81::t_ea241b8a53c48c 336-337
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6db88a7ecd2c9a8e37ae7cfcf27c4fb0a6883f9c",
+  "prompts": {},
+  "sessions": {
+    "s_7b60aa0dad5d81": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff71807e2ffewoF7Y0i2mkCBn2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

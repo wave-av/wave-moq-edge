@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/action/E11-P2-MODERATION-POC.md
+  s_124891ed63801b::t_53689b8ead441d 1-87
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_124891ed63801b::t_6e45fad9af9613 4-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1bc238a48e5384d6fcc6e276c86a7d9707214a4b",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

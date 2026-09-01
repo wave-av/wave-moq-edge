@@ -1,0 +1,69 @@
+governance/lib/wave-sec-socket.mjs
+  s_52031f4510959b::t_6fa7c5e5551114 91
+  s_52031f4510959b::t_0c1327db0ed138 238-241
+  s_52031f4510959b::t_d55eac819e4cbd 83,196-205
+  s_52031f4510959b::t_595d304e9ab6c4 27-34
+  s_52031f4510959b::t_4191d59cf47c95 44-45
+  s_52031f4510959b::t_00c2d60740978d 227-237,242-251
+  s_52031f4510959b::t_4a6f989a6bd598 84-86
+  s_52031f4510959b::t_a49d1783addd53 92-94
+  s_52031f4510959b::t_117669d8dde2ee 206
+  s_52031f4510959b::t_cc7f3f267b159e 252-254
+  s_52031f4510959b::t_5751fda26531ae 209,255-257,275,318,326
+governance/lib/wave-sec-socket-roster.mjs
+  s_52031f4510959b::t_59cbf5fcf54b4b 152-176,179-184,188,191-193,195
+  s_52031f4510959b::t_90d4a18bd01aa6 202-203,209-216
+  s_52031f4510959b::t_0bbcb9ab9eec34 112-151
+  s_52031f4510959b::t_e4dcf3eb6517cd 14-28
+  s_52031f4510959b::t_1ad18e2d9d72a9 1-13,29-32,37-70,73-87,89-111,177-178,185-187,189-190,194,196-201,204-208,217-225
+  s_52031f4510959b::t_ae95e571a270f5 33-36
+  s_52031f4510959b::t_cfbe2f1945cfac 71-72
+  s_52031f4510959b::t_b2bdcd252cb6da 88
+governance/test/wave-sec-socket-roster.test.mjs
+  s_52031f4510959b::t_2462a9c0942e69 1-96,102-168
+  s_52031f4510959b::t_6c649a210f242c 97-101
+  s_52031f4510959b::t_9b1bda2f601a44 169-171
+  s_52031f4510959b::t_230caef61f4529 172-216
+governance/test/wave-sec-socket-fixture.mjs
+  s_52031f4510959b::t_214dc141e53c7c 34
+  s_52031f4510959b::t_5925ce47760905 26
+  s_52031f4510959b::t_b5ca76ae2d7c87 23-24
+  s_52031f4510959b::t_4ff8c8584e1bfc 27-29
+  s_c24357e71ae5bc::t_ada1ec9d953ba9 30
+governance/test/wave-sec-socket.test.mjs
+  s_0227926428e4b1::t_70dab5039447e8 14,86-87,89,253-259
+governance/bin/wave-sec.mjs
+  s_52031f4510959b::t_2e42461381747e 52,207,251,278
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1fb9e29021f1d7bec29c07bb1f6168aa975cad51",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

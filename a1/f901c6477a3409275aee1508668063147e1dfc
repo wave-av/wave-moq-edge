@@ -1,0 +1,21 @@
+governance/recall/BAKE-OFF.md
+  s_06884a56c888be::t_b07c91cc784507 55,57,59-60,74-98,186
+governance/recall/eval/repo-corpus.manifest.json
+  s_06884a56c888be::t_3f1a8649cc4dbc 16-18,21-36,56-57,78-81,98-123,132-160,164-174,177-187,190-198,218-268,283-301,334-348,353,357-366,368-378,385-411,443-452,476-477,485-511,513-531,553-568,570,578-601,608-609
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a1f901c6477a3409275aee1508668063147e1dfc",
+  "prompts": {},
+  "sessions": {
+    "s_06884a56c888be": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a56f8fd7b7b8cfe68",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

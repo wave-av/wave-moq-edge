@@ -1,0 +1,30 @@
+hooks/tests/lawbook-inject-sealed.test.sh
+  s_96280c922a9418::t_b9e877ebae7716 37-40
+  s_96280c922a9418::t_9c881363251b2b 1-36,41-116
+hooks/lawbook-inject.sh
+  s_96280c922a9418::t_b7d174f36e19ea 1-55
+settings/settings.base.json
+  s_96280c922a9418::t_faf25247ba2fa5 663
+governance/DASHBOARD.md
+  s_96280c922a9418::t_1d56aca38fa98f 8,25
+governance/graph.json
+  s_96280c922a9418::t_5949ce70b9c111 5053-5060
+hooks/manifest.json
+  s_96280c922a9418::t_f98069a256e274 573-593,1638
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "ac8197351db5f33d874ba00a8f2a3a86822bb59f",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

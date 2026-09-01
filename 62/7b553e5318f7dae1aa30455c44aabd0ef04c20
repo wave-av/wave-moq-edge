@@ -1,0 +1,41 @@
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_be40541f6fd98b::t_d36474996d44a8 1-113
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_be40541f6fd98b::t_e8e970e2ae426e 1-251
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_be40541f6fd98b::t_00dbe56ca4fe95 1-94
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_be40541f6fd98b::t_83585f0644117d 1-105
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_be40541f6fd98b::t_223f989135b6ce 1-97
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_be40541f6fd98b::t_a1f3378baee6f9 1-88
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_be40541f6fd98b::t_53e2c147459a7e 1-103
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_be40541f6fd98b::t_355a1c693960b9 1-225
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_be40541f6fd98b::t_0f25811abc6512 1-79
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_be40541f6fd98b::t_5b1b8e56bc186c 1-89
+governance/DASHBOARD.md
+  s_be40541f6fd98b::t_d9a5632eef0467 25
+governance/graph.json
+  s_be40541f6fd98b::t_b4ddd1077be89f 2240-2356,14023-14538
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "627b553e5318f7dae1aa30455c44aabd0ef04c20",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

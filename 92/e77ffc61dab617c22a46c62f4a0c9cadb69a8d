@@ -1,0 +1,39 @@
+governance/plans/genome-epigenome-releases/SERVICE-DESIGN.md
+  s_22ee09adf30e6c::t_beb989a33de4b0 1-163
+governance/plans/agent-execution-platform/CORPUS-SKILL-SERVICE.md
+  s_a2f176ca63d648::t_760bee43fb65f1 1-180
+governance/plans/universal-data-representation/SERVICE-DESIGN.md
+  s_5e1373c281b455::t_cc3719e6b1ea6d 1-246
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "92e77ffc61dab617c22a46c62f4a0c9cadb69a8d",
+  "prompts": {},
+  "sessions": {
+    "s_22ee09adf30e6c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00692bd3fffewklVijoGQJbN7O",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_5e1373c281b455": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00691da8effe78oWAJebe2nLJZ",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a2f176ca63d648": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00691ee30fferDbpXVkXWc4KJa",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

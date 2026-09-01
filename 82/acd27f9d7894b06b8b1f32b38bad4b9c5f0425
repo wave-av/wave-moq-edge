@@ -1,0 +1,19 @@
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_3e76575d51860e 335-369
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "82acd27f9d7894b06b8b1f32b38bad4b9c5f0425",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

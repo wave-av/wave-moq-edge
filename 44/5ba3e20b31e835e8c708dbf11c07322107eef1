@@ -1,0 +1,30 @@
+governance/bin/protection-profile-check.mjs
+  s_f126fb3b7cae07::t_0543383fb31e33 250
+  s_f126fb3b7cae07::t_c4bae03383a5fb 41-43
+  s_f126fb3b7cae07::t_4d9f3d128497e5 261
+  s_f126fb3b7cae07::t_0a7af041b65b03 109
+governance/lib/drill-decide.mjs
+  s_f126fb3b7cae07::t_c69662b0360dc9 80
+governance/test/protection-profile-check.test.mjs
+  s_f126fb3b7cae07::t_2f83d2edb8b757 1-4,6-10,15-22,24-31,33-127,129-133,136-143
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_e1bdab2870ea33 5,2290-2300
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_4ed4a65f1f270a 10,13,20661-20664,20672-20673,20683-20684,20694-20695,20705-20708,20716-20717,20727-20728,20738-20739,20749-20752,20760-20761,20771-20772,31938-31939
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "445ba3e20b31e835e8c708dbf11c07322107eef1",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

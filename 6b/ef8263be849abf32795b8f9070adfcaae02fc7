@@ -1,0 +1,242 @@
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_c59e576fdca4e8 174
+  s_c24357e71ae5bc::t_ddab160f0a5a76 189-210
+  s_c24357e71ae5bc::t_b6b99dcffac82b 57,59
+  s_c24357e71ae5bc::t_14177dfaa04c18 60
+  s_c24357e71ae5bc::t_90f16569d8202a 211
+  s_1db7ef72da7b36::t_6712ea58491977 74,76,78-80,82,84-85,87-90,92-94,96-97
+governance/DASHBOARD.md
+  s_aa1d2e29cde89c::t_39e0763b7831ca 25
+governance/graph.json
+  s_aa1d2e29cde89c::t_42a42b0089a9a4 2741-2844,2949-3026,20078-20113
+governance/plans/auto-learning-runbooks/E1-CLI-EXISTS.md
+  s_a74eeead08f62f::t_e45687b06a2747 1-21
+governance/plans/auto-learning-runbooks/E2-RUNBOOKS-SURFACE.md
+  s_a74eeead08f62f::t_9c56b6be8cdc1f 1-24
+governance/plans/auto-learning-runbooks/E3-CAPTURE-IS-REAL.md
+  s_a74eeead08f62f::t_a740a0c6fcebcd 1-23
+governance/plans/auto-learning-runbooks/E4-DRAFTS-ASSEMBLE.md
+  s_a74eeead08f62f::t_6db866f75643d9 1-29
+governance/plans/auto-learning-runbooks/E5-REINFORCEMENT.md
+  s_a74eeead08f62f::t_db5d8ef97a2403 1-21
+governance/plans/auto-learning-runbooks/E6-PUBLICATION.md
+  s_a74eeead08f62f::t_cdc79bfff88d92 1-23
+governance/plans/auto-learning-runbooks/E7-BACKFILL.md
+  s_a74eeead08f62f::t_96777fb5ede96b 1-26
+governance/plans/auto-learning-runbooks/E8-RUNS-NIGHTLY.md
+  s_a74eeead08f62f::t_ebbf8be373cd0b 1-26
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  s_a74eeead08f62f::t_249c8b82e3e88a 3-24
+governance/plans/ci-governance-sequence/E1-CLASS3-PR-HEAD-STABLE.md
+  s_a74eeead08f62f::t_bb18ea0612fd2f 1-21
+governance/plans/ci-governance-sequence/E2-CLASS1-CLIENT-SAFE-ERROR.md
+  s_a74eeead08f62f::t_ee21738dfc42ee 1-23
+governance/plans/ci-governance-sequence/E3-CLASS2-SCHEMA-SATISFIABILITY.md
+  s_a74eeead08f62f::t_1c4d746d60df64 1-19
+governance/plans/ci-governance-sequence/E4-GAM-RECONCILIATION-GATE.md
+  s_a74eeead08f62f::t_48bcc9ae34f92b 1-22
+governance/plans/ci-governance-sequence/E5-CROSS-REPO-ADOPT.md
+  s_a74eeead08f62f::t_3c827797199d2f 1-25
+governance/plans/ci-governance-sequence/E6-CREDIT-TABLE-DROP.md
+  s_a74eeead08f62f::t_de77a419e132ac 1-31
+governance/plans/ci-governance-sequence/NORTH-STAR.md
+  s_a74eeead08f62f::t_d1ae0d818a0f4f 4-10,38-48
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  s_a74eeead08f62f::t_6a1f2d27e8da6a 55-56
+governance/plans/effective-authority/E2-DEFAULTS.md
+  s_a74eeead08f62f::t_df6465b1d19da4 61-62
+governance/plans/effective-authority/E3-OIDC.md
+  s_a74eeead08f62f::t_9bbfe81fffa4f7 101-102
+governance/plans/effective-authority/E4-DISPATCH.md
+  s_a74eeead08f62f::t_f03d95ccf186f3 61-62
+governance/plans/effective-authority/E5-CEILING.md
+  s_a74eeead08f62f::t_2b9ef50e56c452 73-74
+governance/plans/effective-authority/E6-BLAST.md
+  s_a74eeead08f62f::t_4ecc42a74bcc00 65-66
+governance/plans/effective-authority/E7-RATCHET.md
+  s_a74eeead08f62f::t_5d34f507047d56 68-69
+governance/plans/effective-authority/NORTH-STAR.md
+  s_a74eeead08f62f::t_14a435b77499d7 164-165
+governance/plans/eval-coverage/E1-INVENTORY.md
+  s_a74eeead08f62f::t_c9999c3fac8678 32-33
+governance/plans/eval-coverage/E2-CONTRACT.md
+  s_a74eeead08f62f::t_4a600c5b5ede5e 37-38
+governance/plans/eval-coverage/E3-KNOWLEDGE.md
+  s_a74eeead08f62f::t_13ecfc3030f495 37-38
+governance/plans/eval-coverage/E4-FUNNEL.md
+  s_a74eeead08f62f::t_645bd55e4cfd2d 43-44
+governance/plans/eval-coverage/E5-GATE.md
+  s_a74eeead08f62f::t_7b43cf21fa250a 41-42
+governance/plans/eval-coverage/E6-AUTONOMY.md
+  s_a74eeead08f62f::t_532ec47789ac02 38-39
+governance/plans/eval-coverage/E7-LIFECYCLE.md
+  s_a74eeead08f62f::t_a99554f8a129a5 45-46
+governance/plans/eval-coverage/E8-BACKFILL.md
+  s_a74eeead08f62f::t_a1235d75cbcaaf 36-37
+governance/plans/eval-coverage/NORTH-STAR.md
+  s_a74eeead08f62f::t_4217af46e96609 96-97
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_a74eeead08f62f::t_a1566b6b4aa97b 171-175
+governance/plans/ffmpeg9-lei/action/EPIC-AUDIT-VERIFICATION.md
+  s_a74eeead08f62f::t_a5ada1a529800c 1-75
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  s_a74eeead08f62f::t_a94c18da08c3b6 1-212
+governance/plans/monetization-gateway/E1-SELF-402.md
+  s_a74eeead08f62f::t_6f2675c0cc8465 34-35
+governance/plans/monetization-gateway/E2-RULES-ENGINE.md
+  s_a74eeead08f62f::t_b21b21ce0b2d12 33-34
+governance/plans/monetization-gateway/E3-SELLER-PLATFORM.md
+  s_a74eeead08f62f::t_1ce27392e2e4c5 38-39
+governance/plans/monetization-gateway/E4-PAY-PER-CRAWL.md
+  s_a74eeead08f62f::t_9c41a2453e6bfb 32-33
+governance/plans/monetization-gateway/E5-DOGFOOD-EVAL.md
+  s_a74eeead08f62f::t_7346b084416431 32-33
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_a74eeead08f62f::t_58174826e02fd5 3-10
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_a74eeead08f62f::t_643f08d9cc7445 3-8
+governance/plans/namespace-substrate/MISSION-WEAVE.md
+  s_a74eeead08f62f::t_a8678e57c6811e 3-10
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_a74eeead08f62f::t_d2dac276736db5 3-10
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_a74eeead08f62f::t_d64341b6998cb3 3-11
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_a74eeead08f62f::t_736ea8ba7b4438 3-11
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_a74eeead08f62f::t_654135e3f2ddfe 3-9
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  s_a74eeead08f62f::t_933728dfc6ea43 11
+governance/plans/nested-dispatch-economy/E2-CACHE-REUSE.md
+  s_a74eeead08f62f::t_71c6011bb8d703 12
+governance/plans/nested-dispatch-economy/E3-ESCALATION.md
+  s_a74eeead08f62f::t_d03a1922697ec2 11
+governance/plans/nested-dispatch-economy/E4-PANEL.md
+  s_a74eeead08f62f::t_02c0de861d9531 12
+governance/plans/nested-dispatch-economy/E5-PAYBACK.md
+  s_a74eeead08f62f::t_b7aa94964cfa11 11
+governance/plans/nested-dispatch-economy/E6-VERIFIABILITY.md
+  s_a74eeead08f62f::t_c868ac6ed52c04 11
+governance/plans/receipts/E1-P1-cf-sandbox-substrate-2026-07-05.md
+  s_a74eeead08f62f::t_bac9acf1563305 3-10
+governance/plans/receipts/E13-phase-c-blast-radius-2026-06-23.md
+  s_a74eeead08f62f::t_da0a83a1225f89 3-13
+governance/plans/receipts/E13-phase-c-pilot-2026-06-23.md
+  s_a74eeead08f62f::t_a8c6c52c160120 3-12
+governance/plans/receipts/P-agent-orchestration-verified.md
+  s_a74eeead08f62f::t_d5ca5bbc2678ce 3-8
+governance/plans/receipts/P1-baseline-efficient-frontier.md
+  s_a74eeead08f62f::t_94d3d68dad1022 3-9
+governance/plans/receipts/P9-efficiency-research-2026-06-28.md
+  s_a74eeead08f62f::t_bfd116df2c9fed 3-10
+governance/plans/receipts/T5.3-rollout-receipt-TEMPLATE.md
+  s_a74eeead08f62f::t_14278582785d34 3-8
+governance/plans/receipts/capability-audit-2026-07-03.md
+  s_a74eeead08f62f::t_0162c39d14f4fc 3-9
+governance/plans/receipts/code-mode-proof.md
+  s_a74eeead08f62f::t_433a41743119e5 3-8
+governance/plans/receipts/efficient-frontier-quality-ab-2026-06-29.md
+  s_a74eeead08f62f::t_ab77d2a21b901a 3-8
+governance/plans/receipts/enforcement-coverage-audit-2026-06-29.md
+  s_a74eeead08f62f::t_5e7cb1c29a2cf7 3-9
+governance/plans/receipts/lawbook-search-proof.md
+  s_a74eeead08f62f::t_6e26aa15f0f7dd 3-8
+governance/plans/receipts/ollama-ask-proof.md
+  s_a74eeead08f62f::t_ea13e866b04ac7 3-8
+governance/plans/receipts/ollama-route-proof.md
+  s_a74eeead08f62f::t_4924365b795e4b 2-7
+governance/plans/receipts/orchestration-levers-verified-2026-06-29.md
+  s_a74eeead08f62f::t_37bf7d7aec8055 3-9
+governance/plans/receipts/seed-regression-skill-load-blowout.md
+  s_a74eeead08f62f::t_2623266deee642 3-9
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_a74eeead08f62f::t_cf8cf26e0eb86a 4-13
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_a74eeead08f62f::t_6adb07091b4c85 4-17
+governance/plans/sandbox-tier-ladder/E2-TIER2-MICROVM.md
+  s_a74eeead08f62f::t_93e5a18912f5c0 4-15
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_a74eeead08f62f::t_957e5aba231544 4-17
+governance/plans/sandbox-tier-ladder/E4-EVAL-CONSUMER.md
+  s_a74eeead08f62f::t_c66558332de86a 4-13
+governance/plans/sandbox-tier-ladder/E5-DEVERCEL.md
+  s_a74eeead08f62f::t_541fc575850584 4-12
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_a74eeead08f62f::t_1b58c43e7814de 5-16
+governance/plans/socratic-loop/ACTORS.md
+  s_a74eeead08f62f::t_958b9f4fed4b26 3-11
+governance/plans/socratic-loop/ARTIFACTS.md
+  s_a74eeead08f62f::t_5d6a3041b41c4d 3-11
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_a74eeead08f62f::t_8db1b94c7ef8e3 3-8
+governance/plans/socratic-loop/METHOD-CANON.md
+  s_a74eeead08f62f::t_17bf2a06fb5741 3-11
+governance/plans/socratic-loop/METHODOLOGIES.md
+  s_a74eeead08f62f::t_29041ea1a07d1f 3-13
+governance/plans/socratic-loop/RECEIPTS.md
+  s_a74eeead08f62f::t_8dd0fa1f92fc94 4-12
+governance/plans/socratic-loop/TAXONOMY.md
+  s_a74eeead08f62f::t_ba10a7c0489739 3-9
+governance/plans/wave-automation-registry/E1-REGISTRY-CORE.md
+  s_a74eeead08f62f::t_72545259efc85d 4-10
+governance/plans/wave-automation-registry/E2-IMPORT-CATEGORIZE.md
+  s_a74eeead08f62f::t_e18996a6327d7d 4-10
+governance/plans/wave-automation-registry/E3-CLEANUP-PARKING.md
+  s_a74eeead08f62f::t_233135a03f3b5f 4-11
+governance/plans/wave-automation-registry/E4-STRUGGLE-MINER-TIEIN.md
+  s_a74eeead08f62f::t_c95d85c72543db 4-10
+governance/plans/wave-automation-registry/E5-CUTOVER-VALIDATION.md
+  s_a74eeead08f62f::t_da3151b52a8073 4-14
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_a74eeead08f62f::t_1d802eaadcd312 3-7
+governance/recall/eval/repo-corpus.manifest.json
+  s_a4271c28846c9e::t_cbd01f7c49a39a 139-146,170-175,187-196,281,283-286
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6bef8263be849abf32795b8f9070adfcaae02fc7",
+  "prompts": {},
+  "sessions": {
+    "s_1db7ef72da7b36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a91383d3fb686d98d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a4271c28846c9e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af918451a86cbebd9",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a74eeead08f62f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae9f4b93585237cb4",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_aa1d2e29cde89c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a84a01bc408017411",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

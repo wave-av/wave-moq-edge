@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/action/MLVC-PROTOCOL-BRIDGE-MATRIX.md
+  s_aa648faa98e7db::t_b66c773b01bd91 1-20
+governance/plans/mlvc-api-plane/E1-SERVICE.md
+  s_aa648faa98e7db::t_f747e65056a9eb 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "200bb3bbe3978b7ea651b47553f0e766f715d6fc",
+  "prompts": {},
+  "sessions": {
+    "s_aa648faa98e7db": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8314a3bffekMjoaGDKpbf7jO",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

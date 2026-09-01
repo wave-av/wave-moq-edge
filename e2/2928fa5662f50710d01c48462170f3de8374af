@@ -1,0 +1,14 @@
+governance/recall/eval/repo-corpus.manifest.json
+  h_67a1b847dc59d6 22-24,200-214,286,294,298,314-317,522
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e22928fa5662f50710d01c48462170f3de8374af",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

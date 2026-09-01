@@ -1,0 +1,35 @@
+governance/tools/explain-to-understand/manifests/agentic-wave.json
+  s_ea7fda6a228496::t_0b3e75b11460ad 1-16
+governance/tools/explain-to-understand/bin/explain-to-understand-check.mjs
+  s_ea7fda6a228496::t_9b9a08882c5b65 1-31
+governance/research/engineering-canon/origin-method.md
+  s_ea7fda6a228496::t_2b148d5aed0961 629-662
+governance/tools/explain-to-understand/explain-to-understand.schema.json
+  s_ea7fda6a228496::t_e5a309327b2a35 1-24
+governance/tools/explain-to-understand/lib/index.mjs
+  s_ea7fda6a228496::t_e7031dc0e597b4 1-47
+governance/tools/explain-to-understand/README.md
+  s_ea7fda6a228496::t_e90779ec4fdfca 1-17
+governance/tools/explain-to-understand/tests/explain-to-understand.test.mjs
+  s_ea7fda6a228496::t_60eda23a0b0026 1-41
+governance/tools/explain-to-understand/package.json
+  s_ea7fda6a228496::t_ffe3d98ee867d4 1-8
+governance/tools/explain-to-understand/examples/explain-to-understand-example.json
+  s_ea7fda6a228496::t_61038245c97319 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0037e941f86c3979cfb18657cfcba29535b6752b",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

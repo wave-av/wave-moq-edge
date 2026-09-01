@@ -1,0 +1,25 @@
+settings/settings.base.json
+  s_be40541f6fd98b::t_dfe86cedc6a96c 380-385
+hooks/mcp-merge-authority-gate.mjs
+  s_be40541f6fd98b::t_285acb2c9b97b5 1-199
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_be40541f6fd98b::t_eaab88efd3353a 1-144
+hooks/manifest.json
+  s_be40541f6fd98b::t_d07490416fdb04 1708
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "91d611dd7fb2c59bd8955087d455b209f18ad0c3",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

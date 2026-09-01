@@ -1,0 +1,9 @@
+scripts/bugbot/daemon.sh
+  ai_agent 43,48-49,51,53-54,59-60,62-67,83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "ec1c4e650ce8f011ebc0268eec099f72a0b3d23a",
+  "prompts": {}
+}

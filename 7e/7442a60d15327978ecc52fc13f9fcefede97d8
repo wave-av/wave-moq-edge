@@ -1,0 +1,29 @@
+hooks/last-handoff-capture.sh
+  s_27c3f37c99074f::t_549a3d66a42ac8 1-75
+hooks/last-handoff-restore.sh
+  s_27c3f37c99074f::t_ab8ac1a570e970 1-25
+settings/settings.base.json
+  s_27c3f37c99074f::t_de90ea1bd18d82 634-643,803-807
+governance/ENFORCEMENT-COVERAGE.md
+  s_27c3f37c99074f::t_2697f355959702 404,428
+governance/graph.json
+  s_27c3f37c99074f::t_e3c0655c6d9bae 2261-2273,9765-9773,9918-9925,18794-18799,34544-34561,34796-34813
+hooks/manifest.json
+  s_27c3f37c99074f::t_269f814707173a 734-775
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7e7442a60d15327978ecc52fc13f9fcefede97d8",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

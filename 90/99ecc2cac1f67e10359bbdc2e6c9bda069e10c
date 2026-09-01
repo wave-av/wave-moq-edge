@@ -1,0 +1,38 @@
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_63c6ee080d73c3::t_eb8a0265662397 1-100
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_63c6ee080d73c3::t_51986a9aa21b5a 1-91
+governance/plans/public-supply-chain/E2-CI-ONLY-PUBLISH.md
+  s_63c6ee080d73c3::t_818b27d74cd952 1-72
+governance/plans/public-supply-chain/E3-TOKEN-RETIREMENT.md
+  s_63c6ee080d73c3::t_767b497828b944 1-93
+governance/plans/public-supply-chain/E6-CONTINUOUS-PROOF.md
+  s_63c6ee080d73c3::t_f05849b146656b 1-100
+governance/plans/public-supply-chain/E0-INVENTORY.md
+  s_63c6ee080d73c3::t_d4a6d32bbb85bf 1-3,6-136
+  s_63c6ee080d73c3::t_bc1edc5cc76efb 4-5
+governance/plans/public-supply-chain/NORTH-STAR.md
+  s_63c6ee080d73c3::t_c5ab84a73326be 1-153
+governance/plans/public-supply-chain/E1-PROVENANCE.md
+  s_63c6ee080d73c3::t_64ffcb587dc246 1-81
+governance/DASHBOARD.md
+  s_63c6ee080d73c3::t_2dc3494741c95d 25
+governance/graph.json
+  s_63c6ee080d73c3::t_68f35e3c39f29c 5245-5335,23700-23765
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9099ecc2cac1f67e10359bbdc2e6c9bda069e10c",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

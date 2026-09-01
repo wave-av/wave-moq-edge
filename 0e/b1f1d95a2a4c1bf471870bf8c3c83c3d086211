@@ -1,0 +1,25 @@
+scripts/check-claude-config.sh
+  s_cf3356a24071e8::t_5d7f34d1e80e85 39-59,85
+scripts/check-context-integrity.sh
+  s_cf3356a24071e8::t_21eb1ad7bbbe11 42-61,63,73
+scripts/check-dependency-confusion.sh
+  s_cf3356a24071e8::t_af99b31cfdc3e8 45-81,83,107,110,119-120,123,125-130,132,148
+scripts/config-scanners.test.mjs
+  s_cf3356a24071e8::t_9e6eb1d05b41b7 1-202
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "0eb1f1d95a2a4c1bf471870bf8c3c83c3d086211",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

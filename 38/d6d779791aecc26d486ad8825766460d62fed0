@@ -1,0 +1,28 @@
+governance/plans/money-plane/E0-REFERENCE.md
+  s_756b33c630d33b::t_590d8b75cd07af 1-65
+governance/plans/money-plane/NORTH-STAR.md
+  s_756b33c630d33b::t_17f566bb9dda23 21-23
+  s_756b33c630d33b::t_caea72a0ff5cae 5-20,25-52
+  s_756b33c630d33b::t_3d3dc44dbe9118 2-4
+  s_756b33c630d33b::t_26e2af917fcabc 24
+governance/plans/money-plane/E1-LAWS.md
+  s_756b33c630d33b::t_5d894232d311f5 1-47
+governance/plans/money-plane/E2-WOW.md
+  s_756b33c630d33b::t_dc46391e179a4b 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "38d6d779791aecc26d486ad8825766460d62fed0",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

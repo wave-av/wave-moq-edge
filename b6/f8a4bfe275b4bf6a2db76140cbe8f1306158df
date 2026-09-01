@@ -1,0 +1,31 @@
+governance/lib/generated-banner.mjs
+  s_db1b2a792e5f25::t_dcafba2b65252b 32-44
+  s_db1b2a792e5f25::t_5b86a571a82440 81,89-100
+  s_7e3e50fa23978e::t_f00a46647bb058 101-102
+governance/test/generated-banner.test.mjs
+  s_db1b2a792e5f25::t_6cec62a499fc48 53-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b6f8a4bfe275b4bf6a2db76140cbe8f1306158df",
+  "prompts": {},
+  "sessions": {
+    "s_7e3e50fa23978e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5c4389db-33e9-4332-aea2-5545d85cbdeb",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

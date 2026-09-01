@@ -1,0 +1,31 @@
+AGENTS.md
+  s_32a30bff8591e9::t_2048271f49cf9b 17-24
+  s_9041cf1cf1ccad::t_97aa06e2f5fd3a 12-14
+plugins/trust-gates.ts
+  s_9041cf1cf1ccad::t_c5336dff53f8f7 1-28,30-132
+  s_9041cf1cf1ccad::t_c8d6cec767c786 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9e656c35d0725a52b75eab7009fe211a0676e540",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+CHANGELOG.md
+  s_3042b0afd7367f::t_99201ec15a89bc 9-11
+src/runpod.ts
+  s_3042b0afd7367f::t_fb62f55b83d6c6 21-26
+  s_3042b0afd7367f::t_a82324f00ad11c 190-334
+test/runpod-stream.test.ts
+  s_3042b0afd7367f::t_46024463dfd0a4 1-315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fc1db69931477d72c34fc9b52747490b88aeea3a",
+  "prompts": {},
+  "sessions": {
+    "s_3042b0afd7367f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fed0cd148ffej2XFE8lpKWmuGl",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

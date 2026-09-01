@@ -1,0 +1,34 @@
+governance/bin/surface-registry.mjs
+  s_33808c00e16d52::t_ab0ccdf17aef46 100-103
+  s_33808c00e16d52::t_b124ed09850f9a 1-99,104-124
+governance/test/surface-registry.test.mjs
+  s_33808c00e16d52::t_185a126a3fc1ca 1-41
+.gitignore
+  s_33808c00e16d52::t_87430a704e932e 52-56
+governance/state/surface-registry.json
+  s_dedb333dd5195e::t_03d6203aa73509 1-137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "48a79d5f1a15532a2dddb7a23ddb52f0487a244c",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

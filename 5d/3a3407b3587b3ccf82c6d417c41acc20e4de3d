@@ -1,0 +1,24 @@
+sdk/package.json
+  s_6b6effeb00c67b::t_aa13a894e9b854 1-24,26-30
+  s_6b6effeb00c67b::t_b8f3a90d36c2f7 25
+  s_6b6effeb00c67b::t_160d373c511856 31-33
+sdk/wave-codec-client.ts
+  s_6b6effeb00c67b::t_45c3ac3bb358fa 14
+  s_6b6effeb00c67b::t_3196c2a091cc0e 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5d3a3407b3587b3ccf82c6d417c41acc20e4de3d",
+  "prompts": {},
+  "sessions": {
+    "s_6b6effeb00c67b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd00faa18ffeY4RzfZfiVDo3KB",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

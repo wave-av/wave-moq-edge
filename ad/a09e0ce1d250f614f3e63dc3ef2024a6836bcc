@@ -1,0 +1,35 @@
+governance/lib/stranded-merge-args.mjs
+  s_c24357e71ae5bc::t_f68f631412939d 1-88
+governance/lib/stranded-merge.mjs
+  s_c24357e71ae5bc::t_7e91585ff3cb94 1,6-21,23-25,27-30,33-36,39-41,43-53,55-62,64-78,80,82-93,99-100,102-106,111-122,126-130,132-135,139-187,193,197,204
+  s_c24357e71ae5bc::t_5a49f0481ecba6 2-5,22,26,31-32,37-38,42,54,63,79,81,94-98,101,107-110,123-125,131,136-138,188-192,194-196,198-203
+governance/lib/stranded-merge-report.mjs
+  s_c24357e71ae5bc::t_dc03acd4246ce0 1-45,51-67,75-102
+  s_c24357e71ae5bc::t_6c99aaa397a0aa 68-74
+  s_c24357e71ae5bc::t_fd742494ff9ed6 46-50
+governance/bin/stranded-merge-sweep.mjs
+  s_c24357e71ae5bc::t_163341b2f9dbd6 144
+  s_c24357e71ae5bc::t_a267909a358354 143
+  s_c24357e71ae5bc::t_5ac92e2ba29388 1-142,145-213
+governance/test/stranded-merge-e2e.test.mjs
+  s_c24357e71ae5bc::t_2bfb96d9eaf412 1-256
+governance/test/stranded-merge.test.mjs
+  s_c24357e71ae5bc::t_9d73ceb294b34b 1-150,167-254
+  s_c24357e71ae5bc::t_28bd68f6d6d423 151-166
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ada09e0ce1d250f614f3e63dc3ef2024a6836bcc",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

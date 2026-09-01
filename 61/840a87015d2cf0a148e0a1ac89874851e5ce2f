@@ -1,0 +1,36 @@
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/bin/gate-coverage-audit.mjs
+  h_67a1b847dc59d6 1-184
+governance/bin/vendored-gate-audit.mjs
+  h_67a1b847dc59d6 31,57-60,63,67,72-75,93-96
+governance/graph.json
+  h_67a1b847dc59d6 22352-22357
+governance/lib/gate-audit-args.mjs
+  h_67a1b847dc59d6 1-2,33-70,73-89,91,94,98-101,106-107,109-110,112-114,118-130
+governance/lib/gate-audit-io.mjs
+  h_67a1b847dc59d6 1-87
+governance/lib/gate-coverage.mjs
+  h_67a1b847dc59d6 1-266
+governance/lib/vendored-gate-classify.mjs
+  h_67a1b847dc59d6 24-76,81-83,87,89-91,93,97-101
+governance/plans/frontier-program/E-ENFORCE.md
+  h_67a1b847dc59d6 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  h_67a1b847dc59d6 519-562
+governance/test/gate-audit-args.test.mjs
+  h_67a1b847dc59d6 11-14,17,73-111,133-141
+governance/test/gate-coverage.test.mjs
+  h_67a1b847dc59d6 1-448
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "61840a87015d2cf0a148e0a1ac89874851e5ce2f",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

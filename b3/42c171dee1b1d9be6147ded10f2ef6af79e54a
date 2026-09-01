@@ -1,0 +1,20 @@
+governance/plans/nested-dispatch-economy/NORTH-STAR.md
+  s_96280c922a9418::t_416312c52e8700 4-38,40-80
+  s_96280c922a9418::t_7e3820f66351f2 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "b342c171dee1b1d9be6147ded10f2ef6af79e54a",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

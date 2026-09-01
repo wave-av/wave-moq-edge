@@ -1,0 +1,23 @@
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_15127d80763110::t_0478627da71623 200-209
+  s_15127d80763110::t_3fd69a3963b1f8 27-33
+governance/plans/wave-mesh-fabric/E1-P1-ESTATE-LATENCY.md
+  s_15127d80763110::t_c206e7e4e3654c 344-347
+  s_15127d80763110::t_68af8655bb6c59 267-326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "93f5a4b6929111da3d19eb67e1dd44edbf336915",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

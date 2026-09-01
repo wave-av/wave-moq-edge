@@ -1,0 +1,33 @@
+governance/lib/reviewer-scoreboard.mjs
+  s_c24357e71ae5bc::t_98a833768ccc1d 115,119
+  s_c24357e71ae5bc::t_507a140900e20e 116-118
+  s_cfcf005378ba2d::t_8e575ba3c35f9a 27
+governance/test/reviewer-scoreboard-delegation.test.mjs
+  s_c24357e71ae5bc::t_1baee789268239 33
+  s_c24357e71ae5bc::t_74168099d4d60f 1-32,34-49,51-52,56
+  s_c24357e71ae5bc::t_c04663d169ed12 50,53-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ea0e354b2eef0965f4cef5c3ecbbd9f0453f8ed",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_cfcf005378ba2d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af453c937b5e0642e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

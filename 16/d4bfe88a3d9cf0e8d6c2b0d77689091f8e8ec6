@@ -1,0 +1,43 @@
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_2e30bff6169f7a::t_ef898d1567bb3c 1-273
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_2dc16edba449cf 1-385
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_5300136c25e49e 1-302
+governance/plans/wave-cost-ledger/RECEIPTS.md
+  s_2e30bff6169f7a::t_40877a97c72768 1-25
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_b5e4737f0b7484 1-276
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_a7dc935a6b8653 1-278
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  s_2e30bff6169f7a::t_2a2b4f7bffe105 1-422
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_9b0fb0b669a8a1 1-282
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_6f6ae7053b47fc 1-357
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_2e30bff6169f7a::t_9db40fe2162be2 1-126
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_0158bdd076d52c 1-271
+governance/DASHBOARD.md
+  s_2e30bff6169f7a::t_061e41a3b572bc 25
+governance/graph.json
+  s_2e30bff6169f7a::t_c7065b9ab7cab1 4679-4808,22180-22557
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "16d4bfe88a3d9cf0e8d6c2b0d77689091f8e8ec6",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

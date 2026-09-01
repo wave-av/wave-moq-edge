@@ -1,0 +1,40 @@
+governance/plans/rendering-completeness/E3-MCP-COVERAGE.md
+  s_2606de950a60c6::t_ad1f9456eeeba5 2-13
+  s_2606de950a60c6::t_6ac943434857c4 1
+governance/plans/rendering-completeness/GAP-MAP.md
+  s_2606de950a60c6::t_4ad75306abb203 1-69
+governance/plans/rendering-completeness/E0-FOUNDATION.md
+  s_2606de950a60c6::t_350b01d205bf22 2-16
+  s_2606de950a60c6::t_32e36febe0c07d 1
+governance/plans/rendering-completeness/E2-CLI-COVERAGE.md
+  s_2606de950a60c6::t_98cfd7bb3c31f5 2-13
+  s_2606de950a60c6::t_566ccfc44a6f17 1
+governance/plans/rendering-completeness/E5-VOICE-COVERAGE.md
+  s_2606de950a60c6::t_146ed1cde69f4e 2-16
+  s_2606de950a60c6::t_f5c82b52b2e7af 1
+governance/plans/rendering-completeness/NORTH-STAR.md
+  s_2606de950a60c6::t_78800d300c3836 5-60
+  s_2606de950a60c6::t_9e7a552d91de6c 2-4
+governance/plans/rendering-completeness/E4-SKILLS-COVERAGE.md
+  s_2606de950a60c6::t_8e4a7bd9cd4551 2-13
+  s_2606de950a60c6::t_a018924071087b 1
+governance/plans/rendering-completeness/E1-SDK-COVERAGE.md
+  s_2606de950a60c6::t_1cc744cc4df197 2-15
+  s_2606de950a60c6::t_97d53b192ede86 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "19a78c3a313d8e15c9921157e9377160417fa245",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

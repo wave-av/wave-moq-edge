@@ -1,0 +1,19 @@
+governance/plans/runtime-economy/dogfood/scorecard-task3.log
+  s_7ddeb5d251570f::t_f34b16dd22beaa 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "121a1bbe04b73e38d94d4d60692b7b380113fb86",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

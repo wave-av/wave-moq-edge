@@ -1,0 +1,25 @@
+governance/bin/cron-failover.mjs
+  s_941b8f0612ec3e::t_3775294bf78d18 272-285
+governance/test/cron-failover-cli.test.mjs
+  s_941b8f0612ec3e::t_5569a4a20f3530 1-355
+governance/test/cron-failover.test.mjs
+  s_941b8f0612ec3e::t_cea1b7fdbbc803 1,3-9,72,74-76,91-93,96-97,105-116,170,173,175,179-181,186-187,191-193
+  s_941b8f0612ec3e::t_1381a405ac2f63 188,190,194-207
+  s_941b8f0612ec3e::t_a44bdbca4de25e 189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b2d9fa7ce5cade82f97220477c83cf75da5a5411",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+governance/tools/explanation-gate/law.schema.json
+  s_762c14e756949b::t_4452e261b20b9b 1-49
+governance/tools/explanation-gate/README.md
+  s_762c14e756949b::t_34e8ae7cb7ec8e 1-58
+governance/tools/explanation-gate/examples/wave-laws.json
+  s_762c14e756949b::t_9a09e3f550df91 1-56
+governance/tools/explanation-gate/bin/explanation-gate.mjs
+  s_762c14e756949b::t_97faed79683653 1-72
+governance/tools/explanation-gate/tests/explanation-gate.test.mjs
+  s_762c14e756949b::t_9974655cb15ccf 1-227
+governance/tools/explanation-gate/lib/index.mjs
+  s_762c14e756949b::t_71ee33859980a2 1-120
+governance/research/creator-intelligence/DEUTSCH-LAMBERT-3B1B.md
+  s_c2bb037074776b::t_94fa3f60a3af44 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9826d1d96e41b7da5ad991b69a79690b5d6b1982",
+  "prompts": {},
+  "sessions": {
+    "s_762c14e756949b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0036a822effeWQLZ1gNS0weLzt",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

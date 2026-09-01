@@ -1,0 +1,45 @@
+hooks/public-content-leak-scan.sh
+  s_157583aa3b6686::t_374a79c493dec1 32-33,35
+hooks/tests/public-content-leak-scan.sh
+  s_157583aa3b6686::t_aca5fa4ffc68ab 63-64
+  s_157583aa3b6686::t_95b80525879347 17-19
+  s_157583aa3b6686::t_c69d460796031d 58-62,65-68
+settings/settings.base.json
+  s_157583aa3b6686::t_01a49a7f8f4b48 146,150,152-157,160
+governance/graph.json
+  s_aed9dd00083000::t_819bcc6eab0694 4028,4030,4033-4034,4037,4039,4043,16155-16166
+hooks/manifest.json
+  s_72bb9a89d54563::t_28831c82f05489 758,763,769
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "ff9a7fe2bdb3d0cc8764fe2634a39fc3ac3ba796",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_72bb9a89d54563": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a67e07d2fc78ae911",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_aed9dd00083000": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af0c61a51aa10db3d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/entire-integration/NORTH-STAR.md
+  s_32a30bff8591e9::t_946c238c7ecf63 5
+governance/plans/entire-integration/RECEIPTS.md
+  s_32a30bff8591e9::t_946c238c7ecf63 213-222
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4c7593f100138202b10cc59bd3ad04e07bd1a759",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

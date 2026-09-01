@@ -1,0 +1,95 @@
+.github/workflows/foundation-gate.yml
+  s_1fc74eafd704c2::t_b91ffdaad645e1 42
+governance/bin/epic-status.mjs
+  s_1fc74eafd704c2::t_61ab8424550421 21-33,39,41-48,53-61,66-71,73-83,85-90,92-95,97-99,101-110,124-127
+governance/bin/pr-check-health.mjs
+  s_1fc74eafd704c2::t_3e8f395fda3136 43,45-51,64-67,87-91,94-100,103-128,137,146,159-161,168,174-175,178-182,193-194,200
+governance/lib/epic-status-check.mjs
+  s_1fc74eafd704c2::t_39bb200b95a21f 1-76
+governance/lib/epic-status-scan.mjs
+  s_1fc74eafd704c2::t_5173999a009056 1-202
+governance/lib/pr-check-health-absence.mjs
+  s_1fc74eafd704c2::t_1df7e0f4a9c87d 1-5,7-15,17-30,40-102,105,111-118,133-136
+governance/lib/pr-check-health-evaluate.mjs
+  s_1fc74eafd704c2::t_f2774587fb5982 1-104
+governance/lib/pr-check-health-fetch.mjs
+  s_1fc74eafd704c2::t_f9985757468bab 1-5,7-10,12-15,21,23,50-56,64-65,125-131,143-160,163-170,172-191,194,199,201,207,209-217,219-228,230,235-243,245,250-252,320
+governance/lib/pr-check-health-platform.mjs
+  s_1fc74eafd704c2::t_1c968165303c5a 119-128,132,232-278
+governance/lib/pr-check-health-required-set.mjs
+  s_1fc74eafd704c2::t_f2d99a76ef3d7d 1-3,5-10,54-57
+governance/lib/pr-check-health-run.mjs
+  s_1fc74eafd704c2::t_206d3fe31fcd59 1-110
+governance/lib/pr-check-health-surfaces.mjs
+  s_1fc74eafd704c2::t_9452e6aa2274ac 1-3,5-9,11-15,17,19-20,22-26,28-31,33-48,50,52-74,77-110,113-116,118-170
+governance/lib/pr-check-health-verdict.mjs
+  s_1fc74eafd704c2::t_2d4699a6d251c6 1-133
+governance/lib/pr-check-health.mjs
+  s_1fc74eafd704c2::t_66bc495d558505 9-14,22-26,50-55,73-76,79-81,83-86,88-107,130-131,144-145,148,155,173,177-183,191-194,196-227,240-241,243-248,250-253
+governance/plans/agentic-wave/ADR-CLOUDFLARE-OS.md
+  s_1fc74eafd704c2::t_6c210a0bd0d6b0 34-84,112,121
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_1fc74eafd704c2::t_ddbd1ddd373f29 76
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_1fc74eafd704c2::t_3ea0e76831f2d8 11-27,29-32,54-60,62-64,68-69,77-102,108,114-183
+governance/plans/console-completeness/E1-LEGACY-SIX.md
+  s_1fc74eafd704c2::t_4f24d4e975e46e 1-57
+governance/plans/console-completeness/E1-SPEC.md
+  s_1fc74eafd704c2::t_a268a4852c37e4 1-404
+governance/plans/console-completeness/E2-BILLING-USAGE.md
+  s_1fc74eafd704c2::t_690d43f5a2b782 1-84
+governance/plans/console-completeness/E3-COVERAGE.md
+  s_1fc74eafd704c2::t_98f9af690deece 1-91
+governance/plans/console-completeness/E3-SPEC.md
+  s_1fc74eafd704c2::t_0a06dbc966cccb 1-455
+governance/plans/console-completeness/E4-SEMANTICS.md
+  s_1fc74eafd704c2::t_e82c78ed3e27dd 1-63
+governance/plans/console-completeness/E5-PERFECTION-PASS.md
+  s_1fc74eafd704c2::t_c22595086f10c2 1-53
+governance/plans/console-completeness/NORTH-STAR.md
+  s_1fc74eafd704c2::t_65f6b16744207a 1-151
+governance/plans/console-completeness/comps/billing-usage-v1.html
+  s_1fc74eafd704c2::t_d5cf314bba9617 1-686
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_1fc74eafd704c2::t_02430c763890f9 10-24,160-175
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_1fc74eafd704c2::t_8dbac6bba75120 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_1fc74eafd704c2::t_6c023212848a20 249-281,289
+governance/plans/ffmpeg9-lei/action/E10-P2-TIME-MACHINE-POC.md
+  s_1fc74eafd704c2::t_ab74b3a6ba7ecf 1-269
+governance/plans/ffmpeg9-lei/action/E4-P2B-MODNET-SPIKE.md
+  s_1fc74eafd704c2::t_e4558715a0f085 1-209
+governance/recall/BAKE-OFF.md
+  s_1fc74eafd704c2::t_77da72df89a8f5 74,145-149,151-153,155-160,162,164-228,230,241-276,290-292,448,485-503
+governance/test/epic-status-missing-root.test.mjs
+  s_1fc74eafd704c2::t_5e1354ab637231 1-99
+governance/test/pr-check-health-fetch.test.mjs
+  s_1fc74eafd704c2::t_c680e21488e4cb 1-365
+governance/test/pr-check-health-platform.test.mjs
+  s_1fc74eafd704c2::t_0203bf1ec84d82 14,123-129,163-172,330-358
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_1fc74eafd704c2::t_8612c74175faa4 14,17,19,64,71,73-78,83-84,89-90,220-227,230-234,237-238,248-249,251-252,255-256,264,266,277,285,287,289,295,297-303,305,308,341-343,350-390,392,394-395
+governance/test/pr-check-health-stall.test.mjs
+  s_1fc74eafd704c2::t_18ab37ce4963a1 1-134
+governance/test/pr-check-health-surfaces.test.mjs
+  s_1fc74eafd704c2::t_cbdc09cb665600 1-277
+governance/test/pr-check-health.test.mjs
+  s_1fc74eafd704c2::t_5c9181d401cb4c 10,17-19,56-73,231-240,260,264-349,352-390
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1aa111048faf1382d1ecaf1424a1d8638c0a620c",
+  "prompts": {},
+  "sessions": {
+    "s_1fc74eafd704c2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae8c1a7ef2b9028db",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

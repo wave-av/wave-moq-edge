@@ -1,0 +1,57 @@
+governance/test/installation-authority-audit-args.test.mjs
+  s_63c6ee080d73c3::t_35db79e393685e 1-10,14-42,46,54-88,107-119
+governance/lib/thread-resolution-args.mjs
+  s_63c6ee080d73c3::t_56fc5045e35b1d 1-9,19-22,24-28,33-39,52
+  s_63c6ee080d73c3::t_968bd5f30d1363 10-13,41-51
+governance/test/thread-resolution-args.test.mjs
+  s_63c6ee080d73c3::t_3a3de9ff4ea02e 1-71,76-80,84-93,95-96,99
+  s_63c6ee080d73c3::t_968bd5f30d1363 72-75,81-83,97-98
+governance/bin/thread-resolution.mjs
+  s_63c6ee080d73c3::t_2d5f9344dc5cdb 146
+  s_63c6ee080d73c3::t_ffc3426d696f7f 111-115,122-123,129-133,135
+  s_63c6ee080d73c3::t_968bd5f30d1363 116-121
+governance/lib/review-liveness-args.mjs
+  s_63c6ee080d73c3::t_0faef37009f33b 1-11,24-27,30-34,40-49,63
+  s_63c6ee080d73c3::t_968bd5f30d1363 12-17,51-62
+governance/bin/review-liveness.mjs
+  s_63c6ee080d73c3::t_4c8f01914e8e17 159-163,171-172,181-185,187,189
+  s_63c6ee080d73c3::t_be98362f79ec33 245
+  s_63c6ee080d73c3::t_968bd5f30d1363 164-170
+governance/bin/fleet/installation-authority-audit.mjs
+  s_63c6ee080d73c3::t_7f7bbffae47783 156-169,176
+  s_63c6ee080d73c3::t_a30c1dfb9fe659 226
+  s_63c6ee080d73c3::t_968bd5f30d1363 16-20
+governance/test/review-liveness-args.test.mjs
+  s_63c6ee080d73c3::t_2b040efba8bd17 1-32,36-48,52-81,88-92,96-105,107-108,111
+  s_63c6ee080d73c3::t_968bd5f30d1363 82-87,93-95,109-110
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_63c6ee080d73c3::t_b1d59201a5b022 1-11,14,16,28-33,38-44,55
+  s_63c6ee080d73c3::t_968bd5f30d1363 12-15,46-54
+governance/lib/strict-flags.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 1-9,17-48,54,61,68-74
+governance/lib/gate-audit-args.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 22-28,104
+  s_63c6ee080d73c3::t_797b7596f6be59 1,39-42,44-65,67-71,92-97,103
+governance/lib/reconcile-args.mjs
+  s_63c6ee080d73c3::t_ceac6da107caed 1-66
+governance/test/reconcile-args.test.mjs
+  s_63c6ee080d73c3::t_ceac6da107caed 1-110
+governance/bin/reconcile.mjs
+  s_63c6ee080d73c3::t_ceac6da107caed 28,33-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7b0912baeca27efd78cea51d5eb14d100d05b518",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

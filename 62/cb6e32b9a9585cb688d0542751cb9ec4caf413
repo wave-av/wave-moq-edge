@@ -1,0 +1,19 @@
+governance/plans/wave-platform-completeness/NORTH-STAR.md
+  s_fcde7273b852a8::t_59b36258f36955 56-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "62cb6e32b9a9585cb688d0542751cb9ec4caf413",
+  "prompts": {},
+  "sessions": {
+    "s_fcde7273b852a8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a47958a1c3092db93",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

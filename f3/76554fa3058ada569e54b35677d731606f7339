@@ -1,0 +1,19 @@
+package.json
+  s_32308d89320687::t_90308960e8d713 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f376554fa3058ada569e54b35677d731606f7339",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

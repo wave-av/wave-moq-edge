@@ -1,0 +1,18 @@
+hookcli/tests/lib/modules-2.sh
+  h_67a1b847dc59d6 1-125
+hookcli/tests/lib/modules.sh
+  h_67a1b847dc59d6 232-235
+hookcli/tests/module-registration.sh
+  h_67a1b847dc59d6 22-25,27,62,69,91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a5dc381811f1ef81d1d09754c19c2f30e4705c00",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

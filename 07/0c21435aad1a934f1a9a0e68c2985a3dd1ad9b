@@ -1,0 +1,24 @@
+.github/workflows/wave-sec-gate.yml
+  s_85d9e5f433b9aa::t_4edd5add7feceb 24-27,29-39,41
+  s_85d9e5f433b9aa::t_a1ce1158614c57 103-104,109-111
+  s_85d9e5f433b9aa::t_94123a57571f29 129
+  s_85d9e5f433b9aa::t_9f2a5fdc696d0d 105-108
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_afda774c399ad9 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "070c21435aad1a934f1a9a0e68c2985a3dd1ad9b",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

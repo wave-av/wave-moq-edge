@@ -1,0 +1,99 @@
+.github/workflows/ffmpeg-channel-watch.yml
+  s_85d9e5f433b9aa::t_f901c27770f0a0 4-6,73-74,76
+.github/workflows/ffmpeg-release-watch.yml
+  s_85d9e5f433b9aa::t_478e9caf5d395c 89-92,94-98,100
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_02d3155dbe713a 42-58,130-141
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_f10e87e8d8f684 25
+governance/bin/ffmpeg-channel-watch.mjs
+  s_85d9e5f433b9aa::t_1ad1c1061307d9 4-14,80-90,102-122,156-163
+governance/bin/namespace-usage-pull.mjs
+  s_85d9e5f433b9aa::t_9466ddd2db28f1 10,29,37-47,96-149,151-152,154-196,201-214,234-244,252,256
+governance/bin/review-liveness-scope-io.mjs
+  s_85d9e5f433b9aa::t_6de3d0a686471e 12-28,32-33,35-36,59-61,64-66,82-84
+governance/bin/review-liveness.mjs
+  s_85d9e5f433b9aa::t_439f1bb1e18cf2 53-56,109,204-208,217,222,225
+governance/bin/vendored-gate-audit-scan.sh
+  s_85d9e5f433b9aa::t_e888207160e8a3 39-41,83-84
+governance/bin/vendored-gate-audit.mjs
+  s_85d9e5f433b9aa::t_5b337e2f45ca4d 27-28,32,34-49,51-53
+governance/graph.json
+  s_6f6453b23e3805::t_9e2a443ed00558 2491,18077-18082,18095-18112
+governance/lib/gate-audit-args.mjs
+  s_85d9e5f433b9aa::t_ed55690289682b 1-68
+governance/lib/gh-err-line.mjs
+  s_85d9e5f433b9aa::t_b8bff612232b78 1-16
+governance/lib/namespace-usage-report.mjs
+  s_85d9e5f433b9aa::t_4a0942a9fe6d0d 14-15,33-36,42-45,116-130,137,140,153-158,163-170,172-175,182,187,199-200,202,209-215,221,225
+governance/lib/review-liveness-report.mjs
+  s_85d9e5f433b9aa::t_1d6987e437bcd5 36,50-63
+governance/lib/wave-sec-scanners.mjs
+  s_85d9e5f433b9aa::t_44fc4b6159b4e4 263-273,287-298,305-306
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_85d9e5f433b9aa::t_979616ef08d2c2 4-136,139-148,150-155,157-193,195-197,199-201,203,206-217,219-232,236-292
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_85d9e5f433b9aa::t_70ca5f5a39c177 30-39,140
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_85d9e5f433b9aa::t_bff33df6991023 66
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_85d9e5f433b9aa::t_4bf2f28ad3de3a 7-15
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_85d9e5f433b9aa::t_e762d20d70dbfc 92-97
+governance/plans/ffmpeg9-lei/action/E11-P1-RTSP-EVAL.md
+  s_85d9e5f433b9aa::t_b5ea37d3fabf2a 1-149
+governance/plans/monetization-gateway/PAYG-MODEL-ANALYSIS.md
+  s_85d9e5f433b9aa::t_9f126067dbb878 1-256
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_85d9e5f433b9aa::t_c7f400a51faa7a 31,36-38,49-53,102,105
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  s_85d9e5f433b9aa::t_8f002d7b67877f 6
+governance/plans/namespace-substrate/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_9ebdb1abee87f9 4,31
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_85d9e5f433b9aa::t_d9649d0dd5088d 15-19,41,93
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_85d9e5f433b9aa::t_07af4dd8459a6c 429-431,437-446,942,983-1025
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_85d9e5f433b9aa::t_49563b6026d835 489-518,600-603,620-657,730-759
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_12c81c6ff9fc3c 5-7,58-59
+governance/runbooks/vendored-gate-audit.md
+  s_85d9e5f433b9aa::t_09132c4923cb5d 28
+governance/state/ffmpeg-channel-watch.json
+  s_85d9e5f433b9aa::t_a6d9a72dcf1a71 15-18
+governance/test/ffmpeg-channel-watch.test.mjs
+  s_85d9e5f433b9aa::t_70f85867e80c6f 13,77-100,145,147
+governance/test/gate-audit-args.test.mjs
+  s_85d9e5f433b9aa::t_b330514869467e 1-89
+governance/test/namespace-usage-pull.test.mjs
+  s_85d9e5f433b9aa::t_ad2aefffc16866 15,59-75,136-159,195-199,201-202,210-211,213-348
+governance/test/review-liveness-report.test.mjs
+  s_85d9e5f433b9aa::t_810f597d0ef740 1-74
+governance/test/wave-sec-scanners.test.mjs
+  s_85d9e5f433b9aa::t_98b0d3eefac7ea 294-313
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fdb4e6298dc4dbb8f99430c7a52ec43f149f08fc",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

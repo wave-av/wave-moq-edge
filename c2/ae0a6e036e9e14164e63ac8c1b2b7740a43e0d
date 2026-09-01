@@ -1,0 +1,19 @@
+plugins/path-env.ts
+  s_32308d89320687::t_bd1d96501eddf1 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c2ae0a6e036e9e14164e63ac8c1b2b7740a43e0d",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+governance/plans/nodal1-partnership/E0-NDA-EXECUTION.md
+  s_d9915bbafa9657::t_fe8df7d965ded3 1-41
+governance/plans/nodal1-partnership/NORTH-STAR.md
+  s_d9915bbafa9657::t_bbcdcd85b37b57 1-68
+governance/plans/nodal1-partnership/E2-SCOPING-CONVERSATION.md
+  s_d9915bbafa9657::t_de3b7518559b3b 1-43
+governance/plans/nodal1-partnership/E3-PROMOTION-DECISION.md
+  s_d9915bbafa9657::t_77bcdc1d498ff0 1-48
+governance/plans/nodal1-partnership/E1-LIVE-DEMO.md
+  s_d9915bbafa9657::t_c05cd38ae75567 1-41
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_65b29fc40d399b 25
+governance/graph.json
+  s_d9915bbafa9657::t_2e6077491ab793 5376,5378-5379,5381-5432,5435-5436,25204-25222,25225,25228,25231-25255
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "20b97620731c9438a428cc809c22e9fc2c78ae00",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

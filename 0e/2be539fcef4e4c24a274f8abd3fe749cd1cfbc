@@ -1,0 +1,28 @@
+governance/plans/engineering-canon/E12-graduated-sanctions/E12-GRADUATED-SANCTIONS.md
+  s_0227926428e4b1::t_a8a1821edd80c3 56-58
+  s_0227926428e4b1::t_42836599b0f1bc 16-17
+  s_0227926428e4b1::t_857be59c837c0a 6
+  s_0227926428e4b1::t_9a95aeaf44af4a 42-47
+governance/plans/engineering-canon/E9-defeater-gates/E9-DEFEATER-GATES.md
+  s_0227926428e4b1::t_426a84311c3cc8 73-74,78-79,84
+  s_0227926428e4b1::t_e7670f0cf2fc48 52-53
+  s_0227926428e4b1::t_169a56e264bb81 85-88
+governance/graph.json
+  s_0227926428e4b1::t_b682a481a47122 4187
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0e2be539fcef4e4c24a274f8abd3fe749cd1cfbc",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

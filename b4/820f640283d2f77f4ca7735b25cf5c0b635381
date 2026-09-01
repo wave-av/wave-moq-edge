@@ -1,0 +1,34 @@
+governance/plans/model-observability/E0-COCKPIT.md
+  h_67a1b847dc59d6 1-9
+governance/plans/model-observability/E1-DRIFT-MONITOR.md
+  h_67a1b847dc59d6 1-10
+governance/plans/model-observability/E2-PROVIDER-HEALTH.md
+  h_67a1b847dc59d6 1-10
+governance/plans/model-observability/NORTH-STAR.md
+  h_67a1b847dc59d6 1-24
+governance/plans/dispatch-leaderboard-integration/E0-SCORE-EXPORT.md
+  s_97c931160f4ded::t_211aa5b83be1f4 1,3-9
+governance/plans/eval-backend-parity/E0-VISION-API.md
+  s_97c931160f4ded::t_5178dc348a2af4 1,3-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b4820f640283d2f77f4ca7735b25cf5c0b635381",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_97c931160f4ded": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef98efeaffegOCTPmLa2hDyb7",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

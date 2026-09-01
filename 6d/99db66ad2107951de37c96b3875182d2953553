@@ -1,0 +1,26 @@
+hooks/lib/ctx-band.sh
+  s_cf3356a24071e8::t_370d1f8bdff361 116-118
+  s_cf3356a24071e8::t_3621e471720e30 51
+  s_cf3356a24071e8::t_a55971926f5d75 44-46
+  s_cf3356a24071e8::t_5728726ea1eb20 54
+  s_cf3356a24071e8::t_95db5321772730 16-28
+  s_cf3356a24071e8::t_f32e8f1fec386b 83-85,88,95-97
+hooks/tests/ctx_band_smoke.sh
+  s_cf3356a24071e8::t_fd1a5c846e044e 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6d99db66ad2107951de37c96b3875182d2953553",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

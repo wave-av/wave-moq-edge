@@ -1,0 +1,23 @@
+opencode.json
+  s_672079ccfe8ce6::t_6e40f8e378f7d9 594
+docs/ADR-0001-live-config-is-the-repo.md
+  s_672079ccfe8ce6::t_7937fb9d993544 72-87
+  s_672079ccfe8ce6::t_35e67d5113f147 29-30,33,36-51
+  s_672079ccfe8ce6::t_c37706c2f0ac3b 52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c80c1655266f8b5cfc3c8513c00f49116c638a50",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/plans/client-toolset-adoption/OUTBOUND-DRAFTS.md
+  s_9bb1b1d1d998d4::t_c2a598acd6402f 100-102,106
+  s_9bb1b1d1d998d4::t_578d95ecaa4285 69-71
+  s_9bb1b1d1d998d4::t_869909488ce883 108,116,118
+  s_9bb1b1d1d998d4::t_1bf30a7b8c231f 36-38
+  s_9bb1b1d1d998d4::t_2956126c538562 104-105
+  s_9bb1b1d1d998d4::t_b2ca2ca494ea85 172-175
+  s_9bb1b1d1d998d4::t_790c15dc9036ca 135-137,139-141
+  s_9bb1b1d1d998d4::t_062235d012b379 18-20
+  s_9bb1b1d1d998d4::t_6d4fa9b99ea4e5 143,151,153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c9ffbcfee33606e8907a67fc868951f37ab93536",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

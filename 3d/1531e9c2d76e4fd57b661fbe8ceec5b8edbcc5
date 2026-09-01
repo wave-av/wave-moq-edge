@@ -1,0 +1,35 @@
+.github/workflows/governance.yml
+  s_dccee6b7677203::t_43c85fe8c85db5 152-163
+governance/bin/gate-scope-conformance.mjs
+  s_dccee6b7677203::t_9d085dfa8d0733 1-213
+governance/bin/main-guard-ratchet.mjs
+  s_dccee6b7677203::t_a7af3210abe4c8 18,21-25,117-135,138-164,168-173,192-196
+governance/bin/prove-gate-scope-conformance.mjs
+  s_dccee6b7677203::t_780818b5f35017 1-158
+governance/ci-scan-set.pin.json
+  s_dccee6b7677203::t_cb2cec3f8b11d1 1-32
+governance/lib/drill-fixtures-core.mjs
+  s_dccee6b7677203::t_d0560fbf9315d8 1-10,294-328
+governance/test/main-guard-ratchet.test.mjs
+  s_dccee6b7677203::t_bc9196978be4d2 1-135
+hooks/tests/KNOWN-RED.txt
+  s_dccee6b7677203::t_4114a9dfcbbab0 26-36
+hooks/tests/phaseD/broken-ts-block.sh
+  s_dccee6b7677203::t_d4773b0201de8b 6-12,17-18,22-23,31,44,47-60,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3d1531e9c2d76e4fd57b661fbe8ceec5b8edbcc5",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

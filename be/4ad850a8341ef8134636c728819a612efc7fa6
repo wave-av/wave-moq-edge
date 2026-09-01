@@ -1,0 +1,22 @@
+hooks/stop-nudge.sh
+  s_157583aa3b6686::t_4eb660e0102650 86
+  s_157583aa3b6686::t_8001b5b0724e0f 70-76
+hooks/tests/stop-nudge-attribution.test.sh
+  s_157583aa3b6686::t_294948cd3a5eee 127-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "be4ad850a8341ef8134636c728819a612efc7fa6",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

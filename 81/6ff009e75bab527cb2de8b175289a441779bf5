@@ -1,0 +1,21 @@
+governance/ENFORCEMENT-COVERAGE.md
+  s_6b3c1f97d21fbc::t_b6ac793885d1ea 456
+hooks/manifest.json
+  s_6b3c1f97d21fbc::t_1e5e38df398f32 777,1220,1225-1227,1236-1247,1723-1743
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "816ff009e75bab527cb2de8b175289a441779bf5",
+  "prompts": {},
+  "sessions": {
+    "s_6b3c1f97d21fbc": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffcc8bdb0ffeosvIHpkmXIeJA4",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

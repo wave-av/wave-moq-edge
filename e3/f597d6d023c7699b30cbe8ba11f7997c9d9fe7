@@ -1,0 +1,20 @@
+.github/workflows/reviewer-alarm.yml
+  s_9041cf1cf1ccad::t_bc8095497cfd6b 128-138,140,142,144-145,147-150
+  s_9041cf1cf1ccad::t_24e063bf7786e6 139,141,143,146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e3f597d6d023c7699b30cbe8ba11f7997c9d9fe7",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

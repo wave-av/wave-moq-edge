@@ -1,0 +1,30 @@
+.github/workflows/governance.yml
+  s_364605915bb7ec::t_d868b0175e21fe 370-375,378-379
+governance/bin/workflow-lint.mjs
+  s_364605915bb7ec::t_75c20fedab1bb1 152-212,218
+  s_364605915bb7ec::t_f466b12d98a239 132
+governance/test/workflow-lint.test.mjs
+  s_364605915bb7ec::t_104a2f64ab5c18 83-131
+.github/workflows/content-watch.yml
+  s_364605915bb7ec::t_991cee0e297bfa 85
+governance/code-index/CATALOG.md
+  s_364605915bb7ec::t_63a0b0b60c2198 2768
+governance/code-index/index.json
+  s_364605915bb7ec::t_688904b9fc198b 24958-24960
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6b8a6793e6a4c3f2db4a9008397c64cccf79af29",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

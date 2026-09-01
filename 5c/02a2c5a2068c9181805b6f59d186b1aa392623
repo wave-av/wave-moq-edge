@@ -1,0 +1,19 @@
+.github/workflows/harness-watch-sweep.yml
+  s_9e49fb2dab61f0::t_ebf7a3643b3747 32-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5c02a2c5a2068c9181805b6f59d186b1aa392623",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

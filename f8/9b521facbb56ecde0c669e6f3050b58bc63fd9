@@ -1,0 +1,21 @@
+governance/bin/roadmap-check.mjs
+  s_ea7fda6a228496::t_8586a147294aeb 10,13-16
+  s_ea7fda6a228496::t_587de2d3a7d128 6-9,11-12
+  s_ea7fda6a228496::t_fe3463c6b9ebb3 17-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f89b521facbb56ecde0c669e6f3050b58bc63fd9",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

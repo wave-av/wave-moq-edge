@@ -1,0 +1,32 @@
+governance/bin/federate.mjs
+  s_63c6ee080d73c3::t_ba7ae81bdd7627 35-36
+  s_63c6ee080d73c3::t_54118ab654a5c3 239-258
+governance/bin/fleet/ingress-probe.mjs
+  s_63c6ee080d73c3::t_7fafdf8b8a0595 33-34
+  s_63c6ee080d73c3::t_ba4de8fda7de86 138-150,157-162,175-176,182
+governance/bin/fleet/secret-provisioning-audit.mjs
+  s_63c6ee080d73c3::t_ec2053b87a2c65 38-39
+  s_63c6ee080d73c3::t_85c76b3ece41b8 251,253-256,262,267-274
+governance/hooks/work-sentinel.sh
+  s_63c6ee080d73c3::t_acb62b223d1c14 103-113,117,119,125,128-132
+  s_63c6ee080d73c3::t_afb683216d0ae4 97-102,116,118,121-124,133-144
+governance/bin/fleet/actions-census.mjs
+  s_63c6ee080d73c3::t_2a3ecd3d06deed 56-60,71-76
+  s_63c6ee080d73c3::t_83e025f37895d2 29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2f5b99ad37244e7e63130a8a8c6a4d51ab0d7fd3",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-learning-loop/bin/measure-tier.mjs
+  h_67a1b847dc59d6 51-55,58,60,66-67
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 37-42
+governance/plans/runtime-learning-loop/research/pending-rows/qwen2.5-3b.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  h_67a1b847dc59d6 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f0a1a2130d2a4f7db9be0600738a65545e973039",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

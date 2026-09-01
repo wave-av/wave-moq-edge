@@ -1,0 +1,27 @@
+rules/merge-authority-scoped-by-blast-radius.md
+  s_96280c922a9418::t_55835cb279421f 1-22
+governance/DASHBOARD.md
+  s_96280c922a9418::t_fdb9be4775605e 7,17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_ca869f531c4488 5,12,14,98,299
+governance/contract.md
+  s_96280c922a9418::t_80f46d3555099e 51,53
+governance/graph.json
+  s_96280c922a9418::t_cfac10f828038c 1159-1165,9742-9783
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "6df550ee8e82a8a8c4b965efa145afc093ffa8f1",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

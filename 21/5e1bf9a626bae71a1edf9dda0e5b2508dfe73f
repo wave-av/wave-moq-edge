@@ -1,0 +1,23 @@
+governance/plans/DECISION-CLOUDFLARE-ACCOUNT-TOPOLOGY.md
+  s_7c7e203d305c60::t_bdb84f9583406a 1-318
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_df02c2a5758dd2 25
+governance/graph.json
+  s_7c7e203d305c60::t_273c9e730233f2 2208-2220,17817-17822
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "215e1bf9a626bae71a1edf9dda0e5b2508dfe73f",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

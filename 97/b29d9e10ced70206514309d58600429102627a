@@ -1,0 +1,21 @@
+hookcli/tests/require.sh
+  s_60a20469ef4369::t_07b416082dc7d2 51-85
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_646be1c9a563a2 33-43,49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "97b29d9e10ced70206514309d58600429102627a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

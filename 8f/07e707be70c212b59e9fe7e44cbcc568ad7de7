@@ -1,0 +1,43 @@
+governance/lib/drill-fixtures-post-merge-replay.mjs
+  s_02abc74f4971c7::t_261cbca19b7ff3 1-58
+governance/bin/gate-liveness-drill.mjs
+  s_02abc74f4971c7::t_74fb785aeae589 38
+  s_02abc74f4971c7::t_8c7925a8ae581a 84
+  s_02abc74f4971c7::t_031772832a46fb 76-78
+governance/fixtures/post-merge-integrity/cases.json
+  s_02abc74f4971c7::t_83409801288ccc 42-49
+  s_02abc74f4971c7::t_92036f864fac25 19,39,57-76,79
+  s_02abc74f4971c7::t_e88faae10c7fa9 1-18,20-21,30-38,40-41,50-56,77-78
+  s_02abc74f4971c7::t_ce7abf34adc006 22-29
+governance/test/post-merge-replay.test.mjs
+  s_02abc74f4971c7::t_23eb1763f8ed53 1-6,13-97
+  s_02abc74f4971c7::t_bd91841aca8185 7-12
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_f8593eec502381 229-246
+governance/bin/post-merge-replay.mjs
+  s_02abc74f4971c7::t_ebf364f8517c08 33-36
+  s_02abc74f4971c7::t_9feb7a7b00364a 116-124
+  s_02abc74f4971c7::t_041abd8b40820d 133-140,145
+  s_02abc74f4971c7::t_ae6aed1055d645 41-44
+  s_02abc74f4971c7::t_07368d85490e6b 242
+  s_02abc74f4971c7::t_75530a0f47fe07 154
+  s_02abc74f4971c7::t_ecc9c5b9b05797 1-30,32,37-40,45-62,64-65,67,69-115,125-132,141-144,146-153,155-241,243-254
+  s_02abc74f4971c7::t_2a7348965a99e4 63,66,68
+  s_02abc74f4971c7::t_fa6c3ef0258dc7 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8f07e707be70c212b59e9fe7e44cbcc568ad7de7",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+governance/test/app-scope-broadening.test.mjs
+  s_dd42a206f882e3::t_8737cb6cf9b7ae 214-221,223-225,228-232
+  s_9673f7dc0983fb::t_d423a105e9ef6a 233
+governance/lib/app-scope-gh.mjs
+  s_dd42a206f882e3::t_4bad6aee927afc 80-85
+governance/lib/platform-status-gh.mjs
+  s_dd42a206f882e3::t_efeadf250a103d 48-51
+  s_dd42a206f882e3::t_cc8277685c1398 29-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4e010823dc278421281329506173990631f607ec",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

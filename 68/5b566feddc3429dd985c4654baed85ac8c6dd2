@@ -1,0 +1,19 @@
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_30beb49fdbfe00 4-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "685b566feddc3429dd985c4654baed85ac8c6dd2",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

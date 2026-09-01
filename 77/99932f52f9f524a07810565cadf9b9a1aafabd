@@ -1,0 +1,28 @@
+docs/PR-AGENT-LANE-FINDING.md
+  s_9e49fb2dab61f0::t_678780b64ce694 43-50,53-54
+  s_9e49fb2dab61f0::t_953ae664c2b3f4 309-324
+  s_9e49fb2dab61f0::t_7db98da47e6812 51-52
+  s_9e49fb2dab61f0::t_5eaa4e21f0fca4 152-168
+  s_9e49fb2dab61f0::t_b2a4ee03aabc9f 22
+  s_9e49fb2dab61f0::t_f0a2a16d91252f 218-236
+  s_9e49fb2dab61f0::t_586b0b8943792d 88-100
+  s_9e49fb2dab61f0::t_dd13f2da448323 249-259
+  s_9e49fb2dab61f0::t_1299cd88dab48e 121-126
+  s_9e49fb2dab61f0::t_bbbea78368506c 14-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7799932f52f9f524a07810565cadf9b9a1aafabd",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

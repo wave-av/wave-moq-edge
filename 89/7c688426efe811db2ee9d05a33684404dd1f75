@@ -1,0 +1,36 @@
+governance/bin/epic.mjs
+  s_0227926428e4b1::t_ded813febecec9 30
+  s_0227926428e4b1::t_ed1549b74ba7ef 210-229
+governance/test/epic-new-refusals.test.mjs
+  s_0227926428e4b1::t_5f0c37adb51da2 55-60
+  s_0227926428e4b1::t_91987a04590999 17
+  s_0227926428e4b1::t_585660de02eb67 155
+  s_0227926428e4b1::t_fa6944f7b609a9 18
+  s_0227926428e4b1::t_47cab2eae65c70 14-16
+  s_0227926428e4b1::t_c841642de4097d 19-21,52-54
+  s_0227926428e4b1::t_e3492b1a107e0d 61-63,152-154
+  s_0227926428e4b1::t_aa162a6305bbb4 156-158
+  s_0227926428e4b1::t_2a3b093ccbd91e 1-13,22-51,64-151,159-176
+governance/test/epic-new-shape.test.mjs
+  s_0227926428e4b1::t_a3790f99b32cec 20
+  s_0227926428e4b1::t_b766fd018224fa 21
+governance/test/epic-new-fixture.mjs
+  s_0227926428e4b1::t_cb0cfa5c205f86 1-36,46-51
+  s_0227926428e4b1::t_5f0a464d742d84 37-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "897c688426efe811db2ee9d05a33684404dd1f75",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

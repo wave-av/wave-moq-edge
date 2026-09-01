@@ -1,0 +1,24 @@
+capabilities/curated.json
+  h_67a1b847dc59d6 234-244
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8b6c5e4f826f5db6fac13666c987f3d5cbf6f7a7",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_23c224b339286f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feae1d8c0ffeE8btxlZchopW9C",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

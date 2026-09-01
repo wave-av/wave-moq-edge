@@ -1,0 +1,37 @@
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_27c3f37c99074f::t_bab7e142210626 13
+  s_27c3f37c99074f::t_164b4fd137f01b 22
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_27c3f37c99074f::t_4d78252b507ec1 25-38
+  s_27c3f37c99074f::t_d2bcded7996ec5 55-63
+  s_27c3f37c99074f::t_76f5b62a7dfb77 80-89
+  s_27c3f37c99074f::t_f385547eae0fe5 42-49
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  s_27c3f37c99074f::t_f9a68e57cca8ab 16
+  s_27c3f37c99074f::t_23d1901047501f 13-15
+  s_27c3f37c99074f::t_b231901cfa21a5 23-28
+governance/plans/claude-code-upstream-absorption/NORTH-STAR.md
+  s_27c3f37c99074f::t_bfe4662f3f134c 54-58,61-64
+governance/plans/claude-code-upstream-absorption/E2-DECIDE.md
+  s_27c3f37c99074f::t_71b599c82357c8 22
+governance/DASHBOARD.md
+  s_27c3f37c99074f::t_a03e8fd807e794 25
+governance/graph.json
+  s_27c3f37c99074f::t_b8a7b9ce30b3b1 3076,3089,20263-20268
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e41981841195b156b44dfbdc43a42ae3806fa494",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

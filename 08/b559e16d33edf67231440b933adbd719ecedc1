@@ -1,0 +1,86 @@
+governance/spikes/capnweb-spoke/src/rpc.ts
+  s_7c7e203d305c60::t_4f22b818880534 1-111
+governance/spikes/capnweb-spoke/src/worker.ts
+  s_7c7e203d305c60::t_b3b6e66207a936 64
+  s_7c7e203d305c60::t_0fbb27e5799296 11
+  s_7c7e203d305c60::t_8c5a5a04fe019b 1-10,12-63,65-88
+governance/spikes/capnweb-spoke/package.json
+  s_7c7e203d305c60::t_ebc99eae8453fd 1-21
+  s_7c7e203d305c60::t_99f03b9dbfb6cd 22-23
+governance/spikes/capnweb-spoke/src/meter.ts
+  s_7c7e203d305c60::t_37ff8c6749c858 1-92
+governance/spikes/capnweb-spoke/src/scopes.ts
+  s_7c7e203d305c60::t_5f5e6e9f77ba89 13
+  s_7c7e203d305c60::t_6f7cb02aaf95c1 1-12,14-70
+governance/spikes/capnweb-spoke/wrangler.jsonc
+  s_7c7e203d305c60::t_62a69c00826166 1-11
+governance/spikes/capnweb-spoke/test/spike.test.mjs
+  s_7c7e203d305c60::t_64986a2b5052d5 1-31,35-127,137-157
+  s_7c7e203d305c60::t_b6ae76b2722406 32-34
+  s_7c7e203d305c60::t_7dc6e4b6872a81 128-136
+governance/spikes/capnweb-spoke/src/agent-client.ts
+  s_7c7e203d305c60::t_8911304feee892 16-18
+  s_7c7e203d305c60::t_27338f8834e6cb 1-8,10-15,19-58
+  s_7c7e203d305c60::t_ad8bd2717ddd59 9
+governance/spikes/capnweb-spoke/src/types.ts
+  s_7c7e203d305c60::t_7ac61a21713457 1-4,6-23,36-58
+  s_7c7e203d305c60::t_f9ce3c8f557160 24-26,28-35
+  s_7c7e203d305c60::t_9957e55ee2e744 5
+  s_7c7e203d305c60::t_ea8d42be5f5aa8 27
+governance/spikes/capnweb-spoke/test/negproof.ts
+  s_7c7e203d305c60::t_a9cbae74f78bc4 1-30
+governance/spikes/capnweb-spoke/README.md
+  s_7c7e203d305c60::t_4fb3585bbcfe05 1-366
+governance/spikes/capnweb-spoke/tsconfig.json
+  s_7c7e203d305c60::t_06fabdb67b6d48 6-8
+  s_7c7e203d305c60::t_2b8532c3e324ea 9-11
+  s_7c7e203d305c60::t_37187c9f52c0c9 1-5,12-20
+governance/spikes/capnweb-spoke/.gitignore
+  s_aa1d2e29cde89c::t_2863bd0936ce7e 1-4
+governance/spikes/capnweb-spoke/package-lock.json
+  s_b74c2f1736fd36::t_ecdca2c8b49d91 1-1697
+governance/spikes/capnweb-spoke/vendor/capnweb-validate-0.2.2.capnweb.d.mts
+  s_abd85a8b834c55::t_43c4b19f345d1b 1-13
+governance/spikes/capnweb-spoke/vendor/capnweb-validate-0.2.2.contract.d.mts
+  s_abd85a8b834c55::t_3e23bc08d29817 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "08b559e16d33edf67231440b933adbd719ecedc1",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_aa1d2e29cde89c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a84a01bc408017411",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_abd85a8b834c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a01cfff60873042f7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b74c2f1736fd36": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a88a507b361c5b3a1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

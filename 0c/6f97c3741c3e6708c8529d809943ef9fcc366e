@@ -1,0 +1,21 @@
+governance/state/derived-doc-exemptions.json
+  s_9041cf1cf1ccad::t_40186d9fc0cf10 1-14
+.gitignore
+  s_9041cf1cf1ccad::t_eb1674388eaf94 204-208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0c6f97c3741c3e6708c8529d809943ef9fcc366e",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

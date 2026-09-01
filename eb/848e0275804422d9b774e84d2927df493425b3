@@ -1,0 +1,54 @@
+governance/bin/enforce.mjs
+  s_dccee6b7677203::t_c11ad07416a9c6 234
+  s_dccee6b7677203::t_14e8e6157ec504 241-248,250-253,256-261,264-269,273-275
+  s_dccee6b7677203::t_ae024228f521cd 249
+  s_dccee6b7677203::t_e6983b47d68be4 254-255
+  s_dccee6b7677203::t_acc5a09033af3c 32-40,46
+  s_dccee6b7677203::t_2b3ee0c318285a 45
+  s_dccee6b7677203::t_957adfb7de7f50 230-233
+  s_dccee6b7677203::t_635094e2cba718 153-154,157-158
+  s_dccee6b7677203::t_efcd85931eae21 20
+  s_dccee6b7677203::t_8e9ebc9a77c00a 164
+  s_dccee6b7677203::t_ed0d1a86982426 201-206
+  s_dccee6b7677203::t_b4bde29c23b9a4 223-229,235-240
+  s_dccee6b7677203::t_164410c1fce4ed 134-151,155,159
+governance/lib/drill-fixtures-ablock.mjs
+  s_dccee6b7677203::t_c95e959e91b3ce 1-15,17-37,41-55,57-69
+  s_dccee6b7677203::t_178b008c52d431 16
+  s_dccee6b7677203::t_860f6f49258772 38-40
+  s_dccee6b7677203::t_c03965123d79e6 56
+governance/bin/gate-liveness-drill.mjs
+  s_dccee6b7677203::t_5169a914a1eb5c 34
+  s_dccee6b7677203::t_6d08a829fc014f 60-62,65
+governance/test/enforce-all.test.mjs
+  s_dccee6b7677203::t_6fd00b904df95e 1-23,35,39-43,46,48-60,62-70,75-82,84-92,94,96-192
+  s_dccee6b7677203::t_87ca1fb67058d2 24-34,36-38
+  s_dccee6b7677203::t_245145e39f9a5d 44-45,47
+  s_dccee6b7677203::t_f932b0575d9b40 71-74
+  s_dccee6b7677203::t_8d0511ee5953ca 83
+  s_dccee6b7677203::t_6ef3786be4e4fe 61
+  s_dccee6b7677203::t_c84897adb60ea8 93
+  s_dccee6b7677203::t_7eff2be847d099 95
+.github/workflows/governance.yml
+  s_dccee6b7677203::t_50b8b61b09c3fc 227-247
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_83d333132c3b8f 5,870-881,884-890,892,1478-1485
+governance/code-index/index.json
+  s_dccee6b7677203::t_9e659fc7bf8308 7,9,7874-7875,7880,7883,7887-7897,7907-7908,7918-7919,7929-7930,7940-7941,7945-7955,7962-7963,7973-7974,7984-7985,7995-7996,8022-8043,8050-8051,8061-8062,8072-8075,8083-8084,8088-8098,8116-8117,13275-13276,13286-13289,13297-13298,13308-13309,13319-13320,13330-13331,13341-13342,13352-13353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "eb848e0275804422d9b774e84d2927df493425b3",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

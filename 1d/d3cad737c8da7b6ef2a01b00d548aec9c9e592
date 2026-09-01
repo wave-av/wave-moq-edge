@@ -1,0 +1,32 @@
+governance/lib/computer-use-action-class.mjs
+  s_9bb1b1d1d998d4::t_52683785eae917 161
+  s_9bb1b1d1d998d4::t_23a7bb46911684 378-388
+  s_9bb1b1d1d998d4::t_f55ad4e2cbc279 176-195,197
+  s_9bb1b1d1d998d4::t_37af2ffc5636fe 375-376,389-390
+  s_9bb1b1d1d998d4::t_40348bfd53fcfc 393
+  s_9bb1b1d1d998d4::t_3cb7d4d54c6d7d 96-114
+  s_9bb1b1d1d998d4::t_52615cf229349b 95
+governance/test/opt-in-member-authorization.test.mjs
+  s_9bb1b1d1d998d4::t_a66dc1bd9cb1b4 1-70,89-102
+  s_9bb1b1d1d998d4::t_cb487696089690 71-88
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_9326e39bd10ad2 253-302
+governance/plans/client-toolset-adoption/E1-LAW-AND-GATE.md
+  s_9bb1b1d1d998d4::t_5821c088b41455 49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1dd3cad737c8da7b6ef2a01b00d548aec9c9e592",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

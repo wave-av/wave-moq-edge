@@ -1,0 +1,37 @@
+governance/DASHBOARD.md
+  s_15127d80763110::t_052680ef2e48f6 25
+governance/bin/roi.mjs
+  s_15127d80763110::t_a71fecbeb88554 31,71-80
+governance/graph.json
+  s_15127d80763110::t_4a4a3b94d9c4ee 17762-17773,17894-17899
+governance/lib/wave-sec-scanners.mjs
+  s_15127d80763110::t_e84a89dcb9f43f 22-47,57-73
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_15127d80763110::t_3dd30c8b1f8881 12-28,122-125,211-246,260-352
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_15127d80763110::t_6daace4b510222 86-143
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_15127d80763110::t_8db350d2676838 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_15127d80763110::t_5b82db91a80e72 203-233
+helm/package-lock.json
+  s_15127d80763110::t_fd75a486a79ac8 3038-3040,3689-3691,6271-6273
+helm/package.json
+  s_15127d80763110::t_d54e45461db122 35-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "572055b827211d63cf99cea048ff6c282c5f39e5",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

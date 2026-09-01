@@ -1,0 +1,19 @@
+runbooks/library/gateway-semcache-proof.md
+  s_7d6d0c7abd029f::t_bc1f51c4ca134b 22-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8b0788736cb4b76b264c81bf26c16f7c5cbd4faa",
+  "prompts": {},
+  "sessions": {
+    "s_7d6d0c7abd029f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16a3804a-0558-4895-bc83-85ed8cbfb634",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

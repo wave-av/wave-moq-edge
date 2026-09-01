@@ -1,0 +1,95 @@
+hooks/lib/email_send_detect.py
+  s_53b49eff5b8c5d::t_1d7a679479233b 175-178,182-184
+  s_53b49eff5b8c5d::t_60dcb2c8b6a7ec 233,236
+  s_53b49eff5b8c5d::t_54457ecc937e9e 109,135-149
+  s_53b49eff5b8c5d::t_9148848c916c7d 110-134
+  s_53b49eff5b8c5d::t_c3ed11348625ca 11-13
+  s_53b49eff5b8c5d::t_47f0f8bbb6ff12 205-207,209-215
+  s_53b49eff5b8c5d::t_aa3cddfe2c331e 223-230,235
+  s_dedb333dd5195e::t_65937e3851bbfc 150,234
+governance/lib/drill-fixtures-outbound-email-gate.mjs
+  s_53b49eff5b8c5d::t_6f9100090420e3 52-59
+  s_53b49eff5b8c5d::t_8f151194e5a3ff 150-165
+  s_53b49eff5b8c5d::t_da9b3821dbe5a5 41
+  s_53b49eff5b8c5d::t_c04b1e5e335bcc 1-40,42-51,60-100,131-149,166-177
+  s_53b49eff5b8c5d::t_4f7cc92f1a8721 101-130
+hooks/lib/email_cmd_position.py
+  s_53b49eff5b8c5d::t_bd0c08f278e2cc 3-10,12,14-40,43-55,64-67,73-74,77,89,109-114,128,134-141,143-145,156,159,163,166-167,169-170,173,179-180,186,188,194-195,199-202,204-206,214-216,218-221,223-227,232,243-245,251,260,262,268-270,273-275,278,280,288-291,293,297-298,324
+  s_53b49eff5b8c5d::t_1e28baac4d7d5a 1,11,13,56-61,79-80,100,102,107,296,299
+  s_53b49eff5b8c5d::t_ba044a44c422d0 115-120,122,124
+  s_53b49eff5b8c5d::t_c52feadb3afe1b 2,41-42,62-63,68-72,75-76,78,81-88,90-99,101,103-106,108,121,123,125-127,129-133,142,146-155,157-158,160-162,164-165,168,171-172,174-178,181-185,187,189-193,196-198,203,207-213,217,222,228-231,233-242,246-250,252-259,261,263-267,271-272,276-277,279,281-287,292,294-295,300-323,325-327
+governance/lib/drill-inline-required.mjs
+  s_53b49eff5b8c5d::t_0b27b16e8aa2ec 106-121
+hooks/outbound-email-gate.py
+  s_53b49eff5b8c5d::t_9e8cfcf7e45d12 377,381
+  s_53b49eff5b8c5d::t_f62b30b301f0c5 91-97
+  s_53b49eff5b8c5d::t_38910fc58cc956 290-291
+  s_53b49eff5b8c5d::t_95dee4cb4611aa 337,341,346,352
+  s_53b49eff5b8c5d::t_c9258de82684dc 233-234
+  s_53b49eff5b8c5d::t_42fe6fd6cff4e1 316
+  s_53b49eff5b8c5d::t_65e50fbb5f64ad 245,248,251,256,259-260
+  s_53b49eff5b8c5d::t_5048a8ea88f3d1 313-315
+  s_53b49eff5b8c5d::t_171878880e41c1 365,368-369,371,379
+  s_53b49eff5b8c5d::t_54d7cb4ae56b8a 288,300,304,320
+  s_53b49eff5b8c5d::t_0cff0388249520 225-232,235,278
+  s_53b49eff5b8c5d::t_73c776331f24f0 355
+  s_53b49eff5b8c5d::t_a2611d8ff5a564 281-287,289,292-294,302,311-312,318
+  s_53b49eff5b8c5d::t_20d411f9d24699 222-224
+  s_53b49eff5b8c5d::t_cb274616d72c0a 203-212
+  s_53b49eff5b8c5d::t_23c664ba953b61 90,98-111
+  s_53b49eff5b8c5d::t_b5b09a1bd3723f 271-276
+  s_53b49eff5b8c5d::t_89faadc356a60a 331,335
+  s_29d456340bbd3d::t_c5b9da9242321f 279-280
+hooks/tests/outbound-email-gate.test.sh
+  s_53b49eff5b8c5d::t_9357b16b2c6900 192-215
+  s_53b49eff5b8c5d::t_d4a5b288183f18 50-59
+  s_53b49eff5b8c5d::t_9882788b46e58e 27-49,60-63
+  s_53b49eff5b8c5d::t_6ebfb96db61494 222-233
+hooks/tests/lib/oe-gate-harness.sh
+  s_53b49eff5b8c5d::t_0ec2cf2cc4c7a1 50
+governance/lib/drill-registry.mjs
+  s_53b49eff5b8c5d::t_c3cbe2736e2345 205
+  s_53b49eff5b8c5d::t_4b570263ecd494 172-177
+  s_53b49eff5b8c5d::t_edf16c23942f5a 45
+hooks/lib/email_cmd_tables.py
+  s_53b49eff5b8c5d::t_732d1d5e070cc4 119
+  s_53b49eff5b8c5d::t_93502100da439e 1-94,99-118,120-131,153-164,168-196
+  s_53b49eff5b8c5d::t_1f45853f1a0199 95-98
+  s_53b49eff5b8c5d::t_f5941e4b7ac890 132-152
+  s_53b49eff5b8c5d::t_cc7ada6f94e131 165-167
+hooks/tests/outbound-email-gate-command-position.test.sh
+  s_53b49eff5b8c5d::t_f02cbc1f523081 54,96-179
+  s_53b49eff5b8c5d::t_01ec7ee9c4942b 55-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "13406776edfade33ab94246719c7f1ee65eb1cdd",
+  "prompts": {},
+  "sessions": {
+    "s_29d456340bbd3d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcfb4aa24ffeRmCXMndjYkw2vL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

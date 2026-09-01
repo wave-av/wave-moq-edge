@@ -1,0 +1,165 @@
+governance/test/resolve-drift-sweep-integration.test.mjs
+  s_70c7ac7de143f9::t_e4f08dfe3a3dd4 39-51
+governance/test/resolve-drift-sweep.test.mjs
+  s_70c7ac7de143f9::t_9cf750b7cc3cf5 11-15
+governance/test/resolve-generated-conflicts-fixture.mjs
+  s_70c7ac7de143f9::t_9460b7edb1eb0d 79,88,91-120
+  s_70c7ac7de143f9::t_c3ec46fa598550 76-78
+  s_70c7ac7de143f9::t_b53ac1c7b765d3 80-82,85-87
+  s_70c7ac7de143f9::t_c38d98f2f14a0f 89-90
+  s_70c7ac7de143f9::t_f08ef052d39171 121-123
+  s_70c7ac7de143f9::t_9139b7bf44a8a3 15-16,83-84
+governance/bin/resolve-generated-conflicts.mjs
+  s_70c7ac7de143f9::t_f8f4ec68872558 137,180,185-192
+  s_70c7ac7de143f9::t_43c3e343e3d48d 154-163
+  s_70c7ac7de143f9::t_01e4fe447230ef 138-140
+  s_70c7ac7de143f9::t_b7add51c56fcac 177-179
+  s_70c7ac7de143f9::t_a3f9da1c98682c 181-184
+  s_70c7ac7de143f9::t_2e29fa0d5f943a 193-195
+  s_70c7ac7de143f9::t_a348356ac53a60 23-29,141-143,174-176,196-198,202-204,210-214,228-241
+governance/lib/resolve-drift-sweep.mjs
+  s_70c7ac7de143f9::t_c25d079c61c7fc 52-57
+  s_70c7ac7de143f9::t_6b2d6e9ec5ece2 19-33
+.claude/skills/strategic-compact/SKILL.md
+  s_70c7ac7de143f9::t_0da7c75567cbdb 73-95,112-113,122-123,136-137,141-186
+.githooks/pre-commit
+  s_70c7ac7de143f9::t_7ea847907a99b0 46-52,56-64
+.github/actions/cll-loop-gates/action.yml
+  s_70c7ac7de143f9::t_f7fe153ea770b8 63-77
+.github/actions/derived-artifact-gates/action.yml
+  s_70c7ac7de143f9::t_683c1cfb26b6b5 61-70,73
+.github/actions/governance-fleet-suites/action.yml
+  s_70c7ac7de143f9::t_54d06202d5878c 34-46
+.github/workflows/canon-gap-map-drift.yml
+  s_70c7ac7de143f9::t_7e7d536dfb6945 34-36,50-52,81-86
+.github/workflows/org-access-level-drift.yml
+  s_70c7ac7de143f9::t_093b0616f6fe46 1-194
+.gitignore
+  s_70c7ac7de143f9::t_6ff2176b032cf5 90-116
+bootstrap.sh
+  s_70c7ac7de143f9::t_b924fa01c88126 98-118
+governance/bin/artifact-count-regression.mjs
+  s_70c7ac7de143f9::t_0ddc321c55fe85 5-11,54-65,119-122,148-151
+governance/bin/build.mjs
+  s_70c7ac7de143f9::t_55e2ca33e21d71 18,272,275-285
+governance/bin/check.mjs
+  s_70c7ac7de143f9::t_42d912220858ee 3,13,57-81,94-100,102
+governance/bin/derived-artifact-drift-audit.mjs
+  s_70c7ac7de143f9::t_d54a640788f67f 89-94
+governance/bin/enforcement-ratchet.mjs
+  s_70c7ac7de143f9::t_5aa907bdc5bb82 24,337-342,344
+governance/bin/gate-liveness-drill.mjs
+  s_70c7ac7de143f9::t_f203e6c3ccf2ae 38,131-134,136
+governance/bin/graph-absence-sweep.mjs
+  s_70c7ac7de143f9::t_7574025e5137e2 105
+governance/bin/merge.mjs
+  s_70c7ac7de143f9::t_f870c67c09783f 1-154
+governance/bin/org-access-level-drift.mjs
+  s_70c7ac7de143f9::t_c1577c9a432071 1-104
+governance/bin/readme-drift-fleet.mjs
+  s_70c7ac7de143f9::t_814ca721f26bf9 50,185-188,211-213,215,246,315-317,321,330-332,334
+governance/bin/socket-policy-apply.mjs
+  s_70c7ac7de143f9::t_f57cc508f139c9 38,277-278,308,319,332-334,337,341,345,350,364-365,382-388
+governance/bin/wave-cost-ledger-rfp4-feeder.mjs
+  s_70c7ac7de143f9::t_504cd4ba6b7928 18,32-38
+governance/gam-port-kit/manifest.json
+  s_70c7ac7de143f9::t_279b9f0c932699 43-44
+governance/lib/generated-artifact-registry.mjs
+  s_70c7ac7de143f9::t_83980332938039 1-172
+governance/lib/l2-pipeline.mjs
+  s_70c7ac7de143f9::t_97cc6c999edc8a 29-44,50,61
+governance/lib/merge-dry-run-log.mjs
+  s_70c7ac7de143f9::t_103c863783b002 1-68
+governance/lib/merge-dry-run.mjs
+  s_70c7ac7de143f9::t_e13279e0a58e99 1-120
+governance/lib/review-surfaces-identity.mjs
+  s_70c7ac7de143f9::t_ff3eb9bbb928d8 1-171
+governance/lib/review-surfaces-merge.mjs
+  s_70c7ac7de143f9::t_963c7eae385df3 1-110
+governance/lib/review-surfaces.mjs
+  s_70c7ac7de143f9::t_bfefaaeea3fecb 1,6-17
+governance/lib/stdout-flush.mjs
+  s_70c7ac7de143f9::t_13cca4d71a8098 65-75,120-127,131-149,187-196,200,202,213-233,243-244,247-251
+governance/package.json
+  s_70c7ac7de143f9::t_335fd61c917da5 26
+governance/plans/agent-first-console/E1-COMMAND-REGISTRY.md
+  s_70c7ac7de143f9::t_b6d178ce59b636 1-117
+governance/plans/agent-first-console/E2-PALETTE.md
+  s_70c7ac7de143f9::t_372c6de0154954 1-109
+governance/plans/agent-first-console/E3-MCP-SURFACE.md
+  s_70c7ac7de143f9::t_8021846238d438 1-146
+governance/plans/agent-first-console/E4-DISCOVERY.md
+  s_70c7ac7de143f9::t_bd42696eadc775 1-116
+governance/plans/agent-first-console/E5-PROOF.md
+  s_70c7ac7de143f9::t_64403fa10119aa 1-94
+governance/plans/agent-first-console/NORTH-STAR.md
+  s_70c7ac7de143f9::t_65b45ae503a79a 1-288
+governance/plans/generated-artifact-contention/PHASE-C-CUTOVER.md
+  s_70c7ac7de143f9::t_4cb4ad11f71452 1-211
+governance/plans/generated-artifact-contention/epic.md
+  s_70c7ac7de143f9::t_b971c315da364e 63-68
+governance/plans/sfu-media-plane/E1-PEER-SPINE.md
+  s_70c7ac7de143f9::t_93716dd235f66a 1-109
+governance/plans/sfu-media-plane/E2-PUBLISH.md
+  s_70c7ac7de143f9::t_4315de6acdfc5f 1-121
+governance/plans/sfu-media-plane/E3-REMOTE-RENDER.md
+  s_70c7ac7de143f9::t_e5e79b979eb361 1-119
+governance/plans/sfu-media-plane/E4-ROOM-LIFECYCLE.md
+  s_70c7ac7de143f9::t_9aa8c75d52c0fa 1-107
+governance/plans/sfu-media-plane/E5-METER-TRUTH.md
+  s_70c7ac7de143f9::t_c6cc614afda5ad 1-102
+governance/plans/sfu-media-plane/E6-LIVE-PROOF.md
+  s_70c7ac7de143f9::t_9ca8d44949f649 1-103
+governance/plans/sfu-media-plane/NORTH-STAR.md
+  s_70c7ac7de143f9::t_ebd2f02ac9abd9 1-247
+governance/plans/wave-control/BOUNDARY-VERIFICATION.md
+  s_70c7ac7de143f9::t_16f5f5b61f6aed 1-329
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_70c7ac7de143f9::t_82fbe154c66b45 43-55,258-288,558-603
+governance/test/artifact-count-regression.test.mjs
+  s_70c7ac7de143f9::t_d2a988ce4d7f4c 31-33,39-40,42,47,95,99,103,107,111,117,127-129,134,139-140,150,156,167,174
+governance/test/derived-artifact-drift-audit.test.mjs
+  s_70c7ac7de143f9::t_ebfb8432d9345a 34-43,46,51,62,69,109-110,116-117,123
+governance/test/l2-install.test.mjs
+  s_70c7ac7de143f9::t_6a0271f58ced86 92-128,131-141,143-152,154-156,159-167
+governance/test/merge-dry-run.test.mjs
+  s_70c7ac7de143f9::t_baf493cb858605 1-188
+governance/test/org-access-level-drift.test.mjs
+  s_70c7ac7de143f9::t_712e8faa9cf30a 1-61
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  s_70c7ac7de143f9::t_5a584416e4fd70 14,19-21,28,36,47,51-52,54,68-69,80-81,116-117,119,132,143-200
+governance/test/resolve-generated-conflicts-order.test.mjs
+  s_70c7ac7de143f9::t_954a53a5437e9d 27-33,36,38-54
+governance/test/resolve-generated-conflicts.test.mjs
+  s_70c7ac7de143f9::t_897d77860d54af 16-17,37-42,46,50-54,56,66,70,74,103-112,155-164,197-210,231-238,243
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_70c7ac7de143f9::t_434bf2d49e072b 1-121
+governance/test/review-liveness-pending.test.mjs
+  s_70c7ac7de143f9::t_b83a2b558cc388 16-21,26
+governance/test/stdout-flush-lint.test.mjs
+  s_70c7ac7de143f9::t_7f3aadf3bcee93 183-269
+hooks/manifest.json
+  s_70c7ac7de143f9::t_cebd0c6018909e 1780
+hooks/stop-nudge.sh
+  s_70c7ac7de143f9::t_580facd39cbfda 263-264,280,282,284
+runbooks/bin/runbook.mjs
+  s_70c7ac7de143f9::t_1bf77f13600eb1 321-328,330
+sync.sh
+  s_70c7ac7de143f9::t_361176861c3117 85-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ff4e9802ce08e3216851cd7859484b4ef099d7c9",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

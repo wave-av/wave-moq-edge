@@ -1,0 +1,28 @@
+governance/lib/wave-sec-lanes.mjs
+  s_85d9e5f433b9aa::t_89e4a1bbb19a16 197
+  s_85d9e5f433b9aa::t_a09bc48984b745 1-149,176-196,198-238,240-325
+  s_85d9e5f433b9aa::t_5a098a223c71d1 150-175
+  s_85d9e5f433b9aa::t_bdc1bbb2d19c6c 239
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_6bd5c7247aac3e 20
+  s_85d9e5f433b9aa::t_ecd52c8943caee 57-58
+  s_85d9e5f433b9aa::t_db05c7bdc0d921 34-37,39
+  s_85d9e5f433b9aa::t_d21dcc44884ae8 1-19,21-33,38,40-44,46-56,59-152
+  s_85d9e5f433b9aa::t_da114050d7306d 45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7835078dd77f944f0589b456e646777968fa9fb4",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

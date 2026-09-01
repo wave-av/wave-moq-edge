@@ -1,0 +1,29 @@
+scripts/test-spec.ts
+  s_9673f7dc0983fb::t_a51ee0d1f1d765 53
+  s_9673f7dc0983fb::t_f8a2913700224e 34
+  s_9673f7dc0983fb::t_369e6e106cd727 120,123,126,129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ad9e33c5c00b03c48ede14cf5ed8886d4dd4782e",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

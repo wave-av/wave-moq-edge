@@ -1,0 +1,21 @@
+governance/plans/software-factory/RECEIPTS.md
+  s_7ddeb5d251570f::t_2a38619568be72 69-89
+governance/research/creator-intelligence/vercel-software-factory/SYNTHESIS.md
+  s_7ddeb5d251570f::t_2b7ac3a9a835c8 141,143,145-151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "495fe9648cc809ea717df94d4cb195c095b0fd11",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

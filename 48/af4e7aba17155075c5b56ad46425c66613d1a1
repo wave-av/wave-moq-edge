@@ -1,0 +1,21 @@
+CHANGELOG.md
+  s_11f01c22e59a16::t_599075faf6b273 1-20
+CHANGELOG.internal.md
+  s_11f01c22e59a16::t_4bdffb5e9e7636 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "48af4e7aba17155075c5b56ad46425c66613d1a1",
+  "prompts": {},
+  "sessions": {
+    "s_11f01c22e59a16": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_010f611f8ffeu0PBw8nXYqfkaV",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

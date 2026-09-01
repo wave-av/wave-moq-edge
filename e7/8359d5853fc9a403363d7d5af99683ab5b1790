@@ -1,0 +1,26 @@
+governance/plans/wave-mesh-fabric/E7-POLICY.md
+  s_15127d80763110::t_535b10159a4422 147-156
+  s_15127d80763110::t_1a29619c5ef73f 4-11
+governance/plans/wave-mesh-fabric/E0-TRUTH.md
+  s_15127d80763110::t_0f1e668a1df640 4-12
+governance/plans/wave-mesh-fabric/CF-PLANE-POLICY.md
+  s_15127d80763110::t_f0479b2152eaa9 1-150
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_15127d80763110::t_bc64ab2fdd2078 4-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e78359d5853fc9a403363d7d5af99683ab5b1790",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

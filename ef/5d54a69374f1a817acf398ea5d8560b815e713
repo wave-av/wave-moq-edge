@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/E18-LEARNED-CODEC-RUNTIME.md
+  s_45ded2ab513893::t_db3dda68da954c 4
+governance/plans/mlvc-api-plane/E2-SDK.md
+  s_45ded2ab513893::t_d9395d1079d5fe 4
+governance/plans/mlvc-api-plane/E3-MCP.md
+  s_45ded2ab513893::t_ac726c126f0a4e 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_45ded2ab513893::t_04e16b96099ac7 413-418
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ef5d54a69374f1a817acf398ea5d8560b815e713",
+  "prompts": {},
+  "sessions": {
+    "s_45ded2ab513893": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe7b96bfdffeD0heuj3WMwfi5j",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

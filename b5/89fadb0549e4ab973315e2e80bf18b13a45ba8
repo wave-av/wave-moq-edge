@@ -1,0 +1,19 @@
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_37d3f61160b2dd::t_a17e4ac6178f2c 2031-2109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b589fadb0549e4ab973315e2e80bf18b13a45ba8",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

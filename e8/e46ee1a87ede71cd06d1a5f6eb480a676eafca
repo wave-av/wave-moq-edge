@@ -1,0 +1,45 @@
+governance/plans/engineering-canon/E1-assurance-ladder/E1-ASSURANCE-LADDER.md
+  s_28efdc23129d94::t_12e1dc1034dce1 4-5
+governance/plans/engineering-canon/E10-surface-census/E10-SURFACE-CENSUS.md
+  s_28efdc23129d94::t_19c0e3ed12af36 4-5
+governance/plans/engineering-canon/E11-enforcement-supply-chain/E11-ENFORCEMENT-SUPPLY-CHAIN.md
+  s_28efdc23129d94::t_852c5bfb1020cc 4-5
+governance/plans/engineering-canon/E12-graduated-sanctions/E12-GRADUATED-SANCTIONS.md
+  s_28efdc23129d94::t_94263a9867d05b 4-5
+governance/plans/engineering-canon/E13-sweep-operation/E13-SWEEP-OPERATION.md
+  s_28efdc23129d94::t_dd90bfc13da603 4-5
+governance/plans/engineering-canon/E2-independence/E2-INDEPENDENCE.md
+  s_28efdc23129d94::t_1baf9eb423797f 4-5
+governance/plans/engineering-canon/E3-error-budget/E3-ERROR-BUDGET.md
+  s_28efdc23129d94::t_a61e585156f2a8 4-5
+governance/plans/engineering-canon/E4-defect-spine/E4-DEFECT-SPINE.md
+  s_28efdc23129d94::t_29b58ccb62eb6e 4-5
+governance/plans/engineering-canon/E5-stop-the-line/E5-STOP-THE-LINE.md
+  s_28efdc23129d94::t_6fea53c2bf97a8 4-5
+governance/plans/engineering-canon/E6-control-structure/E6-CONTROL-STRUCTURE.md
+  s_28efdc23129d94::t_26e851615c5e14 4-5
+governance/plans/engineering-canon/E7-dispatch-matrix/E7-DISPATCH-MATRIX.md
+  s_28efdc23129d94::t_5060700560a362 4-5
+governance/plans/engineering-canon/E8-gap-map/E8-GAP-MAP.md
+  s_28efdc23129d94::t_4aa50563bd494b 4-5
+governance/plans/engineering-canon/E9-defeater-gates/E9-DEFEATER-GATES.md
+  s_28efdc23129d94::t_dbf633f4c627e6 4-5
+governance/graph.json
+  s_28efdc23129d94::t_88c35693112d83 27183-27188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e8e46ee1a87ede71cd06d1a5f6eb480a676eafca",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

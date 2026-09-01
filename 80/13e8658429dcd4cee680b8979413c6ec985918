@@ -1,0 +1,21 @@
+governance/plans/comms-credit-bureau/E1-SCHEMA.md
+  s_85113a1cef9a84::t_43ed99ce80ce3c 4
+governance/plans/search-feed-digests/E1-SCHEMA.md
+  s_85113a1cef9a84::t_8f0f995f4e7ab3 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8013e8658429dcd4cee680b8979413c6ec985918",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

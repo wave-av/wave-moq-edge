@@ -1,0 +1,21 @@
+governance/runbooks/namespace-runner-outage.md
+  s_c24357e71ae5bc::t_a0b205fccb1de5 1-111
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_f4282f83a3a993 1026-1061
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "41c85612e0270dbd5edf1641e6f1458a507b52ef",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

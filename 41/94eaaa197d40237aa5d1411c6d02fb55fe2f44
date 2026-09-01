@@ -1,0 +1,24 @@
+governance/lib/roster-set-id.mjs
+  s_9bb1b1d1d998d4::t_87bdb0e9ea3901 55-67,71-87
+  s_9bb1b1d1d998d4::t_f293db0dfe722f 88
+governance/lib/reviewer-scoreboard.mjs
+  s_9bb1b1d1d998d4::t_d9741a6c283c12 46,293-295
+governance/test/roster-set-id.test.mjs
+  s_9bb1b1d1d998d4::t_7b26a881c81da6 16,60-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4194eaaa197d40237aa5d1411c6d02fb55fe2f44",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

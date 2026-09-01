@@ -1,0 +1,23 @@
+.claude/skills/wow-canon/SKILL.md
+  s_d9915bbafa9657::t_f4d8b0ce3a8c90 3
+  s_d9915bbafa9657::t_0b1cbeb036cfa0 48
+.claude/skills/state-of-play/SKILL.md
+  s_d9915bbafa9657::t_68228e17cb3ae1 134
+  s_d9915bbafa9657::t_2a03d8526f1c9e 63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "88746ce9762ab7251b4e78c34c622832495eb884",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

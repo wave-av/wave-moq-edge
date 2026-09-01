@@ -1,0 +1,19 @@
+hooks/tests/ctx-band-unmeasurable.test.sh
+  s_dccee6b7677203::t_52f0a962c01d0a 2,19-39,53-71,97-98,101-104,107-133,146-174,196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "93a3e355abbd5041b86f2dbb5d4be19badde278c",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+governance/lib/ffmpeg-pin-registry.mjs
+  s_124891ed63801b::t_7301189388d00a 1-97
+governance/bin/ffmpeg-pin-lint.mjs
+  s_124891ed63801b::t_fd609aba6d28ae 1-151
+governance/test/ffmpeg-pin-lint.test.mjs
+  s_124891ed63801b::t_b2f47c28e14458 1-223
+governance/state/ffmpeg-pin-registry.json
+  s_124891ed63801b::t_6faaa39db9d619 153
+  s_124891ed63801b::t_99cf9824896050 1-49,51-61,63-73,75-151,154-156,158-185,187-213
+  s_124891ed63801b::t_d732af5b343dd4 50,62,74
+  s_124891ed63801b::t_1245ac6790c84c 186
+  s_124891ed63801b::t_d185945cc53752 152,157
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_7f85de4e40615b 97-102
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_124891ed63801b::t_fc778ecc6e3b8c 18-34
+.gitignore
+  s_124891ed63801b::t_31d37d3f0fddc6 101-106
+governance/lib/ffmpeg-pin-gh.mjs
+  s_124891ed63801b::t_cf525769b3fa2f 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "011d374a33194eb60d72934c73c0c4f1fc883381",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

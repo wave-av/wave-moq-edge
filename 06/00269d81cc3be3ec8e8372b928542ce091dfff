@@ -1,0 +1,19 @@
+governance/bin/merge-time-artifact-lint.mjs
+  s_941b8f0612ec3e::t_2e4ac29b79ca07 25-31,44-50,52,61,79,82-83,89-98,106-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0600269d81cc3be3ec8e8372b928542ce091dfff",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

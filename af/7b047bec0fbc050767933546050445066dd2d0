@@ -1,0 +1,23 @@
+governance/lib/drill-fixtures-self-review.mjs
+  s_0950865aa49634::t_83a0dd4931e9f7 1-204
+governance/lib/drill-inline-required.mjs
+  s_0950865aa49634::t_8d48d39174282a 94-106
+governance/lib/drill-registry.mjs
+  s_0950865aa49634::t_c3d7b1c6cd28f0 40,111-115,159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "af7b047bec0fbc050767933546050445066dd2d0",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

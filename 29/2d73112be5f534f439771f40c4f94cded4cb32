@@ -1,0 +1,26 @@
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  h_67a1b847dc59d6 30-37,47-56,68-77
+governance/plans/effective-authority/E2-DEFAULTS.md
+  h_67a1b847dc59d6 39-47,56-65,74-81
+governance/plans/effective-authority/E3-OIDC.md
+  h_67a1b847dc59d6 54-61,73-81,103-113
+governance/plans/effective-authority/E4-DISPATCH.md
+  h_67a1b847dc59d6 38-46,56-64,73-81
+governance/plans/effective-authority/E5-CEILING.md
+  h_67a1b847dc59d6 49-57,67-75,85-93
+governance/plans/effective-authority/E6-BLAST.md
+  h_67a1b847dc59d6 41-49,59-67,77-85
+governance/plans/effective-authority/E7-RATCHET.md
+  h_67a1b847dc59d6 44-52,62-69,79-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "292d73112be5f534f439771f40c4f94cded4cb32",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

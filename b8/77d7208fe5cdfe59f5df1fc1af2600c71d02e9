@@ -1,0 +1,71 @@
+governance/test/stat-portability-lint.test.mjs
+  s_02abc74f4971c7::t_93b11ff37d3c30 1-117
+hooks/tests/stat-portability.test.sh
+  s_02abc74f4971c7::t_2cc99b89d01bb8 1-106
+scripts/state-root.sh
+  s_02abc74f4971c7::t_fbfd495000a86a 89
+  s_02abc74f4971c7::t_ad1e3e80b3fea9 70
+governance/hooks/work-sentinel.sh
+  s_02abc74f4971c7::t_3e175c61b5e6b2 56
+  s_02abc74f4971c7::t_71c1fc4554cd19 32-36
+  s_02abc74f4971c7::t_bef37b97761948 48
+governance/bin/stat-portability-lint.mjs
+  s_02abc74f4971c7::t_4ba03d97872c97 1-88
+governance/test/fixtures/bad-stat/bad.sh
+  s_02abc74f4971c7::t_bf5e7f1770f79a 1-27
+governance/hooks/state-sentinel.sh
+  s_02abc74f4971c7::t_1dac0e5f351b96 13-14
+hooks/_studio-captured/git-ai-checkpoint-safe.sh
+  s_02abc74f4971c7::t_8e245a9dd68f90 22-23
+  s_02abc74f4971c7::t_b2b62563db8d0e 8-12,15
+governance/lib/stat-portability.mjs
+  s_02abc74f4971c7::t_f3ee1adf2578b6 1-93
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_15b42d81cf6b09 201-214
+hooks/local-llm/ollama-helper.sh
+  s_02abc74f4971c7::t_8b51e9a4a81cb9 75
+hooks/branch-truth-ambient.sh
+  s_02abc74f4971c7::t_486eae5fd198a4 31
+hooks/file-size-warning.sh
+  s_02abc74f4971c7::t_e3c7d4cac817e0 93-96
+hooks/mcp-selfheal.sh
+  s_02abc74f4971c7::t_f539584c414e6b 36
+governance/lib/drill-fixtures-shell.mjs
+  s_02abc74f4971c7::t_9c381c244c6ef2 1-2,6-8,10-20,29-30,33,36,43,48,54-80
+hooks/unpushed-work-guard.sh
+  s_02abc74f4971c7::t_ad7d4077e6bee1 36
+hooks/post-compact-restore.sh
+  s_02abc74f4971c7::t_431de94dca9489 47-56,60-61
+hooks/parked-tree-read-advisory.sh
+  s_02abc74f4971c7::t_ccac6c5c11ba78 113
+governance/code-index/CATALOG.md
+  s_54821f41630b80::t_1bbf8e0be1027e 5,2646-2661
+governance/code-index/index.json
+  s_54821f41630b80::t_bee95f2c6e0813 6-7,9-10,23796-23938
+hooks/manifest.json
+  s_54821f41630b80::t_0b33021d2dd5e0 104,393,709,856,898,1508
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b877d7208fe5cdfe59f5df1fc1af2600c71d02e9",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_54821f41630b80": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a79cc0b2f24ca3be1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

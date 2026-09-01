@@ -1,0 +1,24 @@
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  h_67a1b847dc59d6 16-21,23-25
+governance/bin/gate-coverage-audit.mjs
+  h_67a1b847dc59d6 26-28,62
+governance/lib/audit-args.mjs
+  h_67a1b847dc59d6 23-25
+governance/lib/gate-audit-args.mjs
+  h_67a1b847dc59d6 31-33,36-37,123
+governance/lib/strict-flags.mjs
+  h_67a1b847dc59d6 60,63-66
+governance/test/gate-audit-args.test.mjs
+  h_67a1b847dc59d6 109-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d993da6e60863b008e7b1107e5a01d73a77c71c4",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

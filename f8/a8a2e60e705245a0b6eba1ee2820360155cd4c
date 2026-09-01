@@ -1,0 +1,30 @@
+governance/plans/wave-control/BOUNDARY-VERIFICATION.md
+  s_7c7e203d305c60::t_9acbf44fb10768 27-38
+  s_7c7e203d305c60::t_0f6aff50ae053e 143-165
+governance/graph.json
+  s_5cfb353d409f83::t_05bd4930d5ae86 7127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f8a8a2e60e705245a0b6eba1ee2820360155cd4c",
+  "prompts": {},
+  "sessions": {
+    "s_5cfb353d409f83": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac5a1a7b78eb61513",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

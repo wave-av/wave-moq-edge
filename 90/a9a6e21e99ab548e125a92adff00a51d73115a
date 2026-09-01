@@ -1,0 +1,65 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_ce4d7b01042bcb::t_06623b2b3f0e2a 155
+  s_ce4d7b01042bcb::t_bda42ececedc15 152-154
+  s_ce4d7b01042bcb::t_755171a979ad61 156-158
+governance/plans/webhook-plane/OPPORTUNITIES.md
+  s_048ad7f61626d4::t_f0894cd9607587 1-69
+governance/plans/fireworks-integration/V4PRO-SERVE-PLAN.md
+  s_0950db28a6ae27::t_e73f97a0b6b3ef 1-56
+governance/plans/model-artifact-ingress/E3-E3-SERVE-HOOK.md
+  s_8af4028370359f::t_7c566b7ea587ea 2-26
+  s_8af4028370359f::t_61718b9f701cd7 1
+governance/plans/model-artifact-ingress/NORTH-STAR.md
+  s_8af4028370359f::t_2fdabd4e1c7ec1 5-60
+  s_8af4028370359f::t_14b8e731026568 2-4
+memory/fleet-todo-ledger.md
+  s_6eee0b1ab56b3a::t_94b8adb0953bbf 181-197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "90a9a6e21e99ab548e125a92adff00a51d73115a",
+  "prompts": {},
+  "sessions": {
+    "s_048ad7f61626d4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feee8970affenVKsU9Nt681bXx",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6eee0b1ab56b3a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe86b74fbffewLl2H6sMrZgN62",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ce4d7b01042bcb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fead6346bffey35abXa0ydtxMp",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

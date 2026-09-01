@@ -1,0 +1,25 @@
+router/src/telemetry/trajectory.ts
+  s_ba07216ce52585::t_13d588e335b9cb 167
+  s_ba07216ce52585::t_a386c39777ee79 5-7
+  s_ba07216ce52585::t_7de2f0f8204984 111-122
+  s_ba07216ce52585::t_32cf21a7c7d492 40-43
+  s_ba07216ce52585::t_1b827478d5c99a 70-71
+  s_ba07216ce52585::t_8624c4a033ceb6 152-153
+  s_ba07216ce52585::t_72f0e818a86049 198-203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ade6d8b5499bf9519e1fcc4d1e9a8d83e7bb8273",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

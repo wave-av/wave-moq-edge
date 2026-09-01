@@ -1,0 +1,19 @@
+governance/plans/model-economy/artifacts/PROVIDER-MATRIX.md
+  s_1062b54a24b98c::t_7deb0c63b85758 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b00c3363b56fdc2caf95a1e88d003eca2fbdce5e",
+  "prompts": {},
+  "sessions": {
+    "s_1062b54a24b98c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe3be45d5ffehpk9u1IeevQuyP",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

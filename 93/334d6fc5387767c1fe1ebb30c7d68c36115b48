@@ -1,0 +1,21 @@
+governance/plans/wave-control/E7-CHIEF-OF-STAFF.md
+  s_d9c6b8d7b42c33::t_e687c53c3b0b2b 1-58
+governance/plans/wave-control/NORTH-STAR.md
+  s_d9c6b8d7b42c33::t_969ad1b17e1cd7 263
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "93334d6fc5387767c1fe1ebb30c7d68c36115b48",
+  "prompts": {},
+  "sessions": {
+    "s_d9c6b8d7b42c33": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef09a775ffeAeKVdwXbAAKmYI",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

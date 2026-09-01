@@ -1,0 +1,27 @@
+governance/bin/struggle-miner-scan.sh
+  s_37e24b4d920e09::t_eaf72a489ce704 34
+governance/test/struggle-miner/collect-automation-drift.test.mjs
+  s_37e24b4d920e09::t_7ecc49294f2559 1-2,8,13-35
+  s_37e24b4d920e09::t_fc697afe9ec2be 3-7,9-12
+  s_37e24b4d920e09::t_7544005bad9dbf 36-65
+governance/bin/struggle-miner/collect-automation-drift.mjs
+  s_37e24b4d920e09::t_3c245691f7e1da 1-112
+governance/plans/wave-automation-registry/RECEIPTS.md
+  s_37e24b4d920e09::t_5c42cdd5e5095d 511-581
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f0caacecfa5c81a248af4178ab634f12d7301148",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

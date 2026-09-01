@@ -1,0 +1,26 @@
+governance/test/lens-sweep-manifest.test.mjs
+  s_0227926428e4b1::t_b3cfe71dc50bcd 150-167
+governance/lib/lens-sweep/manifest.mjs
+  s_0227926428e4b1::t_683d83cfed080b 134-138
+  s_0227926428e4b1::t_00a48bc56ee800 115
+  s_0227926428e4b1::t_ab487016b66804 85-100
+  s_0227926428e4b1::t_25b58ac0bc67e3 152-156
+governance/lib/lens-sweep/bank-claims.mjs
+  s_0227926428e4b1::t_bb6bc4f87513d4 25-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "052c0ad4b28413ef8eb9d5c303424a3f2948e768",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

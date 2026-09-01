@@ -1,0 +1,31 @@
+governance/bin/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_0077923239f28b 10-11,20-22,39-71,80-81,85-97,101-106,122-123,125-130
+governance/lib/closed-loop-audit.mjs
+  s_be40541f6fd98b::t_44858827165cd1 210-231
+governance/test/closed-loop-audit.test.mjs
+  s_264ae386838c57::t_a092b6bb47fdce 12,152-172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "dd54d4bf6e9b0ce8c90868483550945875b08009",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

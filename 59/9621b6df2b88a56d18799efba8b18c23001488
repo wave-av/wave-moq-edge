@@ -1,0 +1,22 @@
+hooks/cli-version-floor-check.sh
+  s_27c3f37c99074f::t_e49b690881bc24 1,3-95
+  s_27c3f37c99074f::t_ac2f2566351f71 2
+settings/settings.base.json
+  s_27c3f37c99074f::t_20270201cc3452 637-641
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "599621b6df2b88a56d18799efba8b18c23001488",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

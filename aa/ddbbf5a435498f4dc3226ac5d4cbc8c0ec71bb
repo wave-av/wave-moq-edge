@@ -1,0 +1,26 @@
+governance/test/nulltest-derive.test.mjs
+  s_9041cf1cf1ccad::t_22289d089b100e 304-328
+governance/lib/nulltest-derive.mjs
+  s_9041cf1cf1ccad::t_6c26a3395c55cf 54-61
+  s_9041cf1cf1ccad::t_4bda2ced6e9c18 87-90,93
+  s_9041cf1cf1ccad::t_4a4944360dcb65 53
+governance/lib/nulltest-run.mjs
+  s_9041cf1cf1ccad::t_e2e066fa973c6d 16
+  s_9041cf1cf1ccad::t_174d10473ded05 151-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "aaddbbf5a435498f4dc3226ac5d4cbc8c0ec71bb",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

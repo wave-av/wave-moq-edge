@@ -1,0 +1,22 @@
+.github/actions/blast-radius-classify/test/classify.test.mjs
+  s_c2bb037074776b::t_fb16407be86de3 91-116
+.github/actions/blast-radius-classify/classify.mjs
+  s_c2bb037074776b::t_50f82fcb3f2374 68-76
+  s_c2bb037074776b::t_07aec1ddfb6549 151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7ac00d726ac0f46dc7917efdf4de2b4f6d2c2e23",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

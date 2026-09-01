@@ -1,0 +1,30 @@
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_4262ed8bb7591b 111-114
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_65fd6f08e811cf 195-209
+  s_60a20469ef4369::t_df8c87c23a306b 194
+hookcli/tests/fixtures/emit-rules.json
+  s_60a20469ef4369::t_d35bb5e9f93cf7 35-44
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_c4bbd7837225d6 350-393
+hookcli/lib/emit.mjs
+  s_60a20469ef4369::t_7dd7a6d558e058 114
+  s_60a20469ef4369::t_6aba61c1a00475 77-91
+  s_60a20469ef4369::t_42690218ef8c74 17-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "56dcfa7d695c05acd927f5303a5cdc9146243905",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

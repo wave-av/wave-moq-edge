@@ -1,0 +1,23 @@
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  s_2e30bff6169f7a::t_2f054ff95c7f38 12-16
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_1be4359f08fc8d 3271-3276
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_0ecc784fd10b59 29241-29242,29252-29253,29263-29264,29274-29275,29285-29286,29296-29297
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3287101ae09563a7daae520fbd8e2294a605e5de",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

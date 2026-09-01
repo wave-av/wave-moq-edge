@@ -1,0 +1,26 @@
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_63c6ee080d73c3::t_70b6f456ff5ce3 180-206
+governance/lib/owner-resolve.mjs
+  s_63c6ee080d73c3::t_51c863dd68e331 220
+  s_63c6ee080d73c3::t_fff1d36d339b2b 184-194
+  s_63c6ee080d73c3::t_34a5ca3313764e 92-114
+  s_63c6ee080d73c3::t_7fd8b39effec1e 91
+governance/test/owner-resolve.test.mjs
+  s_63c6ee080d73c3::t_b988e45954399e 5,101-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ffd626b4ee216ac764b948c854048fbb83fbe242",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

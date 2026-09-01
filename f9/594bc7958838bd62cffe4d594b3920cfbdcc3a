@@ -1,0 +1,49 @@
+governance/plans/wave-native-cutover/NORTH-STAR.md
+  s_d9915bbafa9657::t_d3b76d78aa1987 4-21
+governance/plans/wave-native-cutover/E-INGRESS.md
+  s_d9915bbafa9657::t_88608b95af69d9 4-13
+governance/plans/agents-have-eyes/E6-GOVERNANCE.md
+  s_d9915bbafa9657::t_ac26a9319266e9 4-12
+governance/plans/wave-native-cutover/E-MEDIA-TAP.md
+  s_d9915bbafa9657::t_d64e23f44718cb 4-15
+governance/plans/wave-native-cutover/E-EGRESS-ROUTER.md
+  s_d9915bbafa9657::t_571f20f0c21130 4-14
+governance/plans/agents-have-eyes/E2-VISION-GATEWAY.md
+  s_d9915bbafa9657::t_6e1b5a14df4993 4-14
+governance/plans/wave-native-cutover/E-ROOMS.md
+  s_d9915bbafa9657::t_3f3cce0f130bb2 4-17
+governance/plans/wave-native-cutover/E-AGENTS-TO-85.md
+  s_d9915bbafa9657::t_fb94fc5f888c2c 4-17
+governance/plans/wave-native-cutover/E-DECOMMISSION.md
+  s_d9915bbafa9657::t_e4420c92faff6f 4-20
+governance/plans/agents-have-eyes/E1-CAPTURE-KERNEL.md
+  s_d9915bbafa9657::t_fa17aef48e57c7 4-12
+governance/plans/agents-have-eyes/E5-SDK-MCP.md
+  s_d9915bbafa9657::t_266b820a9bf0bf 4-10
+governance/plans/agents-have-eyes/E3-SEMANTIC-DIFF.md
+  s_d9915bbafa9657::t_976d3d8a164ea5 4-10
+governance/plans/agents-have-eyes/NORTH-STAR.md
+  s_d9915bbafa9657::t_5214058365fd14 4-18
+governance/plans/agents-have-eyes/E7-CLIENT-PRODUCT.md
+  s_d9915bbafa9657::t_047adabbd769d9 4-13
+governance/plans/agents-have-eyes/E4-LIFECYCLE-GATE.md
+  s_d9915bbafa9657::t_3dd632704b6024 4-14
+governance/graph.json
+  s_d9915bbafa9657::t_3614fc5e651cdd 18359-18364
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f9594bc7958838bd62cffe4d594b3920cfbdcc3a",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

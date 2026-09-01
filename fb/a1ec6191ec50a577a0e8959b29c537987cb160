@@ -1,0 +1,32 @@
+runbooks/library/pen-design-lane.md
+  s_70c7ac7de143f9::t_4a0f71e0be1a94 157-163
+  s_70c7ac7de143f9::t_7a92001e00e930 58-64
+  s_70c7ac7de143f9::t_9183e25c3e8917 85-90
+  s_70c7ac7de143f9::t_430d339db66519 127-128
+governance/state/runbook-ambient-cache.json
+  s_112aa2bd2e6878::t_c47c8e6860a5dc 2,4,17-18,21-22,29,33,53,65,93-94,97,101,105,109,113-114,117,133,141,157,165,173,189,204-275,281,289,297,301-302,305,333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fba1ec6191ec50a577a0e8959b29c537987cb160",
+  "prompts": {},
+  "sessions": {
+    "s_112aa2bd2e6878": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae7a5a798d00aacc8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

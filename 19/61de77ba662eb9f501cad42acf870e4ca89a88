@@ -1,0 +1,21 @@
+governance/test/lattice-check.test.mjs
+  s_d77777f89719d2::t_7cb347d1fd9a2f 1-70
+governance/bin/lattice-check.mjs
+  s_d77777f89719d2::t_9b015f483841c9 1-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1961de77ba662eb9f501cad42acf870e4ca89a88",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

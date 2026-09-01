@@ -1,0 +1,27 @@
+governance/conformance/desktop-ga/drill.mjs
+  s_9bb1b1d1d998d4::t_1e6c1bec98b69a 1-134
+governance/plans/client-toolset-adoption/LEARNINGS.md
+  s_9bb1b1d1d998d4::t_5f5dd88247e820 347-377
+governance/plans/client-toolset-adoption/E6-DESKTOP-CONFORMANCE.md
+  s_9bb1b1d1d998d4::t_03758812b7b810 4-6
+  s_9bb1b1d1d998d4::t_003199c972b329 76
+  s_9bb1b1d1d998d4::t_9f5d55b997ce25 66-75,77-78
+.github/workflows/desktop-conformance.yml
+  s_9bb1b1d1d998d4::t_ab421b0f853305 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f4741087158153ccfa0a141a1c0b65addcad6050",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

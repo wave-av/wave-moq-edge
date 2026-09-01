@@ -1,0 +1,43 @@
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_9c4afa7ff550da 8,25
+governance/graph.json
+  s_a293da4db5caf2::t_79d6e7e8009578 5896-5904
+hookcli/tests/lib/harness.sh
+  s_a293da4db5caf2::t_b4bc6a00208c4b 66-96
+hookcli/tests/t4-llm-escalation.sh
+  s_a293da4db5caf2::t_e7f1cd2c08ad7b 26-27,29-31,40-48,52-54,61-67,73,75-77,87,89-91,95-97,136-138,143-145,147-149,197,199-201,205-207,210-216,219-224
+hookcli/tests/t4-llm.sh
+  s_a293da4db5caf2::t_225a3a0d936970 73-75,77-79,83-85,122,124-126,130-132,135-147
+hookcli/tests/t4-sentinel-integrity.sh
+  s_a293da4db5caf2::t_5c2c9c4e656f84 91-101
+hooks/bin/gen-manifest.mjs
+  s_a293da4db5caf2::t_25dc20a86105db 150-154
+hooks/commit-identity-guard.py
+  s_a293da4db5caf2::t_5954f4ed89758b 1-260
+hooks/lib/commit_identity_patterns.py
+  s_a293da4db5caf2::t_973f9ee1ffd5de 1-177
+hooks/lib/commit_identity_scan.py
+  s_a293da4db5caf2::t_f77d8c69ac1f98 1-468
+hooks/manifest.json
+  s_a293da4db5caf2::t_e29cdadbbd6f9c 238-258,570
+hooks/tests/hook-fail-closed.test.sh
+  s_a293da4db5caf2::t_8db3a02e831328 13,68-71,81-82,85,123,165-177
+settings/settings.base.json
+  s_a293da4db5caf2::t_b7d1a7a8bce596 354-358
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4824d2bbb049d2a5f38f34cca56a544d298ed7ef",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

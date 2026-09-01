@@ -1,0 +1,29 @@
+hookcli/bin/hookcli
+  s_375efeac18ed55::t_55a54b5de26c47 193-205
+  s_375efeac18ed55::t_02db5fda6d23d0 213
+  s_375efeac18ed55::t_76483fb789830f 259-274
+hookcli/schema/rule.schema.json
+  s_375efeac18ed55::t_8739b64700b516 79-88
+hookcli/rules/rules.json
+  s_375efeac18ed55::t_4a1edbf2309f80 322-323
+hookcli/bin/validate-rules.mjs
+  s_375efeac18ed55::t_9676221bb0e3cf 206-224
+hookcli/lib/eval-t1.sh
+  s_375efeac18ed55::t_af4d1f46baf9a9 42-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "bf3700aa5fc701e443eb9ebb970a8ea231cb8bcd",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

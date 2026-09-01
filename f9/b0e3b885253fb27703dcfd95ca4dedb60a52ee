@@ -1,0 +1,58 @@
+scripts/orchestrator-bench.py
+  s_13086dcbacd4a6::t_c0f775c9265537 1,23,25-26,28-43,46,57,65-66,72-75,77-78,140,156-157,160,163-164,256-258,260-263,265-273,285,288-292,295-299,308-309,311-314
+  s_9e432dc94c73ad::t_e094e0a5d82273 234,236-240,242-244,249,252-255
+  s_13086dcbacd4a6::t_d7ef68d2c898a8 208,217-218,231-232
+  s_9e432dc94c73ad::t_8476c9cd891912 235,245-248,250-251
+  s_9e432dc94c73ad::t_204ee6f730abdd 277,279-281,283,286-287,300-307
+  s_13086dcbacd4a6::t_217ec09c2124dc 165-207
+  s_9e432dc94c73ad::t_04f94d099ea154 209-216,219-230
+  s_13086dcbacd4a6::t_7b477d63458d4f 2-22,27,44-45,47-56,58-64,67-71,76,79-139,141-155,158-159,161-162,233,241,264,274,284,293-294,310
+  s_9e432dc94c73ad::t_82a34aa47822ea 278
+  s_13086dcbacd4a6::t_b3121a5863d249 275-276
+  s_bedf01eee4bcff::t_ad7249c78669b2 24,259,282
+scripts/combo-router.py
+  s_9e432dc94c73ad::t_30367709aa1c2a 58-65
+  s_9e432dc94c73ad::t_2b46fe6631e458 46,52-57,66
+  s_13086dcbacd4a6::t_12f4621122d84a 1-45,47,67,82-87,92,94,96-97,113,116-134
+  s_13086dcbacd4a6::t_e16b9d785125cf 48-51
+  s_13086dcbacd4a6::t_96ea6a548fd7bb 104-108,111,114-115
+  s_13086dcbacd4a6::t_e4f4603753f541 68-70,79-81
+  s_13086dcbacd4a6::t_b1aef359e8b7a5 88-91
+  s_13086dcbacd4a6::t_ab3a22aa5702fc 93
+  s_13086dcbacd4a6::t_10025bc3b7995b 95
+  s_13086dcbacd4a6::t_aa1ff077106735 98-103
+  s_13086dcbacd4a6::t_2a9315bedf5fef 109-110
+  s_13086dcbacd4a6::t_c9d1d4a519e706 112
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f9b0e3b885253fb27703dcfd95ca4dedb60a52ee",
+  "prompts": {},
+  "sessions": {
+    "s_13086dcbacd4a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef676a74ffeGDIpvQIhMKNdae",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_bedf01eee4bcff": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdb3e65d1ffeBnsE3eYSfCvRuy",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_a232a34cf01f9d::t_24a5acaf288d1c 45-53
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  s_a232a34cf01f9d::t_6efc62c080be64 1-161
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_a232a34cf01f9d::t_60d374e522fc77 1-152
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_a232a34cf01f9d::t_baf34965847b17 1-174
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_a232a34cf01f9d::t_a71dc1337a2779 74,92-94,102-109,116-133
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_a232a34cf01f9d::t_0f95f5a67e2b44 1-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4d78662f6194d70434d336b8659442288c78ab70",
+  "prompts": {},
+  "sessions": {
+    "s_a232a34cf01f9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a476da127e10cdff1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

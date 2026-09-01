@@ -1,0 +1,25 @@
+governance/plans/agent-mail-plane/E5-E5-SIGNUP-BILLING-LOOP.md
+  s_ca97422d1ebfa0::t_855798866439dd 4
+governance/plans/agent-mail-plane/E1-E1-AGENT-IDENTITY.md
+  s_ca97422d1ebfa0::t_3544dce265c17c 4
+governance/plans/agent-mail-plane/E0-E0-FOUNDATION.md
+  s_ca97422d1ebfa0::t_fd02a91e41434b 4
+governance/plans/agent-mail-plane/E3-E3-POD-MULTITENANCY.md
+  s_ca97422d1ebfa0::t_b42eb00eafa5ff 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "09aa642752df337b9a9d4b657d01157f29b5e5c6",
+  "prompts": {},
+  "sessions": {
+    "s_ca97422d1ebfa0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff35409daffeNha9uEeLSJSUhS",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

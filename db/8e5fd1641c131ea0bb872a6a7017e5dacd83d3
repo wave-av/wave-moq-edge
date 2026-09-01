@@ -1,0 +1,21 @@
+governance/plans/floor-control-not-turn-taking/E0-CLOSE-THE-DEAD-METER.md
+  s_1cea981189627b::t_9a20f98fee0fbe 11-12
+governance/plans/floor-control-not-turn-taking/RECEIPTS.md
+  s_1cea981189627b::t_8262207041f31d 122-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "db8e5fd1641c131ea0bb872a6a7017e5dacd83d3",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

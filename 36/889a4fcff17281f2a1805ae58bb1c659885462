@@ -1,0 +1,48 @@
+settings/settings.base.json
+  s_60a20469ef4369::t_ad5f1e88e5c0b4 56-65
+  s_60a20469ef4369::t_c2912b07f81dde 55
+hooks/receipt-capture.mjs
+  s_60a20469ef4369::t_638b1e2160f201 30-32
+  s_60a20469ef4369::t_3bcb0bf285d7d6 1-29,33-96
+hookcli/lib/board.mjs
+  s_60a20469ef4369::t_e6eeeb69701486 1-11,31,37-50,60-68,74-79,81,95-113,119-120,130-134,146-173,223-224,231-232,239-240,249-250,331,342-345,347,349-350,354-356,359-370,373,375-381,383-386,388,393-442
+  s_60a20469ef4369::t_cdb78ce19db2bf 12-30,32-36,51-59,69-73,80,82-94,135-145,174-222,225-230,233-238,241-248,251-330,332-341,346,348,351-353,357-358,371-372,374,382,387,389-392
+  s_60a20469ef4369::t_a1a9248b2e1474 114-118,121-129
+hooks/receipt-runner.mjs
+  s_60a20469ef4369::t_fe379f7f611f01 1-41
+hooks/receipt-observer.sh
+  s_60a20469ef4369::t_ec7e1a0b9c0c82 21-22,24
+  s_60a20469ef4369::t_3cda6cd25c7c96 1-20,23,25-26
+governance/test/context-board.test.mjs
+  s_60a20469ef4369::t_ed6a9a7f3b5537 105
+  s_60a20469ef4369::t_286e750a5a326a 231
+  s_60a20469ef4369::t_8cb083bfacd4e0 1-9,11-62,64-104,106-230,232-246
+  s_60a20469ef4369::t_a2ee4aec391ecc 10
+  s_60a20469ef4369::t_770cbb71858d55 63
+hooks/manifest.json
+  s_d9d603c4f61db2::t_d151eafc2a852a 670-687
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "36889a4fcff17281f2a1805ae58bb1c659885462",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9d603c4f61db2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a1e3d58921869c597",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

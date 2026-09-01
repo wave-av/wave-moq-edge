@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_124891ed63801b::t_3dc07dd8c12cfa 1-169
+governance/DASHBOARD.md
+  s_124891ed63801b::t_a8a1ae686ce131 25
+governance/graph.json
+  s_124891ed63801b::t_6c72677b3f57e1 3404-3416,20842-20865
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "44792bd0a67e68d4125931569ae3a8efe8cefaf2",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

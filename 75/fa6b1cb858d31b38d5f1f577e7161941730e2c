@@ -1,0 +1,27 @@
+frameworks/claude-api/lint-cache-control.sh
+  s_cf3356a24071e8::t_9ba18de35131fd 39-46,50-66
+frameworks/frameworks-gates.test.mjs
+  s_cf3356a24071e8::t_a1549165f1501a 1-191
+frameworks/claude-api/lint-request-shape.sh
+  s_cf3356a24071e8::t_c8d905c5b6f1a4 37-43,47-63
+frameworks/gates/scripts/check-model-strings.sh
+  s_cf3356a24071e8::t_466502373fef24 26-33,38-49
+frameworks/repo-governance/governance-audit.sh
+  s_cf3356a24071e8::t_2b191d484ee2ae 30-50,77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "75fa6b1cb858d31b38d5f1f577e7161941730e2c",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

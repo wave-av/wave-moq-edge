@@ -1,0 +1,133 @@
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_4d9a877322dc6b 25
+governance/bin/cfos-trial-killswitch.mjs
+  s_f242443465c9e0::t_1ec39c5d1d6eec 1-363
+governance/bin/enforce.mjs
+  s_f242443465c9e0::t_9fd84778ea8256 79,81-90
+governance/bin/pr-check-health.mjs
+  s_f242443465c9e0::t_38cb8685f8a218 1-277
+governance/bin/reversible-store.mjs
+  s_f242443465c9e0::t_9ae28b82dbb6d8 38,48-51,63-68
+governance/graph.json
+  s_d9915bbafa9657::t_f39dcc3e7d06b4 2975-3091,7494-7508,19917-20060,30309-30338
+governance/lib/cfos-trial-killswitch-budget.mjs
+  s_f242443465c9e0::t_229204fdcb1689 1-167
+governance/lib/cfos-trial-killswitch-r2.mjs
+  s_f242443465c9e0::t_85f629ec295c92 1-95
+governance/lib/enforce-patterns.mjs
+  s_f242443465c9e0::t_326c3379b14596 41-46,63-66,102-104,107-113
+governance/lib/pr-check-health-classify.mjs
+  s_f242443465c9e0::t_2e9b8baca5f351 1-122
+governance/lib/pr-check-health-fetch.mjs
+  s_f242443465c9e0::t_9f73cdc2b13bfe 1-300
+governance/lib/pr-check-health-platform.mjs
+  s_f242443465c9e0::t_63e681a1a15f54 1-221
+governance/lib/pr-check-health-required-set.mjs
+  s_f242443465c9e0::t_515f883793749c 1-56
+governance/lib/pr-check-health-statuses.mjs
+  s_f242443465c9e0::t_d8d0ef4c9852b9 1-86
+governance/lib/pr-check-health.mjs
+  s_f242443465c9e0::t_8fac460a73c7e4 1-271
+governance/lib/r2-live-buckets.mjs
+  s_f242443465c9e0::t_1f4a52f101fd98 20-31,71,74-81,93,131-132
+governance/plans/cloudflare-os-bridge/E0-GATEKEEPER-WAVE.md
+  s_f242443465c9e0::t_b8ddf7d656b8b8 1-84
+governance/plans/cloudflare-os-bridge/E1-CAPN-WEB-SPOKE.md
+  s_f242443465c9e0::t_eec95a641228f7 1-61
+governance/plans/cloudflare-os-bridge/E2-MCP-BRIDGE.md
+  s_f242443465c9e0::t_3af5581496c921 1-59
+governance/plans/cloudflare-os-bridge/E3-CONSUMER-TAXONOMY.md
+  s_f242443465c9e0::t_0a9e60c08cbbe6 1-65
+governance/plans/cloudflare-os-bridge/E4-ARCHITECTURE-MINE.md
+  s_f242443465c9e0::t_a7025ca6762705 1-80
+governance/plans/cloudflare-os-bridge/E5-DOGFOOD-TRIAL.md
+  s_f242443465c9e0::t_9b70cc24c26538 1-394
+governance/plans/cloudflare-os-bridge/E6-MARKET-WATCH.md
+  s_f242443465c9e0::t_37974527e79b19 1-85
+governance/plans/cloudflare-os-bridge/E7-OPEN-AGENT-INTEROP.md
+  s_f242443465c9e0::t_41385cde78288e 1-74
+governance/plans/cloudflare-os-bridge/NORTH-STAR.md
+  s_f242443465c9e0::t_d7d5dc869ee8b8 1-127
+governance/plans/cloudflare-os-bridge/README.md
+  s_f242443465c9e0::t_2b6dabecc4e69a 1-34
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_f242443465c9e0::t_db22dcdcdb1707 10-14
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_f242443465c9e0::t_77db01ac695e7e 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_f242443465c9e0::t_beea4e79e977c9 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_f242443465c9e0::t_ad60e9987da799 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_f242443465c9e0::t_80b896505151c6 17-24
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_f242443465c9e0::t_14a61b0a946d19 122-170,175
+governance/plans/ffmpeg9-lei/action/E5-E7-JOINT-BRAINSTORM.md
+  s_f242443465c9e0::t_3b486490eb343f 1-255
+governance/plans/ffmpeg9-lei/action/E6-P3-GPU-RESIDENT-BRAINSTORM.md
+  s_f242443465c9e0::t_533a024bfd17b3 1-202
+governance/plans/ffmpeg9-lei/action/E8-P4-TRUST-SURFACE-DESIGN.md
+  s_f242443465c9e0::t_6bee79d8c7e814 1-235
+governance/plans/ffmpeg9-lei/action/E9-P3-COGS-BENCH.md
+  s_f242443465c9e0::t_1640a0a2501e45 1-222
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-ANTAGONIST.md
+  s_abd85a8b834c55::t_c9823da7ab8c94 3-11
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-MOAT.md
+  s_f242443465c9e0::t_3c0640d5a447c8 1-297
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_f242443465c9e0::t_5e44ebbbc44462 1-244
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-WILDCARD.md
+  s_f242443465c9e0::t_ae7375ca3ca0b6 1-264
+governance/test/cfos-trial-killswitch.test.mjs
+  s_f242443465c9e0::t_767b8d7bedbc79 1-314
+governance/test/enforce-secrets.test.mjs
+  s_f242443465c9e0::t_ec221cda4b48c1 1-250
+governance/test/enforce.test.mjs
+  s_f242443465c9e0::t_d9f311398f209f 4-8,11,14-15
+governance/test/lib/enforce-harness.mjs
+  s_f242443465c9e0::t_da9b978f84f0ca 1-44
+governance/test/pr-check-health-platform.test.mjs
+  s_f242443465c9e0::t_21c9b2a5e077b4 1-311
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_f242443465c9e0::t_e8eea0649eac0b 1-336
+governance/test/pr-check-health.test.mjs
+  s_f242443465c9e0::t_4064c82af90a62 1-241
+governance/test/reversible-store.test.mjs
+  s_f242443465c9e0::t_86c6c3eafa9db9 26-30
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_f242443465c9e0::t_6aad14014b1803 34
+runbooks/library/cfos-trial-incident-without-cloudflare.md
+  s_f242443465c9e0::t_2fb8131f20132c 1-174
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "374aab14d20331da9c5e4507e22e8576a4ead514",
+  "prompts": {},
+  "sessions": {
+    "s_abd85a8b834c55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a01cfff60873042f7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f242443465c9e0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a01ad6d8ec83875ef",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

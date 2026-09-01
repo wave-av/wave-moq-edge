@@ -1,0 +1,20 @@
+otlp-trace.ts
+  s_eb2f7e65359b4f::t_5f8260494bffed 165-168
+  s_eb2f7e65359b4f::t_530449b2a79aab 193-194
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "7e5012a8dcf4d754ca4f1bf476bb9dc0d3f86d5c",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

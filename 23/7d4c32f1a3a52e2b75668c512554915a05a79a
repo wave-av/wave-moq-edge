@@ -1,0 +1,41 @@
+bin/factory-exec.mjs
+  s_1c0352e957b5f6::t_a1b4a0a198e531 1-77
+bin/factory-feedback.mjs
+  s_1c0352e957b5f6::t_d431d36eed32de 1-80
+bin/factory-review.mjs
+  s_1c0352e957b5f6::t_fa818a5d9d024c 1-55
+governance/plans/software-factory/E5-REVIEW.md
+  s_1c0352e957b5f6::t_6c834af1a05383 4,9
+governance/plans/software-factory/E6-FEEDBACK.md
+  s_1c0352e957b5f6::t_7732900376acfb 4,9
+governance/plans/software-factory/NORTH-STAR.md
+  s_1c0352e957b5f6::t_cf06b544a46dee 27-28
+governance/plans/software-factory/RECEIPTS.md
+  s_1c0352e957b5f6::t_1dd55b7a07c354 1-68
+governance/research/engineering-canon/agentic-governance.md
+  s_1c0352e957b5f6::t_5fdf5376ac7ae5 322
+governance/test/factory-exec.test.mjs
+  s_1c0352e957b5f6::t_7d8378dfabc2a5 1-45
+governance/test/factory-feedback.test.mjs
+  s_1c0352e957b5f6::t_5f218931fd5ef5 1-46
+governance/test/factory-review.test.mjs
+  s_1c0352e957b5f6::t_c1dc3a8cc67fb5 1-46
+memory/fleet.jsonl
+  s_1c0352e957b5f6::t_ed7218d3a787bd 2-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "237d4c32f1a3a52e2b75668c512554915a05a79a",
+  "prompts": {},
+  "sessions": {
+    "s_1c0352e957b5f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "67341ac2-b031-427e-80c2-a372930fb0f0",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

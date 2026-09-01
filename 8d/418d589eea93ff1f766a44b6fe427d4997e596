@@ -1,0 +1,45 @@
+governance/plans/fireworks-integration/MODEL-FIT-MATRIX.md
+  s_a358eb4226cf44::t_bfd37d2141fde2 32-33
+  s_a358eb4226cf44::t_6cec30dad603d3 183
+  s_a358eb4226cf44::t_19bcc2ec61065d 128
+  s_a358eb4226cf44::t_4e70846e00e254 135
+  s_a358eb4226cf44::t_d6da42d21bc1d8 130
+governance/plans/fireworks-integration/ACTION-PLAN.md
+  s_bb7c7611500027::t_dbd3cd2da4fb04 53
+  s_a358eb4226cf44::t_a9876c820b15f0 30
+  s_8767ce81cadb71::t_135059c581855b 8
+  s_bb7c7611500027::t_e0c191aeb2909b 9
+  s_8767ce81cadb71::t_e1be8dcbfacf2e 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8d418d589eea93ff1f766a44b6fe427d4997e596",
+  "prompts": {},
+  "sessions": {
+    "s_8767ce81cadb71": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff40227feffextbUZsMCw2pbyv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a358eb4226cf44": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff461d970ffeG18f0vFRyuPt3M",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_bb7c7611500027": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4069a7fffeIvXBa9cmeB39G6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

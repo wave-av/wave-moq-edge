@@ -1,0 +1,25 @@
+governance/plans/judge-eval-own-compute/E0-MEASURE.md
+  s_4e4fde0d2a82e8::t_322319a8f168d2 4
+governance/plans/judge-eval-own-compute/RECEIPTS.md
+  s_4e4fde0d2a82e8::t_223c84629a3617 1-178
+governance/plans/ssd-stream-prefetch/E0-FOUNDATION.md
+  s_4e4fde0d2a82e8::t_79668bcca30b32 4
+governance/plans/ssd-stream-prefetch/RECEIPTS.md
+  s_4e4fde0d2a82e8::t_93a9aa90723591 1-161
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ab75c81fc162e34b51058801fdd38089c751534d",
+  "prompts": {},
+  "sessions": {
+    "s_4e4fde0d2a82e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-adfce78efa48b65b7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

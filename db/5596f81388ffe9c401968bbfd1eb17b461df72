@@ -1,0 +1,26 @@
+governance/bin/capability-index.mjs
+  s_02abc74f4971c7::t_db4a5965a30e5b 75-77
+  s_02abc74f4971c7::t_40a94200ead37e 36
+  s_02abc74f4971c7::t_e069f5b3eee25b 92
+  s_02abc74f4971c7::t_d9624d7ad69911 17,19,22
+governance/lib/capability-enumerate.mjs
+  s_02abc74f4971c7::t_2dd68d68cdb749 1-100
+governance/test/capability-enumerate.test.mjs
+  s_02abc74f4971c7::t_0060e5f8c9946f 1-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "db5596f81388ffe9c401968bbfd1eb17b461df72",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

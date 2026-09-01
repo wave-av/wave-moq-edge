@@ -1,0 +1,36 @@
+hookcli/tests/require.sh
+  s_85d9e5f433b9aa::t_70149caf90c116 68,71-73,75-76
+hookcli/lib/eval-t1.sh
+  s_85d9e5f433b9aa::t_296f0d0612f083 30-35
+hookcli/bin/lefthook-gen.mjs
+  s_85d9e5f433b9aa::t_0626247af1e632 29-34,40-41,43-44
+  s_85d9e5f433b9aa::t_e454e53003ce68 35-39,42
+hookcli/rules/rules.json
+  s_85d9e5f433b9aa::t_f81dabb56a0f71 530-547
+hookcli/tests/plan-receipt.sh
+  s_85d9e5f433b9aa::t_10e6cf89e5146c 86-88,92-93
+hookcli/schema/rule.schema.json
+  s_85d9e5f433b9aa::t_36396a7845a46e 39-43
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_e729ef263c7474 25
+governance/ENFORCEMENT-COVERAGE.md
+  s_85d9e5f433b9aa::t_60ef161fb5ce57 9-10,460
+governance/graph.json
+  s_85d9e5f433b9aa::t_6648ea6e8f40d2 30321-30326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a80f65649e3ae882572ee7a8a72ea97f0284c76d",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

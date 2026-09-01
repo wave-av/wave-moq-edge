@@ -1,0 +1,33 @@
+governance/plans/intelligence-eval/NORTH-STAR.md
+  s_375efeac18ed55::t_1de7811c034918 12-19
+governance/plans/intelligence-eval/E-D4-VISION.md
+  s_375efeac18ed55::t_e7928e30a29d24 41-44
+  s_375efeac18ed55::t_2a438220ee0701 19-20
+  s_375efeac18ed55::t_e5f39121d0fbc4 28-35
+governance/plans/intelligence-eval/E-ROUTER-GOLIVE.md
+  s_375efeac18ed55::t_e35fdf18919d0a 7-13,17
+governance/plans/intelligence-eval/E-EVALCHAIN-PRODUCTS.md
+  s_375efeac18ed55::t_4b05df4b73837b 8-17
+governance/plans/intelligence-eval/E-CI-GATE.md
+  s_375efeac18ed55::t_776f19dd19491a 9-15
+governance/plans/intelligence-eval/E-RECURSIVE-SELFEVAL.md
+  s_375efeac18ed55::t_ecc1c4b09767dd 4-8
+governance/graph.json
+  s_375efeac18ed55::t_bce9c05da1263d 3590-3591
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e610e1da0daa70728dd2cd65b939282c04baf296",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

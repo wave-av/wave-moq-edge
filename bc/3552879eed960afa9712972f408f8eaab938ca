@@ -1,0 +1,30 @@
+hooks/tests/wrangler-deploy-gate-ifs.test.sh
+  s_d9915bbafa9657::t_1f7a490a7d75ad 233-237,243,245-246,252,254-255
+  s_d9915bbafa9657::t_edb0c03be3127d 73-111
+hooks/hooklib/ifs-glue.sh
+  s_d9915bbafa9657::t_76367858aeb0fc 75-135
+hooks/wrangler-deploy-gate.sh
+  s_d9915bbafa9657::t_fc1485df8d34d1 125-129
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_b87af001e0db98 193-206
+  s_d9915bbafa9657::t_ae790b7666b18d 133-138
+  s_d9915bbafa9657::t_7801340ec9329d 34
+hooks/manifest.json
+  s_d9915bbafa9657::t_d40615df69f91d 2026
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "bc3552879eed960afa9712972f408f8eaab938ca",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+packages/spoke-chassis/src/shell.ts
+  s_3a52a0989b58af::t_0ac8e34cf67109 98
+scripts/bugbot/posting.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-202
+tests/test_bugbot_watchdog.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-74
+tests/test_bugbot.py
+  s_3a52a0989b58af::t_8d0b82f230d054 471-478,480-481,486-487,490-491,495,942,948
+northstars/cost-control.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-54
+northstars/open-core-boundary.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-49
+northstars/bugbot-autonomy.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-60
+packages/spoke-chassis/CHANGELOG.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 5-12
+packages/spoke-chassis/src/nav.ts
+  s_3a52a0989b58af::t_0ac8e34cf67109 33,51,152-154
+scripts/bugbot/com.wave.bugbot.watchdog.plist.sample
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-44
+northstars/platform-funnel.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-50
+scripts/bugbot/watchdog.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-143
+README.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 4-8
+scripts/bugbot/review.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 46,49-58,108-110,522-528,533-538,542-544,547-548
+northstars/observability.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-53
+northstars/gate-as-architecture-signal.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-58
+scripts/bugbot/anchor.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 7-9
+packages/spoke-chassis/src/seo.ts
+  s_3a52a0989b58af::t_0ac8e34cf67109 56
+northstars/README.md
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-44
+scripts/bugbot/policy.py
+  s_3a52a0989b58af::t_0ac8e34cf67109 1-94
+packages/spoke-chassis/package.json
+  s_3a52a0989b58af::t_0ac8e34cf67109 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7bf159f3923c6ab9e2f99a73e8144c1ce3d7590f",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

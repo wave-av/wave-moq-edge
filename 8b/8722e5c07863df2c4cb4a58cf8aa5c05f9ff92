@@ -1,0 +1,28 @@
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  s_2e30bff6169f7a::t_e9a6da383266b3 93,96
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_41c7c18875372a 84
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  s_2e30bff6169f7a::t_5ff2af49e628a9 74-75
+  s_2e30bff6169f7a::t_f0c7ac60e7a3c5 125-126
+  s_2e30bff6169f7a::t_936fbfa0808a9d 118
+  s_2e30bff6169f7a::t_8ecab8e0c19b43 289
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  s_2e30bff6169f7a::t_6b9745461dbf29 373
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8b8722e5c07863df2c4cb4a58cf8aa5c05f9ff92",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

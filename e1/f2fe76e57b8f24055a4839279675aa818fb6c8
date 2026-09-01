@@ -1,0 +1,139 @@
+scripts/agentic-arena.py
+  s_85113a1cef9a84::t_a25f470f27cad8 1-70
+scripts/agentic-bench.py
+  s_85113a1cef9a84::t_ccc2a7b715f81a 16,157,167
+scripts/agentic-multiturn-bench.py
+  s_85113a1cef9a84::t_782089088c13cc 1-142
+scripts/audio-bench.py
+  s_85113a1cef9a84::t_b2c7cdd6814ce4 1-46
+scripts/blind-score-batch.py
+  s_85113a1cef9a84::t_7f178a710f7532 1-50
+scripts/blind-score.py
+  s_85113a1cef9a84::t_bff9d5ff520664 1-85
+scripts/champion-ci.py
+  s_85113a1cef9a84::t_499da9c657ad68 1-48
+scripts/champion-update.py
+  s_85113a1cef9a84::t_f7da5fcf457461 1-74
+scripts/claude-account-login.py
+  s_85113a1cef9a84::t_7afee74618597c 1-169
+scripts/claude-account-pty.py
+  s_85113a1cef9a84::t_156a77cb4a8ca9 1-55
+scripts/claude-pool-mcp.py
+  s_85113a1cef9a84::t_e0449266dc2360 1-108
+scripts/collect-grid.py
+  s_85113a1cef9a84::t_b7a286ded443ba 1-58
+scripts/combo-router.py
+  s_85113a1cef9a84::t_ec013404b4566a 14,28,33-36,38,50-63,90-121,126,130,141,147-151,154,156,168-174,176
+scripts/conversational-bench.py
+  s_85113a1cef9a84::t_d02a24fd179894 1-54
+scripts/escalation-router.py
+  s_85113a1cef9a84::t_dd8da4de36c356 1-69
+scripts/eval-ladder.py
+  s_85113a1cef9a84::t_1dc91327af9a91 1-60
+scripts/flag-compat.py
+  s_85113a1cef9a84::t_a175c306b11656 1-95
+scripts/fleet-index.py
+  s_85113a1cef9a84::t_4b6cdc8dbf7c6b 1-174
+scripts/frontier-bench.py
+  s_85113a1cef9a84::t_30dbb3b8193c60 1-149
+scripts/full-bench.py
+  s_85113a1cef9a84::t_d81ef97eca8372 1-88
+scripts/goal-bench.py
+  s_85113a1cef9a84::t_3347c50528f829 1-95
+scripts/hallucination-bench.py
+  s_85113a1cef9a84::t_0095552dd6fa14 1-63
+scripts/harvest-private-bench.py
+  s_85113a1cef9a84::t_62a292af3b5966 1-86
+scripts/hosted-baseline.py
+  s_85113a1cef9a84::t_336cd11a513c0a 1-60
+scripts/humaneval-bench.py
+  s_85113a1cef9a84::t_22c2ed33db6880 1-86
+scripts/inference_mcp.py
+  s_85113a1cef9a84::t_8ce8ad0eddb5d4 13-14
+scripts/judge-bench.py
+  s_85113a1cef9a84::t_34ffcda172bac6 1-113
+scripts/judge-chain.py
+  s_85113a1cef9a84::t_e93265dbfe8279 1-54
+scripts/knowledge-bench.py
+  s_85113a1cef9a84::t_8744ba0c3ee24a 1-67
+scripts/local-arena-multijudge.py
+  s_85113a1cef9a84::t_223e09793f3242 1-83
+scripts/longcontext-bench.py
+  s_85113a1cef9a84::t_1cb26332da82fd 1-72
+scripts/make-orchestrator-dataset.py
+  s_85113a1cef9a84::t_fcd552bb1e1e29 1-107
+scripts/meter.py
+  s_85113a1cef9a84::t_02e5bc125e1880 1-47
+scripts/mlx-bench.py
+  s_85113a1cef9a84::t_e7c140346fc1ed 1-62
+scripts/model-leaderboard.py
+  s_85113a1cef9a84::t_27e5c75e944e35 1-44
+scripts/model-provenance.py
+  s_85113a1cef9a84::t_0f1af850afa9f8 1-40
+scripts/orchestrator-bench.py
+  s_85113a1cef9a84::t_cf80c92d6acc6f 31-32,71,162-164,280
+scripts/parallel-cli.py
+  s_85113a1cef9a84::t_309209994100ce 1-84
+scripts/param-sweep.py
+  s_85113a1cef9a84::t_3cb990bf69be4a 1-114
+scripts/private-agentic-bench.py
+  s_85113a1cef9a84::t_0435095adb8096 1-117
+scripts/private-bench-harvest.py
+  s_85113a1cef9a84::t_a706c979a36089 1-59
+scripts/rail-health.py
+  s_85113a1cef9a84::t_922a7fde31a3ab 1-81
+scripts/rebench-watcher.py
+  s_85113a1cef9a84::t_ba658a22e81027 1-53
+scripts/route-live.py
+  s_85113a1cef9a84::t_042197ca736112 1-85
+scripts/route-topology.py
+  s_85113a1cef9a84::t_b628b90e18da67 1-117
+scripts/security-bench.py
+  s_85113a1cef9a84::t_85670dee3d4acf 1-79
+scripts/sync-route-map.py
+  s_85113a1cef9a84::t_5109f14fc45550 1-71
+scripts/task-gen.py
+  s_85113a1cef9a84::t_679c6c58f62fab 1-291
+scripts/test-verified-bench.py
+  s_85113a1cef9a84::t_30ba98a3b90a49 1-71
+scripts/truth-loop.py
+  s_85113a1cef9a84::t_e118b6bbfa3032 8-9
+scripts/usage-leaderboard.py
+  s_85113a1cef9a84::t_06e9b39df87d7d 8-9
+scripts/variance-gate.py
+  s_85113a1cef9a84::t_4a517ab00d5190 10-11
+scripts/video-bench.py
+  s_85113a1cef9a84::t_25ff08026f46ba 1-58
+scripts/vision-bench.py
+  s_85113a1cef9a84::t_f9a51b4df37f9e 1-68
+scripts/wave-eval-http.py
+  s_85113a1cef9a84::t_9d45c84972e22d 1-65
+scripts/wave-eval-mcp.py
+  s_85113a1cef9a84::t_62d62ed5c4c313 1-63
+scripts/wave-model-mcp.py
+  s_85113a1cef9a84::t_fc5bcab2041c87 1-97
+scripts/wave-ops-mcp.py
+  s_85113a1cef9a84::t_2528d5ac92fa0a 1-102
+scripts/wave-topology-http.py
+  s_85113a1cef9a84::t_dc0ef80f06374a 1-47
+scripts/wave-topology-mcp.py
+  s_85113a1cef9a84::t_c7d36f20fc7404 1-55
+scripts/wave_eval_sdk.py
+  s_85113a1cef9a84::t_452b8a980426b0 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e1f2fe76e57b8f24055a4839279675aa818fb6c8",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/test/detect-node.test.mjs
+  s_5c857c586ecfe3::t_e0fc5b6e5f91d3 112-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d0436f2889d6d58e3913df1dc011d8381ddb60b1",
+  "prompts": {},
+  "sessions": {
+    "s_5c857c586ecfe3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffc75d069ffeGIHXytSoyuM9vz",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

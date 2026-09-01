@@ -1,0 +1,38 @@
+scripts/token-budget-check-changed.sh
+  s_364605915bb7ec::t_b8ff502da37c6e 42,44,52-75
+  s_364605915bb7ec::t_4ea89ded1d7b9d 122-125,130-140
+  s_364605915bb7ec::t_3fad3526de5826 21
+  s_364605915bb7ec::t_ab8d21d6c948b0 105-110
+  s_60a20469ef4369::t_400c48e8382f25 76
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_2b52d1dee7faed 233-236,241-251
+  s_364605915bb7ec::t_cae60787a6ac9f 155,157,159,166-189
+  s_364605915bb7ec::t_8a9aa3ea7d8121 218-223
+scripts/token-budget-self-exemption.test.mjs
+  s_364605915bb7ec::t_67f528257556c8 1-84,90-263
+  s_364605915bb7ec::t_fa5c6e1ea84bea 85-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3ccb72bdee81321557cbe264a650feec37b3b123",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

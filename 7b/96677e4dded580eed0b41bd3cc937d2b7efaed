@@ -1,0 +1,33 @@
+rules/CORE-RULES.md
+  s_07acdfa7e3709a::t_fefe3b05c94c7f 26
+rules/behavioral-rules.md
+  s_07acdfa7e3709a::t_872d6b97812b7a 50-53
+scripts/check-context-integrity.sh
+  s_07acdfa7e3709a::t_40a5a73f05a871 1-56
+rules/composability-philosophy.md
+  s_07acdfa7e3709a::t_40e8e02f0f49e5 15-16
+rules/file-size-limits.md
+  s_07acdfa7e3709a::t_f26d9fa397afc9 98-99
+  s_07acdfa7e3709a::t_01ccaf4422e877 16-35
+.github/workflows/self-check.yml
+  s_07acdfa7e3709a::t_7369c960761c2c 43-47
+  s_07acdfa7e3709a::t_7cd2ab40bd86a9 51-64
+.github/.context-trim-allow
+  s_07acdfa7e3709a::t_e3c7121376659e 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "7b96677e4dded580eed0b41bd3cc937d2b7efaed",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

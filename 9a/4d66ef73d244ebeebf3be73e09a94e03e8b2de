@@ -1,0 +1,34 @@
+hookcli/lib/hook-event-timeouts.mjs
+  s_d9915bbafa9657::t_6e6068fe76b4b7 18-35
+  s_d9915bbafa9657::t_bd5c7ed6daf9da 82-88,90-114,118
+  s_d9915bbafa9657::t_dff21e9dc04d8e 43-71
+hookcli/bin/hookcli-settings-gen.mjs
+  s_d9915bbafa9657::t_54b0977f7acd89 141-144,148
+  s_d9915bbafa9657::t_39d84c9ffea325 27,165
+hookcli/bin/validate-rules.mjs
+  s_d9915bbafa9657::t_cc50b913783472 227
+  s_d9915bbafa9657::t_3b07d0c784708e 10-13
+  s_d9915bbafa9657::t_fd57a185e842fe 264-268
+  s_d9915bbafa9657::t_af0061c54d365d 228-234
+governance/test/hookcli-budget-fits-timeout.test.mjs
+  s_d9915bbafa9657::t_d88590ca3bc594 20-23
+  s_d9915bbafa9657::t_75dd43372d5b11 102
+  s_d9915bbafa9657::t_13458815dd18b1 31-37,47-51,56-66
+  s_d9915bbafa9657::t_bc1d6f2088655c 67-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9a4d66ef73d244ebeebf3be73e09a94e03e8b2de",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

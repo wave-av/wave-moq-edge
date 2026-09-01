@@ -1,0 +1,19 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_2fd4e0c1ae6a7a::t_0bbd7f274cc29a 2,6,24-27,41,46,51,56,62,68,93,108-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a76d5a2ac916e34069368abf2b56c9244a2ec364",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

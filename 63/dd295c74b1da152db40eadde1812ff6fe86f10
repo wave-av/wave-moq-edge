@@ -1,0 +1,25 @@
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  s_2e30bff6169f7a::t_f27f689ee6ca1e 9
+  s_2e30bff6169f7a::t_740e3fb25aaab2 192-246
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  s_2e30bff6169f7a::t_0454c75c87f6ab 181-213,219-222
+  s_2e30bff6169f7a::t_7add9a07789c16 252-255,257-262,279-293
+.github/workflows/wave-cost-ledger-absent-check-sweep.yml
+  s_2e30bff6169f7a::t_6eba3ee4c24148 1-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "63dd295c74b1da152db40eadde1812ff6fe86f10",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

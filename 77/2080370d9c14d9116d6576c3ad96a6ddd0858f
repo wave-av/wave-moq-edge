@@ -1,0 +1,105 @@
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_51901de7253219 25
+governance/graph.json
+  s_85d9e5f433b9aa::t_57a8b9226f1a3f 2969-2972,2982-2985,2995-2998,3008-3011,3021-3024,3034-3037,3048,3050,3061,3063,3074,3076,3087,3089,3100-3102,3115,3126,3128,3139,3141,3152-3154,3164-3167,19354-19359,19558-19563,19786-19791
+governance/plans/ambient-console-auth/NORTH-STAR.md
+  s_c24357e71ae5bc::t_2110afc74213b7 6-7
+governance/plans/brand-recycle/CONSOLE-FAILURES.md
+  s_c24357e71ae5bc::t_7785415e914269 40,71
+governance/plans/brand-recycle/E-ENFORCE.md
+  s_c24357e71ae5bc::t_5c178bb5f50fa3 12,122,285
+governance/plans/brand-recycle/WOW-TAIL.md
+  s_c24357e71ae5bc::t_dbbcde94ee57c6 13
+governance/plans/console-rebuild/E1-DASHBOARD.md
+  s_124891ed63801b::t_d3564fe4ab74fa 10-13
+governance/plans/console-rebuild/E2-LOGIN.md
+  s_2fd4e0c1ae6a7a::t_64da4e3c1421ef 8-11
+governance/plans/console-rebuild/E3-TRANSCRIBE.md
+  s_2fd4e0c1ae6a7a::t_ef279367a46f0d 9-12
+governance/plans/console-rebuild/E4-SETTINGS.md
+  s_2fd4e0c1ae6a7a::t_e77845b7bab342 13-16
+governance/plans/console-rebuild/E5-STUDIO-REMAINING.md
+  s_2fd4e0c1ae6a7a::t_e6b7016d43b25f 16-19
+governance/plans/console-rebuild/NORTH-STAR.md
+  s_2fd4e0c1ae6a7a::t_371a1f9843bbbe 74-77
+governance/plans/content-engine/E1-SSOT.md
+  s_2fd4e0c1ae6a7a::t_f26709dc1d390c 4-5,20,22
+governance/plans/content-engine/E2-JUDGE.md
+  s_2fd4e0c1ae6a7a::t_169f42ad4617df 4-5,14,16,24
+governance/plans/content-engine/E3-VERIFY.md
+  s_2fd4e0c1ae6a7a::t_b82529b6c383f6 4-5,14,16
+governance/plans/content-engine/E4-GENERATE.md
+  s_941b8f0612ec3e::t_965e864f41b628 4-5,15,17
+governance/plans/content-engine/E5-DOGFOOD.md
+  s_941b8f0612ec3e::t_348a19cf103e87 4-5,12-14
+governance/plans/content-engine/E6-GATE.md
+  s_941b8f0612ec3e::t_28b323a739aab6 4-5,21
+governance/plans/content-engine/E7-SHIP-PROVE.md
+  s_941b8f0612ec3e::t_23652ec3ad45c5 4-5,8-9,14,16,20
+governance/plans/content-engine/E8-WATCH.md
+  s_2fd4e0c1ae6a7a::t_941b51fa6e2e47 12,14,20
+governance/plans/content-engine/E9-FLYWHEEL.md
+  s_2fd4e0c1ae6a7a::t_1bd645adb7fc2d 20-22
+governance/plans/content-engine/NORTH-STAR.md
+  s_d9915bbafa9657::t_027ed7c85a3d16 11,81-84
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_31bbe4b8872e70 55,57,59-60,118-142,166,174,188
+governance/recall/eval/repo-corpus.manifest.json
+  s_c24357e71ae5bc::t_6b295d4ace3717 16-18,21-36,56-57,78-81,98-122,131-159,163-187,189-199,202-210,230-274,289-307,340-354,359,363-372,374-384,391-417,449-458,482,490-516,518-536,558-573,575,583-598,605
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "772080370d9c14d9116d6576c3ad96a6ddd0858f",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

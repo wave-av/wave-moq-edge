@@ -1,0 +1,27 @@
+governance/test/capability-index-env.test.mjs
+  s_375efeac18ed55::t_5a22cf48d8c6e5 1-32,35,40-83
+  s_375efeac18ed55::t_4c06f401a46da5 33-34,36-39
+governance/bin/capability-index.mjs
+  s_375efeac18ed55::t_a2d787a2d55c4b 307-334
+  s_375efeac18ed55::t_6f0cd950df4490 260-266
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_808c906db116f5 340-341,349
+governance/code-index/index.json
+  s_375efeac18ed55::t_808c906db116f5 3277-3279,3287-3288,3375-3376
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6100041f987a505c418f9a956071d1e786c3d78c",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

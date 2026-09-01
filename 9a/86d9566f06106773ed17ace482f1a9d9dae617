@@ -1,0 +1,33 @@
+capabilities/bin/render.mjs
+  s_60a20469ef4369::t_c471d6f4e7cc3e 45
+  s_60a20469ef4369::t_faedd8d905ca2f 77-84,86-93,96-98
+capabilities/tests/run.mjs
+  s_60a20469ef4369::t_5b277efd962ff4 88,92-98
+  s_60a20469ef4369::t_bdb94381a307b0 48-53
+  s_60a20469ef4369::t_5b65e0abc37f31 99
+capabilities/bin/check.mjs
+  s_60a20469ef4369::t_b961c85d504a60 104-108,111
+governance/plans/capability-registry/NORTH-STAR.md
+  s_60a20469ef4369::t_a008ec0fca7db6 21
+  s_60a20469ef4369::t_43f24aec726e3f 26
+  s_60a20469ef4369::t_ddc8ee68c31b37 55
+  s_60a20469ef4369::t_80fbb71f8221c8 5
+  s_60a20469ef4369::t_98eee58e49aae8 14
+  s_60a20469ef4369::t_ae218ee05a05b8 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9a86d9566f06106773ed17ace482f1a9d9dae617",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

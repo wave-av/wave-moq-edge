@@ -1,0 +1,27 @@
+governance/research/creator-intelligence/stock-signals-to-reliability/GROUND.md
+  s_7ddeb5d251570f::t_c52b02b7c7c2d9 1-35
+governance/research/creator-intelligence/stock-signals-to-reliability/SYNTHESIS.md
+  s_7ddeb5d251570f::t_c2d02f83126b3d 1-55
+bin/fleet-reliability.mjs
+  s_7ddeb5d251570f::t_bfd068cf8d8568 30
+  s_7ddeb5d251570f::t_e19d76fa710e46 118-129
+  s_7ddeb5d251570f::t_85bc84f5ce8cc3 75,79-80
+bin/model-eval.mjs
+  s_7ddeb5d251570f::t_b9c97b9184770a 65,69-70,77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d6828978167e6019634ebc7ad601fad74467df2a",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

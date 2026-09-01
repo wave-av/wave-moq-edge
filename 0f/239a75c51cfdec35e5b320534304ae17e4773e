@@ -1,0 +1,121 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_53b49eff5b8c5d::t_845a0aba93199e 2,6,8-12,32,37,42,47,53,59,84,99,104,109,129,134,139,144,154,159,164,171
+governance/plans/design-state-signal/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_5cd1e93f3d87be 112
+governance/plans/encoder-plane/E5-PRODUCTIZE.md
+  s_53b49eff5b8c5d::t_af164e5c1e2909 6
+governance/plans/encoder-plane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_257af33219dbdf 7,42
+governance/plans/ffmpeg9-lei/FLEET-SCALE-LADDER.md
+  s_53b49eff5b8c5d::t_b7d4e048b4c1a9 11-13
+governance/plans/ffmpeg9-lei/SCALE-LADDER.md
+  s_53b49eff5b8c5d::t_d8f8bb8b1063f7 29-33
+governance/plans/model-distribution/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_c80b369e3d447b 31
+governance/plans/money-integration/E0-MATRIX.md
+  s_53b49eff5b8c5d::t_8d1af9bea78ab6 1-58
+governance/plans/money-integration/E1-METERING.md
+  s_53b49eff5b8c5d::t_b492daa9fdbbbb 1-32
+governance/plans/money-integration/E2-GATING.md
+  s_53b49eff5b8c5d::t_add3b4fd182a83 1-23
+governance/plans/money-integration/E3-BILLING.md
+  s_53b49eff5b8c5d::t_3dc60db69f250d 1-21
+governance/plans/money-integration/E4-GO-LIVE.md
+  s_53b49eff5b8c5d::t_4e5e2c9c46e34d 1-62
+governance/plans/money-integration/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_2842c35e6c698a 1-49
+governance/plans/money-integration/PRICING.md
+  s_53b49eff5b8c5d::t_b621bf629d6951 1-42
+governance/plans/origin-method-flow/E0-PIPELINE-SPEC.md
+  s_53b49eff5b8c5d::t_6d273ef66bcb0a 1-33
+governance/plans/origin-method-flow/E1-FOUR-RENDERINGS.md
+  s_53b49eff5b8c5d::t_255a9c4126696e 1-34
+governance/plans/origin-method-flow/E2-ASSURANCES.md
+  s_53b49eff5b8c5d::t_200e2ed7b9e579 1-34
+governance/plans/origin-method-flow/E3-PRODUCTIZE.md
+  s_53b49eff5b8c5d::t_fe59f0806bbafb 1-34
+governance/plans/origin-method-flow/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_28532aebf534dc 1-41
+governance/plans/origin-method-flow/flows/origin-method.flow.json
+  s_53b49eff5b8c5d::t_da658857ac06c2 1-29
+governance/plans/signal-flow/E0-FOUNDATION.md
+  s_53b49eff5b8c5d::t_abcb1857fec622 1-34
+governance/plans/signal-flow/E1-VOICE-DOGFOOD.md
+  s_53b49eff5b8c5d::t_1238593b4aec62 1-36
+governance/plans/signal-flow/E2-REGISTRY-FOUR-RENDERINGS.md
+  s_53b49eff5b8c5d::t_af796c408adab4 1-36
+governance/plans/signal-flow/E3-PRODUCTIZE.md
+  s_53b49eff5b8c5d::t_dbf7b9a354eebe 1-36
+governance/plans/signal-flow/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_fb88bea470034a 1-42
+governance/plans/signal-flow/RECEIPT.md
+  s_53b49eff5b8c5d::t_1c3adc1e8608a2 1-42
+governance/plans/signal-flow/flows/coding.flow.json
+  s_53b49eff5b8c5d::t_a28ec7ab67e698 1-23
+governance/plans/signal-flow/flows/network.flow.json
+  s_53b49eff5b8c5d::t_c050beabe85ded 1-23
+governance/plans/signal-flow/flows/voice-agent.flow.json
+  s_53b49eff5b8c5d::t_712f596fa9ef19 1-30
+governance/plans/signal-flow/signal-flow.schema.json
+  s_53b49eff5b8c5d::t_ee68b31242cb13 1-78
+governance/plans/stripe-settlement-truth/E2-POSTURE.md
+  s_53b49eff5b8c5d::t_7ea59d2f08d966 8
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_53b49eff5b8c5d::t_5cd8e1126dd3fd 8,47,121
+governance/plans/stripe-settlement-truth/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_85bef22d4b129f 141
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_53b49eff5b8c5d::t_a5b3b202b875e3 181,323,561,609
+governance/plans/verification-plane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_9912f2168257ca 29
+governance/plans/voice-control-deck/E0-DYNAMIC-CATALOG.md
+  s_53b49eff5b8c5d::t_7550b2ead63fcc 1-32
+governance/plans/voice-control-deck/E1-SESSION-CONTROLS.md
+  s_53b49eff5b8c5d::t_8615cb09235e01 1-34
+governance/plans/voice-control-deck/E2-FOUR-RENDERINGS.md
+  s_53b49eff5b8c5d::t_4096b573c7a95f 1-34
+governance/plans/voice-control-deck/E3-PRODUCTIZE.md
+  s_53b49eff5b8c5d::t_efb49e90772665 1-34
+governance/plans/voice-control-deck/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_3a9f7ecf2ff0e2 1-40
+governance/plans/wave-audio-signal-plane/E0-FOUNDATION.md
+  s_53b49eff5b8c5d::t_dea8345a01e811 1-34
+governance/plans/wave-audio-signal-plane/E1-VOICE-DOGFOOD.md
+  s_53b49eff5b8c5d::t_aaa535a847adc8 1-35
+governance/plans/wave-audio-signal-plane/E2-FOUR-RENDERINGS.md
+  s_53b49eff5b8c5d::t_c03842422d166d 1-34
+governance/plans/wave-audio-signal-plane/E3-PRODUCTIZE.md
+  s_53b49eff5b8c5d::t_689e01c7ee5241 1-34
+governance/plans/wave-audio-signal-plane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_bf9d270a16e1dd 1-43
+governance/plans/wave-audio-signal-plane/PRODUCT-SURFACE.md
+  s_53b49eff5b8c5d::t_035d0c0da85b89 1-109
+governance/plans/wave-audio-signal-plane/dsp-chain.schema.json
+  s_53b49eff5b8c5d::t_3dd316d747a8e2 1-70
+governance/plans/wave-audio-signal-plane/flows/voice-agent.chain.json
+  s_53b49eff5b8c5d::t_7dd0b3c3b185e5 1-37
+governance/plans/wave-audio-signal-plane/tap.schema.json
+  s_53b49eff5b8c5d::t_7aa0b74bd8eedb 1-40
+governance/plans/wave-dogfood/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_46b69ce7351c2b 9-10,70
+governance/plans/wave-tui/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_2d8715370ad977 31
+governance/plans/wow-canon/WOW-STANDARDS-UPLEVEL.md
+  s_53b49eff5b8c5d::t_194e30f1e10e11 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0f239a75c51cfdec35e5b320534304ae17e4773e",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

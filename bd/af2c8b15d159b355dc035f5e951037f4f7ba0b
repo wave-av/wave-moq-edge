@@ -1,0 +1,39 @@
+runbooks/bin/calibrate-cache.mjs
+  s_b43a209b4bc8ec::t_eef21c703d5706 10-15
+runbooks/bin/ambient-cache-check.mjs
+  s_b43a209b4bc8ec::t_2a7ece450099a9 1-45
+runbooks/test/ambient-cache-drift.test.mjs
+  s_b43a209b4bc8ec::t_5f76874918667e 83-93,95,98
+  s_b43a209b4bc8ec::t_b175d86dcdaa0b 1-82,94,96-97,99-192
+runbooks/lib/ambient-cache.mjs
+  s_b43a209b4bc8ec::t_4b2daf26b40da3 102-149
+  s_b43a209b4bc8ec::t_256327660920c8 21,24-39
+  s_b43a209b4bc8ec::t_4352c458c89485 44-49
+  s_b43a209b4bc8ec::t_f3df786fc1ddf1 101
+governance/state/runbook-ambient-cache.json
+  s_264ae386838c57::t_f69c0945bbb1dc 2,4,9,17,21,29-30,33,40,44,48,52,56,60,64,68,72-73,76,80,84-85,88,92-100,104-116,120,124,128-129,132-137,140-145,148,152-153,156,160-200,225,229-230,233-234,265,269,273
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bdaf2c8b15d159b355dc035f5e951037f4f7ba0b",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b43a209b4bc8ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd5af55f-3bde-40ff-af26-d705502ab343",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+governance/bin/mktemp-template-lint.mjs
+  s_dccee6b7677203::t_69a5a483aeced8 45-51,53-89,94
+  s_dccee6b7677203::t_6482022a8c1c76 18
+governance/test/git-files-scanset.test.mjs
+  s_dccee6b7677203::t_f7c6f11471da47 1-107
+governance/bin/stat-portability-lint.mjs
+  s_dccee6b7677203::t_8cdccd1d3ad303 18
+  s_dccee6b7677203::t_d2a60f4ed3655e 98-117,119
+  s_dccee6b7677203::t_37fef203160a29 45-68,70-78,81-85
+  s_37e24b4d920e09::t_2a89c5725afd0e 86
+governance/bin/derived-artifact-drift-audit.mjs
+  s_dccee6b7677203::t_03157e1d4e8e68 153-155
+governance/test/mktemp-template-lint.test.mjs
+  s_dccee6b7677203::t_aaf8b7535dab0a 95-105
+governance/lib/git-files.mjs
+  s_dccee6b7677203::t_b7f3a7fc0b86f1 24-30
+  s_dccee6b7677203::t_2a711a18a1b04b 55
+  s_dccee6b7677203::t_5afacc7d80c032 86
+  s_dccee6b7677203::t_e55658a0569042 56-85,87
+governance/test/stat-portability-lint.test.mjs
+  s_dccee6b7677203::t_b326889987ce4a 123-131
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_adb25ce17da6be 5,684,688,690,692,694-695,697-698,700,702-703,1009,1013,1016,1021-1022,1910,1912,1916,1918,2704-2706,2708
+governance/code-index/index.json
+  s_dccee6b7677203::t_f1e39581943e76 7,10,6224-6225,6268-6269,6290-6291,6313-6315,6334-6335,6345-6346,6367-6368,6378-6379,6400-6401,6422-6423,6433-6434,9139-9140,9183-9184,9216-9217,9271-9272,9282-9283,17229-17239,17257-17260,17295-17305,17317-17327,24352-24353,24357-24367,24374-24375,24390-24400
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "2c2a5947a4cf229f52739bbe4643aaa596a046d1",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

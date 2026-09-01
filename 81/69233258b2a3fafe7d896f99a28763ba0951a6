@@ -1,0 +1,16 @@
+packages/config/package.json
+  h_af5ac1a9798224 3,11-12
+packages/config/typescript/node.json
+  h_af5ac1a9798224 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8169233258b2a3fafe7d896f99a28763ba0951a6",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

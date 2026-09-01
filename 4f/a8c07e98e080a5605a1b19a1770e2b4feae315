@@ -1,0 +1,21 @@
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_b7f93c80282a1e 22-23,25-26
+hookcli/tests/filepath-match.sh
+  s_60a20469ef4369::t_c64de74253de4f 149-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "4fa8c07e98e080a5605a1b19a1770e2b4feae315",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

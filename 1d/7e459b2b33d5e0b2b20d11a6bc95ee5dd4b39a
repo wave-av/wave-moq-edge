@@ -1,0 +1,21 @@
+hooks/last-handoff-capture.sh
+  s_e077f59d8037ec::t_670dc4afc2b2cb 1-75
+hooks/last-handoff-restore.sh
+  s_e077f59d8037ec::t_460c5416de4159 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1d7e459b2b33d5e0b2b20d11a6bc95ee5dd4b39a",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

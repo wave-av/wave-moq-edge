@@ -1,0 +1,24 @@
+.github/workflows/hook-tests.yml
+  s_02abc74f4971c7::t_8c2d17dfdcda42 37-41
+  s_02abc74f4971c7::t_854c1f0b711d1a 181-317
+hooks/tests/doppler_guard_smoke.sh
+  s_02abc74f4971c7::t_280a43fe6aef2d 207-208
+  s_02abc74f4971c7::t_72323dfbcef649 209
+  s_02abc74f4971c7::t_cdc0e40dfafd27 213
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a05a5f48b211fa474c9210287e7b2ba5ac1a5f62",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

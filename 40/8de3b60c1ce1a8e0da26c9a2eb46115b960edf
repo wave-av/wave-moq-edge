@@ -1,0 +1,42 @@
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/graph.json
+  h_af5ac1a9798224 3261-3364,19338-19373
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  h_af5ac1a9798224 1-62
+governance/plans/gates-that-can-see/E1-ESLINT-BLIND.md
+  h_af5ac1a9798224 1-65
+governance/plans/gates-that-can-see/E2-DIRECT-PUSH.md
+  h_af5ac1a9798224 1-60
+governance/plans/gates-that-can-see/E3-WARNINGS-CONTRADICTION.md
+  h_af5ac1a9798224 1-53
+governance/plans/gates-that-can-see/E4-PARSE-INVARIANT.md
+  h_af5ac1a9798224 1-68
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  h_af5ac1a9798224 1-69
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  h_af5ac1a9798224 1-57
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  h_af5ac1a9798224 1-102
+hooks/lib/ticket_hygiene_classify.py
+  h_af5ac1a9798224 1-181
+hooks/manifest.json
+  h_af5ac1a9798224 1746
+hooks/tests/ticket-hygiene-guard-test.py
+  h_af5ac1a9798224 9-13,16-25,43-44,48,51,58,68,71,73,77,80-100,102-113,115,118-119,122-123,125-127,129,131-133,136-253
+hooks/ticket-hygiene-guard.py
+  h_af5ac1a9798224 3-44,47-56,60-80,95-106,116,118,121-133,135-148,151-161,172,174-175,182-200,203-211,216-233
+rules/tracked-issue-carries-type-area-priority.md
+  h_af5ac1a9798224 17-18,25-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "408de3b60c1ce1a8e0da26c9a2eb46115b960edf",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

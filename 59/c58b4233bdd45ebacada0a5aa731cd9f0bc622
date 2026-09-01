@@ -1,0 +1,21 @@
+.github/workflows/ci.yml
+  s_ba07216ce52585::t_78d99c5fe078d5 33
+scripts/prove.ts
+  s_ba07216ce52585::t_cbe644ed264872 26,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "59c58b4233bdd45ebacada0a5aa731cd9f0bc622",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

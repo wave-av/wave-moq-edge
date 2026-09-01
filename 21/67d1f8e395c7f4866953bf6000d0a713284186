@@ -1,0 +1,24 @@
+governance/plans/ci-stack-integration/RECEIPTS.md
+  s_e7fd0cc1c86f84::t_189a5deb83a80a 394-443
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2167d1f8e395c7f4866953bf6000d0a713284186",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_e7fd0cc1c86f84": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff7a4d744ffeUxZcHZSNM0nONm",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

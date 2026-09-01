@@ -1,0 +1,14 @@
+governance/DANGLING-REFS-BASELINE.json
+  h_67a1b847dc59d6 2,6,15,27,32,37,42,48,54,79,94,99,104,124,129,134,139,149-153,156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "801dd1024c672a2064f4c887b6bd48f16578b751",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/bin/prove-rules-version-singleton-gate.mjs
+  s_3a85f9517b2690::t_7f6de3d82f4908 1-121
+.github/workflows/governance.yml
+  s_3a85f9517b2690::t_3c0cf627b3500a 215-228
+hookcli/bin/hookcli
+  s_3a85f9517b2690::t_f189d182ad391d 21-28
+hookcli/tests/rules-version.sh
+  s_3a85f9517b2690::t_ec54ae0f339943 1-19,23,33-34,40-46,48,50-55,57-77,79-83,85,88-108,118
+hooks/tests/rules-version.test.sh
+  s_3a85f9517b2690::t_1085a7ab6de859 253,255-267,270-284
+  s_3a85f9517b2690::t_26a0fa664f29e0 81-90
+governance/bin/rules-version-singleton-lint.mjs
+  s_3a85f9517b2690::t_530207c435ce7b 47
+  s_3a85f9517b2690::t_fa53b818234e5a 1-46,48-99,101-159
+  s_3a85f9517b2690::t_3341c0a1ea0b6f 100
+hookcli/lib/rules-version.sh
+  s_3a85f9517b2690::t_4bcb2d327ae864 58
+  s_3a85f9517b2690::t_3e8dd79453559a 2-3,5-10,12-15,17-22,24-37,39-46,48-55,57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c41918471cee9c2f0455c81ef20fece2e644eac1",
+  "prompts": {},
+  "sessions": {
+    "s_3a85f9517b2690": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53fe31ed-c163-43e8-8627-782bc98741f8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

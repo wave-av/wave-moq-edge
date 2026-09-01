@@ -1,0 +1,14 @@
+.github/workflows/pr-agent.yml
+  h_af5ac1a9798224 75-85,126-131,136-139,167-170,200-217,220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "fbf5313c8a554da8ab2178f870a355cd194bdf06",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

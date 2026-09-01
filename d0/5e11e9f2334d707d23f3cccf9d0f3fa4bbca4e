@@ -1,0 +1,21 @@
+hooks/tests/fixtures/stat-bsd-first-probe.sh
+  s_02abc74f4971c7::t_7fc0e87cd3a972 1-18
+hooks/tests/stat-portability.test.sh
+  s_02abc74f4971c7::t_896385021f664f 97-104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "d05e11e9f2334d707d23f3cccf9d0f3fa4bbca4e",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

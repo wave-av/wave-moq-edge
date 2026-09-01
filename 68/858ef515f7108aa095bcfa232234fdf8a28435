@@ -1,0 +1,25 @@
+governance/test/drill-fixtures-wave-sec.test.mjs
+  s_85d9e5f433b9aa::t_633a8e2a3c5bda 1-47
+governance/lib/drill-fixtures-wave-sec.mjs
+  s_85d9e5f433b9aa::t_43067070afc407 38,47-50,57,59-61,63,72-87,90-101
+  s_85d9e5f433b9aa::t_947aeb2c29f331 1-37,39-46,51-56,58,62,64-71,88-89,102
+governance/bin/gate-liveness-drill.mjs
+  s_85d9e5f433b9aa::t_2cbc42a786e7b8 46
+  s_85d9e5f433b9aa::t_26beab66949561 100-102,111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "68858ef515f7108aa095bcfa232234fdf8a28435",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

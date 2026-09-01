@@ -1,0 +1,38 @@
+hooks/tests/ticket-hygiene-guard-test.py
+  s_364605915bb7ec::t_1d144637290f8e 1-97
+rules/tracked-issue-carries-type-area-priority.md
+  s_364605915bb7ec::t_b4d34c38c46f19 1-26
+hooks/ticket-hygiene-guard.py
+  s_364605915bb7ec::t_6a1cd79f31bd25 1-91
+settings/settings.base.json
+  s_364605915bb7ec::t_1c565ac0fe7b0c 306-314
+  s_364605915bb7ec::t_f561a3fb0294d3 305
+governance/graph.json
+  s_d79d785e3b5bb0::t_9a794021914d30 1978-1984,4185-4193,12111-12128,16389-16400
+hooks/manifest.json
+  s_d79d785e3b5bb0::t_82f9f518a52b0e 1192-1212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "13d15e2f0cdb699d8fad3c58af3814d04d526723",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d79d785e3b5bb0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a9fee41ed6832d1c5",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/research/langfuse-build-vs-buy-2026-08-21.md
+  s_0213641ac58af6::t_cdb7188297bcdf 1-64
+governance/plans/agent-native-cli/SIGNAL-LANGFUSE-2026-08-21.md
+  s_0213641ac58af6::t_49d2413f07bb66 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8e39f68f93d94954872b9206b86eb85884119ebd",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

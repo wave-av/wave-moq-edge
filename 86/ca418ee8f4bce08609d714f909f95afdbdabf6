@@ -1,0 +1,21 @@
+__tests__/moq-relay.test.ts
+  s_157583aa3b6686::t_c34b398ce27790 287
+  s_157583aa3b6686::t_48271de9ebf7c6 268-270
+  s_157583aa3b6686::t_f86be28ed82adb 277,293,301-302,309
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "86ca418ee8f4bce08609d714f909f95afdbdabf6",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

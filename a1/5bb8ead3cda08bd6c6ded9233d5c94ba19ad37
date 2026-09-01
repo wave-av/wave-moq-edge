@@ -1,0 +1,21 @@
+governance/bin/content-policy-scan.mjs
+  s_e2e3e43d0638c5::t_9784bd57a4b827 1-47,51-54,56-112,117-175
+  s_e2e3e43d0638c5::t_35b229a5085b43 113-116
+  s_e2e3e43d0638c5::t_3480e450cffd64 48-50,55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "a15bb8ead3cda08bd6c6ded9233d5c94ba19ad37",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

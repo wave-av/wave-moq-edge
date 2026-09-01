@@ -1,0 +1,18 @@
+governance/bin/surface-registry.mjs
+  h_91e57a3221f2ff 12-13
+governance/plans/wave-platform-completeness/NORTH-STAR.md
+  h_91e57a3221f2ff 76-87
+governance/test/surface-registry.test.mjs
+  h_91e57a3221f2ff 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "579603a6e5b7aefb2342bdbc1588baf8201a3910",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

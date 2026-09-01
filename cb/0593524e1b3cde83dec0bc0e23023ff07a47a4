@@ -1,0 +1,29 @@
+governance/bin/pr-create.mjs
+  s_941b8f0612ec3e::t_c0b33f95f3b744 90-97,100-110
+governance/bin/reviewer-alarm.mjs
+  s_941b8f0612ec3e::t_0f1e6c4587f804 302
+governance/bin/reviewer-route.mjs
+  s_941b8f0612ec3e::t_0314afe2f78647 160-172,174,177-180
+governance/lib/reviewer-liveness-snapshot.mjs
+  s_941b8f0612ec3e::t_ab15d43a6e0fa9 52
+governance/test/reviewer-route.test.mjs
+  s_941b8f0612ec3e::t_85558f0a0b7d0e 144-159
+governance/test/reviewer-liveness-snapshot.test.mjs
+  s_941b8f0612ec3e::t_618010eabe582e 129-132,139-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "cb0593524e1b3cde83dec0bc0e23023ff07a47a4",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

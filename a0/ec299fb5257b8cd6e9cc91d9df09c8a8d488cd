@@ -1,0 +1,24 @@
+governance/plans/network-edge-plane/E6-PRODUCTIZATION.md
+  s_ea8755337f3c0d::t_35d294dc6909e9 1-3,5-25
+  s_ea8755337f3c0d::t_bc860d42048d0f 4
+governance/plans/network-edge-plane/WAVE-ANCHOR.md
+  s_ea8755337f3c0d::t_4826ca31708f9e 1-29
+governance/plans/network-edge-plane/NORTH-STAR.md
+  s_ea8755337f3c0d::t_1aaba3b8b70e5c 103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a0ec299fb5257b8cd6e9cc91d9df09c8a8d488cd",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

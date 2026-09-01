@@ -1,0 +1,27 @@
+scripts/bugbot/loop.py
+  s_07acdfa7e3709a::t_6db676e7ac8ba1 25
+  s_07acdfa7e3709a::t_aecfb9aa741868 136-143,145-158,166-171,175-184,187-204,206-208,210-211,213-215
+  s_07acdfa7e3709a::t_b63d6ca5b8b72d 186
+scripts/bugbot/approve.py
+  s_07acdfa7e3709a::t_56d56e3509b737 161-169
+tests/test_bugbot_safety.py
+  s_07acdfa7e3709a::t_ceabd1b3c2fc52 721-728
+  s_07acdfa7e3709a::t_1ae04231984a74 541-542,547-548,572-573,575-576,589-590
+  s_07acdfa7e3709a::t_e2bfb93a64edb8 497-499,503-504,506-520,522-524,526-527,530,535,537,539-540,543-546,550-552,554-560,562-571,574,577-583,585-588,591-594,596,598
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "5bb0bf60e00118657726aaf1df5fc5b440ffe9f0",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

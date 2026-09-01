@@ -1,0 +1,19 @@
+governance/recall/eval/repo-corpus.manifest.json
+  s_7c7e203d305c60::t_e05584c7e4b281 252-254,272,287
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "95f3e3c0f361df3e902d0c109813d9c101bee9b3",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

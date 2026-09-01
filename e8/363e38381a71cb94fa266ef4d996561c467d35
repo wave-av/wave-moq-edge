@@ -1,0 +1,22 @@
+governance/test/resolve-generated-conflicts-decommit.test.mjs
+  s_c24357e71ae5bc::t_029ed6bb0e71dd 132-138
+governance/bin/resolve-generated-conflicts.mjs
+  s_c24357e71ae5bc::t_f1bbbdc5f11a81 136-144,148
+  s_c24357e71ae5bc::t_b063076f2fe5d0 254
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e8363e38381a71cb94fa266ef4d996561c467d35",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

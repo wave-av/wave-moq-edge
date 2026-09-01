@@ -1,0 +1,24 @@
+governance/lib/wave-sec-socket-cli.mjs
+  s_52031f4510959b::t_ce03c7c7182618 56-71
+  s_52031f4510959b::t_2b7b7e90d3c121 144-145,153-156,159,163-165
+governance/bin/wave-sec.mjs
+  s_52031f4510959b::t_cea3d78f6f1949 169-178
+governance/test/wave-sec-socket-cli.test.mjs
+  s_52031f4510959b::t_1b6b9252b9a289 50-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8e2c0a5815e6b7cd6aa09dab58a13089c5cbfa15",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

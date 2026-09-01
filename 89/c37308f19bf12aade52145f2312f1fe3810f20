@@ -1,0 +1,83 @@
+governance/bin/struggle-miner-scan.sh
+  s_264ae386838c57::t_563b376f9d7d9a 42-48
+governance/bin/struggle-miner/collect-successes.py
+  s_264ae386838c57::t_e3b051f58b1cbc 1-282
+governance/bin/struggle-miner/lib/command_family.py
+  s_264ae386838c57::t_75cde1da7568b1 1-197
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_264ae386838c57::t_239f73f4469cde 150-155,163,165-166
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  s_264ae386838c57::t_c65339f75032fa 20,24-28,70-76,85-90,93-96,118,125-126,138,236-239,242,306
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_264ae386838c57::t_2f2a5def2186e5 1-251
+governance/code-index/CATALOG.md
+  s_264ae386838c57::t_ee361799a5ffef 5,3328-3329,3331-3334,3373-3378,4707-4717,4730,4733-4734,4736,4754,4757,4762-4766,4793-4825
+governance/code-index/index.json
+  s_264ae386838c57::t_72f095b741e457 9-10,12-13,29703-29704,29714-29715,29736-29739,29747-29750,29758-29761,29769,29771-29772,30049-30081,40120-40121,40131-40132,40142-40143,40153-40154,40164-40165,40175-40176,40180-40190,40197-40211,40219-40222,40230-40233,40307-40310,40340-40341,40351-40352,40373-40374,40505-40506,40532-40542,40561-40574,40752-40949
+governance/graph.json
+  s_264ae386838c57::t_3d685094f2444c 22546,22548,22552,22554
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  s_264ae386838c57::t_f6215b5fef13c7 15,96-107,141-165,177-208,214-215,219,242-276,308-310
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  s_264ae386838c57::t_bf595b4eb8509e 95-99
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  s_264ae386838c57::t_608fb4378d0fc1 182-191
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  s_264ae386838c57::t_e3cf768ab7e296 19-25
+governance/lib/wave-cost-ledger-cloudflare-subscription-period.mjs
+  s_264ae386838c57::t_5d7934f2fc2019 1-54
+governance/lib/wave-cost-ledger-root-cause-lookup.mjs
+  s_264ae386838c57::t_0aee43e6cb7a2a 1-80
+governance/lib/wave-cost-ledger-root-cause-outlier.mjs
+  s_264ae386838c57::t_19b678870d3fad 1-153
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  s_264ae386838c57::t_cdc32f4c2c5830 1-97
+governance/lib/wave-cost-ledger-root-cause-resolve.mjs
+  s_264ae386838c57::t_0404b73e203e31 1-76
+governance/lib/wave-cost-ledger-root-cause-sweep-dimensions.mjs
+  s_264ae386838c57::t_3f53a302c3553a 1-269
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_264ae386838c57::t_6ac15da1b1ffa2 4-30,86
+governance/test/wave-cost-ledger-cloudflare-alert-malformed.test.mjs
+  s_264ae386838c57::t_dcb16b6edfed68 1-312
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  s_264ae386838c57::t_f505a202c4c8fb 1-7,32-36,39-42,44-68,70-71,75,78-81,83
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  s_264ae386838c57::t_e2e6a1a17bf3a2 9-10
+governance/test/wave-cost-ledger-cloudflare-subscription-period.test.mjs
+  s_264ae386838c57::t_2abfa70448e75f 1-109
+governance/test/wave-cost-ledger-root-cause-incident-fixture.mjs
+  s_264ae386838c57::t_efdec71481c49f 1-62
+governance/test/wave-cost-ledger-root-cause-outlier.test.mjs
+  s_264ae386838c57::t_62d9d131ce89b1 1-121
+governance/test/wave-cost-ledger-root-cause-prompt-template.test.mjs
+  s_264ae386838c57::t_43dee7fa85fdef 1-74
+governance/test/wave-cost-ledger-root-cause-resolve.test.mjs
+  s_264ae386838c57::t_67e8f2addd3e04 1-54
+governance/test/wave-cost-ledger-root-cause-sweep-dimensions.test.mjs
+  s_264ae386838c57::t_9c0ebe4f4b2ab8 1-196
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  s_264ae386838c57::t_e42b4312ce95b1 1-219
+tests/struggle_miner/test_collect_denials.py
+  s_264ae386838c57::t_485563d314d85a 127-132
+tests/struggle_miner/test_collect_successes.py
+  s_264ae386838c57::t_c170ca46cff314 1-254
+tests/struggle_miner/test_command_family.py
+  s_264ae386838c57::t_2ee5ef4c0efb65 1-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "89c37308f19bf12aade52145f2312f1fe3810f20",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

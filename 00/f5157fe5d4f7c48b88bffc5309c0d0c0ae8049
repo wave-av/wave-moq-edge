@@ -1,0 +1,30 @@
+tests/test_agent_rehydrate.py
+  s_3a52a0989b58af::t_1d26da648aaca8 1-140
+scripts/agent_bootstrap.py
+  s_3a52a0989b58af::t_2f1eacaedc6c13 26-31
+scripts/agent_rehydrate.py
+  s_3a52a0989b58af::t_a5d6152c40f109 1-98
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_67c47777a02b29 188
+  s_3a52a0989b58af::t_c2a0feab04c7d7 118
+  s_3a52a0989b58af::t_8e4f34a2b2749d 164-169
+  s_3a52a0989b58af::t_1b0f1f0aeef064 119-122
+  s_3a52a0989b58af::t_61e2a5e3e58ca7 187
+  s_3a52a0989b58af::t_a8daded603842a 193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "00f5157fe5d4f7c48b88bffc5309c0d0c0ae8049",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}

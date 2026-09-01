@@ -1,0 +1,21 @@
+hooks/tests/matcher-capability.test.sh
+  s_27c3f37c99074f::t_485e7dbb72d569 107,109
+hooks/tests/hook-path-integrity.test.sh
+  s_27c3f37c99074f::t_fc854a537145b1 228,230
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1fdacc0667f19d0744db35a7b20d4af3ebee5086",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

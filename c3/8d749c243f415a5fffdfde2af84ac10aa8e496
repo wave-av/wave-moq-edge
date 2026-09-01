@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_c464a82f334d29::t_c708751aa665cb 431-436
+governance/plans/ffmpeg9-lei/E19-IMAGE-VARIANT.md
+  s_c464a82f334d29::t_712369590bd302 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c38d749c243f415a5fffdfde2af84ac10aa8e496",
+  "prompts": {},
+  "sessions": {
+    "s_c464a82f334d29": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe0605de9ffeHpfJ6z0rNvDUJa",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

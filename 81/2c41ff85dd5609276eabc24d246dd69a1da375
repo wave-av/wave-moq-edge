@@ -1,0 +1,35 @@
+governance/bin/platform-status.mjs
+  s_c2bb037074776b::t_318cb3d0efbf7c 44
+  s_c2bb037074776b::t_bef11fe8b30cac 364-383
+governance/lib/state-root.mjs
+  s_c2bb037074776b::t_3051263dfe2aad 29-38
+governance/test/rl-hook-ledger-root.test.mjs
+  s_c2bb037074776b::t_e2b893447575a7 121-130
+  s_c7ac32e642c3b3::t_2c4ad5fbd8807c 21
+governance/lib/hook-state-root.mjs
+  s_c2bb037074776b::t_3ab7bfd661aef8 36,123,158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "812c41ff85dd5609276eabc24d246dd69a1da375",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c7ac32e642c3b3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2aa52a5efd39446b",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

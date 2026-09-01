@@ -1,0 +1,25 @@
+scripts/bugbot/audit_fable.py
+  s_0b987fef4e1240::t_aa7bea4aea304f 2-4,6
+  s_0b987fef4e1240::t_13201a1ccf0980 60-80,82,84,96-102,106-115
+  s_0b987fef4e1240::t_5fbced63682c6b 24-29
+  s_0b987fef4e1240::t_1d40aaf70f01a4 125
+scripts/bugbot/test_audit_fable.py
+  s_0b987fef4e1240::t_0de960073fdc21 59,71-72,76,79,88-89,95,99,104
+  s_0b987fef4e1240::t_a5ddbacbfcbf63 37-58,60-70,73-75,77-78,80-87,90-94,96-98,100-103,105-106,112-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "c40b26f1015da8fac0b13e626630bd973859d430",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

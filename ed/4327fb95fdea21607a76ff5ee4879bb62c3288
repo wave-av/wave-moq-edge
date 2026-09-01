@@ -1,0 +1,42 @@
+governance/test/wave-cost-ledger-cloudflare-subscription-period.test.mjs
+  s_2e30bff6169f7a::t_d213fc574dd4c8 34
+  s_2e30bff6169f7a::t_e79b7fc8384cb7 31-33
+  s_2e30bff6169f7a::t_3831bb10d8a0f2 35-37
+  s_2e30bff6169f7a::t_57166715970f14 1-30,38-109
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  s_2e30bff6169f7a::t_8df4e7f631ec81 74,230-246,311
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_2e30bff6169f7a::t_c0e361513b6859 9-12,17-19,22,25-26,31-35,50-66,69,89-106,122-143,194-196,212
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  s_2e30bff6169f7a::t_3487847a6ff897 103-107,147-158,252,256-261,266-269
+governance/lib/wave-cost-ledger-root-cause-sweep-dimensions.mjs
+  s_2e30bff6169f7a::t_0527f5c852e386 1-269
+governance/test/wave-cost-ledger-cloudflare-alert-malformed.test.mjs
+  s_2e30bff6169f7a::t_357d49bf925d04 1-312
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  s_2e30bff6169f7a::t_38a9525ad18dcc 1-7
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  s_2e30bff6169f7a::t_36bb0baa828fc7 9-10
+governance/test/wave-cost-ledger-root-cause-incident-fixture.mjs
+  s_2e30bff6169f7a::t_f3b45c8db8b7ce 1-62
+governance/test/wave-cost-ledger-root-cause-sweep-dimensions.test.mjs
+  s_2e30bff6169f7a::t_ebf0641a2b0baa 1-196
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  s_2e30bff6169f7a::t_2b20370245feec 3-6,170-184,187-218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ed4327fb95fdea21607a76ff5ee4879bb62c3288",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

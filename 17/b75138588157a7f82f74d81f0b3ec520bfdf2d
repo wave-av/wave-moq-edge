@@ -1,0 +1,19 @@
+governance/ci-stack/dockerfiles/wave-ci-base.Dockerfile
+  s_7326a769c7efe8::t_b9158dfae50c89 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "17b75138588157a7f82f74d81f0b3ec520bfdf2d",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+scripts/bugbot/test_seats.py
+  s_0b987fef4e1240::t_9bdebb2f2292f9 53-54
+  s_0b987fef4e1240::t_1f939ab4d5ad63 1-52,55-67
+scripts/bugbot/seats.py
+  s_0b987fef4e1240::t_62398da5e62f15 1-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "f3683d89b4bbcf3fc95028c2c337e6dd92efb514",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+governance/tools/load-shedder/bin/shed.mjs
+  s_1009cb4d9a4f09::t_3d2eb106ed483b 1-106
+governance/tools/backfill-table/lib/index.mjs
+  s_14a6fc0db51df9::t_4c5b7512b5dad6 1-207
+governance/tools/layered-error-budget/lib/index.mjs
+  s_57e921394a1aa0::t_048bfa866bb37b 1-166
+governance/tools/backfill-table/README.md
+  s_14a6fc0db51df9::t_9e9a7d7fc95c0d 1-57
+governance/tools/layered-error-budget/examples/dna-like.json
+  s_57e921394a1aa0::t_37af85f6a54365 1-7,9-14,16-21,23-35,37-40,42
+  s_57e921394a1aa0::t_7165ad50741017 41
+  s_57e921394a1aa0::t_d27e0f13e56a18 8,15,22,36
+governance/tools/mastery-path/tests/mastery-path.test.mjs
+  s_c8d8154d36d0ef::t_86bd55061c4db3 1-257
+governance/research/creator-intelligence/VENDOR-INTEGRATION-MAP.md
+  s_b35137d53eda8e::t_cac3697d994554 1-121
+governance/tools/load-shedder/shedder.schema.json
+  s_1009cb4d9a4f09::t_c8cace78de67ca 1-84
+governance/tools/layered-error-budget/README.md
+  s_57e921394a1aa0::t_7e7f2188f3b88e 1-104
+governance/tools/backfill-table/table.schema.json
+  s_14a6fc0db51df9::t_02a28d6abe2561 1-70
+governance/tools/layered-error-budget/tests/layered-error-budget.test.mjs
+  s_57e921394a1aa0::t_866c3d655fa9ab 1-36,40-42,46,48-49,52-91,95-97,101,103-104,107-175,177-262
+  s_1009cb4d9a4f09::t_11b311e058bcd5 92,94,98-100,106
+  s_57e921394a1aa0::t_0f7c4870c5ddc1 176
+  s_57e921394a1aa0::t_ea02567f5d7ae6 93,102,105
+  s_57e921394a1aa0::t_5ed8654ae4642a 37-39,43-45,47,50-51
+governance/tools/mastery-path/bin/mastery.mjs
+  s_c8d8154d36d0ef::t_828490d8c4180e 1-117
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_1009cb4d9a4f09::t_f44aba8d5b7b5e 1-333
+governance/tools/layered-error-budget/bin/error-budget.mjs
+  s_57e921394a1aa0::t_c795912d3ed041 1-81
+governance/tools/load-shedder/examples/gateway-shedding.json
+  s_1009cb4d9a4f09::t_8ea9e510ff790c 1-40
+governance/tools/mastery-path/README.md
+  s_c8d8154d36d0ef::t_298b1ee9c1b087 1-147
+governance/tools/mastery-path/graph.schema.json
+  s_c8d8154d36d0ef::t_20286a7510be90 1-52
+governance/tools/backfill-table/package.json
+  s_14a6fc0db51df9::t_6605084cd07f7a 1-13
+governance/tools/load-shedder/lib/index.mjs
+  s_1009cb4d9a4f09::t_8b7a06f8a43547 1-282
+governance/tools/backfill-table/tests/backfill-table.test.mjs
+  s_14a6fc0db51df9::t_b0206f118ea7bb 1-240
+governance/tools/layered-error-budget/budget.schema.json
+  s_57e921394a1aa0::t_72f03e02ec0bf4 1-59
+governance/tools/backfill-table/examples/agent-onboarding.json
+  s_14a6fc0db51df9::t_2fead699c86408 1-98
+governance/tools/mastery-path/lib/index.mjs
+  s_c8d8154d36d0ef::t_2851c57fb9282f 1-271
+governance/tools/backfill-table/bin/backfill.mjs
+  s_14a6fc0db51df9::t_ac48c6475ec557 1-82
+governance/tools/mastery-path/examples/gateway-onboarding.json
+  s_c8d8154d36d0ef::t_168f4c65e10f45 1-62
+governance/tools/load-shedder/README.md
+  s_1009cb4d9a4f09::t_c024dd72158958 1-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f47817144ae9a44e7f4bb92fa5537126cbac1fb4",
+  "prompts": {},
+  "sessions": {
+    "s_1009cb4d9a4f09": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068584e0ffeHeY5nVkgqQB4I3",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_14a6fc0db51df9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00685af07ffeQWfmS37lMizFyQ",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_57e921394a1aa0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00685c590ffe1mDVcIBgWbDw20",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b35137d53eda8e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006856962ffeLnv6324sTqrtme",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c8d8154d36d0ef": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006859a01ffe3u6dgwWKbW4fWe",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

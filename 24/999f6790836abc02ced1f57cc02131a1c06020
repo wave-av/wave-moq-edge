@@ -1,0 +1,29 @@
+rules/ab-the-fork-dont-forward-it.md
+  s_a293da4db5caf2::t_c7093efe059019 1-61
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_a293da4db5caf2::t_38cf2e0e8e29df 1-96
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_ce654f1841952e 7,17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_a293da4db5caf2::t_9398ff7085ed7b 5,12,14,20,179
+governance/contract.md
+  s_a293da4db5caf2::t_cda317a9f539f6 51,53
+governance/graph.json
+  s_a293da4db5caf2::t_833ee6f3160011 11-17,6257-6298
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "24999f6790836abc02ced1f57cc02131a1c06020",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

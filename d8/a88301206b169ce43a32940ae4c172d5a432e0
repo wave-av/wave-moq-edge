@@ -1,0 +1,38 @@
+governance/plans/wave-automation-registry/E1-REGISTRY-CORE.md
+  s_37e24b4d920e09::t_6737d92b128aa8 447-448
+  s_37e24b4d920e09::t_25e6ec61f77972 1-446,449-490
+docs/superpowers/specs/2026-07-31-wave-automation-registry-design.md
+  s_37e24b4d920e09::t_d7aec5228ae179 1-301
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_37e24b4d920e09::t_4e9816f2538b31 1-56
+governance/plans/wave-automation-registry/RECEIPTS.md
+  s_37e24b4d920e09::t_5489084c0bbacb 1-152
+governance/plans/wave-automation-registry/E4-STRUGGLE-MINER-TIEIN.md
+  s_37e24b4d920e09::t_d896da9aaf7e8d 1-187
+governance/plans/wave-automation-registry/E2-IMPORT-CATEGORIZE.md
+  s_37e24b4d920e09::t_446a554201d18f 1-168
+governance/plans/wave-automation-registry/E3-CLEANUP-PARKING.md
+  s_37e24b4d920e09::t_b47d81f7864cf1 1-198
+governance/plans/wave-automation-registry/E5-CUTOVER-VALIDATION.md
+  s_37e24b4d920e09::t_e96c6304a9454f 1-145
+governance/DASHBOARD.md
+  s_37e24b4d920e09::t_0965f03bd4e52b 25
+governance/graph.json
+  s_37e24b4d920e09::t_a0ec4cb7c65bb4 3749-3756
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "d8a88301206b169ce43a32940ae4c172d5a432e0",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

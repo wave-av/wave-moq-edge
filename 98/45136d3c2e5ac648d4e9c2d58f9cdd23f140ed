@@ -1,0 +1,26 @@
+__tests__/moq-subgroup-decode-hint.test.ts
+  s_39b60271776b24::t_673b51509ff1d5 1-259
+src/moq-wire.ts
+  s_39b60271776b24::t_d6f0de7d99b632 558-563
+  s_39b60271776b24::t_de1f48902c5148 642,644,647
+src/moq-relay.ts
+  s_39b60271776b24::t_9d7ff8553afae2 36
+  s_39b60271776b24::t_4849a734e58756 280-319
+  s_39b60271776b24::t_01f6caf18dbc3f 279
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9845136d3c2e5ac648d4e9c2d58f9cdd23f140ed",
+  "prompts": {},
+  "sessions": {
+    "s_39b60271776b24": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff2105fa2ffe7TVpZf4Q7YkRqr",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

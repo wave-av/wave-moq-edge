@@ -1,0 +1,14 @@
+scripts/model-profile.py
+  h_af5ac1a9798224 1-2,4-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f69d053b1a4a189a4272df1c935658882ac4adf6",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

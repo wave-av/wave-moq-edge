@@ -1,0 +1,32 @@
+governance/bin/wave-product-mcp.mjs
+  h_67a1b847dc59d6 1-146
+governance/plans/hybrid-orchestration-plane/E1-CLAUDE-WORKER-POOL.md
+  h_67a1b847dc59d6 1-33
+governance/plans/hybrid-orchestration-plane/E2-CORPUS-MEMORY.md
+  h_67a1b847dc59d6 1-31
+governance/plans/hybrid-orchestration-plane/E3-ROUTING-POLICY.md
+  h_67a1b847dc59d6 1-31
+governance/plans/hybrid-orchestration-plane/E4-ORIGIN-FEED.md
+  h_67a1b847dc59d6 1-30
+governance/plans/hybrid-orchestration-plane/E5-TELEMETRY-PER-RAIL.md
+  h_67a1b847dc59d6 1-30
+governance/plans/hybrid-orchestration-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 1-78
+governance/plans/search-router/wave-product/SKILL.md
+  h_67a1b847dc59d6 1-63
+governance/plans/wave-voice-program/E2-CONSENT-COMPLIANCE.md
+  h_67a1b847dc59d6 1-64
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 37,73-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b07c8fdde85c66804bbb5ec1038906d66ae26b16",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

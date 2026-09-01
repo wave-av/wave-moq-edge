@@ -1,0 +1,27 @@
+governance/test/doc-hygiene.test.mjs
+  s_ea8755337f3c0d::t_1a20a57edbcbc9 1-67
+governance/lib/drill-fixtures-doc-hygiene.mjs
+  s_ea8755337f3c0d::t_c204458a77b911 1-77
+governance/bin/doc-hygiene.mjs
+  s_ea8755337f3c0d::t_aed768fd3f01a8 1-5,11,14-23,25,34-35,39,50,54-55,60,66
+  s_ea8755337f3c0d::t_1518c7ac940297 9,12-13,24,26-33,36-38,40-49,51-53,56-59,61-65,67
+  s_ea8755337f3c0d::t_77fb0efd0d7f53 6-8
+  s_ea8755337f3c0d::t_965df97f79d3db 10
+  s_ea8755337f3c0d::t_fe864cd4ecf118 68-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "423cf2bc5afc9f1684676fd9a89ffe82561d5d3f",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

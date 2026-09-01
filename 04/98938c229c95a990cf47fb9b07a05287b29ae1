@@ -1,0 +1,32 @@
+hooks/plan-receipt-observer.sh
+  s_60a20469ef4369::t_f9bdce3c83058e 1-32
+hooks/bin/plan-receipt-runner.mjs
+  s_60a20469ef4369::t_6d1374a9288e01 1-45
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_1b7bea1e793173 79-103,107
+  s_60a20469ef4369::t_dd710ef0fe99a5 30
+hooks/bin/plan-receipt-capture.mjs
+  s_60a20469ef4369::t_32362510da19ce 1-44
+hookcli/tests/plan-receipt.sh
+  s_60a20469ef4369::t_1ed69de2ee9e34 1-90
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_e64dea831f5989 67-72
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_567448f6dec77d 127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0498938c229c95a990cf47fb9b07a05287b29ae1",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

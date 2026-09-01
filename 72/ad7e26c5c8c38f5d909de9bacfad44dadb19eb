@@ -1,0 +1,21 @@
+governance/plans/network-edge-plane/NORTH-STAR.md
+  s_ea8755337f3c0d::t_966e5aeacd6b7b 119
+governance/plans/network-edge-plane/EXPANSION.md
+  s_ea8755337f3c0d::t_7e5a6c08ee1af9 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "72ad7e26c5c8c38f5d909de9bacfad44dadb19eb",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

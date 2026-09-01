@@ -1,0 +1,56 @@
+governance/tools/derivable-correctness/bin/derivability.mjs
+  s_a619ac2ac12a1e::t_ef8c232fce14f3 1-34
+governance/tools/trust-runtime/bin/trust-runtime.mjs
+  s_c950398a499131::t_0ab0fb9e37c7ce 11,35,40-47,49-50,60-61
+  s_c950398a499131::t_0e04b7282e8dce 12-13,16
+  s_c950398a499131::t_a2963ba3b0b01d 1-10,14-15,17-33,51-59,62-75
+  s_c950398a499131::t_5f39173fba8650 34,36-39,48
+governance/tools/derivable-correctness/lib/index.mjs
+  s_a619ac2ac12a1e::t_88e1d570a13981 1-62
+governance/tools/trust-runtime/README.md
+  s_c950398a499131::t_c2d21bfb7d5453 1-62
+governance/tools/trust-runtime/tests/trust-runtime.test.mjs
+  s_c950398a499131::t_4cd38f9cf900cb 1-20,22-34,36-166
+  s_c950398a499131::t_8bc3d3eeb4b480 21,35
+governance/tools/derivable-correctness/tests/derivability.test.mjs
+  s_a619ac2ac12a1e::t_3d5c5545734f29 1-41,43-89
+  s_a619ac2ac12a1e::t_bd06607faf8595 42
+governance/tools/derivable-correctness/README.md
+  s_a619ac2ac12a1e::t_6a07f29f80940b 1-49
+governance/tools/trust-runtime/package.json
+  s_c950398a499131::t_9bddd005bb4695 1-16
+governance/tools/trust-runtime/lib/index.mjs
+  s_c950398a499131::t_c92eef9934f2fe 1,4-45,63-69,88-112
+  s_c950398a499131::t_5c482c6e71d98d 46-62
+  s_c950398a499131::t_18d159e2869744 2-3
+  s_c950398a499131::t_10d885023d3d89 70-87
+governance/tools/trust-runtime/examples/wave-workload.json
+  s_c950398a499131::t_93a45ce2968c9e 1-10,12-85
+  s_c950398a499131::t_2a63f48632b0af 11
+governance/tools/derivable-correctness/examples/agent-artifact.json
+  s_a619ac2ac12a1e::t_ad0976b5c2f449 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "151dc0446afbc2025af3f1dcbbb944386c124daf",
+  "prompts": {},
+  "sessions": {
+    "s_a619ac2ac12a1e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0065230c3ffehqhK8udaQT0KAG",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c950398a499131": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006524400ffezfMM0UUy7dPrFs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

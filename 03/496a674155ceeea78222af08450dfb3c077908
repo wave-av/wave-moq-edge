@@ -1,0 +1,44 @@
+governance/recall/BAKE-OFF.md
+  s_d9915bbafa9657::t_8767eeaf587dff 74,76-84
+  s_d9915bbafa9657::t_bdc4d717838bc1 57
+governance/bin/plan-lint.mjs
+  s_c24357e71ae5bc::t_733654f79fe2be 77-81
+governance/lib/levels.mjs
+  s_d9915bbafa9657::t_5b05dfd33adbd5 123-130
+governance/recall/eval/repo-corpus.manifest.json
+  s_27c3f37c99074f::t_052edf5a834d31 180-185,298,509-513,603-612
+governance/test/levels.phase-blindspot.test.mjs
+  s_c24357e71ae5bc::t_85711a13e920ac 3-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "03496a674155ceeea78222af08450dfb3c077908",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

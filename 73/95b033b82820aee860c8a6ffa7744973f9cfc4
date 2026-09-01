@@ -1,0 +1,76 @@
+.github/workflows/governance.yml
+  h_af5ac1a9798224 135-142
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/ENFORCEMENT-BASELINE.json
+  h_af5ac1a9798224 11-12,175-179
+governance/ENFORCEMENT-COVERAGE.md
+  h_af5ac1a9798224 11-12,14,390-394,396,400,408,429,453,475
+governance/bin/credential-probe.mjs
+  h_af5ac1a9798224 1-251
+governance/bin/enforcement-coverage.mjs
+  h_af5ac1a9798224 52,58-61,82-84,123-125,160-162,235-247
+governance/bin/enforcement-tables.mjs
+  h_af5ac1a9798224 219-239
+governance/bin/inject.mjs
+  h_af5ac1a9798224 27-30
+governance/bin/struggle-miner-scan.sh
+  h_af5ac1a9798224 27-35
+governance/bin/struggle-miner/collect-denials.py
+  h_af5ac1a9798224 1-173
+governance/bin/struggle-miner/lib/transcript_filter.py
+  h_af5ac1a9798224 1-159
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,628-642,934-940,971,1751-1769,3726,4032-4035,4507-4518
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,5728-5859,8451-8454,8462-8463,8473-8476,8479,8482,8484-8487,8490,8493,8495-8498,8506-8507,8517-8518,8786-8796,15722-15723,15733-15734,15744-15745,15755-15756,15766-15767,15777-15778,15788-15789,15799-15800,15810-15811,15821-15822,15832-15833,15843-15844,15854-15855,15865-15866,15876-15877,15887-15888,15898-15899,15909-15910,15920-15921,32729-32731,34856-34866,38596-38694
+governance/lib/drill-fixtures-drift.mjs
+  h_af5ac1a9798224 210-212,219-220,228-229
+governance/lib/law-bindings.mjs
+  h_af5ac1a9798224 1-59
+governance/lib/stage-routing.mjs
+  h_af5ac1a9798224 1-94
+governance/plans/local-inference-integrity/RECEIPTS.md
+  h_af5ac1a9798224 34-35,294-356,364
+governance/test/credential-probe.test.mjs
+  h_af5ac1a9798224 1-145
+governance/test/drift-check.test.mjs
+  h_af5ac1a9798224 144-148
+governance/test/law-bindings.test.mjs
+  h_af5ac1a9798224 1-224
+governance/test/struggle-miner/fixtures/sample-denials.jsonl
+  h_af5ac1a9798224 1-8
+hooks/governance-inject.sh
+  h_af5ac1a9798224 4
+hooks/manifest.json
+  h_af5ac1a9798224 526
+rules/autonomous-decision-record.md
+  h_af5ac1a9798224 8,21,23,26,33,35-36,40,43,51,56,58
+rules/deploy-on-wrangler-capable-node.md
+  h_af5ac1a9798224 27,56
+rules/multi-repo-workstream-protocol.md
+  h_af5ac1a9798224 56,66
+rules/public-release-readiness-gate.md
+  h_af5ac1a9798224 41,66,68
+rules/runbook-first-for-recurring-ops.md
+  h_af5ac1a9798224 36
+tests/__init__.py
+  h_af5ac1a9798224 1
+tests/struggle_miner/__init__.py
+  h_af5ac1a9798224 1
+tests/struggle_miner/test_collect_denials.py
+  h_af5ac1a9798224 1-165
+tests/struggle_miner/test_collect_transcripts.py
+  h_af5ac1a9798224 1-8,12-13,21-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7395b033b82820aee860c8a6ffa7744973f9cfc4",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

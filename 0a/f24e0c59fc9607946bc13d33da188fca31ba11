@@ -1,0 +1,35 @@
+governance/bin/where-are-we.mjs
+  s_364605915bb7ec::t_8ab9e6e738fc5f 40-41,47-51,66-70,74
+  s_364605915bb7ec::t_e8cb28c003f7cc 86-92,94-97,100-101,114-119
+  s_364605915bb7ec::t_f52ebf35119182 143-144
+governance/test/memo-wiring.test.mjs
+  s_364605915bb7ec::t_bea04fc90abe5c 32
+governance/nb/brief.mjs
+  s_364605915bb7ec::t_9832fdb881b25b 73-77
+  s_364605915bb7ec::t_f117993df4e81e 100-105,108-109,111
+hookcli/tests/shadow-sessionstart.sh
+  s_364605915bb7ec::t_9247ad285b733a 111
+governance/test/queue-brief.test.mjs
+  s_364605915bb7ec::t_6466374e41d457 65,74-78,83-94
+  s_364605915bb7ec::t_90f5acb314f11a 37-51,95
+governance/code-index/CATALOG.md
+  s_364605915bb7ec::t_8e5560c93e7881 5,2196-2204
+governance/code-index/index.json
+  s_364605915bb7ec::t_8d4482239bb1f8 7,10,21140-21143,21151-21152,21163-21165,21173-21176,21184-21187,21195-21196,21206-21220,21228-21229
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0af24e0c59fc9607946bc13d33da188fca31ba11",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

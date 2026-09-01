@@ -1,0 +1,27 @@
+.github/workflows/ci.yml
+  s_9673f7dc0983fb::t_a0341fba355fb0 41-42
+  s_9673f7dc0983fb::t_9e0c84db656eef 43
+scripts/test-spec.ts
+  s_9673f7dc0983fb::t_64c60898e4962b 127-128,130,132
+  s_9673f7dc0983fb::t_a1d068204a3f64 110
+  s_9673f7dc0983fb::t_ab55b03b29d7f1 74-76
+  s_9673f7dc0983fb::t_2779cbd1f84c7e 35
+package.json
+  s_9673f7dc0983fb::t_7c6542f8f61dcc 26-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "90414e4f656166f7009b4083d1a36ff3b6f52b77",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_42e75bf6deb51d 10-13,22
+  s_2e30bff6169f7a::t_26daeb6af22376 18-21
+  s_2e30bff6169f7a::t_2b2940d6bf3771 14-17
+governance/bin/epic-status.mjs
+  s_2e30bff6169f7a::t_1ce31c685384cf 66,68
+  s_2e30bff6169f7a::t_f5c2999831722f 95-96
+  s_2e30bff6169f7a::t_19bae10d3f64ea 33-41
+governance/test/epic-status.test.mjs
+  s_2e30bff6169f7a::t_dc4c6d30d6ce1a 48-62
+  s_2e30bff6169f7a::t_c0d41d63d1eb3e 113-121
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b76de79ad1297820e47ede09834fd50a96f1e90b",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

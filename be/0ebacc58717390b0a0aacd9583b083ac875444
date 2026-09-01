@@ -1,0 +1,25 @@
+hooks/hooklib/attester-scope-writetest.sh
+  s_9041cf1cf1ccad::t_6e0309acfe150d 1-28
+hooks/hooklib/attester-scope-exonerate.sh
+  s_9041cf1cf1ccad::t_3e9342a7f14d43 104-105
+  s_9041cf1cf1ccad::t_f4b7f4988e28f5 108-111
+  s_9041cf1cf1ccad::t_a329d24483f298 236
+  s_9041cf1cf1ccad::t_f8b07bc081f123 237
+  s_9041cf1cf1ccad::t_099b42aad19bd7 106-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "be0ebacc58717390b0a0aacd9583b083ac875444",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

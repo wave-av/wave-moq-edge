@@ -1,0 +1,26 @@
+governance/lib/review-liveness.mjs
+  s_d9915bbafa9657::t_9208305472076a 107-109
+  s_d9915bbafa9657::t_0d57b198ced6f8 80-82
+  s_d9915bbafa9657::t_cd0bb6e153c03d 192
+  s_d9915bbafa9657::t_ab63505e9bbf66 52
+governance/test/review-liveness-title-skip.test.mjs
+  s_d9915bbafa9657::t_86db14e15da928 1-120
+governance/lib/review-markers.mjs
+  s_d9915bbafa9657::t_007cfb0130d82a 80-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6f4f33602d1be162663e4d39b3b28dbc6ffcc026",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

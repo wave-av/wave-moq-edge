@@ -1,0 +1,37 @@
+governance/bin/board-sweep.mjs
+  s_364605915bb7ec::t_bc7202228e398d 23
+  s_364605915bb7ec::t_11b021bc199e59 1-22,24-149
+hooks/where-are-we-brief.sh
+  s_364605915bb7ec::t_6acaddc166db68 23-31
+docs/BOARD-RUNBOOK.md
+  s_364605915bb7ec::t_8eb78f92e46d10 1-57
+governance/bin/intent-ledger.mjs
+  s_364605915bb7ec::t_b902ecdf32092c 169-173
+  s_364605915bb7ec::t_705952ae033051 248
+  s_364605915bb7ec::t_05edc23a4c3157 371-372
+  s_364605915bb7ec::t_f48019e0160b2d 27
+  s_364605915bb7ec::t_a721eec70f5ed6 272-308
+  s_364605915bb7ec::t_eed8017baeb35c 344-357
+governance/test/board-sweep.test.mjs
+  s_364605915bb7ec::t_792ae2d6329714 1-69
+governance/code-index/CATALOG.md
+  s_364605915bb7ec::t_8249e506a7c3d5 5,93-111,1155,1160-1161,1164,1167-1169,1177-1178,1180,1182-1186,1188-1190,1192
+governance/code-index/index.json
+  s_364605915bb7ec::t_2d1d3b6f8c0e87 6-7,9-10,784-970,11119-11120,11174-11175,11179-11189,11218-11219,11251-11252,11262-11263,11273-11274,11361-11362,11372-11375,11394-11395,11416-11417,11427-11428,11438-11439,11449-11450,11460-11463,11482-11507,11527-11529
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "0b96963338b65e85608530eb442bb25e90243757",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

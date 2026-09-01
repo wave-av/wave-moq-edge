@@ -1,0 +1,21 @@
+scripts/bugbot/test_ingest.py
+  s_0b987fef4e1240::t_6d9b22545c627a 1-38
+scripts/bugbot/ingest.py
+  s_0b987fef4e1240::t_f75d5a3d5c07d8 1-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "43b870abd7ea9a41e75ce92ace5922fe09e0afcf",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

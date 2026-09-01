@@ -1,0 +1,31 @@
+governance/test/work-graph-assemble.test.mjs
+  s_02abc74f4971c7::t_718a011a96988d 5
+  s_11582824864661::t_37e4c04944b8b6 31-35,37-40,44-54
+governance/bin/work-graph.mjs
+  s_02abc74f4971c7::t_7a9563f65e24b2 104-112,131-132,134-139,141-147
+  s_02abc74f4971c7::t_4d72f49641dd2a 140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ddc362aac6daff71c7db77d7049c815247b620ce",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_11582824864661": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-acf9d7d0e03cfa8d1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

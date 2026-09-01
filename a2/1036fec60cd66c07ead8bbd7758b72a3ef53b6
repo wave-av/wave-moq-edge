@@ -1,0 +1,23 @@
+governance/test/enforce.test.mjs
+  s_19c8e603d8990b::t_b5a82a8f7de4ad 173-233
+governance/bin/enforce.mjs
+  s_19c8e603d8990b::t_71a904f826f232 49-50
+  s_19c8e603d8990b::t_5a5a89e98b7b0b 65-80
+  s_19c8e603d8990b::t_4f13a4c7841268 98-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "a21036fec60cd66c07ead8bbd7758b72a3ef53b6",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

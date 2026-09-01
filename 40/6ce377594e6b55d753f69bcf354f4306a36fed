@@ -1,0 +1,37 @@
+governance/test/ffmpeg-release-watch.test.mjs
+  s_124891ed63801b::t_9195d5181a199a 1-67
+governance/bin/ffmpeg-release-watch.mjs
+  s_124891ed63801b::t_428bcc61544846 1-179
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_124891ed63801b::t_8e64af0333cdbd 4
+.gitignore
+  s_124891ed63801b::t_c0b22b6a314579 87-92
+.github/workflows/ffmpeg-release-watch.yml
+  s_124891ed63801b::t_b53e7192418bd9 1-113
+governance/state/ffmpeg-release-watch.json
+  s_63c6ee080d73c3::t_bc7ded96ab6f41 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "406ce377594e6b55d753f69bcf354f4306a36fed",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

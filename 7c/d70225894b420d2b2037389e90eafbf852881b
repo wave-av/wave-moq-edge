@@ -1,0 +1,53 @@
+governance/plans/wave-fabric-placement-engine/E4-ENFORCE-FLIP.md
+  s_d9915bbafa9657::t_79b12ccbb4cfdf 1-30
+governance/plans/wave-inference-fabric/E4-LIFECYCLE.md
+  s_d9915bbafa9657::t_32c6d9a46b870a 1-35
+governance/plans/wave-inference-fabric/E3-SERVING-TIERS.md
+  s_d9915bbafa9657::t_221117de20ea8d 1-44
+governance/plans/wave-inference-fabric/E6-GOVERNANCE-DRIFT.md
+  s_d9915bbafa9657::t_24df1164e5dc10 1-30
+governance/plans/wave-inference-fabric/E1-CATALOG-DRIFT.md
+  s_d9915bbafa9657::t_b7bef022b9e2f2 1-55
+governance/plans/wave-fabric-placement-engine/E1-DISCOVERY.md
+  s_d9915bbafa9657::t_dac2590f0bba22 1-30
+governance/plans/fabric-phase-d-lifecycle/E2-BUILD.md
+  s_d9915bbafa9657::t_9bab2f96989208 1-19
+governance/plans/wave-fabric-placement-engine/NORTH-STAR.md
+  s_d9915bbafa9657::t_46aa500aec7e48 1-69
+governance/plans/wave-inference-fabric/NORTH-STAR.md
+  s_d9915bbafa9657::t_0fae589481a1a3 1-77
+governance/plans/fabric-phase-d-lifecycle/E1-DISCOVERY.md
+  s_d9915bbafa9657::t_e21ba0be2e1e83 1-16
+governance/plans/fabric-phase-d-lifecycle/E3-PROVE.md
+  s_d9915bbafa9657::t_8df1b5a3467a77 1-19
+governance/plans/wave-fabric-placement-engine/E3-SOAK.md
+  s_d9915bbafa9657::t_8150b28350dfaa 1-31
+governance/plans/fabric-phase-d-lifecycle/NORTH-STAR.md
+  s_d9915bbafa9657::t_0bc5740895790b 1-36
+governance/plans/wave-inference-fabric/E2-PLACEMENT-ENGINE.md
+  s_d9915bbafa9657::t_b45cf610cd1d08 1-37
+governance/plans/wave-fabric-placement-engine/E2-WIRE-INERT.md
+  s_d9915bbafa9657::t_4efc894c6d2d4e 1-39
+governance/plans/wave-inference-fabric/E5-COGS-WIRING.md
+  s_d9915bbafa9657::t_ed10a6efbf87f7 1-28
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_b7a719f74c66db 25
+governance/graph.json
+  s_d9915bbafa9657::t_cb7a93a11e391b 3470,3472-3473,3475-3513,3518,6442,6444-6445,6447-6498,6754-6819,6821-6822,6824-6836,21613-21643,21646,21649,21652,21655,21658,27781-27782,27784,27787-27793,27796-27802,27805-27817,27820-27850,27853-27859,27862-27892,27895-27901,27904,27907,27910,27913-27914,27916,27919-27920,27922,27925-27926,27928,27931-27932,27934,27937-27938,27940,27943-27944,27946,27949-27950,27952-27958,28351-28352,28354,28357-28358,28360,28363-28364,28366,28369-28370,28372,28375-28376,28378,28381-28382,28384,28387-28400,28402,28405-28411,28414,28417,28420,28423-28424,28426,28429-28430,28432,28435-28436,28438,28441-28442,28444,28447-28448,28450,28453,28456-28474,28477,28480,28483,28486,28489-28495,28498,28501,28504,28507-28610,28612
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7cd70225894b420d2b2037389e90eafbf852881b",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

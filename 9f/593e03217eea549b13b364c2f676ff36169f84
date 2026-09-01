@@ -1,0 +1,32 @@
+hookcli/lib/t3-git.mjs
+  s_9041cf1cf1ccad::t_a71e3124c23624 207-252
+hookcli/lib/t3-classify.mjs
+  s_9041cf1cf1ccad::t_131c3405437b13 147-150
+  s_9041cf1cf1ccad::t_55dc25d308a9ca 29-33
+hookcli/tests/evasion-matrix.sh
+  s_9041cf1cf1ccad::t_0369a13b442f06 101-109
+  s_9041cf1cf1ccad::t_af10a461c19aa3 23-27
+  s_9041cf1cf1ccad::t_51dd10ce1945f0 136-137
+hookcli/rules/rules.json
+  s_9041cf1cf1ccad::t_9bbb3f3f6f70d9 111,115-116,121
+  s_9041cf1cf1ccad::t_cadf279a1181b0 130,134-135,140
+  s_9041cf1cf1ccad::t_de6edb13a203f6 30,34-35,40
+hookcli/lib/t3-catastrophic.mjs
+  s_9041cf1cf1ccad::t_cfb8eff8b08b8d 1-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9f593e03217eea549b13b364c2f676ff36169f84",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

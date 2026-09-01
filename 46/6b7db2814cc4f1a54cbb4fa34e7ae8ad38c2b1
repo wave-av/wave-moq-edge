@@ -1,0 +1,19 @@
+governance/plans/receipts/e2-render-roundtrip-2026-08-14.md
+  s_9041cf1cf1ccad::t_5d5129a5a99ac3 1-79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "466b7db2814cc4f1a54cbb4fa34e7ae8ad38c2b1",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

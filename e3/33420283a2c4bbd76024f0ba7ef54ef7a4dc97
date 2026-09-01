@@ -1,0 +1,32 @@
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/graph.json
+  h_af5ac1a9798224 3269-3271,3282-3284,3295-3297,3308-3310,3321-3323,3334-3336,3347-3362,19338-19373
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  h_af5ac1a9798224 12-17,28-33
+governance/plans/gates-that-can-see/E1-ESLINT-BLIND.md
+  h_af5ac1a9798224 10-18
+governance/plans/gates-that-can-see/E2-DIRECT-PUSH.md
+  h_af5ac1a9798224 9-16
+governance/plans/gates-that-can-see/E3-WARNINGS-CONTRADICTION.md
+  h_af5ac1a9798224 9-15
+governance/plans/gates-that-can-see/E4-PARSE-INVARIANT.md
+  h_af5ac1a9798224 9-16
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  h_af5ac1a9798224 9-16
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  h_af5ac1a9798224 10-17
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  h_af5ac1a9798224 1,11-24,88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e333420283a2c4bbd76024f0ba7ef54ef7a4dc97",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

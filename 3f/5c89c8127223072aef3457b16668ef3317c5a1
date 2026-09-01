@@ -1,0 +1,20 @@
+.claude/skills/wave-email-craft/SKILL.md
+  s_85d9e5f433b9aa::t_2b8301acdf0cc0 33-56
+  s_85d9e5f433b9aa::t_ed2a02c68a762a 207-208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3f5c89c8127223072aef3457b16668ef3317c5a1",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+scripts/dogfood-checks-extended.sh
+  s_07acdfa7e3709a::t_c36bd7b019cf41 1-417
+scripts/dogfood.sh
+  s_07acdfa7e3709a::t_c36bd7b019cf41 452-456
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c0b76f1759cf382ae28d3dc293470fa78e2a1690",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

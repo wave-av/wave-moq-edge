@@ -1,0 +1,21 @@
+governance/plans/agents-have-eyes/E8-TEACH-BY-DEMONSTRATION.md
+  s_ebb03699588f1f::t_6da8d4c24fb9ee 1-41
+governance/plans/agents-have-eyes/NORTH-STAR.md
+  s_ebb03699588f1f::t_66475216325977 96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "892219153e5de3c284a30c895dea518ebf75b63a",
+  "prompts": {},
+  "sessions": {
+    "s_ebb03699588f1f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef0961c9ffePmSdySf28FmUvD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

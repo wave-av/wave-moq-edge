@@ -1,0 +1,54 @@
+hooks/tests/wrangler-deploy-gate-ifs.test.sh
+  s_d9915bbafa9657::t_1e4b43dcfd863a 1-85
+hooks/wrangler-deploy-gate.sh
+  s_d9915bbafa9657::t_13842d101382e3 107-108
+  s_d9915bbafa9657::t_a2ff1de9efb801 127-132,134
+  s_d9915bbafa9657::t_8c8d43add1b08e 54-58
+  s_d9915bbafa9657::t_4394ddee203b1b 117-118
+  s_d9915bbafa9657::t_bed8bdd242551d 31-35,38-43
+  s_d9915bbafa9657::t_f1bc43c942b929 36-37,44,49-50,52-53
+  s_d9915bbafa9657::t_1ecd956c54f292 100-106
+  s_d9915bbafa9657::t_7fb70da4dc681a 97-98
+  s_d9915bbafa9657::t_f7ca4a730f52fe 133
+  s_d9915bbafa9657::t_86cc1aa9c22b10 45-48
+  s_d9915bbafa9657::t_f851a14707b10d 139-140
+  s_d9915bbafa9657::t_65597ae25c1da4 30
+  s_d9915bbafa9657::t_afd2405bbd5883 99
+hooks/hooklib/wrangler-deploy-rewrite.sh
+  s_d9915bbafa9657::t_0bee760dfb52c9 1-183
+hooks/tests/hook-fail-closed.test.sh
+  s_d9915bbafa9657::t_5e181550db90aa 133-142
+hooks/hooklib/ifs-glue.sh
+  s_d9915bbafa9657::t_d6493b692efc31 51
+  s_d9915bbafa9657::t_16b59212e83b87 1-50,52-53
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_46b2bb40629510 114-117,121-122
+  s_d9915bbafa9657::t_a5aaf96399047d 21-23,25-26
+  s_d9915bbafa9657::t_5d6ae487ecea59 143-153
+  s_d9915bbafa9657::t_841fb931c643d3 19-20
+  s_d9915bbafa9657::t_b3651ac551571e 6-11
+  s_d9915bbafa9657::t_8196fe3ef7113a 32
+  s_d9915bbafa9657::t_2309cfd997e471 77-81,83
+  s_d9915bbafa9657::t_1dcbc43a78e5a3 82
+hooks/tests/wrangler-deploy-gate-evasion.test.sh
+  s_d9915bbafa9657::t_fb385c910adc7b 268
+  s_d9915bbafa9657::t_710f234be837fb 265-267
+hooks/manifest.json
+  s_d9915bbafa9657::t_476a05aac21f17 2026
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "deadf81f9f039f04f9b0795fb384971e394e8547",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

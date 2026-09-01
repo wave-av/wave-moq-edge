@@ -1,0 +1,47 @@
+.github/workflows/auto-approve.yml
+  s_364605915bb7ec::t_0414efab1c3a7e 21-27
+frameworks/gates/fixtures/workflow-policy/bad-rule9-pr-edited.yml.shadow-staged
+  s_364605915bb7ec::t_820985f27b5a5c 1-17
+frameworks/gates/fixtures/workflow-policy/good-rule9-default-types.yml
+  s_364605915bb7ec::t_dd735eeba7c31d 1-20
+frameworks/gates/fixtures/workflow-policy/bad-rule9-review-events.yml.shadow-staged
+  s_364605915bb7ec::t_480f8a777c601e 1-23
+frameworks/gates/fixtures/workflow-policy/bad-rule9-pr-labeled.yml.shadow-staged
+  s_364605915bb7ec::t_f78339120e7970 1-17
+.github/workflows/pr-review-context.yml
+  s_364605915bb7ec::t_777962696ad637 20-27
+frameworks/gates/test-workflow-policy-shadow.sh
+  s_364605915bb7ec::t_9c912b3f94cc18 19-20
+  s_364605915bb7ec::t_8abcd5f5db0eff 1-18,26-221
+  s_364605915bb7ec::t_026762ce8e7afc 21-25
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_ec3ce757861adf 346-358
+  s_364605915bb7ec::t_826910639679fe 662-666
+  s_364605915bb7ec::t_6cc828d21222d3 391-397
+  s_364605915bb7ec::t_19e63b4ad5f601 644-661,667-696
+frameworks/gates/test-workflow-policy.sh
+  s_364605915bb7ec::t_9a7cc313236c39 10-17,27-28
+  s_364605915bb7ec::t_18ff746ebbbb06 20-24
+  s_364605915bb7ec::t_00b740c550e908 254,256
+  s_364605915bb7ec::t_9a32c487b897f6 18-19
+frameworks/gates/lib/workflow-policy-harness.sh
+  s_364605915bb7ec::t_3b6f159bed50e9 1-93
+.github/workflows/semantic-pr.yml
+  s_364605915bb7ec::t_7f787ccff878ee 15-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "0db5b4f7bf254693b5f3f91cb04ab25369ca6765",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}

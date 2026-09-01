@@ -1,0 +1,22 @@
+bin/factory-propose.mjs
+  s_7ddeb5d251570f::t_1809ee6a5e7d31 1-16,19-27,30-108
+  s_7ddeb5d251570f::t_ff6ba4e2ecb390 17-18,28-29
+governance/test/factory-propose.test.mjs
+  s_7ddeb5d251570f::t_80b2f82fbb453c 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "15ec968bbabf96c77b5efc3c558ab6aba46769f0",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

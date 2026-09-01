@@ -1,0 +1,27 @@
+hooks/tests/hook-path-integrity.test.sh
+  s_db1b2a792e5f25::t_5c2bfa1822d166 99-128
+hooks/tests/cccr_smoke_task_export.sh
+  s_db1b2a792e5f25::t_fc6a26be9dd2e6 17-31
+hooks/hook-integrity-check.py
+  s_db1b2a792e5f25::t_ae180105fd491c 147-162,173-177,179-193
+.github/workflows/hook-tests.yml
+  s_db1b2a792e5f25::t_41f70a62e63c8c 103-107
+hooks/manifest.json
+  s_db1b2a792e5f25::t_b638919377d95a 505
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "28b2307cd657135f721213e10776f0fc84036e31",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/generated-artifact-contention/epic.md
+  s_d9915bbafa9657::t_524a8c7eb65ede 64-72
+governance/plans/generated-artifact-contention/PHASE-A-INVENTORY.md
+  s_d9915bbafa9657::t_f33bf022123cb9 67-83
+  s_d9915bbafa9657::t_97c1bb290bada7 1-2,4,9-66,84-249
+  s_d9915bbafa9657::t_970648a2c6af71 3,5-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8d92bb6edf8519820e7c6dabef8e47b6cf05dcf0",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

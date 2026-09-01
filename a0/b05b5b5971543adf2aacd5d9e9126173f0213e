@@ -1,0 +1,22 @@
+scripts/bugbot/test_strategy.py
+  s_0b987fef4e1240::t_86982345f4c26b 1-44
+scripts/bugbot/strategy.py
+  s_0b987fef4e1240::t_bae7d53258c8f9 1-47,51-68
+  s_0b987fef4e1240::t_d12420f2f0ca53 48-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "a0b05b5b5971543adf2aacd5d9e9126173f0213e",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

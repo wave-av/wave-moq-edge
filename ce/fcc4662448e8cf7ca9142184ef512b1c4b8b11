@@ -1,0 +1,19 @@
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9e49fb2dab61f0::t_3a803f14eab4b4 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cefcc4662448e8cf7ca9142184ef512b1c4b8b11",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

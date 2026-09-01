@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_639025659e410f 1-160
+governance/DASHBOARD.md
+  s_124891ed63801b::t_3466813a0b2036 25
+governance/graph.json
+  s_124891ed63801b::t_0a31a0409635fb 3404-3416,20842-20859
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9cb1d300e8256dc89684f7ebee9dbf54e892a328",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/ci-stack/deploy/sonarqube-namespace.md
+  s_484101971182ce::t_87e7969535d1b2 1-224
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "352f2434b35928c7a91cfa34e510f687c7cc8322",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_484101971182ce": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff7f1a8e6ffer87JwaqRnbLxGp",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

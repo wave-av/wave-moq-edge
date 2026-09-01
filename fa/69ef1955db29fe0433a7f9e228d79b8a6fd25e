@@ -1,0 +1,38 @@
+governance/test/ffmpeg-capability-matrix.test.mjs
+  s_124891ed63801b::t_42cc56aa4ad34d 15-17,21-23
+  s_124891ed63801b::t_161d5f423d4b68 123
+  s_124891ed63801b::t_646e1962b2f418 1-14,18-20,24-25,28-36,40-85,87-122,124-143
+  s_124891ed63801b::t_8e9eeeb6e3933d 26-27,37-39
+  s_124891ed63801b::t_bdc8b609697b2b 86
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_124891ed63801b::t_2d5235b58ce0ff 76-86,90-100,102,104-129
+  s_124891ed63801b::t_1d5a5f2c44fc3a 1-75,87-89,101,103,130-206
+governance/plans/ffmpeg9-lei/action/E8-P3-COVERAGE-DELTA.md
+  s_124891ed63801b::t_6578621cef52c5 1-61
+governance/state/ffmpeg-capability-matrix.json
+  s_124891ed63801b::t_9744b19bb58b4b 1-7498
+.gitignore
+  s_124891ed63801b::t_e77eb9adf71ded 93
+governance/DASHBOARD.md
+  s_124891ed63801b::t_f4898ac7c19139 25
+governance/graph.json
+  s_124891ed63801b::t_ff3f05c7182e60 3391-3398
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_124891ed63801b::t_016d904a014c1c 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fa69ef1955db29fe0433a7f9e228d79b8a6fd25e",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

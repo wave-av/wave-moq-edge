@@ -1,0 +1,21 @@
+governance/plans/aikido-trial/OPENGREP-VS-SEMGREP-RULING.md
+  s_52031f4510959b::t_d778c438c373cb 1-123
+governance/plans/aikido-trial/E1-P1b-AI-ASSISTANT-DOCS-RULING.md
+  s_52031f4510959b::t_32f0ef1dd6436d 1-159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2e6389d5d366ff6dec5f5333005943e02eaf3898",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

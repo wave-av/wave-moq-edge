@@ -1,0 +1,31 @@
+governance/test/workflow-lint.test.mjs
+  s_02abc74f4971c7::t_c6a63b64058d73 132-170
+.github/workflows/workflow-lint.yml
+  s_02abc74f4971c7::t_4799b8eea29784 228-234
+governance/bin/workflow-lint.mjs
+  s_02abc74f4971c7::t_99fa20f2dc65c0 199-205
+  s_02abc74f4971c7::t_397ec42ba9ed13 63-72
+  s_02abc74f4971c7::t_336de059b19575 250-251,253-254,256,258,260
+  s_02abc74f4971c7::t_bf0ecd98235497 249,252
+  s_02abc74f4971c7::t_bffd704c7cf980 206-213,217-219,221-224,226-230,233,235
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_c9fd25fd588a30 5,3365,3368,3370-3375,3378-3379
+governance/code-index/index.json
+  s_02abc74f4971c7::t_cd765d4dad94b1 10,12-13,30077-30078,30110-30111,30132-30135,30143-30144,30154-30155,30165-30166,30176-30177,30181-30191,30214-30235
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d6eb103c5a2942aaa61f6f9eba735321e56dac50",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

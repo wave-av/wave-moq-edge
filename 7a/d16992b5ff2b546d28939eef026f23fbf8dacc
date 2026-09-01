@@ -1,0 +1,29 @@
+governance/wsc-salvage/check-coverage.mjs
+  s_4c303dc09dc413::t_fca86af3c1dfca 1-88
+governance/wsc-salvage/manifest.json
+  s_3c1a32d1c4a045::t_7cc9e73ace3aa3 1-261
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7ad16992b5ff2b546d28939eef026f23fbf8dacc",
+  "prompts": {},
+  "sessions": {
+    "s_3c1a32d1c4a045": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af3484bb7ee57fb47",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_4c303dc09dc413": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "35813bc7-8ddc-4e0e-a984-61754090f3fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

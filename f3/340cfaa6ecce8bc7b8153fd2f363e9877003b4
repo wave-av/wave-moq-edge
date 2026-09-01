@@ -1,0 +1,52 @@
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_244e7919b39f4d 104-110
+  s_60a20469ef4369::t_fe2d798690d7ce 36
+  s_60a20469ef4369::t_f65868aaa5328e 48-58
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_409e167ed93379 122-141
+hookcli/lib/board.mjs
+  s_60a20469ef4369::t_d55eeb37a7ad58 342-346
+hookcli/lib/require-eval.mjs
+  s_60a20469ef4369::t_b6c6769a6cb62f 1-52
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_da6b5ffc5cbf00 522-564
+hookcli/package.json
+  s_60a20469ef4369::t_d8947e78a678f8 3
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_75d7fb08e3323b 199-243
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_33a1c356a2f358 30,33,42-43
+  s_60a20469ef4369::t_5b40ba4601a479 1-29,31-32,34-41,44-68
+governance/graph.json
+  s_588c69d48759e6::t_478d2cff0f29e1 16227-16232
+hookcli/rules/rules.json
+  s_588c69d48759e6::t_f244c7b86f6706 6,15-18,20,24,33-35,41,50-52,54,58,68-70,76,86-88,94,103-105,107,111,120-122,128,138-140,142,146,154-156,159,163,173-176,183,191-193,196-212
+settings/hooks.d/hookcli.json
+  s_588c69d48759e6::t_ff44e27550a427 19-29
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_555e5d86a33138 461
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "f3340cfaa6ecce8bc7b8153fd2f363e9877003b4",
+  "prompts": {},
+  "sessions": {
+    "s_588c69d48759e6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a6c8b8c1743a87911",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

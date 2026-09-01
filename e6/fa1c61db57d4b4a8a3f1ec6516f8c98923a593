@@ -1,0 +1,36 @@
+governance/lib/review-liveness.mjs
+  s_264ae386838c57::t_46e414dd6cb0e0 39
+  s_264ae386838c57::t_acbf76cededdbf 238-252
+  s_264ae386838c57::t_489875e0f40153 258-260,262
+  s_264ae386838c57::t_798d9b0a237b2d 319-326
+  s_264ae386838c57::t_56e5b30059dc10 227-237,253-257,261,263
+  s_264ae386838c57::t_b7da11189aafcc 40-44
+governance/bin/thin-review-fire-rate.mjs
+  s_264ae386838c57::t_e1ff8239667b9b 35-36,38-41
+  s_264ae386838c57::t_ee143f7a0a2371 1-34,37,42-56
+governance/test/review-liveness-thin-floor.test.mjs
+  s_264ae386838c57::t_8146cb25ff99b5 72-87
+  s_264ae386838c57::t_d486772b62b5bf 1-71,88-127
+governance/lib/review-markers.mjs
+  s_264ae386838c57::t_4d67946f975c68 1-55
+governance/code-index/CATALOG.md
+  s_264ae386838c57::t_3fa7366c0a9f24 5,3096-3105,4322-4324,4326-4338
+governance/code-index/index.json
+  s_264ae386838c57::t_11d69ed620610a 9-10,12-13,27695-27771,37238-37239,37249-37250,37260-37263,37282-37283,37293-37294,37304-37305,37315-37316,37326-37327,37337-37338,37342-37385
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e6fa1c61db57d4b4a8a3f1ec6516f8c98923a593",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

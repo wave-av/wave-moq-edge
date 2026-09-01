@@ -1,0 +1,24 @@
+governance/plans/wave-sec-fleet/SOCKET-POLICY-CHANGE-LIST.md
+  s_52031f4510959b::t_40cb6b604db83c 1-103
+.github/workflows/content-regen.yml
+  s_52031f4510959b::t_defddeb6e05c82 143-149,153
+.github/workflows/socket-firewall-advisory.yml
+  s_52031f4510959b::t_d03f8f0507ced3 80-84,87
+  s_52031f4510959b::t_f798c3f4731793 1-79,85-86,88-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a22d7c85e905e724e4e1f418510e101f39642fb2",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

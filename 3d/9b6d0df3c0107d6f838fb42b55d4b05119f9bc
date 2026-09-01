@@ -1,0 +1,37 @@
+hooks/hooklib/rules-version.sh
+  s_96280c922a9418::t_6d39c37decb58f 56,64-110
+  s_96280c922a9418::t_83d218a6eeead8 111
+governance/bin/hook-release.mjs
+  s_96280c922a9418::t_128222a4669589 30-36
+  s_96280c922a9418::t_0fe6f3ec5daff4 152-158,162
+  s_96280c922a9418::t_052cae9519b612 67-76
+  s_96280c922a9418::t_864bfff083efa4 43
+  s_96280c922a9418::t_bec24c273b09fa 1-29,37-42,44-66,77-126,128-134,136-149,151,159-161,163-250,252-271
+  s_96280c922a9418::t_17627852249b60 127
+  s_96280c922a9418::t_86a91dfa732b86 135
+  s_96280c922a9418::t_9db550aba76a49 150
+  s_96280c922a9418::t_1ce9b9b4863af3 251
+hooks/tests/hook-release.test.sh
+  s_96280c922a9418::t_7535e974c35527 74-80,82-91
+  s_96280c922a9418::t_76fca60438d9cc 1-73,81,92-233
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_0229e5889a1b10 5,1554-1577
+governance/code-index/index.json
+  s_96280c922a9418::t_ec73bb2ac96112 6-7,9-10,13962-14192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3d9b6d0df3c0107d6f838fb42b55d4b05119f9bc",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

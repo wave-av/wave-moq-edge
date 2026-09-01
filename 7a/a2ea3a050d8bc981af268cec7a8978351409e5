@@ -1,0 +1,21 @@
+governance/test/pagination-same-line-loop.test.mjs
+  s_dd42a206f882e3::t_de2b2437613ecb 1-76
+governance/bin/pagination-completeness.mjs
+  s_dd42a206f882e3::t_1e8b776c4e58c0 111-119,124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7aa2ea3a050d8bc981af268cec7a8978351409e5",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

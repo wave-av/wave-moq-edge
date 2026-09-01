@@ -1,0 +1,21 @@
+governance/plans/entire-integration/E0-BEACHHEAD.md
+  s_32a30bff8591e9::t_60751b9f431a15 4
+governance/plans/entire-integration/RECEIPTS.md
+  s_32a30bff8591e9::t_cc1ed95cfe62d3 59-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8eb8e0ce84c3de862b3abd961b417ef5c9fd5655",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

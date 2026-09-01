@@ -1,0 +1,23 @@
+frameworks/gates/test-check-file-size.sh
+  s_364605915bb7ec::t_6ee6cf4c72069e 333-339
+  s_364605915bb7ec::t_df0d06e9662c10 295-301,303,305-315
+  s_364605915bb7ec::t_72adb835670f82 262-284,286-287
+  s_364605915bb7ec::t_324aa6af9601c6 47,53-57
+  s_364605915bb7ec::t_2b38e6dfc8378d 58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5fdcc61ea0558acbfc4f351f1891e89143f559a5",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

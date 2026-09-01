@@ -1,0 +1,33 @@
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_c6393de45b2c39::t_716df6d9be5f45 3
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_c6393de45b2c39::t_5a74d2a2786aa6 3
+governance/plans/namespace-substrate/MISSION-WEAVE.md
+  s_c6393de45b2c39::t_8f2101cb1ef1d1 3
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_c6393de45b2c39::t_516204f9a84611 3
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_c6393de45b2c39::t_8fbb985a361e8a 3
+governance/plans/socratic-loop/ARTIFACTS.md
+  s_c6393de45b2c39::t_205bff036988f2 3
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_c6393de45b2c39::t_ff7b4613a0911d 3
+governance/plans/socratic-loop/RECEIPTS.md
+  s_c6393de45b2c39::t_431eb5cf7e10da 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c77677068f199d8ae8d4df0b045b94cc2b1be287",
+  "prompts": {},
+  "sessions": {
+    "s_c6393de45b2c39": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a0234b3a8089a9388",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

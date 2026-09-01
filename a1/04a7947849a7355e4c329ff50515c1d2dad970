@@ -1,0 +1,103 @@
+.gitignore
+  s_be94c45efdaafe::t_d0c3e0108bcc0a 90-116
+governance/bin/check.mjs
+  s_be94c45efdaafe::t_cb874b3b626391 3
+  s_be94c45efdaafe::t_31d924438de56f 13
+  s_be94c45efdaafe::t_382b2959fbc5f0 57-77
+  s_be94c45efdaafe::t_dd3f4393c5d515 90-96,98
+governance/test/resolve-generated-conflicts-fixture.mjs
+  s_be94c45efdaafe::t_2cd7df5b85fe3f 15
+  s_be94c45efdaafe::t_4293e9970a77d1 8
+  s_be94c45efdaafe::t_b983921b0aada2 76-106
+  s_be94c45efdaafe::t_2c05a6465ab5ca 16
+governance/test/resolve-generated-conflicts-order.test.mjs
+  s_be94c45efdaafe::t_009f2b8d47024e 27-33,36,38-54
+.github/workflows/canon-gap-map-drift.yml
+  s_be94c45efdaafe::t_93587bf3db7fcb 34-36,50-52
+  s_be94c45efdaafe::t_10380caa55e1fa 81-86
+runbooks/bin/runbook.mjs
+  s_be94c45efdaafe::t_6b246e6171714e 321-328,330
+.github/actions/cll-loop-gates/action.yml
+  s_be94c45efdaafe::t_5e370e79222681 63-77
+governance/bin/derived-artifact-drift-audit.mjs
+  s_be94c45efdaafe::t_9220e8e65ef873 89
+  s_be94c45efdaafe::t_a5365aec4e63a6 90-94
+governance/bin/build.mjs
+  s_be94c45efdaafe::t_d6cab12f8b96b2 18
+  s_be94c45efdaafe::t_56d302af06edd7 272,275-285
+governance/package.json
+  s_be94c45efdaafe::t_eee3bb9a3d49b3 26
+governance/test/resolve-generated-conflicts.test.mjs
+  s_be94c45efdaafe::t_f3d3521a859435 16-17
+  s_be94c45efdaafe::t_359c96e4058d8e 103-112
+  s_be94c45efdaafe::t_146a976a61dfa1 50-54,56,66,70,74
+  s_be94c45efdaafe::t_2b2f4752da99bd 197-210
+  s_be94c45efdaafe::t_7020b6ebded295 37-42,46
+  s_be94c45efdaafe::t_c3f0a67c15ed87 155-164
+  s_be94c45efdaafe::t_7bc2386e8f448e 231-238,243
+bootstrap.sh
+  s_be94c45efdaafe::t_254d0d3974735b 98-116
+governance/plans/generated-artifact-contention/epic.md
+  s_be94c45efdaafe::t_27ef0783d615d4 63-68
+governance/bin/resolve-generated-conflicts.mjs
+  s_be94c45efdaafe::t_1bbba843fb47d4 147-149,151-155,157
+  s_be94c45efdaafe::t_aa1ae9199a451c 144-146,150,156,158,173-174
+  s_be94c45efdaafe::t_d031a91b7a0f7d 159-163,175
+  s_be94c45efdaafe::t_3bfdfc8b21fb17 20-26
+  s_be94c45efdaafe::t_6014a504a37649 129-135
+  s_be94c45efdaafe::t_2536e2f52f66c1 172
+  s_be94c45efdaafe::t_2362437523ac8d 176
+governance/test/l2-install.test.mjs
+  s_be94c45efdaafe::t_20f688ba090982 114-124,126-135,137-139,142-149
+  s_be94c45efdaafe::t_4a26a498275ef9 92-111,150
+.githooks/pre-commit
+  s_be94c45efdaafe::t_a35bc89b4247f5 51-58
+.github/actions/derived-artifact-gates/action.yml
+  s_be94c45efdaafe::t_ff729b62042358 61-70,73
+governance/lib/l2-pipeline.mjs
+  s_be94c45efdaafe::t_c59775fb74eeec 29-44,50
+  s_be94c45efdaafe::t_618b3eb080e86d 61
+governance/lib/generated-artifact-registry.mjs
+  s_be94c45efdaafe::t_0ea3b2a80749b2 38-45
+  s_be94c45efdaafe::t_ba9df6ff0918c2 75
+  s_be94c45efdaafe::t_4b8d61eb23dc57 35-37
+  s_be94c45efdaafe::t_6e965e1c282105 46-48,72-74
+  s_be94c45efdaafe::t_786332b0abd63a 76-78
+  s_be94c45efdaafe::t_6d1d330bc95b3e 1-34,49-71,79-165
+governance/plans/generated-artifact-contention/PHASE-C-CUTOVER.md
+  s_36320137797fff::t_ce796c56712278 1-153
+governance/test/derived-artifact-drift-audit.test.mjs
+  s_f0d46e4b4a7656::t_db809221178e7b 34-43,46,51,62,69,109-110,116-117,123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a104a7947849a7355e4c329ff50515c1d2dad970",
+  "prompts": {},
+  "sessions": {
+    "s_36320137797fff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a73d0eb5652eef642",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f0d46e4b4a7656": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5bdec1764de638d3",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

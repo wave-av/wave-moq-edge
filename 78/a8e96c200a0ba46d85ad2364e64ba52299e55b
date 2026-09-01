@@ -1,0 +1,32 @@
+hookcli/lib/emit.mjs
+  s_60a20469ef4369::t_df32a150e3bfc2 1-75
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_994c1d453b3129 55,86
+  s_60a20469ef4369::t_0bfe57a55d5e83 104
+  s_60a20469ef4369::t_602689b62ee93d 91-103,105-108
+hookcli/tests/fixtures/emit-rules.json
+  s_60a20469ef4369::t_6ebda497d808ea 1-27
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_9dfd6603460d7c 115-128
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_283e8fc889a4e8 36-47
+  s_60a20469ef4369::t_3d4419e72235fb 73-79
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_d5e0b6ae143b1b 273-311
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "78a8e96c200a0ba46d85ad2364e64ba52299e55b",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}

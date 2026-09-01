@@ -1,0 +1,27 @@
+governance/test/blast-radius-file-source.test.mjs
+  s_c2bb037074776b::t_5079d9451fd4fa 58-64,71,78
+  s_c2bb037074776b::t_6deffc66207f87 191-193
+  s_c2bb037074776b::t_a4504609257c5a 1-23,29-30,47-57,65-70,72-77,79-190,194
+  s_c2bb037074776b::t_29d7e6fa05d69f 24-28,31-46
+.github/actions/blast-radius-classify/action.yml
+  s_c2bb037074776b::t_6d3af07a82ad0d 89,92-104,106-107,109-110,112-117,121-123,125,127,133-134,136-141
+  s_c2bb037074776b::t_8083c08dabe485 9-11,16-18
+  s_c2bb037074776b::t_da7067152f16e8 118-120,124
+  s_c2bb037074776b::t_c5ae170c84c37e 68-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2fe0d370ab47bad2ae5a54aab83f17ab05823982",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/test/external-tickets.test.mjs
+  s_02abc74f4971c7::t_175735434efa9b 277,290-330
+  s_02abc74f4971c7::t_3c9931bb4f7706 278
+  s_02abc74f4971c7::t_4e8e1dc26adc74 287-289
+  s_02abc74f4971c7::t_5a6381ce2c52b2 214-218,252,257-263,281-284
+governance/bin/external-tickets.mjs
+  s_02abc74f4971c7::t_186ba0d9418811 37,286-301
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fc73a0117f1431ba855f3cf57bf16d95b329e8a2",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/voice/wave-writer.mjs
+  s_6ea8363c04f061::t_02c21c182e9c06 1-98
+governance/voice/wave-content-mcp.mjs
+  s_6ea8363c04f061::t_944a98efcdefc5 17-25,46,49-52,56-68,72,80
+  s_6ea8363c04f061::t_9802fb322c8da8 94-106,113
+  s_6ea8363c04f061::t_43f0505d3b3b9e 11-12
+governance/test/wave-writer.test.mjs
+  s_6ea8363c04f061::t_238d8410b52bbd 1-63,65,67-99
+  s_6ea8363c04f061::t_0c1840ff6b55ce 64,66
+governance/plans/wave-writer/NORTH-STAR.md
+  s_6ea8363c04f061::t_3281541f54cee8 1-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b42e7fc4e8b9f0f984dbbb79e5aacb964916a663",
+  "prompts": {},
+  "sessions": {
+    "s_6ea8363c04f061": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdfd7c9beffe3WCs7SB4Tm22uU",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

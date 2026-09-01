@@ -1,0 +1,29 @@
+.github/workflows/reusable-pr-agent.yml
+  s_9e49fb2dab61f0::t_4b08b8c3fe1428 94-99,103,106
+  s_9e49fb2dab61f0::t_ce4b9850dc291b 89-93
+  s_9e49fb2dab61f0::t_47dff89ca35c6f 18-28
+  s_9e49fb2dab61f0::t_be2385714482af 17
+  s_9e49fb2dab61f0::t_841076e6476e05 100-102,104-105,107
+.github/workflows/pr-agent.yml
+  s_9e49fb2dab61f0::t_3071ca7801fc88 1-36,38,60-67,74-78
+docs/PR-AGENT-LANE-FINDING.md
+  s_9e49fb2dab61f0::t_c0500cdcdffd24 1-144
+.github/actionlint.yaml
+  s_9e49fb2dab61f0::t_4bfd7d02996b74 6-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "83f83b2b89e8ddf900706c21d652f01c53972d2d",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

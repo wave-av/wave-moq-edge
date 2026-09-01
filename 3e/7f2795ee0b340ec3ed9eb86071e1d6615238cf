@@ -1,0 +1,31 @@
+governance/bin/files-allowlist-lint.mjs
+  s_02abc74f4971c7::t_64bdaeaebbf4a4 16,18-21,27,32
+  s_02abc74f4971c7::t_236f399008e22d 112-113,127-177,179-203
+governance/test/fixtures/subpath-allowlist-gap/package.json
+  s_02abc74f4971c7::t_219925c8c65496 1-7
+governance/bin/prove-files-allowlist-gate.mjs
+  s_02abc74f4971c7::t_227640410598eb 3-15,26,28-29
+  s_02abc74f4971c7::t_8224a43f4f6b9f 57-77
+governance/test/fixtures/subpath-allowlist-gap/bin/enforce.mjs
+  s_02abc74f4971c7::t_a04a2d720e48ca 1-6
+governance/test/fixtures/subpath-allowlist-gap/lib/helper.mjs
+  s_02abc74f4971c7::t_f043404858bdca 1-3
+governance/test/fixtures/subpath-allowlist-gap/lib/sub/keep.mjs
+  s_02abc74f4971c7::t_8fb67fcf72deb3 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3e7f2795ee0b340ec3ed9eb86071e1d6615238cf",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

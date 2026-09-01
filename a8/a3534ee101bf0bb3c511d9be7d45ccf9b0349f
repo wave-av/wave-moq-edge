@@ -1,0 +1,27 @@
+scripts/bugbot/test_learn.py
+  s_0b987fef4e1240::t_90c323847fb6d3 395
+  s_0b987fef4e1240::t_1f4e17d46c3ed5 350-382
+.github/workflows/harvest-backfill.yml
+  s_0b987fef4e1240::t_c230de8720f09d 78-80
+scripts/bugbot/learn.py
+  s_0b987fef4e1240::t_3b766344e7895d 675-678
+  s_0b987fef4e1240::t_a4e246f4ec5f7c 742
+  s_0b987fef4e1240::t_3dd8b37b864c27 727-728
+  s_0b987fef4e1240::t_ba0922a92685d1 616,621-626,628-629
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "a8a3534ee101bf0bb3c511d9be7d45ccf9b0349f",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

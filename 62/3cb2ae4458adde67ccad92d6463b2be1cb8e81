@@ -1,0 +1,31 @@
+governance/plans/content-engine/IMPL-PLAN-increment-1.md
+  s_f94b7baec795c5::t_1f9227ce5b436f 1-402
+governance/plans/content-engine/NORTH-STAR.md
+  s_f94b7baec795c5::t_07855eb2170b20 1-177
+governance/plans/wow-canon/NORTH-STAR.md
+  s_f94b7baec795c5::t_42bf518ea6ff53 1-245
+governance/plans/wow-canon/WHATS-LIVE-2026-07-20.md
+  s_f94b7baec795c5::t_6d36e12e319662 1-55
+governance/specs/2026-07-20-content-engine-design.md
+  s_f94b7baec795c5::t_96fda43414f93a 1-78
+governance/specs/2026-07-20-wow-canon-design.md
+  s_f94b7baec795c5::t_769c96f6a804e6 1-52
+rules/wow-canon.md
+  s_f94b7baec795c5::t_c7eb6e7b6feaae 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "623cb2ae4458adde67ccad92d6463b2be1cb8e81",
+  "prompts": {},
+  "sessions": {
+    "s_f94b7baec795c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab6f8e6c33c59f1ce",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

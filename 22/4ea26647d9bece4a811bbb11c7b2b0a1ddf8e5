@@ -1,0 +1,26 @@
+governance/plans/waveform-hero/DR-AUDIO-SOURCE.md
+  s_15127d80763110::t_e4d00a860550d1 47-48,50
+  s_15127d80763110::t_ad837598f33b8a 1-46,49,51-57
+governance/plans/waveform-hero/epic.md
+  s_15127d80763110::t_fa8d0c067bfc8a 22-25
+governance/DASHBOARD.md
+  s_15127d80763110::t_64cc880fb17b5f 25
+governance/graph.json
+  s_15127d80763110::t_37fa2f8f5e357c 6857-6869
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "224ea26647d9bece4a811bbb11c7b2b0a1ddf8e5",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+governance/bin/gate-liveness-drill.mjs
+  s_2e30bff6169f7a::t_d069c5f969792b 65,69-70
+  s_2e30bff6169f7a::t_38ff4979e40869 62-64
+  s_2e30bff6169f7a::t_ce083e2fc3ad93 34
+.github/workflows/governance.yml
+  s_2e30bff6169f7a::t_52e543be5a3a0f 328-335
+governance/bin/auto-approver.mjs
+  s_2e30bff6169f7a::t_958c2c47abcac4 15,66
+governance/bin/branch-state-scan.mjs
+  s_2e30bff6169f7a::t_f183a627ebfdd1 39,170
+governance/bin/cache-metrics.mjs
+  s_2e30bff6169f7a::t_c9155e293f752d 31,189
+governance/bin/capability-dispatch.mjs
+  s_2e30bff6169f7a::t_21cccc5c5a07ba 19,77,79
+governance/bin/capability-leverage.mjs
+  s_2e30bff6169f7a::t_d00af5c89419a8 17,80
+governance/bin/capability-search.mjs
+  s_2e30bff6169f7a::t_dcd517c0d78f73 20,111
+governance/bin/capability-surface.mjs
+  s_2e30bff6169f7a::t_b42731b0f111e1 15,25
+governance/bin/code-mode.mjs
+  s_2e30bff6169f7a::t_591264e60bc6c8 39,265
+governance/bin/cogs-emit.mjs
+  s_2e30bff6169f7a::t_306d40117af9c9 44,218
+governance/bin/cost-ledger.mjs
+  s_2e30bff6169f7a::t_f47aecc044a2f2 294,355,361
+governance/bin/decide.mjs
+  s_2e30bff6169f7a::t_dde332ba636d5b 31,125,138
+governance/bin/distribute-bump.mjs
+  s_2e30bff6169f7a::t_083764167f406c 65,257
+governance/bin/distribute-claude-config.mjs
+  s_2e30bff6169f7a::t_febf0628361a28 61,236
+governance/bin/distribute-sha-pin.mjs
+  s_2e30bff6169f7a::t_3bf88f7b4bdc73 39,173,199
+governance/bin/distribute.mjs
+  s_2e30bff6169f7a::t_fdfb908209d378 39,321,349
+governance/bin/econ-advisor.mjs
+  s_2e30bff6169f7a::t_b6be8490de48a1 24,139
+governance/bin/efficient-frontier-quality-eval.mjs
+  s_2e30bff6169f7a::t_69808203e3d241 16-17,96
+governance/bin/enforce.mjs
+  s_2e30bff6169f7a::t_b429e9ee2a4cdc 24,266,274
+governance/bin/findings.mjs
+  s_2e30bff6169f7a::t_40a85d53e2ef36 15,71
+governance/bin/fleet-freshness.mjs
+  s_2e30bff6169f7a::t_5dc8785ce0f339 34,223
+governance/bin/floor-cost-regression.mjs
+  s_2e30bff6169f7a::t_9fc0b5779f5e85 31,104
+governance/bin/floor-cost.mjs
+  s_2e30bff6169f7a::t_538092d26da123 16,62
+governance/bin/gam-metrics.mjs
+  s_2e30bff6169f7a::t_f44927c8a1d729 12,92
+governance/bin/hook-resolution-check.mjs
+  s_2e30bff6169f7a::t_176311ff821ed0 50,261,310,321
+governance/bin/inject.mjs
+  s_2e30bff6169f7a::t_618f47a89d702f 31,209
+governance/bin/learning-admit.mjs
+  s_2e30bff6169f7a::t_34ad7945747903 24,82
+governance/bin/learning-triage.mjs
+  s_2e30bff6169f7a::t_71c9a4fa01798c 49,115,156
+governance/bin/observe.mjs
+  s_2e30bff6169f7a::t_750969b2ccaeec 24,86
+governance/bin/org-dashboard.mjs
+  s_2e30bff6169f7a::t_0339329efcf277 13,59
+governance/bin/reversible-store.mjs
+  s_2e30bff6169f7a::t_d4eee71f913fa5 39,242,246,248,256
+governance/bin/roi.mjs
+  s_2e30bff6169f7a::t_ac7c384bd4edd3 37,234,246
+governance/bin/scope-budget.mjs
+  s_2e30bff6169f7a::t_d7e97612f8c64a 30,139
+governance/bin/session-audit.mjs
+  s_2e30bff6169f7a::t_eb5863f3778d14 26,154
+governance/bin/stdout-flush-lint.mjs
+  s_2e30bff6169f7a::t_dcaf6f1221b39c 1-132
+governance/bin/undertow-stats.mjs
+  s_2e30bff6169f7a::t_3e2f6f29d0c21f 21,110
+governance/bin/validate-envelope.mjs
+  s_2e30bff6169f7a::t_eb47f0b7db15dc 29,233,241
+governance/bin/work-graph.mjs
+  s_2e30bff6169f7a::t_4fd18c400a8c9e 28,228
+governance/lib/drill-fixtures-node-stdout.mjs
+  s_2e30bff6169f7a::t_43bea964a30845 1-69
+governance/lib/emit-json.mjs
+  s_2e30bff6169f7a::t_5eb0b28394142f 1-78
+governance/lib/stdout-flush.mjs
+  s_2e30bff6169f7a::t_ffb7e379451f8e 1-176
+governance/plans/finding-closure/E0-BLEEDING.md
+  s_2e30bff6169f7a::t_8a6f1dc26db935 1-70
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_2e30bff6169f7a::t_3d429de418711e 1-73
+governance/plans/finding-closure/E2-SLA.md
+  s_2e30bff6169f7a::t_f0ad74f812ffde 1-69
+governance/plans/finding-closure/E3-GATES.md
+  s_2e30bff6169f7a::t_a202d8922fb6fd 1-73
+governance/plans/finding-closure/E4-BURNDOWN.md
+  s_2e30bff6169f7a::t_94e7c8dc1016c8 1-69
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_2e30bff6169f7a::t_54728330dddbb2 1-84
+governance/plans/finding-closure/E6-RUNTIME.md
+  s_2e30bff6169f7a::t_2ef8e2f97f6ed9 1-73
+governance/plans/finding-closure/E7-MEASURE.md
+  s_2e30bff6169f7a::t_084a92bdb2290f 1-80
+governance/plans/finding-closure/NORTH-STAR.md
+  s_2e30bff6169f7a::t_62ebac85dfeaa5 1-140
+governance/plans/finding-closure/RECEIPTS.md
+  s_2e30bff6169f7a::t_9f25b7c662e948 1-151
+governance/test/emit-json.test.mjs
+  s_2e30bff6169f7a::t_62b9d2e112c3d2 1-126
+governance/test/fixtures/bad-stdout-flush/clean.mjs
+  s_2e30bff6169f7a::t_0dbfbcb2a6fec5 1-41
+governance/test/fixtures/bad-stdout-flush/writes.mjs
+  s_2e30bff6169f7a::t_a503c5f075f15b 1-18
+governance/test/stdout-flush-lint.test.mjs
+  s_2e30bff6169f7a::t_0c343ec2a834ed 1-148
+hooks/bin/runbook-use-runner.mjs
+  s_2e30bff6169f7a::t_b7d2a7e18d0c9e 1-97
+hooks/runbook-use-observer.sh
+  s_2e30bff6169f7a::t_89d77b6abd27a0 1-28
+rules/runbook-first-for-recurring-ops.md
+  s_2e30bff6169f7a::t_2b82b1776b1a8d 36
+runbooks/lib/observe.mjs
+  s_2e30bff6169f7a::t_8a67a903779777 1-128
+runbooks/test/observe.test.mjs
+  s_2e30bff6169f7a::t_0ea2778b0a6d0c 1-147
+settings/settings.base.json
+  s_2e30bff6169f7a::t_5c95ab48b8a927 611-616
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "570658384d72a8164c76d01b0378686da3727e4f",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

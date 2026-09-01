@@ -1,0 +1,22 @@
+bin/reliability-signals.mjs
+  s_7ddeb5d251570f::t_1c603e46c912ea 1-91
+governance/test/reliability-signals.test.mjs
+  s_7ddeb5d251570f::t_cfe166c93e3c5b 29-34
+  s_7ddeb5d251570f::t_6e6a430bff0a96 1-28,35-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0f44f10f649d1d9ccab11981e26571b7f569c8c2",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

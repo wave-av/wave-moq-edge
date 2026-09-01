@@ -1,0 +1,32 @@
+docs/autonomy/plans/2026-06-14-e5p2-work-router.md
+  s_274bffb23af05d::t_eb8d4a18a885ca 121
+tests/test_work_router.py
+  s_274bffb23af05d::t_c08dbc6ed5a2b0 288-293
+  s_274bffb23af05d::t_7dd9f01e27add1 193-210
+  s_274bffb23af05d::t_200a3b870d9bd8 251-273
+  s_274bffb23af05d::t_2b6aebab6d1969 330-331,333
+scripts/work_router.py
+  s_274bffb23af05d::t_25f54f518bb46e 70-78,83-85
+  s_274bffb23af05d::t_5e34a8be136e06 185-189
+  s_274bffb23af05d::t_2fb6e5681fc1b7 173-174
+  s_274bffb23af05d::t_2422e0b1098b9b 32
+  s_274bffb23af05d::t_e18888ef585c94 152-154
+docs/autonomy/specs/2026-06-14-e5p2-work-router-design.md
+  s_274bffb23af05d::t_8e8f6376b081ab 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "f3b6f628ce0adfb2569e32ae12e1a3e9ab98fed2",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

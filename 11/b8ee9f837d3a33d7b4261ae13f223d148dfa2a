@@ -1,0 +1,21 @@
+hooks/hooklib/inert-git-invocation.sh
+  s_941b8f0612ec3e::t_8781265319a449 1-98
+hooks/tests/hook-fail-closed.test.sh
+  s_941b8f0612ec3e::t_9a68ed12a0758d 124-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "11b8ee9f837d3a33d7b4261ae13f223d148dfa2a",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

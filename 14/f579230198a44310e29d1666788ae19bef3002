@@ -1,0 +1,38 @@
+governance/plans/software-factory/E2-INTAKE.md
+  s_7ddeb5d251570f::t_d17199dca52322 4
+  s_7ddeb5d251570f::t_6aa37e06ae46a4 15
+  s_7ddeb5d251570f::t_2e82d5c2744876 17
+governance/plans/software-factory/E1-AUTONOMY-LADDER.md
+  s_7ddeb5d251570f::t_b8aa757915f25e 39
+  s_7ddeb5d251570f::t_43c4f0fe82956d 4
+bin/factory-intake.mjs
+  s_7ddeb5d251570f::t_48415cae012265 1-137
+governance/plans/software-factory/NORTH-STAR.md
+  s_7ddeb5d251570f::t_0464a800af0b16 24
+  s_7ddeb5d251570f::t_b274fa9026c194 23
+bin/fleet-reliability.mjs
+  s_7ddeb5d251570f::t_e9a13217f0a244 103-113
+  s_7ddeb5d251570f::t_585829dd040481 128-138
+governance/test/fleet-reliability.test.mjs
+  s_7ddeb5d251570f::t_4d6646ab2fd370 97-108
+  s_7ddeb5d251570f::t_a0e6d03e657d17 10
+governance/test/factory-intake.test.mjs
+  s_7ddeb5d251570f::t_9369c72681edaf 21
+  s_7ddeb5d251570f::t_1a164721d71ab3 1-20,22-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "14f579230198a44310e29d1666788ae19bef3002",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

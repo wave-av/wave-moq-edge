@@ -1,0 +1,36 @@
+governance/plans/money-integration/NORTH-STAR.md
+  s_756b33c630d33b::t_ebcfde914e42ce 5-48
+  s_dedb333dd5195e::t_5f994190421f31 1-4
+governance/plans/money-integration/E0-MATRIX.md
+  s_dedb333dd5195e::t_864f377839ec7e 1-33
+governance/plans/money-integration/E1-METERING.md
+  s_dedb333dd5195e::t_243b79fb558be5 1-20
+governance/plans/money-integration/E2-GATING.md
+  s_dedb333dd5195e::t_39aeae7dd2308b 1-20
+governance/plans/money-integration/E3-BILLING.md
+  s_dedb333dd5195e::t_625dd7ecefa362 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1f69e638fc0fa0d7d236829714292a69cbccf42c",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

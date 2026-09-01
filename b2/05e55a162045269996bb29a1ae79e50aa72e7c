@@ -1,0 +1,21 @@
+governance/plans/wave-skills-distribution/E1-ONBOARDING-DISCOVERY.md
+  s_e077f59d8037ec::t_2bfbf7740b5eec 1-79
+governance/graph.json
+  s_e077f59d8037ec::t_85606098caf1d1 8288-8300
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b205e55a162045269996bb29a1ae79e50aa72e7c",
+  "prompts": {},
+  "sessions": {
+    "s_e077f59d8037ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9b52870-24e2-4d85-951d-2946b709f9b6",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

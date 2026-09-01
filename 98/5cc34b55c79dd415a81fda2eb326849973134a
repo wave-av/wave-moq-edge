@@ -1,0 +1,31 @@
+governance/lib/hook-state-root.mjs
+  s_c2bb037074776b::t_200d5bff57373a 7,10-12
+  s_c2bb037074776b::t_7a09f4fb811e4b 54-57
+  s_c2bb037074776b::t_ec7897b009c6f7 79-95,99
+  s_c2bb037074776b::t_9c498e603241de 13
+governance/lib/rl-hook-ledger-root.mjs
+  s_c2bb037074776b::t_27d42b21190e8e 11
+  s_c2bb037074776b::t_7a7b53cbc9dabd 57-64
+  s_c2bb037074776b::t_38882db99eebac 77-99,102
+governance/test/rl-hook-ledger-root.test.mjs
+  s_c2bb037074776b::t_085cd09c8b1a01 20
+  s_c2bb037074776b::t_3073c20da8b597 66,74-77,80,85-118
+governance/test/platform-status-state-root-agreement.test.mjs
+  s_c2bb037074776b::t_ffedc8c5a97578 81-82,86-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "985cc34b55c79dd415a81fda2eb326849973134a",
+  "prompts": {},
+  "sessions": {
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+governance/bin/check.mjs
+  s_cf363a68d60e93::t_d4769d2deec51e 43-47
+governance/bin/plan-lint.mjs
+  s_cf363a68d60e93::t_0ee08c018f4587 32-34,43,47-48
+  s_cf363a68d60e93::t_004320c5f4af7e 24
+  s_cf363a68d60e93::t_fa6b197c6ff564 9-10,12-17
+governance/plans/fractal-decomposition/LEVELS.md
+  s_cf363a68d60e93::t_a2c8cd46a57e12 47-72
+governance/test/levels.depth.test.mjs
+  s_cf363a68d60e93::t_0a9b713cb66a00 1-62
+governance/lib/levels.mjs
+  s_cf363a68d60e93::t_8d7b0762c0c1a2 68-82
+  s_cf363a68d60e93::t_37ec38dfea560e 121-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "57e89813cdf267922f02df7ad69bfee33cb84bf3",
+  "prompts": {},
+  "sessions": {
+    "s_cf363a68d60e93": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbbefa81-9cb1-4285-bf46-bcddbc452bfa",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

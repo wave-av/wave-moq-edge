@@ -1,0 +1,36 @@
+governance/bin/catena-device-model.mjs
+  s_53b49eff5b8c5d::t_b539a60221f48e 326,335,342,346-359
+  s_53b49eff5b8c5d::t_b715dad60b05e6 327-334,336-341,343-345
+governance/lib/catena-extract.mjs
+  s_53b49eff5b8c5d::t_814a68a1808dba 41-70,73
+  s_53b49eff5b8c5d::t_abe38f9b952c38 80,90
+.github/workflows/catena-snapshot-staleness.yml
+  s_53b49eff5b8c5d::t_6db8fcf356efd4 145-170,172,212
+  s_53b49eff5b8c5d::t_e3c489da63888f 24-31,177-179,185-188,195-196,198-201,203-206,211,213-219,232-234,236,242,244
+governance/test/catena-exit-contract.test.mjs
+  s_53b49eff5b8c5d::t_c9c571a3c40b36 1-143
+  s_53b49eff5b8c5d::t_572c1c49a116cb 144-162
+governance/bin/catena-fixture-fidelity.mjs
+  s_53b49eff5b8c5d::t_142d9507bb3194 1-132
+  s_53b49eff5b8c5d::t_94ca899ccc35eb 133-147
+governance/test/catena-device-model.test.mjs
+  s_53b49eff5b8c5d::t_601b7af986ba86 171-206
+governance/test/fixtures/catena/control.ts.txt
+  s_53b49eff5b8c5d::t_f5635618b7a958 57-58,63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "aaaf3fbaa984f75d5fc9743e9c04ce686254830c",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+governance/lib/memory-index.mjs
+  s_dccee6b7677203::t_10cd7b309d493d 1-37
+governance/DANGLING-REFS-BASELINE.json
+  s_dccee6b7677203::t_61e67c0bd670cf 6
+memory/MEMORY.md
+  s_dccee6b7677203::t_5154fb3f8595b2 7-16
+governance/bin/build.mjs
+  s_dccee6b7677203::t_68153638d50d37 24,26
+  s_dccee6b7677203::t_5f2105c9312424 134-146,151-153,156
+  s_dccee6b7677203::t_a4820cd957e1ab 147-149
+  s_dccee6b7677203::t_bb4d1fc1b430ea 150
+memory/cost-structure-cache-dominance.md
+  s_dccee6b7677203::t_a30ec405637ad0 1-44
+governance/test/memory-index.test.mjs
+  s_dccee6b7677203::t_0bc112e6ddf28f 1-85
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_942e0fbb017caf 5,240-269
+governance/code-index/index.json
+  s_dccee6b7677203::t_7739e485409877 7,9,2132-2133,2143-2144,2154-2155,2165-2166,2176-2177,2187-2188,2198-2199,2209-2210,2220-2221,2231-2232,2242-2243,2253-2254,2264-2265,2269-2279,2286-2287,2297-2298,2308-2309,2319-2320,2330-2331,2341-2342,2352-2353,2363-2364,2374-2375,2385-2386,2396-2397,2407-2408,2412-2422,2429-2430,2440-2441,2451-2452
+governance/graph.json
+  s_dccee6b7677203::t_e39a3d3e923739 4910-4917
+governance/plans/nested-dispatch-economy/NORTH-STAR.md
+  s_dccee6b7677203::t_6593df70510802 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "73e8cdaadaadd1ec63765d2b036519225aa55af9",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/lib/drill-fixtures-core.mjs
+  s_60a20469ef4369::t_5ac349b00ff5d5 1-285
+governance/bin/gate-liveness-drill.mjs
+  s_60a20469ef4369::t_6c30a6181db800 27,29
+  s_60a20469ef4369::t_623149025bc0e4 193-196
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_47ed91e96593db 5,1127-1136
+governance/code-index/index.json
+  s_60a20469ef4369::t_86e75e91960f92 7,9,10855-10858,10866-10867,10877-10878,10888-10889,10899-10900,10910-10911,10921-10922,10932-10933,10943-10944,10954-10955
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "839f3cfb7f77441d92c949bb43270fdd08e58f2a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

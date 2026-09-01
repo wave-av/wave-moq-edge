@@ -1,0 +1,25 @@
+governance/bin/lens-sweep.mjs
+  s_0227926428e4b1::t_908272e3999774 152-156,218-226
+governance/lib/lens-sweep/manifest.mjs
+  s_0227926428e4b1::t_ccd6686cac8655 31,118-128,158-169
+governance/test/lens-sweep-cli.test.mjs
+  s_0227926428e4b1::t_448956378be5a6 130-131,134
+governance/test/lens-sweep-manifest.test.mjs
+  s_0227926428e4b1::t_30ed4a5862397a 6,153-156,159,161-164,167-169,204,208,213-216
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dfb1f9128e9a52611042750d1141cee349bd3078",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

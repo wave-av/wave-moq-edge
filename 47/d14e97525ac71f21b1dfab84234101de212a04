@@ -1,0 +1,53 @@
+governance/tools/presence-audit/lib/index.mjs
+  s_0cdf1bb94c3ddd::t_6add89bc2cce73 34
+  s_0cdf1bb94c3ddd::t_4c34802493700f 97-129
+  s_0cdf1bb94c3ddd::t_3739f648aa5ed8 199,209-220
+governance/tools/internal-affairs/lib/index.mjs
+  s_0cdf1bb94c3ddd::t_5026f9deeea106 20-22
+  s_0cdf1bb94c3ddd::t_bb88cbd8833534 101-106
+  s_0cdf1bb94c3ddd::t_1f3ba5e669a139 90-100
+governance/tools/storage-router/tests/storage-router.test.mjs
+  s_0cdf1bb94c3ddd::t_d85d2068359bf3 178-210
+governance/tools/storage-router/lib/index.mjs
+  s_0cdf1bb94c3ddd::t_738932a0465235 155-156,158-159
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  s_0cdf1bb94c3ddd::t_ff0e5223689515 195-232
+governance/tools/time-lapse-store/tests/timelapse.test.mjs
+  s_0cdf1bb94c3ddd::t_143e9b188be984 110-137
+  s_0cdf1bb94c3ddd::t_c94ac36edb78d6 178-199
+governance/tools/time-lapse-store/lib/index.mjs
+  s_0cdf1bb94c3ddd::t_1388a72ed98615 250-254
+  s_0cdf1bb94c3ddd::t_f16e05711776b3 21-27,33-54
+  s_0cdf1bb94c3ddd::t_9636413e642fea 150-153
+  s_9673f7dc0983fb::t_4dad900bd431c0 55-56
+governance/tools/units-as-types/lib/index.mjs
+  s_0cdf1bb94c3ddd::t_43955a6c5e2b32 197-198
+governance/tools/units-as-types/tests/units-as-types.test.mjs
+  s_0cdf1bb94c3ddd::t_9c458871240d3f 192-227
+governance/tools/internal-affairs/tests/internal-affairs.test.mjs
+  s_0cdf1bb94c3ddd::t_b89fe5f897ad19 104-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "47d14e97525ac71f21b1dfab84234101de212a04",
+  "prompts": {},
+  "sessions": {
+    "s_0cdf1bb94c3ddd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0049e8009ffeLdJNzZhGFt6Qx1",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+plugins/wave-agents/README.md
+  s_d9915bbafa9657::t_dcbfc82c163791 1-32
+plugins/wave-agents/.claude-plugin/plugin.json
+  s_d9915bbafa9657::t_6763f6027efb7a 1-19
+governance/test/plugin-agents-drift.test.mjs
+  s_d9915bbafa9657::t_961f9621d026fc 1-49
+plugins/wave-agents/agents/act-worker.md
+  s_d9915bbafa9657::t_3fa8a447655e3d 1-52
+plugins/wave-agents/agents/code-reviewer.md
+  s_d9915bbafa9657::t_30c6dfbd4d07a0 1-46
+plugins/wave-agents/agents/config-auditor.md
+  s_d9915bbafa9657::t_5a5d5699d8020b 1-68
+plugins/wave-agents/agents/deploy-runner.md
+  s_d9915bbafa9657::t_87a243b350940f 1-113
+plugins/wave-agents/agents/gateway-dev.md
+  s_d9915bbafa9657::t_f49b59a79d699a 1-79
+plugins/wave-agents/agents/lean-delegator.md
+  s_d9915bbafa9657::t_6b9890199b30c8 1-19
+plugins/wave-agents/agents/lean-scout.md
+  s_d9915bbafa9657::t_6c6896a166966f 1-20
+plugins/wave-agents/agents/pr-reviewer.md
+  s_d9915bbafa9657::t_f56a35ea0c273c 1-28
+plugins/wave-agents/agents/security-reviewer.md
+  s_d9915bbafa9657::t_2f2b7e553a1f54 1-33
+plugins/wave-agents/agents/spoke-dev.md
+  s_d9915bbafa9657::t_ade65571da64be 1-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7546515cc0d3f18f23052cd0888f45452260b0e0",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

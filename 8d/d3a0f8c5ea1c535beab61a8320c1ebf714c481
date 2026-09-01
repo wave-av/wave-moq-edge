@@ -1,0 +1,30 @@
+governance/bin/pr-check-health.mjs
+  s_6f6453b23e3805::t_03ef8bd9378d36 96-100
+  s_6f6453b23e3805::t_582eeeb4387f9a 148-150
+  s_6f6453b23e3805::t_74f0c6ffa670f8 68-80
+  s_6f6453b23e3805::t_e2b0fb30bd2b0e 251,257
+governance/lib/pr-check-health.mjs
+  s_6f6453b23e3805::t_bc861695833a18 103-113,115-121
+  s_6f6453b23e3805::t_5e271a08868246 90,92-96
+governance/lib/pr-check-health-classify.mjs
+  s_6f6453b23e3805::t_5d56846f5395ea 1-122
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_6f6453b23e3805::t_fb87fefcbf203d 21
+  s_6f6453b23e3805::t_e6e1bf052f7140 291-327
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8dd3a0f8c5ea1c535beab61a8320c1ebf714c481",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

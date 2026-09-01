@@ -1,0 +1,23 @@
+scripts/license-policy-check.sh
+  s_34a91045987f1a::t_75cfbd8a6dd826 19-21,23-24
+.coderabbit.yml
+  s_34a91045987f1a::t_04b34a7c641f8d 1-48
+LICENSE-POLICY.md
+  s_34a91045987f1a::t_98807a224c50fa 37-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "a142afc014d217abe1b47a4723391448cd44f79a",
+  "prompts": {},
+  "sessions": {
+    "s_34a91045987f1a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5686acf4-6bc0-4661-bf32-aa9f4eac3da7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

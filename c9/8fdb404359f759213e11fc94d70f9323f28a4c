@@ -1,0 +1,28 @@
+hooks/mcp-selfheal.sh
+  s_60a20469ef4369::t_7e696927bef7e2 23-24,30-32
+governance/test/ramp-durable-detectors.test.mjs
+  s_60a20469ef4369::t_4a91d7d61aa304 47-65
+governance/lib/ramp-durable-detectors.mjs
+  s_60a20469ef4369::t_8b33bed3aea1e3 69-70
+  s_60a20469ef4369::t_f7103a50223402 28-32,34-38
+  s_60a20469ef4369::t_bad891efbeb7ab 61
+hooks/checkout-freshness-guard.sh
+  s_60a20469ef4369::t_400e5dfd5ca9c3 42
+  s_60a20469ef4369::t_baa28afd33f7b7 253-255
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "c98fdb404359f759213e11fc94d70f9323f28a4c",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

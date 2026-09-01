@@ -1,0 +1,19 @@
+governance/plans/sovereign-lab-parity/E1-TRAJECTORY-EMIT.md
+  s_4aa36284d4ce33::t_e066433377eef0 267-269
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dacf1e21cce42de5b61ab1408cc0d9eaedc007ba",
+  "prompts": {},
+  "sessions": {
+    "s_4aa36284d4ce33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0daaba5-d592-4b63-9e95-e8967f0b7542",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+scripts/mint-org-audit-token.sh
+  s_7b60aa0dad5d81::t_0e293740f8eca8 28
+  s_7b60aa0dad5d81::t_b6c58e239184f0 1-27,29-34
+  s_7b60aa0dad5d81::t_1018565ac46f12 35
+.github/workflows/license-policy-audit.yml
+  s_7b60aa0dad5d81::t_f80941ae7cbf72 33,37-44,47-48,50-55,58-60,63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "44617d2574a72e00c7dcc185cf57b7d5b911df0c",
+  "prompts": {},
+  "sessions": {
+    "s_7b60aa0dad5d81": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff71807e2ffewoF7Y0i2mkCBn2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

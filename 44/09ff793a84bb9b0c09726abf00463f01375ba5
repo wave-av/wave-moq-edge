@@ -1,0 +1,75 @@
+.github/dependabot.yml
+  s_15127d80763110::t_734812848963a1 24-82
+.github/workflows/wave-sec-gate.yml
+  s_15127d80763110::t_4e4316bdb699ba 18-22,33-43,47-66,81-91,97-101,106-124,151,156-164,175,178-188,197-199,201,204,208-228,230-271,274-276,280-347
+.github/workflows/wave-sec-scan.yml
+  s_15127d80763110::t_8d589e3f9b0f86 45-63,92,99
+governance/agents/TAXONOMY.yaml
+  s_15127d80763110::t_cca8e03a6e6eb9 272-282,289-294
+governance/bin/taxonomy.mjs
+  s_15127d80763110::t_197d04cbc6e137 5-8,42-70,75-118,257-275,331-349,362
+governance/bin/vendored-gate-audit.mjs
+  s_15127d80763110::t_28531257a4500a 1-122
+governance/bin/wave-sec.mjs
+  s_15127d80763110::t_881f045d9a2211 241-258
+governance/lib/vendored-gate-classify.mjs
+  s_15127d80763110::t_9c240846074485 1-189
+governance/package.json
+  s_15127d80763110::t_130f085b3525a4 3
+governance/plans/brand-recycle/E-ENFORCE.md
+  s_15127d80763110::t_4f74e1b515ee0c 4,12-16,19-22,25-27,30-81,87-94,97-250,253,255-257,259-260,264,266,270,273-280,284-291,293-294
+governance/plans/brand-recycle/WOW-TAIL.md
+  s_15127d80763110::t_4b3e0dad986631 1-130
+governance/plans/brand-recycle/comps/studio-pages-v1.html
+  s_15127d80763110::t_4e06b0b6e16608 1-790
+governance/plans/brand-recycle/comps/wow-tail-v1.html
+  s_15127d80763110::t_b21b36ce501f46 1-593
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_15127d80763110::t_0d29a9502075f2 1-160
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_15127d80763110::t_44473a34b8ff27 4
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_15127d80763110::t_f50ee2df5189f8 1-181
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_15127d80763110::t_db168b105443bd 5-7,53-60,68,81-82,84-88,90-93
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_15127d80763110::t_c860bf89006663 64-65
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_15127d80763110::t_1cdddb277d9ad2 112-171
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_15127d80763110::t_8bb5cbc1f0074f 4,19
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_15127d80763110::t_9b07d6fed99a8e 318-355,423-592
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_15127d80763110::t_6b7b5a40761c9d 1-104
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_15127d80763110::t_57dbb782c8ead2 399,437-438,441-541
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_15127d80763110::t_86ad33840bfab3 16-22,258-295
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_15127d80763110::t_0d61c028757a56 4,8-14,57,60-61,96-109,112-127
+governance/test/taxonomy.test.mjs
+  s_15127d80763110::t_56db88fce49e5f 8,11,186-319
+governance/test/vendored-gate-audit.test.mjs
+  s_15127d80763110::t_6b13d451595785 1-232
+governance/DASHBOARD.md
+  s_15127d80763110::t_3f44d02f1010fa 25
+governance/graph.json
+  s_15127d80763110::t_df5a276a73f9b3 2670,2673,2728-2740,3417-3429,3534-3546,18715-18720,18733-18750,18937-18948,20917-20934,21079-21102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4409ff793a84bb9b0c09726abf00463f01375ba5",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

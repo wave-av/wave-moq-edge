@@ -1,0 +1,29 @@
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/settings.yaml
+  s_ea8755337f3c0d::t_3a8880545c574e 1
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/settings.yaml
+  s_ea8755337f3c0d::t_f098858a759da2 1
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/settings.yaml
+  s_ea8755337f3c0d::t_9276729a4c3a19 1
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  s_ea8755337f3c0d::t_b6fe182641a824 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  s_ea8755337f3c0d::t_1679876e2a9e69 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/settings.yaml
+  s_ea8755337f3c0d::t_44dec6335b7169 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5f012cd3b0197f2031abdb7e253e28064d98ab31",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

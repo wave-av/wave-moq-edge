@@ -1,0 +1,22 @@
+governance/lib/stdout-flush.mjs
+  s_7326a769c7efe8::t_26e7640260c3bd 67
+governance/ci-stack/bin/ci-metrics.mjs
+  s_7326a769c7efe8::t_ffee0a7ecc4e59 22
+  s_7326a769c7efe8::t_a000d44fc0d9ee 266
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8758196d6f132b7d5d414eeb68d7eaa6dd326c82",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+scripts/bugbot/collector.py
+  s_07acdfa7e3709a::t_5836be9056011d 1-197
+tests/test_bugbot_safety.py
+  s_07acdfa7e3709a::t_18e5fc89fec543 931
+  s_07acdfa7e3709a::t_6188ff0951dbf2 887-930
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "90bdb4d4d850b96c4f5d9d168b628593478d13d2",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.github/workflows/content-watch.yml
+  s_f126fb3b7cae07::t_1bdbd875558f92 12-19
+  s_f126fb3b7cae07::t_750019649b099e 74-77,84-85
+.github/workflows/governance.yml
+  s_f126fb3b7cae07::t_ea75c53d9a76b8 78-85,92-93
+.github/workflows/content-regen.yml
+  s_f126fb3b7cae07::t_502ce15460a735 85-93,101-103
+.github/zizmor-baseline.tsv
+  s_f126fb3b7cae07::t_1c1ac37b7b19b0 11-13
+.github/workflows/fleet-drift.yml
+  s_f126fb3b7cae07::t_465f87b57ae170 61
+  s_f126fb3b7cae07::t_2f885e8fdcfe03 150-156
+  s_f126fb3b7cae07::t_a975392f5f9d8d 11,14-25
+  s_f126fb3b7cae07::t_79e2ca5ec589a6 80-86,93-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e8800f989c0691f89aec730641765b330d0ce851",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

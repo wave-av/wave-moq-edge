@@ -1,0 +1,26 @@
+hookcli/tests/durable-predicate.sh
+  s_60a20469ef4369::t_ce3a2832efd2ff 1-106
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_e6fb97b54eddd9 127
+hookcli/lib/require-predicates.mjs
+  s_60a20469ef4369::t_8d4ceef72629b5 31
+  s_60a20469ef4369::t_5fed6e0fba5eee 59-78,82
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_2361ea15e50763 62-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "39dfe9223f62757c4fae8a893cfe7e81a6007be3",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,781 @@
+governance/test/model-retirement-policy.test.mjs
+  s_dd42a206f882e3::t_cf126712f00d5f 37-41
+.github/actions/origin-tools-suites/action.yml
+  s_dd42a206f882e3::t_48e16d79da1a40 1-13
+.github/workflows/governance.yml
+  s_dd42a206f882e3::t_86ed55be2fc2da 166-168
+.gitignore
+  s_dd42a206f882e3::t_7efa3f3d05a34d 198
+governance/DANGLING-REFS-BASELINE.json
+  s_dd42a206f882e3::t_5ab367bff08451 2,6,13-14,17-18,20,22-23,25-26,32-34,48,53,58,63,69,75,100,115,120,125,145-150,153
+governance/bin/check-gates.mjs
+  s_dd42a206f882e3::t_7eacc0163069a7 1-34
+governance/bin/check.mjs
+  s_dd42a206f882e3::t_a2e152cd03a56c 14,45-49,254-255,267-294
+governance/bin/conservation-lint.mjs
+  s_dd42a206f882e3::t_c68139dfc8c1d6 1-129
+governance/bin/derivability.mjs
+  s_dd42a206f882e3::t_89e3818187f177 1-34
+governance/bin/origin.mjs
+  s_dd42a206f882e3::t_354637ecf1c771 1-284
+governance/bin/roadmap-check.mjs
+  s_dd42a206f882e3::t_756fc59534f765 1-57
+governance/bin/scrape-dwarkesh.mjs
+  s_dd42a206f882e3::t_9b07344ae2e939 1-299
+governance/bin/selfplay-pilot.mjs
+  s_dd42a206f882e3::t_a8b5a13ab95a4d 1-539
+governance/lib/app-scope-gh.mjs
+  s_dd42a206f882e3::t_7c4a1af5d124ba 80-85
+governance/lib/git-run.mjs
+  s_dd42a206f882e3::t_fd79399f227ffb 34,44-52,75,83-88
+governance/lib/platform-status-gh.mjs
+  s_dd42a206f882e3::t_d22b33ab0da7f2 29-33,38-43,52-67
+governance/lib/reviewer-liveness-read-io.mjs
+  s_dd42a206f882e3::t_bce6d1769aee07 1-126
+governance/lib/reviewer-liveness-read.mjs
+  s_dd42a206f882e3::t_77061d26db7c1b 1,11-28,37-78,80-108,110-150,152-157,159-200,202-239
+governance/lib/stdout-flush.mjs
+  s_dd42a206f882e3::t_fda98d14a925d5 63-105
+governance/package.json
+  s_dd42a206f882e3::t_7eb59fccaed354 4,73-74,79
+governance/plans/agent-execution-platform/CORPUS-SKILL-SERVICE.md
+  s_dd42a206f882e3::t_9423a8c7efb9c0 1-180
+governance/plans/agent-execution-platform/E0-SURFACE-DEF.md
+  s_dd42a206f882e3::t_edcad46f2a1099 1-36
+governance/plans/agent-execution-platform/E1-INTERNAL-ENFORCE.md
+  s_dd42a206f882e3::t_44e8736b5c8d72 1-44
+governance/plans/agent-execution-platform/E2-METER-DESIGN.md
+  s_dd42a206f882e3::t_1d6d72bf78faad 1-37
+governance/plans/agent-execution-platform/E3-EXTERNAL-GATE.md
+  s_dd42a206f882e3::t_a9b15890be22e0 1-37
+governance/plans/agent-execution-platform/METER-DESIGN.md
+  s_dd42a206f882e3::t_72fc21652acdd1 1-139
+governance/plans/agent-execution-platform/NORTH-STAR.md
+  s_dd42a206f882e3::t_af860542ed3168 1-43
+governance/plans/agent-recovery-codification/E0-E1-VISION-READ.md
+  s_dd42a206f882e3::t_bf1768d463b183 1-13
+governance/plans/agent-recovery-codification/E1-E2-EXTENSION-DIAGNOSIS.md
+  s_dd42a206f882e3::t_3128328a650c71 1-13
+governance/plans/agent-recovery-codification/E10-E11-BENCHMARK.md
+  s_dd42a206f882e3::t_aedb96b2d8b384 1-18
+governance/plans/agent-recovery-codification/E11-E12-LIFECYCLE-HEAL.md
+  s_dd42a206f882e3::t_97bccf3c17a9bf 1-18
+governance/plans/agent-recovery-codification/E12-E13-INTEGRATION.md
+  s_dd42a206f882e3::t_412b76576aafe6 1-18
+governance/plans/agent-recovery-codification/E2-E3-GO-ROUTING-PUBLISH.md
+  s_dd42a206f882e3::t_84cf82d237ab45 1-13
+governance/plans/agent-recovery-codification/E3-E4-MODEL-CATALOG.md
+  s_dd42a206f882e3::t_2007567d64a0ba 1-18
+governance/plans/agent-recovery-codification/E4-E5-MODEL-ARENA.md
+  s_dd42a206f882e3::t_4c1afa4a8b18cc 1-18
+governance/plans/agent-recovery-codification/E5-E6-CROSS-PROVIDER-OPTIMIZE.md
+  s_dd42a206f882e3::t_19556c68f46aa6 1-30
+governance/plans/agent-recovery-codification/E6-E7-EXTERNAL-CATALOG.md
+  s_dd42a206f882e3::t_e7b8a7fdc17d63 1-18
+governance/plans/agent-recovery-codification/E7-E8-CAPABILITY-SCRIPTS.md
+  s_dd42a206f882e3::t_98ec59b8640a1a 1-18
+governance/plans/agent-recovery-codification/E8-E9-MULTI-PROVIDER-PIPELINE.md
+  s_dd42a206f882e3::t_dd0a7a44d91f0d 1-18
+governance/plans/agent-recovery-codification/E9-E10-UPSTASH-RAG.md
+  s_dd42a206f882e3::t_5b19fb8a9390d0 1-18
+governance/plans/agent-recovery-codification/NORTH-STAR.md
+  s_dd42a206f882e3::t_38d6a008d42fa0 1-51
+governance/plans/capability-registry/NORTH-STAR.md
+  s_dd42a206f882e3::t_20b9a9117fa91a 78-79
+governance/plans/conservation-law-design/E0-METHOD.md
+  s_dd42a206f882e3::t_cdf37badfde56d 1-30
+governance/plans/conservation-law-design/E1-POC-GATEWAY.md
+  s_dd42a206f882e3::t_10976a7229c648 1-80
+governance/plans/conservation-law-design/E2-CONSERVATION-LINT.md
+  s_dd42a206f882e3::t_4931249fdaa278 1-28
+governance/plans/conservation-law-design/E3-CANON.md
+  s_dd42a206f882e3::t_68119085618734 1-137
+governance/plans/conservation-law-design/NORTH-STAR.md
+  s_dd42a206f882e3::t_1b37631b7e3e5d 1-71
+governance/plans/explainable-media-platform/E0-FOUNDATION.md
+  s_dd42a206f882e3::t_db697df43a23d1 1-36
+governance/plans/explainable-media-platform/E1-INERT-SPOKES.md
+  s_dd42a206f882e3::t_723476fc2fac4b 1-37
+governance/plans/explainable-media-platform/E2-INTERNAL-PILOT.md
+  s_dd42a206f882e3::t_dce06f32198648 1-37
+governance/plans/explainable-media-platform/E3-DECISION-GATE.md
+  s_dd42a206f882e3::t_3ea9d15001ab7c 1-37
+governance/plans/explainable-media-platform/NORTH-STAR.md
+  s_dd42a206f882e3::t_2eb72ae27f6f79 1-46
+governance/plans/genome-epigenome-releases/E0-GENOME.md
+  s_dd42a206f882e3::t_87735bcb2d2bcc 1-194
+governance/plans/genome-epigenome-releases/E1-METHYLATION.md
+  s_dd42a206f882e3::t_2f74498122f4fc 1-240
+governance/plans/genome-epigenome-releases/E2-REDLINES.md
+  s_dd42a206f882e3::t_a8ecf649810378 1-113
+governance/plans/genome-epigenome-releases/E3-PILOT.md
+  s_dd42a206f882e3::t_5cd831520b75e0 1-30
+governance/plans/genome-epigenome-releases/NORTH-STAR.md
+  s_dd42a206f882e3::t_c5e2b153d8361c 1-65
+governance/plans/genome-epigenome-releases/SERVICE-DESIGN.md
+  s_dd42a206f882e3::t_ccd22245152517 1-163
+governance/plans/inference-by-effects/E0-EFFECT-MODEL.md
+  s_dd42a206f882e3::t_f3fd125162c86b 1-166
+governance/plans/inference-by-effects/E1-DRIFT-PROBE.md
+  s_dd42a206f882e3::t_9331035ca66b1c 1-49
+governance/plans/inference-by-effects/E2-ORACLE-CERT.md
+  s_dd42a206f882e3::t_d73a899f5b5f45 1-43
+governance/plans/inference-by-effects/E3-LAKEHOUSE-INTEGRATION.md
+  s_dd42a206f882e3::t_801f85b095cbe4 1-43
+governance/plans/inference-by-effects/NORTH-STAR.md
+  s_dd42a206f882e3::t_68c476869060c7 1-63
+governance/plans/new-ideas-integration/E0-TOOL-REGISTRY.md
+  s_dd42a206f882e3::t_21d046a7c01e69 1-9
+governance/plans/new-ideas-integration/E1-LAW-CODIFICATION.md
+  s_dd42a206f882e3::t_0ab15b0f238bf3 1-10
+governance/plans/new-ideas-integration/E2-SECURITY-LANE.md
+  s_dd42a206f882e3::t_5ecbcf471f3456 1-10
+governance/plans/new-ideas-integration/E3-INTEGRATION-GATES.md
+  s_dd42a206f882e3::t_cf77585b829741 1-23
+governance/plans/new-ideas-integration/NORTH-STAR.md
+  s_dd42a206f882e3::t_6ea4393d52f1ee 1-36
+governance/plans/post-merge-integrity/NORTH-STAR.md
+  s_dd42a206f882e3::t_f0b3c4a5b169ac 129-130
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  s_dd42a206f882e3::t_6e5fc772e50676 72-82
+governance/plans/self-play-refactoring/E0-GAME-DEF.md
+  s_dd42a206f882e3::t_0d664f23212607 1-137
+governance/plans/self-play-refactoring/E1-SELFPLAY-PILOT.md
+  s_dd42a206f882e3::t_16c1a0ec99dba9 1-71
+governance/plans/self-play-refactoring/E2-AIRGAP-GATE.md
+  s_dd42a206f882e3::t_f78ca64d07daec 1-107
+governance/plans/self-play-refactoring/E3-RL-INTEGRATION.md
+  s_dd42a206f882e3::t_bfc613e44739a9 1-42
+governance/plans/self-play-refactoring/NORTH-STAR.md
+  s_dd42a206f882e3::t_43457051956dfc 1-68
+governance/plans/self-play-refactoring/SERVICE-DESIGN.md
+  s_dd42a206f882e3::t_3a31247555892f 1-175
+governance/plans/socratic-loop/NORTH-STAR.md
+  s_dd42a206f882e3::t_d8bd90a42db209 182-185
+governance/plans/universal-data-representation/E0-REDUCTION-CATALOG.md
+  s_dd42a206f882e3::t_fd64817986c4fe 1-102
+governance/plans/universal-data-representation/E1-UNIFY-PILOT.md
+  s_dd42a206f882e3::t_4397149210ba4b 1-132
+governance/plans/universal-data-representation/E2-LOSSLESS-GATE.md
+  s_dd42a206f882e3::t_07466135a2a266 1-47
+governance/plans/universal-data-representation/E3-CANON-DOGMA.md
+  s_dd42a206f882e3::t_b0cb87b2ce24db 1-46
+governance/plans/universal-data-representation/FACT-LOG-SERVICE.md
+  s_dd42a206f882e3::t_55e8bb352ce4b5 1-151
+governance/plans/universal-data-representation/NORTH-STAR.md
+  s_dd42a206f882e3::t_5c5dcad986fda4 1-69
+governance/plans/universal-data-representation/SERVICE-DESIGN.md
+  s_dd42a206f882e3::t_3e7feb33522bed 1-246
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_dd42a206f882e3::t_c2180330928fe9 152-157
+governance/plans/wave-mesh-fabric/NORTH-STAR.md
+  s_dd42a206f882e3::t_0f3f3dc6c0f6e2 137
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_dd42a206f882e3::t_969c7ce19a4065 46-47
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_dd42a206f882e3::t_f0319ca525c0c0 64-90
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_dd42a206f882e3::t_69d6a8e9f82723 165-197
+governance/research/creator-intelligence/ADVERSARIAL-SYNTHESIS.md
+  s_dd42a206f882e3::t_1d4e107b413285 1-45
+governance/research/creator-intelligence/BRAINSTORM-SYNTHESIS.md
+  s_dd42a206f882e3::t_cbaee809c0afe3 1-49
+governance/research/creator-intelligence/COMPOSITIONS.md
+  s_dd42a206f882e3::t_cbb25969ef77fd 1-43
+governance/research/creator-intelligence/CORPUS-ROUTING.md
+  s_dd42a206f882e3::t_ec5a5901084d5c 1-81
+governance/research/creator-intelligence/DEUTSCH-LAMBERT-3B1B.md
+  s_dd42a206f882e3::t_e97ff5acd788b9 1-22
+governance/research/creator-intelligence/DOGFOOD-RECEIPT.md
+  s_dd42a206f882e3::t_a7aa9f16bb9914 1-58
+governance/research/creator-intelligence/FEED-TARGETS.md
+  s_dd42a206f882e3::t_590fa7b3f546c6 1-279
+governance/research/creator-intelligence/FRACTAL-MAP.md
+  s_dd42a206f882e3::t_dc6052361b80f9 1-28
+governance/research/creator-intelligence/FRAMEWORK.md
+  s_dd42a206f882e3::t_89756a0b13e4b5 1-67
+governance/research/creator-intelligence/GAP-INVENTORY.md
+  s_dd42a206f882e3::t_0f174fdaafdba8 1-21
+governance/research/creator-intelligence/GOVERNANCE-AUDIT-2.md
+  s_dd42a206f882e3::t_8b294a1e679ec2 1-128
+governance/research/creator-intelligence/GOVERNANCE-AUDIT-3.md
+  s_dd42a206f882e3::t_3fe824001d1b32 1-86
+governance/research/creator-intelligence/GOVERNANCE-AUDIT.md
+  s_dd42a206f882e3::t_b2b796c4304edf 1-142
+governance/research/creator-intelligence/HICKEY-KLEPPMANN.md
+  s_dd42a206f882e3::t_59691230c6b95f 1-19
+governance/research/creator-intelligence/KARPATHY-VICTOR.md
+  s_dd42a206f882e3::t_5315a7b284ab22 1-18
+governance/research/creator-intelligence/MAPPING.md
+  s_dd42a206f882e3::t_1eb2c575a4ef97 1-54
+governance/research/creator-intelligence/PILOT-OFFER.md
+  s_dd42a206f882e3::t_5d155aee9e85d0 1-47
+governance/research/creator-intelligence/PLATFORM-DESIGN.md
+  s_dd42a206f882e3::t_0399130723cba7 1-55
+governance/research/creator-intelligence/PRODUCT-SURFACE-WAVE2.md
+  s_dd42a206f882e3::t_be905e51f008b6 1-205
+governance/research/creator-intelligence/PRODUCT-SURFACE.md
+  s_dd42a206f882e3::t_f2d4dda5ccaa93 1-188
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  s_dd42a206f882e3::t_955633da0ebb10 1-31
+governance/research/creator-intelligence/RESEARCH-NEW-IDEAS.md
+  s_dd42a206f882e3::t_71da4e569ab897 1-16
+governance/research/creator-intelligence/RESEARCH-NEXT-SOURCES.md
+  s_dd42a206f882e3::t_bb69a9effa02ed 1-25
+governance/research/creator-intelligence/SYNTHESIS.md
+  s_dd42a206f882e3::t_b8913a29b0b047 1-65
+governance/research/creator-intelligence/SYSTEM-MAP.md
+  s_dd42a206f882e3::t_31549f8d83ea67 1-126
+governance/research/creator-intelligence/THE-ROADMAP.json
+  s_dd42a206f882e3::t_be85593d3556fa 1-721
+governance/research/creator-intelligence/THE-ROADMAP.md
+  s_dd42a206f882e3::t_2b6a126519f020 1-44
+governance/research/creator-intelligence/VENDOR-INTEGRATION-MAP.md
+  s_dd42a206f882e3::t_e821a1dee4b2ce 1-121
+governance/research/engineering-canon/origin-method.md
+  s_dd42a206f882e3::t_a7794d109f6f6c 1-292
+governance/sources/lawbook.json
+  s_dd42a206f882e3::t_860dcc9b5d5617 22-26
+governance/test/app-scope-broadening.test.mjs
+  s_dd42a206f882e3::t_70dbf12a194370 214-221,223-225,228-233
+governance/test/conservation-lint.test.mjs
+  s_dd42a206f882e3::t_fa0a0db50d1de2 1-113
+governance/test/evidence-git-run.test.mjs
+  s_dd42a206f882e3::t_c65fb9d97c5213 61-103
+governance/test/fixtures/conservation-lint/all-known-gap.md
+  s_dd42a206f882e3::t_e9f543cd17a9c8 1-5
+governance/test/fixtures/conservation-lint/no-siblings.md
+  s_dd42a206f882e3::t_c33279fcb077f0 1-5
+governance/test/fixtures/conservation-lint/unrecognized-row.md
+  s_dd42a206f882e3::t_2f38b270b82136 1-5
+governance/test/fixtures/conservation-lint/violation.md
+  s_dd42a206f882e3::t_8734faab4ab79f 1-6
+governance/test/origin-cli.test.mjs
+  s_dd42a206f882e3::t_fe217b7b907e87 1-60
+governance/test/platform-status-gh-missing.test.mjs
+  s_dd42a206f882e3::t_18e94b8636e8fc 1-81
+governance/test/pr-create.test.mjs
+  s_dd42a206f882e3::t_6cc1412fc0e9eb 288-297,299-300
+governance/test/review-liveness-floor-coupling.test.mjs
+  s_dd42a206f882e3::t_4e50b50b1416a9 1-66
+governance/test/reviewer-liveness-read.test.mjs
+  s_dd42a206f882e3::t_c0e9413747cf1e 1-347
+governance/tools/backfill-table/README.md
+  s_dd42a206f882e3::t_d5d49544b5954d 1-57
+governance/tools/backfill-table/bin/backfill.mjs
+  s_dd42a206f882e3::t_2b375c168e4f13 1-82
+governance/tools/backfill-table/examples/agent-onboarding.json
+  s_dd42a206f882e3::t_f2ae7b146c416b 1-98
+governance/tools/backfill-table/lib/index.mjs
+  s_dd42a206f882e3::t_39a769798408bd 1-207
+governance/tools/backfill-table/package.json
+  s_dd42a206f882e3::t_14c533246f89c5 1-13
+governance/tools/backfill-table/table.schema.json
+  s_dd42a206f882e3::t_73f49e41cfdc37 1-70
+governance/tools/backfill-table/tests/backfill-table.test.mjs
+  s_dd42a206f882e3::t_ee76ec9c323f11 1-240
+governance/tools/coherence-budget/README.md
+  s_dd42a206f882e3::t_b74e62b7a72a23 1-94
+governance/tools/coherence-budget/bin/coherence-budget.mjs
+  s_dd42a206f882e3::t_9b6787af665868 1-76
+governance/tools/coherence-budget/budget.schema.json
+  s_dd42a206f882e3::t_5eb2310eae9d0c 1-62
+governance/tools/coherence-budget/examples/mesh-leases.json
+  s_dd42a206f882e3::t_5bdb5a97d47f8f 1-42
+governance/tools/coherence-budget/lib/index.mjs
+  s_dd42a206f882e3::t_cfac7fd17ae7dd 1-117
+governance/tools/coherence-budget/tests/coherence-budget.test.mjs
+  s_dd42a206f882e3::t_1b90eb0f58e600 1-302
+governance/tools/conservation-lint/README.md
+  s_dd42a206f882e3::t_d74d34d3663e0c 1-70
+governance/tools/conservation-lint/bin/conservation-lint.mjs
+  s_dd42a206f882e3::t_2ef00f30c3a0d1 1-130
+governance/tools/conservation-lint/examples/wave-gateway.manifest.json
+  s_dd42a206f882e3::t_fac8043bd95557 1-32
+governance/tools/conservation-lint/lib/index.mjs
+  s_dd42a206f882e3::t_9d306741cbd837 1-126
+governance/tools/conservation-lint/manifest.schema.json
+  s_dd42a206f882e3::t_1497bbd6de5366 1-55
+governance/tools/conservation-lint/package.json
+  s_dd42a206f882e3::t_a0f0cc67432a11 1-32
+governance/tools/conservation-lint/tests/conservation-lint.test.mjs
+  s_dd42a206f882e3::t_ac2e4366781b77 1-135
+governance/tools/cpa-scaffolding/README.md
+  s_dd42a206f882e3::t_51d9bed81b3d3d 1-13
+governance/tools/cpa-scaffolding/bin/cpa-scaffold.mjs
+  s_dd42a206f882e3::t_1cc06d88a55235 1-22
+governance/tools/cpa-scaffolding/examples/promise.json
+  s_dd42a206f882e3::t_2e99e2a8f593dc 1-7
+governance/tools/cpa-scaffolding/lib/index.mjs
+  s_dd42a206f882e3::t_06303ae69d0d88 1-27
+governance/tools/cpa-scaffolding/package.json
+  s_dd42a206f882e3::t_f4763e615367e1 1-8
+governance/tools/cpa-scaffolding/scaffold.schema.json
+  s_dd42a206f882e3::t_6e54016e6ab5a7 1-14
+governance/tools/cpa-scaffolding/tests/cpa.test.mjs
+  s_dd42a206f882e3::t_e286e478585775 1-34
+governance/tools/data-gravity-lint/README.md
+  s_dd42a206f882e3::t_f36ad4fea21eba 1-97
+governance/tools/data-gravity-lint/bin/gravity-lint.mjs
+  s_dd42a206f882e3::t_48eb054294e1ac 1-78
+governance/tools/data-gravity-lint/examples/wave-formats.json
+  s_dd42a206f882e3::t_881f0614a3bd06 1-51
+governance/tools/data-gravity-lint/format.schema.json
+  s_dd42a206f882e3::t_4df2401c13e79a 1-59
+governance/tools/data-gravity-lint/lib/index.mjs
+  s_dd42a206f882e3::t_459dcf0a7c0e12 1-156
+governance/tools/data-gravity-lint/tests/data-gravity-lint.test.mjs
+  s_dd42a206f882e3::t_2c727fe42b13c3 1-275
+governance/tools/derivable-correctness/README.md
+  s_dd42a206f882e3::t_c3b8cdc604b80e 1-49
+governance/tools/derivable-correctness/bin/derivability.mjs
+  s_dd42a206f882e3::t_0f9a78d538a316 1-34
+governance/tools/derivable-correctness/examples/agent-artifact.json
+  s_dd42a206f882e3::t_f1c6cbcc7adc16 1-42
+governance/tools/derivable-correctness/lib/index.mjs
+  s_dd42a206f882e3::t_42fe14eac18f4c 1-62
+governance/tools/derivable-correctness/tests/derivability.test.mjs
+  s_dd42a206f882e3::t_2299d63c4b6851 1-89
+governance/tools/effect-lens/README.md
+  s_dd42a206f882e3::t_e651bf991707a9 1-96
+governance/tools/effect-lens/bin/effect-lens.mjs
+  s_dd42a206f882e3::t_a8fba65097f292 1-76
+governance/tools/effect-lens/examples/mux-drift-observations.json
+  s_dd42a206f882e3::t_80cfe4aa8a2f2b 1-11
+governance/tools/effect-lens/examples/mux-ingest.lens.json
+  s_dd42a206f882e3::t_c961486a2c433a 1-63
+governance/tools/effect-lens/examples/wave-gateway-deps-observations.json
+  s_dd42a206f882e3::t_f0aeafb12f1780 1-110
+governance/tools/effect-lens/examples/wave-gateway-deps.lens.json
+  s_dd42a206f882e3::t_9d7eed2d652de9 1-64
+governance/tools/effect-lens/examples/wave-gateway-dogfood-report.json
+  s_dd42a206f882e3::t_d92c6b45b3fbb0 1-176
+governance/tools/effect-lens/lens.schema.json
+  s_dd42a206f882e3::t_4018537a2d349c 1-72
+governance/tools/effect-lens/lib/index.mjs
+  s_dd42a206f882e3::t_7b9deaf66cfb6c 1-245
+governance/tools/effect-lens/tests/effect-lens.test.mjs
+  s_dd42a206f882e3::t_19e795f3da5104 1-109
+governance/tools/embedding-compression/README.md
+  s_dd42a206f882e3::t_732795a996a563 1-94
+governance/tools/embedding-compression/audit.schema.json
+  s_dd42a206f882e3::t_9ca0a7f98d7b47 1-68
+governance/tools/embedding-compression/bin/embed-audit.mjs
+  s_dd42a206f882e3::t_0cf6887b6cc163 1-98
+governance/tools/embedding-compression/examples/catalog-embeddings.json
+  s_dd42a206f882e3::t_434013e0d1c635 1-42
+governance/tools/embedding-compression/lib/index.mjs
+  s_dd42a206f882e3::t_d63698fec841fa 1-211
+governance/tools/embedding-compression/tests/embedding-compression.test.mjs
+  s_dd42a206f882e3::t_218c57d51ca62e 1-152
+governance/tools/equivalence-checker/README.md
+  s_dd42a206f882e3::t_ddbb23908ab383 1-12
+governance/tools/equivalence-checker/bin/equivalence-check.mjs
+  s_dd42a206f882e3::t_a5907cf477a896 1-20
+governance/tools/equivalence-checker/contract.schema.json
+  s_dd42a206f882e3::t_e6605c6397d2f9 1-25
+governance/tools/equivalence-checker/examples/container-results.json
+  s_dd42a206f882e3::t_55b02cedeb44ab 1-5
+governance/tools/equivalence-checker/examples/container.json
+  s_dd42a206f882e3::t_21393f33783fb1 1-10
+governance/tools/equivalence-checker/lib/index.mjs
+  s_dd42a206f882e3::t_13a5961ca340b2 1-25
+governance/tools/equivalence-checker/package.json
+  s_dd42a206f882e3::t_490364d3cd1319 1-8
+governance/tools/equivalence-checker/tests/equivalence.test.mjs
+  s_dd42a206f882e3::t_6018e155fd544f 1-38
+governance/tools/explanation-gate/README.md
+  s_dd42a206f882e3::t_2bb8ee78d25980 1-58
+governance/tools/explanation-gate/bin/explanation-gate.mjs
+  s_dd42a206f882e3::t_6992f00b7b5157 1-72
+governance/tools/explanation-gate/examples/wave-laws.json
+  s_dd42a206f882e3::t_a20904c8f455f9 1-56
+governance/tools/explanation-gate/law.schema.json
+  s_dd42a206f882e3::t_7a15b050b836f9 1-49
+governance/tools/explanation-gate/lib/index.mjs
+  s_dd42a206f882e3::t_c71e2edd8c3f70 1-120
+governance/tools/explanation-gate/tests/explanation-gate.test.mjs
+  s_dd42a206f882e3::t_bc7e43c6f86c77 1-227
+governance/tools/fitness-landscape/README.md
+  s_dd42a206f882e3::t_f0a993cc3ec1cb 1-9
+governance/tools/fitness-landscape/bin/fitness.mjs
+  s_dd42a206f882e3::t_642a00343c7f8b 1-17
+governance/tools/fitness-landscape/examples/wave-gateway.json
+  s_dd42a206f882e3::t_001aeaf680b217 1-7
+governance/tools/fitness-landscape/landscape.schema.json
+  s_dd42a206f882e3::t_d5b13291cc6479 1-24
+governance/tools/fitness-landscape/lib/index.mjs
+  s_dd42a206f882e3::t_3d62854fb62c69 1-30
+governance/tools/fitness-landscape/package.json
+  s_dd42a206f882e3::t_44f6069f411994 1-8
+governance/tools/fitness-landscape/tests/fitness.test.mjs
+  s_dd42a206f882e3::t_a37cc906153e79 1-27
+governance/tools/hierarchical-locality/README.md
+  s_dd42a206f882e3::t_4093d18d2be6d3 1-16
+governance/tools/hierarchical-locality/bin/locality.mjs
+  s_dd42a206f882e3::t_c7ce75a18f5458 1-20
+governance/tools/hierarchical-locality/examples/telemetry.json
+  s_dd42a206f882e3::t_4b4a0cebbcade8 1-5
+governance/tools/hierarchical-locality/index.schema.json
+  s_dd42a206f882e3::t_dde0df0568d810 1-12
+governance/tools/hierarchical-locality/lib/index.mjs
+  s_dd42a206f882e3::t_92b2675c149d1b 1-20
+governance/tools/hierarchical-locality/package.json
+  s_dd42a206f882e3::t_c6f96af64826fb 1-8
+governance/tools/hierarchical-locality/tests/locality.test.mjs
+  s_dd42a206f882e3::t_0b56d7048384c6 1-24
+governance/tools/internal-affairs/README.md
+  s_dd42a206f882e3::t_ff543be130b9cc 1-14
+governance/tools/internal-affairs/audit.schema.json
+  s_dd42a206f882e3::t_1ba91eb822659f 1-56
+governance/tools/internal-affairs/bin/internal-affairs.mjs
+  s_dd42a206f882e3::t_c01a7f4b9a4c9b 1-55
+governance/tools/internal-affairs/examples/wave-self-attacks.json
+  s_dd42a206f882e3::t_5819885b991db2 1-34
+governance/tools/internal-affairs/lib/index.mjs
+  s_dd42a206f882e3::t_540fdb2669fbd5 1-121
+governance/tools/internal-affairs/package.json
+  s_dd42a206f882e3::t_b2cd3c5559359b 1-8
+governance/tools/internal-affairs/tests/internal-affairs.test.mjs
+  s_dd42a206f882e3::t_5e998af856c978 1-159
+governance/tools/invariant-budget/README.md
+  s_dd42a206f882e3::t_5092d0262badf0 1-100
+governance/tools/invariant-budget/bin/invariant-budget.mjs
+  s_dd42a206f882e3::t_16b2b220cebc59 1-80
+governance/tools/invariant-budget/examples/wave-invariants.json
+  s_dd42a206f882e3::t_8bf90c0d6b5afd 1-49
+governance/tools/invariant-budget/invariant.schema.json
+  s_dd42a206f882e3::t_bb93551875a778 1-67
+governance/tools/invariant-budget/lib/index.mjs
+  s_dd42a206f882e3::t_affdb1bd0e111a 1-140
+governance/tools/invariant-budget/manifests/wave-conservation.json
+  s_dd42a206f882e3::t_e1899c16009f21 1-13
+governance/tools/invariant-budget/tests/invariant-budget.test.mjs
+  s_dd42a206f882e3::t_d76bfa5407cfaa 1-285
+governance/tools/layered-error-budget/README.md
+  s_dd42a206f882e3::t_9572490132cd7a 1-104
+governance/tools/layered-error-budget/bin/error-budget.mjs
+  s_dd42a206f882e3::t_65b55255bc6666 1-81
+governance/tools/layered-error-budget/budget.schema.json
+  s_dd42a206f882e3::t_91db08d96e8af7 1-59
+governance/tools/layered-error-budget/examples/dna-like.json
+  s_dd42a206f882e3::t_742b6c010560fb 1-42
+governance/tools/layered-error-budget/lib/index.mjs
+  s_dd42a206f882e3::t_c318eccf4cd12d 1-166
+governance/tools/layered-error-budget/tests/layered-error-budget.test.mjs
+  s_dd42a206f882e3::t_ba4b02ec73373e 1-262
+governance/tools/learnable-systems/README.md
+  s_dd42a206f882e3::t_1d005c4e1af56b 1-116
+governance/tools/learnable-systems/bin/learnable.mjs
+  s_dd42a206f882e3::t_9eb78a9e5dce20 1-94
+governance/tools/learnable-systems/examples/metering-basics.json
+  s_dd42a206f882e3::t_4230196d6a7420 1-72
+governance/tools/learnable-systems/format.schema.json
+  s_dd42a206f882e3::t_dcc5240314edbc 1-77
+governance/tools/learnable-systems/lib/index.mjs
+  s_dd42a206f882e3::t_a18abf59256fba 1-202
+governance/tools/learnable-systems/tests/learnable.test.mjs
+  s_dd42a206f882e3::t_f57156fcd504fd 1-249
+governance/tools/load-shedder/README.md
+  s_dd42a206f882e3::t_2c8e9a93a8a4a2 1-118
+governance/tools/load-shedder/bin/shed.mjs
+  s_dd42a206f882e3::t_4c766340052330 1-106
+governance/tools/load-shedder/examples/gateway-shedding.json
+  s_dd42a206f882e3::t_90eaebf56944b1 1-40
+governance/tools/load-shedder/lib/index.mjs
+  s_dd42a206f882e3::t_569bcd7e9962fb 1-374
+governance/tools/load-shedder/shedder.schema.json
+  s_dd42a206f882e3::t_804d04d89659cb 1-97
+governance/tools/load-shedder/tests/load-shedder-part2.test.mjs
+  s_dd42a206f882e3::t_c31ab6576d213a 1-242
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_dd42a206f882e3::t_b07f61aa43f033 1-336
+governance/tools/mastery-path/README.md
+  s_dd42a206f882e3::t_047dc4cf46b9c5 1-147
+governance/tools/mastery-path/bin/mastery.mjs
+  s_dd42a206f882e3::t_8fc9a4225514fb 1-117
+governance/tools/mastery-path/examples/gateway-onboarding.json
+  s_dd42a206f882e3::t_2ad09f6e316498 1-62
+governance/tools/mastery-path/graph.schema.json
+  s_dd42a206f882e3::t_f8dd52fa75d151 1-52
+governance/tools/mastery-path/lib/index.mjs
+  s_dd42a206f882e3::t_2dc75f6a93fcfa 1-271
+governance/tools/mastery-path/tests/mastery-path.test.mjs
+  s_dd42a206f882e3::t_e209d4e6e78ee8 1-257
+governance/tools/origin-trail/README.md
+  s_dd42a206f882e3::t_9b07120453e43f 1-27
+governance/tools/origin-trail/bin/origin-trail.mjs
+  s_dd42a206f882e3::t_963362df910dc1 1-28
+governance/tools/origin-trail/examples/noether-conservation.json
+  s_dd42a206f882e3::t_9ad1b54eeb168b 1-14
+governance/tools/origin-trail/lib/index.mjs
+  s_dd42a206f882e3::t_e0ef7a98163d1d 1-44
+governance/tools/origin-trail/origin.schema.json
+  s_dd42a206f882e3::t_2b0a0d638bc2e3 1-36
+governance/tools/origin-trail/package.json
+  s_dd42a206f882e3::t_50a5eab30ec236 1-8
+governance/tools/origin-trail/tests/origin-trail.test.mjs
+  s_dd42a206f882e3::t_cdecc4caa53095 1-47
+governance/tools/plan-search-emit/README.md
+  s_dd42a206f882e3::t_9cf328757320d9 1-23
+governance/tools/plan-search-emit/bin/pse-check.mjs
+  s_dd42a206f882e3::t_2368bf03c26dd6 1-19
+governance/tools/plan-search-emit/examples/bad-trace.json
+  s_dd42a206f882e3::t_981ff3fcb36f68 1-5
+governance/tools/plan-search-emit/examples/good-trace.json
+  s_dd42a206f882e3::t_62905a8f5481c0 1-17
+governance/tools/plan-search-emit/lib/index.mjs
+  s_dd42a206f882e3::t_fed7737182d255 1-30
+governance/tools/plan-search-emit/package.json
+  s_dd42a206f882e3::t_6277180e230229 1-8
+governance/tools/plan-search-emit/tests/pse.test.mjs
+  s_dd42a206f882e3::t_6e9157879503f1 1-41
+governance/tools/plan-search-emit/trace.schema.json
+  s_dd42a206f882e3::t_db02af71cae334 1-40
+governance/tools/pr-sockpuppet-guard/README.md
+  s_dd42a206f882e3::t_f8ab9ff21b4e8c 1-89
+governance/tools/pr-sockpuppet-guard/bin/sockpuppet-guard.mjs
+  s_dd42a206f882e3::t_d0d95940893ca3 1-72
+governance/tools/pr-sockpuppet-guard/evidence.schema.json
+  s_dd42a206f882e3::t_260cf1b4d7cb28 1-65
+governance/tools/pr-sockpuppet-guard/examples/redwood-like.json
+  s_dd42a206f882e3::t_c6cf4ea4b1f7a7 1-16
+governance/tools/pr-sockpuppet-guard/lib/index.mjs
+  s_dd42a206f882e3::t_d389c491ff8ae8 1-143
+governance/tools/pr-sockpuppet-guard/signals.md
+  s_dd42a206f882e3::t_fca24eb0fea1dd 1-59
+governance/tools/pr-sockpuppet-guard/tests/sockpuppet-guard.test.mjs
+  s_dd42a206f882e3::t_7f18d6cb0562f2 1-160
+governance/tools/presence-audit/README.md
+  s_dd42a206f882e3::t_dac08793af706c 1-100
+governance/tools/presence-audit/audit.schema.json
+  s_dd42a206f882e3::t_671e46dc62ffa2 1-45
+governance/tools/presence-audit/bin/presence-audit.mjs
+  s_dd42a206f882e3::t_519f661e54fd74 1-84
+governance/tools/presence-audit/examples/governance-values.json
+  s_dd42a206f882e3::t_fc2c4258db1b73 1-25
+governance/tools/presence-audit/lib/index.mjs
+  s_dd42a206f882e3::t_fc0d0e3d06e81e 1-230
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  s_dd42a206f882e3::t_f7f12a437afe8a 1-341
+governance/tools/process-over-output/README.md
+  s_dd42a206f882e3::t_3cc98fcf1260a3 1-10
+governance/tools/process-over-output/bin/process-eval.mjs
+  s_dd42a206f882e3::t_74aa8480f8e182 1-18
+governance/tools/process-over-output/examples/two-pointer.json
+  s_dd42a206f882e3::t_33df4acadfe647 1-7
+governance/tools/process-over-output/lib/index.mjs
+  s_dd42a206f882e3::t_80c7479ef1164b 1-18
+governance/tools/process-over-output/package.json
+  s_dd42a206f882e3::t_fba2e771bcb8f1 1-8
+governance/tools/process-over-output/tests/process.test.mjs
+  s_dd42a206f882e3::t_7ba2ed3a0797c2 1-33
+governance/tools/process-over-output/trace.schema.json
+  s_dd42a206f882e3::t_e0f7d4c6430eb2 1-14
+governance/tools/rca-triage/README.md
+  s_dd42a206f882e3::t_3f405385ba6b0d 1-73
+governance/tools/rca-triage/bin/rca-triage.mjs
+  s_dd42a206f882e3::t_5fc213a3b56d33 1-104
+governance/tools/rca-triage/examples/usage-drift.json
+  s_dd42a206f882e3::t_6fb3f4673ec368 1-15
+governance/tools/rca-triage/finding.schema.json
+  s_dd42a206f882e3::t_3c31ba789a720a 1-46
+governance/tools/rca-triage/lib/index.mjs
+  s_dd42a206f882e3::t_2b41ab849d972f 1-118
+governance/tools/rca-triage/rules.md
+  s_dd42a206f882e3::t_9b17f78f0760f7 1-63
+governance/tools/rca-triage/tests/rca-triage.test.mjs
+  s_dd42a206f882e3::t_603dcf62adbb3e 1-155
+governance/tools/self-diagnose/README.md
+  s_dd42a206f882e3::t_cc820a0fa4f158 1-21
+governance/tools/self-diagnose/bin/self-diagnose.mjs
+  s_dd42a206f882e3::t_1d6094411a0fdd 1-21
+governance/tools/self-diagnose/examples/gateway-incident.json
+  s_dd42a206f882e3::t_c6e783d133b8c0 1-82
+governance/tools/self-diagnose/lib/index.mjs
+  s_dd42a206f882e3::t_357ce9f43c54d0 1-48
+governance/tools/self-diagnose/package.json
+  s_dd42a206f882e3::t_6ddb2f03667c6c 1-8
+governance/tools/self-diagnose/tests/self-diagnose.test.mjs
+  s_dd42a206f882e3::t_14c320386f3026 1-40
+governance/tools/smart-error/README.md
+  s_dd42a206f882e3::t_2032b50ca2e26a 1-9
+governance/tools/smart-error/bin/smart-error.mjs
+  s_dd42a206f882e3::t_af34aa7b6a4ed2 1-19
+governance/tools/smart-error/error.schema.json
+  s_dd42a206f882e3::t_3ac7c7587e8816 1-15
+governance/tools/smart-error/examples/invalid-param.json
+  s_dd42a206f882e3::t_65d3cee43987a2 1-11
+governance/tools/smart-error/lib/index.mjs
+  s_dd42a206f882e3::t_0769d588e4398f 1-34
+governance/tools/smart-error/package.json
+  s_dd42a206f882e3::t_72a18e7097f29d 1-8
+governance/tools/smart-error/tests/smart-error.test.mjs
+  s_dd42a206f882e3::t_f992feff46a00f 1-42
+governance/tools/smart-recycling/README.md
+  s_dd42a206f882e3::t_b2842d0671d6e5 1-91
+governance/tools/smart-recycling/bin/recycle.mjs
+  s_dd42a206f882e3::t_74c55252dc5280 1-81
+governance/tools/smart-recycling/examples/fluency-pack.json
+  s_dd42a206f882e3::t_4f888fce1b98a4 1-29
+governance/tools/smart-recycling/lib/index.mjs
+  s_dd42a206f882e3::t_f74aeb3bdfef9d 1-177
+governance/tools/smart-recycling/pack.schema.json
+  s_dd42a206f882e3::t_4e3c1f312a8523 1-63
+governance/tools/smart-recycling/package.json
+  s_dd42a206f882e3::t_a59786cf6bee56 1-15
+governance/tools/smart-recycling/tests/smart-recycling.test.mjs
+  s_dd42a206f882e3::t_7f9e7f91858d61 1-304
+governance/tools/state-layer/README.md
+  s_dd42a206f882e3::t_16ea975a4e7071 1-71
+governance/tools/state-layer/bin/state-layer.mjs
+  s_dd42a206f882e3::t_6069e296219b2e 1-18
+governance/tools/state-layer/examples/tenant-state.json
+  s_dd42a206f882e3::t_59a02c45c23695 1-64
+governance/tools/state-layer/lib/index.mjs
+  s_dd42a206f882e3::t_5b354c8725049e 1-145
+governance/tools/state-layer/package.json
+  s_dd42a206f882e3::t_d7e7bdddee9349 1-8
+governance/tools/state-layer/tests/state-layer.test.mjs
+  s_dd42a206f882e3::t_127613915bf387 1-76
+governance/tools/storage-decision/README.md
+  s_dd42a206f882e3::t_4c41ae3b628acc 1-67
+governance/tools/storage-decision/bin/storage-decision.mjs
+  s_dd42a206f882e3::t_fd11db7d74ea50 1-82
+governance/tools/storage-decision/examples/wave-workloads.json
+  s_dd42a206f882e3::t_7aed7c4cfe32be 1-50
+governance/tools/storage-decision/lib/index.mjs
+  s_dd42a206f882e3::t_9505a690b530ec 1-224
+governance/tools/storage-decision/tests/storage-decision.test.mjs
+  s_dd42a206f882e3::t_83c8a90df86ba4 1-105
+governance/tools/storage-decision/workload.schema.json
+  s_dd42a206f882e3::t_238e6136cc15f9 1-69
+governance/tools/storage-router/README.md
+  s_dd42a206f882e3::t_56087f24428494 1-92
+governance/tools/storage-router/bin/storage-router.mjs
+  s_dd42a206f882e3::t_4983503e4d72d9 1-85
+governance/tools/storage-router/examples/wave-knowledge.json
+  s_dd42a206f882e3::t_836bd4d5ab2f27 1-71
+governance/tools/storage-router/lib/index.mjs
+  s_dd42a206f882e3::t_4015c595038347 1-170
+governance/tools/storage-router/routing.schema.json
+  s_dd42a206f882e3::t_f66df9cd95d71d 1-43
+governance/tools/storage-router/tests/storage-router.test.mjs
+  s_dd42a206f882e3::t_96558510dc96e4 1-295
+governance/tools/teacher-engine/README.md
+  s_dd42a206f882e3::t_6b3f8f884c65d5 1-19
+governance/tools/teacher-engine/bin/teacher-engine.mjs
+  s_dd42a206f882e3::t_668fe0e8846d6c 1-23
+governance/tools/teacher-engine/examples/metering-scenario.json
+  s_dd42a206f882e3::t_acb397cf594e93 1-156
+governance/tools/teacher-engine/lib/index.mjs
+  s_dd42a206f882e3::t_1fe3b0adf24f51 1-71
+governance/tools/teacher-engine/package.json
+  s_dd42a206f882e3::t_f0ad10b82bbf90 1-8
+governance/tools/teacher-engine/tests/teacher-engine.test.mjs
+  s_dd42a206f882e3::t_eacf99713dd1fb 1-44
+governance/tools/teacher-review/README.md
+  s_dd42a206f882e3::t_6755b94cabadba 1-75
+governance/tools/teacher-review/bin/teacher-review.mjs
+  s_dd42a206f882e3::t_610e68a32c9565 1-95
+governance/tools/teacher-review/diagnosis.schema.json
+  s_dd42a206f882e3::t_1841c88ce5b1e9 1-69
+governance/tools/teacher-review/examples/finding-example.json
+  s_dd42a206f882e3::t_57d0bf68cb14bf 1-19
+governance/tools/teacher-review/examples/raw-finding-example.json
+  s_dd42a206f882e3::t_80f978fc3a29fd 1-8
+governance/tools/teacher-review/lib/index.mjs
+  s_dd42a206f882e3::t_c5b5f9103681c7 1-236
+governance/tools/teacher-review/package.json
+  s_dd42a206f882e3::t_3511c51ca605fc 1-33
+governance/tools/teacher-review/rubric.md
+  s_dd42a206f882e3::t_fe807782c05db4 1-67
+governance/tools/teacher-review/tests/teacher-review.test.mjs
+  s_dd42a206f882e3::t_c092e4d5636358 1-208
+governance/tools/time-lapse-store/README.md
+  s_dd42a206f882e3::t_a6b9f78dddc67e 1-101
+governance/tools/time-lapse-store/bin/timelapse.mjs
+  s_dd42a206f882e3::t_29be80a338f698 1-83
+governance/tools/time-lapse-store/examples/usage-timeline.json
+  s_dd42a206f882e3::t_e4e224211c56e8 1-64
+governance/tools/time-lapse-store/lib/index.mjs
+  s_dd42a206f882e3::t_2f5684f189b270 1-263
+governance/tools/time-lapse-store/store.schema.json
+  s_dd42a206f882e3::t_a9f18ec66383d8 1-47
+governance/tools/time-lapse-store/tests/timelapse.test.mjs
+  s_dd42a206f882e3::t_28b92d699b4810 1-200
+governance/tools/trust-runtime/README.md
+  s_dd42a206f882e3::t_9f8111e182de48 1-62
+governance/tools/trust-runtime/bin/trust-runtime.mjs
+  s_dd42a206f882e3::t_a2c16627ac9245 1-76
+governance/tools/trust-runtime/examples/wave-workload.json
+  s_dd42a206f882e3::t_9dc4d68565ec81 1-85
+governance/tools/trust-runtime/lib/index.mjs
+  s_dd42a206f882e3::t_b99d85831a4840 1-112
+governance/tools/trust-runtime/package.json
+  s_dd42a206f882e3::t_c069940003cf39 1-16
+governance/tools/trust-runtime/tests/trust-runtime.test.mjs
+  s_dd42a206f882e3::t_91eb6c81e4a023 1-166
+governance/tools/units-as-types/README.md
+  s_dd42a206f882e3::t_4232074fdc77d5 1-123
+governance/tools/units-as-types/bin/units-lint.mjs
+  s_dd42a206f882e3::t_c97b566d0be40e 1-75
+governance/tools/units-as-types/examples/gis-ops.json
+  s_dd42a206f882e3::t_3afb9ca9330ceb 1-38
+governance/tools/units-as-types/lib/index.mjs
+  s_dd42a206f882e3::t_e74418d1d850d7 1-202
+governance/tools/units-as-types/manifest.schema.json
+  s_dd42a206f882e3::t_102ca64ccb2ebe 1-53
+governance/tools/units-as-types/package.json
+  s_dd42a206f882e3::t_ce4057e851c047 1-15
+governance/tools/units-as-types/tests/units-as-types.test.mjs
+  s_dd42a206f882e3::t_107f77e9b68713 1-366
+governance/vendor/headroom/UPSTREAM-PIN.md
+  s_dd42a206f882e3::t_5358f0d2265366 1-179
+governance/vendor/headroom/scrape-2026-08-13/INDEX.md
+  s_dd42a206f882e3::t_b8f71a59997581 1-61
+governance/vendor/headroom/scrape-2026-08-13/section-api-reference.md
+  s_dd42a206f882e3::t_f9eb5dd0b717e8 1-148
+governance/vendor/headroom/scrape-2026-08-13/section-architecture-help-Architecture-Help-.md
+  s_dd42a206f882e3::t_292fdbcb3acdd0 1-257
+governance/vendor/headroom/scrape-2026-08-13/section-cli.md
+  s_dd42a206f882e3::t_73e841e3aead11 1-148
+governance/vendor/headroom/scrape-2026-08-13/section-compression-Compression-Reversible-Compression-.md
+  s_dd42a206f882e3::t_7d7c57acab5e55 1-437
+governance/vendor/headroom/scrape-2026-08-13/section-configuration-observability-Configuration-Observability-.md
+  s_dd42a206f882e3::t_f89b9d692f39fd 1-371
+governance/vendor/headroom/scrape-2026-08-13/section-context-memory-proxy-Cache-Context-Memory-Proxy-Server-.md
+  s_dd42a206f882e3::t_d25f586de4063a 1-456
+governance/vendor/headroom/scrape-2026-08-13/section-getting-started.md
+  s_dd42a206f882e3::t_c07ad4f36aeb19 1-416
+governance/vendor/headroom/scrape-2026-08-13/section-integrations.md
+  s_dd42a206f882e3::t_f0b307dd111c2a 1-229
+governance/vendor/headroom/scrape-2026-08-13/section-releases.md
+  s_dd42a206f882e3::t_add7b5c197ea60 1-170
+governance/vendor/headroom/scrape-2026-08-13/section-sdks-sdk-python-sdk-typescript-.md
+  s_dd42a206f882e3::t_df7a961505b516 1-256
+governance/vendor/headroom/scrape-2026-08-13/vendor-doppler-service-tokens.md
+  s_dd42a206f882e3::t_0d1453b29c88d2 1-66
+hooks/local-llm/ollama-agent-validator.sh
+  s_dd42a206f882e3::t_7001b516c633b6 51-73,84,89
+hooks/local-llm/ollama-helper.sh
+  s_dd42a206f882e3::t_b0c3127c9f3f4f 161-168
+hooks/tests/ollama-num-ctx.test.sh
+  s_dd42a206f882e3::t_8599756754f1f0 1-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "90a808e7024cbfa3c25ab05b12fa3c0b32f573bf",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

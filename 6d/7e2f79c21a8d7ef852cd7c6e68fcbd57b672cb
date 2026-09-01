@@ -1,0 +1,23 @@
+governance/lib/committed-not-scheduled.mjs
+  s_63c6ee080d73c3::t_92f053f53e217a 1-77
+governance/bin/committed-not-scheduled.mjs
+  s_63c6ee080d73c3::t_3512095be614a9 1-73
+governance/test/committed-not-scheduled.test.mjs
+  s_63c6ee080d73c3::t_9c352279fb8fd7 1-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6d7e2f79c21a8d7ef852cd7c6e68fcbd57b672cb",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

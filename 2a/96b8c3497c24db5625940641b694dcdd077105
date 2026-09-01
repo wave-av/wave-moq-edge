@@ -1,0 +1,41 @@
+docs/superpowers/specs/2026-08-02-auto-learning-runbooks-design.md
+  s_a293da4db5caf2::t_d9edbeff577550 120
+  s_a293da4db5caf2::t_bd291ac15ef1cf 142
+  s_a293da4db5caf2::t_6f64ea6c175616 230-231
+  s_a293da4db5caf2::t_142e4ae2a2a548 55
+  s_a293da4db5caf2::t_63f5e2b02cecdd 53
+  s_a293da4db5caf2::t_ea3774f5c184d4 210-211,213-228,232-234
+  s_a293da4db5caf2::t_f3fdf57daae77c 59
+  s_a293da4db5caf2::t_90323e1f55fce2 66
+  s_a293da4db5caf2::t_2cff340bb4d4f0 229
+  s_a293da4db5caf2::t_484529d4b1d861 140
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  s_a293da4db5caf2::t_733fa29f1a586a 43
+  s_a293da4db5caf2::t_9828cac10d9c70 14
+  s_a293da4db5caf2::t_c942b60095dbdf 168-174
+  s_a293da4db5caf2::t_f6e938f0991bca 70
+  s_a293da4db5caf2::t_c67edd1dc6ad4a 45
+  s_a293da4db5caf2::t_69b70886a067c4 160
+  s_a293da4db5caf2::t_8da63a1a1eb5eb 55
+  s_a293da4db5caf2::t_62d39656cafaf0 116
+  s_a293da4db5caf2::t_9977ad6090c9cf 73
+  s_a293da4db5caf2::t_73804312fd2cdb 77-78
+governance/plans/socratic-loop/ARTIFACTS.md
+  s_a293da4db5caf2::t_06d58a303df01e 45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2a96b8c3497c24db5625940641b694dcdd077105",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

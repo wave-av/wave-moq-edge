@@ -1,0 +1,34 @@
+hooks/tests/KNOWN-RED.txt
+  s_e2e3e43d0638c5::t_103a3aedf5a643 12-28
+hooks/tests/cccr_smoke_task_export.sh
+  s_e2e3e43d0638c5::t_20a4a5df3f128a 1-83
+hooks/task-export.sh
+  s_e2e3e43d0638c5::t_26f3255721d644 8-13
+hooks/tests/parked_tree_read_smoke.sh
+  s_e2e3e43d0638c5::t_1485d9a2dfa64f 132-146
+  s_e2e3e43d0638c5::t_8d92654570dbff 147-149
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_e2e3e43d0638c5::t_f0fe2d68862be1 48
+  s_e2e3e43d0638c5::t_56900f9f26cd1d 12-15,17-18
+  s_e2e3e43d0638c5::t_a22ad368390b93 3-7
+hooks/context-budget-warn.sh
+  s_e2e3e43d0638c5::t_37421aab343b61 71-77
+hooks/hooklib/hook.sh
+  s_e2e3e43d0638c5::t_b6e47d6bea836e 59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "55bc0e81a0e41b4e861489f8df5b56fbd49a6842",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

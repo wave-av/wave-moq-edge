@@ -1,0 +1,43 @@
+packages/spoke-chassis/src/pricing-route.ts
+  s_5363fdf5c1f38e::t_2b4318e6c53b4f 9,12-22,25-30,32-40,42-43
+packages/spoke-chassis/src/worker.ts
+  s_5363fdf5c1f38e::t_8c2a07d5c5a18d 96-100
+  s_5363fdf5c1f38e::t_8b21449eb41a57 63-67
+  s_5363fdf5c1f38e::t_0d4d9cb6918d2c 73-74
+  s_5363fdf5c1f38e::t_f1dfaccbef4038 225-230,233
+  s_5363fdf5c1f38e::t_1f89840407ab01 238-246
+  s_8152bca18f72ee::t_4bcc028f147555 95,247-249
+packages/spoke-chassis/src/pages.ts
+  s_5363fdf5c1f38e::t_3669e3090c4ada 193-194,197,203-220
+  s_5363fdf5c1f38e::t_1c115ca0276e4c 221
+packages/spoke-chassis/test/worker.test.mjs
+  s_5363fdf5c1f38e::t_1118a33d344927 138,148-151
+  s_5363fdf5c1f38e::t_0948c778cace9b 190,193-196,204-209
+  s_5363fdf5c1f38e::t_849c66abb34198 165,175-178,181-184
+  s_5363fdf5c1f38e::t_9f660dfe405790 210-213,215-271
+  s_8152bca18f72ee::t_98b300c50cff5b 214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "753cf31f315e41bf308e6f951c29c822f29d4587",
+  "prompts": {},
+  "sessions": {
+    "s_5363fdf5c1f38e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddacc6ddffe3hy6N5VTKIdoef",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

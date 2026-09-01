@@ -1,0 +1,21 @@
+bin/warm-models.mjs
+  s_7ddeb5d251570f::t_395a7c4d9497ec 1-84
+governance/test/warm-models.test.mjs
+  s_7ddeb5d251570f::t_44db9e787e6198 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dfe40d9598d32831a54c100293d4f3dfb73db8cc",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

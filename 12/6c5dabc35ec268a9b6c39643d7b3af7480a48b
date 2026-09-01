@@ -1,0 +1,25 @@
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_9435dd5041d1a1::t_15dd55942c1ca5 4
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_9435dd5041d1a1::t_970fb0f9e18bc9 4
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_9435dd5041d1a1::t_1c1847d2763db7 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_9435dd5041d1a1::t_72db0954cd5cf2 51-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "126c5dabc35ec268a9b6c39643d7b3af7480a48b",
+  "prompts": {},
+  "sessions": {
+    "s_9435dd5041d1a1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af2d6047b269b511a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

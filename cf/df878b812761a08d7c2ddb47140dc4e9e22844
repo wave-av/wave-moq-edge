@@ -1,0 +1,19 @@
+governance/test/pr-merge-classifier.test.mjs
+  s_db1b2a792e5f25::t_11bbcb96ec6187 45-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "cfdf878b812761a08d7c2ddb47140dc4e9e22844",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

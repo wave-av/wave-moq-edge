@@ -1,0 +1,16 @@
+capabilities/curated.json
+  h_67a1b847dc59d6 236
+capabilities/registry.json
+  h_67a1b847dc59d6 4,34,65,94,123,152,188,218,248,279,310,340,371,403,433,463,493,523,534,567,599,630,663,695,728,759,794,836,867,897,927,957,990,1023,1061,1105,1137,1174,1206,1237,1267
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7859ad7a516ca683df9c5e9e663aaeb8f6fb1bea",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

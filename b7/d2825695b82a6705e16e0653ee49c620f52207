@@ -1,0 +1,64 @@
+governance/plans/console-rebuild/E3-TRANSCRIBE.md
+  s_d9915bbafa9657::t_676e1c2eb4b9e5 1-48
+governance/plans/content-engine/E1-SSOT.md
+  s_d9915bbafa9657::t_b1369e1b825de7 1-53
+governance/plans/content-engine/NORTH-STAR.md
+  s_d9915bbafa9657::t_fcf991c5057be3 79,81-92
+  s_d9915bbafa9657::t_57b47975d2e5d0 1-2,5-28,31-32,38-40,66,69,71,75,77,96-106,110-131,136-138
+  s_c24357e71ae5bc::t_1ca7a93f850c6a 94
+governance/plans/content-engine/E8-WATCH.md
+  s_d9915bbafa9657::t_e87ad1bd21b54f 1-24
+governance/plans/console-rebuild/NORTH-STAR.md
+  s_d9915bbafa9657::t_776c6c4d2acdcb 1-129
+governance/plans/console-rebuild/E4-SETTINGS.md
+  s_d9915bbafa9657::t_75c7b5c0166ed5 1-3,5-58
+  s_d9915bbafa9657::t_8b61ef43fbc39b 4
+governance/plans/content-engine/E6-GATE.md
+  s_d9915bbafa9657::t_958e2c4c4dea00 1-30
+governance/plans/content-engine/E3-VERIFY.md
+  s_d9915bbafa9657::t_14ee519d4dec15 1-28
+governance/plans/content-engine/E4-GENERATE.md
+  s_d9915bbafa9657::t_4392974307c938 1-29
+governance/plans/console-rebuild/E1-DASHBOARD.md
+  s_d9915bbafa9657::t_283f5891de6e9b 1-58
+governance/plans/content-engine/E9-FLYWHEEL.md
+  s_d9915bbafa9657::t_adfbf7980b2be8 1-37
+governance/plans/content-engine/E5-DOGFOOD.md
+  s_d9915bbafa9657::t_59b92dd112104d 1-38
+governance/plans/content-engine/E2-JUDGE.md
+  s_d9915bbafa9657::t_a5a3f9fa4bdb4c 1-29
+governance/plans/content-engine/E7-SHIP-PROVE.md
+  s_d9915bbafa9657::t_697988f4574f79 1-24
+governance/plans/console-rebuild/E5-STUDIO-REMAINING.md
+  s_d9915bbafa9657::t_747c5bf06ef8b8 1-70
+governance/plans/console-rebuild/E2-LOGIN.md
+  s_d9915bbafa9657::t_66d9399657543a 1-43
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_1bfe752a0ad447 25
+governance/graph.json
+  s_d9915bbafa9657::t_d886c0d4a46ad2 2963,2965-2966,2968-3032,3036-3167,19833-19851,19854,19857,19860,19863,19866,19869,19872,19875,19878,19881,19884,19887-19888,19890,19893-19894,19896,19899-19917,19920,19923,19926,19929,19932-20010
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b7d2825695b82a6705e16e0653ee49c620f52207",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

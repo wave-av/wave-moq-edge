@@ -1,0 +1,16 @@
+tools/moq-client/cli.ts
+  h_af5ac1a9798224 142-158,193,253
+tools/moq-client/src/transport.ts
+  h_af5ac1a9798224 97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "00985be0340a8a099206848248bcac51986f21bd",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

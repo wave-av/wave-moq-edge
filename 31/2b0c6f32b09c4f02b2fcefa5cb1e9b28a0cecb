@@ -1,0 +1,21 @@
+scripts/fleet-loop.test.ts
+  s_4aa36284d4ce33::t_0071aac0625f3c 158-159
+  s_4aa36284d4ce33::t_920a4f3ab6f86b 67-78
+  s_4aa36284d4ce33::t_304dcf659434d5 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "312b0c6f32b09c4f02b2fcefa5cb1e9b28a0cecb",
+  "prompts": {},
+  "sessions": {
+    "s_4aa36284d4ce33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0daaba5-d592-4b63-9e95-e8967f0b7542",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

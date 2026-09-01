@@ -1,0 +1,20 @@
+.github/workflows/hook-tests.yml
+  s_02abc74f4971c7::t_3458031aaa3ff3 209-220,222-223
+  s_02abc74f4971c7::t_74caff9a6b5c27 221
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c371c2c2e94b6c94bdf6907c781e34070bef88b7",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

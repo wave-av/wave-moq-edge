@@ -1,0 +1,35 @@
+governance/plans/search-launch/NORTH-STAR.md
+  s_6046880c148371::t_20fcfced7cc9c1 3-36
+  s_6046880c148371::t_4fd0c599bfe47d 1-2
+governance/plans/search-launch/E1-DOCS.md
+  s_6046880c148371::t_2b16bc3af642a1 2-27
+  s_6046880c148371::t_4ec1e4b8c998d8 1
+governance/plans/search-launch/E2-OPENAPI.md
+  s_6046880c148371::t_043debcbd178f8 2-22
+  s_6046880c148371::t_af183a6599e935 1
+governance/plans/search-launch/E4-GA.md
+  s_6046880c148371::t_d84d9ab9e25aa3 2-22
+  s_6046880c148371::t_3527e29900e69a 1
+governance/plans/search-launch/E0-LANDING.md
+  s_6046880c148371::t_ce6902f0d8b373 2-22
+  s_6046880c148371::t_d5ef64ebc23fec 1
+governance/plans/search-launch/E3-WOW.md
+  s_6046880c148371::t_1e771715187931 2-22
+  s_6046880c148371::t_15668bed2c6484 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cd75cf954f3d6aacf23c2615da49ee6f617f6f7b",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

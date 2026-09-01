@@ -1,0 +1,24 @@
+governance/bin/vendor-scoreboard-sync.mjs
+  s_0b685a966fd660::t_de830d18992d0d 135
+  s_0b685a966fd660::t_4fb2323286e45e 1-134,136-267
+governance/test/vendor-scoreboard-sync.test.mjs
+  s_0b685a966fd660::t_916e3930647f7f 302
+  s_0b685a966fd660::t_08ad98ec760f01 1-7,9-301,303-402
+  s_0b685a966fd660::t_ab95731172e5dc 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "840b320e5320f9aa9b6b5a30eb218d8688a67a6e",
+  "prompts": {},
+  "sessions": {
+    "s_0b685a966fd660": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fce00ec43ffeTUV6Gk3eL5n2aY",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

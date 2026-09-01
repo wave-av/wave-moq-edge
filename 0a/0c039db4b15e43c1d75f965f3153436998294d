@@ -1,0 +1,27 @@
+scripts/agent_deps.py
+  s_3a52a0989b58af::t_f82a79c90e1a58 1-358
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_e7f8a2b16afc82 180
+  s_3a52a0989b58af::t_28530b9637bd92 94-98
+  s_3a52a0989b58af::t_0a393886be1330 93
+  s_3a52a0989b58af::t_e38085a2d685b4 181-182,184
+  s_3a52a0989b58af::t_de15045561dfb7 187
+tests/test_agent_deps.py
+  s_3a52a0989b58af::t_e1482e52c6adec 1-195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0a0c039db4b15e43c1d75f965f3153436998294d",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}

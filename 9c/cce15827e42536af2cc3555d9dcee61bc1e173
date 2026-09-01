@@ -1,0 +1,40 @@
+governance/lib/pr-check-health-required-set.mjs
+  s_6f6453b23e3805::t_145693ba879dc4 1-56
+governance/test/pr-check-health.test.mjs
+  s_6f6453b23e3805::t_88b7ef2fe8e7e6 228,231-240
+governance/lib/pr-check-health-fetch.mjs
+  s_6f6453b23e3805::t_b4423654b7f65a 200-215
+  s_6f6453b23e3805::t_a9ab9c16dcd16b 151-157
+governance/lib/pr-check-health.mjs
+  s_6f6453b23e3805::t_2c2a2688bfcdf8 139-154,156-163
+  s_6f6453b23e3805::t_5d568200a663fa 3-26
+  s_6f6453b23e3805::t_387f1d65c4371b 176-183,186-188
+  s_905b476a4c2777::t_63927a6179ead2 94-97
+governance/test/pr-check-health-review-fixes.test.mjs
+  s_6f6453b23e3805::t_34b680146b6457 33-55
+  s_6f6453b23e3805::t_52537b8d07d2a5 77-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ccce15827e42536af2cc3555d9dcee61bc1e173",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_905b476a4c2777": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab520dfb402c792a8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

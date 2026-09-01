@@ -1,0 +1,23 @@
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_0227926428e4b1::t_fd832fe1e6b539 27-28
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  s_0227926428e4b1::t_a1b4611b6af2a4 28-29
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_0227926428e4b1::t_6db0f5b13add06 17-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2c5edb81deffcca6ead18418585744ec516ca2dd",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

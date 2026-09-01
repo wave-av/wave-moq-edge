@@ -1,0 +1,25 @@
+governance/bin/plan-lint.mjs
+  s_9041cf1cf1ccad::t_7b0d64352163e9 312-321
+  s_9041cf1cf1ccad::t_cad9794d4b4fea 29
+governance/lib/stray-work-node-sweep.mjs
+  s_9041cf1cf1ccad::t_c52ef9ac7dc98c 47-49
+  s_9041cf1cf1ccad::t_69635e59eeed7a 1-46,50-53
+governance/test/plan-lint.test.mjs
+  s_9041cf1cf1ccad::t_76a1c48b2b2052 215-227
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f21c99c69174c50136eac6af2603cb2c05d3ce0a",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

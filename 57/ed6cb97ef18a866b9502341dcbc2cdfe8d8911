@@ -1,0 +1,19 @@
+governance/plans/receipts/E1-P1-cf-sandbox-substrate-2026-07-05.md
+  s_f9ff6dc10be18e::t_65295c3046c28e 1-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "57ed6cb97ef18a866b9502341dcbc2cdfe8d8911",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+src/moq-relay.ts
+  s_68ec745f9a88c7::t_66285e5f1ba36e 272-288
+  s_68ec745f9a88c7::t_ac8f170ed65749 22-23
+__tests__/moq-subgroup-transport-hookup.test.ts
+  s_68ec745f9a88c7::t_edf26723b5739e 1-217
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5f4870cdc9f70b26081a93a1bac0cb33849f7703",
+  "prompts": {},
+  "sessions": {
+    "s_68ec745f9a88c7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff010d298ffeY215P4kXudxIWs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

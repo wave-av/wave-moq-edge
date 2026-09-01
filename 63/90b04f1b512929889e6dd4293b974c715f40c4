@@ -1,0 +1,21 @@
+governance/bin/review-liveness.mjs
+  s_9bb1b1d1d998d4::t_554b8d2cb250eb 237-239,242
+  s_9bb1b1d1d998d4::t_2383051abb06c7 255-256
+  s_9bb1b1d1d998d4::t_46781fd5fd93b3 232-235
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6390b04f1b512929889e6dd4293b974c715f40c4",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/test/browser-receipt-identity.test.mjs
+  s_9bb1b1d1d998d4::t_8b629a4d05ca6a 1-138
+governance/lib/browser-receipt-identity.mjs
+  s_9bb1b1d1d998d4::t_4d21b5d56b89f4 1-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ac33b4c77cef4bbd709884ee4a0cb27fc61d9c89",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+hooks/tests/resolve-transcript.test.sh
+  s_375efeac18ed55::t_76b881d91d3beb 1-110
+hooks/lib/resolve-transcript.sh
+  s_375efeac18ed55::t_3be959cca648e7 1-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "221c06ceb8f33b12317b02f4b87026a534d60177",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

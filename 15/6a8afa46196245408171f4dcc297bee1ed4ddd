@@ -1,0 +1,25 @@
+frameworks/gates/test-sync-public-depcheck.sh
+  s_be40541f6fd98b::t_0dafafa189f896 32,34
+  s_be40541f6fd98b::t_17dd506545df57 96-104
+  s_be40541f6fd98b::t_23e093d1a66832 44,46,48
+  s_be40541f6fd98b::t_49b000d654c48b 55-56
+scripts/sync-public.sh
+  s_be40541f6fd98b::t_c70cb488dfc0fa 270
+  s_be40541f6fd98b::t_90e6e95ea1c53e 234
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "156a8afa46196245408171f4dcc297bee1ed4ddd",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

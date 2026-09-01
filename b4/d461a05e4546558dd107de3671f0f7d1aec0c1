@@ -1,0 +1,30 @@
+governance/bin/fleet/lib/gateway-parity-classify.mjs
+  s_15127d80763110::t_74a48db1a03ac6 43-44
+  s_15127d80763110::t_30df7b9a18656c 80-84
+  s_15127d80763110::t_ae243b7dff6e46 34
+  s_15127d80763110::t_d970514fe2f3fa 134-143,148
+governance/bin/fleet/lib/gateway-parity-spokes.mjs
+  s_15127d80763110::t_acfb69dd76d2c3 1,3-4,6-10,12-36,38,54-55,61-62,69-70,77-86,93-100,102,107-108,110,113-121,123,127
+governance/test/gateway-secret-parity.test.mjs
+  s_15127d80763110::t_fa6bc4bf92c1fa 96-136
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_15127d80763110::t_b46d8da5c5f3ac 110
+  s_15127d80763110::t_bb6ae7894cc75c 63-67
+  s_15127d80763110::t_e78da19db5f401 139,147,149,167,172-173
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b4d461a05e4546558dd107de3671f0f7d1aec0c1",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

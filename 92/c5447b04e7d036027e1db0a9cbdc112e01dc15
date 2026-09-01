@@ -1,0 +1,55 @@
+governance/test/launchd-cron-ordering.test.mjs
+  s_941b8f0612ec3e::t_5908a72bc3b987 1-211
+governance/lib/drill-fixtures-launchd-cron-parity.mjs
+  s_941b8f0612ec3e::t_bbf6cf3d8d8135 87-132,143-150
+governance/bin/launchd-cron-parity-lint.mjs
+  s_941b8f0612ec3e::t_7008d5fe178e44 171-175
+  s_941b8f0612ec3e::t_de33e82fc91be5 185-205
+  s_941b8f0612ec3e::t_acbe3af3f8fb5c 287-288
+governance/lib/launchd-cron-parity-plan.mjs
+  s_941b8f0612ec3e::t_c8ec3488358dde 30-31
+  s_941b8f0612ec3e::t_8f82667c8cc4ed 167-170
+  s_941b8f0612ec3e::t_ba83996e56609b 177
+  s_941b8f0612ec3e::t_4139239e4496c1 294-299
+  s_941b8f0612ec3e::t_db3764c35a5864 206-211
+governance/test/cron-failover-witness.test.mjs
+  s_941b8f0612ec3e::t_40ae773d9ae202 265-271
+  s_941b8f0612ec3e::t_2ef0f8f0b81d91 288-292
+governance/lib/cron-failover-jobmatch.mjs
+  s_941b8f0612ec3e::t_6622f4ce867fba 159-185
+governance/lib/launchd-cron-ordering.mjs
+  s_941b8f0612ec3e::t_6684b6dc923ed8 108-198
+  s_941b8f0612ec3e::t_4ddf3850e2dbf9 229-272
+governance/ops/launchd/cron-manifest.json
+  s_0227926428e4b1::t_75119c86fa8074 4-5
+governance/test/launchd-cron-parity-fixtures.mjs
+  s_941b8f0612ec3e::t_8dde49a96040cd 1-26
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_941b8f0612ec3e::t_e443a976e74d3a 1,3-8,18,23-40,42,163,220
+governance/test/launchd-cron-parity-plan.test.mjs
+  s_941b8f0612ec3e::t_d5850c7a197a31 1-176
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "92c5447b04e7d036027e1db0a9cbdc112e01dc15",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

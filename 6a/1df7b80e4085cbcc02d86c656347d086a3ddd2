@@ -1,0 +1,37 @@
+src/moq-scheduler.ts
+  s_e6078d1cce67dd::t_029b26bb2d6cd4 1-45
+moq-session-do.ts
+  s_e6078d1cce67dd::t_2e6d9f63e52c01 361-365
+  s_e6078d1cce67dd::t_b5f18525f17272 129-131
+  s_e6078d1cce67dd::t_e79c7760064aea 53
+src/moq-wire.ts
+  s_e6078d1cce67dd::t_60c5459a095850 504-518
+__tests__/moq-deadline-scheduler.test.ts
+  s_e6078d1cce67dd::t_29b8020e2b2ee4 78,80-84,86-88
+  s_e6078d1cce67dd::t_7f7baf9e229b45 1-77,79,85,89-221
+CHANGELOG.md
+  s_e6078d1cce67dd::t_2eca03c63322ae 10-21
+src/moq-relay.ts
+  s_e6078d1cce67dd::t_d5428551b7f7a1 68-76
+  s_e6078d1cce67dd::t_3da46c1122e33a 39
+  s_e6078d1cce67dd::t_92a329dd09cc99 100-106,109
+  s_e6078d1cce67dd::t_8c4685e64a03db 264,270,272-285,288,290-294,296,317-355
+  s_e6078d1cce67dd::t_b372dc76b9cf30 286-287
+  s_e6078d1cce67dd::t_445e665c080f04 356
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6a1df7b80e4085cbcc02d86c656347d086a3ddd2",
+  "prompts": {},
+  "sessions": {
+    "s_e6078d1cce67dd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffa3c50b1ffeSnqtfGmGGk2EtE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

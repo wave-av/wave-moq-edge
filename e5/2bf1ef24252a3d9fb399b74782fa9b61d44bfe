@@ -1,0 +1,29 @@
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-19.md
+  s_37d3f61160b2dd::t_524d1ed9a242a1 6-7,9-12,21-24,30-34,40-47,50-63,71-77
+memory/fleet-todo-ledger.md
+  s_53b49eff5b8c5d::t_58c4539e013fa9 7,295,396,420,484
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e52bf1ef24252a3d9fb399b74782fa9b61d44bfe",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

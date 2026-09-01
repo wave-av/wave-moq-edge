@@ -1,0 +1,21 @@
+governance/test/blast-radius-file-source.test.mjs
+  s_d46122ac53ac6f::t_d619ad0e18c8c3 208-221
+.github/actions/blast-radius-classify/action.yml
+  s_d46122ac53ac6f::t_ceb790d41b5962 135-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fe708a2a55bafe765b5fb5dfbb84c8c6aaeaa76e",
+  "prompts": {},
+  "sessions": {
+    "s_d46122ac53ac6f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5b1e6300-3f2d-46a2-9206-17f5f04551a8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

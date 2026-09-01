@@ -1,0 +1,42 @@
+governance/plans/console-rebuild/epic.md
+  s_15127d80763110::t_78d04d3364323d 6-341
+  s_15127d80763110::t_990d3c624a2601 3-5
+  s_d9915bbafa9657::t_870e80ae1bb02b 1-2
+governance/plans/brand-recycle/CONSOLE-FAILURES.md
+  s_15127d80763110::t_404128f42ad7b3 38-40
+  s_15127d80763110::t_4d31e90bbad1c4 66-71
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_15127d80763110::t_b42532d7b3b80d 4-10
+governance/DASHBOARD.md
+  s_15127d80763110::t_40f932a5ea3c7d 25
+governance/graph.json
+  s_15127d80763110::t_03cf42ec83a706 2858-2870,18590-18595,18992-19057
+governance/plans/brand-recycle/comps/dashboard-v2.html
+  s_15127d80763110::t_aff2c8c3576864 1-481
+governance/plans/brand-recycle/comps/pages-v2.html
+  s_15127d80763110::t_0fc1d8138f7318 1-474
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d9dd4e798335b4b679105745af680db22ec41f17",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

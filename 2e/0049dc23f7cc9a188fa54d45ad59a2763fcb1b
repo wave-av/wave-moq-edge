@@ -1,0 +1,19 @@
+governance/tools/load-shedder/tests/load-shedder.test.mjs
+  s_6a908cb0f02788::t_2725a1e4883808 114-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2e0049dc23f7cc9a188fa54d45ad59a2763fcb1b",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

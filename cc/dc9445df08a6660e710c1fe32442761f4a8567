@@ -1,0 +1,30 @@
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  s_941b8f0612ec3e::t_a596379ff56446 34-58
+  s_941b8f0612ec3e::t_f110c51c46c817 86-99,101-102
+  s_941b8f0612ec3e::t_3c3845eec4d0de 83-85
+  s_d9915bbafa9657::t_c9e669b6462cfb 80-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ccdc9445df08a6660e710c1fe32442761f4a8567",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

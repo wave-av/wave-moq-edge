@@ -1,0 +1,21 @@
+.github/workflows/checks.yml
+  s_6a908cb0f02788::t_2f909eaac98c0a 1339-1343
+frameworks/copywriting/copy-checker.sh
+  s_6a908cb0f02788::t_9cc419eea89071 88-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8bc36b319af3497b93ba80d0a8030a591f62fb0e",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

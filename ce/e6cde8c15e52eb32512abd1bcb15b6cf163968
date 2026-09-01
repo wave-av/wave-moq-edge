@@ -1,0 +1,23 @@
+bin/worktree-reaper.mjs
+  s_988c7e7e1e8348::t_2cafa62dff141b 138-140
+  s_988c7e7e1e8348::t_24fd874bfae3f1 1-108,114-126,133-137,141-218
+  s_988c7e7e1e8348::t_33409aa202fb90 109-113
+  s_988c7e7e1e8348::t_610fa776c381fc 127-131
+  s_988c7e7e1e8348::t_a01d18adb4934d 132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cee6cde8c15e52eb32512abd1bcb15b6cf163968",
+  "prompts": {},
+  "sessions": {
+    "s_988c7e7e1e8348": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0020a7c0effes8bvjw6c08W0aK",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

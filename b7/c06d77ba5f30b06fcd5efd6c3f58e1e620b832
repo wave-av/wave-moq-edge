@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E9-MEDIA-WINS.md
+  s_124891ed63801b::t_630577caff6bf9 10-16
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_6a8e9245e6db4d 79-84
+governance/plans/ffmpeg9-lei/action/E9-P2-THUMBNAIL-PRODUCT.md
+  s_124891ed63801b::t_fe41ba7b2356e5 1-181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b7c06d77ba5f30b06fcd5efd6c3f58e1e620b832",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

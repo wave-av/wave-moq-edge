@@ -1,0 +1,19 @@
+.github/workflows/champion-ci.yml
+  s_12cf2d8cd52b06::t_a335283ff24e48 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e021242562b0a0db586163c26fe69dada13f1e0d",
+  "prompts": {},
+  "sessions": {
+    "s_12cf2d8cd52b06": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcabe28c4ffekMHyCrlGhYfHoA",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+agents/lean-delegator.md
+  s_96280c922a9418::t_b612565b9d29a0 1-19
+agents/lean-scout.md
+  s_96280c922a9418::t_40b01629a88f58 4
+governance/bin/derived-artifact-drift-audit.mjs
+  s_96280c922a9418::t_2c0d3911be7f03 43-45,96-99
+governance/bin/gam-conformance.mjs
+  s_96280c922a9418::t_b2ed55b66230d5 95-103
+governance/bin/model-router.mjs
+  s_96280c922a9418::t_55d0c3c19a9787 51-62
+governance/lib/generated-banner.mjs
+  s_96280c922a9418::t_49d5042f7b3fbb 1-85
+governance/plans/E13-CLAUDE-CONFIG-GOVERNANCE.md
+  s_96280c922a9418::t_0e43e8018fc717 28
+governance/plans/NESTED-DISPATCH-ECONOMY.md
+  s_96280c922a9418::t_50813e6cef51f8 1-198
+governance/recall/answerability.mjs
+  s_96280c922a9418::t_3e0a3ffc742067 1-80
+governance/runbooks/restore-branch-protection.sh
+  s_96280c922a9418::t_f9b020283bcc1a 8-31,66-103,152-156,161-164
+governance/test/generated-banner.test.mjs
+  s_96280c922a9418::t_0356be628f2fcc 1-80
+governance/test/model-router-enforce.test.mjs
+  s_96280c922a9418::t_8cd4e0bf49a494 60-63,65,109,113
+governance/test/model-router.test.mjs
+  s_96280c922a9418::t_c84422ee01a8cc 8,10-11
+governance/test/never-squash-law.test.mjs
+  s_96280c922a9418::t_4deb379b8b7952 1-218
+governance/test/recall-answerability.test.mjs
+  s_96280c922a9418::t_4bbedddf3f231a 1-80
+governance/test/recall-regression.test.mjs
+  s_96280c922a9418::t_8d19feca14ac0a 8,47,55-69,73-75,85,90-99,104,126
+hookcli/bin/hookcli
+  s_96280c922a9418::t_8a9c58cd679c17 40-53,183,188,204,248,283,291,373
+hookcli/lib/rules-version.sh
+  s_96280c922a9418::t_f2a3b61d7db641 1-62
+hookcli/lib/t3-git.mjs
+  s_96280c922a9418::t_53cea806628589 60-68,70-71,169
+hookcli/rules/rules.json
+  s_96280c922a9418::t_a5095be585d7f6 287-305
+hookcli/tests/plan-receipt.sh
+  s_96280c922a9418::t_22301e1c6c1486 86-87,91-93
+hookcli/tests/require.sh
+  s_96280c922a9418::t_b00255f4b727c3 68,71,73-75
+hookcli/tests/rules-version.sh
+  s_96280c922a9418::t_4deb2cf6f8cd1a 1-107
+hookcli/tests/run.sh
+  s_96280c922a9418::t_bd68d07819379b 187-192
+hookcli/tests/t3-classifier-git.sh
+  s_96280c922a9418::t_2976c1a8fd3227 30-32,36-37,146-152
+rules/never-squash-merge-keep-history.md
+  s_96280c922a9418::t_93b378c0f0277c 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "8917d556746059f61307bb0743e665612a0707e1",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

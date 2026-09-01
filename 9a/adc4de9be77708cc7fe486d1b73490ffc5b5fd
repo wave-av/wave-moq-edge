@@ -1,0 +1,19 @@
+scaffolder/public-repo-guard/public-repo-guard.yml
+  s_c24357e71ae5bc::t_912d6a69818919 43-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9aadc4de9be77708cc7fe486d1b73490ffc5b5fd",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

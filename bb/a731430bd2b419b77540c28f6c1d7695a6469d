@@ -1,0 +1,30 @@
+governance/gam-port-kit/manifest.json
+  s_52031f4510959b::t_64c3490b5c3853 19-20
+governance/config/gam-author-allowlist.json
+  s_52031f4510959b::t_a0a82f23f5235b 1-6
+governance/lib/gam-workflow-checks.mjs
+  s_52031f4510959b::t_c3391c59d11686 83-96
+governance/test/gam-author-gate.test.mjs
+  s_52031f4510959b::t_799c41367e3c0f 1-81
+.github/workflows/auto-merge.yml
+  s_52031f4510959b::t_8ffb5a1accb66a 312-339
+governance/test/gam-workflow-checks.test.mjs
+  s_52031f4510959b::t_d3b86bc06dfc48 66-75
+  s_52031f4510959b::t_77d2a42543b96b 124-126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "bba731430bd2b419b77540c28f6c1d7695a6469d",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

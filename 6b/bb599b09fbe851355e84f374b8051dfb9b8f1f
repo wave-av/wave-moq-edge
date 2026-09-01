@@ -1,0 +1,21 @@
+governance/test/model-stale.test.mjs
+  s_7ddeb5d251570f::t_18bd1481a02f5d 1-28
+bin/model-stale.mjs
+  s_7ddeb5d251570f::t_3753b47ea7733e 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6bbb599b09fbe851355e84f374b8051dfb9b8f1f",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

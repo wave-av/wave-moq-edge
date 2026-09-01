@@ -1,0 +1,42 @@
+governance/recall/BAKE-OFF.md
+  s_c24357e71ae5bc::t_57ced0ce350e34 74,80,83-84,88-90,92,94-95,97-109
+  s_c4dedeede8fb9d::t_da01f8b49d0543 55,57,59-60,207
+governance/plans/metronome-m-phases/E3-BILLING-AUTHORITY-FLIP.md
+  s_c24357e71ae5bc::t_b1f0c7598f4cc1 4
+governance/plans/metronome-m-phases/E4-WEBHOOK-GOLIVE.md
+  s_c24357e71ae5bc::t_fe53f3564a53f6 4
+governance/recall/eval/repo-corpus.manifest.json
+  s_63c6ee080d73c3::t_c698a231e57942 110,244-245,249-250,253,256,618
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "65eb04ad38f52183c8a2090003cc623dd6d1dcd0",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c4dedeede8fb9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae4aeae9dafde9f00",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

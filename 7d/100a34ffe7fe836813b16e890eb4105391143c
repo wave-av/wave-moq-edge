@@ -1,0 +1,47 @@
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  s_f9ff6dc10be18e::t_b60c74c771f46b 1-30
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  s_f9ff6dc10be18e::t_625298c4d33065 1-16
+governance/plans/sandbox-tier-ladder/E4-EVAL-CONSUMER.md
+  s_f9ff6dc10be18e::t_a24c82c304ab3f 1-10
+governance/plans/eve-audit/E-CHAN.md
+  s_f9ff6dc10be18e::t_78439626900649 1-10
+governance/plans/eve-audit/E-DUR.md
+  s_f9ff6dc10be18e::t_23f88fa109cada 1-10
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  s_f9ff6dc10be18e::t_5f1bb903ca6518 1-10
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  s_f9ff6dc10be18e::t_8be2d79be1a225 1-36
+governance/plans/sandbox-tier-ladder/E2-TIER2-MICROVM.md
+  s_f9ff6dc10be18e::t_bf7e2004584054 1-34
+governance/plans/sandbox-tier-ladder/E5-DEVERCEL.md
+  s_f9ff6dc10be18e::t_ab24e999af7789 1-35
+governance/plans/eve-audit/E-CONN.md
+  s_f9ff6dc10be18e::t_3bfc2fb2d0b9d9 1-10
+governance/plans/eve-audit/E-OTEL.md
+  s_f9ff6dc10be18e::t_837cf9d649612d 1-10
+governance/plans/eve-audit/E0-AUDIT-HARNESS.md
+  s_f9ff6dc10be18e::t_7f2a82c6d6daba 1-10
+governance/plans/eve-audit/E-DIR.md
+  s_f9ff6dc10be18e::t_aa568443345be9 1-10
+governance/plans/eve-audit/NORTH-STAR.md
+  s_f9ff6dc10be18e::t_bd7274dd793f3f 1-23
+governance/graph.json
+  s_f9ff6dc10be18e::t_77159eae2940d1 1983-2073,2321-2411,10678-10779,11272-11415
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7d100a34ffe7fe836813b16e890eb4105391143c",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

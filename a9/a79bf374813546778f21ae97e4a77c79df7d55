@@ -1,0 +1,26 @@
+governance/lib/file-size-tiers.mjs
+  s_0227926428e4b1::t_1481979027403c 51-60,67-68
+governance/test/file-size-tiers.test.mjs
+  s_0227926428e4b1::t_d3562ad8cda72a 54-69
+  s_0227926428e4b1::t_836a7c305f2af7 193-197,200-201
+hooks/file-authoring-gate.sh
+  s_0227926428e4b1::t_1636859b1503aa 102-104,107-108
+hooks/manifest.json
+  s_0227926428e4b1::t_5fcacf9d8fc243 547
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a9a79bf374813546778f21ae97e4a77c79df7d55",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

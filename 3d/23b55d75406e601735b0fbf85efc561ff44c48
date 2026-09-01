@@ -1,0 +1,23 @@
+governance/plans/brand-recycle/E-CANON.md
+  s_15127d80763110::t_babd6c155837de 9-11
+governance/plans/brand-recycle/DR-THEME-3.md
+  s_15127d80763110::t_09a4ea7a272f38 1-52
+governance/DASHBOARD.md
+  s_15127d80763110::t_cc4e536b80468f 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3d23b55d75406e601735b0fbf85efc561ff44c48",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

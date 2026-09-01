@@ -1,0 +1,77 @@
+packages/spoke-chassis/dist/worker.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/chassis.css.d.ts
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/worker.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages-discovery.d.ts
+  s_6c1c1be138dfd4::t_88eb87834f585c 3
+packages/spoke-chassis/dist/nav.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/chassis.css.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/src/chassis.css.ts
+  s_6c1c1be138dfd4::t_0d6672af85cdac 60-64
+packages/spoke-chassis/dist/shell.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 61,83
+packages/spoke-chassis/dist/index.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 36-43
+packages/spoke-chassis/dist/seo.d.ts
+  s_6c1c1be138dfd4::t_88eb87834f585c 7
+packages/spoke-chassis/dist/nav.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 15-17,27,45,107-109,112,116-125,127,130,133-135,167,243
+packages/spoke-chassis/dist/nav.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/shell.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/chassis.css.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 59-63
+packages/spoke-chassis/dist/index.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/index.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages-discovery.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages-discovery.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 37-49,51
+packages/spoke-chassis/dist/worker.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 20,48-57,170-173,209
+packages/spoke-chassis/dist/chassis.css.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/seo.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/index.d.ts
+  s_6c1c1be138dfd4::t_88eb87834f585c 16-18
+packages/spoke-chassis/dist/shell.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/package.json
+  s_6c1c1be138dfd4::t_83540883f8b807 3
+packages/spoke-chassis/dist/seo.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 46-50,71
+packages/spoke-chassis/dist/pages-discovery.js
+  s_6c1c1be138dfd4::t_88eb87834f585c 15-35
+packages/spoke-chassis/dist/seo.d.ts.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+packages/spoke-chassis/dist/pages.js.map
+  s_6c1c1be138dfd4::t_88eb87834f585c 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "17036010fe2bcb88de2d6aa7998711ab567208a2",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

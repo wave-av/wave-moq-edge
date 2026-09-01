@@ -1,0 +1,35 @@
+governance/plans/receipts/P1-baseline-efficient-frontier.md
+  s_8e1dda491d42a2::t_53720d7d21f405 3
+governance/plans/receipts/capability-audit-2026-07-03.md
+  s_8e1dda491d42a2::t_07513fd77cb0de 3
+governance/plans/receipts/code-mode-proof.md
+  s_8e1dda491d42a2::t_238d0434524ef7 3
+governance/plans/receipts/efficient-frontier-quality-ab-2026-06-29.md
+  s_8e1dda491d42a2::t_5400d730ee2a88 3
+governance/plans/receipts/enforcement-coverage-audit-2026-06-29.md
+  s_8e1dda491d42a2::t_38c6dfea2b4227 3
+governance/plans/receipts/lawbook-search-proof.md
+  s_8e1dda491d42a2::t_e16f9e4756cfd8 3
+governance/plans/receipts/ollama-ask-proof.md
+  s_8e1dda491d42a2::t_a6348e3b3538f5 3
+governance/plans/receipts/ollama-route-proof.md
+  s_8e1dda491d42a2::t_fb94892d15471c 3
+governance/plans/receipts/seed-regression-skill-load-blowout.md
+  s_8e1dda491d42a2::t_e0cdee3b967b16 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3037d47759c18777934a9e57727c53d7d8244bee",
+  "prompts": {},
+  "sessions": {
+    "s_8e1dda491d42a2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_8e1dda491d42a2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

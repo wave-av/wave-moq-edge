@@ -1,0 +1,19 @@
+hooks/manifest.json
+  s_60a20469ef4369::t_0d6fdf9a91f80b 63,401,506,821
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "083f47f4610b5a30aad55d22058e61f91a5d4c03",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

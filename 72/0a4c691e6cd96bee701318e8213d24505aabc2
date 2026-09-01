@@ -1,0 +1,23 @@
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_85d9e5f433b9aa::t_7ea18c6df66063 128-133
+governance/lib/wave-sec-severity.mjs
+  s_85d9e5f433b9aa::t_27a04b86c2359c 31-34
+governance/test/wave-sec-severity.test.mjs
+  s_85d9e5f433b9aa::t_ee7f7068e291f3 54-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "720a4c691e6cd96bee701318e8213d24505aabc2",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

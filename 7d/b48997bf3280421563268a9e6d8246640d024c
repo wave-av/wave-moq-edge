@@ -1,0 +1,28 @@
+governance/lib/enforce-suppression.mjs
+  s_d9915bbafa9657::t_0b038521be3943 55-59,66
+  s_d9915bbafa9657::t_01be7f17277427 1-54,60-65,67-68
+governance/test/enforce-suppression.test.mjs
+  s_d9915bbafa9657::t_fbee10c014496d 1-17,24-123
+  s_d9915bbafa9657::t_7037e622d89eb5 18-23
+governance/lib/ramp-detectors.mjs
+  s_d9915bbafa9657::t_40f30303089c5d 125
+  s_d9915bbafa9657::t_524f8760f3e659 16-20
+  s_d9915bbafa9657::t_552e3b4640c830 106
+  s_d9915bbafa9657::t_86db6da5c02efb 209
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7db48997bf3280421563268a9e6d8246640d024c",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

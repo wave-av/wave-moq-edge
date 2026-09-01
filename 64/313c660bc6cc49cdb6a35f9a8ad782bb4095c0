@@ -1,0 +1,119 @@
+governance/bin/check.mjs
+  s_3175b77ffc13f2::t_ffe93d4c3636e5 153-161
+governance/bin/gate-liveness-drill.mjs
+  s_4b86428543fda7::t_75d6a19c777d94 51,123-124,134
+governance/bin/launchd-cron-parity-lint.mjs
+  s_4b86428543fda7::t_2edb391fbeac94 5-9,14-15,28-29,76-78,107-112,139,175-176
+governance/bin/launchd-twin-liveness.mjs
+  s_4b86428543fda7::t_8cf5cff507e03c 1-199
+governance/graph.json
+  s_48b0f422701dc2::t_cee6ce9d9785c2 3075,7581,7583,7632-7633,7635,7674,7684-7687,21291-21296,30785,30787,30791,30793,30797,30799
+governance/lib/drill-fixtures-launchd-twin-liveness.mjs
+  s_4b86428543fda7::t_71c6fc51bd4562 1-78
+governance/lib/drill-inline-required.mjs
+  s_4b86428543fda7::t_0eb8e03c0d8933 28-35
+governance/lib/launchd-cron-parity-plan.mjs
+  s_4b86428543fda7::t_6c324fa381e0ce 23-33,93-116,118,124,134-138
+governance/lib/launchd-twin-liveness-plan.mjs
+  s_4b86428543fda7::t_249e97a718f713 1-180
+governance/lib/namespace-usage-report.mjs
+  s_4b86428543fda7::t_260258b798b8e2 9-18,157-163
+governance/plans/claude-code-upstream-absorption/E1-BACKLOG-CLEAR.md
+  s_4b86428543fda7::t_9d3bdad61406c2 13-14,109-142,148
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_4b86428543fda7::t_c7488dabd2c1e5 4-5
+governance/plans/credential-provisioning-integrity/E2-TRAPS.md
+  s_4b86428543fda7::t_4660e714852458 4-5
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  s_4b86428543fda7::t_a2361e5f0db77c 4-5,135-136
+governance/plans/credential-provisioning-integrity/E4-GRANTS.md
+  s_4b86428543fda7::t_03604b994e45f5 4-5
+governance/plans/credential-provisioning-integrity/E5-MALFORMED.md
+  s_4b86428543fda7::t_f1f9995f0ec7d0 4-5
+governance/plans/credential-provisioning-integrity/E6-SCOPE.md
+  s_4b86428543fda7::t_984388c0e06606 4-5
+governance/plans/credential-provisioning-integrity/E7-RATCHET.md
+  s_4b86428543fda7::t_fcd352cf9c0ba2 4-5
+governance/plans/credential-provisioning-integrity/E8-ROTATE.md
+  s_4b86428543fda7::t_cce4696407f128 4-5
+governance/plans/credential-provisioning-integrity/NORTH-STAR.md
+  s_4b86428543fda7::t_c7c68830281688 4-5,31-33
+governance/plans/credential-provisioning-integrity/RECEIPTS.md
+  s_4b86428543fda7::t_73556ae8320bc7 4-5,39-41
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_4b86428543fda7::t_2cef531c7601bf 4-48
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_4b86428543fda7::t_29d67d85a451ab 148-151,932-937,1148-1198
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_4b86428543fda7::t_e4e0147970d9e4 22-26,38,93-98,100-111,121-124,131-133,199-201,203-206,217-220,296
+governance/plans/namespace-substrate/profiles-as-code/README.md
+  s_4b86428543fda7::t_2a1e8d33e21415 1-128
+governance/plans/namespace-substrate/profiles-as-code/RECEIPTS-2026-08-06.md
+  s_4b86428543fda7::t_c19ec9c53cc289 1-165
+governance/plans/namespace-substrate/profiles-as-code/artifact-roundtrip.sh
+  s_4b86428543fda7::t_92bcc7641942a0 1-132
+governance/plans/namespace-substrate/profiles-as-code/cache-experiment.sh
+  s_4b86428543fda7::t_eb24f97e1fef00 1-372
+governance/plans/namespace-substrate/profiles-as-code/capture-profiles.sh
+  s_4b86428543fda7::t_6a6e028009dec2 1-138
+governance/plans/namespace-substrate/profiles-as-code/ci-oidc-artifact.yml
+  s_4b86428543fda7::t_d64e47fd63026f 1-91
+governance/plans/namespace-substrate/profiles-as-code/profiles/default-arm64.json
+  s_4b86428543fda7::t_283c8deb82390b 1-15
+governance/plans/namespace-substrate/profiles-as-code/profiles/default.json
+  s_4b86428543fda7::t_aebe056e1eada9 1-15
+governance/plans/namespace-substrate/profiles-as-code/profiles/wave-fenced-amd64.json
+  s_4b86428543fda7::t_e063edee1786b7 1-30
+governance/plans/namespace-substrate/profiles-as-code/profiles/wave-std.json
+  s_4b86428543fda7::t_8f5f962f1ba863 1-26
+governance/plans/wave-control/DECISION-URL.md
+  s_4b86428543fda7::t_5980c123391e15 12-30,41-47,50-53
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  s_4b86428543fda7::t_74c29a43796ff4 62-76,80-81,86,89-100,104-117
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  s_4b86428543fda7::t_76d28adb79d874 8-9,14-15,40-44,55-73,93-94,144
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  s_4b86428543fda7::t_a5fa4e1adfb3d6 43-45,57-77,129
+governance/plans/wave-control/NORTH-STAR.md
+  s_4b86428543fda7::t_c5b5105661281a 16-46,57-58,60-63,65-67,97,103-107,139-140,291
+governance/state/claude-code-release-watch.json
+  s_4b86428543fda7::t_d0476eb799b30e 2-3
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_4b86428543fda7::t_b4882e38491117 106-142,258-262,269-301
+governance/test/launchd-twin-liveness.test.mjs
+  s_4b86428543fda7::t_1f52f09138b1b8 1-321
+governance/test/namespace-usage-pull.test.mjs
+  s_4b86428543fda7::t_c05421a29b612d 76,81,89-99,117-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "64313c660bc6cc49cdb6a35f9a8ad782bb4095c0",
+  "prompts": {},
+  "sessions": {
+    "s_3175b77ffc13f2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5342094649a33222",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_48b0f422701dc2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af9353f968a867da1",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_4b86428543fda7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5e78f3cd6dad9885",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

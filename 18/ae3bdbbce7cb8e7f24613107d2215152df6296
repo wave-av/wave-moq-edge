@@ -1,0 +1,25 @@
+governance/tools/effect-lens/examples/wave-gateway-dogfood-report.json
+  s_1b0eddca71e063::t_6a7c95c1c8f09d 1-176
+governance/tools/effect-lens/examples/wave-gateway-deps-observations.json
+  s_1b0eddca71e063::t_1e7377e7ba26ab 1-110
+governance/research/creator-intelligence/DOGFOOD-RECEIPT.md
+  s_1b0eddca71e063::t_d254962b4b8ebf 1-58
+governance/tools/effect-lens/examples/wave-gateway-deps.lens.json
+  s_1b0eddca71e063::t_f023fc75dd7f2a 1-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "18ae3bdbbce7cb8e7f24613107d2215152df6296",
+  "prompts": {},
+  "sessions": {
+    "s_1b0eddca71e063": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00322e9deffeyrJeycxT5FbKEm",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

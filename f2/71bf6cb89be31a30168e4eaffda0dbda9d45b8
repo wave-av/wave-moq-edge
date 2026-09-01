@@ -1,0 +1,36 @@
+governance/plans/local-inference-integrity/E3-FRAME.md
+  s_264ae386838c57::t_76bfba90d7725a 111-125
+  s_264ae386838c57::t_c850f9f74d2105 58-71
+hooks/tests/framing-invariant.test.sh
+  s_264ae386838c57::t_34ed34f32995cf 1-27,95,135-152
+  s_264ae386838c57::t_81d18b20e69684 38-42,48,51-55,59-62
+  s_264ae386838c57::t_fb41bf9b4e911a 28-37,43-47,49-50,56-58,63-94
+  s_264ae386838c57::t_5e8af4e6b1c7c5 96-134
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_264ae386838c57::t_fd1841e7f4a004 26-27
+hooks/local-llm/task-router.sh
+  s_264ae386838c57::t_3e9174e2fc8082 35-54
+  s_264ae386838c57::t_131ede3c4c388b 60
+hooks/tests/local-llm-containment.test.sh
+  s_264ae386838c57::t_8f14258532cc6f 13-18
+settings/settings.base.json
+  s_264ae386838c57::t_f32007dcea2ec4 12-13
+hooks/tests/enhancer_smoke.sh
+  s_264ae386838c57::t_7c8e8b2582ad9d 6-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f271bf6cb89be31a30168e4eaffda0dbda9d45b8",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

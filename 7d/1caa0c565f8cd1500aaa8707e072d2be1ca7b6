@@ -1,0 +1,21 @@
+scripts/issue-ops/rate-limit.sh
+  s_d9915bbafa9657::t_20d8354f4cb417 65-76
+tests/issue-ops/rate-limit.bats
+  s_d9915bbafa9657::t_31592ca2d2013d 98-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7d1caa0c565f8cd1500aaa8707e072d2be1ca7b6",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

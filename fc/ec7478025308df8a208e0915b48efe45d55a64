@@ -1,0 +1,21 @@
+hooks/tests/public-github-write-gate.test.sh
+  s_375efeac18ed55::t_7ecab53be8395d 70
+governance/graph.json
+  s_375efeac18ed55::t_3f64a3d4f2e468 4167-4175,4299-4306,16397-16408,16583-16588
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "fcec7478025308df8a208e0915b48efe45d55a64",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

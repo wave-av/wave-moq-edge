@@ -1,0 +1,24 @@
+.github/workflows/release-spoke-chassis.yml
+  s_eb2f7e65359b4f::t_db004d3e2eddf6 83-86
+  s_eb2f7e65359b4f::t_afb0ce58c3f2c8 49-50
+.github/workflows/release-observability.yml
+  s_eb2f7e65359b4f::t_6f3229c29e778d 73-75
+.github/workflows/release-messaging.yml
+  s_eb2f7e65359b4f::t_82729fc90decd9 73-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "0f5c4bc5903efd55d9d8d4402b34d481f25e2ecc",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

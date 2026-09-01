@@ -1,0 +1,53 @@
+governance/bin/hook-resolution-check.mjs
+  s_37e24b4d920e09::t_6e2d396bef74ff 15-17,44-45,48-49,65-72,95-96,120-140,235-237,239-245,247-249,251,253-262
+governance/lib/expected-substitutions.mjs
+  s_37e24b4d920e09::t_cc8f012c85f548 1-178
+governance/lib/registry-compare.mjs
+  s_37e24b4d920e09::t_c953ee3e0924f6 1-110
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_96280c922a9418::t_a91c8613e76e81 49
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_96280c922a9418::t_992aa41bf30f54 4-5,7,51,65,83,92
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_96280c922a9418::t_45adccfefcf139 68,74
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_96280c922a9418::t_f5aa34d2381796 108,120
+governance/test/expected-substitutions.test.mjs
+  s_37e24b4d920e09::t_e6bd6b0eb87627 1-311
+scripts/verify_registry_current.py
+  s_37e24b4d920e09::t_e45f8181319fe1 92-98,104
+settings/expected-substitutions.json
+  s_37e24b4d920e09::t_081f53643ece6a 1-14
+sync.sh
+  s_37e24b4d920e09::t_967e2994837acc 139-146
+governance/code-index/CATALOG.md
+  s_37e24b4d920e09::t_c4ab9dffddc042 5,1627-1656,3596-3607,3972-3980
+governance/code-index/index.json
+  s_37e24b4d920e09::t_391e80f8f2d578 9-10,12-13,15,14622-14623,14633-14634,14638-14648,14655-14656,14666-14667,14677-14678,14682-14692,14699-14700,14710-14711,14721-14722,14732-14733,14743-14744,14754-14755,14765-14766,14776-14777,14781-14791,14798-14799,14809-14810,14820-14821,14831-14832,14842-14843,14853-14854,14864-14865,14875-14876,14886-14887,14897-14898,14902-14912,14919-14920,14930-14931,14941-14942,31413-31511,34394-34459
+governance/graph.json
+  s_37e24b4d920e09::t_f10880b5171432 2299-2300,2302
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "438041dd1c0cd6b68f407e4ce31fe7d92b5f7151",
+  "prompts": {},
+  "sessions": {
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

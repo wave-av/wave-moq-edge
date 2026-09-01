@@ -1,0 +1,33 @@
+hooks/context-budget-warn.sh
+  s_157583aa3b6686::t_d20d3040810dd1 71-77
+hooks/hooklib/hook.sh
+  s_157583aa3b6686::t_549a23cb155906 59
+hooks/task-export.sh
+  s_157583aa3b6686::t_95284af2910696 8-13
+hooks/tests/KNOWN-RED.txt
+  s_157583aa3b6686::t_faeaaff311cc3f 12-14,16-30,32-36
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_157583aa3b6686::t_3ac2c004f4955d 3-7,12-15,17-18,48
+hooks/tests/cccr_smoke_task_export.sh
+  s_157583aa3b6686::t_e94108984b95c2 2-13,19,28,47,49,52-53,57-58,60-63,65-67,77-78
+hooks/tests/parked_tree_read_smoke.sh
+  s_157583aa3b6686::t_265e5a1154efbc 132-161
+hooks/manifest.json
+  s_157583aa3b6686::t_39b935dcd4db1f 183,1306
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cdabb3427551507f589307e6589e0a85e64a7a3c",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

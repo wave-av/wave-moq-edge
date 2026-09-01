@@ -1,0 +1,55 @@
+hooks/attester-scope-gate.sh
+  s_941b8f0612ec3e::t_3550e74a8fc913 1-56,63-78,80-81
+  s_941b8f0612ec3e::t_e96ab18d6eff4d 57-62
+  s_941b8f0612ec3e::t_6ef4cf7a76a98b 79
+governance/bin/local-gates.mjs
+  s_941b8f0612ec3e::t_73c5c0216ecd63 130
+  s_941b8f0612ec3e::t_be3cc30698f51c 102-112
+governance/bin/outage-attester.mjs
+  s_941b8f0612ec3e::t_9d6e762bb52580 174-179
+  s_941b8f0612ec3e::t_81a2e007a14b09 1-173,180-189,191-260
+  s_941b8f0612ec3e::t_bf59ed41accaa4 190
+governance/test/outage-attester.test.mjs
+  s_941b8f0612ec3e::t_068525b538425e 1-57,69-203
+  s_941b8f0612ec3e::t_cf80a9a5564b36 58-68
+governance/lib/attester-preconditions.mjs
+  s_941b8f0612ec3e::t_167f1bf0140899 1-163
+governance/bin/gate-liveness-drill.mjs
+  s_941b8f0612ec3e::t_d685ad78612dcd 150
+  s_941b8f0612ec3e::t_be15bfaaee305f 54,129-131
+governance/bin/enforcement-tables.mjs
+  s_941b8f0612ec3e::t_ab4e78fd5ceab1 77
+  s_941b8f0612ec3e::t_272ae519e3a858 73-76
+governance/lib/drill-fixtures-attester-scope.mjs
+  s_941b8f0612ec3e::t_20995d5daf4fc1 1-68
+governance/test/attester-preconditions.test.mjs
+  s_941b8f0612ec3e::t_f0a833c90ebb7a 1-162
+rules/outage-attestation-bounded.md
+  s_941b8f0612ec3e::t_b08e31d34117dd 1-85
+governance/ENFORCEMENT-COVERAGE.md
+  s_941b8f0612ec3e::t_60f0176a9e3dac 5,9,12,14,460,479
+governance/contract.md
+  s_941b8f0612ec3e::t_671a03c2978eb6 47,53
+governance/graph.json
+  s_941b8f0612ec3e::t_c62ec8176bf15d 1383-1389,11328-11336,17220-17249,38910-38921
+hooks/manifest.json
+  s_941b8f0612ec3e::t_ff0f14213aed46 68-88
+settings/settings.base.json
+  s_941b8f0612ec3e::t_82b65c5b2b215f 420-424
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "614a5098a970463762e852fa6656890218279408",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

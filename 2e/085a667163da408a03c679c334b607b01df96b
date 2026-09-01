@@ -1,0 +1,30 @@
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_8af4028370359f::t_88c81db66d104a 4
+governance/plans/own-model-program/RECEIPTS.md
+  s_8af4028370359f::t_7629ea199fbb60 41-79
+  s_8af4028370359f::t_f843cd0e46a8d8 38-40
+  s_8af4028370359f::t_32de15248dee00 1-37
+memory/runpod-uplevel-plan.md
+  s_8af4028370359f::t_8e47206f0d9c17 93-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2e085a667163da408a03c679c334b607b01df96b",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_8af4028370359f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef8fb36fffeRqnDhDU6nt6cu1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

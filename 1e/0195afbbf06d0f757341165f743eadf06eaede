@@ -1,0 +1,25 @@
+governance/plans/wave-sec-fleet/epic.md
+  s_85d9e5f433b9aa::t_4288b6e209879c 11-49
+  s_85d9e5f433b9aa::t_5271751136703b 8-10
+  s_85d9e5f433b9aa::t_2e92f425d50f44 1-7
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_7d822bb71e2244 25
+governance/graph.json
+  s_85d9e5f433b9aa::t_8630c25c8efc4a 6363-6375,26682-26699
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "1e0195afbbf06d0f757341165f743eadf06eaede",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

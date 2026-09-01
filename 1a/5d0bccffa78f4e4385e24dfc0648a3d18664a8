@@ -1,0 +1,44 @@
+.github/workflows/_canary-reusable-blacksmith.yml
+  h_91e57a3221f2ff 24
+.github/workflows/auto-merge.yml
+  h_91e57a3221f2ff 225
+.github/workflows/blast-radius.yml
+  h_91e57a3221f2ff 26
+.github/workflows/canon-gap-map-drift.yml
+  h_91e57a3221f2ff 67
+.github/workflows/capability-drift.yml
+  h_91e57a3221f2ff 45
+.github/workflows/ci-canary-blacksmith.yml
+  h_91e57a3221f2ff 31
+.github/workflows/floor-budget.yml
+  h_91e57a3221f2ff 37
+.github/workflows/gam-conformance.yml
+  h_91e57a3221f2ff 38
+.github/workflows/governance-enforce.yml
+  h_91e57a3221f2ff 43
+.github/workflows/governance-publish.yml
+  h_91e57a3221f2ff 18
+.github/workflows/governance.yml
+  h_91e57a3221f2ff 45,231,265
+.github/workflows/hook-tests-macos.yml
+  h_91e57a3221f2ff 22
+.github/workflows/hook-tests.yml
+  h_91e57a3221f2ff 56,203
+.github/workflows/thread-resolved.yml
+  h_91e57a3221f2ff 90
+.github/workflows/workflow-lint.yml
+  h_91e57a3221f2ff 78
+.github/workflows/wsc-salvage-coverage.yml
+  h_91e57a3221f2ff 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1a5d0bccffa78f4e4385e24dfc0648a3d18664a8",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

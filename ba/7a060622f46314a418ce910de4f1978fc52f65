@@ -1,0 +1,107 @@
+.github/.token-budget-baseline
+  s_264ae386838c57::t_86ea20dd2bd4b4 73-83
+.github/osv-baseline.tsv
+  s_264ae386838c57::t_5583701851bdbb 18-25
+.github/workflows/hook-tests-macos.yml
+  s_264ae386838c57::t_fd315692e976ab 1-325
+.github/workflows/hook-tests.yml
+  s_264ae386838c57::t_abff62892df33a 63-70
+.github/workflows/reviewer-liveness-age.yml
+  s_264ae386838c57::t_b35bd546dbe533 1-79
+governance/ENFORCEMENT-BASELINE.json
+  s_264ae386838c57::t_4dc62338184f2b 4-5,9,203
+governance/bin/check.mjs
+  s_264ae386838c57::t_fe00c75702cf0b 211-230
+governance/bin/hook-registration-wrapper-lint.mjs
+  s_264ae386838c57::t_186b62d31a24c6 1-174
+governance/bin/purge-secret-rules.mjs
+  s_264ae386838c57::t_96d2511ac8a133 22-24,93,100-124,188-194,246-267
+governance/bin/reviewer-liveness-age.mjs
+  s_264ae386838c57::t_3a0875915cf367 1-171
+governance/lib/reviewer-liveness-age.mjs
+  s_264ae386838c57::t_93f75dfb6961c0 1-168
+governance/lib/reviewer-liveness-snapshot.mjs
+  s_264ae386838c57::t_ceb4444247050b 34,96-125,131-132,134
+governance/lib/rl-corpus-detectors.mjs
+  s_264ae386838c57::t_a1b6de8364d522 1-191
+governance/lib/rl-corpus-patterns.mjs
+  s_264ae386838c57::t_3e0f67499794b7 1-149
+governance/lib/rl-corpus-write.mjs
+  s_264ae386838c57::t_2c7ba1b71e165b 1-332
+governance/lib/rl-source-pr.mjs
+  s_264ae386838c57::t_abedd82b679b4e 49,51-54,65-77,81-82,86-99,107-112,155-175,177,238-239,243-245,253-258,264-272,275-276
+governance/lib/secret-rule-scan.mjs
+  s_264ae386838c57::t_01c3da44b2691e 63-70,78-90,114-118,135
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  s_264ae386838c57::t_f27a2b7815deaa 1-140
+governance/plans/sovereign-capacity/E9-ADJACENCY.md
+  s_264ae386838c57::t_982c1b07b3c986 1-120
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  s_264ae386838c57::t_c21c421c3c5aca 24,62-63
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_264ae386838c57::t_6415fba4626b71 374-399
+governance/plans/wave-rl-signal-intake/E1-REDACT.md
+  s_264ae386838c57::t_cd686137cb8872 4,55-131
+governance/sources/lawbook.json
+  s_264ae386838c57::t_e6117953c871ef 2,5-6,20-22,24
+governance/state/reviewer-liveness.json
+  s_264ae386838c57::t_aa2c579e76a9ed 2,28,35-36,42,47,49-50,54,56-57,61,63-64,68,70-71,75,78,82,89,92,96,99
+governance/test/ALLOWED-SKIPS.json
+  s_264ae386838c57::t_1ae10c92c78559 198-203
+governance/test/hook-registration-wrapper-lint.test.mjs
+  s_264ae386838c57::t_860d76888bac32 1-106
+governance/test/known-red-baseline-wiring.test.mjs
+  s_264ae386838c57::t_4209acc0ce8c8c 25-31,33-35,203-215
+governance/test/purge-secret-rules.test.mjs
+  s_264ae386838c57::t_14bc8b93fb973e 15-17,128-148,175-210
+governance/test/reviewer-liveness-age.test.mjs
+  s_264ae386838c57::t_fb19c071f88c19 1-120
+governance/test/reviewer-liveness-snapshot.test.mjs
+  s_264ae386838c57::t_1e1433ff0cbd2f 28,64,71-74,141,143,177-202
+governance/test/rl-corpus-detectors.test.mjs
+  s_264ae386838c57::t_29c4980de51179 1-209
+governance/test/rl-corpus-patterns.test.mjs
+  s_264ae386838c57::t_679c8fa5d7f728 1-165
+governance/test/rl-corpus-write.test.mjs
+  s_264ae386838c57::t_3a3718aee6a7bc 1-376
+governance/test/rl-signal-source.test.mjs
+  s_264ae386838c57::t_32505ce5333955 133-163,165-169,173-185,223-231,233-271
+governance/test/secret-rule-scan.test.mjs
+  s_264ae386838c57::t_ffbbe1eeee49aa 67-83,161-163,165-169,173-177,185,191-238,240-267
+hooks/data/public-write-denylist.json
+  s_264ae386838c57::t_0a49e12070fc82 26-35
+hooks/pr-body-floor-advisory.sh
+  s_264ae386838c57::t_110d14a04ca6d0 1-53
+hooks/pr-inflight-capture.sh
+  s_264ae386838c57::t_1850073e1a8bee 1-295
+hooks/tests/compressor_smoke.sh
+  s_264ae386838c57::t_a6cdccb027a120 6-50
+hooks/tests/pr-inflight-capture.test.sh
+  s_264ae386838c57::t_9fc7af0e3d63fd 1-335
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  s_264ae386838c57::t_a2e8692c4d1462 3,38-43
+rules/no-destructive-git-op-without-gate.md
+  s_264ae386838c57::t_dda724128231fa 1-49
+rules/pr-body-floor.md
+  s_264ae386838c57::t_88889273c615c1 1-49
+rules/rig-change-lifecycle.md
+  s_264ae386838c57::t_508188279c4e5f 77
+settings/settings.base.json
+  s_264ae386838c57::t_9cca421b6a26e6 380-384,526,715,853-857
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ba7a060622f46314a418ce910de4f1978fc52f65",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

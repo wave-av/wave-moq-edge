@@ -1,0 +1,38 @@
+governance/DANGLING-REFS-BASELINE.json
+  h_67a1b847dc59d6 13,32,168
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  h_67a1b847dc59d6 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 395
+governance/plans/mlvc-api-plane/E0-CLI.md
+  h_67a1b847dc59d6 1-16
+governance/plans/mlvc-api-plane/E1-SERVICE.md
+  h_67a1b847dc59d6 1-16
+governance/plans/mlvc-api-plane/E2-SDK.md
+  h_67a1b847dc59d6 1-16
+governance/plans/mlvc-api-plane/E3-MCP.md
+  h_67a1b847dc59d6 1-16
+governance/plans/mlvc-api-plane/E4-EDGE-SPOKE.md
+  h_67a1b847dc59d6 1-16
+governance/plans/mlvc-api-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 1-35
+memory/agent-actionable-deliverables.md
+  h_67a1b847dc59d6 1-55
+memory/agent-surface-completeness.md
+  h_67a1b847dc59d6 1-51
+memory/api-first-surfaces.md
+  h_67a1b847dc59d6 1-49
+tools/wave-codec.mjs
+  h_67a1b847dc59d6 1-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fd0d54e91b870a0b1c49180aca1b75e49599bd1d",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

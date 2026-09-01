@@ -1,0 +1,20 @@
+governance/capability/file-type-enforcement.json
+  s_dccee6b7677203::t_4094ada7191141 45-49
+  s_dccee6b7677203::t_5de95aa4ee3605 44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a90ac4c178cb2f74146e7f25eea6d516fc747557",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/lib/escape-audit.mjs
+  s_0227926428e4b1::t_e16f756ea7a99f 137,141
+  s_0227926428e4b1::t_9fe88e17b3996e 91-96
+governance/test/escape-audit.test.mjs
+  s_0227926428e4b1::t_abd17cc82747c8 167-184
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6a52e5e447f7576cac0e13576204d61e3c5fc9f4",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

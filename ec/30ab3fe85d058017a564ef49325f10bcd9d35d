@@ -1,0 +1,27 @@
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  s_f24caa326b86f6::t_a5ccdd639d1d6e 461,463-468
+  s_f24caa326b86f6::t_cb836877f9b059 434-438
+  s_f24caa326b86f6::t_7904359350381a 354-357
+  s_f24caa326b86f6::t_b013daeccc4e58 333-335
+  s_f24caa326b86f6::t_eb8f5692770d6b 126-138
+  s_f24caa326b86f6::t_f2e5b7e54dd84f 79-80,84-86
+  s_f24caa326b86f6::t_85de65c9281550 368-369
+  s_f24caa326b86f6::t_b80cbff4496faf 336-338
+  s_f24caa326b86f6::t_afb0b43536ba34 555-560
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ec30ab3fe85d058017a564ef49325f10bcd9d35d",
+  "prompts": {},
+  "sessions": {
+    "s_f24caa326b86f6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "adc1828d-f1dc-483b-b7cd-a61bedf1dbc1",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

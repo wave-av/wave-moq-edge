@@ -1,0 +1,35 @@
+governance/lib/override-ordering-shell.mjs
+  s_02abc74f4971c7::t_419d96a975cd38 1-306,314,319
+  s_02abc74f4971c7::t_1b7ebed55be874 307-309,311-313
+  s_02abc74f4971c7::t_06a405041c43b6 316-318
+  s_02abc74f4971c7::t_81169beb2f7bb0 320-322
+  s_02abc74f4971c7::t_7ce7606facc6b9 310,323-326
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_2b7a294a6d7e8e 5,4420-4438,4442-4453
+governance/code-index/index.json
+  s_02abc74f4971c7::t_e9a8b017985a75 9-10,12-13,37937,37939-37972,37975-37976,37981,37983,37986-37987,37992,37994,37997-37998,38003,38005,38008-38009,38014,38016,38019-38020,38025,38027-38033,38036,38038-38039,38041-38044,38047,38049-38050,38052-38055,38058,38060-38061,38063-38066,38069,38071-38077,38080,38082-38083,38085-38088,38091,38093-38094,38096-38099,38102,38104-38105,38107-38110,38113,38115-38116,38118-38121,38129-38130,38140-38141,38151-38152,38162-38163,38173-38174,38184-38185,38195-38196,38206-38207,38217-38220,38223,38226,38228-38231,38234,38237,38239-38253
+governance/lib/override-ordering.mjs
+  s_02abc74f4971c7::t_6129d70931cc86 40-45,48-51,99-111,113-129,138-161,181-189,201-204,208-220,286-288
+governance/test/fixtures/bad-override-ordering/clean.sh
+  s_02abc74f4971c7::t_1872921bcc2b91 38-46,77,79
+governance/test/override-ordering-drill.test.mjs
+  s_02abc74f4971c7::t_3bebad4d6b8d09 1-103
+governance/test/override-ordering-lint.test.mjs
+  s_02abc74f4971c7::t_4c429b07ff3662 1,7-10,198-236
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "d9b0737631c6ead1d0a202fe9c172e07b9dd9570",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

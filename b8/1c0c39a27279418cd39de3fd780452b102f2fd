@@ -1,0 +1,23 @@
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_5a661917f62bb7 20-23
+hookcli/tests/t3-classifier-credential.sh
+  s_02abc74f4971c7::t_9f83e7a312ad59 1-23
+  s_02abc74f4971c7::t_6e800d01e2283c 24-26
+  s_02abc74f4971c7::t_0c0a460c6d884f 27-188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "b81c0c39a27279418cd39de3fd780452b102f2fd",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

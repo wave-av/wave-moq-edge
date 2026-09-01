@@ -1,0 +1,31 @@
+governance/lib/reviewer-scoreboard-format.mjs
+  s_9bb1b1d1d998d4::t_f6ac7e46e59ad2 1-29,47-48,51-71
+  s_9bb1b1d1d998d4::t_b83541f336f5b3 30-46,49-50
+governance/lib/review-markers.mjs
+  s_9bb1b1d1d998d4::t_6bb3119f5945b5 210-222,225
+governance/test/reviewer-scoreboard-format.test.mjs
+  s_9bb1b1d1d998d4::t_0a27b2db1d4a73 1-27,32,35-37,56-108
+  s_9bb1b1d1d998d4::t_f446451c98f369 28-31,33-34,38-55
+governance/bin/reviewer-scoreboard.mjs
+  s_9bb1b1d1d998d4::t_94bf45e8d5dc9d 117-119
+  s_9bb1b1d1d998d4::t_76052a027ca45c 25
+  s_9bb1b1d1d998d4::t_ac6f3207451d12 107
+governance/test/review-liveness-output-body.test.mjs
+  s_9bb1b1d1d998d4::t_706e40fe901b74 19,90-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "953a542884637ab2dce1f0cc0495b7d32160a117",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

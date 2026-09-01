@@ -1,0 +1,23 @@
+frameworks/gates/registry.yaml
+  s_cf3356a24071e8::t_1a4616fae3de92 63-66
+frameworks/gates/scripts/check-file-size.sh
+  s_cf3356a24071e8::t_12fc2f31159e77 7-12,18-39,44-54,58-60,62,64
+.pre-commit-config.yaml
+  s_cf3356a24071e8::t_982f07e6127b7e 145-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "6d0e2e7b3910f740c5baa4b518a223de48c169af",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

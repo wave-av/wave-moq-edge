@@ -1,0 +1,34 @@
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gemma/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool2/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f49853732cd328a33b862645dd307dbbe05601c6",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

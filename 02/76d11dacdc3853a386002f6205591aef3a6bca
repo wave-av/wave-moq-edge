@@ -1,0 +1,59 @@
+governance/bin/gate-liveness-drill.mjs
+  s_63c6ee080d73c3::t_ffb6a1f9731c43 74
+.github/workflows/governance.yml
+  s_63c6ee080d73c3::t_b5300fbfdffa9b 246-256
+governance/bin/epic-status.mjs
+  s_63c6ee080d73c3::t_f0cbd566b9c83e 105-128,131-140,162
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_e5c30fb4b8c453 5,997,1000,1621-1628,3935-3939,4868-4870
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_f5c31cb152b4a8 9-10,12-13,9006-9016,9045-9048,14490-14491,14501-14504,14512-14513,14523-14524,14534-14535,14545-14546,14556-14557,14567-14568,34383-34404,41429-41430,41440-41443,41451-41452
+governance/lib/drill-fixtures-status.mjs
+  s_63c6ee080d73c3::t_cb8882346534eb 1-43
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  s_63c6ee080d73c3::t_6650b570aee6a4 54-59,82-86,91,109
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_63c6ee080d73c3::t_97ef115f979384 4
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_63c6ee080d73c3::t_7e710a15ddaf0d 21
+governance/test/epic-status-markers.test.mjs
+  s_63c6ee080d73c3::t_b4a9d1ff3c3b9c 1-162
+governance/test/epic-status.test.mjs
+  s_63c6ee080d73c3::t_03054c8e3e38a2 175-203
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  s_63c6ee080d73c3::t_83a92f4dc2c279 1-5,9,170-193
+governance/test/wave-cost-ledger-claude-feed.test.mjs
+  s_63c6ee080d73c3::t_eb409fd7b8b365 1-132
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  s_63c6ee080d73c3::t_377c3c37e69d28 2-6,19-31,39,59,68,107,140,166,192,229
+governance/test/wave-cost-ledger-claude-fixture.mjs
+  s_63c6ee080d73c3::t_45685af72fd7de 1-21
+runbooks/lib/store.mjs
+  s_63c6ee080d73c3::t_8bc8e1f805834b 11,15-41
+runbooks/test/observe.test.mjs
+  s_63c6ee080d73c3::t_dd0f8d3fcef01d 148-167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "0276d11dacdc3853a386002f6205591aef3a6bca",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

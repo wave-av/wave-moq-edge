@@ -1,0 +1,33 @@
+scripts/bugbot/disposition.py
+  s_3a52a0989b58af::t_684d4b7e7e284e 41-46
+  s_3a52a0989b58af::t_4ea26f4fbcd794 238-247
+  s_3a52a0989b58af::t_ca8a19cd6693cf 252-254
+  s_3a52a0989b58af::t_b6017ce5508969 203-219
+tests/test_bugbot_watchdog.py
+  s_3a52a0989b58af::t_50dc26bfaf7b2d 67-90,93-94
+scripts/bugbot/watchdog.py
+  s_3a52a0989b58af::t_4d22dca3d5b535 95-96
+  s_3a52a0989b58af::t_5bf35b5e7d3ad7 72-79
+  s_3a52a0989b58af::t_5f6fa17e9dc766 147-150
+  s_3a52a0989b58af::t_38b7459030b618 37-40
+  s_3a52a0989b58af::t_71ac3e55a76360 99-102,104,107-111
+  s_3a52a0989b58af::t_7e72514b2d0439 118-123
+tests/test_bugbot_flywheel.py
+  s_3a52a0989b58af::t_50d88547e7f302 143-188,191-192
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4100d37cf183df28ae5f4e6f09b6b2b5e6015d42",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

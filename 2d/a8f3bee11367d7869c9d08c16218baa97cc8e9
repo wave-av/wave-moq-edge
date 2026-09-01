@@ -1,0 +1,36 @@
+governance/lib/money-audit.mjs
+  s_37d3f61160b2dd::t_e784fdb26f0ba1 84-92,101-126,131
+  s_37d3f61160b2dd::t_2f598c0f977ddb 9-16
+  s_37d3f61160b2dd::t_9c01691b3899e0 93-100
+governance/bin/money-audit.mjs
+  s_37d3f61160b2dd::t_56d7577e7e2a7b 48-50,52-94
+  s_37d3f61160b2dd::t_44e9d98b007a54 215,218-240
+  s_37d3f61160b2dd::t_d0b78b376debb7 118-127,129-134,136-147
+  s_37d3f61160b2dd::t_44e72ba701b5e2 16,20,23-42
+  s_37d3f61160b2dd::t_b052c38a39861f 170-175,178-181,183-184,188-196,202-206
+governance/lib/money-audit-sdk.mjs
+  s_37d3f61160b2dd::t_27d16fe192a431 32-41,43
+  s_37d3f61160b2dd::t_7d475c5b6fc9f8 17,51-53
+governance/test/money-audit-evidence.test.mjs
+  s_37d3f61160b2dd::t_fd5f44c2401cc1 1-169
+governance/bin/money-audit-mcp.mjs
+  s_37d3f61160b2dd::t_76c3d238dc41f8 13-17
+  s_37d3f61160b2dd::t_9cb13048345473 76-122,126,128-138
+  s_37d3f61160b2dd::t_b995e02a394851 182-189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2da8f3bee11367d7869c9d08c16218baa97cc8e9",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

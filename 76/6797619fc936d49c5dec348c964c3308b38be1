@@ -1,0 +1,19 @@
+governance/plans/pricing-pages/NORTH-STAR.md
+  s_68a1dc0626acc6::t_05effff2815dc8 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "766797619fc936d49c5dec348c964c3308b38be1",
+  "prompts": {},
+  "sessions": {
+    "s_68a1dc0626acc6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4e4ebb2ffeIk1zeBG7l5n6Tm",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

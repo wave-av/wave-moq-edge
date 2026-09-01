@@ -1,0 +1,23 @@
+governance/lib/triage-args.mjs
+  s_63c6ee080d73c3::t_f533540b88a329 1-55
+governance/bin/triage.mjs
+  s_63c6ee080d73c3::t_852f8f86729fe1 28,32-37
+governance/test/triage-args.test.mjs
+  s_63c6ee080d73c3::t_80f2b5dbf82faa 1-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "eeb881fabcd319a8e44d0023d104d6e609864a96",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/bin/branch-truth-lint.mjs
+  s_e2e3e43d0638c5::t_b08df6601b0d3e 313-322,324,332-334
+  s_e2e3e43d0638c5::t_c07bce16b55527 27-29
+.github/workflows/governance.yml
+  s_e2e3e43d0638c5::t_6514608d85e567 85-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "29028061f8c68117d5bf9bf07bcdbb8ca628e590",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

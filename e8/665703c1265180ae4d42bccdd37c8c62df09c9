@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  s_62ac8b1f884f82::t_c1fb50c1e0fba3 4
+tools/wave-codec.mjs
+  s_62ac8b1f884f82::t_7c619c537be8d7 73-98,100
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_62ac8b1f884f82::t_8966261cdd1cb2 402-406
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e8665703c1265180ae4d42bccdd37c8c62df09c9",
+  "prompts": {},
+  "sessions": {
+    "s_62ac8b1f884f82": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe84eb3a8ffedMTlPmK9pmVPbe",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

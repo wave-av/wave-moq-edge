@@ -1,0 +1,25 @@
+governance/plans/gates-that-can-see/E7-STACKED-PR-BLINDNESS.md
+  s_8d26503dfc73f4::t_041f5db3134128 1-120
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_8d26503dfc73f4::t_1bb5e852a56ad9 13
+  s_8d26503dfc73f4::t_e235b4b93930cc 4-6
+  s_8d26503dfc73f4::t_bb22dfd2094824 54
+  s_8d26503dfc73f4::t_0c390f66b2e191 98
+  s_8d26503dfc73f4::t_d101e67548c424 65-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "99837e91d45952e483dc4548c4245a68bd5bb9bb",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

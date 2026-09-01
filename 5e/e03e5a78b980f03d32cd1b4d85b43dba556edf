@@ -1,0 +1,25 @@
+governance/lib/emit-json.mjs
+  s_02abc74f4971c7::t_7346b2fdeb1ce4 13-26
+governance/lib/stdout-flush.mjs
+  s_02abc74f4971c7::t_4cbe93a5d64a65 9-15
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_f034f80a4b8371 3927-3929,4783-4789
+governance/code-index/index.json
+  s_02abc74f4971c7::t_964282f919474b 34279-34280,34290-34291,34301-34302,40758-40759,40769-40770,40780-40781,40791-40792,40802-40803,40813-40814,40824-40825
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5ee03e5a78b980f03d32cd1b4d85b43dba556edf",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

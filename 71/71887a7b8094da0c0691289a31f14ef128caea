@@ -1,0 +1,29 @@
+governance/bin/enforcement-ratchet.mjs
+  s_94d9151e85d21f::t_d74c03d253c001 210-271,313-322,331
+governance/test/enforcement-floor.test.mjs
+  s_652eeabdf9eec4::t_d86de3dac9c92d 14,95-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7171887a7b8094da0c0691289a31f14ef128caea",
+  "prompts": {},
+  "sessions": {
+    "s_652eeabdf9eec4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a20bee682a36ddee6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_94d9151e85d21f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab3e2a8e1f463bec0",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

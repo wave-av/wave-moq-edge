@@ -1,0 +1,40 @@
+governance/plans/universal-data-representation/E1-UNIFY-PILOT.md
+  s_686aca36e4da9f::t_fc507ec4a783ae 4,20-104
+governance/bin/selfplay-pilot.mjs
+  s_cf19a5d100e809::t_cdb04b3dde033f 480
+  s_cf19a5d100e809::t_5e198b43b51e71 210,213-217
+  s_cf19a5d100e809::t_e2e40f422abd38 1-183,186,194-209,218-270,272-275,277-414,421-479,481-506,508-539
+  s_cf19a5d100e809::t_0bba8f67403d6d 184-185,187-193
+  s_cf19a5d100e809::t_2cd06b831313e8 211-212
+  s_cf19a5d100e809::t_9ea5a57b553ffb 415-420
+  s_cf19a5d100e809::t_db4da900fbed12 271,276
+  s_cf19a5d100e809::t_11c9108823a3fb 507
+governance/plans/self-play-refactoring/E1-SELFPLAY-PILOT.md
+  s_cf19a5d100e809::t_652bc348996bef 33
+  s_cf19a5d100e809::t_7906f1fdc55349 18,21,26-27,34-37,41
+  s_cf19a5d100e809::t_109cb75369c5e1 4,19-20,22-25,28-32,38-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "979524220226dd352b27c30597a38bba7f4a1b2d",
+  "prompts": {},
+  "sessions": {
+    "s_686aca36e4da9f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007809394ffeMMejP4pKNu5cth",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_cf19a5d100e809": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00780ac2affe4A40w2lyLpZLRi",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

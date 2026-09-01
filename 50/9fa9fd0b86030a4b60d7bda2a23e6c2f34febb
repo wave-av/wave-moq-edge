@@ -1,0 +1,20 @@
+governance/plans/runtime-hardening/E2-LADDER-SHADOW-RUNG.md
+  h_67a1b847dc59d6 5
+governance/plans/runtime-hardening/E4-EMPTY-STREAM-TAXONOMY.md
+  h_67a1b847dc59d6 5
+governance/plans/runtime-integrations/catalog.json
+  h_67a1b847dc59d6 21-26,39-41,43-52,55
+governance/plans/runtime-integrations/mcp-fragments/mcp-wave-runtime-mcp.yml
+  h_67a1b847dc59d6 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "509fa9fd0b86030a4b60d7bda2a23e6c2f34febb",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

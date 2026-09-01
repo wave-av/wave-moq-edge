@@ -1,0 +1,18 @@
+capabilities/curated.json
+  h_67a1b847dc59d6 831-833,848
+capabilities/registry.json
+  h_67a1b847dc59d6 4,34,65,94,123,152,188,218,227-286,308,339,370,400,431,463,493,523,553,583,627,659,690,723,755,788,819,854,866,869-870,896,927,957,987,1017,1050,1083,1097-1124,1149,1161,1164-1165,1193,1225,1262,1294,1325,1355
+capabilities/schema/registry.schema.json
+  h_67a1b847dc59d6 5,8-10,12-14,19-27,33-35,42-48,57-66,71-76,80-82,88-156,163-174,176-180,185-188,190-195,202-218,226-240
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5fa1f52ddf721177392e0da638c6edfd6f4f49fe",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

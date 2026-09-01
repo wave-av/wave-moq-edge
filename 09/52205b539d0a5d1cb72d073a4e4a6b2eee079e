@@ -1,0 +1,20 @@
+governance/bin/devin-v3.mjs
+  s_33808c00e16d52::t_6e47b377fe23cd 1
+  s_33808c00e16d52::t_5e6e1b4c137e4e 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0952205b539d0a5d1cb72d073a4e4a6b2eee079e",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

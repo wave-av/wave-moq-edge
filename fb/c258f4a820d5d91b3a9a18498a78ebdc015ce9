@@ -1,0 +1,19 @@
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_2e30bff6169f7a::t_ca4c3dc720217e 5-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fbc258f4a820d5d91b3a9a18498a78ebdc015ce9",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

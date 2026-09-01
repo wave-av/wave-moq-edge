@@ -1,0 +1,19 @@
+governance/plans/pen-design-lane/E6-DESIGN-REVIEW-GATE.md
+  s_ddcd58c8419ae0::t_2981a10d66ee7a 10-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "aecab993af22879cd97b49af9cf05958601490fc",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

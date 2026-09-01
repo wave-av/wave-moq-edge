@@ -1,0 +1,27 @@
+docs/STATUS.md
+  s_9673f7dc0983fb::t_42ddb424d3def8 3,7-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d8774a6aabe9f3eaaf14d2fbc1c4aaab77b8b50b",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_abb9a2be72e2bf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002c97bcbffepJbWZlswgf5sOd",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

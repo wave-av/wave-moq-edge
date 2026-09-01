@@ -1,0 +1,40 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_6a8f6b2c02a88d 664-666,668
+  s_60a20469ef4369::t_9f1b81bf14a629 667
+hookcli/tests/parity-intent-ledger.sh
+  s_60a20469ef4369::t_930ba4562f1d53 17
+  s_60a20469ef4369::t_df6b977410dca4 1-16,18-37
+hooks/bin/gen-manifest.mjs
+  s_60a20469ef4369::t_468f4c1cae04b6 133-137
+  s_60a20469ef4369::t_a11a923fe03a9a 41-53
+  s_60a20469ef4369::t_690ecef5235a00 100-101
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_97bb765aa03710 26-27
+  s_60a20469ef4369::t_864e655fad41de 49-90
+hooks/manifest.json
+  s_ce7cdf5867bb9d::t_dc52130ce8bb52 21-24,57-60,85-88,106-109,127-130,148-151,169-172,190-193,211-214,232-235,253-256,274-277,295-298,323-326,344-347,365-368,386-389,407-410,434-437,455-458,476-479,497-500,518-521,539-542,560-563,581-584,602-605,623-626,644-647,665-668,686-689,707-710,728-731,749-752,770-773,791-794,812-815,833-836,854-857,875-878,896-899,917-920,938-941,959-962,980-983,1001-1004,1022-1025,1043-1046,1072-1075,1093-1096,1114-1117,1135-1138,1163-1166,1184-1187,1205-1208,1226-1229,1247-1250
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "a6af35f095f2fda188a0d0b2f477235424482a88",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_ce7cdf5867bb9d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-adbba6ed7a235a364",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

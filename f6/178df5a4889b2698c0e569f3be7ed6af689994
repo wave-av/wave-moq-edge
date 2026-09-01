@@ -1,0 +1,26 @@
+governance/lib/merge-authority.mjs
+  s_9041cf1cf1ccad::t_5cc623514f7f2e 10-11,19-23
+hookcli/lib/t3-merge-authority.mjs
+  s_9041cf1cf1ccad::t_b51b82b766ea3c 52,54
+  s_9041cf1cf1ccad::t_03651b5179ebcb 55,57
+  s_9041cf1cf1ccad::t_0814590d7febc9 129-158,160-186
+  s_9041cf1cf1ccad::t_8ceed4794b6054 59-61
+hookcli/lib/t3-merge-authority-visibility.mjs
+  s_9041cf1cf1ccad::t_e37dbb1ab0add3 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f6178df5a4889b2698c0e569f3be7ed6af689994",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

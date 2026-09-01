@@ -1,0 +1,94 @@
+governance/plans/cli-completeness/E0-CORE-SURFACES.md
+  h_67a1b847dc59d6 1-9
+governance/plans/cli-completeness/E1-THIN-SPOKES.md
+  h_67a1b847dc59d6 1-10
+governance/plans/cli-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-35
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 419-424
+governance/plans/mcp-completeness/E0-CORE-SURFACES.md
+  h_67a1b847dc59d6 1-9
+governance/plans/mcp-completeness/E1-THIN-SPOKES.md
+  h_67a1b847dc59d6 1-10
+governance/plans/mcp-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-30
+governance/plans/mlvc-api-plane/PRICING.md
+  h_67a1b847dc59d6 1-35
+governance/plans/neural-moq-lane/E1-DECODER-SPIKE.md
+  h_67a1b847dc59d6 4
+governance/plans/rendering-completeness/E0-FOUNDATION.md
+  h_67a1b847dc59d6 1-16
+governance/plans/rendering-completeness/E1-SDK-COVERAGE.md
+  h_67a1b847dc59d6 1-15
+governance/plans/rendering-completeness/E2-CLI-COVERAGE.md
+  h_67a1b847dc59d6 1-13
+governance/plans/rendering-completeness/E3-MCP-COVERAGE.md
+  h_67a1b847dc59d6 1-13
+governance/plans/rendering-completeness/E4-SKILLS-COVERAGE.md
+  h_67a1b847dc59d6 1-13
+governance/plans/rendering-completeness/E5-VOICE-COVERAGE.md
+  h_67a1b847dc59d6 1-16
+governance/plans/rendering-completeness/GAP-MAP.md
+  h_67a1b847dc59d6 1-70
+governance/plans/rendering-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-61
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 1-62
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  h_67a1b847dc59d6 64-69
+governance/plans/sdk-completeness/E0-CORE-SURFACES.md
+  h_67a1b847dc59d6 1-9
+governance/plans/sdk-completeness/E1-THIN-SPOKES.md
+  h_67a1b847dc59d6 1-10
+governance/plans/sdk-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-35
+governance/plans/skills-completeness/E0-CORE-SURFACES.md
+  h_67a1b847dc59d6 1-9
+governance/plans/skills-completeness/E1-THIN-SPOKES.md
+  h_67a1b847dc59d6 1-10
+governance/plans/skills-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-31
+governance/plans/voice-completeness/E0-CI-GATE.md
+  h_67a1b847dc59d6 1-9
+governance/plans/voice-completeness/E1-PLUGIN-SINGLE-SOURCE.md
+  h_67a1b847dc59d6 1-10
+governance/plans/voice-completeness/E2-WOW-JUDGE-ROLLOUT.md
+  h_67a1b847dc59d6 1-10
+governance/plans/voice-completeness/NORTH-STAR.md
+  h_67a1b847dc59d6 1-35
+governance/story/artifacts/landing.md
+  h_67a1b847dc59d6 1-26
+governance/story/artifacts/onepager.md
+  h_67a1b847dc59d6 1-19
+governance/story/wave-story.mjs
+  h_67a1b847dc59d6 1-150
+governance/test/voice-law.test.mjs
+  h_67a1b847dc59d6 1-40
+governance/test/voice-plugin-drift.test.mjs
+  h_67a1b847dc59d6 1-38
+governance/test/wow-judge.test.mjs
+  h_67a1b847dc59d6 1-39
+governance/voice/VOICE.md
+  h_67a1b847dc59d6 1-65
+governance/voice/voice-gate.mjs
+  h_67a1b847dc59d6 1-51
+governance/voice/voice-law.mjs
+  h_67a1b847dc59d6 1-43
+governance/voice/wave-content-mcp.mjs
+  h_67a1b847dc59d6 1-115
+governance/voice/wow-judge.mjs
+  h_67a1b847dc59d6 1-144
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 37-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e34ee90b8f3127260b12cb230167565ccb70e29b",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

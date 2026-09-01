@@ -1,0 +1,22 @@
+governance/bin/mint-token.mjs
+  s_9e49fb2dab61f0::t_baf01d6e943ad4 154-175
+  s_9e49fb2dab61f0::t_97c4f9fad25c40 143-152
+  s_9e49fb2dab61f0::t_066a59cba31780 153
+  s_9e49fb2dab61f0::t_a84d47cae202da 196-197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "bfae50b4ee82e1d23277aa9e7998386a27050b02",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

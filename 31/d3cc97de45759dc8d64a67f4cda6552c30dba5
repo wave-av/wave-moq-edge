@@ -1,0 +1,24 @@
+hooks/tests/file-authoring-gate_smoke.sh
+  s_60a20469ef4369::t_1affd7f6f85160 23-33
+hooks/file-authoring-gate.sh
+  s_60a20469ef4369::t_590195d1120549 109-113
+  s_60a20469ef4369::t_241dcbfc145d78 76,81-86,88
+hooks/manifest.json
+  s_60a20469ef4369::t_0c1d801c5f2a9d 238
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "31d3cc97de45759dc8d64a67f4cda6552c30dba5",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.coderabbit.yaml
+  s_6f6453b23e3805::t_df7adf3070fdc7 146-150,152,156-157,162,167-170
+.cursor/BUGBOT.md
+  s_6f6453b23e3805::t_07c3ef134eaa16 49-52,59-87
+.gitattributes
+  s_6f6453b23e3805::t_fa0c0aecb5aefc 20-24
+.github/workflows/auto-merge.yml
+  s_6f6453b23e3805::t_979c594369696b 117-137
+.github/workflows/wave-sec-dependency-review.yml
+  s_6f6453b23e3805::t_0b52cb717e8478 1-60
+.github/workflows/wave-sec-gate.yml
+  s_6f6453b23e3805::t_b48bb555dd318c 39-41,134-149
+.greptile/config.json
+  s_6f6453b23e3805::t_b807c9678ec73d 3-9,13,19-24,30-34,40-42,48-55,61-64,70-72,78-84
+REVIEW.md
+  s_6f6453b23e3805::t_1b25068a47f178 45-51,53-77
+cubic.yaml
+  s_6f6453b23e3805::t_8043617dc9e7e3 70-76,78,82-83,88,93-96
+docs/WAVE-SEC-GATE.md
+  s_6f6453b23e3805::t_154e828341663c 42-47,60-63,69-221,274-278,299-311
+governance/bin/check.mjs
+  s_6f6453b23e3805::t_8781e822d861a7 62-76
+governance/bin/enforce.mjs
+  s_6f6453b23e3805::t_5d6702a5c1b3e9 20,24-31,54,113,122,137-141,143-144,146,172-174,179,181,184-195,197
+governance/bin/fleet/reviewer-config-census.mjs
+  s_6f6453b23e3805::t_6115f9c6cd8cc2 1-257
+governance/bin/gate-liveness-drill.mjs
+  s_6f6453b23e3805::t_d822fd794cf85a 29,107-109,111
+governance/bin/hook-contract-lint.mjs
+  s_6f6453b23e3805::t_c57a229d86a83d 41,98-127
+governance/bin/reviewer-policy-gen.mjs
+  s_6f6453b23e3805::t_afe76840fe2810 1-166
+governance/bin/wave-sec-gate-pin-audit-scan.sh
+  s_6f6453b23e3805::t_7b813b43f04e48 1-110
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_6f6453b23e3805::t_a7ec79cf2777b9 1-318
+governance/bin/wave-sec.mjs
+  s_6f6453b23e3805::t_2fffb84a53f1e2 24,27,78-123,279-304,306
+governance/lib/audit-args.mjs
+  s_6f6453b23e3805::t_f162170bad7c08 1-79
+governance/lib/drill-fixtures-drift.mjs
+  s_6f6453b23e3805::t_bd0a5b0465a912 53-56
+governance/lib/drill-fixtures-reviewer.mjs
+  s_6f6453b23e3805::t_7674d5c8f7eb85 1-82
+governance/lib/enforce-patterns.mjs
+  s_6f6453b23e3805::t_15d7a938f5898c 1-126
+governance/lib/gate-audit-args.mjs
+  s_6f6453b23e3805::t_f54c24ca69045b 113-119
+governance/lib/git-ref-read.mjs
+  s_6f6453b23e3805::t_3106646b15e237 1-53
+governance/lib/pin-collect.mjs
+  s_6f6453b23e3805::t_625c1817a8219c 84-94
+governance/lib/reviewer-ignore-contract.mjs
+  s_6f6453b23e3805::t_2554cb4ba5ee17 1-146
+governance/lib/reviewer-policy.mjs
+  s_6f6453b23e3805::t_7c23fa18c100a8 1-227
+governance/lib/wave-sec-gate-pin-audit-args.mjs
+  s_6f6453b23e3805::t_dfa4c247f216e2 1-27
+governance/lib/wave-sec-gate-pin-classify.mjs
+  s_6f6453b23e3805::t_db658f33aff3aa 1-236
+governance/lib/wave-sec-gate-pin-gh.mjs
+  s_6f6453b23e3805::t_131089c10f5736 1-74
+governance/lib/wave-sec-gate-pin-render.mjs
+  s_6f6453b23e3805::t_5672f4341fea0d 1-54
+governance/lib/wave-sec-lanes-github.mjs
+  s_6f6453b23e3805::t_00f6c956ef1d5a 21-78,148
+governance/lib/wave-sec-lanes.mjs
+  s_6f6453b23e3805::t_5ae43743e3ddbd 15,19
+governance/ops/com.wave.wave-sec-gate-pin-audit.plist
+  s_6f6453b23e3805::t_e58cada2bed794 1-39
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_6f6453b23e3805::t_9b5f5a1a4ce1a7 160-166,176-178
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_6f6453b23e3805::t_929098f14e9f96 1-213
+governance/reviewer-policy.json
+  s_6f6453b23e3805::t_aaa9ea482da131 1-180
+governance/runbooks/wave-sec-gate-pin-audit.md
+  s_6f6453b23e3805::t_dc484fd20589e5 1-137
+governance/test/artifact-count-regression.test.mjs
+  s_6f6453b23e3805::t_fb3fdb2ac0c488 15,86-87,91
+governance/test/artifact-source-audit.test.mjs
+  s_6f6453b23e3805::t_ed293a31d39163 11,17,140,270
+governance/test/command-cwd-heredoc-budget.test.mjs
+  s_6f6453b23e3805::t_3cd4776617634f 1-117
+governance/test/gate-audit-args.test.mjs
+  s_6f6453b23e3805::t_78dfe7c00f33f5 33-41,53-62
+governance/test/git-files-scanset.test.mjs
+  s_6f6453b23e3805::t_4c1b945d49355f 12,16,59,87,106
+governance/test/hook-contract-lint.test.mjs
+  s_6f6453b23e3805::t_b408c1e85a91e8 151-190
+governance/test/lib/rm-fixture.mjs
+  s_6f6453b23e3805::t_e964254ab0d6a0 1-34
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_6f6453b23e3805::t_4b3217bc5e7677 190-202,204-214,223-264
+governance/test/monolith-manifest.test.mjs
+  s_6f6453b23e3805::t_c9dc666912bba8 18,24,70,108,132,158,196,231,253-254,283-285,302
+governance/test/monolith-triage-refusals.test.mjs
+  s_6f6453b23e3805::t_a293f2719f8b6a 24,27,66,88,105,136-138,161,197
+governance/test/monolith-triage.test.mjs
+  s_6f6453b23e3805::t_0f98709374ffd0 25,28,151,168,203
+governance/test/reviewer-census.test.mjs
+  s_6f6453b23e3805::t_872d8ce0638400 1-147
+governance/test/reviewer-demand-shaping.test.mjs
+  s_6f6453b23e3805::t_4c09914940c6db 1-97
+governance/test/reviewer-ignore-sync.test.mjs
+  s_6f6453b23e3805::t_0731f563c62807 1,4-6,8-15,17-19,24-27,29-39,45-52,54,56-66,68,72-75,82-83,87,94-95,99,103-104,108-143,150-151
+governance/test/reviewer-policy.test.mjs
+  s_6f6453b23e3805::t_cd2c65b2357b25 1-266
+governance/test/secret-provisioning-audit.test.mjs
+  s_6f6453b23e3805::t_14a1c9ee8f63c6 13,18,320,336,345
+governance/test/status-trigger-coupling.test.mjs
+  s_6f6453b23e3805::t_462427e1fa1949 134-196
+governance/test/wave-sec-gate-pin-audit-args.test.mjs
+  s_6f6453b23e3805::t_460f1f9f98798b 1-103
+governance/test/wave-sec-gate-pin-classify.test.mjs
+  s_6f6453b23e3805::t_c8f568de9e87ff 1-317
+governance/test/wave-sec-lane-isolation.test.mjs
+  s_6f6453b23e3805::t_96102980582a6e 1-141
+hookcli/bin/hookcli-settings-gen.mjs
+  s_6f6453b23e3805::t_3dc353f4dd29ef 88-93
+hooks/lib/mcp-merge-authority-decide.mjs
+  s_6f6453b23e3805::t_9810b69ac70ff0 1-162
+hooks/mcp-merge-authority-gate.mjs
+  s_6f6453b23e3805::t_3293f38344b653 24-30,56-83,189-263,267-268
+hooks/research-bank.sh
+  s_6f6453b23e3805::t_3eeea13e9c35c8 1-41
+settings/hooks.d/research-bank.json
+  s_6f6453b23e3805::t_d55b894bb60fdf 1-22
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_8d9c7b1560ed2f 25
+governance/graph.json
+  s_6f6453b23e3805::t_8d51528807e302 5934-5946
+hooks/manifest.json
+  s_6f6453b23e3805::t_fe52c40a69b211 891,1317-1337
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f9b2235d99e31ca44f4c1d42accfa937a12afc3e",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

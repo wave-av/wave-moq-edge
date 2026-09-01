@@ -1,0 +1,29 @@
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_c24357e71ae5bc::t_ba28cccf2059b7 1-124
+.gitignore
+  s_c24357e71ae5bc::t_45937d55afe767 100-105
+governance/bin/namespace-release-watch.mjs
+  s_c24357e71ae5bc::t_01284573c0f15e 1-211
+governance/test/namespace-release-watch.test.mjs
+  s_c24357e71ae5bc::t_bf7874b2130f62 1-120
+governance/state/namespace-release-watch.json
+  s_c24357e71ae5bc::t_23a948c59b8e2a 1-13
+.github/workflows/namespace-release-watch.yml
+  s_c24357e71ae5bc::t_d2e29257cb6a40 1-111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "982cc3c4f859c4a3a5e2929f4f076730ad84344e",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

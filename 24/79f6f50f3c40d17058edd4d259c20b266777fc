@@ -1,0 +1,193 @@
+governance/bin/closed-loop-audit.mjs
+  s_821ddb9f1a469b::t_60150c9a5fc8ea 6,12,16-20,27,29-32,38-40,45-59,105-187,191-193,197-249,281-282,285-290,292,296,299,310,316
+governance/lib/closed-loop-audit.mjs
+  s_821ddb9f1a469b::t_1c74194d86dda7 40-42,51-56
+governance/lib/closed-loop-classify.mjs
+  s_821ddb9f1a469b::t_c915bb8cb7c0af 1-193
+governance/lib/drill-fixtures-closed-loop.mjs
+  s_821ddb9f1a469b::t_8f9509f9f95792 1-85
+governance/lib/drill-inline-required.mjs
+  s_821ddb9f1a469b::t_d16c979e60048c 58-66
+governance/lib/drill-registry.mjs
+  s_821ddb9f1a469b::t_e85ef0b6344387 43,114-117,133
+governance/plans/console-perfection/E10-PAGE-COVERAGE.md
+  s_821ddb9f1a469b::t_567f2ed30687a6 1-150
+governance/plans/console-perfection/NORTH-STAR.md
+  s_821ddb9f1a469b::t_05a0153638c13e 150-155
+governance/plans/intent-fabric/DEPENDENCIES.md
+  s_821ddb9f1a469b::t_570adc4e3487ca 4-14
+governance/plans/intent-fabric/E0-GROUND.md
+  s_821ddb9f1a469b::t_c619070d95b428 4-10
+governance/plans/intent-fabric/E1-REPAIR.md
+  s_821ddb9f1a469b::t_94876120765e4c 4-10
+governance/plans/intent-fabric/E10-INSIGHT.md
+  s_821ddb9f1a469b::t_6d218db00c4241 4-9
+governance/plans/intent-fabric/E11-EVOLVE.md
+  s_821ddb9f1a469b::t_fe28b6c8b6f9c4 4-10
+governance/plans/intent-fabric/E2-TRANSPORT.md
+  s_821ddb9f1a469b::t_3d949b9ecde676 4-12
+governance/plans/intent-fabric/E3-ROUTE.md
+  s_821ddb9f1a469b::t_c5c077175ccf56 4-11
+governance/plans/intent-fabric/E4-ATTRIBUTE.md
+  s_821ddb9f1a469b::t_abacaf314ceadf 4-8
+governance/plans/intent-fabric/E5-ADMIT.md
+  s_821ddb9f1a469b::t_374658edfbf153 4-9
+governance/plans/intent-fabric/E6-METER.md
+  s_821ddb9f1a469b::t_152b68154928b7 4-11
+governance/plans/intent-fabric/E7-EGRESS.md
+  s_821ddb9f1a469b::t_54228c96822886 4-10
+governance/plans/intent-fabric/E8-LATENCY.md
+  s_821ddb9f1a469b::t_bce5e9483cee38 4-10
+governance/plans/intent-fabric/E9-AMBIENT.md
+  s_821ddb9f1a469b::t_451ce297054c00 4-10
+governance/plans/model-economy/E1-SENSE.md
+  s_821ddb9f1a469b::t_6d488a5fe21ef8 7-15
+governance/plans/model-economy/E2-ADMIT.md
+  s_821ddb9f1a469b::t_3b7e980d201b39 7-12
+governance/plans/model-economy/E3-REACH.md
+  s_821ddb9f1a469b::t_f3ead1722d232d 7-16
+governance/plans/model-economy/E4-MEASURE.md
+  s_821ddb9f1a469b::t_3f5f5663b27bf8 8-17
+governance/plans/model-economy/E5-PRICE.md
+  s_821ddb9f1a469b::t_1ba6b4d616ef0d 7-13
+governance/plans/model-economy/E6-ROUTE.md
+  s_821ddb9f1a469b::t_5c5b366460844b 7-15
+governance/plans/model-economy/E7-OFFER.md
+  s_821ddb9f1a469b::t_5a9ea9b0e6d19d 7-14
+governance/plans/model-economy/E8-FLYWHEEL.md
+  s_821ddb9f1a469b::t_b980c03c54d83a 7-12
+governance/plans/observability-and-dash0-exit/E0-DOGFOOD-LAW.md
+  s_821ddb9f1a469b::t_48c7f9d50fcdc6 4-13
+governance/plans/observability-and-dash0-exit/E1-DASH0-EXIT.md
+  s_821ddb9f1a469b::t_9c2d02a4fb490d 4-25
+governance/plans/observability-and-dash0-exit/E2-EMIT-EVERYWHERE.md
+  s_821ddb9f1a469b::t_23a8f00fcfe0ad 4-17
+governance/plans/observability-and-dash0-exit/E3-CHASSIS-SPINE.md
+  s_821ddb9f1a469b::t_3f8655c518fbc0 4-13
+governance/plans/observability-and-dash0-exit/E4-INGEST-INDEX.md
+  s_821ddb9f1a469b::t_31acc7297200d8 4-15
+governance/plans/observability-and-dash0-exit/E5-SELF-HOST-PLANE.md
+  s_821ddb9f1a469b::t_cad8dfdee35615 4-16
+governance/plans/observability-and-dash0-exit/E6-PANE.md
+  s_821ddb9f1a469b::t_910425dddeed68 4-15
+governance/plans/observability-and-dash0-exit/E7-PRODUCTIZE.md
+  s_821ddb9f1a469b::t_6880775761dab8 4-10
+governance/plans/observability-and-dash0-exit/E8-ATTESTATION-MOAT.md
+  s_821ddb9f1a469b::t_f213ddf293bd58 4-13
+governance/plans/observability-and-dash0-exit/NORTH-STAR.md
+  s_821ddb9f1a469b::t_feab6a986dbb63 4-18
+governance/plans/observability-and-dash0-exit/RECEIPTS.md
+  s_821ddb9f1a469b::t_9d7824934175c8 2-8,111
+governance/plans/polyrepo-velocity/E1-CASCADE.md
+  s_821ddb9f1a469b::t_ca317e1e8133e1 4-23
+governance/plans/polyrepo-velocity/E2-DRIFT.md
+  s_821ddb9f1a469b::t_3c28969bd37f0f 4-19
+governance/plans/polyrepo-velocity/E3-BLAST-RADIUS.md
+  s_821ddb9f1a469b::t_70c1b85935613e 4-10
+governance/plans/polyrepo-velocity/E4-IDENTITY.md
+  s_821ddb9f1a469b::t_b31f0828bee4cc 4-10
+governance/plans/polyrepo-velocity/E5-PAVED-ROAD.md
+  s_821ddb9f1a469b::t_e360b0a7b39b05 4-13
+governance/plans/polyrepo-velocity/E6-TRACE.md
+  s_821ddb9f1a469b::t_fca479c20ab92f 4-9
+governance/plans/polyrepo-velocity/E7-AGENT-CACHE.md
+  s_821ddb9f1a469b::t_79d76330c9f08b 4-10
+governance/plans/polyrepo-velocity/E8-RUNTIME.md
+  s_821ddb9f1a469b::t_2b22988fde6a4d 4-10
+governance/plans/polyrepo-velocity/NORTH-STAR.md
+  s_821ddb9f1a469b::t_980092ad061f76 4-13
+governance/plans/self-review-gate/E1-RECEIPT-AND-LAW.md
+  s_821ddb9f1a469b::t_5443c6055cd94c 4-5
+governance/plans/self-review-gate/E2-LOCAL-HOOK.md
+  s_821ddb9f1a469b::t_f241d72b416a54 4-5
+governance/plans/self-review-gate/E3-FLEET-GATE.md
+  s_821ddb9f1a469b::t_989bf6b2241122 4-5
+governance/plans/self-review-gate/E4-MEASUREMENT.md
+  s_821ddb9f1a469b::t_fe9c148bbcb248 4-5
+governance/plans/wave-golive/E1-OBSERVE.md
+  s_821ddb9f1a469b::t_733fa4c7c6ca69 4-5
+governance/plans/wave-golive/E2-PRODUCT.md
+  s_821ddb9f1a469b::t_d355d6944ed6de 4-5
+governance/plans/wave-golive/E3-FUNNEL.md
+  s_821ddb9f1a469b::t_c6eecefefe3211 4-5
+governance/plans/wave-golive/E4-BILLING.md
+  s_821ddb9f1a469b::t_0651d3d022a2a3 4-5
+governance/plans/wave-golive/E5-SAFETY.md
+  s_821ddb9f1a469b::t_de506d782b242b 4-5
+governance/plans/wave-golive/E6-REALNESS.md
+  s_821ddb9f1a469b::t_a43fc272aef01a 4-5
+governance/plans/wave-golive/E7-STATUS.md
+  s_821ddb9f1a469b::t_d9dca9623b6fac 4-5
+governance/plans/wave-golive/E8-TIER0.md
+  s_821ddb9f1a469b::t_1acf78132a2875 4-5
+governance/plans/wave-golive/E9-SKILLS.md
+  s_821ddb9f1a469b::t_7db9e15db45a5a 4-5
+governance/plans/wave-golive/NORTH-STAR.md
+  s_821ddb9f1a469b::t_d7221552556b59 4-5
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_821ddb9f1a469b::t_ed0171f7409124 33-43,220-237,290-297
+governance/plans/wave-mesh-fabric/E1-P1-ESTATE-LATENCY.md
+  s_821ddb9f1a469b::t_121c1cfe45ceea 269-278,332-337,343-492,514-527
+governance/plans/wave-mesh-fabric/action/mesh-kv-prefix-count.sh
+  s_821ddb9f1a469b::t_4bea64ca680a9e 1-59
+governance/plans/wave-mesh-fabric/action/mesh-kv-resolve-ns.sh
+  s_821ddb9f1a469b::t_9440d53298ad58 1-55
+governance/plans/wave-mesh-fabric/action/mesh-kv-shape.sh
+  s_821ddb9f1a469b::t_e81e38c2a5a682 1-148
+governance/plans/wave-mesh-fabric/action/mesh-kv-tally.sh
+  s_821ddb9f1a469b::t_e3a8e3d3355fb4 1-61
+governance/plans/wave-mesh-fabric/action/mesh-kv-write-days.sh
+  s_821ddb9f1a469b::t_6b2ce07b0ac9a2 1-60
+governance/plans/wave-retrieval/E0-GROUND-AND-GOVERN.md
+  s_821ddb9f1a469b::t_28874040904136 1-89
+governance/plans/wave-retrieval/E1-BENCHMARK.md
+  s_821ddb9f1a469b::t_e272ac0db2b772 1-182
+governance/plans/wave-retrieval/E2-METADATA-CEILING.md
+  s_821ddb9f1a469b::t_32229d9d8ed520 1-111
+governance/plans/wave-retrieval/E3-TRANSCRIPT-BRIDGE.md
+  s_821ddb9f1a469b::t_69e006561991b6 1-103
+governance/plans/wave-retrieval/E4-GATEWAY-METER.md
+  s_821ddb9f1a469b::t_2bb0ccd27ca654 1-98
+governance/plans/wave-retrieval/E5-DECIDE.md
+  s_821ddb9f1a469b::t_ea5e7a2dc86584 1-102
+governance/plans/wave-retrieval/NORTH-STAR.md
+  s_821ddb9f1a469b::t_e730d819f9c3ac 1-212
+governance/state/runbook-ambient-cache.json
+  s_821ddb9f1a469b::t_2e3323722177df 2,4,13,17-18,21-22,29,33,40,44,48,53,57,65,80,84,88-89,92-100,104-108,112-114,116,120-122,124,128,132-137,140-144,148,152,156-157,160-162,164-166,168,172,176,180,184,188,192-193,196-198,200,204,208,212-216,220,224-236,240,244,248-249,252,256-258,260-261,264,268,272
+governance/test/closed-loop-drift.test.mjs
+  s_821ddb9f1a469b::t_8339a9885d09f2 1-199
+governance/test/hookcli-package-boundary.test.mjs
+  s_821ddb9f1a469b::t_f3107723b09d4b 124-130
+governance/test/merge-authority-failure-attribution.test.mjs
+  s_821ddb9f1a469b::t_373a311d3ab83d 1-104
+hookcli/lib/t3-merge-authority-repo.mjs
+  s_821ddb9f1a469b::t_a2e74dbd629677 1-156
+hookcli/lib/t3-merge-authority.mjs
+  s_821ddb9f1a469b::t_96ecdbb8a1a78d 35-37,42-48,50-51,54-55,57,82-87,96
+hookcli/tests/t3-split-integrity.sh
+  s_821ddb9f1a469b::t_90b4cce707b70d 89-99
+runbooks/bin/ambient-cache-check.mjs
+  s_821ddb9f1a469b::t_1c0ec97fb8bdc2 1-56
+runbooks/bin/calibrate-cache.mjs
+  s_821ddb9f1a469b::t_d25aa163b805d8 10-22,87-91
+runbooks/lib/ambient-cache.mjs
+  s_821ddb9f1a469b::t_023d6d218de2d3 21,24-39,44-49,101-149,157-162,199-200
+runbooks/test/ambient-cache-drift.test.mjs
+  s_821ddb9f1a469b::t_8343e061b23669 1-220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2479f6f50f3c40d17058edd4d259c20b266777fc",
+  "prompts": {},
+  "sessions": {
+    "s_821ddb9f1a469b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aab4aabf54cded183",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

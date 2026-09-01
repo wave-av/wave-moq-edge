@@ -1,0 +1,23 @@
+rules/durable-state-off-ephemeral-storage.md
+  s_60a20469ef4369::t_9226bbecba2d29 1-25
+governance/contract.md
+  s_60a20469ef4369::t_e831064b5ada02 42-44,47,53
+governance/graph.json
+  s_60a20469ef4369::t_1f5f308f302d1a 599-605,6550-6579
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b444e090f870b32bfa364eced55652972d32d17a",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+hooks/sandbox-bypass-gate.sh
+  s_e017bc8859c6b9::t_11a420202674b4 7-15
+governance/ENFORCEMENT-COVERAGE.md
+  s_e017bc8859c6b9::t_270e5ae8e3c4a5 10-11,14,390
+hooks/manifest.json
+  s_e017bc8859c6b9::t_57711a08f44afb 1549
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2e015ab56d684e5acac797d5974a39d0bccfd8ad",
+  "prompts": {},
+  "sessions": {
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

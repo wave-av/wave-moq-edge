@@ -1,0 +1,27 @@
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_b44cc66a95c90c::t_4898474661bd23 319-327,330-332
+  s_b44cc66a95c90c::t_ea0d68ed6f0dc9 19
+  s_b44cc66a95c90c::t_635a9bccc75cee 393
+  s_b44cc66a95c90c::t_a547a37ab5bd12 65
+governance/tools/wave-twitter/acp.mjs
+  s_b44cc66a95c90c::t_1331e3935f2291 1-7,9-27,29-146,148-156
+  s_b44cc66a95c90c::t_330afab976dc73 8
+  s_b44cc66a95c90c::t_fad6b125299339 147
+  s_b44cc66a95c90c::t_f13751c85868b1 28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c54ce6d5be3fbe3a7dace4038c04c2815c5033dd",
+  "prompts": {},
+  "sessions": {
+    "s_b44cc66a95c90c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fda5499cfffeSE96xc0msSskrr",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

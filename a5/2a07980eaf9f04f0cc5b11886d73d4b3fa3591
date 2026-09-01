@@ -1,0 +1,26 @@
+scripts/funnel-meter-bridge.py
+  h_af5ac1a9798224 1-58
+scripts/inference_mcp.py
+  h_af5ac1a9798224 13-14
+scripts/model-profile.py
+  h_af5ac1a9798224 19-20,22
+scripts/truth-loop.py
+  h_af5ac1a9798224 8-9
+scripts/usage-leaderboard.py
+  h_af5ac1a9798224 8-9
+scripts/variance-gate.py
+  h_af5ac1a9798224 10-11
+scripts/vk-org-map.py
+  h_af5ac1a9798224 1-76
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a52a07980eaf9f04f0cc5b11886d73d4b3fa3591",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

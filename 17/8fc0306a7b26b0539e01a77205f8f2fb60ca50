@@ -1,0 +1,25 @@
+hooks/research-bank.sh
+  s_1911ebcba68c5b::t_d6d9fd30eee8af 12
+  s_1911ebcba68c5b::t_79a0f269d2224a 7,19,22
+  s_1911ebcba68c5b::t_76c451fc19aed2 1-6,8-11,13-18,20-21,23-41
+settings/hooks.d/research-bank.json
+  s_1911ebcba68c5b::t_350ea2ce9d6ebb 1-22
+hooks/manifest.json
+  s_1911ebcba68c5b::t_316de9dd161366 1317-1337
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "178fc0306a7b26b0539e01a77205f8f2fb60ca50",
+  "prompts": {},
+  "sessions": {
+    "s_1911ebcba68c5b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6241c250-fea2-40f2-adae-61d7344441fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

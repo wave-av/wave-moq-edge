@@ -1,0 +1,23 @@
+governance/plans/agent-execution-platform/NORTH-STAR.md
+  s_ea7fda6a228496::t_8f973d593fcd97 3-37
+  s_ea7fda6a228496::t_d742fa542b9911 1-2
+governance/plans/explainable-media-platform/NORTH-STAR.md
+  s_ea7fda6a228496::t_d47859c194cc5d 3-41
+  s_ea7fda6a228496::t_659119f98c9aff 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "38d846d75115aef8b46f324f2728ad044e8366f4",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

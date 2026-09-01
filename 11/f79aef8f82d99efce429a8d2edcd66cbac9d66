@@ -1,0 +1,21 @@
+memory/fleet-todo-ledger.md
+  s_6046880c148371::t_853dfe08fb4a88 37-38
+memory/ambient-session-auth-integration-map.md
+  s_6046880c148371::t_04e0f8b934463a 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "11f79aef8f82d99efce429a8d2edcd66cbac9d66",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

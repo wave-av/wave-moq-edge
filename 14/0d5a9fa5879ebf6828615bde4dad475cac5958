@@ -1,0 +1,20 @@
+frameworks/gates/scripts/check-model-thinking-capability.sh
+  s_5f27fa5b8237cd::t_0bae7769c27e07 1-47,49-116
+  s_5f27fa5b8237cd::t_627545268db43b 48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "140d5a9fa5879ebf6828615bde4dad475cac5958",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

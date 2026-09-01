@@ -1,0 +1,33 @@
+governance/bin/work-graph.mjs
+  s_375efeac18ed55::t_45827f7e779244 46-83
+  s_375efeac18ed55::t_965ca88acc6cec 5,7
+  s_375efeac18ed55::t_2774fbd9df36d8 242-244
+governance/.gitignore
+  s_60a20469ef4369::t_704e50b928d987 6-13
+governance/test/work-graph-temp-sweep.test.mjs
+  s_375efeac18ed55::t_fc070a679509ae 1-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "af1a4f8b79867a73d07d09e2366546aa4f0e8ae7",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

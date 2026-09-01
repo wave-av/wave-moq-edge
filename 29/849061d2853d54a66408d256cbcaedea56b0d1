@@ -1,0 +1,33 @@
+governance/plans/engineering-canon/NORTH-STAR.md
+  s_0227926428e4b1::t_6bd2a9d66acc4e 103-137
+  s_0227926428e4b1::t_278c0be968f155 1-70,79-102,138-147
+  s_0227926428e4b1::t_608716f371f0a8 71-78
+governance/research/engineering-canon/devsecops-frontier.md
+  s_0227926428e4b1::t_585c2f374778d0 1-288
+governance/research/engineering-canon/quality-methodologies.md
+  s_0227926428e4b1::t_3fdcc5bcad205f 1-611
+governance/research/engineering-canon/agentic-governance.md
+  s_0227926428e4b1::t_2f8dbed90b0a7f 1-415
+governance/research/engineering-canon/systems-philosophy.md
+  s_0227926428e4b1::t_58143fd1a84bf5 1-322
+governance/research/engineering-canon/safety-critical-assurance.md
+  s_0227926428e4b1::t_90dfa50c5cb70c 1-237
+governance/graph.json
+  s_0227926428e4b1::t_0e2491f984a4ac 4140-4152,24078-24155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "29849061d2853d54a66408d256cbcaedea56b0d1",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

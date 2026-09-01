@@ -1,0 +1,25 @@
+governance/plans/EFFICIENT-FRONTIER-ORCHESTRATION.md
+  s_d9915bbafa9657::t_bcd5446e1bb6dd 53-56
+  s_d9915bbafa9657::t_11cddb593fdd51 43-46
+  s_d9915bbafa9657::t_d805c6ebfa3d81 82-85
+  s_d9915bbafa9657::t_4c1cd0a5b9d1e1 91-94
+  s_d9915bbafa9657::t_5827dc941a5c89 99-102
+  s_d9915bbafa9657::t_86b762e63dd149 73-76
+  s_d9915bbafa9657::t_90d6e3fdf844e4 63-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "75735b9cad8b175587eadeb87c7a94fd9af0b55f",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

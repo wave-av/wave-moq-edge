@@ -1,0 +1,21 @@
+scripts/bugbot/render.py
+  s_07acdfa7e3709a::t_f7740203d1f255 20-22
+scripts/bugbot/review.py
+  s_07acdfa7e3709a::t_d9963f2f2de19e 729-734
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "18514a6a6686f6e2e252d9148e9626e3ae9eb22b",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

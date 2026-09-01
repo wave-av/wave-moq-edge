@@ -1,0 +1,35 @@
+governance/plans/gates-report-coverage/E3-RETROFIT.md
+  s_6f6453b23e3805::t_ccec227edd0cc4 1-43
+governance/plans/gates-report-coverage/E5-SECRETS-INVENTORY.md
+  s_6f6453b23e3805::t_3e27cc1a1f4956 1-41
+governance/plans/gates-report-coverage/E4-FLEET-DETECTOR.md
+  s_6f6453b23e3805::t_bf69c309a788e1 1-29
+governance/plans/gates-report-coverage/E2-SCOPE-DECLARATION.md
+  s_6f6453b23e3805::t_0a504c3a1cd3b4 1-32
+governance/plans/gates-report-coverage/NORTH-STAR.md
+  s_6f6453b23e3805::t_ae35a7411a2ff8 1-94
+governance/plans/gates-report-coverage/E1-FOUR-STATE-CONTRACT.md
+  s_6f6453b23e3805::t_e4c3b73edc10fd 1-47
+governance/plans/gates-report-coverage/E0-EVIDENCE.md
+  s_6f6453b23e3805::t_40d08b4a53334a 1-77
+governance/DASHBOARD.md
+  s_6f6453b23e3805::t_b536bc7c23cd8c 25
+governance/graph.json
+  s_6f6453b23e3805::t_84ded5e106bd3e 3937-4027,22338-22427
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dc31c817e99b1a0b34294eb0a09c0e607b179af6",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/bin/money-audit.mjs
+  s_756b33c630d33b::t_3542f10715ec08 91-95
+  s_756b33c630d33b::t_8aa1c803f38029 88-90
+  s_756b33c630d33b::t_bd515dec5a5497 96-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "eea911324dbe4cdfb1a5791e1a890cd5489c94a1",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

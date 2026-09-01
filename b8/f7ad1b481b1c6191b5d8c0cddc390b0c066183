@@ -1,0 +1,19 @@
+docs/superpowers/specs/2026-08-02-auto-learning-runbooks-design.md
+  s_a293da4db5caf2::t_43af66907002f6 1-270
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b8f7ad1b481b1c6191b5d8c0cddc390b0c066183",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

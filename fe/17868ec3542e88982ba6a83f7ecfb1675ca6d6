@@ -1,0 +1,51 @@
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  s_9e61d4d7679947::t_ac926e55bdca15 199,201-203
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_638db0d3e24d44::t_a49bb862913db6 165-191
+governance/plans/new-ideas-integration/E2-SECURITY-LANE.md
+  s_638db0d3e24d44::t_07f103a9f170b4 4
+governance/sources/lawbook.json
+  s_8f9c78dffd5c1a::t_7963e80f314807 22-26
+governance/bin/check.mjs
+  s_9e61d4d7679947::t_655b5c4d8d3078 46-48
+  s_9e61d4d7679947::t_f7fe99415d6eab 307-331
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_638db0d3e24d44::t_060856f74320e7 64-90
+governance/plans/new-ideas-integration/E3-INTEGRATION-GATES.md
+  s_9e61d4d7679947::t_73701d6c0622cb 4
+  s_9e61d4d7679947::t_eac7cc2feea154 11-23
+governance/research/engineering-canon/origin-method.md
+  s_8f9c78dffd5c1a::t_f16669b907db6b 173-272
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fe17868ec3542e88982ba6a83f7ecfb1675ca6d6",
+  "prompts": {},
+  "sessions": {
+    "s_638db0d3e24d44": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004acc11fffe4QonIjpYMf0SIe",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8f9c78dffd5c1a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004ace331ffezIaOuNsGw7xEqn",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9e61d4d7679947": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_004accf0fffe3ZH78UBbhIyRpl",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

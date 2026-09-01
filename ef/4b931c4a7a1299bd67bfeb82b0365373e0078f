@@ -1,0 +1,222 @@
+governance/lib/rl-source-hooks.mjs
+  s_0950865aa49634::t_e9d4a507c8a90b 58-89
+  s_0950865aa49634::t_66b215e1c2fc3b 174-181
+.github/.token-budget-baseline
+  s_0950865aa49634::t_e1602279b477a6 73-98
+.github/actions/cll-loop-gates/action.yml
+  s_0950865aa49634::t_2b2514eadacde0 117-131
+.github/scripts/provision-hook-test-tree-macos.sh
+  s_0950865aa49634::t_75e8c2332ed784 1-140
+.github/workflows/hook-tests-macos.yml
+  s_0950865aa49634::t_122e6a399eaa27 1-243
+.github/workflows/hook-tests.yml
+  s_0950865aa49634::t_7b60b7bced37c6 63-70
+.github/workflows/reviewer-liveness-age.yml
+  s_0950865aa49634::t_f73b1baec47842 1-79
+governance/ENFORCEMENT-BASELINE.json
+  s_0950865aa49634::t_35951e6be95ef5 4-5,7,9-10,12-13,203-204
+governance/bin/check.mjs
+  s_0950865aa49634::t_7f3ecd81c96411 211-230
+governance/bin/enforcement-tables.mjs
+  s_0950865aa49634::t_b23abf751997e2 9,81-83,130-142
+governance/bin/federate.mjs
+  s_0950865aa49634::t_a464f9ddf3d0c5 31-34,78-113
+governance/bin/hook-registration-wrapper-lint.mjs
+  s_0950865aa49634::t_139d25aa4eb484 1-174
+governance/bin/hook-release.mjs
+  s_0950865aa49634::t_9f2971689d64ea 53,317-320,323,327,329-333,336,338-362
+governance/bin/memory-family-lint.mjs
+  s_0950865aa49634::t_9a9cf661d014e2 1-251
+governance/bin/memory-lint.mjs
+  s_0950865aa49634::t_ce97a28061f249 23-24,78-80,82-83,89,92
+governance/bin/monolith-lib-matrix.mjs
+  s_0950865aa49634::t_2098cd3469e0e1 1-324
+governance/bin/nulltest.mjs
+  s_0950865aa49634::t_a56c8d358753da 1-269
+governance/bin/pagination-completeness.mjs
+  s_0950865aa49634::t_ce1d438ea6b982 1-324
+governance/bin/purge-secret-rules.mjs
+  s_0950865aa49634::t_c3eaf1051ba5af 1-318
+governance/bin/reviewer-alarm.mjs
+  s_0950865aa49634::t_3ae3f732e21ec3 21,342-346
+governance/bin/reviewer-liveness-age.mjs
+  s_0950865aa49634::t_905b5b8e1c9292 1-171
+governance/bin/struggle-miner/collect-cloudflare.mjs
+  s_0950865aa49634::t_2ccce05a571d87 88-89
+governance/lib/atomic-write.mjs
+  s_0950865aa49634::t_b620b83b742b32 26,128,143-153
+governance/lib/drill-fixtures-attester-scope.mjs
+  s_0950865aa49634::t_103f39b44ab034 224-329
+governance/lib/drill-fixtures-pagination.mjs
+  s_0950865aa49634::t_5d205be8ea8be4 1-68
+governance/lib/drill-registry.mjs
+  s_0950865aa49634::t_d036cbb78c3fd6 43,135-137,155
+governance/lib/hookcli-deny-laws.mjs
+  s_0950865aa49634::t_d5a351affff19d 1-35
+governance/lib/memory-corpus.mjs
+  s_0950865aa49634::t_b1aa338191bec9 1-93
+governance/lib/memory-family.mjs
+  s_0950865aa49634::t_3a8199b1fdd190 1-222
+governance/lib/platform-status-probes.mjs
+  s_0950865aa49634::t_35f268e465d184 136-137,169-170
+governance/lib/release-freshness.mjs
+  s_0950865aa49634::t_d2c0c0c3ac22c1 125-131,136-141,143-145
+governance/lib/release-status.mjs
+  s_0950865aa49634::t_c35c05580d0137 1-99
+governance/lib/review-sufficiency.mjs
+  s_0950865aa49634::t_96aabee307f677 116-122
+governance/lib/reviewer-alarm-tally.mjs
+  s_0950865aa49634::t_931c6519f8e982 1-160
+governance/lib/reviewer-alarm.mjs
+  s_0950865aa49634::t_06102050c2ad3d 31-42,45-65,74-79,154-159,180,182-192,199,214,251-286,298-302
+governance/lib/reviewer-liveness-age.mjs
+  s_0950865aa49634::t_7785ce24d511c3 1-168
+governance/lib/reviewer-liveness-snapshot.mjs
+  s_0950865aa49634::t_921edf1d2ff03a 34,96-125,131-132,134
+governance/lib/reviewer-roster.mjs
+  s_0950865aa49634::t_7138cdc5c844b0 45-69,82-147
+governance/lib/rl-corpus-detectors.mjs
+  s_0950865aa49634::t_09bf0485bf52ec 1-191
+governance/lib/rl-corpus-patterns.mjs
+  s_0950865aa49634::t_383ac16800601c 1-149
+governance/lib/rl-corpus-write.mjs
+  s_0950865aa49634::t_d489bc0a7ad295 28,30-35,40-48,91-94,96-106,108,111,133-137,156-158,165,173-184,204-210,219,237,248-259,264,267-275,279-315,322
+governance/lib/rl-source-pr.mjs
+  s_0950865aa49634::t_0b735f713dba25 51-55,155-177,238-240,243-248,252-260,264-272,275-276
+governance/lib/secret-rule-scan.mjs
+  s_0950865aa49634::t_55992626e3b719 1-220
+governance/plans/archive-found-live-defects/E0-PROVE-WHICH-PATH-IS-LIVE.md
+  s_0950865aa49634::t_2190eb8370a739 1-84
+governance/plans/archive-found-live-defects/E1-ADJUDICATE-THE-ACCESS-SWEEP.md
+  s_0950865aa49634::t_b6a0fb5d8c433e 1-120
+governance/plans/archive-found-live-defects/E2-DRAIN-THE-CORRIDOR-GATE.md
+  s_0950865aa49634::t_03d7dcf0330282 1-97
+governance/plans/archive-found-live-defects/NORTH-STAR.md
+  s_0950865aa49634::t_61ac4b49874e96 1-85
+governance/plans/floor-control-not-turn-taking/BANKS.md
+  s_0950865aa49634::t_dfda5d86b4dfec 1-25
+governance/plans/floor-control-not-turn-taking/E0-CLOSE-THE-DEAD-METER.md
+  s_0950865aa49634::t_b73b1a51d36abc 1-260
+governance/plans/floor-control-not-turn-taking/GROUNDING-V2.md
+  s_0950865aa49634::t_80ca8833ef037d 1-178
+governance/plans/floor-control-not-turn-taking/NORTH-STAR.md
+  s_0950865aa49634::t_e135032137b460 1-256
+governance/plans/floor-control-not-turn-taking/RECEIPTS.md
+  s_0950865aa49634::t_41a1d606bef644 1-121
+governance/plans/floor-control-not-turn-taking/SYNTHESIS-R2.md
+  s_0950865aa49634::t_9d9b779241dee8 1-182
+governance/plans/generated-artifact-contention/PHASE-C-DELTA.md
+  s_0950865aa49634::t_31b0241ce5ba0b 8-9,114-152
+governance/plans/generated-artifact-contention/epic.md
+  s_0950865aa49634::t_d5a3faa55ce2b2 63-80,84-89
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_0950865aa49634::t_13df1f285ecf76 16-35,119,121-128,142-144
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_0950865aa49634::t_6c2df1a0be36b1 8-20,117-203
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  s_0950865aa49634::t_4325c7408369b4 4-7,46-65
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_0950865aa49634::t_9b87f8c930ddd8 4-21,40,46-68,76-78
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_0950865aa49634::t_c98bd47717c780 27-34
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  s_0950865aa49634::t_e200140269adc0 1-140
+governance/plans/sovereign-capacity/E9-ADJACENCY.md
+  s_0950865aa49634::t_b481db127935de 1-120
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  s_0950865aa49634::t_a4e788e86f6a2e 24,62-63
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_0950865aa49634::t_5d2d11398e574e 191-241
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_0950865aa49634::t_f8b3f3e6e724cb 251-252,354-372
+governance/sources/lawbook.json
+  s_0950865aa49634::t_0e3d2dd1d00157 2,5-6,20-22,24
+governance/state/canon-gap-map/GAP-MAP.md
+  s_0950865aa49634::t_44fe72f3aea064 22,31,81,95,103
+governance/state/canon-gap-map/gap-map.json
+  s_0950865aa49634::t_9d58c9e02dffc6 206,212,214,464,467,469,1754,1758,1760,2137,2142,2144,2363,2367,2369
+governance/state/reviewer-liveness.json
+  s_0950865aa49634::t_d3811623d55ffc 2,28,35-36,42,47,49-50,54,56-57,61,63-64,68,70-71,75,78,82,89,92,96,99
+governance/test/atomic-write.test.mjs
+  s_0950865aa49634::t_e64663cbe12ea5 127-137
+governance/test/ci-surface.test.mjs
+  s_0950865aa49634::t_4f5516d35d5182 124,127-128,140-141
+governance/test/federate-graph-availability.test.mjs
+  s_0950865aa49634::t_e6ac6b53450210 1-99
+governance/test/hook-registration-wrapper-lint.test.mjs
+  s_0950865aa49634::t_976cd23fc9177b 1-106
+governance/test/known-red-baseline-wiring.test.mjs
+  s_0950865aa49634::t_fe0660ea9bd8b7 22,26-32,34-36,204-216,224-280
+governance/test/memory-family.test.mjs
+  s_0950865aa49634::t_3a5a6fb614a7a4 1-329
+governance/test/pagination-same-line-loop.test.mjs
+  s_0950865aa49634::t_415ef86dae1101 1-76
+governance/test/purge-secret-rules.test.mjs
+  s_0950865aa49634::t_f74cb921672600 1-231
+governance/test/release-status.test.mjs
+  s_0950865aa49634::t_5949e1c43583ad 1-153
+governance/test/reviewer-alarm-conditionally-armed.test.mjs
+  s_0950865aa49634::t_f9d7c02dde29bc 1-212
+governance/test/reviewer-liveness-age.test.mjs
+  s_0950865aa49634::t_5295c28c15039a 1-120
+governance/test/reviewer-liveness-snapshot.test.mjs
+  s_0950865aa49634::t_0677aba29fc5d7 28,64,71-74,141,143,177-202
+governance/test/reviewer-scoreboard.test.mjs
+  s_0950865aa49634::t_db2a95aebd7f6e 7-9,113-116,118,124-149,168-170
+governance/test/rl-corpus-detectors.test.mjs
+  s_0950865aa49634::t_29ef4aee53af68 1-209
+governance/test/rl-corpus-patterns.test.mjs
+  s_0950865aa49634::t_d9402492f7e54f 1-165
+governance/test/rl-corpus-write.test.mjs
+  s_0950865aa49634::t_ff612492db3a90 14-15,17,115-130,185-245,258-259,283-295,332-361,373-376
+governance/test/rl-signal-source.test.mjs
+  s_0950865aa49634::t_61894d0701fa76 223-273
+governance/test/secret-rule-scan.test.mjs
+  s_0950865aa49634::t_6031d8acc898de 1-286
+hooks/attester-scope-gate.sh
+  s_0950865aa49634::t_db0ca7adef45c9 140-150,163,177-278
+hooks/data/public-write-denylist.json
+  s_0950865aa49634::t_8a901ef9c1ab2a 26-35
+hooks/pr-body-floor-advisory.sh
+  s_0950865aa49634::t_6be881452bf7b4 1-53
+hooks/pr-inflight-capture.sh
+  s_0950865aa49634::t_a9073fce3b5740 1-295
+hooks/tests/compressor_smoke.sh
+  s_0950865aa49634::t_07f5506f755fcd 6-50
+hooks/tests/hook-release-skills.test.sh
+  s_0950865aa49634::t_5eab9dd04c69c9 56-57,151-153
+hooks/tests/hook-release-status-exit.test.sh
+  s_0950865aa49634::t_227eb1beeddb93 44-53,158-170
+hooks/tests/hook-release.test.sh
+  s_0950865aa49634::t_6ce9b5432617e2 55-59,236-237,255-256
+hooks/tests/pr-inflight-capture.test.sh
+  s_0950865aa49634::t_1fcc08ea5b0298 1-335
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  s_0950865aa49634::t_3287be868c2afc 3,38-43
+rules/agreement-across-methods-is-worthless-when-they-share-an-input.md
+  s_0950865aa49634::t_03a2cc0d8fc5c1 60
+rules/no-destructive-git-op-without-gate.md
+  s_0950865aa49634::t_c378e9193e77b5 1-49
+rules/pr-body-floor.md
+  s_0950865aa49634::t_43bb4d8d43da49 1-49
+rules/rig-change-lifecycle.md
+  s_0950865aa49634::t_b8e83c5a5a00bf 77
+settings/settings.base.json
+  s_0950865aa49634::t_c55bdee488c693 380-384,526,715,853-857
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ef4b931c4a7a1299bd67bfeb82b0365373e0078f",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

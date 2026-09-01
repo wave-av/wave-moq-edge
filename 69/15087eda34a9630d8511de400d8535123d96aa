@@ -1,0 +1,24 @@
+governance/lib/nulltest-splice.mjs
+  s_dd42a206f882e3::t_192f86a1e67338 44-52,54-55
+  s_dd42a206f882e3::t_e7f56a8c03672c 77-79,81-87
+  s_dd42a206f882e3::t_e8b52fe2738a30 190-201
+  s_dd42a206f882e3::t_f006da319747fb 174-181,184
+governance/test/nulltest-splice.test.mjs
+  s_dd42a206f882e3::t_bd210ff483c9ce 53-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6915087eda34a9630d8511de400d8535123d96aa",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

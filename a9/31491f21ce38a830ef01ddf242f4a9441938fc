@@ -1,0 +1,34 @@
+hooks/tests/fixtures/merge-premise-harness.sh
+  s_264ae386838c57::t_a0543b8379e916 1-82
+hooks/tests/merge-premise-split.test.sh
+  s_264ae386838c57::t_dca642b6a00744 1-75
+hooks/merge-premise-guard.sh
+  s_264ae386838c57::t_8542afe1642544 229-236,238-239
+  s_264ae386838c57::t_a1931adb60cf5e 222
+  s_264ae386838c57::t_169d726743391b 62-71,73-75
+hooks/lib/merge-premise-decide.sh
+  s_264ae386838c57::t_58cdc625d144c0 26-28
+  s_264ae386838c57::t_8724a2a1bcf701 1-25,29-75
+hooks/lib/merge-premise-io.sh
+  s_264ae386838c57::t_a3220f39a672b1 1-50
+hooks/manifest.json
+  s_264ae386838c57::t_6f0472dab9c063 863
+hooks/tests/merge-premise-guard.test.sh
+  s_264ae386838c57::t_65a8cd6ba6ccd7 23-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a931491f21ce38a830ef01ddf242f4a9441938fc",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

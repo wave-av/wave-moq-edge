@@ -1,0 +1,43 @@
+governance/plans/routing-plane-unification/E0-INVENTORY.md
+  s_700cd0ad928eea::t_09742eae5edaf6 1-6
+governance/plans/routing-plane-unification/E1-UNIFY-CHAIN.md
+  s_700cd0ad928eea::t_1a5853ff8260d7 1-6
+governance/plans/routing-plane-unification/E10-PROFILE-ROUTING.md
+  s_700cd0ad928eea::t_e39abbf1925060 1-22
+governance/plans/routing-plane-unification/E2-CLAUDE-POOL-RUNG.md
+  s_700cd0ad928eea::t_94a58c9473193b 1-6
+governance/plans/routing-plane-unification/E3-RUNPOD-RUNG.md
+  s_700cd0ad928eea::t_2c257298938de5 1-6
+governance/plans/routing-plane-unification/E4-RENDERINGS.md
+  s_700cd0ad928eea::t_1dccbc95fb5869 1-6
+governance/plans/routing-plane-unification/E5-SUBSCRIPTION-RAILS.md
+  s_700cd0ad928eea::t_7fa0e0a6269223 1-21
+governance/plans/routing-plane-unification/E6-API-RAILS.md
+  s_700cd0ad928eea::t_8ffa2141511d92 1-21
+governance/plans/routing-plane-unification/E7-TRUTH-LOOP.md
+  s_700cd0ad928eea::t_80317113085503 1-22
+governance/plans/routing-plane-unification/E8-LIVENESS-METERING.md
+  s_700cd0ad928eea::t_f168cfabd0c27e 1-22
+governance/plans/routing-plane-unification/E9-REGISTRATION.md
+  s_700cd0ad928eea::t_b96edf3eb6845a 1-22
+governance/plans/routing-plane-unification/NORTH-STAR.md
+  s_700cd0ad928eea::t_10b2d8a1cd67f0 1-42
+governance/plans/routing-plane-unification/RECEIPT-E0-INVENTORY.md
+  s_700cd0ad928eea::t_cfbfa88b3ee35f 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9eac63aa63686029f89000cd7d89a8e631d7ec72",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/stacked-prs/E1-MEASURE.md
+  s_63a2f8012db469::t_3f5d2faa3e9e0c 101
+governance/plans/stacked-prs/NORTH-STAR.md
+  s_63a2f8012db469::t_e6f3b202387fab 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f1cd59f1c27c8802d357494721d9c501cc112eaa",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

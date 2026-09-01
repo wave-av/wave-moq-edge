@@ -1,0 +1,23 @@
+governance/plans/wave-marketplace-payouts/E4-SURFACE-NAMING.md
+  s_756b33c630d33b::t_b270e1c978c9ef 1-27
+governance/plans/wave-marketplace-payouts/SURFACE-MAP.md
+  s_756b33c630d33b::t_404b0de4840e98 1-50
+governance/plans/wave-marketplace-payouts/NORTH-STAR.md
+  s_756b33c630d33b::t_a21d8c22f67f77 51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1f2e4dbc49ed0981bf79f9d1d5ab36dcef915b9f",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

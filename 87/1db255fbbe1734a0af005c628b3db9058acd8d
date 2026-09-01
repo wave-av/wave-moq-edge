@@ -1,0 +1,33 @@
+scripts/bugbot/RIG.md
+  s_0b987fef4e1240::t_590987da81c589 56-57,59
+  s_0b987fef4e1240::t_c8a6beca0ee69c 18-23
+scripts/bugbot/test_parity.py
+  s_0b987fef4e1240::t_41d7498cfe6e3f 177-212
+  s_0b987fef4e1240::t_44a95f8c2ed6f7 257-258
+scripts/bugbot/parity.py
+  s_0b987fef4e1240::t_4f2d2bff7e368c 274-279
+  s_0b987fef4e1240::t_b5a4e3bddf8fe2 288-291
+  s_0b987fef4e1240::t_86c59e774248a9 222-238
+scripts/bugbot/ROADMAP.md
+  s_0b987fef4e1240::t_32897ddae40383 111-117
+  s_0b987fef4e1240::t_7cbc091fe07ba3 64-78
+scripts/bugbot/daemon.sh
+  s_0b987fef4e1240::t_0966097d7bfcbb 350-370
+  s_0b987fef4e1240::t_180f212e9d8fb6 423
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "871db255fbbe1734a0af005c628b3db9058acd8d",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

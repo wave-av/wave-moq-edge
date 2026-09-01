@@ -1,0 +1,27 @@
+governance/test/artifact-source-audit.test.mjs
+  s_63c6ee080d73c3::t_fab92bfeb52082 139,143-148,152
+  s_63c6ee080d73c3::t_304f8676fef8ef 92-114
+governance/bin/artifact-source-audit.mjs
+  s_63c6ee080d73c3::t_12e07cfeab9645 158-163
+  s_63c6ee080d73c3::t_630494d9f5b4ea 67-71,74-89,93-96
+governance/lib/artifact-source.mjs
+  s_63c6ee080d73c3::t_d5a8cb748687d1 106
+  s_63c6ee080d73c3::t_ccedff958fb766 89-93
+  s_63c6ee080d73c3::t_5b8b19460483c7 37,43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "825348afe4a12fad724a9447b71ad017db4cc02c",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

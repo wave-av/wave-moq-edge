@@ -1,0 +1,21 @@
+governance/test/factory-pipeline.test.mjs
+  s_7ddeb5d251570f::t_b847fbbb31ea8f 1-36
+bin/factory-pipeline.mjs
+  s_7ddeb5d251570f::t_f1e24f5c7be9a1 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2e2973dabf5a7888482799c61dde82d79e4a1eb1",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

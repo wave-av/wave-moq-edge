@@ -1,0 +1,38 @@
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/graph.json
+  h_67a1b847dc59d6 7118-7247,29329-29928
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  h_67a1b847dc59d6 4-33
+governance/plans/wave-control/DECISION-E8-RELATIONSHIP.md
+  h_67a1b847dc59d6 1-125
+governance/plans/wave-control/DECISION-URL.md
+  h_67a1b847dc59d6 1-120
+governance/plans/wave-control/E0-DELTA-LEDGER.md
+  h_67a1b847dc59d6 1-160
+governance/plans/wave-control/E1-SOURCING.md
+  h_67a1b847dc59d6 1-172
+governance/plans/wave-control/E2-SCOPED-TOPOLOGY.md
+  h_67a1b847dc59d6 1-165
+governance/plans/wave-control/E3-CONTROL-SPINE.md
+  h_67a1b847dc59d6 1-139
+governance/plans/wave-control/E4-CAPABILITY-CUSTODY.md
+  h_67a1b847dc59d6 1-150
+governance/plans/wave-control/E5-ALWAYS-ON-FLEET.md
+  h_67a1b847dc59d6 1-127
+governance/plans/wave-control/E6-SEATS-AND-CROSSING.md
+  h_67a1b847dc59d6 1-173
+governance/plans/wave-control/NORTH-STAR.md
+  h_67a1b847dc59d6 1-298
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c811ac58e4eac06469e20627f2760e62178baa52",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

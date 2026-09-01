@@ -1,0 +1,26 @@
+governance/bin/pr-dep-advisory.mjs
+  s_63a2f8012db469::t_33091aab455bef 1-120
+governance/plans/stacked-prs/E3-CROSS-REPO-GATE.md
+  s_63a2f8012db469::t_12384bf7805cb0 40-44
+  s_63a2f8012db469::t_84e89203f168b2 4
+governance/lib/pr-dep-advisory.mjs
+  s_63a2f8012db469::t_d91acf87fe6b6f 1-91
+governance/test/pr-dep-advisory.test.mjs
+  s_63a2f8012db469::t_e5e301d3ad3e4e 1-122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ba00f8ea9eeced282ec956d7219192721581aa3",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

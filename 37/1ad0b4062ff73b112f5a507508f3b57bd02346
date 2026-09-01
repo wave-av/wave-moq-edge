@@ -1,0 +1,58 @@
+governance/plans/fleet-autonomy/E2-E2-TELEMETRY-PATTERNS.md
+  s_e632cee35fa3d2::t_553ee34fbf861b 2-5,7-36
+  s_e632cee35fa3d2::t_dad3931de6ba05 6
+  s_e632cee35fa3d2::t_4b6f079bdf9d8d 1
+governance/plans/fleet-autonomy/E3-E3-SHADOW-LANE.md
+  s_e632cee35fa3d2::t_5408040a8f7afa 2-36
+  s_e632cee35fa3d2::t_2ef1c3e3f79bad 1
+governance/plans/fleet-autonomy/E1-E1-ORIENTATION-ANCHOR.md
+  s_e632cee35fa3d2::t_008b8b0db20a19 2-31
+  s_f01de6a98f2187::t_13f3d369280dc6 1
+governance/plans/fleet-autonomy/E5-E5-HORIZON.md
+  s_e632cee35fa3d2::t_318f2021bb2235 2-5,7-38
+  s_e632cee35fa3d2::t_8db723dc07632e 6
+  s_e632cee35fa3d2::t_c78db1d9a2f94f 1
+governance/plans/fleet-autonomy/E0-E0-SUBSTRATE.md
+  s_e632cee35fa3d2::t_8c13490c147af8 2-23
+  s_b0940338736e2c::t_721f18a2837936 1
+governance/plans/fleet-autonomy/E4-E4-TRUSTED-LANE-PROMOTION.md
+  s_e632cee35fa3d2::t_22e0b5fa3df90c 2-8,10-45
+  s_e632cee35fa3d2::t_5e05c1f4479b71 9
+  s_e632cee35fa3d2::t_8f1e37888760df 1
+governance/plans/fleet-autonomy/NORTH-STAR.md
+  s_e632cee35fa3d2::t_d8702f8d34412f 3-8,10-50
+  s_e632cee35fa3d2::t_c715a3dbd794f4 9
+  s_e632cee35fa3d2::t_c47a9ca791ccdc 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "371ad0b4062ff73b112f5a507508f3b57bd02346",
+  "prompts": {},
+  "sessions": {
+    "s_b0940338736e2c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024aeed0ffepWGQYHwWsVPUVV",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e632cee35fa3d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024b9e6dffetylsjuXTsQn423",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_f01de6a98f2187": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024b6885ffe4a4hM54fUot8N6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

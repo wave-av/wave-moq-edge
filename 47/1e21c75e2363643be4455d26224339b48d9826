@@ -1,0 +1,19 @@
+governance/plans/self-play-refactoring/SERVICE-DESIGN.md
+  s_1dd71ebab1e1db::t_fb950649821e3f 1-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "471e21c75e2363643be4455d26224339b48d9826",
+  "prompts": {},
+  "sessions": {
+    "s_1dd71ebab1e1db": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006910437ffe1df3t3LpVGpwEw",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

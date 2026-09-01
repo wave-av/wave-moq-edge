@@ -1,0 +1,19 @@
+docs/CUSTOMER-PERMISSIONS.md
+  s_2f1bfe8237f0ee::t_f610255c71bf94 45,47-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "429fed01a10f3b93b138eeb5f92f186eebfb11df",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

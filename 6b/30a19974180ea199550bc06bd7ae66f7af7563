@@ -1,0 +1,31 @@
+frameworks/pricing/README.md
+  s_19c8e603d8990b::t_4cf8ee5a47d355 159
+  s_19c8e603d8990b::t_7e5c4fd080f87f 36
+  s_19c8e603d8990b::t_c7d5d02650470b 170
+  s_19c8e603d8990b::t_5bff91541bdbd9 99
+  s_19c8e603d8990b::t_20622c798734ff 30
+  s_19c8e603d8990b::t_dc2149452dec22 153
+  s_19c8e603d8990b::t_70ff2f83ab5169 172
+  s_19c8e603d8990b::t_5dd9868b118c65 113
+  s_19c8e603d8990b::t_c1a4942edb0b62 4
+  s_19c8e603d8990b::t_7a9ac39f0c8e31 160
+  s_19c8e603d8990b::t_375d3c95366cfe 21
+  s_19c8e603d8990b::t_99b0341f052a32 27
+  s_19c8e603d8990b::t_f8e5ef24fd8fd5 97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "6b30a19974180ea199550bc06bd7ae66f7af7563",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+governance/test/email-gate.test.mjs
+  s_53b49eff5b8c5d::t_685ac71daa14dc 279-282
+  s_53b49eff5b8c5d::t_28f6dc8764aec0 1-278,283-297
+governance/bin/email-gate.mjs
+  s_53b49eff5b8c5d::t_4bdd9e485bae46 1-95
+governance/bin/surface-check.mjs
+  s_53b49eff5b8c5d::t_80f4d0af5fdaf1 1-109
+governance/lib/email-craft-rules.mjs
+  s_53b49eff5b8c5d::t_4f52359a837dac 1-244
+governance/lib/surface-checks-local.mjs
+  s_53b49eff5b8c5d::t_503de591c69ccf 1-282
+governance/lib/surface-checks-remote.mjs
+  s_53b49eff5b8c5d::t_3b2f52cdd55c25 1-174
+governance/lib/surface-probe-lib.mjs
+  s_53b49eff5b8c5d::t_6b4c72eee404fe 1-89
+governance/lib/surface-probes.mjs
+  s_53b49eff5b8c5d::t_91dfa72da17a43 1-53
+governance/lib/surface-verdict.mjs
+  s_53b49eff5b8c5d::t_f16e40aa204cf3 1-216
+governance/test/surface-check.test.mjs
+  s_53b49eff5b8c5d::t_9702b490b8f9d8 1-403
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1650c97d665479d77358b0405e810aa942ef3a35",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

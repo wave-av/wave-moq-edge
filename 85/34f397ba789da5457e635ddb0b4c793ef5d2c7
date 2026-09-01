@@ -1,0 +1,23 @@
+governance/plans/vendor-billing-detector/RECORDS.json
+  s_33808c00e16d52::t_6eb0b25b471779 1-23
+governance/test/cap-audit.test.mjs
+  s_33808c00e16d52::t_0560ebc27a5ed3 1-26
+governance/bin/cap-audit.mjs
+  s_33808c00e16d52::t_cfeb30810efcae 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8534f397ba789da5457e635ddb0b4c793ef5d2c7",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/dispatch-moat/NORTH-STAR.md
+  s_04cb6d9a592a92::t_451ae23425cdb2 37-38
+governance/plans/llm-funnel-gateway/NORTH-STAR.md
+  s_04cb6d9a592a92::t_956061d647c898 38-39
+memory/model-ops-map.md
+  s_04cb6d9a592a92::t_384fa8f92b84f6 885-897
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2bc5ab59da61f2d8c393384d16a34796fe40db97",
+  "prompts": {},
+  "sessions": {
+    "s_04cb6d9a592a92": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a979fdac1f409d1e2",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

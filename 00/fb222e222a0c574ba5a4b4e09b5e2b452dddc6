@@ -1,0 +1,27 @@
+.github/workflows/auto-merge.yml
+  s_c88e7c88b118d2::t_08238acf64846c 331
+.github/workflows/blast-radius-dispatch.yml
+  s_c88e7c88b118d2::t_08238acf64846c 66-67
+.github/workflows/governance-publish.yml
+  s_c88e7c88b118d2::t_08238acf64846c 21-22
+.github/workflows/blast-radius.yml
+  s_c88e7c88b118d2::t_08238acf64846c 43,70-75,77-78
+.github/workflows/governance.yml
+  s_c88e7c88b118d2::t_08238acf64846c 56,255,286-287
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "00fb222e222a0c574ba5a4b4e09b5e2b452dddc6",
+  "prompts": {},
+  "sessions": {
+    "s_c88e7c88b118d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fea8b9099ffeWRVfghx3Nh1PBd",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

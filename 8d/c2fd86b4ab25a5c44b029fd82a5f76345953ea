@@ -1,0 +1,63 @@
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_37d3f61160b2dd::t_e9cdb9a614755b 9,20
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_700cd0ad928eea::t_832c32c9be9398 9
+governance/plans/physics-of-compute/E6-MEASUREMENT-RIGOR.md
+  s_700cd0ad928eea::t_35baebec67348c 11
+governance/plans/physics-of-compute/NORTH-STAR.md
+  s_37d3f61160b2dd::t_5615c0714212b9 9,55,57,60,96
+governance/plans/wave-ga/E-AGENTIC-MEDIA.md
+  s_37d3f61160b2dd::t_7d2e435b5ecf01 21
+governance/plans/wave-ga/E-METERING.md
+  s_37d3f61160b2dd::t_6cd7a2615e9b38 26
+governance/plans/wave-ga/E-PUBLISH.md
+  s_37d3f61160b2dd::t_5af47816aacaae 22,33
+governance/plans/wave-ga/E-STORAGE.md
+  s_37d3f61160b2dd::t_be58b28f3e516f 26
+governance/plans/wave-ga/NORTH-STAR.md
+  s_37d3f61160b2dd::t_bb2becc1077b65 20,27,57
+governance/plans/wave-native-cutover/E-AGENTS-TO-85.md
+  s_37d3f61160b2dd::t_e3a20bbd851c31 34,36-37
+governance/plans/wave-native-cutover/E-DECOMMISSION.md
+  s_37d3f61160b2dd::t_382fb25d1280b2 38-41
+governance/plans/wave-native-cutover/E-EGRESS-ROUTER.md
+  s_37d3f61160b2dd::t_cf85dd1a687840 33-34,36-37
+governance/plans/wave-native-cutover/E-INGRESS.md
+  s_37d3f61160b2dd::t_e5f648798d056a 28-30,42
+governance/plans/wave-native-cutover/E-MEDIA-TAP.md
+  s_37d3f61160b2dd::t_77502d60983c93 20,32-34
+governance/plans/wave-native-cutover/E-ROOMS.md
+  s_37d3f61160b2dd::t_bb58e003771829 33-35
+governance/plans/wave-native-cutover/NORTH-STAR.md
+  s_37d3f61160b2dd::t_51063a8882afc9 27,43-46,48,91-92
+governance/research/creator-intelligence/DOGFOOD-LOOP.md
+  s_37d3f61160b2dd::t_23190a1de706cf 12
+governance/research/creator-intelligence/dsh-revertible-effects/SYNTHESIS.md
+  s_37d3f61160b2dd::t_564dc6ff07feb0 22-24
+governance/research/creator-intelligence/vercel-software-factory/SYNTHESIS.md
+  s_37d3f61160b2dd::t_55a3b1ca29da92 29,50,94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8dc2fd86b4ab25a5c44b029fd82a5f76345953ea",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

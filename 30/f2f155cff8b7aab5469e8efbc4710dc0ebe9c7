@@ -1,0 +1,21 @@
+governance/README.md
+  s_63a2f8012db469::t_4e0a28dbde35ee 62-64
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_63a2f8012db469::t_1c7a3ffd6c5d55 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "30f2f155cff8b7aab5469e8efbc4710dc0ebe9c7",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

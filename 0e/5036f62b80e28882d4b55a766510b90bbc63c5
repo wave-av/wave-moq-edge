@@ -1,0 +1,19 @@
+governance/graph.json
+  s_a8e9180801b9ba::t_35adbb90ad1ea9 1-64625
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0e5036f62b80e28882d4b55a766510b90bbc63c5",
+  "prompts": {},
+  "sessions": {
+    "s_a8e9180801b9ba": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcfeabb63ffe9mCPnEM0TEwtvr",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

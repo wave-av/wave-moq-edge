@@ -1,0 +1,22 @@
+governance/test/epic-new-shape.test.mjs
+  s_0227926428e4b1::t_b8d527c15797e5 174-192
+governance/bin/epic.mjs
+  s_0227926428e4b1::t_73ac9ca343a2df 172
+  s_0227926428e4b1::t_e3af30d8bf80fa 46-57,62-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9b4e1b304bfba1e50267077ed2ad1ca2620cab7e",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

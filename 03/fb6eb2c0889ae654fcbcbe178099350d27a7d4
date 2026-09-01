@@ -1,0 +1,28 @@
+governance/plans/volumetric-delivery-proof/RECEIPTS.md
+  s_3c7a371f5618a4::t_bb36ee4e012511 154-161,164-166
+governance/plans/volumetric-delivery-proof/E6-PRODUCTIZE.md
+  s_3c7a371f5618a4::t_80920e5243683e 1-96
+governance/plans/volumetric-delivery-proof/NORTH-STAR.md
+  s_3c7a371f5618a4::t_577155f95f85ef 104-105,113-116,127-142
+  s_3c7a371f5618a4::t_722a1119a3cb3e 5,7-10
+  s_3c7a371f5618a4::t_034347ebae83a0 31-33,40-60
+  s_3c7a371f5618a4::t_5b70fc92d03849 61
+governance/plans/volumetric-delivery-proof/E5-INTERNAL-TOOLIZE.md
+  s_3c7a371f5618a4::t_6399705587e175 1-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "03fb6eb2c0889ae654fcbcbe178099350d27a7d4",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

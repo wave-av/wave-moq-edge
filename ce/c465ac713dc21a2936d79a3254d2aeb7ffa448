@@ -1,0 +1,48 @@
+governance/bin/conservation-lint.mjs
+  s_70c7ac7de143f9::t_09e0b32053573a 55
+  s_70c7ac7de143f9::t_ab14ded0f0264a 2-6,8-19,21-27,33-36,39-45,48-54,56-64,67,73-79,81-102,104-105,107-113,115-122,125-129
+governance/tools/coherence-budget/README.md
+  s_70c7ac7de143f9::t_e7912984c350ab 11
+governance/bin/check.mjs
+  s_70c7ac7de143f9::t_0f76da146184df 44-47
+  s_70c7ac7de143f9::t_2087e5796077c0 272-287
+governance/test/conservation-lint.test.mjs
+  s_70c7ac7de143f9::t_ba3de36eb89bdc 6-7,12-16,23,26,30,32-35,37-102
+governance/tools/pr-sockpuppet-guard/README.md
+  s_70c7ac7de143f9::t_e268495fc6627e 8,28
+governance/tools/conservation-lint/bin/conservation-lint.mjs
+  s_70c7ac7de143f9::t_b958ae8b978931 88-90
+  s_70c7ac7de143f9::t_184a9832f2eb88 55-59,63
+  s_70c7ac7de143f9::t_bf5265be439175 26-31
+  s_70c7ac7de143f9::t_6b891de6c652fc 91
+governance/test/fixtures/conservation-lint/all-known-gap.md
+  s_c2bb037074776b::t_395b015fef9c86 1-5
+governance/test/fixtures/conservation-lint/no-siblings.md
+  s_c2bb037074776b::t_cbcc9703e05722 1-5
+governance/test/fixtures/conservation-lint/unrecognized-row.md
+  s_c2bb037074776b::t_b79313ff7c3c39 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cec465ac713dc21a2936d79a3254d2aeb7ffa448",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c2bb037074776b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4856d47b-02b2-43e3-bae6-8dd7ef63299d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

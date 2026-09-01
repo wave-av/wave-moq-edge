@@ -1,0 +1,41 @@
+governance/bin/fleet/installation-authority-audit.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 16-20
+governance/lib/thread-resolution-args.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 10-13,32-43
+governance/lib/strict-flags.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 1-12,17-55,57-63
+  s_63c6ee080d73c3::t_5421002f889df2 13-16
+  s_63c6ee080d73c3::t_7938babcae115e 56
+governance/bin/fleet/lib/installation-authority-audit-args.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 12-15,35-44
+governance/test/thread-resolution-args.test.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 72-75,81-83,97-98
+governance/test/review-liveness-args.test.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 78-83,89-91,105-106
+governance/lib/gate-audit-args.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 22-28,104
+  s_63c6ee080d73c3::t_797b7596f6be59 1,39-42,44-65,67-71,92-97,103
+  s_63c6ee080d73c3::t_794ca34ff98f25 105-108
+governance/lib/review-liveness-args.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 12-17,40-52
+governance/bin/thread-resolution.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 116-121
+governance/bin/review-liveness.mjs
+  s_63c6ee080d73c3::t_968bd5f30d1363 165-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "203bc22b65581e91d4f81555d8898a72fc481121",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

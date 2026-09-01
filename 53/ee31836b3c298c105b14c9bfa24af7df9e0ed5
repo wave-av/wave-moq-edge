@@ -1,0 +1,23 @@
+governance/plans/console-completeness/E4-SEMANTICS.md
+  s_15127d80763110::t_ef0e21d092e0a6 41
+governance/DASHBOARD.md
+  s_15127d80763110::t_e526cbcb72f06e 25
+governance/graph.json
+  s_15127d80763110::t_c2d841e376f850 19775-19780
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "53ee31836b3c298c105b14c9bfa24af7df9e0ed5",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

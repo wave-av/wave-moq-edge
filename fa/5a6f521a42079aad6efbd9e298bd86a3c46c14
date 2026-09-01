@@ -1,0 +1,82 @@
+governance/graph.json
+  h_67a1b847dc59d6 10724-10918,21758-21763,27524-27529,40154-40921
+governance/plans/engineering-canon/E1-assurance-ladder/E1-ASSURANCE-LADDER.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E10-surface-census/E10-SURFACE-CENSUS.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E11-enforcement-supply-chain/E11-ENFORCEMENT-SUPPLY-CHAIN.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E12-graduated-sanctions/E12-GRADUATED-SANCTIONS.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E13-sweep-operation/E13-SWEEP-OPERATION.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E2-independence/E2-INDEPENDENCE.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E3-error-budget/E3-ERROR-BUDGET.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E4-defect-spine/E4-DEFECT-SPINE.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E5-stop-the-line/E5-STOP-THE-LINE.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E6-control-structure/E6-CONTROL-STRUCTURE.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E7-dispatch-matrix/E7-DISPATCH-MATRIX.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E8-gap-map/E8-GAP-MAP.md
+  h_67a1b847dc59d6 4-5
+governance/plans/engineering-canon/E9-defeater-gates/E9-DEFEATER-GATES.md
+  h_67a1b847dc59d6 4-5
+governance/plans/wave-private-network/E0-CENSUS.md
+  h_67a1b847dc59d6 1-162
+governance/plans/wave-private-network/E1-MEASURE.md
+  h_67a1b847dc59d6 1-200
+governance/plans/wave-private-network/E2-PRIVATE-ORIGIN.md
+  h_67a1b847dc59d6 1-148
+governance/plans/wave-private-network/E3-FLY-INGRESS.md
+  h_67a1b847dc59d6 1-129
+governance/plans/wave-private-network/E4-MESH-REACH.md
+  h_67a1b847dc59d6 1-165
+governance/plans/wave-private-network/E5-PROD-CROSSING.md
+  h_67a1b847dc59d6 1-129
+governance/plans/wave-private-network/E6-CONTINUOUS-PROOF.md
+  h_67a1b847dc59d6 1-136
+governance/plans/wave-private-network/NORTH-STAR.md
+  h_67a1b847dc59d6 1-222
+governance/plans/wave-retrieval/E0-GROUND-AND-GOVERN.md
+  h_67a1b847dc59d6 1-89
+governance/plans/wave-retrieval/E1-BENCHMARK.md
+  h_67a1b847dc59d6 1-182
+governance/plans/wave-retrieval/E2-METADATA-CEILING.md
+  h_67a1b847dc59d6 1-111
+governance/plans/wave-retrieval/E3-TRANSCRIPT-BRIDGE.md
+  h_67a1b847dc59d6 1-103
+governance/plans/wave-retrieval/E4-GATEWAY-METER.md
+  h_67a1b847dc59d6 1-98
+governance/plans/wave-retrieval/E5-DECIDE.md
+  h_67a1b847dc59d6 1-102
+governance/plans/wave-retrieval/NORTH-STAR.md
+  h_67a1b847dc59d6 1-212
+governance/state/reviewer-liveness.json
+  h_67a1b847dc59d6 2,12-13,16,19-21,23,28,35-36,49-57,75-81,99
+governance/test/hookcli-package-boundary.test.mjs
+  h_67a1b847dc59d6 124-130
+governance/test/merge-authority-failure-attribution.test.mjs
+  h_67a1b847dc59d6 1-104
+hookcli/lib/t3-merge-authority-repo.mjs
+  h_67a1b847dc59d6 1-156
+hookcli/lib/t3-merge-authority.mjs
+  h_67a1b847dc59d6 35-37,42-48,50-51,54-55,57,82-87,96
+hookcli/tests/t3-split-integrity.sh
+  h_67a1b847dc59d6 89-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fa5a6f521a42079aad6efbd9e298bd86a3c46c14",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

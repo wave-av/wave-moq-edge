@@ -1,0 +1,24 @@
+governance/plans/agent-identity-fabric/E1-E1-REPUTATION-SEED.md
+  h_67a1b847dc59d6 1-26
+governance/plans/agent-identity-fabric/E2-E2-THREAD-FABRIC.md
+  h_67a1b847dc59d6 1-24
+governance/plans/agent-identity-fabric/NORTH-STAR.md
+  h_67a1b847dc59d6 1-36
+governance/plans/agent-identity-fabric/tools/hops.json
+  h_67a1b847dc59d6 1-55
+governance/plans/agent-identity-fabric/tools/identity-map.json
+  h_67a1b847dc59d6 1-8
+governance/plans/agent-identity-fabric/tools/resolve.mjs
+  h_67a1b847dc59d6 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ca7a12e838bd183eeb626d404de05afa71e7e1c1",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

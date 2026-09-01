@@ -1,0 +1,22 @@
+governance/plans/observability-and-dash0-exit/E1-DASH0-EXIT.md
+  s_d9915bbafa9657::t_c865fbd34e7ac6 7-33
+  s_d9915bbafa9657::t_023ad951ac8402 65
+governance/plans/observability-and-dash0-exit/RECEIPTS.md
+  s_d9915bbafa9657::t_2a8712a8ff07a7 78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dd51a9c7358ea3bb599fe5b90ccee876574a9654",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/graph.json
+  s_d9915bbafa9657::t_d23f37cb79bb1a 18797,18799,18803,18805
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_d9915bbafa9657::t_6d6de167171a2c 36-42,51-57,68-75,86-92,103-108
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_d9915bbafa9657::t_b53e7d2a93d0ac 52-60,70-77,88-93,102-109
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_d9915bbafa9657::t_5654a81d71475d 59-67,78-85,95-101,112-119,128-135
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_d9915bbafa9657::t_f10c8dfdcf0825 92-99,110-117,128-136,147-154
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_d9915bbafa9657::t_2207e56fc47fd3 66-72,83-89,99-106,116-122
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_d9915bbafa9657::t_c95080fd3d151d 48-55,66-73,83-91,103-109,119-126
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_d9915bbafa9657::t_268413700dd503 77-83,94-101,111-119,130-137
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_d9915bbafa9657::t_89afdf89e11396 41-47,58-65,75-80,90-97,107-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "753a2b8c1b92486695ade7d7b4c10580cac6172b",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

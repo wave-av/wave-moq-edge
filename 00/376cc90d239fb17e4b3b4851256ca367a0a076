@@ -1,0 +1,87 @@
+governance/DASHBOARD.md
+  s_85d9e5f433b9aa::t_4b03aca07417e6 25
+governance/bin/review-liveness-scope-io.mjs
+  s_124891ed63801b::t_9498347a2a3bf5 1-82
+governance/bin/review-liveness.mjs
+  s_124891ed63801b::t_70c9f7dbdae657 48-53,191-215,218-220,222,227-232
+governance/bin/roi.mjs
+  s_124891ed63801b::t_273ac87d7f47c9 31,71-80
+governance/gam-port-kit/manifest.json
+  s_124891ed63801b::t_8266fafc79706b 23-29
+governance/graph.json
+  s_85d9e5f433b9aa::t_37fbb61a05d6b2 2858-2870,5765-5868,17775-17786,17907-17912,18621-18626,19023-19088,24921-24926,25773-25862
+governance/lib/review-liveness-report.mjs
+  s_124891ed63801b::t_ed6c004761fe68 1-56
+governance/lib/review-liveness-scope.mjs
+  s_124891ed63801b::t_82fdb3023f81ac 1-97
+governance/lib/wave-sec-scanners.mjs
+  s_124891ed63801b::t_2245217083ffa8 22-47,57-73
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_124891ed63801b::t_d9a1f101174e01 12-28,122-125,211-246,260-352
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_124891ed63801b::t_02683f975a9e08 86-143
+governance/plans/brand-recycle/CONSOLE-FAILURES.md
+  s_124891ed63801b::t_38b7f7c214ec2c 1-71
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_124891ed63801b::t_4386425e246d98 4-13
+governance/plans/brand-recycle/comps/dashboard-v2.html
+  s_124891ed63801b::t_1fdc036b6a5589 1-481
+governance/plans/brand-recycle/comps/pages-v2.html
+  s_124891ed63801b::t_95661795b50bb8 1-474
+governance/plans/console-rebuild/epic.md
+  s_124891ed63801b::t_a0e7d78bcadf65 1-341
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_124891ed63801b::t_cf6ff11473fc58 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_124891ed63801b::t_1995463ef35f88 158-233
+governance/plans/public-supply-chain/E3-TOKEN-RETIREMENT.md
+  s_124891ed63801b::t_5c2cdddd2e67f0 6-13,86-139,151-223,250-273
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_124891ed63801b::t_98b518ba2fd36e 7-11,182-202
+governance/plans/schema-truth/E0-DIVERGENCE.md
+  s_124891ed63801b::t_87e3421774017d 1-87
+governance/plans/schema-truth/E1-HONEST-SENTINEL.md
+  s_124891ed63801b::t_fbc68b42b2f592 1-81
+governance/plans/schema-truth/E2-CONVERGE.md
+  s_124891ed63801b::t_7ca3d6c40518d5 1-71
+governance/plans/schema-truth/E3-EXECUTION-GATES.md
+  s_124891ed63801b::t_bea14e364768b1 1-85
+governance/plans/schema-truth/E4-ONE-WAY-TRUTH.md
+  s_124891ed63801b::t_2837c77ed8d320 1-77
+governance/plans/schema-truth/E5-PLATFORM-CURRENCY.md
+  s_124891ed63801b::t_04c1ab8c8e076b 1-141
+governance/plans/schema-truth/E6-GATE-LIVENESS.md
+  s_124891ed63801b::t_ca737c2eda9e92 1-76
+governance/plans/schema-truth/NORTH-STAR.md
+  s_124891ed63801b::t_66061075ba8a3a 1-87
+governance/test/review-liveness-scope.test.mjs
+  s_124891ed63801b::t_888cac9c61393b 1-113
+helm/package-lock.json
+  s_124891ed63801b::t_5a44986765a4d1 3038-3040,3689-3691,6271-6273
+helm/package.json
+  s_124891ed63801b::t_b2a2551aae9ada 35-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "00376cc90d239fb17e4b3b4851256ca367a0a076",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

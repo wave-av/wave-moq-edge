@@ -1,0 +1,31 @@
+governance/state/canon-gap-map/GAP-MAP.md
+  s_db128da65a46d5::t_a50a213fb4f32e 22,27,52,55,57,61,65-66,69,76,81-82,95
+governance/state/canon-gap-map/gap-map.json
+  s_db128da65a46d5::t_6cd5612be95b41 212-213,215,354-355,358,360,907,909,991,994,996,1050,1052,1054,1166-1168,1170,1276-1277,1281,1283,1306,1310,1312,1397,1399,1601-1602,1604,1747,1749,1774,1776,1778,2130-2131,2133
+governance/state/runbook-ambient-cache.json
+  s_c927cca3dccbaa::t_cda959fd19caf8 2,4,17-18,53,57,93-94,97,101,109,113-114,117-118,133,157,204-307,313,317,325-326,329,349,353-354,357-358,361,365,381-382,389,397,401-402,405,409,433,441,445
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e270cfc00360cef68fd9b1ca37f84817413dffd3",
+  "prompts": {},
+  "sessions": {
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

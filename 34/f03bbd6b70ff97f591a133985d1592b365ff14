@@ -1,0 +1,20 @@
+memory/fleet-todo-ledger.md
+  s_a4bf449cf66fcd::t_ab773f4edc6672 14
+  s_a4bf449cf66fcd::t_560a9624c98046 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "34f03bbd6b70ff97f591a133985d1592b365ff14",
+  "prompts": {},
+  "sessions": {
+    "s_a4bf449cf66fcd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcbe8519effeLiCWT22OLP2AYd",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

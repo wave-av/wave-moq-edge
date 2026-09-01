@@ -1,0 +1,19 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_e88242b80b3e00::t_82290fc1e3e543 2-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7b2828ea16a29b12ce1671c80f6bc24e73a2f667",
+  "prompts": {},
+  "sessions": {
+    "s_e88242b80b3e00": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00315e11effeRiT47FjjBepOqE",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

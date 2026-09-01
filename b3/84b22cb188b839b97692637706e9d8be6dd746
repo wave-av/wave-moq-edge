@@ -1,0 +1,57 @@
+hooks/gap-scan-guard.sh
+  s_2e30bff6169f7a::t_6485e471765dca 2,4,10-15
+  s_2e30bff6169f7a::t_99c28963f23b99 29-35
+.claude/skills/strategic-compact/SKILL.md
+  s_2e30bff6169f7a::t_250e9924e4c9c5 89-95
+  s_2e30bff6169f7a::t_c5184a43e8fd5b 118
+governance/DASHBOARD.md
+  s_2e30bff6169f7a::t_051a57f191eca8 25
+governance/ENFORCEMENT-COVERAGE.md
+  s_2e30bff6169f7a::t_b99669d67c5d09 410
+governance/bin/epic-status.mjs
+  s_2e30bff6169f7a::t_9990ba17304b7b 1-120
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_7787fe92a986f7 5,960-969
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_a5331e1a0ddbc9 9-10,12-13,8687-8763
+governance/graph.json
+  s_2e30bff6169f7a::t_e24822276d7029 24608-24613
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  s_2e30bff6169f7a::t_6fddcc1ac64dae 4-8
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_40d73206961adc 4-6
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_2e30bff6169f7a::t_2c853be9768b30 4-5
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_2e30bff6169f7a::t_953bab59a665df 4-5
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_2e30bff6169f7a::t_b81080953a1991 4-5
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_ffbb41503936b8 4-5
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_0b23a2096ed531 4-5
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_2e30bff6169f7a::t_0f7ce26c7080ae 4-5
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_2e30bff6169f7a::t_20f9af6b22d030 4-5
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_2e30bff6169f7a::t_390618f52c7f26 4
+hooks/manifest.json
+  s_2e30bff6169f7a::t_f534a663992601 498
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b384b22cb188b839b97692637706e9d8be6dd746",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

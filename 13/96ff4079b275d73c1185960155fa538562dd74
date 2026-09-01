@@ -1,0 +1,20 @@
+scripts/license-policy-check.sh
+  s_34a91045987f1a::t_de8afdcac4f116 69-71,73,76-85,87
+  s_34a91045987f1a::t_ec9bcfb7a0dbdd 39-42,45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1396ff4079b275d73c1185960155fa538562dd74",
+  "prompts": {},
+  "sessions": {
+    "s_34a91045987f1a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5686acf4-6bc0-4661-bf32-aa9f4eac3da7",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

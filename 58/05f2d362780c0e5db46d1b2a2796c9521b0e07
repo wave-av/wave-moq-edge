@@ -1,0 +1,21 @@
+governance/bin/gate-liveness-drill.mjs
+  s_10e53e3a039bfa::t_b8cf323363c8de 28
+governance/lib/drill-registry.mjs
+  s_10e53e3a039bfa::t_e271692a4b97c7 1-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5805f2d362780c0e5db46d1b2a2796c9521b0e07",
+  "prompts": {},
+  "sessions": {
+    "s_10e53e3a039bfa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9d6c2cfc-2b0d-42fa-9e8e-0888ca9d739b",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

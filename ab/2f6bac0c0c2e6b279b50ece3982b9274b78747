@@ -1,0 +1,96 @@
+.claude/skills/strategic-compact/SKILL.md
+  h_af5ac1a9798224 89-95,118
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/ENFORCEMENT-COVERAGE.md
+  h_af5ac1a9798224 406
+governance/bin/epic-status.mjs
+  h_af5ac1a9798224 1-143
+governance/bin/pr-create.mjs
+  h_af5ac1a9798224 1-195
+governance/bin/reviewer-route.mjs
+  h_af5ac1a9798224 48-54,56-57
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,974-983,2253-2261,2722,2724-2726,4243-4259
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,8808-8884,20303-20368,24423-24426,24439-24449,24456-24457,24467-24468,36583-36703
+governance/graph.json
+  h_af5ac1a9798224 24578-24583
+governance/lib/pr-create-guards.mjs
+  h_af5ac1a9798224 1-264
+governance/lib/pr-create-push-dest.mjs
+  h_af5ac1a9798224 1-172
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  h_af5ac1a9798224 4-8
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 4-6
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  h_af5ac1a9798224 4-5
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  h_af5ac1a9798224 4
+governance/runbooks/restore-branch-protection.sh
+  h_af5ac1a9798224 186,190-193
+governance/test/epic-status.test.mjs
+  h_af5ac1a9798224 1-155
+governance/test/pr-create-flag-drift.test.mjs
+  h_af5ac1a9798224 1-152
+governance/test/pr-create-push-dest.test.mjs
+  h_af5ac1a9798224 1-245
+governance/test/pr-create.test.mjs
+  h_af5ac1a9798224 1-331
+hooks/gap-scan-guard.sh
+  h_af5ac1a9798224 2,4,10-15,29-54
+hooks/lib/bash_prepasses.py
+  h_af5ac1a9798224 1-345
+hooks/lib/bash_segments.py
+  h_af5ac1a9798224 1-270
+hooks/lib/command_words.py
+  h_af5ac1a9798224 1-134
+hooks/lib/gh_command_shape.py
+  h_af5ac1a9798224 33-43,48-53,59-75,181-210,270-272,284,308-351
+hooks/lib/gh_pr_target.py
+  h_af5ac1a9798224 1-335
+hooks/lib/gh_write_scan.py
+  h_af5ac1a9798224 31
+hooks/manifest.json
+  h_af5ac1a9798224 498,1220
+hooks/public-github-write-gate.py
+  h_af5ac1a9798224 184-190,230-240
+hooks/reviewer-route-gate.py
+  h_af5ac1a9798224 1-323
+hooks/tests/public-github-write-gate-wrapper.test.sh
+  h_af5ac1a9798224 1-159
+hooks/tests/public-github-write-gate.test.sh
+  h_af5ac1a9798224 259-269
+hooks/tests/reviewer-route-gate-heredoc.test.sh
+  h_af5ac1a9798224 1-82
+hooks/tests/reviewer-route-gate-lexer.test.sh
+  h_af5ac1a9798224 1-233
+hooks/tests/reviewer-route-gate-scope.test.sh
+  h_af5ac1a9798224 1-228
+hooks/tests/reviewer-route-gate.test.sh
+  h_af5ac1a9798224 1-163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ab2f6bac0c0c2e6b279b50ece3982b9274b78747",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

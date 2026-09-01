@@ -1,0 +1,49 @@
+governance/plans/closed-loop-mechanisms/E1-REQUIRE.md
+  s_be40541f6fd98b::t_3a42b0f70d57fc 1-51
+governance/plans/closed-loop-mechanisms/NORTH-STAR.md
+  s_be40541f6fd98b::t_7699f931af9daa 1-122
+governance/plans/closed-loop-mechanisms/E5-MIRROR.md
+  s_be40541f6fd98b::t_ec2e91b2beaabe 1-58
+governance/plans/closed-loop-mechanisms/E0-INVENTORY.md
+  s_be40541f6fd98b::t_3439373e1a27df 1-57
+governance/plans/closed-loop-mechanisms/E7-MEASURE.md
+  s_be40541f6fd98b::t_3ec17bddb2c76f 1-58
+governance/plans/closed-loop-mechanisms/E4-CREDENTIAL.md
+  s_be40541f6fd98b::t_e0ded05f64e766 1-73
+governance/plans/closed-loop-mechanisms/E3-MERGEPATH.md
+  s_be40541f6fd98b::t_be714483191310 1-62
+governance/plans/closed-loop-mechanisms/RECEIPTS.md
+  s_be40541f6fd98b::t_a1fc869daacd59 1-142
+governance/plans/closed-loop-mechanisms/E6-FLAKE.md
+  s_be40541f6fd98b::t_7bb3dc48ead217 1-53
+governance/plans/closed-loop-mechanisms/E2-LASTMILE.md
+  s_be40541f6fd98b::t_7de4dfcc3ee478 1-58
+governance/DASHBOARD.md
+  s_02abc74f4971c7::t_30b389d2af13b6 25
+governance/graph.json
+  s_02abc74f4971c7::t_dd8d3dc20df2b6 2494-2597,17169-17216
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8d854b3cfd791ccfdaec8b51c878e529ab12956d",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

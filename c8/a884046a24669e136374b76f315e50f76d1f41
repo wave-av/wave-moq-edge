@@ -1,0 +1,26 @@
+scripts/bugbot/pipeline.py
+  s_3a52a0989b58af::t_9c94171444d53c 254-308,318-321
+  s_3a52a0989b58af::t_714bfe1a75ffd5 24
+tests/test_bugbot.py
+  s_3a52a0989b58af::t_36ae7e22964da2 366-368
+  s_3a52a0989b58af::t_eafaaf6e2499ea 772
+  s_3a52a0989b58af::t_6696e2d4466478 784
+tests/test_bugbot_nohall.py
+  s_3a52a0989b58af::t_9677fa18b825f1 1-111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c8a884046a24669e136374b76f315e50f76d1f41",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

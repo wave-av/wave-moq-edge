@@ -1,0 +1,19 @@
+.github/workflows/checks.yml
+  s_364605915bb7ec::t_9ede5c92a70d90 478-483,488
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d4dff31a6ddfe767a244b9ef92e5aa7cd3ba6af3",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

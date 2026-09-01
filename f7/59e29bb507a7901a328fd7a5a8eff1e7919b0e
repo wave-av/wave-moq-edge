@@ -1,0 +1,21 @@
+governance/automation-registry/lib/schema.mjs
+  s_2e30bff6169f7a::t_b4a14ad2fde72f 97-178,186-203,206-214
+governance/test/automation-registry/fallback-declaration.test.mjs
+  s_2e30bff6169f7a::t_4fabc651d2804f 1-122
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f759e29bb507a7901a328fd7a5a8eff1e7919b0e",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+hookcli/tests/event-split-integrity.sh
+  s_02abc74f4971c7::t_ec428af8b4b8f5 1
+  s_02abc74f4971c7::t_e7e99df934c242 15,19,21,24,46,49-50,52,56-57,60,65-66,69,72,75-76,79,84-85,87,90-91,94,96,106-107,109,112-113
+  s_02abc74f4971c7::t_46dc6f5f6592c1 42,44
+  s_02abc74f4971c7::t_a37542d06991c0 2-14,16-18,20,22-23,25-41,43,45,47-48,51,53-55,58-59,61-64,67-68,70-71,73-74,77-78,80-83,86,88-89,92-93,95,97-105,108,110-111,114-115
+hookcli/lib/event-stop.sh
+  s_02abc74f4971c7::t_ad000e4ef0ba80 2-78
+  s_02abc74f4971c7::t_e1d2f34260cc14 1
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_61947c9d78c872 206-210
+  s_02abc74f4971c7::t_2b8c645a6306e6 213
+  s_02abc74f4971c7::t_3944ede1fb58b6 46-48
+  s_02abc74f4971c7::t_5054e111333c05 243
+  s_02abc74f4971c7::t_4f49ce1e44e2c4 269
+  s_02abc74f4971c7::t_44e326389f7521 262
+  s_02abc74f4971c7::t_effa1ebcf9c699 227-241,244-247,252-255,258-260,263-264,270-271
+  s_02abc74f4971c7::t_d8d060831e0124 251
+hookcli/lib/event-pretooluse.sh
+  s_02abc74f4971c7::t_ad000e4ef0ba80 2-291
+  s_02abc74f4971c7::t_eb9bc1b1b16ae2 1
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_9cce91031d945d 269-273,275-278
+  s_02abc74f4971c7::t_e7e99df934c242 274
+hookcli/lib/event-posttooluse.sh
+  s_02abc74f4971c7::t_c30be35a0a01fb 1
+  s_02abc74f4971c7::t_ad000e4ef0ba80 2-33
+hookcli/lib/event-sessionstart.sh
+  s_02abc74f4971c7::t_7f0c461fea1f95 1
+  s_02abc74f4971c7::t_ad000e4ef0ba80 2-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7ab4f17d96ec0daa923cb2b121620fa9e7df2e72",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/proposals/vendor-trial-is-reconnaissance.md
+  s_be40541f6fd98b::t_424e89b3ca19f5 1-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ee750b5e9c0524c40b89c23ff497daa3b498aa6e",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

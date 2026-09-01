@@ -1,0 +1,20 @@
+governance/test/review-liveness-floor-coupling.test.mjs
+  s_dd42a206f882e3::t_be34f8ba2a2695 47-66
+  s_dd42a206f882e3::t_d2760c0b2a953c 13-23,26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "125337a687b8c5283206eeef200e318a2b90a2c3",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

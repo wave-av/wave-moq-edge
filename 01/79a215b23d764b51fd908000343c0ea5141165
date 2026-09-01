@@ -1,0 +1,21 @@
+governance/test/reviewer-scoreboard.test.mjs
+  s_9041cf1cf1ccad::t_f47999b7fad155 217-219
+governance/test/reviewer-scoreboard-taint-aggregate.test.mjs
+  s_9041cf1cf1ccad::t_b9e0d04ac8930d 1-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0179a215b23d764b51fd908000343c0ea5141165",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

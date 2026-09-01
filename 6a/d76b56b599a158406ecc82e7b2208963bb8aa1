@@ -1,0 +1,54 @@
+governance/plans/upstash-org-integration/E2-QSTASH-GOLIVE.md
+  s_32308d89320687::t_d1b6f648578988 2-36
+  s_32308d89320687::t_7ab1af4902235f 1
+governance/plans/upstash-org-integration/E5-DECIDE.md
+  s_32308d89320687::t_dfb82c42ef52d4 6-10
+  s_1334cb80b601af::t_1f5f0c8604f156 1-5,11-20
+governance/plans/upstash-org-integration/E0-RECONCILE.md
+  s_32308d89320687::t_d82867f36e1d84 2-36
+  s_32308d89320687::t_838e55db8ed877 1
+governance/plans/upstash-org-integration/NORTH-STAR.md
+  s_32308d89320687::t_f6934c6fd4b301 3-47
+  s_1334cb80b601af::t_afe27438733a41 1-2
+governance/plans/upstash-org-integration/E1-ACTIVATE-REDIS-VECTOR.md
+  s_32308d89320687::t_5fd9380473d67e 2-34
+  s_32308d89320687::t_de4ff9ee5b2e34 1
+governance/plans/upstash-org-integration/E4-WORKFLOW-EVAL.md
+  s_32308d89320687::t_45d97c274645b7 2-28
+  s_32308d89320687::t_dcac150cdc52ed 1
+governance/plans/upstash-org-integration/E5-UNEXPLORED-DECIDE.md
+  s_32308d89320687::t_f8fb50da83d1a2 2-29
+  s_32308d89320687::t_85e419f0e27e10 1
+governance/plans/upstash-org-integration/E6-OPERATIONALIZE.md
+  s_32308d89320687::t_9e4e4180250b13 2-34
+  s_32308d89320687::t_d6a05555950bd5 1
+governance/plans/upstash-org-integration/E3-RATELIMIT-EDGE.md
+  s_32308d89320687::t_f934542bc7cfcc 2-35
+  s_32308d89320687::t_f3226d9c8282fd 1
+governance/plans/upstash-org-integration/receipts/README.md
+  s_1334cb80b601af::t_d53c7156d97453 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6ad76b56b599a158406ecc82e7b2208963bb8aa1",
+  "prompts": {},
+  "sessions": {
+    "s_1334cb80b601af": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0076657c0ffe3TT7WZLIuzcgvo",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

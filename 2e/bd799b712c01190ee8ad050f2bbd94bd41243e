@@ -1,0 +1,74 @@
+governance/lib/surface-checks-local.mjs
+  s_53b49eff5b8c5d::t_76d0de79aa48bd 79-94
+  s_53b49eff5b8c5d::t_85a8f81b52bf31 124-128
+  s_53b49eff5b8c5d::t_0ec3b2523d16ae 107-112
+  s_53b49eff5b8c5d::t_6a704c57fed937 123
+governance/test/email-fixtures.mjs
+  s_53b49eff5b8c5d::t_be4c4c666c23a8 38
+  s_53b49eff5b8c5d::t_38433c7604e681 1-12
+  s_53b49eff5b8c5d::t_d7dcad064c3598 13
+  s_53b49eff5b8c5d::t_4ad42e65a91e0c 14-16,35-37
+  s_53b49eff5b8c5d::t_8ef20377aaa0f8 17-34
+governance/test/email-gate.test.mjs
+  s_53b49eff5b8c5d::t_b11842da3264ee 1-3,5-6,8-19,25
+  s_53b49eff5b8c5d::t_f6d07d16c5cbfd 73-77,79-107
+  s_53b49eff5b8c5d::t_1d2eb9ab003b79 78
+governance/test/email-craft-rules.test.mjs
+  s_53b49eff5b8c5d::t_b14f84eaf898a7 1-25
+  s_53b49eff5b8c5d::t_3e217a9b658a2b 26
+  s_53b49eff5b8c5d::t_d70abc3f2d1c73 34,42,50,58,63,68,75,81,91,97,101,105,120,128,133,138,142,148,153,155-198,204,216,223,243,248,254,265,274,286,299
+  s_53b49eff5b8c5d::t_05922a59c5c798 27-33,35-41,43-49,51-57,59-62,64-67,69-74,76-80,82-90,92-96,98-100,102-104,106-119,121-127,129-132,134-137,139-141,143-147,149-152,154,199-203,205-215,217-222,224-242,244-247,249-253,255-264,266-273,275-285,287-298
+governance/test/surface-verdict.test.mjs
+  s_53b49eff5b8c5d::t_6e0ea330787cab 1-32
+  s_53b49eff5b8c5d::t_6b46e38b2ad7fa 40,43,51-52,55,61-63,69-70,74,80-81,83,89-90,92,98-99,101,107,117,123-125,128-130,132-133,137-138,141,143-145,148-149,153-154,163-165,169-170,178,187-189,191-195,200,209-211,213-306,311,313,327,335,340,359,368,373,395,407
+  s_37d3f61160b2dd::t_9c919b41893fa3 33-39,41-42,44-50,53-54,56-60,64-68,71-73,75-79,82,84-88,91,93-97,100,102-106,108-116,118-122,126-127,131,134-136,139-140,142,146-147,150-152,155-162,166-168,171-177,179-186,190,196-199,201-208,212,307-310,312,314-326,328-334,336-339,341-358,360-367,369-372,374-394,396-406
+governance/bin/email-gate.mjs
+  s_53b49eff5b8c5d::t_e97691b0f1c438 59-85
+governance/lib/email-craft-rules.mjs
+  s_53b49eff5b8c5d::t_7ad235927aac3a 195
+  s_53b49eff5b8c5d::t_393c6e7369e691 22-25
+  s_53b49eff5b8c5d::t_15f00fc7dc9856 182-194
+governance/lib/email-html-wrapper.mjs
+  s_53b49eff5b8c5d::t_4f95d3b5ede5d2 1-285
+governance/lib/surface-verdict.mjs
+  s_53b49eff5b8c5d::t_0040ab407d5516 215-218
+  s_53b49eff5b8c5d::t_6923ccacc5b2f1 135-141
+  s_53b49eff5b8c5d::t_61efafbdced62b 125-134,142-152,174-178,200-214
+  s_53b49eff5b8c5d::t_65cbb4fab868a5 153-160,166-173,184-199
+governance/test/surface-check.test.mjs
+  s_53b49eff5b8c5d::t_1be62cd05aeedf 1-5,7-18,29
+  s_53b49eff5b8c5d::t_2851ab6afdc6d7 49,52-69
+  s_53b49eff5b8c5d::t_c735be006ebf48 26-27,30
+  s_37d3f61160b2dd::t_09bfd5effbbf00 36-40,42-43,45-48,131-164
+governance/test/email-wrapper.test.mjs
+  s_53b49eff5b8c5d::t_bf6ed4acc628f4 1-196
+governance/lib/surface-checks-remote.mjs
+  s_53b49eff5b8c5d::t_a17a2e55113aa0 13-38,48
+  s_53b49eff5b8c5d::t_85ebf0a89be86f 62-63
+governance/lib/surface-probe-lib.mjs
+  s_53b49eff5b8c5d::t_b567b2f9a6bb14 90-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "2ebd799b712c01190ee8ad050f2bbd94bd41243e",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

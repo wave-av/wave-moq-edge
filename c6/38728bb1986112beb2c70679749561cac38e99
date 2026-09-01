@@ -1,0 +1,21 @@
+governance/plans/wave-mesh-fabric/CF-PLANE-POLICY.md
+  s_15127d80763110::t_807cf5eaf53e1a 53
+  s_15127d80763110::t_b19c231507ae95 86-87,89-149
+  s_15127d80763110::t_a75480909cb5c2 63-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c638728bb1986112beb2c70679749561cac38e99",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

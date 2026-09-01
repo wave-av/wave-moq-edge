@@ -1,0 +1,33 @@
+settings/settings.base.json
+  s_02abc74f4971c7::t_2a17055b41cf60 470-479
+settings/hooks.d/hookcli.json
+  s_02abc74f4971c7::t_5d8b6c83eae996 13,25,36,47
+scripts/enforcement-clone.sh
+  s_02abc74f4971c7::t_4dba38a0f42e6e 1-47,49-51,53,60-106,110-115
+  s_02abc74f4971c7::t_c6d9bb420902ea 48,52,54-59
+  s_02abc74f4971c7::t_1dc9ff8ec67596 107-109
+hookcli/tests/enforcement-clone.sh
+  s_02abc74f4971c7::t_ead65abbc7af41 1-103
+hooks/manifest.json
+  s_02abc74f4971c7::t_76d9d933a3d7ea 1552-1553
+hookcli/tests/run.sh
+  s_02abc74f4971c7::t_d46897ad875d24 106-108
+hookcli/bin/hookcli-settings-gen.mjs
+  s_02abc74f4971c7::t_74a9729c78cc87 60-61,63-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "dd2a3924f7d11db5d72913ad038b9146b70c0132",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

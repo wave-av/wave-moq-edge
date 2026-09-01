@@ -1,0 +1,26 @@
+packages/spoke-chassis/src/worker.ts
+  s_6e7ad4df769349::t_9cae99b9b44996 27-28
+  s_6e7ad4df769349::t_c9ed6cc05ba785 32-34
+  s_6e7ad4df769349::t_b003d4d1da97e4 208
+  s_6e7ad4df769349::t_ca06fa8b78f1af 227
+packages/spoke-chassis/src/legal-proxy.ts
+  s_6e7ad4df769349::t_48591b7639aca9 1-22
+packages/spoke-chassis/src/pricing-route.ts
+  s_6e7ad4df769349::t_ff6d0efc04dba3 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "07dc176ed6aaba79af097303f3d741835c535ae2",
+  "prompts": {},
+  "sessions": {
+    "s_6e7ad4df769349": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "91274c95-abfb-4ffd-b243-f2916d2e4e07",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

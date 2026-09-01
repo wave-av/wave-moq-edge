@@ -1,0 +1,16 @@
+.github/workflows/ci.yml
+  h_af5ac1a9798224 23,27
+.github/workflows/governance-enforce.yml
+  h_af5ac1a9798224 25,30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9a3a719a7de1f4b9993c6c5dab9eb74b42e66d6a",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

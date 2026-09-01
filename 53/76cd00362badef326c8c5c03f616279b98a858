@@ -1,0 +1,21 @@
+scripts/check-v1-drift.sh
+  s_cf3356a24071e8::t_d51d3c055e451a 97
+  s_cf3356a24071e8::t_8989b08f44a248 29-33
+  s_cf3356a24071e8::t_c66464c4b25ca6 1-28,34-96,98-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "5376cd00362badef326c8c5c03f616279b98a858",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

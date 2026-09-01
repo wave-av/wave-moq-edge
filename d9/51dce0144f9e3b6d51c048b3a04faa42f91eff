@@ -1,0 +1,34 @@
+governance/plans/origin-method-flow/E3-PRODUCTIZE.md
+  s_6046880c148371::t_29d51cc563e892 2-34
+  s_6046880c148371::t_c0880cdc45a445 1
+governance/plans/origin-method-flow/NORTH-STAR.md
+  s_6046880c148371::t_b2139c6c417651 5-41
+  s_6046880c148371::t_57f8859cca264b 2-4
+governance/plans/origin-method-flow/E0-PIPELINE-SPEC.md
+  s_6046880c148371::t_59847a1ad8340c 2-33
+  s_6046880c148371::t_d4916e2e2ec2dd 1
+governance/plans/origin-method-flow/E1-FOUR-RENDERINGS.md
+  s_6046880c148371::t_8dc45e20ee4e42 2-34
+  s_6046880c148371::t_ccdf7de5706a91 1
+governance/plans/origin-method-flow/E2-ASSURANCES.md
+  s_6046880c148371::t_a4a7150d89725a 2-34
+  s_6046880c148371::t_efd6827a27e1cd 1
+memory/fleet-todo-ledger.md
+  s_6046880c148371::t_65312161c9499c 54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d951dce0144f9e3b6d51c048b3a04faa42f91eff",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

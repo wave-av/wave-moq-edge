@@ -1,0 +1,27 @@
+governance/bin/fleet/merge-policy-conformance.mjs
+  s_37d3f61160b2dd::t_bd6f58e7faf988 172-179
+  s_37d3f61160b2dd::t_2e1f21bb05cdf9 258-264
+  s_37d3f61160b2dd::t_fe79db852a54eb 291-292,294-299
+governance/bin/decommit-gate.mjs
+  s_37d3f61160b2dd::t_00da43940e365c 23
+governance/bin/pagination-completeness.mjs
+  s_37d3f61160b2dd::t_ff91ad25512793 256
+governance/bin/plugin-home-repo-drift.mjs
+  s_37d3f61160b2dd::t_7b3868c22c4153 306
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8ca8f6cfcdc2db968061bf1d2f09bb1763f164c9",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

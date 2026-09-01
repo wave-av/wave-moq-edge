@@ -1,0 +1,29 @@
+governance/bin/main-protection-audit.mjs
+  s_33808c00e16d52::t_b14e0cb5ef6069 1-109
+governance/plans/wave-platform-completeness/FLEET-OPEN-WORK.md
+  s_cf0b41c40cfeb4::t_014675ff0cf266 75-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6b7577b03c7419ec15d24f23c8523d403a5869a7",
+  "prompts": {},
+  "sessions": {
+    "s_33808c00e16d52": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe049d22cffe1Ahc2vTU2Tf03d",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_cf0b41c40cfeb4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc6c43ddcffeVqPwdLDLhZfCH5",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

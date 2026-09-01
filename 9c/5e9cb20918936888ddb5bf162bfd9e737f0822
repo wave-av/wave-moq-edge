@@ -1,0 +1,129 @@
+governance/bin/derived-artifact-drift-audit.mjs
+  s_0227926428e4b1::t_37128aa1eb5391 118-121
+.github/.filesize-allowlist
+  s_0227926428e4b1::t_8b915552705280 1-17
+.github/actions/blast-radius-classify/classify.mjs
+  s_0227926428e4b1::t_4ebf938837db23 144-153
+.github/actions/blast-radius-classify/test/fixtures/corpus.json
+  s_0227926428e4b1::t_630bc56b46e0ee 133-142
+.github/actions/derived-artifact-gates/action.yml
+  s_0227926428e4b1::t_ad9e1cc1ace238 3,147-158
+.github/workflows/auto-merge.yml
+  s_0227926428e4b1::t_5e93461168daae 23-30,319-346
+.github/workflows/governance-publish.yml
+  s_0227926428e4b1::t_ae4819d61f3d78 36-43
+.github/workflows/governance.yml
+  s_0227926428e4b1::t_5fba9ccb282353 62-66,69-75,247-254
+governance/agent-matrix.json
+  s_0227926428e4b1::t_9fbece63d005da 1-1002
+governance/automation-registry/jobs/governance.yaml
+  s_0227926428e4b1::t_17a6a642e9d4cf 303-304
+governance/bin/agent-matrix.mjs
+  s_0227926428e4b1::t_1d83ed11a16acb 1-425
+governance/bin/cron-failover-jobs.mjs
+  s_0227926428e4b1::t_e09bc62eae3ad8 21,125-133,145-150,160,181-206,208-209,212-222
+governance/bin/cron-failover.mjs
+  s_0227926428e4b1::t_543f2d42039822 5,151,156-159,185,208,218-228,244-247,251,268,277
+governance/bin/gate-liveness-drill.mjs
+  s_0227926428e4b1::t_5f3106b778c76e 53,129-131,142
+governance/bin/launchd-cron-parity-lint.mjs
+  s_0227926428e4b1::t_8874f5113a0018 42,47-56,134-175,261-262,266-267,269,279-286
+governance/bin/stranded-merge-sweep.mjs
+  s_0227926428e4b1::t_429ff4fc5f48fd 1-300
+governance/config/gam-author-allowlist.json
+  s_0227926428e4b1::t_ed44c253ed8b0f 1-6
+governance/gam-port-kit/README.md
+  s_0227926428e4b1::t_37a53b1ad2eb26 49-55,59,62,64
+governance/gam-port-kit/install.mjs
+  s_0227926428e4b1::t_7695af4bfdafc8 24,59-65,72-86,110-112,115,117,119
+governance/gam-port-kit/manifest.json
+  s_0227926428e4b1::t_f5d81318a249d4 19-20,89-92
+governance/lib/cron-failover-jobmatch.mjs
+  s_0227926428e4b1::t_3ae10ca495be58 68-70,72,76-83,100,103-108,124,143-157,159
+governance/lib/cron-failover-witness.mjs
+  s_0227926428e4b1::t_a6fc4be1389e6b 1-108
+governance/lib/drill-fixtures-agent-matrix.mjs
+  s_0227926428e4b1::t_1993bc64432674 1-71
+governance/lib/drill-fixtures-launchd-cron-parity.mjs
+  s_0227926428e4b1::t_f927b876951d0c 46-52
+governance/lib/gam-workflow-checks.mjs
+  s_0227926428e4b1::t_0817df0fd46a54 83-96
+governance/lib/launchd-cron-parity-plan.mjs
+  s_0227926428e4b1::t_1cde6a690e24b6 34-155,161-169,171-172,196-198,280-281,284
+governance/lib/stranded-merge-args.mjs
+  s_0227926428e4b1::t_d1653a102c87b1 1-100
+governance/lib/stranded-merge-facts.mjs
+  s_0227926428e4b1::t_93ca3441d59e84 1-221
+governance/lib/stranded-merge-report.mjs
+  s_0227926428e4b1::t_f5258a8f904b37 1-151
+governance/lib/stranded-merge.mjs
+  s_0227926428e4b1::t_b842f95453ca93 1-290
+governance/ops/launchd/cron-manifest.json
+  s_0227926428e4b1::t_eb9e1a76edc673 2,12-13,22-23,32-33,42-43,53-54
+governance/ops/launchd/installed/com.wave.fleet-drift-protection-profile-check.plist
+  s_0227926428e4b1::t_a95e4f3852f09b 82
+governance/plans/pen-design-lane/E6-DESIGN-REVIEW-GATE.md
+  s_0227926428e4b1::t_2fcca80a3acfae 10-17
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  s_0227926428e4b1::t_e780c4a820e7df 5-61,80-158
+governance/test/agent-matrix.test.mjs
+  s_0227926428e4b1::t_57ec0c11035e9b 1-287
+governance/test/ci-surface.test.mjs
+  s_0227926428e4b1::t_7e6deb86dd2607 95-97,104
+governance/test/cron-failover-witness.test.mjs
+  s_0227926428e4b1::t_63d29a6fb55e2a 1-317
+governance/test/cron-failover-workflow-coupling.test.mjs
+  s_0227926428e4b1::t_c8f1681133f745 75-113
+governance/test/cron-failover.test.mjs
+  s_0227926428e4b1::t_66246a3b0ec66c 220-222,252
+governance/test/gam-author-gate.test.mjs
+  s_0227926428e4b1::t_50ab75141fb204 1-81
+governance/test/gam-workflow-checks.test.mjs
+  s_0227926428e4b1::t_12ca9516988228 66-75,124-126
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_0227926428e4b1::t_bb8bb251edb5d3 38-42,327-330,388
+governance/test/stranded-merge-e2e-fixture.mjs
+  s_0227926428e4b1::t_f644c759c0e3d5 1-120
+governance/test/stranded-merge-e2e-refusals.test.mjs
+  s_0227926428e4b1::t_5a52cc00f3cce6 1-260
+governance/test/stranded-merge-e2e.test.mjs
+  s_0227926428e4b1::t_6375eb0f6150f2 1-207
+governance/test/stranded-merge.test.mjs
+  s_0227926428e4b1::t_0f681a5b1adfe1 1-370
+hooks/hooklib/gated-command-match.sh
+  s_0227926428e4b1::t_3bbbbb80a5b5a4 199-201,210-224,241,252-270,279-291,301-306
+hooks/hooklib/gated-command-verbs.sh
+  s_0227926428e4b1::t_62f4d6cddc39d8 1-86
+hooks/subagent-dispatch-gate.sh
+  s_0227926428e4b1::t_76e9b392663d96 49-62,132-159,165,223-228
+hooks/tests/degraded-hold-gate-2141.test.sh
+  s_0227926428e4b1::t_a9f91373fd3dce 111-159
+hooks/tests/degraded-hold-gate.test.sh
+  s_0227926428e4b1::t_db78c9c8fcd946 267
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_0227926428e4b1::t_63ea77ee3058b8 27-28
+runbooks/library/vendor-capability-sweep-to-fractal.md
+  s_0227926428e4b1::t_3b859391637a44 28-29,41-46
+runbooks/library/vendor-cli-login-via-kernel.md
+  s_0227926428e4b1::t_27418082503581 17-18,27-35
+runbooks/library/wave-database-prod-schema-change.md
+  s_0227926428e4b1::t_512a8900e0ad1b 19-20
+runbooks/test/ambient-cache-gate.test.mjs
+  s_0227926428e4b1::t_dc835640165b74 1-226
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9c5e9cb20918936888ddb5bf162bfd9e737f0822",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

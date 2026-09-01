@@ -1,0 +1,25 @@
+scripts/bugbot/test_harvest.py
+  s_0b987fef4e1240::t_0847d834bf6e1c 100
+  s_0b987fef4e1240::t_d8fa6db44c169c 1-99,101-132
+scripts/bugbot/harvest.py
+  s_0b987fef4e1240::t_8e07a9e45d3a40 24
+  s_0b987fef4e1240::t_a262eb9beffa5f 114-265
+  s_0b987fef4e1240::t_92c670ea380a3a 309-310
+  s_0b987fef4e1240::t_f0c278ad1e82dd 296-297
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "a03de70e43e66d9245b96cf21077e3c46c66397a",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

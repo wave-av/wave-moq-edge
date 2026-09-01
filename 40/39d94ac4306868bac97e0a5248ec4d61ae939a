@@ -1,0 +1,27 @@
+docs/HOOK-LIFECYCLE.md
+  s_653f31c0b2d483::t_62920bc9949c0b 1-66
+governance/research/thinker-canon/SYSTEMS-CYBERNETICS.md
+  s_653f31c0b2d483::t_8c9a19199f8172 1-138
+memory/MEMORY.md
+  s_653f31c0b2d483::t_e8879fea38d4ad 21
+governance/research/thinker-canon/MIND-EPISTEMOLOGY.md
+  s_653f31c0b2d483::t_41d3b68afaebeb 1-172
+memory/thinker-canon.md
+  s_653f31c0b2d483::t_52db87de7fb043 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4039d94ac4306868bac97e0a5248ec4d61ae939a",
+  "prompts": {},
+  "sessions": {
+    "s_653f31c0b2d483": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002a49951ffemdIsh17BRY5rvs",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

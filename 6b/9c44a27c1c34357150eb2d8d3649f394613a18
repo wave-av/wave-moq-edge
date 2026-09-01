@@ -1,0 +1,23 @@
+hooks/bin/lifecycle-bus.mjs
+  s_c9258d973bc2f8::t_1abeebcb917a69 1-135
+hooks/tests/lifecycle-bus.test.sh
+  s_c9258d973bc2f8::t_3409a2aa7ac625 1-228
+settings/settings.base.json
+  s_c9258d973bc2f8::t_c95b0a8f17c66b 892-927
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6b9c44a27c1c34357150eb2d8d3649f394613a18",
+  "prompts": {},
+  "sessions": {
+    "s_c9258d973bc2f8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedfe2c97ffeRs4NZNhqwAywag",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

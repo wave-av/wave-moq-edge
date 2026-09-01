@@ -1,0 +1,22 @@
+governance/plans/wave-mesh-fabric/action/mesh-kv-shape.sh
+  s_15127d80763110::t_640d4af7a398a0 139-141
+  s_15127d80763110::t_fd1d312c974e3d 104-110
+  s_15127d80763110::t_fb15b28cf03754 117-120
+  s_15127d80763110::t_36866e87639790 56-79,83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9e06ce580eab30a6f26c44010ee60d215e6ecd29",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

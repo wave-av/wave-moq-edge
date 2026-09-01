@@ -1,0 +1,54 @@
+governance/bin/lawbook.mjs
+  s_d9915bbafa9657::t_514062e84c1329 128-131
+  s_d9915bbafa9657::t_b0d93244de343b 47-53,55,61-62,66-67,81
+  s_d9915bbafa9657::t_a924518d0560f0 28
+  s_d9915bbafa9657::t_2331d9f9aebc2f 71-75
+  s_d9915bbafa9657::t_97568c2ab4dad6 54,56-60,63-65,68-70,76-80
+governance/bin/route-matrix.mjs
+  s_d9915bbafa9657::t_95de3c04bfb53b 142-154
+  s_d9915bbafa9657::t_cfb9a197928798 87-92,94,96,100-103
+  s_d9915bbafa9657::t_4102753837d161 52
+governance/bin/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_8779061dbe423b 55-59
+  s_d9915bbafa9657::t_e119b8740d255e 69
+  s_d9915bbafa9657::t_7b8174927b0fc1 50
+  s_d9915bbafa9657::t_ba0b9524dfcb50 1-49,51-54,60-68,70-117,119-120,135-136,141-182
+  s_d9915bbafa9657::t_a9889f1cc6d603 118,121-134,137-140
+governance/lib/drill-fixtures-drift.mjs
+  s_d9915bbafa9657::t_17cf586be392fe 49-55
+governance/test/route-matrix-graph-availability.test.mjs
+  s_d9915bbafa9657::t_2d39dcd67de800 1-49
+governance/lib/graph-availability.mjs
+  s_d9915bbafa9657::t_1803a8d6f1a6ca 62,67-69,71,73
+governance/lib/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_0eacb207fe5c30 1-145
+governance/plans/generated-artifact-contention/PHASE-C-SWEEP.md
+  s_d9915bbafa9657::t_50f33626c840ab 1-188
+governance/test/learning-health.test.mjs
+  s_d9915bbafa9657::t_c24883c5ec0976 44-50,52-66
+governance/bin/learning-health.mjs
+  s_d9915bbafa9657::t_ae4ad3e1fcb400 62
+  s_d9915bbafa9657::t_82261da74a3587 131-135,137,139,141-151,153
+  s_d9915bbafa9657::t_8e29f6855eb748 67-69
+  s_d9915bbafa9657::t_5ea7f7a8ea3265 215-216
+  s_d9915bbafa9657::t_7fff4167cfb337 221-225
+  s_d9915bbafa9657::t_7100861f60e220 80
+  s_d9915bbafa9657::t_9fbe47590b2b00 237-239
+  s_d9915bbafa9657::t_c6e53842819a63 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "af0660e301071d44634e1d35b4963775faedff2c",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+memory/fleet-todo-ledger.md
+  s_67ed3dcd15e17f::t_7385d071839d72 85-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0ed234bdd6d1ae26f2d62047325f183fa5a267e5",
+  "prompts": {},
+  "sessions": {
+    "s_67ed3dcd15e17f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcfa2f8bdffeiw3p31xvVtT1Pd",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

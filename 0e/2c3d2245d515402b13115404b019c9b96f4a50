@@ -1,0 +1,21 @@
+hooks/tests/wrangler-deploy-gate.test.sh
+  s_96280c922a9418::t_0af5c6fdbb9a7a 118-134
+hooks/wrangler-deploy-gate.sh
+  s_96280c922a9418::t_1c9d3d5234cc59 145-155,157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "0e2c3d2245d515402b13115404b019c9b96f4a50",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

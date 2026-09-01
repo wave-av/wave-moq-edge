@@ -1,0 +1,29 @@
+governance/test/fixtures/bad-subprocess-stdio/leaky.mjs
+  s_02abc74f4971c7::t_bf4125fc15ebd4 85-98
+governance/test/subprocess-stdio-lint.test.mjs
+  s_02abc74f4971c7::t_5884e76117e73e 103-115
+  s_02abc74f4971c7::t_7931a4d203c2ba 91-102,116-117,127-128
+  s_02abc74f4971c7::t_4e0f63799bae4e 118-126
+governance/bin/subprocess-stdio-lint.mjs
+  s_02abc74f4971c7::t_091e7135d390e7 86-100,104-105,112,116,118,121-130,132,134,136
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_c898fe12ccf360 5,2630-2631,2633-2634,2637,2639,2642,2644-2647,2649,2651,2653-2656
+governance/code-index/index.json
+  s_02abc74f4971c7::t_508cac91ab6242 7,9,23703-23704,23714-23715,23730-23751,23780-23781,23802-23805,23835-23836,23857-23858,23868-23869,23879-23880,23890-23891,23912-23913,23934-23935,23956-23957,23967-23968,23978-23979,23989-23990
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "af73e31aa5546f7e92f7289a962cdca9e0909ccc",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

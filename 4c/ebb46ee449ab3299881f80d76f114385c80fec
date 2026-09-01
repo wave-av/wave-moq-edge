@@ -1,0 +1,22 @@
+tests/test_bugbot_learning.py
+  s_3a52a0989b58af::t_26296e0dd06bff 317-372
+scripts/bugbot/calib_build.py
+  s_3a52a0989b58af::t_d2c1170bd93d8d 1-131,133-159
+  s_3a52a0989b58af::t_b7bea207b1ad88 132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4cebb46ee449ab3299881f80d76f114385c80fec",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

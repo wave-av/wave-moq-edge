@@ -1,0 +1,36 @@
+hookcli/bin/validate-rules.mjs
+  s_02abc74f4971c7::t_d88fc935b53961 206-216
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_484a5fb146c387 198-201
+  s_02abc74f4971c7::t_e5968288b53a3f 32-36
+  s_02abc74f4971c7::t_af6d71f7b4bede 207-216,218-220,227
+  s_02abc74f4971c7::t_f179fd57104ed7 221-225,228
+hookcli/lib/eval-t1.sh
+  s_02abc74f4971c7::t_5bf6ef5ab0e3af 46-52,55
+  s_02abc74f4971c7::t_f30480b7640134 53-54
+hookcli/tests/gate-dispatch.sh
+  s_02abc74f4971c7::t_9953eea5e2d119 84-102
+hookcli/tests/fixtures/t3-timeout-rules.json
+  s_02abc74f4971c7::t_f583aa7527d4e2 38-54
+hookcli/schema/rule.schema.json
+  s_02abc74f4971c7::t_0a68a46f39f7a2 81
+  s_02abc74f4971c7::t_badfb8234218e2 87
+hookcli/rules/rules.json
+  s_02abc74f4971c7::t_b03c8ba47de6b0 279
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f01debb5a2c2515f0313bc031dcdcc18bd21a3c3",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

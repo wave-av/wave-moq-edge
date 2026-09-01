@@ -1,0 +1,37 @@
+governance/plans/webhook-plane/E3-VENDORS.md
+  s_048ad7f61626d4::t_7c744b43ef7059 2-15
+  s_048ad7f61626d4::t_5c3dc55ddba242 1
+governance/plans/webhook-plane/E4-PRODUCT.md
+  s_048ad7f61626d4::t_c303abd6ccd1cb 2-13
+  s_048ad7f61626d4::t_76c4d716993e07 1
+governance/plans/webhook-plane/NORTH-STAR.md
+  s_048ad7f61626d4::t_2c47baa3881c37 5-59
+  s_048ad7f61626d4::t_4e976c06ccd752 2-4
+governance/plans/webhook-plane/E1-VERIFIERS.md
+  s_048ad7f61626d4::t_6934983c66ef7e 2-13
+  s_048ad7f61626d4::t_de55fcbb77cb95 1
+  s_048ad7f61626d4::t_c4935e7ae52563 14
+governance/plans/webhook-plane/E0-TRANSPORT.md
+  s_048ad7f61626d4::t_29089d21124a8e 2-18
+  s_048ad7f61626d4::t_100d30a4cd4f2c 1
+governance/plans/webhook-plane/E2-ACTIONS.md
+  s_048ad7f61626d4::t_1fabb9509277fb 2-14
+  s_048ad7f61626d4::t_bd3a8cb0ecb026 1
+  s_048ad7f61626d4::t_848a21a0757a08 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "45dfa7f0f61ccb2cc5ee84e898f4e31f37a7ff0e",
+  "prompts": {},
+  "sessions": {
+    "s_048ad7f61626d4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_feee8970affenVKsU9Nt681bXx",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

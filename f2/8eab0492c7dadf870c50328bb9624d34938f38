@@ -1,0 +1,29 @@
+governance/plans/closed-loop-mechanisms/E0-INVENTORY.md
+  s_264ae386838c57::t_c51d75b8a9cae2 52
+governance/plans/closed-loop-mechanisms/E1-REQUIRE.md
+  s_264ae386838c57::t_a8208b393eecba 30
+governance/plans/closed-loop-mechanisms/E2-LASTMILE.md
+  s_264ae386838c57::t_8ad2a878f4e144 40,44,52
+governance/plans/closed-loop-mechanisms/E6-FLAKE.md
+  s_264ae386838c57::t_413a8b33c0f01d 44
+governance/plans/closed-loop-mechanisms/E7-MEASURE.md
+  s_264ae386838c57::t_86cb0b4151df1e 24,43
+governance/plans/closed-loop-mechanisms/NORTH-STAR.md
+  s_264ae386838c57::t_a873be9968c5ca 16,87,117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f28eab0492c7dadf870c50328bb9624d34938f38",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

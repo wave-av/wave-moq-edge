@@ -1,0 +1,36 @@
+governance/bin/fleet/tests/run.sh
+  s_dccee6b7677203::t_1c2ea5c59073c5 15-29
+governance/bin/prove-debug-script-gate.mjs
+  s_dccee6b7677203::t_d7b10f5df63dce 23-25
+  s_dccee6b7677203::t_f07fec79c3cad1 52-67
+  s_dccee6b7677203::t_7374ce16d00c5f 3-12
+governance/test/fixtures/shell-scope/sourced-fragment.sh
+  s_dccee6b7677203::t_c3c3d16b1a515b 1-10
+governance/test/fixtures/shell-strict-documented/documented-no-e.sh
+  s_dccee6b7677203::t_d2313d6c6aba86 1-20
+governance/bin/debug-script-lint.mjs
+  s_dccee6b7677203::t_e192138f691390 71-78,81-82
+  s_dccee6b7677203::t_3165ca317eb25a 32-55,63
+governance/test/fixtures/shell-strict-undocumented/undocumented-no-e.sh
+  s_dccee6b7677203::t_3e339765201bcf 1-17
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_7b0f85f3834880 5,612-613,615-620,622,2008-2020
+governance/code-index/index.json
+  s_dccee6b7677203::t_1c19fc03c92a5b 7,9-10,5591-5601,5608-5609,5630-5633,5641-5642,5652-5653,5663-5664,5674-5675,5685-5688,5701-5711,18214-18217,18225-18226,18236-18237,18247-18248,18258-18259,18269-18270,18280-18281,18285-18350
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "84b0e8ebe6ddfa1c7b062975fdbab65bf2f3bdd2",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

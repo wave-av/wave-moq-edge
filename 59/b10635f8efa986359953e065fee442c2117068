@@ -1,0 +1,24 @@
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_c24357e71ae5bc::t_c11734afaa4e07 402-422,427-440
+governance/plans/namespace-substrate/E6-DECIDE.md
+  s_c24357e71ae5bc::t_61db1787dc772a 21
+  s_c24357e71ae5bc::t_cc8ae45edf7a05 20
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_c24357e71ae5bc::t_6f6552cd95f3a7 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "59b10635f8efa986359953e065fee442c2117068",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

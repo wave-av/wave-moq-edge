@@ -1,0 +1,20 @@
+governance/bin/network-edge-audit.mjs
+  s_ea8755337f3c0d::t_9ee9dad8dcaf2d 110-143
+  s_ea8755337f3c0d::t_d5ad75d4469103 46-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "dbaad12f454d1f166ff51d9a7191da2a2274923b",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

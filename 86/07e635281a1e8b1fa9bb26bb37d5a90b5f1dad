@@ -1,0 +1,19 @@
+__tests__/moq-deadline-scheduler-arena.test.ts
+  s_7b60aa0dad5d81::t_97ae9f28b56475 108-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8607e635281a1e8b1fa9bb26bb37d5a90b5f1dad",
+  "prompts": {},
+  "sessions": {
+    "s_7b60aa0dad5d81": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff71807e2ffewoF7Y0i2mkCBn2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

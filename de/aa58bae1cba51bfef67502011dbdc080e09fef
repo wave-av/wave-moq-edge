@@ -1,0 +1,23 @@
+governance/test/migrated-temp-writers.test.mjs
+  s_375efeac18ed55::t_fe45f9116b1931 48-53,57-60,62-71
+  s_375efeac18ed55::t_18987fc6dd5a92 1-47,54-56,61,72-108
+governance/bin/board-sweep.mjs
+  s_375efeac18ed55::t_33165ce675da24 287
+  s_375efeac18ed55::t_395992db9dc334 30-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "deaa58bae1cba51bfef67502011dbdc080e09fef",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

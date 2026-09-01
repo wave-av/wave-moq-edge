@@ -1,0 +1,20 @@
+governance/bin/transcript-secret-scan.mjs
+  s_c61b28d8d7e936::t_2c32f339a1b200 123
+  s_c61b28d8d7e936::t_e004eb6282d088 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "fd6eb847716a97e280273e7684a228f368d96c6c",
+  "prompts": {},
+  "sessions": {
+    "s_c61b28d8d7e936": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd5e0d594ffeVl3Dl6ngwqmHTf",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

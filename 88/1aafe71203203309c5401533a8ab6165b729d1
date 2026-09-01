@@ -1,0 +1,20 @@
+governance/README.md
+  s_63a2f8012db469::t_6d9f917a23d920 66,74
+  s_63a2f8012db469::t_faa2ee8d9d9726 69-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "881aafe71203203309c5401533a8ab6165b729d1",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

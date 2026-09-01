@@ -1,0 +1,21 @@
+governance/lib/spend-ceiling.mjs
+  s_c927cca3dccbaa::t_75d4b5b6cb0f40 1-257
+governance/test/spend-ceiling.test.mjs
+  s_c927cca3dccbaa::t_09825379db2444 1-177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "95550d3e2c709b1b2efd5a8f3a1950441a24ae4f",
+  "prompts": {},
+  "sessions": {
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

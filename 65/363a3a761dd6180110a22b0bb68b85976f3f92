@@ -1,0 +1,25 @@
+.github/workflows/claude-chassis.yml
+  s_d9915bbafa9657::t_b3e9f3c93f0bd9 6,8-13,17-35
+  s_d9915bbafa9657::t_3c63315055d1c6 14-16
+  s_d9915bbafa9657::t_cb2472588d96c4 223-232,234
+  s_d9915bbafa9657::t_1dab6c01e02875 273,276,278-294
+  s_d9915bbafa9657::t_5571360d1fba57 71-82
+docs/claude-chassis-caller-template.yml
+  s_d9915bbafa9657::t_84a7eb538311e4 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "65363a3a761dd6180110a22b0bb68b85976f3f92",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

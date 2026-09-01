@@ -1,0 +1,29 @@
+src/runpod.ts
+  s_19c8e603d8990b::t_e1d2a132e1e6c7 2,5-6,8-22,31-37,44-87,95-96,102-105,107-112,115-120,122-125,127,129,134-160,162-163
+src/types.ts
+  s_19c8e603d8990b::t_d1e038c2d0ae8d 47-50
+wrangler.toml
+  s_19c8e603d8990b::t_713449efd44736 49-54
+test/helpers.ts
+  s_19c8e603d8990b::t_3c4b9149735c68 28-29,42-44
+  s_19c8e603d8990b::t_dfef192a70f239 64-72,79-80,83-107
+test/runpod.test.ts
+  s_19c8e603d8990b::t_6af7cd3a86a898 51-52
+  s_19c8e603d8990b::t_518acd8befe582 82-83,90-91,94,98,101-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "9deb9c03b2a696f4a708f35fcb3c9427625e5209",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

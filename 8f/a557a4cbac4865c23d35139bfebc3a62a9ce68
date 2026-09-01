@@ -1,0 +1,35 @@
+governance/research/engineering-canon/origin-method.md
+  s_68d9c6684e200e::t_21c4d1a0444dee 360-386
+governance/tools/state-layer/manifests/lakehouse.json
+  s_0199872e729978::t_f08cdb19ec49d6 104
+  s_0199872e729978::t_daae2bf9ff635b 1-81,89-103,105-114
+  s_0199872e729978::t_a5b337fde0c7d9 82-88
+governance/plans/wave-usage-lakehouse/NORTH-STAR.md
+  s_0199872e729978::t_b8397310ae6f5c 115-118
+governance/tools/self-diagnose/manifests/governance.json
+  s_68d9c6684e200e::t_e53dac907954b0 1-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8fa557a4cbac4865c23d35139bfebc3a62a9ce68",
+  "prompts": {},
+  "sessions": {
+    "s_0199872e729978": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024642bdffepbB551LcIhl25Z",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_68d9c6684e200e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002461d78ffetwsNp1nd0DDAq6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

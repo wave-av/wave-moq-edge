@@ -1,0 +1,20 @@
+.github/workflows/reusable-ssot-gate.yml
+  s_6f6453b23e3805::t_0d25cd5cf3f864 149-150,155,158
+  s_6f6453b23e3805::t_a076338d0a8433 151-154
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7d92e32d3d5e4535c2e0e3ab4b96a3a5ec701dab",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

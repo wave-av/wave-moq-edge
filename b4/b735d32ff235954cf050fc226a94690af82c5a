@@ -1,0 +1,21 @@
+governance/bin/runpod-meter.mjs
+  s_0213641ac58af6::t_505b887dc7a72c 27
+governance/bin/model-registry.mjs
+  s_0213641ac58af6::t_9bd6f649ae3e3c 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b4b735d32ff235954cf050fc226a94690af82c5a",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

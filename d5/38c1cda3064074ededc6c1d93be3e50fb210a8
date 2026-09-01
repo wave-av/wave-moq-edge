@@ -1,0 +1,24 @@
+governance/lib/email-archive-parse.mjs
+  s_9e49fb2dab61f0::t_b81a6532a691bc 1-155
+governance/bin/email-archive.mjs
+  s_9e49fb2dab61f0::t_6a45012957fd69 83-85
+  s_9e49fb2dab61f0::t_9aa45d6fa23559 31,33-36
+  s_9e49fb2dab61f0::t_1d679b272cda8c 3-6,12-29,37-41,46,49,51,55-81,89-102,104-122,124-147,152-155,163,167,169-170,173,176-185,187-189
+  s_9e49fb2dab61f0::t_7a89b5a0b9a3a8 82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d538c1cda3064074ededc6c1d93be3e50fb210a8",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

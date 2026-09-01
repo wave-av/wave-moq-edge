@@ -1,0 +1,45 @@
+governance/plans/wave-mesh-fabric/E0-TRUTH.md
+  s_15127d80763110::t_203c116506e879 1-58
+governance/plans/wave-mesh-fabric/E1-ESTATE-BOUNDED.md
+  s_15127d80763110::t_c37537d70060bc 1-63
+governance/plans/wave-mesh-fabric/E2-CF-MESH-ADOPT.md
+  s_15127d80763110::t_a55c5b20326886 1-64
+governance/plans/wave-mesh-fabric/E3-TRANSPORT-KIND.md
+  s_15127d80763110::t_8b1af537a2ec31 1-80
+governance/plans/wave-mesh-fabric/E4-WORKERS-VPC.md
+  s_15127d80763110::t_87a0259efae30f 1-64
+governance/plans/wave-mesh-fabric/E5-CONSOLE-NETWORK.md
+  s_15127d80763110::t_9e67e50bc5da0e 1-67
+governance/plans/wave-mesh-fabric/E6-TENANCY.md
+  s_15127d80763110::t_1641a2be95d261 1-74
+governance/plans/wave-mesh-fabric/E8-RATCHET.md
+  s_15127d80763110::t_474b1e584181cb 1-59
+governance/plans/wave-mesh-fabric/NORTH-STAR.md
+  s_15127d80763110::t_0f706d96f5e2dd 1-167
+governance/plans/wave-mesh-fabric/action/CF-MESH-BRIEF.md
+  s_15127d80763110::t_a28de6f76c5749 1-225
+governance/plans/wave-mesh-fabric/action/WAVE-MESH-MODEL.md
+  s_15127d80763110::t_11c32913639a78 1-55
+governance/plans/wave-mesh-fabric/action/mesh-paths.sh
+  s_15127d80763110::t_4ef0bc71f195ee 1-26
+governance/graph.json
+  s_15127d80763110::t_0125377284a310 10164-10293,37872-38063
+governance/plans/wave-mesh-fabric/E7-POLICY.md
+  s_15127d80763110::t_a8225171b27ddf 1-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f5867c53b3b25d2c0829ca7b1443d6927e283964",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

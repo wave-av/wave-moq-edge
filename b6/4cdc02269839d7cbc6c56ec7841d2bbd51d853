@@ -1,0 +1,35 @@
+governance/plans/search-router/search-router/SKILL.md
+  h_67a1b847dc59d6 14,16-18,22-23,25-27,29-70
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_0950db28a6ae27::t_3597a0be823433 38-39
+  s_ae36f58096ac14::t_981edc801ac9b8 43-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b64cdc02269839d7cbc6c56ec7841d2bbd51d853",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ae36f58096ac14": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffe10812affet8asXHnSlp4dSB",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

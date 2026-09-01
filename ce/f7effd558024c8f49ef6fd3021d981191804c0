@@ -1,0 +1,39 @@
+src/viewport-model.ts
+  s_375efeac18ed55::t_b8d1d32e190c54 19,22-30
+  s_375efeac18ed55::t_750509b67430be 116-118,124-125
+  s_375efeac18ed55::t_852d264bae26d8 1-18,20-21,31-115,119-123,126-400
+  s_375efeac18ed55::t_fa64933e376a02 401-412
+src/moq-wire.ts
+  s_375efeac18ed55::t_10fc7ac90f3b32 489-503,509,512,517-519,528-529
+src/viewport-tracks.ts
+  s_375efeac18ed55::t_f7e821381a131a 170-174,176-181
+  s_375efeac18ed55::t_96fa83533a0442 1-28,30-169,175,182
+  s_375efeac18ed55::t_27f6edd339e273 29
+src/viewport-catalog.ts
+  s_375efeac18ed55::t_b6283001f9cfad 37
+  s_375efeac18ed55::t_46137474bed6c4 97,99-103
+  s_375efeac18ed55::t_f76dd31c69eb86 1-36,38-96,98,104-226
+__tests__/viewport-track-model.test.ts
+  s_375efeac18ed55::t_3d74e099d38805 1-540,544-545
+  s_375efeac18ed55::t_1991616d596631 541-543,546-574
+src/viewport-properties.ts
+  s_375efeac18ed55::t_1f6ee1e0ec68ca 1-135
+docs/2026-07-25-multi-viewport-track-model.md
+  s_375efeac18ed55::t_abd5772ab07e8d 1-423
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cef7effd558024c8f49ef6fd3021d981191804c0",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

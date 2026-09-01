@@ -1,0 +1,28 @@
+governance/test/roadmap-check.test.mjs
+  s_6a908cb0f02788::t_a85a2f883d7d07 109-189
+governance/bin/roadmap-check.mjs
+  s_6a908cb0f02788::t_3599a0ea1c2426 25-29,32-53
+  s_6a908cb0f02788::t_a3f3c705b533c6 87,90-101,114
+  s_6a908cb0f02788::t_aa0ecae4550ee3 104-105
+  s_6a908cb0f02788::t_ed9823a7898094 122-125
+  s_6a908cb0f02788::t_71f8a3b3adb131 2
+  s_6a908cb0f02788::t_0c7dc26f5b5f8c 54
+governance/bin/derivability.mjs
+  s_6a908cb0f02788::t_c096a09e2bb769 19-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7d181460d8e0d564e71635b56b291e7d442c7159",
+  "prompts": {},
+  "sessions": {
+    "s_6a908cb0f02788": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7caa1d99-9fe3-436c-ad73-73718311d6a5",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

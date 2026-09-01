@@ -1,0 +1,91 @@
+.github/workflows/external-ticket-sweep.yml
+  s_be40541f6fd98b::t_9c1d68641c02f7 1-179
+.github/workflows/wsc-salvage-coverage.yml
+  s_be40541f6fd98b::t_a6b496807d5a34 1-52
+governance/DANGLING-REFS-BASELINE.json
+  s_be40541f6fd98b::t_acb9a62b046971 9,88-92
+governance/agents/TAXONOMY.yaml
+  s_be40541f6fd98b::t_42718d8a29da79 1-287
+governance/bin/external-tickets.mjs
+  s_be40541f6fd98b::t_714bcd9c5ca727 91-123,137-142,146-153,155,160-165,167,226-233
+governance/bin/gate-scope-conformance.mjs
+  s_be40541f6fd98b::t_35aae842b27bec 4-5,35-38,40-41,45-54,156
+governance/bin/prove-gate-scope-conformance.mjs
+  s_be40541f6fd98b::t_cf4bd8a7e94780 4-6,8-9,40-42,45,51,112-126,128,134
+governance/bin/taxonomy.mjs
+  s_be40541f6fd98b::t_bc5f5289ec16ad 1-224
+governance/ci-scan-set.pin.json
+  s_be40541f6fd98b::t_62ce3f950ad59c 5-6
+governance/lib/epic-status-render.mjs
+  s_be40541f6fd98b::t_ac4c4b684eaf6f 27-31,37-42
+governance/lib/ramp-tables.mjs
+  s_be40541f6fd98b::t_2a2e231e36ec21 50-55
+governance/lib/wave-cost-ledger-anomaly-read.mjs
+  s_be40541f6fd98b::t_7642e881f46c1b 12-44,81-89
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_be40541f6fd98b::t_e4b188c442b10d 27-29,60-68,88-91,93-99,101-102
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  s_be40541f6fd98b::t_5af8b49be962e1 330-334,379-388,401-406,408-414,421,423-431,448-450,455-459,482-503,510-550,646-655
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  s_be40541f6fd98b::t_33605f9cdb572d 4-8,13-14,20-22
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  s_be40541f6fd98b::t_86e72f15afe3ef 4-8,33-50
+governance/plans/gates-that-can-see/E7-STACKED-PR-BLINDNESS.md
+  s_be40541f6fd98b::t_8708888ec80da9 1-123
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_be40541f6fd98b::t_65b126521e78e0 4-7,14,52-53,56,67-72,94,101
+governance/plans/golden-path-restoration/E0-FORENSICS.md
+  s_be40541f6fd98b::t_c734de847121ad 10-12,19-59
+governance/plans/upstream-ask-mcp-instruction-deferral.md
+  s_be40541f6fd98b::t_a14c0ee6d541e3 7-12,14,18-20,24,26,31-41
+governance/proposals/vendor-trial-is-reconnaissance.md
+  s_be40541f6fd98b::t_0633f05edee8e6 1-82
+governance/test/epic-status-closed.test.mjs
+  s_be40541f6fd98b::t_d91ad83dc27417 47-60
+governance/test/epic-status.test.mjs
+  s_be40541f6fd98b::t_140d2b53cfe5c4 175-188
+governance/test/external-tickets.test.mjs
+  s_be40541f6fd98b::t_1eaaeab1ddfc46 119-195
+governance/test/plugin-skill-drift.test.mjs
+  s_be40541f6fd98b::t_921639839e1fe7 1-40
+governance/test/taxonomy.test.mjs
+  s_be40541f6fd98b::t_71fdff8b2caa05 1-135
+governance/test/wave-cost-ledger-anomaly-read.test.mjs
+  s_be40541f6fd98b::t_60599e550ab627 4,6-8,30-35,59,76,91,102,113,124,133-134,137,140-146,148,150-169
+governance/work-state.json
+  s_be40541f6fd98b::t_94073f1e46d71a 3,5-6,9-15,20-22,27,30-32,36-38,42-44,48-50,54-56,60-62,66-68,72-74,78-80,84-86,93-95,99-112,114-119,123-125,129,142-147,150-151,153-155,158-159,161-163,166-167,169-171,174-179,182-183,185-187,190-191,193-195,198-199,201-203,207-210,214-215,224
+governance/wsc-salvage/check-coverage.mjs
+  s_be40541f6fd98b::t_bb2f1fa123bbd4 1-120
+governance/wsc-salvage/manifest.json
+  s_be40541f6fd98b::t_e08c80675ea5ba 1-268
+hooks/doppler-env-guard.sh
+  s_be40541f6fd98b::t_0394ddaa96e782 35-67
+hooks/file-authoring-gate.sh
+  s_be40541f6fd98b::t_3580c8a7d01e11 50-71,75-92
+hooks/tests/doppler_guard_smoke.sh
+  s_be40541f6fd98b::t_7deaed2cdd9714 50-84
+hooks/tests/file-authoring-gate_smoke.sh
+  s_be40541f6fd98b::t_bd02840baf5693 51-100
+plugins/wave-governance/.claude-plugin/plugin.json
+  s_be40541f6fd98b::t_fba9de76bcf31c 1-19
+plugins/wave-governance/README.md
+  s_be40541f6fd98b::t_6377a0bbd86cc7 1-15
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  s_be40541f6fd98b::t_9f4932f0d50740 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "da80f837905e5d2994daa62e222ace10c085a1d4",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

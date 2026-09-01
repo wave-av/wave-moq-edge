@@ -1,0 +1,19 @@
+governance/plans/claude-code-upstream-absorption/E3-IMPLEMENT.md
+  s_27c3f37c99074f::t_44ad8d5bf91199 39-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7feeb59d637555743db5c1db97f5d7f043b007ff",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

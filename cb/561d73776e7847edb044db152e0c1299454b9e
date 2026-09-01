@@ -1,0 +1,64 @@
+hookcli/bin/validate-rules.mjs
+  s_375efeac18ed55::t_1c214bdba42f92 42-68,72-80
+  s_375efeac18ed55::t_7dc5c5cd0642cc 5-7
+  s_375efeac18ed55::t_fc037b08340194 263
+  s_375efeac18ed55::t_33dfbb82ce8a53 113-114
+  s_375efeac18ed55::t_f130c2704b0adb 237-258
+  s_375efeac18ed55::t_78bf2b1d865085 81
+hookcli/rules/rules.json
+  s_375efeac18ed55::t_879bd8e3f65556 141
+  s_375efeac18ed55::t_933ba91084ab3c 61
+  s_375efeac18ed55::t_04a4c0620eb632 348
+  s_375efeac18ed55::t_8ffbfb712ccaab 214
+  s_375efeac18ed55::t_dd1577af0b7b89 457
+  s_375efeac18ed55::t_b0bc2e287ef59c 86
+  s_375efeac18ed55::t_9a695e577ca6c6 43
+  s_375efeac18ed55::t_dbe978cf3b5c84 473
+  s_375efeac18ed55::t_04101fee16449b 369
+  s_375efeac18ed55::t_15552f80cc240f 178
+  s_375efeac18ed55::t_785e2def029929 6
+  s_375efeac18ed55::t_2915fb6fd694c9 160
+  s_375efeac18ed55::t_e5ad43cdee2df4 123
+  s_375efeac18ed55::t_2859809b87430c 327
+  s_375efeac18ed55::t_07d3ae99d10e29 196
+  s_375efeac18ed55::t_932923b9a77064 105
+  s_375efeac18ed55::t_b827a2fd1b6eff 306
+  s_375efeac18ed55::t_57ee9d532ec5e4 25
+hookcli/schema/rule.schema.json
+  s_375efeac18ed55::t_270b02709811f3 97-104
+hookcli/tests/run.sh
+  s_375efeac18ed55::t_f3a600d2ba8f02 68-70
+governance/lib/hookcli-bindings.mjs
+  s_375efeac18ed55::t_41cbd36c320c92 1-50
+hookcli/tests/rule-law-bindings.sh
+  s_375efeac18ed55::t_79f2604f2084ef 1-105
+governance/bin/enforcement-tables.mjs
+  s_375efeac18ed55::t_5c25952911df4f 39-47
+  s_375efeac18ed55::t_86e22164fe0f77 12
+governance/lib/drill-fixtures-drift.mjs
+  s_375efeac18ed55::t_0fd3d11910ae6e 129,137
+  s_375efeac18ed55::t_5ba0a9c1ebb3a2 122-123
+  s_375efeac18ed55::t_4728c50166fbb1 35-39,45
+governance/test/drift-check.test.mjs
+  s_375efeac18ed55::t_e0eae908d566c5 139-140
+governance/bin/build.mjs
+  s_375efeac18ed55::t_024c424385707e 21,112-117,120-121
+governance/bin/enforcement-coverage.mjs
+  s_375efeac18ed55::t_8e7f66cc1ebf4b 41,242-262
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cb561d73776e7847edb044db152e0c1299454b9e",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+governance/test/reversible-store.test.mjs
+  s_60a20469ef4369::t_006557b63c3a13 105-107,112,115-119,124-125,127-128,134-135,141-142,151-153
+  s_60a20469ef4369::t_81a6285153260d 6
+  s_60a20469ef4369::t_9f81a94ab03d99 100-104,108-111,113-114,120-123,126,129-133,136-140,143-150,154-155
+governance/bin/reversible-store.mjs
+  s_60a20469ef4369::t_3065b2bf8af0a5 83-90,92-93,98-114,116-122
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_b27c7c212a5e72 5,1914,1917-1926,1928-1931,1933-1935
+governance/code-index/index.json
+  s_60a20469ef4369::t_6ec8526150371d 7,9-10,18428-18438,18461-18471,18478-18479,18489-18490,18500-18503,18511-18514,18522-18523,18527-18537,18544-18545,18555-18556,18566-18567,18588-18589,18599-18600,18610-18611,18621-18622,18643-18644,18654-18655,18665-18666
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a8eec3a3b6bb3736bab411e34c18f459a49380fc",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

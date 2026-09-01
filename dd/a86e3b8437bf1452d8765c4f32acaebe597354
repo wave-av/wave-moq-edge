@@ -1,0 +1,45 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_70bc8a9927972d 457-478
+hookcli/lib/t3-classify.mjs
+  s_60a20469ef4369::t_f9e7cda10a0e97 210-230,235
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_ea81f1382d3189 111-127
+rules/no-git-stash.md
+  s_60a20469ef4369::t_790adbea8f3084 16
+governance/bin/enforcement-coverage.mjs
+  s_60a20469ef4369::t_b63b929d1c4d7d 287
+  s_60a20469ef4369::t_4f7c8e25b56c27 51-68
+  s_60a20469ef4369::t_81a3feb1c1ce33 274
+rules/storage-governed.md
+  s_60a20469ef4369::t_8e2675192a156a 24
+hookcli/package.json
+  s_60a20469ef4369::t_2d6ee7c2bd0b28 3
+governance/ENFORCEMENT-COVERAGE.md
+  s_3ec39ccf89a722::t_909fda46d6bba0 453
+governance/graph.json
+  s_60a20469ef4369::t_a35a9e95cb93ac 16216-16221
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "dda86e3b8437bf1452d8765c4f32acaebe597354",
+  "prompts": {},
+  "sessions": {
+    "s_3ec39ccf89a722": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5a1f340b63f36e43",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

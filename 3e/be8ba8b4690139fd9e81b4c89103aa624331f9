@@ -1,0 +1,23 @@
+governance/plans/origin-gateway-lock/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_2529f312ddf5e1 142
+governance/plans/wave-ci/E1-API.md
+  s_9e49fb2dab61f0::t_1da13d95b53ca9 46
+governance/plans/wave-ci/NORTH-STAR.md
+  s_9e49fb2dab61f0::t_61255970210638 73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3ebe8ba8b4690139fd9e81b4c89103aa624331f9",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

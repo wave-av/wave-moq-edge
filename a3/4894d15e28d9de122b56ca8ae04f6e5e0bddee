@@ -1,0 +1,26 @@
+governance/plans/durable-state-off-ephemeral/epic.md
+  s_60a20469ef4369::t_e9ee52d928050b 74-78
+  s_60a20469ef4369::t_adc869ceb17d12 86-90
+  s_60a20469ef4369::t_e046d66f211a0d 61-65
+  s_60a20469ef4369::t_6fdc18be501161 50-53
+  s_60a20469ef4369::t_fe1705326f965d 98-102
+  s_60a20469ef4369::t_7b74b0dfe645e4 1-49,54-60,66-73,79-85,91-97,103-134
+governance/graph.json
+  s_60a20469ef4369::t_42c68c2e4cb01c 2265-2277,13163-13204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "a34894d15e28d9de122b56ca8ae04f6e5e0bddee",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

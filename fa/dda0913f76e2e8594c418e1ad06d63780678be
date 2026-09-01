@@ -1,0 +1,116 @@
+governance/bin/transcript-secret-scan.mjs
+  s_d07b05dd5011e3::t_1c87957ceeb13c 21-23
+  s_d07b05dd5011e3::t_58208845485022 18-20
+  s_d07b05dd5011e3::t_a65f344dc49626 24-26
+  s_d07b05dd5011e3::t_6f51458bfb8458 1-17,27-123
+governance/bin/mint-token.mjs
+  s_d07b05dd5011e3::t_32016ad9b3f6aa 32
+  s_d07b05dd5011e3::t_70468953ffc44e 54-72
+  s_d07b05dd5011e3::t_df23821044f9a4 192
+  s_d07b05dd5011e3::t_d2013d4fdd45aa 29-31
+  s_d07b05dd5011e3::t_ef011bcc1f71bb 33-35,51-53
+  s_d07b05dd5011e3::t_8854b27c3e10ce 73-75,189-191
+  s_d07b05dd5011e3::t_e9271271a3465b 193-195
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_dedb333dd5195e::t_bd8498ed052353 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_dedb333dd5195e::t_7137808900edb2 24-26
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_dedb333dd5195e::t_d306310e8d9223 72
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-advisory-soak-setup.md
+  s_dedb333dd5195e::t_316cfeda16d400 1-54
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-build-measure.md
+  s_dedb333dd5195e::t_20608c1eec7125 1-59
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-x86-falsifier.md
+  s_dedb333dd5195e::t_1a52fb11b2638c 1-68
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-metrics-e2e-live.md
+  s_dedb333dd5195e::t_361223055fe940 1-267
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-npm-mirror-rescope.md
+  s_dedb333dd5195e::t_00b51981b7bcbd 1-176
+governance/plans/namespace-substrate/STORY-PACKAGE-2026-08-21.md
+  s_dedb333dd5195e::t_b626f0eb75832b 1-78
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_dedb333dd5195e::t_b04428d8a50ff2 1-20
+governance/plans/physics-of-compute/E1-SSD-STREAMING-MEASURE.md
+  s_dedb333dd5195e::t_b7fbcda4f37988 1-24
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_dedb333dd5195e::t_1af90cecef861b 1-22
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_dedb333dd5195e::t_c866f16de43726 1-46
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_dedb333dd5195e::t_4e9187bce2ea8f 1-57
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  s_dedb333dd5195e::t_32635e9c041048 1-57
+governance/plans/physics-of-compute/NORTH-STAR.md
+  s_dedb333dd5195e::t_9ea84a1085b79b 1-108
+governance/plans/physics-of-compute/RECEIPTS-E1-preflight.md
+  s_dedb333dd5195e::t_46d3a97dcf6d63 1-78
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  s_dedb333dd5195e::t_b09c381931b058 1-79
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  s_dedb333dd5195e::t_b07c4b5eee3a9b 1-240
+governance/plans/vendor-control-plane/E1-schema.draft.ts
+  s_dedb333dd5195e::t_5e87b97884b1db 1-303
+governance/plans/vendor-control-plane/E2-NAMESPACE-ADAPTER.md
+  s_dedb333dd5195e::t_4214b453425c9a 1-42
+governance/plans/vendor-control-plane/E3-RUNPOD-ADAPTER.md
+  s_dedb333dd5195e::t_a7cad1e609373c 1-39
+governance/plans/vendor-control-plane/E4-CF-ADAPTER.md
+  s_dedb333dd5195e::t_b9cdaf160ca5e0 1-33
+governance/plans/vendor-control-plane/E5-META.md
+  s_dedb333dd5195e::t_ee92e7a4cfd92e 1-36
+governance/plans/vendor-control-plane/NORTH-STAR.md
+  s_dedb333dd5195e::t_eb6b644df541ac 1-85
+governance/plans/vendor-control-plane/RECEIPTS.md
+  s_dedb333dd5195e::t_e8e44d794a5c03 1-16
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-19.md
+  s_dedb333dd5195e::t_313e68598abb0c 1-52
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-21-namespace-arc.md
+  s_dedb333dd5195e::t_02d16fe342c554 1-48
+governance/research/creator-intelligence/PHYSICS-OF-COMPUTE-CAMPAIGN.md
+  s_dedb333dd5195e::t_a340c059c001e6 1-93
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  s_dedb333dd5195e::t_326285c201ce6c 29-37
+.github/workflows/namespace-egress-advisory-soak.yml
+  s_0950db28a6ae27::t_756c2c3750d679 1-139
+governance/plans/epic-system/NORTH-STAR.md
+  s_0950db28a6ae27::t_469cacd8fe2333 64-67
+governance/plans/polyrepo-velocity/E7-AGENT-CACHE.md
+  s_0950db28a6ae27::t_b0dc3e66d161b2 84-87
+memory/fleet-todo-ledger.md
+  s_0950db28a6ae27::t_00338157ecc1c8 7,9,12-16,27-28,30,44,51,432-641
+memory/namespace-arc-session-bank-2026-08-21.md
+  s_0950db28a6ae27::t_f170b9d24aeccc 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "fadda0913f76e2e8594c418e1ad06d63780678be",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d07b05dd5011e3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd60ecf1cffeQdnpqM5zl1e7M7",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

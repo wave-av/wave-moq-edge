@@ -1,0 +1,37 @@
+governance/plans/runtime-learning-loop/E2-ROUTER-FEEDBACK.md
+  s_2b4acc7ceba309::t_92410dd2a27765 1-14
+governance/plans/runtime-integrations/E3-VOICE-VISION-MOUNTS.md
+  s_2b4acc7ceba309::t_b60ea128ce924b 1-14
+governance/plans/runtime-learning-loop/E0-INTAKE.md
+  s_2b4acc7ceba309::t_019557ca7131f0 1-14
+governance/plans/runtime-integrations/E1-WORKFLOWS.md
+  s_2b4acc7ceba309::t_629adac64e550c 1-13
+governance/plans/runtime-integrations/E2-MCP-CATALOG.md
+  s_2b4acc7ceba309::t_9c9f295e95ee99 1-12
+governance/plans/runtime-integrations/E0-FIT-MATRIX.md
+  s_2b4acc7ceba309::t_3e978e4836c2ec 1-13
+governance/plans/runtime-learning-loop/NORTH-STAR.md
+  s_2b4acc7ceba309::t_8c6fbd0ee13c9c 1-52
+governance/plans/runtime-integrations/NORTH-STAR.md
+  s_2b4acc7ceba309::t_7a4ac7db47d00f 1-52
+governance/plans/runtime-learning-loop/E1-TRAJECTORY-FEED.md
+  s_2b4acc7ceba309::t_9180ac38539674 1-12
+governance/plans/runtime-learning-loop/E3-COST-ATTRIBUTION.md
+  s_2b4acc7ceba309::t_e143cf87c48911 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "072eb4a1a8a1905902d68c49ec656bc1b2ad7d88",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

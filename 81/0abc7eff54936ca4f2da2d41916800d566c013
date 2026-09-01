@@ -1,0 +1,87 @@
+.github/workflows/bench.yml
+  s_e2e3e43d0638c5::t_b22fcc9f95de1f 18
+.github/workflows/consumer-smoke.yml
+  s_e2e3e43d0638c5::t_010315c8152dc5 26
+.github/workflows/discoverability-audit.yml
+  s_375efeac18ed55::t_f87e5dfae69a8d 45
+.github/workflows/guardrails-audit.yml
+  s_e2e3e43d0638c5::t_3ab95f831ed674 26
+.github/workflows/harvest-drift-nightly.yml
+  s_e2e3e43d0638c5::t_c01c68a44e0923 23
+.github/workflows/improvement-loop-nightly.yml
+  s_e2e3e43d0638c5::t_a5663f8269131e 21
+.github/workflows/issue-ops-tests.yml
+  s_e2e3e43d0638c5::t_7d1e49c020a026 42
+.github/workflows/open-core-audit.yml
+  s_375efeac18ed55::t_0a1544f250c7e0 36
+.github/workflows/pinact.yml
+  s_375efeac18ed55::t_8268c1a0c025ec 28
+.github/workflows/ratchet.yml
+  s_375efeac18ed55::t_60967fa5655fb8 29,55,78,105,129,151
+.github/workflows/reusable-ssot-gate.yml
+  s_e2e3e43d0638c5::t_31ecb9663dbe11 37
+.github/workflows/scorecard.yml
+  s_e2e3e43d0638c5::t_f37f80dc31e637 21
+.github/workflows/self-check.yml
+  s_375efeac18ed55::t_016940364d7242 21,36,67,81,96,112,124,141,159
+.github/workflows/zizmor.yml
+  s_375efeac18ed55::t_ff87d2974f75bd 23
+.github/workflows/automerge.yml
+  s_375efeac18ed55::t_e9932bdadd1300 35,66
+.github/workflows/bot-review-gate.yml
+  s_375efeac18ed55::t_7e6b237cacceb5 43
+.github/workflows/claude-docs-refresh-weekly.yml
+  s_375efeac18ed55::t_5072ae450a3596 35
+.github/workflows/codec-watch-libavm.yml
+  s_375efeac18ed55::t_e923d6ef183076 27
+.github/workflows/dogfood-metrics-weekly.yml
+  s_375efeac18ed55::t_a2d89a3743b579 21
+.github/workflows/fleet-conformance.yml
+  s_375efeac18ed55::t_97647998287698 18
+.github/workflows/gate-promote-deprecate-weekly.yml
+  s_375efeac18ed55::t_2fd4e6df53132f 23
+.github/workflows/identity-policy-audit.yml
+  s_375efeac18ed55::t_b78dfe19917faf 36
+.github/workflows/northstar-lint.yml
+  s_375efeac18ed55::t_fb299739cdf9ea 36
+.github/workflows/pr-review-context.yml
+  s_375efeac18ed55::t_b5925e70d183d8 40
+.github/workflows/public-mirror-verify.yml
+  s_375efeac18ed55::t_364cc0e79a06dd 34
+.github/workflows/required-check-drift.yml
+  s_375efeac18ed55::t_dbdb98b855215e 33
+.github/workflows/semantic-pr.yml
+  s_375efeac18ed55::t_7d77b80353a309 20
+.github/workflows/telemetry-conformance.yml
+  s_375efeac18ed55::t_398bdec7415dce 41,57
+.github/workflows/validate-capabilities.yml
+  s_375efeac18ed55::t_bd6784018f1530 55
+.github/workflows/verify-loop.yml
+  s_375efeac18ed55::t_183478a7eae363 24
+.github/workflows/wave-av-drift-weekly.yml
+  s_375efeac18ed55::t_3c667981c182cd 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "810abc7eff54936ca4f2da2d41916800d566c013",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

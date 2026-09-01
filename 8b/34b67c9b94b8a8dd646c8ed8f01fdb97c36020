@@ -1,0 +1,19 @@
+governance/plans/law-proposals/2026-08-07-never-assume-measure-decision.md
+  s_63a2f8012db469::t_b62e2af66cc545 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8b34b67c9b94b8a8dd646c8ed8f01fdb97c36020",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

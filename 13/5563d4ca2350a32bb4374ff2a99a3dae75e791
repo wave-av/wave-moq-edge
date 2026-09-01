@@ -1,0 +1,27 @@
+governance/test/lib/workflow-invocation.mjs
+  s_9041cf1cf1ccad::t_3b539b11ddf760 119-144
+governance/test/no-dark-test-dir.test.mjs
+  s_9041cf1cf1ccad::t_0e7bd73ae99a7d 231-234
+  s_9041cf1cf1ccad::t_8435db5407e8da 34,279-295
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "135563d4ca2350a32bb4374ff2a99a3dae75e791",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

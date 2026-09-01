@@ -1,0 +1,53 @@
+runbooks/lib/observe.mjs
+  s_a293da4db5caf2::t_72ac84eafaaf9d 1-113
+hooks/runbook-use-observer.sh
+  s_a293da4db5caf2::t_bc4ac993b36909 1-28
+runbooks/test/observe.test.mjs
+  s_a293da4db5caf2::t_a15a959f6d72d9 1-110
+rules/runbook-first-for-recurring-ops.md
+  s_264ae386838c57::t_fb9b4ee4a606f6 36
+settings/settings.base.json
+  s_02abc74f4971c7::t_3d9a97039971f0 611-616
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_e9040872ea8d28 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_a293da4db5caf2::t_bf96f3453f3919 10-11,14,434
+governance/contract.md
+  s_a293da4db5caf2::t_33c54821151f19 47,51,53
+governance/graph.json
+  s_a293da4db5caf2::t_00bca5fa45cdd8 6127-6134,24709-24720
+hooks/manifest.json
+  s_a293da4db5caf2::t_409fbe8ff7c1c6 1310-1330
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "990df62d62f8285c3373a3d5c23282109773cd89",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/lib/computer-use-action-class.mjs
+  s_9bb1b1d1d998d4::t_8dc4f6f5c9cd11 31-57
+governance/lib/computer-use-member-tables.mjs
+  s_9bb1b1d1d998d4::t_c2937ee3f4688c 1-18
+  s_9bb1b1d1d998d4::t_9681f0399ae03b 19-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "58c5f4396a5da169991ea867959498056c26a18e",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

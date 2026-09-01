@@ -1,0 +1,40 @@
+package.json
+  s_a74557eaaac240::t_56fee28b8ed9eb 54
+  s_32308d89320687::t_90308960e8d713 31
+scripts/catalog-external.ts
+  s_9673f7dc0983fb::t_37b23546ac19b3 8,11-17,28,32
+scripts/vector.ts
+  s_9673f7dc0983fb::t_cae4a62cb4a405 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2ee3098f213e1b95fa75a2638a94f5aa38c2eb1f",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": null
+    },
+    "s_a74557eaaac240": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00733b35effe2KhjKZFEvGIXEp",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

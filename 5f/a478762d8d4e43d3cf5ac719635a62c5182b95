@@ -1,0 +1,20 @@
+frameworks/model-routing/champions.json
+  s_32ca9062879009::t_b6153705fca901 2,4,6-9,12-14,19-43,46-51,54-67,70-87
+  s_32ca9062879009::t_46c39f0f031637 88-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "5fa478762d8d4e43d3cf5ac719635a62c5182b95",
+  "prompts": {},
+  "sessions": {
+    "s_32ca9062879009": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcfec31aaffeog8Hi0qhFNPLlP",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

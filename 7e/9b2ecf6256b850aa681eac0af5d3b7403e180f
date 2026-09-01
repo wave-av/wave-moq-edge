@@ -1,0 +1,70 @@
+governance/bin/struggle-miner-scan.sh
+  h_af5ac1a9798224 36-41
+governance/bin/struggle-miner/collect-corrections.py
+  h_af5ac1a9798224 1-145
+governance/bin/struggle-miner/lib/transcript_filter.py
+  h_af5ac1a9798224 25-26,28-31,37-59
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  h_af5ac1a9798224 1-360
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  h_af5ac1a9798224 138-156,181-191
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,3294-3304,3317,4609-4669,4677-4682
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,29444-29531,29616-29618,39421-39860,39889-39890,39900-39903,39911-39912,39922-39925,39933-39934,39944-39945
+governance/lib/wave-cost-ledger-cloudflare-account.mjs
+  h_af5ac1a9798224 1-82
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  h_af5ac1a9798224 1-254
+governance/lib/wave-cost-ledger-cloudflare-do-mapping.mjs
+  h_af5ac1a9798224 1-335
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  h_af5ac1a9798224 1-180
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  h_af5ac1a9798224 1-261
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 1-189
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  h_af5ac1a9798224 1-68
+governance/lib/wave-cost-ledger-supabase.mjs
+  h_af5ac1a9798224 72-80,88-102,117-127,176-191
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  h_af5ac1a9798224 163-164,168-179
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  h_af5ac1a9798224 91-100
+governance/test/wave-cost-ledger-cloudflare-alert-fixture.mjs
+  h_af5ac1a9798224 1-48
+governance/test/wave-cost-ledger-cloudflare-alert-history-fetch.test.mjs
+  h_af5ac1a9798224 1-177
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  h_af5ac1a9798224 1-318
+governance/test/wave-cost-ledger-cloudflare-do-mapping-cache.test.mjs
+  h_af5ac1a9798224 1-383
+governance/test/wave-cost-ledger-cloudflare-do-mapping-fixture.mjs
+  h_af5ac1a9798224 1-25
+governance/test/wave-cost-ledger-cloudflare-do-mapping.test.mjs
+  h_af5ac1a9798224 1-386
+governance/test/wave-cost-ledger-cloudflare-estimate.test.mjs
+  h_af5ac1a9798224 1-123
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  h_af5ac1a9798224 1-173
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  h_af5ac1a9798224 1-411
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 1-118
+governance/test/wave-cost-ledger-supabase.test.mjs
+  h_af5ac1a9798224 137-165,285-301
+tests/struggle_miner/test_collect_corrections.py
+  h_af5ac1a9798224 1-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7e9b2ecf6256b850aa681eac0af5d3b7403e180f",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

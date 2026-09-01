@@ -1,0 +1,19 @@
+hookcli/lib/rule-anchors.mjs
+  s_db128da65a46d5::t_7c1cf2cf2ce996 120-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2278857ce1600b55521db163c08e72058765eb5d",
+  "prompts": {},
+  "sessions": {
+    "s_db128da65a46d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "245b14f0-c6be-4e68-8616-38d206746f47",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

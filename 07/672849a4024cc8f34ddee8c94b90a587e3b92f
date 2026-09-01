@@ -1,0 +1,14 @@
+governance/DANGLING-REFS-BASELINE.json
+  h_91e57a3221f2ff 20-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "07672849a4024cc8f34ddee8c94b90a587e3b92f",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

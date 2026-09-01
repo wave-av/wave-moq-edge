@@ -1,0 +1,31 @@
+frameworks/cf-calls-platform/tests/cf-calls.test.ts
+  s_5f27fa5b8237cd::t_f99b37f0412348 14
+scripts/sync-public.sh
+  s_5f27fa5b8237cd::t_d4073aa393d2f3 48
+scripts/verify-public-mirror.sh
+  s_5f27fa5b8237cd::t_59af362002c8ef 24
+frameworks/cf-kv-tenant/tests/cf-kv.test.ts
+  s_5f27fa5b8237cd::t_f99b37f0412348 14
+frameworks/cf-stream-platform/tests/cf-stream.test.ts
+  s_5f27fa5b8237cd::t_f99b37f0412348 14,62
+frameworks/cf-d1-tenant/tests/cf-d1.test.ts
+  s_5f27fa5b8237cd::t_f99b37f0412348 14
+frameworks/billing/billing.config.yaml
+  s_5f27fa5b8237cd::t_ac9c91b573c768 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "ca22360f0dba1317ac95402b78aab641954c6f9f",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

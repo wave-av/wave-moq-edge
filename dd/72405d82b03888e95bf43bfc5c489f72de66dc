@@ -1,0 +1,21 @@
+governance/hooks/work-sentinel.sh
+  s_63c6ee080d73c3::t_9d52945e579f0b 127-147,151-173
+governance/test/work-sentinel-lock.test.mjs
+  s_63c6ee080d73c3::t_5f2350d9371b24 1-84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "dd72405d82b03888e95bf43bfc5c489f72de66dc",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

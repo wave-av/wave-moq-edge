@@ -1,0 +1,40 @@
+hookcli/tests/module-registration.sh
+  s_02abc74f4971c7::t_c266eb4257cc1f 31-36
+  s_02abc74f4971c7::t_7a5dedfec2aa49 1-30,37-60,62-63,65-79
+  s_02abc74f4971c7::t_80a014b552ad22 61,64
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_4099b255e930f1 293-308
+hookcli/tests/pretooluse-tier-integrity.sh
+  s_02abc74f4971c7::t_24f7c8e8cb14f7 1-35,42-59,64-75,77-85,87-98,100-115,117-124,126-151
+  s_02abc74f4971c7::t_df195074d74c51 36-41
+  s_02abc74f4971c7::t_4daf616a912ed6 60-63
+  s_02abc74f4971c7::t_430f03b77aaef5 76,86,99,116,125
+hookcli/lib/event-pretooluse.sh
+  s_02abc74f4971c7::t_74ada643abc6ab 2-8
+  s_02abc74f4971c7::t_cdf419c1dc04e1 162-170,172
+  s_02abc74f4971c7::t_79e491a78eef63 117-130,141-144,157-161
+  s_02abc74f4971c7::t_c5f3164066049b 131-139
+  s_02abc74f4971c7::t_4965924b4c76a1 26-39
+hookcli/tests/killswitch-instruction.sh
+  s_02abc74f4971c7::t_c632e9509d7ea6 86-91
+hookcli/lib/pretooluse-action.sh
+  s_02abc74f4971c7::t_86947a91a16b15 1-88
+hookcli/lib/pretooluse-t3.sh
+  s_02abc74f4971c7::t_3d997f8b7a87f6 1-147
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "60f5bf92794578cb09df496f18e824cce1cf169f",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/bin/decommit-gate.mjs
+  s_be94c45efdaafe::t_131c3e35147bc3 23-28
+  s_be94c45efdaafe::t_219e6c469dfb27 67,79
+governance/plans/generated-artifact-contention/PHASE-D-GATE.md
+  s_be94c45efdaafe::t_b1c342604e8d56 138-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d4a5c02ddf3148d0fbeb171117e2886bd0e197d1",
+  "prompts": {},
+  "sessions": {
+    "s_be94c45efdaafe": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d4d9fa48-5aae-4da3-bdac-e9fcc47ff486",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

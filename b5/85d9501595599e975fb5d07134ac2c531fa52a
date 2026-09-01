@@ -1,0 +1,19 @@
+hookcli/rules/rules.json
+  s_9041cf1cf1ccad::t_c84053e5f4dc55 7,21,26,44,57,62,73,76,87,106,119,124,142,156,160-164,177,181-184,198,202-205,219,223-227,240,244,257,261,303-341,345,355,383,396,535,547
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b585d9501595599e975fb5d07134ac2c531fa52a",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

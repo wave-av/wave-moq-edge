@@ -1,0 +1,19 @@
+scripts/network-listers.test.mjs
+  s_364605915bb7ec::t_51fcdc3b10eecb 96-111,115-116,119-136,138-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "911936fada954a0bf954734335468aacd31277a6",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_70c7ac7de143f9::t_4b74bc704ee2b5 164-168
+  s_70c7ac7de143f9::t_17d8ca971d19a8 238-243
+  s_70c7ac7de143f9::t_9f6dcd1292e5aa 101-105
+  s_70c7ac7de143f9::t_76588fa360f00a 225-228
+  s_70c7ac7de143f9::t_79cb9715a6b35e 145-148
+  s_70c7ac7de143f9::t_34d5a03b90180d 106,133,149,169,189,214,229,244,267,279
+  s_70c7ac7de143f9::t_9c58d8a08359c1 262-266
+  s_70c7ac7de143f9::t_eaf237714ad214 209-213
+  s_70c7ac7de143f9::t_9ff82650848ca1 275-278
+  s_70c7ac7de143f9::t_2734380e09ccb1 183-188
+  s_70c7ac7de143f9::t_ee51f75ffd0cef 128-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8750b3861c8faa83559844816e63e5bddfd244ef",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

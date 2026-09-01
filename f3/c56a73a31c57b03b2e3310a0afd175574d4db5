@@ -1,0 +1,27 @@
+governance/plans/model-selection-completion/LOCAL-CAPABILITY.md
+  s_7ddeb5d251570f::t_8f5c833f7d72f8 1-45
+bin/route-local-first.mjs
+  s_7ddeb5d251570f::t_7e32d59f7babcb 99-103,105-106
+  s_7ddeb5d251570f::t_0279a594e1790f 64-94
+  s_7ddeb5d251570f::t_023676599474fb 1-63,95-98,104,107-110
+governance/test/route-local-first.test.mjs
+  s_7ddeb5d251570f::t_44b25bea27ff25 7
+  s_7ddeb5d251570f::t_116e6424e79f02 1-6,8-44,59
+  s_7ddeb5d251570f::t_0f003309b98cc5 45-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f3c56a73a31c57b03b2e3310a0afd175574d4db5",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+governance/plans/floor-control-not-turn-taking/RECEIPTS.md
+  s_7d99f1e7ce40fd::t_5f6618154b75cb 94,98-105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dc27e45205c0ec3d7d0e515cd0b0945aaefa29b0",
+  "prompts": {},
+  "sessions": {
+    "s_7d99f1e7ce40fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ac20c67fc3caf6be8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

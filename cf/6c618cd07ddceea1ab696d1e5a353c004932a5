@@ -1,0 +1,27 @@
+hooks/board-sweep-pulse.sh
+  s_364605915bb7ec::t_1d17500c14033a 2
+governance/ENFORCEMENT-COVERAGE.md
+  s_364605915bb7ec::t_afcf32951977ae 10,12,14,429,438
+governance/graph.json
+  s_364605915bb7ec::t_5d580a7e6ac923 16562
+hooks/manifest.json
+  s_364605915bb7ec::t_450132e9c42e81 27
+rules/ssot-board-coordination.md
+  s_364605915bb7ec::t_c0535226749fb5 14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "cf6c618cd07ddceea1ab696d1e5a353c004932a5",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

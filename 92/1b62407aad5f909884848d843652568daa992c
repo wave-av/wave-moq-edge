@@ -1,0 +1,43 @@
+governance/plans/harness-wars-intel/run-sdk-lenses/wildcard.md
+  s_d77777f89719d2::t_fef3310aeccc41 1-8
+governance/plans/harness-wars-intel/run-sdk-lenses/pragmatist.md
+  s_d77777f89719d2::t_e4856e2a81e5cb 1-12
+governance/plans/harness-wars-intel/run-sdk-lenses/visionary.md
+  s_d77777f89719d2::t_2fe428e6205826 1-11
+governance/plans/harness-wars-intel/DIGEST-RUN-SDK.md
+  s_d77777f89719d2::t_d0a1a954d0fc58 1-94
+governance/plans/harness-wars-intel/run-sdk-lenses/redteam.md
+  s_d77777f89719d2::t_95a5c49d924ec3 1-10
+governance/plans/agentic-wave/E12-AGENT-RUN-DURABILITY.md
+  s_85113a1cef9a84::t_1ec80cb37b19e3 81-88
+governance/plans/eve-audit/E-DUR.md
+  s_85113a1cef9a84::t_1e0accfa56b3cb 21-32
+governance/plans/just-bash/E-PLATFORM.md
+  s_85113a1cef9a84::t_e60bd52f477bdc 38,44-52
+governance/plans/just-bash/E-WORKING.md
+  s_85113a1cef9a84::t_63ec3faea982bc 43,52-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "921b62407aad5f909884848d843652568daa992c",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

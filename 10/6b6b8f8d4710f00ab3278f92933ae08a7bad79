@@ -1,0 +1,31 @@
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_37d3f61160b2dd::t_42554917779465 28
+governance/plans/physics-of-compute/RECEIPTS-E1-SSD-STREAMING.md
+  s_53b49eff5b8c5d::t_240e24ceb2fab6 21-31
+governance/plans/physics-of-compute/RECEIPTS-E1-hardware-path.md
+  s_53b49eff5b8c5d::t_7e2e23234ebf56 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "106b6b8f8d4710f00ab3278f92933ae08a7bad79",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

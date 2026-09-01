@@ -1,0 +1,28 @@
+governance/plans/agentic-wave/E3-CI-AGENT-GOVERNANCE.md
+  s_d9915bbafa9657::t_12afebdbf3fa27 177-178
+  s_d9915bbafa9657::t_2f1fbdf60d78dc 235-240
+  s_d9915bbafa9657::t_877166e284890a 4-9
+  s_d9915bbafa9657::t_a52840bf124591 37-49,67-153,156-176,181-207,211-212,216-234,244-258,260-262
+  s_d9915bbafa9657::t_12719e616d38fe 208-210
+  s_d9915bbafa9657::t_c5714c8415ae4f 259
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_4a2aedd9e8c4da 25
+governance/graph.json
+  s_d9915bbafa9657::t_9a2bc836b836bd 17883-17894
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8b79e86c898a773ce261093b2e366959a190ef63",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

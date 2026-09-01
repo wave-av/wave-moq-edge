@@ -1,0 +1,22 @@
+governance/ENFORCEMENT-BASELINE.json
+  s_ddc6ab5f5d6b64::t_ce7c61a9ee463f 4-5,10
+  s_ddc6ab5f5d6b64::t_0a4451cc6c874e 12-13,206-210
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_ddc6ab5f5d6b64::t_393e4a04202706 47-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e0b3371a14888d4f7577888839efb26ce98f1535",
+  "prompts": {},
+  "sessions": {
+    "s_ddc6ab5f5d6b64": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bd40e21a-4a9f-4329-af7d-2d974870ae31",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

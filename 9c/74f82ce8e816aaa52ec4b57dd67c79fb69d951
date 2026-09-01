@@ -1,0 +1,28 @@
+governance/bin/org-harvest.sh
+  s_e2e3e43d0638c5::t_476b357fc48fa1 35-38
+governance/bin/reconcile.mjs
+  s_e2e3e43d0638c5::t_8b4904d8503086 107
+  s_e2e3e43d0638c5::t_69f455e7dfc83d 51-53,61-80,84
+governance/bin/triage.mjs
+  s_e2e3e43d0638c5::t_a15edcfa9f248b 43-45,48-54,57-61
+governance/bin/federate.mjs
+  s_e2e3e43d0638c5::t_2fcfe30bba63c4 84-87,92-113
+  s_e2e3e43d0638c5::t_4923507123286e 31,33
+  s_e2e3e43d0638c5::t_a13b478ef67d1e 146-147,150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "9c74f82ce8e816aaa52ec4b57dd67c79fb69d951",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

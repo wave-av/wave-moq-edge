@@ -1,0 +1,48 @@
+scripts/bugbot/aggregate.py
+  s_0b987fef4e1240::t_0fde4176f0bc0f 62-65,69-70
+scripts/bugbot/test_audit_num_ctx.py
+  s_0b987fef4e1240::t_a04ef3e0cbb9d1 61-94,99-100
+scripts/bugbot/self_audit.py
+  s_0b987fef4e1240::t_6cffd5354bc7c1 74-78,80-84,89-99
+  s_0b987fef4e1240::t_226f3bacb36c9f 29
+scripts/bugbot/test_aggregate.py
+  s_0b987fef4e1240::t_718cc0918dab7c 46-57
+  s_0b987fef4e1240::t_c2e5207a160885 83
+scripts/bugbot/test_approve.py
+  s_0b987fef4e1240::t_faffdc4cdb58e7 129-178
+  s_0b987fef4e1240::t_a7ee6feb279b58 190-192
+scripts/bugbot/audit_num_ctx.py
+  s_0b987fef4e1240::t_a4aa73fa13417f 32-33,35,38
+  s_0b987fef4e1240::t_f3a6fd8c73ed97 96-99
+scripts/bugbot/allocator.py
+  s_0b987fef4e1240::t_d087eba134b1af 42-44
+  s_0b987fef4e1240::t_efee45195b1a95 63-71,82
+scripts/bugbot/test_allocator.py
+  s_0b987fef4e1240::t_45a27f4627f59c 90-91
+  s_0b987fef4e1240::t_fd542a9bdc4e32 9-10
+  s_0b987fef4e1240::t_852edc71ee2866 58-75
+scripts/bugbot/approve.py
+  s_0b987fef4e1240::t_eae4ba255afbec 112-130,134
+  s_0b987fef4e1240::t_c997d3f7e60bff 194
+  s_0b987fef4e1240::t_aee6bce7588b22 299,304-323
+scripts/bugbot/test_self_audit.py
+  s_0b987fef4e1240::t_f9db137f17e62a 173-199
+  s_0b987fef4e1240::t_68d273cdcc4505 12,16,18
+  s_0b987fef4e1240::t_266a73809400c5 210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "47930f8e8adb86069e0f314d395d7339aa0aaa45",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

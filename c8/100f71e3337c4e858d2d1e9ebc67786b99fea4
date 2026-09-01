@@ -1,0 +1,40 @@
+hookcli/lib/t3-pr-merge.mjs
+  s_375efeac18ed55::t_6977ccf4d6153c 155-177
+  s_375efeac18ed55::t_9c17f92fc4e9dc 39-41
+governance/lib/review-liveness.mjs
+  s_375efeac18ed55::t_7fbd6ece443e0e 168-237
+hookcli/lib/t3-review-liveness.mjs
+  s_375efeac18ed55::t_d180e80dd4fcc2 1-95,100-143
+  s_375efeac18ed55::t_febc4d34fdb032 96-99
+governance/bin/review-liveness.mjs
+  s_375efeac18ed55::t_3bc505c41a285d 21-25,27-29
+  s_375efeac18ed55::t_24493de9270b90 26
+hookcli/lib/t3-classify.mjs
+  s_375efeac18ed55::t_3a4f6045710d3a 265-266
+  s_375efeac18ed55::t_4d8d12a9b75213 69-86
+  s_375efeac18ed55::t_41d23abbc98423 284
+  s_375efeac18ed55::t_5011e86c60d600 24-26
+  s_375efeac18ed55::t_500a75fa6f374c 47-50
+hookcli/bin/hookcli
+  s_375efeac18ed55::t_df4f3fe66175f5 259-270
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_324934c880942a 2399-2405
+governance/code-index/index.json
+  s_375efeac18ed55::t_37a2191ffadff7 21591-21592,21602-21603,21613-21614,21624-21625,21635-21636,21646-21647,21657-21658
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "c8100f71e3337c4e858d2d1e9ebc67786b99fea4",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

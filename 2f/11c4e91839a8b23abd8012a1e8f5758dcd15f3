@@ -1,0 +1,30 @@
+scripts/fleet-loop.ts
+  s_ba07216ce52585::t_4082da4af1940d 1-46,49-143
+  s_9673f7dc0983fb::t_41b22217a19703 47-48
+package.json
+  s_9673f7dc0983fb::t_1c4b8682890a5d 7,26-28,40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2f11c4e91839a8b23abd8012a1e8f5758dcd15f3",
+  "prompts": {},
+  "sessions": {
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

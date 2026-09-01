@@ -1,0 +1,33 @@
+governance/plans/runtime-economy/dogfood/dsh-home-livebridge/settings.yaml
+  s_2b4acc7ceba309::t_5db8c95e898f1a 1-13
+governance/plans/runtime-economy/bridge/worker.js
+  s_2b4acc7ceba309::t_d2d3641a628cbf 1-98
+governance/plans/runtime-economy/bridge/wrangler.toml
+  s_2b4acc7ceba309::t_99bb684f98ef7b 1-6
+governance/plans/runtime-economy/dogfood/e2e-livebridge-1.log
+  s_97c931160f4ded::t_33ee92c170ff24 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e95c69b3e63fb45665c8d1e10648c11f8bc917d2",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_97c931160f4ded": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef98efeaffegOCTPmLa2hDyb7",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+governance/research/engineering-canon/origin-method.md
+  s_57476721261255::t_4d7d0a7825df10 275-294
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_95ee57c64989e9::t_fe66af055920be 198-208
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  s_51d5bc556c5aa6::t_8521c412ba1afd 188-203
+governance/tools/rca-triage/manifests/runbooks.json
+  s_51d5bc556c5aa6::t_f5f946172b3c86 1-35
+governance/tools/internal-affairs/manifests/wave-sec.json
+  s_95ee57c64989e9::t_e34afd2817f2a7 1-41
+governance/tools/rca-triage/bin/rca-triage.mjs
+  s_51d5bc556c5aa6::t_e9eb277dcb8622 75
+governance/tools/origin-trail/manifests/governance.json
+  s_57476721261255::t_9eb7e8a8a81260 1-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "05d940380e88b116a68dc68790faa2c145e3018e",
+  "prompts": {},
+  "sessions": {
+    "s_51d5bc556c5aa6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00255dc91ffeQ34qMTtoXQjID7",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_57476721261255": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00255c6b0ffeQwoN9m7lzAh8MX",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_95ee57c64989e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00255d654ffeC85AYIRsNANiYR",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

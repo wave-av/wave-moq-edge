@@ -1,0 +1,33 @@
+governance/plans/ffmpeg9-lei/action/E3-P1-HYPOTHESIS.md
+  s_124891ed63801b::t_7cad8d2cf750d4 1-86
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_124891ed63801b::t_4caec8269605b1 4
+governance/DASHBOARD.md
+  s_46196e6333d448::t_6f87e7e88316db 25
+governance/graph.json
+  s_46196e6333d448::t_88cb15cc045796 3391-3398,20158-20169
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6539f3bd17f3306689b30cbb8bfe95f93fa7ef92",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_46196e6333d448": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae22bf6ddc27dc840",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

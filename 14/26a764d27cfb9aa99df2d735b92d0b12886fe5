@@ -1,0 +1,20 @@
+.github/workflows/voice-floor-benchmark.yml
+  s_1cea981189627b::t_3b50d3be2c97a5 1-110,118-122,125-142
+  s_1cea981189627b::t_0310d37ef0a60e 111-117,123-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1426a764d27cfb9aa99df2d735b92d0b12886fe5",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

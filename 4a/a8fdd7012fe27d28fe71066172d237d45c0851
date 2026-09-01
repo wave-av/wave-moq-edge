@@ -1,0 +1,31 @@
+hooks/attester-scope-gate.sh
+  s_28efdc23129d94::t_e0f50e7143374d 177-207,219-239
+  s_28efdc23129d94::t_941216574e68b1 163
+  s_28efdc23129d94::t_82bf1003f177fa 208-209,215-218
+  s_28efdc23129d94::t_52f2afd8dea4c6 210-214
+  s_28efdc23129d94::t_398e1b4e9bea23 140-150
+governance/lib/drill-fixtures-attester-scope.mjs
+  s_28efdc23129d94::t_6f8702d2d06a2a 251
+  s_28efdc23129d94::t_f902965cb8af06 224-232,237-250,252-277
+  s_28efdc23129d94::t_759498b89e91e1 234
+  s_28efdc23129d94::t_7e66ab996df9fa 235-236
+  s_28efdc23129d94::t_42fbe2b5a7fbd6 233
+hooks/manifest.json
+  s_28efdc23129d94::t_ab74391ebf4424 69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4aa8fdd7012fe27d28fe71066172d237d45c0851",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+rules/proven-live-or-not-done.md
+  s_e2e3e43d0638c5::t_893adff825e8f7 28
+rules/everything-we-write-grounded-before-it-ships.md
+  s_e2e3e43d0638c5::t_3651ec53c9738c 11
+  s_e2e3e43d0638c5::t_25e8a509ccf7b8 49
+  s_e2e3e43d0638c5::t_b2adcaa34530f7 61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "aaec23c8bb2ece5b2aba50b6f9899d1351cc89e7",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

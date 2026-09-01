@@ -1,0 +1,41 @@
+governance/test/allowed-skips-declaration.test.mjs
+  s_02abc74f4971c7::t_060ee7d2571df4 1-65
+governance/test/skip-audit.mjs
+  s_02abc74f4971c7::t_e360a977ddba38 320-324
+  s_02abc74f4971c7::t_fb87a897b295b3 305-310
+  s_02abc74f4971c7::t_06d62f1974fbd0 185,190
+  s_02abc74f4971c7::t_2a75679765349d 18-26
+  s_02abc74f4971c7::t_19dcd660620213 254-268,276-281
+  s_02abc74f4971c7::t_75d6a8ef4c29f5 224-230
+  s_02abc74f4971c7::t_4ca3a64210280c 269-275
+  s_02abc74f4971c7::t_dcc8164132dc61 186
+governance/lib/drill-fixtures-skip-audit.mjs
+  s_02abc74f4971c7::t_298d91fcf97830 40-45,53
+  s_02abc74f4971c7::t_27c88af783a739 68-87
+governance/test/governance-skip-audit.test.mjs
+  s_02abc74f4971c7::t_d3820952a9029c 129-157,162-181
+  s_02abc74f4971c7::t_0be8b954a9d9f6 158-161
+  s_02abc74f4971c7::t_23d693d6b2fc2a 300-304
+  s_02abc74f4971c7::t_7117f6b409480a 27,34,39-44
+  s_02abc74f4971c7::t_fe5562a34381c0 45
+governance/test/ALLOWED-SKIPS.json
+  s_02abc74f4971c7::t_a2dd55bb5c44ed 125,132,139,146,153,160,167,174,181,188,195
+  s_02abc74f4971c7::t_2336e93a283e02 126
+  s_02abc74f4971c7::t_e29c5770db930e 23-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2febc4d4cbe875f2abf5392a83e0a7c73f315598",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

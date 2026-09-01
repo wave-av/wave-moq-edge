@@ -1,0 +1,35 @@
+governance/bin/gate-scope-conformance.mjs
+  s_dccee6b7677203::t_599d73cf65fe37 2,4-8,10-14,16-18,21-24,26,28,30-31,33-51,53,55,61-68,72-86,90-91,93-95,97-104,106-146,148-164,166-167,170-180,182,184-185
+governance/bin/prove-gate-scope-conformance.mjs
+  s_cf3356a24071e8::t_fdbae2a5e4c2a7 2,4-6,8-9,11-16,18-19,22,24-28,30,37-48,51-53,56-58,60,62,67-83,85-99,102-155,158
+governance/ci-scan-set.pin.json
+  s_cf3356a24071e8::t_0b54f4340368d6 1-32
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_75f296154b9c2e 5,1344-1350,1951-1964
+governance/code-index/index.json
+  s_dccee6b7677203::t_5cd81f61d30c3d 7,9,12159,12162,12164-12167,12170,12173,12177-12178,12181,12184,12186-12189,12192,12195,12197-12200,12203,12206,12208-12211,12214,12217,12219-12222,12225,12228,12230-12233,17686-17689,17692,17695,17697-17700,17703,17706,17708-17711,17714,17717,17719-17722,17730-17733,17736,17739-17744,17747,17750,17752,17754-17755,17758,17761-17766,17769,17772,17774-17777,17780,17783,17785-17788,17791,17794,17796-17799,17802,17805,17807-17810,17818-17819,17824,17827,17829-17832
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "281d5192f393188b34eb0bceb1c4f4930bbc6778",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

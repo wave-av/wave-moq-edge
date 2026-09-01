@@ -1,0 +1,25 @@
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/cordis.patch.yml
+  s_686f460a37de51::t_30134434eecbd0 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/package.json
+  s_686f460a37de51::t_54791543240424 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/profiles/headless/pnpm-workspace.yaml
+  s_686f460a37de51::t_34fa992bd24eb1 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-canonical30/settings.yaml
+  s_686f460a37de51::t_ddd97990fe8c14 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9d2e33ccccf3326c630d39e4002d097a7366c55a",
+  "prompts": {},
+  "sessions": {
+    "s_686f460a37de51": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe9740353ffeTlR04W0oP3cEOF",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/bin/rails-registry.json
+  s_b5dd9284c6abb2::t_070cdca9c0dbc3 1-11
+governance/bin/rails.mjs
+  s_b5dd9284c6abb2::t_55826c11875e2e 1-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ae126f67013559be7cd24918229ee7f7104f8464",
+  "prompts": {},
+  "sessions": {
+    "s_b5dd9284c6abb2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fd62d2807ffe4ReHBFdIps1txL",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

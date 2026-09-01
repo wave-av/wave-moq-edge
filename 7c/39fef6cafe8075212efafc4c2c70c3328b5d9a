@@ -1,0 +1,31 @@
+.github/workflows/hook-tests.yml
+  s_15127d80763110::t_7120b152568a84 63-70
+.github/workflows/hook-tests-macos.yml
+  s_15127d80763110::t_66f23e51283a50 3-5
+  s_15127d80763110::t_f33b00e96dcadc 79-82
+  s_15127d80763110::t_57245049ad87c3 305-306
+  s_15127d80763110::t_e05b9eeedfecd4 224-240
+  s_15127d80763110::t_c26c1b5ad746ed 307-310
+  s_15127d80763110::t_cee3609eebbb18 1-2
+  s_15127d80763110::t_ded79233c9861d 6-8,76-78
+  s_15127d80763110::t_81c27f8456959f 83-85,221-223
+  s_15127d80763110::t_96ab27612d0f86 241-243,302-304
+  s_15127d80763110::t_645e498cc6a91c 311-313
+  s_15127d80763110::t_c872f256a3ec22 9-75,86-220,244-301,314-322
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7c39fef6cafe8075212efafc4c2c70c3328b5d9a",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}

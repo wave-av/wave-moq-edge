@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_492d969183de56::t_fb2f264a9aa752 84
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "aa7257238fbab320eb2be09896e6446479111c3d",
+  "prompts": {},
+  "sessions": {
+    "s_492d969183de56": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aa59c5fe85dd270b6",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

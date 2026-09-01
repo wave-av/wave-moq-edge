@@ -1,0 +1,25 @@
+governance/tools/self-diagnose/manifests/governance.json
+  s_ea7fda6a228496::t_d8591b3f93c2c7 86
+governance/tools/self-diagnose/manifests/scenario.json
+  s_ea7fda6a228496::t_540ef65516af45 67
+governance/research/creator-intelligence/APPLICATION-PROGRAM.md
+  s_ea7fda6a228496::t_5c6bc59c98b709 56-58,63-65
+governance/research/engineering-canon/origin-method.md
+  s_ea7fda6a228496::t_4b388a8e7d74f1 522-524,528,531-532
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "67899b90b804c9b99d992851a90ab4f1c9160c86",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

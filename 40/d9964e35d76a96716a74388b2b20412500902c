@@ -1,0 +1,21 @@
+governance/test/merge-premise-vacuous.test.mjs
+  s_96280c922a9418::t_eec7ab7647e6e6 121-126,130
+  s_96280c922a9418::t_536e669fd4d38a 133-135
+  s_96280c922a9418::t_06f0e824c265e6 119-120,127-129,131-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "40d9964e35d76a96716a74388b2b20412500902c",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

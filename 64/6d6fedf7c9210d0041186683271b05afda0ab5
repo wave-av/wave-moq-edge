@@ -1,0 +1,28 @@
+governance/plans/nested-dispatch-economy/E3-ESCALATION.md
+  s_96280c922a9418::t_b5a2e002cdb22a 112-115
+  s_96280c922a9418::t_28e8f840bcb4dd 27-30,33-36
+governance/test/escalation-envelope.test.mjs
+  s_96280c922a9418::t_83c6a264e0dfa3 1-131
+governance/schema/escalation-envelope.schema.json
+  s_96280c922a9418::t_ea64d3f0666aeb 1-102
+governance/code-index/CATALOG.md
+  s_96280c922a9418::t_0cfaf05c3d0a29 5,2720-2739
+governance/code-index/index.json
+  s_96280c922a9418::t_458ef08bfc1148 6-7,9-10,24544-24730
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "646d6fedf7c9210d0041186683271b05afda0ab5",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

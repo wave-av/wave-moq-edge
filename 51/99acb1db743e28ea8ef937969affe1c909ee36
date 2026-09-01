@@ -1,0 +1,25 @@
+governance/bin/branch-truth-lint.mjs
+  s_e2e3e43d0638c5::t_a3704644bf10c9 288-291
+  s_e2e3e43d0638c5::t_cbd6a3838492ee 302
+  s_e2e3e43d0638c5::t_f0b7f1b0d6cb88 197-202
+  s_e2e3e43d0638c5::t_dd307024c3a3f6 1-178,185-196,203-216,218-223,232-279,295,299,304-404
+  s_e2e3e43d0638c5::t_ecad1d72f1a586 179-184
+  s_e2e3e43d0638c5::t_db467c8de3b406 217,224-231
+  s_e2e3e43d0638c5::t_ca92f028ed5655 280-287,292-294,296-298,300-301,303
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "5199acb1db743e28ea8ef937969affe1c909ee36",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

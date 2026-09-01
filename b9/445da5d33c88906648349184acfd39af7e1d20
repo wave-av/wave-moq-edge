@@ -1,0 +1,26 @@
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_15127d80763110::t_0dc681c5e5fc60 70-79,81,84-116,118-124
+  s_15127d80763110::t_35e02deabac6f3 184
+governance/bin/fleet/lib/gateway-parity-classify.mjs
+  s_15127d80763110::t_2021cc30d22534 43-44
+  s_15127d80763110::t_fa888564a7690f 157-171
+  s_15127d80763110::t_b51978c7e90fd3 201
+governance/test/gateway-secret-parity.test.mjs
+  s_15127d80763110::t_fd63c3210225e3 108-129
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b9445da5d33c88906648349184acfd39af7e1d20",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

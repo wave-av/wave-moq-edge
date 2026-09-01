@@ -1,0 +1,29 @@
+governance/lib/email-html-rules.mjs
+  s_37d3f61160b2dd::t_27e7418fdfbb20 69-73
+  s_37d3f61160b2dd::t_46333cf9ce3079 67-68
+  s_37d3f61160b2dd::t_3a9dc1ddb666fe 60,62,79-81,86
+governance/test/email-overwide-important.test.mjs
+  s_37d3f61160b2dd::t_dd2cd2b2a9bcdb 1-72
+governance/lib/email-html-wrapper.mjs
+  s_37d3f61160b2dd::t_532f06ce5fcbd0 397-401
+  s_37d3f61160b2dd::t_85044334efcdd2 193-195,203,210
+  s_37d3f61160b2dd::t_e81b9bd2ad3590 196-202
+  s_37d3f61160b2dd::t_0f1c923839bd4a 369-370,378,387-391,393,396
+  s_37d3f61160b2dd::t_a5bc568b01e90e 371-377,379
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a1f9a88249a64fbed10184dd3b36d9f142717e6a",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

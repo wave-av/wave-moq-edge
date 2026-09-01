@@ -1,0 +1,28 @@
+governance/plans/ffmpeg9-lei/action/E1-P1-inventory.md
+  s_124891ed63801b::t_e131fc619f921a 1-129
+governance/plans/ffmpeg9-lei/E1-BREAKAGE.md
+  s_124891ed63801b::t_6d425aafc6d074 4
+governance/plans/ffmpeg9-lei/E0-CANARY.md
+  s_124891ed63801b::t_5f1fc2d899192c 4
+governance/plans/ffmpeg9-lei/action/E0-P2-BUILD-TRIAGE.md
+  s_124891ed63801b::t_66a28f08bc4768 12-15
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_571b733760f9ab 25,27
+  s_124891ed63801b::t_d1f812cda7465c 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3266c3d1338e8687bfa44475d7241cce1c8168e4",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+rules/multi-actor-shared-tree-protocol.md
+  s_375efeac18ed55::t_9bf23f1d8432aa 5,7-24,26
+hookcli/lib/t3-shell.mjs
+  s_375efeac18ed55::t_89b7a03f729acb 1-71
+hookcli/lib/t3-git.mjs
+  s_375efeac18ed55::t_4ecee8f7a6c7df 1-154
+rules/no-destructive-worktree-reset.md
+  s_375efeac18ed55::t_0a042d150c7fa5 1-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d5bb5c9a326eced96011ad460b0224a9b1f8cb25",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

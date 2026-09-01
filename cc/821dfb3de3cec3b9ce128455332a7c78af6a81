@@ -1,0 +1,42 @@
+hookcli/lib/board-file.mjs
+  s_375efeac18ed55::t_887e65c5dd291f 35-64
+  s_375efeac18ed55::t_6c279957fc4141 126-129
+  s_375efeac18ed55::t_4f36822dd90daf 11
+hookcli/lib/board-collect.mjs
+  s_375efeac18ed55::t_6dcaf94be9d229 18,20-37
+  s_375efeac18ed55::t_f2f82b026ef4df 1-17,19,38-105
+hookcli/lib/board.mjs
+  s_375efeac18ed55::t_ca25f9783d5bee 75
+  s_375efeac18ed55::t_feb90b913c205d 270
+  s_375efeac18ed55::t_8cfd853840cb40 70
+  s_375efeac18ed55::t_31755d133803f7 67
+  s_375efeac18ed55::t_ae48edf6f8593a 254-257
+  s_375efeac18ed55::t_975ac86f2a0a43 304
+  s_375efeac18ed55::t_8f7d529218476f 275,277,282-285,292-303,305-308
+  s_375efeac18ed55::t_09734b22c448d2 286-291
+  s_375efeac18ed55::t_eb5aaeb1f20ef6 276
+  s_375efeac18ed55::t_12d1211e7b0b67 309-310
+hooks/board-sweep-pulse.sh
+  s_375efeac18ed55::t_5674dfa6703802 17-23
+governance/test/board-collect.test.mjs
+  s_375efeac18ed55::t_46da9bb99e9564 1-225
+  s_375efeac18ed55::t_d6505201ad0b01 226-228
+hooks/manifest.json
+  s_375efeac18ed55::t_86f5ac516bac35 48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "cc821dfb3de3cec3b9ce128455332a7c78af6a81",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

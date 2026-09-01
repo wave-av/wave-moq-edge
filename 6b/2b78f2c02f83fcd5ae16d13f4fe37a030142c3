@@ -1,0 +1,57 @@
+.github/workflows/governance-enforce.yml
+  s_2e30bff6169f7a::t_87c38b055d46bb 13-15,21-25,29-30,35,41-42,44,47,49-58
+governance/plans/actions-execution-integrity/DECISIONS.md
+  s_2e30bff6169f7a::t_07e8d9c6c2d562 4-10
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_2e30bff6169f7a::t_e683537148f85c 4-12
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_2e30bff6169f7a::t_e5bcc74763945f 4-9
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_2e30bff6169f7a::t_6d2a5dc7fdb817 4-13
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_2e30bff6169f7a::t_8a7953185612b3 4-13
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_2e30bff6169f7a::t_9ca7641ee4b610 4-9
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_2e30bff6169f7a::t_14eb33f4fb8cb7 4-9
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_2e30bff6169f7a::t_2bc2bf6d3eef6f 4-10
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_2e30bff6169f7a::t_23142d1b9464ad 4-9
+governance/plans/actions-execution-integrity/NORTH-STAR.md
+  s_2e30bff6169f7a::t_f8e8108b3ddbf8 4-13
+governance/plans/actions-execution-integrity/RECEIPTS.md
+  s_2e30bff6169f7a::t_1270332bb09df2 4-10
+governance/plans/wave-principals/E1-MODEL.md
+  s_2e30bff6169f7a::t_af96fdfa3b2be2 1-99
+governance/plans/wave-principals/E2-ROLES.md
+  s_2e30bff6169f7a::t_9bb89dd05439b2 1-94
+governance/plans/wave-principals/E3-AGENT-REGISTRY.md
+  s_2e30bff6169f7a::t_e2610b86330830 1-122
+governance/plans/wave-principals/E4-GRANTS.md
+  s_2e30bff6169f7a::t_38c5f11c7a8485 1-123
+governance/plans/wave-principals/E5-ACCESS-PAGE.md
+  s_2e30bff6169f7a::t_b6f1f8a40d1b5a 1-112
+governance/plans/wave-principals/E6-AUDIT.md
+  s_2e30bff6169f7a::t_cc7f570bec2e5a 1-94
+governance/plans/wave-principals/E7-REVOCATION.md
+  s_2e30bff6169f7a::t_e58f520c560a24 1-97
+governance/plans/wave-principals/NORTH-STAR.md
+  s_2e30bff6169f7a::t_befbb57dc6554a 1-210
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6b2b78f2c02f83fcd5ae16d13f4fe37a030142c3",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

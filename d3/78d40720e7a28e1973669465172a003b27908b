@@ -1,0 +1,28 @@
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_710c95dc81dbc9 29
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_de6910603223e8 146,150,159,163,167,176
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_68590c0334c5b5 153-163
+hookcli/tests/secret-dotfile-read.sh
+  s_60a20469ef4369::t_2d8df295ff1bb9 35-38,40-47
+  s_60a20469ef4369::t_5be4aa0f17bbd9 32-34,39,48-58
+hookcli/tests/filepath-match.sh
+  s_60a20469ef4369::t_f65989994f9249 38-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d378d40720e7a28e1973669465172a003b27908b",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+governance/WAVE-CONTEXT-POINTER.md
+  s_e2e3e43d0638c5::t_901aebe9b718a2 8,11
+  s_e2e3e43d0638c5::t_151f03c5f54915 15
+governance/specs/2026-07-20-content-engine-design.md
+  s_e2e3e43d0638c5::t_9327594d41a2b7 44
+  s_e2e3e43d0638c5::t_d10903aa6e8203 53
+rules/wow-canon.md
+  s_e2e3e43d0638c5::t_18204329c1ed81 9
+  s_0b1f6eb79a5932::t_36b951bedf1b3d 2
+governance/plans/content-engine/NORTH-STAR.md
+  s_e2e3e43d0638c5::t_ac4c17aae06aed 169
+  s_e2e3e43d0638c5::t_4a01941cae83d8 26
+  s_e2e3e43d0638c5::t_77468e30ad8616 120,123,127
+  s_e2e3e43d0638c5::t_5246649f465f27 174
+  s_e2e3e43d0638c5::t_f98ba03dc84a37 43
+governance/plans/wow-canon/NORTH-STAR.md
+  s_e2e3e43d0638c5::t_c4fc9eb329b20c 243-244
+  s_e2e3e43d0638c5::t_9a3a16b3306f4b 2
+  s_e2e3e43d0638c5::t_c0dd2ccf448e8b 45
+  s_e2e3e43d0638c5::t_e6279f9a0a2133 71
+  s_e2e3e43d0638c5::t_390a9cc9a6e296 139
+  s_e2e3e43d0638c5::t_56fcd4747d9655 128
+  s_e2e3e43d0638c5::t_c3d4ce4da2d248 94
+  s_e2e3e43d0638c5::t_6694a0d4f55517 12
+  s_e2e3e43d0638c5::t_2e5b1d767217c8 187
+  s_e2e3e43d0638c5::t_5ecab13c330b95 65
+governance/plans/content-engine/IMPL-PLAN-increment-1.md
+  s_e2e3e43d0638c5::t_3d73f0b51a9335 132
+  s_e2e3e43d0638c5::t_81f9e96727787d 386
+governance/specs/2026-07-20-wow-canon-design.md
+  s_e2e3e43d0638c5::t_346be91626b0b2 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e943fa4a580385cd855b100f1d9f99155b77bed1",
+  "prompts": {},
+  "sessions": {
+    "s_0b1f6eb79a5932": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a34a768cd818d91f7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

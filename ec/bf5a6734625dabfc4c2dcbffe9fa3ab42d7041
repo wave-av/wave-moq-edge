@@ -1,0 +1,37 @@
+governance/test/wave-cost-ledger-cloudflare-graphql.test.mjs
+  s_2e30bff6169f7a::t_3756d1d5b2d2eb 31,37
+  s_2e30bff6169f7a::t_4a7165afc38660 100
+governance/lib/wave-cost-ledger-cloudflare-graphql.mjs
+  s_2e30bff6169f7a::t_868535ac459973 23-25
+  s_2e30bff6169f7a::t_793bf28cff54a6 92
+  s_2e30bff6169f7a::t_7171c860859d26 10-22
+  s_2e30bff6169f7a::t_b291af236b3796 165-166,177
+governance/test/wave-cost-ledger-cloudflare-estimate.test.mjs
+  s_2e30bff6169f7a::t_d8f685dcbe0b26 1-48,50-52,54-105
+  s_2e30bff6169f7a::t_b92d000093b4fb 49,53
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  s_2e30bff6169f7a::t_7a08f794cac020 1-68
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  s_2e30bff6169f7a::t_8296ae85b66aef 1-97,99-172
+  s_2e30bff6169f7a::t_ac6570cf350e30 98
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_44e2405aceac2b 5,4500-4510,4513-4525
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_71955f5d702bbf 9-10,12-13,38618-38705,38712-38713,38723-38724,38734-38737,38745-38746,38756-38759,38767-38768,38778-38779,38789-38790,38800-38801,38805-38815
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ecbf5a6734625dabfc4c2dcbffe9fa3ab42d7041",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

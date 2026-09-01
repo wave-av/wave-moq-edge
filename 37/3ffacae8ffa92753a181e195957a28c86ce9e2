@@ -1,0 +1,23 @@
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_d9915bbafa9657::t_6f990f22ae4b76 2,4-5,9-20,22,24-25,27,29-32,34-47,49,51,53-59,61-63,65-72,74-100,103-130
+governance/plans/public-supply-chain/E5-MULTI-REGISTRY.md
+  s_d9915bbafa9657::t_0ba78b930389c1 4-6,23-79,133-139
+governance/graph.json
+  s_d9915bbafa9657::t_0f64a27751fa73 5300,5304-5307
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "373ffacae8ffa92753a181e195957a28c86ce9e2",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

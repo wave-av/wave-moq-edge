@@ -1,0 +1,25 @@
+hooks/hooklib/wrangler-deploy-scan.sh
+  s_d9915bbafa9657::t_527ab47123bac3 100-107
+  s_d9915bbafa9657::t_e040265945e6dc 91-99
+hooks/hooklib/ifs-glue.sh
+  s_d9915bbafa9657::t_ca27d44129b4f2 76-119
+  s_d9915bbafa9657::t_0d3b540f4beacf 123
+hooks/tests/wrangler-deploy-gate-ifs.test.sh
+  s_d9915bbafa9657::t_0da110c6925c3f 85-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "322611424d3a77e44cb9725ffef5f6bcef90d9f2",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

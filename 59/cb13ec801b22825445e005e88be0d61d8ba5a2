@@ -1,0 +1,19 @@
+.github/workflows/doppler-token-canary.yml
+  s_67ea8821901526::t_d5137964627daf 62-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "59cb13ec801b22825445e005e88be0d61d8ba5a2",
+  "prompts": {},
+  "sessions": {
+    "s_67ea8821901526": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef4716fbffe6g85qG5GOT7rHb",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

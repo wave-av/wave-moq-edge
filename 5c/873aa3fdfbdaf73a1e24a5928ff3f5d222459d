@@ -1,0 +1,29 @@
+fleet/claims/README.md
+  s_3a52a0989b58af::t_86640f0d040c59 1-30
+tests/test_agent_claims.py
+  s_3a52a0989b58af::t_3b7607c3a0c6f8 34
+  s_3a52a0989b58af::t_5e76a436c690cd 51
+  s_3a52a0989b58af::t_512446d7acecb5 1-33,35-50,52-167
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_b74530eb3fe8a5 81-84
+  s_3a52a0989b58af::t_bd02b3de031983 156-157,159
+  s_3a52a0989b58af::t_b7383a19abda85 164
+scripts/agent_claims.py
+  s_3a52a0989b58af::t_6e3b0b33194245 1-272
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "5c873aa3fdfbdaf73a1e24a5928ff3f5d222459d",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

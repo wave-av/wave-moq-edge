@@ -1,0 +1,132 @@
+.github/workflows/main-break-detector.yml
+  h_91e57a3221f2ff 20-25
+governance/ENFORCEMENT-BASELINE.json
+  h_91e57a3221f2ff 12-13,169,209,214
+governance/ENFORCEMENT-COVERAGE.md
+  h_91e57a3221f2ff 5,9-10,12,14,27,34,45,54,59-60,80,82,103-104,112,115-116,140,147,182-183,185,208,225,237,253,259,261,285,288,320-321,332,336-337,366,374,428-429,433
+governance/LATTICE-BASELINE.json
+  h_91e57a3221f2ff 1-172
+governance/bin/hook-release.mjs
+  h_91e57a3221f2ff 54,346,359-360,366
+governance/bin/lattice-check.mjs
+  h_91e57a3221f2ff 1-86
+governance/bin/main-break-detector.mjs
+  h_91e57a3221f2ff 20-28,37-44,53,58
+governance/contract.md
+  h_91e57a3221f2ff 57,59
+governance/lib/release-identity.mjs
+  h_91e57a3221f2ff 1-215
+governance/lib/release-status.mjs
+  h_91e57a3221f2ff 44,55-59,61-62,89,100-101
+governance/plans/dispatch-moat/E0-MOAT-STATEMENT.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/E1-TRUTH-LOOP.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/E2-TRANSITION-PRODUCT.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/E3-VARIANCE-GATE.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/E4-AGENT-ACTIONABLE.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/E5-FUNNEL-SURFACE.md
+  h_91e57a3221f2ff 1-14
+governance/plans/dispatch-moat/NORTH-STAR.md
+  h_91e57a3221f2ff 1-42
+governance/plans/llm-funnel-gateway/E0-FUNNEL-DEPLOY.md
+  h_91e57a3221f2ff 1-22
+governance/plans/llm-funnel-gateway/E1-ROUTER-POLICY.md
+  h_91e57a3221f2ff 1-22
+governance/plans/llm-funnel-gateway/E2-EXECUTION-FAILOVER.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E3-COST-BUDGETING.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E4-VIRTUAL-KEYS.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E5-GUARDRAILS.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E6-CACHING.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E7-OBSERVABILITY.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E8-SPEND-ANALYTICS.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/E9-ENTERPRISE.md
+  h_91e57a3221f2ff 1-14
+governance/plans/llm-funnel-gateway/NORTH-STAR.md
+  h_91e57a3221f2ff 1-44
+governance/plans/session-deliverable-registry/PLATFORM-ARCHITECTURE.md
+  h_91e57a3221f2ff 1-66
+governance/plans/session-deliverable-registry/PLATFORM-MAP.md
+  h_91e57a3221f2ff 1-179
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-26-INFERENCE-PLANE.md
+  h_91e57a3221f2ff 1-25
+governance/state/canon-gap-map/GAP-MAP.md
+  h_91e57a3221f2ff 31
+governance/state/canon-gap-map/gap-map.json
+  h_91e57a3221f2ff 457,459
+governance/test/lattice-check.test.mjs
+  h_91e57a3221f2ff 1-70
+governance/test/main-break-detector.test.mjs
+  h_91e57a3221f2ff 1-129
+governance/test/release-identity-io.test.mjs
+  h_91e57a3221f2ff 1-130
+governance/test/release-identity.test.mjs
+  h_91e57a3221f2ff 1-72
+governance/test/release-status.test.mjs
+  h_91e57a3221f2ff 19,33,39,46-57,64-65,72-73
+hooks/tests/hook-release-status-exit.test.sh
+  h_91e57a3221f2ff 53-61
+memory/MEMORY.md
+  h_91e57a3221f2ff 1,3-24
+memory/fleet-todo-ledger.md
+  h_91e57a3221f2ff 459,514
+memory/model-ops-map.md
+  h_91e57a3221f2ff 1-1001
+rules/api-first-four-renderings.md
+  h_91e57a3221f2ff 1-6
+rules/claim-to-receipt.md
+  h_91e57a3221f2ff 1-6
+rules/containers.md
+  h_91e57a3221f2ff 1-6
+rules/designs-grounded-in-the-real-system.md
+  h_91e57a3221f2ff 1-6
+rules/dispatch-moat.md
+  h_91e57a3221f2ff 1-6
+rules/dogfood.md
+  h_91e57a3221f2ff 1-6
+rules/fleet-rig-probe.md
+  h_91e57a3221f2ff 1-6
+rules/four-renderings-or-half-shipped.md
+  h_91e57a3221f2ff 1-6
+rules/leverage-or-build.md
+  h_91e57a3221f2ff 1-6
+rules/llm-funnel-gateway.md
+  h_91e57a3221f2ff 1-6
+rules/meter-the-value-not-the-connector.md
+  h_91e57a3221f2ff 1-6
+rules/model-registry-is-the-source-of-truth.md
+  h_91e57a3221f2ff 1-6
+rules/model-routing-is-data-not-opinion.md
+  h_91e57a3221f2ff 1-6
+rules/rebuild-not-pull.md
+  h_91e57a3221f2ff 1-6
+rules/routing-plane-unification.md
+  h_91e57a3221f2ff 1-6
+rules/variance-before-routing.md
+  h_91e57a3221f2ff 1-6
+rules/vendor-agnostic-by-default.md
+  h_91e57a3221f2ff 1-6
+rules/voice-law.md
+  h_91e57a3221f2ff 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4709fb1fd662e5982efa05a8215785510ea79457",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

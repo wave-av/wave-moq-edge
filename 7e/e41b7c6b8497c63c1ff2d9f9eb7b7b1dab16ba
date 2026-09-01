@@ -1,0 +1,24 @@
+router/src/router/protocol.ts
+  s_ba07216ce52585::t_53b7a7bf2853d0 17-65
+  s_ba07216ce52585::t_23f36050b63114 148,156
+router/tiers.json
+  s_ba07216ce52585::t_8b647c73c41bf0 522-532
+router/src/router/config.ts
+  s_ba07216ce52585::t_e2de50dfcf59c4 71-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7ee41b7c6b8497c63c1ff2d9f9eb7b7b1dab16ba",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

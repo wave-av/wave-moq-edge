@@ -1,0 +1,161 @@
+.claude/skills/wave-email-craft/SKILL.md
+  s_53b49eff5b8c5d::t_bdd4d02896452f 253-259
+.github/workflows/namespace-egress-advisory-soak.yml
+  s_53b49eff5b8c5d::t_4cd078909213d8 1-147
+.gitignore
+  s_53b49eff5b8c5d::t_2b2e9d87d94419 45-52
+governance/bin/email-archive.mjs
+  s_53b49eff5b8c5d::t_dc13549bd3f6cf 1-83
+governance/bin/lane-state.mjs
+  s_53b49eff5b8c5d::t_9732c39b7bebae 1-71
+governance/bin/mint-token.mjs
+  s_53b49eff5b8c5d::t_86cd7ef47f4d33 1-226
+governance/bin/transcript-secret-scan.mjs
+  s_53b49eff5b8c5d::t_e84e02ad137975 1-127
+governance/bin/vendor-cidr-sync.mjs
+  s_53b49eff5b8c5d::t_c3abb2a37bf5f2 1-126
+governance/data/vendor-cidr/datadog-webhooks.json
+  s_53b49eff5b8c5d::t_360fd9650d910e 1-40
+governance/data/vendor-cidr/github-hooks.json
+  s_53b49eff5b8c5d::t_80eb553375b0c6 1-11
+governance/data/vendor-cidr/stripe-webhooks.json
+  s_53b49eff5b8c5d::t_810ee00434c8f6 1-20
+governance/lib/drill-fixtures-vendor-cidr.mjs
+  s_53b49eff5b8c5d::t_eae8c596208702 1-68
+governance/lib/drill-registry.mjs
+  s_53b49eff5b8c5d::t_fb078d521eb086 61,143-145,214
+governance/lib/ledger-surface.mjs
+  s_53b49eff5b8c5d::t_9d8288fbfcb8ef 20-29,51-113,139-146
+governance/plans/epic-system/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_ee589c61c26f76 64-67
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  s_53b49eff5b8c5d::t_f13af9db7e1436 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  s_53b49eff5b8c5d::t_0b4d739637cf4d 24-26
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_53b49eff5b8c5d::t_a6b68dbd6d1dcc 72
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-advisory-soak-setup.md
+  s_53b49eff5b8c5d::t_aacb988ac9f789 1-54
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-build-measure.md
+  s_53b49eff5b8c5d::t_b352f25bbfc05d 1-59
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-arm64-x86-falsifier.md
+  s_53b49eff5b8c5d::t_1eeb7e0261db03 1-68
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-metrics-e2e-live.md
+  s_53b49eff5b8c5d::t_70c2d11358dc05 1-267
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-npm-mirror-rescope.md
+  s_53b49eff5b8c5d::t_3821471eb762c8 1-176
+governance/plans/namespace-substrate/STORY-PACKAGE-2026-08-21.md
+  s_53b49eff5b8c5d::t_2088f0337105d3 1-78
+governance/plans/network-edge-plane/E4-LAW.md
+  s_53b49eff5b8c5d::t_0bf5c473183aa9 1-24
+governance/plans/network-edge-plane/E4-MANAGED-ORIGIN.md
+  s_53b49eff5b8c5d::t_b2cc19cce32fbf 4
+governance/plans/network-edge-plane/E6-PRODUCTIZATION.md
+  s_53b49eff5b8c5d::t_7cacb45b6bf3df 1-25
+governance/plans/network-edge-plane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_430ed7903758a0 103
+governance/plans/network-edge-plane/WAVE-ANCHOR.md
+  s_53b49eff5b8c5d::t_5593bea61a0f11 1-44
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_53b49eff5b8c5d::t_4dfa3a6986bfcf 1-20
+governance/plans/physics-of-compute/E1-SSD-STREAMING-MEASURE.md
+  s_53b49eff5b8c5d::t_fa45227472dc2b 1-24
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_53b49eff5b8c5d::t_655acdc35e3e78 1-22
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_53b49eff5b8c5d::t_94e62e8c7c3681 1-46
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_53b49eff5b8c5d::t_8381c410f20b06 1-57
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  s_53b49eff5b8c5d::t_e411a91a03623d 1-57
+governance/plans/physics-of-compute/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_2aac0fb8bf6da2 1-108
+governance/plans/physics-of-compute/RECEIPTS-E1-preflight.md
+  s_53b49eff5b8c5d::t_b53f72bce9aa12 1-78
+governance/plans/polyrepo-velocity/E7-AGENT-CACHE.md
+  s_53b49eff5b8c5d::t_32183b26e63a07 84-87
+governance/plans/vendor-control-plane/E0-INVENTORY.md
+  s_53b49eff5b8c5d::t_7470ecfa2fe4e7 1-79
+governance/plans/vendor-control-plane/E1-SHARED-SCHEMA.md
+  s_53b49eff5b8c5d::t_a8f43e2485afab 1-240
+governance/plans/vendor-control-plane/E1-schema.draft.ts
+  s_53b49eff5b8c5d::t_852213af9f1342 1-303
+governance/plans/vendor-control-plane/E2-NAMESPACE-ADAPTER.md
+  s_53b49eff5b8c5d::t_3cd170ea8ed585 1-42
+governance/plans/vendor-control-plane/E3-RUNPOD-ADAPTER.md
+  s_53b49eff5b8c5d::t_6c18885fc2d977 1-39
+governance/plans/vendor-control-plane/E4-CF-ADAPTER.md
+  s_53b49eff5b8c5d::t_8334dedb12601d 1-33
+governance/plans/vendor-control-plane/E5-META.md
+  s_53b49eff5b8c5d::t_04fcdfce02d592 1-36
+governance/plans/vendor-control-plane/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_3b78b135db9993 1-85
+governance/plans/vendor-control-plane/RECEIPTS.md
+  s_53b49eff5b8c5d::t_1e91e43fded7e0 1-16
+governance/plans/vendor-relationship-ops/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_f49f108a069ead 82-90
+governance/plans/vendor-relationship-ops/SCOREBOARD-2026-08-21.md
+  s_53b49eff5b8c5d::t_ee2c1801df29e6 1-63
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  s_53b49eff5b8c5d::t_0a432583a25bea 1-40
+governance/plans/wave-registry/artifacts/schema.sql
+  s_53b49eff5b8c5d::t_75597d07431614 233-239
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-19.md
+  s_53b49eff5b8c5d::t_306efeddac5852 1-52
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-21-namespace-arc.md
+  s_53b49eff5b8c5d::t_0f17284d22b937 1-48
+governance/research/creator-intelligence/PHYSICS-OF-COMPUTE-CAMPAIGN.md
+  s_53b49eff5b8c5d::t_14383531c319bf 1-93
+governance/research/creator-intelligence/PRODUCT-VERDICT.md
+  s_53b49eff5b8c5d::t_f8fa8dda5c093b 29-37
+governance/state/email-archive/aikido/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_3c5d032f6e2ff0 1-14
+governance/state/email-archive/chris/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_02b96bcee085de 1-8
+governance/state/email-archive/cloudflare/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_62a6746a485757 1-7
+governance/state/email-archive/coderabbit/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_4cbf7ea7f514c7 1-14
+governance/state/email-archive/cubic/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_51cc9ab0e673a3 1-2
+governance/state/email-archive/devin/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_6975a6861aa34a 1-33
+governance/state/email-archive/exa/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_4901137975b370 1-5
+governance/state/email-archive/fireworks/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_e1b78a209e3f0d 1-10
+governance/state/email-archive/greptile/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_d10624750a2de5 1-2
+governance/state/email-archive/macroscope/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_135cba5f8714bd 1-2
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_d0dfa8e76414de 1-17
+governance/state/email-archive/terry/thread-2026-08.jsonl
+  s_53b49eff5b8c5d::t_dcb7a2fcfdb8af 1
+governance/test/ledger-surface-actionability.test.mjs
+  s_53b49eff5b8c5d::t_853d7a77ef63a8 1-180
+memory/fleet-todo-ledger.md
+  s_53b49eff5b8c5d::t_2caf444f8bc7c3 437-646
+memory/namespace-arc-session-bank-2026-08-21.md
+  s_53b49eff5b8c5d::t_018a41290eb84b 1-37
+plugins/wave-canon/skills/vendor-reply-loop/SKILL.md
+  s_53b49eff5b8c5d::t_e9e4fee30e4f66 60-76
+plugins/wave-canon/skills/wave-email-craft/SKILL.md
+  s_53b49eff5b8c5d::t_5eebfb82be497f 253-259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "765865c6d744e408fe47728b3bd8865dc9dfd88e",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/langfuse-integration/E0-DECISION.md
+  s_0213641ac58af6::t_11ffb627329f43 1-51
+governance/plans/langfuse-integration/E0-DECIDE.md
+  s_0213641ac58af6::t_c11abb4412f76c 4-5,10-15
+governance/plans/wave-registry/E0-SCHEMA.md
+  s_0213641ac58af6::t_6d55ea032ab1c9 7-8,11-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a1cf54f7634880680ff6073f2a42e23a2c203e3e",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.github/workflows/foundation-gate.yml
+  s_a4bf449cf66fcd::t_121da54b41b276 42
+.github/workflows/hook-tests-macos.yml
+  s_a4bf449cf66fcd::t_baa7fd8dfc2ec9 49,55-58,67-70,73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1d292b682a5fdff3d242c7937eaa8276fea8b048",
+  "prompts": {},
+  "sessions": {
+    "s_a4bf449cf66fcd": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fcbe8519effeLiCWT22OLP2AYd",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

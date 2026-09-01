@@ -1,0 +1,22 @@
+governance/plans/runtime-integrations/bin/emit-mcp.mjs
+  s_2b4acc7ceba309::t_6e5c5f76860a1d 1-2,4,7,11-12,31,39,43-44
+  s_2b4acc7ceba309::t_e76b6cc09034df 3,5-6,8-10,13-30,32-38,40-42
+governance/plans/runtime-integrations/catalog.json
+  s_2b4acc7ceba309::t_d72b1847d4e2e4 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "92553005a47d3c3d7ea2d5a475afc0ca9d8e60c4",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

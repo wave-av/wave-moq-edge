@@ -1,0 +1,25 @@
+helm/src/lib/model-pricing.mjs
+  s_70c7ac7de143f9::t_be566d239f1834 12
+settings/managed-settings.json
+  s_70c7ac7de143f9::t_3d5c22ef1bc126 9
+governance/test/taxonomy.test.mjs
+  s_70c7ac7de143f9::t_d7e934e032a317 259-286
+governance/bin/cost-ledger.mjs
+  s_70c7ac7de143f9::t_ebc4cd9659d2fa 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ef8426806c4181be717f12b7a81795e6e8f303a0",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

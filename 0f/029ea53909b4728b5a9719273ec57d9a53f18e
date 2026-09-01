@@ -1,0 +1,20 @@
+hooks/degraded-hold-gate.sh
+  s_941b8f0612ec3e::t_b1c89ce3c7ae9c 114
+  s_941b8f0612ec3e::t_d92376b77e5e52 86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0f029ea53909b4728b5a9719273ec57d9a53f18e",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

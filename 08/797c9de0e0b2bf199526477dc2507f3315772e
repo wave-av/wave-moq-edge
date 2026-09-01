@@ -1,0 +1,35 @@
+governance/lib/ledger-lifecycle.mjs
+  s_96280c922a9418::t_25df1d4768ada7 1-64
+governance/test/ledger-lifecycle.test.mjs
+  s_96280c922a9418::t_5e80b5c7f33e4d 1-107
+governance/lib/ledger-classify.mjs
+  s_96280c922a9418::t_984e20e21f68fc 218-220
+  s_96280c922a9418::t_bedf1382a40102 222-224
+  s_96280c922a9418::t_06d7567edb96b7 176-186
+  s_96280c922a9418::t_2b746cf5a7e1fc 163-175,187-203
+  s_96280c922a9418::t_78107de83b0e1e 15-22
+governance/bin/intent-ledger.mjs
+  s_96280c922a9418::t_ef0d0edc710abf 209
+  s_96280c922a9418::t_3078f3d0dca001 257-279
+  s_96280c922a9418::t_d296bbbd41cbee 40-41
+  s_96280c922a9418::t_07f8efdd297989 36
+  s_96280c922a9418::t_4c4b04b4e0f84e 20-21
+  s_96280c922a9418::t_467ed9b334f90f 328-329
+  s_96280c922a9418::t_5eadf289e5ad79 60-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "08797c9de0e0b2bf199526477dc2507f3315772e",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/test/wave-sec-aikido.test.mjs
+  s_52031f4510959b::t_a602f1d011c803 127-128,135
+  s_52031f4510959b::t_3df6a596f2a642 1-126,129-134,136-249
+governance/bin/wave-sec.mjs
+  s_52031f4510959b::t_374d4f0b1341bd 122-125
+  s_52031f4510959b::t_0b1b40a147432a 32
+  s_52031f4510959b::t_24251311048ef7 61
+governance/lib/wave-sec-aikido.mjs
+  s_52031f4510959b::t_1092f7b00f5e22 1-155
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5fb6043f52c1964de5a70fb7e96fc81cc5f43741",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

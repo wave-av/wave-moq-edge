@@ -1,0 +1,24 @@
+.github/actions/blast-radius-classify/classify.mjs
+  s_db1b2a792e5f25::t_4a42a854bd3347 146-147
+  s_db1b2a792e5f25::t_9958f110aff9ae 84-111,113-115
+  s_db1b2a792e5f25::t_81e3f2469ec6d0 112
+  s_db1b2a792e5f25::t_044e1c29d88836 118
+.github/actions/blast-radius-classify/test/fixtures/corpus.json
+  s_db1b2a792e5f25::t_e337a5a050a59e 88-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "6683c11ccb6683cae0a88b24ee120feb79c04c4c",
+  "prompts": {},
+  "sessions": {
+    "s_db1b2a792e5f25": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "11ed0fd9-f2c4-4bb5-bbb9-1b4c14237f77",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

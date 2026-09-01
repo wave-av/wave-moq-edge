@@ -1,0 +1,25 @@
+governance/plans/brand-recycle/comps/wow-tail-v1.html
+  s_15127d80763110::t_d2fbf024861f34 1-593
+governance/plans/brand-recycle/WOW-TAIL.md
+  s_15127d80763110::t_828100bc1753b4 1-130
+governance/DASHBOARD.md
+  s_15127d80763110::t_75e568d1176e2f 25
+governance/graph.json
+  s_15127d80763110::t_d1b32fb2f58f12 2728-2740,18924-18935
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "611532a5cd6cdb498ad834b0ec6205dce0e42e0d",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

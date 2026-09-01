@@ -1,0 +1,48 @@
+governance/plans/fleet-ops-toolkit/E1-E1-SESSION-TO-SKILL.md
+  h_67a1b847dc59d6 1-18
+governance/plans/fleet-ops-toolkit/E2-E2-GATE-AUTOPSY.md
+  h_67a1b847dc59d6 1-13
+governance/plans/fleet-ops-toolkit/E3-E3-CRON-WIRING.md
+  h_67a1b847dc59d6 1-9
+governance/plans/fleet-ops-toolkit/E4-E4-COCKPIT.md
+  h_67a1b847dc59d6 1-9
+governance/plans/fleet-ops-toolkit/E5-E5-DOPPLER-GUARD.md
+  h_67a1b847dc59d6 1-9
+governance/plans/fleet-ops-toolkit/E6-E6-NEXT-UNIT.md
+  h_67a1b847dc59d6 1-9
+governance/plans/fleet-ops-toolkit/NORTH-STAR.md
+  h_67a1b847dc59d6 1-34
+governance/plans/fleet-ops-toolkit/tools/dpg.mjs
+  h_67a1b847dc59d6 1-25
+governance/plans/fleet-ops-toolkit/tools/fleet-status.mjs
+  h_67a1b847dc59d6 1-29
+governance/plans/fleet-ops-toolkit/tools/mgn.mjs
+  h_67a1b847dc59d6 1-53
+governance/plans/fleet-ops-toolkit/tools/next-unit.mjs
+  h_67a1b847dc59d6 1-22
+governance/plans/fleet-ops-toolkit/tools/skill-from-session.mjs
+  h_67a1b847dc59d6 1-49
+governance/plans/meeting-intelligence/E0-E0-DOGFOOD-DIGEST.md
+  h_67a1b847dc59d6 1-12
+governance/plans/meeting-intelligence/E1-E1-GATED-ARTIFACTS.md
+  h_67a1b847dc59d6 1-9
+governance/plans/meeting-intelligence/E2-E2-SERIES-DIGEST.md
+  h_67a1b847dc59d6 1-9
+governance/plans/meeting-intelligence/NORTH-STAR.md
+  h_67a1b847dc59d6 1-26
+governance/plans/meeting-intelligence/tools/digest-pipeline.mjs
+  h_67a1b847dc59d6 1-25
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 6,12,16-18,25-29,31-32,34-38,44-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "092996c5230cf364fa38023bbde4a3914a8a6d2d",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

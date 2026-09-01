@@ -1,0 +1,75 @@
+.coderabbit.yaml
+  s_85d9e5f433b9aa::t_ff9809aa2bec3a 146-150,152,156-157,162,167-170
+.cursor/BUGBOT.md
+  s_85d9e5f433b9aa::t_7eb3208a7e498a 49-52,59-87
+.gitattributes
+  s_85d9e5f433b9aa::t_e926d2245a9b37 20-24
+.github/workflows/wave-sec-dependency-review.yml
+  s_85d9e5f433b9aa::t_debf53370ee4bd 1-60
+.github/workflows/wave-sec-gate.yml
+  s_85d9e5f433b9aa::t_6cdca473788345 132-147
+.greptile/config.json
+  s_85d9e5f433b9aa::t_f68a8f745e6381 3-9,13,19-24,30-34,40-42,48-55,61-64,70-72,78-84
+REVIEW.md
+  s_85d9e5f433b9aa::t_53bcb196b3ce5a 45-51,53-77
+cubic.yaml
+  s_85d9e5f433b9aa::t_8d5d008aaa5536 70-76,78,82-83,88,93-96
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_eef3e127bcf9e2 54,60-172
+governance/bin/check.mjs
+  s_85d9e5f433b9aa::t_7e407a93c778b9 62-76
+governance/bin/fleet/reviewer-config-census.mjs
+  s_85d9e5f433b9aa::t_14fb2943cff6c3 1-257
+governance/bin/gate-liveness-drill.mjs
+  s_15127d80763110::t_ca31e657e4cc62 29,114-116,118
+governance/bin/reviewer-policy-gen.mjs
+  s_85d9e5f433b9aa::t_ca957fb673dcd0 1-166
+governance/lib/drill-fixtures-drift.mjs
+  s_85d9e5f433b9aa::t_002d7de9cb7a92 53-56
+governance/lib/drill-fixtures-reviewer.mjs
+  s_85d9e5f433b9aa::t_2c95e5f0733f2e 1-82
+governance/lib/git-ref-read.mjs
+  s_85d9e5f433b9aa::t_f3979917b2eb89 1-53
+governance/lib/reviewer-ignore-contract.mjs
+  s_85d9e5f433b9aa::t_3d75615dc0c2e8 1-146
+governance/lib/reviewer-policy.mjs
+  s_85d9e5f433b9aa::t_32aad846335107 1-227
+governance/plans/REVIEWER-FLEET-NORTH-STAR.md
+  s_85d9e5f433b9aa::t_5eeb1e4c7eeaa8 160-166,176-178
+governance/plans/reviewer-fleet/RF-P7-POLICY-SSOT.md
+  s_85d9e5f433b9aa::t_1a1e82478df08f 1-213
+governance/reviewer-policy.json
+  s_85d9e5f433b9aa::t_3838bdc3fa7828 1-180
+governance/test/reviewer-census.test.mjs
+  s_85d9e5f433b9aa::t_c87b6e6c2598ac 1-147
+governance/test/reviewer-demand-shaping.test.mjs
+  s_85d9e5f433b9aa::t_60907cc614ef99 1-97
+governance/test/reviewer-ignore-sync.test.mjs
+  s_85d9e5f433b9aa::t_7213a9ce05a7eb 1,4-6,8-15,17-19,24-27,29-39,45-52,54,56-66,68,72-75,82-83,87,94-95,99,103-104,108-143,150-151
+governance/test/reviewer-policy.test.mjs
+  s_85d9e5f433b9aa::t_b97282e72c73b3 1-266
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "34251121f9976310d4ff805b53e33440ae48e469",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

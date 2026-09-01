@@ -1,0 +1,40 @@
+rules/computer-use-agent-confined-to-declared-surface-with-action-receipts.md
+  s_9bb1b1d1d998d4::t_bceeabd6e07c4c 22
+governance/plans/client-toolset-adoption/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_36bb9ec396dff7 17-23
+governance/bin/enforcement-tables.mjs
+  s_9bb1b1d1d998d4::t_bec6f082f68ba7 106
+  s_9bb1b1d1d998d4::t_fdc9d569183cf6 99-105
+governance/conformance/desktop-ga/drill.mjs
+  s_9bb1b1d1d998d4::t_71f8edac7826be 28-43
+  s_9bb1b1d1d998d4::t_4d90ccdc71fc6f 84-116,118-119
+.github/workflows/governance.yml
+  s_9bb1b1d1d998d4::t_bd561ad6e4e084 185-189
+governance/lib/drill-fixtures-desktop-conformance.mjs
+  s_9bb1b1d1d998d4::t_ca3c0ab7f94e61 1-57,60,65,69,71
+  s_9bb1b1d1d998d4::t_f8476aa3f4cfc8 58-59,61-64,66-68,70
+.github/actions/desktop-conformance-gate/action.yml
+  s_9bb1b1d1d998d4::t_557657173e48fe 1-51
+governance/conformance/desktop-ga/.gitignore
+  s_9bb1b1d1d998d4::t_9f389b8bb52654 1
+governance/lib/drill-registry.mjs
+  s_9bb1b1d1d998d4::t_5e988969092b56 28,199
+governance/ENFORCEMENT-COVERAGE.md
+  s_9bb1b1d1d998d4::t_44507b2e4dc42b 9,12,14,472
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b8cf8dc8d48f063f1a916011cad793ed7fbe1301",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+scripts/pr_conflicts.py
+  s_3a52a0989b58af::t_d6d5058b81e80c 38-39,41,46-47,50-51
+  s_3a52a0989b58af::t_2411879c8e76e9 1-37,40,42-45,48-49,52-120,122,125-166
+  s_3a52a0989b58af::t_ccc4dfdcad2532 121,123-124
+docs/autonomy/NORTHSTAR.md
+  s_3a52a0989b58af::t_57b6ba3c85577f 168
+  s_3a52a0989b58af::t_f45a08d6a9e99e 161-162
+  s_3a52a0989b58af::t_6e189bc8d09eab 87-90
+tests/test_pr_conflicts.py
+  s_3a52a0989b58af::t_60833f6016b25f 68-70,76,80-82
+  s_3a52a0989b58af::t_bacd34d2b04486 1-67,71-75,77-79,83-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "32bf235e99e840caa71855bf4c60bf8224dd1076",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

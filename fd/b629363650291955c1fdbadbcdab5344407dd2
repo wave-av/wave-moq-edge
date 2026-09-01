@@ -1,0 +1,73 @@
+.github/actions/content-lints/action.yml
+  s_02abc74f4971c7::t_a7898981e77b6f 1-280
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_64385ab7f3c57b 426-432,434-435,437-443
+governance/bin/fixture-isolation-lint.mjs
+  s_02abc74f4971c7::t_d156211075d61b 12-14,20-22,35-39,62,72
+governance/bin/gate-liveness-drill.mjs
+  s_02abc74f4971c7::t_422dbafa109459 41,101-120,122-129,173-177
+governance/bin/local-gates.mjs
+  s_02abc74f4971c7::t_dd65dc1a3b74c8 33,43-47,55-62,89,91-94
+governance/bin/prove-fixture-isolation-gate.mjs
+  s_02abc74f4971c7::t_92e0a681ff8dc9 3-9,18-23,25,28,38,40,45,48-53
+governance/lib/ci-surface.mjs
+  s_02abc74f4971c7::t_429ff6170f59f8 1-185
+governance/lib/local-gate-plan.mjs
+  s_02abc74f4971c7::t_e768759d6e8bee 49-54,57,71-78,80-85,246-260,262-268
+governance/lib/owner-resolve.mjs
+  s_02abc74f4971c7::t_f5543d1e62b9bd 140-145,195-200
+governance/lib/ramp-detectors.mjs
+  s_02abc74f4971c7::t_da7a1855108795 11-12,39-42,72-74,115,123,219
+governance/lib/ramp-tables.mjs
+  s_02abc74f4971c7::t_eefc8a0566830f 11-16,55-70
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  s_02abc74f4971c7::t_ff4a6e834c29f2 26-33,44,60,97,131,150,169,187,193-241
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  s_02abc74f4971c7::t_303cbf6019a2b0 11-20,31-38,43-57
+governance/lib/wave-cost-ledger-cloudflare-usage-aggregate.mjs
+  s_02abc74f4971c7::t_5cd859315ebb03 1-170
+governance/lib/wave-cost-ledger-cloudflare-usage-datasets.mjs
+  s_02abc74f4971c7::t_827095a3087548 29-33,35-37,39-43,45-59,137-159,281-312
+governance/lib/wave-cost-ledger-cloudflare-usage-pull.mjs
+  s_02abc74f4971c7::t_2772a81dbeee98 47,82-88
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_02abc74f4971c7::t_ca8cbe7f08d55f 81-95
+governance/plans/wow-canon/E-LAUNCH-content.md
+  s_02abc74f4971c7::t_d49ccc2da7a0e2 4-12
+governance/test/ci-surface.test.mjs
+  s_02abc74f4971c7::t_dac01cf965232b 1-337
+governance/test/fixtures/bad-action/action.yml
+  s_02abc74f4971c7::t_5e7e5359b828f3 1-12
+governance/test/lib/workflow-invocation.mjs
+  s_02abc74f4971c7::t_f40f7cc0fdace1 12,14,33-41,45,47,53-66
+governance/test/ramp-config-detectors.test.mjs
+  s_02abc74f4971c7::t_776f970deefdf1 1-198
+governance/test/ramp-detectors.test.mjs
+  s_02abc74f4971c7::t_fe40ac2c8a5b39 29-32,62-77,139-141
+governance/test/ramp-file-size.test.mjs
+  s_02abc74f4971c7::t_ee7d526956feb9 1-97
+governance/test/wave-cost-ledger-cloudflare-puller-idempotency.test.mjs
+  s_02abc74f4971c7::t_d50e5d491ddb0b 61,82-88
+governance/test/wave-cost-ledger-cloudflare-usage-aggregate.test.mjs
+  s_02abc74f4971c7::t_dca4bc4bdf84b2 1-206
+governance/test/wave-cost-ledger-cloudflare-usage-pull.test.mjs
+  s_02abc74f4971c7::t_1e67017e9dd132 1-83
+governance/test/wave-cost-ledger-cloudflare-usage-rows.test.mjs
+  s_02abc74f4971c7::t_4efbdbe5bd5cde 196-214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "fdb629363650291955c1fdbadbcdab5344407dd2",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

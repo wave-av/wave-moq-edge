@@ -1,0 +1,21 @@
+package.json
+  s_672079ccfe8ce6::t_74e31ab055e406 15,25-26
+router/src/index.ts
+  s_672079ccfe8ce6::t_be1fdc8e9c265e 1114-1115,1117-1135,1137-1138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5842e128d5cbe4a4442dd2265a4de678c68e1127",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

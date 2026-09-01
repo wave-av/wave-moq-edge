@@ -1,0 +1,22 @@
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 5,11,14,395
+governance/contract.md
+  h_67a1b847dc59d6 33-35,56
+governance/sources/lawbook.json
+  h_67a1b847dc59d6 2,5-6,20-21,23
+hooks/pr-body-floor-advisory.sh
+  h_67a1b847dc59d6 1-33
+rules/pr-body-floor.md
+  h_67a1b847dc59d6 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "04dc24bf9d197dad7af5c95e895c5ec3c2a25161",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+rules/autonomous-loop-circuit-breaker.md
+  s_96280c922a9418::t_1f42e2360772c0 7-34,36
+settings/settings.base.json
+  s_96280c922a9418::t_3011a16f76f412 328-332
+  s_96280c922a9418::t_561c631b1f8f32 222-231
+  s_96280c922a9418::t_9d0ab36a22e241 63-67
+hooks/tests/autonomous_loop_breaker_smoke.sh
+  s_96280c922a9418::t_30c0ef722cb2d2 1-150
+hooks/autonomous-loop-breaker.sh
+  s_96280c922a9418::t_d906323c90e7f3 1-239
+governance/DASHBOARD.md
+  s_96280c922a9418::t_a8274cf910fdab 7-8,16-17,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_96280c922a9418::t_06589e0fc5a74c 10,12,14,405
+governance/contract.md
+  s_96280c922a9418::t_005cac0022fe5a 47,51,53
+governance/graph.json
+  s_96280c922a9418::t_8b8b75bdd92166 4410-4418,5649,5651,5655,5657,5665-5670,5677-5682,17185-17196
+hooks/manifest.json
+  s_96280c922a9418::t_69933188a7aef1 26-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3cf255eb0df459d08f8d1c113f56103644663849",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/bin/struggle-miner-scan.sh
+  s_a293da4db5caf2::t_9ddf3b16ed4ba4 36-41
+tests/struggle_miner/test_collect_corrections.py
+  s_a293da4db5caf2::t_efe533a927f91a 1-143
+governance/bin/struggle-miner/collect-corrections.py
+  s_a293da4db5caf2::t_ac26950f8250f1 50-54,56
+  s_a293da4db5caf2::t_da64f33f50da13 1-25,27-49,55,57-145
+  s_a293da4db5caf2::t_7705d13822a411 26
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_a293da4db5caf2::t_daf299ba4c4883 45-49,54-58
+  s_a293da4db5caf2::t_bdd0778b1fa70e 25-26,28-31,37-44,50-53
+  s_a293da4db5caf2::t_941283e9fbf7b9 59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7381c81da45a3bcbe15a25b940fd24db12b367b6",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+memory/cost-tax-per-agent-task.md
+  s_32a30bff8591e9::t_4551f65922d353 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bd9e0e182c822912547ed1a573eddebcc362675f",
+  "prompts": {},
+  "sessions": {
+    "s_32a30bff8591e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef9014ffep6fd2hvlZqtlv4",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_bb7c7611500027": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4069a7fffeIvXBa9cmeB39G6",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

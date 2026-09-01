@@ -1,0 +1,20 @@
+.github/workflows/bench.yml
+  s_6c1c1be138dfd4::t_193a463b6b62f6 42
+  s_6c1c1be138dfd4::t_ead50b938924c5 21-25,28,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "26978be164b2016b466a842206f2b2b4d409557f",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

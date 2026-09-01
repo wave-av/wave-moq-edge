@@ -1,0 +1,25 @@
+governance/test/enforce-ramp.test.mjs
+  s_60a20469ef4369::t_cdf8f020e54977 273-299
+governance/bin/enforce-ramp.mjs
+  s_60a20469ef4369::t_0874e5cac6f544 405-415,417-439,441-442
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_449da995328bd6 769,775,779,781
+governance/code-index/index.json
+  s_60a20469ef4369::t_a2fdbaec07aa4e 7445-7446,7511-7512,7555-7556,7577-7578
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "adb6f95b347c8344ffd08082a38f9e39c0b54798",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

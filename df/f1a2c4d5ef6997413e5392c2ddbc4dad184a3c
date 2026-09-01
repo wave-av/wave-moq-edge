@@ -1,0 +1,19 @@
+governance/plans/model-distribution/NORTH-STAR.md
+  s_0c9f4f627d38a7::t_894a6b60e096b5 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "dff1a2c4d5ef6997413e5392c2ddbc4dad184a3c",
+  "prompts": {},
+  "sessions": {
+    "s_0c9f4f627d38a7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc9392cd0ffeha56cSNc0rEXGv",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

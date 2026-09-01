@@ -1,0 +1,24 @@
+governance/ci-stack/dashboard-driver/ts-dns-https.mjs
+  s_7326a769c7efe8::t_5e105f9b9461f2 1-18,27,31
+  s_7326a769c7efe8::t_804b3f58f07878 19-26,28,30
+  s_7326a769c7efe8::t_a0aa130404835d 29
+governance/ci-stack/dashboard-driver/slack-webhook-probe.mjs
+  s_7326a769c7efe8::t_24027f89bf699b 1-23
+  s_7326a769c7efe8::t_08ebbe2bc49bdf 24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fd742276aa865b5d1261aeac6c07232fdae58e66",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

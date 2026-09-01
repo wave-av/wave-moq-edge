@@ -1,0 +1,19 @@
+governance/bin/gam-metrics.mjs
+  s_f0a78cbb7828a7::t_89b8496ba89468 54-62,65,76-84,95-101,107-108,110-113,121-123,125-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9c8a72db86a03093f48a09b25786b0d974b14928",
+  "prompts": {},
+  "sessions": {
+    "s_f0a78cbb7828a7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8d172c2e-2921-4e37-9edb-5e07a8be0e20",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

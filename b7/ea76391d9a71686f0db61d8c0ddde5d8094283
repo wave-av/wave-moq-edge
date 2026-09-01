@@ -1,0 +1,36 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_21965f87c1b355 355
+  s_60a20469ef4369::t_04a033a0f8fa53 333-336,338-340
+governance/bin/build.mjs
+  s_60a20469ef4369::t_da7e3bf4ffe2e8 101-115
+rules/never-write-source-through-shell.md
+  s_60a20469ef4369::t_12e8709b40d101 7
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_1ba3b67aef1155 72
+governance/test/enforce-dryrun.sh
+  s_60a20469ef4369::t_40445284a0f862 139-148
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_d80a8e5b7241f4 96-110
+hookcli/docs/SOURCE-WRITE-CUTOVER.md
+  s_60a20469ef4369::t_945515b8e79117 33-42
+governance/ENFORCEMENT-COVERAGE.md
+  s_60a20469ef4369::t_8f50d9845cdf7d 421,460
+governance/graph.json
+  s_60a20469ef4369::t_00ead3c5d338fe 4241-4248,16210-16215
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "b7ea76391d9a71686f0db61d8c0ddde5d8094283",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

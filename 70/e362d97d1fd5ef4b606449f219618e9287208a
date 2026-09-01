@@ -1,0 +1,36 @@
+.github/workflows/ci.yml
+  s_ba07216ce52585::t_433bb3a5ecb279 1-23
+router/src/router/fallback.ts
+  s_ba07216ce52585::t_2ba119e98f3bb8 145-148
+  s_ba07216ce52585::t_ceaca36b0feff4 149-150
+  s_ba07216ce52585::t_aef29e567280a2 1-144,151-169,181-214
+  s_ba07216ce52585::t_99d5a15b6cabaa 170,175
+  s_ba07216ce52585::t_17be5a705585b1 171-174,176-180
+router/src/router/protocol.ts
+  s_ba07216ce52585::t_1bb8652ab3bd7c 2
+  s_ba07216ce52585::t_132e2f64cf6cd4 22-25
+router/src/router/fallback.test.ts
+  s_ba07216ce52585::t_0b808555983ecc 1-181,183-185,187-224,236-272
+  s_ba07216ce52585::t_3583b419638d6e 182,186
+  s_ba07216ce52585::t_98a579dbc16f8c 225-235
+scripts/prove.ts
+  s_ba07216ce52585::t_5cbd8a0d5ba625 1-143
+package.json
+  s_ba07216ce52585::t_bacd0ac9efa0d4 2-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "70e362d97d1fd5ef4b606449f219618e9287208a",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

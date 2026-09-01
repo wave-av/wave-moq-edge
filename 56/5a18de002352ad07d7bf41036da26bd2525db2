@@ -1,0 +1,60 @@
+hookcli/bin/hookcli-settings-gen.mjs
+  s_dccee6b7677203::t_9c894f7c39df7c 28-33
+hookcli/tests/run.sh
+  s_dccee6b7677203::t_3891ce40dd39a3 30-39,41-47
+  s_dccee6b7677203::t_74a747b4724e2f 40
+hookcli/tests/require-graduation-report.sh
+  s_dccee6b7677203::t_e58e5fa115b1cf 8,75
+  s_dccee6b7677203::t_e77e1c60e104ad 7
+hookcli/tests/distill-report.sh
+  s_dccee6b7677203::t_16610809ebc60e 9
+  s_dccee6b7677203::t_bc667309367c0a 8,147
+hookcli/tests/parity-secret-leak-scan.sh
+  s_dccee6b7677203::t_f469b5bc73986b 29-33
+hookcli/tests/shadow-report.sh
+  s_dccee6b7677203::t_2e2f803432a1f8 78
+  s_dccee6b7677203::t_2758d77fec4f1f 5
+hookcli/tests/exec-env.sh
+  s_dccee6b7677203::t_38c5b544186171 37-38
+hookcli/tests/report-provenance.sh
+  s_dccee6b7677203::t_1dbaa9ffd2aaef 8
+  s_dccee6b7677203::t_a81a80c1586d71 6-7
+hookcli/tests/parity-public-content-leak-scan.sh
+  s_dccee6b7677203::t_53cf92f100ed49 28-32
+hookcli/tests/parity-memory-write-guard.sh
+  s_dccee6b7677203::t_75d9842c9442ac 25-29
+hookcli/tests/aggregate-sessionstart.sh
+  s_dccee6b7677203::t_1068c0ebefc13d 20-21,38-39,49-50,64-65
+hookcli/tests/cc-shadow-mutation.sh
+  s_dccee6b7677203::t_faaacbf9df5229 63-64
+hookcli/tests/settings-shard.sh
+  s_dccee6b7677203::t_f03225ad1fab64 31-39
+hookcli/tests/promote-candidate.sh
+  s_dccee6b7677203::t_61b7cf3a84dc74 8-9,13
+  s_dccee6b7677203::t_e20630885db365 10
+hookcli/tests/enforce-review.sh
+  s_dccee6b7677203::t_536ce305ad4222 8-10
+  s_dccee6b7677203::t_e4852a577b77ed 11
+hookcli/tests/posttooluse-shadow.sh
+  s_dccee6b7677203::t_0d07189edbc678 25-26,56-57
+hookcli/tests/shadow-sessionstart.sh
+  s_dccee6b7677203::t_7656efbb8ae217 13-14,25-26,64-65,92-93,95-96,114-115,117-118,145-146
+hookcli/tests/parity-file-authoring-gate.sh
+  s_dccee6b7677203::t_1a984ad6025843 29-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "565a18de002352ad07d7bf41036da26bd2525db2",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

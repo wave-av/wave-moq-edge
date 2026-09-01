@@ -1,0 +1,37 @@
+governance/plans/wave-private-network/E1-MEASURE.md
+  s_7c7e203d305c60::t_f859cf2e5a8e14 1-185
+governance/plans/wave-private-network/E0-CENSUS.md
+  s_7c7e203d305c60::t_86235183f5a32c 1-162
+governance/plans/wave-private-network/E3-FLY-INGRESS.md
+  s_7c7e203d305c60::t_a7f27e5501eba6 1-129
+governance/plans/wave-private-network/E6-CONTINUOUS-PROOF.md
+  s_7c7e203d305c60::t_e857add52fa136 1-136
+governance/plans/wave-private-network/E5-PROD-CROSSING.md
+  s_7c7e203d305c60::t_e3684e306e5aa3 1-129
+governance/plans/wave-private-network/E4-MESH-REACH.md
+  s_7c7e203d305c60::t_4c5baf2420e73a 1-161
+governance/plans/wave-private-network/E2-PRIVATE-ORIGIN.md
+  s_7c7e203d305c60::t_9e792b1157c9ca 1-148
+governance/plans/wave-private-network/NORTH-STAR.md
+  s_7c7e203d305c60::t_4776f2ae605976 1-204
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_3cca8e1aea779f 25
+governance/graph.json
+  s_7c7e203d305c60::t_286978a2ac2bec 7117-7220,29639-30016
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "faa5e331194289c831ad792deda609abd5ee45d9",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

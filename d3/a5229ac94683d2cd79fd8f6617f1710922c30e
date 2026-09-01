@@ -1,0 +1,40 @@
+governance/plans/crypto-money-plane-migration/E2-R3-X402-MPP.md
+  s_756b33c630d33b::t_2deaa41e90f037 2-23
+  s_756b33c630d33b::t_53bd1f1309b67d 1
+memory/money-go-live-readiness.md
+  s_756b33c630d33b::t_9a4dd30c6230dd 8-11
+  s_756b33c630d33b::t_0f4a07c78c533c 27-34,36-38,41-47
+governance/plans/crypto-money-plane-migration/RECEIPTS.md
+  s_756b33c630d33b::t_2bbcd75a14e63e 1-12
+governance/plans/crypto-money-plane-migration/E0-R1-BRIDGE.md
+  s_756b33c630d33b::t_48fd724cf696d9 2-22
+  s_756b33c630d33b::t_39db8b902f1686 1
+governance/plans/crypto-money-plane-migration/E3-R4-EARN-GAS.md
+  s_756b33c630d33b::t_9594f1e6d15f27 2-21
+  s_756b33c630d33b::t_baef15e1a86f10 1
+governance/plans/crypto-money-plane-migration/E4-R5-TEMPO.md
+  s_756b33c630d33b::t_117cc9c06cbb6b 2-23
+  s_756b33c630d33b::t_311048522ea1b0 1
+governance/plans/crypto-money-plane-migration/E1-R2-PRIVY.md
+  s_756b33c630d33b::t_46f88e16851549 2-23
+  s_756b33c630d33b::t_a254d49cc3a443 1
+governance/plans/crypto-money-plane-migration/NORTH-STAR.md
+  s_756b33c630d33b::t_982421a5463aff 5-51
+  s_756b33c630d33b::t_9b13e1957d050f 2-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d3a5229ac94683d2cd79fd8f6617f1710922c30e",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

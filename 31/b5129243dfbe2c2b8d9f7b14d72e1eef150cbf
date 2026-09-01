@@ -1,0 +1,37 @@
+hooks/tests/parked_tree_read_smoke.sh
+  s_2e30bff6169f7a::t_3811136b25fedd 78-89
+  s_2e30bff6169f7a::t_04af295b315f25 105-110,112-113
+  s_2e30bff6169f7a::t_d875875167d0c8 103-104,111,114-115
+hooks/parked-tree-read-advisory.sh
+  s_2e30bff6169f7a::t_058211f0f18443 28-36
+  s_2e30bff6169f7a::t_bba3b2f3a981d1 103,105-106
+  s_2e30bff6169f7a::t_bedc30fc8d9f64 114-117
+governance/bin/branch-state-scan.mjs
+  s_2e30bff6169f7a::t_287084f0fc3c4e 129-131
+hooks/manifest.json
+  s_7c7e203d305c60::t_0386a88158505d 1080
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "31b5129243dfbe2c2b8d9f7b14d72e1eef150cbf",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

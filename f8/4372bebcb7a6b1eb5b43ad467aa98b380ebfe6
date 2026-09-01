@@ -1,0 +1,24 @@
+governance/bin/taxonomy.mjs
+  s_d9915bbafa9657::t_2747173488d552 1-165
+governance/test/taxonomy.test.mjs
+  s_d9915bbafa9657::t_0dd7ef2271839e 41
+  s_d9915bbafa9657::t_523f4a520850f7 1-40,42-61
+governance/agents/TAXONOMY.yaml
+  s_d9915bbafa9657::t_04d96d6d83e888 1-284
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f84372bebcb7a6b1eb5b43ad467aa98b380ebfe6",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+frameworks/billing/billing-config.schema.json
+  s_19c8e603d8990b::t_48a02e10679fa4 47
+frameworks/pricing/pricing.schema.json
+  s_19c8e603d8990b::t_c011c3d8767979 79
+  s_19c8e603d8990b::t_5f35850b46252b 50
+frameworks/pricing/meters.json
+  s_19c8e603d8990b::t_c500ee364f0d43 95-103
+frameworks/pricing/README.md
+  s_19c8e603d8990b::t_8d958f5371edbf 67
+  s_19c8e603d8990b::t_3e6dfa85472d5e 75-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "2d44026a32704ba9172dc08fa4a1021745713c5c",
+  "prompts": {},
+  "sessions": {
+    "s_19c8e603d8990b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ab7045fc-2546-4259-800b-f8fc2fd6de97",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

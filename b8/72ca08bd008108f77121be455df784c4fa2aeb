@@ -1,0 +1,31 @@
+governance/lib/drill-fixtures-public-github-write-gate.mjs
+  s_53b49eff5b8c5d::t_1d4ef7ce9c5120 39
+  s_53b49eff5b8c5d::t_7caa82206e68bb 2
+  s_53b49eff5b8c5d::t_1cac61a71cfc8d 1,3-7,9-13,15,21-26,31-34,37-38,42-46,51,57-58,62-68,70-73,84-88,90,106-107,113,118,127-128,134-135,141,144,153,162,164,181-183,190-191,199-200,213-214,235,240,246,268-271,278
+  s_53b49eff5b8c5d::t_194057ba04c315 8,14,16-20,27-30,35-36,40-41,47-50,52-56,59-61,69,74-83,89,91-105,108-112,114-117,119-126,129-133,136-140,142-143,145-152,154-161,163,165-180,184-189,192-198,201-212,215-234,236-239,241-245,247-267,272-277,279-285
+governance/lib/drill-registry.mjs
+  s_53b49eff5b8c5d::t_2f9865d9936268 112-122
+  s_53b49eff5b8c5d::t_b4017a5b846b81 243-244
+  s_53b49eff5b8c5d::t_8579fa405a3e3b 53-54
+governance/lib/drill-hook-required.mjs
+  s_53b49eff5b8c5d::t_1de82c18ca6ae7 51-62
+governance/lib/drill-fixtures-public-github-write-gate-mcp.mjs
+  s_53b49eff5b8c5d::t_9f784f7b0f8c60 1-13,24,30
+  s_53b49eff5b8c5d::t_4d9d7a638b204f 14-23,25-29,31-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b872ca08bd008108f77121be455df784c4fa2aeb",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

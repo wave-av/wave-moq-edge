@@ -1,0 +1,23 @@
+governance/bin/workflow-lint-concurrency-scope.mjs
+  s_37d3f61160b2dd::t_61ca5db23609b1 28-55,60-68,70-72,74-76,78-79
+  s_37d3f61160b2dd::t_e786037866b98e 86-91
+  s_37d3f61160b2dd::t_7b60a60c0488b9 18-23
+governance/test/workflow-lint-concurrency-scope.test.mjs
+  s_37d3f61160b2dd::t_3719d180e987f6 90-136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6213f8c2761a188463447459d9ed8608dea6a6f6",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

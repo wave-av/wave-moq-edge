@@ -1,0 +1,22 @@
+governance/lib/work-nodes.mjs
+  s_7c7e203d305c60::t_8ec2c18ec1fb0e 112-154
+  s_7c7e203d305c60::t_49252e8baf0e9c 276-277,279
+governance/test/work-nodes.commented-gate.test.mjs
+  s_7c7e203d305c60::t_d5482a32b26b53 1-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f74ae230624d1c7fcbc01a2a1242ee3c3c92309c",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

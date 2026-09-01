@@ -1,0 +1,26 @@
+governance/bin/readme-drift-fleet.mjs
+  s_e2e3e43d0638c5::t_3d2e11436d5750 31-37,41-42
+  s_e2e3e43d0638c5::t_476063615098bd 49
+  s_e2e3e43d0638c5::t_659a7396fbbb16 94-95
+  s_e2e3e43d0638c5::t_63f3143e8f700b 316-326,333-334
+  s_e2e3e43d0638c5::t_92dcbba1f901ae 96
+  s_e2e3e43d0638c5::t_26e4aba78caf4b 301-305
+governance/bin/drift-parity-vectors.mjs
+  s_e2e3e43d0638c5::t_fa11f9a205ec37 1-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "85e2fe38c8f1a7f87986e00222737d1e763dffdf",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/bin/pagination-completeness.mjs
+  s_bb427c936df473::t_80a5080522b1de 116
+  s_bb427c936df473::t_8d10eb55ad2eeb 54-58,60-65
+  s_bb427c936df473::t_586c3642c17c57 1-53,59,66-82,100-108,113,115,117-196
+  s_bb427c936df473::t_e881e783030a7d 83-99
+  s_bb427c936df473::t_cf30715c34f993 109-112
+  s_bb427c936df473::t_a12ecb13da85c3 114
+governance/bin/struggle-miner/collect-cloudflare.mjs
+  s_bb427c936df473::t_d6c079896ccc89 88-89
+rules/agreement-across-methods-is-worthless-when-they-share-an-input.md
+  s_bb427c936df473::t_a4f4e8f9fa1766 60
+governance/lib/platform-status-probes.mjs
+  s_bb427c936df473::t_7fdcf85801bd04 136-137
+  s_bb427c936df473::t_e79aec8d36390c 169-170
+.github/actions/cll-loop-gates/action.yml
+  s_bb427c936df473::t_c86f4ebea335e7 102-113
+governance/graph.json
+  s_bb427c936df473::t_925ff209c89285 12908-12913
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fe0e6b7a7da9267f8c88332817dfaeb7767863f1",
+  "prompts": {},
+  "sessions": {
+    "s_bb427c936df473": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7b43792-3f0b-445c-9602-06c4ace7ee1e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

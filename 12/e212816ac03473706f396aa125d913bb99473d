@@ -1,0 +1,20 @@
+docs/WAVE-SEC-GATE.md
+  s_85d9e5f433b9aa::t_8883a066752527 42-47
+  s_85d9e5f433b9aa::t_0efda30efe7381 104-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "12e212816ac03473706f396aa125d913bb99473d",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

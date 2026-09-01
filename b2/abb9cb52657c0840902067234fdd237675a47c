@@ -1,0 +1,34 @@
+governance/plans/gates-that-can-see/E1-ESLINT-BLIND.md
+  s_8d26503dfc73f4::t_4554ab49038dc3 1-53
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_8d26503dfc73f4::t_8637ae6d925476 1-88
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  s_8d26503dfc73f4::t_95194859a7f48e 4-6
+  s_8d26503dfc73f4::t_399ac27884329b 1-3,7-50
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  s_8d26503dfc73f4::t_af18d71e020649 1-60
+governance/plans/gates-that-can-see/E4-PARSE-INVARIANT.md
+  s_8d26503dfc73f4::t_696fc5adeb8bc3 1-61
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  s_8d26503dfc73f4::t_78a2f14ed0724d 1-50
+governance/plans/gates-that-can-see/E3-WARNINGS-CONTRADICTION.md
+  s_8d26503dfc73f4::t_053c3d0b95b005 1-46
+governance/plans/gates-that-can-see/E2-DIRECT-PUSH.md
+  s_8d26503dfc73f4::t_061655c68c81db 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b2abb9cb52657c0840902067234fdd237675a47c",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

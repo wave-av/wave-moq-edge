@@ -1,0 +1,24 @@
+scripts/gen-token-budget-baseline.sh
+  s_cf3356a24071e8::t_cf378e5faafbd9 39-55,69,72-77
+scripts/token-budget-check-changed.test.mjs
+  s_cf3356a24071e8::t_d265739732dc8d 124-139,154,156,162-163,165-166,172-174
+  s_cf3356a24071e8::t_dfffafab1e3717 140-153,155,157-161,164,167-171
+scripts/token-budget-check-changed.sh
+  s_cf3356a24071e8::t_e3c7865f8ed59c 52-69,102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ec769859367f4cbaa9dcffd1c9c3994896d81fb9",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}

@@ -1,0 +1,35 @@
+governance/plans/software-factory/E6-FEEDBACK.md
+  s_7ddeb5d251570f::t_48014e8785b84f 9
+  s_7ddeb5d251570f::t_ca251531fb3ba8 4
+bin/factory-feedback.mjs
+  s_7ddeb5d251570f::t_e0518a7aa3967c 1-80
+governance/plans/software-factory/E5-REVIEW.md
+  s_7ddeb5d251570f::t_315f08a5a9ca2a 4
+  s_7ddeb5d251570f::t_59e7888e2d1f69 9
+governance/plans/software-factory/NORTH-STAR.md
+  s_7ddeb5d251570f::t_de4424157710c6 27
+  s_7ddeb5d251570f::t_600dfef3931162 28
+governance/test/factory-review.test.mjs
+  s_7ddeb5d251570f::t_e76d57f5e8138a 1-46
+bin/factory-review.mjs
+  s_7ddeb5d251570f::t_4835d1dac191cc 1-41,44-55
+  s_7ddeb5d251570f::t_2b8647d727ddaa 42-43
+governance/test/factory-feedback.test.mjs
+  s_7ddeb5d251570f::t_91c284246df187 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "986d0569d45337c5baba6e2d88b636b4bb4c09f3",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

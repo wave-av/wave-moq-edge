@@ -1,0 +1,784 @@
+.claude/skills/linkedin-saved-posts/SKILL.md
+  h_67a1b847dc59d6 61-78,82-88
+.entire/.gitignore
+  h_67a1b847dc59d6 1-6
+.entire/redactors/wave.json
+  h_67a1b847dc59d6 1-42
+.entire/settings.json
+  h_67a1b847dc59d6 1-25
+.githooks/pre-push
+  h_67a1b847dc59d6 1-32
+.github/actions/blast-radius-classify/action.yml
+  h_67a1b847dc59d6 9-11,16-18,68-76,89,92-104,106-107,109-110,112-125,127-144,150-151,153-158,165-169,185-191,194
+.github/actions/blast-radius-classify/classify.mjs
+  h_67a1b847dc59d6 32-33,202-217,219-227,230,271,281-282,286-294
+.github/actions/origin-tools-suites/action.yml
+  h_67a1b847dc59d6 12
+.github/dependabot.yml
+  h_67a1b847dc59d6 28
+.github/requirements/semgrep.in
+  h_67a1b847dc59d6 1
+.github/requirements/semgrep.txt
+  h_67a1b847dc59d6 15-16,252-254,374-376,602-604,756-817,823-831,843-890
+.github/wave-sec-semgrep-requirements.txt
+  h_67a1b847dc59d6 2,11,161-333,335-337,412-414,459-461,679-681,687-689,865-926,932-940,946-948,952-999,1017-1019,1030-1032
+.github/workflows/blast-radius.yml
+  h_67a1b847dc59d6 15-18,27-38
+.github/workflows/capnweb-spike.yml
+  h_67a1b847dc59d6 1-153
+.github/workflows/foundation-gate.yml
+  h_67a1b847dc59d6 42
+.github/workflows/governance.yml
+  h_67a1b847dc59d6 147
+.github/workflows/pr-agent.yml
+  h_67a1b847dc59d6 1-23
+.github/workflows/reviewer-alarm.yml
+  h_67a1b847dc59d6 128-150
+.github/workflows/wave-sec-scan.yml
+  h_67a1b847dc59d6 75-78,108
+.gitignore
+  h_67a1b847dc59d6 16-21,204-208,210-215
+README.md
+  h_67a1b847dc59d6 95,97-100
+bin/apply-invariant-flag.sh
+  h_67a1b847dc59d6 1-31
+bin/cost-ceiling.mjs
+  h_67a1b847dc59d6 1-241
+bin/cost-ceiling.test.mjs
+  h_67a1b847dc59d6 1-227
+bin/fixtures/telemetry-fixture.jsonl
+  h_67a1b847dc59d6 1-18
+bin/fleet-log.mjs
+  h_67a1b847dc59d6 1-124
+bin/policy-recommend.mjs
+  h_67a1b847dc59d6 1-223
+bin/shadow-lane.mjs
+  h_67a1b847dc59d6 1-279
+bin/shadow-lane.test.mjs
+  h_67a1b847dc59d6 1-142
+bin/start-here.mjs
+  h_67a1b847dc59d6 1-385
+bin/telemetry-patterns.mjs
+  h_67a1b847dc59d6 1-221
+bin/telemetry-patterns.test.mjs
+  h_67a1b847dc59d6 1-107
+bin/trust-gates.mjs
+  h_67a1b847dc59d6 1-228
+bin/trust-gates.test.mjs
+  h_67a1b847dc59d6 1-196
+bin/trust-ladder.mjs
+  h_67a1b847dc59d6 1-239
+bin/trust-ladder.test.mjs
+  h_67a1b847dc59d6 1-292
+bin/worktree-reaper.mjs
+  h_67a1b847dc59d6 1-218
+docs/AGENT-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 92-145
+docs/AUTONOMY-SUBSTRATE.md
+  h_67a1b847dc59d6 1-109
+fleet-autonomy/INVARIANT.md
+  h_67a1b847dc59d6 1-17
+fleet-autonomy/ceilings.json
+  h_67a1b847dc59d6 1-5
+governance/DANGLING-REFS-BASELINE.json
+  h_67a1b847dc59d6 19-20,22,26,155-159
+governance/ENFORCEMENT-COVERAGE.md
+  h_67a1b847dc59d6 456
+governance/automation-registry/jobs/governance.yaml
+  h_67a1b847dc59d6 244-254,260-266,278-279,289-290,300-301,311-312,322-323,325-362
+governance/automation-registry/jobs/monitoring.yaml
+  h_67a1b847dc59d6 82-106
+governance/bin/capability-dispatch.mjs
+  h_67a1b847dc59d6 20,28
+governance/bin/capability-eval.mjs
+  h_67a1b847dc59d6 14,18,29,37-52
+governance/bin/capability-leverage.mjs
+  h_67a1b847dc59d6 18,28
+governance/bin/capability-search.mjs
+  h_67a1b847dc59d6 20
+governance/bin/capability-surface.mjs
+  h_67a1b847dc59d6 16,21-23
+governance/bin/check-gates.mjs
+  h_67a1b847dc59d6 22-23,25-26
+governance/bin/check.mjs
+  h_67a1b847dc59d6 315-317
+governance/bin/cost-to-serve-allocate.mjs
+  h_67a1b847dc59d6 1-393
+governance/bin/fleet/lib/merge-policy-classify.mjs
+  h_67a1b847dc59d6 1-170
+governance/bin/fleet/merge-policy-conformance.mjs
+  h_67a1b847dc59d6 1-184
+governance/bin/nulltest.mjs
+  h_67a1b847dc59d6 78,112-115,124,138
+governance/bin/plan-lint.mjs
+  h_67a1b847dc59d6 29,312-314
+governance/bin/pr-create.mjs
+  h_67a1b847dc59d6 92-97
+governance/capability/eval/intents.jsonl
+  h_67a1b847dc59d6 41-50
+governance/capability/tier-manifest.json
+  h_67a1b847dc59d6 46
+governance/gam-port-kit/manifest.json
+  h_67a1b847dc59d6 26
+governance/lib/detect-node.mjs
+  h_67a1b847dc59d6 1-54
+governance/lib/merge-authority.mjs
+  h_67a1b847dc59d6 10-11,19-23
+governance/lib/nulltest-derive.mjs
+  h_67a1b847dc59d6 53-61,87-90,93
+governance/lib/nulltest-run.mjs
+  h_67a1b847dc59d6 16,72-111,191-197
+governance/lib/pr-create-guards.mjs
+  h_67a1b847dc59d6 43-46
+governance/lib/review-classify.mjs
+  h_67a1b847dc59d6 1-132
+governance/lib/review-liveness.mjs
+  h_67a1b847dc59d6 29-31,50,56,61-65,136-141
+governance/lib/rl-corpus-cross-field.mjs
+  h_67a1b847dc59d6 1-156
+governance/lib/rl-corpus-detectors.mjs
+  h_67a1b847dc59d6 169-175
+governance/lib/rl-corpus-write.mjs
+  h_67a1b847dc59d6 40,42-44,151,155-156,159,183,190
+governance/lib/stdout-flush.mjs
+  h_67a1b847dc59d6 69-70,77,81,89-90,98,104,108
+governance/lib/stray-work-node-sweep.mjs
+  h_67a1b847dc59d6 1-68
+governance/plans/agentic-wave/NORTH-STAR.md
+  h_67a1b847dc59d6 138-143,171-225
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  h_67a1b847dc59d6 188-203
+governance/plans/capability-registry/NORTH-STAR.md
+  h_67a1b847dc59d6 79-80
+governance/plans/content-engine/NORTH-STAR.md
+  h_67a1b847dc59d6 42-65
+governance/plans/cost-to-serve/20260813000000_cost_ledger_attribution.sql
+  h_67a1b847dc59d6 1-84
+governance/plans/cost-to-serve/E0-JOIN-POLICY.md
+  h_67a1b847dc59d6 4-5,10-20,23-25,31-35,37-42,44-49,53-75,81-84
+governance/plans/cost-to-serve/E1-ALLOCATION-ENGINE.md
+  h_67a1b847dc59d6 4-5,11-18,22,25-117,122-125
+governance/plans/cost-to-serve/E4-CONSUMER-SURFACE.md
+  h_67a1b847dc59d6 4-7,12-66,72-74
+governance/plans/cost-to-serve/RECEIPTS.md
+  h_67a1b847dc59d6 110-134,137-141
+governance/plans/entire-integration/E0-BEACHHEAD.md
+  h_67a1b847dc59d6 1-41
+governance/plans/entire-integration/E1-GUARDRAILS.md
+  h_67a1b847dc59d6 1-56
+governance/plans/entire-integration/E2-FIRST-WAVE.md
+  h_67a1b847dc59d6 1-40
+governance/plans/entire-integration/E3-RITUALS.md
+  h_67a1b847dc59d6 1-55
+governance/plans/entire-integration/E4-GATES.md
+  h_67a1b847dc59d6 1-43
+governance/plans/entire-integration/E5-FLEET.md
+  h_67a1b847dc59d6 1-41
+governance/plans/entire-integration/E5-rollup-snapshot.json
+  h_67a1b847dc59d6 1-183
+governance/plans/entire-integration/E6-SURFACES.md
+  h_67a1b847dc59d6 1-43
+governance/plans/entire-integration/NORTH-STAR.md
+  h_67a1b847dc59d6 1-60
+governance/plans/entire-integration/RECEIPTS.md
+  h_67a1b847dc59d6 1-272
+governance/plans/fireworks-integration/E0-SMOKE.md
+  h_67a1b847dc59d6 1-40
+governance/plans/fireworks-integration/E1-PROVIDER.md
+  h_67a1b847dc59d6 1-26
+governance/plans/fireworks-integration/E2-ROUTING.md
+  h_67a1b847dc59d6 1-39
+governance/plans/fireworks-integration/E3-BATCH.md
+  h_67a1b847dc59d6 1-26
+governance/plans/fireworks-integration/E4-OWN-MODEL.md
+  h_67a1b847dc59d6 1-46
+governance/plans/fireworks-integration/E5-PRODUCT-GATE.md
+  h_67a1b847dc59d6 1-28
+governance/plans/fireworks-integration/FIREWORKS-SURFACE.md
+  h_67a1b847dc59d6 1-249
+governance/plans/fireworks-integration/NORTH-STAR.md
+  h_67a1b847dc59d6 1-29
+governance/plans/fireworks-integration/README.md
+  h_67a1b847dc59d6 1-66
+governance/plans/fireworks-integration/RECEIPTS.md
+  h_67a1b847dc59d6 1-44
+governance/plans/fleet-autonomy/E0-SUBSTRATE.md
+  h_67a1b847dc59d6 1-23
+governance/plans/fleet-autonomy/E1-ORIENTATION-ANCHOR.md
+  h_67a1b847dc59d6 1-169
+governance/plans/fleet-autonomy/E1-START-HERE.md
+  h_67a1b847dc59d6 1-20
+governance/plans/fleet-autonomy/E2-TELEMETRY-PATTERNS.md
+  h_67a1b847dc59d6 1-62
+governance/plans/fleet-autonomy/E3-SHADOW-LANE.md
+  h_67a1b847dc59d6 1-68
+governance/plans/fleet-autonomy/E4-TRUSTED-LANE-PROMOTION.md
+  h_67a1b847dc59d6 1-53
+governance/plans/fleet-autonomy/E5-HORIZON.md
+  h_67a1b847dc59d6 1-38
+governance/plans/fleet-autonomy/NORTH-STAR.md
+  h_67a1b847dc59d6 1-50
+governance/plans/monetization-gateway/NORTH-STAR.md
+  h_67a1b847dc59d6 135-156
+governance/plans/own-model-program/E0-E0-FOUNDATION.md
+  h_67a1b847dc59d6 1-25
+governance/plans/own-model-program/E1-E1-TRAIN.md
+  h_67a1b847dc59d6 1-27
+governance/plans/own-model-program/E2-E2-SERVE.md
+  h_67a1b847dc59d6 1-28
+governance/plans/own-model-program/E3-E3-EVAL-GATE.md
+  h_67a1b847dc59d6 1-28
+governance/plans/own-model-program/E4-E4-ECONOMY.md
+  h_67a1b847dc59d6 1-26
+governance/plans/own-model-program/E5-E5-PRODUCTIZE.md
+  h_67a1b847dc59d6 1-25
+governance/plans/own-model-program/E6-E6-LOCAL-POWER.md
+  h_67a1b847dc59d6 1-24
+governance/plans/own-model-program/NORTH-STAR.md
+  h_67a1b847dc59d6 1-58
+governance/plans/own-model-program/creative/SYNTHESIS.md
+  h_67a1b847dc59d6 1-170
+governance/plans/own-model-program/creative/economist.md
+  h_67a1b847dc59d6 1-347
+governance/plans/own-model-program/creative/pragmatist.md
+  h_67a1b847dc59d6 1-101
+governance/plans/own-model-program/creative/redteam.md
+  h_67a1b847dc59d6 1-108
+governance/plans/own-model-program/creative/visionary.md
+  h_67a1b847dc59d6 1-90
+governance/plans/own-model-program/creative/wildcard.md
+  h_67a1b847dc59d6 1-87
+governance/plans/receipts/e2-render-roundtrip-2026-08-14.md
+  h_67a1b847dc59d6 1-80
+governance/plans/sovereign-capacity/E0-RESTORE.md
+  h_67a1b847dc59d6 4
+governance/plans/sovereign-capacity/E2-ENVELOPE.md
+  h_67a1b847dc59d6 4,62-147
+governance/plans/sovereign-capacity/E3-REFRESH.md
+  h_67a1b847dc59d6 4,135-246
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  h_67a1b847dc59d6 4,102-226
+governance/plans/sovereign-capacity/FLEET-NOT-STUDIO.md
+  h_67a1b847dc59d6 1-211
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  h_67a1b847dc59d6 83-94
+governance/plans/sovereign-capacity/RECEIPTS.md
+  h_67a1b847dc59d6 84-141,158-234
+governance/plans/upstash-org-integration/BUILD-VS-BUY.md
+  h_67a1b847dc59d6 4-20
+governance/plans/upstash-org-integration/E0-RECONCILE.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,21-24,26,28-30,35
+governance/plans/upstash-org-integration/E1-ACTIVATE-REDIS-VECTOR.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,19,21-24,26,28-30,34-35
+governance/plans/upstash-org-integration/E2-QSTASH-GOLIVE.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,19,21-24,26,28-30,34-35
+governance/plans/upstash-org-integration/E3-RATELIMIT-EDGE.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,19,21-23,27-28
+governance/plans/upstash-org-integration/E4-WORKFLOW-EVAL.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,19,21-23,27-28
+governance/plans/upstash-org-integration/E5-DECIDE.md
+  h_67a1b847dc59d6 4,6,8-9,11-24
+governance/plans/upstash-org-integration/E5-UNEXPLORED-DECIDE.md
+  h_67a1b847dc59d6 2,4,6-9
+governance/plans/upstash-org-integration/E6-OPERATIONALIZE.md
+  h_67a1b847dc59d6 2,4,6-9,13,15-17,19,21-23,25,27-29,33-34
+governance/plans/upstash-org-integration/NORTH-STAR.md
+  h_67a1b847dc59d6 3,5,7-10,24-25,32-65,69
+governance/plans/upstash-org-integration/receipts/org-retire-2026-08-13.md
+  h_67a1b847dc59d6 1-30
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  h_67a1b847dc59d6 389-399
+governance/plans/wave-golive/E2-PRODUCT.md
+  h_67a1b847dc59d6 4
+governance/plans/wave-golive/E5-SAFETY.md
+  h_67a1b847dc59d6 11-30
+governance/plans/wave-rl-corpus/E5-ADAPTIVE-CURRICULUM.md
+  h_67a1b847dc59d6 1-45
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  h_67a1b847dc59d6 49-91,113-124
+governance/plans/wave-secdev/NORTH-STAR.md
+  h_67a1b847dc59d6 198-208
+governance/plans/wave-usage-lakehouse/NORTH-STAR.md
+  h_67a1b847dc59d6 100-122
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 55,1277
+governance/research/creator-intelligence/APPLICATION-PROGRAM.md
+  h_67a1b847dc59d6 1-68
+governance/research/creator-intelligence/FIELD-MAP.md
+  h_67a1b847dc59d6 1-70
+governance/research/creator-intelligence/PILOT-OFFER.md
+  h_67a1b847dc59d6 48-56
+governance/research/creator-intelligence/findings/cw-2927-merge-blocked.md
+  h_67a1b847dc59d6 1-26
+governance/research/creator-intelligence/findings/wave-gateway-921-merge-blocked.md
+  h_67a1b847dc59d6 1-32
+governance/research/creator-intelligence/founders-inference-school-2026-08-14.md
+  h_67a1b847dc59d6 1-246
+governance/research/engineering-canon/origin-method.md
+  h_67a1b847dc59d6 176-194,294-354,373-664
+governance/research/thinker-canon/CANON-V2-EXPANSION.md
+  h_67a1b847dc59d6 1-261
+governance/sources/lawbook.json
+  h_67a1b847dc59d6 2,5-6,28
+governance/spikes/capnweb-spoke/.gitignore
+  h_67a1b847dc59d6 1-4
+governance/spikes/capnweb-spoke/README.md
+  h_67a1b847dc59d6 1-487
+governance/spikes/capnweb-spoke/package-lock.json
+  h_67a1b847dc59d6 1-1697
+governance/spikes/capnweb-spoke/package.json
+  h_67a1b847dc59d6 1-27
+governance/spikes/capnweb-spoke/src/agent-client.ts
+  h_67a1b847dc59d6 1-58
+governance/spikes/capnweb-spoke/src/meter.ts
+  h_67a1b847dc59d6 1-140
+governance/spikes/capnweb-spoke/src/rpc.ts
+  h_67a1b847dc59d6 1-135
+governance/spikes/capnweb-spoke/src/scopes.ts
+  h_67a1b847dc59d6 1-159
+governance/spikes/capnweb-spoke/src/types.ts
+  h_67a1b847dc59d6 1-58
+governance/spikes/capnweb-spoke/src/worker.ts
+  h_67a1b847dc59d6 1-260
+governance/spikes/capnweb-spoke/test/negproof.mjs
+  h_67a1b847dc59d6 1-95
+governance/spikes/capnweb-spoke/test/negproof.ts
+  h_67a1b847dc59d6 1-33
+governance/spikes/capnweb-spoke/test/run.mjs
+  h_67a1b847dc59d6 1-138
+governance/spikes/capnweb-spoke/test/spike.test.mjs
+  h_67a1b847dc59d6 1-371
+governance/spikes/capnweb-spoke/tsconfig.json
+  h_67a1b847dc59d6 1-26
+governance/spikes/capnweb-spoke/vendor/capnweb-validate-0.2.2.capnweb.d.mts
+  h_67a1b847dc59d6 1-13
+governance/spikes/capnweb-spoke/vendor/capnweb-validate-0.2.2.contract.d.mts
+  h_67a1b847dc59d6 1-17
+governance/spikes/capnweb-spoke/wrangler.jsonc
+  h_67a1b847dc59d6 1-26
+governance/state/derived-doc-exemptions.json
+  h_67a1b847dc59d6 1-14
+governance/state/reviewer-liveness.json
+  h_67a1b847dc59d6 2-3,8,16,24,32,39-40,43,45,47-48,55-56,59,61,63-64,69,71-72,77-93,95-96,101,103-104,109,112
+governance/test/blast-radius-file-source.test.mjs
+  h_67a1b847dc59d6 1-344
+governance/test/capability-router.test.mjs
+  h_67a1b847dc59d6 7,46-77
+governance/test/detect-node.test.mjs
+  h_67a1b847dc59d6 1-102
+governance/test/hookcli-package-boundary.test.mjs
+  h_67a1b847dc59d6 131-134
+governance/test/lawbook-json-canonical.test.mjs
+  h_67a1b847dc59d6 1-36
+governance/test/lib/workflow-invocation.mjs
+  h_67a1b847dc59d6 119-144
+governance/test/linkedin-saved-posts.test.mjs
+  h_67a1b847dc59d6 17,200-308
+governance/test/mcp-server-paths.test.mjs
+  h_67a1b847dc59d6 1-90
+governance/test/merge-policy-classify.test.mjs
+  h_67a1b847dc59d6 1-119
+governance/test/no-dark-test-dir.test.mjs
+  h_67a1b847dc59d6 34,231-234,279-295
+governance/test/nulltest-derive.test.mjs
+  h_67a1b847dc59d6 304-328
+governance/test/plan-lint.test.mjs
+  h_67a1b847dc59d6 215-227
+governance/test/pr-create.test.mjs
+  h_67a1b847dc59d6 285
+governance/test/reviewer-scoreboard-taint-aggregate.test.mjs
+  h_67a1b847dc59d6 1-145
+governance/test/reviewer-scoreboard.test.mjs
+  h_67a1b847dc59d6 217-219
+governance/test/rl-corpus-cross-field.test.mjs
+  h_67a1b847dc59d6 1-198
+governance/test/rl-corpus-detectors.test.mjs
+  h_67a1b847dc59d6 76-96
+governance/test/secret-designator-parity.test.mjs
+  h_67a1b847dc59d6 1-97
+governance/test/secret-name-conformance.test.mjs
+  h_67a1b847dc59d6 1-131
+governance/tools/backfill-table/manifests/capability-registry.json
+  h_67a1b847dc59d6 1-45
+governance/tools/coherence-budget/bin/coherence-budget.mjs
+  h_67a1b847dc59d6 52
+governance/tools/coherence-budget/budget.schema.json
+  h_67a1b847dc59d6 6-10,15-19
+governance/tools/coherence-budget/lib/index.mjs
+  h_67a1b847dc59d6 88-89
+governance/tools/coherence-budget/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-59
+governance/tools/competence-without-comprehension/README.md
+  h_67a1b847dc59d6 1-21
+governance/tools/competence-without-comprehension/bin/competence-check.mjs
+  h_67a1b847dc59d6 1-31
+governance/tools/competence-without-comprehension/competence.schema.json
+  h_67a1b847dc59d6 1-38
+governance/tools/competence-without-comprehension/examples/competence-example.json
+  h_67a1b847dc59d6 1-22
+governance/tools/competence-without-comprehension/lib/index.mjs
+  h_67a1b847dc59d6 1-68
+governance/tools/competence-without-comprehension/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-30
+governance/tools/competence-without-comprehension/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/competence-without-comprehension/tests/competence.test.mjs
+  h_67a1b847dc59d6 1-54
+governance/tools/confluence/README.md
+  h_67a1b847dc59d6 1-30
+governance/tools/confluence/bin/confluence-check.mjs
+  h_67a1b847dc59d6 1-37
+governance/tools/confluence/confluence.schema.json
+  h_67a1b847dc59d6 1-27
+governance/tools/confluence/examples/by-day-aggregate.json
+  h_67a1b847dc59d6 1-7
+governance/tools/confluence/manifests/wave-usage-lakehouse.json
+  h_67a1b847dc59d6 1-25
+governance/tools/cpa-scaffolding/manifests/content-engine.json
+  h_67a1b847dc59d6 1-16
+governance/tools/cpa-scaffolding/manifests/methylation-attestation.json
+  h_67a1b847dc59d6 1-7
+governance/tools/cpa-scaffolding/manifests/usage-meter.json
+  h_67a1b847dc59d6 1-7
+governance/tools/data-gravity-lint/bin/gravity-lint.mjs
+  h_67a1b847dc59d6 53
+governance/tools/data-gravity-lint/format.schema.json
+  h_67a1b847dc59d6 6-10,15-19
+governance/tools/data-gravity-lint/lib/index.mjs
+  h_67a1b847dc59d6 122-123
+governance/tools/data-gravity-lint/manifests/lakehouse.json
+  h_67a1b847dc59d6 1-51
+governance/tools/derivable-correctness/manifests/canon.json
+  h_67a1b847dc59d6 1-233
+governance/tools/effect-lens/probes/run-probe.mjs
+  h_67a1b847dc59d6 1-63
+governance/tools/embedding-compression/audit.schema.json
+  h_67a1b847dc59d6 6-10,15-19
+governance/tools/embedding-compression/bin/embed-audit.mjs
+  h_67a1b847dc59d6 53
+governance/tools/embedding-compression/lib/index.mjs
+  h_67a1b847dc59d6 178-179
+governance/tools/embedding-compression/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-27
+governance/tools/equivalence-checker/manifests/canon.json
+  h_67a1b847dc59d6 1-42
+governance/tools/equivalence-checker/manifests/composite-contract.json
+  h_67a1b847dc59d6 1-12
+governance/tools/equivalence-checker/manifests/composite-results.json
+  h_67a1b847dc59d6 1-7
+governance/tools/equivalence-checker/manifests/container-contract.json
+  h_67a1b847dc59d6 1-12
+governance/tools/equivalence-checker/manifests/container-results.json
+  h_67a1b847dc59d6 1-7
+governance/tools/equivalence-checker/manifests/mock-contract.json
+  h_67a1b847dc59d6 1-12
+governance/tools/equivalence-checker/manifests/mock-results.json
+  h_67a1b847dc59d6 1-7
+governance/tools/explain-to-understand/README.md
+  h_67a1b847dc59d6 1-17
+governance/tools/explain-to-understand/bin/explain-to-understand-check.mjs
+  h_67a1b847dc59d6 1-31
+governance/tools/explain-to-understand/examples/explain-to-understand-example.json
+  h_67a1b847dc59d6 1-16
+governance/tools/explain-to-understand/explain-to-understand.schema.json
+  h_67a1b847dc59d6 1-24
+governance/tools/explain-to-understand/lib/index.mjs
+  h_67a1b847dc59d6 1-47
+governance/tools/explain-to-understand/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-16
+governance/tools/explain-to-understand/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/explain-to-understand/tests/explain-to-understand.test.mjs
+  h_67a1b847dc59d6 1-41
+governance/tools/explanation-gate/manifests/laws/achievable-distribution.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/distill-delete-grow.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/equivalence-abstraction.json
+  h_67a1b847dc59d6 1-17
+governance/tools/explanation-gate/manifests/laws/genome-epigenome.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/inference-by-effects.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/noether-conservation.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/origin-of-thought.json
+  h_67a1b847dc59d6 1-17
+governance/tools/explanation-gate/manifests/laws/origin-to-invariant.json
+  h_67a1b847dc59d6 1-27
+governance/tools/explanation-gate/manifests/laws/sage-not-magician.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/storage-routing.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/text-as-presence.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/universal-representation.json
+  h_67a1b847dc59d6 1-22
+governance/tools/explanation-gate/manifests/laws/we-are-the-first-pilot.json
+  h_67a1b847dc59d6 1-22
+governance/tools/falsifiability/README.md
+  h_67a1b847dc59d6 1-16
+governance/tools/falsifiability/bin/falsifiability-check.mjs
+  h_67a1b847dc59d6 1-31
+governance/tools/falsifiability/examples/falsifiability-example.json
+  h_67a1b847dc59d6 1-19
+governance/tools/falsifiability/falsifiability.schema.json
+  h_67a1b847dc59d6 1-36
+governance/tools/falsifiability/lib/index.mjs
+  h_67a1b847dc59d6 1-58
+governance/tools/falsifiability/manifests/wave-reinforcement-learning.json
+  h_67a1b847dc59d6 1-19
+governance/tools/falsifiability/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/falsifiability/tests/falsifiability.test.mjs
+  h_67a1b847dc59d6 1-41
+governance/tools/fitness-landscape/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-63
+governance/tools/hierarchical-locality/manifests/lakehouse.json
+  h_67a1b847dc59d6 1-31
+governance/tools/internal-affairs/audit.schema.json
+  h_67a1b847dc59d6 6-10,16-21
+governance/tools/internal-affairs/lib/index.mjs
+  h_67a1b847dc59d6 17-20,23-25,120
+governance/tools/internal-affairs/manifests/wave-sec.json
+  h_67a1b847dc59d6 1-41
+governance/tools/layered-error-budget/bin/error-budget.mjs
+  h_67a1b847dc59d6 56
+governance/tools/layered-error-budget/budget.schema.json
+  h_67a1b847dc59d6 6-10,15-19
+governance/tools/layered-error-budget/lib/index.mjs
+  h_67a1b847dc59d6 140-141
+governance/tools/layered-error-budget/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-49
+governance/tools/learnable-systems/manifests/content-engine.json
+  h_67a1b847dc59d6 1-100
+governance/tools/load-shedder/manifests/gateway.json
+  h_67a1b847dc59d6 1-82
+governance/tools/mastery-path/manifests/capability-registry.json
+  h_67a1b847dc59d6 1-62
+governance/tools/mathematics-as-art/README.md
+  h_67a1b847dc59d6 1-18
+governance/tools/mathematics-as-art/bin/mathematics-as-art-check.mjs
+  h_67a1b847dc59d6 1-31
+governance/tools/mathematics-as-art/examples/mathematics-as-art-example.json
+  h_67a1b847dc59d6 1-20
+governance/tools/mathematics-as-art/lib/index.mjs
+  h_67a1b847dc59d6 1-53
+governance/tools/mathematics-as-art/manifests/wave-usage-lakehouse.json
+  h_67a1b847dc59d6 1-24
+governance/tools/mathematics-as-art/mathematics-as-art.schema.json
+  h_67a1b847dc59d6 1-26
+governance/tools/mathematics-as-art/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/mathematics-as-art/tests/mathematics-as-art.test.mjs
+  h_67a1b847dc59d6 1-47
+governance/tools/meta-sieve/README.md
+  h_67a1b847dc59d6 1-20
+governance/tools/meta-sieve/bin/meta-sieve.mjs
+  h_67a1b847dc59d6 1-90
+governance/tools/meta-sieve/lib/index.mjs
+  h_67a1b847dc59d6 1-215
+governance/tools/meta-sieve/manifests/governance.json
+  h_67a1b847dc59d6 1-14
+governance/tools/meta-sieve/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/meta-sieve/tests/meta-sieve.test.mjs
+  h_67a1b847dc59d6 1-35
+governance/tools/origin-trail/manifests/governance.json
+  h_67a1b847dc59d6 1-72
+governance/tools/plan-search-emit/manifests/agentic-wave.bad.json
+  h_67a1b847dc59d6 1-13
+governance/tools/plan-search-emit/manifests/agentic-wave.good.json
+  h_67a1b847dc59d6 1-33
+governance/tools/plan-search-emit/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-7
+governance/tools/presence-audit/examples/governance-values.json
+  h_67a1b847dc59d6 5-7,10-12,15-17,21-24
+governance/tools/presence-audit/tests/presence-audit.test.mjs
+  h_67a1b847dc59d6 18,242-244
+governance/tools/process-over-output/bin/process-check.mjs
+  h_67a1b847dc59d6 1-42
+governance/tools/process-over-output/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-40
+governance/tools/rca-triage/bin/rca-triage.mjs
+  h_67a1b847dc59d6 75
+governance/tools/rca-triage/manifests/runbooks.json
+  h_67a1b847dc59d6 1-35
+governance/tools/search-time/README.md
+  h_67a1b847dc59d6 1-25
+governance/tools/search-time/bin/search-time-check.mjs
+  h_67a1b847dc59d6 1-37
+governance/tools/search-time/examples/agentic-wave.json
+  h_67a1b847dc59d6 1-30
+governance/tools/search-time/lib/index.mjs
+  h_67a1b847dc59d6 1-50
+governance/tools/search-time/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-31
+governance/tools/search-time/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/search-time/search-time.schema.json
+  h_67a1b847dc59d6 1-46
+governance/tools/search-time/tests/search-time.test.mjs
+  h_67a1b847dc59d6 1-27
+governance/tools/self-diagnose/bin/self-diagnose.mjs
+  h_67a1b847dc59d6 13,17
+governance/tools/self-diagnose/manifests/governance.json
+  h_67a1b847dc59d6 1-91
+governance/tools/self-diagnose/manifests/scenario.json
+  h_67a1b847dc59d6 1-72
+governance/tools/smart-error/bin/smart-error.mjs
+  h_67a1b847dc59d6 13
+governance/tools/smart-error/manifests/do-handlers.json
+  h_67a1b847dc59d6 1-100
+governance/tools/smart-recycling/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-31
+governance/tools/state-layer/manifests/lakehouse.json
+  h_67a1b847dc59d6 1-114
+governance/tools/storage-decision/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-80
+governance/tools/storage-router/bin/storage-router.mjs
+  h_67a1b847dc59d6 52
+governance/tools/storage-router/lib/index.mjs
+  h_67a1b847dc59d6 145-146
+governance/tools/storage-router/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-121
+governance/tools/storage-router/routing.schema.json
+  h_67a1b847dc59d6 6-10,15-19
+governance/tools/substitution/README.md
+  h_67a1b847dc59d6 1-13
+governance/tools/substitution/bin/substitution-check.mjs
+  h_67a1b847dc59d6 1-43
+governance/tools/substitution/examples/mock-contract.json
+  h_67a1b847dc59d6 1-16
+governance/tools/substitution/lib/index.mjs
+  h_67a1b847dc59d6 1-57
+governance/tools/substitution/manifests/engineering-canon.json
+  h_67a1b847dc59d6 1-41
+governance/tools/substitution/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/substitution/substitution.schema.json
+  h_67a1b847dc59d6 1-25
+governance/tools/substitution/tests/substitution.test.mjs
+  h_67a1b847dc59d6 1-24
+governance/tools/teacher-engine/manifests/content-engine.json
+  h_67a1b847dc59d6 1-174
+governance/tools/time-lapse-store/bin/timelapse.mjs
+  h_67a1b847dc59d6 61
+governance/tools/time-lapse-store/manifests/rl-corpus.json
+  h_67a1b847dc59d6 1-33
+governance/tools/time-lapse-store/stores/curriculum-training-state.json
+  h_67a1b847dc59d6 1-127
+governance/tools/time-lapse-store/stores/lawbook.json
+  h_67a1b847dc59d6 1-96
+governance/tools/trust-runtime/bin/trust-runtime.mjs
+  h_67a1b847dc59d6 68
+governance/tools/trust-runtime/manifests/agentic-wave.json
+  h_67a1b847dc59d6 1-114
+governance/tools/uncertain-objective/README.md
+  h_67a1b847dc59d6 1-17
+governance/tools/uncertain-objective/bin/uncertain-objective-check.mjs
+  h_67a1b847dc59d6 1-31
+governance/tools/uncertain-objective/examples/uncertain-objective-example.json
+  h_67a1b847dc59d6 1-18
+governance/tools/uncertain-objective/lib/index.mjs
+  h_67a1b847dc59d6 1-50
+governance/tools/uncertain-objective/manifests/wave-reinforcement-learning.json
+  h_67a1b847dc59d6 1-22
+governance/tools/uncertain-objective/package.json
+  h_67a1b847dc59d6 1-8
+governance/tools/uncertain-objective/tests/uncertain-objective.test.mjs
+  h_67a1b847dc59d6 1-44
+governance/tools/uncertain-objective/uncertain-objective.schema.json
+  h_67a1b847dc59d6 1-25
+hookcli/lib/board-redact.mjs
+  h_67a1b847dc59d6 17-45
+hookcli/lib/secret-names.mjs
+  h_67a1b847dc59d6 1-60
+hookcli/lib/t3-merge-authority-visibility.mjs
+  h_67a1b847dc59d6 1-65
+hookcli/lib/t3-merge-authority.mjs
+  h_67a1b847dc59d6 52,54-55,57,59-61,129-158,160-186
+hookcli/lib/t3-sink.mjs
+  h_67a1b847dc59d6 13-24
+hookcli/rules/rules.json
+  h_67a1b847dc59d6 7,21,26,44,57,62,73,76,87,106,119,124,142,146,156,160-164,177,181-184,198,202-205,219,223-227,240,244,257,261,303-341,345,355,383,396,535,547
+hookcli/tests/plan-receipt.sh
+  h_67a1b847dc59d6 92-94
+hookcli/tests/require.sh
+  h_67a1b847dc59d6 75-77
+hooks/hooklib/attester-scope-exonerate.sh
+  h_67a1b847dc59d6 104-111,236-237
+hooks/hooklib/attester-scope-headwalk.sh
+  h_67a1b847dc59d6 2-3
+hooks/hooklib/attester-scope-writetest.sh
+  h_67a1b847dc59d6 1-31
+hooks/hooklib/hook.sh
+  h_67a1b847dc59d6 20-21,48,59
+hooks/hooklib/parse.py
+  h_67a1b847dc59d6 26
+hooks/intent-ledger-capture.sh
+  h_67a1b847dc59d6 68-185
+hooks/lib/gh_write_scan.py
+  h_67a1b847dc59d6 233-243
+hooks/manifest.json
+  h_67a1b847dc59d6 777,1220,1225-1227,1236-1247,1723-1743
+hooks/parked-tree-read-advisory.sh
+  h_67a1b847dc59d6 3-4,25-33,50-65,73-92,94-103,106-124,132,178,189-190
+hooks/serena-project-observer.sh
+  h_67a1b847dc59d6 1-76
+hooks/tests/intent-ledger-backup.test.sh
+  h_67a1b847dc59d6 1-314
+hooks/tests/latency-harness.sh
+  h_67a1b847dc59d6 47,53-82,100
+hooks/tests/parked_tree_read_smoke.sh
+  h_67a1b847dc59d6 52-67,202-278
+hooks/tests/public-github-write-gate-verdict.test.sh
+  h_67a1b847dc59d6 96-115
+hooks/tests/sync-settings-perms.test.sh
+  h_67a1b847dc59d6 1-144
+mcp/mcp.base.json
+  h_67a1b847dc59d6 6
+memory/MEMORY.md
+  h_67a1b847dc59d6 21-24,26-27
+memory/autonomy-substrate.md
+  h_67a1b847dc59d6 1-49
+memory/cost-tax-per-agent-task.md
+  h_67a1b847dc59d6 1-57
+memory/entire-integration.md
+  h_67a1b847dc59d6 1-37
+memory/fleet.jsonl
+  h_67a1b847dc59d6 1
+memory/priorities.md
+  h_67a1b847dc59d6 1-16
+memory/thinker-canon-v2.md
+  h_67a1b847dc59d6 1-24
+runbooks/lib/authoring.mjs
+  h_67a1b847dc59d6 56-69
+scripts/lib/linkedin/parse.mjs
+  h_67a1b847dc59d6 1-172
+scripts/lib/linkedin/paths.mjs
+  h_67a1b847dc59d6 1-56
+scripts/lib/linkedin/redact.mjs
+  h_67a1b847dc59d6 1-31
+scripts/linkedin-saved-posts.mjs
+  h_67a1b847dc59d6 39-44,51-52,57-65,185-188,190-207,209-212
+scripts/node.sh
+  h_67a1b847dc59d6 4-12
+settings/settings.base.json
+  h_67a1b847dc59d6 71-81,320-324,470-480,1172
+sync.sh
+  h_67a1b847dc59d6 199-232
+tools/entire-portal.mjs
+  h_67a1b847dc59d6 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0e12b4918cd3ff2886f4adfe7dee5bec2391402e",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

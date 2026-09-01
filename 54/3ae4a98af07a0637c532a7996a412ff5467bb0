@@ -1,0 +1,30 @@
+governance/bin/check.mjs
+  s_4789257a0a23ed::t_76ef4ca2f93fd8 45
+  s_4789257a0a23ed::t_263815e752f2a3 250-251,263-276
+  s_4789257a0a23ed::t_d3cac1cdd55806 277-278
+governance/bin/conservation-lint.mjs
+  s_4789257a0a23ed::t_406736c8ea4381 8,14,16-42,47-51
+  s_4789257a0a23ed::t_0864245462564d 1-7,9-13,15,43-46,52-120
+governance/test/fixtures/conservation-lint/violation.md
+  s_4789257a0a23ed::t_2a3f5326eb0edd 1-6
+governance/plans/conservation-law-design/E2-CONSERVATION-LINT.md
+  s_4789257a0a23ed::t_ed19f530c5d318 4
+governance/test/conservation-lint.test.mjs
+  s_4789257a0a23ed::t_46e2fdaf48b624 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "543ae4a98af07a0637c532a7996a412ff5467bb0",
+  "prompts": {},
+  "sessions": {
+    "s_4789257a0a23ed": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007d98dfbffe1qzrC7FNez6En8",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

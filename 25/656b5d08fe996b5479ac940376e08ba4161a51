@@ -1,0 +1,81 @@
+governance/config/fleet-graph.json
+  s_dccee6b7677203::t_823546d278acb8 14-20
+  s_dccee6b7677203::t_cf1ef3b4fe9f59 28
+governance/bin/fleet/fleet-scan.mjs
+  s_dccee6b7677203::t_ff7dea680479a1 21
+  s_dccee6b7677203::t_81dc73262084fd 282-284
+  s_dccee6b7677203::t_cb9a4a4cc0d001 264-267
+  s_dccee6b7677203::t_5fbfcc5b7009a3 305-311,316-317,319-320,337-338,340-343
+  s_dccee6b7677203::t_78f996ec75c104 261,269
+governance/bin/fleet/agents-md-gen.mjs
+  s_dccee6b7677203::t_0e80e168ada388 118-119,123-126
+  s_dccee6b7677203::t_e0d01b6103acdd 107-117
+  s_dccee6b7677203::t_05c58828b9b4f2 166,169-170
+  s_dccee6b7677203::t_4a9bb7c42a0b27 29
+  s_dccee6b7677203::t_abe849549c9d45 127
+governance/plans/polyrepo-velocity/E5-PAVED-ROAD.md
+  s_dccee6b7677203::t_d8471dfdd55c52 278-326
+governance/bin/fleet/lib/repo-identity.mjs
+  s_dccee6b7677203::t_8290e40d9577eb 162-167
+  s_dccee6b7677203::t_8c1c915cce3088 184,232-261
+  s_dccee6b7677203::t_f32ff0320afdad 1-21,24-62,64-161,168-179,188-189,193-195,198-231
+  s_dccee6b7677203::t_a4bd88e53a5649 22-23
+  s_dccee6b7677203::t_363cb1fdeece33 63
+  s_dccee6b7677203::t_229188f2918c7d 180-183
+  s_dccee6b7677203::t_d1efe89832df76 185-187
+  s_dccee6b7677203::t_2c6d34602ac856 190-192
+  s_dccee6b7677203::t_0acb2646560487 196-197
+governance/bin/fleet/consumer-graph.mjs
+  s_dccee6b7677203::t_d099740ebc4fed 24
+  s_dccee6b7677203::t_203f93513d2839 188,190-192
+  s_dccee6b7677203::t_7f765e758770e4 211-214
+  s_dccee6b7677203::t_dcc9998f1a0d9d 52-79
+governance/bin/fleet/tests/lib/fixtures.sh
+  s_dccee6b7677203::t_916d82886beb8c 9-12,16,18-19
+  s_dccee6b7677203::t_6908edfeb0347f 65,68,71,73,75,77,79
+governance/plans/polyrepo-velocity/RECEIPTS.md
+  s_dccee6b7677203::t_ff029fcd6d18d0 74-91
+governance/bin/fleet/tests/cases/69-repo-identity.sh
+  s_dccee6b7677203::t_fa32cdbc72a7de 1-17,27-29,31-51,53-54,56-62,64-100,105-124
+  s_dccee6b7677203::t_22573d43574e87 52,55
+  s_dccee6b7677203::t_6e19b4236f7c14 101-104
+  s_dccee6b7677203::t_69cc6ffa941cd3 18-26,30
+  s_dccee6b7677203::t_a16b54c65579c5 63
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_72e8b81dc8fe94 106-113,115-119
+  s_dccee6b7677203::t_02cf6d8e3dc5f1 249-254
+  s_dccee6b7677203::t_dcdad01c5e45db 114
+  s_dccee6b7677203::t_489ceda40c3afd 4-6
+  s_dccee6b7677203::t_dd2b4fef1050a5 82
+governance/bin/fleet/contract-validate.mjs
+  s_dccee6b7677203::t_c842bb21cc3512 64
+  s_dccee6b7677203::t_aa00402613c88a 176-183
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_72838946afd40f 5,1075-1084,1088-1097,1122-1137,1155-1177,1218-1232
+governance/code-index/index.json
+  s_375efeac18ed55::t_7bc033fa3ab7a9 6-7,9-10,9799-9800,9810-9811,9821-9822,9832-9833,9843-9844,9854-9855,9865-9866,9876-9879,9887-9888,9898-9899,9909-9910,9920-9921,9931-9932,9942-9943,9953-9954,9964-9965,9969-9979,9986-9987,9997-9998,10008-10011,10217-10218,10228-10229,10239-10240,10250-10251,10261-10262,10272-10273,10283-10284,10294-10295,10305-10306,10316-10317,10327-10328,10338-10339,10349-10350,10360-10363,10371-10372,10382-10383,10514-10515,10525-10526,10536-10537,10547-10548,10558-10559,10569-10570,10580-10581,10591-10592,10602-10603,10613-10614,10624-10625,10635-10636,10646-10647,10657-10658,10668-10669,10679-10680,10690-10691,10701-10702,10712-10713,10723-10726,10734-10735,10745-10746,10756-10759,11025-11156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "25656b5d08fe996b5479ac940376e08ba4161a51",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/plans/wave-desktop-local/creative/visionary.md
+  s_83b73641415a39::t_b9bdba7902b577 1-8
+governance/plans/wave-desktop-local/creative/economist.md
+  s_83b73641415a39::t_db8190b08276be 1-7
+governance/plans/wave-desktop-local/creative/redteam.md
+  s_83b73641415a39::t_ebf39bb3816f2b 1-15
+governance/plans/wave-desktop-local/creative/customer-voice.md
+  s_83b73641415a39::t_d2c99fb80addc5 1-7
+governance/plans/wave-desktop-local/creative/pragmatist.md
+  s_83b73641415a39::t_f6f76c1ad47d13 1-8
+governance/plans/wave-desktop-local/creative/SYNTHESIS.md
+  s_83b73641415a39::t_f135da345c1b38 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "144b850680fcb7ed68aec3a0ea8bf457823dee01",
+  "prompts": {},
+  "sessions": {
+    "s_83b73641415a39": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd196880ffeXRUvrkjXudtttM",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+hooks/tests/degraded-hold-gate.test.sh
+  s_941b8f0612ec3e::t_d64082ef201052 127-143
+hooks/degraded-hold-gate.sh
+  s_941b8f0612ec3e::t_8f8a9e00b078be 104-113
+hooks/manifest.json
+  s_2fd4e0c1ae6a7a::t_ee8cf81fbe571c 372
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1a9bf156130be5381cbe9405411b5ee6f37c6ba5",
+  "prompts": {},
+  "sessions": {
+    "s_2fd4e0c1ae6a7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ca0aaed3-ae07-4a91-b1ce-257a0d13b996",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

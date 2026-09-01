@@ -1,0 +1,142 @@
+.github/workflows/namespace-federation-gh-oidc-probe.yml
+  h_67a1b847dc59d6 1-74
+.github/workflows/namespace-release-watch.yml
+  h_67a1b847dc59d6 67-83,117-124
+.github/workflows/network-edge-audit.yml
+  h_67a1b847dc59d6 1-70
+governance/bin/network-edge-audit.mjs
+  h_67a1b847dc59d6 1-131
+governance/bin/nsc-version-probe.mjs
+  h_67a1b847dc59d6 1-113
+governance/bin/nsdevbox-lease.mjs
+  h_67a1b847dc59d6 1-241
+governance/lib/drill-fixtures-network-edge-audit.mjs
+  h_67a1b847dc59d6 1-82
+governance/lib/drill-registry.mjs
+  h_67a1b847dc59d6 43,138-141,192
+governance/plans/namespace-substrate/E0-GOVERN.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E1-MEASURE-CI.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E2-BUILDS.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E3-CACHES.md
+  h_67a1b847dc59d6 72-73
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  h_67a1b847dc59d6 43-45
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  h_67a1b847dc59d6 22
+governance/plans/namespace-substrate/E6-DECIDE.md
+  h_67a1b847dc59d6 4,20
+governance/plans/namespace-substrate/E7-OPERATIONALIZE.md
+  h_67a1b847dc59d6 133-135
+governance/plans/namespace-substrate/NORTH-STAR.md
+  h_67a1b847dc59d6 4,27-30,32-34
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-artifact-cache-pilot.md
+  h_67a1b847dc59d6 1-177
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-egress-v2.md
+  h_67a1b847dc59d6 1-132
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-gh-oidc-federation.md
+  h_67a1b847dc59d6 1-154
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-k8s-smoke.md
+  h_67a1b847dc59d6 1-122
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-prometheus-probe.md
+  h_67a1b847dc59d6 1-201
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-sdk-repo.md
+  h_67a1b847dc59d6 1-70
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-secrets-map.md
+  h_67a1b847dc59d6 1-80
+governance/plans/namespace-substrate/RECEIPTS-2026-08-21-tailscale-join.md
+  h_67a1b847dc59d6 1-244
+governance/plans/namespace-substrate/nsc-version-pin.json
+  h_67a1b847dc59d6 1
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-advisory.json
+  h_67a1b847dc59d6 1-61
+governance/plans/namespace-substrate/profiles-as-code/policies/wave-fenced-v2-policy.json
+  h_67a1b847dc59d6 1-61
+governance/plans/network-edge-plane/E2-PROD-CROSSING.md
+  h_67a1b847dc59d6 4
+governance/plans/network-edge-plane/E3-INGRESS-CONTRACT.md
+  h_67a1b847dc59d6 4,6
+governance/plans/network-edge-plane/E5-DRIFT-PROOF.md
+  h_67a1b847dc59d6 4
+governance/plans/network-edge-plane/SURFACE-CONTRACT.json
+  h_67a1b847dc59d6 1-39
+governance/plans/runtime-economy/EXPENSES-AND-CUTOVER.md
+  h_67a1b847dc59d6 1-47
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 89-109
+governance/plans/runtime-economy/RUNPOD-COST-MODEL.md
+  h_67a1b847dc59d6 1-60
+governance/plans/runtime-economy/SESSION-RECEIPT-2026-08-18.md
+  h_67a1b847dc59d6 81-100
+governance/plans/runtime-economy/dogfood/dsh-home-deepcoder-14b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-gemma4-31b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-gptoss-gw/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-27b/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/dsh-home-wave-qwen38-ad-iq3s/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-learning-loop/bin/measure-tier.mjs
+  h_67a1b847dc59d6 51-55,58,60,66-67
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 37-44
+governance/plans/runtime-learning-loop/research/pending-rows/qwen2.5-3b.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  h_67a1b847dc59d6 1-20
+governance/plans/runtime-learning-loop/research/pending-rows/wave-qwen38-27b.json
+  h_67a1b847dc59d6 1-19
+governance/plans/vendor-relationship-ops/GOLDEN-SEED.md
+  h_67a1b847dc59d6 1-39
+governance/plans/vendor-relationship-ops/NORTH-STAR.md
+  h_67a1b847dc59d6 63-81
+governance/test/network-edge-audit.test.mjs
+  h_67a1b847dc59d6 1-90
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 6-7,455-467
+tools/repo-surface-audit.mjs
+  h_67a1b847dc59d6 1-102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "94ad285fa51e8fada7876b770d1c60a4ead5f48c",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+docs/AUTONOMY-SUBSTRATE.md
+  s_6912c9a991bfb6::t_aa12e2698b7a35 109
+  s_6912c9a991bfb6::t_0b258d3374cb1e 10
+memory/autonomy-substrate.md
+  s_6912c9a991bfb6::t_6df17727a06908 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bf43965cf6aecdc8ce460308d98ad595080f4390",
+  "prompts": {},
+  "sessions": {
+    "s_6912c9a991bfb6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002544c00ffeK4MBn1B0r7oJef",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

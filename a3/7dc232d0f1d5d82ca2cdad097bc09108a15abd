@@ -1,0 +1,22 @@
+CONSUME.md
+  s_28efdc23129d94::t_5ffbe1dd2f22bb 147-159
+.github/workflows/checks.yml
+  s_28efdc23129d94::t_39e4ffa1f5b2df 15-19
+  s_28efdc23129d94::t_2f736262d9d467 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a37dc232d0f1d5d82ca2cdad097bc09108a15abd",
+  "prompts": {},
+  "sessions": {
+    "s_28efdc23129d94": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bc938e35-e3fa-413e-8a01-681d82105c71",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

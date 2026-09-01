@@ -1,0 +1,23 @@
+governance/sources/drift-pairs.json
+  s_756b33c630d33b::t_eca92e4de828d1 11-18
+governance/bin/drift-lint.mjs
+  s_756b33c630d33b::t_1fff5385b692f3 56-60,66-69,71,74-77
+  s_756b33c630d33b::t_b7d5b6abf857e4 46-49
+  s_756b33c630d33b::t_1179e18afbece3 41-45,50-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "136d3e48c9e5bfd6966a2985d2d7c4e45f98469b",
+  "prompts": {},
+  "sessions": {
+    "s_756b33c630d33b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe99def39ffeGc1l8vjaj3GcVO",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

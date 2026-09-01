@@ -1,0 +1,26 @@
+hooks/bin/gen-manifest.mjs
+  s_70c7ac7de143f9::t_48ca0f6cb82e28 211-218
+  s_70c7ac7de143f9::t_c06f64244d265f 165-175
+  s_70c7ac7de143f9::t_48f3a7554424dd 193-195,197-198
+.claude/skills/strategic-compact/SKILL.md
+  s_70c7ac7de143f9::t_5fc14a9243d183 197-199
+  s_70c7ac7de143f9::t_24fbe4d651cc3f 73-75
+hooks/manifest.json
+  s_70c7ac7de143f9::t_3e3fb9cfc9c121 777-780,906-909,915-918
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "46503297140904d43b1dcf855e279af9c5252978",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

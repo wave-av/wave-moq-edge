@@ -1,0 +1,37 @@
+governance/test/cron-failover.test.mjs
+  s_941b8f0612ec3e::t_a74079ce3ac17c 18-20
+  s_941b8f0612ec3e::t_55665be3da573a 5-9
+  s_941b8f0612ec3e::t_bb02d489d03667 86-110
+  s_941b8f0612ec3e::t_c3b4d0a542bc01 206-214
+  s_941b8f0612ec3e::t_487d5511ca568d 113,126,142,152,162,171,181,192,202
+governance/test/cron-failover-jobmatch.test.mjs
+  s_941b8f0612ec3e::t_b9e3615b3b3e8c 1-201
+governance/bin/cron-failover.mjs
+  s_941b8f0612ec3e::t_a3b8b84391c7b9 238-251
+  s_941b8f0612ec3e::t_cfc02417fa96fe 66
+  s_941b8f0612ec3e::t_c933aff5f4a604 109-115,123-134
+  s_941b8f0612ec3e::t_7093bdabf23c5c 269-277
+  s_941b8f0612ec3e::t_01b8e33a328edb 78-82
+governance/lib/cron-failover-jobmatch.mjs
+  s_941b8f0612ec3e::t_af8a12ba4a3bce 1-139
+governance/bin/cron-failover-jobs.mjs
+  s_941b8f0612ec3e::t_943423a02955f8 1-170
+governance/test/cron-failover-workflow-coupling.test.mjs
+  s_941b8f0612ec3e::t_4ba0c20910ce5d 3-8,10-23,31,36-55,57-58,60-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d88b101890bb5ee1194ce24575f01ce47fbd9abd",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

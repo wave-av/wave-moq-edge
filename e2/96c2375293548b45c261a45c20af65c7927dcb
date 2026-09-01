@@ -1,0 +1,30 @@
+governance/test/drift-lint.test.mjs
+  s_9bb1b1d1d998d4::t_b799a529a3f827 62,166
+  s_9bb1b1d1d998d4::t_323a7a5472a555 82,95,124,136,153,178
+  s_9bb1b1d1d998d4::t_2267126d0c8915 96-123,125-135,137-152,154-165,167-177
+  s_9bb1b1d1d998d4::t_f4da3701415e85 14-29
+  s_9bb1b1d1d998d4::t_db3c13eeb0bdac 56-58
+  s_9bb1b1d1d998d4::t_f2b1ba42dc02b6 12-13,30-31,33,37,40-55,59-61,63-74
+governance/bin/drift-lint.mjs
+  s_9bb1b1d1d998d4::t_2175c9ce1712e3 33-66,81-107
+  s_9bb1b1d1d998d4::t_09827303c4b73a 144-155
+  s_9bb1b1d1d998d4::t_268b9425780eb6 13
+  s_9bb1b1d1d998d4::t_d62eeded679a85 67-80
+  s_9bb1b1d1d998d4::t_0bc71eed7d57e6 167
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e296c2375293548b45c261a45c20af65c7927dcb",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

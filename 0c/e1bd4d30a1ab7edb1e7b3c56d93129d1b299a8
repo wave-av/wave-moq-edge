@@ -1,0 +1,21 @@
+governance/plans/runtime-economy/E7-FX-HARNESS-CITIZEN.md
+  s_d77777f89719d2::t_60489cb6ddbc3c 1-49
+governance/plans/harness-wars-intel/DIGEST-FX.md
+  s_d77777f89719d2::t_222f66f1566edc 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0ce1bd4d30a1ab7edb1e7b3c56d93129d1b299a8",
+  "prompts": {},
+  "sessions": {
+    "s_d77777f89719d2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc5515038ffemQuiPiT0NyCd0S",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

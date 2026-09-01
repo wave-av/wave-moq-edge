@@ -1,0 +1,51 @@
+governance/bin/gate-scope-conformance.mjs
+  s_15127d80763110::t_5b61b0c069a0e9 123-127,197-201,204,213-217,219-223,225-232,235
+governance/bin/prove-gate-scope-conformance.mjs
+  s_15127d80763110::t_ec92fbf5f38224 70-75,165-175
+governance/bin/vendored-gate-audit-scan.sh
+  s_15127d80763110::t_4774eb39c36e41 1-90
+governance/graph.json
+  s_15127d80763110::t_2d4c344ce19bde 3443-3468,20985-21008
+governance/lib/review-liveness.mjs
+  s_15127d80763110::t_9217c1beffe90f 52,80-82,107-109,192
+governance/lib/review-markers.mjs
+  s_15127d80763110::t_4bd19cff35ace6 80-115
+governance/ops/com.wave.vendored-gate-audit.plist
+  s_15127d80763110::t_607681238bb304 1-33
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_15127d80763110::t_b6af50425bce84 1-187
+governance/plans/ffmpeg9-lei/E13-VERTICALS.md
+  s_15127d80763110::t_f3805baf6002b5 1-162
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_15127d80763110::t_a1e483cbb2979b 11-14
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_15127d80763110::t_6d222cd7f5caf5 5-7,61-64,72,87-98,105-110
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_15127d80763110::t_ea1f131e67ab07 4
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  s_15127d80763110::t_3dd0d1772f34c0 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_15127d80763110::t_6280a50f1a6896 593-628,719-766
+governance/runbooks/vendored-gate-audit.md
+  s_15127d80763110::t_5e21c0dcffcc73 1-93
+governance/test/review-liveness-title-skip.test.mjs
+  s_15127d80763110::t_59346733dae472 1-120
+governance/DASHBOARD.md
+  s_15127d80763110::t_fc4b30064b1e47 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "560fb175c1917b66a67844dd77a4f8877effe673",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

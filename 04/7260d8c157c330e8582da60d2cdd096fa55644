@@ -1,0 +1,45 @@
+governance/plans/metronome-m-phases/E4-WEBHOOK-GOLIVE.md
+  s_d9915bbafa9657::t_6d99b92a5db3ce 1-44
+governance/plans/metronome-m-phases/NORTH-STAR.md
+  s_d9915bbafa9657::t_33b20524bda7cd 75-78,83-84
+  s_d9915bbafa9657::t_ae0fc97c73a8de 1-4,24-74,79-82,85-87
+  s_d9915bbafa9657::t_f13e326bd9742e 5-23
+governance/plans/cursor-cloud-agent-adoption/E5-EXPANSION-GATE.md
+  s_d9915bbafa9657::t_65d4ae1a937923 1-75
+governance/plans/cursor-cloud-agent-adoption/E1-SCOPE-PROTECTION.md
+  s_d9915bbafa9657::t_94348c17f011dd 1-337
+governance/plans/cursor-cloud-agent-adoption/E3-COST-LEDGER.md
+  s_d9915bbafa9657::t_51301e2e6b59f0 1-74
+governance/plans/metronome-m-phases/E1-CUSTOMER-SYNC.md
+  s_d9915bbafa9657::t_f9a95b07b17015 1-63
+governance/plans/cursor-cloud-agent-adoption/E2-FIRST-SESSION.md
+  s_d9915bbafa9657::t_8a7b94edd9330c 1-268
+governance/plans/metronome-m-phases/E2-DRAFT-INVOICE-PARITY.md
+  s_d9915bbafa9657::t_e43a34d5323bfe 1-48
+governance/plans/metronome-m-phases/E3-BILLING-AUTHORITY-FLIP.md
+  s_d9915bbafa9657::t_d807651c0f2682 1-56
+governance/plans/cursor-cloud-agent-adoption/NORTH-STAR.md
+  s_d9915bbafa9657::t_ff6ff37b103145 1-98
+governance/plans/cursor-cloud-agent-adoption/E4-REVIEW-PROCESS.md
+  s_d9915bbafa9657::t_ea49d541a1fe67 1-85
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_d43fc666bd29e4 25
+governance/graph.json
+  s_d9915bbafa9657::t_d0ae1b5e0bca14 3093,3095-3096,3099-3164,3167,4895,4897-4898,4900-4951,4955,20307-20308,20310,20313-20314,20316,20319-20344,20346,20349-20355,20358,20361,20364,20367-20368,20370,20373-20374,20376,20379-20380,20382,20385-20386,20388,20391-20394,20397-20404,20406,20409,20412,20415,20418-20424,20427,20430,20433-20481,20484-20568,24195-24285,24288,24291,24294,24297,24300,24303,24306,24309,24312,24315,24318,24321,24324,24327,24330,24333,24336,24339-24358,24360
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "047260d8c157c330e8582da60d2cdd096fa55644",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+governance/automation-registry/generate.mjs
+  s_941b8f0612ec3e::t_edfe7dd662a071 117
+  s_941b8f0612ec3e::t_5893aeb6143498 70-75,78-83,87
+governance/test/automation-registry/generate.test.mjs
+  s_941b8f0612ec3e::t_1009f8d7bbac77 99,102-127
+  s_941b8f0612ec3e::t_0df6153a901fcb 100-101
+governance/automation-registry/lib/schema.mjs
+  s_941b8f0612ec3e::t_bb2099db5abddf 94-120
+governance/test/automation-registry/schema.test.mjs
+  s_941b8f0612ec3e::t_a6cbb9669cd6f3 153-154,156-189
+  s_941b8f0612ec3e::t_202d27e4aae8ea 155
+governance/automation-registry/jobs/governance.yaml
+  s_126f414116e65b::t_86cac9423b5a76 42,54,66,80,94,108,122,136,150,164,178,192
+governance/automation-registry/jobs/knowledge-graph.yaml
+  s_c24357e71ae5bc::t_d1aac210de7d5b 19,32
+governance/automation-registry/jobs/local-llm-infra.yaml
+  s_c24357e71ae5bc::t_0a7789795dd938 92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "584cf3a30620cf6156c35c3855a4cca84f73582b",
+  "prompts": {},
+  "sessions": {
+    "s_126f414116e65b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a7c3e615c538dd7a7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/test/lawbook-json-canonical.test.mjs
+  s_9041cf1cf1ccad::t_92414579faccd3 1-36
+governance/sources/lawbook.json
+  s_9041cf1cf1ccad::t_ed93d65d9ff025 2,5-6,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7cd517428d1474cd51bc2dd2ede51b0311e66603",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

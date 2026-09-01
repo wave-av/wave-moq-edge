@@ -1,0 +1,20 @@
+governance/plans/release-pipeline/E0-WATCH-TRIGGER.md
+  h_67a1b847dc59d6 10-23
+governance/plans/release-pipeline/E1-PULL-INGEST.md
+  h_67a1b847dc59d6 11-25
+governance/plans/release-pipeline/E2-EVAL-GATE.md
+  h_67a1b847dc59d6 11-25
+governance/plans/release-pipeline/E3-PROMOTE-SERVE.md
+  h_67a1b847dc59d6 11-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "84574818963af9bad8eeb4afff1edc820a0c4858",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

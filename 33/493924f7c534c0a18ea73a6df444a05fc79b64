@@ -1,0 +1,19 @@
+governance/state/runbook-ambient-cache.json
+  s_202794b3e4df8d::t_c16bee9378e027 2,4,17,29-30,33,77-78,89,197-198,201,219-266
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "33493924f7c534c0a18ea73a6df444a05fc79b64",
+  "prompts": {},
+  "sessions": {
+    "s_202794b3e4df8d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a25258b786069b8e4",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.greptile/README.md
+  s_8d26503dfc73f4::t_0ce21017b3f759 1-110
+.greptile/config.json
+  s_8d26503dfc73f4::t_486523773992f0 1-42
+cubic.yaml
+  s_8d26503dfc73f4::t_0075b94688372f 65
+.coderabbit.yaml
+  s_8d26503dfc73f4::t_cbacfb7b51c7fa 134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5baa39d79bbf15cb2bb3e75a58c481620ce58062",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

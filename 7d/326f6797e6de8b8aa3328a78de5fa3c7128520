@@ -1,0 +1,36 @@
+governance/plans/fireworks-integration/RECEIPTS.md
+  s_932812b98c11d1::t_c7d5e092f35540 18-26
+governance/plans/fireworks-integration/E5-PRODUCT-GATE.md
+  s_0950db28a6ae27::t_547d356e37adce 18-19
+governance/plans/fireworks-integration/README.md
+  s_0950db28a6ae27::t_ce14076f26a8d1 24-34
+  s_0950db28a6ae27::t_d80534c4d0612b 17-18
+governance/plans/fireworks-integration/E2-ROUTING.md
+  s_0950db28a6ae27::t_81b5b564508f65 34-35
+governance/plans/fireworks-integration/E4-OWN-MODEL.md
+  s_0950db28a6ae27::t_65adc5ac5a464b 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7d326f6797e6de8b8aa3328a78de5fa3c7128520",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_932812b98c11d1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fffb26dd3ffearw8DwPof3Z4PR",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

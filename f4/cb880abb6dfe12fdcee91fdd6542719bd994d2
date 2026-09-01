@@ -1,0 +1,44 @@
+hookcli/lib/eval-t1.sh
+  s_9041cf1cf1ccad::t_0edf45d9a12bec 26-37
+hookcli/tests/lib/modules.sh
+  s_c927cca3dccbaa::t_3945143a3f4ba6 79-82
+hookcli/rules/rules.json
+  s_9041cf1cf1ccad::t_862403f21a96ed 11
+  s_9041cf1cf1ccad::t_fe7c913ba8f391 66
+  s_9041cf1cf1ccad::t_4b153105c591da 128
+  s_9041cf1cf1ccad::t_4ce82260e5767e 360
+  s_9041cf1cf1ccad::t_90646712393d42 30
+  s_9041cf1cf1ccad::t_6f588eb7daacff 485
+  s_9041cf1cf1ccad::t_d21ace16b6ab3a 307
+  s_9041cf1cf1ccad::t_8c6c1762588387 502
+  s_9041cf1cf1ccad::t_eaf890716560e5 519
+  s_9041cf1cf1ccad::t_601fdac969eed9 343
+  s_9041cf1cf1ccad::t_fd81b080f21a98 110
+hookcli/tests/evasion-matrix.sh
+  s_c927cca3dccbaa::t_49f6867618600d 1-130,132-138
+  s_9041cf1cf1ccad::t_ac4970f7453d86 131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f4cb880abb6dfe12fdcee91fdd6542719bd994d2",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": null
+    },
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

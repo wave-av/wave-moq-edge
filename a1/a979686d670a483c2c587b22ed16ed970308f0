@@ -1,0 +1,19 @@
+docs/conventions/dispatch-edge-ai-naming.md
+  s_ccbb3091d0f293::t_700f759fdd78d6 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "a1a979686d670a483c2c587b22ed16ed970308f0",
+  "prompts": {},
+  "sessions": {
+    "s_ccbb3091d0f293": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ad29f8c-8cc4-4950-bdb4-6b0ec735d5f2",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

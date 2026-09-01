@@ -1,0 +1,24 @@
+hookcli/tests/t4-llm.sh
+  s_02abc74f4971c7::t_50988ea35c74de 193-245
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_7ad3ab3b714438 121
+  s_02abc74f4971c7::t_d8d891c84df656 123-124
+  s_02abc74f4971c7::t_a98cecf2e4759e 122,125-126
+  s_02abc74f4971c7::t_b90f7095e6b044 93-120,132-154,156,159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f1d753a666fbaae21e47690e6dabc9d32e2dcde7",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

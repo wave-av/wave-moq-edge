@@ -1,0 +1,21 @@
+frameworks/claude-api/efficiency-levers.md
+  s_5f27fa5b8237cd::t_a4aae7a49848d0 44,51,56
+frameworks/claude-api/model-matrix.md
+  s_5f27fa5b8237cd::t_a4aae7a49848d0 26,135,137-138,142-145,156-157,203
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0c850bf55b0f3f29b80e34bfa06f78eac32d30ec",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

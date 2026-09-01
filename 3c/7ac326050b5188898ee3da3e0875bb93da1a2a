@@ -1,0 +1,25 @@
+governance/plans/self-review-gate/E2-LOCAL-HOOK.md
+  s_264ae386838c57::t_96736dc97f9c8c 4-5
+governance/plans/self-review-gate/E1-RECEIPT-AND-LAW.md
+  s_264ae386838c57::t_a0f3aa1ce4e05d 4-5
+governance/plans/self-review-gate/E3-FLEET-GATE.md
+  s_264ae386838c57::t_97da24d58a2320 4-5
+governance/plans/self-review-gate/E4-MEASUREMENT.md
+  s_264ae386838c57::t_f0fbe699891646 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3c7ac326050b5188898ee3da3e0875bb93da1a2a",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

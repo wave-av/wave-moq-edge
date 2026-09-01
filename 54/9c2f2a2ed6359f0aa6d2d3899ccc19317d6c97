@@ -1,0 +1,19 @@
+governance/plans/pricing-pages/E0-MANIFEST-SPEC.md
+  s_68a1dc0626acc6::t_ce4d0d8a33178d 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "549c2f2a2ed6359f0aa6d2d3899ccc19317d6c97",
+  "prompts": {},
+  "sessions": {
+    "s_68a1dc0626acc6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff4e4ebb2ffeIk1zeBG7l5n6Tm",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

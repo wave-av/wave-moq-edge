@@ -1,0 +1,24 @@
+governance/test/route-by-capability.test.mjs
+  s_7ddeb5d251570f::t_186b6221563bf0 43,45-48
+bin/route-by-capability.mjs
+  s_7ddeb5d251570f::t_4216c16a255b5f 238,240,242,245
+governance/research/engineering-canon/agentic-governance.md
+  s_7ddeb5d251570f::t_e8ac3d0a491638 458-464
+  s_7ddeb5d251570f::t_e1a696b88897b6 476
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d6c1d2ec950ab854fab3b843b4e8818539ce9e57",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

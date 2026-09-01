@@ -1,0 +1,39 @@
+governance/lib/grep-negation-portability.mjs
+  s_f126fb3b7cae07::t_5116949edc36d1 33-41,43
+  s_f126fb3b7cae07::t_769b027874a241 1-32,42,44-68,82-85,90,95-96,109-220
+  s_f126fb3b7cae07::t_050a29dd853fd4 69-81,86-89,91-94
+  s_f126fb3b7cae07::t_6600f540faa639 97-108
+governance/test/fixtures/bad-grep-negation/bad.sh
+  s_f126fb3b7cae07::t_ee3d288c36916b 1-32
+.github/workflows/governance.yml
+  s_f126fb3b7cae07::t_2f4928d7dff056 284-300
+governance/bin/grep-negation-lint.mjs
+  s_f126fb3b7cae07::t_e170926add49a3 1-139
+governance/test/grep-negation-lint.test.mjs
+  s_f126fb3b7cae07::t_7ed885bc5a96e1 1-201
+governance/lib/drill-fixtures-shell.mjs
+  s_f126fb3b7cae07::t_a0389c4f8a6c91 34
+  s_f126fb3b7cae07::t_27709be00e5251 17-19
+  s_f126fb3b7cae07::t_0abe8e8ef98232 85-118
+  s_f126fb3b7cae07::t_72b476882d8d61 2
+governance/code-index/CATALOG.md
+  s_f126fb3b7cae07::t_82befb30a96c18 5,1586-1599,3612-3617,3826-3841
+governance/code-index/index.json
+  s_f126fb3b7cae07::t_a287b092fc927d 9-10,12-13,14187-14307,31798-31808,31815-31816,31826-31827,31837-31838,31848-31849,31859-31862,33250-33392
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5f40374762ca5370f6133db3ffe75c6fd9a65c50",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

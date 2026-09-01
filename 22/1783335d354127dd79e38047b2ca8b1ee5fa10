@@ -1,0 +1,31 @@
+tools/moq-client/cli.ts
+  s_3c7a371f5618a4::t_ea47e024e90898 148-151
+  s_3c7a371f5618a4::t_ca43355d0d1914 142
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_7883736e86f16d 218,220-221
+  s_3c7a371f5618a4::t_16ede896d9bf41 2-217,219,222-266
+  s_3c7a371f5618a4::t_9c16eb113330bf 1
+tools/moq-client/src/session.ts
+  s_3c7a371f5618a4::t_a0b1d7def5cf03 175
+  s_3c7a371f5618a4::t_138ace63b4cd92 79-85
+tools/moq-client/__tests__/bench-sixteen-track.test.ts
+  s_3c7a371f5618a4::t_ce9f859e90fa82 1-55
+package.json
+  s_3c7a371f5618a4::t_e42b136c6f535a 19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "221783335d354127dd79e38047b2ca8b1ee5fa10",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

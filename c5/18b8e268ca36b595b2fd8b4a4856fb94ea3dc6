@@ -1,0 +1,21 @@
+src/moq-join-token.ts
+  s_157583aa3b6686::t_960979c3a032c1 195-199
+__tests__/moq-join-token.spec.ts
+  s_157583aa3b6686::t_1f7fe46ecf3192 121-132
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c518b8e268ca36b595b2fd8b4a4856fb94ea3dc6",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

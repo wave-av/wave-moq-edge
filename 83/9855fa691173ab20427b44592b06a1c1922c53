@@ -1,0 +1,35 @@
+governance/bin/anti-loop-lint.mjs
+  s_be40541f6fd98b::t_2ab952462b2419 39-42,47,56-62
+governance/bin/hook-contract-lint.mjs
+  s_be40541f6fd98b::t_430735015d68b5 51-52,70
+governance/bin/hook-failopen-lint.mjs
+  s_be40541f6fd98b::t_becc87a79fa7f9 52-54,64
+governance/capability/file-type-enforcement.json
+  s_be40541f6fd98b::t_221816f3b4fd86 20,27
+governance/test/mcp-merge-authority-gate.test.mjs
+  s_be40541f6fd98b::t_850d0558126015 9,27-37,133-166
+hooks/bin/gen-manifest.mjs
+  s_be40541f6fd98b::t_ce11c0911c803b 40-43
+hooks/mcp-merge-authority-gate.mjs
+  s_be40541f6fd98b::t_ab7c7ade6cfdbd 2,154-167,207-215,221-233
+scripts/hook_registration.py
+  s_be40541f6fd98b::t_90b413bc6c1959 23,28-31
+settings/settings.base.json
+  s_be40541f6fd98b::t_c08f166f154e21 380-386,389
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "839855fa691173ab20427b44592b06a1c1922c53",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

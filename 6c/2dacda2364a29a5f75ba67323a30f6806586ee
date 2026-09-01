@@ -1,0 +1,51 @@
+governance/plans/intent-fabric/E1-REPAIR.md
+  s_264ae386838c57::t_f5ceba90cf82c1 1-94
+governance/plans/intent-fabric/E3-ROUTE.md
+  s_264ae386838c57::t_5fda9e1eb4902f 1-78
+governance/plans/intent-fabric/E4-ATTRIBUTE.md
+  s_264ae386838c57::t_dea5da8844046c 1-80
+governance/plans/intent-fabric/E6-METER.md
+  s_264ae386838c57::t_d5b6852159a3f9 1-80
+governance/plans/intent-fabric/NORTH-STAR.md
+  s_264ae386838c57::t_a80d92f4181bee 1-187
+governance/plans/intent-fabric/E5-ADMIT.md
+  s_264ae386838c57::t_0322ce4e0c2e6f 1-83
+governance/plans/intent-fabric/E8-LATENCY.md
+  s_264ae386838c57::t_0aabea37fa9518 1-80
+governance/plans/intent-fabric/E11-EVOLVE.md
+  s_264ae386838c57::t_2709267255c8be 1-81
+governance/plans/intent-fabric/DEPENDENCIES.md
+  s_264ae386838c57::t_acc6a976862df7 1-140
+governance/plans/intent-fabric/RECEIPTS.md
+  s_264ae386838c57::t_9223f7a3e8bdc7 1-97
+governance/plans/intent-fabric/E2-TRANSPORT.md
+  s_264ae386838c57::t_6aa99510f43d57 1-98
+governance/plans/intent-fabric/E7-EGRESS.md
+  s_264ae386838c57::t_8986834ae136cd 1-85
+governance/plans/intent-fabric/E10-INSIGHT.md
+  s_264ae386838c57::t_c4d804f38191f8 1-82
+governance/plans/intent-fabric/E9-AMBIENT.md
+  s_264ae386838c57::t_894e929dce688c 1-89
+governance/plans/intent-fabric/E0-GROUND.md
+  s_264ae386838c57::t_ee52a377b3c269 1-84
+governance/DASHBOARD.md
+  s_264ae386838c57::t_2d9588ffb559ca 25
+governance/graph.json
+  s_264ae386838c57::t_e25b9ab5f2c321 3431-3612,18753-19058
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6c2dacda2364a29a5f75ba67323a30f6806586ee",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

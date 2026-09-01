@@ -1,0 +1,51 @@
+capabilities/bin/build.mjs
+  s_60a20469ef4369::t_898ff1813fe9d4 1-196
+capabilities/bin/check.mjs
+  s_60a20469ef4369::t_f48a5363d8a0d3 140-145,147,151,154,157-158,160-164,166-176,178-199,202-206
+  s_60a20469ef4369::t_d064e74cc7180a 1-61,72-139,146,148-150,152-153,155-156,159,165,177,200-201
+  s_60a20469ef4369::t_41894ae43cf92c 62-71
+capabilities/bin/select.mjs
+  s_60a20469ef4369::t_216531441d506b 1-96
+capabilities/curated.json
+  s_60a20469ef4369::t_5d6f087d571e46 1-211
+capabilities/tests/fixtures/registry.secret-leak.json
+  s_60a20469ef4369::t_08d1cec28c93eb 2,10
+  s_60a20469ef4369::t_8cffc7ad952fa8 1,3-9,11-13
+capabilities/tests/run.sh
+  s_60a20469ef4369::t_647ad4d555d17f 1-5
+capabilities/bin/render.mjs
+  s_60a20469ef4369::t_ecd164a48346f9 1-91
+capabilities/tests/run.mjs
+  s_60a20469ef4369::t_1bb18faa6b18f6 1-40,45-87
+  s_60a20469ef4369::t_45d77a7f8cd68f 41-44
+capabilities/schema/registry.schema.json
+  s_60a20469ef4369::t_64c9f383650a0a 1-108
+capabilities/MATRIX.md
+  s_7f225c7baebf46::t_e921ae0727c1da 1-62
+capabilities/registry.json
+  s_7f225c7baebf46::t_66cad1812e7e04 1-1099
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d284751e71df55c48304fa45e24df6982d35f3bf",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_7f225c7baebf46": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a619ac9dbd1d546ba",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

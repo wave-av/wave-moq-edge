@@ -1,0 +1,21 @@
+governance/plans/fleet-epic-queue/NORTH-STAR.md
+  s_7ddeb5d251570f::t_bdeee02fd905e2 4
+  s_7ddeb5d251570f::t_b2638b83798a7e 45-61
+  s_7ddeb5d251570f::t_e933a54c806e81 65-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "04aa58ba4cdf86140ffeeda9440304ad59d7367d",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_15127d80763110::t_0f6ffe703f8f49 41-44
+governance/plans/brand-recycle/E-CANON.md
+  s_15127d80763110::t_30f8f641d7347d 14-15
+governance/plans/brand-recycle/ICON-INVENTORY.md
+  s_15127d80763110::t_3108a81dc746f9 33
+  s_15127d80763110::t_2ce8271a0ba5ed 1-32,34-55
+governance/plans/brand-recycle/E-LIBRARY.md
+  s_15127d80763110::t_33ed9beff661af 48-53
+governance/plans/brand-recycle/BRAND-GAP.md
+  s_15127d80763110::t_7785bfbeb88f0b 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1b31d019d81a8d3596a5876037509643688ba8a1",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

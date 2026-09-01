@@ -1,0 +1,27 @@
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_f03476faa42e5f 365-373,375-376,378-379
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_6b5783cf9ac8e6 673-676
+hookcli/tests/shadow-sessionstart.sh
+  s_60a20469ef4369::t_d4c50865bb86eb 54-64
+hookcli/bin/shadow-report.mjs
+  s_60a20469ef4369::t_4307010bc533a8 1-94
+hookcli/tests/shadow-report.sh
+  s_60a20469ef4369::t_d4bd82c2306aa4 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "266c3f9070bba37bdc3a4ba5ebefc7e6b825e81e",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

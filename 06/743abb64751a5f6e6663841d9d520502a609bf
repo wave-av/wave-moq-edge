@@ -1,0 +1,19 @@
+governance/bin/wave-anchor.mjs
+  s_ea8755337f3c0d::t_c2ca2f13a17fe6 1-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "06743abb64751a5f6e6663841d9d520502a609bf",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

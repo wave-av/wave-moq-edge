@@ -1,0 +1,19 @@
+governance/graph.json
+  s_f9ff6dc10be18e::t_a5e7e41722056e 11362-11373,11398-11409
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "017ea0bf70d1dbcaa23267879b5b7595b46e6674",
+  "prompts": {},
+  "sessions": {
+    "s_f9ff6dc10be18e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "aa20d111-123e-4fad-b86d-3c93f1965088",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

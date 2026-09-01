@@ -1,0 +1,87 @@
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_1f8b787e95f2d6 135-142
+governance/ENFORCEMENT-BASELINE.json
+  s_02abc74f4971c7::t_ddcd8396e4c4d1 11-12,175-179
+governance/bin/credential-probe.mjs
+  s_02abc74f4971c7::t_e9ad6c6b531cde 1-251
+governance/bin/enforcement-coverage.mjs
+  s_02abc74f4971c7::t_7e329f1cd5b645 52,58-61,82-84,123-125,160-162,235-247
+governance/bin/enforcement-tables.mjs
+  s_02abc74f4971c7::t_fafe648b3028e4 219-239
+governance/bin/inject.mjs
+  s_02abc74f4971c7::t_6be1a963253be3 27-30
+governance/bin/struggle-miner-scan.sh
+  s_02abc74f4971c7::t_e443635742c52b 27-35
+governance/bin/struggle-miner/collect-denials.py
+  s_02abc74f4971c7::t_77adf277d3835e 1-173
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_02abc74f4971c7::t_caab602a83879c 1-159
+governance/lib/drill-fixtures-drift.mjs
+  s_02abc74f4971c7::t_68b2488f26cce5 210-212,219-220,228-229
+governance/lib/law-bindings.mjs
+  s_02abc74f4971c7::t_7455015e095a34 1-59
+governance/lib/stage-routing.mjs
+  s_02abc74f4971c7::t_483981189b29d1 1-94
+governance/plans/local-inference-integrity/DEPENDENCIES.md
+  s_02abc74f4971c7::t_91801997a995ff 93
+governance/plans/local-inference-integrity/E2-DISCERN.md
+  s_02abc74f4971c7::t_48428a9b884bbc 36-37
+governance/plans/local-inference-integrity/E4-TIER.md
+  s_02abc74f4971c7::t_af3ac72273896e 24-26
+governance/plans/local-inference-integrity/NORTH-STAR.md
+  s_02abc74f4971c7::t_68cb36090454b4 131
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_02abc74f4971c7::t_81bac2bb6ec8b5 15,33-35,133-166,294-356,364
+governance/test/credential-probe.test.mjs
+  s_02abc74f4971c7::t_0d1d17d60bc0e7 1-145
+governance/test/drift-check.test.mjs
+  s_02abc74f4971c7::t_3ad9207aba2ae9 144-148
+governance/test/law-bindings.test.mjs
+  s_02abc74f4971c7::t_9d0ada5c5cb9da 1-224
+governance/test/struggle-miner/fixtures/sample-denials.jsonl
+  s_02abc74f4971c7::t_39759a5887628d 1-8
+hooks/governance-inject.sh
+  s_02abc74f4971c7::t_b8907390c8bfa2 4
+hooks/local-llm/prompt-enhancer.sh
+  s_02abc74f4971c7::t_d927bfcb997579 61-69,71
+hooks/tests/fixtures/curl-stub.sh
+  s_02abc74f4971c7::t_c57ddf8187c457 26-34
+hooks/tests/ollama-json-on-the-wire.test.sh
+  s_02abc74f4971c7::t_bd0250752107e2 171-204
+rules/autonomous-decision-record.md
+  s_02abc74f4971c7::t_40c37fb95be0e1 8,21,23,26,33,35-36,40,43,51,56,58
+rules/deploy-on-wrangler-capable-node.md
+  s_02abc74f4971c7::t_a6aee27d4e3789 27,56
+rules/merge-authority-scoped-by-repo-visibility.md
+  s_02abc74f4971c7::t_b1f66087295b0d 1,96-106,117-123,129,132-140
+rules/multi-repo-workstream-protocol.md
+  s_02abc74f4971c7::t_0566d9f3b848e6 56,66
+rules/public-release-readiness-gate.md
+  s_02abc74f4971c7::t_b95474cca40481 41,66,68
+rules/runbook-first-for-recurring-ops.md
+  s_02abc74f4971c7::t_afad2b68028d17 36
+tests/__init__.py
+  s_02abc74f4971c7::t_cb1e7062707ada 1
+tests/struggle_miner/__init__.py
+  s_02abc74f4971c7::t_b55dab5028d61e 1
+tests/struggle_miner/test_collect_denials.py
+  s_02abc74f4971c7::t_82b358be0bfe07 1-165
+tests/struggle_miner/test_collect_transcripts.py
+  s_02abc74f4971c7::t_c16ee1c9eb8d35 1-8,12-13,21-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "95bc6ced191c5297ac191630c9e7c0bcfefd4164",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

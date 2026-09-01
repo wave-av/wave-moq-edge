@@ -1,0 +1,134 @@
+.github/workflows/foundation-gate.yml
+  h_67a1b847dc59d6 42
+.github/workflows/pr-agent.yml
+  h_67a1b847dc59d6 21
+governance/bin/vendor-cidr-sync.mjs
+  h_67a1b847dc59d6 1-126
+governance/capability/CATALOG.md
+  h_67a1b847dc59d6 5,59,88,107-108,290
+governance/capability/index.json
+  h_67a1b847dc59d6 116,122,2359,2368,2471-2525,3627,3636,3657-3659,3677,3686,3695,3718-3720,3736,3804,3813,3835,3854,3863,3872,3893-3895,3913,3973-4027,4953-5011,5018,5027,5034,5057,5062-5068,11219,11226,11257-11263,11267
+governance/data/vendor-cidr/datadog-webhooks.json
+  h_67a1b847dc59d6 1-40
+governance/data/vendor-cidr/github-hooks.json
+  h_67a1b847dc59d6 1-11
+governance/data/vendor-cidr/stripe-webhooks.json
+  h_67a1b847dc59d6 1-20
+governance/lib/drill-fixtures-vendor-cidr.mjs
+  h_67a1b847dc59d6 1-68
+governance/lib/drill-registry.mjs
+  h_67a1b847dc59d6 61,143-145,214
+governance/plans/agent-native-cli/E6-EMBEDDABILITY.md
+  h_67a1b847dc59d6 1-20
+governance/plans/agent-native-cli/NORTH-STAR.md
+  h_67a1b847dc59d6 25
+governance/plans/agent-native-cli/RECEIPTS.md
+  h_67a1b847dc59d6 1-26
+governance/plans/agent-native-cli/SIGNAL-LANGFUSE-2026-08-21.md
+  h_67a1b847dc59d6 1-16
+governance/plans/langfuse-integration/E0-DECIDE.md
+  h_67a1b847dc59d6 1-15
+governance/plans/langfuse-integration/E0-DECISION.md
+  h_67a1b847dc59d6 1-51
+governance/plans/langfuse-integration/E1-SELF-HOST.md
+  h_67a1b847dc59d6 1-13
+governance/plans/langfuse-integration/E2-INSTRUMENT.md
+  h_67a1b847dc59d6 1-16
+governance/plans/langfuse-integration/E3-FEED.md
+  h_67a1b847dc59d6 1-14
+governance/plans/langfuse-integration/NORTH-STAR.md
+  h_67a1b847dc59d6 1-42
+governance/plans/model-economy/artifacts/SIGNAL-OX-ALPHA-OPENROUTER-2026-08-21.md
+  h_67a1b847dc59d6 1-29
+governance/plans/network-edge-plane/E4-LAW.md
+  h_67a1b847dc59d6 1-24
+governance/plans/network-edge-plane/E4-MANAGED-ORIGIN.md
+  h_67a1b847dc59d6 4
+governance/plans/network-edge-plane/E6-PRODUCTIZATION.md
+  h_67a1b847dc59d6 1-25
+governance/plans/network-edge-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 103
+governance/plans/network-edge-plane/WAVE-ANCHOR.md
+  h_67a1b847dc59d6 1-44
+governance/plans/sovereign-capacity/SIGNAL-OMACOM-2026-08-21.md
+  h_67a1b847dc59d6 1-31
+governance/plans/twitter-signal-plane/E0-SOURCE-REGISTRY.md
+  h_67a1b847dc59d6 1-14
+governance/plans/twitter-signal-plane/E1-PULL.md
+  h_67a1b847dc59d6 1-16
+governance/plans/twitter-signal-plane/E2-RENDERINGS.md
+  h_67a1b847dc59d6 1-18
+governance/plans/twitter-signal-plane/E3-STEALTH-DETECT.md
+  h_67a1b847dc59d6 1-18
+governance/plans/twitter-signal-plane/E4-FEED.md
+  h_67a1b847dc59d6 1-19
+governance/plans/twitter-signal-plane/NORTH-STAR.md
+  h_67a1b847dc59d6 1-56
+governance/plans/twitter-signal-plane/RECEIPTS.md
+  h_67a1b847dc59d6 1-30
+governance/plans/twitter-signal-plane/artifacts/ox-harness-VERDICT.md
+  h_67a1b847dc59d6 1-62
+governance/plans/twitter-signal-plane/artifacts/ox-harness-full.jsonl
+  h_67a1b847dc59d6 1-24
+governance/plans/twitter-signal-plane/artifacts/ox-harness.jsonl
+  h_67a1b847dc59d6 1-10
+governance/plans/twitter-signal-plane/artifacts/ox-harness.mjs
+  h_67a1b847dc59d6 1-232
+governance/plans/vendor-modernization-2026/RECEIPTS.md
+  h_67a1b847dc59d6 87-176
+governance/plans/wave-registry/E0-SCHEMA.md
+  h_67a1b847dc59d6 1-13
+governance/plans/wave-registry/E1-MODELS.md
+  h_67a1b847dc59d6 1-14
+governance/plans/wave-registry/E2-TOOLS.md
+  h_67a1b847dc59d6 1-13
+governance/plans/wave-registry/E3-EVALS.md
+  h_67a1b847dc59d6 1-13
+governance/plans/wave-registry/E4-PROMPTS.md
+  h_67a1b847dc59d6 1-14
+governance/plans/wave-registry/E5-USAGE-LOGS.md
+  h_67a1b847dc59d6 1-16
+governance/plans/wave-registry/E6-QUERY.md
+  h_67a1b847dc59d6 1-14
+governance/plans/wave-registry/NORTH-STAR.md
+  h_67a1b847dc59d6 1-50
+governance/plans/wave-registry/RECEIPTS.md
+  h_67a1b847dc59d6 1-119
+governance/plans/wave-registry/REGISTRY-INVENTORY.md
+  h_67a1b847dc59d6 1-45
+governance/plans/wave-registry/artifacts/schema.sql
+  h_67a1b847dc59d6 1-209
+governance/research/langfuse-build-vs-buy-2026-08-21.md
+  h_67a1b847dc59d6 1-64
+governance/test/wave-inference-server.test.mjs
+  h_67a1b847dc59d6 14-23
+governance/tools/wave-registry/.gitignore
+  h_67a1b847dc59d6 1
+governance/tools/wave-registry/ingest-worker.mjs
+  h_67a1b847dc59d6 1-137
+governance/tools/wave-registry/wave-registry.mjs
+  h_67a1b847dc59d6 1-363
+governance/tools/wave-twitter/.gitignore
+  h_67a1b847dc59d6 1
+governance/tools/wave-twitter/README.md
+  h_67a1b847dc59d6 1-33
+governance/tools/wave-twitter/acp.mjs
+  h_67a1b847dc59d6 1-158
+governance/tools/wave-twitter/wave-twitter.mjs
+  h_67a1b847dc59d6 1-395
+memory/ai-market-signal-intake-2026-08-21.md
+  h_67a1b847dc59d6 1-138
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 6-7,9,11,14-15,26,28,42,49,357-363,647-677
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7c04b4c41d1c9afa3a46ea6f2e49c06ddf20df17",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+scripts/cloudflare/rotate-secret-group.sh
+  s_1cea981189627b::t_6aa944f883df8a 72-75,77
+  s_1cea981189627b::t_459196f5f246a9 1-71,76,78-97
+scripts/cloudflare/secret-group-drift.sh
+  s_1cea981189627b::t_e4096031a2ef20 1-86
+scripts/cloudflare/secret-groups.json
+  s_1cea981189627b::t_82830da4388859 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "30b1ebd9a37043ae8f81d8b9592358f4d2b5074a",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

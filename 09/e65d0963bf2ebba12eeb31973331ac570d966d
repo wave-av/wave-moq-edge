@@ -1,0 +1,35 @@
+governance/plans/stacked-prs/NORTH-STAR.md
+  s_63a2f8012db469::t_3a83011ab0f5e3 72
+  s_63a2f8012db469::t_58479259f0cf43 1-71,73-109,120-123,128-136
+  s_63a2f8012db469::t_4eb9ba8ff70525 137-147
+  s_63a2f8012db469::t_09ce2d20620451 110-119,124-127
+governance/plans/stacked-prs/E1-MEASURE.md
+  s_63a2f8012db469::t_54120e0743361f 1-19,21-31,39-48
+  s_63a2f8012db469::t_a0bc3d096696d1 20
+  s_63a2f8012db469::t_6c0a9a2e90877e 32-38
+governance/plans/stacked-prs/E2-INTRAREPO-STACK.md
+  s_63a2f8012db469::t_91cbd58a469231 38-41
+  s_63a2f8012db469::t_d72f3a3499a703 64-68
+  s_63a2f8012db469::t_67ab518db46c1e 24-26
+  s_63a2f8012db469::t_ebe05ccb2495f4 1-23,27-37,42-63,69-71
+governance/plans/stacked-prs/E3-CROSS-REPO-GATE.md
+  s_63a2f8012db469::t_9ea59d807478f5 22-29
+  s_63a2f8012db469::t_2932a8fb9cc2b4 1-21,30,38-77
+  s_63a2f8012db469::t_e4617c4af201c8 31-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "09e65d0963bf2ebba12eeb31973331ac570d966d",
+  "prompts": {},
+  "sessions": {
+    "s_63a2f8012db469": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "68824f7c-d77c-4039-aa1d-24bfc39b8592",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

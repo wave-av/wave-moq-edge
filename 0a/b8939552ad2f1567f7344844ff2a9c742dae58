@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_15127d80763110::t_40110b3f895913 7-18,29-31,43,52,58-67,130-139
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_15127d80763110::t_26251263010903 5-7,65,79,85-88
+governance/graph.json
+  s_15127d80763110::t_77edc88dec6c57 3437-3440
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0ab8939552ad2f1567f7344844ff2a9c742dae58",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

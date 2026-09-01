@@ -1,0 +1,27 @@
+governance/bin/wave-cost-ledger-gha-budget-alert.mjs
+  s_a293da4db5caf2::t_7ac15861f59a02 1-305
+governance/lib/wave-cost-ledger-gha-budget-detector.mjs
+  s_a293da4db5caf2::t_e7c7ddfa431d0e 1-332
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_a293da4db5caf2::t_7fe20c90da77af 22-58
+governance/test/wave-cost-ledger-gha-budget-alert.test.mjs
+  s_a293da4db5caf2::t_9e30828fde3759 1-239
+governance/test/wave-cost-ledger-gha-budget-detector.test.mjs
+  s_a293da4db5caf2::t_842fbf036c1cb5 1-231
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "7bfd2a0088e9ce4d9b4ccf04573d7fa9e1633fe2",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

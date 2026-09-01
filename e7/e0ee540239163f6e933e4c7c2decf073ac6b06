@@ -1,0 +1,23 @@
+sdk/wave-codec-client.ts
+  s_8d34dc2035def4::t_d4be9c7bb2ed59 1-24
+tools/wave-codec-mcp.mjs
+  s_8d34dc2035def4::t_3430cee7537350 1-60
+sdk/wave_codec_client.py
+  s_8d34dc2035def4::t_134e0deb6bdfbd 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e7e0ee540239163f6e933e4c7c2decf073ac6b06",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

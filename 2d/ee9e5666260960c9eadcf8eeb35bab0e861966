@@ -1,0 +1,23 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_f0c6604b754b05 457-467
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_f7c044e0db18af 81-110
+hookcli/package.json
+  s_60a20469ef4369::t_ca5855b3e92454 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2dee9e5666260960c9eadcf8eeb35bab0e861966",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

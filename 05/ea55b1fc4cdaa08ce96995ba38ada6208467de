@@ -1,0 +1,33 @@
+governance/plans/engineering-canon/E4-defect-spine/creative/redteam.md
+  s_0227926428e4b1::t_11f3afb465ada0 1-200
+governance/plans/engineering-canon/E5-stop-the-line/creative/premortem.md
+  s_0227926428e4b1::t_f8e25ede8abbd8 1-69
+governance/plans/engineering-canon/E4-defect-spine/creative/first-principles.md
+  s_0227926428e4b1::t_0b526df9e1403d 1-175
+governance/plans/engineering-canon/E2-independence/creative/redteam.md
+  s_63d2c56e776026::t_fa16dcc06fe364 1-186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "05ea55b1fc4cdaa08ce96995ba38ada6208467de",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_63d2c56e776026": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a47be7b8aac3f0814",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

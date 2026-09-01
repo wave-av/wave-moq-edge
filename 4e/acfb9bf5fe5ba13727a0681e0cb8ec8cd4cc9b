@@ -1,0 +1,14 @@
+governance/state/reviewer-liveness.json
+  h_67a1b847dc59d6 2-3,8,16,24,32,37-45,47-48,55-56,61,63-64,69,71-72,79-80,85,87-88,93,96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4eacfb9bf5fe5ba13727a0681e0cb8ec8cd4cc9b",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

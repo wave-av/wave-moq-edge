@@ -1,0 +1,20 @@
+.github/workflows/foundation-gate.yml
+  s_2090d62c70d47a::t_59b6a22128d85b 5,9-26
+  s_2090d62c70d47a::t_62c7b81cc1be9f 42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "53acc750a551ba08d50f1f8ec466c500b6ad01f2",
+  "prompts": {},
+  "sessions": {
+    "s_2090d62c70d47a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3b34667c-1339-46da-a635-ec79feb2fac9",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

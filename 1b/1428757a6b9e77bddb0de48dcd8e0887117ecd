@@ -1,0 +1,31 @@
+governance/lib/review-bench.mjs
+  s_9bb1b1d1d998d4::t_060e4000e17eb2 100-108
+  s_9bb1b1d1d998d4::t_259c1533f92d68 73-99,109-112,114,119,124,128,135
+  s_9bb1b1d1d998d4::t_953aeaaad35a0e 26,113,115-118,120-123,125-127,129-134,136
+governance/test/review-liveness-silent-vendor.test.mjs
+  s_9bb1b1d1d998d4::t_f8e932b177ad37 97-104
+  s_9bb1b1d1d998d4::t_40bc6cb7272656 1-58,71-84,88,90-96,105-112
+  s_9bb1b1d1d998d4::t_77e1daeeb831f5 59-61,68-70
+  s_9bb1b1d1d998d4::t_9c3bffd0ef3505 85-87
+  s_9bb1b1d1d998d4::t_9519be0c4e525c 89
+  s_9bb1b1d1d998d4::t_e41c55d87244f1 62-67
+governance/lib/review-sufficiency.mjs
+  s_9bb1b1d1d998d4::t_0f9049064dcf43 199-200
+  s_9bb1b1d1d998d4::t_610a20ac5f526d 32,204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1b1428757a6b9e77bddb0de48dcd8e0887117ecd",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

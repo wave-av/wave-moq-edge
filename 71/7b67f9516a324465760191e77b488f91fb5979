@@ -1,0 +1,24 @@
+wrangler.toml
+  s_296c64a187e722::t_8cd4ba3f78928b 165
+tools/moq-client/cli.ts
+  s_296c64a187e722::t_c3d1dd55645164 358-359
+  s_296c64a187e722::t_ea476527d1b633 19-32
+  s_296c64a187e722::t_73a297b0577da7 217-348
+  s_296c64a187e722::t_89ef87c3f16ca1 75-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "717b67f9516a324465760191e77b488f91fb5979",
+  "prompts": {},
+  "sessions": {
+    "s_296c64a187e722": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fefe9eec0ffeB2mHF4Ys3pexxh",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+scripts/check-v1-drift.sh
+  s_cf3356a24071e8::t_b0c8f3f1f92be0 64-68
+  s_cf3356a24071e8::t_eccd0211f54ae9 73-84
+.github/workflows/v1-drift.yml
+  s_cf3356a24071e8::t_0ad901b281234c 1-94
+  s_cf3356a24071e8::t_c80e1d9074d0d6 95-97
+  s_cf3356a24071e8::t_ca17e7534ffe6c 98-103
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "46aacd5ef33630575ab70479222ba3892a00a6fd",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

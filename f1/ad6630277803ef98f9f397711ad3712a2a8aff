@@ -1,0 +1,31 @@
+governance/plans/platform-resilience/E3-FORGEJO-STANDBY.md
+  s_941b8f0612ec3e::t_fa4910d70d43a6 1-28
+governance/plans/platform-resilience/E1-CRON-DEPLOY-INDEPENDENCE.md
+  s_941b8f0612ec3e::t_6904ec86cfcaaf 1-36
+governance/plans/platform-resilience/NORTH-STAR.md
+  s_941b8f0612ec3e::t_bfd4028c8527b1 1-59
+governance/plans/platform-resilience/E2-OUTAGE-ATTESTER.md
+  s_941b8f0612ec3e::t_62c0c80ea82427 1-42
+governance/plans/platform-resilience/E0-DETECT-AND-HOLD.md
+  s_941b8f0612ec3e::t_84e822d0212245 1-55
+governance/DASHBOARD.md
+  s_941b8f0612ec3e::t_655f868f41d4d5 25
+governance/graph.json
+  s_941b8f0612ec3e::t_f48f1cab523ce9 5518-5582,25513-25554
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f1ad6630277803ef98f9f397711ad3712a2a8aff",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

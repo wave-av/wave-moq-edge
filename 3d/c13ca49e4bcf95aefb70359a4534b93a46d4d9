@@ -1,0 +1,35 @@
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  s_85d9e5f433b9aa::t_596f7151f66ef3 105
+  s_85d9e5f433b9aa::t_c34e4845baade6 11,14-16,18-19
+  s_85d9e5f433b9aa::t_a776e22748c859 6-7
+governance/plans/gates-that-can-see/E8-STALE-EVIDENCE.md
+  s_85d9e5f433b9aa::t_adeecdf1d7fc6f 1-3,19-26,29-33,35-96,101-102,104-130,167-177,193-224,230-232,234-235,238-240
+  s_85d9e5f433b9aa::t_ebe07b35a360e4 226-229
+  s_85d9e5f433b9aa::t_f2a7f162b4762c 152-165
+  s_85d9e5f433b9aa::t_ad6cead255826b 131-151,166
+  s_85d9e5f433b9aa::t_346b982d5bb513 4-8
+  s_85d9e5f433b9aa::t_d85eb1dab6d811 97-100
+  s_85d9e5f433b9aa::t_7b6cf28f828dad 179-192
+  s_85d9e5f433b9aa::t_242507087ac83b 233,236-237
+governance/plans/gates-that-can-see/E5-THREE-VALUED.md
+  s_85d9e5f433b9aa::t_8869df0de961b7 49-83
+  s_85d9e5f433b9aa::t_a3856cf5a6c494 4-7
+governance/graph.json
+  s_85d9e5f433b9aa::t_af7d77f2fd063c 4770-4776,4781-4782,24394-24399
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3dc13ca49e4bcf95aefb70359a4534b93a46d4d9",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

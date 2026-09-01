@@ -1,0 +1,27 @@
+governance/plans/aes67-aoip-transport/aes67-play.mjs
+  s_6046880c148371::t_639a69932d81c0 1-13,24-33,35-36,38-49,59-80,82-88
+  s_6046880c148371::t_e3bf9dab3514f3 15,18-20,22-23
+  s_6046880c148371::t_c8ddbfbb084f7d 14,16-17,21
+  s_6046880c148371::t_e057d0e6427eee 81
+  s_6046880c148371::t_e461d2fbf79d1d 37,53,56
+  s_6046880c148371::t_a2c61ef4ccd301 34,50-52,54-55,57-58
+governance/plans/aes67-aoip-transport/aes67-send.mjs
+  s_6046880c148371::t_2917a6318188a2 13-22
+  s_6046880c148371::t_5e147b4a7b4bdb 1-12,23-96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9768a3991490e7aa141514f517c06f8fb6aaf2d5",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

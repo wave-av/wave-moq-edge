@@ -1,0 +1,29 @@
+hooks/lib/pg-read-only-tokens.txt
+  s_375efeac18ed55::t_95d00b177c9a5b 1-105
+hooks/lib/sql_write_detect.py
+  s_375efeac18ed55::t_58e08c680d8d42 1-190
+hooks/supabase-prod-guard.py
+  s_375efeac18ed55::t_33020cba7463d8 42-55,57,64-87,166-185,197-198,207-208,210,214,218-222
+hooks/tests/phaseC/supabase-prod-guard-690.py
+  s_375efeac18ed55::t_ce0504d136bcf9 1-157
+hooks/tests/phaseC/supabase-prod-guard.sh
+  s_375efeac18ed55::t_f10f82188bc4eb 54-88,93-94
+hooks/manifest.json
+  s_375efeac18ed55::t_cdece04eaa182f 1333
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "b3f69af311a5e72815df3ccbd30b68b75e585006",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+governance/bin/cost-ledger-store.mjs
+  h_af5ac1a9798224 25-48,50
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  h_af5ac1a9798224 1-259
+governance/bin/wave-cost-ledger-cloudflare-puller.mjs
+  h_af5ac1a9798224 20,24-28,70-76,85-90,93-96,118,125-126,138,236-239,242,306
+governance/bin/wave-cost-ledger-rfp4-feeder.mjs
+  h_af5ac1a9798224 1-40
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  h_af5ac1a9798224 1-251
+governance/bin/wave-cost-ledger-vendor-config-liveness.mjs
+  h_af5ac1a9798224 1-78
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,596-599,3315-3325,3328-3329,3331-3334,3348-3365,4684-4690,4698-4708,4721,4724-4725,4727,4745,4748,4753-4757,4781-4829
+governance/code-index/index.json
+  h_af5ac1a9798224 9-10,12-13,5426-5440,5448-5449,5459-5460,29609-29696,29703-29704,29714-29715,29736-29739,29747-29750,29758-29761,29769,29771-29772,29840-29938,39949-39992,40021-40022,40032-40033,40043-40044,40054-40055,40065-40066,40076-40077,40081-40091,40098-40112,40120-40123,40131-40134,40208-40211,40241-40242,40252-40253,40274-40275,40406-40407,40433-40443,40462-40475,40653-40960
+governance/graph.json
+  h_af5ac1a9798224 22546,22548,22552,22554
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  h_af5ac1a9798224 1-240
+governance/lib/wave-cost-ledger-cloudflare-alert-reconcile.mjs
+  h_af5ac1a9798224 15,96-107,141-165,177-208,214-215,219,242-276,308-310
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  h_af5ac1a9798224 95-99
+governance/lib/wave-cost-ledger-cloudflare-guards.mjs
+  h_af5ac1a9798224 182-191
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  h_af5ac1a9798224 19-25
+governance/lib/wave-cost-ledger-cloudflare-subscription-period.mjs
+  h_af5ac1a9798224 1-54
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  h_af5ac1a9798224 1-96
+governance/lib/wave-cost-ledger-root-cause-lookup.mjs
+  h_af5ac1a9798224 1-80
+governance/lib/wave-cost-ledger-root-cause-outlier.mjs
+  h_af5ac1a9798224 1-153
+governance/lib/wave-cost-ledger-root-cause-prompt-template.mjs
+  h_af5ac1a9798224 1-97
+governance/lib/wave-cost-ledger-root-cause-resolve.mjs
+  h_af5ac1a9798224 1-76
+governance/lib/wave-cost-ledger-root-cause-sweep-dimensions.mjs
+  h_af5ac1a9798224 1-269
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  h_af5ac1a9798224 1-165
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  h_af5ac1a9798224 10-89
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  h_af5ac1a9798224 294-300
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  h_af5ac1a9798224 4-30,86
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  h_af5ac1a9798224 1-322
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  h_af5ac1a9798224 1-234
+governance/test/wave-cost-ledger-cloudflare-alert-malformed.test.mjs
+  h_af5ac1a9798224 1-312
+governance/test/wave-cost-ledger-cloudflare-alert-reconcile.test.mjs
+  h_af5ac1a9798224 1-7,32-36,39-42,44-68,70-71,75,78-81,83
+governance/test/wave-cost-ledger-cloudflare-puller.test.mjs
+  h_af5ac1a9798224 9-10
+governance/test/wave-cost-ledger-cloudflare-subscription-period.test.mjs
+  h_af5ac1a9798224 1-109
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 81-86,90-91
+governance/test/wave-cost-ledger-rfp4-adapter.test.mjs
+  h_af5ac1a9798224 1-83
+governance/test/wave-cost-ledger-root-cause-incident-fixture.mjs
+  h_af5ac1a9798224 1-62
+governance/test/wave-cost-ledger-root-cause-outlier.test.mjs
+  h_af5ac1a9798224 1-121
+governance/test/wave-cost-ledger-root-cause-prompt-template.test.mjs
+  h_af5ac1a9798224 1-74
+governance/test/wave-cost-ledger-root-cause-resolve.test.mjs
+  h_af5ac1a9798224 1-54
+governance/test/wave-cost-ledger-root-cause-sweep-dimensions.test.mjs
+  h_af5ac1a9798224 1-196
+governance/test/wave-cost-ledger-root-cause-sweep.test.mjs
+  h_af5ac1a9798224 1-219
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  h_af5ac1a9798224 1-269
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5561244195e3ea37e9a852504119566b472a11ed",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

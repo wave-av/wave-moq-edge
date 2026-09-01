@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_4e1ffa956f4bc4::t_4e087551dfc60c 4
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_4e1ffa956f4bc4::t_b2dbc7bd4c5fa6 62-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "86861ef7525af261f1b9bf6921f7d861bcec21fa",
+  "prompts": {},
+  "sessions": {
+    "s_4e1ffa956f4bc4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a0680eefc340e8e91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

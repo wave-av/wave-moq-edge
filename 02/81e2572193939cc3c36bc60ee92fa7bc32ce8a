@@ -1,0 +1,19 @@
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_6f6453b23e3805::t_ed377f788a4606 386-474
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0281e2572193939cc3c36bc60ee92fa7bc32ce8a",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

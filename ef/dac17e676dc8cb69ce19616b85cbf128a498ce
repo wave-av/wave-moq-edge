@@ -1,0 +1,30 @@
+docs/HOOKCLI-HARVEST.md
+  s_60a20469ef4369::t_c609a810128a86 160-168
+  s_60a20469ef4369::t_7e9f3035680ed7 152
+hookcli/lib/t3-classify.mjs
+  s_60a20469ef4369::t_3a439dfa84f7f0 33-35
+  s_60a20469ef4369::t_ff7d1a989c29f3 4-9,16-17,19-21,29-32,38,41,52,55,58,60-61,63-79,94-108,113-114,116-121,126,130-133,135-136,139-144,146-148,153-154,156,158,163,167,186,191
+  s_60a20469ef4369::t_5524a3485a8e2c 62
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_28ffde4453c694 87
+  s_60a20469ef4369::t_ada9fae37929ba 55
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_3e600fb43e9d20 198-200
+  s_60a20469ef4369::t_361d678c01e773 250-272
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "efdac17e676dc8cb69ce19616b85cbf128a498ce",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

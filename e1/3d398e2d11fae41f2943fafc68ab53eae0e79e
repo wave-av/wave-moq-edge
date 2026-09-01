@@ -1,0 +1,30 @@
+governance/lib/lens-sweep/manifest.mjs
+  s_0227926428e4b1::t_57c80d65cdd45a 94-104
+runbooks/library/lens-sweep.md
+  s_0227926428e4b1::t_e0f56c787ff470 21
+governance/bin/lens-sweep.mjs
+  s_0227926428e4b1::t_cf4a1ec3ca0dc9 216-223
+  s_0227926428e4b1::t_ebcafe0b8fe983 204-208,213
+  s_0227926428e4b1::t_96d49544148049 238
+governance/test/lens-sweep-manifest.test.mjs
+  s_0227926428e4b1::t_ea83d28375ea6c 1-5,8,12
+  s_0227926428e4b1::t_bc31551652fac6 135-149
+governance/test/lens-sweep-reconcile.test.mjs
+  s_0227926428e4b1::t_bebab6235ffa10 1-177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e13d398e2d11fae41f2943fafc68ab53eae0e79e",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

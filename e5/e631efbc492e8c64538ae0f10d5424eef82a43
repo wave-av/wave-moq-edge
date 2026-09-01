@@ -1,0 +1,33 @@
+governance/tools/mastery-path/manifests/capability-registry.json
+  s_46600b236830aa::t_53673a03e08269 1-62
+governance/plans/capability-registry/NORTH-STAR.md
+  s_46600b236830aa::t_bd5700c31d456d 79
+governance/tools/smart-recycling/manifests/rl-corpus.json
+  s_318a4bce52678d::t_b7ffb0f2654b5d 1-31
+governance/plans/wave-rl-corpus/E5-ADAPTIVE-CURRICULUM.md
+  s_318a4bce52678d::t_9173b44c753824 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e5e631efbc492e8c64538ae0f10d5424eef82a43",
+  "prompts": {},
+  "sessions": {
+    "s_318a4bce52678d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0027492efffejnOqifAidfUf1H",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_46600b236830aa": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0027487f3ffeNmS5a9VZX2vUMl",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

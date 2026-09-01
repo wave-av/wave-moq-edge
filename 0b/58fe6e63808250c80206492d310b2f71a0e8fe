@@ -1,0 +1,27 @@
+governance/plans/search-router/search-route.mjs
+  s_6046880c148371::t_86c5916449041e 1-28,30-106,109-113
+  s_6046880c148371::t_9a685121613b69 29
+  s_6046880c148371::t_50999adaa4a586 107-108
+governance/plans/search-router/search-route.eval.json
+  s_6046880c148371::t_1998a66258278d 1-25
+governance/plans/search-router/RECEIPTS.md
+  s_6046880c148371::t_4225c85ac94b3d 11-19
+governance/plans/search-router/E2-CLASSIFIER.md
+  s_6046880c148371::t_386989cacb1b38 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0b58fe6e63808250c80206492d310b2f71a0e8fe",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

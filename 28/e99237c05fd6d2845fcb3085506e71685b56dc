@@ -1,0 +1,44 @@
+governance/test/wave-cost-ledger-cloudflare-puller-idempotency.test.mjs
+  s_2e30bff6169f7a::t_f412051b3006b9 61
+  s_2e30bff6169f7a::t_a5891f497422c8 82-88
+governance/lib/wave-cost-ledger-cloudflare-estimate.mjs
+  s_2e30bff6169f7a::t_2cccde93bef167 26-33
+  s_2e30bff6169f7a::t_3debcb5531f3e5 44,60,97,131,150,169,187,193-241
+governance/lib/wave-cost-ledger-cloudflare-pricing.mjs
+  s_2e30bff6169f7a::t_a7507fbecb787b 21-28,33-47
+governance/lib/wave-cost-ledger-cloudflare-usage-aggregate.mjs
+  s_2e30bff6169f7a::t_90c57892c80f42 1-170
+governance/lib/wave-cost-ledger-cloudflare-usage-datasets.mjs
+  s_2e30bff6169f7a::t_e0b85c05ccc5a7 45-59
+  s_2e30bff6169f7a::t_09bb9fc7bd09ee 137-159
+  s_2e30bff6169f7a::t_81bf9780d4187e 29-33,35-37,39-43
+  s_2e30bff6169f7a::t_727b03a7824a56 281-312
+governance/test/wave-cost-ledger-cloudflare-usage-rows.test.mjs
+  s_2e30bff6169f7a::t_2980f1ca615d1b 196-214
+governance/lib/wave-cost-ledger-cloudflare-usage-pull.mjs
+  s_2e30bff6169f7a::t_9750b5e494c94c 82-88
+  s_2e30bff6169f7a::t_381e1381014605 47
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_2e30bff6169f7a::t_e6c29a3b11bf1c 81-95
+governance/test/wave-cost-ledger-cloudflare-usage-aggregate.test.mjs
+  s_2e30bff6169f7a::t_c4537a6525245f 1-48,50-189
+  s_2e30bff6169f7a::t_24b0da21152688 49
+governance/test/wave-cost-ledger-cloudflare-usage-pull.test.mjs
+  s_2e30bff6169f7a::t_47aa37b74ab168 1-83
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "28e99237c05fd6d2845fcb3085506e71685b56dc",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

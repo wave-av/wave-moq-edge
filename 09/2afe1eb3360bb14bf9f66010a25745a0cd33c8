@@ -1,0 +1,24 @@
+governance/test/context-board.test.mjs
+  s_60a20469ef4369::t_e691dc550a208d 14
+hooks/receipt-observer.sh
+  s_60a20469ef4369::t_68ed3de73efb6a 21
+  s_60a20469ef4369::t_8566e11dfbf2f7 9
+hooks/bin/receipt-runner.mjs
+  s_60a20469ef4369::t_43a550b8e7bfd5 10-11,20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "092afe1eb3360bb14bf9f66010a25745a0cd33c8",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_124891ed63801b::t_e22c1d34c62d65 4-8
+runbooks/library/ffmpeg-major-bump.md
+  s_124891ed63801b::t_deffe2cead2e16 3-220
+  s_124891ed63801b::t_0fef88368cf889 1-2
+governance/DASHBOARD.md
+  s_124891ed63801b::t_e48c30df5cb5b2 25
+governance/graph.json
+  s_124891ed63801b::t_703f1e63bfaad4 6948-6960,28410-28439
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "1e0ea630aa8062f8ed33a2ae4a54a2c32d059f38",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

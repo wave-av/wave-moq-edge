@@ -1,0 +1,49 @@
+runbooks/lib/calibrate.mjs
+  s_a293da4db5caf2::t_fa1f9e5e11fd23 1-157,162
+  s_a293da4db5caf2::t_f5300891e213a4 158-161
+  s_a293da4db5caf2::t_290c7bc4ebb1fc 163-185,190-200
+  s_a293da4db5caf2::t_d44c733ffa9309 186-189
+runbooks/lib/observe.mjs
+  s_a293da4db5caf2::t_58591b4419d6da 158,162-186
+  s_a293da4db5caf2::t_c202ac0a64fd55 136-138
+  s_a293da4db5caf2::t_dea28fa0176651 20-22,25,27-29,31-44,48-49,53,55-57,59-70,72,187
+runbooks/bin/runbook.mjs
+  s_a293da4db5caf2::t_d89bf7986a93d5 241
+  s_a293da4db5caf2::t_839f859cea6611 227-232,236-240
+  s_a293da4db5caf2::t_79de2fbb54a2ad 252
+  s_a293da4db5caf2::t_e322f1a0970d65 40-42
+  s_a293da4db5caf2::t_9fd8e7399f2e87 192
+  s_a293da4db5caf2::t_445efecd80411f 50,53-59
+  s_a293da4db5caf2::t_9a7e54dd7a42de 187-191,193-196
+  s_a293da4db5caf2::t_6f75af552bd68c 233-235
+  s_a293da4db5caf2::t_42bfff07816f7b 36
+  s_a293da4db5caf2::t_85d01343b3f68f 43
+  s_a293da4db5caf2::t_ea6fa470433528 60
+hooks/bin/runbook-use-runner.mjs
+  s_a293da4db5caf2::t_64f2726b6712ff 58-62
+  s_a293da4db5caf2::t_6808305eee49f9 95
+  s_a293da4db5caf2::t_f0ffe89e7d5480 47
+runbooks/lib/fingerprint.mjs
+  s_a293da4db5caf2::t_a9f72219723999 59
+  s_a293da4db5caf2::t_887b569301c6cc 77-84
+  s_a293da4db5caf2::t_e898a461f0ba3c 1-50,57-58,60-76,85-121
+  s_a293da4db5caf2::t_3aaee6f2e69e5f 51-56
+runbooks/test/fingerprint.test.mjs
+  s_a293da4db5caf2::t_7989a2c0a74189 1-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8c0360cde39eca1a3520a24b8ef5e8d8ea132815",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

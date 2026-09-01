@@ -1,0 +1,21 @@
+rules/local-llm-thinking-capability.md
+  s_5f27fa5b8237cd::t_59b91fbd4da244 1-75
+rules/README.md
+  s_5f27fa5b8237cd::t_f672b35328ba57 59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "292c1c1386aa7b6db223f76403e29881aa341b64",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

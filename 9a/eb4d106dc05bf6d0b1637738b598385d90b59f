@@ -1,0 +1,21 @@
+scripts/prove.ts
+  s_ba07216ce52585::t_97817b59deaec4 128,131
+  s_ba07216ce52585::t_e649b728d4ee3d 120-121
+  s_ba07216ce52585::t_06ffa970bbad07 26-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9aeb4d106dc05bf6d0b1637738b598385d90b59f",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

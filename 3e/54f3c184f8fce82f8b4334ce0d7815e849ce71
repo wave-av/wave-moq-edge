@@ -1,0 +1,22 @@
+governance/bin/rl-volume.mjs
+  s_70c7ac7de143f9::t_922c15c8b5f4e5 61-83
+  s_70c7ac7de143f9::t_9905dcb1aa8413 98-110
+  s_70c7ac7de143f9::t_b36d5dfa967388 188-191
+  s_70c7ac7de143f9::t_2cd31476cd564e 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3e54f3c184f8fce82f8b4334ce0d7815e849ce71",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+governance/plans/stripe-settlement-truth/E1-DESTINATION.md
+  s_dedb333dd5195e::t_f54572cd3e8ea7 39,41
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_dedb333dd5195e::t_98b5d0e0abbb06 240-276
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "99adce8bb0b54ceaa85bce9d239cf92ee3ac3c04",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

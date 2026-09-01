@@ -1,0 +1,32 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_6999e73a4736d4 171-176
+hookcli/bin/promote-candidate-report.mjs
+  s_60a20469ef4369::t_ad7e33757173ed 25-41,47,52,55-63,65-85,90-102,105-114,117-128,133-134,158
+hookcli/tests/promote-candidate.sh
+  s_60a20469ef4369::t_6c638ca16882eb 132-133
+  s_60a20469ef4369::t_fba98733763bf3 25
+  s_60a20469ef4369::t_2af6b15fe85929 11-13
+  s_60a20469ef4369::t_813884a140842f 138
+hookcli/bin/enforce-review.mjs
+  s_60a20469ef4369::t_589d30c623160f 1-239
+hookcli/lib/promote-grade.mjs
+  s_60a20469ef4369::t_5db663995045fc 1-224
+hookcli/tests/enforce-review.sh
+  s_60a20469ef4369::t_256b18bf446fee 1-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e4168aabaf0456cc33151e0fce3eac520dc74764",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

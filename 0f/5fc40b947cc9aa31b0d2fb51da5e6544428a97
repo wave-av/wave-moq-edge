@@ -1,0 +1,38 @@
+governance/bin/wave-code-mcp.mjs
+  s_786fab95c7c3b3::t_4457bc45e41a30 78
+  s_786fab95c7c3b3::t_3c881c0d118529 14,16,30-31,36-47,52-53,58,61-63
+governance/plans/fireworks-integration/MODEL-ROADMAP.md
+  s_0950db28a6ae27::t_74cad35dc71136 1-35
+governance/lib/code-index-roots.mjs
+  s_786fab95c7c3b3::t_8fc9cc4d234908 1-7,9-49
+governance/bin/code-index.mjs
+  s_786fab95c7c3b3::t_40b0b7809e39dc 191-194,196-198,201-203,214
+  s_786fab95c7c3b3::t_d833164a74206e 225
+  s_786fab95c7c3b3::t_b9ca35a1d0e870 76-81,85
+  s_786fab95c7c3b3::t_b14b34506ef3d1 38-39,51-63,65-71
+  s_786fab95c7c3b3::t_789512d0a57546 64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0f5fc40b947cc9aa31b0d2fb51da5e6544428a97",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_786fab95c7c3b3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff81f76ebffeZuJ2IvIlZ06crD",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_dad158d0430b9f 2,5,7,15-18,24,44-49,51,66-68,72-73
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_d0ff5bb12cceb5 54-55,58-60
+  s_60a20469ef4369::t_24465e33b61a75 61
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_0361f5f30ea233 21
+  s_60a20469ef4369::t_673a111b825b96 2-20,22-26
+governance/plans/hookcli/E1-CORE.md
+  s_60a20469ef4369::t_d6b6a1a15a8588 10-11
+hookcli/package.json
+  s_60a20469ef4369::t_51cdca89b8a584 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2599db6568ac45c723ccbf7fd65d520d51ff5013",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

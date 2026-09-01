@@ -1,0 +1,46 @@
+governance/plans/entire-integration/E3-RITUALS.md
+  s_6258b68268be8e::t_b4729efeb7cef9 54
+  s_6258b68268be8e::t_4eb61b29e27bda 4
+bin/fleet-log.mjs
+  s_6258b68268be8e::t_6b6c251efecd23 100
+  s_6258b68268be8e::t_87196130a1b699 27
+  s_6258b68268be8e::t_cdb187a73be2dd 49,56
+  s_6258b68268be8e::t_a855f5bafea789 65
+governance/plans/entire-integration/RECEIPTS.md
+  s_6258b68268be8e::t_2082945cbf5e69 95-105
+bin/start-here.mjs
+  s_6258b68268be8e::t_6168e95cbd45b6 208-251
+  s_6258b68268be8e::t_3d2d3e6f57fa3c 163,171-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7b15e3f40c240f24246676b3f6d56e39bd0bc0cb",
+  "prompts": {},
+  "sessions": {
+    "s_20b101c7f8c430": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff2b3b537ffeFwJZe210BrnNx3",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_6258b68268be8e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fffb02a2cffenB8G79kkAheqHj",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c3d2081ebc163": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef2e2544ffe6o7qrpDEjR6kJt",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": null
+    }
+  }
+}

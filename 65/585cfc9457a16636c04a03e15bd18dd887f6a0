@@ -1,0 +1,33 @@
+hooks/pr-inflight-capture.sh
+  s_70c7ac7de143f9::t_835517ae371bf6 33-42,44,47-57
+  s_70c7ac7de143f9::t_8c83d45c062d31 90-95,99
+  s_70c7ac7de143f9::t_39de6f3a8470f9 100-102,104-112
+  s_70c7ac7de143f9::t_c4a4890fd8a321 138-141,143
+  s_70c7ac7de143f9::t_3718e267ea64d7 145-147,150
+  s_70c7ac7de143f9::t_fee0d5297ac140 86-89
+  s_70c7ac7de143f9::t_ffdaf89b941262 62-68
+  s_70c7ac7de143f9::t_59904af8278d70 58
+hooks/tests/pr-inflight-capture.test.sh
+  s_70c7ac7de143f9::t_a3c16c3d131562 32-40
+  s_70c7ac7de143f9::t_70a8d96828c36d 62,104-153
+  s_70c7ac7de143f9::t_b6827efb098be3 154-156
+  s_70c7ac7de143f9::t_183d61f20bb560 157-158
+hooks/manifest.json
+  s_70c7ac7de143f9::t_a6e4fe88623d46 1367
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "65585cfc9457a16636c04a03e15bd18dd887f6a0",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

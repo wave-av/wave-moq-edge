@@ -1,0 +1,31 @@
+governance/lib/reviewer-roster.mjs
+  s_d9915bbafa9657::t_564e192b3e7754 107,110
+  s_d9915bbafa9657::t_2892323ff57ad2 90-102
+  s_d9915bbafa9657::t_e7601d6d652683 71-83
+governance/lib/reviewer-alarm.mjs
+  s_d9915bbafa9657::t_ae4fe0d2f2ae7f 266
+  s_d9915bbafa9657::t_67d12c3beefebf 36
+  s_d9915bbafa9657::t_0ae0051c4256a2 262-265
+governance/test/reviewer-alarm-conditionally-armed.test.mjs
+  s_d9915bbafa9657::t_9ad05b078d1752 18-21
+  s_d9915bbafa9657::t_0fba7e77bc6970 93-140
+governance/lib/reviewer-alarm-tally.mjs
+  s_d9915bbafa9657::t_997bb49dc69d1b 115-118
+  s_d9915bbafa9657::t_4883a5d4b4fc5b 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a0d978ecbca2af1e7b392fcf42a84abc2c98a571",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

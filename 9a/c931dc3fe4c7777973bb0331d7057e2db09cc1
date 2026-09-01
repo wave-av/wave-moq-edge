@@ -1,0 +1,74 @@
+governance/STUB-BASELINE-2026-08-25.json
+  h_91e57a3221f2ff 2,10,15,48-357,360
+governance/bin/stub-finder.mjs
+  h_91e57a3221f2ff 276
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  h_91e57a3221f2ff 4
+governance/plans/monolith-decomposition/E1-TRIAGE-THE-DEAD.md
+  h_91e57a3221f2ff 4
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  h_91e57a3221f2ff 4
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  h_91e57a3221f2ff 4
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  h_91e57a3221f2ff 4
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  h_91e57a3221f2ff 4
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  h_91e57a3221f2ff 20
+governance/plans/physics-of-compute/E6-MEASUREMENT-RIGOR.md
+  h_91e57a3221f2ff 3
+governance/plans/physics-of-compute/E7-CROSS-MODEL-REPLICATION.md
+  h_91e57a3221f2ff 3
+governance/plans/physics-of-compute/E8-THINKING-MECHANISM.md
+  h_91e57a3221f2ff 3
+governance/plans/physics-of-compute/NORTH-STAR.md
+  h_91e57a3221f2ff 107
+governance/plans/vision-ingest/INGEST-CONTAINER.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-AGENTIC-MEDIA.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-CI-INFRA.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-METERING.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-PUBLISH.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-STORAGE.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-TRANSPORT.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-UI.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/E-WSC-SPLIT.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-ga/NORTH-STAR.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-AGENTS-TO-85.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-DECOMMISSION.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-EGRESS-ROUTER.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-INGRESS.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-MEDIA-TAP.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/E-ROOMS.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/NORTH-STAR.md
+  h_91e57a3221f2ff 4
+governance/plans/wave-native-cutover/P1-CAPABILITY-PARITY-LEDGER.md
+  h_91e57a3221f2ff 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9ac931dc3fe4c7777973bb0331d7057e2db09cc1",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

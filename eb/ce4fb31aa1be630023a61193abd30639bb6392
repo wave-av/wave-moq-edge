@@ -1,0 +1,89 @@
+docs/superpowers/specs/2026-07-31-wave-automation-registry-design.md
+  s_dccee6b7677203::t_872a1e5da592dd 1-301
+governance/DASHBOARD.md
+  s_375efeac18ed55::t_b71c9c510e3555 7,17,25
+governance/ENFORCEMENT-BASELINE.json
+  s_dccee6b7677203::t_42e0e5c650fe2d 11-12,165-169
+governance/ENFORCEMENT-COVERAGE.md
+  s_375efeac18ed55::t_c046e58a917788 5,12,14,98,299
+governance/bin/derived-artifact-drift-audit.mjs
+  s_dccee6b7677203::t_f15ceef5827e94 153-155
+governance/bin/mktemp-template-lint.mjs
+  s_dccee6b7677203::t_432edae9291b6b 18,45-51,53-89,94
+governance/bin/stat-portability-lint.mjs
+  s_dccee6b7677203::t_e742a2e1f7eaca 18,45-68,70-78,81-86,98-117,119
+governance/code-index/CATALOG.md
+  s_375efeac18ed55::t_282aed07ff2548 5,687,691,693,695,697-698,700-701,703,705-706,1017,1021,1024,1029-1030,1926,1928,1932,1934,2720-2722,2724,3599-3601
+governance/code-index/index.json
+  s_375efeac18ed55::t_03629a84cbbc44 10,13,6262-6263,6306-6307,6328-6329,6351-6353,6372-6373,6383-6384,6405-6406,6416-6417,6438-6439,6460-6461,6471-6472,9232-9233,9276-9277,9309-9310,9364-9365,9375-9376,17410-17420,17438-17441,17476-17486,17498-17508,24533-24534,24538-24548,24555-24556,24571-24581,31364-31365,31375-31389
+governance/contract.md
+  s_375efeac18ed55::t_f7f245f2d4e622 51,53
+governance/graph.json
+  s_375efeac18ed55::t_d1a82fc1e610ae 1159-1165,9742-9789
+governance/lib/git-files.mjs
+  s_dccee6b7677203::t_66e516bf2f00da 24-30,55-87
+governance/plans/wave-automation-registry/E1-REGISTRY-CORE.md
+  s_dccee6b7677203::t_61e4b05fbe9414 1-490
+governance/plans/wave-automation-registry/E2-IMPORT-CATEGORIZE.md
+  s_dccee6b7677203::t_17229baf3c5dc6 1-168
+governance/plans/wave-automation-registry/E3-CLEANUP-PARKING.md
+  s_dccee6b7677203::t_c1fe21712154af 1-198
+governance/plans/wave-automation-registry/E4-STRUGGLE-MINER-TIEIN.md
+  s_dccee6b7677203::t_10f1f4ecbb2c5c 1-187
+governance/plans/wave-automation-registry/E5-CUTOVER-VALIDATION.md
+  s_dccee6b7677203::t_a357312a8f1b67 1-145
+governance/plans/wave-automation-registry/NORTH-STAR.md
+  s_dccee6b7677203::t_3283e12e55537f 1-56
+governance/plans/wave-automation-registry/RECEIPTS.md
+  s_dccee6b7677203::t_36a279e016e814 1-152
+governance/test/git-files-scanset.test.mjs
+  s_dccee6b7677203::t_2312e1adc2afaa 1-107
+governance/test/mktemp-template-lint.test.mjs
+  s_dccee6b7677203::t_a16aa00e8fb7bf 95-105
+governance/test/stat-portability-lint.test.mjs
+  s_dccee6b7677203::t_bc3548c167fe71 123-131
+hookcli/bin/distill-report.mjs
+  s_dccee6b7677203::t_397b004709648a 24,123-128
+hookcli/bin/hookcli
+  s_dccee6b7677203::t_077d25c0e8a202 93-126,132-154,156,159
+hookcli/bin/shadow-report.mjs
+  s_dccee6b7677203::t_6f1d15b59e229e 15,68-73
+hookcli/lib/audit-ts.mjs
+  s_dccee6b7677203::t_23a80e73ca8691 1-40
+hookcli/lib/session-exec.sh
+  s_dccee6b7677203::t_39f788841935df 16-27,90,92,97,99,145,147,151,153,212-217,219,222
+hookcli/tests/audit-ts.sh
+  s_dccee6b7677203::t_210dda0f29d6ce 1-96
+hookcli/tests/lib/modules.sh
+  s_dccee6b7677203::t_d8af51334a6f6b 117-120
+hookcli/tests/shadow-sessionstart.sh
+  s_dccee6b7677203::t_167ddd231f54f1 58,62-65,72-73,76-100
+hookcli/tests/t4-llm.sh
+  s_dccee6b7677203::t_5fcc219ac7a46a 193-245
+rules/merge-authority-scoped-by-blast-radius.md
+  s_dccee6b7677203::t_701d444968642a 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "ebce4fb31aa1be630023a61193abd30639bb6392",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+governance/DASHBOARD.md
+  s_63c6ee080d73c3::t_606f700a5ccd8d 25
+governance/bin/gate-coverage-audit.mjs
+  s_124891ed63801b::t_e24ab223d1c840 1-184
+governance/bin/vendored-gate-audit.mjs
+  s_124891ed63801b::t_6a766677405f64 31,57-60,63,67,72-75,93-96
+governance/graph.json
+  s_63c6ee080d73c3::t_b751138e66dc31 22279-22284
+governance/lib/gate-audit-args.mjs
+  s_124891ed63801b::t_b5893a757227b7 1-2,33-70,73-89,91,94,98-101,106-107,109-110,112-114,118-130
+governance/lib/gate-audit-io.mjs
+  s_124891ed63801b::t_73e5ae2cfd1695 1-87
+governance/lib/gate-coverage.mjs
+  s_124891ed63801b::t_02334149847162 1-266
+governance/lib/vendored-gate-classify.mjs
+  s_124891ed63801b::t_bee7526e9824d5 24-76,81-83,87,89-91,93,97-101
+governance/plans/frontier-program/E-ENFORCE.md
+  s_124891ed63801b::t_21a4db8442acd8 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_124891ed63801b::t_a3b03f2b1a4c21 519-562
+governance/test/gate-audit-args.test.mjs
+  s_124891ed63801b::t_e49760d8de2548 11-14,17,73-111,133-141
+governance/test/gate-coverage.test.mjs
+  s_124891ed63801b::t_79c7ba75afaa65 1-448
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e2c5f84da47c5dc80005609e06b80bf98343d46e",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

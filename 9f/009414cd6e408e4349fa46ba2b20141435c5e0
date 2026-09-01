@@ -1,0 +1,19 @@
+runbooks/library/ab-a-design-fork-with-subagents.md
+  s_f651a15e47ab6b::t_f44a47335d5607 27-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9f009414cd6e408e4349fa46ba2b20141435c5e0",
+  "prompts": {},
+  "sessions": {
+    "s_f651a15e47ab6b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aeb05e65da29490bf",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

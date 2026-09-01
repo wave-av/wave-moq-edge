@@ -1,0 +1,25 @@
+governance/test/email-overwide.test.mjs
+  s_53b49eff5b8c5d::t_0cf05452276505 1-111
+governance/lib/email-craft-rules.mjs
+  s_53b49eff5b8c5d::t_eace0945958284 22-25,50-52,179-180,182-184
+governance/lib/email-html-rules.mjs
+  s_53b49eff5b8c5d::t_2284d7c8ece8c0 1-95
+governance/lib/email-html-wrapper.mjs
+  s_53b49eff5b8c5d::t_355957da7024d6 286-374
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ccf6bbd55577cdb2ca16147535d117ff66846925",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

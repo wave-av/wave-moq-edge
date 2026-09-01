@@ -1,0 +1,39 @@
+governance/plans/ffmpeg9-lei/E14-GOLIVE-REVENUE.md
+  s_124891ed63801b::t_a7fbcee06ded58 1-161
+governance/plans/ffmpeg9-lei/E16-RECEIPTS-IN-PRODUCT.md
+  s_124891ed63801b::t_c03a71f1f7bfe5 1-133
+governance/plans/ffmpeg9-lei/E15-UPSTREAM-FLYWHEEL.md
+  s_124891ed63801b::t_59976af6aeb048 1-152
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_124891ed63801b::t_4ee9903a27e99f 72
+  s_124891ed63801b::t_e8e87aeed463d5 90-92,100-107,114-131
+governance/plans/ffmpeg9-lei/action/RING3-BACKLOG.md
+  s_124891ed63801b::t_fa0d4204b5d369 1-15,17-57
+  s_124891ed63801b::t_f15597b452e65d 16
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_ab2f5d8426b296 11-20
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_4ff2312705fe44 97-111
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_124891ed63801b::t_e9a962aa628028 39-46
+governance/DASHBOARD.md
+  s_124891ed63801b::t_98d7a76a50ea2b 25
+governance/graph.json
+  s_124891ed63801b::t_d25db180c04773 3560-3598,21500-21505,21524-21529,21578-21619
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f90a9839d0bfddd8053f84fa91f03485e03300cb",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

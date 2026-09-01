@@ -1,0 +1,62 @@
+governance/plans/conservation-law-design/E2-CONSERVATION-LINT.md
+  s_ea7fda6a228496::t_7e9376f9123151 6-13
+  s_ea7fda6a228496::t_1ae045e89c047e 3-5
+  s_ea7fda6a228496::t_8c46c289908f74 14
+governance/plans/conservation-law-design/E0-METHOD.md
+  s_ea7fda6a228496::t_e51d7cadf1db1f 6-16
+  s_ea7fda6a228496::t_d77d8efeec98f9 3-5
+governance/plans/genome-epigenome-releases/E0-GENOME.md
+  s_ea7fda6a228496::t_7f6b45f3744998 6-15
+  s_ea7fda6a228496::t_5a3fbc90713b3c 3-5
+governance/plans/conservation-law-design/NORTH-STAR.md
+  s_ea7fda6a228496::t_c821330a92da32 9-57
+  s_ea7fda6a228496::t_d67cf9774e7b20 6-8
+governance/plans/genome-epigenome-releases/E1-METHYLATION.md
+  s_ea7fda6a228496::t_49d2e1e70db183 6-15
+  s_ea7fda6a228496::t_7f1c34966df141 3-5
+  s_ea7fda6a228496::t_3349378d6fd518 16
+governance/plans/genome-epigenome-releases/E2-REDLINES.md
+  s_ea7fda6a228496::t_7c9a4446603f24 6-15
+  s_ea7fda6a228496::t_d79a6f6ad30a64 3-5
+  s_ea7fda6a228496::t_144182237aafd7 16
+governance/plans/genome-epigenome-releases/NORTH-STAR.md
+  s_ea7fda6a228496::t_b414c4d3a0353d 9-59
+  s_ea7fda6a228496::t_6a4d2f08c356b7 6-8
+governance/plans/genome-epigenome-releases/E3-PILOT.md
+  s_ea7fda6a228496::t_de6c09b8095bc7 6-15
+  s_ea7fda6a228496::t_76685cdf2d0992 3-5
+  s_ea7fda6a228496::t_8044510002b7a3 16
+  s_e017bc8859c6b9::t_bf8e4bafc215e2 1-2
+governance/plans/conservation-law-design/E3-CANON.md
+  s_ea7fda6a228496::t_4a57e5c33ad3d8 6-14
+  s_ea7fda6a228496::t_6130d240e433a0 3-5
+  s_ea7fda6a228496::t_e40b17e3476b79 15
+governance/plans/conservation-law-design/E1-POC-GATEWAY.md
+  s_ea7fda6a228496::t_9a9289bd53bc15 6-15
+  s_ea7fda6a228496::t_435a63de3f43c9 3-5
+  s_ea7fda6a228496::t_0b6a9423ecb1f3 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "76de7c8cdcd5f6462deefe0bec5f51c4c149477c",
+  "prompts": {},
+  "sessions": {
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

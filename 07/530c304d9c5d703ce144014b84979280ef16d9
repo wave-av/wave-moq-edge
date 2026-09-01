@@ -1,0 +1,29 @@
+.github/wave-sec-semgrep-requirements.txt
+  s_9041cf1cf1ccad::t_db8bac923a70d3 2,11,21-23,164-336,338-340,415-417,462-464,682-684,690-692,868-929,935-943,949-951,955-1002,1020-1022,1033-1035
+.github/requirements/semgrep.txt
+  s_9041cf1cf1ccad::t_f21799946de5b5 15-16,252-254,374-376,602-604,756-817,823-831,843-890
+.github/workflows/wave-sec-scan.yml
+  s_9041cf1cf1ccad::t_83e4af8f7cea63 105
+.github/requirements/semgrep.in
+  s_9041cf1cf1ccad::t_f21799946de5b5 1
+.github/dependabot.yml
+  s_9041cf1cf1ccad::t_83e4af8f7cea63 28
+.github/workflows/governance.yml
+  s_9041cf1cf1ccad::t_83e4af8f7cea63 147
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "07530c304d9c5d703ce144014b84979280ef16d9",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

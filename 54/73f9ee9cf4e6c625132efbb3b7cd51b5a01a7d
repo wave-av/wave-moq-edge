@@ -1,0 +1,23 @@
+bin/fleet-log.mjs
+  s_7ddeb5d251570f::t_bb19e3f3d30371 58
+  s_7ddeb5d251570f::t_eefb39b7ee27fd 86
+bin/fleet-reliability.mjs
+  s_7ddeb5d251570f::t_4f41299ae8588c 75,79-81
+  s_7ddeb5d251570f::t_94519d697edf0a 123-126,134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5473f9ee9cf4e6c625132efbb3b7cd51b5a01a7d",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

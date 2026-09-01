@@ -1,0 +1,22 @@
+packages/config/eslint/index.js
+  h_af5ac1a9798224 1-29
+packages/config/package.json
+  h_af5ac1a9798224 3-4,6,8-10,13-15
+packages/config/typescript/base.json
+  h_af5ac1a9798224 2-31
+packages/config/typescript/nextjs.json
+  h_af5ac1a9798224 1-14
+packages/config/typescript/react.json
+  h_af5ac1a9798224 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "20186e931642fbd59029550e0ef60a04a65e1c38",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

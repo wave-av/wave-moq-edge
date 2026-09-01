@@ -1,0 +1,27 @@
+rules/background-work-must-fail-loud.md
+  s_aa5feb34e0e033::t_8f9c1606c77f06 21-32
+rules/gate-measures-the-enforced-constraint.md
+  s_aa5feb34e0e033::t_c040e4fa4f21d5 1-69
+governance/ENFORCEMENT-COVERAGE.md
+  s_aa5feb34e0e033::t_74045105b7f077 5,9,12,14,74,260
+governance/contract.md
+  s_aa5feb34e0e033::t_94fc5fbb4a77a2 51,53
+governance/graph.json
+  s_aa5feb34e0e033::t_5757352e65f03c 879-885,13563-13574,16311-16358
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "37ac6d514fe654a7ad1ff421758c23591ad97bae",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

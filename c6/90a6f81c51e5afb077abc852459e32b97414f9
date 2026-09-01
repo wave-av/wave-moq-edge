@@ -1,0 +1,21 @@
+governance/plans/wave-voice-program/E1-VOICE-AGENT.md
+  s_6046880c148371::t_a7c8bc3b86cb45 3-5
+governance/plans/wave-voice-program/NORTH-STAR.md
+  s_6046880c148371::t_c2ff70c3ab2d7b 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c690a6f81c51e5afb077abc852459e32b97414f9",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

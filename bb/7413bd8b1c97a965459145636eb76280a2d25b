@@ -1,0 +1,24 @@
+hooks/serena-verbatim-repl-guard.py
+  s_8d26503dfc73f4::t_a08faa9062a504 1-151
+hooks/tests/serena-verbatim-repl-guard.test.sh
+  s_8d26503dfc73f4::t_d10a99b87eacad 1-106
+settings/settings.base.json
+  s_8d26503dfc73f4::t_28e66e1a208646 378-387
+  s_8d26503dfc73f4::t_51334de8cb4247 377
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "bb7413bd8b1c97a965459145636eb76280a2d25b",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

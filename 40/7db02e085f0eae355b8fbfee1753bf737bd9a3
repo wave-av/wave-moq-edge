@@ -1,0 +1,26 @@
+governance/plans/runtime-economy/dogfood/dsh-home/settings.yaml
+  s_2b4acc7ceba309::t_2923e5d121fe7e 1-4
+  s_2b4acc7ceba309::t_ec473b2f11176a 5-12
+governance/plans/runtime-economy/research/WAVE-FLEET-MAP.md
+  s_2b4acc7ceba309::t_21bd9f20254286 1-38
+governance/plans/runtime-economy/dogfood/wave-model.yml
+  s_2b4acc7ceba309::t_f7d507debf418c 1-4
+governance/plans/runtime-economy/dogfood/FINDINGS.md
+  s_2b4acc7ceba309::t_30353e51d844b8 1-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "407db02e085f0eae355b8fbfee1753bf737bd9a3",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

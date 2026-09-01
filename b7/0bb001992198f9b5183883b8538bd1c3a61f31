@@ -1,0 +1,19 @@
+hooks/local-llm/prompt-enhancer.sh
+  s_60a20469ef4369::t_9a153b8d099fe8 112-115,117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b70bb001992198f9b5183883b8538bd1c3a61f31",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

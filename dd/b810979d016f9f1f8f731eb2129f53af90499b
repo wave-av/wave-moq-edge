@@ -1,0 +1,31 @@
+governance/lib/l2-pipeline.mjs
+  s_375efeac18ed55::t_10bae43e63fe0c 1-200
+governance/test/l2-install.test.mjs
+  s_375efeac18ed55::t_077718bd50a123 72,77,100,106,114,122,128,150-220
+  s_375efeac18ed55::t_1cd14745a8d82f 69-71
+  s_375efeac18ed55::t_bc668f8d8e802b 73-76
+  s_375efeac18ed55::t_6456b05bc34d13 78-80
+  s_375efeac18ed55::t_a1abb3d52cef1d 97-99
+  s_375efeac18ed55::t_b15b63251e844b 101-105
+  s_375efeac18ed55::t_6939bbaac87c29 107-109,111-113
+  s_375efeac18ed55::t_621c3545a2d505 115-117,119-121
+  s_375efeac18ed55::t_425670e157e069 123-127
+  s_375efeac18ed55::t_2cf2644ade6665 129
+  s_375efeac18ed55::t_9cfedeef62d0a8 15-17,19-20,61-68,81-88,92-96,110,118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ddb810979d016f9f1f8f731eb2129f53af90499b",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

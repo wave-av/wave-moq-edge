@@ -1,0 +1,26 @@
+scripts/bugbot/test_daemon_budget.sh
+  s_274bffb23af05d::t_62ec1db017fe4d 1-11,18-45
+  s_274bffb23af05d::t_f502778467d710 17
+  s_274bffb23af05d::t_590be470c4f8fb 12-16
+scripts/bugbot/daemon.sh
+  s_274bffb23af05d::t_d70f623a069d02 504-506
+  s_274bffb23af05d::t_9c8e620ed76df0 164-167
+  s_274bffb23af05d::t_38c12086c3404e 478-479
+  s_274bffb23af05d::t_8d287b3a04b6b7 62-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "f0569243ffbfd1160f0c3422ccd89ce2d7037a66",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

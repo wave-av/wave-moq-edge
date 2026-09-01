@@ -1,0 +1,22 @@
+docs/autonomy/NORTHSTAR.md
+  s_274bffb23af05d::t_4215fae38fb308 8-11
+docs/autonomy/FLEET-NORTHSTAR.md
+  s_274bffb23af05d::t_db8748561c9cc3 1-87,89-117
+  s_274bffb23af05d::t_7a5b6669de43f7 88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "dcee1940baccb5a7fb7ea829927ad6fe9727f0ee",
+  "prompts": {},
+  "sessions": {
+    "s_274bffb23af05d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "207d2416-fb8e-4dd4-a638-1ff2ef73f4f1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/test/plugin-runbooks-drift.test.mjs
+  s_d9915bbafa9657::t_44d4fc93361840 1-36
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_d9915bbafa9657::t_c35d11c20fb8ea 1-58
+plugins/wave-runbooks/.claude-plugin/plugin.json
+  s_d9915bbafa9657::t_9f0b0bff269c47 1-18
+plugins/wave-runbooks/README.md
+  s_d9915bbafa9657::t_466ef918536ed2 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "c143d926b37ddc3278e6abeda4c93be38bb8c185",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+governance/plans/floor-control-not-turn-taking/E0-CLOSE-THE-DEAD-METER.md
+  s_1cea981189627b::t_b88cec883be627 4-8
+  s_1cea981189627b::t_25f35c1f7ab002 1-3
+  s_1cea981189627b::t_3dbb1b21ee0398 9-11
+  s_1cea981189627b::t_8008d15ecf9b4a 12-169
+governance/plans/floor-control-not-turn-taking/RECEIPTS.md
+  s_1cea981189627b::t_fd2bc94dce69cd 45-47
+  s_1cea981189627b::t_9fb6d59a6e0a32 42-44
+  s_1cea981189627b::t_a6b54d8120135c 48-50
+  s_1cea981189627b::t_2126182a0e7f5b 1-41,51-61
+governance/plans/floor-control-not-turn-taking/NORTH-STAR.md
+  s_1cea981189627b::t_a227d48b7d9ea9 196
+  s_1cea981189627b::t_066e9eeb3c5268 1-13
+  s_1cea981189627b::t_a4b153f79dde35 15-32
+  s_1cea981189627b::t_5be1d80c3d3531 14
+  s_1cea981189627b::t_e9eec000acbfba 33-35,193-195
+  s_1cea981189627b::t_4faff19e8a3ecf 197-199
+  s_1cea981189627b::t_d15f54aec534c3 36-192,200-256
+governance/plans/floor-control-not-turn-taking/GROUNDING-V2.md
+  s_1cea981189627b::t_3ac2b28e8e2b9f 1-177
+governance/plans/floor-control-not-turn-taking/SYNTHESIS-R2.md
+  s_1cea981189627b::t_e6a5a4848dcabc 1-181
+governance/plans/floor-control-not-turn-taking/creative/broadcast-engineer.md
+  s_1cea981189627b::t_a7072a6fbec495 1-752
+governance/plans/floor-control-not-turn-taking/creative/competitor-sim.md
+  s_1cea981189627b::t_c46cc3ff7cf6f4 1-243
+governance/plans/floor-control-not-turn-taking/creative/developer-advocate.md
+  s_1cea981189627b::t_dfd3f06eaa864f 1-329
+governance/plans/floor-control-not-turn-taking/creative/economist.md
+  s_1cea981189627b::t_f1637d52228630 1-644
+governance/plans/floor-control-not-turn-taking/creative/first-principles.md
+  s_1cea981189627b::t_adb0a38af3f7e1 1-602
+governance/plans/floor-control-not-turn-taking/creative/pragmatist.md
+  s_1cea981189627b::t_1d9bb13530e41b 1-449
+governance/plans/floor-control-not-turn-taking/creative/premortem.md
+  s_1cea981189627b::t_93477cecf86444 1-247
+governance/plans/floor-control-not-turn-taking/creative/r2-customer-voice.md
+  s_1cea981189627b::t_7af0f7e2f86174 1-490
+governance/plans/floor-control-not-turn-taking/creative/r2-historian.md
+  s_1cea981189627b::t_3ccba401c0d9d2 1-669
+governance/plans/floor-control-not-turn-taking/creative/r2-ops-sre.md
+  s_1cea981189627b::t_4c76619096fbf9 1-536
+governance/plans/floor-control-not-turn-taking/creative/r2-productization.md
+  s_1cea981189627b::t_e699c0228b7ec1 1-199
+governance/plans/floor-control-not-turn-taking/creative/r2-yang-asset-light.md
+  s_1cea981189627b::t_2758697e1f59f9 1-528
+governance/plans/floor-control-not-turn-taking/creative/r2-yang-dialtone-first.md
+  s_1cea981189627b::t_5dd6f28bf4f285 1-430
+governance/plans/floor-control-not-turn-taking/creative/r2-yang-keep-closed.md
+  s_1cea981189627b::t_712bb5db552996 1-529
+governance/plans/floor-control-not-turn-taking/creative/r2-yang-phone-money.md
+  s_1cea981189627b::t_fb6cef6967ce9b 1-461
+governance/plans/floor-control-not-turn-taking/creative/r2-yang-wrap-endpointer.md
+  s_1cea981189627b::t_d7ee89cddd0b57 1-437
+governance/plans/floor-control-not-turn-taking/creative/r2-yin-broadcast-money.md
+  s_1cea981189627b::t_c38db757fa4ca6 1-461
+governance/plans/floor-control-not-turn-taking/creative/r2-yin-build-perception.md
+  s_1cea981189627b::t_e01c35f6b033e8 1-478
+governance/plans/floor-control-not-turn-taking/creative/r2-yin-meter-first.md
+  s_1cea981189627b::t_05341328cb943c 1-757
+governance/plans/floor-control-not-turn-taking/creative/r2-yin-open-source.md
+  s_1cea981189627b::t_4eea665a8603e3 1-430
+governance/plans/floor-control-not-turn-taking/creative/r2-yin-own-silicon.md
+  s_1cea981189627b::t_eb2b73ac46f84d 1-558
+governance/plans/floor-control-not-turn-taking/creative/redteam.md
+  s_1cea981189627b::t_b62328e5171071 1-703
+governance/plans/floor-control-not-turn-taking/creative/visionary.md
+  s_1cea981189627b::t_83470aeb96be04 1-177
+governance/plans/floor-control-not-turn-taking/creative/wildcard.md
+  s_1cea981189627b::t_132318d6fe7b62 1-467
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "17f39dff94512e440f3b6a510e4eacfe30262526",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

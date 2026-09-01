@@ -1,0 +1,29 @@
+governance/plans/stripe-settlement-truth/E1-DESTINATION.md
+  s_37d3f61160b2dd::t_d491884386a3be 4
+  s_37d3f61160b2dd::t_4e77b1d5a02d69 41
+  s_37d3f61160b2dd::t_4977fbc6a63247 42
+  s_37d3f61160b2dd::t_f32324bc2fa5c2 46-57
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_37d3f61160b2dd::t_e5febff01ce298 195-235
+  s_37d3f61160b2dd::t_47125c86073e49 296-297,305-325,327-331,333-376
+  s_37d3f61160b2dd::t_54fa0cabeadeda 145
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_37d3f61160b2dd::t_dce30f8a9e22bf 57
+  s_37d3f61160b2dd::t_74f10c47b678d5 22-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "8f5038319a20380c75c6bc328e2261e6dfb1cfcf",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

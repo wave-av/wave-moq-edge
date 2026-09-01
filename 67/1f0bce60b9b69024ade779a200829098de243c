@@ -1,0 +1,32 @@
+hookcli/tests/distill-report.sh
+  s_02abc74f4971c7::t_591d1ed4eab0aa 98-114
+hookcli/bin/hookcli
+  s_02abc74f4971c7::t_abf0ec251461f1 201-220,222-226
+  s_02abc74f4971c7::t_8e9ea303afa6f6 221
+hookcli/lib/eval-t1.sh
+  s_02abc74f4971c7::t_b63a75e3ea4ef2 40-43
+hookcli/bin/distill-report.mjs
+  s_02abc74f4971c7::t_b3b2e931defb20 269-270
+  s_02abc74f4971c7::t_fcfb0bd034500e 64-68
+  s_02abc74f4971c7::t_a0e0fd00a9f96c 141
+  s_02abc74f4971c7::t_2da7605bbad2f3 115
+hookcli/tests/gate-dispatch.sh
+  s_02abc74f4971c7::t_7baf2128401fe2 188-192,194
+  s_02abc74f4971c7::t_86a0bdfb6477e5 135-187,193,195-206
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "671f0bce60b9b69024ade779a200829098de243c",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

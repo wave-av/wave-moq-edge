@@ -1,0 +1,19 @@
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_f126fb3b7cae07::t_d05095c6d43f91 1-77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "018db5ec739d09bcabe02f28172aebe5beb182e8",
+  "prompts": {},
+  "sessions": {
+    "s_f126fb3b7cae07": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1415997c-8473-466a-8505-17acd087bbdd",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

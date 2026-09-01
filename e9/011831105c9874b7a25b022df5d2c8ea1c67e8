@@ -1,0 +1,46 @@
+metrics-collector.ts
+  s_5f27fa5b8237cd::t_abd2af0fa4cff9 4
+README.md
+  s_5f27fa5b8237cd::t_c8c3b5a56f8e74 3
+capabilities.json
+  s_5f27fa5b8237cd::t_b49fb20a30e470 18,20
+  s_5f27fa5b8237cd::t_3db798ee653e04 26
+src/shared/wave-public-html.ts
+  s_5f27fa5b8237cd::t_5be4abee96ef3b 5
+src/wave-usage.ts
+  s_5f27fa5b8237cd::t_9703c0a9a20511 5
+  s_5f27fa5b8237cd::t_084800ea27ad98 73
+.github/workflows/deploy.yml
+  s_5f27fa5b8237cd::t_63e0cc0cc7c98f 3
+src/wave-auth.ts
+  s_5f27fa5b8237cd::t_bebff1722b27f2 120
+  s_5f27fa5b8237cd::t_035b1540af4b5e 37
+  s_5f27fa5b8237cd::t_970f761ce73734 27,29
+.coderabbit.yaml
+  s_5f27fa5b8237cd::t_de59cbe0ba156f 2
+usage-emit.ts
+  s_5f27fa5b8237cd::t_57645f9fa8d509 22
+  s_5f27fa5b8237cd::t_868511860a1f91 44
+  s_5f27fa5b8237cd::t_e5ca7f827bc406 3
+CHANGELOG.md
+  s_5f27fa5b8237cd::t_1db1e99d00e754 33-35
+  s_5f27fa5b8237cd::t_b9905d8ce07595 39
+CONTRIBUTING.md
+  s_5f27fa5b8237cd::t_6be490738bcc87 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "e9011831105c9874b7a25b022df5d2c8ea1c67e8",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

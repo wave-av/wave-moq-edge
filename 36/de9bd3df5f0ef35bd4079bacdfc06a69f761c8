@@ -1,0 +1,19 @@
+scripts/bugbot/package-lock.json
+  s_cf3356a24071e8::t_29b5f29bc03a7e 86-88,186-188,194,337-339,348,350-351,353,359-373,443-445,626-628
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "36de9bd3df5f0ef35bd4079bacdfc06a69f761c8",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

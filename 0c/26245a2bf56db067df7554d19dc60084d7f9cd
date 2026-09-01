@@ -1,0 +1,19 @@
+runbooks/library/edge-audio-watch-tripwire-query.md
+  s_ee374fdf782767::t_f98977398bba91 61-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0c26245a2bf56db067df7554d19dc60084d7f9cd",
+  "prompts": {},
+  "sessions": {
+    "s_ee374fdf782767": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e20f63ea-8846-4609-bc0b-ebc7bdd03bfc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

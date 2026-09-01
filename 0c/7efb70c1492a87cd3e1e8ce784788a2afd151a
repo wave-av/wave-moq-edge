@@ -1,0 +1,55 @@
+governance/bin/enforcement-tables.mjs
+  s_dd42a206f882e3::t_5a9e3c0b164960 78-84
+governance/lib/drill-fixtures-inline-secret-assignment-gate.mjs
+  s_dd42a206f882e3::t_429bf0ebda7dd2 1-89
+governance/lib/drill-inline-required.mjs
+  s_dd42a206f882e3::t_7bd294b3633007 83-90,94
+governance/lib/drill-registry.mjs
+  s_dd42a206f882e3::t_2eefc7daffa8cf 47,138-142,156
+governance/plans/wave-voice-program/E0-INVENTORY.md
+  s_dd42a206f882e3::t_acaccf55e2498a 1-179
+governance/plans/wave-voice-program/E1-VOICE-AGENT.md
+  s_dd42a206f882e3::t_905b4069089beb 1-76
+governance/plans/wave-voice-program/E2-PSTN.md
+  s_dd42a206f882e3::t_fb0604a0aaa286 1-84
+governance/plans/wave-voice-program/E3-CF-TRANSPORT.md
+  s_dd42a206f882e3::t_81b2e1c8303688 1-54
+governance/plans/wave-voice-program/E4-SURFACES.md
+  s_dd42a206f882e3::t_ff0cbe785927fa 1-59
+governance/plans/wave-voice-program/E5-SWEEP.md
+  s_dd42a206f882e3::t_89bc3b50aec4a2 1-76
+governance/plans/wave-voice-program/NORTH-STAR.md
+  s_dd42a206f882e3::t_f536c83f4ecadc 1-163
+hooks/hooklib/inline-secret-check1.sh
+  s_dd42a206f882e3::t_27887b124d4f5e 1-117
+hooks/hooklib/secret-patterns.sh
+  s_dd42a206f882e3::t_2e71282595c906 77-91,94-126,133-138,140-148
+hooks/inline-secret-assignment-gate.sh
+  s_dd42a206f882e3::t_b0ae904c04d498 1-212
+hooks/tests/hook-fail-closed.test.sh
+  s_dd42a206f882e3::t_7ff7e79768bfa1 77-85,186-194
+hooks/tests/inline-secret-assignment-gate-width.test.sh
+  s_dd42a206f882e3::t_8c6d1d30070aa1 1-115
+hooks/tests/inline-secret-assignment-gate.test.sh
+  s_dd42a206f882e3::t_aeb760ac20e965 1-267
+hooks/tests/secret-leak-scan-prefix-anchor.test.sh
+  s_dd42a206f882e3::t_5fa2325d36dbba 110-136
+settings/settings.base.json
+  s_dd42a206f882e3::t_6206808622856e 360-364
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0c7efb70c1492a87cd3e1e8ce784788a2afd151a",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

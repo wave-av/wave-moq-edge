@@ -1,0 +1,33 @@
+governance/plans/credential-provisioning-integrity/E1-INVENTORY.md
+  s_1c39f05328ef8a::t_e3ecebc7b70f1a 24-31,41-48,58-65,75-81
+governance/plans/credential-provisioning-integrity/E2-TRAPS.md
+  s_1c39f05328ef8a::t_314d6bc0b5faf3 37-44,54-62,73-80,90-98,108-113
+governance/plans/credential-provisioning-integrity/E3-ORPHANS.md
+  s_1c39f05328ef8a::t_6c2507cb1f02ba 31-39,49-57,68-76,87-95,106-112
+governance/plans/credential-provisioning-integrity/E4-GRANTS.md
+  s_1c39f05328ef8a::t_e27cc698b2ef34 35-43,54-63,74-81,90-97
+governance/plans/credential-provisioning-integrity/E5-MALFORMED.md
+  s_1c39f05328ef8a::t_3557e9a2925c50 44-52,62-70,80-86
+governance/plans/credential-provisioning-integrity/E6-SCOPE.md
+  s_1c39f05328ef8a::t_0f68e13fce25ba 28-35,46-54,65-72,83-89
+governance/plans/credential-provisioning-integrity/E7-RATCHET.md
+  s_1c39f05328ef8a::t_4de209eaad83cd 43-51,63-70,80-89,99-106,116-121
+governance/plans/credential-provisioning-integrity/E8-ROTATE.md
+  s_1c39f05328ef8a::t_d299ece98ccbda 38-46,56-63,73-80,89-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ce38ba1c93adc3c45e82fdc37976c1a35efd4b2",
+  "prompts": {},
+  "sessions": {
+    "s_1c39f05328ef8a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-af17b4ce0cc5c190e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

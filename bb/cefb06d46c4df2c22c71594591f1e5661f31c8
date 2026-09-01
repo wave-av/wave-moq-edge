@@ -1,0 +1,42 @@
+.gitignore
+  s_10fba73617e4ba::t_29df049ee1575b 16-18
+bin/shadow-lane.mjs
+  s_10fba73617e4ba::t_7effec6383787d 147
+  s_10fba73617e4ba::t_706215f4865078 1-25,27-123,125,128,132-139,141-146,148-183,185-279
+  s_10fba73617e4ba::t_d77bd02e6ec37b 124,126-127,129-131
+  s_10fba73617e4ba::t_aced9a866aaf35 184
+  s_10fba73617e4ba::t_d5c43fcaba50fa 26
+  s_10fba73617e4ba::t_94328009442115 140
+fleet-autonomy/INVARIANT.md
+  s_10fba73617e4ba::t_5ac7940396a6f2 1-17
+bin/shadow-lane.test.mjs
+  s_10fba73617e4ba::t_20207e6fc88a97 105
+  s_10fba73617e4ba::t_e5afa69d4844f7 1-68,70-76,78-85,87-104,106-142
+  s_10fba73617e4ba::t_5808733c4f45db 69,77
+  s_10fba73617e4ba::t_77a867d7738414 86
+governance/plans/fleet-autonomy/E3-SHADOW-LANE.md
+  s_10fba73617e4ba::t_5f0ff243584879 30-32
+  s_10fba73617e4ba::t_7e87fa6687e2a2 38-40
+  s_10fba73617e4ba::t_8a9c3c68ceae13 46-48,53-56
+  s_10fba73617e4ba::t_9cbc4d6ff7915e 60-62
+  s_10fba73617e4ba::t_01ee8e80ae98da 66-68
+  s_10fba73617e4ba::t_2238ab0ad94e95 1-2,4-5,7-26,28,34,36,42,44-45,49-52,57-59,63-65
+governance/plans/fleet-autonomy/E1-START-HERE.md
+  s_10fba73617e4ba::t_129c097caf376d 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bbcefb06d46c4df2c22c71594591f1e5661f31c8",
+  "prompts": {},
+  "sessions": {
+    "s_10fba73617e4ba": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fff7871beffeHroegGsKuL9xYh",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/plans/sovereign-capacity/E9-ADJACENCY.md
+  s_aa5feb34e0e033::t_873c5ec5ce1cbc 1-97
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  s_aa5feb34e0e033::t_911faa2c5b3bb8 62-63
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  s_aa5feb34e0e033::t_1a4c8c0f6f1a5c 1-109
+governance/graph.json
+  s_aa5feb34e0e033::t_0f840fcace5eb1 9359-9382,36494-36547,36650-36661
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "56ca6eeff17c19c7c45c5ec767089ae5ce8cc74c",
+  "prompts": {},
+  "sessions": {
+    "s_aa5feb34e0e033": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c8e37ef-21bd-414c-915c-e940109ee7c8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

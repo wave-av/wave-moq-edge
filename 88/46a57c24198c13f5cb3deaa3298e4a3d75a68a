@@ -1,0 +1,26 @@
+scripts/tournament.test.ts
+  s_672079ccfe8ce6::t_da61a149107b9a 169-186
+  s_672079ccfe8ce6::t_6381a5db3aea94 166-168
+  s_672079ccfe8ce6::t_5c00cbdd4df423 187-189
+  s_672079ccfe8ce6::t_62a9879ffa2f7d 12,14,155-165,190-211
+scripts/tournament.ts
+  s_672079ccfe8ce6::t_d0b556ccf99992 429-431
+  s_672079ccfe8ce6::t_0f33a1b1a18576 235-244
+  s_672079ccfe8ce6::t_2c38341b46ce29 432
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8846a57c24198c13f5cb3deaa3298e4a3d75a68a",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

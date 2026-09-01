@@ -1,0 +1,24 @@
+frameworks/model-routing/local_offload/shim/engine.py
+  s_e1b383248d553d::t_4dde6b8b25faeb 235
+  s_e1b383248d553d::t_e1187596998d26 147-150
+  s_e1b383248d553d::t_1b0dc7e47849de 133-136,138-139
+  s_e1b383248d553d::t_e4fea9c47f005f 157
+  s_e1b383248d553d::t_fa159bb894e95d 170
+  s_e1b383248d553d::t_aa1c27a48a8289 186-188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "382e716a71db53700fba5be0b8233abaf5c2c48d",
+  "prompts": {},
+  "sessions": {
+    "s_e1b383248d553d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d2b4a23d-6444-4720-ad99-f7ffd71527c4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

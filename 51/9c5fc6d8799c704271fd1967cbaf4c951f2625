@@ -1,0 +1,21 @@
+governance/ENFORCEMENT-COVERAGE.md
+  s_85113a1cef9a84::t_e297080d1f574d 5,9-10,12,14,27,34,45,54,59-60,80,82,103-104,112,115-116,140,147,182-183,185,208,225,237,253,259,261,285,288,320-321,332,336-337,366,374,428-429,433
+governance/contract.md
+  s_85113a1cef9a84::t_2a0b6dd3bf6a72 57,59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "519c5fc6d8799c704271fd1967cbaf4c951f2625",
+  "prompts": {},
+  "sessions": {
+    "s_85113a1cef9a84": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "43bf7a61-f0f1-4f18-aea1-cdd8d156f4b5",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

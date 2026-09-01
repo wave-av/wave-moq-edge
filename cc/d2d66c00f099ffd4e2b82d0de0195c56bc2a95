@@ -1,0 +1,27 @@
+bin/review-dpo.mjs
+  s_7ddeb5d251570f::t_2340857eeecb48 1-57,65-87
+  s_7ddeb5d251570f::t_d300cce31ef74f 58-64
+governance/test/review-dpo.test.mjs
+  s_7ddeb5d251570f::t_b1b4ba70223c43 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ccd2d66c00f099ffd4e2b82d0de0195c56bc2a95",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

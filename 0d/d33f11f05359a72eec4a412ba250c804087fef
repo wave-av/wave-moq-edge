@@ -1,0 +1,19 @@
+.github/workflows/checks.yml
+  s_dedb333dd5195e::t_6a19770ba2ccc8 62-63,906-907,1092-1093,1165-1166,1199-1200,1229-1230,1307-1308,1579-1580,1614-1615,1654-1655,1784-1785
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0dd33f11f05359a72eec4a412ba250c804087fef",
+  "prompts": {},
+  "sessions": {
+    "s_dedb333dd5195e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "74c7ad25-d88e-4e23-bf60-5c98e9d130b2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

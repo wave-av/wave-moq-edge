@@ -1,0 +1,36 @@
+governance/bin/cost-ledger-store.mjs
+  h_af5ac1a9798224 25-48,50
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  h_af5ac1a9798224 4-6,10-11,13,19-23,25-43,45-47,52-60,62,88-94,107-108,119-128,131-134,140-144,148,175-186,193-198,201-204,218-223,225,228-239,241,244
+governance/bin/wave-cost-ledger-vendor-config-liveness.mjs
+  h_af5ac1a9798224 51-56
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 5,596-599,3307-3314,3345,3347,4658-4661,4734-4735,4737
+governance/code-index/index.json
+  h_af5ac1a9798224 10,12-13,5426-5440,5448-5449,5459-5460,29538-29539,29549-29552,29560-29574,29582-29585,29593-29607,29615-29616,29824-29825,29847-29849,39780-39782,39790-39804,39812-39815,40318-40319,40329-40332,40351-40354
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  h_af5ac1a9798224 22-26,30-87,90-93,119,125,128,167-170,174
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  h_af5ac1a9798224 16-27,112-126
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  h_af5ac1a9798224 255-261
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  h_af5ac1a9798224 1-4,65-81,92-175
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  h_af5ac1a9798224 1-234
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  h_af5ac1a9798224 81-86,90-91
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  h_af5ac1a9798224 91-92,95,104-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "da7327b85d4d1e84e2062f3aa6ee3749bebb48c8",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

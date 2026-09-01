@@ -1,0 +1,37 @@
+governance/lib/mktemp-template.mjs
+  s_dccee6b7677203::t_24e6913eb17bc8 1-10,15-22,24,30-31,44-47,51-52,54-61,63-69
+  s_dccee6b7677203::t_d563ba5af1741c 11-14,23,25-29,32-43,48-50,53,62,70
+governance/bin/gate-liveness-drill.mjs
+  s_dccee6b7677203::t_8caa3926e0a7ac 58-63
+  s_dccee6b7677203::t_d08cccc4116ff4 33
+.github/workflows/governance.yml
+  s_dccee6b7677203::t_9d5fcf4babaecc 152-158
+governance/test/fixtures/bad-shell/broken-mktemp.sh
+  s_dccee6b7677203::t_b730d0201efdca 1-10
+governance/lib/drill-fixtures-shell.mjs
+  s_dccee6b7677203::t_c93166c6120d60 1-46
+governance/bin/mktemp-template-lint.mjs
+  s_dccee6b7677203::t_1ecc85d9a3e908 1-78
+governance/test/mktemp-template-lint.test.mjs
+  s_dccee6b7677203::t_e9900f3c3578b1 1-101
+governance/code-index/CATALOG.md
+  s_dccee6b7677203::t_a56bc742fc31db 5,1449-1456,1834-1847
+governance/code-index/index.json
+  s_dccee6b7677203::t_1682693cff0b32 6-7,9-10,13022-13023,13033-13036,13044-13045,13055-13056,13066-13067,13077-13078,13088-13089,13099-13100,16547-16667
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "f4770c9bb4db1478e9d82fa89eb44229fc8f1bd9",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

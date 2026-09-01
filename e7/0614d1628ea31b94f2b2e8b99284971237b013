@@ -1,0 +1,25 @@
+governance/plans/pen-design-lane/GOVERNANCE-INTEGRATION-2026-08-14.md
+  s_ddc6ab5f5d6b64::t_aa7d32ea53c601 1-133
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_ddc6ab5f5d6b64::t_87e6ea0525dcf3 17-35
+governance/plans/pen-design-lane/E7-SCALE.md
+  s_ddc6ab5f5d6b64::t_ff709f81cb8bb5 8-27
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_ddc6ab5f5d6b64::t_3f41bfdf620f02 37-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e70614d1628ea31b94f2b2e8b99284971237b013",
+  "prompts": {},
+  "sessions": {
+    "s_ddc6ab5f5d6b64": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bd40e21a-4a9f-4329-af7d-2d974870ae31",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

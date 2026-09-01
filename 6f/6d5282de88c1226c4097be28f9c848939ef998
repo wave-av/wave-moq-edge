@@ -1,0 +1,22 @@
+hooks/tests/portable-shell.test.sh
+  s_02abc74f4971c7::t_085b2ec47b9abb 31-38
+  s_02abc74f4971c7::t_6d07851a1e6aca 103-143,146-155,158-173,175-176,178-185
+  s_02abc74f4971c7::t_e3fd436bb6018f 174
+  s_02abc74f4971c7::t_219749e51c4fb9 177
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6f6d5282de88c1226c4097be28f9c848939ef998",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

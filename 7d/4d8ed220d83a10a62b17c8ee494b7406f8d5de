@@ -1,0 +1,21 @@
+hooks/tests/wrangler-deploy-gate-xargs.test.sh
+  s_d9915bbafa9657::t_535931f0f64e85 112-123
+hooks/hooklib/wrangler-deploy-patterns.sh
+  s_d9915bbafa9657::t_cdb8e1e5f1c726 219-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7d4d8ed220d83a10a62b17c8ee494b7406f8d5de",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

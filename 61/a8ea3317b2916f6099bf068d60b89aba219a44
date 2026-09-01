@@ -1,0 +1,21 @@
+docs/docs-dogfood/NORTHSTAR.md
+  s_6c1c1be138dfd4::t_fd799484a07d3b 136-162
+  s_6c1c1be138dfd4::t_01e6fb5c6adf44 130
+  s_6c1c1be138dfd4::t_5b8f552a2a2a5d 98-101
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "61a8ea3317b2916f6099bf068d60b89aba219a44",
+  "prompts": {},
+  "sessions": {
+    "s_6c1c1be138dfd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a5dffe1-aa2a-4164-bcf4-2a833c950ff4",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

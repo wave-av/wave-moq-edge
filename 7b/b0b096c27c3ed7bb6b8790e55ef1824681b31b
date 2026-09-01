@@ -1,0 +1,28 @@
+governance/plans/gates-report-coverage/E5-SECRETS-INVENTORY.md
+  s_70c7ac7de143f9::t_7ab78ecd9dd29e 10
+  s_70c7ac7de143f9::t_c4f7c21434e288 16
+governance/plans/gates-report-coverage/E4-FLEET-DETECTOR.md
+  s_70c7ac7de143f9::t_15d8d1eb085676 10
+governance/plans/gates-report-coverage/NORTH-STAR.md
+  s_70c7ac7de143f9::t_9977f174f0ed62 95
+governance/plans/gates-report-coverage/E0-EVIDENCE.md
+  s_70c7ac7de143f9::t_eafab9242dd510 76
+governance/plans/gates-report-coverage/E2-SCOPE-DECLARATION.md
+  s_70c7ac7de143f9::t_8f581902c7bba6 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7bb0b096c27c3ed7bb6b8790e55ef1824681b31b",
+  "prompts": {},
+  "sessions": {
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

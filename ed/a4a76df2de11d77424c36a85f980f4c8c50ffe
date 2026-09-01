@@ -1,0 +1,21 @@
+governance/plans/wave-progressive-delivery/E2-GATEWAY-ROLLOUT.md
+  s_264ae386838c57::t_9ffba1ca9ddd8c 35
+governance/plans/wave-progressive-delivery/E1-MEASURE.md
+  s_264ae386838c57::t_e515affe7cd6e1 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "eda4a76df2de11d77424c36a85f980f4c8c50ffe",
+  "prompts": {},
+  "sessions": {
+    "s_264ae386838c57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48d29d75-ea03-46dd-b951-1e1af7b74d35",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

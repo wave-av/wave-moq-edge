@@ -1,0 +1,21 @@
+governance/plans/finding-closure/E3-GATES.md
+  s_02abc74f4971c7::t_4a7de52f08c32c 6,73
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_02abc74f4971c7::t_ea761097f09a65 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a6a48a113f20362d6f8b09cef042019337c6b481",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

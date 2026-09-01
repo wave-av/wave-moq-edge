@@ -1,0 +1,23 @@
+governance/plans/frontier-program/E-EVAL-PLATFORM.md
+  s_8cf2bb6b5cecc2::t_00cb20f16d6005 57
+governance/plans/frontier-program/results/RESULTS-E1-DECISION.md
+  s_8cf2bb6b5cecc2::t_1d93cf15ad348c 1-48
+governance/plans/frontier-program/results/results-e1-decision.json
+  s_8cf2bb6b5cecc2::t_5af2795e4e4496 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "48da1930b9b5a165052d4c65ebb4f86cc7c526a0",
+  "prompts": {},
+  "sessions": {
+    "s_8cf2bb6b5cecc2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00f1c99dbffeuvtyivZMUkRj2j",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

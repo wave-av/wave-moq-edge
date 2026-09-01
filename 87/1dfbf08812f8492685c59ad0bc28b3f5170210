@@ -1,0 +1,21 @@
+scripts/public-repo-guard/tests/body-policy.test.sh
+  s_375efeac18ed55::t_4b733aee79b4fe 78-87
+scripts/public-repo-guard/body-policy.sh
+  s_375efeac18ed55::t_238fa08ef61fa4 88-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "871dfbf08812f8492685c59ad0bc28b3f5170210",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

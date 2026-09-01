@@ -1,0 +1,20 @@
+bin/start-here.mjs
+  s_d2ff8f6ac6a5d5::t_be07ff5fcaaa32 26
+  s_d2ff8f6ac6a5d5::t_ad8bba3b80c8e6 225
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "9b7ae9d896f19c5dd9e2ca236de08bc2220190cb",
+  "prompts": {},
+  "sessions": {
+    "s_d2ff8f6ac6a5d5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0023a3c22ffeBG8wWwShU2zIvM",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

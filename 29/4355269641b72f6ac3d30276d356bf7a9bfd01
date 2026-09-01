@@ -1,0 +1,20 @@
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_85d9e5f433b9aa::t_a2efc1b4a87826 13-19
+  s_85d9e5f433b9aa::t_71db2d17b0f5b0 320-357
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "294355269641b72f6ac3d30276d356bf7a9bfd01",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

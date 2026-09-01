@@ -1,0 +1,26 @@
+governance/test/rl-signal-source.test.mjs
+  s_0950865aa49634::t_e56fa9d8bae06f 133-172
+governance/plans/wave-rl-signal-intake/E0-SOURCES.md
+  s_0950865aa49634::t_cf111dc4096d27 325-350
+governance/lib/rl-source-pr.mjs
+  s_0950865aa49634::t_eecc76dd7eb562 61-73,83-87
+  s_0950865aa49634::t_d5da4d429c0c64 95-100,103
+  s_0950865aa49634::t_67d99565bdcc2c 88
+  s_0950865aa49634::t_ac874391a2c76b 200
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "29332ca3be3d371b754dc511e8081fe2ca107715",
+  "prompts": {},
+  "sessions": {
+    "s_0950865aa49634": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "518943ff-8147-4d4c-b2b1-06d56f5c7188",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

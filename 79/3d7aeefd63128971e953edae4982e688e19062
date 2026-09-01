@@ -1,0 +1,27 @@
+governance/lib/reviewer-liveness-read-io.mjs
+  s_54f680af358288::t_4550b2ec828b0a 1-47
+governance/test/review-liveness-floor-coupling.test.mjs
+  s_54f680af358288::t_601bd33be0dc52 1-34
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  s_54f680af358288::t_bb92374d44edab 72-82
+governance/test/reviewer-liveness-read.test.mjs
+  s_54f680af358288::t_70eb24defb975a 1-140
+governance/lib/reviewer-liveness-read.mjs
+  s_54f680af358288::t_df3dc91b8260c7 1,11-29,38-48,51-61,63-77,79-107,110,112-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "793d7aeefd63128971e953edae4982e688e19062",
+  "prompts": {},
+  "sessions": {
+    "s_54f680af358288": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7606c1c8-2719-412b-9b0c-5cf8f75f2803",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

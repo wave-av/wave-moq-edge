@@ -1,0 +1,38 @@
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/cordis.patch.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/cordis.yml
+  h_67a1b847dc59d6 1-4
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/package.json
+  h_67a1b847dc59d6 1-13
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/profiles/headless/pnpm-workspace.yaml
+  h_67a1b847dc59d6 1-5
+governance/plans/runtime-economy/dogfood/dsh-home-pool30/settings.yaml
+  h_67a1b847dc59d6 1
+governance/plans/runtime-economy/dogfood/tier-pool30b-run1.log
+  h_67a1b847dc59d6 1-11
+governance/plans/runtime-economy/dogfood/tier-pool30b-run2.log
+  h_67a1b847dc59d6 1-71
+governance/plans/runtime-economy/dogfood/tier-pool30b-run3.log
+  h_67a1b847dc59d6 1-74
+governance/plans/runtime-economy/dogfood/tier-pool30b-run4.log
+  h_67a1b847dc59d6 1-71
+governance/plans/runtime-economy/dogfood/tier-pool30b-run5.log
+  h_67a1b847dc59d6 1-73
+governance/plans/runtime-economy/dogfood/tier-pool30b-t1.log
+  h_67a1b847dc59d6 1-16
+governance/plans/runtime-hardening/E1-30B-TRANSPORT.md
+  h_67a1b847dc59d6 5
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  h_67a1b847dc59d6 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "25d6e81243fbf99a82ce197b1dfb725d3277085f",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

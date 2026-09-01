@@ -1,0 +1,53 @@
+governance/test/hookcli-package-boundary.test.mjs
+  s_85d9e5f433b9aa::t_5230e21c94cc0d 80-122
+  s_85d9e5f433b9aa::t_5f5fd267b39fa8 137-141,143,147
+  s_85d9e5f433b9aa::t_ad98f8c4086ec1 1-79,123-136,142,144-146,148-178
+governance/plans/socratic-loop/E2-ASKING.md
+  s_dd0e4589702fc5::t_f69cef44fbb56a 667,675
+governance/plans/socratic-loop/E9-ANTI-GAMING.md
+  s_dd0e4589702fc5::t_e5f6d8e4a42afd 6
+hookcli/lib/promote-grade.mjs
+  s_dd0e4589702fc5::t_2a2d2cdd2e92aa 2-3
+hookcli/tests/audit-ts.sh
+  s_dd0e4589702fc5::t_b52bd092da3265 64,86
+hookcli/tests/distill-report.sh
+  s_dd0e4589702fc5::t_a85fe114cf1e67 7
+hookcli/tests/enforce-review.sh
+  s_dd0e4589702fc5::t_9e69649aafe170 6-7
+hookcli/tests/promote-candidate.sh
+  s_dd0e4589702fc5::t_d675fe72c60244 7
+hookcli/tests/require-arity.sh
+  s_dd0e4589702fc5::t_04b2fbec42e522 107-108
+hookcli/tests/require-graduation-report.sh
+  s_dd0e4589702fc5::t_769dc61622d743 6
+hookcli/tests/shadow-report.sh
+  s_dd0e4589702fc5::t_b4eb07076c0809 4
+hookcli/tools/enforce-review.mjs
+  s_dd0e4589702fc5::t_63d05ac5dfbdb8 178
+hookcli/tests/report-provenance.sh
+  s_85d9e5f433b9aa::t_cd1d8973679532 16,24,42,49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3671d3ba22d29c1f260bf94def7f60627066ddc8",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_dd0e4589702fc5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5fe51f56a0d096c9",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

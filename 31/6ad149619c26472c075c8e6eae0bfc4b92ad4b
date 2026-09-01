@@ -1,0 +1,33 @@
+governance/tools/storage-router/manifests/rl-corpus.json
+  s_32730aed07cf6c::t_0914a24989f719 1-121
+governance/plans/wave-rl-corpus/NORTH-STAR.md
+  s_32730aed07cf6c::t_f477c827111fb2 49-56
+governance/plans/wave-usage-lakehouse/NORTH-STAR.md
+  s_94577512b03fea::t_ad8f2995fb9a85 100-103
+governance/tools/data-gravity-lint/manifests/lakehouse.json
+  s_94577512b03fea::t_f2fcab8b44591b 1-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "316ad149619c26472c075c8e6eae0bfc4b92ad4b",
+  "prompts": {},
+  "sessions": {
+    "s_32730aed07cf6c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0025764d4ffeA9cGwFohvRft2A",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_94577512b03fea": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002577016ffeLWEkke2TydbQsT",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

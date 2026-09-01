@@ -1,0 +1,43 @@
+governance/bin/lens-sweep.mjs
+  s_0227926428e4b1::t_1f08b4e7f99a2a 22,97-100,126-127,158-163,224-235,254-259
+governance/lib/lens-sweep/bank-claims.mjs
+  s_0227926428e4b1::t_1ca0f2a6837590 107-113,115
+governance/lib/lens-sweep/bank-lint-core.mjs
+  s_c24357e71ae5bc::t_4da215cf2ca7af 33-40
+governance/lib/lens-sweep/cli-validate.mjs
+  s_c24357e71ae5bc::t_c99c559c698b06 1-57
+governance/lib/lens-sweep/reconcile.mjs
+  s_0227926428e4b1::t_a4ebc3d744245d 97-107,115-119,121-122,125-136
+governance/test/lens-sweep-cli.test.mjs
+  s_0227926428e4b1::t_51fab276123f47 69-91
+governance/test/lens-sweep-manifest.test.mjs
+  s_c24357e71ae5bc::t_d8880da4ce6534 10,167-197,223,230-257
+governance/lib/lens-sweep/manifest.mjs
+  s_c24357e71ae5bc::t_a55e14904bab03 31,86,91-115
+governance/test/bank-lint.test.mjs
+  s_c24357e71ae5bc::t_1ad408250ea8fb 149-170
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f06ff2e41918f21180172f227cea664aa1fa129e",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

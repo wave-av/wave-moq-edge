@@ -1,0 +1,19 @@
+governance/state/model-scores.json
+  s_faac24a5486e50::t_4d3e225c0f464f 1109-1194
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5fbca1731a853cf34c267ec4c80d345ddd1accd8",
+  "prompts": {},
+  "sessions": {
+    "s_faac24a5486e50": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a11d71699b669401d",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

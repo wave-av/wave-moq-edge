@@ -1,0 +1,26 @@
+governance/bin/wave-sec.mjs
+  s_385bc18304fdd3::t_964fea0355427a 74
+governance/lib/wave-sec-lane-gather.mjs
+  s_385bc18304fdd3::t_2e85c897108bd8 15
+  s_385bc18304fdd3::t_2dd8788673e2f0 66-69
+governance/lib/wave-sec-checkly.mjs
+  s_385bc18304fdd3::t_6f7821c60d72ee 1-124
+governance/test/wave-sec-checkly.test.mjs
+  s_385bc18304fdd3::t_26afb98d75a246 1-162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a03114ebe311c5a8dd4879a27fe12a8e2a8ec699",
+  "prompts": {},
+  "sessions": {
+    "s_385bc18304fdd3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3078c93-614a-41d7-b231-3e17309d5bf4",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

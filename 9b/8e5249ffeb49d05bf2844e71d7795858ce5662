@@ -1,0 +1,22 @@
+governance/lib/vendored-gate-classify.mjs
+  s_63c6ee080d73c3::t_b3ab27db59db01 84-101,103-109,111
+  s_63c6ee080d73c3::t_31cd2db70d9913 58-63
+governance/test/vendored-gate-audit.test.mjs
+  s_63c6ee080d73c3::t_72ad5de3487ffd 161-232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9b8e5249ffeb49d05bf2844e71d7795858ce5662",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+governance/plans/ffmpeg9-lei/E5-HDR.md
+  s_124891ed63801b::t_ee61f4e20769b4 1-176
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_d3ee5723957975 1-24,26
+  s_124891ed63801b::t_3d305d3029b780 25,27-35
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_124891ed63801b::t_d6f9bf694b3d9d 1-90
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_124891ed63801b::t_844b91f73c1488 56-93
+  s_124891ed63801b::t_39c4cee6021db2 1-26,28-55,94-139
+  s_124891ed63801b::t_822fe728430cb5 140-161
+governance/plans/ffmpeg9-lei/E0-CANARY.md
+  s_124891ed63801b::t_c1b7dcebe0b5c7 1-5,7-70
+governance/plans/ffmpeg9-lei/E8-CANON.md
+  s_124891ed63801b::t_2c4abd0ea3ffda 70
+  s_124891ed63801b::t_95e3a52bc71fda 155
+  s_124891ed63801b::t_515eb742956d82 1-3,5-32,34-69,71-154,156-175
+  s_124891ed63801b::t_a9b6714364fba7 4
+governance/plans/ffmpeg9-lei/E1-BREAKAGE.md
+  s_124891ed63801b::t_8d4c6a4df76e43 1-73,87-156
+  s_124891ed63801b::t_6cd6e9ceb5cc88 74-86
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_124891ed63801b::t_97e59db57e33f3 1-166
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_124891ed63801b::t_0c6a5fd0e033f2 1-3,5-147
+  s_124891ed63801b::t_db7b53963feaad 148-157
+  s_124891ed63801b::t_4d92a5771c1812 4
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_124891ed63801b::t_2e1b8dcbe514d2 65-101
+  s_124891ed63801b::t_9bf9254103e3c4 1-24,27-64,102-161,163-166
+  s_124891ed63801b::t_657c426ceadee9 25-26
+  s_124891ed63801b::t_25c2bb8a6421d3 162
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_124891ed63801b::t_e46ecccc2277c1 1-63,102-143
+  s_124891ed63801b::t_50451485d5694a 144-166
+  s_124891ed63801b::t_879519afae23ea 64-101
+governance/graph.json
+  s_124891ed63801b::t_8446b50411df1a 3274-3390,19901-19906,19919-20026
+governance/plans/ffmpeg9-lei/action/E0-P2-BUILD-TRIAGE.md
+  s_124891ed63801b::t_18ba031eda6d82 1-23
+governance/plans/ffmpeg9-lei/action/E2-P1-pin-table.md
+  s_124891ed63801b::t_0f76d221f97398 28-43
+  s_124891ed63801b::t_ccfef63f7371b8 1-27,44-65
+governance/plans/ffmpeg9-lei/action/E8-P1-watcher-recon.md
+  s_124891ed63801b::t_504e7a34105e15 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "b115f72f99cdabef94804f9a92a4720e06ce79d4",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

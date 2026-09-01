@@ -1,0 +1,36 @@
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  s_9e49fb2dab61f0::t_7fd4dd441d8b25 6
+governance/test/email-archive-freshness.test.mjs
+  s_9e49fb2dab61f0::t_b40d8d527e67b9 263,268,272-317
+  s_9e49fb2dab61f0::t_327eed68b1c0ef 15
+  s_9e49fb2dab61f0::t_98bb9cd65430d9 264-267,269-271
+  s_9e49fb2dab61f0::t_3138cbabcdc900 23
+governance/lib/email-archive-freshness.mjs
+  s_9e49fb2dab61f0::t_eadabcf1ec1472 125-151
+  s_9e49fb2dab61f0::t_54365111080588 71-90
+  s_9bb1b1d1d998d4::t_c9b0d79dc89875 124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4786cf3e466fc3676341fad994d2412c1d839842",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

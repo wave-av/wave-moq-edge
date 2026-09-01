@@ -1,0 +1,19 @@
+.github/workflows/automerge.yml
+  s_3d664c2337cd47::t_0e0213614635c1 86-107,112,114-124,126,131-135,142-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e8991e82edf8bb664c5f89a34abfed80fe37e82b",
+  "prompts": {},
+  "sessions": {
+    "s_3d664c2337cd47": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4890b888-4e1a-4c86-a19e-3aacb9cbd044",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

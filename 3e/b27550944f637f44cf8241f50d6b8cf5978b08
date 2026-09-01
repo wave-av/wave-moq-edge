@@ -1,0 +1,141 @@
+governance/bin/review-liveness.mjs
+  s_37d3f61160b2dd::t_98c5e80838782e 11-18,51,255-263
+governance/gam-port-kit/manifest.json
+  s_37d3f61160b2dd::t_da50fff0f3ab45 32,50
+governance/lib/review-bench.mjs
+  s_37d3f61160b2dd::t_b765e76088fa4a 1-110
+governance/lib/review-liveness-report.mjs
+  s_37d3f61160b2dd::t_141ea87ada6b46 14,42-64
+governance/lib/review-liveness-rules.mjs
+  s_37d3f61160b2dd::t_c5a93ba8e1c466 19-24,43-46,68-75,117-126,131-132,134,137
+governance/lib/review-liveness.mjs
+  s_37d3f61160b2dd::t_44b1b85abc885c 37,86-92,149-167
+governance/lib/review-rule-facts.mjs
+  s_37d3f61160b2dd::t_af771e8ff3f2a6 13-33,64-84,87-121,130-164
+governance/lib/review-sufficiency.mjs
+  s_37d3f61160b2dd::t_49410a85ff2584 4,23-32,44-59,61-62,85-107,160-174,177-178,187,189-191,211,240-243,256
+governance/lib/reviewer-retirement.mjs
+  s_37d3f61160b2dd::t_1b0013f0b68621 1-96
+governance/lib/reviewer-roster.mjs
+  s_37d3f61160b2dd::t_e574b57e57d7b1 72,181-233
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_37d3f61160b2dd::t_f9999e5f41a4c4 9,16-17,20
+governance/plans/physics-of-compute/E2-MEMORY-WALL-ACCOUNTING.md
+  s_37d3f61160b2dd::t_10ed6aa71dd357 9,20,22
+governance/plans/physics-of-compute/E3-IN-MEMORY-LANDSCAPE.md
+  s_37d3f61160b2dd::t_09d60ee3600845 9,20,28,46
+governance/plans/physics-of-compute/E4-MATH-LINEAGE.md
+  s_37d3f61160b2dd::t_4c7fda63d4c5c7 9,53,57
+governance/plans/physics-of-compute/E5-PRODUCT-VERDICT.md
+  s_37d3f61160b2dd::t_53830b2c1e3bc0 9,23,55,57
+governance/plans/physics-of-compute/E6-MEASUREMENT-RIGOR.md
+  s_37d3f61160b2dd::t_195c3bdf90551c 1-37
+governance/plans/physics-of-compute/E7-CROSS-MODEL-REPLICATION.md
+  s_37d3f61160b2dd::t_da2f8f056d9108 1-35
+governance/plans/physics-of-compute/E8-THINKING-MECHANISM.md
+  s_37d3f61160b2dd::t_356e682ef17fef 1-35
+governance/plans/physics-of-compute/RECEIPTS-E1-SSD-STREAMING.md
+  s_37d3f61160b2dd::t_8718960aa8adee 21
+governance/plans/physics-of-compute/RECEIPTS-E1-adversarial-review.md
+  s_37d3f61160b2dd::t_e2ef49f169c635 1-103
+governance/plans/physics-of-compute/RECEIPTS-E1-finer-splits.md
+  s_37d3f61160b2dd::t_66b9358f3fc08c 1-85
+governance/plans/physics-of-compute/RECEIPTS-E1-hardware-path.md
+  s_37d3f61160b2dd::t_aaa4907e33eb2b 38
+governance/plans/physics-of-compute/RECEIPTS-E1-param-completeness.md
+  s_37d3f61160b2dd::t_624505945a05e5 1-229
+governance/plans/physics-of-compute/RECEIPTS-E1-param-sweep.md
+  s_37d3f61160b2dd::t_996aa65d2ba720 1-86
+governance/plans/physics-of-compute/RECEIPTS-E1-task-class-matrix.md
+  s_37d3f61160b2dd::t_8e5c3af421c54b 1-105
+governance/plans/physics-of-compute/RECEIPTS-E1-thinking-ab.md
+  s_37d3f61160b2dd::t_f39f48d2c425c1 1-83
+governance/plans/physics-of-compute/RECEIPTS-E1-thinking-policy.md
+  s_37d3f61160b2dd::t_a56d336efcfe5a 1-149
+governance/plans/physics-of-compute/RECEIPTS-E1-wave-eval.md
+  s_37d3f61160b2dd::t_628e5b9ca3ab2d 1-330
+governance/plans/physics-of-compute/RECEIPTS-E2-memory-wall.md
+  s_37d3f61160b2dd::t_d3593077e04632 4-7,103
+governance/plans/physics-of-compute/RECEIPTS-E6-variance-qwen38.md
+  s_37d3f61160b2dd::t_be787c94326bd9 1-104
+governance/plans/physics-of-compute/RECEIPTS-E6-variance.md
+  s_37d3f61160b2dd::t_6504f8a62cbc23 1-22
+governance/plans/physics-of-compute/RECEIPTS-E7-coder30-scorecard.md
+  s_37d3f61160b2dd::t_555dd3be23182b 1-90
+governance/plans/physics-of-compute/RECEIPTS-E7-model-coverage.md
+  s_37d3f61160b2dd::t_b74820f451358e 1-76
+governance/plans/physics-of-compute/RECEIPTS-E7-qwen38-replication.md
+  s_37d3f61160b2dd::t_08ad43a12f0c26 1-118
+governance/plans/physics-of-compute/RECEIPTS-E7-r132-scorecard.md
+  s_37d3f61160b2dd::t_065a6551815b3e 1-90
+governance/plans/physics-of-compute/RECEIPTS-E7-router-measure.md
+  s_37d3f61160b2dd::t_da7cbe278c54ab 1-84
+governance/plans/physics-of-compute/RECEIPTS-E7-router-migration.md
+  s_37d3f61160b2dd::t_68943b1e595e76 1-125
+governance/plans/physics-of-compute/RECEIPTS-E7-router-repair.md
+  s_37d3f61160b2dd::t_ddce5388ad8b86 1-58
+governance/plans/physics-of-compute/RECEIPTS-E8-thinking-mechanism.md
+  s_37d3f61160b2dd::t_4e6fc7a314ec3c 1-131
+governance/plans/physics-of-compute/RECEIPTS-coder-next-landing.md
+  s_37d3f61160b2dd::t_942bd4b719aa11 1-93
+governance/plans/physics-of-compute/RECEIPTS-freshness-audit.md
+  s_37d3f61160b2dd::t_90cda40590a707 1-342
+governance/plans/physics-of-compute/RECEIPTS-grader-bug.md
+  s_37d3f61160b2dd::t_cfd545bab9c3bb 1-49
+governance/plans/physics-of-compute/RECEIPTS-ornith-landing.md
+  s_37d3f61160b2dd::t_6ac31c01bf048f 1-106
+governance/plans/physics-of-compute/e6-qwen38-variance-raw.json
+  s_37d3f61160b2dd::t_06e79097bf62a9 1-488
+governance/plans/physics-of-compute/e6-variance-test.sh
+  s_37d3f61160b2dd::t_38234de8fc7981 1-189
+governance/plans/physics-of-compute/e7-qwen38-raw.json
+  s_37d3f61160b2dd::t_94857107a3fcf9 1-374
+governance/plans/vendor-sweep/RECEIPTS-provider-model-freshness-2026-08-23.md
+  s_37d3f61160b2dd::t_6dbc10a7054fad 1-192
+governance/plans/vendor-sweep/RECEIPTS-vendor-matrix-2026-08-23.md
+  s_37d3f61160b2dd::t_71c79b9efb4c74 1-105
+governance/research/creator-intelligence/ORIGIN-CAMPAIGN-2026-08-23-measurement-program.md
+  s_37d3f61160b2dd::t_1ab234dc66ee43 1-120
+governance/test/hookcli-package-boundary.test.mjs
+  s_37d3f61160b2dd::t_6809f271c624ba 137-144
+governance/test/review-bench-honest.test.mjs
+  s_37d3f61160b2dd::t_27e17f72fde860 1-287
+governance/test/review-liveness-class.test.mjs
+  s_37d3f61160b2dd::t_4301f754182870 48,59-63,65,67-71,115-120
+governance/test/review-liveness-credibility.test.mjs
+  s_37d3f61160b2dd::t_3c09321b1dca26 1-92
+governance/test/review-liveness-duration.test.mjs
+  s_37d3f61160b2dd::t_64ea48fa35ba42 174
+governance/test/review-liveness-pending-scoreboard.test.mjs
+  s_37d3f61160b2dd::t_c5a55bb4139f8c 99-106,132,135-148,150-155
+governance/test/review-retirement-scope.test.mjs
+  s_37d3f61160b2dd::t_01c411f638847c 1-247
+governance/test/review-rules-family.test.mjs
+  s_37d3f61160b2dd::t_72faf6236071bc 31-37,59
+hookcli/lib/t3-review-liveness-note.mjs
+  s_37d3f61160b2dd::t_b7ea48b72b87a3 1-174
+hookcli/lib/t3-review-liveness.mjs
+  s_37d3f61160b2dd::t_c17d82edcba1ed 12-16,62-64,176-179,181
+memory/namespace-arc-session-bank-2026-08-21.md
+  s_37d3f61160b2dd::t_d7ec960ff70255 38-40
+memory/physics-arc-session-bank-2026-08-23.md
+  s_37d3f61160b2dd::t_512d9984e301c4 1-50
+wave-model-governance/catalog/model-scores.json
+  s_37d3f61160b2dd::t_95af666cf83577 1-655
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3eb27550944f637f44cf8241f50d6b8cf5978b08",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

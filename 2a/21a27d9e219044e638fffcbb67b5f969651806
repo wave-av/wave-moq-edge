@@ -1,0 +1,16 @@
+.github/workflows/e4-shadow-capture.yml
+  h_67a1b847dc59d6 21-22
+hooks/tests/KNOWN-RED.txt
+  h_67a1b847dc59d6 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "2a21a27d9e219044e638fffcbb67b5f969651806",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+hooks/outbound-wow-gate.sh
+  s_364605915bb7ec::t_ea81aa9cc51410 1-104
+.claude/skills/wow-canon/SKILL.md
+  s_364605915bb7ec::t_da5f4f1f9a53e3 1-153
+test/outbound_wow_gate_smoke.sh
+  s_364605915bb7ec::t_9a11f2344628eb 1-32,39-104
+  s_364605915bb7ec::t_951508975bc567 33-38
+rules/wow-canon.md
+  s_364605915bb7ec::t_6977b00922c09b 40-54
+settings/settings.base.json
+  s_364605915bb7ec::t_7babd1e94732c6 401-402
+  s_364605915bb7ec::t_384f565adb18e6 398-400
+  s_364605915bb7ec::t_07dab3b3a38085 403-404
+  s_364605915bb7ec::t_c27a453b73f78f 395-397
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "d04b6deb47b856fcb2bb68571ccd806b753ebb0c",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

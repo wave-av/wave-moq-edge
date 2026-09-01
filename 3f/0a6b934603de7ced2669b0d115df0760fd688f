@@ -1,0 +1,19 @@
+governance/graph.json
+  s_ddfa10144c8686::t_99dad2ae13fe67 2680-2683
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3f0a6b934603de7ced2669b0d115df0760fd688f",
+  "prompts": {},
+  "sessions": {
+    "s_ddfa10144c8686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "85b059ee-36a7-4e76-8fc8-d12b447fc5a4",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

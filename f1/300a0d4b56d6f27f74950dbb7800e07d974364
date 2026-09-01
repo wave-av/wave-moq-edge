@@ -1,0 +1,37 @@
+hookcli/tests/cc-shadow-mutation.sh
+  s_60a20469ef4369::t_0c729a5956341b 89-95,97,100
+  s_60a20469ef4369::t_42b98d96cc8210 1-53,55-88,96,98-99,101-117
+  s_60a20469ef4369::t_43a42ced21a2f6 54
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_6ffc5df5d85cc4 111-116
+hookcli/track4b.json
+  s_60a20469ef4369::t_9c6a7d769d2771 36-42
+hooks/local-llm/ollama-helper.sh
+  s_60a20469ef4369::t_b0f67c7624d245 12
+settings/hooks.d/hookcli.json
+  s_18bb202a958f27::t_06d68d5961242c 8-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "f1300a0d4b56d6f27f74950dbb7800e07d974364",
+  "prompts": {},
+  "sessions": {
+    "s_18bb202a958f27": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a697aee482ee8ad2d",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

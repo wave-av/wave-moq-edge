@@ -1,0 +1,71 @@
+governance/plans/harness-wars-intel/E2-INSTITUTIONALIZE.md
+  s_2b4acc7ceba309::t_8541a17d828414 1-22
+governance/plans/dsh-fleet-skills/E1-DSH-PLUGIN.md
+  s_2b4acc7ceba309::t_104a53865a096e 1-23
+governance/plans/cordis-dogfood/E3-PILOT.md
+  s_2b4acc7ceba309::t_306ca480e7d676 1-22
+governance/plans/runtime-economy/ADR-RUNTIME-ECONOMY-POSITIONING.md
+  s_2b4acc7ceba309::t_6186dd5112caff 1-41
+governance/plans/runtime-economy/NORTH-STAR.md
+  s_2b4acc7ceba309::t_2c0dd5d0249bf5 1-75
+governance/plans/runtime-economy/E4-SCORECARD.md
+  s_2b4acc7ceba309::t_088a8277ee2316 1-28
+governance/plans/dsh-fleet-skills/E3-TRAJECTORY-AUDIT.md
+  s_2b4acc7ceba309::t_ce55b1d8a2d10a 1-23
+governance/plans/runtime-economy/RECEIPTS.md
+  s_2b4acc7ceba309::t_84774d822a1c71 1-54
+governance/plans/dsh-fleet-skills/NORTH-STAR.md
+  s_2b4acc7ceba309::t_891fb33403b8b2 1-51
+governance/plans/dsh-fleet-skills/E5-CREATOR-MODE-GOVERNANCE.md
+  s_2b4acc7ceba309::t_cbc2f6c3a3295c 1-26
+governance/plans/cordis-dogfood/E2-FLOOR-ADR.md
+  s_2b4acc7ceba309::t_052581b8197b84 1-23
+governance/plans/harness-wars-intel/E0-CORPUS.md
+  s_2b4acc7ceba309::t_b7dd6417eae7a2 1-21
+governance/plans/dsh-fleet-skills/E0-DSH-RUN.md
+  s_2b4acc7ceba309::t_43a43efa580697 1-23
+governance/plans/runtime-economy/E1-PROVIDER-BRIDGE.md
+  s_2b4acc7ceba309::t_c57d5b2142a37f 1-36
+governance/plans/dsh-fleet-skills/E2-PLUGIN-HARVEST.md
+  s_2b4acc7ceba309::t_0c03df1e2e51be 1-23
+governance/plans/cordis-dogfood/E1-PLUGIN-DOGFOOD.md
+  s_2b4acc7ceba309::t_f831c676f526f7 1-22
+governance/plans/cordis-dogfood/E0-PAPER-GROUND.md
+  s_2b4acc7ceba309::t_9c1ce9034522b1 1-23
+governance/plans/runtime-economy/E3-WAVE-BUNDLE.md
+  s_2b4acc7ceba309::t_e92152f83a5b5c 1-48
+governance/plans/runtime-economy/E5-RECEIPTS-PRODUCT.md
+  s_2b4acc7ceba309::t_b91cd61fd3d66d 1-25
+governance/plans/runtime-economy/E2-DOGFOOD-RUN.md
+  s_2b4acc7ceba309::t_58c1537f04322f 1-31
+governance/plans/cordis-dogfood/NORTH-STAR.md
+  s_2b4acc7ceba309::t_df2cec6691ed1d 1-46
+governance/plans/runtime-economy/E0-FOUNDATION.md
+  s_2b4acc7ceba309::t_adbde32df02eeb 1-38
+governance/plans/dsh-fleet-skills/E4-SESSION-LOG-PROJECTION.md
+  s_2b4acc7ceba309::t_8f3fc76b810140 1-24
+governance/plans/harness-wars-intel/NORTH-STAR.md
+  s_2b4acc7ceba309::t_07be8de45130f7 1-45
+governance/plans/harness-wars-intel/E1-DIGEST-R1.md
+  s_2b4acc7ceba309::t_1bd55a04c76652 1-24
+governance/plans/runtime-economy/ADR-INTEROPERATE-NOT-BECOME.md
+  s_2b4acc7ceba309::t_f22ced57ad7fb3 1-48
+governance/plans/runtime-economy/E6-REGISTRY-DECISION.md
+  s_2b4acc7ceba309::t_c43341f801a199 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d576368787ad5801198359e650f3659b51ffa89c",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

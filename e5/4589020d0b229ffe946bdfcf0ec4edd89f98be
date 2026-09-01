@@ -1,0 +1,43 @@
+governance/DASHBOARD.md
+  s_d9915bbafa9657::t_e6b27b117f26b7 25
+governance/bin/gate-scope-conformance.mjs
+  s_d9915bbafa9657::t_8d8b2fe99a3c42 123-127,197-201,204,213-217,219-223,225-232,235
+governance/bin/prove-gate-scope-conformance.mjs
+  s_d9915bbafa9657::t_8d21c359574aa3 70-75,165-175
+governance/graph.json
+  s_d9915bbafa9657::t_a99aab15bc96ae 3430-3442,20948-20959
+governance/lib/review-liveness.mjs
+  s_d9915bbafa9657::t_bb03b876d2e5ab 52,80-82,107-109,192
+governance/lib/review-markers.mjs
+  s_d9915bbafa9657::t_9f222e1aca5ce4 80-115
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_d9915bbafa9657::t_c5e9b0606cffa1 1-187
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_d9915bbafa9657::t_7f0bc08be83e91 11-14
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_d9915bbafa9657::t_b985ecbe40c841 5-7,61-64,72,87-96,103-105
+governance/plans/namespace-substrate/E4-AGENT-COMPUTE.md
+  s_d9915bbafa9657::t_558175afd314b5 4
+governance/plans/namespace-substrate/E5-FEDERATION.md
+  s_d9915bbafa9657::t_6ae3024137161d 4
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_d9915bbafa9657::t_95679604d3a179 593-628,719-766
+governance/test/review-liveness-title-skip.test.mjs
+  s_d9915bbafa9657::t_40ed0a05321934 1-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e54589020d0b229ffe946bdfcf0ec4edd89f98be",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

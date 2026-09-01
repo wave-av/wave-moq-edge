@@ -1,0 +1,26 @@
+governance/bin/wave-product-cli.mjs
+  s_6046880c148371::t_aa0afc04eafa56 5,9,11-12,15-17,20,24-29,38-53,64-83,85-86
+governance/plans/fireworks-integration/RECEIPTS.md
+  h_67a1b847dc59d6 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "02ffefe12cebe6a7e1a9186c5f779ff74f3b3d59",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

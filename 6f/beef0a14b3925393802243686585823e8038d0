@@ -1,0 +1,57 @@
+agents/act-worker.md
+  s_941b8f0612ec3e::t_ec9e7a6666ceb0 7-8
+agents/code-reviewer.md
+  s_941b8f0612ec3e::t_2121ac87f5e9e3 7
+agents/config-auditor.md
+  s_941b8f0612ec3e::t_598c4aaf33bd88 7
+agents/deploy-runner.md
+  s_941b8f0612ec3e::t_f5c00896b10c38 7-8
+agents/gateway-dev.md
+  s_941b8f0612ec3e::t_9e3b57790db931 7-8
+agents/lean-delegator.md
+  s_941b8f0612ec3e::t_b1d83326bceeab 7
+agents/lean-scout.md
+  s_941b8f0612ec3e::t_9e51c9a65245d0 7
+agents/pr-reviewer.md
+  s_941b8f0612ec3e::t_32a8c270b8fc2b 7
+agents/security-reviewer.md
+  s_941b8f0612ec3e::t_e5a644bdbd1ba0 7
+agents/spoke-dev.md
+  s_941b8f0612ec3e::t_ad120486b8b495 7-8
+plugins/wave-agents/agents/act-worker.md
+  s_941b8f0612ec3e::t_11ee04db4dcce9 7-8
+plugins/wave-agents/agents/code-reviewer.md
+  s_941b8f0612ec3e::t_d89d87435a2388 7
+plugins/wave-agents/agents/config-auditor.md
+  s_941b8f0612ec3e::t_2a766bca68a1d0 7
+plugins/wave-agents/agents/deploy-runner.md
+  s_941b8f0612ec3e::t_8b748717b421cc 7-8
+plugins/wave-agents/agents/gateway-dev.md
+  s_941b8f0612ec3e::t_e96ad5609dbd22 7-8
+plugins/wave-agents/agents/lean-delegator.md
+  s_941b8f0612ec3e::t_67dac333f66d93 7
+plugins/wave-agents/agents/lean-scout.md
+  s_941b8f0612ec3e::t_0d9a4b21923cae 7
+plugins/wave-agents/agents/pr-reviewer.md
+  s_941b8f0612ec3e::t_9a93669fa7b321 7
+plugins/wave-agents/agents/security-reviewer.md
+  s_941b8f0612ec3e::t_01fe94cb0fd741 7
+plugins/wave-agents/agents/spoke-dev.md
+  s_941b8f0612ec3e::t_6fd161bfa147fd 7-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6fbeef0a14b3925393802243686585823e8038d0",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+governance/lib/stdout-flush.mjs
+  s_9041cf1cf1ccad::t_52190bee1b2e58 69-70,77,81,89-90,98,104,108
+governance/recall/BAKE-OFF.md
+  s_9041cf1cf1ccad::t_3788fea57b3de7 1277
+  s_9041cf1cf1ccad::t_6c6feee6de4f7e 55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6960e047a7aa783795d92488515f5f07a4798988",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

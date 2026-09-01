@@ -1,0 +1,24 @@
+governance/lib/release-freshness.mjs
+  s_15127d80763110::t_57dd2a8dfde6cc 143-145
+governance/test/release-status.test.mjs
+  s_15127d80763110::t_750c2146e4a985 95
+  s_15127d80763110::t_34aad20615a1bf 129
+governance/lib/release-status.mjs
+  s_15127d80763110::t_4ba7cf8247f0db 72,80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "799fb01636f7f0be00a05544e5889e80904d93fa",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

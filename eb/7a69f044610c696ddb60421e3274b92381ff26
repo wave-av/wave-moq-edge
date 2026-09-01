@@ -1,0 +1,30 @@
+governance/tools/self-diagnose/examples/gateway-incident.json
+  s_ea7fda6a228496::t_85187842a6b52a 1-29
+  s_ea7fda6a228496::t_45b445aa0aa713 30-32
+governance/tools/self-diagnose/README.md
+  s_ea7fda6a228496::t_eaa25d3bd634d4 1-21
+governance/tools/self-diagnose/package.json
+  s_ea7fda6a228496::t_c2bf1ea5d7c473 1-8
+governance/tools/self-diagnose/lib/index.mjs
+  s_ea7fda6a228496::t_5bd057b4a1152d 1-48
+governance/tools/self-diagnose/tests/self-diagnose.test.mjs
+  s_ea7fda6a228496::t_620a093728fca9 1-40
+governance/tools/self-diagnose/bin/self-diagnose.mjs
+  s_ea7fda6a228496::t_0311ad6d129bd9 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "eb7a69f044610c696ddb60421e3274b92381ff26",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

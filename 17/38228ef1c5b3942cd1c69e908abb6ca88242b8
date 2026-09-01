@@ -1,0 +1,36 @@
+src/moq-scheduler.ts
+  s_d484d7f6efdfaf::t_cf735bd7bd1dae 11-13,49-61
+  s_d484d7f6efdfaf::t_5da0a47199c1a0 62
+__tests__/moq-deadline-scheduler-arena.test.ts
+  s_7b60aa0dad5d81::t_c773e0e0a8e585 261
+  s_7b60aa0dad5d81::t_9b54c75bc853f1 157-158,174,184
+  s_7b60aa0dad5d81::t_207aff2d2ed1b1 203-207,225-227
+src/moq-relay.ts
+  s_7b60aa0dad5d81::t_2d23eb94d4f9f0 331-335,342-343
+  s_7b60aa0dad5d81::t_bd8d1400eb9ed2 341,344
+  s_7b60aa0dad5d81::t_a6c045b43143b5 41-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1738228ef1c5b3942cd1c69e908abb6ca88242b8",
+  "prompts": {},
+  "sessions": {
+    "s_7b60aa0dad5d81": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff71807e2ffewoF7Y0i2mkCBn2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d484d7f6efdfaf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff2d9b14bffe61aiRaXx9Ncmg0",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

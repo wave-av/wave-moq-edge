@@ -1,0 +1,37 @@
+scripts/license-policy-check.test.mjs
+  s_364605915bb7ec::t_b86a25b79956e3 270
+  s_364605915bb7ec::t_87d6060a6f1bfb 95
+  s_364605915bb7ec::t_bb729f89a7228a 115-117,120,130-131
+  s_364605915bb7ec::t_dae5f9af248f84 356-358
+  s_364605915bb7ec::t_efc12a038189eb 36-37,39-42
+  s_364605915bb7ec::t_cc1e743f88bc3d 279-355,359-381
+  s_364605915bb7ec::t_a287c52a1adaa4 382-402
+  s_364605915bb7ec::t_66a7afdc5afc75 48-59
+  s_364605915bb7ec::t_220dc7c91d406e 159-162
+  s_364605915bb7ec::t_50f7c9fd6d1b42 47,83-89
+scripts/license-policy-check.sh
+  s_364605915bb7ec::t_1058ca8de08b30 39-41
+  s_364605915bb7ec::t_79287b17afa797 139-159,165-189,192,195-198,200-217
+  s_364605915bb7ec::t_eda49ed37335d3 160-164
+  s_364605915bb7ec::t_bcb4e43e3875b4 230-233
+  s_364605915bb7ec::t_52105c026500d4 122-123,130
+  s_364605915bb7ec::t_3fb9da121170ba 42-47
+  s_364605915bb7ec::t_d9f9d4576d1d9b 59-75,77-98
+  s_364605915bb7ec::t_c7ab9b279ebaa7 256-266,268
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "58d63a7f6f9828a6a77e852601c0c5bfb93dd00d",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  s_d9915bbafa9657::t_408f4fbb45d33c 11
+governance/plans/nested-dispatch-economy/E5-PAYBACK.md
+  s_d9915bbafa9657::t_47b98207d2cd5b 11
+governance/plans/monetization-gateway/E5-DOGFOOD-EVAL.md
+  s_d9915bbafa9657::t_acd2bee6be69ee 32-33
+governance/plans/monetization-gateway/E3-SELLER-PLATFORM.md
+  s_d9915bbafa9657::t_a010689a7e7051 38-39
+governance/plans/nested-dispatch-economy/E6-VERIFIABILITY.md
+  s_d9915bbafa9657::t_fa370e9d1908ee 11
+governance/plans/nested-dispatch-economy/E3-ESCALATION.md
+  s_d9915bbafa9657::t_72e109ae51b4be 11
+governance/plans/monetization-gateway/E1-SELF-402.md
+  s_d9915bbafa9657::t_a07304eb3c5624 34-35
+governance/plans/monetization-gateway/E4-PAY-PER-CRAWL.md
+  s_d9915bbafa9657::t_abc3bfe733c097 32-33
+governance/plans/nested-dispatch-economy/E4-PANEL.md
+  s_d9915bbafa9657::t_9545a91325f7ac 12
+governance/plans/monetization-gateway/E2-RULES-ENGINE.md
+  s_d9915bbafa9657::t_28ce64415bbdd5 33-34
+governance/plans/nested-dispatch-economy/E2-CACHE-REUSE.md
+  s_d9915bbafa9657::t_7c6801e7c31086 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "787fc02ef50279fbb9fc71ffef3267ccbf45738f",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

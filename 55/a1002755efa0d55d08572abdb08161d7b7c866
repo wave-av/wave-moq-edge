@@ -1,0 +1,23 @@
+governance/test/distribute-bump-shape.test.mjs
+  s_c24357e71ae5bc::t_324a6a3cbc2675 1-95
+governance/lib/distribute-bump-shape.mjs
+  s_c24357e71ae5bc::t_0a50eb40304772 1-116
+governance/bin/distribute-bump.mjs
+  s_c24357e71ae5bc::t_f39f4a41371157 64,218-221,225-226,233-234,236,243,245,251-258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "55a1002755efa0d55d08572abdb08161d7b7c866",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

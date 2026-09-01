@@ -1,0 +1,40 @@
+governance/plans/effective-authority/RECEIPTS.md
+  s_be40541f6fd98b::t_bbdcb96c71811b 120-179
+  s_a87d293766b34c::t_a240099af79245 190
+governance/test/installation-authority-audit.test.mjs
+  s_be40541f6fd98b::t_f45cd5c33bd459 1-173
+governance/bin/fleet/lib/installation-classify.mjs
+  s_be40541f6fd98b::t_d04005d7cd9e69 1-103
+governance/bin/fleet/installation-authority-audit.mjs
+  s_be40541f6fd98b::t_8c3fae48af2d28 1-180
+governance/code-index/CATALOG.md
+  s_a87d293766b34c::t_e0ee775de38de0 5,1246-1257,1289-1295
+governance/code-index/index.json
+  s_a87d293766b34c::t_fb5cb9cce496fc 9-10,12-13,11305-11403,11613-11656
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  s_a87d293766b34c::t_ae9ba23847017e 37,46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "2439cb33ee7a983429cdbe09936e313d1cf87bdc",
+  "prompts": {},
+  "sessions": {
+    "s_a87d293766b34c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2fb1bfc9d3bbab46",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

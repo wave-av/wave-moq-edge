@@ -1,0 +1,19 @@
+governance/plans/stripe-settlement-truth/E6-PARTNER.md
+  s_700cd0ad928eea::t_be23e5fc9ae79a 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3db87bb2030d947126f60b0ecda1392df9d9d400",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

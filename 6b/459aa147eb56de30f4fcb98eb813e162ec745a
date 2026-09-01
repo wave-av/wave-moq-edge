@@ -1,0 +1,24 @@
+governance/test/wave-infer.test.mjs
+  s_7ddeb5d251570f::t_69ee3f83b6e921 26,29,31,34-35,39-42
+  s_7ddeb5d251570f::t_a87ab918ba6734 1-25,27-28,30,32-33,36-38,43-45
+bin/wave-infer.mjs
+  s_7ddeb5d251570f::t_af7a3dc5bf0009 1-55,59,62-64,76,94-96,98-116
+  s_7ddeb5d251570f::t_9275ce4e2695fa 56-58,65-75,77-93,97
+  s_7ddeb5d251570f::t_e7b82a6960bab3 60-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6b459aa147eb56de30f4fcb98eb813e162ec745a",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

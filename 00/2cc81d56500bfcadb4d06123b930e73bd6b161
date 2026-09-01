@@ -1,0 +1,23 @@
+governance/plans/namespace-substrate/E3-CACHES.md
+  s_7122a385087fe7::t_8531d74a15284e 4
+governance/plans/namespace-substrate/profiles-as-code/RECEIPTS-2026-08-08-cache-rerun.md
+  s_7122a385087fe7::t_d02b8ed661ca17 1-110
+governance/plans/namespace-substrate/profiles-as-code/cache-experiment.sh
+  s_7122a385087fe7::t_8496719c91ceab 92-106,112-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "002cc81d56500bfcadb4d06123b930e73bd6b161",
+  "prompts": {},
+  "sessions": {
+    "s_7122a385087fe7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a8c5351bfb71bfb87",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

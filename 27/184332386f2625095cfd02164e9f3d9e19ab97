@@ -1,0 +1,19 @@
+governance/plans/console-perfection/PLAYBACK-SURFACE.md
+  s_061e3975405bd4::t_b14e1e99a45a05 1-259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "27184332386f2625095cfd02164e9f3d9e19ab97",
+  "prompts": {},
+  "sessions": {
+    "s_061e3975405bd4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a25083a586743913e",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

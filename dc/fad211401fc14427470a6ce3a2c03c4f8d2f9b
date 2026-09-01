@@ -1,0 +1,40 @@
+governance/automation-registry/lib/schema.mjs
+  s_941b8f0612ec3e::t_77176b153615f0 38-39
+  s_941b8f0612ec3e::t_5a15956dba9902 4-5
+governance/automation-registry/jobs/ci-build.yaml
+  s_941b8f0612ec3e::t_e9b53a63e203ff 18,59
+governance/automation-registry/jobs/dev-tooling.yaml
+  s_941b8f0612ec3e::t_05639f938f331c 14,40,62,76,88
+governance/automation-registry/jobs/governance.yaml
+  s_941b8f0612ec3e::t_1e778ab735baa9 50,62,76,90,104,118,132,146,160,174,188,204,218,232
+governance/automation-registry/jobs/hardware-audio.yaml
+  s_941b8f0612ec3e::t_7d688fd037fa63 16,27
+governance/automation-registry/jobs/knowledge-graph.yaml
+  s_941b8f0612ec3e::t_f5beda4605bba9 14,28,40
+governance/automation-registry/jobs/local-llm-infra.yaml
+  s_941b8f0612ec3e::t_6ab9d95a03ce5f 16,29,76,101,111,127,142
+governance/automation-registry/jobs/messaging.yaml
+  s_941b8f0612ec3e::t_c58ecffd4e6eeb 16,26,37,50,66,77,90,107,121,133,155,169
+governance/automation-registry/jobs/monitoring.yaml
+  s_941b8f0612ec3e::t_df37a47b9f38db 18,34,48,72
+governance/test/automation-registry/schema.test.mjs
+  s_941b8f0612ec3e::t_fdd3090d28b212 202-233
+governance/automation-registry/lib/schema-source-repo.mjs
+  s_941b8f0612ec3e::t_150e03fbaad6f0 1-43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "dcfad211401fc14427470a6ce3a2c03c4f8d2f9b",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

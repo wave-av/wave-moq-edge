@@ -1,0 +1,27 @@
+northstars/README.md
+  s_eb2f7e65359b4f::t_512cea02c01f17 13-14,17-26
+northstars/telemetry-standard.md
+  s_eb2f7e65359b4f::t_d66b5100e3359c 1-76
+northstars/context-integrity.md
+  s_eb2f7e65359b4f::t_54eb2df19f1cdf 1-68
+northstars/attestation.md
+  s_eb2f7e65359b4f::t_059046e1dcf572 1-65
+northstars/observability.md
+  s_eb2f7e65359b4f::t_12d498248f5fb8 3,5,9,11-13,18-28,32-34,38-39,45-47,54-55,60-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "619e9ad329372f127ab1bb6e09e17c299c9b31ff",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

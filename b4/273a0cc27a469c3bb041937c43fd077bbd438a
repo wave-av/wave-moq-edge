@@ -1,0 +1,107 @@
+.github/dependabot.yml
+  s_124891ed63801b::t_2f16d11c0629fb 24-82
+.github/workflows/ffmpeg-release-watch.yml
+  s_124891ed63801b::t_ddfa1e5aadccb9 89-92,94-98,100
+.github/workflows/wave-cost-ledger-absent-check-sweep.yml
+  s_124891ed63801b::t_173bebfb02a533 75,78
+.github/workflows/wave-cost-ledger-coverage-diff.yml
+  s_124891ed63801b::t_2e1efa47fa8ac5 45,48
+.github/workflows/wave-cost-ledger-pullers.yml
+  s_124891ed63801b::t_2211bace86ee26 142,145,175,178,208,211,264,267,312,315
+.github/workflows/wave-sec-scan.yml
+  s_124891ed63801b::t_a937af30c20067 45-63,92,99
+.gitignore
+  s_124891ed63801b::t_beafd4b00ab417 100-105
+governance/DASHBOARD.md
+  s_124891ed63801b::t_db7a4f7cb2fadd 25
+governance/PROSE-LAW-TRIAGE.md
+  s_124891ed63801b::t_824d2b093a067c 119-180
+governance/bin/enforcement-coverage-audit.mjs
+  s_124891ed63801b::t_f0f02994666fc9 45,140-146
+governance/bin/gate-scope-conformance.mjs
+  s_124891ed63801b::t_026e12e6d08d4b 123-127,197-201,204,213-217,219-223,225-232,235
+governance/bin/learning-admit.mjs
+  s_124891ed63801b::t_ab088b604dc8d2 99
+governance/bin/learning-queue.mjs
+  s_124891ed63801b::t_b4de84c39196b6 117,197
+governance/bin/prove-gate-scope-conformance.mjs
+  s_124891ed63801b::t_d706dc914dcb43 4,40-78,80-87,106-111,155-166,169,171,173,193,195,197,208-226,228-230
+governance/bin/review-liveness.mjs
+  s_124891ed63801b::t_042ee324417db3 53-56,109,204-208,217,222,225
+governance/bin/wave-sec.mjs
+  s_124891ed63801b::t_c6a2dc743a6951 241-258
+governance/ci-scan-set.pin.json
+  s_124891ed63801b::t_96e08eaa3c9039 23-24,26-28,30-34
+governance/graph.json
+  s_124891ed63801b::t_f28f26b9b737a8 2450-2452,2491,2637-2727,2761,2764,2819-2831,3612-3650,3755-3767,6072,7127,18012-18017,18084-18095,18114-18119,18144-18155,18168-18173,18186-18203,18918-19277,19350-19355,19368-19385,19572-19583,22014-22061,22596-22601
+governance/lib/law-bindings.mjs
+  s_124891ed63801b::t_f57e2210d2eccc 60-103
+governance/lib/review-liveness.mjs
+  s_124891ed63801b::t_8c2f8960070caa 52,80-82,107-109,192
+governance/lib/review-markers.mjs
+  s_124891ed63801b::t_52f3db13fe61c6 80-115
+governance/lib/reviewer-scoreboard.mjs
+  s_124891ed63801b::t_d8515c43d05f3e 30,115-119
+governance/lib/wave-sec-scanners.mjs
+  s_124891ed63801b::t_d02127f32ab264 263-273,287-310,317-318
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_124891ed63801b::t_dcef9ea89dab80 4-74,89-93,98,101,104-105,108-109,111-112,114-116,118-241
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_124891ed63801b::t_5825324fc205c5 23-78,382-402
+governance/plans/agentic-wave/E3-CI-AGENT-GOVERNANCE.md
+  s_124891ed63801b::t_cb19a259afe4c7 4-9,37-49,67-160,163-185,188-227,231-255,259-277
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_124891ed63801b::t_96c8681a013c91 4-85,91-141,143-149,151,154-155,157-159,161-162,164-165,167,170-177,179-279,282-297,299,302-307,310-311,316-322,326-328,331-345,347-351
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_124891ed63801b::t_23e80f542f40c3 4-62,65-74,77-79,82-93,95-98,100-121,123,127-137,140-142,144,146-182,184-203,205-218,220-238,240-244
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_124891ed63801b::t_387df5fdb4820c 4-136,139-148,150-155,157-193,195-197,199-201,203,206-217,219-232,236-292
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_124891ed63801b::t_c058f2d167b778 4-56,110-111,134-137,156-177,180-181,184-191,193-194,196-199,224-236,239-299,312-344,351-355
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_124891ed63801b::t_d09480bdf58048 7-15
+governance/plans/ffmpeg9-lei/E6-VULKAN.md
+  s_124891ed63801b::t_e338dd0d3287d1 11-14
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_124891ed63801b::t_27ba35b056c73e 4
+governance/plans/ffmpeg9-lei/NORTH-STAR.md
+  s_124891ed63801b::t_77b6598eeb9c85 4-10,61-64,72,87-98,105-112
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_b70405b7b9aa38 57,66-96
+governance/plans/frontier-program/E-ENFORCE.md
+  s_124891ed63801b::t_841821c104a15b 4-5,8-10,20,30-124
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_124891ed63801b::t_eeae38d89c342b 465-592,644-647,664-701,774-803
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_124891ed63801b::t_b8ddd4ab101f57 146-149,165,181-185
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_124891ed63801b::t_4cc1f1e63b51a4 16-22,258-295
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_124891ed63801b::t_8821e5532b7faa 4-17,22-38,43,264-462
+governance/plans/wave-sec-fleet/NORTH-STAR.md
+  s_124891ed63801b::t_6322245e7baa34 5-7,58-59
+governance/test/ALLOWED-SKIPS.json
+  s_124891ed63801b::t_976898724c0426 65-70,75-80
+governance/test/capability-index.test.mjs
+  s_124891ed63801b::t_4322c70731ee13 21-55
+governance/test/reviewer-scoreboard.test.mjs
+  s_124891ed63801b::t_4410b36a5f5c89 249-267
+rules/generated-brand-assets-use-real-design-system.md
+  s_124891ed63801b::t_1cebd2b14bc0ef 5,9,15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b4273a0cc27a469c3bb041937c43fd077bbd438a",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

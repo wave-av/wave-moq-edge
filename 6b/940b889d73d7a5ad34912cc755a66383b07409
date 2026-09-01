@@ -1,0 +1,32 @@
+tests/test_agent_status.py
+  s_3a52a0989b58af::t_ab6eed0bf6bac9 1-89,122-145,149-168
+  s_3a52a0989b58af::t_529d3369b6a941 90-110
+  s_3a52a0989b58af::t_a34b7fa970b213 111-121
+  s_3a52a0989b58af::t_a421be81909c89 146
+  s_3a52a0989b58af::t_bbab79a88c12bd 147-148
+scripts/agent_status.py
+  s_3a52a0989b58af::t_ea402f3d614d22 1-90,94,96-153,170,172,180-182,188-192,197-231,236-247,249-250,254-261
+  s_3a52a0989b58af::t_a2e1a3af5c8435 154-160,166,171,173-179,183-184,187,195-196
+  s_3a52a0989b58af::t_e70a869835643b 234-235
+  s_3a52a0989b58af::t_ee4e3379a7d169 232-233,248,252-253
+  s_3a52a0989b58af::t_78569e30c1e3ae 251
+  s_3a52a0989b58af::t_9812e5cb2017aa 91-93,95
+  s_3a52a0989b58af::t_3fa82f42b2d1b7 161-165,167-169
+  s_3a52a0989b58af::t_9f5d4da41e85c6 185-186,193-194
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "6b940b889d73d7a5ad34912cc755a66383b07409",
+  "prompts": {},
+  "sessions": {
+    "s_3a52a0989b58af": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "22e44e53-80fd-4666-ba54-e6de8274f781",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

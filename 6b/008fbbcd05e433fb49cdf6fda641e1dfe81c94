@@ -1,0 +1,54 @@
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_b2797536df53c9 1-27,29,38-72,78-80
+  s_60a20469ef4369::t_35c78c43e68fa8 73-77
+  s_60a20469ef4369::t_22399c90999d4f 28,30-37
+hookcli/bin/validate-rules.mjs
+  s_60a20469ef4369::t_d5e41b02a5f4ae 52-56
+  s_60a20469ef4369::t_5a97615da79bc0 81,84-88
+  s_60a20469ef4369::t_80f985f875e4c9 1-18,35-51,57-80,82-83,89-95
+  s_60a20469ef4369::t_99805e77068dac 19-34
+governance/plans/hookcli/E8-ROLLOUT.md
+  s_60a20469ef4369::t_779494b33057b5 6,9-25
+hookcli/README.md
+  s_60a20469ef4369::t_c2ac1380dcaa7a 1-44
+governance/plans/hookcli/E1-CORE.md
+  s_60a20469ef4369::t_c1dde6c49659bd 10-11
+hookcli/lib/eval-t1.sh
+  s_60a20469ef4369::t_a80db39217a4ea 1-38
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_3a1dba00f21df4 63-66
+  s_60a20469ef4369::t_7648134808769a 1-62,67-105
+hookcli/package.json
+  s_60a20469ef4369::t_b9f1098844ab6c 1-28
+hookcli/rules/rules.json
+  s_60a20469ef4369::t_d4793b02c76383 10
+  s_60a20469ef4369::t_b4ef5ae7abff5c 1-9,11-19
+hookcli/bin/lefthook-gen.mjs
+  s_60a20469ef4369::t_267388cf7d0f57 1-56
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  s_60a20469ef4369::t_4a0252b98d3070 9-10
+governance/plans/hookcli/E4-TIERS.md
+  s_60a20469ef4369::t_0581020791a251 6,9-23
+governance/plans/hookcli/E3-RULES.md
+  s_60a20469ef4369::t_706815f69fe3f6 10-11
+hookcli/schema/rule.schema.json
+  s_60a20469ef4369::t_00d7078b099b5d 1-48
+governance/graph.json
+  s_60a20469ef4369::t_e6558b18737eff 2749,2801
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "6b008fbbcd05e433fb49cdf6fda641e1dfe81c94",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

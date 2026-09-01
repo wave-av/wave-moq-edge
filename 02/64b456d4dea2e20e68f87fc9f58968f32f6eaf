@@ -1,0 +1,41 @@
+governance/plans/model-routing/E2-EVAL.md
+  s_8152bca18f72ee::t_dbdd021d70e524 1-65
+governance/plans/model-routing/E3-ROLLOUT.md
+  s_8152bca18f72ee::t_c7bc5630e23d58 1-42
+governance/plans/model-routing/NORTH-STAR.md
+  s_8152bca18f72ee::t_5a70e4ffb278cd 1-35
+governance/bin/model-router.mjs
+  s_13086dcbacd4a6::t_39fbe1f57114d1 26
+  s_13086dcbacd4a6::t_2efcb6c9e1ea63 168-179,182-204,209-242,254-258
+  s_13086dcbacd4a6::t_505e2734793fea 205-208
+  s_13086dcbacd4a6::t_c70d955590d884 180-181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0264b456d4dea2e20e68f87fc9f58968f32f6eaf",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_13086dcbacd4a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef676a74ffeGDIpvQIhMKNdae",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+scripts/verify-public-mirror.test.mjs
+  s_cf3356a24071e8::t_ff86fa79093077 124-130
+  s_cf3356a24071e8::t_e88c85531d67e6 1-11,13-14,19-75,79-123,131-187
+  s_cf3356a24071e8::t_78c4d242964d71 12,15-18
+  s_cf3356a24071e8::t_f9ee1e6dc46665 76-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "bac2f9329e5de8e430111a34acd50c384e00f2e5",
+  "prompts": {},
+  "sessions": {
+    "s_cf3356a24071e8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d18e62fe-2536-40f1-8a11-d0e663091179",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

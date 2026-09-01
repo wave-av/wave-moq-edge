@@ -1,0 +1,22 @@
+bin/start-here.mjs
+  s_ede3b27884aa0e::t_c62c1e5d7aaefe 186-213,227-233
+  s_ede3b27884aa0e::t_b5b21b35df8634 318-319
+governance/plans/fleet-autonomy/E1-ORIENTATION-ANCHOR.md
+  s_ede3b27884aa0e::t_35e82ca758aa1e 105-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "02f0d32f5ff6e91caf3b6f7b0521abeedacd0473",
+  "prompts": {},
+  "sessions": {
+    "s_ede3b27884aa0e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001ef3f05ffeJhl0pNIuBqinCq",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

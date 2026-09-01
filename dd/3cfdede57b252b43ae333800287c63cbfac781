@@ -1,0 +1,31 @@
+governance/plans/fireworks-integration/LAW-CANDIDATES.md
+  s_264dc2b63e55a9::t_fe11ccfad92897 1-98
+governance/runbooks/eval-gate-doctrine.md
+  s_264dc2b63e55a9::t_54bc1be7b33175 1-112
+governance/runbooks/own-model-pipeline.md
+  s_c927cca3dccbaa::t_b98d23522ae73e 1-186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "dd3cfdede57b252b43ae333800287c63cbfac781",
+  "prompts": {},
+  "sessions": {
+    "s_264dc2b63e55a9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff7472962ffegdj9YmSr6s5Ze3",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

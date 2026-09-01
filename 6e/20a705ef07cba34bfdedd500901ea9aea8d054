@@ -1,0 +1,49 @@
+governance/plans/auto-learning-runbooks/E1-CLI-EXISTS.md
+  s_d9915bbafa9657::t_e155256edd17e7 1-21
+governance/plans/auto-learning-runbooks/E2-RUNBOOKS-SURFACE.md
+  s_d9915bbafa9657::t_60f409a4624d98 1-24
+governance/plans/auto-learning-runbooks/E3-CAPTURE-IS-REAL.md
+  s_d9915bbafa9657::t_85cb7f33be6701 1-23
+governance/plans/auto-learning-runbooks/E4-DRAFTS-ASSEMBLE.md
+  s_d9915bbafa9657::t_e3f6c6c21bd9a3 1-29
+governance/plans/auto-learning-runbooks/E5-REINFORCEMENT.md
+  s_d9915bbafa9657::t_d40bcac7af9af0 1-21
+governance/plans/auto-learning-runbooks/E6-PUBLICATION.md
+  s_d9915bbafa9657::t_62b5131a6c281b 1-23
+governance/plans/auto-learning-runbooks/E7-BACKFILL.md
+  s_d9915bbafa9657::t_d7cb4118a23b70 1-26
+governance/plans/auto-learning-runbooks/E8-RUNS-NIGHTLY.md
+  s_d9915bbafa9657::t_646a868e2665de 1-26
+governance/plans/auto-learning-runbooks/NORTH-STAR.md
+  s_d9915bbafa9657::t_2e79110a92c5cf 3-24
+governance/plans/ci-governance-sequence/E1-CLASS3-PR-HEAD-STABLE.md
+  s_d9915bbafa9657::t_0906dd27ca6dc9 1-21
+governance/plans/ci-governance-sequence/E2-CLASS1-CLIENT-SAFE-ERROR.md
+  s_d9915bbafa9657::t_6c869928e63e3d 1-23
+governance/plans/ci-governance-sequence/E3-CLASS2-SCHEMA-SATISFIABILITY.md
+  s_d9915bbafa9657::t_0da5163df67804 1-19
+governance/plans/ci-governance-sequence/E4-GAM-RECONCILIATION-GATE.md
+  s_d9915bbafa9657::t_5db77d2cc04039 1-22
+governance/plans/ci-governance-sequence/E5-CROSS-REPO-ADOPT.md
+  s_d9915bbafa9657::t_28594d9c8d6ba7 1-25
+governance/plans/ci-governance-sequence/E6-CREDIT-TABLE-DROP.md
+  s_d9915bbafa9657::t_0028b816b305d0 1-31
+governance/plans/ci-governance-sequence/NORTH-STAR.md
+  s_d9915bbafa9657::t_03186a681672f8 4-10,38-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e20a705ef07cba34bfdedd500901ea9aea8d054",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

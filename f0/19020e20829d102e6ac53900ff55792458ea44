@@ -1,0 +1,26 @@
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_2e30bff6169f7a::t_174eb924ec2a88 8-20
+governance/test/wave-cost-ledger-alert-evaluate.test.mjs
+  s_2e30bff6169f7a::t_1009e95768f72a 266-269
+  s_2e30bff6169f7a::t_54257260f2317c 3
+  s_2e30bff6169f7a::t_db2f0a3c84e367 174-206,209-212,218-221,224-265,270-283
+  s_2e30bff6169f7a::t_f591d4f6a53f66 207-208,213-217,222-223
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  s_2e30bff6169f7a::t_b69ec64057b93a 97-204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f019020e20829d102e6ac53900ff55792458ea44",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

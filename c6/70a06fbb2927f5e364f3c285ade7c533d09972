@@ -1,0 +1,20 @@
+governance/plans/ffmpeg9-lei/E17-MLVC.md
+  s_7326a769c7efe8::t_0cd43380a7b743 91
+  s_7326a769c7efe8::t_2f45c2602c2340 99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c670a06fbb2927f5e364f3c285ade7c533d09972",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

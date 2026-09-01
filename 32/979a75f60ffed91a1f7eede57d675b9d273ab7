@@ -1,0 +1,19 @@
+scripts/agentic-bench.py
+  s_6247ea38a66ef7::t_a3ef0336c8026a 1-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "32979a75f60ffed91a1f7eede57d675b9d273ab7",
+  "prompts": {},
+  "sessions": {
+    "s_6247ea38a66ef7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdae5ad63ffeLSWf1sh3BKAxVn",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

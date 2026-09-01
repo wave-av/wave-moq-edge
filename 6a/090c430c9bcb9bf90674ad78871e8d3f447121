@@ -1,0 +1,36 @@
+settings/settings.base.json
+  s_23d71389a1fb70::t_efcf65d23d48fe 513-517
+governance/test/config-surface-write-gate.test.mjs
+  s_23d71389a1fb70::t_5fa3232aa6ebb5 55-56
+  s_23d71389a1fb70::t_1f2953e7f55cb2 1-54,57-96
+docs/cross-session-messaging.md
+  s_23d71389a1fb70::t_0e0834b4dc4a10 102-110
+hooks/config-surface-write-gate.sh
+  s_23d71389a1fb70::t_4c697c86a26cfb 1-92
+rules/peer-message-claims-unverified.md
+  s_23d71389a1fb70::t_12b762fade8de6 49-52
+governance/ENFORCEMENT-COVERAGE.md
+  s_23d71389a1fb70::t_694e2b28763ec5 10-11,14,428
+governance/contract.md
+  s_23d71389a1fb70::t_a4ca725c1b73c4 47,51,53
+governance/graph.json
+  s_23d71389a1fb70::t_c62564bbafdc19 12180-12188,41637-41648
+hooks/manifest.json
+  s_23d71389a1fb70::t_29ded0133967fe 350-370
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6a090c430c9bcb9bf90674ad78871e8d3f447121",
+  "prompts": {},
+  "sessions": {
+    "s_23d71389a1fb70": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7ec6e1a3-fbb9-40dd-9429-2acf5ed0dcb9",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

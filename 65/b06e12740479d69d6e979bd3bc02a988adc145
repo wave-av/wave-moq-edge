@@ -1,0 +1,19 @@
+governance/plans/moq-deadline-scheduler/E4-LEARNED-CODEC-CATALOG.md
+  s_8d34dc2035def4::t_4fe46ca481eb39 2,4,6-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "65b06e12740479d69d6e979bd3bc02a988adc145",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

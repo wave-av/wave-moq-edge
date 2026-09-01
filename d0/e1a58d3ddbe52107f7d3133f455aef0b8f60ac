@@ -1,0 +1,33 @@
+governance/capability/index.json
+  s_364605915bb7ec::t_96adf4c5f80e3c 20-21,25
+governance/capability/tier-manifest.json
+  s_364605915bb7ec::t_8021bb5ffc83e2 48
+governance/capability/CATALOG.md
+  s_364605915bb7ec::t_e847243786b09f 5
+governance/test/command-dispatch-guard.test.mjs
+  s_364605915bb7ec::t_087f450d2a8a3b 71-72
+governance/test/work-graph.test.mjs
+  s_364605915bb7ec::t_f6ab1aab91f4e2 121,123,125,130
+governance/hooks/work-sentinel.sh
+  s_364605915bb7ec::t_0d0d70265ffa0c 8
+settings/settings.base.json
+  s_364605915bb7ec::t_d47fc6be6505eb 635
+governance/bin/learning-admit.mjs
+  s_364605915bb7ec::t_7391e5a965e16e 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "d0e1a58d3ddbe52107f7d3133f455aef0b8f60ac",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

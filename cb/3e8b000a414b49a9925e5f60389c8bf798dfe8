@@ -1,0 +1,96 @@
+scripts/grok-img.ts
+  s_9673f7dc0983fb::t_4f37bd2b310a5a 6
+  s_9673f7dc0983fb::t_7f3f631c2ab3d8 3-5
+  s_9673f7dc0983fb::t_71cf01f9ffe476 7
+  s_9673f7dc0983fb::t_fb4cd0293e4b0b 1-2
+scripts/search.ts
+  s_9673f7dc0983fb::t_c66df7ddd6a2cc 5
+  s_9673f7dc0983fb::t_0a87ed10e09792 2-4
+  s_9673f7dc0983fb::t_2a5a16b684c60d 6-8
+scripts/watchdog.ts
+  s_9673f7dc0983fb::t_c3c21a05c41c80 68-74
+  s_9673f7dc0983fb::t_c3834daeaafc67 93-94
+  s_9673f7dc0983fb::t_63ebc329017cab 51
+  s_9673f7dc0983fb::t_732c60bdd745b5 85-92,95-131,137
+opencode.json
+  s_32308d89320687::t_01310f942a4e08 594-595
+scripts/assess.ts
+  s_9673f7dc0983fb::t_c1b2b77fa5f8c9 1-26,28-185,187-196
+  s_9673f7dc0983fb::t_ee62ede14399c1 27
+  s_9673f7dc0983fb::t_af93d81756cc71 186
+docs/PLAN-E6-E12.md
+  s_9673f7dc0983fb::t_2a27a3edffcb03 1-33
+scripts/runpod.ts
+  s_9673f7dc0983fb::t_62a0d247de5a9f 20
+  s_9673f7dc0983fb::t_e01561831a2e05 17-19
+  s_9673f7dc0983fb::t_fa7a87a3ec29f6 21-23
+  s_9673f7dc0983fb::t_e55fd45ca004ed 1-16,24-30
+scripts/prove.ts
+  s_9673f7dc0983fb::t_5a8826e4acccf9 50-59
+scripts/rag.ts
+  s_9673f7dc0983fb::t_b1d3a7b63c74c7 1-68
+  s_9673f7dc0983fb::t_97a44679c7844f 69-71
+scripts/catalog-external.ts
+  s_9673f7dc0983fb::t_37b23546ac19b3 1-202
+scripts/tts.ts
+  s_9673f7dc0983fb::t_19e2f8c111bddd 1
+  s_9673f7dc0983fb::t_86b417b30e61b8 2-4
+router/src/index.ts
+  s_9673f7dc0983fb::t_6d3113270d36f8 1131-1150
+  s_9673f7dc0983fb::t_593f7e3eb06923 1113-1130
+scripts/summarize.ts
+  s_9673f7dc0983fb::t_23b9eed48cbfbb 5
+  s_9673f7dc0983fb::t_87185b15d78f71 2-4
+  s_9673f7dc0983fb::t_57057da721f54e 6-8
+scripts/pipeline.ts
+  s_9673f7dc0983fb::t_ff71698c1c964e 1-35,42,50,74,77,80-81,83-103,106-109,112-115,118-123,127,130-134,140-141,143-148,150-154,156,160,165-170,175-177,180-182,184-187
+  s_9673f7dc0983fb::t_75f0e79c4e70ec 104-105,110-111,116-117
+  s_9673f7dc0983fb::t_fb104c794c2293 172
+  s_9673f7dc0983fb::t_6a9362ddf6b9ae 82
+  s_9673f7dc0983fb::t_0e98a7e696de90 135-139,142
+  s_9673f7dc0983fb::t_c4618438deab1b 36-38,40-41,43-49,51-60,75-76,78-79
+  s_9673f7dc0983fb::t_be01c6801663dc 124-126
+  s_9673f7dc0983fb::t_1fab480ea192b7 149,155,157-159,161-164
+  s_9673f7dc0983fb::t_eca3bbe49905c9 39
+  s_9673f7dc0983fb::t_2ee5048ef2bde8 61-73
+  s_9673f7dc0983fb::t_cbacf77c8fcd14 171,173-174,178-179,183
+  s_9673f7dc0983fb::t_1bc23ad7e2446e 128-129
+docs/PROVIDER-CAPABILITY-MAP.md
+  s_9673f7dc0983fb::t_3b835aebcc3e3c 72-90
+scripts/bench.ts
+  s_9673f7dc0983fb::t_292267edfb1644 1-141
+package.json
+  s_672079ccfe8ce6::t_cede1e055d1248 24-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cb3e8b000a414b49a9925e5f60389c8bf798dfe8",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

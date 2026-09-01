@@ -1,0 +1,30 @@
+.nvmrc
+  s_3c7a371f5618a4::t_42a9c5fcc9ca8d 1
+src/moq-wire-fetch.ts
+  s_3c7a371f5618a4::t_21cc39bbf91bba 35-36
+src/moq-wire-object.ts
+  s_3c7a371f5618a4::t_6912068e97b0be 25-26
+.github/workflows/test.yml
+  s_3c7a371f5618a4::t_91c68122c09f01 51
+.github/workflows/lint.yml
+  s_3c7a371f5618a4::t_2dba80cc44b1db 34
+src/moq-wire.ts
+  s_3c7a371f5618a4::t_0a4f3a21dd0e27 502
+  s_3c7a371f5618a4::t_9c29b8ebee274d 493
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0e824719be51fe7595f6c00b35e79562c5e7b692",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+router/tiers.json
+  s_ba07216ce52585::t_51d74155507c3c 409-415
+scripts/prove.ts
+  s_ba07216ce52585::t_ed37064c18ef9b 88-183
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d1c1600b9d2c951de7a639a155eb3a3a8fc91476",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+rules/confidence-gated-autonomy.md
+  s_60a20469ef4369::t_61f3f7e65dc1f6 5
+governance/contract.md
+  s_60a20469ef4369::t_961701ea2f3288 19,42-44,47,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "bce2da03fb61da2fcd5ab0111ee3add9fab249c2",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

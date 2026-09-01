@@ -1,0 +1,21 @@
+governance/plans/model-selection-completion/probes.json
+  s_7ddeb5d251570f::t_826978e2fe44c2 2
+governance/plans/model-selection-completion/RECEIPTS.md
+  s_7ddeb5d251570f::t_4cbe638d8a59f5 37-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "73e496f1aff6934accece1592d752cd7e96fdee4",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

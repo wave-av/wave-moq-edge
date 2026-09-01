@@ -1,0 +1,127 @@
+.github/workflows/governance.yml
+  s_a293da4db5caf2::t_a97b68ebf82de2 306-316
+governance/bin/struggle-miner-scan.sh
+  s_a293da4db5caf2::t_f480c1b1214b58 42-48
+governance/bin/struggle-miner/collect-successes.py
+  s_a293da4db5caf2::t_bfb6404529d78f 1-282
+governance/bin/struggle-miner/lib/command_family.py
+  s_a293da4db5caf2::t_388ca88671cdb2 1-197
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_a293da4db5caf2::t_f931b2f260e962 150-155,163,165-166
+governance/bin/tmp-literal-lint.mjs
+  s_a293da4db5caf2::t_aa23a96e11eca5 1-129
+governance/lib/drill-fixtures-shell.mjs
+  s_a293da4db5caf2::t_d9c08fcd5c6c73 35,120-156
+governance/lib/tmp-literal.mjs
+  s_a293da4db5caf2::t_29c417feaaca45 1-185
+governance/test/fixtures/bad-tmp-literal/clean.sh
+  s_a293da4db5caf2::t_878fc9fc185477 1-35
+governance/test/fixtures/bad-tmp-literal/writes.sh
+  s_a293da4db5caf2::t_12768d8058efbc 1-24
+governance/test/tmp-literal-lint.test.mjs
+  s_a293da4db5caf2::t_61cf84f60c006d 1-181
+hookcli/tests/fixtures/t3-node-stub.sh
+  s_a293da4db5caf2::t_d2ff919dc86575 6-16
+hookcli/tests/t3-classifier.sh
+  s_a293da4db5caf2::t_ea46bed4bd5790 60
+hookcli/tests/t4-llm-escalation.sh
+  s_a293da4db5caf2::t_7a4bf36d8f35b0 161
+hookcli/tests/t4-llm.sh
+  s_a293da4db5caf2::t_47460cf2553907 89,101
+hooks/context-budget-warn.sh
+  s_a293da4db5caf2::t_f55e6a444bafb2 30-34,87,89,91
+hooks/doppler-env-guard.sh
+  s_a293da4db5caf2::t_1282388ccda13a 38-42
+hooks/doppler-secrets-cache.sh
+  s_a293da4db5caf2::t_d63575a159c7d3 13-19
+hooks/file-size-warning.sh
+  s_a293da4db5caf2::t_765e605454b1bf 63
+hooks/local-llm/api-failure-counter.sh
+  s_a293da4db5caf2::t_954e78cec70f99 35
+hooks/local-llm/ollama-agent-debrief.sh
+  s_a293da4db5caf2::t_ec0c97d38a6db3 18
+hooks/local-llm/ollama-billing-guard.sh
+  s_a293da4db5caf2::t_0bd469d8a4785b 21
+hooks/local-llm/ollama-helper.sh
+  s_a293da4db5caf2::t_b5e4318ada2e79 18-22
+hooks/post-compact-restore.sh
+  s_a293da4db5caf2::t_54f0aa585fe159 8
+hooks/return-absorb-guard.sh
+  s_a293da4db5caf2::t_908f8f87d59aa9 95
+hooks/reviewer-route-gate.py
+  s_a293da4db5caf2::t_06f09ba3d514fd 52-60
+hooks/session-econ-meter.sh
+  s_a293da4db5caf2::t_8552b78562ba4a 135
+hooks/skill-load-defense.sh
+  s_a293da4db5caf2::t_d0813a06c8686d 38-39,58
+hooks/stop-nudge.sh
+  s_a293da4db5caf2::t_d079783f7dc313 119-120,193
+hooks/subagent-budget-signal.sh
+  s_a293da4db5caf2::t_082c659049aa91 21-25,46
+hooks/subagent-dispatch-gate.sh
+  s_a293da4db5caf2::t_5fd106c5ec49af 79,103
+hooks/subagent-read-budget.sh
+  s_a293da4db5caf2::t_a1bc1611afd6fb 78
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_a293da4db5caf2::t_aa659fcd94c46d 6-11,13-21,42-43
+hooks/tests/cccr_smoke_floor_capture.sh
+  s_a293da4db5caf2::t_8492e6d3822b2f 7-9,14-16
+hooks/tests/doppler_guard_smoke.sh
+  s_a293da4db5caf2::t_c706053dccfa22 6-26,32,35,44
+hooks/tests/enhancer_smoke.sh
+  s_a293da4db5caf2::t_87148ff741e5d2 22-30,32,35-56
+hooks/tests/phaseC/doppler-single-quote.sh
+  s_a293da4db5caf2::t_6c13b52943a6f0 9-19
+hooks/tests/phaseC/subagent-budget-templeak.sh
+  s_a293da4db5caf2::t_9940970528443d 8-21,23-39
+hooks/tests/phaseD/cross-project-nag.sh
+  s_a293da4db5caf2::t_7c8fdf4b3f06dc 10-17,28,31
+hooks/tests/phaseD/hysteresis-two-turn.sh
+  s_a293da4db5caf2::t_4bddff9d9cb491 4,8-15,26,31
+hooks/tests/phaseD/strategic-compact-band-nudge.sh
+  s_a293da4db5caf2::t_70335c550db7f8 13-20,29
+hooks/tests/public-github-write-gate-cwd.test.sh
+  s_a293da4db5caf2::t_2ae447369beecb 65-66,82,217
+hooks/tests/return_absorb_smoke.sh
+  s_a293da4db5caf2::t_2e54e5505444bd 15-34,68-71
+hooks/tests/session_econ_meter_smoke.sh
+  s_a293da4db5caf2::t_43e06806bcb162 14-16
+hooks/tests/subagent_read_budget_smoke.sh
+  s_a293da4db5caf2::t_bcfdb73de678b0 12-22
+settings/settings.base.json
+  s_a293da4db5caf2::t_d8749e7ad3debc 369-373
+tests/struggle_miner/test_collect_denials.py
+  s_a293da4db5caf2::t_c21ad1da9dad4a 127-132
+tests/struggle_miner/test_collect_successes.py
+  s_a293da4db5caf2::t_5d1606da73fc68 1-254
+tests/struggle_miner/test_command_family.py
+  s_a293da4db5caf2::t_82e15c36f34df4 1-123
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_e8030c0e4b5704 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_a293da4db5caf2::t_bcc8d7a52cc2a1 408,480
+governance/code-index/CATALOG.md
+  s_a293da4db5caf2::t_4d74a7a3dc3782 5,3181-3197,3820-3822,4691-4706
+governance/code-index/index.json
+  s_a293da4db5caf2::t_9c877ff04c9205 9-10,12-13,28399-28552,33426-33436,33443-33444,33454-33457,40026-40168
+governance/graph.json
+  s_a293da4db5caf2::t_80903ad70d17f6 5914-5922,24389-24400
+hooks/manifest.json
+  s_a293da4db5caf2::t_a12be70fc41d32 260,323,344,456,1052,1269,1289-1309,1374,1416,1500,1521,1542,1584
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3989e7a07648b2c1493ec782b638cf8a6061d03b",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

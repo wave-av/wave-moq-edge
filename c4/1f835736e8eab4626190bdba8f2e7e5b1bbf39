@@ -1,0 +1,23 @@
+governance/lib/pr-create-guards.mjs
+  s_9041cf1cf1ccad::t_412170068aab50 43-46
+governance/bin/pr-create.mjs
+  s_9041cf1cf1ccad::t_dc93385478b437 92-97
+governance/test/pr-create.test.mjs
+  s_9041cf1cf1ccad::t_ba29146dc3514c 285
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c41f835736e8eab4626190bdba8f2e7e5b1bbf39",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

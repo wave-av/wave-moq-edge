@@ -1,0 +1,35 @@
+governance/plans/launch-week-set-01/E2-CHASSIS.md
+  s_6f6453b23e3805::t_cf1c1832d8fb70 5-10
+governance/plans/launch-week-set-01/E3-LIVE-WEEK.md
+  s_6f6453b23e3805::t_41cc315d178534 21-25
+  s_6f6453b23e3805::t_3c7ffc877d3602 4-6
+governance/plans/launch-week-set-01/NORTH-STAR.md
+  s_6f6453b23e3805::t_a4cc826b1f05f7 6-11
+  s_6f6453b23e3805::t_41322eb6faf9c1 25-31
+  s_6f6453b23e3805::t_499ef4f7dc05ca 49-52
+  s_6f6453b23e3805::t_2c63b99666fdc3 35
+governance/plans/launch-week-set-01/E4-RITUAL-DECISION.md
+  s_6f6453b23e3805::t_06c435a11eb39a 8-11
+  s_6f6453b23e3805::t_e0d9c2a988564f 15-19
+governance/plans/launch-week-set-01/E1-INVENTORY.md
+  s_6f6453b23e3805::t_617764accb5c30 20-24
+  s_6f6453b23e3805::t_a467503ca60896 12-16
+governance/graph.json
+  s_6f6453b23e3805::t_1129cac23e760a 5436,5438,5477,25952-25957
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5cc48ecb1f969aff3a347db25037157ebd1d8191",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

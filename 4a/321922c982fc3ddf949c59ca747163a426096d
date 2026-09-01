@@ -1,0 +1,19 @@
+governance/plans/ffmpeg9-lei/FLEET-SCALE-LADDER.md
+  s_8d34dc2035def4::t_9534d68b8890b3 1-88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4a321922c982fc3ddf949c59ca747163a426096d",
+  "prompts": {},
+  "sessions": {
+    "s_8d34dc2035def4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fedc4bce0ffeR9XQfe6367vDZL",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

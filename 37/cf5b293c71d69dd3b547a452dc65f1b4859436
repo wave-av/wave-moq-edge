@@ -1,0 +1,25 @@
+governance/tools/substitution/tests/substitution.test.mjs
+  s_9041cf1cf1ccad::t_9ec93016bcb1d0 1-24
+governance/tools/search-time/package.json
+  s_9041cf1cf1ccad::t_27991bfdf01df8 7
+.github/actions/origin-tools-suites/action.yml
+  s_9041cf1cf1ccad::t_39e5bcc56f5ae6 12
+governance/tools/search-time/tests/search-time.test.mjs
+  s_9041cf1cf1ccad::t_084514b355ae1d 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "37cf5b293c71d69dd3b547a452dc65f1b4859436",
+  "prompts": {},
+  "sessions": {
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

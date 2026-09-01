@@ -1,0 +1,16 @@
+.github/workflows/registry-cadence.yml
+  h_91e57a3221f2ff 38-39
+governance/tools/wave-registry/wave-registry.mjs
+  h_91e57a3221f2ff 13,90,484-489
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "04f2c05b8f2506a6d9a2449ae9d7ce915b59a651",
+  "prompts": {},
+  "humans": {
+    "h_91e57a3221f2ff": {
+      "author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

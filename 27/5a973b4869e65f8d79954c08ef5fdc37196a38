@@ -1,0 +1,25 @@
+hookcli/tests/parity-secret-leak-scan.sh
+  s_60a20469ef4369::t_911bc900bbcc3c 17-22,41-46,58-64
+  s_60a20469ef4369::t_1f8a6a52e8a845 1-16,23-40,47-57
+hookcli/track4b.json
+  s_60a20469ef4369::t_dba5794813fe9f 40
+  s_60a20469ef4369::t_e7ecf5db1b4507 35-39
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_90899aaf6a6c84 153-159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "275a973b4869e65f8d79954c08ef5fdc37196a38",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+hookcli/bin/shadow-report.mjs
+  s_60a20469ef4369::t_b59330051d1175 11-12,18-36
+  s_60a20469ef4369::t_21427bd538aa88 58
+  s_60a20469ef4369::t_0adfe768c5d4aa 37
+hookcli/tests/shadow-report.sh
+  s_60a20469ef4369::t_d2d98c686ba7b6 71-87
+governance/bin/work-graph.mjs
+  s_60a20469ef4369::t_f6dfdc3bc67de0 5
+  s_60a20469ef4369::t_616ed40184c885 193-203
+governance/code-index/CATALOG.md
+  s_60a20469ef4369::t_b1e4bc22111525 2131
+governance/code-index/index.json
+  s_60a20469ef4369::t_4f9ba0299eb1c1 20536-20538
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "e269d996abc73e4f9baa2bdb953ab372a17cf9e0",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

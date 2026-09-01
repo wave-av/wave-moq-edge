@@ -1,0 +1,19 @@
+governance/plans/tokenization-plane/NORTH-STAR.md
+  s_af745320d7327e::t_064cbcdc75f58f 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "87abf41e8e8f1abbe30ef5be9a82f30b1735c3d6",
+  "prompts": {},
+  "sessions": {
+    "s_af745320d7327e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc3d8be92fferrhwkSbKP782y4",
+        "model": "x-preview-f-free"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.github/workflows/governance.yml
+  s_a293da4db5caf2::t_1a56973cf4c3f4 306-316
+governance/DASHBOARD.md
+  s_a293da4db5caf2::t_ad097ed4b96dec 8,25
+governance/ENFORCEMENT-COVERAGE.md
+  s_a293da4db5caf2::t_b9cac4747fdb7b 408,480
+governance/bin/tmp-literal-lint.mjs
+  s_a293da4db5caf2::t_46538dc93966aa 1-129
+governance/code-index/CATALOG.md
+  s_a293da4db5caf2::t_f9bd5d8a17410c 5,3181-3197,3840-3842,4711-4726
+governance/code-index/index.json
+  s_a293da4db5caf2::t_72095d9557be3d 9-10,12-13,28399-28552,33613-33623,33630-33631,33641-33644,40213-40355
+governance/graph.json
+  s_a293da4db5caf2::t_77d03fcc92cee9 5914-5922,24389-24400
+governance/lib/drill-fixtures-shell.mjs
+  s_a293da4db5caf2::t_aeb3f2295087f8 35,120-156
+governance/lib/tmp-literal.mjs
+  s_a293da4db5caf2::t_44cb3c681ef802 1-185
+governance/test/fixtures/bad-tmp-literal/clean.sh
+  s_a293da4db5caf2::t_016349117721a6 1-35
+governance/test/fixtures/bad-tmp-literal/writes.sh
+  s_a293da4db5caf2::t_04f024259f4e59 1-24
+governance/test/tmp-literal-lint.test.mjs
+  s_a293da4db5caf2::t_e33e38c065e063 1-181
+hookcli/tests/fixtures/t3-node-stub.sh
+  s_a293da4db5caf2::t_f9027d23405f87 6-16
+hookcli/tests/t3-classifier.sh
+  s_a293da4db5caf2::t_b9d3f6e27003fc 60
+hookcli/tests/t4-llm-escalation.sh
+  s_a293da4db5caf2::t_5c53be3b996f15 161
+hookcli/tests/t4-llm.sh
+  s_a293da4db5caf2::t_e929f033d8f382 89,101
+hooks/context-budget-warn.sh
+  s_a293da4db5caf2::t_1c72bc25a74084 30-34,87,89,91
+hooks/doppler-env-guard.sh
+  s_a293da4db5caf2::t_49c2bb86edd231 38-42
+hooks/doppler-secrets-cache.sh
+  s_a293da4db5caf2::t_ee8585432951b5 13-19
+hooks/file-size-warning.sh
+  s_a293da4db5caf2::t_0b708091ffca13 63
+hooks/local-llm/api-failure-counter.sh
+  s_a293da4db5caf2::t_c739dbf0305a13 35
+hooks/local-llm/ollama-agent-debrief.sh
+  s_a293da4db5caf2::t_f2705439656bdf 18
+hooks/local-llm/ollama-billing-guard.sh
+  s_a293da4db5caf2::t_2b04df34ca721b 21
+hooks/local-llm/ollama-helper.sh
+  s_a293da4db5caf2::t_7a4c2c8d698a13 18-22
+hooks/manifest.json
+  s_a293da4db5caf2::t_2b9118bbdc294a 260,323,344,456,1052,1269,1289-1309,1374,1416,1500,1521,1542,1584
+hooks/post-compact-restore.sh
+  s_a293da4db5caf2::t_b7c41a1a32c71f 8
+hooks/return-absorb-guard.sh
+  s_a293da4db5caf2::t_a9dec4d4293409 95
+hooks/reviewer-route-gate.py
+  s_a293da4db5caf2::t_8b5a4cb70ef84f 52-60
+hooks/session-econ-meter.sh
+  s_a293da4db5caf2::t_60ea2284260f10 135
+hooks/skill-load-defense.sh
+  s_a293da4db5caf2::t_433f37b7e4e932 38-39,58
+hooks/stop-nudge.sh
+  s_a293da4db5caf2::t_0bc34413048806 119-120,193
+hooks/subagent-budget-signal.sh
+  s_a293da4db5caf2::t_abcb15a39b29b9 21-25,46
+hooks/subagent-dispatch-gate.sh
+  s_a293da4db5caf2::t_dfd93ab6ed06f6 79,103
+hooks/subagent-read-budget.sh
+  s_a293da4db5caf2::t_ba78cb8878b38f 78
+hooks/tests/cccr_smoke_decision_engine.sh
+  s_a293da4db5caf2::t_db9756c2542d14 6-11,13-21,42-43
+hooks/tests/cccr_smoke_floor_capture.sh
+  s_a293da4db5caf2::t_e3ef0fc821e78c 7-9,14-16
+hooks/tests/doppler_guard_smoke.sh
+  s_a293da4db5caf2::t_0e790fbaaeb8af 6-26,32,35,44
+hooks/tests/enhancer_smoke.sh
+  s_a293da4db5caf2::t_7c9fe517057c4f 22-30,32,35-56
+hooks/tests/phaseC/doppler-single-quote.sh
+  s_a293da4db5caf2::t_f78e2d827768bf 9-19
+hooks/tests/phaseC/subagent-budget-templeak.sh
+  s_a293da4db5caf2::t_8316bd228a7f09 8-21,23-39
+hooks/tests/phaseD/cross-project-nag.sh
+  s_a293da4db5caf2::t_53eb84935e98d7 10-17,28,31
+hooks/tests/phaseD/hysteresis-two-turn.sh
+  s_a293da4db5caf2::t_966d10d3a22515 4,8-15,26,31
+hooks/tests/phaseD/strategic-compact-band-nudge.sh
+  s_a293da4db5caf2::t_7c2def0a2db8bb 13-20,29
+hooks/tests/public-github-write-gate-cwd.test.sh
+  s_a293da4db5caf2::t_d794a78585b79a 65-66,82,217
+hooks/tests/return_absorb_smoke.sh
+  s_a293da4db5caf2::t_ce8dbe1beeee49 15-34,68-71
+hooks/tests/session_econ_meter_smoke.sh
+  s_a293da4db5caf2::t_7be5d07499a389 14-16
+hooks/tests/subagent_read_budget_smoke.sh
+  s_a293da4db5caf2::t_d5688c9af1cc86 12-22
+settings/settings.base.json
+  s_a293da4db5caf2::t_231d259e8d8ca7 369-373
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4e194a63d7dfdcc4944efa45a42995317a630e11",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

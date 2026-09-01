@@ -1,0 +1,27 @@
+governance/plans/wave-mesh-fabric/action/mesh-kv-resolve-ns.sh
+  s_15127d80763110::t_9acc27048fc5f5 33-40,42,46
+governance/plans/wave-mesh-fabric/E1-P1-ESTATE-LATENCY.md
+  s_15127d80763110::t_9e4b4f8104440c 522-523
+  s_15127d80763110::t_bb279bc1dc7f4c 443-445,447,449-452,455-463
+  s_15127d80763110::t_42f4b421be93dc 464
+governance/plans/wave-mesh-fabric/action/mesh-kv-shape.sh
+  s_15127d80763110::t_294ba778eeee3b 2-3,5-18,28-112
+governance/plans/wave-mesh-fabric/action/mesh-kv-tally.sh
+  s_15127d80763110::t_c37a88527f4f4e 35-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "0d300d7d654f069812dadce2561c27993290291e",
+  "prompts": {},
+  "sessions": {
+    "s_15127d80763110": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f70037af-ffae-40e0-adc5-d29d25d96fee",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

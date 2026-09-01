@@ -1,0 +1,40 @@
+governance/lib/pr-check-health.mjs
+  s_6f6453b23e3805::t_076604c22f54bc 287-289,293-296
+  s_6f6453b23e3805::t_a9ac286590bfad 61-69
+  s_6f6453b23e3805::t_96bfc1d76d732d 135-148
+  s_6f6453b23e3805::t_99e41dfe401dce 261
+  s_6f6453b23e3805::t_6ed3cdc105660f 220-222
+  s_6f6453b23e3805::t_a211072e86d666 310-313
+  s_6f6453b23e3805::t_d10af0ad681dd7 193,197,200,206-208
+governance/bin/pr-check-health.mjs
+  s_6f6453b23e3805::t_23698f1718f1c3 296-301,312-315
+  s_6f6453b23e3805::t_8e2202044ff5fa 257,269-281
+  s_6f6453b23e3805::t_7eca39c6cd716f 361-363
+  s_6f6453b23e3805::t_2f1c221e92282b 47
+  s_6f6453b23e3805::t_49efc6bc408e82 338
+  s_6f6453b23e3805::t_0e5621f30e8de2 228-233
+  s_6f6453b23e3805::t_ce352f2e45ce91 302-311
+  s_6f6453b23e3805::t_edc6cdee03e3eb 327-331
+  s_6f6453b23e3805::t_8559e16b14cd89 378-381
+governance/lib/pr-check-health-platform.mjs
+  s_6f6453b23e3805::t_7ebf7a618a6b21 1-130
+  s_6f6453b23e3805::t_6177ea6b955d94 131-168
+governance/test/pr-check-health-platform.test.mjs
+  s_6f6453b23e3805::t_37ebc288148d9c 1-306
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "596769d1dde0ddaccc7d17aa6dfc32f481d94d3e",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

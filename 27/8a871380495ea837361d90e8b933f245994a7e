@@ -1,0 +1,19 @@
+governance/plans/llm-funnel-gateway/NORTH-STAR.md
+  s_06cce2874af707::t_ecc1b26fcc8a77 40-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "278a871380495ea837361d90e8b933f245994a7e",
+  "prompts": {},
+  "sessions": {
+    "s_06cce2874af707": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ab7f247e55a7a316e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

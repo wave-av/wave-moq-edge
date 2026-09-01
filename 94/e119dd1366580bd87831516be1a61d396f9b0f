@@ -1,0 +1,63 @@
+governance/plans/external-actor-conformance/E2-ADOPTION-PROTOCOL.md
+  s_52031f4510959b::t_662da808f7e363 10
+  s_52031f4510959b::t_48dab0655e3bad 7-9
+  s_52031f4510959b::t_493c3c05ca9e58 1-6
+governance/plans/external-actor-conformance/E4-IDENTITY-OIDC.md
+  s_52031f4510959b::t_3ee3c95f232861 10
+  s_52031f4510959b::t_529b014e29d992 7-9
+  s_52031f4510959b::t_f4e92282fd884b 1-6
+governance/plans/external-actor-conformance/E0-CENSUS.md
+  s_52031f4510959b::t_0d8c45f8969ee5 2-12,14-76
+  s_52031f4510959b::t_1c51b6464bbcc6 13
+  s_52031f4510959b::t_d48ebf947e0243 1
+governance/plans/external-actor-conformance/E1-CLOSE-THE-SEVEN.md
+  s_52031f4510959b::t_65b9e1427bafba 2-3,5-89
+  s_52031f4510959b::t_12f0afafa434a3 4
+  s_52031f4510959b::t_6482d593b30864 1
+governance/plans/external-actor-conformance/NORTH-STAR.md
+  s_52031f4510959b::t_4adda5801c2d5d 95
+  s_52031f4510959b::t_be32a6f20c36ea 5-94,96-113
+  s_52031f4510959b::t_791367da318bd2 2-4
+  s_d9915bbafa9657::t_f5f731c29e2eff 1
+rules/external-actor-bound-by-mechanism-not-prose.md
+  s_52031f4510959b::t_531a29169abe28 1-46,48-49
+  s_52031f4510959b::t_a78f74eaef7dfb 47
+governance/plans/external-actor-conformance/E3-BYPASS-AUDIT.md
+  s_52031f4510959b::t_31d9e55805f962 10
+  s_52031f4510959b::t_fa111044b32b93 7-9
+  s_52031f4510959b::t_63f3b771e7010e 1-6
+governance/plans/external-actor-conformance/E5-RATCHET.md
+  s_52031f4510959b::t_4aeb8a836e51df 10
+  s_52031f4510959b::t_f64ec0cce0609f 7-9
+  s_52031f4510959b::t_b9eb41d51eea1e 1-6
+governance/ENFORCEMENT-COVERAGE.md
+  s_52031f4510959b::t_56897927adfb45 5,12,14,66,249
+governance/contract.md
+  s_52031f4510959b::t_0cb4192f25abe6 51,53
+governance/graph.json
+  s_52031f4510959b::t_d8d2e7732efc85 802-808,5266-5356,15614-15655,28196-28369
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "94e119dd1366580bd87831516be1a61d396f9b0f",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

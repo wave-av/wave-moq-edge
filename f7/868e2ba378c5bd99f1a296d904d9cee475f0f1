@@ -1,0 +1,25 @@
+governance/plans/closed-loop-mechanisms/E2-LASTMILE.md
+  s_7d6d0c7abd029f::t_2089fe165e68e8 58
+governance/plans/closed-loop-mechanisms/E3-MERGEPATH.md
+  s_7d6d0c7abd029f::t_ac01891e1033c3 7,24,37-38
+governance/plans/closed-loop-mechanisms/NORTH-STAR.md
+  s_7d6d0c7abd029f::t_e5fe23b897744f 66
+governance/plans/closed-loop-mechanisms/RECEIPTS.md
+  s_7d6d0c7abd029f::t_52b89beefb7c84 59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f7868e2ba378c5bd99f1a296d904d9cee475f0f1",
+  "prompts": {},
+  "sessions": {
+    "s_7d6d0c7abd029f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "16a3804a-0558-4895-bc83-85ed8cbfb634",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+hooks/ticket-hygiene-guard.py
+  s_63c6ee080d73c3::t_cdc37782765873 177-214
+  s_63c6ee080d73c3::t_b7df5a481cac08 125-135
+  s_63c6ee080d73c3::t_8a2f015656dfa3 315-320
+hooks/tests/ticket-hygiene-guard-test.py
+  s_63c6ee080d73c3::t_78a274424759cf 138-159,163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "01f82e90b184e2af5072252581bd238297933d2c",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

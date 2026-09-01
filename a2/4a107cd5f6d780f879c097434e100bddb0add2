@@ -1,0 +1,33 @@
+fleet-autonomy/INVARIANT.md
+  s_dc28a41ef90415::t_64a4cfe9d195db 1-63
+bin/start-here.mjs
+  s_dc28a41ef90415::t_255098beb0f8f9 23
+  s_dc28a41ef90415::t_6266dea93be390 13,83-111,116-118,124-125,169-180,189-196,201-217,274-275,280,283-292,316-320
+  s_dc28a41ef90415::t_95ec9a60c1e9db 321
+bin/apply-invariant-flag.sh
+  s_dc28a41ef90415::t_7ad44200616d72 1-2,6-15,28,31
+  s_dc28a41ef90415::t_a76389cecb8c8e 3-5,16-27,29-30
+memory/fleet.jsonl
+  s_dc28a41ef90415::t_2d8ea5bbd64d03 1
+governance/plans/fleet-autonomy/E1-ORIENTATION-ANCHOR.md
+  s_dc28a41ef90415::t_42a6e8a582b00b 4
+  s_dc28a41ef90415::t_5faa3a752b8e5e 32-129
+bin/fleet-log.mjs
+  s_dc28a41ef90415::t_65b8ac7dffd744 17-19,28,59-67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a24a107cd5f6d780f879c097434e100bddb0add2",
+  "prompts": {},
+  "sessions": {
+    "s_dc28a41ef90415": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0020ac7ecffeMyqUHslUTmSY8j",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

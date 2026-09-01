@@ -1,0 +1,28 @@
+settings/settings.base.json
+  s_96280c922a9418::t_1429e6c14dc44f 4-5
+hooks/tests/autonomous_loop_breaker_smoke.sh
+  s_96280c922a9418::t_1c706429154e0f 150-159,163-179
+  s_96280c922a9418::t_256adeb3bcd6f6 160-162
+hooks/autonomous-loop-breaker.sh
+  s_96280c922a9418::t_10753e0af42ea0 79-86
+  s_96280c922a9418::t_da300079d7c903 30-39
+  s_96280c922a9418::t_b39809c56af52c 213-222
+hooks/manifest.json
+  s_96280c922a9418::t_1904eb1bfc6ee4 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "69d6dafe4717f3254e356a060c0cf7980761a784",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

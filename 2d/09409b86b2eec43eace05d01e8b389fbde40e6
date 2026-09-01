@@ -1,0 +1,25 @@
+governance/test/epic-status-partition.test.mjs
+  s_02abc74f4971c7::t_46e60fd8fc8e9a 1-97
+governance/lib/owner-resolve.mjs
+  s_02abc74f4971c7::t_8e43d1d483e7f5 190
+  s_02abc74f4971c7::t_8221e87710e003 191-195
+governance/bin/epic-status.mjs
+  s_02abc74f4971c7::t_c67e9520750ece 117,122
+  s_02abc74f4971c7::t_19b182cabeb097 118-121,123-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "2d09409b86b2eec43eace05d01e8b389fbde40e6",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

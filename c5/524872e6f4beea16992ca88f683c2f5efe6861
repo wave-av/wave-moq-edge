@@ -1,0 +1,96 @@
+agents/act-worker.md
+  h_67a1b847dc59d6 3,6,22-30
+docs/AGENT-CAPABILITY-MAP.md
+  h_67a1b847dc59d6 12,29,80-88
+docs/posthog/INSTRUMENTATION-AUDIT.md
+  h_67a1b847dc59d6 1-491
+docs/posthog/LLM-OBSERVABILITY-VERDICT.md
+  h_67a1b847dc59d6 1-388
+docs/posthog/MCP-REGISTRATION.md
+  h_67a1b847dc59d6 1-454
+governance/DASHBOARD.md
+  h_67a1b847dc59d6 25
+governance/agents/TAXONOMY.yaml
+  h_67a1b847dc59d6 62-63,67-68
+governance/capability/tier-manifest.json
+  h_67a1b847dc59d6 124
+governance/graph.json
+  h_67a1b847dc59d6 2488,2490-2491,4743-4755,23951-23980
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  h_67a1b847dc59d6 4-125,128-134,136-160,163-190,193-204,206-217,222-224,226-289
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  h_67a1b847dc59d6 306-319
+governance/plans/ffmpeg9-lei/action/E14-P1-PROSPECTS.md
+  h_67a1b847dc59d6 1-283
+governance/plans/generated-artifact-contention/epic.md
+  h_67a1b847dc59d6 1-85
+governance/plans/hookcli/E1-CORE.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E2-HARVEST.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/E3-RULES.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E4-TIERS.md
+  h_67a1b847dc59d6 4-12
+governance/plans/hookcli/E5-BOARD.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E7-DISTILL.md
+  h_67a1b847dc59d6 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  h_67a1b847dc59d6 4-14
+governance/plans/hookcli/NORTH-STAR.md
+  h_67a1b847dc59d6 8-18
+governance/plans/nested-dispatch-economy/E1-CHEAP-BRANCH.md
+  h_67a1b847dc59d6 50
+governance/plans/receipts/E1-tier1-arming-crossing-2026-07-06.md
+  h_67a1b847dc59d6 1-59
+governance/plans/sandbox-tier-ladder/E-SEC.md
+  h_67a1b847dc59d6 30-40
+governance/plans/sandbox-tier-ladder/E1-TIER1-RUNTIME.md
+  h_67a1b847dc59d6 53
+governance/plans/sandbox-tier-ladder/E3-METERING.md
+  h_67a1b847dc59d6 29-32
+governance/plans/sandbox-tier-ladder/NORTH-STAR.md
+  h_67a1b847dc59d6 30-52,56-80
+governance/plans/wave-credential-custody/RESEARCH-NANGO-CUSTODY.md
+  h_67a1b847dc59d6 1-350
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  h_67a1b847dc59d6 6-16
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  h_67a1b847dc59d6 6-18
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  h_67a1b847dc59d6 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  h_67a1b847dc59d6 6-12
+governance/plans/wave-secdev/NORTH-STAR.md
+  h_67a1b847dc59d6 11-19
+governance/recall/BAKE-OFF.md
+  h_67a1b847dc59d6 168,342-348,512-513,527-538,541-548,587-599
+governance/recall/eval/repo-corpus.manifest.json
+  h_67a1b847dc59d6 197-204,276,284,288,304-307,590
+mcp/zoom-s2s-mcp.mjs
+  h_67a1b847dc59d6 4,24-26,28-31,50-81,89-93,107-112,120,125,128-134,201-203,205
+plugins/wave-agents/agents/act-worker.md
+  h_67a1b847dc59d6 3,6,22-30
+settings/settings.studio.json
+  h_67a1b847dc59d6 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c5524872e6f4beea16992ca88f683c2f5efe6861",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

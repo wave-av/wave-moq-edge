@@ -1,0 +1,38 @@
+governance/plans/wave-dogfood/E3-RECEIPTS.md
+  s_9e432dc94c73ad::t_5f72ae068a0066 1-18
+governance/plans/wave-dogfood/E4-CI.md
+  s_9e432dc94c73ad::t_92356cf7bd1310 1-18
+governance/plans/wave-dogfood/E1-CLI.md
+  s_9e432dc94c73ad::t_81947c0f1f2a28 1-28
+governance/plans/wave-dogfood/NORTH-STAR.md
+  s_9e432dc94c73ad::t_825a26814b8910 5-71
+  s_8152bca18f72ee::t_55a47221fd4e94 1-4
+governance/plans/wave-dogfood/E2-PROBES.md
+  s_9e432dc94c73ad::t_e8aa707215605f 1-20
+governance/plans/wave-dogfood/E0-SURFACE-REGISTRY.md
+  s_9e432dc94c73ad::t_58869a1c316654 1-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "bac2a38b835d68e0fb501de4c875ad5d96089058",
+  "prompts": {},
+  "sessions": {
+    "s_8152bca18f72ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe2ea6ec1ffeBdQY2Z91w17mBF",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9e432dc94c73ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe89b54d0ffeJzhiAS9bz5iAjc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+governance/bin/intent-ledger.mjs
+  s_364605915bb7ec::t_b759f37d2b4a21 279-283,289
+  s_364605915bb7ec::t_441608f23fef9c 354-355,358-359
+governance/code-index/CATALOG.md
+  s_364605915bb7ec::t_0f48460aea2753 1167,1169,1178,1186,1189-1190
+governance/code-index/index.json
+  s_364605915bb7ec::t_5a30530da4371d 11251-11252,11273-11274,11372-11373,11460-11463,11493-11494,11504-11507
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "63ebe4de8a237d82eb3fd3209cb38b4ac7cd45f9",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+governance/bin/inject.mjs
+  s_d9915bbafa9657::t_06be48f9c07eb1 34
+  s_d9915bbafa9657::t_678096879286d1 238-244,248-251,265-266
+  s_d9915bbafa9657::t_2912584748bbda 282-284
+  s_d9915bbafa9657::t_d58ed4c3cbd828 267
+governance/bin/caveman.mjs
+  s_d9915bbafa9657::t_217aa4fc4eca7c 45-50
+  s_d9915bbafa9657::t_7bd94b38efc236 39
+governance/lib/graph-availability.mjs
+  s_d9915bbafa9657::t_776b0af5e29edb 42-48,52
+governance/lib/terminal-escapes.mjs
+  s_d9915bbafa9657::t_1df34943bd94b8 1-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a1f6c4b81a145577303a4ef244d460d524fff788",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

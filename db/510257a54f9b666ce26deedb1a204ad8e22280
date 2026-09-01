@@ -1,0 +1,43 @@
+governance/plans/observability-and-dash0-exit/E0-DOGFOOD-LAW.md
+  s_78efe5ee16b23c::t_51e673acf478d2 1-39
+governance/plans/observability-and-dash0-exit/E1-DASH0-EXIT.md
+  s_78efe5ee16b23c::t_c2fadef0baeda8 1-61
+governance/plans/observability-and-dash0-exit/E2-EMIT-EVERYWHERE.md
+  s_78efe5ee16b23c::t_f4113c6121d134 1-61
+governance/plans/observability-and-dash0-exit/E3-CHASSIS-SPINE.md
+  s_78efe5ee16b23c::t_c4673b1a0b269f 1-54
+governance/plans/observability-and-dash0-exit/E4-INGEST-INDEX.md
+  s_78efe5ee16b23c::t_b4835dfcba7ece 1-53
+governance/plans/observability-and-dash0-exit/E5-SELF-HOST-PLANE.md
+  s_78efe5ee16b23c::t_7d7215f3730a6e 1-48
+governance/plans/observability-and-dash0-exit/E6-PANE.md
+  s_78efe5ee16b23c::t_cb186bc49ca7d3 1-58
+governance/plans/observability-and-dash0-exit/E7-PRODUCTIZE.md
+  s_78efe5ee16b23c::t_5fbf1a51a9508c 1-44
+governance/plans/observability-and-dash0-exit/E8-ATTESTATION-MOAT.md
+  s_78efe5ee16b23c::t_88352d00270b86 1-55
+governance/plans/observability-and-dash0-exit/NORTH-STAR.md
+  s_78efe5ee16b23c::t_e316393c652475 1-105
+governance/plans/observability-and-dash0-exit/RECEIPTS.md
+  s_78efe5ee16b23c::t_d6e060d7d24085 1-60
+governance/DASHBOARD.md
+  s_78efe5ee16b23c::t_6f8c8f9ff87521 25
+governance/graph.json
+  s_78efe5ee16b23c::t_2c1c8042d990a1 3195-3332,15680-15715
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "db510257a54f9b666ce26deedb1a204ad8e22280",
+  "prompts": {},
+  "sessions": {
+    "s_78efe5ee16b23c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5c7f80e520c9d421",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

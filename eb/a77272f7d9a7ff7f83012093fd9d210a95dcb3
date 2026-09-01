@@ -1,0 +1,32 @@
+rules/one-shot-guard.md
+  s_07acdfa7e3709a::t_d35b9edaa09164 1,3,5-6
+rules/when-to-use-what.md
+  s_07acdfa7e3709a::t_1801a685761263 36
+rules/brand-wordmark.md
+  s_07acdfa7e3709a::t_ab68497262a374 1,3-5,9-12,14-15,19-22
+rules/agent-routing.md
+  s_07acdfa7e3709a::t_74285deb92f657 15,17-21
+rules/build-conventions.md
+  s_07acdfa7e3709a::t_c573b7f051c95f 15-16
+rules/learning-propagation.md
+  s_07acdfa7e3709a::t_a16538a382ea3b 1,3,5-6
+rules/service-routing.md
+  s_07acdfa7e3709a::t_70fe2922565a9b 218
+  s_07acdfa7e3709a::t_026df66cf45a3b 88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "eba77272f7d9a7ff7f83012093fd9d210a95dcb3",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

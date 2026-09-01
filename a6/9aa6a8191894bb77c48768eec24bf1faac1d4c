@@ -1,0 +1,32 @@
+tools/moq-client/__tests__/subscriber-retry.test.ts
+  s_3c7a371f5618a4::t_1db5c77bd34ae3 1-46,49-144
+  s_3c7a371f5618a4::t_ea32ff31ce2010 47-48
+tools/moq-client/__tests__/bench-sixteen-track.test.ts
+  s_3c7a371f5618a4::t_5a5584486170ec 178-258
+  s_3c7a371f5618a4::t_b1efd9280bf31e 15,17,19
+tools/moq-client/__tests__/track-failure.test.ts
+  s_3c7a371f5618a4::t_6bc77da18fbcb7 111-112
+  s_3c7a371f5618a4::t_32c0945fa75677 36-40,45,54,84
+tools/moq-client/src/subscriber-retry.ts
+  s_3c7a371f5618a4::t_dcbc29602db7f9 1-83
+tools/moq-client/bench-sixteen-track.ts
+  s_3c7a371f5618a4::t_6fb68a4f0e67ba 30
+  s_3c7a371f5618a4::t_b3ec04a83877ec 156,168-170,194-218
+  s_3c7a371f5618a4::t_1bf382b4861d1c 219-220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a69aa6a8191894bb77c48768eec24bf1faac1d4c",
+  "prompts": {},
+  "sessions": {
+    "s_3c7a371f5618a4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5bd8e1fc-0b4d-4027-8f86-88e3237e562e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

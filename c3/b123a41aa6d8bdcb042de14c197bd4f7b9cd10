@@ -1,0 +1,21 @@
+governance/bin/cost-to-serve-margin.mjs
+  s_ed2383a1ca3c38::t_dda69fd166069c 1-319
+governance/bin/cost-to-serve-reconcile.mjs
+  s_ed2383a1ca3c38::t_eb989af4d67901 1-347
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "c3b123a41aa6d8bdcb042de14c197bd4f7b9cd10",
+  "prompts": {},
+  "sessions": {
+    "s_ed2383a1ca3c38": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002a4e468ffeVT1zIclKWtGUjU",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

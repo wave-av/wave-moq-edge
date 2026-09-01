@@ -1,0 +1,21 @@
+router/src/router/protocol.ts
+  s_ba07216ce52585::t_580cb3bd341dd3 2
+router/src/router/role-models.test.ts
+  s_ba07216ce52585::t_2dab6a364ef544 1-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "64dd6dd3b93cf31c634918edc2e4a96b0bebbaad",
+  "prompts": {},
+  "sessions": {
+    "s_ba07216ce52585": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0114d5a38ffe4Vzadr8s5TdQXU",
+        "model": "moonshotai/Kimi-K3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+scripts/public-repo-guard/body-policy.sh
+  s_375efeac18ed55::t_520beef96d9612 49-51,54-55
+  s_375efeac18ed55::t_26c7f72f1d6332 1-48,52-53,56-127
+scripts/public-repo-guard/tests/body-policy.test.sh
+  s_375efeac18ed55::t_4790b9aa6d98a6 53-57,59
+  s_375efeac18ed55::t_812f3d118e7f8e 1-52,58,60-79,93-98
+  s_375efeac18ed55::t_7a0408f5e034c6 80-92
+.github/workflows/public-repo-guard.yml
+  s_375efeac18ed55::t_2810ddc427263c 91-97
+  s_375efeac18ed55::t_097a1d04931467 129,131-137
+  s_375efeac18ed55::t_efa85d6038b414 90,98-128,130,138-148
+  s_375efeac18ed55::t_b1a33961a75f00 16,20
+  s_375efeac18ed55::t_d1a942b785269c 29-30,32-36,41-42,47-50,56-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "3bc2aafaeb212ab5bd4c88125c6da2a7c831cd10",
+  "prompts": {},
+  "sessions": {
+    "s_375efeac18ed55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "36fdda83-f068-47e7-b3f6-f5ca7f834237",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

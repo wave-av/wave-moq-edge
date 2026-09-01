@@ -1,0 +1,21 @@
+governance/plans/checkout-currency/NORTH-STAR.md
+  s_d9915bbafa9657::t_729bc2cc3acc5b 1-113
+governance/graph.json
+  s_d9915bbafa9657::t_a56967c5a310a4 3231-3243,23951-23968
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "bb04cfc933cda23ab6d4cb559acd9c792c4b5e55",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

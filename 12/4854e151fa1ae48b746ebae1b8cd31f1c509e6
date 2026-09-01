@@ -1,0 +1,29 @@
+governance/plans/floor-control-not-turn-taking/NORTH-STAR.md
+  s_1cea981189627b::t_475a54c62c05cf 135
+governance/plans/floor-control-not-turn-taking/GROUNDING-V2.md
+  s_1cea981189627b::t_8acfcf4efe0a5b 93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "124854e151fa1ae48b746ebae1b8cd31f1c509e6",
+  "prompts": {},
+  "sessions": {
+    "s_1cea981189627b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8abf7d26-41ee-46b2-a9ca-90c06289cd20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_e017bc8859c6b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b8e1e7d5-2410-45b6-9b23-602b7157be81",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/lib/reviewer-scoreboard.mjs
+  s_d9915bbafa9657::t_6119a282f852de 115-118
+  s_d9915bbafa9657::t_1df3ecc366483f 119
+  s_d9915bbafa9657::t_45243357ed29aa 30
+governance/test/reviewer-scoreboard.test.mjs
+  s_d9915bbafa9657::t_a4aabdf1257f49 249-267
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "101f8e8209e01c41ba5f9b480d34d8d96cb9db08",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

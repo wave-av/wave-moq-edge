@@ -1,0 +1,74 @@
+governance/tools/process-over-output/tests/process.test.mjs
+  s_ea7fda6a228496::t_7af92ad7614987 1-33
+governance/tools/hierarchical-locality/examples/telemetry.json
+  s_ea7fda6a228496::t_e5d22b5c9da1a8 1-5
+governance/tools/cpa-scaffolding/bin/cpa-scaffold.mjs
+  s_ea7fda6a228496::t_9e8508f27ddba7 1-22
+governance/tools/hierarchical-locality/README.md
+  s_ea7fda6a228496::t_ec88c7411d7992 1-16
+governance/tools/cpa-scaffolding/tests/cpa.test.mjs
+  s_ea7fda6a228496::t_43359429af907f 1-34
+governance/tools/cpa-scaffolding/lib/index.mjs
+  s_ea7fda6a228496::t_29816630819386 1-27
+governance/tools/process-over-output/trace.schema.json
+  s_ea7fda6a228496::t_47a588b7755978 1-14
+governance/tools/process-over-output/lib/index.mjs
+  s_ea7fda6a228496::t_b864b90007a8ef 1-18
+governance/tools/hierarchical-locality/package.json
+  s_ea7fda6a228496::t_3cbcf6843eb588 1-8
+governance/tools/process-over-output/README.md
+  s_ea7fda6a228496::t_d511dea3c626ce 1-10
+governance/tools/process-over-output/examples/two-pointer.json
+  s_ea7fda6a228496::t_f2b70445a917a1 1-7
+governance/tools/fitness-landscape/package.json
+  s_ea7fda6a228496::t_572159ea4d29bf 1-8
+governance/tools/cpa-scaffolding/examples/promise.json
+  s_ea7fda6a228496::t_7db420f5f3c780 1-7
+governance/tools/cpa-scaffolding/package.json
+  s_ea7fda6a228496::t_50a6da66a419c7 1-8
+governance/tools/process-over-output/package.json
+  s_ea7fda6a228496::t_077686f82b0c05 1-8
+governance/tools/cpa-scaffolding/README.md
+  s_ea7fda6a228496::t_825abb2428bfe6 1-13
+governance/tools/fitness-landscape/examples/wave-gateway.json
+  s_ea7fda6a228496::t_9dc3f3fa6b61c0 1-7
+governance/tools/fitness-landscape/landscape.schema.json
+  s_ea7fda6a228496::t_16338dd93372b1 1-24
+governance/tools/fitness-landscape/bin/fitness.mjs
+  s_ea7fda6a228496::t_297ac0dd0c24ae 1-17
+governance/tools/process-over-output/bin/process-eval.mjs
+  s_ea7fda6a228496::t_ab967ce4a62836 1-18
+governance/tools/hierarchical-locality/tests/locality.test.mjs
+  s_ea7fda6a228496::t_11f26b7163e93b 1-24
+governance/tools/cpa-scaffolding/scaffold.schema.json
+  s_ea7fda6a228496::t_5ca078e896b604 1-14
+governance/tools/hierarchical-locality/index.schema.json
+  s_ea7fda6a228496::t_b2f4953087df89 1-12
+governance/tools/fitness-landscape/README.md
+  s_ea7fda6a228496::t_0692ad372c1744 1-9
+governance/tools/fitness-landscape/lib/index.mjs
+  s_ea7fda6a228496::t_5b19a58b8adfb7 1-30
+governance/tools/hierarchical-locality/lib/index.mjs
+  s_ea7fda6a228496::t_ba08a0e503e9df 1-13,15-20
+  s_ea7fda6a228496::t_d7554a0a8eb045 14
+governance/tools/hierarchical-locality/bin/locality.mjs
+  s_ea7fda6a228496::t_b3a7cb13e82431 1-20
+governance/tools/fitness-landscape/tests/fitness.test.mjs
+  s_ea7fda6a228496::t_8babb22e6ca773 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4a49bc40943e426dfc5a017a995cff90fc460bb9",
+  "prompts": {},
+  "sessions": {
+    "s_ea7fda6a228496": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00854c9e3ffezshT0dB0ZyPgfI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

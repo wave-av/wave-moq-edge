@@ -1,0 +1,20 @@
+bin/wave-inference-server.mjs
+  h_67a1b847dc59d6 13,34,41
+bin/wave-inference.mjs
+  h_67a1b847dc59d6 60,109,112,116-119
+governance/test/wave-inference-server.test.mjs
+  h_67a1b847dc59d6 8
+governance/test/wave-inference.test.mjs
+  h_67a1b847dc59d6 3,20,33,42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "573602e8e6daf68afb9d44a5249bd589ff2bac11",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

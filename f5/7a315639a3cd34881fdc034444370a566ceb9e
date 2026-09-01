@@ -1,0 +1,24 @@
+scripts/bugbot/dash0_sync_alerts.py
+  s_0b987fef4e1240::t_05db4836c6a27d 134-141,144-145,150-157
+  s_0b987fef4e1240::t_e7357f176b4f01 114-118,120,124
+  s_0b987fef4e1240::t_b5f9c3c3f376ed 9-11
+scripts/bugbot/test_dash0_sync_alerts.py
+  s_0b987fef4e1240::t_a8ad78f85df49a 68-135,141-145
+  s_0b987fef4e1240::t_94b5230507d927 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "f57a315639a3cd34881fdc034444370a566ceb9e",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

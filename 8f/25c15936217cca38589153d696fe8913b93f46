@@ -1,0 +1,26 @@
+hookcli/lib/visibility-telemetry.mjs
+  s_be40541f6fd98b::t_d1985a5cc11d79 146-155,157-167
+  s_be40541f6fd98b::t_0e4ae240d04991 61-88
+  s_be40541f6fd98b::t_78f0fc9aa061b3 33-35
+  s_be40541f6fd98b::t_65bd1fdf421926 156
+governance/test/visibility-telemetry.test.mjs
+  s_be40541f6fd98b::t_7cf16605f75162 11
+  s_be40541f6fd98b::t_55f5251c7524cd 7-9
+  s_be40541f6fd98b::t_79b06eee2ec628 113-136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8f25c15936217cca38589153d696fe8913b93f46",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

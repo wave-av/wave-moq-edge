@@ -1,0 +1,52 @@
+governance/lib/pr-check-health.mjs
+  s_d9915bbafa9657::t_8b945f0a7dc50b 105-107
+  s_d9915bbafa9657::t_42dff300285d48 81
+  s_d9915bbafa9657::t_7a7bd3ff71d0d5 174
+  s_d9915bbafa9657::t_1bb034314fc352 146
+governance/bin/pr-check-health.mjs
+  s_d9915bbafa9657::t_228d6ddb2ae02c 142,148-149,154-156
+  s_d9915bbafa9657::t_3f7a4c789dda6c 170-172,177,180
+  s_d9915bbafa9657::t_6eb9e91ea4ebc7 42
+  s_d9915bbafa9657::t_adbcf81cfb2dd7 111,120,133-134
+  s_d9915bbafa9657::t_5928459946b9fe 135
+governance/lib/pr-check-health-surfaces.mjs
+  s_d9915bbafa9657::t_57a3beec874a81 124-125
+  s_d9915bbafa9657::t_3f2bcd77ebfa63 126-134,140,142
+governance/lib/pr-check-health-evaluate.mjs
+  s_d9915bbafa9657::t_db888bf76ffd10 15
+  s_d9915bbafa9657::t_69b8fc65a5ef8b 28,32
+  s_d9915bbafa9657::t_c137e22c1ed9bc 82-83
+governance/lib/pr-check-health-check.mjs
+  s_d9915bbafa9657::t_7c3f1c789e2e32 92
+  s_d9915bbafa9657::t_5546870c8e2fdc 80
+  s_d9915bbafa9657::t_db28f9d44186f4 77-79
+  s_d9915bbafa9657::t_cf79ec35c2d15a 81-83,89-91
+  s_d9915bbafa9657::t_26ca530035e1f6 93-95
+  s_6081ae3e091083::t_d5bd63e19e340d 1-76,84-88,96-112
+governance/test/pr-check-health-surfaces.test.mjs
+  s_d9915bbafa9657::t_5b2feef368a4a6 49-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "58aa9b5474f707fc1aadf58fa82240511f38ad29",
+  "prompts": {},
+  "sessions": {
+    "s_6081ae3e091083": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-aadcccc21630a5bce",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

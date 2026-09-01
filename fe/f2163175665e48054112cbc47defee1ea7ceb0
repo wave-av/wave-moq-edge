@@ -1,0 +1,27 @@
+scripts/travel/travel-mode.sh
+  s_be28a864be8c45::t_4f76ccf5a85f2f 36-38
+scripts/travel/claude-wrapper.sh
+  s_be28a864be8c45::t_cd914480e286b3 57-63,65,68-73
+hooks/local-llm/trip-telemetry.sh
+  s_be28a864be8c45::t_296df658615813 113-116
+hooks/local-llm/travel-flag.sh
+  s_be28a864be8c45::t_dc7bfc90887f89 77-92
+hooks/local-llm/api-failure-counter.sh
+  s_be28a864be8c45::t_584ecb9f9bc3ad 144-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "fef2163175665e48054112cbc47defee1ea7ceb0",
+  "prompts": {},
+  "sessions": {
+    "s_be28a864be8c45": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e3c5cdf8-b158-494c-92bb-b93dd5f09c28",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+governance/test/xrepo-provisioning.test.mjs
+  s_02abc74f4971c7::t_4f3c2e0b26b308 3-8,10-12,14-18,23,36,40-41,67-70,72,76,78-79,82-84,86,89-92,94,97-98,106,113,128,130,133-135,140-141,143,146-156,159-164,167-173,176-177,179-181,184-188,190-191,197,200-204
+  s_8a470910d81a67::t_fd11b3a9bd8c19 205
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "62abb0d0135f33c0db163e75de7c57e20df57c35",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8a470910d81a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9143d3ec-9637-4788-8bc2-510e83aa2fe3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

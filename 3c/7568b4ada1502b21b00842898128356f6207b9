@@ -1,0 +1,46 @@
+governance/lib/release-identity.mjs
+  s_53b49eff5b8c5d::t_f4a0cecc7123a8 24-27,29-53,59-64,77,86-88
+  s_53b49eff5b8c5d::t_b1736001f7a174 65-76,78-85
+  s_53b49eff5b8c5d::t_5245e0b13dcd0f 1-23,28,89-133
+  s_53b49eff5b8c5d::t_4ee410a22a5541 54-58
+governance/test/release-status.test.mjs
+  s_53b49eff5b8c5d::t_a79465f44d298a 19
+  s_53b49eff5b8c5d::t_46fa16fa7a459a 50-57
+  s_37d3f61160b2dd::t_b91d0c304e4176 33,39,46-49,64-65,72-73
+governance/test/release-identity.test.mjs
+  s_53b49eff5b8c5d::t_eb5932e90ad683 1-72
+governance/lib/release-status.mjs
+  s_53b49eff5b8c5d::t_c5d8e606d74f2f 100-101
+  s_53b49eff5b8c5d::t_48020360901e3e 44
+  s_53b49eff5b8c5d::t_852888d4f3bcaa 55-59,61-62
+  s_53b49eff5b8c5d::t_168a51ca537558 89
+governance/bin/hook-release.mjs
+  s_53b49eff5b8c5d::t_93e9b4b1d14595 54
+  s_53b49eff5b8c5d::t_21dd12bd35513c 346
+  s_53b49eff5b8c5d::t_5cfe6f8b0b72ca 359
+  s_53b49eff5b8c5d::t_4794b674c01ab8 360,366
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "3c7568b4ada1502b21b00842898128356f6207b9",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    },
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

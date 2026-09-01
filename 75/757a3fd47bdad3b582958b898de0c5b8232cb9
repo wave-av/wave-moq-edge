@@ -1,0 +1,51 @@
+governance/plans/hookcli/NORTH-STAR.md
+  s_d9915bbafa9657::t_afbc73bc273684 8-18
+governance/plans/wave-secdev/E1-SUPPLY-CHAIN.md
+  s_d9915bbafa9657::t_5f9973a51c212f 6-18
+governance/plans/wave-secdev/NORTH-STAR.md
+  s_d9915bbafa9657::t_20612f77c27f4b 11-19
+governance/plans/hookcli/E1-CORE.md
+  s_d9915bbafa9657::t_2f1f93d34c3c1a 4-13
+governance/plans/wave-secdev/E4-REUSABLE-CI.md
+  s_d9915bbafa9657::t_3e66e276792887 6-13
+governance/plans/wave-secdev/E6-VULN-BURNDOWN.md
+  s_d9915bbafa9657::t_61bd3178fca8ea 6-12
+governance/plans/hookcli/E3-RULES.md
+  s_d9915bbafa9657::t_301b3fedc96323 4-13
+governance/plans/hookcli/E4-TIERS.md
+  s_d9915bbafa9657::t_1cc571c71f224d 4-12
+governance/plans/hookcli/E2-HARVEST.md
+  s_d9915bbafa9657::t_837cfe0d47d188 4-14
+governance/plans/wave-secdev/E2-UNTRUSTED-CODE.md
+  s_d9915bbafa9657::t_cb32064b971ace 6-16
+governance/plans/hookcli/E6-SHIFTLEFT.md
+  s_d9915bbafa9657::t_1f21a6e34c21cb 4-13
+governance/plans/hookcli/E8-ROLLOUT.md
+  s_d9915bbafa9657::t_3656b68c8c0513 4-14
+governance/plans/wave-secdev/E3-PROVABLE-GATES.md
+  s_d9915bbafa9657::t_43b6ad742670ff 6-18
+governance/plans/wave-secdev/E7-EVIDENCE.md
+  s_d9915bbafa9657::t_aa30c511587bd1 6-12
+governance/plans/wave-secdev/E5-ORG-ENFORCEMENT.md
+  s_d9915bbafa9657::t_4824295f5c5cd3 6-13
+governance/plans/hookcli/E7-DISTILL.md
+  s_d9915bbafa9657::t_5d9578e4b1ef44 4-13
+governance/plans/hookcli/E5-BOARD.md
+  s_d9915bbafa9657::t_c84757425f50b1 4-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "75757a3fd47bdad3b582958b898de0c5b8232cb9",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

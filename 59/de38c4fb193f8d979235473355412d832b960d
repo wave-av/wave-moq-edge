@@ -1,0 +1,19 @@
+governance/capability/eval/intents.jsonl
+  s_ce88b94d08bc5c::t_7be3eb1b200ca8 52-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "59de38c4fb193f8d979235473355412d832b960d",
+  "prompts": {},
+  "sessions": {
+    "s_ce88b94d08bc5c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffc75e57cffehaG7Aojb34urpb",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

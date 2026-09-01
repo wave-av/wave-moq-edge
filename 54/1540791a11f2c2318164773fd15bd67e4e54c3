@@ -1,0 +1,84 @@
+governance/plans/wave-cockpit/E1-SOURCING.md
+  s_7c7e203d305c60::t_cf27ea3e416748 112
+  s_7c7e203d305c60::t_13c042d52c032b 74-80
+  s_7c7e203d305c60::t_35fb7e4e50e6da 83
+  s_7c7e203d305c60::t_8359431bf42fb6 71-73
+  s_7c7e203d305c60::t_a5793a0920b1e8 81-82
+  s_7c7e203d305c60::t_91370efd8c8e8b 84-86,109-111
+  s_7c7e203d305c60::t_22d0b536adf20e 113-115
+  s_7c7e203d305c60::t_786d66b6821d7d 1-70,87-108,116-172
+governance/plans/wave-cockpit/NORTH-STAR.md
+  s_7c7e203d305c60::t_57111963bfb800 76
+  s_7c7e203d305c60::t_e4fbd6872eac4c 85-92
+  s_7c7e203d305c60::t_f153147492736e 100-103
+  s_7c7e203d305c60::t_41a7e6f24d601c 81-82
+  s_7c7e203d305c60::t_3aacdd28124986 106-118,186,201
+  s_7c7e203d305c60::t_fd1281fae9292a 73-75
+  s_7c7e203d305c60::t_d4f16bfd7ac66c 77-80
+  s_7c7e203d305c60::t_652336bea98fbd 83-84
+  s_7c7e203d305c60::t_bc7930e95de10f 93-95,97-99
+  s_7c7e203d305c60::t_fd7ab8a0d0093d 104-105
+  s_7c7e203d305c60::t_23fd847bee9640 119-121,183-185
+  s_7c7e203d305c60::t_806c36c48a5916 187-189,198-200
+  s_7c7e203d305c60::t_b36e51a3cd9336 202-204
+  s_a74eeead08f62f::t_6fef6f15d6b3fc 1-72,96,122-182,190-197,205-250
+governance/plans/wave-cockpit/E2-SCOPED-TOPOLOGY.md
+  s_7c7e203d305c60::t_ae897c1992f067 70-80
+  s_7c7e203d305c60::t_8c74d9675e5f4c 113
+  s_7c7e203d305c60::t_49965c3eb4fb37 119
+  s_7c7e203d305c60::t_8deb899b495eaf 5-7
+  s_7c7e203d305c60::t_53afed887ab45b 42-46
+  s_7c7e203d305c60::t_be4338bc670064 52-57
+  s_7c7e203d305c60::t_33865684b8afcb 39-40
+  s_7c7e203d305c60::t_bcedc33895e34f 2-4
+  s_7c7e203d305c60::t_0a4c820f155782 8-10,36-38
+  s_7c7e203d305c60::t_485b1b0ebcead3 41
+  s_7c7e203d305c60::t_87e02c48908a54 47-51
+  s_7c7e203d305c60::t_f440ccc5d5ad5d 58-60,67-69
+  s_7c7e203d305c60::t_8e5561a7c5cd75 81-83,110-112
+  s_7c7e203d305c60::t_157ee6be1e3d3d 114-118
+  s_7c7e203d305c60::t_8503c7a93fbfa9 120-122
+  s_a74eeead08f62f::t_1c2ce766cd17db 1,11-35,61-66,84-109,123-140
+governance/DASHBOARD.md
+  s_7c7e203d305c60::t_1b00f17159db5f 25
+governance/graph.json
+  s_7c7e203d305c60::t_6df634b9618f95 6415-6544,27721-28236
+governance/plans/wave-cockpit/DECISION-E8-RELATIONSHIP.md
+  s_7c7e203d305c60::t_bafd6de8d40825 1-121
+governance/plans/wave-cockpit/DECISION-URL.md
+  s_7c7e203d305c60::t_f0c60cbc1afe97 1-89
+governance/plans/wave-cockpit/E0-DELTA-LEDGER.md
+  s_7c7e203d305c60::t_d975e7a061f415 1-107
+governance/plans/wave-cockpit/E3-COCKPIT-SPINE.md
+  s_7c7e203d305c60::t_ab36c9a2d77b1a 1-118
+governance/plans/wave-cockpit/E4-CAPABILITY-CUSTODY.md
+  s_7c7e203d305c60::t_66f3af32fb8ac8 1-150
+governance/plans/wave-cockpit/E5-ALWAYS-ON-FLEET.md
+  s_7c7e203d305c60::t_02806f11af1b3f 1-127
+governance/plans/wave-cockpit/E6-SEATS-AND-CROSSING.md
+  s_7c7e203d305c60::t_3e02d24a654d57 1-137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "541540791a11f2c2318164773fd15bd67e4e54c3",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_a74eeead08f62f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ae9f4b93585237cb4",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

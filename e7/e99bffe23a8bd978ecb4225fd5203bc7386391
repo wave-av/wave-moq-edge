@@ -1,0 +1,19 @@
+governance/test/gate-strength.test.mjs
+  s_ae57f6e8d1ee19::t_a67e20df26a5d7 51-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e7e99bffe23a8bd978ecb4225fd5203bc7386391",
+  "prompts": {},
+  "sessions": {
+    "s_ae57f6e8d1ee19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "48c70c59-62a1-4b54-b782-303e5787322d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+governance/DASHBOARD.md
+  s_c24357e71ae5bc::t_e042167a40dcb0 25
+governance/lib/wave-sec-scanners.mjs
+  s_d9915bbafa9657::t_ecaf7615761b71 292-308,310
+governance/plans/brand-recycle/E-CONSOLE.md
+  s_d9915bbafa9657::t_991b198599c7c4 4-15
+governance/plans/ffmpeg9-lei/E11-CAMERA-CONTROL.md
+  s_d9915bbafa9657::t_6a5963cafdc02f 30-39,140
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_d9915bbafa9657::t_357d76f339538e 91-96
+governance/plans/ffmpeg9-lei/action/E11-P1-RTSP-EVAL.md
+  s_d9915bbafa9657::t_c5bdf4cb716247 1-149
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_d9915bbafa9657::t_3b3e4863e00e08 730-759
+governance/test/wave-sec-scanners.test.mjs
+  s_d9915bbafa9657::t_5f3b4b32fbe359 305-316
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ae007a81c27e9cff6e597292ef79294068b17c4",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

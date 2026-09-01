@@ -1,0 +1,19 @@
+rules/rig-change-lifecycle.md
+  s_4e7d8de0d577b2::t_2cd7900f158f1f 77
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b2a35063a414c95df8cdbf4f260b0ec408585b05",
+  "prompts": {},
+  "sessions": {
+    "s_4e7d8de0d577b2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0091086eaffeXKuuo7PASxFSPI",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

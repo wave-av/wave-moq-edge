@@ -1,0 +1,19 @@
+governance/plans/agent-execution-platform/METER-DESIGN.md
+  s_7f5453089a1ac0::t_bd247e75422627 1-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b001892691c6f4c6790dca46ff5e60bbf3d3275c",
+  "prompts": {},
+  "sessions": {
+    "s_7f5453089a1ac0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0068e4db0ffeY96ujtOc2hfQKx",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

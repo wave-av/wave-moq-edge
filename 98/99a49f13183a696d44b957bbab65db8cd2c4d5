@@ -1,0 +1,45 @@
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_d9915bbafa9657::t_5ba49625989246 3-9
+governance/plans/namespace-substrate/MISSION-WEAVE.md
+  s_d9915bbafa9657::t_7c7087eff51a5c 3-10
+governance/plans/namespace-substrate/SUBSTRATE-STRATEGY.md
+  s_d9915bbafa9657::t_91838d3a386a3c 3-11
+governance/plans/socratic-loop/ARTIFACTS.md
+  s_d9915bbafa9657::t_3322d3518d39df 3-11
+governance/plans/namespace-substrate/DECISION-APP-SCOPE.md
+  s_d9915bbafa9657::t_342c8c7e404d2d 3-8
+governance/plans/socratic-loop/METHOD-CANON.md
+  s_d9915bbafa9657::t_f9af7925921f14 3-11
+governance/plans/namespace-substrate/OPPORTUNITY-MAP.md
+  s_d9915bbafa9657::t_1dde7cde2e814c 3-10
+governance/plans/socratic-loop/METHODOLOGIES.md
+  s_d9915bbafa9657::t_f34481f661a93e 3-13
+governance/plans/socratic-loop/TAXONOMY.md
+  s_d9915bbafa9657::t_e2487b88516123 3-9
+governance/plans/socratic-loop/ACTORS.md
+  s_d9915bbafa9657::t_584dd0e3471ebc 3-11
+governance/plans/socratic-loop/BASELINE-FROZEN.md
+  s_d9915bbafa9657::t_70d3c855b89953 3-8
+governance/plans/socratic-loop/RECEIPTS.md
+  s_d9915bbafa9657::t_816987a4e941bd 4-12
+governance/plans/namespace-substrate/CAPABILITY-INVENTORY.md
+  s_d9915bbafa9657::t_fa5c0d48e0d1c6 3-10
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_d9915bbafa9657::t_78ce38d43fe9b5 3-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9899a49f13183a696d44b957bbab65db8cd2c4d5",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

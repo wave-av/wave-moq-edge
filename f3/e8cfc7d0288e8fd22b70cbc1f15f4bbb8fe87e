@@ -1,0 +1,21 @@
+hookcli/tests/cc-shadow-mutation.sh
+  s_60a20469ef4369::t_d4751f88c3b261 89-93,95,97-98
+hookcli/track4b.json
+  s_60a20469ef4369::t_59ca88a03553f9 41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "f3e8cfc7d0288e8fd22b70cbc1f15f4bbb8fe87e",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

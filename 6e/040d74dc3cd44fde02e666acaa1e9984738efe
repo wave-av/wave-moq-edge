@@ -1,0 +1,21 @@
+governance/state/canon-gap-map/GAP-MAP.md
+  s_ddcd58c8419ae0::t_6e592369bff60f 30,67,73,98
+governance/state/canon-gap-map/gap-map.json
+  s_ddcd58c8419ae0::t_1b065d5aae3b62 4-8,77,416-417,423,427,430-431,433-434,437,439,605,808,823,1129,1158,1329,1339,1345-1347,1349,1351,1358,1445,1503,1514-1515,1527,1534,2169,2198,2206,2208,2211,2215,2218,2220
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e040d74dc3cd44fde02e666acaa1e9984738efe",
+  "prompts": {},
+  "sessions": {
+    "s_ddcd58c8419ae0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cd514726-afec-4bc5-ba10-a09e60022d4f",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

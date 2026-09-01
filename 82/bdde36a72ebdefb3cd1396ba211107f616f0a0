@@ -1,0 +1,421 @@
+.github/actions/derived-artifact-gates/action.yml
+  s_9bb1b1d1d998d4::t_8496adc4b4503d 185-192
+.github/workflows/pr-agent.yml
+  s_9bb1b1d1d998d4::t_5b5a7677ef9614 31
+.github/workflows/wave-reviewer.yml
+  s_9bb1b1d1d998d4::t_a54de98cb62e3d 1-109
+bin/fireworks-cost-ledger.mjs
+  s_9bb1b1d1d998d4::t_7e1c41800a33d4 1-142
+bin/fireworks-cost-ledger.test.mjs
+  s_9bb1b1d1d998d4::t_08eb28e5717548 1-94
+bin/fireworks-ledger-parse.mjs
+  s_9bb1b1d1d998d4::t_4a44e0fd637deb 1-165
+bin/fireworks-ledger-parse.test.mjs
+  s_9bb1b1d1d998d4::t_879c9b57143029 1-235
+compliance/bridge-kyb/PAYOUT-RAILS-ARMING.md
+  s_9bb1b1d1d998d4::t_e793fa50b4264e 1-283
+governance/STUB-BASELINE-2026-08-25.json
+  s_9bb1b1d1d998d4::t_d933b62d8188d8 1-360
+governance/bin/artifact-count-regression.mjs
+  s_9bb1b1d1d998d4::t_faa1a84e28b2eb 40,192
+governance/bin/bank-lint.mjs
+  s_9bb1b1d1d998d4::t_3bcf7c3a93ebf3 13,17
+governance/bin/branch-truth-lint.mjs
+  s_9bb1b1d1d998d4::t_4eab9992432efd 2,349
+governance/bin/brand-asset-hardcoded-color-lint.mjs
+  s_9bb1b1d1d998d4::t_c049993fda2a8a 37,138
+governance/bin/cockpit.mjs
+  s_9bb1b1d1d998d4::t_10b52ba0ed2faf 16,136,142
+governance/bin/cogs-emit.mjs
+  s_9bb1b1d1d998d4::t_69f3fe1bc38eb5 193,203,209
+governance/bin/cost-ledger.mjs
+  s_9bb1b1d1d998d4::t_81c794e9511ad8 321,340,348
+governance/bin/credential-probe.mjs
+  s_9bb1b1d1d998d4::t_b1887813763aaf 75,249
+governance/bin/decide.mjs
+  s_9bb1b1d1d998d4::t_7982a86a956334 131
+governance/bin/deep-e2e.mjs
+  s_9bb1b1d1d998d4::t_fc0459d65bd53b 1-70
+governance/bin/deploy-audit.mjs
+  s_9bb1b1d1d998d4::t_aaa498b052a6b3 1
+governance/bin/derived-artifact-drift-audit.mjs
+  s_9bb1b1d1d998d4::t_505ea327e51ce0 130-135
+governance/bin/dispute-pack.mjs
+  s_9bb1b1d1d998d4::t_05bf380f6c8332 10-12,20-26
+governance/bin/distribute-claude-config.mjs
+  s_9bb1b1d1d998d4::t_d7504959272bc9 177,192,222
+governance/bin/distribute-sha-pin.mjs
+  s_9bb1b1d1d998d4::t_c56f6af88410aa 154
+governance/bin/email-archive-freshness.mjs
+  s_9bb1b1d1d998d4::t_8399989a940386 1-316
+governance/bin/email-archive.mjs
+  s_9bb1b1d1d998d4::t_541effd277289d 3-6,12-32,34,36-44,49,52,54,58-88,92-105,107-125,127-150,155-158,166,170,172-173,176,179-188,190-192
+governance/bin/enforce-ignore-lawref.mjs
+  s_9bb1b1d1d998d4::t_b1f3227470cc43 37,219
+governance/bin/enforcement-coverage-audit.mjs
+  s_9bb1b1d1d998d4::t_06d92556f5a890 2,179,183,186
+governance/bin/ess-nas-sync.mjs
+  s_9bb1b1d1d998d4::t_ca5a5cbe5727d3 31,118
+governance/bin/federate.mjs
+  s_9bb1b1d1d998d4::t_477802b1fde4f6 336
+governance/bin/fleet/actions-census.mjs
+  s_9bb1b1d1d998d4::t_7eb6cbb35c72ee 31,157
+governance/bin/fleet/contract-triage.mjs
+  s_9bb1b1d1d998d4::t_5bce7e45783d50 30,254
+governance/bin/fleet/gateway-secret-parity.mjs
+  s_9bb1b1d1d998d4::t_eb36eb5cfdff9a 47,292
+governance/bin/fleet/ingress-probe.mjs
+  s_9bb1b1d1d998d4::t_662a15495107eb 38,253
+governance/bin/fleet/installation-authority-audit.mjs
+  s_9bb1b1d1d998d4::t_459dc76ecf0c22 40,207
+governance/bin/fleet/merge-policy-conformance.mjs
+  s_9bb1b1d1d998d4::t_9a6df42a63aabb 59,172-179,243,258-264,291-292,294-299
+governance/bin/fleet/reviewer-config-census.mjs
+  s_9bb1b1d1d998d4::t_22d7f90481cd2c 39,285
+governance/bin/fleet/secret-provisioning-audit.mjs
+  s_9bb1b1d1d998d4::t_c6b502645e20a4 43,320
+governance/bin/forecast.mjs
+  s_9bb1b1d1d998d4::t_20e926e2d20d2d 22,108
+governance/bin/gam-conformance.mjs
+  s_9bb1b1d1d998d4::t_57a7182cc12a9f 32,136
+governance/bin/gam-reconcile.mjs
+  s_9bb1b1d1d998d4::t_2f853a7ce1593b 29,115
+governance/bin/gate-coverage-audit.mjs
+  s_9bb1b1d1d998d4::t_1aa15c52013842 30,96,110
+governance/bin/gate-liveness-drill.mjs
+  s_9bb1b1d1d998d4::t_113167985919a0 11-19,36-37,65-75,77-84,128-133
+governance/bin/gate-reality.mjs
+  s_9bb1b1d1d998d4::t_f88667d2b9094a 27,224
+governance/bin/gmail-bridge.mjs
+  s_9bb1b1d1d998d4::t_cb235adf2762cf 2,20-26,62-67
+governance/bin/go-live-e2e.mjs
+  s_9bb1b1d1d998d4::t_4e84dc118ae2ce 16
+governance/bin/hook-registration-wrapper-lint.mjs
+  s_9bb1b1d1d998d4::t_ad6b0d911c2dcc 49,157
+governance/bin/intent-ledger.mjs
+  s_9bb1b1d1d998d4::t_484bab2143dc4f 54,57,192,223-225,229-235,237-240,242-243,279
+governance/bin/known-red-baseline.mjs
+  s_9bb1b1d1d998d4::t_e2c2fddeebb4df 24,173,177,217
+governance/bin/launchd-cron-parity-lint.mjs
+  s_9bb1b1d1d998d4::t_34c61d60025474 44,296
+governance/bin/launchd-twin-liveness.mjs
+  s_9bb1b1d1d998d4::t_d9bb1bfa65f24f 60,181,185
+governance/bin/local-gates.mjs
+  s_9bb1b1d1d998d4::t_e6726b2fe99954 35,158
+governance/bin/main-guard-ratchet.mjs
+  s_9bb1b1d1d998d4::t_085c0880792476 30,201
+governance/bin/main-protection-audit.mjs
+  s_9bb1b1d1d998d4::t_83581938cd4932 1-171
+governance/bin/memory-lint.mjs
+  s_9bb1b1d1d998d4::t_9c5796e7d92890 27,96
+governance/bin/merge.mjs
+  s_9bb1b1d1d998d4::t_0d6a8aee7abba7 39,127
+governance/bin/merged-not-released.mjs
+  s_9bb1b1d1d998d4::t_29753d4a3ef00c 10,105
+governance/bin/mesh-estate-health.mjs
+  s_9bb1b1d1d998d4::t_3f6782ec1ab409 44,288
+governance/bin/mint-token.mjs
+  s_9bb1b1d1d998d4::t_778db971f9f272 28,30,38,126,131-146,148-166,168-180,191-193,218-226
+governance/bin/observe.mjs
+  s_9bb1b1d1d998d4::t_776fc6bfbe037b 41-44,181
+governance/bin/owner-assign.mjs
+  s_9bb1b1d1d998d4::t_bab99ee76351a7 37,324,330
+governance/bin/pr-base-conformance.mjs
+  s_9bb1b1d1d998d4::t_39091c555e9dd7 24,136,139
+governance/bin/pr-check-health.mjs
+  s_9bb1b1d1d998d4::t_c84e6bcd13472a 53,208
+governance/bin/protection-profile-check.mjs
+  s_9bb1b1d1d998d4::t_202b638511608f 2,236
+governance/bin/reconcile.mjs
+  s_9bb1b1d1d998d4::t_6e42e191f19fa4 30,251
+governance/bin/required-check-liveness.mjs
+  s_9bb1b1d1d998d4::t_dda1ad6d91c309 31,251
+governance/bin/reviewer-liveness-age.mjs
+  s_9bb1b1d1d998d4::t_30e26d32e85047 31,173
+governance/bin/reviewer-route.mjs
+  s_9bb1b1d1d998d4::t_fe336269843a41 30,242
+governance/bin/rl-harvest.mjs
+  s_9bb1b1d1d998d4::t_dd76fb428f9d88 43,281
+governance/bin/roi.mjs
+  s_9bb1b1d1d998d4::t_65c52e61b82691 214,228,234,241
+governance/bin/settle-guard.mjs
+  s_9bb1b1d1d998d4::t_2bd4f70d4aa24b 22,71
+governance/bin/skill-freshness-check.mjs
+  s_9bb1b1d1d998d4::t_020b1d3f16b456 52,192
+governance/bin/state-verifier.mjs
+  s_9bb1b1d1d998d4::t_3e768ddae66b44 48,236,286
+governance/bin/stub-finder.mjs
+  s_9bb1b1d1d998d4::t_37e614d8660504 1-315
+governance/bin/transcript-secret-scan.mjs
+  s_9bb1b1d1d998d4::t_3c1dbaee74125b 68,80-81
+governance/bin/vendor-scoreboard-sync.mjs
+  s_9bb1b1d1d998d4::t_208961e031d0cf 35-39,54-97,212-238,240-256,312,320-321,325,353-380
+governance/bin/vendored-gate-audit.mjs
+  s_9bb1b1d1d998d4::t_ce2dc017acbeca 34,85,91
+governance/bin/visibility-rate.mjs
+  s_9bb1b1d1d998d4::t_28ced4418eba98 35,78
+governance/bin/wave-cost-ledger-root-cause-sweep.mjs
+  s_9bb1b1d1d998d4::t_317e165ab8f8dd 31,208
+governance/bin/wave-reviewer.mjs
+  s_9bb1b1d1d998d4::t_ebb1ece9ef6b6c 1-302
+governance/bin/wave-sec-gate-pin-audit.mjs
+  s_9bb1b1d1d998d4::t_06a3863937a9d9 51,278
+governance/bin/wave-sec.mjs
+  s_9bb1b1d1d998d4::t_d19965c927a591 31,166,238
+governance/bin/workflow-lint.mjs
+  s_9bb1b1d1d998d4::t_97d6ee453fc497 34,340
+governance/bin/workflow-pin-currency.mjs
+  s_9bb1b1d1d998d4::t_af4d74c683ca3b 44,234
+governance/gam-port-kit/manifest.json
+  s_9bb1b1d1d998d4::t_a6a6a13a1090ef 22
+governance/lib/drill-decide.mjs
+  s_9bb1b1d1d998d4::t_8cb00334496c7e 12,94-98,107-108,112-113,199-210,221-226,231-235
+governance/lib/drill-fixtures-mcp-merge-authority.mjs
+  s_9bb1b1d1d998d4::t_f9ad9fdaeb9bf9 1-211
+governance/lib/drill-fixtures-public-github-write-gate-mcp.mjs
+  s_9bb1b1d1d998d4::t_c76ac881c57ac4 1-156
+governance/lib/drill-fixtures-public-github-write-gate.mjs
+  s_9bb1b1d1d998d4::t_8d772e3f486ef7 1-285
+governance/lib/drill-fixtures-stub-finder.mjs
+  s_9bb1b1d1d998d4::t_e2cbdf928d6725 1-61
+governance/lib/drill-fixtures-supabase-prod-guard.mjs
+  s_9bb1b1d1d998d4::t_c67fcc44f8009a 1-282
+governance/lib/drill-fixtures-wrangler-deploy-gate.mjs
+  s_9bb1b1d1d998d4::t_4801dc07783eaa 1-245
+governance/lib/drill-hook-required.mjs
+  s_9bb1b1d1d998d4::t_1a42b15d9b8059 1-172
+governance/lib/drill-inline-required.mjs
+  s_9bb1b1d1d998d4::t_f6fb9f8350cb48 100-106
+governance/lib/drill-io.mjs
+  s_9bb1b1d1d998d4::t_beeaccc12e4f86 25-43
+governance/lib/drill-registry.mjs
+  s_9bb1b1d1d998d4::t_45125d56b9acc7 46,55-56,65,68,73,105-111,116-126,206-223,252,261-262,271,274,279
+governance/lib/email-archive-freshness.mjs
+  s_9bb1b1d1d998d4::t_e8b80c6a7ea566 1-329
+governance/lib/email-archive-parse.mjs
+  s_9bb1b1d1d998d4::t_93c05ebd6c02d2 1-202
+governance/lib/ledger-sweep.mjs
+  s_9bb1b1d1d998d4::t_64db74a88cbe9a 1-69
+governance/lib/wave-reviewer.mjs
+  s_9bb1b1d1d998d4::t_cb75cb0d2ba5a5 25-39
+governance/package.json
+  s_9bb1b1d1d998d4::t_f02b27cf2997ad 61-63
+governance/plans/MEMORY.md
+  s_9bb1b1d1d998d4::t_d9257d6ff11fcb 1-14
+governance/plans/STUB-INVENTORY-2026-08-25.md
+  s_9bb1b1d1d998d4::t_f3b6e89830a288 1-129
+governance/plans/aikido-trial/RECEIPTS.md
+  s_9bb1b1d1d998d4::t_35c8e1897bd01d 1-11
+governance/plans/brand-recycle/skill.md
+  s_9bb1b1d1d998d4::t_863876d7debdcc 1-13
+governance/plans/comms-credit-bureau/E0-INVENTORY.md
+  s_9bb1b1d1d998d4::t_dd48675965446c 1-33
+governance/plans/comms-credit-bureau/E1-SCHEMA.md
+  s_9bb1b1d1d998d4::t_4702cf2fc55bac 1-53
+governance/plans/comms-credit-bureau/E2-MVP.md
+  s_9bb1b1d1d998d4::t_56b70620ed0104 1-36
+governance/plans/comms-credit-bureau/E3-PRODUCT-VERDICT.md
+  s_9bb1b1d1d998d4::t_1f8a1264cb0b9b 1-44
+governance/plans/comms-credit-bureau/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_ab161c7d531083 2-3,5,7-12,14,16-19,21-24,26-76
+governance/plans/console-perfection/AGENT-SURFACE.md
+  s_9bb1b1d1d998d4::t_515645ef065cf4 1-13
+governance/plans/console-perfection/PRODUCT-TRUTH.md
+  s_9bb1b1d1d998d4::t_dd8c02c6272678 1-13
+governance/plans/contract.md
+  s_9bb1b1d1d998d4::t_100b9659472f5a 1-14
+governance/plans/engineering-canon/E3-error-budget/BUDGET-POLICY.md
+  s_9bb1b1d1d998d4::t_e29d09dde8738e 1-13
+governance/plans/engineering-canon/E7-dispatch-matrix/contract.md
+  s_9bb1b1d1d998d4::t_eed679fd95792d 1-13
+governance/plans/fireworks-integration/RESULTS-E1.md
+  s_9bb1b1d1d998d4::t_11c2abd05b6dfb 1-16
+governance/plans/govern-callable-node-actions/E1-PROVE-ONE-NODE.md
+  s_9bb1b1d1d998d4::t_d7fc2e68981cc2 20,29
+governance/plans/harness-wars-intel/CORPUS.md
+  s_9bb1b1d1d998d4::t_b847f1ad47246f 58-61
+governance/plans/harness-wars-intel/research/release-state.json
+  s_9bb1b1d1d998d4::t_b47cac7ef7046f 2,7
+governance/plans/monolith-decomposition/API-EDGE-MIGRATION-PLAN.md
+  s_9bb1b1d1d998d4::t_2455e52bb6aedf 1-241
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_9bb1b1d1d998d4::t_c3fa4702cc1bd4 4,35
+governance/plans/monolith-decomposition/E1-TRIAGE-THE-DEAD.md
+  s_9bb1b1d1d998d4::t_8171357c390ef7 4,112
+governance/plans/monolith-decomposition/E2-EXTRACT-THE-SPINE.md
+  s_9bb1b1d1d998d4::t_bb7f684718e96c 4,108,203
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  s_9bb1b1d1d998d4::t_5a9f283cdb49a3 4,16,64
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_9bb1b1d1d998d4::t_2f5e6ba7346be0 4,21,63,81
+governance/plans/monolith-decomposition/E8-PROVE-THE-MONOLITH-IS-DEAD.md
+  s_9bb1b1d1d998d4::t_640fc8431529a1 12,63-94
+governance/plans/monolith-decomposition/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_968482f4f097ca 4,203
+governance/plans/pen-design-lane/REVIEW.md
+  s_9bb1b1d1d998d4::t_8b17b49c833a61 1-27
+governance/plans/physics-of-compute/E0-ORIGIN-CAPTURE.md
+  s_9bb1b1d1d998d4::t_56b214d9a07a14 20
+governance/plans/physics-of-compute/E6-MEASUREMENT-RIGOR.md
+  s_9bb1b1d1d998d4::t_0b895f92ec4291 3
+governance/plans/physics-of-compute/E7-CROSS-MODEL-REPLICATION.md
+  s_9bb1b1d1d998d4::t_6338088a6aa91f 3
+governance/plans/physics-of-compute/E8-THINKING-MECHANISM.md
+  s_9bb1b1d1d998d4::t_2bebb1013141b6 3
+governance/plans/physics-of-compute/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_9329dd383dd060 107
+governance/plans/receipts/E3-FUNNEL-route-probe-2026-08-25.md
+  s_9bb1b1d1d998d4::t_66cffca42af956 1-14
+governance/plans/runtime-economy/dogfood/dsh-home-qwen3-8-27b/settings.yaml
+  s_9bb1b1d1d998d4::t_abd32a8133167e 1
+governance/plans/runtime-economy/leaderboard-page.intent.md
+  s_9bb1b1d1d998d4::t_f9000aeeb1592c 1-36
+governance/plans/runtime-learning-loop/TIER-GAP-ANALYSIS.md
+  s_9bb1b1d1d998d4::t_b4d865aecf97cf 75-80
+governance/plans/runtime-learning-loop/research/TIER-MATRIX.md
+  s_9bb1b1d1d998d4::t_01f343a95cde49 53-54
+governance/plans/runtime-learning-loop/research/pending-rows/qwen3.8-27b.json
+  s_9bb1b1d1d998d4::t_7d169d519deb4a 3-4,9-10,12
+governance/plans/search-feed-digests/E0-INVENTORY.md
+  s_9bb1b1d1d998d4::t_e410f060956f98 1-32
+governance/plans/search-feed-digests/E1-SCHEMA.md
+  s_9bb1b1d1d998d4::t_a90bb1960c5b12 1-64
+governance/plans/search-feed-digests/E2-MVP.md
+  s_9bb1b1d1d998d4::t_c9aa9306f46a5e 1-32
+governance/plans/search-feed-digests/E3-PRODUCT-VERDICT.md
+  s_9bb1b1d1d998d4::t_afb0a1bbd276ef 1-55
+governance/plans/search-feed-digests/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_c87a565d7a6f00 1-82
+governance/plans/vendor-relationship-ops/STACK-REGISTRY.json
+  s_9bb1b1d1d998d4::t_4bc38ce044bd62 3-7,9-19,22-32,38,43-44
+governance/plans/vision-ingest/E0-INGEST.md
+  s_9bb1b1d1d998d4::t_0e7ee2ebcb22b4 2-78
+governance/plans/vision-ingest/E1-RERANK.md
+  s_9bb1b1d1d998d4::t_4175c0b44d12a3 2,4,6-80
+governance/plans/vision-ingest/E2-MONEY-RAIL.md
+  s_9bb1b1d1d998d4::t_d766e93a805f14 10
+governance/plans/vision-ingest/INGEST-CONTAINER.md
+  s_9bb1b1d1d998d4::t_5fc185e418eba3 1-2,4,14-15,23,34-35,43-62,64-65,75-79
+governance/plans/vision-ingest/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_5f4fddafd46e8f 10
+governance/plans/wave-ga/E-AGENTIC-MEDIA.md
+  s_9bb1b1d1d998d4::t_7f0a6656b42478 4
+governance/plans/wave-ga/E-CI-INFRA.md
+  s_9bb1b1d1d998d4::t_727216ed6dae9d 4
+governance/plans/wave-ga/E-METERING.md
+  s_9bb1b1d1d998d4::t_adf6adbda7eab7 4
+governance/plans/wave-ga/E-PUBLISH.md
+  s_9bb1b1d1d998d4::t_ea4733a05af8a0 4
+governance/plans/wave-ga/E-STORAGE.md
+  s_9bb1b1d1d998d4::t_6ea99488295c9f 4
+governance/plans/wave-ga/E-TRANSPORT.md
+  s_9bb1b1d1d998d4::t_55bef14e27e28d 4
+governance/plans/wave-ga/E-UI.md
+  s_9bb1b1d1d998d4::t_149094f223b090 4
+governance/plans/wave-ga/E-WSC-SPLIT.md
+  s_9bb1b1d1d998d4::t_ac2131a5d9dae1 4
+governance/plans/wave-ga/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_ae104755735168 4
+governance/plans/wave-golive/E3-FUNNEL.md
+  s_9bb1b1d1d998d4::t_4e332182b33b50 4
+governance/plans/wave-models/E0-FOUNDATION.md
+  s_9bb1b1d1d998d4::t_1a9fc033d51054 2,4,6-15
+governance/plans/wave-models/E1-HOSTED-LADDER.md
+  s_9bb1b1d1d998d4::t_4221c3be29fbf9 19
+governance/plans/wave-models/E1a-CUSTOMER-LOCAL-TIER.md
+  s_9bb1b1d1d998d4::t_92d8eedacb686d 1-34
+governance/plans/wave-models/MODEL-OPPORTUNITY-LIST.md
+  s_9bb1b1d1d998d4::t_586c8c3fc5873a 9
+governance/plans/wave-models/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_c20ec064629167 31
+governance/plans/wave-native-cutover/E-AGENTS-TO-85.md
+  s_9bb1b1d1d998d4::t_c083b01fe898a6 4
+governance/plans/wave-native-cutover/E-DECOMMISSION.md
+  s_9bb1b1d1d998d4::t_dc5df7422f920d 4
+governance/plans/wave-native-cutover/E-EGRESS-ROUTER.md
+  s_9bb1b1d1d998d4::t_4f7be58ea986d6 4
+governance/plans/wave-native-cutover/E-INGRESS.md
+  s_9bb1b1d1d998d4::t_d1355de15347d7 4
+governance/plans/wave-native-cutover/E-MEDIA-TAP.md
+  s_9bb1b1d1d998d4::t_16760e11190311 4
+governance/plans/wave-native-cutover/E-ROOMS.md
+  s_9bb1b1d1d998d4::t_0d6a7f1671dfe7 4
+governance/plans/wave-native-cutover/NORTH-STAR.md
+  s_9bb1b1d1d998d4::t_47f173718779e8 4
+governance/plans/wave-native-cutover/P1-CAPABILITY-PARITY-LEDGER.md
+  s_9bb1b1d1d998d4::t_f4067bb61324a9 4,72
+governance/plans/wave-platform-completeness/FLEET-OPEN-WORK.md
+  s_9bb1b1d1d998d4::t_c9ade49e84594f 1-92
+governance/plans/wave-reinforcement-learning/RECURSION.md
+  s_9bb1b1d1d998d4::t_a6f62cc6a7833a 1-17
+governance/plans/wave-sec-fleet/RECURSION.md
+  s_9bb1b1d1d998d4::t_ac29f8afa8dff5 1-17
+governance/plans/wave-sec-fleet/REVIEW.md
+  s_9bb1b1d1d998d4::t_0f9e43d2e40847 1-13
+governance/state/e2e-probes.json
+  s_9bb1b1d1d998d4::t_a842f0224e59c5 66,70-73,80,82-85,93
+governance/state/email-archive/qodo/thread-2026-08.jsonl
+  s_9bb1b1d1d998d4::t_cddd36240fe602 21-26
+governance/state/reviewer-liveness.json
+  s_9bb1b1d1d998d4::t_0b5f630b144a66 2,31,39,47,55-56,63,69-73,79,85,93,95,101-102,105,109,117
+governance/state/surface-registry.json
+  s_9bb1b1d1d998d4::t_b7334d50862104 136-570,572
+governance/test/ci-surface.test.mjs
+  s_9bb1b1d1d998d4::t_e681c960d2d041 124,143
+governance/test/dispute-pack.test.mjs
+  s_9bb1b1d1d998d4::t_36fbed9d7234e5 4-6,27-28,30,32
+governance/test/doppler-secrets-cache-name-filter.test.mjs
+  s_9bb1b1d1d998d4::t_4cd8739a71e427 1-342
+governance/test/drill-hook-required.test.mjs
+  s_9bb1b1d1d998d4::t_7be4b56161455f 1-241
+governance/test/email-archive-freshness.test.mjs
+  s_9bb1b1d1d998d4::t_d726c1a6a17b57 1-352
+governance/test/email-archive-parse.test.mjs
+  s_9bb1b1d1d998d4::t_bd23114bf3b5c4 1-171
+governance/test/enforce-ignore-lawref.test.mjs
+  s_9bb1b1d1d998d4::t_07d6dc93fd7c2a 230
+governance/test/go-live-e2e.test.mjs
+  s_9bb1b1d1d998d4::t_c3a8bfc1f885b9 19,21
+governance/test/intent-ledger-sweep-voice.test.mjs
+  s_9bb1b1d1d998d4::t_1c8ac8842eb084 1-133
+governance/test/launchd-cron-parity-lint.test.mjs
+  s_9bb1b1d1d998d4::t_4df2d1d51e6448 39-42
+governance/test/main-protection-audit-pagination.test.mjs
+  s_9bb1b1d1d998d4::t_d1030dff31125e 1-75
+governance/test/memory-write-guard.test.mjs
+  s_9bb1b1d1d998d4::t_bed0678d4a6243 1-246
+governance/test/vendor-scoreboard-sync-cli.test.mjs
+  s_9bb1b1d1d998d4::t_df51dfc6652284 1-266
+governance/test/wave-reviewer-runner.test.mjs
+  s_9bb1b1d1d998d4::t_1e6c8363dffacd 1-102
+hooks/tests/gam-kill-switch-guard-gaps.test.sh
+  s_9bb1b1d1d998d4::t_3f2ce24d191146 1-123
+hooks/tests/gam-kill-switch-guard.test.sh
+  s_9bb1b1d1d998d4::t_0e1d80d3dd96f6 1-212
+memory/cf-token-map.md
+  s_9bb1b1d1d998d4::t_1aeacfd55c64f4 1-37
+memory/fleet-todo-ledger.md
+  s_9bb1b1d1d998d4::t_5c4e9f403982e5 6-7,979-985
+memory/runpod-platform-reference.md
+  s_9bb1b1d1d998d4::t_327af2cbc50db8 10,21-24,60,74,87,264-268
+memory/session-bank-v3-2026-08-25.md
+  s_9bb1b1d1d998d4::t_4c57f8c0e35670 1-20
+memory/session-gap-review-2026-08-24.md
+  s_9bb1b1d1d998d4::t_c24b0931ffdf8a 1-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "82bdde36a72ebdefb3cd1396ba211107f616f0a0",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

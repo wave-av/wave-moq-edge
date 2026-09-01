@@ -1,0 +1,37 @@
+governance/plans/schema-truth/E2-CONVERGE.md
+  s_2e30bff6169f7a::t_c292e3dc5e156e 1-71
+governance/plans/schema-truth/E6-GATE-LIVENESS.md
+  s_2e30bff6169f7a::t_4345ae180d4769 1-76
+governance/plans/schema-truth/NORTH-STAR.md
+  s_2e30bff6169f7a::t_3187ceec8c788b 1-87
+governance/plans/schema-truth/E0-DIVERGENCE.md
+  s_2e30bff6169f7a::t_c97b3139000248 1-86
+governance/plans/schema-truth/E3-EXECUTION-GATES.md
+  s_2e30bff6169f7a::t_5e2ca63a135d87 1-85
+governance/plans/schema-truth/E1-HONEST-SENTINEL.md
+  s_2e30bff6169f7a::t_e1908fdf73940c 1-81
+governance/plans/schema-truth/E4-ONE-WAY-TRUTH.md
+  s_2e30bff6169f7a::t_afb432021c37d5 1-77
+governance/plans/schema-truth/E5-PLATFORM-CURRENCY.md
+  s_2e30bff6169f7a::t_6cad088907f199 1-75
+governance/DASHBOARD.md
+  s_2e30bff6169f7a::t_2471246fc43063 25
+governance/graph.json
+  s_2e30bff6169f7a::t_99067c7c7cae47 5622-5725,25137-25214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "892c8b82bb6c5357909233f029ad63294ff6288a",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

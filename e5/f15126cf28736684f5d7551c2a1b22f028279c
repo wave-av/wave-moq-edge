@@ -1,0 +1,25 @@
+governance/plans/monolith-decomposition/E4-MOVE-THE-ISLANDS.md
+  s_f0a78cbb7828a7::t_a221e41b7811d2 23,29-44
+  s_f0a78cbb7828a7::t_a966644f196a87 52-54
+governance/plans/monolith-decomposition/E3-ROUTE-MAP.md
+  s_f0a78cbb7828a7::t_0bbf4a43a4425e 4-7
+  s_f0a78cbb7828a7::t_cf25306102dc0e 46-65
+governance/graph.json
+  s_f0a78cbb7828a7::t_23c7f0436d0c8b 32464-32469,32489-32494
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "e5f15126cf28736684f5d7551c2a1b22f028279c",
+  "prompts": {},
+  "sessions": {
+    "s_f0a78cbb7828a7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8d172c2e-2921-4e37-9edb-5e07a8be0e20",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

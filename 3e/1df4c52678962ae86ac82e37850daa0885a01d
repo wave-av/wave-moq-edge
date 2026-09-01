@@ -1,0 +1,39 @@
+governance/graph.json
+  s_d9915bbafa9657::t_d4b9d5f6879642 7059,7891
+governance/plans/absence-never-reads-as-pass/BRAINSTORM.md
+  s_d9915bbafa9657::t_994f7a9381c6e2 100
+governance/plans/merge-readiness-required/E1-COMPOSE.md
+  s_d9915bbafa9657::t_b5a94a81d36cb8 8
+governance/plans/one-system-of-record/BRAINSTORM.md
+  s_d9915bbafa9657::t_37d57ee7ef9864 95,105
+governance/plans/one-system-of-record/E3-RECONCILE.md
+  s_d9915bbafa9657::t_0f31433b5d3d17 8
+governance/plans/one-system-of-record/NORTH-STAR.md
+  s_d9915bbafa9657::t_e25007b924c35a 12,26,60
+governance/plans/platform-status-consumers/NORTH-STAR.md
+  s_d9915bbafa9657::t_2bc847ee96e10e 12
+governance/plans/receipt-bus/BRAINSTORM.md
+  s_d9915bbafa9657::t_7396a25cf4b3c5 8,66
+governance/plans/receipt-bus/E1-ENVELOPE.md
+  s_d9915bbafa9657::t_69600687d1a90f 17
+governance/plans/receipt-bus/E3-QUERY.md
+  s_d9915bbafa9657::t_4b9b376512a3b6 13
+governance/plans/receipt-bus/NORTH-STAR.md
+  s_d9915bbafa9657::t_b7f555467cfea1 44,61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3e1df4c52678962ae86ac82e37850daa0885a01d",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

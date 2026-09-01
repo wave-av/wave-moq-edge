@@ -1,0 +1,25 @@
+governance/plans/volumetric-delivery-proof/E4-STANDARDS-CLOCK.md
+  s_53b49eff5b8c5d::t_27d289046d28ce 31-38,41-48
+  s_53b49eff5b8c5d::t_f81b7b0024eea7 15
+  s_53b49eff5b8c5d::t_eb3a23bfcff8da 78,80-89
+governance/plans/volumetric-delivery-proof/RECEIPTS.md
+  s_53b49eff5b8c5d::t_86a192b9a3720c 119-139
+governance/plans/volumetric-delivery-proof/NORTH-STAR.md
+  s_53b49eff5b8c5d::t_4ddd10f970950d 61,64-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "eb99c1eb317b6d167bc328f621a2e370c4efd6a3",
+  "prompts": {},
+  "sessions": {
+    "s_53b49eff5b8c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0575df03-12ca-46db-ae23-cd745d432915",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

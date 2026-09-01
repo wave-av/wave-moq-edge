@@ -1,0 +1,26 @@
+governance/plans/runtime-economy/RUNPOD-CAPABILITY-MAP.md
+  s_2b4acc7ceba309::t_9c1fbb0c98b31b 1-62
+memory/fleet-todo-ledger.md
+  h_67a1b847dc59d6 117-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "222a5c896663e7f1ead9a044249f0cb2ac556723",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

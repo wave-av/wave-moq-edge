@@ -1,0 +1,23 @@
+hookcli/tests/fixtures/source-write-rules.json
+  s_60a20469ef4369::t_0b4b7a37efa6c3 1-18
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_db0b73ad701c45 333-359
+hookcli/docs/SOURCE-WRITE-CUTOVER.md
+  s_60a20469ef4369::t_61285153fc0e1b 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "47c3ee6d0efca7918314446729dc613ae5015fdd",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

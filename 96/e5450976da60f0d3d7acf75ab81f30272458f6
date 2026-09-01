@@ -1,0 +1,28 @@
+governance/plans/runtime-economy/bridge/sdk-fixture-test.mjs
+  s_2b4acc7ceba309::t_7768da785acd9c 1-17
+governance/plans/runtime-economy/bridge/shim.mjs
+  s_2b4acc7ceba309::t_b107c1c2b5fe93 84-87,94
+  s_2b4acc7ceba309::t_1d733d60d3a94f 95-98,100-102
+  s_2b4acc7ceba309::t_8c0d1fa52c71cf 103
+  s_2b4acc7ceba309::t_7ce60339167af3 77-83
+  s_2b4acc7ceba309::t_5a8686427f1863 88-93
+  s_2b4acc7ceba309::t_67f119f175ed1e 99
+governance/plans/runtime-economy/bridge/sse-fixture.mjs
+  s_2b4acc7ceba309::t_50715f89a2fa4a 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "96e5450976da60f0d3d7acf75ab81f30272458f6",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+governance/bin/fleet/README.md
+  s_dccee6b7677203::t_e9a8ed7d8ef2a4 1-82
+governance/bin/fleet/fleet-scan.mjs
+  s_dccee6b7677203::t_4c57a416f08dbf 81-101,103-108,110-114,123,125
+  s_dccee6b7677203::t_edc71f09ef7ef4 18-19
+  s_dccee6b7677203::t_4a156dc2d40bdf 148-149,153
+  s_dccee6b7677203::t_8ecd04f83cfc8d 1-17,20-80,102,109,115-122,124,126-147,150-152,154-218
+  s_dccee6b7677203::t_2fb4b3c8adb110 219
+governance/bin/fleet/agents-md-gen.mjs
+  s_dccee6b7677203::t_9a8e83effcf549 1-134
+governance/bin/fleet/credential-audit.mjs
+  s_dccee6b7677203::t_44ba6881382f1d 1-143
+governance/bin/fleet/consumer-graph.mjs
+  s_dccee6b7677203::t_7e4116d3633667 51,55,57-61,64
+  s_dccee6b7677203::t_a37e1041e9d243 84
+  s_dccee6b7677203::t_fbdb78143dde4b 74-75
+  s_dccee6b7677203::t_8acbe2131c8f60 1-50,52-54,56,62-63,65-73,76-83,85-155,158-159,162-228
+  s_dccee6b7677203::t_5e23d1e8ad027d 156-157,160-161
+governance/config/fleet-graph.json
+  s_dccee6b7677203::t_450dd1d22b0a28 1-29
+governance/config/renovate/default.json
+  s_dccee6b7677203::t_01c298c3ddd3b1 1-105
+governance/bin/fleet/lib/safe-fs.mjs
+  s_dccee6b7677203::t_461f825d2bdc86 1-105
+governance/bin/fleet/tests/run.sh
+  s_dccee6b7677203::t_19375bef71ae78 1-148
+governance/plans/polyrepo-velocity/E4-IDENTITY.md
+  s_dccee6b7677203::t_4161b51acb3c6f 10,12-36
+governance/plans/polyrepo-velocity/RECEIPTS.md
+  s_dccee6b7677203::t_1953eef477d4e6 1-128
+governance/plans/polyrepo-velocity/E3-BLAST-RADIUS.md
+  s_dccee6b7677203::t_3240a28cfe382a 10,12-40
+governance/plans/polyrepo-velocity/NORTH-STAR.md
+  s_dccee6b7677203::t_e62c705f4bd221 140-165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "4eb5d6e1178352d14ce23cf37256b776f05f4a80",
+  "prompts": {},
+  "sessions": {
+    "s_dccee6b7677203": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bbce6877-fccd-4ac2-9b98-aea2a98f0092",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

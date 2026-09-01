@@ -1,0 +1,19 @@
+governance/plans/console-completeness/E1-SPEC.md
+  s_85d9e5f433b9aa::t_c743b373fa29b3 1-404
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2ce0089920db61106dbd9a1a7834c2492a27fe17",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

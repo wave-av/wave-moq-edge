@@ -1,0 +1,24 @@
+governance/test/monolith-coverage.test.mjs
+  s_8d26503dfc73f4::t_98af91ee943eb9 1-124
+governance/plans/monolith-decomposition/E0-FREEZE-AND-INVENTORY.md
+  s_8d26503dfc73f4::t_84ba1b11125ddb 9-16
+  s_8d26503dfc73f4::t_e7346a5b69ad5b 125-158
+governance/bin/monolith-coverage.mjs
+  s_8d26503dfc73f4::t_75c1e28ab8e125 1-212
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "9a1f74fe123148603e1bca1f0f86cdc5d079bb5a",
+  "prompts": {},
+  "sessions": {
+    "s_8d26503dfc73f4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c893469c-fb3e-4ce9-8789-ab5755b8919a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+docs/BOARD-RUNBOOK.md
+  s_a293da4db5caf2::t_708a22d5efdffa 3
+runbooks/lib/backfill.mjs
+  s_a293da4db5caf2::t_3640e64b4abc43 210-213,215,217-219
+  s_a293da4db5caf2::t_6e59bc59c883a5 241
+  s_a293da4db5caf2::t_a0485301709b27 174-198,203-205,207-209,214,216
+  s_a293da4db5caf2::t_87c4b9d8534094 173
+runbooks/test/backfill.test.mjs
+  s_a293da4db5caf2::t_8f37170427c370 12
+  s_a293da4db5caf2::t_aa171ab0ad7507 161-196
+runbooks/bin/backfill.mjs
+  s_a293da4db5caf2::t_c0cbaa8681b12c 29
+  s_a293da4db5caf2::t_d33486ca639486 152-163,166-168,172
+  s_a293da4db5caf2::t_e22f9b08e5ee3c 60,63-78
+  s_a293da4db5caf2::t_401ecfd2b961bd 79
+runbooks/library/board-runbook.md
+  s_a293da4db5caf2::t_56e2101f16370f 25
+runbooks/library/wave-zoom-prove-live-and-billing.md
+  s_a293da4db5caf2::t_118979d2a6ce4e 3,6,20-21,23,25,29,40,67
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "4ed6fdfa4e3beacac639209e8d65c73b1fd4341e",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

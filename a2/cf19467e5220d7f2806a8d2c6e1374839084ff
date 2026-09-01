@@ -1,0 +1,38 @@
+governance/test/wave-cost-ledger-registry-audit.test.mjs
+  s_2e30bff6169f7a::t_b092ae8a4fafd1 1-159
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_2e30bff6169f7a::t_4d8cb7acf192c8 52-56
+governance/bin/wave-cost-ledger-coverage-report.mjs
+  s_2e30bff6169f7a::t_21bd60ee0938cd 1-75
+governance/lib/wave-cost-ledger-registry-audit.mjs
+  s_2e30bff6169f7a::t_552578181a022e 26-30
+  s_2e30bff6169f7a::t_1ec68a0592371d 1-25,31-37,39-59,66-67,69-83,86-122
+  s_2e30bff6169f7a::t_1c19450a532079 84-85
+  s_2e30bff6169f7a::t_e36a40442c0346 60-65,68
+  s_2e30bff6169f7a::t_4392e12dfe7dd2 38
+governance/lib/wave-cost-ledger-registry-read.mjs
+  s_2e30bff6169f7a::t_398797feb7cdfc 1-92
+governance/lib/wave-cost-ledger-rpc.mjs
+  s_2e30bff6169f7a::t_2c54e67d4e2814 173,177-182,184
+  s_2e30bff6169f7a::t_9cd5c099caaf79 61-64
+  s_2e30bff6169f7a::t_f175f8d75befad 151-161
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_2e30bff6169f7a::t_82a6fde7d678c3 31-51
+  s_2e30bff6169f7a::t_343590806b66fa 66-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "a2cf19467e5220d7f2806a8d2c6e1374839084ff",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

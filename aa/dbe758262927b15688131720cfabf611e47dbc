@@ -1,0 +1,25 @@
+plugins/wave-dispatch.ts
+  s_2f1bfe8237f0ee::t_508f9b9e6c9c3f 1-129
+docs/DISPATCH-OPENCODE-INTEGRATION.md
+  s_2f1bfe8237f0ee::t_2f4b1ab2eb2cd7 1-87
+docs/PLAN-OPENCODE-PRODUCT.md
+  s_2f1bfe8237f0ee::t_0fe229c1f40d83 1-64
+tools/dispatch-probe.py
+  s_2f1bfe8237f0ee::t_12aa7db9d8ef15 1-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "aadbe758262927b15688131720cfabf611e47dbc",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

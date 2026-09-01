@@ -1,0 +1,41 @@
+governance/bin/struggle-miner/config/cloudflare-workers.json
+  s_37e24b4d920e09::t_77f79cbb7ad9e4 1-3
+governance/test/struggle-miner/fixtures/cloudflare-builds-response.json
+  s_37e24b4d920e09::t_749bcce6b23f0b 1-26
+governance/bin/struggle-miner/collect-cloudflare.mjs
+  s_37e24b4d920e09::t_aaf0d3ca7f8c1d 1-117
+governance/test/struggle-miner/fixtures/cloudflare-telemetry-response.json
+  s_37e24b4d920e09::t_4312c0054430f5 1-27
+governance/test/struggle-miner/collect-cloudflare.test.mjs
+  s_37e24b4d920e09::t_5edc60e0310d93 1-27
+governance/bin/struggle-miner-scan.sh
+  s_37e24b4d920e09::t_cbc25fcea5fd49 29
+governance/code-index/CATALOG.md
+  s_157583aa3b6686::t_4b54a4d264d6ca 5,2759-2770
+governance/code-index/index.json
+  s_157583aa3b6686::t_09f6a5507a809c 6-7,9-10,24874-24972
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "87ed03f214c96ea9316edfa7c2dd1433dcc27076",
+  "prompts": {},
+  "sessions": {
+    "s_157583aa3b6686": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0800e731-23e3-40e5-abec-27e99bf7f8c7",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_37e24b4d920e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "285f680a-809a-4f4f-a7fa-770c2dc78200",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

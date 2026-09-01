@@ -1,0 +1,21 @@
+docs/AUTONOMY-SUBSTRATE.md
+  s_95ee57c64989e9::t_9b3d4f7d248452 10,109
+memory/autonomy-substrate.md
+  s_95ee57c64989e9::t_9d95815122d0d8 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "551580b261dcb043140c595e9364a1f77f8284ad",
+  "prompts": {},
+  "sessions": {
+    "s_95ee57c64989e9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00255d654ffeC85AYIRsNANiYR",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

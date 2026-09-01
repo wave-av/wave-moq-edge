@@ -1,0 +1,20 @@
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_27c3f37c99074f::t_150970f268ed97 22
+  s_27c3f37c99074f::t_684521ebc1e216 38-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "918e84c6ad21e9f25ff0eefeb0fe446061969f73",
+  "prompts": {},
+  "sessions": {
+    "s_27c3f37c99074f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d112afa3-6202-472c-ada8-4517979cbfce",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

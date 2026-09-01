@@ -1,0 +1,25 @@
+governance/plans/finding-closure/action/E0-BLEEDING-PLAN.md
+  s_a3de1ea96d5b6a::t_5aefbb9c5d85fe 1-128
+governance/plans/finding-closure/action/E2-SLA-PLAN.md
+  s_a3de1ea96d5b6a::t_0a593024c3c41c 1-63
+governance/plans/finding-closure/action/E3-GATES-PLAN.md
+  s_a3de1ea96d5b6a::t_e413667fd0271b 1-117
+governance/plans/finding-closure/action/E4-BURNDOWN-PLAN.md
+  s_a3de1ea96d5b6a::t_5cd8702b0b5b7a 1-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "e4c8aebb516c689c6a9c13fd4bea7af943c1c690",
+  "prompts": {},
+  "sessions": {
+    "s_a3de1ea96d5b6a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a355787e7adac2147",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

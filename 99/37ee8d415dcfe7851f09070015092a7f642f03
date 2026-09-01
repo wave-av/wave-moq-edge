@@ -1,0 +1,33 @@
+governance/test/merge-path-parity.test.mjs
+  s_c24357e71ae5bc::t_66f6676703dc57 392-415,418
+  s_c24357e71ae5bc::t_29e7d341f8fdf0 416-417
+  s_c24357e71ae5bc::t_23ce35195f0f07 419-420
+governance/bin/merge-path-parity.mjs
+  s_c24357e71ae5bc::t_bf876cd57bc1bc 294
+  s_c24357e71ae5bc::t_34ed6055c6541f 295-297
+  s_7c7e203d305c60::t_e442bd26d23027 298-305
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9937ee8d415dcfe7851f09070015092a7f642f03",
+  "prompts": {},
+  "sessions": {
+    "s_7c7e203d305c60": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "264eab74-7ad5-43cd-80ad-e012ed58beb8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

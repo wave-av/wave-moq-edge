@@ -1,0 +1,32 @@
+memory/watchdog-panic-memory-guard.md
+  s_7c3d2081ebc163::t_55286ac9ca021e 1-39
+bin/fleet-log.mjs
+  s_7c3d2081ebc163::t_22127122ef2e3c 14-17,31-32,47,55-57,64-66,75-77,112-114
+memory/MEMORY.md
+  s_7c3d2081ebc163::t_537b348a96645d 23
+  s_20b101c7f8c430::t_b057f3dd7b8a35 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b35747e5dc9d39394a2652d7590a2a6284b8d836",
+  "prompts": {},
+  "sessions": {
+    "s_20b101c7f8c430": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff2b3b537ffeFwJZe210BrnNx3",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_7c3d2081ebc163": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef2e2544ffe6o7qrpDEjR6kJt",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

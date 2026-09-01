@@ -1,0 +1,42 @@
+.github/workflows/governance.yml
+  s_a293da4db5caf2::t_8da42dd4b62bee 135-142
+governance/bin/struggle-miner/collect-denials.py
+  s_a293da4db5caf2::t_22bd9b424e3ff2 19
+  s_a293da4db5caf2::t_5aa4a1f7b056dc 1-18,20-24,26-27,39,44,77-99,103-105,107-161,163-173
+  s_a293da4db5caf2::t_60ea0f86daf31c 28-38,40-43,45-76
+  s_a293da4db5caf2::t_797b6be6b3dc6f 162
+  s_a293da4db5caf2::t_9d6c3ec14181f6 100-102,106
+  s_a293da4db5caf2::t_ed1e6e3836787c 25
+governance/bin/struggle-miner-scan.sh
+  s_a293da4db5caf2::t_70930b3a77b53e 27-35
+tests/struggle_miner/__init__.py
+  s_a293da4db5caf2::t_6aefb3fd260046 1
+tests/struggle_miner/test_collect_transcripts.py
+  s_a293da4db5caf2::t_17e802bfca8d7c 1-8,12-13,21-43
+governance/test/struggle-miner/fixtures/sample-denials.jsonl
+  s_a293da4db5caf2::t_a3c5405e5679c2 1-4,7-8
+  s_a293da4db5caf2::t_ad5429a50557f1 5-6
+governance/bin/struggle-miner/lib/transcript_filter.py
+  s_a293da4db5caf2::t_50afee6864167c 1-159
+tests/__init__.py
+  s_a293da4db5caf2::t_8548e7ffa4f07f 1
+tests/struggle_miner/test_collect_denials.py
+  s_a293da4db5caf2::t_d67351189c6d8c 1-2,6,9,13-17,19-20,23-34,38,40-42
+  s_a293da4db5caf2::t_c39110017d1f43 3-5,7-8,10-12,18,21-22,35-37,39,43-165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "757457436e8b14f33d1f9a3a8be8dc0373d0e586",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+governance/plans/engineering-canon/E8-gap-map/creative/premortem.md
+  s_0227926428e4b1::t_1261194885838a 1-84
+governance/plans/engineering-canon/E8-gap-map/E8-GAP-MAP.md
+  s_0227926428e4b1::t_8a9919b0fb0cd2 1-102
+governance/plans/engineering-canon/E1-assurance-ladder/E1-ASSURANCE-LADDER.md
+  s_0227926428e4b1::t_8cdb0d31a67faf 1-126
+governance/plans/engineering-canon/E10-surface-census/creative/redteam.md
+  s_0227926428e4b1::t_98f756db7d7c66 1-61,63-263
+  s_0227926428e4b1::t_ef00264388ce3d 62
+governance/plans/engineering-canon/E10-surface-census/E10-SURFACE-CENSUS.md
+  s_0227926428e4b1::t_57388fe419b26e 1-128
+  s_0227926428e4b1::t_a434c410b03323 129-130
+governance/plans/engineering-canon/E10-surface-census/creative/ops-sre.md
+  s_0227926428e4b1::t_0156818fc72a60 1-147
+governance/plans/engineering-canon/E8-gap-map/creative/pragmatist.md
+  s_0227926428e4b1::t_cca9dc83949cf6 1-180
+governance/plans/engineering-canon/E7-dispatch-matrix/creative/pragmatist.md
+  s_0227926428e4b1::t_a1d34dec53b2b4 1-141
+governance/plans/engineering-canon/E1-assurance-ladder/creative/redteam.md
+  s_0227926428e4b1::t_48d9c871e84227 1-150
+governance/plans/engineering-canon/E8-gap-map/creative/first-principles.md
+  s_0227926428e4b1::t_4649f08b40577f 1-131
+governance/plans/engineering-canon/E3-error-budget/creative/premortem.md
+  s_0227926428e4b1::t_37b5e7b9fd44d1 1-97
+governance/plans/engineering-canon/E7-dispatch-matrix/creative/redteam.md
+  s_0227926428e4b1::t_004ef241da8aa6 1-136
+governance/plans/engineering-canon/E7-dispatch-matrix/creative/historian.md
+  s_0227926428e4b1::t_8ee56437b862a7 1-223
+governance/plans/engineering-canon/E10-surface-census/creative/economist.md
+  s_0227926428e4b1::t_9e5fbbcc50bfb0 1-185
+governance/plans/engineering-canon/E7-dispatch-matrix/E7-DISPATCH-MATRIX.md
+  s_0227926428e4b1::t_2b29f749a81eac 1-106
+governance/plans/engineering-canon/E1-assurance-ladder/creative/historian.md
+  s_0227926428e4b1::t_1acbbdabcfdd09 1-198
+governance/plans/engineering-canon/E1-assurance-ladder/creative/pragmatist.md
+  s_0227926428e4b1::t_fe9b0715505a99 1-75
+governance/graph.json
+  s_0227926428e4b1::t_e26f9e7763b6a6 4140-4191,24130-24237
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "e4e2deb70fc0142d8fcb3f3786a404c48ab58d4a",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

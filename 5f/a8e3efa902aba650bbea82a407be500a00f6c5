@@ -1,0 +1,21 @@
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_63c6ee080d73c3::t_654c0ffb5857bd 22-31
+governance/plans/finding-closure/NORTH-STAR.md
+  s_63c6ee080d73c3::t_0cdb8e091515fd 110-114
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5fa8e3efa902aba650bbea82a407be500a00f6c5",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

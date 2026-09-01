@@ -1,0 +1,19 @@
+governance/drafts/ISSUE-DRAFT-reviewer-scoreboard-recomposes-assess.md
+  s_52031f4510959b::t_eb45efbd7a84d2 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6221c6cc18434ae2781e7e13e15ea2aabc632dd2",
+  "prompts": {},
+  "sessions": {
+    "s_52031f4510959b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72c9efde-fc8b-4a27-9deb-c50094585399",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

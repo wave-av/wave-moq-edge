@@ -1,0 +1,23 @@
+governance/plans/wave-audio-signal-plane/flows/voice-agent.chain.json
+  s_6046880c148371::t_cc18fd9e68eee2 1-37
+governance/plans/wave-audio-signal-plane/dsp-chain.schema.json
+  s_6046880c148371::t_558d706c24b15d 1-65
+governance/plans/wave-audio-signal-plane/tap.schema.json
+  s_6046880c148371::t_79277fce5bbdc0 1-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d4493c1cb81965adcd5bac4ba40f8ababe859727",
+  "prompts": {},
+  "sessions": {
+    "s_6046880c148371": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff29dc127ffeWs25bzO5ussib2",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

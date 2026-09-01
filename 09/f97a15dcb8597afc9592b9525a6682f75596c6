@@ -1,0 +1,22 @@
+governance/plans/wave-sec-fleet/E3-FLEET-ROLLOUT.md
+  s_85d9e5f433b9aa::t_f0ea33a4bf408b 151-239
+  s_85d9e5f433b9aa::t_315c4ca96647d0 7-11
+.github/workflows/wave-sec-gate.yml
+  s_85d9e5f433b9aa::t_1da8a2b1700162 1-153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "09f97a15dcb8597afc9592b9525a6682f75596c6",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

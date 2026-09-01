@@ -1,0 +1,37 @@
+northstars/observability.md
+  s_07acdfa7e3709a::t_5dd6408cefd2a4 1-21,24-39,41-53
+  s_07acdfa7e3709a::t_f7f2416e483e41 22-23
+  s_07acdfa7e3709a::t_aadb98ddfe7b89 40
+northstars/bugbot-autonomy.md
+  s_07acdfa7e3709a::t_ddc05716542332 54-55
+  s_07acdfa7e3709a::t_e693643e361e11 1-53,56-60
+northstars/gate-as-architecture-signal.md
+  s_07acdfa7e3709a::t_7cad2d3ce13bf8 1-58
+northstars/cost-control.md
+  s_07acdfa7e3709a::t_d20da798d5edba 1-25,27-54
+  s_07acdfa7e3709a::t_2a0b436541709e 26
+northstars/platform-funnel.md
+  s_07acdfa7e3709a::t_4905e37beea718 1-50
+README.md
+  s_07acdfa7e3709a::t_6efba3ac16d794 4-8
+northstars/README.md
+  s_07acdfa7e3709a::t_79d5351c04ecf7 1-44
+northstars/open-core-boundary.md
+  s_07acdfa7e3709a::t_d6ee4a5bfa8eaa 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "46c1c62d4561fd76a6316ae1ef07ad68ca447a1c",
+  "prompts": {},
+  "sessions": {
+    "s_07acdfa7e3709a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "773239ea-b547-4d66-999e-baec7969268e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

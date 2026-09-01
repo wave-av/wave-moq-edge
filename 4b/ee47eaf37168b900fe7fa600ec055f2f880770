@@ -1,0 +1,24 @@
+governance/vendor/headroom/UPSTREAM-PIN.md
+  s_e243a2a1b60a5d::t_4ce4afa10f110f 1-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "4bee47eaf37168b900fe7fa600ec055f2f880770",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_e243a2a1b60a5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5404107acf6404a2",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

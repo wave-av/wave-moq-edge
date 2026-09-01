@@ -1,0 +1,28 @@
+governance/automation-registry/jobs/governance.yaml
+  s_c927cca3dccbaa::t_00ab9ee5437140 278-279
+  s_c927cca3dccbaa::t_8e6ae40172276a 322-323
+  s_c927cca3dccbaa::t_58d5179c3ddb81 244-254,260-265
+  s_c927cca3dccbaa::t_e87b11a6b16ff5 300-301
+  s_c927cca3dccbaa::t_8f9641de71c470 328-334,336-346
+  s_c927cca3dccbaa::t_ead98f2d66c804 311-312
+  s_c927cca3dccbaa::t_c18f24119fafda 289-290
+  s_c927cca3dccbaa::t_4f130c84dd9bc8 266,325-327,335,347-362
+governance/automation-registry/jobs/monitoring.yaml
+  s_c927cca3dccbaa::t_76cf18137ec401 82-106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "afaab913aafc4a0801b00968aa14b3a4386ab6c4",
+  "prompts": {},
+  "sessions": {
+    "s_c927cca3dccbaa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78ee42ab-7d55-4388-9aa9-d7ef7baeec6c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

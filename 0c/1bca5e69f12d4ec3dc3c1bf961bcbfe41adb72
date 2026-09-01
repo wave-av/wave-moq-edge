@@ -1,0 +1,25 @@
+frameworks/claude-api/local-inference.md
+  s_5f27fa5b8237cd::t_2b7d7623177b8b 29,159
+scripts/sync-public.sh
+  s_5f27fa5b8237cd::t_902c68494471bc 45-52,59-63
+  s_5f27fa5b8237cd::t_88c894244f5b62 83-84
+scripts/verify-public-mirror.sh
+  s_5f27fa5b8237cd::t_00ce5543b2bdf4 90-92
+  s_5f27fa5b8237cd::t_c5cb01927fe36f 25-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0c1bca5e69f12d4ec3dc3c1bf961bcbfe41adb72",
+  "prompts": {},
+  "sessions": {
+    "s_5f27fa5b8237cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "15ec0bf8-6164-4260-bae1-00c610d449bb",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

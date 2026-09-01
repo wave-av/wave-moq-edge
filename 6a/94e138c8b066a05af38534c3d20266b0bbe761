@@ -1,0 +1,27 @@
+governance/ci-stack/dashboard-driver/ts-token-generate.mjs
+  s_7326a769c7efe8::t_dbb386b5bf67d5 1-52
+governance/ci-stack/dashboard-driver/ts-token-wizard.mjs
+  s_7326a769c7efe8::t_0f14c70f80fe8f 1-24
+governance/ci-stack/dashboard-driver/tailscale-create-live.mjs
+  s_7326a769c7efe8::t_b6771be6d2b9f3 1-79
+governance/ci-stack/dashboard-driver/tailscale-create-live2.mjs
+  s_7326a769c7efe8::t_9f55aa46cb30b7 1-86
+governance/ci-stack/dashboard-driver/ts-keys-probe.mjs
+  s_7326a769c7efe8::t_96e59e012072d6 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "6a94e138c8b066a05af38534c3d20266b0bbe761",
+  "prompts": {},
+  "sessions": {
+    "s_7326a769c7efe8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff841cf60ffelJVuw7cn2bkyUE",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

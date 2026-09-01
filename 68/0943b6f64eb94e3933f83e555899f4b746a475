@@ -1,0 +1,52 @@
+governance/test/fixtures/bad-override-ordering/late.sh
+  s_02abc74f4971c7::t_1b6322b07376c1 1-24
+governance/lib/override-ordering.mjs
+  s_02abc74f4971c7::t_0caa1b7acb5363 239-244
+  s_02abc74f4971c7::t_c92c3907677aa0 77-89,92-94,104
+  s_02abc74f4971c7::t_a2f2a18f09e71f 112-114
+  s_02abc74f4971c7::t_261ba048447b00 211-218
+  s_02abc74f4971c7::t_cf864c36c0c567 115-126
+  s_02abc74f4971c7::t_c8e25d05cb324c 223-224
+  s_02abc74f4971c7::t_1f715da19c722f 235-236
+  s_02abc74f4971c7::t_0aaee6ac128edb 231
+  s_02abc74f4971c7::t_fb462dd101609e 1-68,76,105-111,127-134,148-160,166-167,169-182,200,209-210,219-222,225-230,232-234,237-238,245-252,256-259,262-304
+  s_02abc74f4971c7::t_957d8ed3dd3e0a 135-147
+  s_02abc74f4971c7::t_6f11b3b9b66604 196-199,202-206
+  s_02abc74f4971c7::t_c53e7bec8a8bda 69-75
+  s_02abc74f4971c7::t_178fc3abd379be 183-195,201,207-208
+  s_02abc74f4971c7::t_e920a800307bd4 253-255,260-261
+  s_02abc74f4971c7::t_caacf4d2e0b614 161-165,168
+  s_02abc74f4971c7::t_5dfe79ae45eb83 90-91,95-103
+governance/bin/override-ordering-lint.mjs
+  s_02abc74f4971c7::t_f4dcc2ad5b9f1d 1-131
+governance/test/override-ordering-lint.test.mjs
+  s_02abc74f4971c7::t_e23520e40b219c 1-149
+governance/test/fixtures/bad-override-ordering/clean.sh
+  s_02abc74f4971c7::t_9515f69784ce9c 1-3,13-15,17-21,31,33-37,41-45,47-48
+  s_02abc74f4971c7::t_b08500573a6142 4-12,16,22-30,32,38-40,46,49
+governance/lib/drill-fixtures-shell.mjs
+  s_02abc74f4971c7::t_2a10cb3c2be94a 158-199
+  s_02abc74f4971c7::t_42a715e0623e87 36
+.github/workflows/governance.yml
+  s_02abc74f4971c7::t_4ff0e09d4eed27 355-365
+governance/code-index/CATALOG.md
+  s_02abc74f4971c7::t_846998e8bac592 5,2240-2258,3949,3952-3953,4394-4414
+governance/code-index/index.json
+  s_02abc74f4971c7::t_894de7c13e26c1 9-10,12-13,20193-20368,34515-34525,34554-34555,34565-34568,37782-37979
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "680943b6f64eb94e3933f83e555899f4b746a475",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  s_a293da4db5caf2::t_32cbcaee885319 1-295
+governance/code-index/CATALOG.md
+  s_a293da4db5caf2::t_ae8c2b887435af 5,3376-3379,4894-4908
+governance/code-index/index.json
+  s_a293da4db5caf2::t_9a90a6e165d004 9-10,12-13,30049-30059,41434-41532
+governance/graph.json
+  s_a293da4db5caf2::t_742d621d515ada 22387,22389,22393,22395
+governance/lib/wave-cost-ledger-supabase-guards.mjs
+  s_a293da4db5caf2::t_a909d44ba845ce 1-42
+governance/lib/wave-cost-ledger-supabase.mjs
+  s_a293da4db5caf2::t_5cd1f7b5b6676a 1-358
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_a293da4db5caf2::t_a1acf4ff4a46a5 4-5,35-124
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_a293da4db5caf2::t_ca9c92463f06e3 151-157,161
+governance/test/wave-cost-ledger-supabase-fixture.mjs
+  s_a293da4db5caf2::t_19c51b1f4fc2a4 1-36
+governance/test/wave-cost-ledger-supabase-rows.test.mjs
+  s_a293da4db5caf2::t_e1e799a65a2cdc 1-286
+governance/test/wave-cost-ledger-supabase-write-path.test.mjs
+  s_a293da4db5caf2::t_d8336c22e11249 1-55
+governance/test/wave-cost-ledger-supabase.test.mjs
+  s_a293da4db5caf2::t_4c3882f1be09fc 1-161
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "bdf7f5b5ea1d091d524627749da3b681bc7945f0",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

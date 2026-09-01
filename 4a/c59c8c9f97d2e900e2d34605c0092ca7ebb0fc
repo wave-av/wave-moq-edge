@@ -1,0 +1,32 @@
+docs/PR-AGENT-LANE-FINDING.md
+  s_9e49fb2dab61f0::t_b803bffb1a3d54 177-182
+  s_9e49fb2dab61f0::t_c331cd2e9b6288 143,145-146
+  s_9e49fb2dab61f0::t_56b06b480a89ce 43
+  s_9e49fb2dab61f0::t_dc5c3847819312 154-176,183-194,202-203
+  s_9e49fb2dab61f0::t_0bf598e03174e0 14
+  s_9e49fb2dab61f0::t_aab391898e70d4 213-245
+  s_9e49fb2dab61f0::t_dafec3cfd47da0 35-38
+  s_9e49fb2dab61f0::t_4c10865af140a3 195-201
+  s_9e49fb2dab61f0::t_5ccd0e43c581db 21-26
+  s_9e49fb2dab61f0::t_f3a34903b6540b 110-115,117-119,121-142,144
+  s_9e49fb2dab61f0::t_769d91f292dfa2 116,120
+.github/workflows/reusable-pr-agent.yml
+  s_9e49fb2dab61f0::t_96192bbca094eb 67-68
+  s_9e49fb2dab61f0::t_37befb6314cc63 5-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4ac59c8c9f97d2e900e2d34605c0092ca7ebb0fc",
+  "prompts": {},
+  "sessions": {
+    "s_9e49fb2dab61f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "981b7f1a-f483-49cf-a573-1264b8ca9553",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

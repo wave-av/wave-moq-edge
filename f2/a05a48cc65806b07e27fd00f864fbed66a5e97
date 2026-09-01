@@ -1,0 +1,100 @@
+.github/workflows/external-ticket-sweep.yml
+  h_af5ac1a9798224 1-179
+.github/workflows/wave-cost-ledger-absent-check-sweep.yml
+  h_af5ac1a9798224 1-121
+.github/workflows/wsc-salvage-coverage.yml
+  h_af5ac1a9798224 1-52
+governance/DANGLING-REFS-BASELINE.json
+  h_af5ac1a9798224 92
+governance/DASHBOARD.md
+  h_af5ac1a9798224 25
+governance/agents/TAXONOMY.yaml
+  h_af5ac1a9798224 1-287
+governance/bin/external-tickets.mjs
+  h_af5ac1a9798224 91-123,137-142,146-153,155,160-165,167,226-233
+governance/bin/gate-scope-conformance.mjs
+  h_af5ac1a9798224 4-5,35-38,40-41,45-54,156
+governance/bin/prove-gate-scope-conformance.mjs
+  h_af5ac1a9798224 4-6,8-9,40-42,45,51,112-126,128,134
+governance/bin/taxonomy.mjs
+  h_af5ac1a9798224 1-224
+governance/bin/wave-cost-ledger-gha-absent-check-detector.mjs
+  h_af5ac1a9798224 16-20,185-207,213-217,244-251,253-260,262-267,284-299
+governance/ci-scan-set.pin.json
+  h_af5ac1a9798224 5-6
+governance/graph.json
+  h_af5ac1a9798224 3542,3625-3637,3646,20325-20342
+governance/lib/epic-status-render.mjs
+  h_af5ac1a9798224 27-31,37-42
+governance/lib/ramp-tables.mjs
+  h_af5ac1a9798224 50-55
+governance/lib/wave-cost-ledger-anomaly-read.mjs
+  h_af5ac1a9798224 12-44,81-89
+governance/lib/wave-cost-ledger-gha-absent-check.mjs
+  h_af5ac1a9798224 199-262
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  h_af5ac1a9798224 27-29,60-68,88-91,93-99,101-102
+governance/plans/cursor-cloud-agent-adoption/epic.md
+  h_af5ac1a9798224 330-334,379-388,401-406,408-414,421,423-431,448-450,455-459,482-503,510-550,646-655
+governance/plans/gates-that-can-see/E0-REPAIR.md
+  h_af5ac1a9798224 4-8,13-14,20-22
+governance/plans/gates-that-can-see/E6-DEAD-CLAIMS.md
+  h_af5ac1a9798224 4-8,33-50
+governance/plans/gates-that-can-see/E7-STACKED-PR-BLINDNESS.md
+  h_af5ac1a9798224 1-123
+governance/plans/gates-that-can-see/NORTH-STAR.md
+  h_af5ac1a9798224 4-7,14,52-53,56,67-72,94,101
+governance/plans/golden-path-restoration/E0-FORENSICS.md
+  h_af5ac1a9798224 10-12,19-59
+governance/plans/upstream-ask-mcp-instruction-deferral.md
+  h_af5ac1a9798224 7-12,14,18-20,24,26,31-41
+governance/proposals/vendor-trial-is-reconnaissance.md
+  h_af5ac1a9798224 1-82
+governance/test/epic-status-closed.test.mjs
+  h_af5ac1a9798224 47-60
+governance/test/epic-status.test.mjs
+  h_af5ac1a9798224 175-188
+governance/test/external-tickets.test.mjs
+  h_af5ac1a9798224 119-195
+governance/test/plugin-skill-drift.test.mjs
+  h_af5ac1a9798224 1-40
+governance/test/taxonomy.test.mjs
+  h_af5ac1a9798224 1-135
+governance/test/wave-cost-ledger-anomaly-read.test.mjs
+  h_af5ac1a9798224 4,6-8,30-35,59,76,91,102,113,124,133-134,137,140-146,148,150-169
+governance/test/wave-cost-ledger-gha-absent-check-detector.test.mjs
+  h_af5ac1a9798224 9,11-13,195-326
+governance/wave-cost-ledger-absent-check-baseline.json
+  h_af5ac1a9798224 1-29
+governance/wsc-salvage/check-coverage.mjs
+  h_af5ac1a9798224 1-120
+governance/wsc-salvage/manifest.json
+  h_af5ac1a9798224 1-268
+hooks/doppler-env-guard.sh
+  h_af5ac1a9798224 35-67
+hooks/file-authoring-gate.sh
+  h_af5ac1a9798224 50-71,75-92
+hooks/manifest.json
+  h_af5ac1a9798224 323,435
+hooks/tests/doppler_guard_smoke.sh
+  h_af5ac1a9798224 50-84
+hooks/tests/file-authoring-gate_smoke.sh
+  h_af5ac1a9798224 51-100
+plugins/wave-governance/.claude-plugin/plugin.json
+  h_af5ac1a9798224 1-19
+plugins/wave-governance/README.md
+  h_af5ac1a9798224 1-15
+plugins/wave-governance/skills/governance-contract/SKILL.md
+  h_af5ac1a9798224 1-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "f2a05a48cc65806b07e27fd00f864fbed66a5e97",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

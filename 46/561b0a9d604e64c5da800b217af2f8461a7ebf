@@ -1,0 +1,25 @@
+governance/lib/ramp-detectors.mjs
+  s_0227926428e4b1::t_9407cc7e13f91f 218-227,231-245
+  s_0227926428e4b1::t_f8b4fea4465892 15
+governance/test/ramp-file-size.test.mjs
+  s_0227926428e4b1::t_7a55d4c22a2760 20,22
+  s_0227926428e4b1::t_89aa224f4eedc8 90-163
+governance/lib/file-size-tiers.mjs
+  s_0227926428e4b1::t_7490172f8d2f13 1-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "46561b0a9d604e64c5da800b217af2f8461a7ebf",
+  "prompts": {},
+  "sessions": {
+    "s_0227926428e4b1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f3c5befe-7152-480f-95ef-5f23bf26224d",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

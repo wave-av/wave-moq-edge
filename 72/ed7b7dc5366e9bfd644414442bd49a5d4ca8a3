@@ -1,0 +1,33 @@
+governance/tools/teacher-engine/manifests/content-engine.json
+  s_b975e5801cec42::t_3728bf5820f36b 1-174
+governance/plans/content-engine/NORTH-STAR.md
+  s_b975e5801cec42::t_c7f9b3dde2b194 42-48
+governance/plans/capability-registry/NORTH-STAR.md
+  s_a1003621937cf4::t_f6e7383dd4f0f3 80
+governance/tools/backfill-table/manifests/capability-registry.json
+  s_a1003621937cf4::t_7deff9a81fd3ac 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "72ed7b7dc5366e9bfd644414442bd49a5d4ca8a3",
+  "prompts": {},
+  "sessions": {
+    "s_a1003621937cf4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0025bf2fbffedapVkIIs3MrsHx",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_b975e5801cec42": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0025be585ffel4skHQZ5KmJCTa",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

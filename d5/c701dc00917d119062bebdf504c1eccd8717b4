@@ -1,0 +1,57 @@
+.github/dependabot.yml
+  s_63c6ee080d73c3::t_79841b5c682e6b 24-82
+.github/workflows/wave-sec-gate.yml
+  s_63c6ee080d73c3::t_225c41c0c6331d 18-22,33-43,47-66,81-91,97-101,106-124,151,156-164,175,178-188,197-199,201,204,208-228,230-271,274-276,280-347
+.github/workflows/wave-sec-scan.yml
+  s_63c6ee080d73c3::t_70cca8b996127e 45-63,92,99
+governance/bin/vendored-gate-audit.mjs
+  s_63c6ee080d73c3::t_10d41d238d3029 1-122
+governance/bin/wave-sec.mjs
+  s_63c6ee080d73c3::t_655011ae95490e 241-258
+governance/graph.json
+  s_2e30bff6169f7a::t_8341bd9f245f88 2670,2673,2728-2740,18715-18720,18733-18750,18937-18948
+governance/lib/vendored-gate-classify.mjs
+  s_63c6ee080d73c3::t_9f5cbd88e7a948 1-189
+governance/plans/brand-recycle/E-ENFORCE.md
+  s_63c6ee080d73c3::t_0bd6f7196ef8f2 4,12-16,19-22,25-27,30-81,87-94,97-250,253,255-257,259-260,264,266,270,273-280,284-291,293-294
+governance/plans/brand-recycle/WOW-TAIL.md
+  s_63c6ee080d73c3::t_7f83c633956888 1-130
+governance/plans/brand-recycle/comps/wow-tail-v1.html
+  s_63c6ee080d73c3::t_f4bc423a12288b 1-593
+governance/plans/namespace-substrate/RECEIPTS.md
+  s_63c6ee080d73c3::t_5a849676bb85bb 564-592
+governance/plans/namespace-substrate/VENDOR-TICKET-DRAFT.md
+  s_63c6ee080d73c3::t_a005e749ae92ec 81-88
+governance/plans/public-supply-chain/E4-GAM-PUBLIC.md
+  s_63c6ee080d73c3::t_86700c8af61ae3 465-518
+governance/plans/wave-sec-fleet/E1-GATE.md
+  s_63c6ee080d73c3::t_b954c0eae3c116 16-22,258-295
+governance/test/vendored-gate-audit.test.mjs
+  s_63c6ee080d73c3::t_0e9ea96fc8c22c 1-232
+governance/DASHBOARD.md
+  s_63c6ee080d73c3::t_db893e32bf4bee 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d5c701dc00917d119062bebdf504c1eccd8717b4",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

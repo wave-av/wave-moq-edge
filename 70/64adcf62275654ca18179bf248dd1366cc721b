@@ -1,0 +1,53 @@
+rules/api-first-four-renderings.md
+  s_5cbf4551cb8d57::t_171868ecd2f0a4 6
+rules/claim-to-receipt.md
+  s_5cbf4551cb8d57::t_6efc04b913c82d 6
+rules/containers.md
+  s_5cbf4551cb8d57::t_470483c568a2df 6
+rules/designs-grounded-in-the-real-system.md
+  s_5cbf4551cb8d57::t_d52056dafb55e3 6
+rules/dispatch-moat.md
+  s_5cbf4551cb8d57::t_b50420c9ac5bd9 6
+rules/dogfood.md
+  s_5cbf4551cb8d57::t_e025407eb7f175 6
+rules/fleet-rig-probe.md
+  s_5cbf4551cb8d57::t_98f5bcd27dd2cc 6
+rules/four-renderings-or-half-shipped.md
+  s_5cbf4551cb8d57::t_779e51855c0c4d 6
+rules/leverage-or-build.md
+  s_5cbf4551cb8d57::t_51661594a84545 6
+rules/llm-funnel-gateway.md
+  s_5cbf4551cb8d57::t_940409fc14d4ed 6
+rules/meter-the-value-not-the-connector.md
+  s_5cbf4551cb8d57::t_d1a95e2d76d1e2 6
+rules/model-registry-is-the-source-of-truth.md
+  s_5cbf4551cb8d57::t_37ce9b45762f80 6
+rules/model-routing-is-data-not-opinion.md
+  s_5cbf4551cb8d57::t_cfc7abb00435c6 6
+rules/rebuild-not-pull.md
+  s_5cbf4551cb8d57::t_7f1a8d44049862 6
+rules/routing-plane-unification.md
+  s_5cbf4551cb8d57::t_10a428b8dcd2e0 6
+rules/variance-before-routing.md
+  s_5cbf4551cb8d57::t_87afe45fc5a76d 6
+rules/vendor-agnostic-by-default.md
+  s_5cbf4551cb8d57::t_c65e07cc829f05 6
+rules/voice-law.md
+  s_5cbf4551cb8d57::t_7c3734dac8a6d6 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7064adcf62275654ca18179bf248dd1366cc721b",
+  "prompts": {},
+  "sessions": {
+    "s_5cbf4551cb8d57": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a862d0a5eff9b5c73",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

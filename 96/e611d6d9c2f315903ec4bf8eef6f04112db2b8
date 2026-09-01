@@ -1,0 +1,34 @@
+hooks/tests/public-github-write-gate.test.sh
+  s_364605915bb7ec::t_d45863de06e2bb 98-102
+  s_364605915bb7ec::t_879c7c2e867237 71-83
+  s_364605915bb7ec::t_4198d04aa446a4 134-144
+  s_364605915bb7ec::t_6c1b2abc7bb4c1 184-191
+hooks/lib/gh_command_shape.py
+  s_364605915bb7ec::t_c6c6b71ad91979 170-171
+  s_364605915bb7ec::t_cd16499661fff4 228-232
+  s_364605915bb7ec::t_e6b1b29bbc2a9e 113-118
+  s_364605915bb7ec::t_00c57696f9cc18 169,172-173
+  s_364605915bb7ec::t_86a6a66a353700 234-236
+hooks/tests/public-github-write-gate-cwd.test.sh
+  s_364605915bb7ec::t_e07743229158a6 204-223
+hooks/lib/gh_write_scan.py
+  s_364605915bb7ec::t_ee675157311b67 154-160,162,164-166
+  s_364605915bb7ec::t_a1778467bf70a5 161
+  s_364605915bb7ec::t_3e3e627dcc7949 163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "96e611d6d9c2f315903ec4bf8eef6f04112db2b8",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

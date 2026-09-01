@@ -1,0 +1,23 @@
+hookcli/tests/lib/t4-fixtures.sh
+  s_02abc74f4971c7::t_910c07701ba3f1 32-52
+hookcli/tests/t4-sentinel-integrity.sh
+  s_02abc74f4971c7::t_9d10ae0702e8ce 1-90
+hookcli/tests/lib/modules.sh
+  s_02abc74f4971c7::t_6b50798d069439 38-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "62a3e31ecdda6c8aa45d611b651d735ae2a2fcb2",
+  "prompts": {},
+  "sessions": {
+    "s_02abc74f4971c7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6cdd4954-767c-4394-b73f-50b53ed40361",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

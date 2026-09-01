@@ -1,0 +1,25 @@
+governance/bin/registry-sync-fleet.mjs
+  s_e2e3e43d0638c5::t_93c7a618d5ab6d 1-25,27-186
+  s_e2e3e43d0638c5::t_85999fe7a174cb 26
+  s_e2e3e43d0638c5::t_1becc24cc06831 187-193
+governance/test/registry-sync-fleet.test.mjs
+  s_e2e3e43d0638c5::t_6330dc2a236ada 1-73
+.github/workflows/fleet-drift.yml
+  s_e2e3e43d0638c5::t_741eb45424c22a 132-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b0259965b0ad2c67338e7979092df356ee66089c",
+  "prompts": {},
+  "sessions": {
+    "s_e2e3e43d0638c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1c78a7f2-132a-470e-8dae-4f28336b528f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

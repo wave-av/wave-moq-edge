@@ -1,0 +1,25 @@
+governance/plans/stripe-settlement-truth/E0-BOUNDARY.md
+  s_37d3f61160b2dd::t_3facf596092bf0 118-133
+governance/plans/stripe-settlement-truth/E4-JOIN.md
+  s_37d3f61160b2dd::t_f203fdf0aae2d9 4,99,102-119
+governance/plans/stripe-settlement-truth/E5-TRIANGLE.md
+  s_37d3f61160b2dd::t_280ccb2ad713b7 81-82
+governance/plans/stripe-settlement-truth/RECEIPTS.md
+  s_37d3f61160b2dd::t_3bc4db8313de18 969-1076
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "ededb545eb30632ad8c0179734e9eb0a48559c53",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

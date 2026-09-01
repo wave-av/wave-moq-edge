@@ -1,0 +1,115 @@
+scripts/prove.ts
+  s_672079ccfe8ce6::t_20f6dea7e74b47 52-60
+package.json
+  s_672079ccfe8ce6::t_d729944f8f5493 16-17
+  s_672079ccfe8ce6::t_8afe2f8d8cb07e 15
+  s_672079ccfe8ce6::t_9853998cf1da28 7,24-27,39
+.gitignore
+  s_9673f7dc0983fb::t_0931c73a7ef6f1 8
+CHANGELOG.internal.md
+  s_9673f7dc0983fb::t_38767a96d1e28a 1-19
+CHANGELOG.md
+  s_9673f7dc0983fb::t_4bfaa193e76e1f 1-18
+catalog/cost-ledger-receipt.json
+  s_9673f7dc0983fb::t_1fd3e37ffac6f5 1-6
+catalog/models.json
+  s_9673f7dc0983fb::t_5a7d0e869043f5 1-165054
+docs/ADR-0001-live-config-is-the-repo.md
+  s_9673f7dc0983fb::t_0c92a3691e56e4 29-30,33,36-52,72-87
+docs/E-EVAL-LEADERBOARD.md
+  s_9673f7dc0983fb::t_15d48ebbf12ddb 1-45
+docs/PLAN-E6-E12.md
+  s_9673f7dc0983fb::t_4b8f3db3be563f 1-33
+docs/PROVIDER-CAPABILITY-MAP.md
+  s_9673f7dc0983fb::t_785952afc9b122 72-90
+opencode-model-router.state.json
+  s_9673f7dc0983fb::t_af3e6358fceb0d 1-4
+opencode.json
+  s_9673f7dc0983fb::t_23e44a36f91c98 594-595
+plugins/path-env.ts
+  s_9673f7dc0983fb::t_37cfc590e070d4 1-23
+router/src/index.ts
+  s_9673f7dc0983fb::t_ce2ff66e41b5c3 1097-1139
+router/tiers.json
+  s_9673f7dc0983fb::t_52e6f49ca75065 10-12
+scripts/assess.ts
+  s_9673f7dc0983fb::t_3594d388757041 1-196
+scripts/battle.ts
+  s_9673f7dc0983fb::t_22e6bb19c3f660 1-33
+scripts/bench.ts
+  s_9673f7dc0983fb::t_910d323fe6fa7a 1-148
+scripts/caption.ts
+  s_9673f7dc0983fb::t_d156eb143c91a4 1-30
+scripts/catalog-external.ts
+  s_9673f7dc0983fb::t_49ab34926d55c6 1-209
+scripts/embed.ts
+  s_9673f7dc0983fb::t_638e8862f11099 1-7
+scripts/firecrawl.ts
+  s_9673f7dc0983fb::t_4091ecaf3adee4 1-69
+scripts/grok-img.ts
+  s_9673f7dc0983fb::t_60702644d6a27e 1-30
+scripts/grok-vid.ts
+  s_9673f7dc0983fb::t_269bbe2d8e2a6d 1-23
+scripts/guard.ts
+  s_9673f7dc0983fb::t_c4816f2380c8c0 1-29
+scripts/img.ts
+  s_9673f7dc0983fb::t_30f9bffd572482 1-29
+scripts/judge.ts
+  s_9673f7dc0983fb::t_fcd0483ac3577e 1-127
+scripts/parallel.ts
+  s_9673f7dc0983fb::t_2f0dc36ba8a2d6 1-7
+scripts/pipeline.ts
+  s_9673f7dc0983fb::t_21e712939ea810 1-194
+scripts/platform.ts
+  s_9673f7dc0983fb::t_f5ea840265f43f 1-127
+scripts/qstash.ts
+  s_9673f7dc0983fb::t_b00c2045026cfe 1-21
+scripts/rag.ts
+  s_9673f7dc0983fb::t_5059825fc856b2 1-90
+scripts/redis.ts
+  s_9673f7dc0983fb::t_492818e9027bc5 1-23
+scripts/rerank.ts
+  s_9673f7dc0983fb::t_b0e13acefbe392 1-8
+scripts/runpod.ts
+  s_9673f7dc0983fb::t_c45d98a24b7dde 1-37
+scripts/search.ts
+  s_9673f7dc0983fb::t_a5eb5d31a6e226 1-13
+scripts/stt.ts
+  s_9673f7dc0983fb::t_a1e8592efb05c9 1-7
+scripts/summarize.ts
+  s_9673f7dc0983fb::t_4a55a25bbbff58 1-11
+scripts/test-spec.ts
+  s_9673f7dc0983fb::t_12c9409291ea14 1-140
+scripts/translate.ts
+  s_9673f7dc0983fb::t_b562ad2f554803 1-9
+scripts/tts.ts
+  s_9673f7dc0983fb::t_862ebcdbb10012 1-7
+scripts/vector.ts
+  s_9673f7dc0983fb::t_0080b35e8590e6 1-29
+scripts/watchdog.ts
+  s_9673f7dc0983fb::t_d47fafb8cbef43 51,68-74,85-131,137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "05b4883c6dfb1c812b1b0e5d91364bcb9955d863",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

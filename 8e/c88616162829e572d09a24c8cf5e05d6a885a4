@@ -1,0 +1,51 @@
+.github/workflows/release-observability.yml
+  s_364605915bb7ec::t_70f7c13fed366e 33-35
+  s_364605915bb7ec::t_ab442ec7ba27b4 77
+.github/workflows/release-messaging.yml
+  s_364605915bb7ec::t_a617b75143c59e 33-35
+  s_364605915bb7ec::t_7f65002670d9a8 77
+.github/workflows/release-whip-publish.yml
+  s_364605915bb7ec::t_c37166bf9790ea 33-35
+  s_364605915bb7ec::t_06fba63ef6307b 78
+.github/workflows/release-content-hash.yml
+  s_364605915bb7ec::t_55e11342c81a3f 33-35
+  s_364605915bb7ec::t_7b7516226f229c 78
+.github/workflows/release-spoke-chassis.yml
+  s_364605915bb7ec::t_c4d201c18c5c12 34-36
+  s_364605915bb7ec::t_1e33645d9d9084 85
+scripts/status-context-conformance.test.mjs
+  s_364605915bb7ec::t_024ede3d2e6b97 201-220
+  s_364605915bb7ec::t_51a29de4c2864c 152-184
+.github/workflows/telemetry-conformance.yml
+  s_364605915bb7ec::t_72294f706a1fff 40-43
+.github/workflows/verify-loop.yml
+  s_364605915bb7ec::t_6de0c616a06bfb 6-10
+  s_364605915bb7ec::t_1e8b2ee6fb3752 26-29
+.github/workflows/release-egress-baseband.yml
+  s_364605915bb7ec::t_80b67c9e097b5c 33-35
+  s_364605915bb7ec::t_bd2d8f0b03df47 78
+scripts/status-context-conformance.mjs
+  s_364605915bb7ec::t_0fd305259e813c 270-277
+  s_364605915bb7ec::t_d5624f12751903 32-41
+.github/workflows/release-container-pool.yml
+  s_364605915bb7ec::t_7d9cd2db93d7cf 81
+  s_364605915bb7ec::t_d932709574de52 30-32
+.status-context-baseline.txt
+  s_364605915bb7ec::t_2c4d4d72d74a8a 1-10,12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "8ec88616162829e572d09a24c8cf5e05d6a885a4",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

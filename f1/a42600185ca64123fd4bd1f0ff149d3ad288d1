@@ -1,0 +1,22 @@
+governance/bin/model-router.mjs
+  s_13086dcbacd4a6::t_39fbe1f57114d1 26
+  s_13086dcbacd4a6::t_2efcb6c9e1ea63 168-179,182-204,209-242,254-258
+  s_13086dcbacd4a6::t_505e2734793fea 205-208
+  s_13086dcbacd4a6::t_c70d955590d884 180-181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "f1a42600185ca64123fd4bd1f0ff149d3ad288d1",
+  "prompts": {},
+  "sessions": {
+    "s_13086dcbacd4a6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef676a74ffeGDIpvQIhMKNdae",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

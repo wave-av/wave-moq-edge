@@ -1,0 +1,30 @@
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_fed391465a5384::t_020276527a484f 389-399
+governance/plans/cost-to-serve/E0-JOIN-POLICY.md
+  s_fed391465a5384::t_354a6fb2b17bd0 4-5,10-20,23-25,31-35,37-42,44-49,53-75,81-84
+governance/plans/cost-to-serve/E1-ALLOCATION-ENGINE.md
+  s_fed391465a5384::t_78aef79546b477 3-4,10-17,21,24-99,104-107
+governance/plans/cost-to-serve/20260813000000_cost_ledger_attribution.sql
+  s_fed391465a5384::t_0f4353eacb332b 1-32,35-38,40-84
+  s_fed391465a5384::t_3c57ae09be4eec 33-34,39
+governance/plans/cost-to-serve/E4-CONSUMER-SURFACE.md
+  s_fed391465a5384::t_aa987a3d2c1bd6 4-7,12-66,72-74
+governance/plans/cost-to-serve/RECEIPTS.md
+  s_fed391465a5384::t_0e41509f89a051 110-134,137-141
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fba23263d74a6928028e42d5d6875854f32a1cf1",
+  "prompts": {},
+  "sessions": {
+    "s_fed391465a5384": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_006564961ffeZhHbGEnsZSLoS0",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

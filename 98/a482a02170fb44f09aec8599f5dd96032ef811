@@ -1,0 +1,27 @@
+governance/bin/wave-cost-ledger-supabase-puller.mjs
+  s_a293da4db5caf2::t_54bc00262a0e33 103-113
+governance/lib/wave-cost-ledger-supabase.mjs
+  s_a293da4db5caf2::t_93eeec52e3e273 78-83,121,131-144,201-211
+governance/test/wave-cost-ledger-supabase-fixture.mjs
+  s_a293da4db5caf2::t_4436bbfde91e14 1-36
+governance/test/wave-cost-ledger-supabase-rows.test.mjs
+  s_a293da4db5caf2::t_50b8328302ff6a 1-286
+governance/test/wave-cost-ledger-supabase.test.mjs
+  s_a293da4db5caf2::t_81c5a3bf37fd2e 1-6,10,12-14,139-153
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "98a482a02170fb44f09aec8599f5dd96032ef811",
+  "prompts": {},
+  "sessions": {
+    "s_a293da4db5caf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "18238d09-1683-467c-8f81-7b4082886b91",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

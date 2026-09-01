@@ -1,0 +1,25 @@
+frameworks/gates/scripts/verify-merge-receipt.sh
+  s_364605915bb7ec::t_437eea66448d7d 1-152
+frameworks/gates/scripts/pre-push.sh
+  s_364605915bb7ec::t_832656fd5c426f 28-33
+frameworks/gates/README.md
+  s_364605915bb7ec::t_c086d73f98b173 86-109
+frameworks/gates/test-verify-merge-receipt.sh
+  s_364605915bb7ec::t_c971c4e88edb6d 1-296
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "6b06fcb4c9d734e150348a71e75f0fe6dfc69c50",
+  "prompts": {},
+  "sessions": {
+    "s_364605915bb7ec": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d367c84a-2390-40de-b101-d4f0e674783a",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

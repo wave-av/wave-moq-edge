@@ -1,0 +1,36 @@
+governance/lib/drill-fixtures-outtree.mjs
+  s_60a20469ef4369::t_43a4a15588b2af 20
+  s_60a20469ef4369::t_93b0d99bf43221 63-92
+  s_60a20469ef4369::t_79347f0561d4e1 132-134
+  s_60a20469ef4369::t_d8bd6ac65ebf87 143-144
+  s_60a20469ef4369::t_64fb8f6f89ff9e 109-118
+capabilities/bin/build.mjs
+  s_60a20469ef4369::t_04001291e35f76 185-193
+  s_60a20469ef4369::t_0c2c0bc2fe877c 25
+capabilities/tests/run.mjs
+  s_60a20469ef4369::t_7c8ee96a1751fc 109-119,122
+  s_60a20469ef4369::t_0c334ca29c812f 10
+  s_60a20469ef4369::t_30f82bcc480771 100-108,120-121,123-149
+capabilities/bin/check.mjs
+  s_60a20469ef4369::t_16e710bd5984ca 18,22
+  s_60a20469ef4369::t_1923313d99e3a6 193-201,204-210
+  s_60a20469ef4369::t_0fefb465fade3b 146-150,152-157
+governance/lib/drill-decide.mjs
+  s_60a20469ef4369::t_aa1159dd6e280c 57-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e2e9cd88620512230124dcb5357be9acc37bf75f",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

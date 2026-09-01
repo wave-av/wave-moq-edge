@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/FLEET-SCALE-LADDER.md
+  s_700cd0ad928eea::t_0436d346aeaa28 11-13
+governance/plans/ffmpeg9-lei/SCALE-LADDER.md
+  s_700cd0ad928eea::t_849a75511719ae 29-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4b1135c32ea195cb11264799f88ae8548827a758",
+  "prompts": {},
+  "sessions": {
+    "s_700cd0ad928eea": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f039e026-e3e5-49b1-b92f-19044c57b603",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+hooks/autonomous-loop-breaker.sh
+  s_96280c922a9418::t_7aa54812be6e85 37-66
+hooks/manifest.json
+  s_96280c922a9418::t_4382d7ba6dad7d 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "72af5402e4613e09369d017d72e174ab8f5b1734",
+  "prompts": {},
+  "sessions": {
+    "s_96280c922a9418": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "07c28e8e-c6ea-41fa-b8a9-2a5d719c0cfc",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

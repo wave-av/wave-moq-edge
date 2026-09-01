@@ -1,0 +1,23 @@
+governance/automation-registry/lib/webhook-server.mjs
+  s_2606de950a60c6::t_b9583cfe040ccc 14,17,25-32
+governance/test/automation-registry/webhook-signature.test.mjs
+  s_2606de950a60c6::t_05936472a9a044 1-36
+governance/automation-registry/lib/webhook-signature.mjs
+  s_2606de950a60c6::t_539f3afbfb7d0f 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1c53a3364053bfbc99b6b7205071f2e32e4762be",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

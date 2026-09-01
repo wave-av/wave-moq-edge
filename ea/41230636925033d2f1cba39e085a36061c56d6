@@ -1,0 +1,21 @@
+rules/platform-degradation-declared-not-assumed.md
+  s_941b8f0612ec3e::t_74b45240571c68 1-61
+rules/hold-under-platform-degradation.md
+  s_941b8f0612ec3e::t_3f757816cdbd32 1-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ea41230636925033d2f1cba39e085a36061c56d6",
+  "prompts": {},
+  "sessions": {
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+scripts/bugbot/governance.py
+  ai_agent 1-70
+scripts/bugbot/testgen.py
+  ai_agent 1-70
+scripts/bugbot/triage.py
+  ai_agent 1-82
+tests/test_bugbot.py
+  ai_agent 445-482,545
+scripts/bugbot/lifecycle.py
+  ai_agent 1-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "d63c11d8b5316bc95db30062f82b472ae9e569ce",
+  "prompts": {}
+}

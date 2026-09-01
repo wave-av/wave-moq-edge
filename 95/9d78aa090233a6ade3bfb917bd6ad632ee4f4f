@@ -1,0 +1,23 @@
+packages/spoke-chassis/package.json
+  s_eb2f7e65359b4f::t_c7e307bde823cd 3
+packages/spoke-chassis/CHANGELOG.md
+  s_eb2f7e65359b4f::t_0811a78e48f805 5-9,15-21
+packages/spoke-chassis/src/version.ts
+  s_eb2f7e65359b4f::t_d8d3147d2e67b9 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.8",
+  "base_commit_sha": "959d78aa090233a6ade3bfb917bd6ad632ee4f4f",
+  "prompts": {},
+  "sessions": {
+    "s_eb2f7e65359b4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b3d1e764-db6f-4033-aa5b-ac1ed7a4fb4b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

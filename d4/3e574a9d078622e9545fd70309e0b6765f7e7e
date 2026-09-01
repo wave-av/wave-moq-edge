@@ -1,0 +1,37 @@
+governance/plans/one-system-of-record/NORTH-STAR.md
+  s_d9915bbafa9657::t_d1932553eddeaf 57
+governance/plans/absence-never-reads-as-pass/E0-CLASS.md
+  s_d9915bbafa9657::t_1d9a735db2b16e 9
+  s_d9915bbafa9657::t_9c2f35736391ae 13
+governance/plans/lawbook-fleet-distribution/NORTH-STAR.md
+  s_d9915bbafa9657::t_e9ce8df778d42d 83
+governance/plans/agent-lease-protocol/NORTH-STAR.md
+  s_d9915bbafa9657::t_4391e19c01249d 45
+governance/plans/merge-readiness-required/NORTH-STAR.md
+  s_d9915bbafa9657::t_18212e0e2057c9 37
+  s_d9915bbafa9657::t_a9869ff49bf22f 72
+governance/plans/reviewer-liveness-billing/NORTH-STAR.md
+  s_d9915bbafa9657::t_d9587472382951 87
+  s_d9915bbafa9657::t_f8e968239dafba 42
+governance/plans/receipt-bus/NORTH-STAR.md
+  s_d9915bbafa9657::t_eda6c43edddd0b 96
+governance/plans/absence-never-reads-as-pass/NORTH-STAR.md
+  s_d9915bbafa9657::t_bb776ad1a85687 43
+  s_d9915bbafa9657::t_9ee733dd7906ed 65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "d43e574a9d078622e9545fd70309e0b6765f7e7e",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

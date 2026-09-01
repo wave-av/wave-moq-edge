@@ -1,0 +1,19 @@
+compliance/bridge-kyb/PAYOUT-RAILS-ARMING.md
+  s_3877d796eb5a27::t_4071cf477d2be1 1-283
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "1f861794aa6fde93edd58a0363b34737240a5b23",
+  "prompts": {},
+  "sessions": {
+    "s_3877d796eb5a27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fc46d76cfffeDvkhmSzI2Ugxxi",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.github/workflows/harvest-backfill.yml
+  s_0b987fef4e1240::t_cc9b5b43878735 87,94-101
+  s_0b987fef4e1240::t_d596610db4738f 125-130,135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "6ce830cb750d20517f8a33a2fc364d2b848ed252",
+  "prompts": {},
+  "sessions": {
+    "s_0b987fef4e1240": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "21394c51-a8b3-47aa-8732-e865e38a29b0",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

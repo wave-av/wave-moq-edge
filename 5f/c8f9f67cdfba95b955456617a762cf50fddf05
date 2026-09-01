@@ -1,0 +1,213 @@
+governance/DANGLING-REFS-BASELINE.json
+  s_6f6453b23e3805::t_2ee14cc15cbc74 24-25,107-111
+governance/README.md
+  s_6f6453b23e3805::t_11ebeba413907f 62-68
+governance/bin/cron-failover-jobs.mjs
+  s_6f6453b23e3805::t_35433f63982ba3 1-170
+governance/bin/cron-failover.mjs
+  s_6f6453b23e3805::t_67054446ed911f 1-289
+governance/bin/plan-lint.mjs
+  s_6f6453b23e3805::t_55a979f0121852 26-27,157-162,167,183-235
+governance/lib/cron-failover-jobmatch.mjs
+  s_6f6453b23e3805::t_8c082a2f9658c0 1-139
+governance/lib/cron-failover-plan.mjs
+  s_6f6453b23e3805::t_f1ea18a7f38bb0 1-62
+governance/lib/epic-status-parse.mjs
+  s_6f6453b23e3805::t_320eff9f991059 39-48
+governance/lib/epic-status-verdict.mjs
+  s_6f6453b23e3805::t_3cf93207783185 10,74-87,89-90
+governance/lib/markdown-mask.mjs
+  s_6f6453b23e3805::t_b762caa627b809 42-46
+governance/lib/mutates.mjs
+  s_6f6453b23e3805::t_5026dd87295ceb 1-177
+governance/lib/work-nodes.mjs
+  s_6f6453b23e3805::t_bb2e12e223905d 54-58,60-67,69
+governance/plans/CRYPTO-RAIL-GATEWAY-MIGRATION-SPEC.md
+  s_6f6453b23e3805::t_d810c411363df5 3
+governance/plans/DECISION-CLOUDFLARE-ACCOUNT-TOPOLOGY.md
+  s_6f6453b23e3805::t_f01dc41b14e9b4 1-318
+governance/plans/DECISION-METERING-SEAM-FENCE-IS-FLEET-WIDE.md
+  s_6f6453b23e3805::t_6ba49264ddc0bc 1-162
+governance/plans/EFFICIENT-FRONTIER-ORCHESTRATION.md
+  s_6f6453b23e3805::t_0a4a254b0c1fd0 43-46,53-56,63-66,73-76,82-85,91-94,99-102
+governance/plans/actions-execution-integrity/E1-CENSUS.md
+  s_6f6453b23e3805::t_d4f8c656871d77 36-42,51-57,68-75,86-92,103-108
+governance/plans/actions-execution-integrity/E2-PIN.md
+  s_6f6453b23e3805::t_1a1adcb4e78bff 52-60,70-77,88-93,102-109
+governance/plans/actions-execution-integrity/E3-SPINE.md
+  s_6f6453b23e3805::t_bfa3059d2d0be8 59-67,78-87,97-103,114-121,130-137
+governance/plans/actions-execution-integrity/E4-INGRESS.md
+  s_6f6453b23e3805::t_9f3f8f65a3d105 92-99,110-117,128-136,147-154
+governance/plans/actions-execution-integrity/E5-IDENTITY.md
+  s_6f6453b23e3805::t_52caf00611a5d4 66-72,83-89,99-106,116-122
+governance/plans/actions-execution-integrity/E6-POLICY.md
+  s_6f6453b23e3805::t_8bbcdcf7b1b688 48-55,66-73,83-91,103-109,119-126
+governance/plans/actions-execution-integrity/E7-DERIVE.md
+  s_6f6453b23e3805::t_0e68e2c068faeb 77-83,94-101,111-119,130-137
+governance/plans/actions-execution-integrity/E8-RATCHET.md
+  s_6f6453b23e3805::t_5808dd1e266d9a 41-47,58-65,75-80,90-98,108-114
+governance/plans/agentic-wave/E0-WAVE-MARKETPLACE.md
+  s_6f6453b23e3805::t_18d708c1cd9fbd 59-61,89-90,107-108,123-124
+governance/plans/agentic-wave/E1-AGENT-TAXONOMY.md
+  s_6f6453b23e3805::t_b1ec0a728be746 70-72,92-93,109-111,124-125
+governance/plans/agentic-wave/E10-AGENT-EVAL-AND-DRIFT.md
+  s_6f6453b23e3805::t_6b5844db1ac751 129
+governance/plans/agentic-wave/E2-CI-AGENT-CHASSIS.md
+  s_6f6453b23e3805::t_ab8c3d4b4bd387 244-246,259-261,311-313,388,436-438
+governance/plans/agentic-wave/E4-REVIEW-LATTICE.md
+  s_6f6453b23e3805::t_e95d10d5e38cd6 175-178,293-296,318-319,340-341
+governance/plans/agentic-wave/E5-SCHEDULED-FLEET-JOBS.md
+  s_6f6453b23e3805::t_bded0a1b639385 154,193,211,228
+governance/plans/agentic-wave/E6-KNOWLEDGE-WORK.md
+  s_6f6453b23e3805::t_9edf8d13c25193 203-204,223-224,239-240,273-274
+governance/plans/agentic-wave/E7-AGENT-FLEET-OBSERVABILITY.md
+  s_6f6453b23e3805::t_069501a4b8e205 209-210,238-239,259-260,282-284
+governance/plans/agentic-wave/E8-AGENT-SDK-PRODUCTS.md
+  s_6f6453b23e3805::t_9b1f7a787bb87b 49-51,74-76,88-90,103-105
+governance/plans/agentic-wave/E9-CONFORMANCE-AND-CANARY.md
+  s_6f6453b23e3805::t_59f1dc7a142750 110-112,305-307,352-354,369-371
+governance/plans/claude-code-upstream-absorption/E4-VERIFY.md
+  s_6f6453b23e3805::t_89fc9fb8775ea6 10,15-16,21,30-39
+governance/plans/effective-authority/E1-INSTALLATIONS.md
+  s_6f6453b23e3805::t_de5a879d83e38e 30-37,47-56,68-77
+governance/plans/effective-authority/E2-DEFAULTS.md
+  s_6f6453b23e3805::t_ca54ff1798f220 39-47,56-65,74-81
+governance/plans/effective-authority/E3-OIDC.md
+  s_6f6453b23e3805::t_304e8300ba9362 54-61,73-81,103-113
+governance/plans/effective-authority/E4-DISPATCH.md
+  s_6f6453b23e3805::t_422926ac0e0c36 38-46,56-64,73-81
+governance/plans/effective-authority/E5-CEILING.md
+  s_6f6453b23e3805::t_4c11fa1de2183b 49-57,67-75,85-93
+governance/plans/effective-authority/E6-BLAST.md
+  s_6f6453b23e3805::t_344dc40f0e8c9f 41-49,59-67,77-85
+governance/plans/effective-authority/E7-RATCHET.md
+  s_6f6453b23e3805::t_83554bd5cfe205 44-52,62-69,79-87
+governance/plans/ffmpeg9-lei/E2-PINS.md
+  s_6f6453b23e3805::t_e99e2898200678 121-130,144-152,165-173,185-193
+governance/plans/ffmpeg9-lei/E3-MEASURE.md
+  s_6f6453b23e3805::t_ae408e338db02e 98-107,119-127,139-148,161-170
+governance/plans/ffmpeg9-lei/E4-ONNX.md
+  s_6f6453b23e3805::t_ef0910265dcdde 106-115,128-137,149-158,171-181,193-202
+governance/plans/ffmpeg9-lei/E7-STREAMING.md
+  s_6f6453b23e3805::t_e273edd94f171e 106-114,128-137,148-157,167-175
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_6f6453b23e3805::t_f6bbd49a661d5d 334-339
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch1-cover.md
+  s_6f6453b23e3805::t_e086e6edaabeeb 3-24,50-53
+governance/plans/finding-closure/E0-BLEEDING.md
+  s_6f6453b23e3805::t_732bca54c1707f 43-51,62-69,78-87,96-103
+governance/plans/finding-closure/E1-OWNERSHIP.md
+  s_6f6453b23e3805::t_3cf07e9b49a8c1 262-270,279-287,297-306,481-488
+governance/plans/finding-closure/E2-SLA.md
+  s_6f6453b23e3805::t_b0705b53fe0591 43-52,61-69,78-86,96-103
+governance/plans/finding-closure/E3-GATES.md
+  s_6f6453b23e3805::t_10badbec7ec63e 12-44,78-86,95-104,114-122,132-141
+governance/plans/finding-closure/E4-BURNDOWN.md
+  s_6f6453b23e3805::t_a67f27dcec0bf3 40-50,61-70,80-89,98-106
+governance/plans/finding-closure/E5-PORTFOLIO.md
+  s_6f6453b23e3805::t_f42b36b679163d 58-66,75-83,92-100,110-117
+governance/plans/finding-closure/E6-RUNTIME.md
+  s_6f6453b23e3805::t_f03fbadc080024 44-53,63-72,82-90,100-108
+governance/plans/finding-closure/E7-MEASURE.md
+  s_6f6453b23e3805::t_dbcb578e9a8814 57-66,77-85,95-103,113-120
+governance/plans/merge-path-parity/E0-INVENTORY.md
+  s_6f6453b23e3805::t_15fbfd14c9b6fb 1-47
+governance/plans/merge-path-parity/E1-CONFORMANCE.md
+  s_6f6453b23e3805::t_912101d2ffefde 1-70
+governance/plans/merge-path-parity/E2-RECONCILE.md
+  s_6f6453b23e3805::t_3f26211c1627b8 1-41
+governance/plans/merge-path-parity/E3-PATH-SHARE.md
+  s_6f6453b23e3805::t_ed6f17470382d0 1-60
+governance/plans/merge-path-parity/NORTH-STAR.md
+  s_6f6453b23e3805::t_aa13d1e473f2c9 1-143
+governance/plans/metronome-m-phases/E4-WEBHOOK-GOLIVE.md
+  s_6f6453b23e3805::t_ea59c6bd5fa720 29-31
+governance/plans/model-economy/E1-SENSE.md
+  s_6f6453b23e3805::t_812dc533f68f62 28-35,115-121,183-190,250-257
+governance/plans/model-economy/E2-ADMIT.md
+  s_6f6453b23e3805::t_d4e5e7a15767fb 34-40,78-85,148-154,210-216
+governance/plans/model-economy/E3-REACH.md
+  s_6f6453b23e3805::t_4c26f68f6e0238 31-37,68-74,111-116,151-157
+governance/plans/model-economy/E4-MEASURE.md
+  s_6f6453b23e3805::t_2cb3663f2d1563 36-42,106-112,188-194,253-258,317-323
+governance/plans/model-economy/E5-PRICE.md
+  s_6f6453b23e3805::t_edbf1840560222 34-40,86-92,137-143,188-194
+governance/plans/model-economy/E6-ROUTE.md
+  s_6f6453b23e3805::t_08dfd1d5e902d3 36-42,86-94,151-157,188-194
+governance/plans/model-economy/E7-OFFER.md
+  s_6f6453b23e3805::t_b22a22b79b0f5b 36-43,88-94,137-144,188-194
+governance/plans/model-economy/E8-FLYWHEEL.md
+  s_6f6453b23e3805::t_b4a92b81cc46b2 34-40,101-107,152-159,205-210
+governance/plans/model-economy/TEMPLATE.md
+  s_6f6453b23e3805::t_189941c7ab1864 103-313
+governance/plans/pen-design-lane/E1-GUARDRAILS.md
+  s_6f6453b23e3805::t_9706785a9530de 1-13
+governance/plans/pen-design-lane/E2-DATA-HANDLING.md
+  s_6f6453b23e3805::t_d8d69690a0a680 1-19
+governance/plans/pen-design-lane/E3-BRAND-TOKENS.md
+  s_6f6453b23e3805::t_d709c056d1a6a6 1-11
+governance/plans/pen-design-lane/E4-INTENT-SPECS.md
+  s_6f6453b23e3805::t_7b446ca882cc74 1-21
+governance/plans/pen-design-lane/E5-GRADUATE-FIRST-SURFACE.md
+  s_6f6453b23e3805::t_e33e46900ebb2f 1-21
+governance/plans/pen-design-lane/E6-DESIGN-REVIEW-GATE.md
+  s_6f6453b23e3805::t_0f914c93dfd9b2 1-11
+governance/plans/pen-design-lane/E7-SCALE.md
+  s_6f6453b23e3805::t_35f32676f43550 1-12
+governance/plans/pen-design-lane/E8-REVENUE-CHECKPOINT.md
+  s_6f6453b23e3805::t_4ddc5902158ff8 1-14
+governance/plans/pen-design-lane/NORTH-STAR.md
+  s_6f6453b23e3805::t_be0e4526c516ac 1-83
+governance/plans/reviewer-fleet/E6-BLOCKING-GATE.md
+  s_6f6453b23e3805::t_5d0f62c531528f 19-31
+governance/plans/reviewer-fleet/NORTH-STAR.md
+  s_6f6453b23e3805::t_ecb49fb6a7c2a6 1,140-161,189-199
+governance/plans/stacked-prs/E2-INTRAREPO-STACK.md
+  s_6f6453b23e3805::t_3a35e63ba8b4e3 4
+governance/plans/stacked-prs/action/E2-P1-PILOT-RECEIPT.md
+  s_6f6453b23e3805::t_74fd1e8c2ea742 1-7
+governance/test/cron-failover-cli.test.mjs
+  s_6f6453b23e3805::t_d602138f009349 1-388
+governance/test/cron-failover-jobmatch.test.mjs
+  s_6f6453b23e3805::t_beba0cd15255c1 1-201
+governance/test/cron-failover-workflow-coupling.test.mjs
+  s_6f6453b23e3805::t_a49f6ed9840ebc 1-74
+governance/test/cron-failover.test.mjs
+  s_6f6453b23e3805::t_b278ad073a109e 1-254
+governance/test/epic-status-markers.test.mjs
+  s_6f6453b23e3805::t_da90b465145838 73-76,79-86,101,103-107,118-125,228-232,245-247,262-283
+governance/test/epic-status.test.mjs
+  s_6f6453b23e3805::t_ab4a6daa0e86fe 78-112
+governance/test/mutates.test.mjs
+  s_6f6453b23e3805::t_10074fc5281eb3 1-271
+governance/test/work-nodes.deps.test.mjs
+  s_6f6453b23e3805::t_bb6e3ca48f5639 40-53
+governance/test/work-sentinel-lock.test.mjs
+  s_6f6453b23e3805::t_8374b5fb694158 48-52,54-87,89-157,161-165,167
+hooks/last-handoff-capture.sh
+  s_6f6453b23e3805::t_5a57ab277f952f 1-75
+hooks/last-handoff-restore.sh
+  s_6f6453b23e3805::t_daf293416b4f44 1-25
+hooks/tests/hook-path-integrity.test.sh
+  s_6f6453b23e3805::t_c8fbd488bb9030 228,230
+hooks/tests/matcher-capability.test.sh
+  s_6f6453b23e3805::t_26b1b9e219f6ec 107,109,118-131,136,148,156-164,167-171
+settings/settings.base.json
+  s_6f6453b23e3805::t_541f5712ee4576 634-643,803-807
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "5fc8f9f67cdfba95b955456617a762cf50fddf05",
+  "prompts": {},
+  "sessions": {
+    "s_6f6453b23e3805": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "de1b87be-6770-4480-95f9-9ade2a2d7eb6",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

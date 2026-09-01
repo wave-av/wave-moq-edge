@@ -1,0 +1,23 @@
+hookcli/tests/trajectory-emit.sh
+  s_4aa36284d4ce33::t_a06a10529954cb 122
+  s_4aa36284d4ce33::t_629b46b02eb8f6 93-113,115-121,123-125
+  s_4aa36284d4ce33::t_99f9296727db01 114
+hookcli/bin/hookcli
+  s_4aa36284d4ce33::t_177962e39f5fc8 292
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5412e025a218392e2e2a1ad03a1480baee1e2980",
+  "prompts": {},
+  "sessions": {
+    "s_4aa36284d4ce33": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0daaba5-d592-4b63-9e95-e8967f0b7542",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

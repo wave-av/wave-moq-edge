@@ -1,0 +1,21 @@
+governance/plans/ffmpeg9-lei/action/RING3-BRAINSTORM-REVENUE.md
+  s_124891ed63801b::t_2ee2ed9e8a2f84 1-242
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_70f9cb2a0f71ff 97-108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "99b4012b58b0e4438bd9ec9257e92b2acdee6fcb",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

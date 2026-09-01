@@ -1,0 +1,20 @@
+governance/test/model-retirement.test.mjs
+  s_dd42a206f882e3::t_fd9972aca78e6e 56-72
+  s_dd42a206f882e3::t_3fbe874f1fc0e7 102-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5e16dd6aaa169690bc8ee3fcca6b5108d871179b",
+  "prompts": {},
+  "sessions": {
+    "s_dd42a206f882e3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c4d671e0-c061-455a-81e5-26cac939666f",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+governance/bin/cockpit.mjs
+  s_1911ebcba68c5b::t_f7c1dc3b6fd6b9 48-49,54-61
+  s_1911ebcba68c5b::t_2c8c6997dcb275 13-14
+  s_1911ebcba68c5b::t_9a83fff0931c65 25
+  s_1911ebcba68c5b::t_88ee0bfbd09aa8 120-126,132,144
+  s_1911ebcba68c5b::t_d6304c1d83fcff 62
+governance/test/interactive-sessions.test.mjs
+  s_1911ebcba68c5b::t_538e7e5504562d 8-9
+  s_1911ebcba68c5b::t_debf14653cf86d 18
+  s_1911ebcba68c5b::t_807d6c6384d089 1-7,10-17,19-66
+governance/lib/interactive-sessions.mjs
+  s_1911ebcba68c5b::t_f5227d690f8633 1-75
+governance/test/cockpit-render.test.mjs
+  s_1911ebcba68c5b::t_76c00c244da22a 139-163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f5421305f77c84e7e3ea7e2b8d1e941a911e3703",
+  "prompts": {},
+  "sessions": {
+    "s_1911ebcba68c5b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6241c250-fea2-40f2-adae-61d7344441fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

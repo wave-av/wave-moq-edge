@@ -1,0 +1,28 @@
+AGENTS.md
+  s_70c7ac7de143f9::t_0aaf0fe0a72a8f 7-14
+  s_5427687d0e89cc::t_639274374a3fe8 3,41,69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "163ef7c3f020f8e0ee3b8ecc77a6d74f1cdedb58",
+  "prompts": {},
+  "sessions": {
+    "s_5427687d0e89cc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a2934a6d8f22d75d8",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_70c7ac7de143f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "83997bdf-781e-45a8-9495-2c4d94c522e3",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

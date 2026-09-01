@@ -1,0 +1,19 @@
+memory/fleet-todo-ledger.md
+  s_645b6dc9d1e6a9::t_2107317fb9c101 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "c1285488773c70d2a57baca053d1bd50f80b3d24",
+  "prompts": {},
+  "sessions": {
+    "s_645b6dc9d1e6a9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a8a811255b55ff8fd",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

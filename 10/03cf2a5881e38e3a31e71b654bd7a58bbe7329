@@ -1,0 +1,19 @@
+governance/ci-stack/bin/devbox-sandbox.mjs
+  s_af10bc1a37d744::t_67f4acacbbe1f2 1-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "1003cf2a5881e38e3a31e71b654bd7a58bbe7329",
+  "prompts": {},
+  "sessions": {
+    "s_af10bc1a37d744": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff358714bffeVYjEXMb7JZk5Po",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

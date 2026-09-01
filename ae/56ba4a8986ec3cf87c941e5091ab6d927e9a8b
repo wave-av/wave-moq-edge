@@ -1,0 +1,21 @@
+governance/test/wow-judge.test.mjs
+  s_2606de950a60c6::t_e029b2093979c8 1-39
+governance/voice/wow-judge.mjs
+  s_2606de950a60c6::t_1537d391a0110b 1-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ae56ba4a8986ec3cf87c941e5091ab6d927e9a8b",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

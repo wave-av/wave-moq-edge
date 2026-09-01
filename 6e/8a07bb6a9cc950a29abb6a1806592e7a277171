@@ -1,0 +1,37 @@
+governance/lib/merge-path-parity.mjs
+  s_c24357e71ae5bc::t_6ce9381933f2c1 174,177-185,187-193
+  s_c24357e71ae5bc::t_7bca6ebf8b4c79 1-173,175-176,186,194-209
+governance/test/merge-path-parity.test.mjs
+  s_c24357e71ae5bc::t_680c570e48eb91 91-132
+  s_c24357e71ae5bc::t_54537ad24d9515 1-90,133-236
+governance/bin/merge-path-parity.mjs
+  s_c24357e71ae5bc::t_dc39dd91d0ca54 1-165
+governance/merge-path-parity.json
+  s_c24357e71ae5bc::t_0e6027dfe56f7c 1-66
+governance/lib/drill-fixtures-merge-path-parity.mjs
+  s_c24357e71ae5bc::t_98a39911eebf62 1-147
+governance/plans/merge-path-parity/E1-CONFORMANCE.md
+  s_c24357e71ae5bc::t_a99cc8132d946a 95-99
+  s_c24357e71ae5bc::t_9eb23b091cdb39 4-30
+  s_c24357e71ae5bc::t_44a070b4807baf 74-78
+  s_c24357e71ae5bc::t_f89fcc70508a2b 105-112
+  s_c24357e71ae5bc::t_9db44b1b722e5e 84-89
+governance/graph.json
+  s_c24357e71ae5bc::t_d3c91d6745f1cd 26475-26486
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "6e8a07bb6a9cc950a29abb6a1806592e7a277171",
+  "prompts": {},
+  "sessions": {
+    "s_c24357e71ae5bc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b338a4db-931c-4eca-ac60-a4ea52fc3177",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

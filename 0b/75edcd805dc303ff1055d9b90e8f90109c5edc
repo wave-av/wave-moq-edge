@@ -1,0 +1,27 @@
+governance/tools/wave-twitter/wave-twitter.mjs
+  s_0213641ac58af6::t_b5b6b35aca9103 9
+  s_0213641ac58af6::t_0bd93f46c45b5d 253
+  s_0213641ac58af6::t_81c0e5b15c1167 388
+  s_0213641ac58af6::t_a637db8805ca99 240
+  s_0213641ac58af6::t_93f0a145263e77 108-110
+  s_0213641ac58af6::t_1fadf8f021abcf 243
+governance/tools/wave-twitter/acp.mjs
+  s_0213641ac58af6::t_c744c1ab994a2f 98-100
+  s_0213641ac58af6::t_94b08bdec78912 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0b75edcd805dc303ff1055d9b90e8f90109c5edc",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

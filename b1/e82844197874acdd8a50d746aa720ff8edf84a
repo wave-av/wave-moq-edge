@@ -1,0 +1,21 @@
+governance/plans/fireworks-integration/TUNING-PARAMETER-LEXICON.md
+  s_0950db28a6ae27::t_cc7c65b72dab42 1-157
+governance/plans/fireworks-integration/PARAMETER-PRESETS.md
+  s_0950db28a6ae27::t_61aa5ca97fd512 1-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b1e82844197874acdd8a50d746aa720ff8edf84a",
+  "prompts": {},
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

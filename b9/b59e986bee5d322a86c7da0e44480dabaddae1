@@ -1,0 +1,26 @@
+bin/fireworks-cost-ledger.mjs
+  s_37d3f61160b2dd::t_02f75faf18fd83 91-98
+  s_37d3f61160b2dd::t_7057c7913cf16f 99-101
+  s_37d3f61160b2dd::t_f449db2a725f51 29-30
+bin/fireworks-cost-ledger.test.mjs
+  s_37d3f61160b2dd::t_9f8d2fa5868a7f 49-76
+  s_37d3f61160b2dd::t_c012770f9d7377 20
+bin/fireworks-ledger-parse.mjs
+  s_37d3f61160b2dd::t_02b51f09328888 1-165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b9b59e986bee5d322a86c7da0e44480dabaddae1",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

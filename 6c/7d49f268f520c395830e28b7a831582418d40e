@@ -1,0 +1,26 @@
+governance/code-index/CATALOG.md
+  h_af5ac1a9798224 4707-4709,4713,4715,4795-4800
+governance/code-index/index.json
+  h_af5ac1a9798224 40186-40187,40197-40198,40208-40209,40219-40220,40241-40244,40791-40792,40802-40803,40813-40814,40824-40825,40835-40836,40846-40849
+governance/lib/wave-cost-ledger-alert-evaluate.mjs
+  h_af5ac1a9798224 27-39
+governance/lib/wave-cost-ledger-alert-write.mjs
+  h_af5ac1a9798224 79-81,97-103
+governance/lib/wave-cost-ledger-delta-detector.mjs
+  h_af5ac1a9798224 24-28,41-44,166-168
+governance/test/wave-cost-ledger-alert-write.test.mjs
+  h_af5ac1a9798224 63-65,67-89
+governance/test/wave-cost-ledger-delta-detector.test.mjs
+  h_af5ac1a9798224 35-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "6c7d49f268f520c395830e28b7a831582418d40e",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

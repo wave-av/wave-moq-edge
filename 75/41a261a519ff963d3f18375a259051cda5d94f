@@ -1,0 +1,23 @@
+governance/plans/engineering-canon/E10-surface-census/SKILL.md
+  s_9bb1b1d1d998d4::t_01d167b6e391e4 1-5
+governance/plans/fractal-decomposition/SKILL.md
+  s_9bb1b1d1d998d4::t_25725cc39ed6f0 1-5
+governance/plans/namespace-substrate/SKILL.md
+  s_9bb1b1d1d998d4::t_ec464d1f12c848 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "7541a261a519ff963d3f18375a259051cda5d94f",
+  "prompts": {},
+  "sessions": {
+    "s_9bb1b1d1d998d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1af30fe3-98cc-4596-87b9-01dba03a0970",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jake@wave.online>"
+    }
+  }
+}

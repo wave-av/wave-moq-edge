@@ -1,0 +1,37 @@
+governance/test/trust-surface-gen.test.mjs
+  s_124891ed63801b::t_ece3a88bd87989 223
+  s_124891ed63801b::t_02e6254870c7e5 1-222,225-227
+  s_124891ed63801b::t_b47f5ac8e72135 224
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_124891ed63801b::t_6d57074a84ce00 10-16
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_124891ed63801b::t_803f3d3e8a40bf 97-108
+governance/state/trust-surface-launch-claims.json
+  s_124891ed63801b::t_b1077eff3a6595 1-21
+governance/lib/trust-surface.mjs
+  s_124891ed63801b::t_73b7ec7dcbd3bb 1-253
+governance/bin/trust-surface-gen.mjs
+  s_124891ed63801b::t_d53f8ab23a1c09 1-155
+.gitignore
+  s_124891ed63801b::t_acf64e9d030080 106-116
+governance/state/trust-surface/index.html
+  s_124891ed63801b::t_65b8cea36a0746 1-303
+governance/state/trust-surface/trust-surface.json
+  s_124891ed63801b::t_e6a560e1be7d4f 1-7788
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "b021f0d0d17944366223b33de004f1c4bb0f03b6",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

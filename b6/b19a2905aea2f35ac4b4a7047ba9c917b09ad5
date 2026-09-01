@@ -1,0 +1,34 @@
+governance/plans/fleet-ops-toolkit/tools/belt/README.md
+  h_67a1b847dc59d6 1-14
+governance/plans/fleet-ops-toolkit/tools/belt/dpg.mjs
+  h_67a1b847dc59d6 1-25
+governance/plans/fleet-ops-toolkit/tools/belt/fleet-status.mjs
+  h_67a1b847dc59d6 1-29
+governance/plans/fleet-ops-toolkit/tools/belt/mgn.mjs
+  h_67a1b847dc59d6 1-53
+governance/plans/fleet-ops-toolkit/tools/belt/next-unit.mjs
+  h_67a1b847dc59d6 1-22
+governance/plans/fleet-ops-toolkit/tools/belt/skill-from-session.mjs
+  h_67a1b847dc59d6 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b6b19a2905aea2f35ac4b4a7047ba9c917b09ad5",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_0950db28a6ae27": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001dde969ffeHMcJRk84Bk7W8K",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

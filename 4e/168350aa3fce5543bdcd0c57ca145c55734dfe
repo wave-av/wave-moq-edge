@@ -1,0 +1,41 @@
+governance/bin/network-edge-audit.mjs
+  s_ea8755337f3c0d::t_c8098e0d3e6054 91
+  s_ea8755337f3c0d::t_a480cc1b472d5b 86
+  s_ea8755337f3c0d::t_f823bf94d2d9dc 47-59,70-71
+  s_ea8755337f3c0d::t_3b8ac0f0358d2b 1-10,13-21,23-38,68,72-73,75-85,88-90,92-109,113-119,121-131
+  s_ea8755337f3c0d::t_3cd548c559be95 11
+  s_ea8755337f3c0d::t_6be40c86f572e2 110-112,120
+  s_ea8755337f3c0d::t_084456080a7c53 39,43-45,60-67
+  s_ea8755337f3c0d::t_4b20e3e82398b7 87
+  s_ea8755337f3c0d::t_0c07a40264929b 69
+  s_ea8755337f3c0d::t_86db7e0a57953d 40-42,46
+  s_ea8755337f3c0d::t_f361964431f3d5 22
+  s_ea8755337f3c0d::t_492a9f34468ab3 12
+  s_ea8755337f3c0d::t_9d145b40666587 74
+governance/test/network-edge-audit.test.mjs
+  s_ea8755337f3c0d::t_f77342909fcb43 85
+  s_ea8755337f3c0d::t_0f3f87e03da6ba 27,31
+  s_ea8755337f3c0d::t_e1c1797f2bf5cc 29
+  s_ea8755337f3c0d::t_4da927fffce3ce 2-3,15,17-18,20,24,28,30,32,36,38,42-44,46-47,50-52,54-56,59-61,63-64,67,69-70,72-76,78-80,83-84,86-87
+  s_ea8755337f3c0d::t_b3099fb9e2c23a 1,4-6,8-14,16,19,21-23,25-26,33-35,37,39-41,45,48-49,53,57-58,62,65-66,68,71,81-82,88-90
+  s_ea8755337f3c0d::t_5e1f545c2e70b3 7
+  s_ea8755337f3c0d::t_22af10521ebf77 77
+governance/plans/network-edge-plane/E5-DRIFT-PROOF.md
+  s_ea8755337f3c0d::t_18be98d0d78735 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "4e168350aa3fce5543bdcd0c57ca145c55734dfe",
+  "prompts": {},
+  "sessions": {
+    "s_ea8755337f3c0d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fddcfe6e2ffe8lTqVhm2EIMEs8",
+        "model": "qwen3.8:27b-chat"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

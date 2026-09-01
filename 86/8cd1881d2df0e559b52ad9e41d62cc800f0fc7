@@ -1,0 +1,26 @@
+governance/bin/epic-status.mjs
+  s_2e30bff6169f7a::t_661373f14ae900 105-128,131-140
+  s_2e30bff6169f7a::t_caadd81dcfe281 162
+governance/test/epic-status.test.mjs
+  s_2e30bff6169f7a::t_6a96d9c46913c7 183
+  s_2e30bff6169f7a::t_661e85455654f5 175-182,184-203
+.github/workflows/governance.yml
+  s_2e30bff6169f7a::t_ad3d3d8f266145 254
+  s_2e30bff6169f7a::t_b8eae2eba0a95f 246-253,255-256
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "868cd1881d2df0e559b52ad9e41d62cc800f0fc7",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

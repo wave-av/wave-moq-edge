@@ -1,0 +1,23 @@
+hooks/research-bank.sh
+  s_1911ebcba68c5b::t_52035415b264cd 19-30,49-66
+hooks/tests/push-target-not-protected-default.test.sh
+  s_1911ebcba68c5b::t_8abc927856c84e 1-42
+hooks/manifest.json
+  s_1911ebcba68c5b::t_29a089c04f086a 1318
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f44384e9f90230d84d1588f59a9cd1594c28acdf",
+  "prompts": {},
+  "sessions": {
+    "s_1911ebcba68c5b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6241c250-fea2-40f2-adae-61d7344441fa",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

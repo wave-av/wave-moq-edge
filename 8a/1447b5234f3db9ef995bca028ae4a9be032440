@@ -1,0 +1,19 @@
+governance/plans/runtime-learning-loop/bin/measure-tier.mjs
+  s_2b4acc7ceba309::t_c97079714e189a 34-40,42-46,48-67,70-87
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8a1447b5234f3db9ef995bca028ae4a9be032440",
+  "prompts": {},
+  "sessions": {
+    "s_2b4acc7ceba309": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff3dead9affe2WOERvc2psX5Eq",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

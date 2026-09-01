@@ -1,0 +1,141 @@
+.github/osv-baseline.tsv
+  s_941b8f0612ec3e::t_ddec240633c8e9 1-16
+.github/workflows/wave-sec-scan.yml
+  s_941b8f0612ec3e::t_d1c0f24adc3e34 209
+agents/deploy-runner.md
+  s_941b8f0612ec3e::t_1fd44d2ce384b4 79-108,149-150
+governance/bin/degraded-deploy.mjs
+  s_941b8f0612ec3e::t_72fa2d174fafcf 1-319
+governance/bin/deploy-inventory.mjs
+  s_941b8f0612ec3e::t_35ca86983e4d63 1-257
+governance/bin/stdout-flush-lint.mjs
+  s_941b8f0612ec3e::t_c931c369a2da8d 25,37-39
+governance/lib/degraded-deploy-precondition.mjs
+  s_941b8f0612ec3e::t_de7ecb15cd5946 1-95
+governance/lib/deploy-inventory-scan.mjs
+  s_941b8f0612ec3e::t_5cf41eb5b15f27 1-357
+governance/lib/fleet-root.mjs
+  s_941b8f0612ec3e::t_da6dc5ec9b0f65 1-23
+governance/lib/markdown-mask.mjs
+  s_941b8f0612ec3e::t_25ff158218e37c 47-59,61-62,64-76,80-88,90-95
+governance/lib/state-root.mjs
+  s_941b8f0612ec3e::t_bb4a16b5821119 66-68,71-72,93,100-101,104-105
+governance/lib/stdout-flush.mjs
+  s_941b8f0612ec3e::t_77a43bf512fac7 46-64
+governance/lib/wave-sec-osv-baseline.mjs
+  s_941b8f0612ec3e::t_9810b3192d6ad2 1-71
+governance/lib/wave-sec-scanners.mjs
+  s_941b8f0612ec3e::t_df6408f9eb37cd 11,13,52-61,64-65,201-210,239-247,257-260,268
+governance/lib/wave-sec-zizmor-baseline.mjs
+  s_941b8f0612ec3e::t_f3c124a6e4edac 16-21
+governance/lib/work-node-gates.mjs
+  s_941b8f0612ec3e::t_8e78b45324a577 11,108-138,163-184
+governance/plans/ffmpeg9-lei/RECEIPTS.md
+  s_941b8f0612ec3e::t_0033945b278049 340-351
+governance/plans/ffmpeg9-lei/action/upstream/submission-drafts/patch2-cover.md
+  s_941b8f0612ec3e::t_75cf6787f567aa 3-32,34,36-55,68-77,100,116
+governance/plans/launch-week-set-01/E2-CHASSIS.md
+  s_941b8f0612ec3e::t_36f50dc16fed20 25-30
+governance/plans/law-proposals/2026-08-07-never-assume-measure-decision.md
+  s_941b8f0612ec3e::t_981b187f4bb50c 1-36
+governance/plans/reviewer-fleet/E4-CONFIG-AS-CODE.md
+  s_941b8f0612ec3e::t_87a70163906382 7-17
+governance/plans/stacked-prs/E3-CROSS-REPO-GATE.md
+  s_941b8f0612ec3e::t_44f3132512f056 4,44
+governance/plans/wave-linear/E0-GROUND.md
+  s_941b8f0612ec3e::t_53f0321ea9ee64 72-78,93-99,109,111,119,129,138,142,153-154
+governance/plans/wave-linear/E1-SCHEMA.md
+  s_941b8f0612ec3e::t_1e7c86475f167a 46-47,49,65,67,69,177-178,203,209,211,223,229,231,233
+governance/plans/wave-linear/E10-HERITAGE.md
+  s_941b8f0612ec3e::t_e510f5ddcd72ab 62,75,91,98,106,111,117,124,130,134
+governance/plans/wave-linear/E11-INSIGHTS.md
+  s_941b8f0612ec3e::t_62a364848ed0e0 61-67,77-85,96-102,111-118,127-133
+governance/plans/wave-linear/E12-COST.md
+  s_941b8f0612ec3e::t_a879e9d64ced3b 70,72,84,91-92,94,99-100,104,113,115,118
+governance/plans/wave-linear/E13-UTILIZATION.md
+  s_941b8f0612ec3e::t_58449115e3faa8 57,73,80,86,89,97,102,105,127,132,136,149
+governance/plans/wave-linear/E2-IDENTITY.md
+  s_941b8f0612ec3e::t_97253387ba467d 61,65,73,77,98,103,111,117,124,130
+governance/plans/wave-linear/E3-SESSIONS.md
+  s_941b8f0612ec3e::t_fadcde367fe674 58-63,67,69,75-80,84,86,91-95,101,107,112,117-122,126,139,143,149-153,160,174,185-190,195,198
+governance/plans/wave-linear/E4-CONTRACT.md
+  s_941b8f0612ec3e::t_c8720cb94a0ffb 55,57,65,69,78,82,90,98,108,111,121,124,134,137
+governance/plans/wave-linear/E5-COMMITMENTS.md
+  s_941b8f0612ec3e::t_8d753b9d24dd52 63-64,70,75,77,83,88,92,95,101-102,106,112-113,122,128,130,135
+governance/plans/wave-linear/E6-HANDOFF.md
+  s_941b8f0612ec3e::t_1d03e3a1c3a2e9 67,75,83,95,103,107,114,117,125,128
+governance/plans/wave-linear/E7-BOUNDARY.md
+  s_941b8f0612ec3e::t_68099846997920 79,95,102,116,126,139,146-149,185,199,210,219-221,228
+governance/plans/wave-linear/E8-LIVENESS.md
+  s_941b8f0612ec3e::t_352253b289cc03 48-52,61-64,68-74,83-85,89-94,106,112-116,126,132-136,149
+governance/plans/wave-linear/E9-CUSTOMER.md
+  s_941b8f0612ec3e::t_ece3fbe0243a09 56,59,67,72,80,82,88,90,96-97
+governance/recall/BAKE-OFF.md
+  s_63c6ee080d73c3::t_fc93eb979fdb46 55,57,59-61,77-93,526,547,558-573,598-623
+governance/recall/eval/repo-corpus.manifest.json
+  s_941b8f0612ec3e::t_52d32277744de2 94-95,114,222-223,225,449-453,523-531,625-629
+governance/test/degraded-deploy-fixture.mjs
+  s_941b8f0612ec3e::t_460075001325d1 1-65
+governance/test/degraded-deploy-precondition.test.mjs
+  s_941b8f0612ec3e::t_0992568beefb24 1-76
+governance/test/degraded-deploy-refusals.test.mjs
+  s_941b8f0612ec3e::t_27c9eb9ccc42ad 1-205
+governance/test/degraded-deploy-success.test.mjs
+  s_941b8f0612ec3e::t_577622d4bed6c3 1-252
+governance/test/deploy-inventory-bin.test.mjs
+  s_941b8f0612ec3e::t_4cca7b873a29db 1-101
+governance/test/deploy-inventory-scan.test.mjs
+  s_941b8f0612ec3e::t_52ee4e1fa5ac8b 1-395
+governance/test/markdown-mask.test.mjs
+  s_941b8f0612ec3e::t_6ea10d0bc0ec2e 1-92
+governance/test/stdout-flush-lint.test.mjs
+  s_941b8f0612ec3e::t_9771b4bc09f6ff 10,13,143-176
+governance/test/wave-sec-fakebin.mjs
+  s_941b8f0612ec3e::t_c766810f74e441 1-5
+governance/test/wave-sec-scanners-osv.test.mjs
+  s_941b8f0612ec3e::t_70a0c909468cc0 1-8,11-12,17-30,32-35,37,40,42,45,49-61,63-72,75-77,80-122,124,126-127,129-182
+governance/test/wave-sec-scanners.test.mjs
+  s_941b8f0612ec3e::t_afce501479be13 12-14,20
+governance/test/work-node-gates.test.mjs
+  s_941b8f0612ec3e::t_383b6d72839afd 97-163,194-220
+hookcli/bin/distill-report.mjs
+  s_941b8f0612ec3e::t_b08883f0c47afe 25,248,251
+hookcli/bin/enforce-review.mjs
+  s_941b8f0612ec3e::t_52cb3cadadea1f 47,131
+hookcli/bin/promote-candidate-report.mjs
+  s_941b8f0612ec3e::t_1045dfb4291437 48,132,137
+hookcli/bin/require-graduation-report.mjs
+  s_941b8f0612ec3e::t_48a79fa4174127 22,195
+hookcli/bin/shadow-report.mjs
+  s_941b8f0612ec3e::t_bc1b219fe8350d 16,48,117
+plugins/wave-agents/agents/deploy-runner.md
+  s_941b8f0612ec3e::t_0f828e25f4ce31 79-108,149-150
+plugins/wave-runbooks/skills/runbook-first/SKILL.md
+  s_941b8f0612ec3e::t_3d5df61ad987be 36
+runbooks/library/deploy-degraded-studio-wrangler.md
+  s_941b8f0612ec3e::t_7bee7d2cdc84d4 1-243
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7c2d1fe63e653643dea9da7de86b42c2f9ecda75",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

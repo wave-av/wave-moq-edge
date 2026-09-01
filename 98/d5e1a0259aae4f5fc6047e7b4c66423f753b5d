@@ -1,0 +1,28 @@
+governance/test/record-score.test.mjs
+  s_7ddeb5d251570f::t_60e11b0953402a 1-35
+bin/record-score.mjs
+  s_7ddeb5d251570f::t_40265e5d8cd4e0 16
+  s_7ddeb5d251570f::t_4caddc2b0c6baf 1-15,17-88
+bin/route-by-capability.mjs
+  s_7ddeb5d251570f::t_23972086d865e5 21-26
+  s_7ddeb5d251570f::t_b52addb3c23444 151,154
+  s_7ddeb5d251570f::t_fd2d0c7aaf257f 115-148
+bin/reliability-signals.mjs
+  s_7ddeb5d251570f::t_f0c8884b9c2cae 91-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "98d5e1a0259aae4f5fc6047e7b4c66423f753b5d",
+  "prompts": {},
+  "sessions": {
+    "s_7ddeb5d251570f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ffd18905effeQT6zud4m713r2F",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

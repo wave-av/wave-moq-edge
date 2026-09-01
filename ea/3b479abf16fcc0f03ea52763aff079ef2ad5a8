@@ -1,0 +1,23 @@
+governance/plans/voice-transcript-plane/NORTH-STAR.md
+  s_2606de950a60c6::t_ff84a93d529709 5-57
+  s_2606de950a60c6::t_ae95307619f842 2-4
+governance/plans/voice-transcript-plane/E0-API.md
+  s_2606de950a60c6::t_f974f1441b8ce3 2-17
+  s_2606de950a60c6::t_ce1ffd6bace02b 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ea3b479abf16fcc0f03ea52763aff079ef2ad5a8",
+  "prompts": {},
+  "sessions": {
+    "s_2606de950a60c6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fef439bb6ffePesTgCloA0Efke",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

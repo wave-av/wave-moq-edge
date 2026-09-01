@@ -1,0 +1,26 @@
+hookcli/bin/hookcli
+  s_60a20469ef4369::t_c2ff9952f1398f 314-318
+  s_60a20469ef4369::t_d9079722c38782 348-371
+hookcli/tests/posttooluse-shadow.sh
+  s_60a20469ef4369::t_3f762da49f36a6 1-70
+hookcli/lib/session-exec.sh
+  s_60a20469ef4369::t_4680bd8c01aabb 148-218
+hookcli/tests/run.sh
+  s_60a20469ef4369::t_176eb5e3d80707 106-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "558f9116d58ccfbb6758c46451b1d72c89c38ae0",
+  "prompts": {},
+  "sessions": {
+    "s_60a20469ef4369": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "53ce1bac-4299-4468-858c-89697860fcf1",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.claude/skills/strategic-compact/SKILL.md
+  s_63c6ee080d73c3::t_90e0bcdc698ed7 89-95,118
+governance/bin/cost-ledger-store.mjs
+  s_63c6ee080d73c3::t_c7c0001795255c 25-48,50
+governance/bin/epic-status.mjs
+  s_63c6ee080d73c3::t_29408a164bc5ca 1-143
+governance/bin/wave-cost-ledger-claude-feeder.mjs
+  s_63c6ee080d73c3::t_4cf35d5d42bb55 1-259
+governance/bin/wave-cost-ledger-rfp4-feeder.mjs
+  s_63c6ee080d73c3::t_678589675b5544 1-40
+governance/bin/wave-cost-ledger-vendor-config-liveness.mjs
+  s_63c6ee080d73c3::t_35d1f224614ebd 1-78
+governance/lib/wave-cost-ledger-claude-adapter.mjs
+  s_63c6ee080d73c3::t_06349434114a4d 1-240
+governance/lib/wave-cost-ledger-rfp4-adapter.mjs
+  s_63c6ee080d73c3::t_a8c00393375453 1-96
+governance/lib/wave-cost-ledger-vendor-config-liveness.mjs
+  s_63c6ee080d73c3::t_8cb70477e22edb 1-165
+governance/plans/wave-cost-ledger/E0-SCHEMA.md
+  s_63c6ee080d73c3::t_fe371ad67a1275 4-8
+governance/plans/wave-cost-ledger/E1-CLOUDFLARE-PULLER.md
+  s_63c6ee080d73c3::t_c6d48bc41cbe81 4-6
+governance/plans/wave-cost-ledger/E2-GHA-PULLER.md
+  s_63c6ee080d73c3::t_c95abc68b852d9 4-5
+governance/plans/wave-cost-ledger/E3-SUPABASE-PULLER.md
+  s_63c6ee080d73c3::t_a86257a210710a 4-5
+governance/plans/wave-cost-ledger/E4-VENDOR-PULLER.md
+  s_63c6ee080d73c3::t_854dee75a2970f 4-5,10-89
+governance/plans/wave-cost-ledger/E5-COVERAGE-AUDIT.md
+  s_63c6ee080d73c3::t_341c63443c7cf5 4-5,257-263
+governance/plans/wave-cost-ledger/E6-ALERTING.md
+  s_63c6ee080d73c3::t_7665a79ce77968 4-5
+governance/plans/wave-cost-ledger/E7-CONSOLE-SURFACE.md
+  s_63c6ee080d73c3::t_54be0d0507e903 4-5
+governance/plans/wave-cost-ledger/E8-ROOT-CAUSE-TOOLKIT.md
+  s_63c6ee080d73c3::t_68fa06b83fe136 4-5
+governance/plans/wave-cost-ledger/NORTH-STAR.md
+  s_63c6ee080d73c3::t_1b288b06d27155 4
+governance/test/epic-status.test.mjs
+  s_63c6ee080d73c3::t_b70b01f66a0e02 1-155
+governance/test/wave-cost-ledger-claude-adapter.test.mjs
+  s_63c6ee080d73c3::t_522d8b7aa69a75 1-322
+governance/test/wave-cost-ledger-claude-feeder-cli.test.mjs
+  s_63c6ee080d73c3::t_bdacdb9b8d2275 1-234
+governance/test/wave-cost-ledger-cloudflare-write-path.test.mjs
+  s_63c6ee080d73c3::t_0036674ff5418b 81-86,90-91
+governance/test/wave-cost-ledger-rfp4-adapter.test.mjs
+  s_63c6ee080d73c3::t_9b4d955faefff8 1-83
+governance/test/wave-cost-ledger-vendor-config-liveness.test.mjs
+  s_63c6ee080d73c3::t_b4f1c9195e7d23 1-269
+hooks/gap-scan-guard.sh
+  s_63c6ee080d73c3::t_d18f1157165f7b 2,4,10-15,29-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "3c195278d16d280d31b61ed78e797c0dd217f892",
+  "prompts": {},
+  "sessions": {
+    "s_63c6ee080d73c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28a4927c-1b01-4d33-904e-e27db5f3d5dc",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+governance/plans/ffmpeg9-lei/E12-PRO-FORMATS.md
+  s_124891ed63801b::t_62a2bc8a65fdea 1-163
+governance/DASHBOARD.md
+  s_124891ed63801b::t_af728021c7b003 25
+governance/graph.json
+  s_124891ed63801b::t_2a745db068a3ba 3404-3416,20842-20853
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "470656c67b41e77f81193918c42d4ad6df31befc",
+  "prompts": {},
+  "sessions": {
+    "s_124891ed63801b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "657e721e-b9b4-4e0f-b7bb-049f27115a75",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+frameworks/gates/test-automerge-sweep.sh
+  s_672079ccfe8ce6::t_29a99fcad858bb 18-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5bffb334c4639e2716ee04920e9ac7e40b05835e",
+  "prompts": {},
+  "sessions": {
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+governance/DASHBOARD.md
+  s_923da126916e09::t_68ec3812920ac7 25
+governance/ENFORCEMENT-COVERAGE.md
+  s_923da126916e09::t_b4b721aa8ee20e 9-10,460
+governance/graph.json
+  s_923da126916e09::t_2f48b3005c6e78 2377-2389,6051-6063,7526,31637-31642
+governance/work-state.json
+  s_941b8f0612ec3e::t_57a139d054a544 3,5-6,9-12,14-15,22,27,32,38,44,48,50,54,56,60,62,66,68,72,74,82,88,94,100,106,111-113,117-119,201-202,204,208-209,218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "88cc4fad2731437aea3413c63c02a8349a993309",
+  "prompts": {},
+  "sessions": {
+    "s_923da126916e09": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a185f2a3f0cde1b4c",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_941b8f0612ec3e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d90df925-cf14-4723-9c2f-b63ce2e27e03",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

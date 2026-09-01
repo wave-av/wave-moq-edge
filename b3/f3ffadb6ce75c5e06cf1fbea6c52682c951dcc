@@ -1,0 +1,22 @@
+governance/test/automation-registry/webhook-server-registry-shape.test.mjs
+  s_37d3f61160b2dd::t_a744db4730b020 1-74
+governance/automation-registry/lib/webhook-server.mjs
+  s_37d3f61160b2dd::t_02c1e18f7655b7 32-44,46-53
+  s_37d3f61160b2dd::t_e2298ef0b2a2cf 88-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b3f3ffadb6ce75c5e06cf1fbea6c52682c951dcc",
+  "prompts": {},
+  "sessions": {
+    "s_37d3f61160b2dd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0bc1ffdc-a72b-4965-9de8-3c391c235616",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

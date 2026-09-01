@@ -1,0 +1,34 @@
+.github/osv-baseline.tsv
+  h_67a1b847dc59d6 18-22,24-25
+.github/workflows/reviewer-liveness-age.yml
+  h_67a1b847dc59d6 1-79
+governance/bin/reviewer-liveness-age.mjs
+  h_67a1b847dc59d6 1-171
+governance/lib/reviewer-liveness-age.mjs
+  h_67a1b847dc59d6 1-168
+governance/plans/sovereign-capacity/E8-ADMISSION.md
+  h_67a1b847dc59d6 1-140
+governance/plans/sovereign-capacity/E9-ADJACENCY.md
+  h_67a1b847dc59d6 1-120
+governance/plans/sovereign-capacity/NORTH-STAR.md
+  h_67a1b847dc59d6 24,62-63
+governance/test/reviewer-liveness-age.test.mjs
+  h_67a1b847dc59d6 1-120
+hooks/manifest.json
+  h_67a1b847dc59d6 1388
+hooks/pr-inflight-capture.sh
+  h_67a1b847dc59d6 33-42,44,47-147,151-171,187-200,204-207,209-217,243-246,248,250-252,255,260-268,284-293
+hooks/tests/pr-inflight-capture.test.sh
+  h_67a1b847dc59d6 32-40,62,104-303
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "10e2cf00488ac62eda6bfd028c52255418766944",
+  "prompts": {},
+  "humans": {
+    "h_67a1b847dc59d6": {
+      "author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+governance/bin/thin-review-fire-rate.mjs
+  s_8a470910d81a67::t_dbf5a0bcdcb7f7 1-63
+governance/code-index/CATALOG.md
+  s_2e30bff6169f7a::t_ccb4e4dc9e5fad 5,3096-3105,4330-4333,4336-4338,4340-4352
+governance/code-index/index.json
+  s_2e30bff6169f7a::t_9ee623472575c3 9-10,12-13,27695-27771,37309-37319,37326-37327,37337-37338,37348-37351,37370-37371,37381-37382,37392-37393,37403-37404,37414-37415,37425-37426,37430-37473
+governance/lib/review-floor.mjs
+  s_8a470910d81a67::t_9b397a2e1a92db 1-40
+governance/lib/review-liveness.mjs
+  s_8a470910d81a67::t_df985aa1693a13 39-48,231-266,322-329
+governance/lib/review-markers.mjs
+  s_8a470910d81a67::t_d3f6cc2525ac86 1-55
+governance/test/review-liveness-thin-floor.test.mjs
+  s_8a470910d81a67::t_b48c6f65d1859c 1-146
+hookcli/lib/t3-credential.mjs
+  s_8a470910d81a67::t_e82fd6e0513f7c 23,37-46,53-61,63-72,90-91
+hookcli/tests/credential-sink-and-pipe.sh
+  s_8a470910d81a67::t_32fef5c8a73308 1-72
+hookcli/tests/lib/modules.sh
+  s_8a470910d81a67::t_4b91fb43adbe0e 309-315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "5538957a9aff9bde42fcbe96f970579a9e07a251",
+  "prompts": {},
+  "sessions": {
+    "s_2e30bff6169f7a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "f1898398-4d25-4d52-8e81-7ebf3227e822",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_8a470910d81a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9143d3ec-9637-4788-8bc2-510e83aa2fe3",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

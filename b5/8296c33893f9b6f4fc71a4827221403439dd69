@@ -1,0 +1,19 @@
+docs/PLAN-OPENCODE-PRODUCT.md
+  s_2f1bfe8237f0ee::t_d853a53707ef69 11-12,14-19,21,23-39,41,43-50,54-58,61,65-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "b58296c33893f9b6f4fc71a4827221403439dd69",
+  "prompts": {},
+  "sessions": {
+    "s_2f1bfe8237f0ee": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_001f7ff34ffeZL5jDw3m0PPcjp",
+        "model": "kimi-k3"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

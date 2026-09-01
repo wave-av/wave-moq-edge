@@ -1,0 +1,117 @@
+scripts/assess.ts
+  s_9673f7dc0983fb::t_ee62ede14399c1 27
+  s_9673f7dc0983fb::t_af93d81756cc71 186
+  s_9673f7dc0983fb::t_c1b2b77fa5f8c9 1-26,28-185,187-196
+scripts/rag.ts
+  s_9673f7dc0983fb::t_b1d3a7b63c74c7 1-75,90
+  s_9673f7dc0983fb::t_97a44679c7844f 76-78
+  s_9673f7dc0983fb::t_43cbf36aa76b20 79-81,87-89
+scripts/tts.ts
+  s_9673f7dc0983fb::t_19e2f8c111bddd 1
+  s_9673f7dc0983fb::t_86b417b30e61b8 2-4
+  s_9673f7dc0983fb::t_a39a34cde9cd3b 5-7
+scripts/grok-img.ts
+  s_9673f7dc0983fb::t_4f37bd2b310a5a 6
+  s_9673f7dc0983fb::t_7f3f631c2ab3d8 3-5
+  s_9673f7dc0983fb::t_fb4cd0293e4b0b 1-2
+  s_9673f7dc0983fb::t_71cf01f9ffe476 7
+scripts/prove.ts
+  s_9673f7dc0983fb::t_5a8826e4acccf9 57-66
+scripts/summarize.ts
+  s_9673f7dc0983fb::t_57057da721f54e 6-8
+  s_9673f7dc0983fb::t_23b9eed48cbfbb 5
+  s_9673f7dc0983fb::t_87185b15d78f71 2-4
+  s_9673f7dc0983fb::t_a07406f865d6aa 1
+  s_9673f7dc0983fb::t_28a7f856f3fef4 9-11
+scripts/runpod.ts
+  s_9673f7dc0983fb::t_62a0d247de5a9f 27
+  s_9673f7dc0983fb::t_fa7a87a3ec29f6 28-30
+  s_9673f7dc0983fb::t_e01561831a2e05 24-26
+  s_9673f7dc0983fb::t_e55fd45ca004ed 7-23,31-37
+  s_9673f7dc0983fb::t_1957459ce1648b 4-6
+scripts/bench.ts
+  s_9673f7dc0983fb::t_292267edfb1644 1-148
+scripts/search.ts
+  s_9673f7dc0983fb::t_0a87ed10e09792 2-4
+  s_9673f7dc0983fb::t_2a5a16b684c60d 6-8
+  s_9673f7dc0983fb::t_c66df7ddd6a2cc 5
+  s_9673f7dc0983fb::t_9b1bf737444e94 1
+  s_9673f7dc0983fb::t_dbcb1e3750ce78 9-11
+package.json
+  s_32308d89320687::t_90308960e8d713 31
+  s_a74557eaaac240::t_56fee28b8ed9eb 54
+  s_672079ccfe8ce6::t_cede1e055d1248 24-30,32-42
+scripts/catalog-external.ts
+  s_9673f7dc0983fb::t_37b23546ac19b3 1-209
+scripts/pipeline.ts
+  s_9673f7dc0983fb::t_c4618438deab1b 43-45,47-48,50-56,58-67,82-83,85-86
+  s_9673f7dc0983fb::t_6a9362ddf6b9ae 89
+  s_9673f7dc0983fb::t_75f0e79c4e70ec 111-112,117-118,123-124
+  s_9673f7dc0983fb::t_fb104c794c2293 179
+  s_9673f7dc0983fb::t_cbacf77c8fcd14 178,180-181,185-186,190
+  s_9673f7dc0983fb::t_eca3bbe49905c9 46
+  s_9673f7dc0983fb::t_be01c6801663dc 131-133
+  s_9673f7dc0983fb::t_0e98a7e696de90 142-146,149
+  s_9673f7dc0983fb::t_1bc23ad7e2446e 135-136
+  s_9673f7dc0983fb::t_1fab480ea192b7 156,162,164-166,168-171
+  s_9673f7dc0983fb::t_2ee5048ef2bde8 68-80
+  s_9673f7dc0983fb::t_ff71698c1c964e 1-42,49,57,81,84,87-88,90-110,113-116,119-122,125-130,134,137-141,147-148,150-155,157-161,163,167,172-177,182-184,187-189,191-194
+opencode.json
+  s_32308d89320687::t_01310f942a4e08 594-595
+docs/PROVIDER-CAPABILITY-MAP.md
+  s_9673f7dc0983fb::t_3b835aebcc3e3c 72-90
+scripts/watchdog.ts
+  s_9673f7dc0983fb::t_c3834daeaafc67 93-94
+  s_9673f7dc0983fb::t_c3c21a05c41c80 68-74
+  s_9673f7dc0983fb::t_732c60bdd745b5 85-92,95-131,137
+  s_9673f7dc0983fb::t_63ebc329017cab 51
+router/src/index.ts
+  s_9673f7dc0983fb::t_6d3113270d36f8 1131-1150
+  s_9673f7dc0983fb::t_593f7e3eb06923 1113-1130
+scripts/vector.ts
+  s_9673f7dc0983fb::t_cae4a62cb4a405 9
+  s_9673f7dc0983fb::t_5dc960459f9671 6-8
+  s_9673f7dc0983fb::t_39cec918d286c4 10-12
+docs/PLAN-E6-E12.md
+  s_9673f7dc0983fb::t_2a27a3edffcb03 1-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8f02c035d103b2be9be9db4b067317dcb46f472c",
+  "prompts": {},
+  "sessions": {
+    "s_32308d89320687": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_007549e10ffep7TcJzsTxWiCu9",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_672079ccfe8ce6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6dc157fd-773a-4af4-b808-90b7f02f148e",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_9673f7dc0983fb": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_008b9e364ffeHM37bqxPI1hU5A",
+        "model": "deepseek-v4-flash-free"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    },
+    "s_a74557eaaac240": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00733b35effe2KhjKZFEvGIXEp",
+        "model": "kimi-k2.7-code"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

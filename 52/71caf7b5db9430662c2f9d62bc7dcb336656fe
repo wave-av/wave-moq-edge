@@ -1,0 +1,51 @@
+governance/plans/own-model-program/E5-E5-PRODUCTIZE.md
+  s_3af92b7a4389e1::t_0c8ed99bdbc37a 2-23
+  s_9041cf1cf1ccad::t_8f995066b0ca1f 1
+governance/plans/own-model-program/E1-E1-TRAIN.md
+  s_3af92b7a4389e1::t_4fb2dfca5cd89a 2-25
+  s_9041cf1cf1ccad::t_2ecb23e594e11c 1
+governance/plans/fireworks-integration/NORTH-STAR.md
+  s_3af92b7a4389e1::t_d84c51c6a1045f 1-29
+governance/plans/own-model-program/E4-E4-ECONOMY.md
+  s_3af92b7a4389e1::t_d362b7dec62d11 2-24
+  s_9041cf1cf1ccad::t_96a48328ddd040 1
+governance/plans/own-model-program/E2-E2-SERVE.md
+  s_3af92b7a4389e1::t_33ba3866a88a95 2-25
+  s_9041cf1cf1ccad::t_60b1937de5996d 1
+governance/plans/fireworks-integration/README.md
+  s_3af92b7a4389e1::t_20eda870389010 51-54
+  s_3af92b7a4389e1::t_66f64c82a1c9b7 6-10
+governance/plans/own-model-program/NORTH-STAR.md
+  s_3af92b7a4389e1::t_28782e3465d9fb 2-43
+  s_9041cf1cf1ccad::t_333e6c3add1a7b 1
+governance/plans/own-model-program/E0-E0-FOUNDATION.md
+  s_3af92b7a4389e1::t_2a34a61b1598e4 2-25
+  s_9041cf1cf1ccad::t_1422f1ffe1e550 1
+governance/plans/own-model-program/E3-E3-EVAL-GATE.md
+  s_3af92b7a4389e1::t_3ba345b0ed58c8 2-25
+  s_9041cf1cf1ccad::t_1c8e27acef24ed 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5271caf7b5db9430662c2f9d62bc7dcb336656fe",
+  "prompts": {},
+  "sessions": {
+    "s_3af92b7a4389e1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fff2890dbffegvLk3R7xCjrfmP",
+        "model": "mimo-v2.5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    },
+    "s_9041cf1cf1ccad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_002fcdb46ffeE5gGPWedC4WS6o",
+        "model": "kimi-k3"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

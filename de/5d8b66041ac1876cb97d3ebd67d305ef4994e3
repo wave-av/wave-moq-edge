@@ -1,0 +1,57 @@
+.github/workflows/governance.yml
+  s_be40541f6fd98b::t_65573411a304f1 129-178,300-313
+governance/bin/prove-rules-version-singleton-gate.mjs
+  s_be40541f6fd98b::t_fc59e6b22d2a41 1-121
+governance/bin/rules-version-singleton-lint.mjs
+  s_be40541f6fd98b::t_1958742270e8a9 1-165
+governance/bin/workflow-pin-currency.mjs
+  s_be40541f6fd98b::t_4b26897b6dad0c 1-318
+governance/lib/drill-fixtures-drift.mjs
+  s_be40541f6fd98b::t_6013bdec9f030a 76-118,232-281
+governance/lib/pin-collect.mjs
+  s_be40541f6fd98b::t_edf5e52fa83d27 1-100
+governance/lib/pin-currency.mjs
+  s_be40541f6fd98b::t_88478ffc3a27e9 1-172
+governance/lib/review-liveness.mjs
+  s_be40541f6fd98b::t_a667a7edc7beab 170-179
+governance/plans/local-inference-integrity/E6-ADMIT.md
+  s_be40541f6fd98b::t_309f363eee9386 19-28
+governance/plans/local-inference-integrity/RECEIPTS.md
+  s_be40541f6fd98b::t_9e1d187b2d0cd6 25,30-31,77-116
+governance/plans/socratic-loop/E10-PROVENANCE.md
+  s_be40541f6fd98b::t_95f9db0577f766 170-173,175-176,219-221,237-270,272-280,283-284,287,291-298,310-318,333-351,354-359,361-363
+governance/plans/socratic-loop/E6-CALIBRATION.md
+  s_be40541f6fd98b::t_83b0d5aa5b3e1b 88-97,100-132,136-226,229-248
+governance/plans/socratic-loop/E8-OPERATOR-MODEL.md
+  s_be40541f6fd98b::t_405f09776499ef 97,99,101-108,111-114,123-127,130-133
+governance/test/pin-currency.test.mjs
+  s_be40541f6fd98b::t_8f940c2b813940 1-209
+hookcli/bin/hookcli
+  s_be40541f6fd98b::t_9b0369c78a4c03 21-28
+hookcli/tests/rules-version.sh
+  s_be40541f6fd98b::t_b16dc0a54b9aa4 1-19,23,33-34,40-46,48,50-55,57-77,79-83,85,88-108,118
+hooks/local-llm/ollama-helper.sh
+  s_be40541f6fd98b::t_4af2724e16a701 126-141,143-145
+hooks/tests/local-llm-containment.test.sh
+  s_be40541f6fd98b::t_c9be890e753955 105-111,113-135
+hooks/tests/rules-version.test.sh
+  s_be40541f6fd98b::t_0bb58bd11f2766 81-90,93-103,264,266-278,281-295
+settings/settings.base.json
+  s_be40541f6fd98b::t_80ae9f0db8757f 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "de5d8b66041ac1876cb97d3ebd67d305ef4994e3",
+  "prompts": {},
+  "sessions": {
+    "s_be40541f6fd98b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d7c9787b-b0d7-48b3-9805-b7c27c79d626",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

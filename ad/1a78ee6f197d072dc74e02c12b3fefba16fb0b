@@ -1,0 +1,71 @@
+.coderabbit.yaml
+  s_33707259c2c038::t_47f5b6613d76b7 156-157
+.cursor/BUGBOT.md
+  s_33707259c2c038::t_956af1cd897763 68-69
+.gitattributes
+  s_33707259c2c038::t_a8df8ee55cc450 24-25
+.github/workflows/governance.yml
+  s_33707259c2c038::t_2118931a9a7520 385-393
+.github/workflows/trust-surface-regen.yml
+  s_33707259c2c038::t_a54343235bf060 1-215
+.github/workflows/trust-surface-staleness.yml
+  s_33707259c2c038::t_aca17a875c40f4 1-119
+.gitignore
+  s_33707259c2c038::t_c83a06a41065a4 112-127
+.greptile/config.json
+  s_33707259c2c038::t_5bbfa102601c7a 13
+REVIEW.md
+  s_33707259c2c038::t_f3b1521f9f07a3 63-64
+cubic.yaml
+  s_33707259c2c038::t_00322719083b0d 82-83
+governance/bin/derived-artifact-drift-audit.mjs
+  s_33707259c2c038::t_5f14d6f8a37096 96-101
+governance/bin/ffmpeg-capability-matrix.mjs
+  s_33707259c2c038::t_d6eadfb06cd5eb 36,43-46
+governance/bin/gate-liveness-drill.mjs
+  s_33707259c2c038::t_224a125b5ebf95 30,118,120
+governance/bin/resolve-generated-conflicts.mjs
+  s_33707259c2c038::t_d21a14423163f9 86-93,262-272
+governance/bin/trust-surface-gen.mjs
+  s_33707259c2c038::t_2589322148b21b 1-210
+governance/lib/drill-fixtures-drift.mjs
+  s_33707259c2c038::t_e9636730c74803 26-27,59-94,204-224
+governance/lib/drill-fixtures-pin-currency.mjs
+  s_33707259c2c038::t_d6b4e160a76c82 1-115
+governance/lib/ffmpeg-capability-categories.mjs
+  s_33707259c2c038::t_4eec83168eb7a3 1-25
+governance/lib/trust-surface.mjs
+  s_33707259c2c038::t_dc9699be19bd50 1-331
+governance/plans/ffmpeg9-lei/E10-TRUST-PRODUCTS.md
+  s_33707259c2c038::t_59f793345b0983 13-19
+governance/recall/BAKE-OFF.md
+  s_33707259c2c038::t_ae20e4a2e3f7fb 311-338
+governance/reviewer-policy.json
+  s_33707259c2c038::t_b205d6767e8919 76-82,87-89
+governance/state/trust-surface-launch-claims.json
+  s_33707259c2c038::t_9ae4603ec8a571 1-20
+governance/state/trust-surface/index.html
+  s_33707259c2c038::t_f38a0a1bb55794 1-303
+governance/state/trust-surface/trust-surface.json
+  s_33707259c2c038::t_dc25f93e584df5 1-7788
+governance/test/resolve-generated-conflicts.test.mjs
+  s_33707259c2c038::t_c872e9f3c359e7 116-170
+governance/test/trust-surface-gen.test.mjs
+  s_33707259c2c038::t_2fd909176f01a2 1-396
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ad1a78ee6f197d072dc74e02c12b3fefba16fb0b",
+  "prompts": {},
+  "sessions": {
+    "s_33707259c2c038": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-acba8c6d1fb2990e5",
+        "model": "unknown"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}

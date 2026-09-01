@@ -1,0 +1,41 @@
+governance/test/wave-sec-closure.test.mjs
+  s_85d9e5f433b9aa::t_56dd0a42191cfc 93-109
+governance/lib/wave-sec-progress.mjs
+  s_85d9e5f433b9aa::t_0ee7ede4f47410 1-16
+governance/bin/wave-sec.mjs
+  s_85d9e5f433b9aa::t_9df670a16a94ea 38,40-46
+  s_85d9e5f433b9aa::t_03067127d052ea 174
+  s_85d9e5f433b9aa::t_418babd95f6c8d 105
+  s_85d9e5f433b9aa::t_ad540d00dcc9d1 149
+governance/lib/wave-sec-lanes-github.mjs
+  s_85d9e5f433b9aa::t_deac5cf005ff81 1-135
+governance/plans/wave-sec-fleet/E2-DEDUPE-CLOSURE.md
+  s_85d9e5f433b9aa::t_ceb4dc16870c14 54-84
+  s_85d9e5f433b9aa::t_0ce466cdeeac3f 98-104
+  s_85d9e5f433b9aa::t_fba190f5bee62e 4-11
+governance/plans/wave-sec-fleet/E0-LANES.md
+  s_85d9e5f433b9aa::t_fb67fedc7d02ab 63,65-88
+  s_85d9e5f433b9aa::t_598044fe0851cc 9-11
+governance/lib/wave-sec-lanes.mjs
+  s_85d9e5f433b9aa::t_414bacc3c101ba 160-162
+  s_85d9e5f433b9aa::t_d6768a0f0bf64c 14-19
+  s_85d9e5f433b9aa::t_4107266080aaed 30-33
+  s_85d9e5f433b9aa::t_3561247bc67d4e 29,34
+  s_85d9e5f433b9aa::t_a05cb26d811a3a 106,115,119-120,129,146,149,152,156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "bd9bdc78349e4af6f3cc2f1dd5a0fbfc85c780aa",
+  "prompts": {},
+  "sessions": {
+    "s_85d9e5f433b9aa": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d87e3882-f96b-4a5a-a812-76227a9c3397",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+governance/bin/learning-health.mjs
+  s_d9915bbafa9657::t_67bb35bb6b9f1d 171-179,184,186-188,194,196
+  s_d9915bbafa9657::t_9cebc106407bde 170
+  s_d9915bbafa9657::t_5c22b252bfd981 27-28,134-136
+governance/bin/graph-absence-sweep.mjs
+  s_d9915bbafa9657::t_9dad157e9f21e2 60-66
+governance/test/learning-health.test.mjs
+  s_d9915bbafa9657::t_98acf54207d728 256-289
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2a4414831dfb5cf2ab4aeefca464486504bc2922",
+  "prompts": {},
+  "sessions": {
+    "s_d9915bbafa9657": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "fe57dfa6-a960-4f87-a0d3-16b30ad36ba7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "wave-av-bot[bot] <wave-av-bot[bot]@users.noreply.github.com>"
+    }
+  }
+}
