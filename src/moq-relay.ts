@@ -29,94 +29,34 @@ import {
   decodePublish,
   decodeTrackStatus,
   decodeSubscribeNamespace,
-  decodeFetch,
-  encodeFetchOk,
   encodeRequestOk,
   encodeRequestError,
   decodePublishStateNotify,
-  decodeRequestUpdate,
   decodeObject,
   decodeSubgroupStream,
   encodeObject,
   type MoqObject,
-  type MoqLocation,
-  type LocationFilter,
 } from './moq-wire';
 import { PendingGroupBuffer, SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
+import { resolveLocationFilter, locationInRange, handleFetch, handleRequestUpdate } from './moq-relay-filter.ts';
+import { readFirstVarint } from './moq-relay-control-util.ts';
+import type { Outbound, RelayEvent, ControlResult, Subscriber, CachedGroup, PendingObject } from './moq-relay-types.ts';
 
 export { SCHEDULER_MAX_BUFFER_MS } from './moq-scheduler';
+// `Outbound`/`RelayEvent`/`ControlResult` moved to `moq-relay-types.ts` (#212 file-size follow-up,
+// epic #212) — re-exported here so every existing `from './moq-relay'` import keeps working
+// unchanged. `Subscriber`/`CachedGroup`/`PendingObject` were never part of this module's public
+// surface and stay internal-only (imported above, not re-exported).
+export type { Outbound, RelayEvent, ControlResult } from './moq-relay-types.ts';
 
 /** Reordering window: max objects buffered before a forced flush (E2-fix). */
 export const SCHEDULER_WINDOW_OBJECTS = 64;
-
-/** A frame to deliver to a specific session (control reply or fanned-out object). */
-export interface Outbound {
-  to: string;
-  frame: Uint8Array;
-  kind: 'control' | 'object';
-}
-
-/** A relay observation the DO folds into the R4 metering (maps to MetricsCollector.MoqMetric.kind). */
-export interface RelayEvent {
-  kind: 'publish_start' | 'publish_end' | 'subscribe' | 'unsubscribe' | 'object_received' | 'group_complete';
-  sessionId: string;
-  bytes?: number;
-  /** The decoded object payload, present on `object_received` only — so the DO can persist it (the
-   * recording write path) without re-decoding the frame on the hot path. Publisher objects only. */
-  payload?: Uint8Array;
-}
-
-/** An absolute Location range (#212 E5) — the resolved form of an absolute LOCATION_FILTER. `end`
- * undefined ⇒ open-ended (§location-filters: "When EndGroupDelta and EndObject are omitted from a
- * subscription filter, the subscription is open-ended"). `endGroupOpen` true ⇒ EndObject was omitted,
- * so the whole End Group passes (§location-filters: "the filter includes all objects in the End
- * Group"). Relative-to-Largest-Object forms are NOT representable here — see `resolveLocationFilter`. */
-interface ResolvedRange {
-  start: MoqLocation;
-  end?: MoqLocation;
-  endGroupOpen: boolean;
-}
-
-interface Subscriber {
-  requestId: bigint;
-  /** Resolved absolute LOCATION_FILTER range (#212 E5, updatable in-place by #212 E6's REQUEST_UPDATE)
-   * — the per-viewport filter. `undefined` means the subscription carried no filter (or was decoded
-   * with one that resolved to unfiltered): forward every object, byte-identical to pre-E5 fan-out. */
-  range?: ResolvedRange;
-  /** FORWARD state (#212 E6, §forward-parameter) — 0 = paused, 1/undefined = forwarding. Only
-   * REQUEST_UPDATE sets this today (SUBSCRIBE itself carries no FORWARD parameter in this codec — see
-   * moq-wire-subscribe.ts); `undefined` is the default forwarding-ON state, matching every
-   * pre-E6 subscriber's behavior byte-for-byte. */
-  forward?: 0 | 1;
-}
-
-/** One cached group: the forwarded object frames of a single Group ID, in arrival order. */
-interface CachedGroup {
-  groupId: bigint;
-  objects: Array<{ objectId: bigint; frame: Uint8Array }>;
-}
-
-/** One object buffered by the E1 scheduler awaiting its group's flush (scheduler ON only). */
-interface PendingObject {
-  groupId: bigint;
-  objectId: bigint;
-  frame: Uint8Array;
-  priority?: number; // non-wire hint (see MoqObject.priority)
-  deadlineMs?: number; // non-wire hint (see MoqObject.deadlineMs)
-}
 
 /** The single Track Alias this relay stamps on forwarded objects (one track per DO). */
 const TRACK_ALIAS = 1n;
 
 /** Default number of recent groups to retain for late-joiner replay + FETCH-from-cache. */
 const DEFAULT_CACHED_GROUPS = 3;
-
-/** What a control frame produces: control replies, fanned-out objects (late-joiner replay), events. */
-export interface ControlResult {
-  replies: Outbound[];
-  objects: Outbound[];
-  events: RelayEvent[];
-}
 
 export class MoqRelay {
   private publisher: string | null = null;
@@ -248,7 +188,9 @@ export class MoqRelay {
         break;
       }
       case MOQ_MSG.FETCH: {
-        this.onFetch(sessionId, payload, replies, objects);
+        // #212 E3/E5 FETCH-from-cache + LOCATION_FILTER resolution — moved to `moq-relay-filter.ts`
+        // (#212 file-size follow-up); see that module's `handleFetch` doc for the full behavior.
+        handleFetch(this.cache, sessionId, payload, replies, objects);
         break;
       }
       case MOQ_MSG.GOAWAY: {
@@ -257,7 +199,9 @@ export class MoqRelay {
         break;
       }
       case MOQ_MSG.REQUEST_UPDATE: {
-        this.onRequestUpdate(sessionId, payload, replies);
+        // #212 E6 REQUEST_UPDATE handling — moved to `moq-relay-filter.ts` (#212 file-size
+        // follow-up); see that module's `handleRequestUpdate` doc for the full behavior.
+        handleRequestUpdate(this.subscribers, sessionId, payload, replies);
         break;
       }
       case MOQ_MSG.PUBLISH_STATE_NOTIFY: {
@@ -295,93 +239,10 @@ export class MoqRelay {
     return { replies, objects, events };
   }
 
-  /**
-   * Serve a FETCH from the late-joiner cache. #212 E3: draft-20 drops the FetchType/joining variant
-   * (see moq-wire-fetch.ts header) — every FETCH is now the same shape, and its range comes from an
-   * OPTIONAL LOCATION_FILTER parameter instead of dedicated message fields. This handler resolves the
-   * absolute forms of that filter (an omitted filter ⇒ whole cached track; explicit StartGroup+
-   * StartObject with an optional EndGroupDelta[+EndObject] ⇒ that range, EndObject omitted meaning
-   * "rest of the End Group") and replays every cached object in range, preceded by FETCH_OK with the
-   * largest matched location. A fetch with nothing in range → REQUEST_ERROR(INVALID_RANGE).
-   *
-   * draft-20 §5.1.2 also defines two RELATIVE forms of LOCATION_FILTER (a lone StartGroup, or
-   * StartGroup=StartObject=0) resolved against "Largest Object" — this relay's bounded per-track
-   * cache doesn't track Largest Object independently of what it still retains, so those forms →
-   * REQUEST_ERROR(NOT_SUPPORTED), same as the "joining" FETCH variant they functionally replace was
-   * before E3 (fill-fetch, draft-20's actual replacement mechanism, is SUBSCRIBE-side — see
-   * moq-wire-fetch.ts's FillParameters doc — and isn't wired into this one-track-per-DO relay yet).
-   */
-  private onFetch(sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[]): void {
-    const m = decodeFetch(payload);
-    const resolved = resolveLocationFilter(m.locationFilter);
-    if (resolved.relative) {
-      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }) });
-      return;
-    }
-    const range = resolved.range;
-
-    const matched: Array<{ frame: Uint8Array; group: bigint; object: bigint }> = [];
-    for (const grp of this.cache) for (const o of grp.objects) if (locationInRange(grp.groupId, o.objectId, range)) matched.push({ frame: o.frame, group: grp.groupId, object: o.objectId });
-
-    if (matched.length === 0) {
-      replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.INVALID_RANGE, reason: 'range not in cache' }) });
-      return;
-    }
-    const last = matched[matched.length - 1];
-    replies.push({ to: sessionId, kind: 'control', frame: encodeFetchOk({ endOfTrack: false, end: { group: last.group, object: last.object } }) });
-    for (const x of matched) objects.push({ to: sessionId, kind: 'object', frame: x.frame });
-  }
-
-  /**
-   * Handle REQUEST_UPDATE (#212 E6, draft-20 §message-request-update, 0x2) — the mid-stream
-   * viewport-update payoff: a viewer updates its active LOCATION_FILTER (and/or FORWARD state) on an
-   * already-open subscription WITHOUT tearing it down and re-SUBSCRIBEing. Per `moq-wire-request-update.ts`'s
-   * header discrepancy note, this relay correlates the update to a subscription by SESSION (its one
-   * bidi-request-stream stand-in on the WS transport), not by matching the REQUEST_UPDATE's own (new)
-   * Request ID against the original SUBSCRIBE's.
-   *
-   * A session with no active subscriber entry has nothing to update — draft-20 says an
-   * out-of-context REQUEST_UPDATE "MUST close the session with PROTOCOL_VIOLATION"; this relay takes
-   * the same softer REQUEST_ERROR(DOES_NOT_EXIST) posture `onControl`'s TRACK_STATUS case already
-   * uses for "no such state" rather than tearing down the whole session, matching this relay's
-   * established pattern of REQUEST_ERROR over hard session termination for request-scoped failures
-   * (see the relative-Location-Filter NOT_SUPPORTED replies above).
-   *
-   * LOCATION_FILTER present ⇒ REPLACES the subscriber's range entirely (never merged field-by-field,
-   * §message-request-update / §location-filters); a relative form is rejected the same way SUBSCRIBE's
-   * initial filter is (this relay does not track Largest Object independently of its cache). A
-   * zero-length LOCATION_FILTER (`{}`, all fields undefined) resolves to `range: undefined` via the
-   * SAME `resolveLocationFilter` SUBSCRIBE/FETCH already use — no special-casing needed, since an
-   * all-undefined LocationFilter already means "unfiltered" there (§location-filters: "Length 0 ...
-   * remove the filter"). FORWARD present ⇒ sets the subscriber's forwarding state; 0 pauses fan-out to
-   * this subscriber (checked in `fanOut` below) without dropping the subscription itself.
-   */
-  private onRequestUpdate(sessionId: string, payload: Uint8Array, replies: Outbound[]): void {
-    const m = decodeRequestUpdate(payload);
-    const sub = this.subscribers.get(sessionId);
-    if (!sub) {
-      replies.push({
-        to: sessionId,
-        kind: 'control',
-        frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.DOES_NOT_EXIST, reason: 'no active subscription to update' }),
-      });
-      return;
-    }
-    if (m.locationFilter !== undefined) {
-      const resolved = resolveLocationFilter(m.locationFilter);
-      if (resolved.relative) {
-        replies.push({
-          to: sessionId,
-          kind: 'control',
-          frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }),
-        });
-        return;
-      }
-      sub.range = resolved.range;
-    }
-    if (m.forward !== undefined) sub.forward = m.forward;
-    replies.push({ to: sessionId, kind: 'control', frame: encodeRequestOk({ requestId: m.requestId }) });
-  }
+  // `onFetch`/`onRequestUpdate` moved to `moq-relay-filter.ts`'s `handleFetch`/`handleRequestUpdate`
+  // (#212 file-size follow-up, epic #212) — see the `onControl` switch's FETCH/REQUEST_UPDATE cases
+  // above for the call sites, and that module's doc comments for the full FETCH-from-cache /
+  // REQUEST_UPDATE behavior (moved verbatim, no behavior change).
 
   /**
    * Handle one inbound OBJECT frame from `sessionId` (only the attached publisher's objects fan out).
@@ -619,60 +480,7 @@ export class MoqRelay {
   }
 }
 
-/**
- * Resolve a decoded LOCATION_FILTER (#212 E5, §location-filters) into either an ABSOLUTE
- * `ResolvedRange` (or `undefined` for "no filter" / unfiltered) or a `{ relative: true }` marker for
- * the two forms this bounded-cache relay does not resolve: a lone StartGroup, or
- * StartGroup=StartObject=0 (both defined relative to `Largest Object`, which this relay does not track
- * independently of the last-N-groups cache it retains). Shared by `onFetch` and the SUBSCRIBE handler
- * — the resolution rules are identical for both message types (§location-filters applies the same
- * positional-field semantics to FETCH and SUBSCRIBE Location filters).
- */
-function resolveLocationFilter(f: LocationFilter | undefined): { relative: true } | { relative: false; range?: ResolvedRange } {
-  if (f === undefined || f.startGroup === undefined) return { relative: false, range: undefined };
-  const isRelative = f.startObject === undefined || (f.startGroup === 0n && f.startObject === 0n && f.endGroupDelta === undefined);
-  if (isRelative) return { relative: true };
-  const start: MoqLocation = { group: f.startGroup, object: f.startObject! };
-  let end: MoqLocation | undefined;
-  let endGroupOpen = false;
-  if (f.endGroupDelta !== undefined) {
-    end = { group: f.startGroup + f.endGroupDelta, object: f.endObject ?? 0n };
-    endGroupOpen = f.endObject === undefined;
-  }
-  return { relative: false, range: { start, end, endGroupOpen } };
-}
-
-/** Whether Location {g, o} falls inside `range` (inclusive both ends, §location-filters). `range`
- * `undefined` means unfiltered — everything passes (the fast path every non-filtering subscriber and
- * every unfiltered FETCH takes). */
-function locationInRange(g: bigint, o: bigint, range: ResolvedRange | undefined): boolean {
-  if (range === undefined) return true;
-  if (g < range.start.group || (g === range.start.group && o < range.start.object)) return false;
-  if (range.end === undefined) return true;
-  if (g > range.end.group) return false;
-  return !(g === range.end.group && !range.endGroupOpen && o > range.end.object);
-}
-
-/** Read the first varint of a control payload (the Request ID of request-type messages), or null. */
-function readFirstVarint(payload: Uint8Array): bigint | null {
-  try {
-    const b0 = payload[0];
-    let lead = 0;
-    let probe = b0;
-    while (lead < 8 && probe & 0x80) {
-      lead++;
-      probe = (probe << 1) & 0xff;
-    }
-    if (lead === 8) {
-      let v = 0n;
-      for (let i = 1; i <= 8; i++) v = (v << 8n) | BigInt(payload[i]);
-      return v;
-    }
-    const n = lead + 1;
-    let v = BigInt(b0 & (0xff >> n));
-    for (let i = 1; i < n; i++) v = (v << 8n) | BigInt(payload[i]);
-    return v;
-  } catch {
-    return null;
-  }
-}
+// `resolveLocationFilter`/`locationInRange` moved to `moq-relay-filter.ts`, and `readFirstVarint`
+// to `moq-relay-control-util.ts` (both #212 file-size follow-up, epic #212) — imported at the top
+// of this file; see those modules' doc comments for the details (moved verbatim, no behavior
+// change).
