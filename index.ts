@@ -313,6 +313,7 @@ async function handleHealth(env: Env): Promise<Response> {
     service: 'moq-edge',
     environment: env.ENVIRONMENT,
     moq_draft: env.MOQ_DRAFT_VERSION,
+    sha: env.GIT_SHA || null,
     timestamp: new Date().toISOString(),
   });
 }
