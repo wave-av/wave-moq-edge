@@ -1,0 +1,29 @@
+.github/workflows/deploy.yml
+  s_ac02fb83fb3c20::t_deee1de0d14ced 38-41,51-52,93-109,131-166
+index.ts
+  s_ac02fb83fb3c20::t_85ab15548b164f 316
+scripts/ci/resolve-deploy-host.mjs
+  s_ac02fb83fb3c20::t_79b3b08efc2094 1-88
+scripts/ci/resolve-deploy-host.test.mjs
+  s_ac02fb83fb3c20::t_cc8c8da2148027 1-108
+src/types.ts
+  s_ac02fb83fb3c20::t_2273c2e6f6dc38 31-33
+wrangler.toml
+  s_ac02fb83fb3c20::t_f7d379326bfc10 119-122,178-181
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "902cbc2c8547bcb6cc2bd4a001d06b47eec79266",
+  "prompts": {},
+  "sessions": {
+    "s_ac02fb83fb3c20": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-ace478ed986b104b3",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
