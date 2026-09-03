@@ -28,6 +28,9 @@ export interface Env {
   // --- vars (wrangler.toml [vars]) ---
   ENVIRONMENT: string;
   MOQ_DRAFT_VERSION: string;
+  /** Deploy commit sha, stamped per-deploy via the CI var override (deploy.yml). Echoed on
+   *  /health so CI's post-deploy verify step can prove the live worker matches this run. */
+  GIT_SHA?: string;
   MOQ_DRAFT_SUPPORTED?: string;
   MAX_SUBSCRIBERS_PER_TRACK: string;
   MAX_OBJECT_SIZE_BYTES: string;

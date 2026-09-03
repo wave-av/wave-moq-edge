@@ -116,6 +116,10 @@ MOQ_RECORDINGS_BUCKET = "wave-moq-recordings"
 # container binding (commented below) is ALSO present — else /v1/fanout/sfu returns a typed 501. DO NOT
 # flip here: a real activation requires building+pushing the container image AND CF Containers enabled.
 MOQ_SFU_FANOUT_ENABLED = "false"
+# GIT_SHA: default placeholder for local dev / `wrangler deploy --dry-run`. deploy.yml overrides
+# this per-deploy with `--var GIT_SHA:${{ github.sha }}` (no toml edit needed). /health echoes it
+# back so CI's post-deploy verify step can prove the live worker is running THIS commit.
+GIT_SHA = "unset"
 
 # #55 MoQ→SFU fan-out container binding — OPERATOR-GATED, absent today. The image (MoQ-subscribe →
 # demux/decode → re-encode VP8/Opus → @wave-av/whip-publish to the gateway /v1/whip/publish SFU) is NOT
@@ -171,6 +175,10 @@ MOQ_DEADLINE_SCHEDULER_ENABLED = "1"  # E3: staging canary (was staging-only; pr
 GATEWAY_BASE_URL = "https://api.staging.wave.online"
 # Shares the single existing moq bucket (no -staging bucket exists; staging recording is inert pre-GA).
 MOQ_RECORDINGS_BUCKET = "wave-moq-recordings"
+# GIT_SHA: default placeholder for local dev / `wrangler deploy --dry-run`. deploy.yml overrides
+# this per-deploy with `--var GIT_SHA:${{ github.sha }}` (no toml edit needed). /health echoes it
+# back so CI's post-deploy verify step can prove the live worker is running THIS commit.
+GIT_SHA = "unset"
 
 [[env.staging.durable_objects.bindings]]
 name = "MOQ_SESSIONS"
