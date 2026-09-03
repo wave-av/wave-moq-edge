@@ -60,7 +60,12 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
-          node-version: "20"
+          # Was "20" — the installed wrangler (engines.node >=22.0.0) refuses to run under Node 20
+          # ("Wrangler requires at least Node.js v22.0.0"), so this gate has been failing on every
+          # push/PR (including main) since wrangler crossed that floor. Every other workflow in this
+          # repo (test.yml, lint.yml, deploy.yml, governance-enforce.yml) already pins "22" — this
+          # was the one job left behind.
+          node-version: "22"
           registry-url: "https://npm.pkg.github.com"
           scope: "@wave-av"
 
