@@ -44,7 +44,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (github.event.pull_request.draft == false &&
        github.event.pull_request.head.repo.fork == false)
-    uses: wave-av/wave-foundation/.github/workflows/reusable-auto-approve.yml@main
+    uses: wave-av/wave-foundation/.github/workflows/reusable-auto-approve.yml@99956927115107d2e9ba2bc8208533f6cc6c1602 # main
     with:
       pr-number: ${{ github.event.pull_request.number || inputs.pr-number }}
       kill-window-seconds: 60
