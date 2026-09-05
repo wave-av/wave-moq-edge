@@ -11,13 +11,13 @@ concurrency:
 jobs:
   triage:
     if: vars.IO_ENABLED == 'true'
-    uses: wave-av/wave-foundation/.github/workflows/io-triage.yml@5d0b9e1a35efdb6d4e2ba55c483af670b69a8470
+    uses: wave-av/wave-foundation-public/.github/workflows/io-triage.yml@f63b91566ab311b09599db6195da8c353cab1f69
     permissions:
       contents: read
       issues: write
     with:
-      scripts_repo: wave-av/wave-foundation
-      scripts_ref: "5d0b9e1a35efdb6d4e2ba55c483af670b69a8470"
+      scripts_repo: wave-av/wave-foundation-public
+      scripts_ref: "f63b91566ab311b09599db6195da8c353cab1f69"
       owner: ${{ vars.IO_OWNER }}
     secrets:
       gh_pat: ${{ secrets.ISSUE_OPS_PAT }}
