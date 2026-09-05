@@ -16,6 +16,9 @@ on:
     - cron: "0 6 * * 1"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -28,6 +31,11 @@ jobs:
     name: Check MoQ Transport draft version drift
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      # This repo is the source of scripts/check-moq-draft-version.sh, so the script is vendored and
+      # nothing is fetched at run time. The org template (wave-av/.github) pins and SHA-256-verifies
+      # its fallback fetch for repos that do not carry the script.
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+        with:
+          persist-credentials: false
       - name: Run drift check
         run: bash scripts/check-moq-draft-version.sh --ci
