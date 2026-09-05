@@ -37,6 +37,7 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+  merge_group:
 
 # `pull_request`, deliberately NOT `pull_request_target`: a fork PR must never get
 # a write token or repo secrets just because a gate wanted to read its body.
