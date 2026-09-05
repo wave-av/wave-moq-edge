@@ -1,0 +1,25 @@
+.github/workflows/auto-approve.yml
+  s_001e5077008426::t_e5eb35942e818d 47
+.github/workflows/chassis-gate.yml
+  s_001e5077008426::t_6a1bd3fb2a9595 22
+.github/workflows/deploy.yml
+  s_001e5077008426::t_0417937fe57e97 56
+.github/workflows/moq-draft-drift.yml
+  s_001e5077008426::t_d25197e5dc6c60 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "a54a54da5eabfd8474fb2370530351651a68c9b0",
+  "prompts": {},
+  "sessions": {
+    "s_001e5077008426": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a5416524ad3486d44",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
