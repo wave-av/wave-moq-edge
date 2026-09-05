@@ -66,6 +66,17 @@ async function main() {
         WRANGLER_SEND_METRICS: "false",
       },
       stdio: ["ignore", "pipe", "pipe"],
+      // `detached: true` makes this child the leader of its OWN process group (pgid ===
+      // child.pid), so `process.kill(-child.pid, sig)` in shutdown() below (negative pid = whole
+      // group) reaches every descendant `npx`/`wrangler` fork — its own `esbuild` build-service
+      // process and the `workerd` runtime binary — not just the immediate process. Without this,
+      // a plain `child.kill()` only signals the single process node spawned; on Linux CI `npx`
+      // resolves through an extra shell/exec hop, so that lone SIGTERM never reached the
+      // grandchildren, which then kept running as orphans holding the piped stdout/stderr open —
+      // the cause of this gate hanging for the whole `timeout-minutes: 10` job window (job
+      // cancelled, not failed) after it had already logged PASSED. Ported from
+      // wave-av/wave-voice-edge, which hit and fixed this exact class first.
+      detached: true,
     },
   );
 
@@ -110,29 +121,49 @@ async function main() {
     await delay(500);
   }
 
-  const shutdown = () => {
-    if (!child.killed) {
-      child.kill("SIGTERM");
+  // Kills the whole `wrangler dev` process GROUP (see the `detached: true` comment above) —
+  // negative pid targets every process sharing child's group, not just child itself — then
+  // force-kills anything still alive after a short grace window. Previously this only called
+  // `child.kill("SIGTERM")`, which on Linux CI left the `esbuild`/`workerd` grandchildren running
+  // as orphans holding the piped stdout/stderr open, which is what hung this script indefinitely
+  // even after it had already logged PASSED/FAILED and the job ran out its `timeout-minutes: 10`
+  // and was cancelled. Ported from wave-av/wave-voice-edge (scripts/ci/bundle-eval-gate.mjs),
+  // which hit and fixed this exact class first.
+  const shutdown = async () => {
+    if (child.exitCode !== null || child.signalCode !== null) return;
+    try {
+      process.kill(-child.pid, "SIGTERM");
+    } catch {
+      // group may already be gone (e.g. child never got a pid, or already reaped)
+    }
+    const graceDeadline = Date.now() + 3_000;
+    while (child.exitCode === null && child.signalCode === null && Date.now() < graceDeadline) {
+      await delay(100);
+    }
+    if (child.exitCode === null && child.signalCode === null) {
+      try {
+        process.kill(-child.pid, "SIGKILL");
+      } catch {
+        // best-effort
+      }
     }
   };
 
   if (failureLine || exited) {
-    shutdown();
+    await shutdown();
     log("FAILED — the Worker bundle did not evaluate cleanly in workerd.");
     if (failureLine) log(`Detected failure signature: ${failureLine}`);
     if (exited) log(`wrangler dev exited early with code ${exitCode}`);
     log("--- captured output ---");
     console.log(output);
-    process.exitCode = 1;
-    return;
+    process.exit(1);
   }
 
   if (!ready) {
-    shutdown();
+    await shutdown();
     log(`FAILED — 'wrangler dev' never printed "Ready on" within ${READY_TIMEOUT_MS}ms.`);
     console.log(output);
-    process.exitCode = 1;
-    return;
+    process.exit(1);
   }
 
   // The module evaluated and the dev server bound its port. Confirm it actually serves a
@@ -152,19 +183,18 @@ async function main() {
     log(`HTTP round-trip to booted worker failed: ${err}`);
   }
 
-  shutdown();
+  await shutdown();
 
   if (!httpOk) {
     log("FAILED — worker process bound its port but did not answer an HTTP request.");
-    process.exitCode = 1;
-    return;
+    process.exit(1);
   }
 
   log("PASSED — Worker bundle evaluated cleanly in workerd and served a request.");
-  process.exitCode = 0;
+  process.exit(0);
 }
 
 main().catch((err) => {
   console.error("[bundle-eval-gate] unexpected error:", err);
-  process.exitCode = 1;
+  process.exit(1);
 });
