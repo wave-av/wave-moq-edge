@@ -1,0 +1,23 @@
+.github/workflows/foundation-gate.yml
+  s_73ce9d874d7339::t_daa3410ee788c3 24
+.github/workflows/governance-enforce.yml
+  s_73ce9d874d7339::t_9181d9164148e6 12
+.github/workflows/public-repo-guard.yml
+  s_73ce9d874d7339::t_b091f7f8f1a13e 40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "45262687f303ca05c1456864e45422c9a053d35c",
+  "prompts": {},
+  "sessions": {
+    "s_73ce9d874d7339": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98a8bbf9-cb78-42d8-a6f5-f3aaa2c16b46",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
