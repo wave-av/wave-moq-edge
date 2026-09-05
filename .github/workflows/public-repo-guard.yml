@@ -37,6 +37,7 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+  merge_group:
 
 # `pull_request`, deliberately NOT `pull_request_target`: a fork PR must never get
 # a write token or repo secrets just because a gate wanted to read its body.
@@ -53,11 +54,14 @@ jobs:
     name: Secrets + content policy
     # Skips issue/comment events (the tree scan has nothing to say about a comment,
     # and the org should not pay for a gitleaks run every time anyone posts one) and
-    # skips `edited` (a title or body edit does not change the tree).
+    # skips `edited` (a title or body edit does not change the tree). `merge_group` is
+    # included so this required check actually reports on a merge-queue run once a
+    # queue is enabled — see #241 review discussion.
     if: >-
       (github.event_name == 'pull_request' && github.event.action != 'edited')
       || github.event_name == 'push'
       || github.event_name == 'workflow_dispatch'
+      || github.event_name == 'merge_group'
     concurrency:
       group: public-repo-guard-tree-${{ github.event.pull_request.number || github.ref }}
       cancel-in-progress: true
