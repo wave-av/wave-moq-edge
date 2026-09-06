@@ -1,0 +1,131 @@
+# GAM post-deploy guard — release safety: progressive, reversible, automatically-stopped releases.
+#
+# THE GAP THIS CLOSES: deploy.yml's own "post-deploy verify" step already proves the right bundle
+# is live (a sha match on /health) — but its only action on failure is `exit 1`. `wrangler deploy`
+# runs BEFORE that verify step, so a failing verify fails the WORKFLOW while the wrong bundle keeps
+# serving 100% of production traffic. This workflow is the brake: it independently re-probes
+# production after deploy.yml completes and, on a regressed or unevaluable verdict, re-dispatches
+# deploy.yml at the last commit a prior run of the same workflow PROVED live.
+#
+# PRODUCTION ONLY: this repo's chassis also deploys `staging` on its own branch; this guard only
+# acts when the triggering run's branch was main/master.
+#
+# WHY THIS RUNS ON deploy.yml conclusion=failure TOO: `wrangler deploy` runs BEFORE the post-deploy
+# verify step, so a job "failure" here commonly means code shipped and the LATER verify step caught
+# it broken — exactly the case this guard exists to fix.
+#
+# INERT BY DEFAULT: gated behind repo variable GAM_ROLLBACK_ENABLED. Until an operator sets it to
+# '1' (a repo-variable write this PR deliberately does NOT make), this workflow runs and no-ops
+# green on every trigger. Merging this PR changes no live behavior.
+name: gam-post-deploy-guard
+
+on:
+  workflow_run:
+    workflows: ["deploy"]
+    types: [completed]
+  workflow_dispatch: {}   # manual trigger so the guard can be dogfooded on demand
+
+permissions: {}
+
+concurrency:
+  group: gam-post-deploy-guard-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  canary-guard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write   # re-dispatch deploy.yml on rollback via gh
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: kill-switch (read FIRST)
+        id: killswitch
+        env:
+          GAM_ROLLBACK_ENABLED: ${{ vars.GAM_ROLLBACK_ENABLED }}
+        run: |
+          set -euo pipefail
+          if [ "${GAM_ROLLBACK_ENABLED:-0}" != "1" ]; then
+            echo "GAM_ROLLBACK_ENABLED='${GAM_ROLLBACK_ENABLED:-unset}' (≠ 1) — GAM guard is OFF. No-op." >> "$GITHUB_STEP_SUMMARY"
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: resolve target sha + run id (production only)
+        id: target
+        if: steps.killswitch.outputs.enabled == 'true'
+        env:
+          EVENT: ${{ github.event_name }}
+          WR_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          WR_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+          WR_RUN_ID: ${{ github.event.workflow_run.id }}
+          WR_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          set -euo pipefail
+          if [ "${EVENT}" = "workflow_run" ]; then
+            case "${WR_CONCLUSION}" in
+              cancelled|skipped)
+                echo "upstream deploy conclusion='${WR_CONCLUSION}' — nothing to canary." >> "$GITHUB_STEP_SUMMARY"
+                echo "proceed=false" >> "$GITHUB_OUTPUT"
+                exit 0
+                ;;
+            esac
+            case "${WR_HEAD_BRANCH}" in
+              main|master) ;;
+              *)
+                echo "upstream deploy branch='${WR_HEAD_BRANCH}' is not production — this guard is production-only." >> "$GITHUB_STEP_SUMMARY"
+                echo "proceed=false" >> "$GITHUB_OUTPUT"
+                exit 0
+                ;;
+            esac
+            SHA="${WR_HEAD_SHA}"
+            RUN_ID="${WR_RUN_ID}"
+          else
+            SHA="${GITHUB_SHA}"
+            RUN_ID=""
+          fi
+          {
+            echo "sha=${SHA}"
+            echo "run_id=${RUN_ID}"
+            echo "proceed=true"
+          } >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        if: steps.killswitch.outputs.enabled == 'true' && steps.target.outputs.proceed == 'true'
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e  # v6.4.0
+        if: steps.killswitch.outputs.enabled == 'true' && steps.target.outputs.proceed == 'true'
+        with:
+          node-version: '22'
+
+      - name: resolve production host from wrangler.toml
+        id: host
+        if: steps.killswitch.outputs.enabled == 'true' && steps.target.outputs.proceed == 'true'
+        run: |
+          set -euo pipefail
+          HOST="$(node scripts/ci/resolve-deploy-host.mjs production)"
+          if [ -z "$HOST" ]; then
+            echo "::error::resolve-deploy-host.mjs returned no host for production — refusing to guard with no target"
+            exit 1
+          fi
+          echo "host=${HOST}" >> "$GITHUB_OUTPUT"
+
+      # 3-state: healthy / regressed / refuse — refuse (no determinate answer) is treated
+      # identically to regressed, never as healthy.
+      - name: canary — /health sha match
+        if: steps.killswitch.outputs.enabled == 'true' && steps.target.outputs.proceed == 'true'
+        uses: ./.github/actions/gam-canary-rollback
+        with:
+          canary-url: 'https://${{ steps.host.outputs.host }}/health'
+          expect-marker: '"sha":"${{ steps.target.outputs.sha }}"'
+          expect-status: '200'
+          max-attempts: '6'
+          retry-delay-ms: '10000'
+          rollback-command: >
+            PRIOR_SHA="$(node .github/actions/gam-canary-rollback/resolve-prior-good-sha.mjs
+            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}")" &&
+            echo "rolling back wave-moq-edge to ${PRIOR_SHA}" &&
+            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${PRIOR_SHA}"
