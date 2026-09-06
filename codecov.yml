@@ -1,0 +1,48 @@
+# Codecov config for wave-moq-edge.
+#
+# INFORMATIONAL ONLY, deliberately. Coverage has never been measured on this repo, so there is no
+# baseline to gate against — a `target` set now would be either an arbitrary number or an auto-pass.
+# Both statuses below report on the PR without ever failing it.
+#
+# Note that Codecov's headline percentage and vitest's terminal summary will not match: Codecov
+# scores the lcov `DA` line records, while vitest reports statement/line percentages over a
+# different denominator (on wave-gateway the same report read 74.44% vs 84.05%). Reconcile which
+# number the team means BEFORE replacing `informational: true` with a real target.
+#
+# Promotion path: once ~2 weeks of uploads exist on main, set a target derived from the observed
+# baseline and add the checks to branch protection.
+
+codecov:
+  require_ci_to_pass: true
+
+coverage:
+  precision: 2
+  round: down
+  range: "50...90"
+
+  status:
+    project:
+      default:
+        informational: true
+        target: auto
+        # Do not fail a PR because an upload was missing (e.g. the test job was path-filtered out).
+        if_ci_failed: success
+    patch:
+      default:
+        informational: true
+        target: auto
+        if_ci_failed: success
+
+comment:
+  layout: "condensed_header, diff, flags, components"
+  behavior: default
+  # Nothing to say when coverage is unchanged — keeps PR noise down.
+  require_changes: true
+
+ignore:
+  - "__tests__/**"
+  - "scripts/**"
+  - "dist/**"
+  # Has its own tsconfig/test script (test:client) and is not part of the Worker bundle.
+  - "tools/**"
+  - "**/*.d.ts"
