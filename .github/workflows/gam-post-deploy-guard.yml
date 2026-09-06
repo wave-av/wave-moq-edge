@@ -60,6 +60,7 @@ jobs:
           EVENT: ${{ github.event_name }}
           WR_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           WR_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+          WR_EVENT: ${{ github.event.workflow_run.event }}
           WR_RUN_ID: ${{ github.event.workflow_run.id }}
           WR_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
         run: |
@@ -72,6 +73,18 @@ jobs:
                 exit 0
                 ;;
             esac
+            # PRODUCTION IDENTITY, not merely branch. deploy.yml maps `push` to main/master →
+            # production and `push` to staging → staging, so a PUSH on main/master is production
+            # by construction. A `workflow_dispatch` run carries an `env` CHOICE that is invisible
+            # in the workflow_run payload — a staging dispatch selected from main would otherwise
+            # pass a branch-only check and let this guard probe the production host with a SHA
+            # that was never deployed there, then roll production back on a false regression.
+            # Ambiguous ⇒ skip. Fail-closed on identity, never guess.
+            if [ "${WR_EVENT}" != "push" ]; then
+              echo "upstream deploy was triggered by '${WR_EVENT}', not 'push' — its target environment is not determinable from the workflow_run payload, so this production-only guard does not act on it." >> "$GITHUB_STEP_SUMMARY"
+              echo "proceed=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             case "${WR_HEAD_BRANCH}" in
               main|master) ;;
               *)
@@ -82,13 +95,27 @@ jobs:
             esac
             SHA="${WR_HEAD_SHA}"
             RUN_ID="${WR_RUN_ID}"
+            BRANCH="${WR_HEAD_BRANCH}"
           else
+            # Manual dogfooding path. Without this gate an enabled manual run from ANY ref would
+            # probe the PRODUCTION host for that ref's SHA, miss, and dispatch a rollback for a
+            # deployment that never happened.
+            case "${GITHUB_REF_NAME}" in
+              main|master) ;;
+              *)
+                echo "manual dispatch ref='${GITHUB_REF_NAME}' is not a production branch — this guard is production-only." >> "$GITHUB_STEP_SUMMARY"
+                echo "proceed=false" >> "$GITHUB_OUTPUT"
+                exit 0
+                ;;
+            esac
             SHA="${GITHUB_SHA}"
             RUN_ID=""
+            BRANCH="${GITHUB_REF_NAME}"
           fi
           {
             echo "sha=${SHA}"
             echo "run_id=${RUN_ID}"
+            echo "branch=${BRANCH}"
             echo "proceed=true"
           } >> "$GITHUB_OUTPUT"
 
@@ -120,13 +147,17 @@ jobs:
         uses: ./.github/actions/gam-canary-rollback
         with:
           canary-url: 'https://${{ steps.host.outputs.host }}/health'
-          expect-marker: '"sha":"${{ steps.target.outputs.sha }}"'
+          # JSON-FIELD match, not a body substring. /health is served pretty-printed, so the live
+          # body reads `"sha": "<40 hex>"` WITH a space — a `"sha":"…"` substring marker never
+          # matches it, and every single deploy would have been classified `regressed` and rolled
+          # back. Comparing the parsed `.sha` field is both correct today and immune to a future
+          # change in JSON spacing. It mirrors what deploy.yml's own post-deploy verify does.
+          expect-json: 'sha=${{ steps.target.outputs.sha }}'
           expect-status: '200'
           max-attempts: '6'
           retry-delay-ms: '10000'
           rollback-command: >
-            PRIOR_SHA="$(node .github/actions/gam-canary-rollback/resolve-prior-good-sha.mjs
-            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}")" &&
-            echo "rolling back wave-moq-edge to ${PRIOR_SHA}" &&
-            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${PRIOR_SHA}"
-            -f env=production
+            bash .github/actions/gam-canary-rollback/rollback-to-prior-good.sh
+            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}"
+            "${{ steps.target.outputs.sha }}" "${{ steps.target.outputs.branch }}"
+            "https://${{ steps.host.outputs.host }}/health"
