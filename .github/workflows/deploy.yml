@@ -143,6 +143,10 @@ jobs:
           set -e
           HOST=$(node scripts/ci/resolve-deploy-host.mjs "$TARGET_ENV" || true)
           if [ -z "$HOST" ]; then
+            if [ "$TARGET_ENV" = "production" ]; then
+              echo "::error::no route resolved for env 'production' in wrangler.toml after a live production deploy — refusing to silently skip the proven-live gate. Either the wrangler.toml route/routes block is missing or resolve-deploy-host.mjs failed to parse it (check for a new TOML shape it doesn't recognise). A production deploy with an unverifiable route is a FAILURE, not a pass."
+              exit 1
+            fi
             echo "::notice::no route configured for env '$TARGET_ENV' in wrangler.toml — skipping live verification"
             exit 0
           fi
