@@ -1,0 +1,19 @@
+.github/workflows/gam-post-deploy-guard.yml
+  s_418f585ff58cb5::t_1664e8cb672a66 1-131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "b7dfd79757dd0c5de5e1fff1f2c7f4beb74af26d",
+  "prompts": {},
+  "sessions": {
+    "s_418f585ff58cb5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e5b410ce-aa9a-48d6-be5d-09400395b1b6",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
