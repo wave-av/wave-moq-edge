@@ -39,4 +39,25 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
+  {
+    // The GAM canary/rollback composite action's modules run on the ACTIONS RUNNER under Node,
+    // not in the Worker runtime, so they legitimately use Node globals. Without this block
+    // `no-undef` (from js.configs.recommended) flags every `process`/`console`/timer/fetch use.
+    // Declared explicitly rather than via the `globals` package to avoid adding a devDependency.
+    files: ['.github/actions/**/*.mjs'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+        AbortController: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        URL: 'readonly',
+        Buffer: 'readonly',
+      },
+    },
+  },
 );

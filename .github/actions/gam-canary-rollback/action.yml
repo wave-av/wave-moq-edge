@@ -1,0 +1,129 @@
+name: gam-canary-rollback
+description: >
+  GAM deploy-bound lever (L3 progressive-delivery). Probes a freshly-deployed surface for a content
+  marker (not a bare 200) and, on a regressed OR unevaluable (refuse) verdict, runs a repo-supplied
+  rollback command. Repo-agnostic: all deploy/rollback specifics come in as inputs. INERT until a
+  gated guard workflow invokes it.
+
+inputs:
+  canary-url:
+    description: URL to probe after deploy.
+    required: true
+  expect-marker:
+    description: Substring the response body MUST contain (the "right build" proof).
+    required: false
+    default: ''
+  expect-header:
+    description: '"Name: value-substr" a response header MUST contain (e.g. a version/etag).'
+    required: false
+    default: ''
+  expect-status:
+    description: Expected HTTP status (default any 2xx).
+    required: false
+    default: ''
+  canary-headers:
+    description: JSON object of request headers (e.g. an internal auth token from a secret).
+    required: false
+    default: ''
+  max-attempts:
+    description: Probe retries before declaring a verdict (a fresh deploy warms slowly).
+    required: false
+    default: '6'
+  canary-method:
+    description: HTTP method for the probe.
+    required: false
+    default: 'GET'
+  canary-body:
+    description: Request body for a non-GET/HEAD probe.
+    required: false
+    default: ''
+  retry-delay-ms:
+    description: Delay between probe retries, in ms (a fresh deploy warms slowly).
+    required: false
+    default: '10000'
+  timeout-ms:
+    description: Per-attempt request timeout, in ms.
+    required: false
+    default: '15000'
+  rollback-command:
+    description: >
+      Shell command that rolls the deploy back to the prior good version. Repo-specific — e.g. a
+      `gh workflow run deploy.yml -f ref=<prior> -f environment=<env>` re-dispatch, or a
+      `wrangler rollback` invoked through the repo's own deploy path. If empty, the action only
+      REPORTS unhealthy (no rollback) and fails — useful for a shadow/observe-only first rollout.
+    required: false
+    default: ''
+
+outputs:
+  healthy:
+    description: 'true only if the probe reached state=healthy. false for both regressed and refuse.'
+    value: ${{ steps.probe.outputs.healthy }}
+  state:
+    description: >
+      'healthy' | 'regressed' | 'refuse'. REFUSE means the probe never got a determinate HTTP
+      answer (network/timeout on every attempt) or was misconfigured — it is NOT proof of a
+      regression, but it is fail-closed exactly like one: it never promotes, it always rolls back.
+    value: ${{ steps.probe.outputs.state }}
+  receipt:
+    description: 'The probe receipt JSON (status, marker/header checks, body snippet).'
+    value: ${{ steps.probe.outputs.receipt }}
+
+runs:
+  using: composite
+  steps:
+    - name: canary probe
+      id: probe
+      shell: bash
+      env:
+        CANARY_URL: ${{ inputs.canary-url }}
+        EXPECT_MARKER: ${{ inputs.expect-marker }}
+        EXPECT_HEADER: ${{ inputs.expect-header }}
+        EXPECT_STATUS: ${{ inputs.expect-status }}
+        CANARY_HEADERS: ${{ inputs.canary-headers }}
+        MAX_ATTEMPTS: ${{ inputs.max-attempts }}
+        CANARY_METHOD: ${{ inputs.canary-method }}
+        CANARY_BODY: ${{ inputs.canary-body }}
+        RETRY_DELAY_MS: ${{ inputs.retry-delay-ms }}
+        TIMEOUT_MS: ${{ inputs.timeout-ms }}
+      run: |
+        set -uo pipefail
+        # Probe never aborts the step by itself — we capture the verdict and branch below so the
+        # rollback command gets a chance to run.
+        RECEIPT="$(node "${GITHUB_ACTION_PATH}/canary-probe.mjs" 2>probe.log | tail -1)" || true
+        cat probe.log >&2
+        # FAIL-CLOSED DEFAULT (REL-003): if RECEIPT is empty/unparseable — the probe crashed
+        # before emitting anything, or something mangled its stdout — jq fails and both reads
+        # default to the UNEVALUABLE state, never to healthy. "The health check returned nothing"
+        # must read as refuse, not as a silent pass.
+        STATE="$(printf '%s' "$RECEIPT" | jq -r '.state // "refuse"' 2>/dev/null || echo refuse)"
+        case "$STATE" in
+          healthy|regressed|refuse) ;;
+          *) STATE="refuse" ;;
+        esac
+        if [ "$STATE" = "healthy" ]; then HEALTHY=true; else HEALTHY=false; fi
+        echo "healthy=${HEALTHY}" >> "$GITHUB_OUTPUT"
+        echo "state=${STATE}" >> "$GITHUB_OUTPUT"
+        echo "receipt=$(printf '%s' "$RECEIPT" | jq -c . 2>/dev/null || echo '{}')" >> "$GITHUB_OUTPUT"
+        {
+          echo "### GAM canary — state=${STATE} healthy=${HEALTHY}";
+          echo '```json'; printf '%s\n' "$RECEIPT"; echo '```';
+        } >> "$GITHUB_STEP_SUMMARY"
+
+    - name: rollback on regressed-or-refuse (REFUSE is never treated as healthy)
+      if: steps.probe.outputs.healthy != 'true'
+      shell: bash
+      env:
+        ROLLBACK_COMMAND: ${{ inputs.rollback-command }}
+        STATE: ${{ steps.probe.outputs.state }}
+      run: |
+        set -euo pipefail
+        if [ -z "${ROLLBACK_COMMAND}" ]; then
+          echo "🛑 canary state=${STATE} (not healthy) and no rollback-command set — report-only mode. Failing the guard." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+        fi
+        echo "🛑 canary state=${STATE} — executing rollback." >> "$GITHUB_STEP_SUMMARY"
+        # The rollback command is a trusted repo-owner input (workflow-defined), not PR-derived.
+        bash -c "${ROLLBACK_COMMAND}"
+        echo "↩️ rollback command completed." >> "$GITHUB_STEP_SUMMARY"
+        # Still fail the guard so the merge/deploy is flagged as reverted, not silently green.
+        exit 1
