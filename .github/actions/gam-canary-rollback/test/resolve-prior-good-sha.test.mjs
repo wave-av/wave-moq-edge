@@ -35,7 +35,7 @@ test('skips the excluded (currently-canarying) run and returns the NEXT prior su
       { id: 100, head_sha: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' },
     ],
   });
-  const { stdout } = await execFileP('node', [SCRIPT, 'wave-av/wave-gateway', 'deploy.yml', '300'], {
+  const { stdout } = await execFileP('node', [SCRIPT, 'wave-av/example-owner-repo', 'deploy.yml', '300'], {
     env: { ...process.env, PATH: `${stubDir}:${process.env.PATH}` },
   });
   assert.equal(stdout.trim(), 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb');
@@ -48,7 +48,7 @@ test('REFUSES (exit 1, no SHA printed) when every successful run is the excluded
     ],
   });
   await assert.rejects(
-    execFileP('node', [SCRIPT, 'wave-av/wave-gateway', 'deploy.yml', '300'], {
+    execFileP('node', [SCRIPT, 'wave-av/example-owner-repo', 'deploy.yml', '300'], {
       env: { ...process.env, PATH: `${stubDir}:${process.env.PATH}` },
     }),
     (err) => {

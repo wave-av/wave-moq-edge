@@ -129,3 +129,4 @@ jobs:
             "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}")" &&
             echo "rolling back wave-moq-edge to ${PRIOR_SHA}" &&
             gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${PRIOR_SHA}"
+            -f env=production
