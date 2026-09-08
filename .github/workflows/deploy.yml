@@ -34,6 +34,17 @@ on:
         options:
           - staging
           - production
+      # ROLLBACK TARGET. GitHub's workflow-dispatch API only accepts a BRANCH OR TAG in `ref` — a
+      # commit SHA is rejected — so an automated rollback cannot express "redeploy commit X" through
+      # `--ref` alone. This optional input carries that commit: the dispatch targets the production
+      # branch and names the SHA here, and the job below checks it out, proves it is an ancestor of
+      # that branch, and stamps it as GIT_SHA so /health reports what actually shipped.
+      # Inert when unset: empty means "deploy the dispatched ref", i.e. today's behavior exactly.
+      sha:
+        description: "Optional commit SHA to deploy (rollback target). Empty = tip of the selected ref."
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: deploy-wave-moq-edge
@@ -47,9 +58,32 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Validate the optional rollback SHA BEFORE it reaches actions/checkout's `ref:`. Only users
+      # with write access can dispatch this workflow, but a ref that is not a bare 40-hex commit id
+      # never gets near the checkout: it is rejected here, not sanitized. Empty stays empty, which
+      # checkout reads as "the ref that triggered this run" — the pre-existing behavior.
+      - name: resolve deploy ref
+        id: ref
+        env:
+          INPUT_SHA: ${{ github.event.inputs.sha }}
+        run: |
+          set -euo pipefail
+          if [ -n "${INPUT_SHA:-}" ]; then
+            if ! printf '%s' "$INPUT_SHA" | grep -Eq '^[0-9a-f]{40}$'; then
+              echo "::error::workflow_dispatch input sha must be a full 40-character lowercase commit SHA"
+              exit 1
+            fi
+            echo "checkout_ref=${INPUT_SHA}" >> "$GITHUB_OUTPUT"
+            echo "deploy_sha=${INPUT_SHA}" >> "$GITHUB_OUTPUT"
+          else
+            echo "checkout_ref=" >> "$GITHUB_OUTPUT"
+            echo "deploy_sha=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:
           fetch-depth: 0
+          ref: ${{ steps.ref.outputs.checkout_ref }}
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e  # v6.4.0
         with:
           node-version: "22"
@@ -94,18 +128,22 @@ jobs:
       # runs in trigger order, this refuses to deploy a commit that is no longer (or never was)
       # reachable from the tip of the branch that triggered this run. fetch-depth: 0 above gives
       # this full history.
+      # Applies to the SHA actually being deployed, which for a rollback dispatch is the `sha`
+      # input rather than the branch tip. A rollback target must still be an ancestor of the
+      # production branch — this is what stops a dispatch from shipping an arbitrary commit.
       - name: deploy guard — commit must be reachable from current branch tip
         env:
           REF_NAME: ${{ github.ref_name }}
+          DEPLOY_SHA: ${{ steps.ref.outputs.deploy_sha }}
         run: |
           set -e
           git fetch origin "$REF_NAME" --quiet
           TIP=$(git rev-parse "origin/$REF_NAME")
-          if ! git merge-base --is-ancestor "$GITHUB_SHA" "origin/$REF_NAME"; then
-            echo "::error::commit $GITHUB_SHA is not an ancestor of origin/$REF_NAME (tip $TIP) — a newer commit has superseded this run; refusing to deploy a stale/orphaned commit"
+          if ! git merge-base --is-ancestor "$DEPLOY_SHA" "origin/$REF_NAME"; then
+            echo "::error::commit $DEPLOY_SHA is not an ancestor of origin/$REF_NAME (tip $TIP) — a newer commit has superseded this run, or the requested rollback target is not on this branch; refusing to deploy a stale/orphaned commit"
             exit 1
           fi
-          echo "deploy guard OK: $GITHUB_SHA is an ancestor of origin/$REF_NAME (tip $TIP)"
+          echo "deploy guard OK: $DEPLOY_SHA is an ancestor of origin/$REF_NAME (tip $TIP)"
 
 
       - name: token gate
@@ -128,7 +166,7 @@ jobs:
           # account_id was removed from the public wrangler.toml; wrangler reads it
           # from this secret at deploy time (CLOUDFLARE_ACCOUNT_ID) instead.
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --env ${{ steps.target.outputs.env }} --var GIT_SHA:${{ github.sha }}
+          command: deploy --env ${{ steps.target.outputs.env }} --var GIT_SHA:${{ steps.ref.outputs.deploy_sha }}
 
       # Proven-live gate (proven-live-or-not-done): a green `wrangler deploy` only proves the API
       # call succeeded, not that the right bundle is answering live traffic. This step is the
@@ -138,7 +176,7 @@ jobs:
         if: steps.gate.outputs.deploy == 'true'
         env:
           TARGET_ENV: ${{ steps.target.outputs.env }}
-          EXPECT_SHA: ${{ github.sha }}
+          EXPECT_SHA: ${{ steps.ref.outputs.deploy_sha }}
         run: |
           set -e
           HOST=$(node scripts/ci/resolve-deploy-host.mjs "$TARGET_ENV" || true)

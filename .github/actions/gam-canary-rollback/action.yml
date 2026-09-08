@@ -13,6 +13,20 @@ inputs:
     description: Substring the response body MUST contain (the "right build" proof).
     required: false
     default: ''
+  expect-json:
+    description: >
+      '<dotted.path>=<value>' — parse the response body as JSON and require an EXACT match at that
+      path. Prefer this over expect-marker for JSON surfaces: a substring match on serialized JSON
+      is whitespace-fragile ({"sha":"x"} and {\n  "sha": "x"\n} are the same document but different
+      strings), and a marker that can never match turns every deploy into a spurious rollback.
+    required: false
+    default: ''
+  max-redirects:
+    description: >
+      Same-origin https redirect hops the probe will follow (0-10). Cross-origin and plaintext
+      hops are always rejected, never followed.
+    required: false
+    default: '5'
   expect-header:
     description: '"Name: value-substr" a response header MUST contain (e.g. a version/etag).'
     required: false
@@ -77,6 +91,8 @@ runs:
       env:
         CANARY_URL: ${{ inputs.canary-url }}
         EXPECT_MARKER: ${{ inputs.expect-marker }}
+        EXPECT_JSON: ${{ inputs.expect-json }}
+        MAX_REDIRECTS: ${{ inputs.max-redirects }}
         EXPECT_HEADER: ${{ inputs.expect-header }}
         EXPECT_STATUS: ${{ inputs.expect-status }}
         CANARY_HEADERS: ${{ inputs.canary-headers }}
@@ -101,6 +117,14 @@ runs:
           *) STATE="refuse" ;;
         esac
         if [ "$STATE" = "healthy" ]; then HEALTHY=true; else HEALTHY=false; fi
+        # RECEIPT REDACTION: if the probe was sent credentials (canary-headers non-empty), the
+        # surface it read is by definition not public, so its response body snippet and the echoed
+        # response-header value are presumed sensitive and are dropped before anything is written
+        # to the job output or the run summary. The verdict fields an operator actually acts on
+        # (state, status, statusOk/markerOk/jsonOk/hdrOk, attempts, reason) are always kept.
+        if [ -n "${CANARY_HEADERS}" ]; then
+          RECEIPT="$(printf '%s' "$RECEIPT" | jq -c 'del(.bodySnippet, .headerValue, .jsonValue) + {redacted:"bodySnippet/headerValue/jsonValue withheld — probe was authenticated"}' 2>/dev/null || echo '{"state":"refuse","reason":"receipt unparseable"}')"
+        fi
         echo "healthy=${HEALTHY}" >> "$GITHUB_OUTPUT"
         echo "state=${STATE}" >> "$GITHUB_OUTPUT"
         echo "receipt=$(printf '%s' "$RECEIPT" | jq -c . 2>/dev/null || echo '{}')" >> "$GITHUB_OUTPUT"
