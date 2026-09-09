@@ -31,6 +31,21 @@ IGNORE=(
   -g '!**/scripts/public-repo-guard/**'
   -g '!**/.gitleaks.toml'
 )
+# `.git` is a DIRECTORY in a normal clone but a FILE in a `git worktree`, holding a single
+# `gitdir: /Users/<operator>/...` pointer. The glob above excludes paths UNDER a .git directory
+# and does NOT match the .git file itself, so every worktree run false-BLOCKed on abs-user-path —
+# and house rules put every agent in a worktree, so the guard cried wolf on the normal workflow.
+# A security gate that fires on every legitimate run is one people learn to switch off.
+#
+# Excluded only when git confirms it is metadata rather than content. Git refuses to track a path
+# named `.git` (verified: `git add sub/.git` is a silent no-op), but the scanner must not be the
+# component that assumes that — a tracked file is scanned regardless of its name. If git is
+# unavailable we exclude nothing and the guard blocks loudly, which is the right failure direction.
+if [[ -f .git ]] && command -v git >/dev/null 2>&1 \
+   && ! git ls-files --error-unmatch .git >/dev/null 2>&1; then
+  IGNORE+=( -g '!/.git' )
+fi
+
 if [[ -f .guardignore ]]; then
   while IFS= read -r line; do
     [[ -z "$line" || "$line" == \#* ]] && continue
