@@ -17,18 +17,55 @@ See `README.md` for setup. Run the repo's lint / typecheck / test before opening
 
 Report vulnerabilities via the [Security Policy](https://github.com/wave-av/.github/blob/main/SECURITY.md) (security@wave.online) — never in a public issue.
 
-# Platform Context
+## Public Repository Rules for Build Agents
 
-You are working inside the WAVE platform (wave-av org, 157 repos). Before acting:
+This repository is public. Anything written here — PR titles, PR bodies, commit messages,
+comments, issues, and file content — is permanent and world-readable, including after edits
+or deletes. Treat every write as if a competitor, reporter, or attacker is reading it, because
+they can.
 
-1. **The registry is the SSOT.** Query it via `@wave-av/registry-sdk` or the REST API at `https://goqtrxgdmaqojmixradj.supabase.co/rest/v1/<table>`. Tables: models, tools, vendors, products (25+ with data planes), deliverables, tests, prose, usage_logs.
-2. **Five physics laws gate everything** in CI: gauge-invariance (no raw slug), frame-independence (scores inherited), conservation-of-declaration (four renderings), entropy-monotonicity (nothing unregistered), token-budget-conservation.
-3. **The full fleet map** lives at `governance/plans/session-deliverable-registry/PLATFORM-MAP.md` in claude-workstation (157 repos by kind: core/spoke/ssot/tool/sdk).
-4. **The 24-axis model taxonomy** lives at `wave-foundation/frameworks/model-routing/champions.json` (calibrated_at 2026-08-24).
-5. **The inference pool** runs on our rigs at `http://<fleet-internal-address>:8800/v1` (internal, $0). Frontier fallback via openrouter/anthropic. The rail field on models tracks internal vs customer.
-6. **The voice laws**: no em-dashes, every word earns its place, short words over long, active voice, receipt over adjective. Enforced by voice-gate.mjs.
-7. **The test-matrix**: every shipped artifact carries unit/integration/smoke/e2e/probe receipts in the tests table. No test, no ship.
+Before writing anything, apply these rules:
 
+1. **Write for strangers.** Every title, message, and doc must make sense to an outside
+   developer and contain only what an outside developer should know. Ask: would this sentence
+   mean anything to someone who has never seen the private side of this project?
+
+2. **No internal identifiers.** Never paste an internal ticket or tracking code, a decision
+   record id, a gate or scorecard name, an internal workstream or plan id, or a reference to an
+   internal build or process-automation tool. Describe the user-facing change (for example,
+   "fix canary marker matching"), never the internal ticket that asked for it.
+
+3. **No internal topology.** Never name a private repository, an internal hostname or
+   subdomain, a staging/dev/preview environment, an internal tool, or an internal document
+   path. Even a bare cross-reference to a private repo is still naming it on a public surface —
+   describe the dependency in product terms or leave it out.
+
+4. **No approval status.** Never describe who approves what, what is decided versus pending, a
+   confidence score, or that a change is waiting on someone's sign-off. Public PRs and issues
+   should stand on their own technical merits.
+
+5. **No internal operations detail.** Never describe an internal automation contract, a
+   permission rule, a secrets inventory, review-bot internals, an internal briefing document, a
+   local checkout or working-directory path, a session or lane identifier, or CI internals
+   beyond what any ordinary open-source project would publish.
+
+6. **No people.** No personal names tied to a process decision ("X approved this", "per X's
+   directive"), and no personal email addresses anywhere. Use this project's bot or no-reply
+   identity for commit authorship.
+
+7. **No security internals.** Report vulnerabilities privately per this repo's SECURITY.md —
+   never describe incident details, after-action reviews, or how a fix was rolled out in
+   public text. Naming a public CVE in a routine dependency bump is fine.
+
+8. **No secrets.** Never write a key, token, or credential into any public surface — not even
+   an "example" one that looks plausible. Secret scanning may catch it, but you are the first
+   line of defense.
+
+9. **If it can't be described without an internal fact, it isn't a public change.** Say so and
+   stop, and route the work through the appropriate internal channel instead. Don't launder the
+   fact into a vague euphemism — just don't publish it.
+
+**When in doubt, treat it as internal.** Ask before publishing anything borderline.
 ## CONTENTS
 
 wave-moq-edge
