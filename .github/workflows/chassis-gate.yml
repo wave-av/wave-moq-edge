@@ -1,9 +1,38 @@
 name: chassis-gate
 
-# Consumes wave-foundation's reusable chassis gate (every-product-host-on-chassis law).
 # Verifies this repo declares @wave-av/spoke-chassis AND that the deployed host renders the
-# branded chassis landing (id="main", rel="manifest", application/ld+json, _wave/nav.js, theme-color).
-# Single source of truth lives in wave-av/wave-foundation; edit there, not here.
+# branded chassis landing (id="main", rel="manifest", application/ld+json, _wave/nav.js), plus
+# the wrangler routes/custom_domain ordering trap. Contract: wave-foundation
+# rules/every-product-host-on-chassis.md.
+#
+# WHY THIS IS NOT `uses: wave-av/wave-foundation/...` ANY MORE — wave-foundation#1519
+# -----------------------------------------------------------------------------------
+# This gate ran 1298 times and succeeded ZERO times, all-time. It was never "failing" in the
+# sense of finding a problem: it never COMPILED, so GitHub constructed no job at all — no logs,
+# no check run, and a run whose displayed name falls back to the file path (the compile-failure
+# tell). Reproduced verbatim against main:
+#
+#   $ gh workflow run chassis-gate.yml -R wave-av/wave-moq-edge --ref main
+#   HTTP 422: failed to parse workflow: error parsing called workflow
+#   ""
+#   -> "wave-av/wave-foundation/.github/workflows/reusable-chassis-gate.yml@9995692..."
+#   : workflow was not found.
+#
+# Cause: wave-moq-edge is PUBLIC and wave-av/wave-foundation is PRIVATE. GitHub Actions does not
+# permit a public repo to consume a private repo's reusable workflow OR composite action, and no
+# org "access" setting relaxes that direction. This repo already documents the same wall in
+# foundation-gate.yml, which is why _checks.yml is inlined here.
+#
+# Fix: consume the SAME check logic from the PUBLIC mirror. wave-foundation-public already
+# carries .github/actions/chassis-check byte-identical to the private original at
+# wave-foundation@99956927115107d2e9ba2bc8208533f6cc6c1602 (diffed, clean). The composite action
+# carries its own scripts, so they resolve via ${{ github.action_path }} on this runner with no
+# cross-repo checkout and no token. Only the 3-step wrapper is local; the gate logic stays SSOT.
+#
+# The upstream reusable workflow pins blacksmith runners and checkout v7; this repo has neither,
+# so the wrapper uses the pins every other workflow here already runs on (ubuntu-latest,
+# harden-runner v2.19.3, checkout v4.3.1) rather than importing two unproven dependencies into a
+# gate that has never once executed.
 on:
   pull_request:
   push:
@@ -19,7 +48,22 @@ concurrency:
 
 jobs:
   chassis:
-    uses: wave-av/wave-foundation/.github/workflows/reusable-chassis-gate.yml@99956927115107d2e9ba2bc8208533f6cc6c1602 # main
-    with:
-      repo_path: "."
-      landing_host: "moq.wave.online"
+    name: chassis-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: step-security/harden-runner@ab7a9404c0f3da075243ca237b5fac12c98deaa5 # v2.19.3
+        with:
+          egress-policy: audit # npm registry + a GET of the public landing host
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      # Pinned to a full commit SHA in the PUBLIC mirror, not a mutable branch ref.
+      # wrangler_config is left empty on purpose: the action auto-discovers wrangler.toml
+      # within repo_path, which is what the previous caller did.
+      - name: Run chassis check (co-located composite action)
+        uses: wave-av/wave-foundation-public/.github/actions/chassis-check@8f7ea2d4d1af2ac831327be08b9da7babdf18be1 # main@2026-09-20
+        with:
+          repo_path: "."
+          landing_host: "moq.wave.online"
+          node-version: "22"
