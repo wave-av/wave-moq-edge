@@ -1,10 +1,10 @@
-# pr-agent (OSS) — INLINE form for public repos (no references to private wave-foundation).
-# Mirrors wave-foundation/.github/workflows/reusable-pr-agent.yml. Engine: OSS Qodo Merge on OPENAI_KEY.
+# pr-agent (OSS) — INLINE form for public repos (no references to the org's private
+# shared-workflow repo). Mirrors that repo's reusable-pr-agent.yml. Engine: OSS Qodo Merge on OPENAI_KEY.
 #
 # WHY AN INLINE COPY EXISTS AT ALL, restated because 28 repos got this wrong.
 # GitHub does not let a PUBLIC repository call a reusable workflow from a
-# PRIVATE one. wave-foundation is private, so a public repo pointing at
-# `wave-av/wave-foundation/.github/workflows/reusable-pr-agent.yml@…` never
+# PRIVATE one. The org's shared-workflow repo is private, so a public repo pointing at
+# a cross-org `uses:` into its reusable-pr-agent.yml never
 # resolves: the run dies before any job is created — `conclusion: failure`,
 # zero jobs, no log, and no check run on the head sha to read. Measured
 # 2026-08-22 across 16 repos, a clean 16/16 split on visibility alone:
@@ -183,7 +183,7 @@ jobs:
         # becomes unreachable on exactly the path it would help.
         #
         # 6 is measured, not picked. Two observed successful reviews: 64s
-        # (wave-foundation run 32539972644) and 180s on a 314-file PR (wave-pen
+        # (an internal run, 32539972644) and 180s on a 314-file PR (wave-pen
         # run 32589642731). 360s is 2x the larger. 6 + 0.75 + 6 = 12.75 keeps both
         # attempts inside the job's 15.
         timeout-minutes: 6

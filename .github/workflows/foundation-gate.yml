@@ -1,11 +1,11 @@
 # foundation-gate.yml — calls the INLINED checks at ./.github/workflows/_checks.yml.
 #
-# WHY INLINED: wave-moq-edge is PUBLIC; wave-av/wave-foundation is PRIVATE. GitHub Actions does
-# NOT permit a public repo to consume a private repo's reusable workflow even with org-level
-# access set to "enterprise" — the call fails in 0s with 0 jobs (workflow_run never starts).
-# We tested this end-to-end; access settings change had no effect. `_checks.yml` mirrors
-# wave-foundation/.github/workflows/checks.yml@v1 (sha 8c9bfdc5f9). Keep them in sync on every
-# v1.x bump (no consume-not-copy here; this is the one repo where the consume path is
+# WHY INLINED: wave-moq-edge is PUBLIC; the org's shared-workflow repo it would otherwise call
+# is PRIVATE. GitHub Actions does NOT permit a public repo to consume a private repo's reusable
+# workflow even with org-level access set to "enterprise" — the call fails in 0s with 0 jobs
+# (workflow_run never starts). We tested this end-to-end; access settings change had no effect.
+# `_checks.yml` mirrors that private repo's checks.yml@v1 (sha 8c9bfdc5f9). Keep them in sync on
+# every v1.x bump (no consume-not-copy here; this is the one repo where the consume path is
 # structurally impossible).
 #
 # Added by Sub-Project F (F6) to govern this public repo. As of the Track C Phase-A canonical-

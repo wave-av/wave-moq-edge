@@ -9,7 +9,7 @@
 | `CLOUDFLARE_API_TOKEN` | Worker deploys via wrangler-action | `deploy.yml` (env-aware: push main → `<proto>.wave.online`; push staging → `<proto>.staging.wave.online`) | Quarterly. Token scopes: Account · Workers Scripts: Edit, Workers KV Storage: Edit, Zone · Workers Routes: Edit. Mint at https://dash.cloudflare.com/profile/api-tokens |
 | `CLOUDFLARE_ACCOUNT_ID` | Helper for wrangler-action (some commands accept it via env) | `deploy.yml` | Never rotates (it's an ID, not a secret — kept secret-form for consistency) |
 
-> 🚧 **Long-term:** these tokens will be replaced by Doppler→GH sync with auto-rotation (wave-foundation task #111). Until then, set a calendar reminder for the next rotation.
+> 🚧 **Long-term:** these tokens will be replaced by Doppler→GH sync with auto-rotation (tracked internally). Until then, set a calendar reminder for the next rotation.
 
 ## Worker runtime secrets (set via `wrangler secret put`)
 
@@ -49,8 +49,8 @@ _(none currently)_
 
 ## See also
 
-- `wave-foundation/docs/conventions/url-naming.md` — what `deploy.yml` routes to
-- `wave-foundation/scripts/consume.sh` — vendoring shared rules
+- The org's internal URL-naming conventions doc (private) — what `deploy.yml` routes to
+- The org's internal shared-rules vendoring script (private)
 - This repo's `wrangler.toml` — the `# SECRETS` block lists every runtime secret the worker expects
 
 

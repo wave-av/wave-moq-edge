@@ -1,9 +1,9 @@
 name: foundation checks
 
-# Reusable cross-project gate (the executable half of wave-foundation). Any WAVE repo runs the same
-# secret-scan + file-size gate by calling this:
-#   jobs: { gate: { uses: wave-av/wave-foundation/.github/workflows/checks.yml@master } }
-# One source of truth -> update here, every repo inherits it (no copying = no drift).
+# Reusable cross-project gate (the executable half of the org's private shared-workflow repo).
+# Private-repo callers run the same secret-scan + file-size gate via a cross-org `uses:` into
+# that repo's checks.yml@master. Public repos (this one) inline instead — see foundation-gate.yml
+# for why. One source of truth -> update here, every repo inherits it (no copying = no drift).
 on:
   workflow_call:
     inputs:
@@ -47,7 +47,7 @@ jobs:
   skill-validate:
     # Validates SKILL.md frontmatter in the CALLING repo. Auto-discovers any *SKILL.md; no-op if
     # the repo has none. Inlined (not a shared script) so consumers need nothing from this repo —
-    # mirrors wave-foundation/scripts/validate-skills.py; keep the two in sync.
+    # mirrors the org's private shared-workflow repo's scripts/validate-skills.py; keep in sync.
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
