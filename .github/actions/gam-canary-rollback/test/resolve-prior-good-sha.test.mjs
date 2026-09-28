@@ -58,3 +58,23 @@ test('REFUSES (exit 1, no SHA printed) when every successful run is the excluded
     },
   );
 });
+
+// REL-003 regression test: deploy.yml deploys BOTH `staging` and `main`/`master` from the SAME
+// workflow file. Without a branch filter, the most-recent successful run of "deploy.yml" could be
+// a STAGING deploy — resolving a production rollback to unreviewed staging code. This pins the
+// fix: the stub's most-recent successful run is on `staging`; the caller is guarding `main` and
+// MUST skip that staging run and resolve the next-most-recent run that is actually on `main`.
+test('branch filter (REL-003): guarding "main" skips a more-recent successful run on "staging" and resolves the next-most-recent run actually on "main"', async () => {
+  const stubDir = stubGhReturning({
+    workflow_runs: [
+      { id: 400, head_sha: 'dddddddddddddddddddddddddddddddddddddddd', head_branch: 'staging' }, // most recent overall, but NOT production
+      { id: 300, head_sha: 'cccccccccccccccccccccccccccccccccccccccc', head_branch: 'main' },    // the run being rolled back FROM
+      { id: 200, head_sha: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb', head_branch: 'main' },    // correct rollback target
+      { id: 100, head_sha: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', head_branch: 'main' },
+    ],
+  });
+  const { stdout } = await execFileP('node', [SCRIPT, 'wave-av/example-owner-repo', 'deploy.yml', '300', 'main'], {
+    env: { ...process.env, PATH: `${stubDir}:${process.env.PATH}` },
+  });
+  assert.equal(stdout.trim(), 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb');
+});

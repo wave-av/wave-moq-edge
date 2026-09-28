@@ -113,6 +113,20 @@ jobs:
           fi
           echo "host=${HOST}" >> "$GITHUB_OUTPUT"
 
+      - name: resolve rollback dispatch branch
+        id: dispatch
+        if: steps.killswitch.outputs.enabled == 'true' && steps.target.outputs.proceed == 'true'
+        env:
+          WR_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+        run: |
+          set -euo pipefail
+          # gh workflow run --ref only accepts a BRANCH/TAG — the GitHub REST workflow_dispatch
+          # API rejects a commit SHA as `ref`. Dispatch stays on the production branch that
+          # actually deploys (main/master); the exact rollback COMMIT is passed separately as
+          # deploy.yml's `sha` input (see deploy.yml's resolve-target job) so the deployed bundle
+          # is still pinned to the exact prior-good commit, not just "whatever main's tip is now".
+          echo "branch=${WR_HEAD_BRANCH:-main}" >> "$GITHUB_OUTPUT"
+
       # 3-state: healthy / regressed / refuse — refuse (no determinate answer) is treated
       # identically to regressed, never as healthy.
       - name: canary — /health sha match
@@ -120,13 +134,19 @@ jobs:
         uses: ./.github/actions/gam-canary-rollback
         with:
           canary-url: 'https://${{ steps.host.outputs.host }}/health'
-          expect-marker: '"sha":"${{ steps.target.outputs.sha }}"'
+          # Match the raw SHA VALUE, not a hand-built `"sha":"<sha>"` key/value substring. The live
+          # /health body is pretty-printed JSON (`"sha": "<sha>"`, space after the colon), so the
+          # old zero-space marker could never match ANY healthy deploy — it would roll back every
+          # single one. A 7-40 char lowercase-hex commit SHA is unique enough in a small health
+          # JSON body on its own; no quoting/spacing assumption about the body's formatting needed.
+          expect-marker: '${{ steps.target.outputs.sha }}'
           expect-status: '200'
           max-attempts: '6'
           retry-delay-ms: '10000'
           rollback-command: >
             PRIOR_SHA="$(node .github/actions/gam-canary-rollback/resolve-prior-good-sha.mjs
-            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}")" &&
+            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}"
+            "${{ steps.dispatch.outputs.branch }}")" &&
             echo "rolling back wave-moq-edge to ${PRIOR_SHA}" &&
-            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${PRIOR_SHA}"
-            -f env=production
+            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${{ steps.dispatch.outputs.branch }}"
+            -f env=production -f sha="${PRIOR_SHA}"
