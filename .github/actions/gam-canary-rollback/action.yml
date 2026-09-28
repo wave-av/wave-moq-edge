@@ -51,6 +51,23 @@ inputs:
       `gh workflow run deploy.yml -f ref=<prior> -f environment=<env>` re-dispatch, or a
       `wrangler rollback` invoked through the repo's own deploy path. If empty, the action only
       REPORTS unhealthy (no rollback) and fails — useful for a shadow/observe-only first rollout.
+      Caller-supplied dynamic values (a branch name, a run id, …) should NOT be baked directly
+      into this string via `${{ }}` — pass them through `rollback-branch` / `rollback-run-id`
+      instead and reference them here as `$ROLLBACK_BRANCH` / `$ROLLBACK_RUN_ID`, so they reach
+      the shell as opaque env-var values (never re-parsed as command text) rather than as raw
+      text spliced into the command before it is parsed.
+    required: false
+    default: ''
+  rollback-branch:
+    description: >
+      Defense-in-depth companion to rollback-command: a branch name to expose to it as the env
+      var $ROLLBACK_BRANCH, instead of the caller splicing it into rollback-command's text.
+    required: false
+    default: ''
+  rollback-run-id:
+    description: >
+      Defense-in-depth companion to rollback-command: a run id to expose to it as the env var
+      $ROLLBACK_RUN_ID, instead of the caller splicing it into rollback-command's text.
     required: false
     default: ''
 
@@ -114,6 +131,8 @@ runs:
       shell: bash
       env:
         ROLLBACK_COMMAND: ${{ inputs.rollback-command }}
+        ROLLBACK_BRANCH: ${{ inputs.rollback-branch }}
+        ROLLBACK_RUN_ID: ${{ inputs.rollback-run-id }}
         STATE: ${{ steps.probe.outputs.state }}
       run: |
         set -euo pipefail
@@ -122,6 +141,15 @@ runs:
           exit 1
         fi
         echo "🛑 canary state=${STATE} — executing rollback." >> "$GITHUB_STEP_SUMMARY"
+        # Defense-in-depth (REL-003 review follow-up): ROLLBACK_BRANCH / ROLLBACK_RUN_ID above are
+        # already-exported env vars (set via this step's own `env:`, sourced from the dedicated
+        # rollback-branch / rollback-run-id inputs), NOT text spliced into ROLLBACK_COMMAND at
+        # workflow-authoring time. rollback-command references them as "$ROLLBACK_BRANCH" /
+        # "$ROLLBACK_RUN_ID" — a single opaque shell-variable expansion that bash never re-parses
+        # as command syntax, so this stays immune to shell metacharacters in those values even if
+        # a future caller's inputs stop being as tightly constrained as gam-post-deploy-guard.yml's
+        # are today (see its own comment: currently a case-gated main/master branch name and a
+        # GitHub-generated numeric run id — already safe, this just makes it safe BY CONSTRUCTION).
         # The rollback command is a trusted repo-owner input (workflow-defined), not PR-derived.
         bash -c "${ROLLBACK_COMMAND}"
         echo "↩️ rollback command completed." >> "$GITHUB_STEP_SUMMARY"

@@ -92,6 +92,25 @@ jobs:
                 staging|production) ENV_NAME="$INPUT_ENV" ;;
                 *) echo "::error::workflow_dispatch input env must be staging or production"; exit 1 ;;
               esac
+              # REL-003 fix: workflow_dispatch lets `env` and the dispatched-from branch be
+              # chosen INDEPENDENTLY — github.ref_name is whatever branch the operator picked in
+              # the "Run workflow" dropdown, not necessarily main. Without this check, any
+              # collaborator with repo write access could push unreviewed code to a throwaway
+              # branch, dispatch this workflow from that branch with env=production, and reach
+              # production with no review and no branch restriction enforced anywhere in code
+              # (the `environment: production` gate is a no-op until a repo admin separately
+              # configures GitHub Environment protection — see the `deploy:` job comment). Mirror
+              # the SAME restriction the `push` trigger already enforces below: production only
+              # ships from main or master. This runs first, before checkout/secrets/deploy.
+              if [ "$ENV_NAME" = "production" ]; then
+                case "$REF_NAME" in
+                  main|master) ;;
+                  *)
+                    echo "::error::workflow_dispatch env=production must be dispatched from main or master, not '$REF_NAME' — dispatching production from an arbitrary/throwaway branch bypasses review. Merge to main first, or use env=staging to test from a branch."
+                    exit 1
+                    ;;
+                esac
+              fi
               if [ -n "$INPUT_SHA" ]; then
                 if ! printf '%s' "$INPUT_SHA" | grep -qE '^[0-9a-f]{7,40}$'; then
                   echo "::error::workflow_dispatch input sha '$INPUT_SHA' is not a lowercase hex commit SHA"
@@ -149,16 +168,38 @@ jobs:
       - name: deploy guard — commit must be reachable from current branch tip
         env:
           REF_NAME: ${{ github.ref_name }}
+          TARGET_ENV: ${{ needs.resolve-target.outputs.env }}
           TARGET_SHA: ${{ needs.resolve-target.outputs.sha }}
         run: |
           set -e
-          git fetch origin "$REF_NAME" --quiet
-          TIP=$(git rev-parse "origin/$REF_NAME")
-          if ! git merge-base --is-ancestor "$TARGET_SHA" "origin/$REF_NAME"; then
-            echo "::error::commit $TARGET_SHA is not an ancestor of origin/$REF_NAME (tip $TIP) — a newer commit has superseded this run, or the rollback sha input is wrong; refusing to deploy a stale/orphaned/unreachable commit"
+          # REL-003 fix: for a PRODUCTION deploy, ancestry MUST be checked against the canonical
+          # production branch (main, falling back to master) — never against github.ref_name.
+          # ref_name is whatever branch a workflow_dispatch was run from; checking a throwaway
+          # branch's tip against ITSELF is a tautology that always passes, which is exactly what
+          # let an arbitrary unreviewed branch reach production (paired with the resolve-target
+          # fix above, which now refuses to even resolve env=production for a non-main/master
+          # ref_name — this step is the second, independent layer so the guard holds even if that
+          # earlier check is ever loosened). Push triggers already only fire from main/master, so
+          # this changes behavior only for the workflow_dispatch path.
+          git fetch origin --quiet
+          if [ "$TARGET_ENV" = "production" ]; then
+            if git show-ref --verify --quiet refs/remotes/origin/main; then
+              BASE_REF="main"
+            elif git show-ref --verify --quiet refs/remotes/origin/master; then
+              BASE_REF="master"
+            else
+              echo "::error::env is production but neither origin/main nor origin/master exists — cannot verify commit ancestry, refusing to deploy"
+              exit 1
+            fi
+          else
+            BASE_REF="$REF_NAME"
+          fi
+          TIP=$(git rev-parse "origin/$BASE_REF")
+          if ! git merge-base --is-ancestor "$TARGET_SHA" "origin/$BASE_REF"; then
+            echo "::error::commit $TARGET_SHA is not an ancestor of origin/$BASE_REF (tip $TIP) — a newer commit has superseded this run, the rollback sha input is wrong, or (production) the dispatched branch was not $BASE_REF; refusing to deploy a stale/orphaned/unreachable/unreviewed commit"
             exit 1
           fi
-          echo "deploy guard OK: $TARGET_SHA is an ancestor of origin/$REF_NAME (tip $TIP)"
+          echo "deploy guard OK: $TARGET_SHA is an ancestor of origin/$BASE_REF (tip $TIP)"
 
 
       - name: token gate

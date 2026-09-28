@@ -143,10 +143,20 @@ jobs:
           expect-status: '200'
           max-attempts: '6'
           retry-delay-ms: '10000'
+          # Defense-in-depth (REL-003 review follow-up): the run id and branch below are already
+          # constrained upstream (main/master case-gate at :75-82, a GitHub-generated numeric run
+          # id) so splicing them directly into rollback-command's text was already safe — but
+          # routing them through these two dedicated inputs instead means a future edit that
+          # loosens either constraint can't turn this into a shell-injection primitive.
+          # rollback-command below references them as plain $ROLLBACK_* shell vars, which the
+          # action exports as env vars before the command runs (see action.yml) rather than
+          # having their raw text spliced into the command string at workflow-authoring time.
+          rollback-branch: '${{ steps.dispatch.outputs.branch }}'
+          rollback-run-id: '${{ steps.target.outputs.run_id }}'
           rollback-command: >
             PRIOR_SHA="$(node .github/actions/gam-canary-rollback/resolve-prior-good-sha.mjs
-            "${GITHUB_REPOSITORY}" deploy.yml "${{ steps.target.outputs.run_id }}"
-            "${{ steps.dispatch.outputs.branch }}")" &&
+            "${GITHUB_REPOSITORY}" deploy.yml "${ROLLBACK_RUN_ID}"
+            "${ROLLBACK_BRANCH}")" &&
             echo "rolling back wave-moq-edge to ${PRIOR_SHA}" &&
-            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${{ steps.dispatch.outputs.branch }}"
+            gh workflow run deploy.yml --repo "${GITHUB_REPOSITORY}" --ref "${ROLLBACK_BRANCH}"
             -f env=production -f sha="${PRIOR_SHA}"
