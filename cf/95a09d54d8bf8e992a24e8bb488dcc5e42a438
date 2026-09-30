@@ -1,0 +1,19 @@
+NOTICE
+  s_45a76c8757d779::t_556f7409734ef5 2,4,14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "cf95a09d54d8bf8e992a24e8bb488dcc5e42a438",
+  "prompts": {},
+  "sessions": {
+    "s_45a76c8757d779": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a945f6ae3a5cec8ce",
+        "model": "unknown"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
