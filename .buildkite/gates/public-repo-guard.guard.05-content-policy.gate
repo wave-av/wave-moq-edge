@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Verbatim `run:` body of GitHub Actions step
+#   public-repo-guard.yml / job guard / step [5] "content policy (WAVE trade-secret / internal-leak gate)"
+# at wave-av/wave-moq-edge 4e88630f0b0f. Do not edit by hand: re-extract from the workflow (see .buildkite/README.md).
+# gh-shell: default
+# gh-env GUARD_PRIVATE_REPOS is NOT set: a GitHub org variable (vars.GUARD_PRIVATE_REPOS) Buildkite cannot read; unset, the script skips its private-name rule (see .buildkite/README.md)
+# Run by .buildkite/scripts/lib/common.sh as `bash -e <this file>` (GH default shell), or `bash -eo pipefail` when the step set `shell: bash`.
+bash scripts/public-repo-guard/content-policy.sh .
