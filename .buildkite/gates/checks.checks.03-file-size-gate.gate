@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Verbatim `run:` body of GitHub Actions step
+#   _checks.yml / job checks / step [3] "File-size gate"
+# at wave-av/wave-moq-edge 4e88630f0b0f. Do not edit by hand: re-extract from the workflow (see .buildkite/README.md).
+# gh-shell: default
+# MAX is `inputs.max_lines`; foundation-gate.yml calls _checks.yml with max_lines: 800.
+# gh-env: MAX=800
+# Run by .buildkite/scripts/lib/common.sh as `bash -e <this file>` (GH default shell), or `bash -eo pipefail` when the step set `shell: bash`.
+fail=0
+while IFS= read -r f; do
+  grep -qxF "$f" .github/.filesize-allowlist 2>/dev/null && continue   # justified exception
+  n=$(wc -l < "$f")
+  if [ "$n" -gt "$MAX" ]; then echo "::error::$f has $n lines (> $MAX)"; fail=1; fi
+done < <(git ls-files '*.ts' '*.tsx' '*.js' '*.py' | grep -vE '\.(types|d)\.ts$')
+if [ "$fail" = 0 ]; then echo "file-size gate passed (all <= $MAX lines)"; fi
+exit "$fail"
