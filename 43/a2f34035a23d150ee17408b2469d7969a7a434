@@ -1,0 +1,16 @@
+.github/workflows/auto-approve.yml
+  h_af5ac1a9798224 50-53
+.github/workflows/chassis-gate.yml
+  h_af5ac1a9798224 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "43a2f34035a23d150ee17408b2469d7969a7a434",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
