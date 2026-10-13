@@ -1,0 +1,46 @@
+{
+  "$comment": "wave-ci template settings (see the wave-ci templates README). Ports wave-moq-edge's credential-free GitHub Actions PR/push gates to Buildkite (wave-ci#50); the parity table for every GH job is in .buildkite/README.md. PUBLIC repo: no step declares a secret, and fork PRs never build (pipeline setting build_pull_request_forks: false). Jobs that need the private npm registry, a GitHub event bridge, private wave-foundation code, or that deploy are parked in .buildkite/wave-ci.deferred.json with the reason and the blocker.",
+  "wave_ci": "296cc0cf4faf1f06d0acd4c2a767d6c111d2adf3",
+  "repo": "wave-av/wave-moq-edge",
+  "pipeline": "wave-moq-edge",
+  "template": "custom",
+  "visibility": "public",
+  "default_branch": "main",
+  "extra_steps": [
+    {
+      "key": "foundation-gate",
+      "label": ":shield: foundation-gate: secret scan, file-size, skill-validate, verify-routes",
+      "script": ".buildkite/scripts/foundation-gate.sh",
+      "timeout": 10
+    },
+    {
+      "key": "public-repo-guard",
+      "label": ":lock: public-repo-guard: gitleaks + content policy (published tree)",
+      "script": ".buildkite/scripts/public-repo-guard.sh",
+      "timeout": 15
+    },
+    {
+      "key": "moq-draft-drift",
+      "label": ":satellite: MoQ Transport draft version drift",
+      "script": ".buildkite/scripts/moq-draft-drift.sh",
+      "timeout": 5,
+      "paths": [
+        "wrangler.toml",
+        "**/*.ts",
+        "**/*.md",
+        "package.json",
+        "scripts/check-moq-draft-version.sh",
+        ".github/workflows/moq-draft-drift.yml"
+      ]
+    }
+  ],
+  "schedules": [
+    {
+      "name": "moq-draft-drift-weekly",
+      "label": "weekly MoQ Transport draft drift check, Mondays 06:00 UTC (GH moq-draft-drift.yml schedule)",
+      "cronline": "0 6 * * 1",
+      "branch": "main",
+      "steps": ["moq-draft-drift"]
+    }
+  ]
+}

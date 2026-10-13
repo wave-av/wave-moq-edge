@@ -1,0 +1,84 @@
+{
+  "$comment": "NOT RENDERED. wave-ci reads only .buildkite/wave-ci.json (its top-level keys are a closed set). parked_jobs lists every GitHub Actions job that has no running Buildkite step yet, with the reason and the blocker, so nothing is dropped. To port one, write its step script (and verbatim gates) once the blocker lands, add the step to extra_steps in wave-ci.json, and move its row in .buildkite/README.md. This is a PUBLIC repo: a step that needs a secret also needs Jake's decision on a public-repo secrets row, which does not exist today.",
+  "deferred_extra_steps": [],
+  "deferred_schedules": [],
+  "parked_jobs": [
+    {
+      "workflow": "lint.yml",
+      "job": "lint",
+      "category": "private-npm-registry",
+      "reason": "`npm ci` installs @wave-av/content-hash and @wave-av/spoke-chassis from GitHub Packages, which answers 403 (billing block). The step would fail every build at install.",
+      "blocked_on": "the self-hosted private npm registry (ruling WGL-0928-18), plus a read credential for this public repo's pipeline (Jake's decision)"
+    },
+    {
+      "workflow": "test.yml",
+      "job": "test",
+      "category": "private-npm-registry",
+      "reason": "typecheck + vitest need the full install, which includes the private @wave-av packages (GitHub Packages 403).",
+      "blocked_on": "the self-hosted private npm registry (ruling WGL-0928-18), plus a read credential for this public repo's pipeline (Jake's decision)"
+    },
+    {
+      "workflow": "bundle-eval-gate.yml",
+      "job": "bundle-eval",
+      "category": "private-npm-registry",
+      "reason": "boots the Worker bundle in workerd after a full install, which includes the private @wave-av packages (GitHub Packages 403).",
+      "blocked_on": "the self-hosted private npm registry (ruling WGL-0928-18), plus a read credential for this public repo's pipeline (Jake's decision)"
+    },
+    {
+      "workflow": "governance-enforce.yml",
+      "job": "enforce",
+      "category": "private-npm-registry",
+      "reason": "installs @wave-av/governance from GitHub Packages (403) before it can scan the diff.",
+      "blocked_on": "the self-hosted private npm registry (ruling WGL-0928-18), plus a read credential for this public repo's pipeline (Jake's decision)"
+    },
+    {
+      "workflow": "chassis-gate.yml",
+      "job": "chassis",
+      "category": "private-code",
+      "reason": "calls a reusable workflow and composite action that live in a private repository. A public repository cannot run them (on GitHub every run of this workflow fails before any job starts), and copying them here would publish private code.",
+      "blocked_on": "a public copy of the chassis check, decided by its owner"
+    },
+    {
+      "workflow": "deploy.yml",
+      "job": "deploy",
+      "category": "deploy",
+      "reason": "production deploy (wrangler deploy with Cloudflare credentials). Deploy and publish jobs are not ported until Jake names them.",
+      "blocked_on": "Jake naming the deploy"
+    },
+    {
+      "workflow": "gam-post-deploy-guard.yml",
+      "job": "canary-guard",
+      "category": "deploy",
+      "reason": "post-deploy canary that re-dispatches deploy.yml to roll back. It is part of the deploy path, triggered by workflow_run of deploy.",
+      "blocked_on": "Jake naming the deploy"
+    },
+    {
+      "workflow": "auto-approve.yml",
+      "job": "evaluate",
+      "category": "event-bot",
+      "reason": "runs on PR label events and submits a review with a bot identity; Buildkite has no event for a label change and the guest holds no GitHub write token.",
+      "blocked_on": "the GitHub-event bridge, RUN-231 (wave-ci#132)"
+    },
+    {
+      "workflow": "issue-ops-triage.yml",
+      "job": "triage",
+      "category": "event-bot",
+      "reason": "runs on issue events and writes to issues with a bot identity.",
+      "blocked_on": "the GitHub-event bridge, RUN-231 (wave-ci#132)"
+    },
+    {
+      "workflow": "pr-agent.yml",
+      "job": "pr_agent",
+      "category": "event-bot",
+      "reason": "AI PR review that posts comments (GitHub write token, model API key) and answers issue_comment slash commands.",
+      "blocked_on": "the GitHub-event bridge, RUN-231 (wave-ci#132)"
+    },
+    {
+      "workflow": "public-repo-guard.yml",
+      "job": "body-guard",
+      "category": "event-bot",
+      "reason": "scans PR, issue and comment TEXT. Issue and comment events never reach Buildkite, a PR body edit starts no build, and the body text is not in the build environment.",
+      "blocked_on": "the GitHub-event bridge, RUN-231 (wave-ci#132)"
+    }
+  ]
+}

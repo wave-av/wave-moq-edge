@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Verbatim `run:` body of GitHub Actions step
+#   moq-draft-drift.yml / job drift / step [2] "Run drift check"
+# at wave-av/wave-moq-edge 4e88630f0b0f. Do not edit by hand: re-extract from the workflow (see .buildkite/README.md).
+# gh-shell: default
+# Run by .buildkite/scripts/lib/common.sh as `bash -e <this file>` (GH default shell), or `bash -eo pipefail` when the step set `shell: bash`.
+bash scripts/check-moq-draft-version.sh --ci
