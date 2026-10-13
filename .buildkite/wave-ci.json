@@ -1,5 +1,5 @@
 {
-  "$comment": "wave-ci template settings (see the wave-ci templates README). Ports wave-moq-edge's credential-free GitHub Actions PR/push gates to Buildkite (wave-ci#50); the parity table for every GH job is in .buildkite/README.md. PUBLIC repo: no step declares a secret, and fork PRs never build (pipeline setting build_pull_request_forks: false). Jobs that need the private npm registry, a GitHub event bridge, private wave-foundation code, or that deploy are parked in .buildkite/wave-ci.deferred.json with the reason and the blocker.",
+  "$comment": "Pipeline template settings. Ports wave-moq-edge's credential-free GitHub Actions PR/push gates to Buildkite; the parity table for every GH job is in .buildkite/README.md. Public repository: no step declares a secret, and fork PRs never build (pipeline setting build_pull_request_forks: false). Jobs that need private npm packages, a GitHub event bridge or private code, or that deploy, are parked in .buildkite/wave-ci.deferred.json with the reason and the blocker.",
   "wave_ci": "296cc0cf4faf1f06d0acd4c2a767d6c111d2adf3",
   "repo": "wave-av/wave-moq-edge",
   "pipeline": "wave-moq-edge",

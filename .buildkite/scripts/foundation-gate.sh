@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Buildkite step foundation-gate: replaces GitHub Actions foundation-gate.yml `gate`, which calls the
-# inlined _checks.yml jobs `checks` (secret scan, file-size), `skill-validate` and `verify-routes`.
+# inlined _checks.yml jobs `checks` (secret scan, line count), `skill-validate` and `verify-routes`.
 # The gates are the verbatim `run:` bodies under .buildkite/gates/ (see lib/common.sh for the contract).
 # shellcheck source-path=SCRIPTDIR source=lib/common.sh
 source "$(dirname "${BASH_SOURCE[0]}")/lib/common.sh"
@@ -8,7 +8,7 @@ bk_require_buildkite
 bk_require_tools git grep awk
 
 bk_gate 'checks: secret scan (fail-closed, allowlist-aware)' checks.checks.02-secret-scan-fail-closed-allowlist-aware.gate
-bk_gate 'checks: file-size gate (max 800 lines)' checks.checks.03-file-size-gate.gate
+bk_gate 'checks: line-count check (max 800 lines)' checks.checks.03-file-size-gate.gate
 
 # skill-validate: GH set up Python 3.12 and ran `pip install pyyaml`. The image bakes PyYAML into
 # every mise Python; a job-local venv (PyPI egress) is the fallback when this one lacks it.

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Shared helpers for .buildkite/scripts/*.sh. SOURCED by every step script, never run directly.
 #
-# Same shape as the wave-foundation Buildkite port's lib/common.sh (verbatim gates + a summary), cut
-# down to what this repo's running steps use. No running step here holds a credential.
+# Verbatim GitHub step bodies run as gates, then one summary per step. No running step here holds a
+# credential.
 #
 # Contract every step script inherits from here:
 #   - `set -euo pipefail`, and never `set -x` (xtrace would print expanded values into the build log).
@@ -65,7 +65,7 @@ bk_require_buildkite() {
   fi
 }
 
-# bk_require_tools <tool>...: every tool must already be on PATH (the guest installs nothing ad hoc).
+# bk_require_tools <tool>...: every tool must already be on PATH (the CI job installs nothing ad hoc).
 bk_require_tools() {
   local tool missing=0
   for tool in "$@"; do

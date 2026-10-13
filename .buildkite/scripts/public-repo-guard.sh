@@ -6,7 +6,7 @@
 source "$(dirname "${BASH_SOURCE[0]}")/lib/common.sh"
 bk_require_buildkite
 
-# GH downloads gitleaks 8.30.1 (pinned + sha256-checked) and apt-installs ripgrep with sudo. The guest
+# GH downloads gitleaks 8.30.1 (pinned + sha256-checked) and apt-installs ripgrep with sudo. The CI job
 # has no sudo and installs nothing ad hoc: both come from the CI image, at the same gitleaks version.
 GITLEAKS_WANT="8.30.1"
 if bk_require_tools gitleaks rg; then
