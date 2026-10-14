@@ -47,10 +47,10 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (github.event.pull_request.draft == false &&
        github.event.pull_request.head.repo.fork == false)
-    # Pinned to wave-foundation main@2026-09-03 (most recent verified pin across
-    # sibling edge repos at the time this file was added; commit exists at
-    # https://github.com/wave-av/wave-foundation/commit/99956927115107d2e9ba2bc8208533f6cc6c1602).
-    uses: wave-av/wave-foundation/.github/workflows/reusable-auto-approve.yml@99956927115107d2e9ba2bc8208533f6cc6c1602 # main@2026-09-03
+    # Pinned to wave-foundation ce8199c54f645cb4bd9f671a54fcea7c8a8ef296 (immutable SHA,
+    # SEC-004/SUPPLY-001). Content-verified 2026-10-14: reusable-* blobs at this SHA are
+    # byte-identical to wave-foundation origin/main; supersedes the 2026-09-03 pin 99956927.
+    uses: wave-av/wave-foundation/.github/workflows/reusable-auto-approve.yml@ce8199c54f645cb4bd9f671a54fcea7c8a8ef296 # ce8199c (verified 2026-10-14)
     with:
       pr-number: ${{ github.event.pull_request.number || inputs.pr-number }}
       kill-window-seconds: 60
