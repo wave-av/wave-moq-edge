@@ -31,8 +31,8 @@ export interface RelayEvent {
  * undefined ⇒ open-ended (§location-filters: "When EndGroupDelta and EndObject are omitted from a
  * subscription filter, the subscription is open-ended"). `endGroupOpen` true ⇒ EndObject was omitted,
  * so the whole End Group passes (§location-filters: "the filter includes all objects in the End
- * Group"). Relative-to-Largest-Object forms are NOT representable here — see
- * `moq-relay-filter.ts`'s `resolveLocationFilter`. */
+ * Group"). Relative-to-Largest-Object forms resolve INTO this shape against the relay's
+ * tracked Largest — see `moq-relay-filter.ts`'s `resolveLocationFilter`. */
 export interface ResolvedRange {
   start: MoqLocation;
   end?: MoqLocation;

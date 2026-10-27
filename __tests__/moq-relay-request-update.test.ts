@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { MoqRelay } from '../src/moq-relay';
 import {
+  MOQ_MSG,
   MOQ_ERROR,
   parseControl,
   encodeSubscribe,
@@ -84,14 +85,15 @@ describe('#212 E6 REQUEST_UPDATE — mid-stream viewport range update (draft-20 
     expect(deliveredLocations(pushObj(relay, 0, 1).fanout, 'viewport')).toEqual(['0.1']);
   });
 
-  it('a relative LOCATION_FILTER on REQUEST_UPDATE → REQUEST_ERROR NOT_SUPPORTED, the OLD range stays in effect', () => {
+  it('a relative LOCATION_FILTER on REQUEST_UPDATE resolves against Largest and REPLACES the range', () => {
     const relay = new MoqRelay();
     attachPub(relay);
     relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n, startObject: 0n, endGroupDelta: 0n, endObject: 2n } }));
+    pushObj(relay, 5, 0); // largest {5,0}
 
-    const { replies } = relay.onControl('viewport', encodeRequestUpdate({ requestId: 4n, locationFilter: { startGroup: 3n } })); // lone StartGroup = relative
-    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
-    expect(deliveredLocations(pushObj(relay, 1, 1).fanout, 'viewport')).toEqual(['1.1']); // old range unchanged
+    const { replies } = relay.onControl('viewport', encodeRequestUpdate({ requestId: 4n, locationFilter: { startGroup: 0n, startObject: 0n } })); // "Next Object"
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.REQUEST_OK);
+    expect(deliveredLocations(pushObj(relay, 5, 1).fanout, 'viewport')).toEqual(['5.1']); // live from here
   });
 
   it('a REQUEST_UPDATE from a session with no active subscription → REQUEST_ERROR DOES_NOT_EXIST', () => {

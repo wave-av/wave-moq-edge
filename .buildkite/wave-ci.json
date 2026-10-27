@@ -1,0 +1,20 @@
+{
+  "$comment": "wave-moq-edge BK onboarding: cf-worker template, checks only (no deploy).",
+  "wave_ci": "6ef628cb144ae9438d582b7e879bd482f646f748",
+  "repo": "wave-av/wave-moq-edge",
+  "pipeline": "wave-moq-edge",
+  "template": "cf-worker",
+  "visibility": "private",
+  "default_branch": "main",
+  "node": {
+    "version": "22",
+    "package_manager": "npm",
+    "registry_auth": true,
+    "scope": "@wave-av"
+  },
+  "deploy": {
+    "enabled": false
+  },
+  "guards": [],
+  "guards_exemption": "WAVE-27164:onboarding bootstrap, base main lacks guard pin"
+}

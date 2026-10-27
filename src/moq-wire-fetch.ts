@@ -60,8 +60,8 @@ export interface MoqLocation {
  * other combination is absolute, with EndGroupDelta delta-encoded from StartGroup. `endObject`
  * omitted (3-field form) means "the whole End Group". This type/codec models the wire shape only —
  * resolving the relative forms against a Largest Object is caller (relay) responsibility; see
- * `moq-relay.ts`'s `onFetch`, which supports the absolute forms and rejects the relative ones as
- * NOT_SUPPORTED (this relay's bounded per-track cache does not track Largest Object independently).
+ * `moq-relay-filter.ts`'s `resolveLocationFilter`, which resolves them against the relay's tracked
+ * Largest (and keeps the historical NOT_SUPPORTED marker only for callers that pass none).
  */
 export interface LocationFilter {
   startGroup?: bigint;

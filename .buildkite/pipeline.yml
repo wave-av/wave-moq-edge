@@ -1,0 +1,22 @@
+# Thin uploader (wave-ci#70). This is the whole pipeline file of a templated repo.
+# One step: .buildkite/wave-ci.sh checks out the wave-ci commit pinned in .buildkite/wave-ci.json,
+# renders the repo's template, caps-lints the result and uploads it. Edit wave-ci.json, not this.
+# The same YAML is what the #71 onboarding wrapper puts in the pipeline's Steps setting.
+steps:
+  - label: ":pipeline: wave-ci render + caps-lint + upload"
+    key: wave-ci-render
+    command: .buildkite/wave-ci.sh
+    agents:
+      queue: fpc-isolated
+    timeout_in_minutes: 5
+    env:
+      WAVE_JOB_ACTION: upload
+    retry:
+      automatic:
+        - exit_status: -1
+          limit: 1
+        - signal_reason: agent_stop
+          limit: 1
+      manual:
+        allowed: true
+        permit_on_passed: false
