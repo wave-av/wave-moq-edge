@@ -14,5 +14,7 @@
   },
   "deploy": {
     "enabled": false
-  }
+  },
+  "guards": [],
+  "guards_exemption": "WAVE-27164:onboarding bootstrap, base main lacks guard pin"
 }
