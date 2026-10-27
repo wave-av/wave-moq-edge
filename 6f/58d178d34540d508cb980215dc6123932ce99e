@@ -1,0 +1,26 @@
+__tests__/moq-relay-request-update.test.ts
+  h_af5ac1a9798224 4,88,92,94-96
+__tests__/moq-relay.test.ts
+  h_af5ac1a9798224 27,233-239,241-242,244,246-248,479,482-488,491,494-531
+src/moq-relay-filter.ts
+  h_af5ac1a9798224 17,23-24,28-36,38-41,44-52,84-89,91,93,128-135,137,149
+src/moq-relay-types.ts
+  h_af5ac1a9798224 34-35
+src/moq-relay.ts
+  h_af5ac1a9798224 67-73,107-111,163-166,168,207,218,364-366
+src/moq-wire-fetch.ts
+  h_af5ac1a9798224 63-64
+src/moq-wire-subscribe.ts
+  h_af5ac1a9798224 46-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "6f58d178d34540d508cb980215dc6123932ce99e",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
