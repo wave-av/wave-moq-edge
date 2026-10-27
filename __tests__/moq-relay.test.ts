@@ -24,6 +24,7 @@ import {
   SUBGROUP_ID_MODE,
 } from '../src/moq-wire';
 import { MetricsCollector, type MoqMetric } from '../metrics-collector';
+import { resolveLocationFilter } from '../src/moq-relay-filter';
 
 const NS = ['wave', 'cam-1'];
 
@@ -229,15 +230,22 @@ describe('MoqRelay FETCH from cache', () => {
     expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.INVALID_RANGE);
     expect(objects).toHaveLength(0);
   });
-  it('relative LOCATION_FILTER (draft-20 #1673 replaced Joining FETCH with SUBSCRIBE-side fill-fetch) → REQUEST_ERROR NOT_SUPPORTED', () => {
-    const relay = seed();
-    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
-    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
+  it('relative LOCATION_FILTER (lone StartGroup = "N groups back") resolves against tracked Largest', () => {
+    const relay = seed(); // largest {2,1}
+    const { replies, objects } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.FETCH_OK);
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [1, 1], [2, 0], [2, 1]]);
   });
-  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) → REQUEST_ERROR NOT_SUPPORTED', () => {
+  it('relative LOCATION_FILTER asking further back than group 0 clamps to the track start', () => {
     const relay = seed();
-    const { replies } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
-    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
+    const { objects } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 99n } }));
+    expect(objects).toHaveLength(6);
+  });
+  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) on FETCH → INVALID_RANGE (nothing beyond live to fetch)', () => {
+    const relay = seed();
+    const { replies, objects } = relay.onControl('f', encodeFetch({ requestId: 7n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
+    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.INVALID_RANGE);
+    expect(objects).toHaveLength(0);
   });
 });
 
@@ -468,19 +476,58 @@ describe('#212 E5 per-viewport SUBSCRIBE range filtering (draft-20 #1809 LOCATIO
     expect(locs).toEqual(['0.0', '0.1', '1.0', '1.1', '2.0', '2.1']);
   });
 
-  it('a relative LOCATION_FILTER on SUBSCRIBE (lone StartGroup) → REQUEST_ERROR NOT_SUPPORTED, subscriber not registered', () => {
+  it('a relative LOCATION_FILTER on SUBSCRIBE (lone StartGroup) replays the tail and stays live', () => {
     const relay = new MoqRelay();
     attachPub(relay);
-    const { replies } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
-    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
-    expect(relay.subscriberCount).toBe(0);
+    for (const g of [0, 1, 2]) for (const o of [0, 1]) pushObj(relay, g, o);
+    const { replies, objects } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 1n } }));
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.SUBSCRIBE_OK);
+    expect(relay.subscriberCount).toBe(1);
+    expect(objects.map((o) => Array.from(decodeObject(o.frame).payload))).toEqual([[1, 0], [1, 1], [2, 0], [2, 1]]);
+    const { fanout } = pushObj(relay, 3, 0);
+    expect(deliveredLocations(fanout, 'viewport')).toEqual(['3.0']);
   });
 
-  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) on SUBSCRIBE → REQUEST_ERROR NOT_SUPPORTED', () => {
+  it('the "Next Object" LOCATION_FILTER shorthand (StartGroup=StartObject=0) on SUBSCRIBE skips replay and goes live', () => {
     const relay = new MoqRelay();
     attachPub(relay);
-    const { replies } = relay.onControl('viewport', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
-    expect(decodeRequestError(parseControl(replies[0].frame).payload).errorCode).toBe(MOQ_ERROR.NOT_SUPPORTED);
-    expect(relay.subscriberCount).toBe(0);
+    for (const g of [0, 1, 2]) for (const o of [0, 1]) pushObj(relay, g, o);
+    const { replies, objects } = relay.onControl('edge', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.SUBSCRIBE_OK);
+    expect(relay.subscriberCount).toBe(1);
+    expect(objects).toHaveLength(0); // no backlog — the live-edge subscribe
+    const { fanout } = pushObj(relay, 2, 2); // same-group next object
+    expect(deliveredLocations(fanout, 'edge')).toEqual(['2.2']);
+    const { fanout: fanout2 } = pushObj(relay, 3, 0); // next group
+    expect(deliveredLocations(fanout2, 'edge')).toEqual(['3.0']);
+  });
+
+  it('a "Next Object" SUBSCRIBE on an empty track waits without error and goes live on first publish', () => {
+    const relay = new MoqRelay();
+    attachPub(relay);
+    const { replies, objects } = relay.onControl('edge', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
+    expect(parseControl(replies[0].frame).type).toBe(MOQ_MSG.SUBSCRIBE_OK);
+    expect(objects).toHaveLength(0);
+    const { fanout } = pushObj(relay, 0, 0);
+    expect(deliveredLocations(fanout, 'edge')).toEqual(['0.0']);
+  });
+
+  it('largestObject tracks the max (group, object) at ingress and survives cache eviction', () => {
+    const relay = new MoqRelay({ cachedGroups: 1 });
+    attachPub(relay);
+    expect(relay.largestObject).toBeNull();
+    pushObj(relay, 0, 0);
+    pushObj(relay, 0, 5);
+    pushObj(relay, 2, 1);
+    expect(relay.largestObject).toEqual({ group: 2n, object: 1n });
+    expect(relay.cachedObjectCount).toBe(1); // only group 2 retained, but Largest still resolves
+    const { objects } = relay.onControl('edge', encodeSubscribe({ requestId: 2n, trackNamespace: NS, trackName: 'v', locationFilter: { startGroup: 0n, startObject: 0n } }));
+    expect(objects).toHaveLength(0);
+  });
+
+  it('resolveLocationFilter without a tracked Largest keeps the historical { relative: true } marker', () => {
+    expect(resolveLocationFilter({ startGroup: 1n })).toEqual({ relative: true });
+    expect(resolveLocationFilter({ startGroup: 0n, startObject: 0n })).toEqual({ relative: true });
+    expect(resolveLocationFilter(undefined)).toEqual({ relative: false, range: undefined });
   });
 });

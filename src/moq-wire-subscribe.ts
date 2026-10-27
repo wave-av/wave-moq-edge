@@ -43,15 +43,11 @@
  * header), so there is no cross-version negotiation to preserve, matching the FETCH precedent (E3).
  *
  * §5.1.2 relative-to-Largest-Object forms (a lone StartGroup, or StartGroup=StartObject=0) are decoded
- * (the wire shape is unambiguous — see `decodeLocationFilter`) but resolving them requires the
- * publisher's current Largest Object, which this one-track-per-DO relay does not track independently
- * of the small last-N-groups cache it retains (`moq-relay.ts`'s `onFetch` rejects the same forms as
- * NOT_SUPPORTED for the identical reason — see that file). `moq-relay.ts`'s SUBSCRIBE handler mirrors
- * that: relative filters are rejected with REQUEST_ERROR(NOT_SUPPORTED); only the four ABSOLUTE forms
- * (unfiltered, start-only, start+end-group, full start+end range) filter live delivery. This is the
- * form the Nodal1 6DoF/volumetric per-viewport use case needs: a viewer names an absolute
- * Group/Object range covering the spatial-partition objects currently in its viewport, not a
- * relative-to-live-edge range.
+ * (the wire shape is unambiguous — see `decodeLocationFilter`) and resolved against the relay's
+ * tracked Largest Object (`MoqRelay.largestObject`, updated at object ingress) — "N groups back"
+ * replays the tail, "Next Object" skips the replay and goes live. The absolute forms keep their
+ * Nodal1 6DoF/volumetric per-viewport role: a viewer names an absolute Group/Object range covering
+ * the spatial-partition objects currently in its viewport.
  */
 
 import { Reader, Writer, frameControl, MOQ_MSG } from './moq-wire.ts';

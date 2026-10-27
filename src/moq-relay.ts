@@ -64,6 +64,13 @@ export class MoqRelay {
   private subscribers = new Map<string, Subscriber>();
   private lastGroupId: bigint | null = null;
 
+  // Largest Object seen on this track (max by (group, object) location order, tracked at ingress
+  // in `onDecodedObject` — ahead of any scheduler reordering — so relative LOCATION_FILTER forms
+  // ("N groups back" / "Next Object") resolve against publisher truth, not flush order. Survives
+  // cache eviction: a lone-StartGroup filter resolves from here even when the referenced groups
+  // have aged out of the last-N ring (the replay then yields only what the cache still holds).
+  private largest: { group: bigint; object: bigint } | null = null;
+
   // Late-joiner cache: the last N groups of forwarded object frames, oldest-first (a small ring).
   private cache: CachedGroup[] = [];
   private readonly maxCachedGroups: number;
@@ -96,6 +103,11 @@ export class MoqRelay {
   /** Number of cached objects across all retained groups (for tests / observability). */
   get cachedObjectCount(): number {
     return this.cache.reduce((n, g) => n + g.objects.length, 0);
+  }
+  /** Largest Object location seen on this track, or null before the first publish (for tests /
+   * observability — a copy, so callers cannot mutate relay state). */
+  get largestObject(): { group: bigint; object: bigint } | null {
+    return this.largest === null ? null : { group: this.largest.group, object: this.largest.object };
   }
 
   /**
@@ -148,10 +160,12 @@ export class MoqRelay {
         // #212 E5 (draft-20 §location-filters, #1809): SUBSCRIBE now carries an OPTIONAL
         // LOCATION_FILTER Message Parameter (`moq-wire-subscribe.ts`) — the per-viewport range
         // selector. Same resolution/support rules as `onFetch`'s LOCATION_FILTER handling below:
-        // the four absolute forms filter; the two relative-to-Largest-Object forms are rejected
-        // (this relay does not track Largest Object independently of the cache it retains).
+        // the four absolute forms filter, and the two relative-to-Largest-Object forms resolve
+        // against the tracked Largest (`this.largest`, null on an empty track). The `relative`
+        // branch below is now unreachable via this call site (Largest is always passed) but stays
+        // as the fail-closed posture for any future caller that resolves without tracking.
         const m = decodeSubscribe(payload);
-        const resolved = resolveLocationFilter(m.locationFilter);
+        const resolved = resolveLocationFilter(m.locationFilter, this.largest);
         if (resolved.relative) {
           replies.push({
             to: sessionId,
@@ -190,7 +204,7 @@ export class MoqRelay {
       case MOQ_MSG.FETCH: {
         // #212 E3/E5 FETCH-from-cache + LOCATION_FILTER resolution — moved to `moq-relay-filter.ts`
         // (#212 file-size follow-up); see that module's `handleFetch` doc for the full behavior.
-        handleFetch(this.cache, sessionId, payload, replies, objects);
+        handleFetch(this.cache, sessionId, payload, replies, objects, this.largest);
         break;
       }
       case MOQ_MSG.GOAWAY: {
@@ -201,7 +215,7 @@ export class MoqRelay {
       case MOQ_MSG.REQUEST_UPDATE: {
         // #212 E6 REQUEST_UPDATE handling — moved to `moq-relay-filter.ts` (#212 file-size
         // follow-up); see that module's `handleRequestUpdate` doc for the full behavior.
-        handleRequestUpdate(this.subscribers, sessionId, payload, replies);
+        handleRequestUpdate(this.subscribers, sessionId, payload, replies, this.largest);
         break;
       }
       case MOQ_MSG.PUBLISH_STATE_NOTIFY: {
@@ -347,6 +361,9 @@ export class MoqRelay {
     const sessionId = this.publisher;
     if (sessionId === null) return { fanout, events }; // no publisher attached — nothing to forward
 
+    if (this.largest === null || obj.groupId > this.largest.group || (obj.groupId === this.largest.group && obj.objectId > this.largest.object)) {
+      this.largest = { group: obj.groupId, object: obj.objectId };
+    }
     const forwarded = encodeObject({ ...obj, trackAlias: TRACK_ALIAS });
     if (this.schedulerEnabled) {
       this.schedule(obj.groupId, obj.objectId, forwarded, obj.priority, obj.deadlineMs, fanout);

@@ -14,23 +14,42 @@
  * the thin call sites (`handleFetch(this.cache, ...)` / `handleRequestUpdate(this.subscribers, ...)`)
  * in its `onControl` switch.
  */
-import { decodeFetch, decodeRequestUpdate, encodeFetchOk, encodeRequestError, encodeRequestOk, MOQ_ERROR, type LocationFilter } from './moq-wire.ts';
+import { decodeFetch, decodeRequestUpdate, encodeFetchOk, encodeRequestError, encodeRequestOk, MOQ_ERROR, type LocationFilter, type MoqLocation } from './moq-wire.ts';
 import type { CachedGroup, Outbound, ResolvedRange, Subscriber } from './moq-relay-types.ts';
 
 /**
  * Resolve a decoded LOCATION_FILTER (#212 E5, §location-filters) into either an ABSOLUTE
  * `ResolvedRange` (or `undefined` for "no filter" / unfiltered) or a `{ relative: true }` marker for
- * the two forms this bounded-cache relay does not resolve: a lone StartGroup, or
- * StartGroup=StartObject=0 (both defined relative to `Largest Object`, which this relay does not track
- * independently of the last-N-groups cache it retains). Shared by `handleFetch` and `moq-relay.ts`'s
+ * the two relative-to-Largest-Object forms: a lone StartGroup ("N groups back"), or
+ * StartGroup=StartObject=0 ("Next Object"). Shared by `handleFetch` and `moq-relay.ts`'s
  * SUBSCRIBE/REQUEST_UPDATE handlers — the resolution rules are identical for every message type
  * (§location-filters applies the same positional-field semantics to FETCH, SUBSCRIBE, and
  * REQUEST_UPDATE Location filters).
+ *
+ * Pass the relay's tracked Largest Object as `largest` to RESOLVE the relative forms into absolute
+ * ranges instead of rejecting them: "N groups back" ⇒ start {largest.group − N clamped at 0, 0},
+ * open-ended; "Next Object" ⇒ start {largest.group, largest.object + 1}, open-ended (every cached
+ * object sorts below it, so a SUBSCRIBE replays nothing and goes live; a FETCH matches nothing and
+ * yields INVALID_RANGE). `largest: null` means the track is still empty — relative forms resolve to
+ * the {0,0}-open range, so a SUBSCRIBE waits and goes live on first publish while a FETCH still
+ * yields INVALID_RANGE (empty cache). Omit `largest` entirely and the relative forms keep the
+ * historical `{ relative: true }` marker (callers without Largest tracking).
  */
-export function resolveLocationFilter(f: LocationFilter | undefined): { relative: true } | { relative: false; range?: ResolvedRange } {
+export function resolveLocationFilter(
+  f: LocationFilter | undefined,
+  largest?: MoqLocation | null,
+): { relative: true } | { relative: false; range?: ResolvedRange } {
   if (f === undefined || f.startGroup === undefined) return { relative: false, range: undefined };
   const isRelative = f.startObject === undefined || (f.startGroup === 0n && f.startObject === 0n && f.endGroupDelta === undefined);
-  if (isRelative) return { relative: true };
+  if (isRelative) {
+    if (largest === undefined) return { relative: true };
+    if (largest === null) return { relative: false, range: { start: { group: 0n, object: 0n }, end: undefined, endGroupOpen: false } };
+    if (f.startObject === undefined) {
+      const back = f.startGroup > largest.group ? largest.group : f.startGroup;
+      return { relative: false, range: { start: { group: largest.group - back, object: 0n }, end: undefined, endGroupOpen: false } };
+    }
+    return { relative: false, range: { start: { group: largest.group, object: largest.object + 1n }, end: undefined, endGroupOpen: false } };
+  }
   const start = { group: f.startGroup, object: f.startObject! };
   let end: { group: bigint; object: bigint } | undefined;
   let endGroupOpen = false;
@@ -62,15 +81,16 @@ export function locationInRange(g: bigint, o: bigint, range: ResolvedRange | und
  * largest matched location. A fetch with nothing in range → REQUEST_ERROR(INVALID_RANGE).
  *
  * draft-20 §5.1.2 also defines two RELATIVE forms of LOCATION_FILTER (a lone StartGroup, or
- * StartGroup=StartObject=0) resolved against "Largest Object" — this relay's bounded per-track
- * cache doesn't track Largest Object independently of what it still retains, so those forms →
- * REQUEST_ERROR(NOT_SUPPORTED), same as the "joining" FETCH variant they functionally replace was
- * before E3 (fill-fetch, draft-20's actual replacement mechanism, is SUBSCRIBE-side — see
- * moq-wire-fetch.ts's FillParameters doc — and isn't wired into this one-track-per-DO relay yet).
+ * StartGroup=StartObject=0) resolved against "Largest Object" — pass the relay's tracked Largest
+ * as `largest` and they resolve like any absolute range (a "Next Object" fetch matches nothing and
+ * yields INVALID_RANGE, honestly: there is nothing beyond live to fetch). Omit `largest` and those
+ * forms → REQUEST_ERROR(NOT_SUPPORTED), same as the "joining" FETCH variant they functionally
+ * replace was before E3 (fill-fetch, draft-20's actual replacement mechanism, is SUBSCRIBE-side —
+ * see moq-wire-fetch.ts's FillParameters doc — and isn't wired into this one-track-per-DO relay yet).
  */
-export function handleFetch(cache: CachedGroup[], sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[]): void {
+export function handleFetch(cache: CachedGroup[], sessionId: string, payload: Uint8Array, replies: Outbound[], objects: Outbound[], largest?: MoqLocation | null): void {
   const m = decodeFetch(payload);
-  const resolved = resolveLocationFilter(m.locationFilter);
+  const resolved = resolveLocationFilter(m.locationFilter, largest);
   if (resolved.relative) {
     replies.push({ to: sessionId, kind: 'control', frame: encodeRequestError({ requestId: m.requestId, errorCode: MOQ_ERROR.NOT_SUPPORTED, reason: 'relative Location Filter not supported' }) });
     return;
@@ -105,15 +125,16 @@ export function handleFetch(cache: CachedGroup[], sessionId: string, payload: Ui
  * (see the relative-Location-Filter NOT_SUPPORTED replies above).
  *
  * LOCATION_FILTER present ⇒ REPLACES the subscriber's range entirely (never merged field-by-field,
- * §message-request-update / §location-filters); a relative form is rejected the same way SUBSCRIBE's
- * initial filter is (this relay does not track Largest Object independently of its cache). A
- * zero-length LOCATION_FILTER (`{}`, all fields undefined) resolves to `range: undefined` via the
- * SAME `resolveLocationFilter` SUBSCRIBE/FETCH already use — no special-casing needed, since an
- * all-undefined LocationFilter already means "unfiltered" there (§location-filters: "Length 0 ...
- * remove the filter"). FORWARD present ⇒ sets the subscriber's forwarding state; 0 pauses fan-out to
- * this subscriber (checked in `moq-relay.ts`'s `fanOut` below) without dropping the subscription itself.
+ * §message-request-update / §location-filters); a relative form resolves against the passed
+ * `largest` exactly like SUBSCRIBE's initial filter (omit it and the historical NOT_SUPPORTED
+ * rejection applies). A zero-length LOCATION_FILTER (`{}`, all fields undefined) resolves to
+ * `range: undefined` via the SAME `resolveLocationFilter` SUBSCRIBE/FETCH already use — no
+ * special-casing needed, since an all-undefined LocationFilter already means "unfiltered" there
+ * (§location-filters: "Length 0 ... remove the filter"). FORWARD present ⇒ sets the subscriber's
+ * forwarding state; 0 pauses fan-out to this subscriber (checked in `moq-relay.ts`'s `fanOut`
+ * below) without dropping the subscription itself.
  */
-export function handleRequestUpdate(subscribers: Map<string, Subscriber>, sessionId: string, payload: Uint8Array, replies: Outbound[]): void {
+export function handleRequestUpdate(subscribers: Map<string, Subscriber>, sessionId: string, payload: Uint8Array, replies: Outbound[], largest?: MoqLocation | null): void {
   const m = decodeRequestUpdate(payload);
   const sub = subscribers.get(sessionId);
   if (!sub) {
@@ -125,7 +146,7 @@ export function handleRequestUpdate(subscribers: Map<string, Subscriber>, sessio
     return;
   }
   if (m.locationFilter !== undefined) {
-    const resolved = resolveLocationFilter(m.locationFilter);
+    const resolved = resolveLocationFilter(m.locationFilter, largest);
     if (resolved.relative) {
       replies.push({
         to: sessionId,
