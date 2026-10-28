@@ -1,0 +1,107 @@
+# wave-moq-edge CI + deploy on Buildkite (WAVE-30114..30117). GitHub Actions is not used.
+#
+# Rules for every step (FPC agents run --no-command-eval):
+#   - command is ONE checked-in script path, no arguments, no inline shell
+#   - queue fpc-isolated only. Never fpc-isolated-secrets or master-pc-isolated
+#   - no plugins, no secrets block, no secret values in env. Credentials, when granted, come only
+#     from the host job-secrets broker (Doppler wave/bkjobs) for the deploy/verify step keys on a
+#     main PUSH build (see .buildkite/README.md "Credentials")
+#
+# PR and branch builds run the checks only: gitleaks, eslint, and a wrangler config check
+# (workers_dev/preview_urls off for staging + production, `wrangler deploy --dry-run` per env).
+# They use public npm only and receive no credential.
+#
+# Deploy (main push builds only, triple-gated: the `if` below, the broker's main-only trust gate,
+# and deploy-env.sh re-checking branch/PR/ancestry): record the active version per env, deploy
+# staging, verify staging, BLOCK for a person, deploy production, verify production. Any failed
+# deploy or verify rolls the env back to the recorded version (lib.sh moq_rollback).
+
+agents:
+  queue: fpc-isolated
+
+env:
+  CI: "true"
+  WRANGLER_SEND_METRICS: "false"
+  NPM_CONFIG_AUDIT: "false"
+  NPM_CONFIG_FUND: "false"
+  NPM_CONFIG_UPDATE_NOTIFIER: "false"
+
+steps:
+  - label: ":key: guard gitleaks"
+    key: guard-gitleaks
+    command: .buildkite/scripts/guard-gitleaks.sh
+    timeout_in_minutes: 10
+    retry: &retry-infra
+      automatic:
+        - exit_status: -1
+          limit: 1
+        - signal_reason: agent_stop
+          limit: 1
+      manual:
+        allowed: true
+        permit_on_passed: false
+
+  - wait
+
+  - label: ":eslint: lint"
+    key: lint
+    command: .buildkite/scripts/lint.sh
+    timeout_in_minutes: 10
+    retry: *retry-infra
+
+  - label: ":cloudflare: wrangler config check + dry run (staging, production)"
+    key: config-check
+    command: .buildkite/scripts/config-check.sh
+    timeout_in_minutes: 10
+    retry: *retry-infra
+
+  # ---- deploy: main push builds only -------------------------------------------------------
+  - label: ":rocket: deploy staging"
+    key: deploy-staging
+    if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
+    command: .buildkite/scripts/deploy-staging.sh
+    depends_on: [lint, config-check]
+    concurrency: 1
+    concurrency_group: wave-moq-edge/deploy
+    timeout_in_minutes: 15
+    retry: &retry-none
+      automatic: false
+      manual:
+        allowed: false
+        reason: Deploys go through a new build
+
+  - label: ":white_check_mark: verify staging (workers.dev off, previews off, /health 200)"
+    key: verify-staging
+    if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
+    command: .buildkite/scripts/verify-staging.sh
+    depends_on: [deploy-staging]
+    concurrency: 1
+    concurrency_group: wave-moq-edge/deploy
+    timeout_in_minutes: 5
+    retry: *retry-none
+
+  - block: ":rotating_light: Approve production deploy (moq.wave.online)"
+    key: production-approval
+    if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
+    prompt: "Staging deployed and verified. Unblock to deploy this commit to production."
+    depends_on: [verify-staging]
+
+  - label: ":rocket: deploy production"
+    key: deploy-production
+    if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
+    command: .buildkite/scripts/deploy-production.sh
+    depends_on: [production-approval]
+    concurrency: 1
+    concurrency_group: wave-moq-edge/deploy
+    timeout_in_minutes: 15
+    retry: *retry-none
+
+  - label: ":white_check_mark: verify production (workers.dev off, previews off, moq.wave.online/health 200)"
+    key: verify-production
+    if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
+    command: .buildkite/scripts/verify-production.sh
+    depends_on: [deploy-production]
+    concurrency: 1
+    concurrency_group: wave-moq-edge/deploy
+    timeout_in_minutes: 5
+    retry: *retry-none
