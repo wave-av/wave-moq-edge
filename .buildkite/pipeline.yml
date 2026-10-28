@@ -41,7 +41,9 @@ steps:
         allowed: true
         permit_on_passed: false
 
-  - wait
+  # No wait barrier: lint and config-check run in parallel with the guard (no step before the deploy
+  # gets a credential). On the bootstrap PR that adds .buildkite/, guard-gitleaks fails closed by
+  # design (main has no trusted copy of the guard to re-exec yet); it runs normally once main has it.
 
   - label: ":eslint: lint"
     key: lint
@@ -60,7 +62,7 @@ steps:
     key: deploy-staging
     if: build.branch == "main" && build.pull_request.id == null && build.source == "webhook" && build.tag == null
     command: .buildkite/scripts/deploy-staging.sh
-    depends_on: [lint, config-check]
+    depends_on: [guard-gitleaks, lint, config-check]
     concurrency: 1
     concurrency_group: wave-moq-edge/deploy
     timeout_in_minutes: 15
