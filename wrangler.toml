@@ -50,6 +50,9 @@ bucket_name = "wave-moq-recordings"  # ✓ provisioned (dev/dry-run)
 [env.production]
 name = "moq-edge-production"
 route = { pattern = "moq.wave.online/*", zone_name = "wave.online" }
+# WAVE-30114..30117: no *.workers.dev / preview URLs — edge must only be reachable via the zone route (WAF).
+workers_dev = false
+preview_urls = false
 
 [env.production.vars]
 ENVIRONMENT = "production"
@@ -160,6 +163,9 @@ entrypoint = "DedupRpc"
 [env.staging]
 name = "moq-edge-staging"
 route = { pattern = "moq.staging.wave.online/*", zone_name = "wave.online" }
+# WAVE-30114..30117: no *.workers.dev / preview URLs — edge must only be reachable via the zone route (WAF).
+workers_dev = false
+preview_urls = false
 
 [env.staging.vars]
 ENVIRONMENT = "staging"
