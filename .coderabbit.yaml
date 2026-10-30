@@ -2,6 +2,7 @@
 # CodeRabbit base configuration (generic). Harvested from an internal WAVE monorepo with all
 # WAVE-specific custom_checks/path_instructions/refs stripped. Consumers add their own
 # path_instructions + custom_checks on top. Docs: https://docs.coderabbit.ai
+inheritance: true
 language: en-US
 
 reviews:
