@@ -36,6 +36,7 @@ import { joinMode, verifyJoin, joinDenied, withVerifiedPrincipal } from './src/m
 // is on AND the request actually carries a join-token. Fail-closed on any verification failure.
 import { usesDiscoveryJoin, verifyDiscoveryJoin, filterTracksForJoin } from './src/moq-discovery-auth';
 import { sanitizeInjectedHeaders } from './src/gateway-trust';
+import { isUnsafeFederationPath } from './src/federation-guard';
 import { handleMoqSfuFanout } from './src/moq-sfu-fanout';
 import { buildMsfCatalog, type TrackRegistryEntry } from './src/catalog';
 import { landingPage } from './src/landing';
@@ -356,6 +357,12 @@ export default {
     const path = url.pathname.replace(/^\/v1\/moq(?=\/|$)/, '/v1');
 
     try {
+      // Chassis 0.20.0 makeFetch federates leftover paths with new URL(path, origin).
+      // A scheme-relative pathname (`//host/...`) replaces that origin (WAVE-33500).
+      if (isUnsafeFederationPath(path)) {
+        return errorResponse('Not Found', 404, 'scheme-relative path refused');
+      }
+
       // --- /v1/* — MoQ API routes (intercepted BEFORE the chassis) ---
 
       // /v1/announce — discovery
