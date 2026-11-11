@@ -6,6 +6,10 @@ semantic versioning aligned with the IETF MoQ draft revision.
 
 ## [Unreleased]
 
+### Security
+
+- `deploy.yml` now refuses `workflow_dispatch env=production` unless the run is dispatched from `main` or `master`. A write collaborator can no longer ship an unreviewed feature-branch bundle to `moq.wave.online` by picking that branch in the Actions UI. Staging dispatch and push-to-main/staging are unchanged. Guard covered by `scripts/ci/deploy-workflow-dispatch.test.mjs`.
+
 ### Fixed
 
 - `pr-agent` lane: fork-triggered `/` commands are now refused, and the AI
