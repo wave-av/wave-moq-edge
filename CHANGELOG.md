@@ -7,7 +7,10 @@ semantic versioning aligned with the IETF MoQ draft revision.
 ## [Unreleased]
 
 ### Fixed
-
+- Refuse scheme-relative request paths (`//host/...`) before the chassis
+  landing catch-all. Locked `@wave-av/spoke-chassis` 0.20.0 otherwise
+  federates them off-origin, which is an open proxy on `moq.wave.online`.
+  Durable fix is chassis 0.20.5+ once WAVE-33500 publishes it.
 - `pr-agent` lane: fork-triggered `/` commands are now refused, and the AI
   call's budget fits inside its step. Three defects, one of them only visible
   once the first was fixed.
