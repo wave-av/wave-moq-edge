@@ -88,6 +88,19 @@ jobs:
               ;;
             *) echo "::error::unsupported trigger $EVENT_NAME"; exit 1 ;;
           esac
+          # Production dispatch must come from main/master. workflow_dispatch lets env and the
+          # selected ref be chosen independently, and the ancestry guard below checks GITHUB_SHA
+          # against origin/$REF_NAME — so a throwaway branch's own tip would otherwise "prove"
+          # itself and wrangler-action would ship it to moq.wave.online with CLOUDFLARE_API_TOKEN.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$ENV_NAME" = "production" ]; then
+            case "$REF_NAME" in
+              main|master) ;;
+              *)
+                echo "::error::workflow_dispatch env=production must be dispatched from main or master, not '$REF_NAME' — dispatching production from an arbitrary branch bypasses review. Merge to main first, or use env=staging to test from a branch."
+                exit 1
+                ;;
+            esac
+          fi
           echo "env=$ENV_NAME" >> "$GITHUB_OUTPUT"
           echo "Deploying to: $ENV_NAME"
       # Belt-and-suspenders against a stale/orphaned run: even with `concurrency` queueing
